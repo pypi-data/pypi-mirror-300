@@ -1,0 +1,14 @@
+sabbath_school_lessons/PDFGenerator.py,sha256=1Z-4hTb2yLzlsR_uzijNXNgUHCKhjMD7IkZDZEDNMNc,24079
+sabbath_school_lessons/__init__.py,sha256=xFjNa8bIEtT-Tpx003Gq491TNT6fij8i3jPQeVXg3xg,168
+sabbath_school_lessons/batch.py,sha256=UhSWTDWf_dhqlj3_O5OzzWjvTbRsdYQRK6_ktc4_-S8,890
+sabbath_school_lessons/booklets.py,sha256=ZIIb4lF8nDahiWYZ7YSDBxSS6ZTL0a-1xH82uPVExxA,3624
+sabbath_school_lessons/cms.py,sha256=XO5gAD86-C_zTV_CUJrUGbOt7XWM57G0i_XJcy7MDLs,5780
+sabbath_school_lessons/flowables.py,sha256=bA0KFJwSaMyh5byTrPVG2Nagg8bXqu6zLdPV-n9yXuE,5958
+sabbath_school_lessons/markdown.py,sha256=6LlQip8AT6dHcgs1BTecTYqcH-T40qaDYZQsGfe3pPQ,1183
+sabbath_school_lessons/translations.py,sha256=9B568o07ezMKsUTzgDgTZhLDgeC6RlBE66kL1qhCI_I,5681
+sabbath_school_lessons/fonts/Arial-Bold.ttf,sha256=1y2yH5JCrt1rkX2FSa1ZIXZrJNX40L7P2i_0xiCzwuA,750984
+sabbath_school_lessons-0.1.5.dist-info/LICENSE,sha256=2cdv2p7NupQ4MsLQ3IJrCKeyJFrK1hPSyjzIlapKNLs,10760
+sabbath_school_lessons-0.1.5.dist-info/METADATA,sha256=OUUjpcmvWwbQINoWf1U30DspfPhKoD2aH46oZaU62ew,5392
+sabbath_school_lessons-0.1.5.dist-info/WHEEL,sha256=GV9aMThwP_4oNCtvEC2ec3qUYutgWeAzklro_0m4WJQ,91
+sabbath_school_lessons-0.1.5.dist-info/top_level.txt,sha256=I58YmsFX01JQ9PR29UPyI04m76wyyCx7x_dFqRNVC5Q,23
+sabbath_school_lessons-0.1.5.dist-info/RECORD,,
