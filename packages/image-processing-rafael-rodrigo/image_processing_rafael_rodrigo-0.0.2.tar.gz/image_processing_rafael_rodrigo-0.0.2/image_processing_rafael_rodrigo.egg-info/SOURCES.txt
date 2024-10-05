@@ -1,0 +1,12 @@
+README.md
+setup.py
+image_processing_rafael_rodrigo.egg-info/PKG-INFO
+image_processing_rafael_rodrigo.egg-info/SOURCES.txt
+image_processing_rafael_rodrigo.egg-info/dependency_links.txt
+image_processing_rafael_rodrigo.egg-info/top_level.txt
+processing/__init__.py
+processing/combination.py
+processing/transformation.py
+utils/__init__.py
+utils/io.py
+utils/plot.py
