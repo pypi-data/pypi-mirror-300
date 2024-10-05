@@ -1,0 +1,15 @@
+[project]
+name = "speedybotdev"
+version = "0.1.722"
+description = "A bot framework"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = []
+
+[tool.poetry]
+packages = [
+    { include = "speedybotdev" }
+]
+
+[project.scripts]
+speedybot = "speedybotdev.cli:main"  # Point to the main function in cli.py

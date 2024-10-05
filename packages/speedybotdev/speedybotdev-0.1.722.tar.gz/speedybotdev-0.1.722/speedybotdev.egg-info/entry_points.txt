@@ -1,0 +1,2 @@
+[console_scripts]
+speedybot = speedybotdev.cli:main

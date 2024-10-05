@@ -1,0 +1,12 @@
+README.md
+pyproject.toml
+speedybotdev/__init__.py
+speedybotdev/cli.py
+speedybotdev/repo.py
+speedybotdev/speedybot.py
+speedybotdev/speedycard.py
+speedybotdev.egg-info/PKG-INFO
+speedybotdev.egg-info/SOURCES.txt
+speedybotdev.egg-info/dependency_links.txt
+speedybotdev.egg-info/entry_points.txt
+speedybotdev.egg-info/top_level.txt
