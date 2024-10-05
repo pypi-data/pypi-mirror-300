@@ -1,0 +1,9 @@
+mavdac-0.1.1.dist-info/METADATA,sha256=kkPEqGmcFNLRuSZQEL2eoKF4zosSto0B6k4McVI-o2s,8954
+mavdac-0.1.1.dist-info/WHEEL,sha256=AYHfYb1k_qTBfrqxq2F0UkPllepyLX3xYL6bpdXAWjQ,131
+mavdac-0.1.1.dist-info/entry_points.txt,sha256=RIstwjEz3O3RjALRl52zO5QmAySk98e4_2jR2wcCRCs,50
+mavdac/__main__.py,sha256=ymogM-l3rbfxLylukXla9BmPjWlERiMuRzTP2n3W0is,1590
+mavdac/util.py,sha256=4vEtuKfILOHCtzE3LtxI2W40TDn3tPrVf6bmg2s1WoM,1942
+mavdac/display.py,sha256=bkElJGCE355aFWFGNJKFS3BK_jixa1De38rf0Ls6JtQ,421
+mavdac/__init__.py,sha256=4Kj9oau1LRdYmICUo7MrNrJls6J5gM_yinfAjUZYfOM,156
+mavdac/mavdac.cpython-312-aarch64-linux-gnu.so,sha256=k7z-UrA2NygW_EOufoW7cByFUt20du61vfXP-YImvQ0,1384480
+mavdac-0.1.1.dist-info/RECORD,,
