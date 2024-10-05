@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: wallet-pass
+Version: 0.1.2
+Summary: Package to create Apple Wallet .pkpass files
+Home-page: https://github.com/mys1erious/wallet-passes
+Author: mys1erious
+Author-email: subtletyzeros@gmail.com
+Requires-Python: >=3.12,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: cryptography (>=43.0.1,<44.0.0)
+Requires-Dist: pydantic (>=2.9.2,<3.0.0)
+Project-URL: Repository, https://github.com/mys1erious/wallet-passes
+Description-Content-Type: text/markdown
+
+
