@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: importspy
+Version: 0.1.0
+Summary: 
+Author: Luca Atella
+Author-email: atellaluca@outlook.it
+Requires-Python: >=3.10,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Project-URL: documentation, https://importspy.readthedocs.io
+Project-URL: repository, https://github.com/atellaluca/importspy
+Description-Content-Type: text/markdown
+
+
