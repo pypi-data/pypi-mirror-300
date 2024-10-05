@@ -1,0 +1,14 @@
+# Incluir archivos YAML en el paquete segment_anything2
+include src/segment_anything2/sam2_config/*.yaml
+include src/groundingdino/models/GroundingDINO/csrc/MsDeformAttn/*
+
+
+# Incluir todos los archivos .md en el directorio src
+include README.md
+include LICENSE
+include description.md
+include src/groundino_samnet/dummy_input/*
+
+include src/mobilesam/weights/*.pt
+
+exclude src/groundino_samnet/gsam_combined.py
