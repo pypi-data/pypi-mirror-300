@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: outlier_detection_nke
+Version: 0.0.1
+Summary: This is a project that automatically identifies the outliers from a given dataset
+Author-email: Aseem Anand <author@example.com>
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.12
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# outlier_detection
+Detect time-series anomalies for day-level dataset
