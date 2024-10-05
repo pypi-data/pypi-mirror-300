@@ -1,0 +1,2 @@
+[console_scripts]
+pysell = pysell.__main__:main
