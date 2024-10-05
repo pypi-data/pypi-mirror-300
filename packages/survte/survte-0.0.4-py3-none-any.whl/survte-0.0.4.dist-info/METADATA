@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: survte
+Version: 0.0.4
+Summary: A LandXML Viewer
+Home-page: https://github.com/samanii2/survte
+Author: Jakob Samani
+Author-email: jakobsamani@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+
+# survte2
+
+A brief description of survte2.
+
+## Installation
+
+You can install this package using pip:
