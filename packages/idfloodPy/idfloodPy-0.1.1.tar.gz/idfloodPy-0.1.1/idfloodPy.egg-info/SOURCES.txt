@@ -1,0 +1,14 @@
+.gitattributes
+.gitignore
+Canada_02XA003.csv
+LICENSE
+MANIFEST.in
+README.md
+__init__.py
+idFlood.py
+setup.py
+idfloodPy.egg-info/PKG-INFO
+idfloodPy.egg-info/SOURCES.txt
+idfloodPy.egg-info/dependency_links.txt
+idfloodPy.egg-info/requires.txt
+idfloodPy.egg-info/top_level.txt
