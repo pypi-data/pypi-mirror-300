@@ -1,0 +1,5 @@
+trustgraph-base<0.12
+requests
+pulsar-client
+rdflib
+tabulate
