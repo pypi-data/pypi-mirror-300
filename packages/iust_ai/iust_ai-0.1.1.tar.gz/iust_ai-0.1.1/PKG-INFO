@@ -1,0 +1,40 @@
+Metadata-Version: 2.1
+Name: iust_ai
+Version: 0.1.1
+Summary: A library for authenticating AI course submissions at IUST
+Home-page: https://github.com/MSNP/iust_ai
+License: MIT
+Author: MSNP
+Author-email: mohamadnematpoor@gmail.com
+Requires-Python: >=3.7,<4.0
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: numpy
+Requires-Dist: pandas
+Project-URL: Repository, https://github.com/MSNP/iust_ai
+Description-Content-Type: text/markdown
+
+# AI Chat History
+
+AI Chat History is a Python library that provides a simple and efficient way to manage chat histories for AI-powered conversational applications. It offers features like storing, retrieving, and manipulating chat messages, as well as integration with various AI models and platforms.
+
+## Features
+
+- Easy-to-use API for managing chat histories
+- Support for multiple conversation threads
+- Efficient storage and retrieval of chat messages
+- Integration with popular AI models and platforms
+- Customizable message formatting and processing
+
+## Installation
+
+You can install AI Chat History using pip:
