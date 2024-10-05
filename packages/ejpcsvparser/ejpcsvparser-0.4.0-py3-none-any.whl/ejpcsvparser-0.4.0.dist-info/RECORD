@@ -1,0 +1,10 @@
+ejpcsvparser/__init__.py,sha256=_1SYH8EnrSEDz2xxQzkVE9OCFaiMSgDyTQuFB6BCoS4,578
+ejpcsvparser/csv_data.py,sha256=PYorc_kk3yfabmzcp2YANzoguODHw2SejO2jzF3fWfQ,17645
+ejpcsvparser/parse.py,sha256=hyYMp0-oc5yz0peBgd5zmv2IwxhgO5Uep5qt-BBeYmw,22106
+ejpcsvparser/settings.py,sha256=gy7BmmsZqwqFZ6sL8moTCKHyyxIcJ3JPk_QtWGCxOS0,2514
+ejpcsvparser/utils.py,sha256=1KOkfWAyK1g2xNzlm8iaT3KJUTFt39I8iVgAouCPkfI,5590
+ejpcsvparser-0.4.0.dist-info/LICENSE,sha256=tVf-s04sTJPXmlI9jPJVOZjNf_B18eIIh71p11oNfNs,1071
+ejpcsvparser-0.4.0.dist-info/METADATA,sha256=FyhKs1FyJOM1nYztpbcJyGWjCQe36LDQCLrVi_hrLMU,3527
+ejpcsvparser-0.4.0.dist-info/WHEEL,sha256=GV9aMThwP_4oNCtvEC2ec3qUYutgWeAzklro_0m4WJQ,91
+ejpcsvparser-0.4.0.dist-info/top_level.txt,sha256=lBOmzwbr9_mUrFEjGozA-XxDYc6T_TXxZrOuwTlpZHw,13
+ejpcsvparser-0.4.0.dist-info/RECORD,,
