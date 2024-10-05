@@ -1,0 +1,17 @@
+THISDLChatBot/Bot.py,sha256=1DqI2xyJ0UF83g-ro_W0jcmf8eWb0x1E23zdVrXvSEU,21944
+THISDLChatBot/CommandProcessor.py,sha256=Nvbuw9PzKV26w8aHit95zAGgEx1E5lQxcU2huQA13MM,546
+THISDLChatBot/Config.py,sha256=yPyfBmkXMVDMOLc5eOSvg0KOuSINqFTqbcmCHcqPIOQ,5939
+THISDLChatBot/Constants.py,sha256=8El-2CAp18QDgSNPn37tIXw5bwiMoUYhw9NHr81GFFE,46
+THISDLChatBot/Exceptions.py,sha256=c1W8DMvXX_eco_INmoXTgCmYOtBvAZ6ojEYgdW1kGp8,260
+THISDLChatBot/Friend.py,sha256=x5dIWnQRMWlL42FYHxngLLXqDjnwIj72Qp-YUzk_iIE,909
+THISDLChatBot/Group.py,sha256=pK2bqZrBsGnJ4u0JVQJf6JxTSKNi_yp42Cumvc53PMg,1384
+THISDLChatBot/Logger.py,sha256=W5J0cOmZWOnfVuMCJ3Mt0sQBAG64E_l6lr8KI0Emev8,3177
+THISDLChatBot/Message.py,sha256=T-H7yrBtHCqwBxaDTquVvUDVvsIrnqU8iOAq5kgD7AY,3386
+THISDLChatBot/MessageProcessor.py,sha256=NroVk4ywgNnTZA9kjuXiJucw3Zyh6ZqcgaDdu9DpqWM,475
+THISDLChatBot/Plugin.py,sha256=CcSQywTyvBGBykc1hj47gMbRFOdvXUApZtct1gfDMCM,2504
+THISDLChatBot/__init__.py,sha256=elMHVHt4Xf9mbs4RSnfSMYEdBboceKtBP0baw2Cih-0,356
+THISDLChatBot-2.0.15a0.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+THISDLChatBot-2.0.15a0.dist-info/METADATA,sha256=lAYj9Q_BbE54hWzu-to7iIdKztcc7Zabdb7YC5jYUqc,351
+THISDLChatBot-2.0.15a0.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+THISDLChatBot-2.0.15a0.dist-info/top_level.txt,sha256=myMKy1V8B9LwgUixaJ83_OXMveiav5XCs-1pHjxb1hc,14
+THISDLChatBot-2.0.15a0.dist-info/RECORD,,
