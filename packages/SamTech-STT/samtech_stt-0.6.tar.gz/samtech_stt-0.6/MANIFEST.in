@@ -1,0 +1,4 @@
+include SamTech_STT/*.html
+include SamTech_STT/*.js
+include SamTech_STT/*.css
+include SamTech_STT/*.txt

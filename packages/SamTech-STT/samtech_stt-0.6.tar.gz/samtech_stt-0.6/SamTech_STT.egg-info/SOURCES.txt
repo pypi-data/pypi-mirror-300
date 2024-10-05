@@ -1,0 +1,12 @@
+MANIFEST.in
+setup.py
+SamTech_STT/__init__.py
+SamTech_STT/index.html
+SamTech_STT/input.txt
+SamTech_STT/script.js
+SamTech_STT/styles.css
+SamTech_STT.egg-info/PKG-INFO
+SamTech_STT.egg-info/SOURCES.txt
+SamTech_STT.egg-info/dependency_links.txt
+SamTech_STT.egg-info/requires.txt
+SamTech_STT.egg-info/top_level.txt
