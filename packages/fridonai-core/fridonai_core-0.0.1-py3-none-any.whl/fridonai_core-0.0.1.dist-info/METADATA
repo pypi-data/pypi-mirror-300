@@ -1,0 +1,48 @@
+Metadata-Version: 2.1
+Name: fridonai-core
+Version: 0.0.1
+Summary: Core functionality for FridonAI
+Home-page: https://github.com/FridonAI/fridon-ai
+License: MIT
+Requires-Python: >=3.11,<3.13
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: aiocron (>=1.8,<2.0)
+Requires-Dist: aiosqlite (>=0.20.0,<0.21.0)
+Requires-Dist: langchain (>=0.3.0,<0.4.0)
+Requires-Dist: langchain-community (>=0.3.0,<0.4.0)
+Requires-Dist: langchain-openai (>=0.2.0,<0.3.0)
+Requires-Dist: langgraph (>=0.2.23,<0.3.0)
+Requires-Dist: langgraph-checkpoint-postgres (>=2.0.0,<3.0.0)
+Requires-Dist: langgraph-checkpoint-sqlite (>=2.0.0,<3.0.0)
+Requires-Dist: psycopg (>=3.1.18,<4.0.0)
+Requires-Dist: psycopg-binary (>=3.1.18,<4.0.0)
+Requires-Dist: psycopg_pool (>=3.2.2,<4.0.0)
+Requires-Dist: python-dotenv (>=1.0.1,<2.0.0)
+Project-URL: Repository, https://github.com/FridonAI/fridon-ai
+Description-Content-Type: text/markdown
+
+# FridonAI Core
+
+This package contains the core functionality for FridonAI, including plugins, utilities, and graph-based processing.
+
+## Installation
+
+You can install this package using pip:
+
+```bash
+pip install fridonai-core
+```
+
+## Usage
+
+Import and use the core components in your FridonAI projects:
+
+```python
+from fridonai_core.plugins import BasePlugin, BaseTool, BaseUtility
+```
+
+
+For more detailed usage instructions, please refer to the FridonAI documentation.
