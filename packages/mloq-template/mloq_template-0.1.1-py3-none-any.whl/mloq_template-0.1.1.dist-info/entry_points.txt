@@ -1,0 +1,2 @@
+[console_scripts]
+mloq-template = mloq_template.__main__:run
