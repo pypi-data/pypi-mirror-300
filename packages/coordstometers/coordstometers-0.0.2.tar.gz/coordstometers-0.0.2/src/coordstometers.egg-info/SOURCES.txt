@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+src/coordstometers/__init__.py
+src/coordstometers/main.py
+src/coordstometers.egg-info/PKG-INFO
+src/coordstometers.egg-info/SOURCES.txt
+src/coordstometers.egg-info/dependency_links.txt
+src/coordstometers.egg-info/top_level.txt
+tests/test.py

@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: coordstometers
+Version: 0.0.2
+Summary: Converts GPS coordinates to meters coordinates centered at some point and back
+Author: ThisTemba
+Project-URL: Homepage, https://github.com/ThisTemba/coordstometers
+Project-URL: Issues, https://github.com/ThisTemba/coordstometers/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Coords to Meters
+
+This is a simple python script that converts coordinates to meters. It uses the haversine formula to calculate the distance between two points on the earth's surface.
+
+(pssst: the haversine formula is kind of like the pythagorean theorem but for the surface of a sphere)
