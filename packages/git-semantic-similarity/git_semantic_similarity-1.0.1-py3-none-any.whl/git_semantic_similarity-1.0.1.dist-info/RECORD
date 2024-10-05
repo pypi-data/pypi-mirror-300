@@ -1,0 +1,9 @@
+src/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+src/cli.py,sha256=VsU5Of7jlLs4BR5mu0XWKOBqbqlAPPO_ZKlDgqGw8Xo,5828
+src/embeddings.py,sha256=zDHK0I3JjmooVd26ELN5sZ6v0y7pqWaqRFm_Ko3wWkg,2786
+git_semantic_similarity-1.0.1.dist-info/LICENSE,sha256=mWGleDECF2fSr2XAjwtVtZmupJXplMMkTjrZ07rxJCI,1079
+git_semantic_similarity-1.0.1.dist-info/METADATA,sha256=Q_r-AP68sOax0HzmeUlaNowDOHwVgj0NSnxELty0b4U,4432
+git_semantic_similarity-1.0.1.dist-info/WHEEL,sha256=GV9aMThwP_4oNCtvEC2ec3qUYutgWeAzklro_0m4WJQ,91
+git_semantic_similarity-1.0.1.dist-info/entry_points.txt,sha256=JpYoombuqGYoDm-2lNEzrbHyIwE4fczw7Rr_Nhs3378,40
+git_semantic_similarity-1.0.1.dist-info/top_level.txt,sha256=74rtVfumQlgAPzR5_2CgYN24MB0XARCg0t-gzk6gTrM,4
+git_semantic_similarity-1.0.1.dist-info/RECORD,,
