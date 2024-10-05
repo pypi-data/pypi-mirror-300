@@ -1,0 +1,6 @@
+PyQt5
+plexapi
+spotipy
+deezer-python
+requests
+fuzzywuzzy

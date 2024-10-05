@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/Syncra/__init__.py
+src/Syncra/main.py
+src/Syncraa.egg-info/PKG-INFO
+src/Syncraa.egg-info/SOURCES.txt
+src/Syncraa.egg-info/dependency_links.txt
+src/Syncraa.egg-info/entry_points.txt
+src/Syncraa.egg-info/requires.txt
+src/Syncraa.egg-info/top_level.txt

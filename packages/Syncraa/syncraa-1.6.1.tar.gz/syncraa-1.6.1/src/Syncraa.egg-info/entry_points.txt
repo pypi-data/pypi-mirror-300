@@ -1,0 +1,2 @@
+[console_scripts]
+Syncraa = Syncraa.main:main

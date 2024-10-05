@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: Syncraa
+Version: 1.6.1
+Summary: A tool to manage Plex playlists and import from streaming services
+Home-page: https://github.com/jaylex32/Syncra
+Author: jaylex32
+Author-email: jayrossproduction@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: PyQt5
+Requires-Dist: plexapi
+Requires-Dist: spotipy
+Requires-Dist: deezer-python
+Requires-Dist: requests
+Requires-Dist: fuzzywuzzy
+
+## Syncra
+
+### Syncra is a powerful and intuitive application designed to manage your Plex playlists effortlessly. With a modern and user-friendly interface, it allows you to:
+
+- Import .m3u and .m3u8 playlists into Plex.
+- Export your Plex playlists to .m3u files.
+- Delete unwanted playlists from your Plex server.
+- Convert playlists from popular streaming services like Spotify, Deezer, and Tidal directly into Plex playlists.
