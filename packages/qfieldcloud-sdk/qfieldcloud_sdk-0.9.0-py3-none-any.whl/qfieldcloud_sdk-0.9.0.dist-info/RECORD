@@ -1,0 +1,12 @@
+qfieldcloud_sdk/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+qfieldcloud_sdk/__main__.py,sha256=8hDtWlaFZK24KhfNq_ZKgtXqYHsDQDetukOCMlsbW0Q,59
+qfieldcloud_sdk/cli.py,sha256=HHSQWsagDCbJaGTdDt5LcmyAFC1rbqQVeoJ2vu_nSiI,22311
+qfieldcloud_sdk/interfaces.py,sha256=5VCxfYl-RlKVwtDl390xznUDypX5xAwhwX4BNkzg-MA,2257
+qfieldcloud_sdk/sdk.py,sha256=FfqaQ5bANnU3pevMnfYdD1BTkT_lf9QL3n2VPMWGDHY,48332
+qfieldcloud_sdk/utils.py,sha256=jjk-6sebanXHvgMYUMCtlQ3mUgkmAJjJYbVKQ_qepfw,3580
+qfieldcloud_sdk-0.9.0.dist-info/LICENCE,sha256=WIUR-uGyAF56dHuxdNfqZDaRIptoMGDy6i9Wgb883qQ,1054
+qfieldcloud_sdk-0.9.0.dist-info/METADATA,sha256=6Vw4GTmYkcgsp42ZSeY87hI3_y-acvBMx4ByPH3RYSs,4637
+qfieldcloud_sdk-0.9.0.dist-info/WHEEL,sha256=GV9aMThwP_4oNCtvEC2ec3qUYutgWeAzklro_0m4WJQ,91
+qfieldcloud_sdk-0.9.0.dist-info/entry_points.txt,sha256=gw4ktngo94D_z5nSHy0qJ5FgLPvOr3H9-mDT7rTwQHE,60
+qfieldcloud_sdk-0.9.0.dist-info/top_level.txt,sha256=a9Q4YJl07lgo4r20yk1XX9skc3qaeu3chz986h5YDdI,16
+qfieldcloud_sdk-0.9.0.dist-info/RECORD,,
