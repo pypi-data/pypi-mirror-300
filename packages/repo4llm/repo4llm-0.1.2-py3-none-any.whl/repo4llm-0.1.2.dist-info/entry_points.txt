@@ -1,0 +1,2 @@
+[console_scripts]
+repo4llm = repo4llm:generate_tree
