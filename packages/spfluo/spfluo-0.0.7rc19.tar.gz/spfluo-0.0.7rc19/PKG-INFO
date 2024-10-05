@@ -1,0 +1,75 @@
+Metadata-Version: 2.3
+Name: spfluo
+Version: 0.0.7rc19
+Summary: SPFluo package
+Project-URL: Repository, https://github.com/jplumail/spfluo.git
+Author-email: Jean Plumail <jplumail@unistra.fr>
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.9
+Requires-Dist: array-api-compat>=1.6
+Requires-Dist: matplotlib
+Requires-Dist: numpy
+Requires-Dist: ome-types
+Requires-Dist: scikit-image>=0.21
+Requires-Dist: scikit-learn
+Requires-Dist: scipy
+Requires-Dist: tqdm
+Requires-Dist: typing-extensions; python_version < '3.10'
+Provides-Extra: ab-initio-reconstruction
+Requires-Dist: simpleitk; extra == 'ab-initio-reconstruction'
+Provides-Extra: all
+Requires-Dist: albumentations; extra == 'all'
+Requires-Dist: napari-bbox-spfluo; extra == 'all'
+Requires-Dist: napari<0.4.19,>=0.4.18; extra == 'all'
+Requires-Dist: numpy<2; extra == 'all'
+Requires-Dist: simpleitk; extra == 'all'
+Requires-Dist: tensorboard; extra == 'all'
+Requires-Dist: torch; extra == 'all'
+Provides-Extra: manual-picking
+Requires-Dist: napari-bbox-spfluo; extra == 'manual-picking'
+Requires-Dist: napari<0.4.19,>=0.4.18; extra == 'manual-picking'
+Requires-Dist: numpy<2; extra == 'manual-picking'
+Provides-Extra: picking
+Requires-Dist: albumentations; extra == 'picking'
+Requires-Dist: tensorboard; extra == 'picking'
+Requires-Dist: torch; extra == 'picking'
+Provides-Extra: visualisation
+Requires-Dist: napari-bbox-spfluo; extra == 'visualisation'
+Requires-Dist: napari<0.4.19,>=0.4.18; extra == 'visualisation'
+Requires-Dist: numpy<2; extra == 'visualisation'
+Description-Content-Type: text/markdown
+
+# SP-Fluo
+
+This repository contains code for picking and single particle reconstruction in fluorescence imaging.
+
+Pipeline :
+1. [picking](spfluo/picking)
+2. for centrioles only : [cleaning with segmentation](spfluo/segmentation) and [alignement](spfluo/alignement)
+3. [reconstruction ab-initio](spfluo/ab_initio_reconstruction/)
+4. [refinement](spfluo/refinement/)
+
+## Installation
+
+```bash
+git clone https://github.com/jplumail/spfluo
+```
+
+```bash
+cd spfluo
+pip install .
+```
+
+## Run tests
+
+To test for python 3.9, 3.10 and 3.11:
+```bash
+hatch test spfluo
+```
+
+For python 3.8:
+```bash
+hatch env run -e hatch-test-38 pytest -- spfluo
+```
