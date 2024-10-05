@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: dagster-cloudquery
+Version: 0.1.2
+Summary: Implements a CloudQuery resource that can be used within Dagster
+Author: CloudQuery
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: dagster
+Requires-Dist: dagster-cloud
+
+## dagster-cloudquery
+
+This implements a CloudQuery resource that can be used within Dagster.
+
+### Installation
+
+```bash
+pip install dagster-cloudquery
+```

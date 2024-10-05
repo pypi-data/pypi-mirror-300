@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+dagster_cloudquery/__init__.py
+dagster_cloudquery/py.typed
+dagster_cloudquery/resource.py
+dagster_cloudquery/version.py
+dagster_cloudquery.egg-info/PKG-INFO
+dagster_cloudquery.egg-info/SOURCES.txt
+dagster_cloudquery.egg-info/dependency_links.txt
+dagster_cloudquery.egg-info/requires.txt
+dagster_cloudquery.egg-info/top_level.txt
