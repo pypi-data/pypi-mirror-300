@@ -1,0 +1,3 @@
+[console_scripts]
+dec64=dec64.__main__:main
+
