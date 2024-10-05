@@ -1,0 +1,11 @@
+ArcData/Conditions.py,sha256=sjuZQEyNYlW6FbytsDjYMT0Deltptt8PKL7ZH1TxRl4,1543
+ArcData/Manager.py,sha256=0TSAQaCPyEDSymC-rVW0rHgK33s6GiVjAEJ5ewoFkI4,2678
+ArcData/__init__.py,sha256=I2SDuaBTeFxiNRnbdPFjF2YGJgC7kO7dmzk9FkXTgpg,19
+ArcData/Utils/File.py,sha256=s8RY1KzzX_agaXcZGD_r204bdBCy46TNUcQnULIld6w,945
+ArcData/Utils/Models.py,sha256=XHCOBBKajUodot405xmHtTRKc6sIrJ7VSum0e7McP7M,2079
+ArcData/Utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+arcdata-0.1a1.dist-info/LICENSE,sha256=ixuiBLtpoK3iv89l7ylKkg9rs2GzF9ukPH7ynZYzK5s,35148
+arcdata-0.1a1.dist-info/METADATA,sha256=cuybvgggYRe-h8b-_R1zpKs08t4unkbDH8ZPDGMog7Q,237
+arcdata-0.1a1.dist-info/WHEEL,sha256=eOLhNAGa2EW3wWl_TU484h7q1UNgy0JXjjoqKoxAAQc,92
+arcdata-0.1a1.dist-info/top_level.txt,sha256=EYH2FdM4p72KTx2lHBm_SrXWRI0e1sqG7YQpAum14Ak,8
+arcdata-0.1a1.dist-info/RECORD,,
