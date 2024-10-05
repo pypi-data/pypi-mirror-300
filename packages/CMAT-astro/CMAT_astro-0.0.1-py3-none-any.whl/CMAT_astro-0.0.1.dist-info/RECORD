@@ -1,0 +1,11 @@
+cmat/__init__.py,sha256=OVlSJwuHkYC1r1u8betJrnyLOl9jJKq5iE2HETCbiEM,241
+cmat/base.py,sha256=zYF9xu1bsTcFD7PD7FTcm9_Yp4ZNeosyPqHBXB3uWuw,20335
+cmat/constant.py,sha256=ADuaxvXq_9NmE7p4hvF51V81TqK3FsSQQSU5bclhVgA,106
+cmat/singlefit.py,sha256=MMN0XovtPQu3Wn56DEUsi2hp3l0GMQAUtC1q8_CaDTo,3553
+cmat/ttv_sim.py,sha256=YHGApG0qO2D6paRQi79VnTk8i3zoKQ5gf8Ea0B18wGA,10175
+cmat/utils.py,sha256=3X41ODIhJXgsnsMhfz_jcW9EMwVKOz83CTUlaUy0vg0,2593
+CMAT_astro-0.0.1.dist-info/LICENSE,sha256=ONPTEHTZhSye4B3OijvkHcprPV5JxDkz7ckh3-THoz8,1072
+CMAT_astro-0.0.1.dist-info/METADATA,sha256=YELOhKFAcQIk1yKXBU7sU5aLdffUfK4wuuFV_LkeO0s,610
+CMAT_astro-0.0.1.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+CMAT_astro-0.0.1.dist-info/top_level.txt,sha256=MQwRN5tdg9G5YUJUBugqASq3eu2LkOYcrKU-Y1A-BMo,5
+CMAT_astro-0.0.1.dist-info/RECORD,,
