@@ -1,0 +1,9 @@
+README.md
+setup.py
+onnxdumper/__init__.py
+onnxdumper/dumper.py
+onnxdumper.egg-info/PKG-INFO
+onnxdumper.egg-info/SOURCES.txt
+onnxdumper.egg-info/dependency_links.txt
+onnxdumper.egg-info/requires.txt
+onnxdumper.egg-info/top_level.txt

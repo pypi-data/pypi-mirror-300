@@ -1,0 +1,49 @@
+# onnxdumper
+
+这是一个用于 ONNX 推理会话的 Python 包，通过额外创建一个 ONNX 推理会话加载修改了输出接口的 ONNX 模型，以便在导出 ONNX 推理中间层的输出。
+
+## 安装
+
+```sh
+pip install onnxdumper
+```
+## 使用
+
+```python
+import onnxruntime
+import onnxdumper
+
+# 将 onnxruntime.InferenceSession 替换为 onnxdumper.InferenceSession 即可
+# session = onnxdumper.InferenceSession("path/to/your/model.onnx")
+session = onnxdumper.InferenceSession("path/to/your/model.onnx")
+
+# 准备输入数据
+input_feed = {
+    "input_name": input_data
+}
+
+# 运行推理并导出中间层输出
+output_names = ["output_name"]
+results = session.run(output_names, input_feed, dump_path="path/to/save/outputs")
+```
+
+## 导出格式
+导出格式为 `npz`，使用 `numpy` 进行加载，data 的 key 为输出节点的名称，value 为输出节点的数据。
+```python
+import numpy as np
+data = np.load("path/to/save/outputs.npz")
+for key in data.keys():
+    print(key, data[key], data[key].shape, data[key].dtype)
+```
+
+## 节点输出的key查看方式
+### 1. 使用 onnx 加载模型查看
+```python
+model = onnx.load(path_or_bytes)
+for node in model.graph.node:
+    print(node.output)
+```
+### 2. 使用 netron 查看
+
+# License
+MIT
