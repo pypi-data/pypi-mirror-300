@@ -1,0 +1,24 @@
+[build-system]
+requires = ["flit_core >=3.2,<4"]
+build-backend = "flit_core.buildapi"
+
+[project]
+name = "cv2_detection"
+readme = "README.md"
+license = {file = "LICENSE"}
+dynamic = ["version", "description"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: Apache Software License",
+]
+authors = [
+    {name ="sfkan6", email ="sfkan6@yandex.ru"}
+]
+keywords = ['opencv', 'cv2', 'object', 'detection']
+
+requires-python = ">=3.7"
+dependencies = ["opencv-python>=4.10.0.84"]
+
+
+[project.urls]
+Home = "https://github.com/sfkan6/opencv-object-detection"
