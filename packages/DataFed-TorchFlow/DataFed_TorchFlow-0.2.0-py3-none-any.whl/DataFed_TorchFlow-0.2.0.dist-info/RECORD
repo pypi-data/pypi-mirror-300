@@ -1,0 +1,10 @@
+datafed_torchflow/JSON.py,sha256=wDRU4rOngUkBP7JUd6IMPtolLUll2SvjJnfERxdbxBM,1160
+datafed_torchflow/__init__.py,sha256=WgK-0CV3g-Twy6bGsk-rII3rZzOEXHZQS_STOX8ovqE,588
+datafed_torchflow/computer.py,sha256=WjQc7QYp6WlzGdx99rgReLDdwlz0qRTfSIYuEKXSkf0,3252
+datafed_torchflow/datafed.py,sha256=ICcQmUGqfTMXMRgibSKlAxGjtJUNV3xl2mf9Ol1Hy7k,33527
+datafed_torchflow/pytorch.py,sha256=Pt-HA7hniHGTxPBveCViIsAs8-ImCNSr7fsPjnOmYKc,27485
+datafed_torchflow/utils.py,sha256=Ha2YRstQUNJnOy4sir9Jt3D6E0a19N6_RTqNxOTwc10,5391
+DataFed_TorchFlow-0.2.0.dist-info/METADATA,sha256=bJZ4Czx61ftukoIxaOE8sd3xctFMYFaj3ZwVoGL4tDI,2180
+DataFed_TorchFlow-0.2.0.dist-info/WHEEL,sha256=GV9aMThwP_4oNCtvEC2ec3qUYutgWeAzklro_0m4WJQ,91
+DataFed_TorchFlow-0.2.0.dist-info/top_level.txt,sha256=82SWbzJxg1CJI7IoEN619Verd0Tqu3sztBbkbx7coc0,18
+DataFed_TorchFlow-0.2.0.dist-info/RECORD,,
