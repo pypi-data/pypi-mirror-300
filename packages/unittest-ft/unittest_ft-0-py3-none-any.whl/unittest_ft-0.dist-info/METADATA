@@ -1,0 +1,45 @@
+Metadata-Version: 2.1
+Name: unittest-ft
+Version: 0
+Summary: Run tests in parallel with free threading
+Author-email: Amethyst Reese <amethyst@n7.gg>
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+Requires-Dist: attribution>=1.8 ; extra == "dev"
+Requires-Dist: black==24.8.0 ; extra == "dev"
+Requires-Dist: build>=1.2 ; extra == "dev"
+Requires-Dist: flake8==7.1.1 ; extra == "dev"
+Requires-Dist: mypy==1.11.2 ; extra == "dev"
+Requires-Dist: ufmt==2.7.2 ; extra == "dev"
+Requires-Dist: usort==1.0.8 ; extra == "dev"
+Project-URL: Home, https://github.com/amyreese/unittest-ft
+Provides-Extra: dev
+
+# unittest-ft
+
+Run tests in parallel with free threading
+
+[![version](https://img.shields.io/pypi/v/unittest-ft.svg)](https://pypi.org/project/unittest-ft)
+[![license](https://img.shields.io/pypi/l/unittest-ft.svg)](https://github.com/amyreese/unittest-ft/blob/main/LICENSE)
+
+
+Install
+-------
+
+```shell-session
+$ pip install unittest-ft
+```
+
+
+Usage
+-----
+
+```py
+import unittest_ft
+```
+
+
+License
+-------
+
+unittest-ft is copyright Amethyst Reese, and licensed under the MIT license.
