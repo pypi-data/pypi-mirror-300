@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: correlationinspector
+Version: 0.1.0
+Summary: Un package Python pour analyser la corrélation, incluant des tests de normalité, de linéarité, et des visualisations pour évaluer les relations entre variables.
+Home-page: https://github.com/chabiadjobo/correlationinspector
+Author: CHABI ADJOBO AYEDESSO
+Author-email: aurelus.chabi@gmail.com
+Project-URL: Documentation, https://medium.com/@chamaurele/analysez-les-corrélations-facilement-avec-correlationinspector-un-package-python-9037c664dffb
+Project-URL: Source Code, https://github.com/chabiadjobo/correlationinspector
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Requires-Python: >=3.6
+License-File: LICENSE

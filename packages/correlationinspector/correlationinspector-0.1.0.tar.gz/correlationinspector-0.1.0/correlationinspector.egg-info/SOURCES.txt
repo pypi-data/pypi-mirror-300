@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+correlationinspector/__init__.py
+correlationinspector/correlation_analysis.py
+correlationinspector/utils.py
+correlationinspector.egg-info/PKG-INFO
+correlationinspector.egg-info/SOURCES.txt
+correlationinspector.egg-info/dependency_links.txt
+correlationinspector.egg-info/requires.txt
+correlationinspector.egg-info/top_level.txt
