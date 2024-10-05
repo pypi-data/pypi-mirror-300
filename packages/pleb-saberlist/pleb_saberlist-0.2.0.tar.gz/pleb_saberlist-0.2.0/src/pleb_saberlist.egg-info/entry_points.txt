@@ -1,0 +1,2 @@
+[console_scripts]
+saberlist = saberlist.make:saberlist

@@ -1,0 +1,45 @@
+[build-system]
+requires = ["setuptools>=65.5.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pleb-saberlist"
+version = "0.2.0"
+description = "Beat Saber playlist tool"
+readme = "README.md"
+authors = [{ name = "blee", email = "git@blee.tube" }]
+license = { file = "LICENSE" }
+keywords = ["reddit"]
+dependencies = [
+    'build>=1.2.1',
+    'requests>=2.31.0',
+    'pytest>=8.1.1',
+    'python-dotenv>=1.0.1',
+    'PyScoreSaber>=1.0.10',
+    'beatsaver>=1.0.1'
+]
+requires-python = ">=3.8.10"
+classifiers = [
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: Implementation :: CPython",
+    "Programming Language :: Python :: Implementation :: PyPy",
+    "Topic :: Utilities",
+    "License :: OSI Approved :: Apache Software License",    
+]
+
+[project.urls]
+Homepage = "https://git.satstack.dev/blee/beatsaber-playlist-tool"
+
+# https://setuptools.pypa.io/en/latest/userguide/entry_point.html
+[project.scripts]
+#player_scores_by_stars = "saberlist.scoresaber:replay_ranked"
+#replay_all_by_acc = "saberlist.scoresaber:replay_all_by_acc"
+#leaderboard_songs_by_stars = "saberlist.scoresaber:leaderboard_songs"
+#saberlist_replay_bl = "saberlist.beatleader:saberlist_replay_bl"
+saberlist = "saberlist.make:saberlist"
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
