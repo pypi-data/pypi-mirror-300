@@ -1,0 +1,10 @@
+LICENSE.txt
+README.md
+setup.cfg
+setup.py
+Rocklogger/Rocklogger.py
+Rocklogger/__init__.py
+Rocklogger.egg-info/PKG-INFO
+Rocklogger.egg-info/SOURCES.txt
+Rocklogger.egg-info/dependency_links.txt
+Rocklogger.egg-info/top_level.txt
