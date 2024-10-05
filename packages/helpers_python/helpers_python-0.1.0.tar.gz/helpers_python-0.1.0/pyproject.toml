@@ -1,0 +1,28 @@
+[tool.poetry]
+name = "helpers_python"
+version = "0.1.0"
+description = ""
+authors = ["Piyush Gambhir <90608533+piyush-gambhir@users.noreply.github.com>"]
+readme = "README.md"
+packages = [
+    { include = "mongo_helpers" },
+    { include = "typesense_helpers" },
+    { include = "aws_helpers" },
+    { include = "utils" },
+]
+
+
+[tool.poetry.dependencies]
+python = "^3.12"
+pymongo = "^4.9.1"
+pytest = "^8.3.3"
+python-dotenv = "^1.0.1"
+requests = "^2.32.3"
+rich = "^13.8.1"
+typesense = "^0.21.0"
+boto3 = "^1.35.29"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
