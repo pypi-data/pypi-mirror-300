@@ -1,0 +1,8 @@
+cgservo/__init__.py,sha256=5lzS2KEqa10itRhu7G25b7de_0s7EfoSprfiMTqP-CM,66
+cgservo/pca9685.py,sha256=s6ufcukbLxoiZPuurOynnno8Tm8eWlNrXrMGFlLgnzQ,10414
+cgservo/servo.py,sha256=cxH3eSi8tIo4FWguMLi__b_4G2l3wRV4cHlSkqfsil4,7056
+cgservo-1.2.dist-info/LICENSE,sha256=Sbp1nu8nF_35o3jyS3y5pW218IukGztv2hAV7w5d_6Y,11346
+cgservo-1.2.dist-info/METADATA,sha256=Wdmwr6XVgmU9H0BvKcE_MFp2nYsebiF88D5UxRU9YZc,310
+cgservo-1.2.dist-info/WHEEL,sha256=GV9aMThwP_4oNCtvEC2ec3qUYutgWeAzklro_0m4WJQ,91
+cgservo-1.2.dist-info/top_level.txt,sha256=N1coffgUvYr-Gx_pyM_-Fb05ee7lsriaYWuwmcrzM6o,8
+cgservo-1.2.dist-info/RECORD,,

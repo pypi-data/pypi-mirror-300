@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: cgservo
+Version: 1.2
+Summary: Control servo or BLDC ESC via PCA9685 PWM driver
+Home-page: https://github.com/IndoorCorgi/cgservo
+Author: Indoor Corgi
+Author-email: indoorcorgi@gmail.com
+License: Apache License 2.0
+Requires-Python: >=3.9
+License-File: LICENSE
+Requires-Dist: smbus2
+
