@@ -1,0 +1,139 @@
+{% load i18n static %}<!DOCTYPE html>
+{% get_current_language as LANGUAGE_CODE %}{% get_current_language_bidi as LANGUAGE_BIDI %}
+<html lang="{{ LANGUAGE_CODE|default:"en-us" }}" dir="{{ LANGUAGE_BIDI|yesno:'rtl,ltr,auto' }}">
+<head>
+    <title>{% block title %}{% endblock %}</title>
+    <link rel="stylesheet" href="{% block stylesheet %}{% static "css/styles.css" %}{% endblock %}">
+
+    <!-- Include Select2 CSS -->
+    <link href="{% static 'js/select2/css/select2.min.css' %}" rel="stylesheet"/>
+    <link rel="stylesheet" href="{% static 'css/sweetalert2.min.css' %}">
+
+    <style>
+        .active-background {
+            background: var(--bs-primary-bg-subtle) !important; /* Background color */
+            color: var(--bs-primary) !important; /* Text color */
+            border-radius: 7px !important;
+        }
+
+        .pl-16 {
+            padding-left: 16px !important;
+        }
+
+        .ml-16 {
+            margin-left: 16px;
+        }
+
+        .sidebar-nav ul .sidebar-item .first-level .sidebar-item .sidebar-link:hover {
+            background-color: var(--bs-primary-bg-subtle);;
+            color: var(--bs-primary);
+        }
+
+        .object-tools {
+            text-align: right;
+            list-style: none;
+        }
+
+        .object-tools li {
+            display: inline-block;
+            margin-left: 7px;
+        }
+
+        .object-tools li a {
+            text-decoration: none;
+        }
+    </style>
+
+    {% block extrastyle %}{% endblock %}
+    {% if LANGUAGE_BIDI %}
+        <link rel="stylesheet" href="{% block stylesheet_rtl %}{% static "admin/css/rtl.css" %}{% endblock %}">
+    {% endif %}
+        <meta name="robots" content="NONE,NOARCHIVE">{% endblock %}
+</head>
+
+<body class="{% if is_popup %}popup {% endif %}{% block bodyclass %}{% endblock %}"
+      data-admin-utc-offset="{% now "Z" %}">
+{#<a href="#content-start" class="skip-to-content-link">{% translate 'Skip to main content' %}</a>#}
+<!-- Container -->
+
+
+<div id="main-wrapper">
+    {% if user.is_authenticated %}
+        <!-- Sidebar Start -->
+        {% block nav-sidebar %}
+            {% include "admin/nav_sidebar.html" %}
+        {% endblock %}
+        <!--  Sidebar End -->
+    {% endif %}
+
+    <div class="{% if user.is_authenticated %}page-wrapper{% endif %}">
+        {% if user.is_authenticated %}
+            {% include 'admin/components/header.html' %}
+        {% endif %}
+
+        <div class="{% if user.is_authenticated %}body-wrapper{% endif %}">
+            {% block messages %}
+                {% if messages %}
+                    {% for message in messages %}
+                        <div class="mx-4">
+                            <div class="alert customize-alert alert-light-{{ message.tags }} bg-{{ message.tags }}-subtle text-{{ message.tags }} alert-dismissible fade show"
+                                 role="alert">
+                                <button type="button" class="btn-close btn-close" data-bs-dismiss="alert"
+                                        aria-label="Close"></button>
+                                {{ message|capfirst }}
+                            </div>
+                        </div>
+                    {% endfor %}
+                {% endif %}
+            {% endblock messages %}
+
+            <div class="container-fluid mw-100 {% if not user.is_authenticated %} p-0 {% endif %}">
+                {% block pretitle %}{% endblock %}
+                {#                {% block content_title %}{% if title %}<h1>{{ title }}</h1>{% endif %}{% endblock %}#}
+                {#                {% block content_subtitle %}{% if subtitle %}<h2>{{ subtitle }}</h2>{% endif %}{% endblock %}#}
+                {% block content %}
+                    {% block object-tools %}{% endblock %}
+                    {{ content }}
+                {% endblock %}
+                {% block sidebar %}{% endblock %}
+                {#                <br class="clear">#}
+            </div>
+
+            {% if user.is_authenticated %}
+                {% include 'admin/components/footer.html' %}
+            {% endif %}
+
+        </div>
+        <script>
+            function handleColorTheme(e) {
+                document.documentElement.setAttribute("data-color-theme", e);
+            }
+        </script>
+    </div>
+</div>
+<div class="dark-transparent sidebartoggler"></div>
+
+<script src="{% static 'js/vendor.min.js' %}"></script>
+<!-- Import Js Files -->
+<script src="{% static 'js/bootstrap.bundle.min.js' %}"></script>
+<script src="{% static 'js/simplebar.min.js' %}"></script>
+<script src="{% static 'js/app.init.js' %}"></script>
+<script src="{% static 'js/theme.js' %}"></script>
+<script src="{% static 'js/app.min.js' %}"></script>
+<script src="{% static 'js/sidebarmenu.js' %}"></script>
+
+<!-- solar icons -->
+<script src="{% static 'js/iconify-icon.min.js' %}"></script>
+{#<script src="{% static 'js/apexcharts.min.js' %}"></script>#}
+<script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+{#<script src="{% static 'js/dashboard.js' %}"></script>#}
+
+<script src="{% static 'js/select2/js/select2.full.min.js' %}"></script>
+<script src="{% static 'js/select2/js/select2.min.js' %}"></script>
+<script src="{% static 'js/select2/js/select2.init.js' %}"></script>
+<script src="{% static 'js/plugins/toastr-init.js' %}"></script>
+
+<script src="{% static 'js/sweetalert2.min.js' %}"></script>
+<script src="{% static 'js/sweet-alert.init.js' %}"></script>
+</body>
+</html>

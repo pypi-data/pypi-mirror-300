@@ -1,0 +1,35 @@
+{% load i18n admin_urls %}
+
+{% block object-tools-items %}
+    {% if has_add_permission %}
+        {% url cl.opts|admin_urlname:'add' as add_url %}
+        <a href="{% add_preserved_filters add_url is_popup to_field %}"
+           class="btn bg-primary-subtle text-primary ms-2">
+            <i class="ti ti-plus me-1"></i>
+            {% blocktranslate with cl.opts.verbose_name as name %}Add {{ name }}{% endblocktranslate %}
+        </a>
+    {% endif %}
+{% endblock %}
+
+<script>
+    const importLink = document.querySelector('.import_link');
+    if (importLink) {
+        const icon = document.createElement('i');
+        icon.className = 'ti ti-upload me-2';
+        importLink.innerHTML = '';
+        importLink.appendChild(icon);
+        importLink.innerHTML += 'Import';
+        importLink.classList.add('btn', 'bg-success-subtle', 'text-success');
+    }
+
+    const exportLink = document.querySelector('.export_link');
+    if (exportLink) {
+        const icon = document.createElement('i');
+        icon.className = 'ti ti-download me-2';
+        exportLink.innerHTML = '';
+        exportLink.appendChild(icon);
+        exportLink.innerHTML += 'Export';
+        exportLink.classList.add('btn', 'bg-danger-subtle', 'text-danger');
+    }
+</script>
+
