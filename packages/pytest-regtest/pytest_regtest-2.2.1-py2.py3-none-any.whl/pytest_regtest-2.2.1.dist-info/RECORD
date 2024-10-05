@@ -1,0 +1,12 @@
+pytest_regtest/__init__.py,sha256=d-L1wYyQqhts4dHKV5SnOqlhyjk6I7Yva78xgDrS8Zk,2408
+pytest_regtest/numpy_handler.py,sha256=UZyp9GqO07Kq07qgNSGJq5JXw2vUlgfljGeoxco95Mk,6919
+pytest_regtest/pandas_handler.py,sha256=wlCVYLQU_CJ0x6r9Nok3ToF4CXm8eydBkoil-Nu2rEk,4249
+pytest_regtest/pytest_regtest.py,sha256=NfeOsO-YtnEq0K7fltTQMvFmA4EP6QWlqg3r59ABLyw,22344
+pytest_regtest/register_third_party_handlers.py,sha256=UboIatgRB8I2uvZyL-4BfRLZw5YDyh2wpElP8jeOH10,755
+pytest_regtest/snapshot_handler.py,sha256=QxPKP8fNA69OEFUcfM0OlYUzd3cYrMgSOqzRzbYxpxM,6085
+pytest_regtest/utils.py,sha256=2jYTlV_qL5hH6FCeg7T1HJJvKual-Kux2scJ9_aB1lY,811
+pytest_regtest-2.2.1.dist-info/METADATA,sha256=6qoBsWn6A8m37ff-PnqJRnivHf1KjlAvDnuaS23GZy0,3302
+pytest_regtest-2.2.1.dist-info/WHEEL,sha256=fl6v0VwpzfGBVsGtkAkhILUlJxROXbA3HvRL6Fe3140,105
+pytest_regtest-2.2.1.dist-info/entry_points.txt,sha256=4VuIhXeMGhDo0ATbaUfyjND0atofmZjV_P-o6_uEk2s,36
+pytest_regtest-2.2.1.dist-info/licenses/LICENSE.txt,sha256=Tue36uAzpW79-9WAqzkwPhsDDVd1X-VWUmdZ0MfGYvk,1068
+pytest_regtest-2.2.1.dist-info/RECORD,,

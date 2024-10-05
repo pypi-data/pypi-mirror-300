@@ -1,0 +1,90 @@
+Metadata-Version: 2.3
+Name: pytest-regtest
+Version: 2.2.1
+Summary: pytest plugin for snapshot regression testing
+Project-URL: Source, https://gitlab.com/uweschmitt/pytest-regtest
+Project-URL: Documentation, https://pytest-regtest.readthedocs.org
+Author-email: Uwe Schmitt <uwe.schmitt@id.ethz.ch>
+License: MIT License
+License-File: LICENSE.txt
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: pytest>7.2
+Provides-Extra: dev
+Requires-Dist: black; extra == 'dev'
+Requires-Dist: build; extra == 'dev'
+Requires-Dist: hatchling; extra == 'dev'
+Requires-Dist: jinja2-cli; extra == 'dev'
+Requires-Dist: mistletoe; extra == 'dev'
+Requires-Dist: mkdocs; extra == 'dev'
+Requires-Dist: mkdocs-awesome-pages-plugin; extra == 'dev'
+Requires-Dist: mkdocs-material; extra == 'dev'
+Requires-Dist: mkdocstrings[python]; extra == 'dev'
+Requires-Dist: numpy; extra == 'dev'
+Requires-Dist: pandas; extra == 'dev'
+Requires-Dist: pre-commit; extra == 'dev'
+Requires-Dist: pytest-cov; extra == 'dev'
+Requires-Dist: ruff; extra == 'dev'
+Requires-Dist: twine; extra == 'dev'
+Requires-Dist: wheel; extra == 'dev'
+Description-Content-Type: text/markdown
+
+# About
+
+## Introduction
+
+`pytest-regtest` is a plugin for [pytest](https://pytest.org) to implement
+**regression testing**.
+
+Unlike [functional testing](https://en.wikipedia.org/wiki/Functional_testing),
+[regression testing](https://en.wikipedia.org/wiki/Regression_testing)
+testing does not test whether the software produces the correct
+results, but whether it behaves as it did before changes were introduced.
+
+More specifically, `pytest-regtest` provides **snapshot testing**, which
+implements regression testing by recording data within a test function
+and comparing this recorded output to a previously recorded reference
+output.
+
+
+## Installation
+
+To install and activate this plugin execute:
+
+    $ pip install pytest-regtest
+
+
+## Use case 1: Changing code with no or little testing setup yet
+If you're working with code that has little or no unit testing, you
+can use regression testing to ensure that your changes don't break or
+alter previous results.
+
+**Example**: This can be useful when working with scientific data
+analysis scripts, which often start a long script and then are
+restructured into different functions.
+
+
+## Use case 2:  Testing complex data
+
+If your unit tests contain a lot of `assert` statements to check
+a complex data structure you can use regression tests instead.
+
+**Example**: To test code which ingests data into a database one can
+use regression tests on textual database dumps.
+
+## Use case 3: Testing numpy arrays or pandas data frames
+
+If code produces numerical results, such as `numpy` arrays or
+`pandas` data frames, you can use `pytest-regtest` to simply record
+such results and test later with considering relative
+and absolute tolerances.
+
+**Example**:
+A function creates a 10 x 10 matrix. Either you have to write 100
+assert statements or you use summary statistics to test your result.
+In both cases, you may get little debugging information if a test
+fails.
