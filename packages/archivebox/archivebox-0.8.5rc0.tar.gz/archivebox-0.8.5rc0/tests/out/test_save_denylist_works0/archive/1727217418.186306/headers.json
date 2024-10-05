@@ -1,0 +1,14 @@
+{
+    "URL": "http://127.0.0.1:8080/static/example.com.html",
+    "Status-Code": 200,
+    "Elapsed": 1.5790000000000002,
+    "Encoding": "UTF-8",
+    "Apparent-Encoding": "utf-8",
+    "Server": "WSGIServer/0.2 CPython/3.11.9",
+    "Content-Type": "text/html; charset=UTF-8",
+    "Content-Length": "1188",
+    "Last-Modified": "Wed, 15 May 2024 10:28:06 GMT",
+    "Date": "Tue, 24 Sep 2024 22:36:58 GMT",
+    "Etag": "385fa4485525b33aebdad4f522066899ce1ad3b1",
+    "Accept-Ranges": "bytes"
+}
