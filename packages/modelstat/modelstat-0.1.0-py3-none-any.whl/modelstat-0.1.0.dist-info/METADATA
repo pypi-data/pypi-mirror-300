@@ -1,0 +1,14 @@
+Metadata-Version: 2.3
+Name: modelstat
+Version: 0.1.0
+Summary: Your package description
+Author-email: Your Name <your.email@example.com>
+Requires-Python: >=3.11
+Requires-Dist: numpy
+Description-Content-Type: text/markdown
+
+## MCNParse
+
+Utility for parsing MCNP output files and saving tally data to (compressed or
+uncompressed) json format.
+
