@@ -1,0 +1,9 @@
+dagster_cloudquery/__init__.py,sha256=EjlzQ4Vx_xkneaV7dN9o0OSnPrZZN2nvnG61Les9JRI,215
+dagster_cloudquery/py.typed,sha256=mDShSrm8qg9qjacQc2F-rI8ATllqP6EdgHuEYxuCXZ0,7
+dagster_cloudquery/resource.py,sha256=-N8SLE_8TjBbjWdF0gyWfk4_mPf1EXcmjVj_d-rs7Qs,2505
+dagster_cloudquery/version.py,sha256=UBF3OYTcBAovta3ux5ybxb0MZYAGpGO79WH_ax2NGeI,23
+dagster_cloudquery-0.1.2.dist-info/LICENSE,sha256=01Cx-jq_vt1eI4yNK5BDGNZoSE1j5o1Zn68dlnq7CAk,1067
+dagster_cloudquery-0.1.2.dist-info/METADATA,sha256=wlb3Xh3Jzg3YvAS4VbQIDG3SenZeriRbOlZja1gvjBg,595
+dagster_cloudquery-0.1.2.dist-info/WHEEL,sha256=GV9aMThwP_4oNCtvEC2ec3qUYutgWeAzklro_0m4WJQ,91
+dagster_cloudquery-0.1.2.dist-info/top_level.txt,sha256=TaVU9dLW5Ytf7Z2d6KQ_NbT3hOWFN6JCvQhR2lRAKlM,19
+dagster_cloudquery-0.1.2.dist-info/RECORD,,
