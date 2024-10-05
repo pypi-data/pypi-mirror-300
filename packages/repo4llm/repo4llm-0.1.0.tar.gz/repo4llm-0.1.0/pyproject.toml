@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "repo4llm"
+version = "0.1.0"
+description = "A command-line tool to make a code repo digestible for an LLMs"
+authors = [
+    { name="lhl", email="lhl@randomfoo.net" }
+]
+readme = "README.md"
+license = { text = "Apache-2.0" }
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: Apache Software License",
+    "Operating System :: OS Independent"
+]
+dependencies = [
+    "click",
+    "scandir"
+]
+scripts = { "repo4llm" = "repo4llm:generate_tree" }
