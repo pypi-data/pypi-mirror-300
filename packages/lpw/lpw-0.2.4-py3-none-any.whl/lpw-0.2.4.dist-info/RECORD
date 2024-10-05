@@ -1,0 +1,13 @@
+lpw-0.2.4.data/scripts/lpw,sha256=_59WlLE0mxq1S7ljS1JbbmAwSKdN3hTgPbZ53frxoUk,1642
+lpw-0.2.4.data/scripts/lpw_home.py,sha256=F1Av9J13yR8t4O9Wpyxl39Ht4BLMTjvlhC0vsdsAQII,5317
+lpw-0.2.4.data/scripts/lpw_init.py,sha256=ZRxARy-JN_cJhjopNKhGX8ygjldts-R5E0HIm0CARpg,1642
+lpw-0.2.4.data/scripts/lpw_main.py,sha256=89EhQAaSDkhL5f4ESPuIIfZn8JIIZsiyS6GBK-2sn6Q,303
+lpw-0.2.4.data/scripts/lpw_ollamaClient.py,sha256=J_05fdyObWqkEo_ipuOpMnczczb_D2GtjAJLF46Ta2A,3441
+lpw-0.2.4.data/scripts/lpw_packet.py,sha256=HdYWdZ9AS34_W4wkhY_tgirdsKS8rSUWD4zMpms81Jk,1299
+lpw-0.2.4.data/scripts/lpw_prompt.py,sha256=7aJXmyjTjzGOlLOfu-_bMaLNBMBXies5HkAn1dCBAWU,856
+lpw-0.2.4.data/scripts/lpw_settings.py,sha256=23y5kqha1eQAIosvCSAuUzyER6mOKsHz509XH99wmbA,2047
+lpw-0.2.4.dist-info/LICENSE,sha256=QY6ILT6SmTGX1PL6bEvPeygmE079fN9Uxm1ASOv-qOA,1060
+lpw-0.2.4.dist-info/METADATA,sha256=MQ6FemFCVV3GnryzsB9sSL6lgAq94JX8OC4uhbRdqWA,7522
+lpw-0.2.4.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+lpw-0.2.4.dist-info/top_level.txt,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+lpw-0.2.4.dist-info/RECORD,,
