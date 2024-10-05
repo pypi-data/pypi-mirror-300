@@ -1,0 +1,38 @@
+Metadata-Version: 2.1
+Name: chep
+Version: 0.1
+Summary: Un paquete para extraer el puerto SSH del servicio chep
+Home-page: https://github.com/jose503/chep
+Author: Jose Corcios
+Author-email: corciosv@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+
+# chep
+
+Este paquete permite extraer el puerto SSH desde el estado del servicio `chep` ejecutado con `systemctl`.
+
+## InstalaciÃ³n
+
+InstÃ¡lalo directamente desde PyPI con:
+
+```bash
+pip install chep
+```
+
+## Uso
+
+```python
+from chep import chep
+
+puerto = chep()
+print(puerto)
+```
+
+
