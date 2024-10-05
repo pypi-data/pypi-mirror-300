@@ -1,0 +1,4 @@
+[console_scripts]
+the_madras_techie_demo-height = the_madras_techie_demo: height
+the_madras_techie_demo-hello = the_madras_techie_demo: hello
+the_madras_techie_demo-weight = the_madras_techie_demo: weight
