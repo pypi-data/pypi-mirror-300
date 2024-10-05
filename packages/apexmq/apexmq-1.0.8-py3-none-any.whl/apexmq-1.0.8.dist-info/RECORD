@@ -1,0 +1,17 @@
+apexmq/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+apexmq/apps.py,sha256=Y41hAmtj5VTpinXF_x77nASYxfxz3Dy26_h3HGFHK90,5125
+apexmq/conf.py,sha256=ykVkisaNRj2qWLfh02_VUsUFAWKJOSuwKAxQIhWGby0,5931
+apexmq/connection.py,sha256=o6rLYq-Elp2hx7aXHd0-bpWICDCvjMOUqi_givew00c,12197
+apexmq/consumers.py,sha256=Wiw0XVwgQSBsBd5SHpZEJOXP2M_qLLKcoAEBYJyZg8M,2847
+apexmq/producers.py,sha256=XANHFa0SgDXLyi_rOHlfjr3QTMNwvrbIFVtqJflEOlc,8081
+apexmq/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+apexmq/tests/test_channel.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+apexmq/tests/test_connection.py,sha256=gxikzyhxw_1wVFPfBW3HO5jXrRj-bSA2zz2SGGtvZyU,3361
+apexmq/tests/test_consumers.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+apexmq/tests/test_producers.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+apexmq/tests/test_queue.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+apexmq-1.0.8.dist-info/LICENSE,sha256=Bz4auTqaTCohLTRjwL6x02001quqAh-z_sxiETtpV9s,2725
+apexmq-1.0.8.dist-info/METADATA,sha256=rlFZlKGWDrThQh77ZsOr0qSA011GWzGt7Gphx-yW6kE,7432
+apexmq-1.0.8.dist-info/WHEEL,sha256=GV9aMThwP_4oNCtvEC2ec3qUYutgWeAzklro_0m4WJQ,91
+apexmq-1.0.8.dist-info/top_level.txt,sha256=ZHVV9_3uk8OuuO3NE2xeC5CMSCPt92OMozHgYKw2vCU,7
+apexmq-1.0.8.dist-info/RECORD,,
