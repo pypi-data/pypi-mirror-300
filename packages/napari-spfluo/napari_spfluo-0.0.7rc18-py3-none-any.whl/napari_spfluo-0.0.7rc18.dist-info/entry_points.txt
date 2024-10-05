@@ -1,0 +1,2 @@
+[napari.manifest]
+napari-spfluo = napari_spfluo:napari.yaml
