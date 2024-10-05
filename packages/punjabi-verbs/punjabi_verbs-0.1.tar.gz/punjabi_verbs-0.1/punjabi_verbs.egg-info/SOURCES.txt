@@ -1,0 +1,8 @@
+README.md
+setup.py
+punjabi_verbs/__init__.py
+punjabi_verbs/verbs.py
+punjabi_verbs.egg-info/PKG-INFO
+punjabi_verbs.egg-info/SOURCES.txt
+punjabi_verbs.egg-info/dependency_links.txt
+punjabi_verbs.egg-info/top_level.txt
