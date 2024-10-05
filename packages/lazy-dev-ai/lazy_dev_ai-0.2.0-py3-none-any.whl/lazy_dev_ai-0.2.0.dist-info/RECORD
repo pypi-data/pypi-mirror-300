@@ -1,0 +1,12 @@
+lazy_dev_ai/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+lazy_dev_ai/cli.py,sha256=cUdsTN3gh5NKfzfip4omJX46jqFYqzKkQ3T_8I6dEGI,3409
+lazy_dev_ai/files.py,sha256=8rhtHu1yGA04DeN4kOjsrJdGkqExkupNx5RybitmqJE,2145
+lazy_dev_ai/llm.py,sha256=wkOR5fbNySitVXgIpE2-cwC8hV28LWKaDNAZYKbyd8o,2667
+lazy_dev_ai/prompts/default_cleanup.txt,sha256=zF9u3uGFLwBFr3YzLOMBF0-yq7JgD6wJyeTt-fQKhG4,124
+lazy_dev_ai/prompts/default_comment.txt,sha256=HsgXPRB0qAnYs7DBtjDQVxoN-WhZHlBy1yTyBKS2HmU,148
+lazy_dev_ai/prompts/default_docstring.txt,sha256=dTh7EP7iC7to88kEl5CKeSGdQH2ImakvQkNaf2VWPko,149
+lazy_dev_ai/prompts/defaults.py,sha256=vNVcVMi8A6CvLVDwsyhFvtENo8ng9QxpSpwDTZxPdFM,511
+lazy_dev_ai/templates/default_base.txt,sha256=03Lzi4XqAadcs0il-G51KLLUeQYY65tRD2Z5VVIHqYk,735
+lazy_dev_ai-0.2.0.dist-info/METADATA,sha256=TnKenW0gpXdUJ7NFaq6XgV3rjC8zSgsfn6CwCIXpoLk,513
+lazy_dev_ai-0.2.0.dist-info/WHEEL,sha256=d2fvjOD7sXsVzChCqf0Ty0JbHKBaLYwDbGQDwQTnJ50,88
+lazy_dev_ai-0.2.0.dist-info/RECORD,,
