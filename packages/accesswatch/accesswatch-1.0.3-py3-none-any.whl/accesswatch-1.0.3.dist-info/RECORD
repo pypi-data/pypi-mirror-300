@@ -1,0 +1,8 @@
+accesswatch/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+accesswatch/linux.py,sha256=YXWJDe3fVyWegIOQBw1LM-K-Zmj8GAr2UTEtMTyF8fQ,7034
+accesswatch/windows.py,sha256=_nR06N1aJZPYLTy_634url6zxabmY7vj4XVGzemqu0Y,4817
+accesswatch-1.0.3.dist-info/LICENSE,sha256=m1hTPsdn6HcLAz23XWk_JVaK9KoFuE8e0p9aFoSEJjA,1092
+accesswatch-1.0.3.dist-info/METADATA,sha256=mVPId2VitgH_HgA2cXLs8jgGFqsLW9jsgzyMHRw4Xrs,4403
+accesswatch-1.0.3.dist-info/WHEEL,sha256=eOLhNAGa2EW3wWl_TU484h7q1UNgy0JXjjoqKoxAAQc,92
+accesswatch-1.0.3.dist-info/top_level.txt,sha256=fBTJDdqmRGmlt69eYwjVmNRZHugxg6W6ffYtW0rK6xI,12
+accesswatch-1.0.3.dist-info/RECORD,,
