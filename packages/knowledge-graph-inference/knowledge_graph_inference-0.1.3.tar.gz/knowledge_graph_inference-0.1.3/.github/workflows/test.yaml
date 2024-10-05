@@ -1,0 +1,27 @@
+name: Test
+
+
+on:
+  pull_request:
+  push:
+    branches:
+      - develop
+
+
+jobs:
+  unit_test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4.2.0
+      - name: Install Python 3
+        uses: actions/setup-python@v5.2.0
+        with:
+          python-version: 3.8
+
+      - name: Install dev dependencies
+        run:
+          pip install .[dev]
+
+      - name: Unit test
+        run: tox -e unit_test
