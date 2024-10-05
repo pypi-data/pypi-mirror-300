@@ -1,0 +1,6 @@
+onnxdumper/__init__.py,sha256=Bbae46Xwii2EHs9Bd2a2RId2buefMqtyRnyILSd4zhY,21
+onnxdumper/dumper.py,sha256=IxlexlOg8HVLLbnjgPAIaQETPtsOx0u8zP7WfnH1DeE,1680
+onnxdumper-0.7.dist-info/METADATA,sha256=D91Z2AnAB8LQ5xkfkpUneriqGA4wziyN0fMQqAPAR6k,1752
+onnxdumper-0.7.dist-info/WHEEL,sha256=eOLhNAGa2EW3wWl_TU484h7q1UNgy0JXjjoqKoxAAQc,92
+onnxdumper-0.7.dist-info/top_level.txt,sha256=DjhApXyOsYYrrMHz_7dg19gGMCCFu_wgozJD65C1S_8,11
+onnxdumper-0.7.dist-info/RECORD,,
