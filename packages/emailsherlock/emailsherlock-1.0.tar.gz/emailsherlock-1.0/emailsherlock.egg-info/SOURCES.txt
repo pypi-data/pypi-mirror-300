@@ -1,0 +1,14 @@
+LICENSE
+README.md
+emailsherlock.py
+pyproject.toml
+setup.py
+emailsherlock/__init__.py
+emailsherlock/cli.py
+emailsherlock/core.py
+emailsherlock.egg-info/PKG-INFO
+emailsherlock.egg-info/SOURCES.txt
+emailsherlock.egg-info/dependency_links.txt
+emailsherlock.egg-info/entry_points.txt
+emailsherlock.egg-info/requires.txt
+emailsherlock.egg-info/top_level.txt
