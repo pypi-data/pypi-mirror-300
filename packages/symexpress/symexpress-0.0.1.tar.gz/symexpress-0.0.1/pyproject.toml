@@ -1,0 +1,27 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.version]
+path = "src/symexpress/version.py"
+
+[project]
+name = "symexpress"
+dynamic = ['version']
+authors = [
+  { name ="Gien van den Enden"}, 
+  { email="swvandenenden@gmail.com" },
+]
+maintainers = [
+  {name = "Gien van den Enden", email="swvandenenden@gmail.com"}
+]
+description = "Placeholder for symexpress3"
+readme = "README.md"
+requires-python = ">=3.11"
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+]
+license = {text = "GNU General Public License v3 or later (GPLv3+)"}
+keywords = ["placeholder"]
