@@ -1,0 +1,15 @@
+Metadata-Version: 2.3
+Name: graphs_kgalle34
+Version: 0.1.0
+Summary: A small example package
+Project-URL: Homepage, https://github.com/pypa/sampleproject
+Project-URL: Bug Tracker, https://github.com/pypa/sampleproject/issues
+Author-email: Kayleen Gallegos <kgalle34@msudenver.edu>
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+
+# shortest-path
+This library uses dijkstra's algorithm to find the shortest path from a given source vertex to all vertices.
