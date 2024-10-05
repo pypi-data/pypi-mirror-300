@@ -1,0 +1,5 @@
+httpx
+regex
+requests
+fake-useragent
+curl_cffi
