@@ -1,0 +1,2 @@
+[console_scripts]
+website_diff=website_diff.cli:main
