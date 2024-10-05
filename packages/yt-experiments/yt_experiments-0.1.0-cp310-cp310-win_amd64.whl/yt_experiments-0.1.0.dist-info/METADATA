@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: yt_experiments
+Version: 0.1.0
+Summary: A repository containing some experimental packages and enhancements for yt
+Author-email: The yt project <yt-dev@python.org>
+License: BSD 3-Clause
+Project-URL: Homepage, https://github.com/yt-project/yt_experiments
+Project-URL: Bug Tracker, https://github.com/yt-project/yt_experiments/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: License :: OSI Approved :: BSD License
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: yt>4.2.0
+Requires-Dist: numpy
+Provides-Extra: test
+Requires-Dist: pytest>=6.1; extra == "test"
+
+# yt_experiments
+A repository containing some experimental packages and enhancements
