@@ -1,0 +1,54 @@
+[build-system]
+requires = ["hatchling", "hatch-vcs"]
+build-backend = "hatchling.build"
+
+[project]
+name = "scipion-app-spfluo"
+dynamic = ["version"]
+description = "Scipion application. For processing cryo electron microscopy images and hybrid modelling. Fork for the needs of spfluo-app."
+readme = "README.rst"
+requires-python = ">=3.6"
+keywords = ["scipion", "imageprocessing", "scipion-3.0"]
+authors = [
+    {name = "Scipion team", email = "scipion@cnb.csic.es"},
+]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.7",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+]
+
+dependencies = [
+    "scipion-fluo",
+    "outdated==0.2.2",
+    "typing_extensions",
+    "pip"
+]
+
+[project.urls]
+"Homepage" = "https://github.com/scipion-em/scipion-app"
+
+[project.scripts]
+scipion = "scipion.__main__:main"
+
+[project.entry-points."pyworkflow.guiplugin"]
+guiplugin = "scipion.guiplugin"
+
+[tool.hatch.build]
+include = [
+    "scipion/templates/*.template",
+    "scipion/templates/*.json"
+]
+
+
+[tool.hatch.version]
+source = "vcs"
+raw-options = { root = "../.." }
+
+[tool.hatch.build.hooks.vcs]
+version-file = "scipion/_version.py"
+
+[tool.uv.sources]
+scipion-fluo = {workspace = true}
