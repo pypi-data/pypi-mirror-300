@@ -1,0 +1,15 @@
+anthropic
+crewai-tools
+crewai
+duckduckgo-search
+langchain-anthropic
+langfuse>=2.0.0
+litellm
+python-dotenv
+ray[default]
+
+[dev]
+check-manifest
+
+[test]
+coverage
