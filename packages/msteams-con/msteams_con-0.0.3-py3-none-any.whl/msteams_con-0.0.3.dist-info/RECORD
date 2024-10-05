@@ -1,0 +1,14 @@
+src/__init__.py,sha256=J02qJ3YIlZrZvY9iUYx5VHtJP8rnIg91tccCFcPktAw,195
+src/adaptive_card.py,sha256=4Hw9A6VVxkU6S_nT3yno2cPNE52XPSxPl-yMtbTofY0,7046
+src/cli.py,sha256=pcvhSjaqO0NRAgMc7cMIMkHSWXYn7jc3JvM6zm4NM_s,715
+src/errors.py,sha256=awbemUWaBy1cnv4NZ6goSDUIbKGDaxyfFeIg2IlhRsU,77
+src/logger.py,sha256=AD4yMh4GTD7HTbWd7r0v0OjSkEXv3Zs00izpHHvJv2I,1734
+src/msteams_connector.py,sha256=JIISp7fKfnVqiDJVCPovfes-ueT152lbt4qaIZZVkTM,1974
+src/requirements-dev.txt,sha256=S278F0fdMkDbXylQsmijcJJt_zRErURohjchx7r__2w,54
+src/requirements.txt,sha256=WNE0nodW0u3lhrwouHUjSuEt9j1ztKZ4TzPxkSTv1_w,28
+msteams_con-0.0.3.dist-info/LICENSE,sha256=HyVuytGSiAUQ6ErWBHTqt1iSGHhLmlC8fO7jTCuR8dU,16725
+msteams_con-0.0.3.dist-info/METADATA,sha256=hLfx_mRNOkkP3KH_VyQDtGVcdqh_9EtYPcIDcgtma_Y,23228
+msteams_con-0.0.3.dist-info/WHEEL,sha256=GV9aMThwP_4oNCtvEC2ec3qUYutgWeAzklro_0m4WJQ,91
+msteams_con-0.0.3.dist-info/entry_points.txt,sha256=PYxqtGwWJtmxqKfS5wd8CWMGnU9TZ7jfJNPhX69gcFQ,47
+msteams_con-0.0.3.dist-info/top_level.txt,sha256=74rtVfumQlgAPzR5_2CgYN24MB0XARCg0t-gzk6gTrM,4
+msteams_con-0.0.3.dist-info/RECORD,,
