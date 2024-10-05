@@ -1,0 +1,27 @@
+[project]
+name = "vvclasses"
+version = "0.0.4"
+description = "Some classes that im going to use for other apps"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [ "colorama>=0.4.6", "pygments>=2.10.0",]
+[[project.authors]]
+name = "vince"
+email = "your_email@example.com"
+
+[build-system]
+requires = [ "setuptools>=61.0", "wheel",]
+build-backend = "setuptools.build_meta"
+
+[project.license]
+text = "MIT"
+
+[project.urls]
+Homepage = "https://github.com/VinnyVanGogh/VinnyVanGoghClasses.git"
+
+[project.scripts]
+vvclasses = "vvclasses_project.vvclasses:main"
+
+[tool.setuptools.packages.find]
+where = [ ".",]
+exclude = [ "tests*",]
