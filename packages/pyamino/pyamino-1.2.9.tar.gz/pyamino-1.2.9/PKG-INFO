@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: pyamino
+Version: 1.2.9
+Summary: Easily create a bot for Amino Apps using a modern easy to use synchronous library.
+Home-page: https://github.com/forevercynical/pymino
+Author: pyminoTeam
+Author-email: 
+License: MIT
+Keywords: amino,pymino,narvii,amino-api,narvii-bots,aminoapps,amino-bot,amino-bots
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: >=3.8
