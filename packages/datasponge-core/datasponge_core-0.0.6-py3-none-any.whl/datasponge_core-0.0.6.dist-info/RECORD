@@ -1,0 +1,11 @@
+datasponge/core/__init__.py,sha256=BT5DKyvi-GpW3dQ1HZJsXjzOnEskdIqqs-m3AWEUhBA,818
+datasponge/core/dashboard.py,sha256=AzxiTS7Fyh_qXhAEKTHR2qehNtIotOBph5-x5s-KSns,18594
+datasponge/core/datasponge.py,sha256=VDi4r2GCIsGDryhmOUuEtv2fRfFYiy05X1xUZw9kJWU,39699
+datasponge/core/file.py,sha256=3rtdcYymDmxnLNa241U3VytjXDEHSd1Qqq73q1rEFdI,1157
+datasponge/core/plot.py,sha256=bd0h4XqMElOYWqxQ7V4OFV575t7Ix1v0-mW4xgsnsUg,8198
+datasponge/core/source.py,sha256=0c2KT2k1zbcTTe_77ShwtUo3zN4NjWHcUAximYGtg-Y,4981
+datasponge/core/stats.py,sha256=KsBmvoMExSdxc4ehe-t46RbUpr7K5XfcVVyICyrUegM,6016
+datasponge_core-0.0.6.dist-info/METADATA,sha256=A3GCaxGcUumtNo1ts_zXecu18k-fN1n4WvWfsyLHSqo,2783
+datasponge_core-0.0.6.dist-info/WHEEL,sha256=1yFddiXMmvYK7QYTqtRNtX66WJ0Mz8PYEiEUoOUUxRY,87
+datasponge_core-0.0.6.dist-info/licenses/LICENSE,sha256=lcRuVZDUVfu9PmwYTw7Yg68KdSAbomEKn46A_C1RZu8,1104
+datasponge_core-0.0.6.dist-info/RECORD,,
