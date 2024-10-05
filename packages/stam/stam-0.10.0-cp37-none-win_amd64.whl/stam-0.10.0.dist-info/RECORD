@@ -1,0 +1,8 @@
+stam-0.10.0.dist-info/METADATA,sha256=j8gN4aJacqupwleLj5y5qn0dVWyhVQM0QkKhSgO6ncs,8906
+stam-0.10.0.dist-info/WHEEL,sha256=63VgZXK0f8RhHdD8opp0CXa9Nkhpa78v9XUgiMy-jzY,94
+stam-0.10.0.dist-info/licenses/LICENSE,sha256=Czg9WmPaZE9ijZnDOXbqZIftiaqlnwsyV5kt6sEXHms,35821
+stam/__init__.py,sha256=K84sljeIg94IobhO9mO5zP034SxCxF7mi-VsieYsxVE,99
+stam/__init__.pyi,sha256=v7t6NQnasUUmzPv4lsZTX9IUGe7xu0NScecKvrcvV3c,116752
+stam/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+stam/stam.pyd,sha256=NyXXOfIK8lCbTA958ykoyHang5VTJu6OVbVs0tjfzFw,6265856
+stam-0.10.0.dist-info/RECORD,,
