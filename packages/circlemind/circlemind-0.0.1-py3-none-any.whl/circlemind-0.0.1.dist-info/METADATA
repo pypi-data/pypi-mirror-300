@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: circlemind
+Version: 0.0.1
+Summary: 
+Home-page: https://github.com/circlemind-ai/circlemind-sdk
+License: Apache-2.0
+Author: Luca Pinchetti
+Author-email: luca@circlemind.co
+Requires-Python: >=3.11,<4.0
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3 :: Only
+Project-URL: Repository, https://github.com/circlemind-ai/circlemind-sdk
+Description-Content-Type: text/markdown
+
+Test
+
