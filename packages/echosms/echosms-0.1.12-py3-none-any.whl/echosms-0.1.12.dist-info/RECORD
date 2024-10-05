@@ -1,0 +1,20 @@
+echosms/__init__.py,sha256=6uQD4KEljKR0Ks0D_L93NtHLu09oBSMOextHejfoVlI,1005
+echosms/benchmarkdata.py,sha256=zarcIjwtXaLhGQPLOfyOPDtSbAt-f1B3JNDDZdq_Ytw,3521
+echosms/dcmmodel.py,sha256=lw8G4UWGPpjQgYSNkZhCf1sdR0CTc44PCNneUVFlDhM,4258
+echosms/dwbamodel.py,sha256=7Un18x4JS75n6dRsaacRhJRK1YFYVwCINPbTqzIv8S4,2067
+echosms/esmodel.py,sha256=TDTZRmajX7Dk_XQBFyL8FajZLm37SIKMoBm7GGyiJWg,3685
+echosms/kamodel.py,sha256=pJRo0XGazmYU-WWWy18SMflCC7JWybXC1qlzAG7KcAY,3727
+echosms/mssmodel.py,sha256=tMqnOD8_IebC_DNZlSQIr9JPeF9BH86q7mrmeREyFHM,7926
+echosms/psmsmodel.py,sha256=CR3td3_clCOSc26bpKeca0lXJnpEj3kpkdZNREjd7BY,6148
+echosms/ptdwbamodel.py,sha256=Af-WyogVQiD_gT5RvB1j0q0QW6HIpKGxBpTEd4FQh7E,6558
+echosms/referencemodels.py,sha256=-aiMYpSagKM_HxyIDzvS6MC9uzOaq5VoJGtR56suDMA,4099
+echosms/scattermodelbase.py,sha256=X381-xCZxSjfSnFUFVdAVASYyENHKZihp-OJwPqw_wU,7077
+echosms/sdwbamodel.py,sha256=m9yXEDLfMJw5PDHX1r0nIrkZ7i16vbfHT96gUZeTSqg,2669
+echosms/utils.py,sha256=YomdRgTcTL3mdur6vu_54qG0aZaaViNM4_Mq9yoalbU,13005
+echosms/resources/target definitions.toml,sha256=heu3pGlalp8OGpi-HP5DGKn6MOvkGKDkaxxLOqC3y5A,17351
+echosms/resources/BenchMark_Data/Benchmark_Angle_TS.csv,sha256=9NVTjj5Jvr3oGR8CaKYrm1F7Sv_u1zFEnuP4P2J4DHQ,2733
+echosms/resources/BenchMark_Data/Benchmark_Frequency_TS.csv,sha256=YMjWXqt8b49Y0qwYCwse8GCqmW22_4eNq5OV5DyTCso,19271
+echosms-0.1.12.dist-info/METADATA,sha256=u6uOwGwbVkY7aYI9uaE4xOwLR1dqFxFfRCiPzOVKhss,4089
+echosms-0.1.12.dist-info/WHEEL,sha256=1yFddiXMmvYK7QYTqtRNtX66WJ0Mz8PYEiEUoOUUxRY,87
+echosms-0.1.12.dist-info/licenses/LICENSE,sha256=0vZRiYGc--R6UUEdAWyZdt7GWHZD-ZLxa3EGZa4oHeQ,1086
+echosms-0.1.12.dist-info/RECORD,,
