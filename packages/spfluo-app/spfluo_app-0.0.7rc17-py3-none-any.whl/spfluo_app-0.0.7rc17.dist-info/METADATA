@@ -1,0 +1,9 @@
+Metadata-Version: 2.3
+Name: spfluo-app
+Version: 0.0.7rc17
+Project-URL: Repository, https://github.com/jplumail/spfluo-app.git
+Author-email: Jean Plumail <jplumail@unistra.fr>
+Requires-Python: >=3.10
+Requires-Dist: napari[pyqt5]
+Requires-Dist: scipion-app-spfluo
+Requires-Dist: scipion-fluo-singleparticle
