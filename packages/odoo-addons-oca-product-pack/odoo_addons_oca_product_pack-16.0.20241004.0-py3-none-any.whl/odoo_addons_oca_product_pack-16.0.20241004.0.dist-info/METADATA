@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: odoo-addons-oca-product-pack
+Version: 16.0.20241004.0
+Summary: Meta package for oca-product-pack Odoo addons
+Classifier: Programming Language :: Python
+Classifier: Framework :: Odoo
+Classifier: Framework :: Odoo :: 16.0
+Requires-Dist: odoo-addon-product-pack<16.1dev,>=16.0dev
+Requires-Dist: odoo-addon-purchase-product-pack<16.1dev,>=16.0dev
+Requires-Dist: odoo-addon-sale-product-pack<16.1dev,>=16.0dev
+Requires-Dist: odoo-addon-sale-stock-product-pack<16.1dev,>=16.0dev
+Requires-Dist: odoo-addon-stock-product-pack<16.1dev,>=16.0dev
+Requires-Dist: odoo-addon-website-sale-product-pack<16.1dev,>=16.0dev
+
+UNKNOWN
