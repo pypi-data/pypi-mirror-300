@@ -1,0 +1,10 @@
+optispec/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+optispec/hamiltonian.py,sha256=9UJSWMrBLvW3xLrmihEXoZbJOlmj50duj1OlUVISG8g,6978
+optispec/models/base.py,sha256=J2deplHZ-Szhwyk9ktV7cHYVjgHcuzio6AFyrE_39J4,2247
+optispec/models/mlj.py,sha256=nBHHVp7x31WG0Uwy9Fz9Bncdrl3D3CKGucj1wINjhAI,3619
+optispec/models/stark.py,sha256=rPfZ32nrlME-DeEIqh-_tiIpjYtQp97WQ6WAN8eeVd8,1946
+optispec/models/two_state.py,sha256=1j6iZ5SsGegGLwJpYN3zXjUiu_yf6trBwiIgnvCh9xI,6624
+optispec/utils.py,sha256=xrw3QzB0Quz75A2-2LYWyhQnyshooRdQ8pfMgmzEjG8,2119
+optispec-0.1.1.dist-info/METADATA,sha256=ZRDmGB9P0HvliLx9KE_kACCGhhgDATNJcH1hRxn0w-w,14047
+optispec-0.1.1.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+optispec-0.1.1.dist-info/RECORD,,
