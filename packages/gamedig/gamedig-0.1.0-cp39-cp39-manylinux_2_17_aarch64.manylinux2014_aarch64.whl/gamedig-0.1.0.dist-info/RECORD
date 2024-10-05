@@ -1,0 +1,7 @@
+gamedig-0.1.0.dist-info/METADATA,sha256=9LfgUUgiC9LGoZ4ac41rpEujQSctyjEcG_N4EYw_YmI,691
+gamedig-0.1.0.dist-info/WHEEL,sha256=LFHs8AY0Uq0Vj5jL_6XeSuQkbQbrNgzKzJ9woT6XK_Y,129
+gamedig/__init__.py,sha256=vhiWvcDkuwb5SQ1V85TSdj0nlklab9RcU8bTlT6U9CA,111
+gamedig/__init__.pyi,sha256=6FNVJBfrTyOlvHBA8YWuobJf7ByllFLSJ6PWK1Yq8Qw,846
+gamedig/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+gamedig/gamedig.cpython-39-aarch64-linux-gnu.so,sha256=Zi9LJ7REMB6sn9kDh9a-U1u3mbit8YRC_TphEK10B3s,2201616
+gamedig-0.1.0.dist-info/RECORD,,
