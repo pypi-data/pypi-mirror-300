@@ -1,0 +1,87 @@
+{
+    "config": {
+        "abort": {
+            "already_configured": "Az eszk\u00f6z m\u00e1r konfigur\u00e1lva van",
+            "cannot_connect": "Sikertelen csatlakoz\u00e1s",
+            "reauth_failed": "\u00c9rv\u00e9nytelen hiteles\u00edt\u00e9s",
+            "reauth_successful": "Az \u00fajrahiteles\u00edt\u00e9s sikeres volt."
+        },
+        "error": {
+            "cannot_connect": "Sikertelen csatlakoz\u00e1s",
+            "invalid_auth": "\u00c9rv\u00e9nytelen hiteles\u00edt\u00e9s",
+            "unknown": "V\u00e1ratlan hiba"
+        },
+        "step": {
+            "auth": {
+                "data": {
+                    "password": "Jelsz\u00f3",
+                    "username": "Felhaszn\u00e1l\u00f3n\u00e9v"
+                },
+                "description": "K\u00e9rj\u00fck, adja meg a felhaszn\u00e1l\u00f3nevet \u00e9s a jelsz\u00f3t"
+            },
+            "reauth_confirm": {
+                "data": {
+                    "password": "Jelsz\u00f3",
+                    "username": "Felhaszn\u00e1l\u00f3n\u00e9v"
+                },
+                "title": "A(z) {name} hiteles\u00edt\u00e9se lej\u00e1rt"
+            },
+            "user": {
+                "data": {
+                    "host": "Hoszt"
+                }
+            }
+        }
+    },
+    "entity": {
+        "binary_sensor": {
+            "ethernet": {
+                "name": "Ethernet"
+            },
+            "internet": {
+                "name": "Internet"
+            },
+            "wifi": {
+                "name": "Wi-Fi"
+            }
+        },
+        "button": {
+            "reconnect_zigbee_router": {
+                "name": "Zigbee router \u00fajracsatlakoztat\u00e1sa"
+            }
+        },
+        "sensor": {
+            "device_mode": {
+                "name": "Csatlakoz\u00e1si m\u00f3d",
+                "state": {
+                    "eth": "Ethernet",
+                    "usb": "USB",
+                    "wifi": "Wi-Fi"
+                }
+            },
+            "firmware_channel": {
+                "name": "Firmware csatorna",
+                "state": {
+                    "dev": "Fejleszt\u0151i",
+                    "release": "Stabil"
+                }
+            },
+            "zigbee_type": {
+                "name": "Zigbee t\u00edpus",
+                "state": {
+                    "coordinator": "Koordin\u00e1tor",
+                    "router": "\u00datv\u00e1laszt\u00f3",
+                    "thread": "Thread"
+                }
+            }
+        },
+        "update": {
+            "core_update": {
+                "name": "Core firmware"
+            },
+            "zigbee_update": {
+                "name": "Zigbee firmware"
+            }
+        }
+    }
+}
