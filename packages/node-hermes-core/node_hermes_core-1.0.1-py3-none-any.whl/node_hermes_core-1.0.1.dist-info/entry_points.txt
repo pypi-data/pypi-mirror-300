@@ -1,0 +1,3 @@
+[console_scripts]
+hermes-core=hermes_core.cli:cli
+
