@@ -1,0 +1,61 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div>
+    <h1>DCIM Populator App Home</h1>
+    <div>
+        <h2>Welcome to Etherflow's DCIM Populator App</h2>
+        <text>This appliation polls HPE OneView and Cisco ACI APIC to represent their links in Nautobot.</text>
+        <div>
+            Maintainer: alan@etherflow.io
+        </div>
+    </div>
+    <h2>Select your desired options, then submit a request to dispatch the tool!</h2>
+    <div>
+        <form action="/api/plugins/py-populate-dcim/refresh/" method="post">
+            {% csrf_token %}
+            <ul>
+                <h3>Cisco ACI APIC Options</h3>
+                <div>
+                    <label for="debug">Do not connect to Cisco ACI APIC's API (enable if off-network)</label>
+                    <input type="checkbox" name="debug" id="debug" value="true" />
+                </div>
+                <h3>HPE OneView Options</h3>
+                <div>
+                    <label for="refresh_synergy_frames">Update HPE Synergy Frame connections to ACI</label>
+                    <input type="checkbox" name="refresh_synergy_frames" id="refresh_synergy_frames" value="true" />
+                </div>
+                <div>
+                    <label for="refresh_hpe_servers">Update HPE rack-mount Servers</label>
+                    <!-- <input type="checkbox" name="refresh_hpe_servers" id="refresh_hpe_servers" value="true" /> -->
+                </div>
+                <ul>
+                    <div>
+                        <label for="create_oneview_server_devices">create_oneview_server_devices</label>
+                        <input type="checkbox" name="create_oneview_server_devices" id="create_oneview_server_devices"
+                            value="true" class="subOption"/>
+                    </div>
+                    <div>
+                        <label for="create_oneview_server_modules">create_oneview_server_modules</label>
+                        <input type="checkbox" name="create_oneview_server_modules" id="create_oneview_server_modules"
+                            value="true" class="subOption"/>
+                    </div>
+                    <div>
+                        <label for="create_oneview_server_interfaces">create_oneview_server_interfaces</label>
+                        <input type="checkbox" name="create_oneview_server_interfaces"
+                            id="create_oneview_server_interfaces" value="true" class="subOption"/>
+                    </div>
+                </ul>
+                <h3>Nautobot Options</h3>
+                <div>
+                    <label for="import_nautobot_types">Update Nautobot Device Types and Module Types</label>
+                    <input type="checkbox" name="import_nautobot_types" id="import_nautobot_types" value="true" />
+                </div>
+            </ul>
+            <button name="foo" value="upvote">Request a Refresh</button>
+        </form>
+    </div>
+</div>
+
+<!-- <iframe name="hiddenFormSubmitFrame" width="300" height="200" style="display: none;"></iframe> -->
+{% endblock %}
