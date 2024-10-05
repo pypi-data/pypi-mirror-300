@@ -1,0 +1,5 @@
+[console_scripts]
+scipion-fluo = pwfluo.__main__:main
+
+[pyworkflow.plugin]
+pwfluo = pwfluo
