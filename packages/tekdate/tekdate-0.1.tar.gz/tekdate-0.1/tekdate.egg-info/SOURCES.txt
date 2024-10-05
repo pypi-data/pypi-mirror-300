@@ -1,0 +1,8 @@
+README.md
+setup.py
+tekdate/__init__.py
+tekdate/module.py
+tekdate.egg-info/PKG-INFO
+tekdate.egg-info/SOURCES.txt
+tekdate.egg-info/dependency_links.txt
+tekdate.egg-info/top_level.txt
