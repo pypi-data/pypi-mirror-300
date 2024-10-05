@@ -1,0 +1,10 @@
+oracledb
+pandas
+bcpy
+sqlalchemy
+numpy
+pyodbc
+psycopg2
+
+[dev]
+wheel
