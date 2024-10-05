@@ -1,0 +1,43 @@
+Metadata-Version: 2.1
+Name: lazy-dev-ai
+Version: 0.2.2
+Summary: A simple tool for applying chatgpt prompts to code
+Author: Robert Sivilli
+Author-email: robert.sivilli@gmail.com
+Requires-Python: >=3.10,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: click (>=8.1.7,<9.0.0)
+Requires-Dist: openai (>=1.51.0,<2.0.0)
+Requires-Dist: pydantic (>=2.9.2,<3.0.0)
+Requires-Dist: python-dotenv (>=1.0.1,<2.0.0)
+Description-Content-Type: text/markdown
+
+# Lazy Dev AI
+
+This tool is being built as a local or pipeline tool for applying general prompts to a chatgpt endpoint and applying responses to the code in question. 
+
+The intent is to be flexible enough for users to apply their own prompts while still providing good examples and foundations to be used out of the box. 
+
+## Environment
+
+The following environment variables are supported
+`OPENAI_API_KEY` - this is your openai key for use with their endpoints. REQUIRED
+`OPENAI_PROJECT` - openai project. OPTIONAL
+`OPENAI_ORGANIZATION`- openai organization. OPTIONAL
+
+Option flags will override anything provided as environment variables
+
+## Use
+After installing, full help and commands can be found by running `lazy-dev-ai` in the terminal
+
+## Example
+
+`lazy-dev-ai improve-comments ./src/*.py` - this will attempt to improve comments for all python files within the folder `./src`
+
+`lazy-dev-ai generate-docstrings ./src/*.py` - this will attempt to generate docstrings for all functions within the files matching the pattern
+
+
+
+## Current commands
