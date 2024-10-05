@@ -1,0 +1,13 @@
+markupy/__init__.py,sha256=nR5RTqNusHuad3DA9OG0MDc-M3zKFxXjAVACOMmqI7s,274
+markupy/tag.py,sha256=KTS45MTuzvyvHVdrTXdzNkA-160mJQFOB6tGsXVemos,5340
+markupy/_private/attribute.py,sha256=fy_k1EDMmapzFoo2e0EcDJlaacUiUOC1zDXb2JIXagA,4728
+markupy/_private/cli.py,sha256=RSB7YNpXBK14w7xYcd2aet6GJejszuOy9anOJ9bwK2Q,1063
+markupy/_private/component.py,sha256=3v8q9sdHtLnkSoQf9crfUjv5Ua-MJU8Mb6WSbYuEHdk,337
+markupy/_private/element.py,sha256=JoIdK8NK_ErLbuJIWTYgAnsS4cmddpfQ_ilwAquRYms,5202
+markupy/_private/html.py,sha256=mRnQM3RKQ3Z-Elosgima907vrpP3C_XVXEtErpkEMSc,7235
+markupy/_private/node.py,sha256=lu1Q8vy_6SXF3s2CzoD8z66DY33mzxehki5h5VFCnJY,1824
+markupy/_private/view.py,sha256=3JOibaCCG5qju_HxvG1ngrzwMBnUTXBnEB4ougaR9so,859
+markupy-1.0.1.dist-info/entry_points.txt,sha256=Zsdif6giWpphHqBjx5T9lA13iKI_QEoWPnk_hzJgqpM,58
+markupy-1.0.1.dist-info/WHEEL,sha256=EZbGkh7Ie4PoZfRQ8I0ZuP9VklN_TvcZ6DSE5Uar4z4,81
+markupy-1.0.1.dist-info/METADATA,sha256=1iDEKYLKfesCgprMvVYC4b5a8xx8aUj_23lyP8f5JM8,4995
+markupy-1.0.1.dist-info/RECORD,,
