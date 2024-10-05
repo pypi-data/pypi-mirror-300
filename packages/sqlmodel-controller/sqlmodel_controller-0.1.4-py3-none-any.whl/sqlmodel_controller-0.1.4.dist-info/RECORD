@@ -1,0 +1,10 @@
+sqlmodel_controller/__init__.py,sha256=wH2YSS1X7UxI1nv-Z_hbHJNpVf_fPYKOAhBvaDXHYhs,350
+sqlmodel_controller/connection.py,sha256=An0v86jV8Tf2MNxSmc8tzbF-H3y_64deKgVC4ISvQrY,2402
+sqlmodel_controller/controller.py,sha256=2WLh8boTY0VdkxgwUUpyTPpooGpbEaNmfsRlRwCiG8k,11265
+sqlmodel_controller/dao.py,sha256=bZnYx5HvVrN2uj-DcIcOduda9LwXt_zJx1mPF_Q-WDk,17444
+sqlmodel_controller/model.py,sha256=I1Vng5KFKTPIG-9RXlQLw7ZAEv-K_QfKwgWdXUTbAio,1837
+sqlmodel_controller-0.1.4.dist-info/LICENSE,sha256=IN38LfLLXYhTfOjRky3pLqoQ5KIC7fubi1qsBdpnGBg,1075
+sqlmodel_controller-0.1.4.dist-info/METADATA,sha256=KmDwgBrQLkLArJtk7OfYjTRmmrNnCjnVjWFWBccUuU8,9756
+sqlmodel_controller-0.1.4.dist-info/WHEEL,sha256=Mdi9PDNwEZptOjTlUcAth7XJDFtKrHYaQMPulZeBCiQ,91
+sqlmodel_controller-0.1.4.dist-info/top_level.txt,sha256=JFLZ95HxQcg9fbXN9VjtULimZAFJxp9mdF3hiIqM1EM,20
+sqlmodel_controller-0.1.4.dist-info/RECORD,,
