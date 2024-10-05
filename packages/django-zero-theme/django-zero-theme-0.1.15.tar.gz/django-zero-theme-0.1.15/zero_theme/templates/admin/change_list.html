@@ -1,0 +1,99 @@
+{% extends "admin/base_site.html" %}
+{% load i18n admin_urls static admin_list zero_tags %}
+
+{% block extrastyle %}
+    {{ block.super }}
+
+    {% if cl.formset %}
+    {% endif %}
+    {% if cl.formset or action_form %}
+            <script src="{% url 'admin:jsi18n' %}"></script>
+    {% endif %}
+    {{ media.css }}
+    {% if not actions_on_top and not actions_on_bottom %}
+        <style>
+            #changelist table thead th:first-child {
+                width: inherit
+            }
+        </style>
+    {% endif %}
+{% endblock %}
+
+{% block extrahead %}
+    {{ block.super }}
+    {{ media.js }}
+    <script src="{% static 'admin/js/filters.js' %}" defer></script>
+{% endblock %}
+
+{% block bodyclass %}{{ block.super }} app-{{ opts.app_label }} model-{{ opts.model_name }} retert change-list{% endblock %}
+
+{% if not is_popup %}
+    {% block breadcrumbs %}
+        <div class="breadcrumbs">
+            <a href="{% url 'admin:index' %}">{% translate 'Home' %}</a>
+            &rsaquo; <a
+                href="{% url 'admin:app_list' app_label=cl.opts.app_label %}">{{ cl.opts.app_config.verbose_name }}</a>
+            &rsaquo; {{ cl.opts.verbose_name_plural|capfirst }}
+        </div>
+    {% endblock %}
+{% endif %}
+
+{% block coltype %}{% endblock %}
+
+{% block content %}
+
+
+    <div id="content-main">
+        {% block object-tools %}
+{#            <ul class="object-tools">#}
+{#                {% block object-tools-items %}#}
+{#                    {% change_list_object_tools %}#}
+{#                {% endblock %}#}
+{#            </ul>#}
+
+            <div class="page-titles">
+                <div class="row">
+                    <div class="col-lg-8 col-md-6 col-12 align-self-center">
+                        <nav aria-label="breadcrumb">
+                            <ol class="breadcrumb align-items-center">
+                                <li class="breadcrumb-item">
+                                    <a class="text-muted text-decoration-none" href="{% url 'admin:index' %}">
+                                        <i class="ti ti-home fs-5"></i>
+                                    </a>
+                                </li>
+                                <li class="breadcrumb-item" aria-current="page">{{ cl.opts.model_name|capfirst }}</li>
+                            </ol>
+                        </nav>
+{#                        <h2 class="mb-0 fw-bolder fs-8">Basic Table</h2>#}
+                    </div>
+                    <div class="col-lg-4 col-md-6 d-none d-md-flex align-items-center justify-content-end">
+                        {% block object-tools-items %}
+                            {% change_list_object_tools %}
+                        {% endblock %}
+                    </div>
+                </div>
+            </div>
+        {% endblock %}
+
+        {% if cl.formset and cl.formset.errors %}
+            <p class="errornote">
+                {% blocktranslate count counter=cl.formset.total_error_count %}Please correct the error below.
+                    {% plural %}Please correct the errors below.{% endblocktranslate %}
+            </p>
+            {{ cl.formset.non_form_errors }}
+        {% endif %}
+
+        <div class="row">
+            <div class="col-md-{% if cl.has_filters %}10{% else %}12{% endif %} p-3">
+                {% include 'list_content.html' %}
+            </div>
+
+            {% if cl.has_filters %}
+                <div class="col-md-2 p-3">
+                    {% include 'filters.html' %}
+                </div>
+        {% endif %}
+        </div>
+
+    </div>
+{% endblock %}

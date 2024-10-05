@@ -1,0 +1,7 @@
+django>=3.2
+django-import-export>=4.1.1
+
+[dev]
+pytest
+tox
+black

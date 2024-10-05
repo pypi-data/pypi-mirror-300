@@ -1,0 +1,4 @@
+include README.md
+include LICENSE
+recursive-include zero_theme/templates *
+recursive-include zero_theme/static *
