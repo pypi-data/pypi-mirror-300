@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "lazy-dev-ai"
+version = "0.2.1"
+description = "A simple tool for applying chatgpt prompts to code"
+authors = ["Robert Sivilli <robert.sivilli@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+openai = "^1.51.0"
+click = "^8.1.7"
+python-dotenv = "^1.0.1"
+pydantic = "^2.9.2"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
