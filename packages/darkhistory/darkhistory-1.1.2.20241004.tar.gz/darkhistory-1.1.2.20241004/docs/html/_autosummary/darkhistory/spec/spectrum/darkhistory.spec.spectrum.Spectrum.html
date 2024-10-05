@@ -1,0 +1,884 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8">
+    
+    <title>darkhistory.spec.spectrum.Spectrum &mdash; DarkHistory  documentation</title>
+    
+    <link rel="stylesheet" type="text/css" href="../../../../_static/css/spc-bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="../../../../_static/css/spc-extend.css">
+    <link rel="stylesheet" href="../../../../_static/scipy.css" type="text/css" >
+    <link rel="stylesheet" href="../../../../_static/pygments.css" type="text/css" >
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../../../../',
+        VERSION:     '',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../../../../_static/jquery.js"></script>
+    <script type="text/javascript" src="../../../../_static/underscore.js"></script>
+    <script type="text/javascript" src="../../../../_static/doctools.js"></script>
+    <script type="text/javascript" src="../../../../_static/language_data.js"></script>
+    <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/javascript" src="../../../../_static/js/copybutton.js"></script>
+    <link rel="shortcut icon" href="../../../../_static/DarkHistory_favicon.png">
+    <link rel="index" title="Index" href="../../../../genindex.html" >
+    <link rel="search" title="Search" href="../../../../search.html" >
+    <link rel="top" title="DarkHistory  documentation" href="../../../../index.html" >
+    <link rel="up" title="darkhistory.spec.spectrum" href="../darkhistory.spec.spectrum.html" >
+    <link rel="next" title="darkhistory.spec.transferfunclist" href="../darkhistory.spec.transferfunclist.html" >
+    <link rel="prev" title="darkhistory.spec.spectrum" href="../darkhistory.spec.spectrum.html" > 
+  </head>
+  <body>
+
+<div class="container">
+  <div class="top-scipy-org-logo-header">
+    <a href="../../../../index.html">
+      <img style="border: 0;" alt="SciPy" src="../../../../_static/img/DarkHistory_logo.png"></a>
+    </div>
+  </div>
+</div>
+
+
+    <div class="container">
+      <div class="main">
+        
+	<div class="row-fluid">
+	  <div class="span12">
+	    <div class="spc-navbar">
+              
+    <ul class="nav nav-pills pull-left">
+        <li class="active"><a href="https://github.com/hongwanliu/DarkHistory/tree/development">Repository</a></li>
+	
+        <li class="active"><a href="../../../../index.html">DarkHistory  documentation</a></li>
+	
+          <li class="active"><a href="../../../../modules.html" >DarkHistory</a></li>
+          <li class="active"><a href="../../../darkhistory.html" >darkhistory</a></li>
+          <li class="active"><a href="../../darkhistory.spec.html" >darkhistory.spec</a></li>
+          <li class="active"><a href="../darkhistory.spec.spectrum.html" accesskey="U">darkhistory.spec.spectrum</a></li> 
+    </ul>
+              
+              
+    <ul class="nav nav-pills pull-right">
+      <li class="active">
+        <a href="../../../../genindex.html" title="General Index"
+           accesskey="I">index</a>
+      </li>
+      <li class="active">
+        <a href="../../../../py-modindex.html" title="Python Module Index"
+           >modules</a>
+      </li>
+      <li class="active">
+        <a href="../darkhistory.spec.transferfunclist.html" title="darkhistory.spec.transferfunclist"
+           accesskey="N">next</a>
+      </li>
+      <li class="active">
+        <a href="../darkhistory.spec.spectrum.html" title="darkhistory.spec.spectrum"
+           accesskey="P">previous</a>
+      </li>
+    </ul>
+              
+	    </div>
+	  </div>
+	</div>
+        
+
+	<div class="row-fluid">
+          <div class="span9">
+            
+        <div class="bodywrapper">
+          <div class="body" id="spc-section-body">
+            
+  <div class="section" id="darkhistory-spec-spectrum-spectrum">
+<h1>darkhistory.spec.spectrum.Spectrum<a class="headerlink" href="#darkhistory-spec-spectrum-spectrum" title="Permalink to this headline">¶</a></h1>
+<dl class="class">
+<dt id="darkhistory.spec.spectrum.Spectrum">
+<em class="property">class </em><code class="descclassname">darkhistory.spec.spectrum.</code><code class="descname">Spectrum</code><span class="sig-paren">(</span><em>eng</em>, <em>data</em>, <em>rs=-1.0</em>, <em>in_eng=-1.0</em>, <em>spec_type='dNdE'</em><span class="sig-paren">)</span><a class="headerlink" href="#darkhistory.spec.spectrum.Spectrum" title="Permalink to this definition">¶</a></dt>
+<dd><p>Structure for particle spectra.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><dl class="first docutils">
+<dt><strong>eng</strong> <span class="classifier-delimiter">:</span> <span class="classifier">ndarray</span></dt>
+<dd><p class="first last">Abscissa for the spectrum.</p>
+</dd>
+<dt><strong>data</strong> <span class="classifier-delimiter">:</span> <span class="classifier">ndarray</span></dt>
+<dd><p class="first last">Spectrum stored as N or dN/dE.</p>
+</dd>
+<dt><strong>rs</strong> <span class="classifier-delimiter">:</span> <span class="classifier">float, optional</span></dt>
+<dd><p class="first last">The redshift (1+z) of the spectrum. Default is -1.</p>
+</dd>
+<dt><strong>in_eng</strong> <span class="classifier-delimiter">:</span> <span class="classifier">float, optional</span></dt>
+<dd><p class="first last">The injection energy of the primary, if this is a secondary spectrum. Default is -1.</p>
+</dd>
+<dt><strong>mode</strong> <span class="classifier-delimiter">:</span> <span class="classifier">{‘N’, ‘dNdE’}, optional</span></dt>
+<dd><p class="first last">Whether the input is N or dN/dE in each bin. Default is ‘dNdE’.</p>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Attributes:</th><td class="field-body"><dl class="first last docutils">
+<dt><strong>eng</strong> <span class="classifier-delimiter">:</span> <span class="classifier">ndarray</span></dt>
+<dd><p class="first last">Abscissa for the spectrum.</p>
+</dd>
+<dt><strong>dNdE</strong> <span class="classifier-delimiter">:</span> <span class="classifier">ndarray</span></dt>
+<dd><p class="first last">dN/dE of the spectrum.</p>
+</dd>
+<dt><strong>N</strong> <span class="classifier-delimiter">:</span> <span class="classifier">ndarray</span></dt>
+<dd><p class="first last">N of the spectrum.</p>
+</dd>
+<dt><strong>rs</strong> <span class="classifier-delimiter">:</span> <span class="classifier">float, optional</span></dt>
+<dd><p class="first last">The redshift (1+z) of the spectrum. Set to -1 if not specified.</p>
+</dd>
+<dt><strong>length</strong> <span class="classifier-delimiter">:</span> <span class="classifier">int</span></dt>
+<dd><p class="first last">The length of the abscissa.</p>
+</dd>
+<dt><strong>underflow</strong> <span class="classifier-delimiter">:</span> <span class="classifier">dict of str: float</span></dt>
+<dd><p class="first last">The underflow total number of particles and total energy.</p>
+</dd>
+</dl>
+</td>
+</tr>
+</tbody>
+</table>
+<p class="rubric">Methods</p>
+<table border="1" class="longtable docutils">
+<colgroup>
+<col width="10%" />
+<col width="90%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><a class="reference internal" href="#darkhistory.spec.spectrum.Spectrum.at_eng" title="darkhistory.spec.spectrum.Spectrum.at_eng"><code class="xref py py-obj docutils literal notranslate"><span class="pre">at_eng</span></code></a>(new_eng[,&nbsp;left,&nbsp;right])</td>
+<td>Interpolates the spectrum at a new abscissa.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#darkhistory.spec.spectrum.Spectrum.contract" title="darkhistory.spec.spectrum.Spectrum.contract"><code class="xref py py-obj docutils literal notranslate"><span class="pre">contract</span></code></a>(mat)</td>
+<td>Performs a dot product with the <a class="reference internal" href="#darkhistory.spec.spectrum.Spectrum" title="darkhistory.spec.spectrum.Spectrum"><code class="xref py py-class docutils literal notranslate"><span class="pre">Spectrum</span></code></a>.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#darkhistory.spec.spectrum.Spectrum.engloss_rebin" title="darkhistory.spec.spectrum.Spectrum.engloss_rebin"><code class="xref py py-obj docutils literal notranslate"><span class="pre">engloss_rebin</span></code></a>(in_eng,&nbsp;out_eng[,&nbsp;…])</td>
+<td>Converts an energy loss spectrum to a secondary spectrum.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#darkhistory.spec.spectrum.Spectrum.rebin" title="darkhistory.spec.spectrum.Spectrum.rebin"><code class="xref py py-obj docutils literal notranslate"><span class="pre">rebin</span></code></a>(out_eng)</td>
+<td>Rebins according to a new abscissa.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#darkhistory.spec.spectrum.Spectrum.rebin_fast" title="darkhistory.spec.spectrum.Spectrum.rebin_fast"><code class="xref py py-obj docutils literal notranslate"><span class="pre">rebin_fast</span></code></a>(out_eng)</td>
+<td>Rebins the <a class="reference internal" href="#darkhistory.spec.spectrum.Spectrum" title="darkhistory.spec.spectrum.Spectrum"><code class="xref py py-class docutils literal notranslate"><span class="pre">Spectrum</span></code></a> with ‘N’ spec_type quickly.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#darkhistory.spec.spectrum.Spectrum.redshift" title="darkhistory.spec.spectrum.Spectrum.redshift"><code class="xref py py-obj docutils literal notranslate"><span class="pre">redshift</span></code></a>(new_rs)</td>
+<td>Redshifts the <a class="reference internal" href="#darkhistory.spec.spectrum.Spectrum" title="darkhistory.spec.spectrum.Spectrum"><code class="xref py py-class docutils literal notranslate"><span class="pre">Spectrum</span></code></a> object as a photon spectrum.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#darkhistory.spec.spectrum.Spectrum.shift_eng" title="darkhistory.spec.spectrum.Spectrum.shift_eng"><code class="xref py py-obj docutils literal notranslate"><span class="pre">shift_eng</span></code></a>(new_eng)</td>
+<td>Shifts the abscissa while conserving number.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#darkhistory.spec.spectrum.Spectrum.switch_spec_type" title="darkhistory.spec.spectrum.Spectrum.switch_spec_type"><code class="xref py py-obj docutils literal notranslate"><span class="pre">switch_spec_type</span></code></a>([target])</td>
+<td>Switches between data being stored as N or dN/dE.</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="#darkhistory.spec.spectrum.Spectrum.totN" title="darkhistory.spec.spectrum.Spectrum.totN"><code class="xref py py-obj docutils literal notranslate"><span class="pre">totN</span></code></a>([bound_type,&nbsp;bound_arr])</td>
+<td>Returns the total number of particles in part of the spectrum.</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="#darkhistory.spec.spectrum.Spectrum.toteng" title="darkhistory.spec.spectrum.Spectrum.toteng"><code class="xref py py-obj docutils literal notranslate"><span class="pre">toteng</span></code></a>([bound_type,&nbsp;bound_arr])</td>
+<td>Returns the total energy of particles in part of the spectrum.</td>
+</tr>
+</tbody>
+</table>
+<dl class="method">
+<dt id="darkhistory.spec.spectrum.Spectrum.__init__">
+<code class="descname">__init__</code><span class="sig-paren">(</span><em>eng</em>, <em>data</em>, <em>rs=-1.0</em>, <em>in_eng=-1.0</em>, <em>spec_type='dNdE'</em><span class="sig-paren">)</span><a class="headerlink" href="#darkhistory.spec.spectrum.Spectrum.__init__" title="Permalink to this definition">¶</a></dt>
+<dd><p>Initialize self.  See help(type(self)) for accurate signature.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="darkhistory.spec.spectrum.Spectrum.__add__">
+<code class="descname">__add__</code><span class="sig-paren">(</span><em>other</em><span class="sig-paren">)</span><a class="headerlink" href="#darkhistory.spec.spectrum.Spectrum.__add__" title="Permalink to this definition">¶</a></dt>
+<dd><p>Adds two <a class="reference internal" href="#darkhistory.spec.spectrum.Spectrum" title="darkhistory.spec.spectrum.Spectrum"><code class="xref py py-class docutils literal notranslate"><span class="pre">Spectrum</span></code></a> instances together, or an array to the spectrum. The <a class="reference internal" href="#darkhistory.spec.spectrum.Spectrum" title="darkhistory.spec.spectrum.Spectrum"><code class="xref py py-class docutils literal notranslate"><span class="pre">Spectrum</span></code></a> object is on the left.</p>
+<p>The returned <a class="reference internal" href="#darkhistory.spec.spectrum.Spectrum" title="darkhistory.spec.spectrum.Spectrum"><code class="xref py py-class docutils literal notranslate"><span class="pre">Spectrum</span></code></a> will have its underflow reset to zero if other is not a <a class="reference internal" href="#darkhistory.spec.spectrum.Spectrum" title="darkhistory.spec.spectrum.Spectrum"><code class="xref py py-class docutils literal notranslate"><span class="pre">Spectrum</span></code></a> object.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><dl class="first docutils">
+<dt><strong>other</strong> <span class="classifier-delimiter">:</span> <span class="classifier">Spectrum or ndarray</span></dt>
+<dd><p class="first last">The object to add to the current <a class="reference internal" href="#darkhistory.spec.spectrum.Spectrum" title="darkhistory.spec.spectrum.Spectrum"><code class="xref py py-class docutils literal notranslate"><span class="pre">Spectrum</span></code></a> object.</p>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><dl class="first last docutils">
+<dt><strong>Spectrum</strong></dt>
+<dd><p class="first last">New <a class="reference internal" href="#darkhistory.spec.spectrum.Spectrum" title="darkhistory.spec.spectrum.Spectrum"><code class="xref py py-class docutils literal notranslate"><span class="pre">Spectrum</span></code></a> instance which has the summed spectrum.</p>
+</dd>
+</dl>
+</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition seealso">
+<p class="first admonition-title">See also</p>
+<p class="last"><a class="reference internal" href="#darkhistory.spec.spectrum.Spectrum.__radd__" title="darkhistory.spec.spectrum.Spectrum.__radd__"><code class="xref py py-meth docutils literal notranslate"><span class="pre">Spectrum.__radd__()</span></code></a></p>
+</div>
+<p class="rubric">Notes</p>
+<p>This special function, together with <a class="reference internal" href="#darkhistory.spec.spectrum.Spectrum.__radd__" title="darkhistory.spec.spectrum.Spectrum.__radd__"><code class="xref py py-meth docutils literal notranslate"><span class="pre">Spectrum.__radd__()</span></code></a>, allows the use of the symbol <code class="docutils literal notranslate"><span class="pre">+</span></code> to add <a class="reference internal" href="#darkhistory.spec.spectrum.Spectrum" title="darkhistory.spec.spectrum.Spectrum"><code class="xref py py-class docutils literal notranslate"><span class="pre">Spectrum</span></code></a> objects together.</p>
+</dd></dl>
+
+<dl class="method">
+<dt>
+<code class="descname">__init__</code><span class="sig-paren">(</span><em>eng</em>, <em>data</em>, <em>rs=-1.0</em>, <em>in_eng=-1.0</em>, <em>spec_type='dNdE'</em><span class="sig-paren">)</span></dt>
+<dd><p>Initialize self.  See help(type(self)) for accurate signature.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="darkhistory.spec.spectrum.Spectrum.__mul__">
+<code class="descname">__mul__</code><span class="sig-paren">(</span><em>other</em><span class="sig-paren">)</span><a class="headerlink" href="#darkhistory.spec.spectrum.Spectrum.__mul__" title="Permalink to this definition">¶</a></dt>
+<dd><p>Takes the product of the spectrum with a <a class="reference internal" href="#darkhistory.spec.spectrum.Spectrum" title="darkhistory.spec.spectrum.Spectrum"><code class="xref py py-class docutils literal notranslate"><span class="pre">Spectrum</span></code></a> object, array or number.</p>
+<p>The <a class="reference internal" href="#darkhistory.spec.spectrum.Spectrum" title="darkhistory.spec.spectrum.Spectrum"><code class="xref py py-class docutils literal notranslate"><span class="pre">Spectrum</span></code></a> object is on the left.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><dl class="first docutils">
+<dt><strong>other</strong> <span class="classifier-delimiter">:</span> <span class="classifier">Spectrum, ndarray, float or int</span></dt>
+<dd><p class="first last">The object to multiply to the current <a class="reference internal" href="#darkhistory.spec.spectrum.Spectrum" title="darkhistory.spec.spectrum.Spectrum"><code class="xref py py-class docutils literal notranslate"><span class="pre">Spectrum</span></code></a> object.</p>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><dl class="first last docutils">
+<dt><strong>Spectrum</strong></dt>
+<dd><p class="first last">New <a class="reference internal" href="#darkhistory.spec.spectrum.Spectrum" title="darkhistory.spec.spectrum.Spectrum"><code class="xref py py-class docutils literal notranslate"><span class="pre">Spectrum</span></code></a> instance which has the multiplied spectrum.</p>
+</dd>
+</dl>
+</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition seealso">
+<p class="first admonition-title">See also</p>
+<p class="last"><a class="reference internal" href="#darkhistory.spec.spectrum.Spectrum.__rmul__" title="darkhistory.spec.spectrum.Spectrum.__rmul__"><code class="xref py py-meth docutils literal notranslate"><span class="pre">Spectrum.__rmul__()</span></code></a></p>
+</div>
+<p class="rubric">Notes</p>
+<p>This special function, together with <a class="reference internal" href="#darkhistory.spec.spectrum.Spectrum.__rmul__" title="darkhistory.spec.spectrum.Spectrum.__rmul__"><code class="xref py py-meth docutils literal notranslate"><span class="pre">Spectrum.__rmul__()</span></code></a>, allows the use of the symbol <code class="docutils literal notranslate"><span class="pre">*</span></code> to multiply <a class="reference internal" href="#darkhistory.spec.spectrum.Spectrum" title="darkhistory.spec.spectrum.Spectrum"><code class="xref py py-class docutils literal notranslate"><span class="pre">Spectrum</span></code></a> objects or an array and <a class="reference internal" href="#darkhistory.spec.spectrum.Spectrum" title="darkhistory.spec.spectrum.Spectrum"><code class="xref py py-class docutils literal notranslate"><span class="pre">Spectrum</span></code></a>.</p>
+<p>The returned <a class="reference internal" href="#darkhistory.spec.spectrum.Spectrum" title="darkhistory.spec.spectrum.Spectrum"><code class="xref py py-class docutils literal notranslate"><span class="pre">Spectrum</span></code></a> object has underflow set to zero if <em>other</em> is not a <a class="reference internal" href="#darkhistory.spec.spectrum.Spectrum" title="darkhistory.spec.spectrum.Spectrum"><code class="xref py py-class docutils literal notranslate"><span class="pre">Spectrum</span></code></a> object.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="darkhistory.spec.spectrum.Spectrum.__neg__">
+<code class="descname">__neg__</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#darkhistory.spec.spectrum.Spectrum.__neg__" title="Permalink to this definition">¶</a></dt>
+<dd><p>Negates the spectrum.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Returns:</th><td class="field-body"><dl class="first last docutils">
+<dt><strong>Spectrum</strong></dt>
+<dd><p class="first last">New <a class="reference internal" href="#darkhistory.spec.spectrum.Spectrum" title="darkhistory.spec.spectrum.Spectrum"><code class="xref py py-class docutils literal notranslate"><span class="pre">Spectrum</span></code></a> instance with the spectrum negated.</p>
+</dd>
+</dl>
+</td>
+</tr>
+</tbody>
+</table>
+<p class="rubric">Notes</p>
+<p>The returned <a class="reference internal" href="#darkhistory.spec.spectrum.Spectrum" title="darkhistory.spec.spectrum.Spectrum"><code class="xref py py-class docutils literal notranslate"><span class="pre">Spectrum</span></code></a> object has underflow set to zero.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="darkhistory.spec.spectrum.Spectrum.__radd__">
+<code class="descname">__radd__</code><span class="sig-paren">(</span><em>other</em><span class="sig-paren">)</span><a class="headerlink" href="#darkhistory.spec.spectrum.Spectrum.__radd__" title="Permalink to this definition">¶</a></dt>
+<dd><p>Adds two <a class="reference internal" href="#darkhistory.spec.spectrum.Spectrum" title="darkhistory.spec.spectrum.Spectrum"><code class="xref py py-class docutils literal notranslate"><span class="pre">Spectrum</span></code></a> instances together, or an array to the spectrum. The <a class="reference internal" href="#darkhistory.spec.spectrum.Spectrum" title="darkhistory.spec.spectrum.Spectrum"><code class="xref py py-class docutils literal notranslate"><span class="pre">Spectrum</span></code></a> object is on the right.</p>
+<p>The returned <a class="reference internal" href="#darkhistory.spec.spectrum.Spectrum" title="darkhistory.spec.spectrum.Spectrum"><code class="xref py py-class docutils literal notranslate"><span class="pre">Spectrum</span></code></a> will have its underflow reset to zero if other is not a <a class="reference internal" href="#darkhistory.spec.spectrum.Spectrum" title="darkhistory.spec.spectrum.Spectrum"><code class="xref py py-class docutils literal notranslate"><span class="pre">Spectrum</span></code></a> object.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><dl class="first docutils">
+<dt><strong>other</strong> <span class="classifier-delimiter">:</span> <span class="classifier">Spectrum or ndarray</span></dt>
+<dd><p class="first last">The object to add to the current <a class="reference internal" href="#darkhistory.spec.spectrum.Spectrum" title="darkhistory.spec.spectrum.Spectrum"><code class="xref py py-class docutils literal notranslate"><span class="pre">Spectrum</span></code></a> object.</p>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><dl class="first last docutils">
+<dt><strong>Spectrum</strong></dt>
+<dd><p class="first last">New <a class="reference internal" href="#darkhistory.spec.spectrum.Spectrum" title="darkhistory.spec.spectrum.Spectrum"><code class="xref py py-class docutils literal notranslate"><span class="pre">Spectrum</span></code></a> instance which has the summed spectrum.</p>
+</dd>
+</dl>
+</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition seealso">
+<p class="first admonition-title">See also</p>
+<p class="last"><a class="reference internal" href="#darkhistory.spec.spectrum.Spectrum.__add__" title="darkhistory.spec.spectrum.Spectrum.__add__"><code class="xref py py-meth docutils literal notranslate"><span class="pre">Spectrum.__add__()</span></code></a></p>
+</div>
+<p class="rubric">Notes</p>
+<p>This special function, together with <a class="reference internal" href="#darkhistory.spec.spectrum.Spectrum.__add__" title="darkhistory.spec.spectrum.Spectrum.__add__"><code class="xref py py-meth docutils literal notranslate"><span class="pre">Spectrum.__add__()</span></code></a>, allows the use of the symbol <code class="docutils literal notranslate"><span class="pre">+</span></code> to add <a class="reference internal" href="#darkhistory.spec.spectrum.Spectrum" title="darkhistory.spec.spectrum.Spectrum"><code class="xref py py-class docutils literal notranslate"><span class="pre">Spectrum</span></code></a> objects together.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="darkhistory.spec.spectrum.Spectrum.__rmul__">
+<code class="descname">__rmul__</code><span class="sig-paren">(</span><em>other</em><span class="sig-paren">)</span><a class="headerlink" href="#darkhistory.spec.spectrum.Spectrum.__rmul__" title="Permalink to this definition">¶</a></dt>
+<dd><p>Takes the product of the spectrum with an array or number.</p>
+<p>The <a class="reference internal" href="#darkhistory.spec.spectrum.Spectrum" title="darkhistory.spec.spectrum.Spectrum"><code class="xref py py-class docutils literal notranslate"><span class="pre">Spectrum</span></code></a> object is on the right.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><dl class="first last docutils">
+<dt><strong>other</strong> <span class="classifier-delimiter">:</span> <span class="classifier">ndarray, float or int</span></dt>
+<dd><p class="first last">The object to multiply with the current <a class="reference internal" href="#darkhistory.spec.spectrum.Spectrum" title="darkhistory.spec.spectrum.Spectrum"><code class="xref py py-class docutils literal notranslate"><span class="pre">Spectrum</span></code></a> object.</p>
+</dd>
+<dt><strong>Returns</strong></dt>
+<dd></dd>
+<dt><strong>——-</strong></dt>
+<dd></dd>
+<dt><strong>Spectrum</strong></dt>
+<dd><p class="first last">New <a class="reference internal" href="#darkhistory.spec.spectrum.Spectrum" title="darkhistory.spec.spectrum.Spectrum"><code class="xref py py-class docutils literal notranslate"><span class="pre">Spectrum</span></code></a> instance which has the multiplied spectrum.</p>
+</dd>
+</dl>
+</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition seealso">
+<p class="first admonition-title">See also</p>
+<p class="last"><a class="reference internal" href="#darkhistory.spec.spectrum.Spectrum.__mul__" title="darkhistory.spec.spectrum.Spectrum.__mul__"><code class="xref py py-meth docutils literal notranslate"><span class="pre">Spectrum.__mul__()</span></code></a></p>
+</div>
+<p class="rubric">Notes</p>
+<p>This special function, together with <a class="reference internal" href="#darkhistory.spec.spectrum.Spectrum.__mul__" title="darkhistory.spec.spectrum.Spectrum.__mul__"><code class="xref py py-meth docutils literal notranslate"><span class="pre">Spectrum.__mul__()</span></code></a>, allows the use of the symbol <code class="docutils literal notranslate"><span class="pre">*</span></code> to multiply <a class="reference internal" href="#darkhistory.spec.spectrum.Spectrum" title="darkhistory.spec.spectrum.Spectrum"><code class="xref py py-class docutils literal notranslate"><span class="pre">Spectrum</span></code></a> objects or an array and Spectrum.</p>
+<p>The returned <a class="reference internal" href="#darkhistory.spec.spectrum.Spectrum" title="darkhistory.spec.spectrum.Spectrum"><code class="xref py py-class docutils literal notranslate"><span class="pre">Spectrum</span></code></a> object has its underflow set to zero.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="darkhistory.spec.spectrum.Spectrum.__rsub__">
+<code class="descname">__rsub__</code><span class="sig-paren">(</span><em>other</em><span class="sig-paren">)</span><a class="headerlink" href="#darkhistory.spec.spectrum.Spectrum.__rsub__" title="Permalink to this definition">¶</a></dt>
+<dd><p>Subtracts this <a class="reference internal" href="#darkhistory.spec.spectrum.Spectrum" title="darkhistory.spec.spectrum.Spectrum"><code class="xref py py-class docutils literal notranslate"><span class="pre">Spectrum</span></code></a> from another or an array.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><dl class="first docutils">
+<dt><strong>other</strong> <span class="classifier-delimiter">:</span> <span class="classifier">Spectrum or ndarray</span></dt>
+<dd><p class="first last">The object from which to subtract the current 
+<a class="reference internal" href="#darkhistory.spec.spectrum.Spectrum" title="darkhistory.spec.spectrum.Spectrum"><code class="xref py py-class docutils literal notranslate"><span class="pre">Spectrum</span></code></a> object.</p>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><dl class="first last docutils">
+<dt><strong>Spectrum</strong></dt>
+<dd><p class="first last">New <a class="reference internal" href="#darkhistory.spec.spectrum.Spectrum" title="darkhistory.spec.spectrum.Spectrum"><code class="xref py py-class docutils literal notranslate"><span class="pre">Spectrum</span></code></a> instance which has the subtracted spectrum.</p>
+</dd>
+</dl>
+</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition seealso">
+<p class="first admonition-title">See also</p>
+<p class="last"><a class="reference internal" href="#darkhistory.spec.spectrum.Spectrum.__sub__" title="darkhistory.spec.spectrum.Spectrum.__sub__"><code class="xref py py-meth docutils literal notranslate"><span class="pre">Spectrum.__sub__()</span></code></a></p>
+</div>
+<p class="rubric">Notes</p>
+<p>This special function, together with <a class="reference internal" href="#darkhistory.spec.spectrum.Spectrum.__sub__" title="darkhistory.spec.spectrum.Spectrum.__sub__"><code class="xref py py-meth docutils literal notranslate"><span class="pre">Spectrum.__sub__()</span></code></a>, allows the use of the symbol - to subtract or subtract from <a class="reference internal" href="#darkhistory.spec.spectrum.Spectrum" title="darkhistory.spec.spectrum.Spectrum"><code class="xref py py-class docutils literal notranslate"><span class="pre">Spectrum</span></code></a> objects.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="darkhistory.spec.spectrum.Spectrum.__rtruediv__">
+<code class="descname">__rtruediv__</code><span class="sig-paren">(</span><em>other</em><span class="sig-paren">)</span><a class="headerlink" href="#darkhistory.spec.spectrum.Spectrum.__rtruediv__" title="Permalink to this definition">¶</a></dt>
+<dd><p>Divides a number or array by the spectrum.</p>
+<p>The <a class="reference internal" href="#darkhistory.spec.spectrum.Spectrum" title="darkhistory.spec.spectrum.Spectrum"><code class="xref py py-class docutils literal notranslate"><span class="pre">Spectrum</span></code></a> object is on the right.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><dl class="first last docutils">
+<dt><strong>other</strong> <span class="classifier-delimiter">:</span> <span class="classifier">ndarray, float or int</span></dt>
+<dd><p class="first last">The object by which to divide the current 
+<a class="reference internal" href="#darkhistory.spec.spectrum.Spectrum" title="darkhistory.spec.spectrum.Spectrum"><code class="xref py py-class docutils literal notranslate"><span class="pre">Spectrum</span></code></a> object.</p>
+</dd>
+<dt><strong>Returns</strong></dt>
+<dd></dd>
+<dt><strong>——-</strong></dt>
+<dd></dd>
+<dt><strong>Spectrum</strong></dt>
+<dd><p class="first last">New <a class="reference internal" href="#darkhistory.spec.spectrum.Spectrum" title="darkhistory.spec.spectrum.Spectrum"><code class="xref py py-class docutils literal notranslate"><span class="pre">Spectrum</span></code></a> instance which has the divided spectrum.</p>
+</dd>
+</dl>
+</td>
+</tr>
+</tbody>
+</table>
+<p class="rubric">Notes</p>
+<p>This special function, together with <a class="reference internal" href="#darkhistory.spec.spectrum.Spectrum.__truediv__" title="darkhistory.spec.spectrum.Spectrum.__truediv__"><code class="xref py py-meth docutils literal notranslate"><span class="pre">Spectrum.__truediv__()</span></code></a>, allows the use of the symbol <code class="docutils literal notranslate"><span class="pre">/</span></code> to multiply <a class="reference internal" href="#darkhistory.spec.spectrum.Spectrum" title="darkhistory.spec.spectrum.Spectrum"><code class="xref py py-class docutils literal notranslate"><span class="pre">Spectrum</span></code></a> objects or an array and <a class="reference internal" href="#darkhistory.spec.spectrum.Spectrum" title="darkhistory.spec.spectrum.Spectrum"><code class="xref py py-class docutils literal notranslate"><span class="pre">Spectrum</span></code></a>.</p>
+<p>The returned <a class="reference internal" href="#darkhistory.spec.spectrum.Spectrum" title="darkhistory.spec.spectrum.Spectrum"><code class="xref py py-class docutils literal notranslate"><span class="pre">Spectrum</span></code></a> object underflow is set to zero.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="darkhistory.spec.spectrum.Spectrum.__sub__">
+<code class="descname">__sub__</code><span class="sig-paren">(</span><em>other</em><span class="sig-paren">)</span><a class="headerlink" href="#darkhistory.spec.spectrum.Spectrum.__sub__" title="Permalink to this definition">¶</a></dt>
+<dd><p>Subtracts a <a class="reference internal" href="#darkhistory.spec.spectrum.Spectrum" title="darkhistory.spec.spectrum.Spectrum"><code class="xref py py-class docutils literal notranslate"><span class="pre">Spectrum</span></code></a> or an array from this <a class="reference internal" href="#darkhistory.spec.spectrum.Spectrum" title="darkhistory.spec.spectrum.Spectrum"><code class="xref py py-class docutils literal notranslate"><span class="pre">Spectrum</span></code></a>.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><dl class="first docutils">
+<dt><strong>other</strong> <span class="classifier-delimiter">:</span> <span class="classifier">Spectrum or ndarray</span></dt>
+<dd><p class="first last">The object to subtract from the current <a class="reference internal" href="#darkhistory.spec.spectrum.Spectrum" title="darkhistory.spec.spectrum.Spectrum"><code class="xref py py-class docutils literal notranslate"><span class="pre">Spectrum</span></code></a> object.</p>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><dl class="first last docutils">
+<dt><strong>Spectrum</strong></dt>
+<dd><p class="first last">New <a class="reference internal" href="#darkhistory.spec.spectrum.Spectrum" title="darkhistory.spec.spectrum.Spectrum"><code class="xref py py-class docutils literal notranslate"><span class="pre">Spectrum</span></code></a> instance which has the subtracted spectrum.</p>
+</dd>
+</dl>
+</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition seealso">
+<p class="first admonition-title">See also</p>
+<p class="last"><a class="reference internal" href="#darkhistory.spec.spectrum.Spectrum.__rsub__" title="darkhistory.spec.spectrum.Spectrum.__rsub__"><code class="xref py py-meth docutils literal notranslate"><span class="pre">Spectrum.__rsub__()</span></code></a></p>
+</div>
+<p class="rubric">Notes</p>
+<p>This special function, together with <a class="reference internal" href="#darkhistory.spec.spectrum.Spectrum.__rsub__" title="darkhistory.spec.spectrum.Spectrum.__rsub__"><code class="xref py py-meth docutils literal notranslate"><span class="pre">Spectrum.__rsub__()</span></code></a>, allows the use of the symbol <code class="docutils literal notranslate"><span class="pre">-</span></code> to subtract or subtract from <a class="reference internal" href="#darkhistory.spec.spectrum.Spectrum" title="darkhistory.spec.spectrum.Spectrum"><code class="xref py py-class docutils literal notranslate"><span class="pre">Spectrum</span></code></a> objects.</p>
+<p>The returned <a class="reference internal" href="#darkhistory.spec.spectrum.Spectrum" title="darkhistory.spec.spectrum.Spectrum"><code class="xref py py-class docutils literal notranslate"><span class="pre">Spectrum</span></code></a> object underflow is reset to zero if <cite>other</cite> is not a <a class="reference internal" href="#darkhistory.spec.spectrum.Spectrum" title="darkhistory.spec.spectrum.Spectrum"><code class="xref py py-class docutils literal notranslate"><span class="pre">Spectrum</span></code></a> object.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="darkhistory.spec.spectrum.Spectrum.__truediv__">
+<code class="descname">__truediv__</code><span class="sig-paren">(</span><em>other</em><span class="sig-paren">)</span><a class="headerlink" href="#darkhistory.spec.spectrum.Spectrum.__truediv__" title="Permalink to this definition">¶</a></dt>
+<dd><p>Divides the spectrum by an array or number.</p>
+<p>The <a class="reference internal" href="#darkhistory.spec.spectrum.Spectrum" title="darkhistory.spec.spectrum.Spectrum"><code class="xref py py-class docutils literal notranslate"><span class="pre">Spectrum</span></code></a> object is on the left.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><dl class="first docutils">
+<dt><strong>other</strong> <span class="classifier-delimiter">:</span> <span class="classifier">ndarray, float or int</span></dt>
+<dd><p class="first last">The object to divide the current <a class="reference internal" href="#darkhistory.spec.spectrum.Spectrum" title="darkhistory.spec.spectrum.Spectrum"><code class="xref py py-class docutils literal notranslate"><span class="pre">Spectrum</span></code></a> object by.</p>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><dl class="first last docutils">
+<dt><strong>Spectrum</strong></dt>
+<dd><p class="first last">New <a class="reference internal" href="#darkhistory.spec.spectrum.Spectrum" title="darkhistory.spec.spectrum.Spectrum"><code class="xref py py-class docutils literal notranslate"><span class="pre">Spectrum</span></code></a> instance which has the divided spectrum.</p>
+</dd>
+</dl>
+</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition seealso">
+<p class="first admonition-title">See also</p>
+<p class="last"><a class="reference internal" href="#darkhistory.spec.spectrum.Spectrum.__rtruediv__" title="darkhistory.spec.spectrum.Spectrum.__rtruediv__"><code class="xref py py-meth docutils literal notranslate"><span class="pre">Spectrum.__rtruediv__()</span></code></a></p>
+</div>
+<p class="rubric">Notes</p>
+<p>This special function, together with <a class="reference internal" href="#darkhistory.spec.spectrum.Spectrum.__rtruediv__" title="darkhistory.spec.spectrum.Spectrum.__rtruediv__"><code class="xref py py-meth docutils literal notranslate"><span class="pre">Spectrum.__rtruediv__()</span></code></a>, allows the use of the symbol <code class="docutils literal notranslate"><span class="pre">/</span></code> to multiply <a class="reference internal" href="#darkhistory.spec.spectrum.Spectrum" title="darkhistory.spec.spectrum.Spectrum"><code class="xref py py-class docutils literal notranslate"><span class="pre">Spectrum</span></code></a> objects or an array and Spectrum.</p>
+<p>The returned <a class="reference internal" href="#darkhistory.spec.spectrum.Spectrum" title="darkhistory.spec.spectrum.Spectrum"><code class="xref py py-class docutils literal notranslate"><span class="pre">Spectrum</span></code></a> object underflow is set to zero.</p>
+</dd></dl>
+
+<dl class="attribute">
+<dt id="darkhistory.spec.spectrum.Spectrum.__weakref__">
+<code class="descname">__weakref__</code><a class="headerlink" href="#darkhistory.spec.spectrum.Spectrum.__weakref__" title="Permalink to this definition">¶</a></dt>
+<dd><p>list of weak references to the object (if defined)</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="darkhistory.spec.spectrum.Spectrum.at_eng">
+<code class="descname">at_eng</code><span class="sig-paren">(</span><em>new_eng</em>, <em>left=-200</em>, <em>right=-200</em><span class="sig-paren">)</span><a class="headerlink" href="#darkhistory.spec.spectrum.Spectrum.at_eng" title="Permalink to this definition">¶</a></dt>
+<dd><p>Interpolates the spectrum at a new abscissa.</p>
+<p>Interpolation is logarithmic.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><dl class="first last docutils">
+<dt><strong>new_eng</strong> <span class="classifier-delimiter">:</span> <span class="classifier">ndarray</span></dt>
+<dd><p class="first last">The new energies to interpolate at.</p>
+</dd>
+<dt><strong>left</strong> <span class="classifier-delimiter">:</span> <span class="classifier">float, optional</span></dt>
+<dd><p class="first last">Returns the value if beyond the first bin on the left. Default is to return -200, so that the exponential is small.</p>
+</dd>
+<dt><strong>right</strong> <span class="classifier-delimiter">:</span> <span class="classifier">float, optional</span></dt>
+<dd><p class="first last">Returns the value if beyond the last bin on the right. Default is to return -200, so that the exponential is small.</p>
+</dd>
+</dl>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="darkhistory.spec.spectrum.Spectrum.contract">
+<code class="descname">contract</code><span class="sig-paren">(</span><em>mat</em><span class="sig-paren">)</span><a class="headerlink" href="#darkhistory.spec.spectrum.Spectrum.contract" title="Permalink to this definition">¶</a></dt>
+<dd><p>Performs a dot product with the <a class="reference internal" href="#darkhistory.spec.spectrum.Spectrum" title="darkhistory.spec.spectrum.Spectrum"><code class="xref py py-class docutils literal notranslate"><span class="pre">Spectrum</span></code></a>.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><dl class="first docutils">
+<dt><strong>mat</strong> <span class="classifier-delimiter">:</span> <span class="classifier">ndarray</span></dt>
+<dd><p class="first last">The array to take the dot product with.</p>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><dl class="first last docutils">
+<dt><strong>float</strong></dt>
+<dd><p class="first last">The resulting dot product.</p>
+</dd>
+</dl>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="darkhistory.spec.spectrum.Spectrum.engloss_rebin">
+<code class="descname">engloss_rebin</code><span class="sig-paren">(</span><em>in_eng</em>, <em>out_eng</em>, <em>out_spec_type=None</em>, <em>fast=False</em><span class="sig-paren">)</span><a class="headerlink" href="#darkhistory.spec.spectrum.Spectrum.engloss_rebin" title="Permalink to this definition">¶</a></dt>
+<dd><p>Converts an energy loss spectrum to a secondary spectrum.</p>
+<p>An “energy loss spectrum” is a distribution of outgoing particles as a function of <em>energy lost</em> <span class="math notranslate nohighlight">\(\Delta\)</span> saved in self.eng after some interaction for an incoming particle <span class="math notranslate nohighlight">\(E'\)</span> specified by in_eng. The “secondary spectrum” is simply the distribution of outgoing particles as a function of their own energy <span class="math notranslate nohighlight">\(E\)</span> instead, with abscissa out_eng.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><dl class="first last docutils">
+<dt><strong>in_eng</strong> <span class="classifier-delimiter">:</span> <span class="classifier">float</span></dt>
+<dd><p class="first last">The injection energy of the primary which gives rise to self.dNdE as the energy loss spectrum.</p>
+</dd>
+<dt><strong>out_eng</strong> <span class="classifier-delimiter">:</span> <span class="classifier">ndarray</span></dt>
+<dd><p class="first last">The final energy abscissa to bin into. If not specified, it is assumed to be the same as the initial abscissa.</p>
+</dd>
+<dt><strong>out_spec_type: {‘N’, ‘dNdE’}, optional</strong></dt>
+<dd><p class="first last">The spec_type of the output spectrum. If not specified, the output spectrum will have the same spec_type.</p>
+</dd>
+<dt><strong>fast: bool, optional</strong></dt>
+<dd><p class="first last">If fast, uses <a class="reference internal" href="#darkhistory.spec.spectrum.Spectrum.rebin_fast" title="darkhistory.spec.spectrum.Spectrum.rebin_fast"><code class="xref py py-meth docutils literal notranslate"><span class="pre">Spectrum.rebin_fast()</span></code></a> instead of <a class="reference internal" href="#darkhistory.spec.spectrum.Spectrum.rebin" title="darkhistory.spec.spectrum.Spectrum.rebin"><code class="xref py py-meth docutils literal notranslate"><span class="pre">Spectrum.rebin()</span></code></a> for speed.</p>
+</dd>
+</dl>
+</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition seealso">
+<p class="first admonition-title">See also</p>
+<p class="last"><a class="reference internal" href="#darkhistory.spec.spectrum.Spectrum.rebin" title="darkhistory.spec.spectrum.Spectrum.rebin"><code class="xref py py-meth docutils literal notranslate"><span class="pre">Spectrum.rebin()</span></code></a>, <a class="reference internal" href="#darkhistory.spec.spectrum.Spectrum.rebin_fast" title="darkhistory.spec.spectrum.Spectrum.rebin_fast"><code class="xref py py-meth docutils literal notranslate"><span class="pre">Spectrum.rebin_fast()</span></code></a></p>
+</div>
+<p class="rubric">Notes</p>
+<p>This function is simply a numerical version of the fact that</p>
+<div class="math notranslate nohighlight">
+\[\frac{dN}{d \Delta}(\Delta) = \frac{dN}{dE} (E = E' - \Delta) \]</div>
+<p>in discretized form, preserving the total number and total energy in the spectrum using <a class="reference internal" href="#darkhistory.spec.spectrum.Spectrum.rebin" title="darkhistory.spec.spectrum.Spectrum.rebin"><code class="xref py py-meth docutils literal notranslate"><span class="pre">Spectrum.rebin()</span></code></a>.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="darkhistory.spec.spectrum.Spectrum.rebin">
+<code class="descname">rebin</code><span class="sig-paren">(</span><em>out_eng</em><span class="sig-paren">)</span><a class="headerlink" href="#darkhistory.spec.spectrum.Spectrum.rebin" title="Permalink to this definition">¶</a></dt>
+<dd><p>Rebins according to a new abscissa.</p>
+<p>The total number and total energy is conserved.</p>
+<p>If a bin in the old abscissa self.eng is below the lowest bin of the new abscissa out_eng, then the total number and energy not assigned to the lowest bin are assigned to the underflow.</p>
+<p>If a bin in self.eng is above the highest bin in out_eng, a warning is thrown, the values are simply discarded, and the total number and energy can no longer be conserved.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><dl class="first docutils">
+<dt><strong>out_eng</strong> <span class="classifier-delimiter">:</span> <span class="classifier">ndarray</span></dt>
+<dd><p class="first last">The new abscissa to bin into.</p>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><dl class="first last docutils">
+<dt><strong>None</strong></dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition seealso">
+<p class="first admonition-title">See also</p>
+<p class="last"><a class="reference internal" href="../spectools/darkhistory.spec.spectools.rebin_N_arr.html#darkhistory.spec.spectools.rebin_N_arr" title="darkhistory.spec.spectools.rebin_N_arr"><code class="xref py py-func docutils literal notranslate"><span class="pre">spectools.rebin_N_arr()</span></code></a></p>
+</div>
+<p class="rubric">Notes</p>
+<p>Total number and energy are conserved by assigning the number of particles <span class="math notranslate nohighlight">\(N\)</span> in a bin of energy <span class="math notranslate nohighlight">\(E\)</span> to two adjacent bins in the new abscissa out_eng, with energies <span class="math notranslate nohighlight">\(E_\text{low}\)</span> and <span class="math notranslate nohighlight">\(E_\text{upp}\)</span> such that <span class="math notranslate nohighlight">\(E_\text{low} &lt; E &lt; E_\text{upp}\)</span>. The number of particles <span class="math notranslate nohighlight">\(N_\text{low}\)</span> and <span class="math notranslate nohighlight">\(N_\text{upp}\)</span> assigned to these two bins are given by</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}N_\text{low} &amp;= \frac{E_\text{upp} - E}{E_\text{upp} - E_\text{low}} N \,, \\
+N_\text{upp} &amp;= \frac{E - E_\text{low}}{E_\text{upp} - E_\text{low}} N\end{split}\]</div>
+<p>Rebinning works best when going from a finer binning to a coarser binning. Going the other way can result in spiky features, since the coarser binning simply does not contain enough information to reconstruct the finer binning in this way.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="darkhistory.spec.spectrum.Spectrum.rebin_fast">
+<code class="descname">rebin_fast</code><span class="sig-paren">(</span><em>out_eng</em><span class="sig-paren">)</span><a class="headerlink" href="#darkhistory.spec.spectrum.Spectrum.rebin_fast" title="Permalink to this definition">¶</a></dt>
+<dd><p>Rebins the <a class="reference internal" href="#darkhistory.spec.spectrum.Spectrum" title="darkhistory.spec.spectrum.Spectrum"><code class="xref py py-class docutils literal notranslate"><span class="pre">Spectrum</span></code></a> with ‘N’ spec_type quickly.</p>
+<p>Rebinning conserves total number and total energy. No checks are made: use with caution!</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><dl class="first last docutils">
+<dt><strong>out_eng_interp</strong> <span class="classifier-delimiter">:</span> <span class="classifier">ndarray</span></dt>
+<dd><p class="first last">The new abscissa to bin into. If self.eng has values that are smaller than out_eng[0] or larger than out_eng[-1], then the value is discarded <em>without error</em>.</p>
+</dd>
+</dl>
+</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition seealso">
+<p class="first admonition-title">See also</p>
+<p class="last"><a class="reference internal" href="#darkhistory.spec.spectrum.Spectrum.rebin" title="darkhistory.spec.spectrum.Spectrum.rebin"><code class="xref py py-meth docutils literal notranslate"><span class="pre">Spectrum.rebin()</span></code></a></p>
+</div>
+<p class="rubric">Notes</p>
+<p>This implementation is identical to <a class="reference internal" href="#darkhistory.spec.spectrum.Spectrum.rebin" title="darkhistory.spec.spectrum.Spectrum.rebin"><code class="xref py py-meth docutils literal notranslate"><span class="pre">Spectrum.rebin()</span></code></a>, but works only if the spec_type is of type ‘N’, and further dispenses with underflow and other checks.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="darkhistory.spec.spectrum.Spectrum.redshift">
+<code class="descname">redshift</code><span class="sig-paren">(</span><em>new_rs</em><span class="sig-paren">)</span><a class="headerlink" href="#darkhistory.spec.spectrum.Spectrum.redshift" title="Permalink to this definition">¶</a></dt>
+<dd><p>Redshifts the <a class="reference internal" href="#darkhistory.spec.spectrum.Spectrum" title="darkhistory.spec.spectrum.Spectrum"><code class="xref py py-class docutils literal notranslate"><span class="pre">Spectrum</span></code></a> object as a photon spectrum.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><dl class="first last docutils">
+<dt><strong>new_rs</strong> <span class="classifier-delimiter">:</span> <span class="classifier">float</span></dt>
+<dd><p class="first last">The new redshift (1+z) to redshift to.</p>
+</dd>
+</dl>
+</td>
+</tr>
+</tbody>
+</table>
+<p class="rubric">Examples</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">eng</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">100</span><span class="p">,</span> <span class="mi">1000</span><span class="p">])</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">spec</span> <span class="o">=</span> <span class="n">Spectrum</span><span class="p">(</span><span class="n">eng</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">ones</span><span class="p">(</span><span class="mi">4</span><span class="p">),</span> <span class="n">rs</span><span class="o">=</span><span class="mi">100</span><span class="p">,</span> <span class="n">spec_type</span><span class="o">=</span><span class="s1">&#39;N&#39;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">spec</span><span class="o">.</span><span class="n">redshift</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">(</span><span class="n">spec</span><span class="o">.</span><span class="n">N</span><span class="p">)</span>
+<span class="go">[1. 1. 1. 0.]</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">(</span><span class="n">spec</span><span class="o">.</span><span class="n">underflow</span><span class="p">[</span><span class="s1">&#39;N&#39;</span><span class="p">])</span>
+<span class="go">1.0</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="darkhistory.spec.spectrum.Spectrum.shift_eng">
+<code class="descname">shift_eng</code><span class="sig-paren">(</span><em>new_eng</em><span class="sig-paren">)</span><a class="headerlink" href="#darkhistory.spec.spectrum.Spectrum.shift_eng" title="Permalink to this definition">¶</a></dt>
+<dd><p>Shifts the abscissa while conserving number.</p>
+<p>This function can be used to subtract or add some amount of energy from each bin in the spectrum. The dN/dE is adjusted to conserve number in each bin.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><dl class="first docutils">
+<dt><strong>new_eng</strong> <span class="classifier-delimiter">:</span> <span class="classifier">ndarray</span></dt>
+<dd><p class="first last">The new energy abscissa.</p>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><dl class="first last docutils">
+<dt><strong>None</strong></dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+</tbody>
+</table>
+</dd></dl>
+
+<dl class="method">
+<dt id="darkhistory.spec.spectrum.Spectrum.switch_spec_type">
+<code class="descname">switch_spec_type</code><span class="sig-paren">(</span><em>target=None</em><span class="sig-paren">)</span><a class="headerlink" href="#darkhistory.spec.spectrum.Spectrum.switch_spec_type" title="Permalink to this definition">¶</a></dt>
+<dd><p>Switches between data being stored as N or dN/dE.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><dl class="first last docutils">
+<dt><strong>target</strong> <span class="classifier-delimiter">:</span> <span class="classifier">{‘N’, ‘dNdE’}, optional</span></dt>
+<dd><p class="first last">The target type to switch to. If not specified, performs a switch regardless.</p>
+</dd>
+</dl>
+</td>
+</tr>
+</tbody>
+</table>
+<p class="rubric">Notes</p>
+<p>Although both N and dN/dE can be accessed regardless of which values
+are stored, performing a switch before repeated computations can
+speed up the computation.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="darkhistory.spec.spectrum.Spectrum.totN">
+<code class="descname">totN</code><span class="sig-paren">(</span><em>bound_type=None</em>, <em>bound_arr=None</em><span class="sig-paren">)</span><a class="headerlink" href="#darkhistory.spec.spectrum.Spectrum.totN" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns the total number of particles in part of the spectrum.</p>
+<p>The part of the spectrum can be specified in two ways, and is specified by bound_type. Multiple totals can be obtained through bound_arr.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><dl class="first docutils">
+<dt><strong>bound_type</strong> <span class="classifier-delimiter">:</span> <span class="classifier">{‘bin’, ‘eng’, None}</span></dt>
+<dd><p class="first">The type of bounds to use. Bound values do not have to be within [0:length] for ‘bin’ or within the abscissa for ‘eng’. None should only be used when computing the total particle number in the spectrum.</p>
+<p class="last">Specifying <code class="docutils literal notranslate"><span class="pre">bound_type='bin'</span></code> without bound_arr returns self.N.</p>
+</dd>
+<dt><strong>bound_arr</strong> <span class="classifier-delimiter">:</span> <span class="classifier">ndarray of length N, optional</span></dt>
+<dd><p class="first">An array of boundaries (bin or energy), between which the total number of particles will be computed. If bound_arr is None, but bound_type is specified, the total number of particles in each bin is computed. If both bound_type and bound_arr are None, then the total number of particles in the spectrum is computed.</p>
+<p>For ‘bin’, bounds are specified as the bin <em>boundary</em>, with 0 being the left most boundary, 1 the right-hand of the first bin and so on. This is equivalent to integrating over a histogram. For ‘eng’, bounds are specified by energy values.</p>
+<p class="last">These boundaries need not be integer values for ‘bin’: specifying np.array([0.5, 1.5]) for example will include half of the first bin and half of the second.</p>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><dl class="first last docutils">
+<dt><strong>ndarray of length N-1, or float</strong></dt>
+<dd><p class="first last">Total number of particles in the spectrum, or between the specified boundaries.</p>
+</dd>
+</dl>
+</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition seealso">
+<p class="first admonition-title">See also</p>
+<p class="last"><a class="reference internal" href="#darkhistory.spec.spectrum.Spectrum.toteng" title="darkhistory.spec.spectrum.Spectrum.toteng"><code class="xref py py-meth docutils literal notranslate"><span class="pre">Spectrum.toteng()</span></code></a></p>
+</div>
+<p class="rubric">Examples</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">eng</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">100</span><span class="p">,</span> <span class="mi">1000</span><span class="p">])</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">N</span>   <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">])</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">spec</span> <span class="o">=</span> <span class="n">Spectrum</span><span class="p">(</span><span class="n">eng</span><span class="p">,</span> <span class="n">N</span><span class="p">,</span> <span class="n">spec_type</span><span class="o">=</span><span class="s1">&#39;N&#39;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">spec</span><span class="o">.</span><span class="n">totN</span><span class="p">()</span>
+<span class="go">10.0</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">spec</span><span class="o">.</span><span class="n">totN</span><span class="p">(</span><span class="s1">&#39;bin&#39;</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span> <span class="mi">3</span><span class="p">]))</span>
+<span class="go">array([5.])</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">spec</span><span class="o">.</span><span class="n">totN</span><span class="p">(</span><span class="s1">&#39;eng&#39;</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mi">10</span><span class="p">,</span> <span class="mf">1e4</span><span class="p">]))</span>
+<span class="go">array([8.])</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="darkhistory.spec.spectrum.Spectrum.toteng">
+<code class="descname">toteng</code><span class="sig-paren">(</span><em>bound_type=None</em>, <em>bound_arr=None</em><span class="sig-paren">)</span><a class="headerlink" href="#darkhistory.spec.spectrum.Spectrum.toteng" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns the total energy of particles in part of the spectrum.</p>
+<p>The part of the spectrum can be specified in two ways, and is specified by bound_type. Multiple totals can be obtained through bound_arr.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Parameters:</th><td class="field-body"><dl class="first docutils">
+<dt><strong>bound_type</strong> <span class="classifier-delimiter">:</span> <span class="classifier">{‘bin’, ‘eng’, None}</span></dt>
+<dd><p class="first">The type of bounds to use. Bound values do not have to be within the [0:length] for ‘bin’ or within the abscissa for ‘eng’. None should only be used to obtain the total energy.</p>
+<p class="last">Specifying <code class="docutils literal notranslate"><span class="pre">bound_type='bin'</span></code> without bound_arr gives the total energy in each bin.</p>
+</dd>
+<dt><strong>bound_arr</strong> <span class="classifier-delimiter">:</span> <span class="classifier">ndarray of length N, optional</span></dt>
+<dd><p class="first">An array of boundaries (bin or energy), between which the total number of particles will be computed. If unspecified, the total number of particles in the whole spectrum is computed.</p>
+<p>For ‘bin’, bounds are specified as the bin <em>boundary</em>, with 0 being the left most boundary, 1 the right-hand of the first bin and so on. This is equivalent to integrating over a histogram. For ‘eng’, bounds are specified by energy values.</p>
+<p class="last">These boundaries need not be integer values for ‘bin’: specifying np.array([0.5, 1.5]) for example will include half of the first bin and half of the second.</p>
+</dd>
+</dl>
+</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Returns:</th><td class="field-body"><dl class="first last docutils">
+<dt><strong>ndarray of length N-1, or float</strong></dt>
+<dd><p class="first last">Total energy in the spectrum or between the specified boundaries.</p>
+</dd>
+</dl>
+</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition seealso">
+<p class="first admonition-title">See also</p>
+<p class="last"><a class="reference internal" href="#darkhistory.spec.spectrum.Spectrum.totN" title="darkhistory.spec.spectrum.Spectrum.totN"><code class="xref py py-meth docutils literal notranslate"><span class="pre">Spectrum.totN()</span></code></a></p>
+</div>
+<p class="rubric">Examples</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">eng</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">100</span><span class="p">,</span> <span class="mi">1000</span><span class="p">])</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">N</span>   <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">])</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">spec</span> <span class="o">=</span> <span class="n">Spectrum</span><span class="p">(</span><span class="n">eng</span><span class="p">,</span> <span class="n">N</span><span class="p">,</span> <span class="n">spec_type</span><span class="o">=</span><span class="s1">&#39;N&#39;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">spec</span><span class="o">.</span><span class="n">toteng</span><span class="p">()</span>
+<span class="go">4321.0</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">spec</span><span class="o">.</span><span class="n">toteng</span><span class="p">(</span><span class="s1">&#39;bin&#39;</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span> <span class="mi">3</span><span class="p">]))</span>
+<span class="go">array([320.])</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">spec</span><span class="o">.</span><span class="n">toteng</span><span class="p">(</span><span class="s1">&#39;eng&#39;</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mi">10</span><span class="p">,</span> <span class="mf">1e4</span><span class="p">]))</span>
+<span class="go">array([4310.])</span>
+</pre></div>
+</div>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+
+
+          </div>
+        </div>
+          </div>
+      <div class="spc-rightsidebar span3">
+        <div class="sphinxsidebarwrapper">
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="../darkhistory.spec.spectrum.html"
+                        title="previous chapter">darkhistory.spec.spectrum</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="../darkhistory.spec.transferfunclist.html"
+                        title="next chapter">darkhistory.spec.transferfunclist</a></p>
+  <h3>This Page</h3>
+  <div>
+    <a href="../../../../_sources/_autosummary/darkhistory/spec/spectrum/darkhistory.spec.spectrum.Spectrum.rst.txt"
+       rel="nofollow">Show Source</a>
+  </div>
+    
+
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../../../../search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+
+<!---->
+        </div>
+      </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container container-navbar-bottom">
+      <div class="spc-navbar">
+        
+      </div>
+    </div>
+    <div class="container">
+    <div class="footer">
+    <div class="row-fluid">
+    <ul class="inline pull-left">
+      <li>
+        &copy; Copyright 2019, Hongwan Liu, Gregory Ridgway and Tracy Slatyer.
+      </li>
+      <li>
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.8.5.
+      </li>
+    </ul>
+    </div>
+    </div>
+    </div>
+  </body>
+</html>
