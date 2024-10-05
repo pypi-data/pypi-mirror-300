@@ -1,0 +1,66 @@
+# v1.3.4
+
+- configure custom course info via `INFO`
+
+# v1.3.3
+
+- fixed a bug, where no title for a question is given
+
+# v1.3.2
+
+- removed left and right borders in question box on mobile devices
+
+# v1.3.1
+
+- added demo site in README.md
+
+# v1.3.0
+
+- support for quiz pages with time limit
+
+# v1.2.6
+
+- Python packaging fixes
+
+# v1.2.5
+
+- published as Python package
+
+# v1.2.4
+
+- bug fix: the internal counter for single/multiple choice sections was not reset after retrying a question
+- bug fix: context-sensitive boolean variables were not correctly compared.
+
+# v1.2.3
+
+- bug fix: single-choice answers with at least 5 options no longer produce strange progress hints to the student
+- bug fix: variables from Python code are now forbidden to be asked twice or more. Instead an error is shown and the teacher is requested to declare distinct variables per input field.
+- bug fix: questions without answer field have previously thrown an exception in the debug output HTML-file.
+
+# v1.2.2
+
+- bug fix: filled matrix elements vanished after resizing the matrix
+- minor bug fixes
+
+# v1.2.1
+
+- feedback for unfilled input fields
+
+# v1.2.0
+
+- the title line is split in case it is too long (prevents enabling horizontal page scroll on mobile devices)
+- fixed many pylint warnings
+- removed the explicit import of matplotlib
+
+# v1.1.0
+
+- improved comparison of ODE solutions
+- bug fixes
+
+# v1.0.1
+
+- bug fixes
+
+# v1.0.0
+
+- first release
