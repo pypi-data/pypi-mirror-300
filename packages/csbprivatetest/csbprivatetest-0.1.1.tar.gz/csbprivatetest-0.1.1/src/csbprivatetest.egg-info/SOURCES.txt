@@ -1,0 +1,7 @@
+LICENSE
+README.md
+setup.py
+src/csbprivatetest.egg-info/PKG-INFO
+src/csbprivatetest.egg-info/SOURCES.txt
+src/csbprivatetest.egg-info/dependency_links.txt
+src/csbprivatetest.egg-info/top_level.txt
