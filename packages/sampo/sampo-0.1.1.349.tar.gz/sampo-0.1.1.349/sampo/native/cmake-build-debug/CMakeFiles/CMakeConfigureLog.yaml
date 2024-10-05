@@ -1,0 +1,594 @@
+
+---
+events:
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Users/Quarter/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.9921.42/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeDetermineSystem.cmake:204 (message)"
+      - "CMakeLists.txt:12 (project)"
+    message: |
+      The system is: Windows - 10.0.19044 - AMD64
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Users/Quarter/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.9921.42/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/Users/Quarter/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.9921.42/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/Users/Quarter/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.9921.42/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:12 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+      Compiler: CMAKE_CXX_COMPILER-NOTFOUND 
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      Не удается найти указанный файл
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Users/Quarter/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.9921.42/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/Users/Quarter/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.9921.42/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/Users/Quarter/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.9921.42/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:12 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+      Compiler: CMAKE_CXX_COMPILER-NOTFOUND 
+      Build flags: 
+      Id flags: -c 
+      
+      The output was:
+      Не удается найти указанный файл
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Users/Quarter/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.9921.42/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/Users/Quarter/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.9921.42/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/Users/Quarter/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.9921.42/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:12 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+      Compiler: CMAKE_CXX_COMPILER-NOTFOUND 
+      Build flags: 
+      Id flags: --c++ 
+      
+      The output was:
+      Не удается найти указанный файл
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Users/Quarter/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.9921.42/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/Users/Quarter/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.9921.42/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/Users/Quarter/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.9921.42/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:12 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+      Compiler: CMAKE_CXX_COMPILER-NOTFOUND 
+      Build flags: 
+      Id flags: --ec++ 
+      
+      The output was:
+      Не удается найти указанный файл
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Users/Quarter/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.9921.42/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/Users/Quarter/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.9921.42/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/Users/Quarter/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.9921.42/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:12 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+      Compiler: CMAKE_CXX_COMPILER-NOTFOUND 
+      Build flags: 
+      Id flags: --target=arm-arm-none-eabi;-mcpu=cortex-m3 
+      
+      The output was:
+      Не удается найти указанный файл
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Users/Quarter/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.9921.42/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/Users/Quarter/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.9921.42/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/Users/Quarter/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.9921.42/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:12 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+      Compiler: CMAKE_CXX_COMPILER-NOTFOUND 
+      Build flags: 
+      Id flags: -c;-I__does_not_exist__ 
+      
+      The output was:
+      Не удается найти указанный файл
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Users/Quarter/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.9921.42/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/Users/Quarter/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.9921.42/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/Users/Quarter/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.9921.42/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:12 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+      Compiler: CMAKE_CXX_COMPILER-NOTFOUND 
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      Не удается найти указанный файл
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Users/Quarter/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.9921.42/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/Users/Quarter/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.9921.42/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/Users/Quarter/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.9921.42/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:12 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+      Compiler: CMAKE_CXX_COMPILER-NOTFOUND 
+      Build flags: 
+      Id flags: -c 
+      
+      The output was:
+      Не удается найти указанный файл
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Users/Quarter/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.9921.42/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/Users/Quarter/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.9921.42/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/Users/Quarter/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.9921.42/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:12 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+      Compiler: CMAKE_CXX_COMPILER-NOTFOUND 
+      Build flags: 
+      Id flags: --c++ 
+      
+      The output was:
+      Не удается найти указанный файл
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Users/Quarter/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.9921.42/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/Users/Quarter/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.9921.42/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/Users/Quarter/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.9921.42/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:12 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+      Compiler: CMAKE_CXX_COMPILER-NOTFOUND 
+      Build flags: 
+      Id flags: --ec++ 
+      
+      The output was:
+      Не удается найти указанный файл
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Users/Quarter/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.9921.42/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/Users/Quarter/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.9921.42/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/Users/Quarter/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.9921.42/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:12 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+      Compiler: CMAKE_CXX_COMPILER-NOTFOUND 
+      Build flags: 
+      Id flags: --target=arm-arm-none-eabi;-mcpu=cortex-m3 
+      
+      The output was:
+      Не удается найти указанный файл
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Users/Quarter/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.9921.42/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/Users/Quarter/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.9921.42/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/Users/Quarter/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.9921.42/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:12 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+      Compiler: CMAKE_CXX_COMPILER-NOTFOUND 
+      Build flags: 
+      Id flags: -c;-I__does_not_exist__ 
+      
+      The output was:
+      Не удается найти указанный файл
+      
+      
+...
+
+---
+events:
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Users/Quarter/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.9921.42/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/Users/Quarter/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.9921.42/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/Users/Quarter/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.9921.42/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:12 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+      Compiler: C:/Program Files/LLVM/bin/clang++.exe 
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      0
+      
+      
+      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.exe"
+      
+      The CXX compiler identification is Clang, found in:
+        C:/Users/Quarter/PycharmProjects/sampo/sampo/native/cmake-build-debug/CMakeFiles/3.26.4/CompilerIdCXX/a.exe
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Users/Quarter/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.9921.42/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeDetermineCompilerId.cmake:1153 (message)"
+      - "C:/Users/Quarter/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.9921.42/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeDetermineCompilerId.cmake:221 (CMAKE_DETERMINE_MSVC_SHOWINCLUDES_PREFIX)"
+      - "C:/Users/Quarter/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.9921.42/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:12 (project)"
+    message: |
+      Detecting CXX compiler /showIncludes prefix:
+        
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Users/Quarter/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.9921.42/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeDetermineCompilerId.cmake:1153 (message)"
+      - "C:/Users/Quarter/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.9921.42/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeDetermineCompilerId.cmake:221 (CMAKE_DETERMINE_MSVC_SHOWINCLUDES_PREFIX)"
+      - "C:/Users/Quarter/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.9921.42/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:12 (project)"
+    message: |
+      Detecting CXX compiler /showIncludes prefix:
+        
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Users/Quarter/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.9921.42/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeDetermineCompilerABI.cmake:57 (try_compile)"
+      - "C:/Users/Quarter/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.9921.42/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:12 (project)"
+    checks:
+      - "Detecting CXX compiler ABI info"
+    directories:
+      source: "C:/Users/Quarter/PycharmProjects/sampo/sampo/native/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-5z0nnd"
+      binary: "C:/Users/Quarter/PycharmProjects/sampo/sampo/native/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-5z0nnd"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: ""
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "CMAKE_CXX_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: C:/Users/Quarter/PycharmProjects/sampo/sampo/native/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-5z0nnd
+        
+        Run Build Command(s):C:/Users/Quarter/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.9921.42/bin/ninja/win/x64/ninja.exe -v cmTC_febea && [1/2] C:\\PROGRA~1\\LLVM\\bin\\CLANG_~1.EXE   -std=gnu++20 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -MD -MT CMakeFiles/cmTC_febea.dir/CMakeCXXCompilerABI.cpp.obj -MF CMakeFiles\\cmTC_febea.dir\\CMakeCXXCompilerABI.cpp.obj.d -o CMakeFiles/cmTC_febea.dir/CMakeCXXCompilerABI.cpp.obj -c C:/Users/Quarter/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.9921.42/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeCXXCompilerABI.cpp
+        [2/2] cmd.exe /C "cd . && C:\\PROGRA~1\\LLVM\\bin\\CLANG_~1.EXE -fuse-ld=lld-link -nostartfiles -nostdlib -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -Xlinker /subsystem:console CMakeFiles/cmTC_febea.dir/CMakeCXXCompilerABI.cpp.obj -o cmTC_febea.exe -Xlinker /MANIFEST:EMBED -Xlinker /implib:cmTC_febea.lib -Xlinker /pdb:cmTC_febea.pdb -Xlinker /version:0.0     && cd ."
+        Текущая кодовая страница: 1251
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Users/Quarter/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.9921.42/bin/cmake/win/x64/share/cmake-3.26/Modules/Internal/FeatureTesting.cmake:34 (try_compile)"
+      - "C:/Users/Quarter/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.9921.42/bin/cmake/win/x64/share/cmake-3.26/Modules/Internal/FeatureTesting.cmake:83 (_record_compiler_features)"
+      - "C:/Users/Quarter/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.9921.42/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/CMakeCommonCompilerMacros.cmake:121 (_record_compiler_features_cxx)"
+      - "C:/Users/Quarter/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.9921.42/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeDetermineCompileFeatures.cmake:70 (cmake_record_cxx_compile_features)"
+      - "C:/Users/Quarter/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.9921.42/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeTestCXXCompiler.cmake:70 (CMAKE_DETERMINE_COMPILE_FEATURES)"
+      - "CMakeLists.txt:12 (project)"
+    checks:
+      - "Detecting CXX compile features"
+    directories:
+      source: "C:/Users/Quarter/PycharmProjects/sampo/sampo/native/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-9wc19m"
+      binary: "C:/Users/Quarter/PycharmProjects/sampo/sampo/native/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-9wc19m"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: ""
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "CMAKE_CXX_FEATURE_TEST"
+      cached: true
+      stdout: |
+        Change Dir: C:/Users/Quarter/PycharmProjects/sampo/sampo/native/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-9wc19m
+        
+        Run Build Command(s):C:/Users/Quarter/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.9921.42/bin/ninja/win/x64/ninja.exe -v cmTC_3731a && [1/2] C:\\PROGRA~1\\LLVM\\bin\\CLANG_~1.EXE   -std=gnu++20 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd   -std=c++14 -MD -MT CMakeFiles/cmTC_3731a.dir/feature_tests.cxx.obj -MF CMakeFiles\\cmTC_3731a.dir\\feature_tests.cxx.obj.d -o CMakeFiles/cmTC_3731a.dir/feature_tests.cxx.obj -c C:/Users/Quarter/PycharmProjects/sampo/sampo/native/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-9wc19m/feature_tests.cxx
+        [2/2] cmd.exe /C "cd . && C:\\PROGRA~1\\LLVM\\bin\\CLANG_~1.EXE -fuse-ld=lld-link -nostartfiles -nostdlib -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -Xlinker /subsystem:console CMakeFiles/cmTC_3731a.dir/feature_tests.cxx.obj -o cmTC_3731a.exe -Xlinker /MANIFEST:EMBED -Xlinker /implib:cmTC_3731a.lib -Xlinker /pdb:cmTC_3731a.pdb -Xlinker /version:0.0   -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 -loldnames  && cd ."
+        ’ҐЄгй п Є®¤®ў п бва ­Ёж : 1251
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Users/Quarter/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.9921.42/bin/cmake/win/x64/share/cmake-3.26/Modules/Internal/FeatureTesting.cmake:34 (try_compile)"
+      - "C:/Users/Quarter/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.9921.42/bin/cmake/win/x64/share/cmake-3.26/Modules/Internal/FeatureTesting.cmake:83 (_record_compiler_features)"
+      - "C:/Users/Quarter/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.9921.42/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/CMakeCommonCompilerMacros.cmake:129 (_record_compiler_features_cxx)"
+      - "C:/Users/Quarter/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.9921.42/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeDetermineCompileFeatures.cmake:70 (cmake_record_cxx_compile_features)"
+      - "C:/Users/Quarter/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.9921.42/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeTestCXXCompiler.cmake:70 (CMAKE_DETERMINE_COMPILE_FEATURES)"
+      - "CMakeLists.txt:12 (project)"
+    checks:
+      - "Detecting CXX compile features"
+    directories:
+      source: "C:/Users/Quarter/PycharmProjects/sampo/sampo/native/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-7frhwq"
+      binary: "C:/Users/Quarter/PycharmProjects/sampo/sampo/native/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-7frhwq"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: ""
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "CMAKE_CXX_FEATURE_TEST"
+      cached: true
+      stdout: |
+        Change Dir: C:/Users/Quarter/PycharmProjects/sampo/sampo/native/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-7frhwq
+        
+        Run Build Command(s):C:/Users/Quarter/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.9921.42/bin/ninja/win/x64/ninja.exe -v cmTC_31df2 && [1/2] C:\\PROGRA~1\\LLVM\\bin\\CLANG_~1.EXE   -std=gnu++20 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd   -std=c++14 -MD -MT CMakeFiles/cmTC_31df2.dir/feature_tests.cxx.obj -MF CMakeFiles\\cmTC_31df2.dir\\feature_tests.cxx.obj.d -o CMakeFiles/cmTC_31df2.dir/feature_tests.cxx.obj -c C:/Users/Quarter/PycharmProjects/sampo/sampo/native/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-7frhwq/feature_tests.cxx
+        [2/2] cmd.exe /C "cd . && C:\\PROGRA~1\\LLVM\\bin\\CLANG_~1.EXE -fuse-ld=lld-link -nostartfiles -nostdlib -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -Xlinker /subsystem:console CMakeFiles/cmTC_31df2.dir/feature_tests.cxx.obj -o cmTC_31df2.exe -Xlinker /MANIFEST:EMBED -Xlinker /implib:cmTC_31df2.lib -Xlinker /pdb:cmTC_31df2.pdb -Xlinker /version:0.0   -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 -loldnames  && cd ."
+        ’ҐЄгй п Є®¤®ў п бва ­Ёж : 1251
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Users/Quarter/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.9921.42/bin/cmake/win/x64/share/cmake-3.26/Modules/FindOpenMP.cmake:219 (try_compile)"
+      - "C:/Users/Quarter/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.9921.42/bin/cmake/win/x64/share/cmake-3.26/Modules/FindOpenMP.cmake:483 (_OPENMP_GET_FLAGS)"
+      - "CMakeLists.txt:54 (find_package)"
+    description: "Detecting CXX OpenMP compiler info"
+    directories:
+      source: "C:/Users/Quarter/PycharmProjects/sampo/sampo/native/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-7d31kz"
+      binary: "C:/Users/Quarter/PycharmProjects/sampo/sampo/native/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-7d31kz"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: ""
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "C:/Users/Quarter/PycharmProjects/sampo/sampo/native/cmake/"
+    buildResult:
+      variable: "OpenMP_COMPILE_RESULT_CXX_fopenmplibomp"
+      cached: true
+      stdout: |
+        Change Dir: C:/Users/Quarter/PycharmProjects/sampo/sampo/native/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-7d31kz
+        
+        Run Build Command(s):C:/Users/Quarter/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.9921.42/bin/ninja/win/x64/ninja.exe -v cmTC_cf9a4 && [1/2] C:\\PROGRA~1\\LLVM\\bin\\CLANG_~1.EXE   -fopenmp=libomp -std=gnu++20 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -MD -MT CMakeFiles/cmTC_cf9a4.dir/OpenMPTryFlag.cpp.obj -MF CMakeFiles\\cmTC_cf9a4.dir\\OpenMPTryFlag.cpp.obj.d -o CMakeFiles/cmTC_cf9a4.dir/OpenMPTryFlag.cpp.obj -c C:/Users/Quarter/PycharmProjects/sampo/sampo/native/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-7d31kz/OpenMPTryFlag.cpp
+        [2/2] cmd.exe /C "cd . && C:\\PROGRA~1\\LLVM\\bin\\CLANG_~1.EXE -fuse-ld=lld-link -nostartfiles -nostdlib -fopenmp=libomp -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -Xlinker /subsystem:console CMakeFiles/cmTC_cf9a4.dir/OpenMPTryFlag.cpp.obj -o cmTC_cf9a4.exe -Xlinker /MANIFEST:EMBED -Xlinker /implib:cmTC_cf9a4.lib -Xlinker /pdb:cmTC_cf9a4.pdb -Xlinker /version:0.0   -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 -loldnames  && cd ."
+        ’ҐЄгй п Є®¤®ў п бва ­Ёж : 1251
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Users/Quarter/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.9921.42/bin/cmake/win/x64/share/cmake-3.26/Modules/FindOpenMP.cmake:419 (try_compile)"
+      - "C:/Users/Quarter/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.9921.42/bin/cmake/win/x64/share/cmake-3.26/Modules/FindOpenMP.cmake:557 (_OPENMP_GET_SPEC_DATE)"
+      - "CMakeLists.txt:54 (find_package)"
+    description: "Detecting CXX OpenMP version"
+    directories:
+      source: "C:/Users/Quarter/PycharmProjects/sampo/sampo/native/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-wjhydq"
+      binary: "C:/Users/Quarter/PycharmProjects/sampo/sampo/native/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-wjhydq"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: ""
+      CMAKE_EXE_LINKER_FLAGS: ""
+      CMAKE_MODULE_PATH: "C:/Users/Quarter/PycharmProjects/sampo/sampo/native/cmake/"
+    buildResult:
+      variable: "OpenMP_SPECTEST_CXX_"
+      cached: true
+      stdout: |
+        Change Dir: C:/Users/Quarter/PycharmProjects/sampo/sampo/native/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-wjhydq
+        
+        Run Build Command(s):C:/Users/Quarter/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.9921.42/bin/ninja/win/x64/ninja.exe -v cmTC_665ae && [1/2] C:\\PROGRA~1\\LLVM\\bin\\CLANG_~1.EXE   -fopenmp=libomp -std=gnu++20 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -MD -MT CMakeFiles/cmTC_665ae.dir/OpenMPCheckVersion.cpp.obj -MF CMakeFiles\\cmTC_665ae.dir\\OpenMPCheckVersion.cpp.obj.d -o CMakeFiles/cmTC_665ae.dir/OpenMPCheckVersion.cpp.obj -c C:/Users/Quarter/PycharmProjects/sampo/sampo/native/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-wjhydq/OpenMPCheckVersion.cpp
+        [2/2] cmd.exe /C "cd . && C:\\PROGRA~1\\LLVM\\bin\\CLANG_~1.EXE -fuse-ld=lld-link -nostartfiles -nostdlib -fopenmp=libomp -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -Xlinker /subsystem:console CMakeFiles/cmTC_665ae.dir/OpenMPCheckVersion.cpp.obj -o cmTC_665ae.exe -Xlinker /MANIFEST:EMBED -Xlinker /implib:cmTC_665ae.lib -Xlinker /pdb:cmTC_665ae.pdb -Xlinker /version:0.0   -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 -loldnames  && cd ."
+        ’ҐЄгй п Є®¤®ў п бва ­Ёж : 1251
+        
+      exitCode: 0
+...
+
+---
+events:
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.29/Modules/CMakeDetermineSystem.cmake:205 (message)"
+      - "CMakeLists.txt:12 (project)"
+    message: |
+      The system is: Windows - 10.0.19044 - AMD64
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.29/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/Program Files/CMake/share/cmake-3.29/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/Program Files/CMake/share/cmake-3.29/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:12 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+      Compiler: C:/Program Files/LLVM/bin/clang++.exe 
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      0
+      
+      
+      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.exe"
+      
+      The CXX compiler identification is Clang, found in:
+        C:/Users/Quarter/PycharmProjects/sampo/sampo/native/cmake-build-debug/CMakeFiles/3.29.2/CompilerIdCXX/a.exe
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.29/Modules/CMakeDetermineCompilerId.cmake:1216 (message)"
+      - "C:/Program Files/CMake/share/cmake-3.29/Modules/CMakeDetermineCompilerId.cmake:250 (CMAKE_DETERMINE_MSVC_SHOWINCLUDES_PREFIX)"
+      - "C:/Program Files/CMake/share/cmake-3.29/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:12 (project)"
+    message: |
+      Detecting CXX compiler /showIncludes prefix:
+        
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.29/Modules/CMakeDetermineCompilerId.cmake:1216 (message)"
+      - "C:/Program Files/CMake/share/cmake-3.29/Modules/CMakeDetermineCompilerId.cmake:250 (CMAKE_DETERMINE_MSVC_SHOWINCLUDES_PREFIX)"
+      - "C:/Program Files/CMake/share/cmake-3.29/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:12 (project)"
+    message: |
+      Detecting CXX compiler /showIncludes prefix:
+        
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.29/Modules/CMakeDetermineCompilerABI.cmake:64 (try_compile)"
+      - "C:/Program Files/CMake/share/cmake-3.29/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:12 (project)"
+    checks:
+      - "Detecting CXX compiler ABI info"
+    directories:
+      source: "C:/Users/Quarter/PycharmProjects/sampo/sampo/native/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-q3dmjn"
+      binary: "C:/Users/Quarter/PycharmProjects/sampo/sampo/native/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-q3dmjn"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "C:/Program Files/LLVM/bin/clang-scan-deps.exe"
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: ""
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "CMAKE_CXX_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/Quarter/PycharmProjects/sampo/sampo/native/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-q3dmjn'
+        
+        Run Build Command(s): C:/Users/Quarter/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.9921.42/bin/ninja/win/x64/ninja.exe -v cmTC_8ccfd
+        [1/2] C:\\PROGRA~1\\LLVM\\bin\\CLANG_~1.EXE   -std=gnu++20 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -MD -MT CMakeFiles/cmTC_8ccfd.dir/CMakeCXXCompilerABI.cpp.obj -MF CMakeFiles\\cmTC_8ccfd.dir\\CMakeCXXCompilerABI.cpp.obj.d -o CMakeFiles/cmTC_8ccfd.dir/CMakeCXXCompilerABI.cpp.obj -c "C:/Program Files/CMake/share/cmake-3.29/Modules/CMakeCXXCompilerABI.cpp"
+        [2/2] C:\\Windows\\system32\\cmd.exe /C "cd . && C:\\PROGRA~1\\LLVM\\bin\\CLANG_~1.EXE -nostartfiles -nostdlib -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -v  -Xlinker /subsystem:console  -fuse-ld=lld-link CMakeFiles/cmTC_8ccfd.dir/CMakeCXXCompilerABI.cpp.obj -o cmTC_8ccfd.exe -Xlinker /MANIFEST:EMBED -Xlinker /implib:cmTC_8ccfd.lib -Xlinker /pdb:cmTC_8ccfd.pdb -Xlinker /version:0.0     && cd ."
+        ’ҐЄгй п Є®¤®ў п бва ­Ёж : 1251
+        clang version 17.0.1
+        Target: x86_64-pc-windows-msvc
+        Thread model: posix
+        InstalledDir: C:\\PROGRA~1\\LLVM\\bin
+         "C:\\\\PROGRA~1\\\\LLVM\\\\bin\\\\lld-link" -out:cmTC_8ccfd.exe "-libpath:C:\\\\Program Files (x86)\\\\Microsoft Visual Studio\\\\2019\\\\Community\\\\VC\\\\Tools\\\\MSVC\\\\14.29.30133\\\\lib\\\\x64" "-libpath:C:\\\\Program Files (x86)\\\\Microsoft Visual Studio\\\\2019\\\\Community\\\\VC\\\\Tools\\\\MSVC\\\\14.29.30133\\\\atlmfc\\\\lib\\\\x64" "-libpath:C:\\\\Program Files (x86)\\\\Windows Kits\\\\10\\\\Lib\\\\10.0.19041.0\\\\ucrt\\\\x64" "-libpath:C:\\\\Program Files (x86)\\\\Windows Kits\\\\10\\\\Lib\\\\10.0.19041.0\\\\um\\\\x64" "-libpath:C:\\\\PROGRA~1\\\\LLVM\\\\lib\\\\clang\\\\17\\\\lib\\\\windows" -nologo /subsystem:console CMakeFiles/cmTC_8ccfd.dir/CMakeCXXCompilerABI.cpp.obj /MANIFEST:EMBED /implib:cmTC_8ccfd.lib /pdb:cmTC_8ccfd.pdb /version:0.0
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.29/Modules/CMakeDetermineCompilerABI.cmake:170 (message)"
+      - "C:/Program Files/CMake/share/cmake-3.29/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:12 (project)"
+    message: |
+      Parsed CXX implicit link information:
+        link line regex: [^( *|.*[/\\])(ld[0-9]*(\\.[a-z]+)?|link\\.exe|lld-link(\\.exe)?|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        linker tool regex: [^[ 	]*(->|")?[ 	]*(([^"]*[/\\])?(ld[0-9]*(\\.[a-z]+)?|link\\.exe|lld-link(\\.exe)?))("|,| |$)]
+        linker tool for 'CXX': C:/PROGRA~1/LLVM/bin/lld-link
+        implicit libs: []
+        implicit objs: []
+        implicit dirs: []
+        implicit fwks: []
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.29/Modules/Internal/CMakeDetermineLinkerId.cmake:40 (message)"
+      - "C:/Program Files/CMake/share/cmake-3.29/Modules/CMakeDetermineCompilerABI.cmake:207 (cmake_determine_linker_id)"
+      - "C:/Program Files/CMake/share/cmake-3.29/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:12 (project)"
+    message: |
+      Running the CXX compiler's linker: "C:/PROGRA~1/LLVM/bin/lld-link" "-v"
+      lld-link: warning: ignoring unknown argument '-v'
+      lld-link: error: no input files
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.29/Modules/Internal/CMakeDetermineLinkerId.cmake:40 (message)"
+      - "C:/Program Files/CMake/share/cmake-3.29/Modules/CMakeDetermineCompilerABI.cmake:207 (cmake_determine_linker_id)"
+      - "C:/Program Files/CMake/share/cmake-3.29/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:12 (project)"
+    message: |
+      Running the CXX compiler's linker: "C:/PROGRA~1/LLVM/bin/lld-link" "-V"
+      lld-link: warning: ignoring unknown argument '-V'
+      lld-link: error: no input files
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.29/Modules/Internal/CMakeDetermineLinkerId.cmake:40 (message)"
+      - "C:/Program Files/CMake/share/cmake-3.29/Modules/CMakeDetermineCompilerABI.cmake:207 (cmake_determine_linker_id)"
+      - "C:/Program Files/CMake/share/cmake-3.29/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:12 (project)"
+    message: |
+      Running the CXX compiler's linker: "C:/PROGRA~1/LLVM/bin/lld-link" "--version"
+      LLD 17.0.1
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.29/Modules/Internal/FeatureTesting.cmake:34 (try_compile)"
+      - "C:/Program Files/CMake/share/cmake-3.29/Modules/Internal/FeatureTesting.cmake:84 (_record_compiler_features)"
+      - "C:/Program Files/CMake/share/cmake-3.29/Modules/Compiler/CMakeCommonCompilerMacros.cmake:121 (_record_compiler_features_cxx)"
+      - "C:/Program Files/CMake/share/cmake-3.29/Modules/CMakeDetermineCompileFeatures.cmake:70 (cmake_record_cxx_compile_features)"
+      - "C:/Program Files/CMake/share/cmake-3.29/Modules/CMakeTestCXXCompiler.cmake:70 (CMAKE_DETERMINE_COMPILE_FEATURES)"
+      - "CMakeLists.txt:12 (project)"
+    checks:
+      - "Detecting CXX compile features"
+    directories:
+      source: "C:/Users/Quarter/PycharmProjects/sampo/sampo/native/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-u9d67t"
+      binary: "C:/Users/Quarter/PycharmProjects/sampo/sampo/native/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-u9d67t"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "C:/Program Files/LLVM/bin/clang-scan-deps.exe"
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: ""
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "CMAKE_CXX_FEATURE_TEST"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/Quarter/PycharmProjects/sampo/sampo/native/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-u9d67t'
+        
+        Run Build Command(s): C:/Users/Quarter/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.9921.42/bin/ninja/win/x64/ninja.exe -v cmTC_aa290
+        [1/2] C:\\PROGRA~1\\LLVM\\bin\\CLANG_~1.EXE   -std=gnu++20 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd   -std=c++14 -MD -MT CMakeFiles/cmTC_aa290.dir/feature_tests.cxx.obj -MF CMakeFiles\\cmTC_aa290.dir\\feature_tests.cxx.obj.d -o CMakeFiles/cmTC_aa290.dir/feature_tests.cxx.obj -c C:/Users/Quarter/PycharmProjects/sampo/sampo/native/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-u9d67t/feature_tests.cxx
+        [2/2] C:\\Windows\\system32\\cmd.exe /C "cd . && C:\\PROGRA~1\\LLVM\\bin\\CLANG_~1.EXE -nostartfiles -nostdlib -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -Xlinker /subsystem:console  -fuse-ld=lld-link CMakeFiles/cmTC_aa290.dir/feature_tests.cxx.obj -o cmTC_aa290.exe -Xlinker /MANIFEST:EMBED -Xlinker /implib:cmTC_aa290.lib -Xlinker /pdb:cmTC_aa290.pdb -Xlinker /version:0.0   -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 -loldnames  && cd ."
+        ’ҐЄгй п Є®¤®ў п бва ­Ёж : 1251
+        
+      exitCode: 0
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-3.29/Modules/Internal/FeatureTesting.cmake:34 (try_compile)"
+      - "C:/Program Files/CMake/share/cmake-3.29/Modules/Internal/FeatureTesting.cmake:84 (_record_compiler_features)"
+      - "C:/Program Files/CMake/share/cmake-3.29/Modules/Compiler/CMakeCommonCompilerMacros.cmake:129 (_record_compiler_features_cxx)"
+      - "C:/Program Files/CMake/share/cmake-3.29/Modules/CMakeDetermineCompileFeatures.cmake:70 (cmake_record_cxx_compile_features)"
+      - "C:/Program Files/CMake/share/cmake-3.29/Modules/CMakeTestCXXCompiler.cmake:70 (CMAKE_DETERMINE_COMPILE_FEATURES)"
+      - "CMakeLists.txt:12 (project)"
+    checks:
+      - "Detecting CXX compile features"
+    directories:
+      source: "C:/Users/Quarter/PycharmProjects/sampo/sampo/native/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-3pbb92"
+      binary: "C:/Users/Quarter/PycharmProjects/sampo/sampo/native/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-3pbb92"
+    cmakeVariables:
+      CMAKE_CXX_COMPILER_CLANG_SCAN_DEPS: "C:/Program Files/LLVM/bin/clang-scan-deps.exe"
+      CMAKE_CXX_FLAGS: ""
+      CMAKE_CXX_FLAGS_DEBUG: ""
+      CMAKE_EXE_LINKER_FLAGS: ""
+    buildResult:
+      variable: "CMAKE_CXX_FEATURE_TEST"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/Quarter/PycharmProjects/sampo/sampo/native/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-3pbb92'
+        
+        Run Build Command(s): C:/Users/Quarter/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.9921.42/bin/ninja/win/x64/ninja.exe -v cmTC_8fdc1
+        [1/2] C:\\PROGRA~1\\LLVM\\bin\\CLANG_~1.EXE   -std=gnu++20 -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd   -std=c++14 -MD -MT CMakeFiles/cmTC_8fdc1.dir/feature_tests.cxx.obj -MF CMakeFiles\\cmTC_8fdc1.dir\\feature_tests.cxx.obj.d -o CMakeFiles/cmTC_8fdc1.dir/feature_tests.cxx.obj -c C:/Users/Quarter/PycharmProjects/sampo/sampo/native/cmake-build-debug/CMakeFiles/CMakeScratch/TryCompile-3pbb92/feature_tests.cxx
+        [2/2] C:\\Windows\\system32\\cmd.exe /C "cd . && C:\\PROGRA~1\\LLVM\\bin\\CLANG_~1.EXE -nostartfiles -nostdlib -D_DEBUG -D_DLL -D_MT -Xclang --dependent-lib=msvcrtd -Xlinker /subsystem:console  -fuse-ld=lld-link CMakeFiles/cmTC_8fdc1.dir/feature_tests.cxx.obj -o cmTC_8fdc1.exe -Xlinker /MANIFEST:EMBED -Xlinker /implib:cmTC_8fdc1.lib -Xlinker /pdb:cmTC_8fdc1.pdb -Xlinker /version:0.0   -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 -loldnames  && cd ."
+        ’ҐЄгй п Є®¤®ў п бва ­Ёж : 1251
+        
+      exitCode: 0
+...

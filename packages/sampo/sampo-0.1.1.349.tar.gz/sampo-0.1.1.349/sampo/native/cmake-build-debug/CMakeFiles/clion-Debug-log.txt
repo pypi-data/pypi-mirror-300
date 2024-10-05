@@ -1,0 +1,55 @@
+C:\Users\Quarter\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\232.9921.42\bin\cmake\win\x64\bin\cmake.exe -DCMAKE_BUILD_TYPE=Debug -DCMAKE_MAKE_PROGRAM=C:/Users/Quarter/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.9921.42/bin/ninja/win/x64/ninja.exe "-DCMAKE_C_COMPILER=C:/Program Files/LLVM/bin/clang.exe" -G Ninja -S C:\Users\Quarter\PycharmProjects\sampo\sampo\native -B C:\Users\Quarter\PycharmProjects\sampo\sampo\native\cmake-build-debug
+-- The CXX compiler identification is Clang 17.0.1 with GNU-like command-line
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: C:/Program Files/LLVM/bin/clang++.exe - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found Python3: C:/Users/Quarter/AppData/Local/Programs/Python/Python310/python.exe (found suitable version "3.10.4", minimum required is "3.10") found components: Interpreter Development Development.Module Development.Embed 
+-- Found OpenMP_CXX: -fopenmp=libomp  
+-- Found OpenMP: TRUE   
+-- Conan: Adding bnipi_sampo remote repository (https://center.conan.io/) verify ssl (True)
+-- Conan: Detected VS runtime: MDd
+-- Conan: checking conan executable
+-- Conan: Found program C:/Program Files/Conan/conan/conan.exe
+-- Conan: Version found Conan version 1.59.0
+-- Conan install boost/1.80.0
+boost/1.80.0: WARN: replace_in_file didn't find pattern '/* thread_local */' in 'C:\.conan\6d4cd0\1\src\boost\stacktrace\detail\libbacktrace_impls.hpp' file.
+boost/1.80.0: WARN: replace_in_file didn't find pattern '/* static __thread */' in 'C:\.conan\6d4cd0\1\src\boost\stacktrace\detail\libbacktrace_impls.hpp' file.
+boost/1.80.0: WARN: replace_in_file didn't find pattern 'local generic-os = [ set.difference $(all-os) : aix darwin vxworks solaris osf hpux ] ;' in 'C:\.conan\6d4cd0\1\src\tools\build\src\tools\gcc.jam' file.
+boost/1.80.0: WARN: replace_in_file didn't find pattern 'local no-threading = android beos haiku sgi darwin vxworks ;' in 'C:\.conan\6d4cd0\1\src\tools\build\src\tools\gcc.jam' file.
+boost/1.80.0: WARN: Patching user-config.jam
+boost/1.80.0: WARN: Using the new toolchains and generators without specifying a build profile (e.g: -pr:b=default) is discouraged and might cause failures and unexpected behavior
+boost/1.80.0: WARN: 
+using zlib : 1.3.1 : <include>"C:/Users/Quarter/.conan/data/zlib/1.3.1/_/_/package/d057732059ea44a47760900cb5e4855d2bea8714/include" <search>"C:/Users/Quarter/.conan/data/zlib/1.3.1/_/_/package/d057732059ea44a47760900cb5e4855d2bea8714/lib" <name>zlib ;
+using bzip2 : 1.0.8 : <include>"C:/Users/Quarter/.conan/data/bzip2/1.0.8/_/_/package/589a23dff5fdb23a7fb851223eb766480ead0a9a/include" <search>"C:/Users/Quarter/.conan/data/bzip2/1.0.8/_/_/package/589a23dff5fdb23a7fb851223eb766480ead0a9a/lib" <name>bz2 ;
+using "msvc" : 14.2 :  : 
+ ;
+boost/1.80.0: WARN: b2 -q numa=on target-os=windows architecture=x86 address-model=64 binary-format=pe abi=ms --layout=system --user-config=C:\.conan\6d4cd0\1\src\tools\build\user-config.jam -sNO_ZLIB=0 -sNO_BZIP2=0 -sNO_LZMA=1 -sNO_ZSTD=1 boost.locale.icu=off --disable-icu boost.locale.iconv=off --disable-iconv runtime-link=shared runtime-debugging=on threading=multi visibility=hidden link=shared variant=debug --with-atomic --with-chrono --with-container --with-context --with-contract --with-coroutine --with-date_time --with-exception --with-fiber --with-filesystem --with-graph --with-iostreams --with-json --with-locale --with-log --with-math --with-nowide --with-program_options --with-random --with-regex --with-serialization --with-stacktrace --with-system --with-test --with-thread --with-timer --with-type_erasure --with-wave toolset=msvc cxxstd=20 pch=on linkflags="" cxxflags="-fPIC" install --prefix=C:\.conan\e874e8\1 -j12 --abbreviate-paths -d0 --debug-configuration --build-dir="C:\.conan\387d19\1\build-debug"
+boost/1.80.0: ERROR: Package 'bb9baca734a5a626f2c0e80a5be1d1a94a019ecd' build failed
+boost/1.80.0: WARN: Build folder C:\.conan\387d19\1\build-debug
+ERROR: boost/1.80.0: Error in build() method, line 1003
+	self.run(full_command)
+	ConanException: Error 1 while executing b2 -q numa=on target-os=windows architecture=x86 address-model=64 binary-format=pe abi=ms --layout=system --user-config=C:\.conan\6d4cd0\1\src\tools\build\user-config.jam -sNO_ZLIB=0 -sNO_BZIP2=0 -sNO_LZMA=1 -sNO_ZSTD=1 boost.locale.icu=off --disable-icu boost.locale.iconv=off --disable-iconv runtime-link=shared runtime-debugging=on threading=multi visibility=hidden link=shared variant=debug --with-atomic --with-chrono --with-container --with-context --with-contract --with-coroutine --with-date_time --with-exception --with-fiber --with-filesystem --with-graph --with-iostreams --with-json --with-locale --with-log --with-math --with-nowide --with-program_options --with-random --with-regex --with-serialization --with-stacktrace --with-system --with-test --with-thread --with-timer --with-type_erasure --with-wave toolset=msvc cxxstd=20 pch=on linkflags="" cxxflags="-fPIC" install --prefix=C:\.conan\e874e8\1 -j12 --abbreviate-paths -d0 --debug-configuration --build-dir="C:\.conan\387d19\1\build-debug"
+CMake Error at cmake/conan.cmake:739 (message):
+  Conan install failed='1'
+Call Stack (most recent call first):
+  cmake/conan_package.cmake:18 (conan_cmake_install)
+  third_party/boost-conan/CMakeLists.txt:18 (include)
+
+
+-- Configuring incomplete, errors occurred!
+
+Cannot get compiler information:
+	Compiler exited with error code 1: C:\Users\Quarter\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\232.9921.42\bin\mingw\bin\g++.exe -xc++ -fopenmp -g -std=gnu++11 -fpch-preprocess -v -dD -E
+	Using built-in specs.
+	COLLECT_GCC=C:\Users\Quarter\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\232.9921.42\bin\mingw\bin\g++.exe
+	Target: x86_64-w64-mingw32
+	Configured with: ../gcc-13.1.0/configure --host=x86_64-w64-mingw32 --target=x86_64-w64-mingw32 --build=x86_64-alpine-linux-musl --prefix=/win --enable-checking=release --enable-fully-dynamic-string --enable-languages=c,c++ --with-arch=nocona --with-tune=generic --enable-libatomic --enable-libgomp --enable-libstdcxx-filesystem-ts --enable-libstdcxx-time --enable-seh-exceptions --enable-shared --enable-static --enable-threads=posix --enable-version-specific-runtime-libs --disable-bootstrap --disable-graphite --disable-libada --disable-libstdcxx-pch --disable-libstdcxx-debug --disable-libquadmath --disable-lto --disable-nls --disable-multilib --disable-rpath --disable-symvers --disable-werror --disable-win32-registry --with-gnu-as --with-gnu-ld --with-system-libiconv --with-system-libz --with-gmp=/win/makedepends --with-mpfr=/win/makedepends --with-mpc=/win/makedepends
+	Thread model: posix
+	Supported LTO compression algorithms: zlib
+	gcc version 13.1.0 (GCC) 
+	COLLECT_GCC_OPTIONS='-fopenmp' '-g' '-std=gnu++11' '-fpch-preprocess' '-v' '-dD' '-E' '-D' '___CIDR_DEFINITIONS_END' '-shared-libgcc' '-mtune=generic' '-march=nocona' '-mthreads' '-pthread'
+	 C:/Users/Quarter/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.9921.42/bin/mingw/bin/../libexec/gcc/x86_64-w64-mingw32/13.1.0/cc1plus.exe -E -quiet -v -iprefix C:/Users/Quarter/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.9921.42/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/ -D_MT -D_REENTRANT -U_REENTRANT -D ___CIDR_DEFINITIONS_END C:\Users\Quarter\AppData\Local\Temp\compiler-file7411428249709440717 -mtune=generic -march=nocona -mthreads -std=gnu++11 -fopenmp -fpch-preprocess -g -fworking-directory -dD -dumpbase compiler-file7411428249709440717
+	
+	
