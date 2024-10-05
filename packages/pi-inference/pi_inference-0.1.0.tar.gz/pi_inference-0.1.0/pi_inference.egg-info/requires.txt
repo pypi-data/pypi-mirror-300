@@ -1,0 +1,15 @@
+PyGObject
+ncnn
+numpy
+opencv-python
+pycairo
+supervision
+typing-extensions
+
+[dev]
+black==24.8.0
+flake8
+isort
+pytest
+twine
+wheel
