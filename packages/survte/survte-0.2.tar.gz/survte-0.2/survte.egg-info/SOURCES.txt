@@ -1,0 +1,7 @@
+README.md
+setup.py
+survte
+survte.egg-info/PKG-INFO
+survte.egg-info/SOURCES.txt
+survte.egg-info/dependency_links.txt
+survte.egg-info/top_level.txt
