@@ -1,0 +1,9 @@
+drift_shield/__init__.py,sha256=v_SFL-qpOkkovg0VeBGUkcNME6UiOK0NHcyzXUlBTJU,134
+drift_shield/data_drift.py,sha256=vkq1P16BeIzpZo8H08hQDbY5kg2cJ6NenY3Ov-WAoIg,7990
+drift_shield/delete_drift_dump.py,sha256=BzvITLaknNR6lqGotqQohXesOYfA8VruK7kj7GAgJyk,686
+drift_shield/handle_data_drift.py,sha256=mDuMxWDez3UOfIFDPnBa25isMCZNxOXrsuU_i8UL64E,2388
+drift_shield-0.4.dist-info/LICENSE,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+drift_shield-0.4.dist-info/METADATA,sha256=RqVPQlm7bNdrEvpSbVPuZa0LblRiZlQmf_5QGQgH54c,3651
+drift_shield-0.4.dist-info/WHEEL,sha256=GV9aMThwP_4oNCtvEC2ec3qUYutgWeAzklro_0m4WJQ,91
+drift_shield-0.4.dist-info/top_level.txt,sha256=FidZW1-2RRIfhuT2aNWsmzliJ4AvliBjwF6lyVAt3VY,13
+drift_shield-0.4.dist-info/RECORD,,
