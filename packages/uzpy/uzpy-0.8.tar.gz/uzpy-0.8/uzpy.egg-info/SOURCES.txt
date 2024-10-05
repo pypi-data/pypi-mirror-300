@@ -1,0 +1,9 @@
+README.md
+setup.py
+uzpy/__init__.py
+uzpy/main.py
+uzpy.egg-info/PKG-INFO
+uzpy.egg-info/SOURCES.txt
+uzpy.egg-info/dependency_links.txt
+uzpy.egg-info/requires.txt
+uzpy.egg-info/top_level.txt
