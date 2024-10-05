@@ -1,0 +1,46 @@
+Metadata-Version: 2.3
+Name: togger
+Version: 24.10.4a1
+Summary: A python logging frontend using T-Strings
+Project-URL: Github, https://github.com/fried/togger
+Project-URL: Issues, https://github.com/fried/togger/issues
+Author-email: Jason Fried <me@jasonfried.info>
+License-File: LICENSE
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: System :: Logging
+Requires-Python: >=3.14
+Description-Content-Type: text/markdown
+
+# togger 
+
+T-String Logging Library built ontop of python logging module. 
+
+Logger names are always based on the `__NAME__`
+
+Strings formatting is lazy, so if the log level is not enabled, no stringification takes place. 
+
+```python
+# Works with all the standard levels
+from togger import debug, fatal
+
+debug"fun times"
+fatal"oh noes"
+
+# Works with logging by level int instead of name
+from togger import log
+
+level1=log(1)
+level1"{level1!r} Error Message"
+
+# Works with custom level names
+import logging
+logging.addLevelName(51, "SPEW")
+from togger import spew
+
+spew"halp! i'm dying here"
+```
+
