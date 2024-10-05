@@ -1,0 +1,15 @@
+descope_pulumi/__init__.py,sha256=fBLkRYETBHHQvckHPoRE1SAk8mrrM8jBOolnT9p9k8A,900
+descope_pulumi/_inputs.py,sha256=a4eN9OdcCCUQlHUaOd5GLojkymxJXnqPW1a86qablmg,396472
+descope_pulumi/_utilities.py,sha256=j_BdW4PxTDHFeZ3YEWyQ8PZY9NT9umc2yLbNk9c9O1I,10535
+descope_pulumi/outputs.py,sha256=zJbS_CUbX-eyWnasxQbs-vaBMrjRf2rKnl6XhmME08s,348349
+descope_pulumi/project.py,sha256=tijv1P3_dCQHZNE06Ac4nk8QCb3qP3eCN3NcW048ckU,29956
+descope_pulumi/provider.py,sha256=WrCT2vmbleeL7S9DpGcPXmKaHgJ_fuY2tbh1pC2q1R0,6028
+descope_pulumi/pulumi-plugin.json,sha256=VqhEaQnhZkZ87CCWk6xNOwHZ2K9coCsJKvs1gEru6d4,130
+descope_pulumi/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+descope_pulumi/config/__init__.py,sha256=cfY0smRZD3fDVc93ZIAxEl_IM2pynmXB52n3Ahzi030,285
+descope_pulumi/config/__init__.pyi,sha256=MiGHvm4wrbnudHyA1zOip8DgNj71TTzLvhQ0SthDlsA,425
+descope_pulumi/config/vars.py,sha256=CKugy--lL8AAfRdozjL4TaRj27sSJedyUNxfjX33xA4,749
+descope_pulumi-0.1.0a1728054916.dist-info/METADATA,sha256=tvZOVBw5VGtAqWe7DHTygurqNIQgrhKJWqfxQp07PBM,1664
+descope_pulumi-0.1.0a1728054916.dist-info/WHEEL,sha256=GV9aMThwP_4oNCtvEC2ec3qUYutgWeAzklro_0m4WJQ,91
+descope_pulumi-0.1.0a1728054916.dist-info/top_level.txt,sha256=rhT8TSkUbhUDyFPf8Uvi1OD0kBYLgfEcS0pBpQvoK_s,15
+descope_pulumi-0.1.0a1728054916.dist-info/RECORD,,
