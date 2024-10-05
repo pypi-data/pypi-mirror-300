@@ -1,0 +1,3 @@
+EPSILON = 0.01     # Trading cost
+HORIZON = 30
+DEFAULT_HISTORY_LEN = 1000
