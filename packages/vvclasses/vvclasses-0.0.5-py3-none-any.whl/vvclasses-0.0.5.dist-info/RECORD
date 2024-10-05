@@ -1,0 +1,10 @@
+vvclasses_project/__init__.py,sha256=JQ9ninj9kceoH2eorGXLvewsmIcJwlHesp89QXjHAlA,27
+vvclasses_project/__main__.py,sha256=fjtj5L0AxvSOki71lNQUqM_Xylna6F1aJYA1QvwNnUc,87
+vvclasses_project/vvclasses.py,sha256=PaMfw5ER7J99SOnFYjL2gpfXFXiVVxD7VK7xZ60kxNo,790
+vvclasses_project/utils/__init__.py,sha256=VigW4FLHCRfJ02p9CSMTsq8EqhDHsNpq6JdX-Nn1sfw,61
+vvclasses_project/utils/printclass.py,sha256=08W1ZHOSVcd0xAtJyofI1LuFlj3iCBEwRTw8NRoD85Q,11909
+vvclasses-0.0.5.dist-info/METADATA,sha256=xG33WVlGeCMtS7CzQtdAuyAu3u20rd73p7YqhpQG8Y0,4139
+vvclasses-0.0.5.dist-info/WHEEL,sha256=GV9aMThwP_4oNCtvEC2ec3qUYutgWeAzklro_0m4WJQ,91
+vvclasses-0.0.5.dist-info/entry_points.txt,sha256=S4nvcr4l4yQu5gSc1cFjpRf5as5T40iBeowG1oNsHdA,45
+vvclasses-0.0.5.dist-info/top_level.txt,sha256=vgWohN8D1jilCSDbsweCVe1ap3VgUmYgVqV-fkzYmc8,18
+vvclasses-0.0.5.dist-info/RECORD,,

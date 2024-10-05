@@ -1,0 +1,1 @@
+from vvclasses import main
