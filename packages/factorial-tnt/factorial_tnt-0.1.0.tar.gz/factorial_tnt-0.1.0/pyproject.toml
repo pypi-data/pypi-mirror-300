@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "factorial-tnt"
+version = "0.1.0"
+description = ""
+authors = ["TueNguyenTai <nguyentaitue.2901@gmail.com>"]
+readme = "README.md"
+packages = [{include = "factorial_tnt"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+streamlit = "^1.39.0"
+
+
+[tool.poetry.group.test.dependencies]
+pytest = "^8.3.3"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
