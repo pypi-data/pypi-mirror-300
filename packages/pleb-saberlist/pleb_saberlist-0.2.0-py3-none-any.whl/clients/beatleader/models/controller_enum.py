@@ -1,0 +1,42 @@
+from enum import Enum
+
+
+class ControllerEnum(str, Enum):
+    CONTACTGLOVE = "contactglove"
+    CRY = "cry"
+    DISCO = "disco"
+    E4 = "e4"
+    ETEE = "etee"
+    GAMEPAD = "gamepad"
+    HANDS = "hands"
+    HPMOTION = "hpMotion"
+    HUAWEI = "huawei"
+    JOYCON = "joycon"
+    KNUCKLES = "knuckles"
+    MIRAMAR = "miramar"
+    NOLO = "nolo"
+    OCULUSTOUCH = "oculustouch"
+    OCULUSTOUCH2 = "oculustouch2"
+    ODYSSEY = "odyssey"
+    PICONEO2 = "picoNeo2"
+    PICONEO3 = "picoNeo3"
+    PICOPHOENIX = "picophoenix"
+    PIMAX = "pimax"
+    POLARIS = "polaris"
+    QUEST2 = "quest2"
+    QUEST3 = "quest3"
+    QUESTPRO = "questPro"
+    STEAMDECK = "steamdeck"
+    TUNDRA = "tundra"
+    UNKNOWN = "unknown"
+    VIVE = "vive"
+    VIVECOSMOS = "viveCosmos"
+    VIVEPRO = "vivePro"
+    VIVEPRO2 = "vivePro2"
+    VIVETRACKER = "viveTracker"
+    VIVETRACKER2 = "viveTracker2"
+    VIVETRACKER3 = "viveTracker3"
+    WMR = "wmr"
+
+    def __str__(self) -> str:
+        return str(self.value)
