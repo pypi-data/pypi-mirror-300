@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+TruthThn.egg-info/PKG-INFO
+TruthThn.egg-info/SOURCES.txt
+TruthThn.egg-info/dependency_links.txt
+TruthThn.egg-info/top_level.txt
+truth/__init__.py
+truth/main.py
