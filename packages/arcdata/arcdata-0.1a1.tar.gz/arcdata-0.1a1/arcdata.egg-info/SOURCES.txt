@@ -1,0 +1,12 @@
+LICENSE
+setup.py
+ArcData/Conditions.py
+ArcData/Manager.py
+ArcData/__init__.py
+ArcData/Utils/File.py
+ArcData/Utils/Models.py
+ArcData/Utils/__init__.py
+arcdata.egg-info/PKG-INFO
+arcdata.egg-info/SOURCES.txt
+arcdata.egg-info/dependency_links.txt
+arcdata.egg-info/top_level.txt

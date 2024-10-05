@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: arcdata
+Version: 0.1a1
+Summary: 专为 Python 语言设计、易用、轻量的数据库
+Home-page: https://github.com/HarcicYang/ArcData
+Author: Harcic
+Author-email: harcic@outlook.com
+License-File: LICENSE
