@@ -1,0 +1,12 @@
+footprint_facility/__init__.py,sha256=i45NlGzK-P5gTYX-tcsC-_h_gI_vRt_AV7tAXQYeArw,1602
+footprint_facility/_version.py,sha256=OT_F4IAdvBt0Gphl1xG1noNp7BurhOUhItffT0o3ua0,495
+footprint_facility/footprint_facility.py,sha256=nSxYeSnLvBCkndek0kHBAZBYrfrbdJl8W-GQzpjBc8s,24521
+footprint_facility/footprint_statistcs.py,sha256=Fj7PzR7tYq4gbtr875I_cHIA-F_aR7oM1doVadKoKA8,9829
+footprint_facility/test_footprint_facility.py,sha256=7gbiBALG8-S7qh2rq5PeMtz0cjKu-lf06d1L2QuKZns,93555
+footprint_facility/test_footprint_statistics.py,sha256=VosecdUkft92OxY1GfDZDyXfc-mA_vGQlQgXvO09IHE,5724
+footprint_facility-1.6.dist-info/LICENCE.txt,sha256=jG2zQEdRNt88EgHUWPpXVWmOrOduUQRx7MnYV9YIPaw,11359
+footprint_facility-1.6.dist-info/METADATA,sha256=Fix18cq1HPeSw4rjy5zBIrFsfPDstAfn4vfgvSTfy2M,51955
+footprint_facility-1.6.dist-info/WHEEL,sha256=GV9aMThwP_4oNCtvEC2ec3qUYutgWeAzklro_0m4WJQ,91
+footprint_facility-1.6.dist-info/entry_points.txt,sha256=0OIe6a541fRz8vKLplmmTIDc7TFEHvrAF4Ef13wh7YE,57
+footprint_facility-1.6.dist-info/top_level.txt,sha256=8mQBdsiwX-ipsMg2jZ6o4xQv_cQNA3_Xq9uO3g2Y0lQ,19
+footprint_facility-1.6.dist-info/RECORD,,
