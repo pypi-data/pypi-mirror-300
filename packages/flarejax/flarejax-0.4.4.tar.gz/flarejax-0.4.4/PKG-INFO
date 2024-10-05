@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: flarejax
+Version: 0.4.4
+Summary: Flexible Neural Networks in JAX
+Author-email: Paul Wollenhaupt <paul.wollenhaupt@gmail.com>
+Project-URL: Homepage, https://github.com/pwolle/flarejax
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.11
+Description-Content-Type: text/markdown
+Requires-Dist: jax>=0.4.33
+Requires-Dist: jaxlib>=0.4.33
+Requires-Dist: jaxtyping>=0.2.34
+Requires-Dist: einops>=0.8.0
+Requires-Dist: beartype>=0.18.5
+
+# FlareJax
