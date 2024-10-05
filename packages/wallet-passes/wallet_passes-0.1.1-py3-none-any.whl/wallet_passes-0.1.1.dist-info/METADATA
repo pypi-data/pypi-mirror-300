@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: wallet-passes
+Version: 0.1.1
+Summary: 
+Home-page: https://github.com/mys1erious/wallet-passes
+Author: mys1erious
+Author-email: subtletyzeros@gmail.com
+Requires-Python: >=3.12,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.12
+Project-URL: Repository, https://github.com/mys1erious/wallet-passes
+Description-Content-Type: text/markdown
+
+
