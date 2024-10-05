@@ -1,0 +1,25 @@
+argcomplete
+babel
+google-api-python-client>=1.4
+google_auth_oauthlib
+httplib2
+parsedatetime
+platformdirs
+pydantic
+python-dateutil
+truststore
+
+[:python_version < "3.11"]
+tomli
+
+[dev]
+google-api-python-client-stubs
+types-python-dateutil
+types-requests
+types-vobject
+
+[dev:python_version < "3.11"]
+types-toml
+
+[vobject]
+vobject

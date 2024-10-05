@@ -1,0 +1,78 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "gcalcli config",
+  "description": "User configuration for gcalcli command-line tool.\n\nSee https://pypi.org/project/gcalcli/.",
+  "type": "object",
+  "$defs": {
+    "AuthSection": {
+      "title": "Settings for authentication",
+      "description": "Configuration for settings like client-id used in auth flow.\n\nNote that client-secret can't be configured here and should be passed on\ncommand-line instead for security reasons.",
+      "type": "object",
+      "properties": {
+        "client-id": {
+          "title": "Client ID for Google auth token",
+          "description": "Google client ID for your auth client project.\n\nDetails: https://github.com/insanum/gcalcli/blob/HEAD/docs/api-auth.md",
+          "anyOf": [
+            {
+              "type": "string"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "default": null
+        }
+      }
+    },
+    "CalendarsSection": {
+      "title": "Settings about the set of calendars gcalcli operates on",
+      "type": "object",
+      "properties": {
+        "default-calendars": {
+          "title": "Calendars to use as default for certain commands when no explicit target calendar is otherwise specified",
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "ignore-calendars": {
+          "title": "Calendars to ignore by default (unless explicitly included using --calendar) when running commands against all calendars",
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "OutputSection": {
+      "title": "Settings about gcalcli output (formatting, colors, etc)",
+      "type": "object",
+      "properties": {
+        "week-start": {
+          "title": "Weekday to treat as start of week",
+          "$ref": "#/$defs/WeekStart",
+          "default": "sunday"
+        }
+      }
+    },
+    "WeekStart": {
+      "title": "WeekStart",
+      "type": "string",
+      "enum": [
+        "sunday",
+        "monday"
+      ]
+    }
+  },
+  "properties": {
+    "auth": {
+      "$ref": "#/$defs/AuthSection"
+    },
+    "calendars": {
+      "$ref": "#/$defs/CalendarsSection"
+    },
+    "output": {
+      "$ref": "#/$defs/OutputSection"
+    }
+  }
+}

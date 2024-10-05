@@ -1,0 +1,7 @@
+include ChangeLog
+include README.md
+exclude .git*
+
+graft data
+graft docs
+prune .github
