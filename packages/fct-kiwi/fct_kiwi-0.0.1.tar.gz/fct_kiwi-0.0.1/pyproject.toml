@@ -1,0 +1,15 @@
+[tool.poetry]
+name = "fct-kiwi"
+version = "0.0.1"
+description = "FCT balena API"
+authors = [
+	"Francisco Valbuena <f.valbuenao64@gmail.com>"
+]
+license = "MIT"
+readme = "fct-Package.md"
+repository = "https://github.com/gokiwibot/fct-package"
+keywords = ["balena", "fleet control"]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+requests = "^2.32.3"
