@@ -1,0 +1,67 @@
+-c Create a new assistant
+-d Delete a new assistant
+-l assistant (list assistants). Can use substring, for exampl -l ass to list assistants
+-l session (list sessions). Can use substring, for example -l s for list session
+-l history (list history). History stores conversations not related with a
+session. As same, can use substring.
+-l (list all sessions assistants and histories.)
+-v version
+-h help
+-n new session
+-e end currect session
+-a activate session
+-s show information about a session or an assistant. As a title/summary and full
+information.
+-f failback assistant. Example -f NAME. In list the default
+assistant is tagged with an (*) after it's name. (separated by a space). Fails
+is NAME isn't a valid assistant. When a default assistant is deleted the latest
+created will become the new default assistant. When creating an assistant if no
+default asistant exists, it will become the default assistant.
+
+Aigor active sessions are controlled by environment variable. 
+
+AIGOR_ACTIVE_SESSION="~/.run/aigor/sessions/mybot-furry_wolf"
+
+You can manually set the variable (if points to a valid session file), or use
+`--activate` to activate it.
+
+
+Sessions are birectional conversations
+
+start a new session
+--new -n start a session with a given ASSISTANT and activate it. Syntax --new
+NAME_OF_ASSISTANT. If assistant does not exist fail
+--activate -a activate a session. Syntax --activate SESSION_NAME. If session
+does not exist fail.
+--end -e end a session, deactivate it. (do not delete). Syntax --end. If no
+session is open fail.
+
+
+# Regarding number of parameters
+
+#args = 0
+If there is an active session:
+  continue the session. Save chat at session.
+If there is no session:
+  use default assistant for a single query. No session is created. Save in
+  independent history/queries
+
+#args = 1
+If argument content is a session name. Activate the session and send the STDIN
+(if exists) to session provider. Save output in session history.
+
+If argument content is a assistant name. Run the assistant in single chat mode
+and save response and prompt into the independent history/queries.
+
+If the argument isn't an assistant name or a session name. One possible behavior
+is fallback to default assistant. Raise a warn about it and follow the same
+behavior as in single chage mode.
+
+
+# Session names are named from `assistant_name-funnyword`
+
+
+--show -s display assistant or session information. If is a session will display
+the full conversation till the point. IT is a assistant it will display it's
+configurations. (prompt, provider information, etc)
+

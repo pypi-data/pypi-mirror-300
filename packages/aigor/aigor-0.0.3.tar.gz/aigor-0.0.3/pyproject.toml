@@ -1,0 +1,90 @@
+[build-system]
+requires = ["setuptools>=61.0", "setuptools_scm[toml]>=6.2", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "aigor"
+dynamic = ["version"]
+description = "AIgor is an assistant for oldshol unix users."
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+  "python-dotenv",
+  "colorlog",
+  "typer",
+  "anthropic",
+  "openai",
+]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+authors = [
+  {'name' = 'Igor Morgado', 'email' = "morgado.igor@gmail.com"},
+]
+maintainers = [
+  {'name' = 'Igor Morgado', 'email' = "morgado.igor@gmail.com"},
+]
+
+[project.urls]
+Homepage = "https://github.com/igormorgado/aigor"
+"Bug Tracker" = "https://github.com/igormorgado/aigor/issues"
+
+[tool.setuptools.dynamic]
+version = {attr = "aigor.__version__"}
+
+[project.optional-dependencies]
+dev = [ 
+  "sphinx",
+  "pytest",
+  "pylint",
+  "mypy",
+  "ipython",
+  "ipdb",
+  "pytest-mypy", 
+  "setuptools-scm",
+  "types-PyYAML",
+  "build",
+  "twine",
+  "sphinx-rtd-theme",
+]
+
+[project.scripts]
+aigor = "aigor.main:app"
+
+[tool.setuptools]
+package-dir = { "" = "src" }
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+aigor = ["py.typed"]
+
+[tool.pytest.ini_options]
+minversion = "6.0"
+addopts = "-ra -q --mypy"
+testpaths = [
+    "tests",
+    # "integration",
+]
+
+[tool.pytest]
+pythonpath = "."
+
+[tool.mypy]
+ignore_missing_imports = true
+strict = true
+
+[tool.pylint.format]
+max-line-length = "88"
+
+[tool.pylint.design]
+max-args = "5"
+max-attributes = "7"
+
+[tool.black]
+line-length = 88
+target-version = ['py311']
+include = '\.py$'
