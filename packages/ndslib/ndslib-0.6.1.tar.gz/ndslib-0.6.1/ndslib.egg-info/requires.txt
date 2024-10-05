@@ -1,0 +1,16 @@
+numpy
+nibabel
+ipython
+jupyter
+pandas
+seaborn
+sphinx
+numpydoc
+scikit-image
+scikit-learn
+viznet
+nilearn
+matplotlib
+sphinx_rtd_theme
+sphinx_copybutton
+sphinx-math-dollar

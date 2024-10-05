@@ -1,0 +1,7 @@
+.DS_Store
+dist/
+ndslib.egg-info/
+ndslib/__pycache__/
+ndslib/version.py
+docs/source/generated/
+docs/build
