@@ -1,0 +1,15 @@
+.gitattributes
+.gitignore
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+.github/workflows/deploy.yml
+src/aipdf/__init__.py
+src/aipdf/ocr.py
+src/aipdf.egg-info/PKG-INFO
+src/aipdf.egg-info/SOURCES.txt
+src/aipdf.egg-info/dependency_links.txt
+src/aipdf.egg-info/requires.txt
+src/aipdf.egg-info/top_level.txt
+tests/test_pdf_to_markdown.py
