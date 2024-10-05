@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: pyutra
+Version: 1.0.1
+Summary: This is a python library that is meant to try to be jack of all trades.
+Home-page: https://github.com/thediamondog/pyutra
+Author: TheDiamondOG
+Author-email: thediamondogness@gmail.com
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# PyUtra
+This is a python library that is meant to try to be jack of all trades.\
+Also the typo is intentional, pyultra was banned by pypi.
+## Current Features
+JSON Config System\
+Colorful Text\
+Small Debugging System
