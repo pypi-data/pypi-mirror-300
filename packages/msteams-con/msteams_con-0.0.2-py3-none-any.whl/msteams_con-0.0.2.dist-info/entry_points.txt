@@ -1,0 +1,2 @@
+[console_scripts]
+msteams-connector = cli:main
