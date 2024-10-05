@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: uvengine
+Version: 1.0.0
+Summary: Variability resolution engine for UVL models and text-based implementation artifacts.
+Home-page: https://github.com/jmhorcas/spl_implementation
+Author: Jose Miguel Horcas
+Author-email: horcas@uma.es
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: flamapy~=1.1.3
+Requires-Dist: flamapy-fm~=1.1.3
+Requires-Dist: Jinja2~=3.1.3
+
+This package provides a variability resolution engine for UVL models and text-based implementation artifacts. It is based on Jinja2 templates and a mapping model that relates the features in the UVL model with the implementation artifacts.
