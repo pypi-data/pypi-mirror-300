@@ -1,0 +1,2 @@
+Version: 1.8.2
+Arguments: ['C:\\Users\\runneradmin\\AppData\\Local\\Temp\\cibw-run-ae0g4n8f\\cp313-win_amd64\\build\\venv\\Scripts\\delvewheel', 'repair', '--add-path=dist\\extern\\bin', '-w', 'C:\\Users\\runneradmin\\AppData\\Local\\Temp\\cibw-run-ae0g4n8f\\cp313-win_amd64\\repaired_wheel', 'C:\\Users\\runneradmin\\AppData\\Local\\Temp\\cibw-run-ae0g4n8f\\cp313-win_amd64\\built_wheel\\gimli.units-0.3.3-cp313-cp313-win_amd64.whl']

@@ -1,0 +1,2 @@
+[console_scripts]
+gimli = gimli._main:main
