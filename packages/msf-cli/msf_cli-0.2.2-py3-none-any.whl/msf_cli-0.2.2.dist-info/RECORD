@@ -1,0 +1,14 @@
+msf_cli/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+msf_cli/broker.py,sha256=RvP2lG5dAhj2_E7suZFU5DExPN27lhzaCinI_FxOot8,1632
+msf_cli/cli.py,sha256=VTNaNlpopOtBwqQ6P6ThdOggHC6ILk2sEiA5r0IM68E,376
+msf_cli/devices.py,sha256=e9nZn3Iak-JYCTZ8PFTtFONA8FJGNjMMfYFEROv1weE,7811
+msf_cli/new.py,sha256=DoUDas297dYRrGK9cdCjOwJ1MeRMEDmSv8f4-i32HZo,2326
+msf_cli/static/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+msf_cli/static/main.py,sha256=S73oXuH1lkfgXEP0XdnQMNB9e8TTrEHm5KEErtwTiG8,1056
+msf_cli/static/mpbridge.ignore,sha256=D66HoWkjdaHJg9s_J2RWyhxmI9QRkI9-KgJKcddFuf4,10
+msf_cli/static/mqtt_as.json,sha256=kXxVQDlb5yLRaVcgP51AhQuMAGPdP2GXm7uJ7oPCqJA,333
+msf_cli/static/settings.py,sha256=wzo0bmkBDMmHbBwCPUKK6dESqLXZyFQiG4g2JNwGwv8,313
+msf_cli-0.2.2.dist-info/METADATA,sha256=l-I0hxSMQkNAeJzzz1E6LbP-WMV7X5NU2uleNOMvlv4,3697
+msf_cli-0.2.2.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+msf_cli-0.2.2.dist-info/entry_points.txt,sha256=g16K_MewJay6xiBaaI-vkz50DBmF35T-uVfJN9yBL9E,39
+msf_cli-0.2.2.dist-info/RECORD,,
