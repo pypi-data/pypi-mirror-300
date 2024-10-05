@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+cmdinterface/CmdInterface.py
+cmdinterface/__init__.py
+simplecmdinterface.egg-info/PKG-INFO
+simplecmdinterface.egg-info/SOURCES.txt
+simplecmdinterface.egg-info/dependency_links.txt
+simplecmdinterface.egg-info/top_level.txt
