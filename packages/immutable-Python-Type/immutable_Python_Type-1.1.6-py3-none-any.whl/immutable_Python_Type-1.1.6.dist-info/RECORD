@@ -1,0 +1,15 @@
+immutableType/Bool.py,sha256=VvHEEykC6FZsGPPLEaZ4FxlPAGDgkUf8Q9bVrXGGwEQ,662
+immutableType/Callable.py,sha256=HgpzTeHSGnHXN5BoL0HEZUH7hUsddD3RpBH58j2GIdw,3785
+immutableType/Dict.py,sha256=lhdhBJLKSm6YM5yZeTIj5rl9RiM1dWFKkewUIu2t72A,4843
+immutableType/Int.py,sha256=6jInnp-ISr36TV5SFUmBuAhgCgdciH4op07Ia29fWlo,718
+immutableType/List.py,sha256=uwds-dAEk9ww1QrlBqi4Z1G9rJUGeqRO1lvqy4WlSR8,4904
+immutableType/Str.py,sha256=F1f6BtYuZvTPm7DcROqD3XLO2XiPYQKhNuhLFvT9DzE,893
+immutableType/Tuple.py,sha256=25-v7d4wAOz2HwPc-6m9haiI2YWE1W3yYY8moWZsVa4,1472
+immutableType/__init__.py,sha256=br6a1893873Fp01mLV_WAePFjgckcCGnoD-XikomJhk,279
+immutableType/_convert_mutable.py,sha256=x3zrswOTemtHtmCoJ0uBpVfPVBzEsTUiWYXA4lMxT9Q,1776
+immutableType/_error.py,sha256=jrr3RTFFKtlvPRJdWSuVgFGHjNxS89PqFmeB4XftESQ,3173
+immutable_Python_Type-1.1.6.dist-info/LICENSE,sha256=D2olfsNvYHnkdRHgrWmdyXfuhbNFNKJpELWgl-djWsY,1082
+immutable_Python_Type-1.1.6.dist-info/METADATA,sha256=94-rfnlZuEZcrKdqDuh2Iqwb7AzmP4GFqnOO7HgWHGc,844
+immutable_Python_Type-1.1.6.dist-info/WHEEL,sha256=GV9aMThwP_4oNCtvEC2ec3qUYutgWeAzklro_0m4WJQ,91
+immutable_Python_Type-1.1.6.dist-info/top_level.txt,sha256=e7WXpMaamgLDIBbmpz_OsYDEDYlX_W7vWsJoro-w5yk,14
+immutable_Python_Type-1.1.6.dist-info/RECORD,,
