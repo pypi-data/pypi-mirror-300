@@ -1,0 +1,7 @@
+LICENSE
+README.md
+setup.py
+alecpdf.egg-info/PKG-INFO
+alecpdf.egg-info/SOURCES.txt
+alecpdf.egg-info/dependency_links.txt
+alecpdf.egg-info/top_level.txt
