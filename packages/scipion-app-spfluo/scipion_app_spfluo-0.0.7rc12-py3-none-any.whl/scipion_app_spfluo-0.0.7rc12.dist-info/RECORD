@@ -1,0 +1,13 @@
+scipion/_version.py,sha256=5Al5nJDV8aeU97TLulXCl1QPgbWW3qIUH9u7aCujAXQ,415
+scipion/templates/hosts.template,sha256=x-LidAKUpspNKMD2JRf6LC0qjaI4-MzTNq0xWP7rwNk,1704
+scipion/templates/protocols.template,sha256=rlXQPTINEMs6kyzfU1aTDXJ1JEqHEVBzCgElingpswU,3690
+scipion/templates/scipion.template,sha256=EfvCZMaOgsW4e5cmfJw9QSYzN4QYSO1FzBvA6LnTwvg,4296
+scipion/templates/scipionbox.template,sha256=3zkeyoZh3Jpp8vOjQAdEqrBwNX4EeV5mUyH4KEIT1QY,1187
+scipion/templates/workflow_betagal1.json,sha256=6sfmV4p17nV2Bvt4kqde2SciaGO9m5yu9_-OXTi1EGA,4197
+scipion/templates/workflow_betagal2.json,sha256=Ea_R3wqrDZRUhrIhTl8RiPc9xpwEVAwthxNCfXQyuho,3016
+scipion/templates/workflow_tutorial_intro.json,sha256=kRg7m2wVbqnCpIKLLdySKeoGmDVmEFLMeTwJMROUwOQ,8100
+scipion_app_spfluo-0.0.7rc12.dist-info/METADATA,sha256=oAUoJQmbUDHMvWLlalF5LYMtZTqTVsqp0-PvvIVmHyY,1830
+scipion_app_spfluo-0.0.7rc12.dist-info/WHEEL,sha256=1yFddiXMmvYK7QYTqtRNtX66WJ0Mz8PYEiEUoOUUxRY,87
+scipion_app_spfluo-0.0.7rc12.dist-info/entry_points.txt,sha256=x70R3tM73Buu4G5ETl8vx_XnpxBhlbJ8tudDTi0N7Hc,104
+scipion_app_spfluo-0.0.7rc12.dist-info/licenses/LICENSE.txt,sha256=ixuiBLtpoK3iv89l7ylKkg9rs2GzF9ukPH7ynZYzK5s,35148
+scipion_app_spfluo-0.0.7rc12.dist-info/RECORD,,
