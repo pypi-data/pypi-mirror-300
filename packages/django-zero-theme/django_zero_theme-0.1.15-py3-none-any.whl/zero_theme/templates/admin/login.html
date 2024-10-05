@@ -1,0 +1,106 @@
+{% extends "admin/base_site.html" %}
+{% load i18n static %}
+
+{% block extrastyle %}{{ block.super }}
+    {#    <link rel="stylesheet" href="{% static "admin/css/login.css" %}">#}
+    {{ form.media }}
+{% endblock %}
+
+{% block bodyclass %}{{ block.super }} login{% endblock %}
+
+{% block usertools %}{% endblock %}
+
+{% block nav-global %}{% endblock %}
+
+{% block nav-sidebar %}{% endblock %}
+
+{% block content_title %}{% endblock %}
+
+{% block nav-breadcrumbs %}{% endblock %}
+
+{% block content %}
+    <div id="main-wrapper" class="auth-customizer-none">
+        <div class="position-relative overflow-hidden radial-gradient min-vh-100 w-100 d-flex align-items-center justify-content-center">
+            <div class="d-flex align-items-center justify-content-center w-100">
+                <div class="row justify-content-center w-100">
+                    <div class="col-md-8 col-lg-6 col-xxl-3 auth-card">
+                        <div class="card mb-0">
+                            <div class="card-body">
+                                <a
+                                        class="text-nowrap logo-img text-center d-block mb-5 w-100">
+                                    <img src="{% static 'img/dark-logo.svg' %}" class="dark-logo" alt="Logo-Dark"/>
+                                    <img src="{% static 'img/light-logo.svg' %}" class="light-logo"
+                                         alt="Logo-light"/>
+                                </a>
+
+                                {% if user.is_authenticated %}
+                                    <p class="errornote text-danger">
+                                        {% blocktranslate trimmed %}
+                                            You are authenticated as {{ username }}, but are not authorized to
+                                            access this page. Would you like to login to a different account?
+                                        {% endblocktranslate %}
+                                    </p>
+                                {% endif %}
+
+                                {% if form.errors and not form.non_field_errors %}
+                                    <p class="errornote text-danger">
+                                        {% blocktranslate count counter=form.errors.items|length %}Please correct the
+                                            error below.{% plural %}Please
+                                            correct the errors below.{% endblocktranslate %}
+                                    </p>
+                                {% endif %}
+
+                                {% if form.non_field_errors %}
+                                    {% for error in form.non_field_errors %}
+                                        <div class="alert alert-info text-info alert-dismissible fade show"
+                                             role="alert">
+                                            <button type="button" class="btn-close btn-close" data-bs-dismiss="alert"
+                                                    aria-label="Close"></button>
+                                            <strong>Info - </strong> {{ error }}
+                                        </div>
+                                    {% endfor %}
+                                {% endif %}
+
+
+                                <form action="{{ app_path }}" method="post" id="login-form">
+                                    {% csrf_token %}
+                                    <div class="mb-3">
+                                        <label for="id_username" class="form-label">Username or Email</label>
+                                        <input type="text" name="username" class="form-control" id="id_username"
+                                               aria-describedby="emailHelp">
+                                        {{ form.username.errors }}
+                                    </div>
+                                    <div class="mb-4">
+                                        <label for="id_password" class="form-label">Password</label>
+                                        <input type="password" name="password" class="form-control" id="id_password">
+                                        {{ form.password.errors }}
+                                        <input type="hidden" name="next" value="{{ next }}">
+                                    </div>
+                                    <div class="d-flex align-items-center justify-content-between mb-4">
+                                        <div class="form-check">
+                                            <input class="form-check-input primary" type="checkbox" value=""
+                                                   id="flexCheckChecked" checked>
+                                            <label class="form-check-label text-dark" for="flexCheckChecked">
+                                                Remember this Device
+                                            </label>
+                                        </div>
+
+                                        {% url 'admin_password_reset' as password_reset_url %}
+                                        {% if password_reset_url %}
+                                            <a class="text-primary fw-medium"
+                                               href="{{ password_reset_url }}">{% translate 'Forgotten your password or username?' %}</a>
+                                        {% endif %}
+                                    </div>
+
+                                    <button class="btn btn-primary w-100 py-8 mb-4 rounded-2"
+                                            type="submit">{% translate 'Log in' %}</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="dark-transparent sidebartoggler"></div>
+{% endblock %}
