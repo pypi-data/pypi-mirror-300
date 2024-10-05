@@ -1,0 +1,106 @@
+Metadata-Version: 2.1
+Name: hidpi-tk
+Version: 1.0.0
+Summary: Fixed Tkinter-based GUI window blurry on high-DPI monitors.
+Home-page: https://github.com/Wulian233/hidpi-tk
+Author: Wulian233 <xiguawulian@gmail.com>
+Author-email: xiguawulian@gmail.com
+License: Apache 2
+Project-URL: CI: GitHub Actions, https://github.com/Wulian233/hidpi-tk/actions/workflows/ci.yml
+Project-URL: Coverage: codecov, https://codecov.io/github/Wulian233/hidpi-tk
+Project-URL: GitHub: issues, https://github.com/Wulian233/hidpi-tk/issues
+Project-URL: GitHub: repo, https://github.com/Wulian233/hidpi-tk
+Keywords: hidpi-tk,tkinter,dpi,highdpi,blurry,tkdpi
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Classifier: Programming Language :: Python :: 3.14
+Classifier: Topic :: Software Development :: Libraries
+Requires-Python: >=3.6
+Description-Content-Type: text/x-rst
+License-File: LICENSE
+
+===================
+hidpi-tk
+===================
+.. image:: https://github.com/Wulian233/hidpi-tk/actions/workflows/ci.yml/badge.svg
+    :target: https://github.com/Wulian233/hidpi-tk/actions/workflows/ci.yml
+.. image:: https://codecov.io/gh/Wulian233/hidpi-tk/branch/main/graph/badge.svg
+    :target: https://codecov.io/gh/Wulian233/hidpi-tk
+.. image:: https://img.shields.io/pypi/v/hidpi-tk.svg
+    :target: https://pypi.python.org/pypi/hidpi-tk
+
+
+
+``hidpi-tk`` is a Python library designed to enhance Tkinter-based GUI applications
+by automatically adjusting DPI scaling and font sizes, particularly for high-DPI monitors.
+
+.. image:: https://raw.githubusercontent.com/Wulian233/hidpi-tk/refs/heads/main/screenshot.png
+    :target: https://raw.githubusercontent.com/Wulian233/hidpi-tk/refs/heads/main/screenshot.png
+
+Features
+===================
+
+- **Automatic DPI Scaling**
+
+- **Automatic Font Size Adjustment**
+
+- **Without side-effects**
+
+- **Cross-Platform**
+
+Usage
+===========================
+
+To use this library, simply replace the standard ``Tk`` class with ``DPIAwareTk``.
+The library will handle DPI and font adjustments automatically:
+
+.. code:: python
+
+    from hidpi_tk import DPIAwareTk
+    # from tkinter import Tk
+
+    # root = Tk()
+    root = DPIAwareTk()
+    # After that use like Tk instance
+    root.mainloop()
+
+Details
+======================
+
+On Windows systems, it provides full support for scaling on high-DPI monitors,
+particularly for Windows 8.1 and newer. For older Windows systems (Vista & Win7)
+, it still adjusts DPI and font scaling to an extent.
+
+For other systems, such as macOS and Linux, the operating systems themselves
+provide excellent high-DPI support, so this library does not include specific
+code for DPI adjustments. However, using this library is still beneficial as
+it adjusts font scaling, which makes cross-platform development easier and
+more consistent.
+
+Font scaling is called from idlelib, so the minimum required version is Python 3.6.
+See: `<https://github.com/python/cpython/pull/3639>`
+
+
+License
+=======
+
+``hidpi-tk`` library is offered under Apache 2 license.
+
+Thanks
+======
+
+The library development is based on `high-dpi-tkinter <https://github.com/not-dev/high-dpi-tkinter>`_.
+
+Added: High-DPI font scaling support, legacy Windows support, bug fixes, and modern Python standards.
