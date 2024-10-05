@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: dnadesign
+Version: 0.1.7
+Summary: Python bindings for dnadesign
+Home-page: https://github.com/koeng101/dnadesign
+Author: Keoni Gandall
+Author-email: koeng101@gmail.com
+Requires-Dist: cffi>=1.0.0
+
