@@ -1,0 +1,9 @@
+slyvek_deployer/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+slyvek_deployer/config.py,sha256=xa3l6zKczt9T-8Jhur0WNYn-yHtr0UQXGPfmqEqNnKo,2358
+slyvek_deployer/deployer.py,sha256=Q8k1dJkiLyDArs-fFuIiYIz1h3fVcrtrRC-zSKm761o,2082
+slyvek_deployer/fabfile.py,sha256=sl_vZFXWpi0npiCIOK_q35_6gEGXZ7ScXWnBfuE66m8,4094
+slyvek_deployer-0.1.0.dist-info/METADATA,sha256=sJ-EZcOX_TJ2hg5uMKrDpIFh5lxV6D2cQ_sqQwVWuxw,220
+slyvek_deployer-0.1.0.dist-info/WHEEL,sha256=GV9aMThwP_4oNCtvEC2ec3qUYutgWeAzklro_0m4WJQ,91
+slyvek_deployer-0.1.0.dist-info/entry_points.txt,sha256=26-bJkZX_w4Xt-v4q-gouw0E_sijIWMlc8G0wwPcnxE,64
+slyvek_deployer-0.1.0.dist-info/top_level.txt,sha256=ZmgHJbEg3wi1PTf2-sVKBz8luDH8eOsqhW5WeQFRFu4,16
+slyvek_deployer-0.1.0.dist-info/RECORD,,
