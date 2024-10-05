@@ -1,0 +1,16 @@
+LICENSE.txt
+MANIFEST.in
+README.md
+pyproject.toml
+requirements.txt
+setup.py
+libChord/__init__.py
+libChord/chord.py
+libChord/node.py
+libChord.egg-info/PKG-INFO
+libChord.egg-info/SOURCES.txt
+libChord.egg-info/dependency_links.txt
+libChord.egg-info/requires.txt
+libChord.egg-info/top_level.txt
+tests/test_join.py
+tests/test_module.py

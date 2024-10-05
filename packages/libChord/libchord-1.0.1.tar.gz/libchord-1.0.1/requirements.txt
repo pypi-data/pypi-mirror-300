@@ -1,0 +1,5 @@
+loguru~=0.7.2
+cryptography~=43.0.1
+setuptools
+twine
+wheel
