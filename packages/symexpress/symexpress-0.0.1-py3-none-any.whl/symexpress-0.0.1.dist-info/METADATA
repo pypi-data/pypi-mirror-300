@@ -1,0 +1,17 @@
+Metadata-Version: 2.3
+Name: symexpress
+Version: 0.0.1
+Summary: Placeholder for symexpress3
+Author: Gien van den Enden
+Author-email: swvandenenden@gmail.com
+Maintainer-email: Gien van den Enden <swvandenenden@gmail.com>
+License: GNU General Public License v3 or later (GPLv3+)
+License-File: LICENSE
+Keywords: placeholder
+Classifier: Development Status :: 4 - Beta
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.11
+Description-Content-Type: text/markdown
+
+# Placeholder for symexpress3
