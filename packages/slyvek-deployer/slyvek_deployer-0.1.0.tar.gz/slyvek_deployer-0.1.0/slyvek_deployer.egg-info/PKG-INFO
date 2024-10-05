@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: slyvek-deployer
+Version: 0.1.0
+Summary: Un package pour déployer et configurer un VPS avec slyvek-setup
+Author: guiguito
+Requires-Dist: fabric>=2.6.0
+Requires-Dist: requests>=2.32.3

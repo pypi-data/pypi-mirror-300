@@ -1,0 +1,11 @@
+setup.py
+slyvek_deployer/__init__.py
+slyvek_deployer/config.py
+slyvek_deployer/deployer.py
+slyvek_deployer/fabfile.py
+slyvek_deployer.egg-info/PKG-INFO
+slyvek_deployer.egg-info/SOURCES.txt
+slyvek_deployer.egg-info/dependency_links.txt
+slyvek_deployer.egg-info/entry_points.txt
+slyvek_deployer.egg-info/requires.txt
+slyvek_deployer.egg-info/top_level.txt
