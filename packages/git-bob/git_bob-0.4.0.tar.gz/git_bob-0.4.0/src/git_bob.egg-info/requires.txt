@@ -1,0 +1,15 @@
+anthropic
+openai
+google-generativeai
+pygithub
+toolz
+azure-ai-inference
+nbconvert
+nbformat
+Pillow
+requests
+
+[testing]
+tox
+pytest
+pytest-cov

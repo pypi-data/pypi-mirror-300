@@ -1,0 +1,10 @@
+anthropic
+openai
+google-generativeai
+pygithub
+toolz
+azure-ai-inference
+nbconvert
+nbformat
+Pillow
+requests
