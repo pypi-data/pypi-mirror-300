@@ -1,0 +1,15 @@
+hoopstats/__init__.py,sha256=JcO53Nu3pEEdbF46Z8lwWsewbPXeDnv3-39zHfx5zWk,313
+hoopstats/services/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+hoopstats/services/player_scraper.py,sha256=a7B7uPaL8xGlDOzpSbwK3jLv547u-rOhX9o-VA_KDOo,4442
+hoopstats/services/team_scraper.py,sha256=tqjav8Z_okPeOMZx2SKQRCWk-OwunJEX5MQyg1sPdrk,2235
+hoopstats/test.py,sha256=yCBAW7o0P3zNOkACI0kDnEWq-QuL4puEwcWZ1eSS5nQ,2373
+hoopstats/utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+hoopstats/utils/decorator_utils.py,sha256=EtNiwmd89hd8wM5sBMXadSW6f9Agln5HGEKEWpftPTU,718
+hoopstats/utils/pandas_utils.py,sha256=n28ylyoCA-EE_igOx0kU9ZLT7G7kXBi1V9tDYBuMZVs,781
+hoopstats/utils/players_utils.py,sha256=3fKDymoVgsGL8lifmfe50SUX6sgLSoJEDvi7oJp33As,3610
+hoopstats/utils/request_utils.py,sha256=8MPp3eQ9myDVklmaGTgCImARuvkHEvEQ6i1-Kk6JloY,756
+hoopstats/utils/team_utils.py,sha256=5lx2MqS1u4nph5edSKfaRzJ9mYVLzkDcmO0LDUtvvLQ,956
+hoopstats-0.1.5.dist-info/LICENSE,sha256=hUteCnuP4EwCFJ7iDZFnYoQhUDd91K26eNCWl0nXCaE,1067
+hoopstats-0.1.5.dist-info/METADATA,sha256=oGIHa7j1lpF637ANXXrjMkLGwjHbBpTcX45WMjOPzqU,2558
+hoopstats-0.1.5.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+hoopstats-0.1.5.dist-info/RECORD,,
