@@ -1,0 +1,11 @@
+pybind11_coordtransform.libs/libstdc++-8baf04f9.so.6.0.28,sha256=yrzOxg1heyJ9Y-43YCLLn04Cpl_A68FN0D2Q1iBTMcY,2428961
+pybind11_coordtransform.libs/libgcc_s-8b50eaaa.so.1,sha256=WXj_FYQE1MDIyb-nN8siUALdxit6NHma0p9UxemQV8o,101649
+pybind11_coordtransform/_core.pyi,sha256=0T20GVCT7mvxj18hvxq8c5jQE4KEIL_e7ZBiF2aEI7s,4567
+pybind11_coordtransform/__main__.py,sha256=Ta3oNGA5uB5dm0Ms5UX3omULxYITp3tAX9K_6wTVAKI,72
+pybind11_coordtransform/_core.cpython-310-i386-linux-gnu.so,sha256=66DhPggRvAIgFa3Y9s1YvXBbumnoZpOWdfklLkKU7CI,179829
+pybind11_coordtransform/__init__.py,sha256=4bat966QooVJt-RKnF8-RpaqiICfUMCj-rcAxgt87Nk,486
+pybind11_coordtransform/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pybind11_coordtransform-0.1.2.dist-info/METADATA,sha256=EXunrIpkXcAz-H2xt7lb4WOcrwaIYrFJQf9PJnY39s0,1060
+pybind11_coordtransform-0.1.2.dist-info/RECORD,,
+pybind11_coordtransform-0.1.2.dist-info/WHEEL,sha256=9FsfbxbAC0VcmLgyx2a1VYCQmYIZdrlWNFDSSUwu2So,115
+pybind11_coordtransform-0.1.2.dist-info/licenses/LICENSE,sha256=SBNiCMUPOkN74CrKaGEJk1CNXzPemZ76Qsm106kwI1E,2182
