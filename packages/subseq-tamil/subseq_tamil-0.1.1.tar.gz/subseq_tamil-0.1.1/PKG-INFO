@@ -1,0 +1,22 @@
+Metadata-Version: 2.3
+Name: subseq_tamil
+Version: 0.1.1
+Summary: A simple Python library to check if a string is a subsequence of another.
+Project-URL: Homepage, https://github.com/yourusername/subseq_tamil
+Project-URL: Issues, https://github.com/yourusername/subseq_tamil/issues
+Author-email: Sivasaran <sivasaran354@gmail.com>
+License-File: LICENSE.txt
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.1
+Description-Content-Type: text/markdown
+
+# Subseq Tamil
+
+`subseq_tamil` is a simple Python library to check if one string is a subsequence of another.
+
+## Installation
+
+```bash
+pip install subseq_tamil

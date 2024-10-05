@@ -1,0 +1,22 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "subseq_tamil"
+version = "0.1.1"
+authors = [
+  { name="Sivasaran", email="sivasaran354@gmail.com" },
+]
+description = "A simple Python library to check if a string is a subsequence of another."
+readme = "README.md"
+requires-python = ">=3.1"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+Homepage = "https://github.com/yourusername/subseq_tamil"
+Issues = "https://github.com/yourusername/subseq_tamil/issues"
