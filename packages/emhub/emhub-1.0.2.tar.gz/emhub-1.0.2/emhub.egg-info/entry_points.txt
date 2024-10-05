@@ -1,0 +1,4 @@
+[console_scripts]
+emh-client = emhub.client.__main__:main
+emh-data = emhub.data.__main__:main
+emh-relion = emhub.data.processing.processing_relion.__main__:main
