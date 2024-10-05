@@ -1,0 +1,7 @@
+LICENSE
+README.md
+setup.py
+pyutra.egg-info/PKG-INFO
+pyutra.egg-info/SOURCES.txt
+pyutra.egg-info/dependency_links.txt
+pyutra.egg-info/top_level.txt
