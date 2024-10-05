@@ -1,0 +1,96 @@
+Metadata-Version: 2.1
+Name: ddpw
+Version: 5.3.0
+Summary: A lightweight wrapper that scaffolds PyTorch's (Distributed Data) Parallel.
+Author: Sujal Vijayaraghavan
+Maintainer: Sujal Vijayaraghavan
+License: BSD 3-Clause Licence
+        
+        Copyright (c) 2021-2024 Sujal Vijayaraghavan. All rights reserved.
+        
+        Redistribution and use in source and binary forms, with or without modification,
+        are permitted provided that the following conditions are met:
+        
+        1. Redistributions of source code must retain the above copyright notice, this
+           list of conditions and the following disclaimer.
+        2. Redistributions in binary form must reproduce the above copyright notice,
+           this list of conditions and the following disclaimer in the documentation
+           and/or other materials provided with the distribution.
+        3. Neither the name of the copyright holder nor the names of its contributors
+           may be used to endorse or promote products derived from this software without
+           specific prior written permission.
+        
+        THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND
+        ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
+        WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+        DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR
+        ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES
+        (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;
+        LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON
+        ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+        (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
+        SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+        
+Project-URL: Homepage, https://ddpw.projects.sujal.tv
+Project-URL: Repository, https://github.com/sujaltv/ddpw
+Project-URL: Documentation, https://ddpw.projects.sujal.tv
+Keywords: pytorch,distributed compute
+Classifier: Programming Language :: Python
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENCE
+Requires-Dist: numpy>=1.24.0
+Requires-Dist: torch>=2.0.0
+Requires-Dist: submitit>=1.4.5
+
+<h1 align="center">DDPW</h1>
+
+**Distributed Data Parallel Wrapper (DDPW)** is a lightweight Python wrapper
+relevant for [PyTorch](https://pytorch.org/) users.
+
+DDPW handles basic logistical tasks such as creating threads on GPUs/SLURM
+nodes, setting up inter-process communication, _etc._, and provides simple,
+default utility methods to move modules to devices and get dataset samplers,
+allowing the user to focus on the main aspects of the task. It is written in
+Python 3.10. The [documentation](https://ddpw.projects.sujal.tv) contains
+details on how to use this package.
+
+## Overview
+
+### Installation
+
+[![Conda](https://img.shields.io/conda/v/tvsujal/ddpw)](https://anaconda.org/tvsujal/ddpw)
+[![PyPI](https://img.shields.io/pypi/v/ddpw)](https://pypi.org/project/ddpw/)
+
+```bash
+conda install ddpw -c tvsujal # with conda
+pip install ddpw # with pip from PyPI
+```
+
+### Usage
+
+```python
+from ddpw import Platform, Wrapper
+
+# some task
+def task(global_rank, local_rank, group, args):
+    print(f'This is GPU {global_rank}(G)/{local_rank}(L); args = {args}') 
+
+# platform (e.g., 4 GPUs)
+platform = Platform(device='gpu', n_gpus=4)
+
+# wrapper
+wrapper = Wrapper(platform=platform)
+
+# start
+wrapper.start(task, ('example',))
+```
+
+---
+
+###### Status
+
+[![Publish to Anaconda](https://github.com/sujaltv/ddpw/actions/workflows/conda_publish.yaml/badge.svg)](https://github.com/sujaltv/ddpw/actions/workflows/conda_publish.yaml)
+[![Publish to PyPI](https://github.com/sujaltv/ddpw/actions/workflows/pypi_publish.yaml/badge.svg)](https://github.com/sujaltv/ddpw/actions/workflows/pypi_publish.yaml)
+[![Publish documentation](https://github.com/sujaltv/ddpw/actions/workflows/s3_publish.yaml/badge.svg)](https://github.com/sujaltv/ddpw/actions/workflows/s3_publish.yaml)
+
