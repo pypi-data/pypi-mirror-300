@@ -1,0 +1,8 @@
+ppigrf/IGRF13.shc,sha256=NXU2FSu29yztPriG3vhPkaWSUSRlw2fKWre9pMNsNSI,40160
+ppigrf/__init__.py,sha256=e0wyc42KAAkE8QlDfMmkLlBlkLL8OOk36lOoTmcl8L8,63
+ppigrf/ppigrf.py,sha256=cG0aLieYWAh1bfrlHZ_GpXAhDipWeph2ZA1JQePSZrg,24193
+ppigrf-1.1.0.dist-info/LICENSE,sha256=y6VnzUe8aX9XTY55HLsmjaQrnILQnWWoHDJ3lwVyvcc,1072
+ppigrf-1.1.0.dist-info/METADATA,sha256=x1PvY6GjHdsr6jSVinuN63tTgi0PNJpF-zs42Q5t2lo,5081
+ppigrf-1.1.0.dist-info/WHEEL,sha256=Z4pYXqR_rTB7OWNDYFOm1qRk0RX6GFP2o8LgvP453Hk,91
+ppigrf-1.1.0.dist-info/top_level.txt,sha256=w8RyBzIe6uNefRw2rbMacU5lUHNCZV2P1G0p5dKy7ec,7
+ppigrf-1.1.0.dist-info/RECORD,,
