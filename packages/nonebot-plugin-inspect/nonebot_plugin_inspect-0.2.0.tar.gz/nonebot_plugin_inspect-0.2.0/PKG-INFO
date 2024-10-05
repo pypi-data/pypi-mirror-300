@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: nonebot-plugin-inspect
+Version: 0.2.0
+Summary: Inspect on any user, group or channel
+Author-Email: RF-Tar-Railt <rf_tar_railt@qq.com>
+License: MIT
+Requires-Python: >=3.9
+Requires-Dist: nonebot-plugin-uninfo>=0.3.0
+Requires-Dist: nonebot-plugin-alconna>=0.53.0
+Description-Content-Type: text/markdown
+
+# nonebot-plugin-inspect
