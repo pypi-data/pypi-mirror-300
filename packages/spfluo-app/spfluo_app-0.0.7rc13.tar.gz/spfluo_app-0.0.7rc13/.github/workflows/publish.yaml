@@ -1,0 +1,195 @@
+name: Publish wheel on tag and deploy
+
+on:
+  push:
+    tags:
+      - 'v*'
+
+jobs:
+
+  get-version:
+    runs-on: ubuntu-latest
+    outputs:
+      spfluo-app-version: ${{ steps.get_version.outputs.version }}
+    steps:
+      - name: Get version from tag
+        id: get_version
+        run: echo "version=${GITHUB_REF#refs/tags/v}" >> $GITHUB_OUTPUT
+  
+  build-packages:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+    
+    - name: Pull submodules
+      run: git submodule update --init --recursive
+
+    - name: Install uv
+      uses: astral-sh/setup-uv@v3
+      with:
+        version: "0.4.18"
+
+    - name: Build packages
+      run: uv build --all
+    
+    - name: Store the distribution packages
+      uses: actions/upload-artifact@v4
+      with:
+        name: python-package-distributions
+        path: dist/
+  
+  publish-to-pypi:
+    name: >-
+      Publish Python 🐍 distribution 📦 to PyPI
+    needs: [build-packages]
+    runs-on: ubuntu-latest
+    permissions:
+      id-token: write  # IMPORTANT: mandatory for trusted publishing
+    
+    steps:
+    - name: Download all the dists
+      uses: actions/download-artifact@v4
+      with:
+        name: python-package-distributions
+        path: dist/
+    
+    - name: Install uv
+      uses: astral-sh/setup-uv@v3
+      with:
+        version: "0.4.18"
+    
+    - name: Publish packages
+      run: |
+        ls -al
+        ls -al dist/
+        uv publish -v --token {{ secrets.PYPI_TOKEN }} dist/*
+
+  
+  compile-requirements:
+    runs-on: ubuntu-latest
+    needs: [get-version, publish-to-pypi]
+    
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+    
+    - name: Install uv
+      uses: astral-sh/setup-uv@v3
+      with:
+        version: "0.4.18"
+    
+    - name: Run pip-compile
+      run: > 
+        echo "spfluo-app==${{ needs.get-version.outputs.spfluo-app-version }}" | uv pip compile
+        -o requirements.txt
+        --universal
+        --index-url https://download.pytorch.org/whl/cpu
+        --extra-index-url https://pypi.org/simple
+        --emit-index-url
+    
+    - name: Run pip-compile
+      run: > 
+        echo "spfluo-app==${{ needs.get-version.outputs.spfluo-app-version }}" | uv pip compile
+        -o requirements-gpu.txt
+        --universal
+        --index-url https://download.pytorch.org/whl/cu124
+        --extra-index-url https://pypi.org/simple
+        --emit-index-url
+    
+    - name: Upload requirements files
+      uses: actions/upload-artifact@v4
+      with:
+        name: requirements
+        path: requirements.txt
+        retention-days: 1
+    
+    - name: Upload requirements files gpu
+      uses: actions/upload-artifact@v4
+      with:
+        name: requirements-gpu
+        path: requirements-gpu.txt
+        retention-days: 1
+
+  build-executable:
+    needs: [get-version, publish-to-pypi, compile-requirements]
+    runs-on: windows-latest
+    strategy:
+      matrix:
+        gpu: [false, true]
+    
+    env:
+      PYAPP_VERSION: "0.22.0"
+      PYAPP_PROJECT_NAME: "spfluo-app"
+      PYAPP_PROJECT_VERSION: ${{ needs.get-version.outputs.spfluo-app-version }}
+      PYAPP_PROJECT_DEPENDENCY_FILE: "${{ github.workspace }}/requirements.txt"
+      PYAPP_IS_GUI: 1
+      PYAPP_EXEC_SCRIPT: "${{ github.workspace }}/src/spfluo_app/__main__.py"
+      PYAPP_PYTHON_VERSION: "3.11"
+      python_version: "11"
+      PYAPP_UV_ENABLED: 1 
+      TARGET_DIR: "${{ github.workspace }}/target"
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+    
+    - name: Define gpu vars
+      shell: pwsh
+      run: |
+        if ($${{ matrix.gpu }}) {
+            echo "PYAPP_PROJECT_DEPENDENCY_FILE=${{ github.workspace }}/requirements-gpu.txt" >> $env:GITHUB_ENV
+            echo "GPU_SUFFIX=-gpu" >> $env:GITHUB_ENV
+        } else {
+            echo "PYAPP_PROJECT_DEPENDENCY_FILE=${{ github.workspace }}/requirements.txt" >> $env:GITHUB_ENV
+            echo "GPU_SUFFIX=" >> $env:GITHUB_ENV
+        }
+        
+    - name: Download requirements.txt
+      uses: actions/download-artifact@v4
+      with:
+        name: requirements${{ env.GPU_SUFFIX }}
+
+    - name: Download pyapp Source
+      run: |
+        Invoke-WebRequest -Uri "https://github.com/ofek/pyapp/releases/download/v$env:PYAPP_VERSION/source.tar.gz" -OutFile 'pyapp-source.tar.gz'
+      shell: pwsh
+
+    - name: Extract pyapp Source
+      run: tar -xzf pyapp-source.tar.gz
+      shell: pwsh
+
+    - name: Build the Project
+      env:
+        RUST_BACKTRACE: "full"
+        CARGO_PROFILE_RELEASE_BUILD_OVERRIDE_DEBUG: "true"
+      run: |
+        Set-Location -Path "pyapp-v$env:PYAPP_VERSION"
+        cargo build --release --target-dir $env:TARGET_DIR
+        Move-Item -Path "$env:TARGET_DIR/release/pyapp.exe" -Destination "${{ github.workspace }}/spfluo-app$env:GPU_SUFFIX.exe" -Force
+      shell: pwsh
+    
+    - name: Upload executable
+      uses: actions/upload-artifact@v4
+      with:
+        name: executable${{ env.GPU_SUFFIX }}
+        path: spfluo-app${{ env.GPU_SUFFIX }}.exe
+        retention-days: 1
+      
+  create-release:
+    needs: [compile-requirements, build-executable]
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Download all artifacts
+      uses: actions/download-artifact@v4
+      
+    - name: Create Release
+      uses: softprops/action-gh-release@v2
+      with:
+        files: |
+          requirements*/requirements*.txt 
+          executable*/*.exe
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
