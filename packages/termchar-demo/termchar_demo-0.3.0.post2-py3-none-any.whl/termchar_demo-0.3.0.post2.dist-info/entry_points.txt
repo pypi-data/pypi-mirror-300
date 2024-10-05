@@ -1,0 +1,3 @@
+[console_scripts]
+tcdemo=termchar_demo.app:main
+
