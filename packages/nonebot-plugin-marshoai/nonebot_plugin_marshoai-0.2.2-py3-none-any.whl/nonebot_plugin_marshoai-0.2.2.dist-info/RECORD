@@ -1,0 +1,10 @@
+nonebot_plugin_marshoai-0.2.2.dist-info/METADATA,sha256=rC-JC6zMaydf3NxPBfaCFBsdXO8__Lp-ZKt30bM608g,5170
+nonebot_plugin_marshoai-0.2.2.dist-info/WHEEL,sha256=Vza3XR51HW1KmFP0iIMUVYIvz0uQuKJpIXKYOBGQyFQ,90
+nonebot_plugin_marshoai-0.2.2.dist-info/entry_points.txt,sha256=6OYgBcLyFCUgeqLgnvMyOJxPCWzgy7se4rLPKtNonMs,34
+nonebot_plugin_marshoai-0.2.2.dist-info/licenses/LICENSE,sha256=QMvs_YwS2kFcECfF5X09F5jNmtNCCMLGaioDhSerXlI,1071
+nonebot_plugin_marshoai/__init__.py,sha256=LFLloNIuDuvsAlZQtfQHSuT8eozF5gZZAWPCrQefz80,2418
+nonebot_plugin_marshoai/azure.py,sha256=cOyoJUZ8gv6VhI7JLRs8yZlomlkOJfvf5vF6boAkTzE,6845
+nonebot_plugin_marshoai/config.py,sha256=AktkwXo-ieBeb_FqDgssqJmam1VMq45T8vBFgAe1xrw,1623
+nonebot_plugin_marshoai/models.py,sha256=I03hER6KTk-ZG9OHrOk8jldmzjHEt6EBaqiwGDnryUI,1423
+nonebot_plugin_marshoai/util.py,sha256=IEgc-vsVu1SmLdyPXA74EvFkDRFJgEYdYq7dtYsbliI,4173
+nonebot_plugin_marshoai-0.2.2.dist-info/RECORD,,
