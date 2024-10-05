@@ -1,0 +1,8 @@
+libChord/__init__.py,sha256=SW3JvS-TEXYESDqTeKFeIykhjI1yJdk4f5vzxwO4v6k,1000
+libChord/chord.py,sha256=haylrO-tQyNfPn2LAaxHlK-QQl64ZW3oF8fGRYL08JU,10402
+libChord/node.py,sha256=qpc6E8IExFCLM3l1c84OACtFB1Yx8MtaLZ1e6kn9Cpg,31796
+libChord-1.0.1.dist-info/LICENSE.txt,sha256=_YmrMRceTr4m0IKDC7fiZr8ecLU0dJgadfLyiZ_MaiA,1070
+libChord-1.0.1.dist-info/METADATA,sha256=DzzdkPafjRStRmHBuTp1ikRUyKSLImI0jJmZ249qpIE,4935
+libChord-1.0.1.dist-info/WHEEL,sha256=GV9aMThwP_4oNCtvEC2ec3qUYutgWeAzklro_0m4WJQ,91
+libChord-1.0.1.dist-info/top_level.txt,sha256=3097cNekIJz10nSz4jls80-vs-RsSg-RT2AeNw4G478,9
+libChord-1.0.1.dist-info/RECORD,,
