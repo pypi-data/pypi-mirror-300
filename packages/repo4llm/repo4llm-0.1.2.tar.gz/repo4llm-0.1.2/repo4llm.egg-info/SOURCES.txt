@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+repo4llm.py
+repo4llm.egg-info/PKG-INFO
+repo4llm.egg-info/SOURCES.txt
+repo4llm.egg-info/dependency_links.txt
+repo4llm.egg-info/entry_points.txt
+repo4llm.egg-info/requires.txt
+repo4llm.egg-info/top_level.txt
