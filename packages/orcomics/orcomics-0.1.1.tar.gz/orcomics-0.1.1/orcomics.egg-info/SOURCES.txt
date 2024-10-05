@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+orcomics/ORC.py
+orcomics/__init__.py
+orcomics/graph_attributes.py
+orcomics/util.py
+orcomics.egg-info/PKG-INFO
+orcomics.egg-info/SOURCES.txt
+orcomics.egg-info/dependency_links.txt
+orcomics.egg-info/requires.txt
+orcomics.egg-info/top_level.txt
