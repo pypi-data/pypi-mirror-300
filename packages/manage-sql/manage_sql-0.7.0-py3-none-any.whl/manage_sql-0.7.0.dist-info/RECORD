@@ -1,0 +1,13 @@
+manage_sql/__init__.py,sha256=SGqxUSmkWL14BYuESwvxnhiA34Nd44NG7kn0Ab7X33o,106
+manage_sql/Utils/MYSQL.py,sha256=r7zeBZgE18BUH6eYSh1YgUk0NXLg8P0YfNRlMc2mPHI,12830
+manage_sql/Utils/POSTGRESQL.py,sha256=XeyUY2zRCHF6YdhQdBxdPl5ycj1DWvlIUWTmLj4TQnE,16271
+manage_sql/Utils/SQLITE.py,sha256=kOxGp-sl3wnwXrkz101K3D4OHcE4Wh17uRWOVd586h0,13206
+manage_sql/Utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+manage_sql/Utils/utils_mysql.py,sha256=G0hiYknwsC9R4DQIH2ZU9j4vmUlsjCDmD7gozeyIpKg,12129
+manage_sql/Utils/utils_postgres.py,sha256=FV1wVsHKemUUGUrHe_SvEyPd2xd9PvNo3q6YVkLxJOE,9034
+manage_sql/Utils/utils_sqlite.py,sha256=C09LvbvCg2fuTehCjRw7p013Td260hJtf6XaNLMZOfA,5524
+manage_sql-0.7.0.dist-info/LICENCE,sha256=Jrj79HT3Z-YHl370yCwRDTNJE2EjDOuspVtay-FVMWE,1090
+manage_sql-0.7.0.dist-info/METADATA,sha256=gk8AL_q2IB_r19VM4zZKPcemfeQaaqkm9DLtpIf-prk,11474
+manage_sql-0.7.0.dist-info/WHEEL,sha256=GV9aMThwP_4oNCtvEC2ec3qUYutgWeAzklro_0m4WJQ,91
+manage_sql-0.7.0.dist-info/top_level.txt,sha256=Q-4U0UfXC7Qs41XpM-YMCGajKed55PYKglYmslcz3nI,11
+manage_sql-0.7.0.dist-info/RECORD,,
