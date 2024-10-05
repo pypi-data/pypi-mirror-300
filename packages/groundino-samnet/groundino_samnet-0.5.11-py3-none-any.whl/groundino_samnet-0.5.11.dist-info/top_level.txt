@@ -1,0 +1,7 @@
+DataSets
+Metrics
+groundingdino
+groundino_samnet
+mobilesam
+segment_anything1
+segment_anything2
