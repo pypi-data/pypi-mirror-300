@@ -1,0 +1,75 @@
+Metadata-Version: 2.1
+Name: beamdust-sdk
+Version: 1.0.2
+Summary: A Python SDK for interacting with Beamdust API
+Home-page: https://github.com/Beamdust/beamdust-package
+Author: Lautaro Torchia
+Author-email: ltorchia@novakorp.io
+License: UNKNOWN
+Project-URL: Bug Tracker, https://github.com/Beamdust/beamdust-package/issues
+Description: # Beamdust Package
+        
+        Beamdust is a Python SDK for interacting with APIs that use Swagger specifications. It dynamically generates methods for API endpoints and allows users to perform authenticated API requests with ease.
+        
+        ## Installation
+        
+        You can install the `beamdust-package` from **source code** by following these steps:
+        
+        ### Clone the repository:
+        
+        ```bash
+        git clone https://github.com/Beamdust/beamdust-package.git
+        ```
+        
+        ## Navigate to the project directory:
+        
+        ```bash
+        cd beamdust-package
+        ```
+        
+        ## Install the package using setup.py:
+        
+        ```bash
+        python setup.py install
+        ```
+        This will install the package and its dependencies on your system.
+        
+        ### Usage Example
+        Here's a simple example of how to use the Beamdust SDK to interact with an API:
+        
+        Import the Beamdust SDK
+        ```python
+        from beamdust.beamdust import Beamdust
+        
+        # Initialize the Beamdust instance
+        beamdust = Beamdust(base_url="https://your-api.com", email="your-email@example.com", password="your-password")
+        
+        # Retrieve information about available API methods
+        available_methods = beamdust.get_available_functions()
+        print("Available API methods:", available_methods)
+        
+        # Getting the example body to send to this endpoint 
+        print(beamdust.retrieve_notifications(_help=True))
+        
+        # Making a request to a dynamically generated API method
+        notification_response = beamdust.retrieve_notifications({
+            "page": 0,
+            "size": 2,
+            "sorts": {"field": "body.timestamp", "order": "desc"},
+            "filters": []
+        })
+        ```
+        
+        ### Key Features:
+        - Dynamic Method Generation: Methods are automatically generated based on the Swagger documentation of the API.
+        - Authentication: Log in using your email and password, and the SDK will manage your authentication token.
+        - Swagger Integration: The SDK loads and integrates with Swagger documentation to provide structured access to API endpoints.
+        - API Calls: Make API requests to any endpoint by using the method name corresponding to the Swagger operationId.
+        Documentation: Use the _help flag in any method to retrieve the expected body structure for API requests.
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
