@@ -1,0 +1,82 @@
+name: CI
+on:
+  push:
+    branches: [main, 3.x.x]
+    paths:
+      - "**.py"
+      - "**.toml"
+      - "**.lock"
+  pull_request:
+    branches: [main, 3.x.x]
+    types: [opened, synchronize]
+    paths:
+      - "**.py"
+      - "**.toml"
+      - "**.lock"
+      - ".pre-commit-config.yaml"
+
+jobs:
+  Tests:
+    strategy:
+      fail-fast: true
+      matrix:
+        include:
+          - os: ubuntu-latest
+            python-version: "3.10"
+          - os: ubuntu-latest
+            python-version: "3.11"
+          - os: ubuntu-latest
+            python-version: "3.12"
+          - os: windows-latest
+            python-version: "3.10"
+          - os: macos-latest
+            python-version: "3.10"
+
+    runs-on: ${{ matrix.os }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: ./.github/actions/setup-python-uv
+        with:
+          python-version: ${{ matrix.python-version }}
+      - run: uv run coverage run --source=. -m pytest .
+      - name: Upload coverage results
+        uses: actions/upload-artifact@v3
+        if: matrix.os == 'ubuntu-latest' # Cross-platform coverage combination doesn't work
+        with:
+          name: coverage-results
+          path: coverage/
+  Coverage:
+    needs: Tests
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/download-artifact@v3
+        with:
+          name: coverage-results
+          path: coverage/
+      - uses: ./.github/actions/setup-python-uv
+      - run: ls -all
+      - run: uv run coverage combine
+      - run: uv run coverage xml
+      - name: Upload to Codecov
+        uses: codecov/codecov-action@v4
+        env:
+          fail_ci_if_error: true
+          CODECOV_TOKEN: ${{ secrets.CODECOV_TOKEN }}
+      - run: uv run coverage report --fail-under=100
+
+  Lint:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: pre-commit/action@v3.0.0
+
+  Typecheck:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: ./.github/actions/setup-python-uv
+
+      - uses: jakebailey/pyright-action@v1
+        with:
+          pylance-version: latest-release
