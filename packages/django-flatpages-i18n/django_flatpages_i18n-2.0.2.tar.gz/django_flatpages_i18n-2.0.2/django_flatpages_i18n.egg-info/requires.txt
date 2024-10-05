@@ -1,0 +1,7 @@
+django
+django_modeltrans
+django_mptt
+markdown
+martor
+django-tinymce
+django-pragmatic
