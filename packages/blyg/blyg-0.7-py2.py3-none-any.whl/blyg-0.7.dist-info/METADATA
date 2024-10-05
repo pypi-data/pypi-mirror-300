@@ -1,0 +1,55 @@
+Metadata-Version: 2.1
+Name: blyg
+Version: 0.7
+Summary: A blyg (shy) cli-tool for uploading and receiving files.
+Author-email: Anton Hvornum <torxed@archlinux.org>
+Maintainer-email: Anton Hvornum <torxed@archlinux.org>
+License: AGPL-3.0-or-later
+Project-URL: Home, https://github.com/Torxed/blyg
+Project-URL: Documentation, https://github.com/Torxed/blyg
+Project-URL: Source, https://github.com/Torxed/blyg
+Keywords: shy,file,share
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: GNU Affero General Public License v3 or later (AGPLv3+)
+Classifier: Programming Language :: Python :: 3.12
+Requires-Python: >=3.12
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: pydantic
+Requires-Dist: websocket-client
+Requires-Dist: cryptography
+Requires-Dist: toml
+Requires-Dist: pycryptodome
+Provides-Extra: dev
+Requires-Dist: flake8 ; extra == 'dev'
+Requires-Dist: isort ; extra == 'dev'
+Requires-Dist: pytest ; extra == 'dev'
+Provides-Extra: hsm
+Requires-Dist: PyKCS11 ; extra == 'hsm'
+
+# Blyg (shy)
+
+Is a sharing platform that utilizes websockets and end-to-end encryption.
+There's browser support through javascript, as well as a cli tool
+that allows Linux users to upload from the terminal.
+
+## Examples
+
+
+### Starting a receiver
+
+```
+$ blyg receive --path ~/Downloads
+```
+
+This will give you a session ID that you can share to others.
+Once someone sends you a file - it will ask you for approval to receive.
+And if accepted, it will end up in `Downloads`.
+
+### Starting an upload
+
+```
+$ blyg upload --path ./test.txt --id 7456
+```
+
+`7456` is the session ID of the `receive` command.
