@@ -1,0 +1,17 @@
+fct_kiwi/__init__.py,sha256=EygzRuwxFMa9sq0Z-0hHRppl2tdCUH_yF3hHafifI6o,25
+fct_kiwi/balena.py,sha256=ibRzTsxpRn0DlhP8McKn_t_qUOLpi3AvFar2vBDWUFQ,7186
+fct_kiwi/configs/settings.py,sha256=bDguBtv_RevJPJh1yVuZqI72VuOntJFb6YBqf9BI2NQ,583
+fct_kiwi/resources/__init__.py,sha256=IaYA2NnHYlBv322DrgonRmRIeCxMHdjz8lu2joUgBYA,262
+fct_kiwi/resources/device.py,sha256=IYMIGEbEtLo5AQ8ogfKRiWAsxlbkCG0bQCLGIxtscE0,6845
+fct_kiwi/resources/device_env.py,sha256=WzkEMoTYsJ-S81BujL5pxLQt_UwqtFd-BSHX3I2OTK8,2701
+fct_kiwi/resources/device_service_env.py,sha256=EosBkLr6JogEz6rLet5gnEVBFfZr6le8llDH2r9pj4s,2832
+fct_kiwi/resources/device_tag.py,sha256=HNNSMwQlOVeHeD6O8lO59JG31e45ZvTIiJvkoPBP6Ik,2958
+fct_kiwi/resources/fleet.py,sha256=5pWLHWS7tuLKecrXBTTX-GzhM8HjnKr8DOMEkKKmI1E,4131
+fct_kiwi/resources/fleet_env.py,sha256=cpHRYGgE-V8os8pLUeKNCdYR7T7PDIFst3iKvuC_itg,2705
+fct_kiwi/resources/fleet_service_env.py,sha256=6kcNRJWD9m0SFA4UvYpLUopTK0Qwe8epshSacAJuRJc,3362
+fct_kiwi/resources/release.py,sha256=1veCDMfUnvj_6phCVF90wDpKdjWRU2Im8AnAcGpMBJ0,3143
+fct_kiwi/resources/resource_base.py,sha256=6BzqFU8eBYiwH7IlsVsR7DiAX4wR76PcSyCY6WVRreA,16406
+fct_kiwi/resources/service.py,sha256=CJmht1i3nOES32cTeSsIBlO9Nlt3DAJBEnt9DcpyDwE,5450
+fct_kiwi-0.0.2.dist-info/METADATA,sha256=RNY536isN2mJs7yeRFatvELD1h8FiqqLP4sknbjuILw,12004
+fct_kiwi-0.0.2.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+fct_kiwi-0.0.2.dist-info/RECORD,,
