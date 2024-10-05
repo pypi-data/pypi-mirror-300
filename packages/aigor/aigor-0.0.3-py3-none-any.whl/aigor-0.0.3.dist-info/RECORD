@@ -1,0 +1,15 @@
+aigor/__init__.py,sha256=ukW2JbpzSt_lEyJpnbi_uLktXU8gSYjCpbUVKfS04Ag,1270
+aigor/assistant.py,sha256=9PEKaYwaKgJMY64SBt8E6W4ngBpoqszDBZyovuNhAnA,8612
+aigor/common.py,sha256=-I1LKK2S2zLhBqt-7K71gr-8EEdBiyMxbU3qAEMOt2I,4029
+aigor/main.py,sha256=t0faDYEVSjZD_RhTpQRgGKHu8z2ZrAq6sIu1a9PNQpM,6261
+aigor/provider.py,sha256=NyDt1ZvY4oY7Ets614wgUv2vQmG1DTkeWgi-kpuNaDY,1367
+aigor/state_manager.py,sha256=_BIlsdtbLN3w96I_MoY0T3gjfjHxjC5xGcmdATj3BKw,1480
+aigor/providers/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+aigor/providers/anthropic.py,sha256=zlJMS6DYFfWdcSlVduD_eoHgahFJQsgFtnbyoMYDIp0,2265
+aigor/providers/identity.py,sha256=U9LecK45glIeb_O9fFFP3FBR4YYUcavTz3E4YHsjBIo,336
+aigor/providers/openai.py,sha256=6J4sCnV5RZbPww4xWL4HS1dAyKJO8lEcQIgrWe2rx3c,2084
+aigor-0.0.3.dist-info/METADATA,sha256=jiu5jfoXAdevPgeJh2KDXZ9iChxzJQP4S7S-lw3ZdK0,5795
+aigor-0.0.3.dist-info/WHEEL,sha256=GV9aMThwP_4oNCtvEC2ec3qUYutgWeAzklro_0m4WJQ,91
+aigor-0.0.3.dist-info/entry_points.txt,sha256=50WL43PwWetk_g9LP892gEitiPvnLlpO2-BlzY1YysQ,41
+aigor-0.0.3.dist-info/top_level.txt,sha256=MKGhZ56NiZU6l4wZp4HQAcrzAyyokikOQXmtOn_5iik,6
+aigor-0.0.3.dist-info/RECORD,,
