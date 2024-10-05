@@ -1,0 +1,9 @@
+transformers
+datasets
+torch
+dataclasses
+typing
+sentencepiece
+matplotlib
+tokenizers
+tqdm
