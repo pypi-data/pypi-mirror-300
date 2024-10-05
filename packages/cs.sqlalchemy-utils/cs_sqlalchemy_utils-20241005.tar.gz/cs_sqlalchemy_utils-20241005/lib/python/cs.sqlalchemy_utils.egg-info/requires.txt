@@ -1,0 +1,12 @@
+cs.context>=20240630
+cs.deco>=20241003
+cs.fileutils>=20240723
+cs.lex>=20240630
+cs.logutils>=20240923
+cs.pfx>=20240630
+cs.py.func>=20240630
+cs.resources>=20241005
+cs.threads>=20241005
+icontract
+sqlalchemy>=2.0
+typeguard
