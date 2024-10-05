@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: kitchenai-sdk
+Version: 0.1.0
+Summary: 
+Author: epuerta
+Author-email: esteban_puerta@rhinosearch.io
+Requires-Python: >=3.11,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: fastapi (>=0.115.0,<0.116.0)
+Requires-Dist: uvicorn[standard] (>=0.31.0,<0.32.0)
+Description-Content-Type: text/markdown
+
+
