@@ -1,0 +1,15 @@
+saltext/telegram/__init__.py,sha256=D7LywTuuKOLBckMpBTKjqwuIS6PABYTo1qDO2n02Vus,863
+saltext/telegram/version.py,sha256=Aj77VL1d5Mdku7sgCgKQmPuYavPpAHuZuJcy6bygQZE,21
+saltext/telegram/beacons/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+saltext/telegram/beacons/telegram_bot_msg.py,sha256=QnbCChQEWpGl7ZKHUAbifU_VvLtRCqeT03_O7N81YOw,2587
+saltext/telegram/modules/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+saltext/telegram/modules/telegram.py,sha256=T9e03fb-lasDVz9_Ndwbsks_AT6Rq5BUYdfbFMWn0FY,2936
+saltext/telegram/returners/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+saltext/telegram/returners/telegram_return.py,sha256=N0aCvH9AJ-slw1WeKID9QvFLpKkc7RbQmRTrfMjgiJk,1545
+saltext.telegram-1.0.0.dist-info/LICENSE,sha256=Wag66G3C04eCoJz1rhYyT4zvhdqBg6Ek_Be4-izew6c,11337
+saltext.telegram-1.0.0.dist-info/METADATA,sha256=i0mNWMhe9-MIdNJ_ECLXTJmmwO81Yj-TEadmWG8Jot0,6019
+saltext.telegram-1.0.0.dist-info/NOTICE,sha256=tqFnHMmCGh0gsyMAM6YizAQKL3wmu3TmtUoy_l_n_Xg,452
+saltext.telegram-1.0.0.dist-info/WHEEL,sha256=AHX6tWk3qWuce7vKLrj7lnulVHEdWoltgauo8bgCXgU,109
+saltext.telegram-1.0.0.dist-info/entry_points.txt,sha256=zRAujGsEtbIJAhIcrC3OmQL3N3i-xWeiMy_yUmY36ic,50
+saltext.telegram-1.0.0.dist-info/top_level.txt,sha256=6cynQgWBWnAPoXMnUaVitGzM6k7PzacwjLBPgrjOfi4,8
+saltext.telegram-1.0.0.dist-info/RECORD,,
