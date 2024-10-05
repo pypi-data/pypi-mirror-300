@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: CMAT-astro
+Version: 0.0.1
+Summary: Companion MAss from Ttv modeling:
+Home-page: https://github.com/troyzx/CMAT
+Author: Zhang Zixin
+Author-email: troyzx@icloud.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# CMAT
+
+Companion MAss from Ttv modeling: a fast to constrain upper mass of the hidden companion from TTV data.
+
+[![DOI](https://zenodo.org/badge/777723832.svg)](https://zenodo.org/doi/10.5281/zenodo.13739646)
