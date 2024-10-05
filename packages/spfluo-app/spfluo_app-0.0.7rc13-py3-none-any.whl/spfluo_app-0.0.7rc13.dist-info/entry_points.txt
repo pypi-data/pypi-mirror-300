@@ -1,0 +1,2 @@
+[gui_scripts]
+spfluo-app = spfluo_app:main
