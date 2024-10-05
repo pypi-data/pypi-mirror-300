@@ -1,0 +1,45 @@
+Metadata-Version: 2.1
+Name: image_processing_ottojacometo
+Version: 0.0.1
+Summary: Realiza o processamento de imagens (combinação e transformação).
+Home-page: https://github.com/Otto-21/image_processing_package.git
+Author: Otto-21
+Author-email: otto.jacometo@gmail.com
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+
+# image_processing_ottojacometo
+
+Description. 
+The package image_processing is used to:
+	Processing:
+		- Histogram matching
+		- Structural similarity
+		- Resize image	
+	Utils:
+		- Read image
+		- Save image
+		- Plot image
+		- Plot result
+		- Plot histogram
+
+## Installation
+
+Use the package manager [pip](https://pip.pypa.io/en/stable/) to install image_processing
+
+```bash
+pip install image_processing_ottojacometo
+```
+
+## Usage
+
+```python
+from image_processing_ottojacometo.module_name import file_name
+file_name.function()
+```
+
+## Author
+Otto-21
+
+## License
+[MIT](https://choosealicense.com/licenses/mit/)
