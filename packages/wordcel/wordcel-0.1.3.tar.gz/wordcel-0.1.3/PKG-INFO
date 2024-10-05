@@ -1,0 +1,42 @@
+Metadata-Version: 2.1
+Name: wordcel
+Version: 0.1.3
+Summary: Create text-based features from large language models
+Author: Andrew Han
+Author-email: handrew11@gmail.com
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: anthropic (>=0.34.2)
+Requires-Dist: google-generativeai (>=0.6.0)
+Requires-Dist: langchain (>0.3.0)
+Requires-Dist: openai (>1.0)
+Requires-Dist: pandas
+Requires-Dist: scikit-learn
+Description-Content-Type: text/markdown
+
+# 😶 Wordcel
+
+`wordcel` is a library of functions that provides a set of common tools for working with large language models.
+
+Candidly, it is mostly a set of functions that I myself use on a regular basis -- my own personal Swiss army knife. 
+
+## Installation
+
+You can simply `pip install wordcel`.
+
+## Documentation
+
+- [LLM APIs](docs/llm_providers.md): Wrapper functions over the most common LLM APIs.
+- [RAG](docs/rag.md): Helper functions for RAG, and a minimal implementation of Anthropic's "Contextual Retrieval" method. 
+- [featurize](docs/featurize.md): Helper functions for multithreaded inference over text columns in pandas DataFrames.
+
