@@ -1,0 +1,11 @@
+fw_gear_dicom_qc/__init__.py,sha256=JgDdqy0oZVEYn5XzmYoIJtvWSaw2qBwP_DB5_XHn88Y,298
+fw_gear_dicom_qc/empty-json-schema.json,sha256=xPg6uCthDJ4eOFbwOzJWPxY5NjIqVFgETgmW_xyhLnk,190
+fw_gear_dicom_qc/main.py,sha256=56lm5rJNpYDxHMCqbHMVsqre_HjQF4whJ6z9rYcQ74s,3386
+fw_gear_dicom_qc/parser.py,sha256=i36TspuwC3rQORm95z5Fl_KJjBse3M_52k3s23A4ows,1168
+fw_gear_dicom_qc/rules.py,sha256=38fwcE9h15a7f6OMUtreSpnUEIdzawKyA8l-Vb2dIrg,10643
+fw_gear_dicom_qc/utils.py,sha256=ViKJ_UM9CNdOIiAez0eFs2dH8ZhcsXFqwyHyT7ZPzz4,4256
+fw_gear_dicom_qc/validation.py,sha256=OtcxIeeH2D5F6ytWaostS_W9smkIdsz9b_AJVeQNUe8,3465
+fw_gear_dicom_qc-0.4.14.dist-info/LICENSE,sha256=Bh44NCeuCEjQRLvKubXOTRvU0syEj7yHvsstnjTNHYY,1484
+fw_gear_dicom_qc-0.4.14.dist-info/METADATA,sha256=b28c-JlksKnYFJfoNhdhfcVUzJfXBBuKFvBcn4o9G4w,1176
+fw_gear_dicom_qc-0.4.14.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+fw_gear_dicom_qc-0.4.14.dist-info/RECORD,,
