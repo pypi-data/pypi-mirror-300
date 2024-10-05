@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: helpers_python
+Version: 0.1.0
+Summary: 
+Author: Piyush Gambhir
+Author-email: 90608533+piyush-gambhir@users.noreply.github.com
+Requires-Python: >=3.12,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: boto3 (>=1.35.29,<2.0.0)
+Requires-Dist: pymongo (>=4.9.1,<5.0.0)
+Requires-Dist: pytest (>=8.3.3,<9.0.0)
+Requires-Dist: python-dotenv (>=1.0.1,<2.0.0)
+Requires-Dist: requests (>=2.32.3,<3.0.0)
+Requires-Dist: rich (>=13.8.1,<14.0.0)
+Requires-Dist: typesense (>=0.21.0,<0.22.0)
+Description-Content-Type: text/markdown
+
+
