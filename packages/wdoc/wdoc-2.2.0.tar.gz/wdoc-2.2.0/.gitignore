@@ -1,0 +1,21 @@
+*API_KEY.txt
+ggml*bin
+.cache
+medical_indexes.txt
+logs.txt*
+author_dir
+pages
+.env
+**/__pycache__
+*.egg-info
+build
+.aider*
+obsolete
+dist
+
+# author files
+examples/NtfySummarizer/TOPICS
+examples/NtfySummarizer/summaries
+examples/notfinished_*
+examples/**/perso.py
+latest_release_notes.md
