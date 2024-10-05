@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+janky/__init__.py
+janky/fixtures.py
+janky.egg-info/PKG-INFO
+janky.egg-info/SOURCES.txt
+janky.egg-info/dependency_links.txt
+janky.egg-info/requires.txt
+janky.egg-info/top_level.txt
+tests/test_janky.py
