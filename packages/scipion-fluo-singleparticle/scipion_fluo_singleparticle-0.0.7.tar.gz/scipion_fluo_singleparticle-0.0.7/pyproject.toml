@@ -1,0 +1,33 @@
+[build-system]
+requires = ["hatchling", "hatch-vcs"]
+build-backend = "hatchling.build"
+
+[project]
+name = "scipion-fluo-singleparticle"
+description = "Scipion plugin for single particle reconstruction."
+readme = "README.md"
+authors = [{name = "Jean Plumail", email = "jplumail@unistra.fr"}]
+keywords = ["scipion", "fluorescence", "imageprocessing", "scipion-3.0"]
+dynamic = ["version"]
+dependencies = [
+    "scipion-pyworkflow-windows",
+    "scipion-fluo",
+    "numpy",
+    "scipy",
+    "spfluo[manual-picking,ab-initio-reconstruction,visualisation,picking]",
+    "flask",
+    "waitress",
+    "napari-spfluo"
+]
+
+[project.urls]
+Repository = "https://github.com/jplumail/scipion-fluo-singleparticle"
+
+[project.entry-points."pyworkflow.plugin"]
+singleparticle = "singleparticle"
+
+[tool.uv.sources]
+scipion-pyworkflow-windows = {workspace=true}
+scipion-fluo = {workspace=true}
+spfluo = {workspace=true}
+napari-spfluo = {workspace=true}
