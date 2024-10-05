@@ -1,0 +1,61 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "karasea"
+dynamic = ["version"]
+description = ''
+readme = "README.md"
+requires-python = ">=3.8"
+license = "BSD-3-Clause-Clear"
+keywords = []
+authors = [
+  { name = "Pacidus", email = "pacidus@gmail.com" },
+]
+classifiers = [
+  "Development Status :: 4 - Beta",
+  "Programming Language :: Python",
+  "Programming Language :: Python :: 3.8",
+  "Programming Language :: Python :: 3.9",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Programming Language :: Python :: Implementation :: CPython",
+  "Programming Language :: Python :: Implementation :: PyPy",
+]
+dependencies = []
+
+[project.urls]
+Documentation = "https://github.com/Pacidus/kara#readme"
+Issues = "https://github.com/Pacidus/kara/issues"
+Source = "https://github.com/Pacidus/kara"
+
+[tool.hatch.version]
+path = "src/karasea/__about__.py"
+
+[tool.hatch.envs.types]
+extra-dependencies = [
+  "mypy>=1.0.0",
+]
+[tool.hatch.envs.types.scripts]
+check = "mypy --install-types --non-interactive {args:src/karasea tests}"
+
+[tool.coverage.run]
+source_pkgs = ["karasea", "tests"]
+branch = true
+parallel = true
+omit = [
+  "src/karasea/__about__.py",
+]
+
+[tool.coverage.paths]
+karasea = ["src/karasea", "*/karasea/src/karasea"]
+tests = ["tests", "*/karasea/tests"]
+
+[tool.coverage.report]
+exclude_lines = [
+  "no cov",
+  "if __name__ == .__main__.:",
+  "if TYPE_CHECKING:",
+]
