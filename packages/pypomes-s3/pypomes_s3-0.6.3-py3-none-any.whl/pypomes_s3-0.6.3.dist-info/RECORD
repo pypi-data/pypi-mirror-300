@@ -1,0 +1,10 @@
+pypomes_s3/__init__.py,sha256=CUgj_VgFT8Q8cbQn3x5NC0EBmEPz18feBq-OXK-lgl0,954
+pypomes_s3/aws_pomes.py,sha256=u6QPRKLwYSyRnuCssMIHTL-EL3dk6FV7r_3sY_mr20k,26959
+pypomes_s3/minio_client.py,sha256=HC1qOUtWj5SlQBQRb0uiIwAHBOxmVf_FEMJTWT1OOwU,2948
+pypomes_s3/minio_pomes.py,sha256=DmBow6HPebJkJcufNeGUk5ttcAtVMhpm-_7ceqopU94,22932
+pypomes_s3/s3_common.py,sha256=5cbB_SWrUSxeBU4CNlUzm0oFM56HOBL8a1VxRtDtvWo,5216
+pypomes_s3/s3_pomes.py,sha256=cOyl4gAWchTLAURFwv2819sA1Z1v42iXAvfe4HHwYAM,36751
+pypomes_s3-0.6.3.dist-info/METADATA,sha256=anfzDYBKN33lWkHnjeIgnwBZT7c6WXBNu8AKYtOn4vY,659
+pypomes_s3-0.6.3.dist-info/WHEEL,sha256=1yFddiXMmvYK7QYTqtRNtX66WJ0Mz8PYEiEUoOUUxRY,87
+pypomes_s3-0.6.3.dist-info/licenses/LICENSE,sha256=NdakochSXm_H_-DSL_x2JlRCkYikj3snYYvTwgR5d_c,1086
+pypomes_s3-0.6.3.dist-info/RECORD,,
