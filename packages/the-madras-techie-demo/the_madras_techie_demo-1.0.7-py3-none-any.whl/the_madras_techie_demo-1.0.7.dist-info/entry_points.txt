@@ -1,0 +1,8 @@
+[console_scripts]
+the_madras_techie_demo = the_madras_techie_demo:hello
+tmt-height = the_madras_techie_demo:height
+tmt-hello = the_madras_techie_demo:hello
+tmt-job = the_madras_techie_demo:job
+tmt-location = the_madras_techie_demo:location
+tmt-sports = the_madras_techie_demo:sports
+tmt-weight = the_madras_techie_demo:weight
