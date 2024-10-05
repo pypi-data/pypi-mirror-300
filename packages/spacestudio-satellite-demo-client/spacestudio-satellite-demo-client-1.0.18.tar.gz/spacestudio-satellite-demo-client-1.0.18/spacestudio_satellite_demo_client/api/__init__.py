@@ -1,0 +1,12 @@
+# flake8: noqa
+
+# import apis into api package
+from spacestudio_satellite_demo_client.api.computations_api import ComputationsApi
+from spacestudio_satellite_demo_client.api.orbits_api import OrbitsApi
+from spacestudio_satellite_demo_client.api.platforms_api import PlatformsApi
+from spacestudio_satellite_demo_client.api.propulsion_systems_api import PropulsionSystemsApi
+from spacestudio_satellite_demo_client.api.scenarios_api import ScenariosApi
+from spacestudio_satellite_demo_client.api.spacecraft_geometries_api import SpacecraftGeometriesApi
+from spacestudio_satellite_demo_client.api.studies_api import StudiesApi
+from spacestudio_satellite_demo_client.api.support_api import SupportApi
+
