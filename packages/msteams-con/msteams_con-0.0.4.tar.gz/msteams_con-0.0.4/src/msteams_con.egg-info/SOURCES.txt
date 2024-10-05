@@ -1,0 +1,14 @@
+LICENSE
+README.md
+pyproject.toml
+src/requirements-dev.txt
+src/requirements.txt
+src/card_templates/__init__.py
+src/card_templates/release_card.py
+src/msteams_con.egg-info/PKG-INFO
+src/msteams_con.egg-info/SOURCES.txt
+src/msteams_con.egg-info/dependency_links.txt
+src/msteams_con.egg-info/entry_points.txt
+src/msteams_con.egg-info/requires.txt
+src/msteams_con.egg-info/top_level.txt
+tests/test_msteams_connector.py
