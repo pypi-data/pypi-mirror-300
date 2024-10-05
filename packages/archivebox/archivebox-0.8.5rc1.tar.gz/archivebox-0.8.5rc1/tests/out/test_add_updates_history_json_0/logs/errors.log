@@ -1,0 +1,2 @@
+
+> /Volumes/NVME/Users/squash/Local/Code/archiveboxes/ArchiveBox7/.venv/bin/archivebox add --depth=0 http://127.0.0.1:8080/static/example.com.html; TS=2024-09-24__22:34:58 VERSION=0.8.4 IN_DOCKER=False IS_TTY=False

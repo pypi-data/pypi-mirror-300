@@ -1,0 +1,5 @@
+
+> /Volumes/NVME/Users/squash/Local/Code/archiveboxes/ArchiveBox7/.venv/bin/archivebox add http://127.0.0.1:8080/static/example.com.html; TS=2024-09-24__22:37:38 VERSION=0.8.4 IN_DOCKER=False IS_TTY=False
+
+Exception in archive_methods.save_htmltotext(Link(url=http://127.0.0.1:8080/static/example.com.html)) command=/Volumes/NVME/Users/squash/Local/Code/archiveboxes/ArchiveBox7/.venv/bin/archivebox add http://127.0.0.1:8080/static/example.com.html; ts=2024-09-24__22:37:38
+'str' object has no attribute 'name'

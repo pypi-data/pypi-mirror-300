@@ -1,0 +1,2 @@
+
+> /Volumes/NVME/Users/squash/Local/Code/archiveboxes/ArchiveBox7/.venv/bin/archivebox add --index-only --parser=json; TS=2024-09-24__22:35:19 VERSION=0.8.4 IN_DOCKER=False IS_TTY=False

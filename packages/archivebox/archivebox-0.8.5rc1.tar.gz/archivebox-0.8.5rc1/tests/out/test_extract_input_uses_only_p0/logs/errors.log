@@ -1,0 +1,2 @@
+
+> /Volumes/NVME/Users/squash/Local/Code/archiveboxes/ArchiveBox7/.venv/bin/archivebox add http://127.0.0.1:8080/static/example.com.html --extract wget; TS=2024-09-24__22:35:10 VERSION=0.8.4 IN_DOCKER=False IS_TTY=False
