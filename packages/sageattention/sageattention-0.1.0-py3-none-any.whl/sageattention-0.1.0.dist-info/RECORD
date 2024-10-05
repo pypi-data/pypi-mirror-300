@@ -1,0 +1,12 @@
+sageattention/__init__.py,sha256=OoVmb41PO_sXbzn9Uajomkw2JomDybBraJuly2M_ymg,26
+sageattention/attn_qk_int8_per_block_h64.py,sha256=m8EG-XwAvM33MQ-sjF5BJ4Mzjwok--WTAbh0smsJwsk,4212
+sageattention/attn_qk_int8_per_block_hd128.py,sha256=vzPX82vC_3O83h26i03ewOGaq1sL14GlfxVW4uBpdSk,4212
+sageattention/attn_qk_int8_per_block_hd128_causal.py,sha256=oFPCBkkVswUZHixLq7Lv2UfJNKlb02NRGzoBYgRkGUc,5036
+sageattention/attn_qk_int8_per_block_hd64_causal.py,sha256=SkXK2-ofN-fNOEn93QCcElt7cAfgxZfLYS_KcwlHaP4,5036
+sageattention/core.py,sha256=kNKOxQf7wRNBpzoCEJA5KCh-nVj6MzeslbquLt44n7A,1093
+sageattention/quant_per_block.py,sha256=mveefvSESNe_VV0xR2HPQ6O_24BFitx7snt10Wmf7gg,2877
+sageattention-0.1.0.dist-info/LICENSE,sha256=7QNgTLQ-1EPk58bNlencrvXG1XKfLW_F739Esfcjq8A,1512
+sageattention-0.1.0.dist-info/METADATA,sha256=jpRNBWSTFEYH-AfIiCWKd56rEBx4yIa2KVICbLsi9LE,4084
+sageattention-0.1.0.dist-info/WHEEL,sha256=GV9aMThwP_4oNCtvEC2ec3qUYutgWeAzklro_0m4WJQ,91
+sageattention-0.1.0.dist-info/top_level.txt,sha256=lapAv_u1CZsbY4YedGWNS0LENhodHvej8RyDMJGHVsY,14
+sageattention-0.1.0.dist-info/RECORD,,
