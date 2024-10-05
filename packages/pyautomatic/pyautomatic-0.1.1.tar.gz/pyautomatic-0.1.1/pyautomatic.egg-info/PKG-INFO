@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: pyautomatic
+Version: 0.1.1
+Summary: hello, pyautomatic！
+Author: xiaobl
+Author-email: xiaotbl <monios114514@outlook.com>
+Description-Content-Type: text/markdown
+License-File: licence.txt
+Requires-Dist: numpy>=1.21
+Requires-Dist: requests>=2.26
+Requires-Dist: tqdm>=4.62
+
+# pyautomatic
+python模块

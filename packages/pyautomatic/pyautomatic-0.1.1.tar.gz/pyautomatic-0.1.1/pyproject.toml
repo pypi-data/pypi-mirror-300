@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pyautomatic"
+version = "0.1.1"
+description = "hello, pyautomatic！"
+authors = [
+    { name = "xiaotbl", email = "monios114514@outlook.com" }
+]
+license = { file = "LICENSE" }
+readme = "README.md"
+# homepage = "https://github.com/cpumsconfig"  # 删除这一行
+# repository = "https://github.com/cpumsconfig/pyautomatic"  # 删除这一行
+# description-content-type = "text/markdown"  # 删除这一行
+dependencies = [
+    "numpy>=1.21",
+    "requests>=2.26",
+    "tqdm>=4.62"
+]
+
+[tool.black]
+line-length = 88
+
+[tool.isort]
+profile = "black"
