@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: wavToText
+Version: 0.0.1
+Summary: Conevrting english wav audio into text
+Home-page: UNKNOWN
+Author: LAKHAL Badr
+Author-email: lakhalbadr2@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: deepspeech==0.9.3
+Requires-Dist: numpy==1.26.0
+Requires-Dist: scipy==1.13.1
+
+Voice recognition using a pretrained model called DeepSpeech v0.9.3 to convert English wav audio into text
+
