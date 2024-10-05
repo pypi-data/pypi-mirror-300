@@ -1,0 +1,8 @@
+README.md
+setup.py
+chep/__init__.py
+chep/chep.py
+chep.egg-info/PKG-INFO
+chep.egg-info/SOURCES.txt
+chep.egg-info/dependency_links.txt
+chep.egg-info/top_level.txt
