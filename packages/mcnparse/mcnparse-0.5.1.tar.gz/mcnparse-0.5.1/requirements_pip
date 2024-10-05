@@ -1,0 +1,9 @@
+numpy
+pandas
+pandas-stubs
+build
+hatch
+hatchling
+pytest
+mypy
+ruff
