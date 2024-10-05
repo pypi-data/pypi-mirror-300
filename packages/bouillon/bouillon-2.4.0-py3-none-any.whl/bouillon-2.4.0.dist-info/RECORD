@@ -1,0 +1,11 @@
+bouillon/__init__.py,sha256=U0E_KlVQUn6TD51TWiiNoKkPK6opKZXc9RAOVie-zE8,712
+bouillon/bouillon.py,sha256=YPQ1OqIn0QMB_8yEFjTMMUPSVqTOtkIQvocJ7Q3cxnA,2363
+bouillon/cli.py,sha256=OoeMyD7xAm8xhInqhd-SHOKfOMOyALjDzpYvQyIomxA,8583
+bouillon/git.py,sha256=8-nN36pM7jY2uadF7Mc6N517yzKvnaxwYoyMX863sLw,1729
+bouillon/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+bouillon-2.4.0.dist-info/LICENSE.txt,sha256=vFM7rP1tag5mLhDtia7SqDbE2Ygd_wkilo3PvFpN-HM,1520
+bouillon-2.4.0.dist-info/METADATA,sha256=9Iq6gdU4smI2QOFw8tqiYl7CZ5difec6GGkDKjLda-w,10016
+bouillon-2.4.0.dist-info/WHEEL,sha256=GV9aMThwP_4oNCtvEC2ec3qUYutgWeAzklro_0m4WJQ,91
+bouillon-2.4.0.dist-info/entry_points.txt,sha256=JuMjATO7N2ZkItsCk-yufBzMGaxK8uOH3d7dNQMI7Ec,51
+bouillon-2.4.0.dist-info/top_level.txt,sha256=M6Ut7CwziAsuFTdfLDAYGYDAE3RhZcB6kqTx8-9K9ng,9
+bouillon-2.4.0.dist-info/RECORD,,
