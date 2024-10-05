@@ -1,0 +1,52 @@
+Metadata-Version: 2.1
+Name: sorsa
+Version: 0.2.4
+Summary: SORSA adapters implemented in Hugging Face Transformers
+Author-email: Yang Cao <gunale0926@hotmail.com>
+Project-URL: Homepage, https://github.com/Gunale0926/SORSA/
+Project-URL: Issues, https://github.com/Gunale0926/SORSA/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.12
+Description-Content-Type: text/markdown
+Requires-Dist: torch >=1.8.0
+Requires-Dist: transformers >=4.0.0
+
+# SORSA Python Package
+
+## Initialize SORSA model:
+```python
+from sorsa import SORSAConfig, SORSAModel, SORSATrainer, SORSATrainingArguments
+config = SORSAConfig(
+    base_model_name_or_path="meta-llama/Llama-2-7b-hf",
+    target_modules=[
+        "q_proj",
+        "o_proj",
+        "k_proj",
+        "v_proj",
+        "gate_proj",
+        "up_proj",
+        "down_proj",
+    ],
+    rank=16,
+    dropout=0,
+)
+sorsaModel = SORSAModel(config)
+self.model.to("cuda")
+self.model.sorsa_init() # Initialize SORSA adapters.
+```
+
+## Train SORSA model:
+```python
+trainingArguments = SORSATrainingArguments(
+    # ...
+    gamma=4e-4,
+)
+trainer = SORSATrainer(
+        model=sorsaModel,
+        args=trainingArguments,
+        train_dataset=train_dataset,
+)
+trainer.train()
+```
