@@ -1,0 +1,16 @@
+colcon-core>=0.18.0
+GitPython
+rosdep
+unidiff
+PyYAML
+yamllint
+
+[github]
+PyGithub
+
+[test]
+flake8
+mypy
+pytest
+scspell3k>=2.2
+types-PyYAML
