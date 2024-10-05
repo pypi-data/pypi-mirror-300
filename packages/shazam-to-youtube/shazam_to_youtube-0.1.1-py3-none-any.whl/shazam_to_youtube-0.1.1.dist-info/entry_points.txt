@@ -1,0 +1,4 @@
+[console_scripts]
+shazam-to-youtube=shazam_to_youtube.main:run_main
+shazam-to-youtube-yt-auth=shazam_to_youtube.yt_auth:run_main
+
