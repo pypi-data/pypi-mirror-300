@@ -1,0 +1,16 @@
+Metadata-Version: 2.3
+Name: rakopy
+Version: 0.0.1
+Summary: RakoPy is a Python library that allows you to control Rako Controls system programmatically.
+Project-URL: Homepage, https://github.com/princekama/rakopy
+Project-URL: Issues, https://github.com/princekama/rakopy/issues
+Author: @princekama
+License-File: LICENSE
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.12
+Description-Content-Type: text/markdown
+
+# RakoPy
+RakoPy is a Python library that allows you to control [Rako Controls](https://rakocontrols.com) system programmatically.
