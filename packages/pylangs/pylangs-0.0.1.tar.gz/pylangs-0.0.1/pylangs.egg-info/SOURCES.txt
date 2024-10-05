@@ -1,0 +1,7 @@
+LICENSE
+README.md
+pyproject.toml
+pylangs.egg-info/PKG-INFO
+pylangs.egg-info/SOURCES.txt
+pylangs.egg-info/dependency_links.txt
+pylangs.egg-info/top_level.txt
