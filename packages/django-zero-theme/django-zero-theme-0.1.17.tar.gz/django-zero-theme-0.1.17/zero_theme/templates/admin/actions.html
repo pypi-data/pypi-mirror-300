@@ -1,0 +1,26 @@
+{% load i18n zero_tags %}
+<div class="card">
+    <div class="p-3">
+        {% block actions %}
+            <div class="d-flex flex-wrap">
+                {% block actions-form %}
+                    {% for field in action_form %}
+                        <div class="form-group me-3">
+                            {% if field.label %}
+                                <p style="margin-bottom:0!important;">{{ field.label }} {{ field|simple_add_class:'form-control' }}</p>
+                            {% else %}
+                                {{ field|simple_add_class:'form-control' }}
+                            {% endif %}
+                        </div>
+                    {% endfor %}
+                {% endblock %}
+
+                {% block actions-submit %}
+                    <button type="submit" class="btn bg-primary-subtle text-primary align-self-center" style="margin-bottom: -1rem"
+                            title="{% translate "Run the selected action" %}" name="index"
+                            value="{{ action_index|default:0 }}">{% translate "Go" %}</button>
+                {% endblock %}
+            </div>
+        {% endblock %}
+    </div>
+</div>

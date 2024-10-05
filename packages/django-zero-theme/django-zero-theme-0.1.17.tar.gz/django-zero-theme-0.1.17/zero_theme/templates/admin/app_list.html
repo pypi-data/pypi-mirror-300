@@ -1,0 +1,93 @@
+{% load i18n %}
+{% url 'admin:index' as admin_index_url %}
+
+{% if app_list %}
+    <li class="sidebar-item d-none">
+        <a class="sidebar-link" href="" id="get-url" aria-expanded="false"></a>
+    </li>
+
+    <li class="sidebar-item">
+        <a class="sidebar-link {% if request.path|urlencode == admin_index_url %}active{% endif %}"
+           href="{{ admin_index_url }}" aria-expanded="false">
+                <span>
+                  <i class="ti ti-aperture"></i>
+                </span>
+            <span class="hide-menu">Dashboard</span>
+        </a>
+    </li>
+
+    {% for app in app_list %}
+        <li class="sidebar-item">
+            <a class="sidebar-link has-arrow" style="white-space: normal!important;" href="javascript:void(0)"
+               aria-expanded="false">
+                <span class="d-flex">
+                  <i class="ti ti-chart-donut-3"></i>
+                </span>
+                <span class="hide-menu">{{ app.name }}</span>
+            </a>
+            <ul aria-expanded="false" class="collapse first-level">
+                {% for model in app.models %}
+                    <li class="sidebar-item ml-16" {% if model.admin_url in request.path|urlencode %}
+                        id="{{ model.admin_url }}" {% endif %}>
+                        <a href="{{ model.admin_url }}"{% if model.admin_url in request.path|urlencode %}
+                           aria-current="page"{% endif %}
+                           class="sidebar-link">
+                            <div class="round-16 d-flex align-items-center justify-content-center">
+                                <i class="ti ti-minus fs-3"></i>
+                            </div>
+                            <span class="hide-menu">{{ model.name }}</span>
+                        </a>
+                    </li>
+                {% endfor %}
+            </ul>
+        </li>
+
+        <script>
+            document.addEventListener('DOMContentLoaded', function () {
+                // First, collapse all submenus and set aria-expanded to false
+                var allSidebars = document.querySelectorAll('.collapse.first-level');
+                var allSidebarLinks = document.querySelectorAll('.sidebar-link.has-arrow');
+
+                allSidebars.forEach(function (sidebar) {
+                    sidebar.classList.remove('show'); // Collapse all submenus
+                });
+
+                allSidebarLinks.forEach(function (link) {
+                    link.setAttribute('aria-expanded', 'false'); // Set aria-expanded to false for all
+                });
+
+                // Function to add 'active-background' class to an element with a specific ID
+                function setActiveClassById(id) {
+                    var item = document.getElementById(id);
+                    if (item) {
+                        item.classList.add('active-background'); // Add the 'active-background' class
+                        var link = item.querySelector('.sidebar-link');
+                        if (link) {
+                            // Ensure the link also gets the active class
+                            link.classList.add('active-background');
+                        }
+                    }
+                }
+
+                // Find the active sidebar items
+                var activeItems = document.querySelectorAll('.sidebar-item[id]');
+                activeItems.forEach(function (item) {
+                    // Add 'active-background' class to the active item
+                    var itemId = item.id; // Get the ID of the active item
+                    setActiveClassById(itemId); // Add 'active-background' class
+                    // Expand the submenu containing the active item
+                    var parentUl = item.closest('.collapse.first-level');
+                    if (parentUl) {
+                        var parentLink = parentUl.previousElementSibling;
+                        if (parentLink && parentLink.classList.contains('has-arrow')) {
+                            parentLink.setAttribute('aria-expanded', 'true');
+                            parentUl.classList.add('show'); // Ensure the submenu is visible
+                        }
+                    }
+                });
+            });
+        </script>
+    {% endfor %}
+{% else %}
+    <p>{% translate 'You don’t have permission to view or edit anything.' %}</p>
+{% endif %}
