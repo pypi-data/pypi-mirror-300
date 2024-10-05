@@ -1,0 +1,10 @@
+LICENSE.txt
+README.md
+setup.cfg
+setup.py
+pyvisual/__init__.py
+pyvisual.egg-info/PKG-INFO
+pyvisual.egg-info/SOURCES.txt
+pyvisual.egg-info/dependency_links.txt
+pyvisual.egg-info/requires.txt
+pyvisual.egg-info/top_level.txt
