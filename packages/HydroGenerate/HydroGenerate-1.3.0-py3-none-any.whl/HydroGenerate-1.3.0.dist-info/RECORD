@@ -1,0 +1,12 @@
+HydroGenerate/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+HydroGenerate/flow_preprocessing.py,sha256=DVsUNsHMDgIZa_zdVpBsBEmHY1sTVYTMmBB3-30Ujq4,6974
+HydroGenerate/hydraulic_processing.py,sha256=OqML7oamzyJOvwBv25gdJ7NZ9QWQAsvNpFLZhM4Y-jI,14914
+HydroGenerate/hydropower_potential.py,sha256=fH7Ixq0Vd1MOx98WCESGYFjzsOvIMMhTfXP551VLXkc,27538
+HydroGenerate/turbine_calculation.py,sha256=qdFisCTzoYavOVYo8dTnqST3xKG34ROwGpGQSe37gqE,21673
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+HydroGenerate-1.3.0.dist-info/LICENSE,sha256=1EHcnrpDj3FRN7q5W-dncC5A64hMKYWVcANohsNZdQM,1551
+HydroGenerate-1.3.0.dist-info/METADATA,sha256=yzvYZcOMu3gY7k7fEs_uohcUb3F5hu9X3FL4qf2JMsE,6162
+HydroGenerate-1.3.0.dist-info/NOTICE.txt,sha256=8BTlJuuh02zbjNz8ZII0pbhCxaWR3phHl2RY7nVDt4U,1782
+HydroGenerate-1.3.0.dist-info/WHEEL,sha256=GV9aMThwP_4oNCtvEC2ec3qUYutgWeAzklro_0m4WJQ,91
+HydroGenerate-1.3.0.dist-info/top_level.txt,sha256=5VnO4Q49Hq3wpfWSqP3y_1ZWngRBMuTC3MWIM-nlN-U,20
+HydroGenerate-1.3.0.dist-info/RECORD,,
