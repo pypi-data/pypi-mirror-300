@@ -1,0 +1,10 @@
+picterra/__init__.py,sha256=mYUho4M_lRCIyXdPStUb5AO2-xIco3LOg405B_Ngt7k,744
+picterra/base_client.py,sha256=ebvN_qotNQi6DNQpD1hcOM7N5ywDbkCrKBQqpKHf5u0,8984
+picterra/detector_platform_client.py,sha256=snmSqbnvlkZy0aNOnuRLhSEkUsDrd-ZeM6ZPjex-oOE,34862
+picterra/nongeo.py,sha256=5d2tt4v6jbkgQe0LmRsCAyoC72UuMG3PI9HVe0Mg3eA,3503
+picterra/plots_analysis_platform_client.py,sha256=uKBTtA15QeRkUbwvOY6AnT08rXFnF7uOuD9TIhwAnJE,3091
+picterra-2.0.1.dist-info/LICENSE,sha256=RJK5ihsNvv7YHi0uJMjA_24MO4hgssE7KKGWvD8iJwg,1065
+picterra-2.0.1.dist-info/METADATA,sha256=691Hdy0BgzuNim5_ickiON1TLpAERJuBByFqh9HK-sY,3053
+picterra-2.0.1.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+picterra-2.0.1.dist-info/top_level.txt,sha256=vxNnX7rcESOP-UZ_wHqAC3_BJtO2_1Jvq1qf9UVVx5Y,9
+picterra-2.0.1.dist-info/RECORD,,
