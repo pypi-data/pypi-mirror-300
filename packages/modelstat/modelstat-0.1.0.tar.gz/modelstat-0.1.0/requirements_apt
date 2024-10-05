@@ -1,0 +1,5 @@
+make
+doxygen
+pandoc
+git
+

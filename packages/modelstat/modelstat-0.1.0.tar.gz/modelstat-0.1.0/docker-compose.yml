@@ -1,0 +1,13 @@
+services:
+  modelstat_dev:
+    build: .
+    volumes:
+      - ./:/home/user/work/
+      - vscode-server:/home/user/.vscode-server
+    user: user
+    command: tail -f /dev/null
+    # environment:
+    #   - PYTHONPATH=/home/user/work/Notebooks/utilities/njbutils
+
+volumes:
+  vscode-server:

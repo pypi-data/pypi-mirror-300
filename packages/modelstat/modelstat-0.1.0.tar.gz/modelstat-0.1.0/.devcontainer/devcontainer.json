@@ -1,0 +1,200 @@
+{
+    "name": "ModelStat Development",
+    "dockerComposeFile": "../docker-compose.yml",
+    "service": "modelstat_dev",
+    "workspaceFolder": "/home/user/work",
+    //"postCreateCommand": "git config --global user.name 'Noah J. Blair' && git config --global user.email 'noah.blair@colostate.edu' && git config --global --add safe.directory /home/user/work",
+    "remoteUser": "user",
+    "updateRemoteUserUID": true,
+    "customizations": {
+        "vscode": {
+            "settings": {
+                "remote.containers.autoShutdown": "stopContainer",
+                "python.defaultInterpreterPath": "/usr/local/bin/python",
+                "python.linting.enabled": true,
+                "python.linting.pylintEnabled": true,
+                "python.formatting.provider": "black",
+                "editor.formatOnSave": true,
+                "python.testing.pytestEnabled": true,
+
+                "editor.fontSize": 17,
+                "notebook.lineNumbers": "on",
+                "visibleWhitespace.space.enable": true,
+                "julia.enableTelemetry": false,
+                "terminal.integrated.commandsToSkipShell": [
+                    "language-julia.interrupt"
+                ],
+                "julia.symbolCacheDownload": true,
+                "editor.rulers": [
+                    80
+                ],
+                "visibleWhitespace.eof.text": "___",
+                "editor.renderWhitespace": "all",
+                "visibleWhitespace.newLine.lf": "¬",
+                "visibleWhitespace.newLine.crLf": "[CRLF]",
+                "git.openRepositoryInParentFolders": "never",
+                "git.enableSmartCommit": true,
+                "editor.accessibilitySupport": "off",
+                "editor.fontFamily": "menlo",
+                "jupyter.askForKernelRestart": false,
+                "interactiveWindow.executeWithShiftEnter": true,
+                "jupyter.themeMatplotlibPlots": true,
+                "python.createEnvironment.trigger": "off",
+                "python.terminal.launchArgs": [
+                    "-m",
+                    "IPython",
+                    "--no-autoindent"
+                ],
+                "explorer.confirmDragAndDrop": false,
+                "workbench.list.horizontalScrolling": false,
+                "workbench.editor.editorActionsLocation": "titleBar",
+                "git.autofetch": true,
+                "git.confirmSync": false,
+                "indentRainbow.indicatorStyle": "light",
+                "ruff.exclude": [
+                    "*.ipynb"
+                ],
+                "editor.minimap.enabled": false,
+                "explorer.confirmDelete": false,
+                "files.trimTrailingWhitespace": true,
+                "pythonIndent.trimLinesWithOnlyWhitespace": true,
+                "autoDocstring.docstringFormat": "numpy",
+                "autoDocstring.includeExtendedSummary": true,
+                "activitusbar.views": [
+                    {
+                        "name": "explorer",
+                        "codicon": "explorer-view-icon"
+                    },
+                    {
+                        "name": "search",
+                        "codicon": "search-view-icon"
+                    },
+                    {
+                        "name": "scm",
+                        "codicon": "source-control-view-icon"
+                    },
+                    {
+                        "name": "debug",
+                        "codicon": "run-view-icon"
+                    },
+                    {
+                        "name": "extensions",
+                        "codicon": "extensions-view-icon"
+                    }
+                ],
+                "mypy-type-checker.args": [
+                    "--disallow-untyped-defs"
+                ],
+                "extensions.experimental.affinity": {
+                    "asvetliakov.vscode-neovim": 1
+                },
+                "visibleWhitespace.htab.text": "»",
+                "visibleWhitespace.nbsp.text": "‡",
+                "files.insertFinalNewline": true,
+                "files.trimFinalNewlines": true,
+                "notebook.insertFinalNewline": true,
+                "editor.multiCursorModifier": "ctrlCmd",
+                "workbench.iconTheme": "vscode-icons-mac",
+                "workbench.colorTheme": "macOS Classic",
+                "visibleWhitespace.widespace.text": "»⎕",
+                "workbench.panel.opensMaximized": "never",
+                "workbench.reduceMotion": "on",
+                "workbench.tips.enabled": false,
+                "window.openFilesInNewWindow": "on",
+                "window.title": "${activeEditorMedium}${separator}${rootNameShort}${separator}${profileName}",
+                "window.restoreWindows": "none",
+                "terminal.integrated.cursorStyle": "line",
+                "terminal.integrated.cursorStyleInactive": "line",
+                "explorer.copyRelativePathSeparator": "/",
+                "doxdocgen.generic.paramTemplate": "@param {param} {type}",
+                "breadcrumbs.enabled": false,
+                "latex-workshop.latex.autoBuild.run": "never",
+                "makefile.configureOnOpen": true,
+                "simpleVim.normalModeCursorStyle": "block",
+                "region-marker.namedEndRegion": true,
+                "region-marker.languages": {
+                    "python": {
+                        "start": "#region",
+                        "end": "#endregion",
+                        "region-marker.namedEndRegion": true
+                    }
+                },
+                "files.associations": {
+                    "*.in": "mcnp"
+                },
+                "zenMode.hideLineNumbers": false,
+                "search.showLineNumbers": true,
+                "terminal.integrated.hideOnStartup": "always",
+                "window.zoomLevel": -1,
+                "window.newWindowDimensions": "inherit",
+                "editor.autoIndent": "advanced",
+                "editor.copyWithSyntaxHighlighting": false,
+                "editor.lineHeight": 1.2,
+                "editor.padding.bottom": 1,
+                "editor.padding.top": 1,
+                "editor.scrollBeyondLastLine": false,
+                "editor.showFoldingControls": "always",
+                "editor.snippetSuggestions": "bottom",
+                "editor.suggest.showStatusBar": true,
+                "[shellscript]": {
+                    "files.eol": "\n"
+                },
+                "workbench.activityBar.location": "top"
+            },
+            //
+            //
+            "extensions": [
+                "aayushchawla.doctidy",
+                "asvetliakov.vscode-neovim",
+                "charliermarsh.ruff",
+                "cschlosser.doxdocgen",
+                "davidbwaters.macos-modern-theme",
+                "donjayamanne.python-environment-manager",
+                "gruntfuggly.activitusbar",
+                "huacnlee.theme-macos-classic",
+                "james-yu.latex-workshop",
+                "johnpapa.vscode-peacock",
+                "julialang.language-julia",
+                "kevinrose.vsc-python-indent",
+                "mechatroner.rainbow-csv",
+                "meezilla.json",
+                "ms-azuretools.vscode-docker",
+                "ms-dotnettools.vscode-dotnet-runtime",
+                "ms-mssql.data-workspace-vscode",
+                "ms-python.black-formatter",
+                "ms-python.debugpy",
+                "ms-python.mypy-type-checker",
+                "ms-python.python",
+                "ms-python.vscode-pylance",
+                "ms-toolsai.datawrangler",
+                "ms-toolsai.jupyter",
+                "ms-toolsai.jupyter-keymap",
+                "ms-toolsai.jupyter-renderers",
+                "ms-toolsai.vscode-jupyter-cell-tags",
+                "ms-toolsai.vscode-jupyter-slideshow",
+                "ms-vscode-remote.remote-containers",
+                "ms-vscode.makefile-tools",
+                "ms-vscode.powershell",
+                "ms-vscode.vscode-typescript-next",
+                "neo-ltex.ltex",
+                "njpwerner.autodocstring",
+                "redhat.vscode-yaml",
+                "reditorsupport.r",
+                "repositony.vscodemcnp",
+                "rodolphebarbanneau.python-docstring-highlighter",
+                "rust-lang.rust-analyzer",
+                "ryanpease.mcnp-language-server",
+                "searking.preview-vscode",
+                "shd101wyy.markdown-preview-enhanced",
+                "sirtori.indenticator",
+                "tamasfe.even-better-toml",
+                "txava.region-marker",
+                "waderyan.gitblame",
+                "wayou.vscode-icons-mac",
+                "yoshi389111.visible-whitespace",
+                "yunierolivera.markdown-quarto-word-count",
+                "slhsxcmy.vscode-double-line-numbers"
+            ]
+        }
+    }
+}
