@@ -1,0 +1,5 @@
+python-i18n[YAML]
+inquirer
+rich
+pyperclip
+requests
