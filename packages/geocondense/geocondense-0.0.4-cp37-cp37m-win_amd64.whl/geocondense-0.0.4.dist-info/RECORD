@@ -1,0 +1,13 @@
+geocondense/__init__.py,sha256=icNzTKRQENXvIanD6Z6hhO2MZj6L9aMZSIFLJsjZMH4,101
+geocondense/_core.pyd,sha256=Wyky_hB7yY-X9kxYWlAk85PBtAlPAQecb-Ok9sJi4H8,546304
+geocondense/_core.pyi,sha256=PGXar7mBx4Z-DULN-5jmgV6kZ3bZVUr1U17nDHeNG8s,3502
+geocondense/condense.py,sha256=VCGEX2syUdcfXqKe2BKJeFeaxwX81A33k1bWGtcxbpg,8467
+geocondense/condense_geojson.py,sha256=NrH7K8KrhCd_Wyxe26CXEsHoZfIg-dfc6vpn363_Qpk,1876
+geocondense/condense_pointcloud.py,sha256=k8b2x4dMOjFWUldv5MdTCf7I_BX6p_OKoPMNRJd1sy4,7540
+geocondense/dissect_geojson.py,sha256=RWmTZjrOkujVoQtbn-KMPv6Yzsb7KrkVwWniX6ylDzo,1300
+geocondense/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+geocondense/utils.py,sha256=sVw6xS-ZWk_5ncvi5n_yFHEWrYZh0t2khEvrE2Vv1Wk,1548
+geocondense-0.0.4.dist-info/METADATA,sha256=L0KThm2mXeJVtrNzit3yS6Il6d_iKkp09ZUEM6TQx3A,858
+geocondense-0.0.4.dist-info/WHEEL,sha256=8Qrcszc_EgBzpzwCEIk4xbGhO_Cx6KXMNjPGW68ZaBc,105
+geocondense-0.0.4.dist-info/licenses/LICENSE,sha256=N_R9-5l0U5HZyk0-el1LtB0nxSXttAIy78h4x_w_bgk,2218
+geocondense-0.0.4.dist-info/RECORD,,
