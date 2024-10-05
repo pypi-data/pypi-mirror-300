@@ -1,0 +1,11 @@
+simq-0.1.0.dist-info/METADATA,sha256=F1AHEuDkhV9MNZEpFECFB3oi3Wht7mSb4md7DHGBkRs,275
+simq-0.1.0.dist-info/WHEEL,sha256=Vza3XR51HW1KmFP0iIMUVYIvz0uQuKJpIXKYOBGQyFQ,90
+simq-0.1.0.dist-info/entry_points.txt,sha256=6OYgBcLyFCUgeqLgnvMyOJxPCWzgy7se4rLPKtNonMs,34
+simq-0.1.0.dist-info/licenses/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+simq/.ruff_cache/.gitignore,sha256=aEiIwOuxfzdCmLZe4oB1JsBmCUxwG8x-u-HBCV9JT8E,1
+simq/.ruff_cache/0.1.8/16676534962091038373,sha256=d_sJpz9I_P7QjBqvuWh-GMqN8z5mwSXhGUx1jTu_RdA,154
+simq/.ruff_cache/CACHEDIR.TAG,sha256=WVMVbX4MVkpCclExbq8m-IcOZIOuIZf5FrYw5Pk-Ma4,43
+simq/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+simq/core.py,sha256=Mimhf7yKUlWYkFh8dEvNs3PpMmqQxF_0XtS-eA9Yg0E,3320
+simq/dists.py,sha256=x_C9R3XQpIGv_PjHQaHac-Z-opxO75O9EHOAHeG44Ik,625
+simq-0.1.0.dist-info/RECORD,,
