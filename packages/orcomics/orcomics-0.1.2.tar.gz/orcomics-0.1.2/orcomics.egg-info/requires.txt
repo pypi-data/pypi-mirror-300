@@ -1,0 +1,8 @@
+scipy
+numpy
+networkx
+pot
+pandas
+cmake
+cvxpy
+ecos
