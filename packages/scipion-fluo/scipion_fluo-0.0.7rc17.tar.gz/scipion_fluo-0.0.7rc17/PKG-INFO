@@ -1,0 +1,41 @@
+Metadata-Version: 2.3
+Name: scipion-fluo
+Version: 0.0.7rc17
+Summary: Base pyworkflow plugin for Fluorescence image processing
+Project-URL: Repository, https://github.com/jplumail/scipion-fluo
+Author-email: Jean Plumail <jplumail@unistra.fr>
+License-File: LICENSE
+Keywords: fluorescence,imageprocessing,scipion,scipion-3.0
+Requires-Python: >=3.8
+Requires-Dist: numpy
+Requires-Dist: ome-types
+Requires-Dist: pint
+Requires-Dist: scipion-pyworkflow-windows
+Requires-Dist: scipy
+Requires-Dist: tifffile
+Provides-Extra: dev
+Requires-Dist: pre-commit; extra == 'dev'
+Requires-Dist: ruff; extra == 'dev'
+Description-Content-Type: text/markdown
+
+
+## scipion-fluo
+
+**scipion-fluo** is the base plugin defining the Domain for Fluorescence image processing.
+
+
+### Installation
+
+For using scipion-fluo, we need to have a working Python 3 environment (e.g via virtualenv or conda).
+After that, we might easily install by:
+
+```bash
+pip install scipion-fluo scipion-fluo-spfluo
+```
+
+
+### Test
+
+```bash
+hatch run test
+```
