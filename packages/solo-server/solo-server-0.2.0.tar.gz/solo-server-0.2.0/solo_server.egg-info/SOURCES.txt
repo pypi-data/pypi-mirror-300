@@ -1,0 +1,16 @@
+README.md
+setup.py
+solo_server/__init__.py
+solo_server/__main__.py
+solo_server/cli.py
+solo_server/utils.py
+solo_server.egg-info/PKG-INFO
+solo_server.egg-info/SOURCES.txt
+solo_server.egg-info/dependency_links.txt
+solo_server.egg-info/entry_points.txt
+solo_server.egg-info/requires.txt
+solo_server.egg-info/top_level.txt
+solo_server/commands/__init__.py
+solo_server/commands/docker_commands.py
+solo_server/commands/init.py
+solo_server/templates/__init__.py
