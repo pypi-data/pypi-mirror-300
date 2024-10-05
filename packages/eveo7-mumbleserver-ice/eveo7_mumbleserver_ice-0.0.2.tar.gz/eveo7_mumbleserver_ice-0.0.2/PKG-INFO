@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: eveo7-mumbleserver-ice
+Version: 0.0.2
+Summary: 
+Home-page: https://gitlab.com/eveo7/eveo7-mumbleserver-ice
+Author: Boris Talovikov
+Author-email: boris@talovikov.ru
+Requires-Python: >=3.12,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: zeroc-ice (>=3.7.10.1,<4.0.0.0)
+Project-URL: Repository, https://gitlab.com/eveo7/eveo7-mumbleserver-ice
+Description-Content-Type: text/markdown
+
+The code is fully generated with slice2py
+
+## See also
+
+- [doc.zeroc.com/Code Generation in Python](https://doc.zeroc.com/ice/latest/language-mappings/python-mapping/client-side-slice-to-python-mapping/code-generation-in-python)
+- [github.com/mumble-voip/mumble](https://github.com/mumble-voip/mumble)
+- [Latest version of MumbleServer.ice](https://raw.githubusercontent.com/mumble-voip/mumble/refs/heads/master/src/murmur/MumbleServer.ice)
+
