@@ -1,0 +1,14 @@
+popclass/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+popclass/classify.py,sha256=TXmg1c3ISLIIOkurSGuJcQzsLMXHWSuGGYWEucmE3zQ,1989
+popclass/model.py,sha256=jMisEfq2CmZlSTO2eePeOf_6a8NuoBXlM3NIulS6ie0,10181
+popclass/posterior.py,sha256=8E-NvdpdvsPBq0_x8U8WTAxVgyHVH2o78CWq98Rd3Oc,7539
+popclass/uq.py,sha256=s1DTrPHoB17mH5_FY-DRtlWljIDPhNwo32rdxg69mfk,11907
+popclass/visualization.py,sha256=EvghLwrsQapt_9bWWkFu9Fee-Ac39_IXLkaa2K_OhjI,12899
+popclass/data/popsycle_singles_raithel18.asdf,sha256=kJEP35LZ2gT0Fff00OYg2ZL-weYiBhNLsP3HMm8zDec,41899
+popclass/data/popsycle_singles_spera15.asdf,sha256=CHyS58OvurMzJYoJV1_JdYFGWbTwj0CjS3hvwzMO_Sg,52938
+popclass/data/popsycle_singles_sukhboldn20.asdf,sha256=RCNSfVfoG4CJToTOOiRANsNYD5pXl95VdiEJ8xWUEpg,48783
+popclass-0.2.0.dist-info/METADATA,sha256=EmAt62E7Dxqkh4CDRn3bsE9Y0TX3tKnANQzZ4Q1qmC0,3348
+popclass-0.2.0.dist-info/WHEEL,sha256=1yFddiXMmvYK7QYTqtRNtX66WJ0Mz8PYEiEUoOUUxRY,87
+popclass-0.2.0.dist-info/licenses/LICENSE,sha256=pLucFgG2vbJPcYU-V3pmORwz3XxE7HcYJTfiDVKUAG8,1099
+popclass-0.2.0.dist-info/licenses/NOTICE,sha256=ileZb_cLiidpDLrL07KXzR-rMsTxX2XbbHrtUMQof1o,1167
+popclass-0.2.0.dist-info/RECORD,,
