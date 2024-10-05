@@ -1,0 +1,7 @@
+pyproject.toml
+src/__init__.py
+src/hi.py
+src/materialized.egg-info/PKG-INFO
+src/materialized.egg-info/SOURCES.txt
+src/materialized.egg-info/dependency_links.txt
+src/materialized.egg-info/top_level.txt

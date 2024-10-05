@@ -1,0 +1,11 @@
+[project]
+name = "materialized"
+version = "0.0.0"
+description = "Materialized Intelligence SDK (Alias)"
+authors = [ 
+	{ name="Seth Kimmel", email = "seth.kimmel3@gmail.com" } , 
+]
+
+[project.urls]
+"Homepage" = "https://materialized.dev"
+
