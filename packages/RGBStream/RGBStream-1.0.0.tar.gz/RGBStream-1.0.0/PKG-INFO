@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: RGBStream
+Version: 1.0.0
+Summary: A Python package for Rainbow Text
+Home-page: https://prodigy0x.netlify.app/
+Author: Prodigy0x
+Requires-Python: >=3.11
+Description-Content-Type: text/markdown
+
+# RainbowText
+a Rainbow gradient text Package for python, Animated gradient Text, Static gradient text!
+
+# How to use
+
+```
+from RGBStream import Rainbow
+
+rainbow = Rainbow
+
+rainbow.Print('hello')
+rainbow.animate('hello')
+```

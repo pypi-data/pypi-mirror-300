@@ -1,0 +1,6 @@
+README.md
+setup.py
+RGBStream.egg-info/PKG-INFO
+RGBStream.egg-info/SOURCES.txt
+RGBStream.egg-info/dependency_links.txt
+RGBStream.egg-info/top_level.txt
