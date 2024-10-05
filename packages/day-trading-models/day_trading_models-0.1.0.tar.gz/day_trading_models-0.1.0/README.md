@@ -1,0 +1,103 @@
+# Day Trading Models
+![Unit Test](https://github.com/Andimeo/day-trading-models/actions/workflows/unittest.yml/badge.svg)
+
+
+This repository contains a collection of SQLAlchemy models for day trading analysis and data management. These models are designed to be used in various projects related to stock market analysis, particularly focusing on the Chinese A-share market.
+
+## Features
+
+- Comprehensive set of models covering various aspects of day trading:
+  - Opening dates
+  - Fund flows
+  - Limit up (涨停) and limit down (跌停) stocks
+  - Large orders (龙虎榜)
+  - Quotations
+  - Strong stocks
+  - Sub-new stocks
+  - And more...
+- SQLAlchemy ORM for easy database integration
+- Designed for flexibility and reusability across different projects
+
+## Installation
+
+You can install this package using pip:
+
+```bash
+pip install day_trading_models
+```
+
+## Usage
+
+Here's a basic example of how to use these models:
+
+```python
+from sqlalchemy import create_engine
+from sqlalchemy.orm import sessionmaker
+from day_trading_models import OpeningDate, Dt, Zt, Lhb, Fund
+
+# Create an engine and session
+engine = create_engine('your_database_url')
+Session = sessionmaker(bind=engine)
+session = Session()
+
+# Create tables
+OpeningDate.__table__.create(engine, checkfirst=True)
+Dt.__table__.create(engine, checkfirst=True)
+Zt.__table__.create(engine, checkfirst=True)
+Lhb.__table__.create(engine, checkfirst=True)
+Fund.__table__.create(engine, checkfirst=True)
+
+# Example: Add an opening date
+new_date = OpeningDate(date='2023-05-01')
+session.add(new_date)
+
+# Example: Query Zt (limit up) stocks
+zt_stocks = session.query(Zt).filter(Zt.date == '2023-05-01').all()
+
+# Example: Add a new fund flow record
+new_fund = Fund(
+    date='2023-05-01',
+    sse_close_price=3000.0,
+    sse_change=0.02,
+    # ... other fields ...
+)
+session.add(new_fund)
+
+session.commit()
+```
+
+## Models
+
+- `OpeningDate`: Trading calendar dates
+- `Dt`: Stocks hitting lower price limits
+- `Fund`: Fund flow information
+- `Lhb`: Large order ("龙虎榜") data
+- `LhbHyyyb`: Active brokerage branches in large orders
+- `LhbPlayer`: Individual players in large orders
+- `Quotation`: Stock quotations
+- `Strong`: Strong performing stocks
+- `Subnew`: Newly listed stocks
+- `Zb`: Stocks that hit the upper price limit but failed to maintain it until market close (炸板股)
+- `Zt`: Stocks hitting upper price limits
+
+## Development
+
+To set up the development environment:
+
+1. Clone the repository
+2. Install development dependencies:
+   ```bash
+   pip install -r requirements-dev.txt
+   ```
+3. Run tests:
+   ```bash
+   pytest
+   ```
+
+## Contributing
+
+Contributions are welcome! Please feel free to submit a Pull Request.
+
+## License
+
+This project is licensed under the MIT License.

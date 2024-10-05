@@ -1,0 +1,35 @@
+[build-system]
+requires = ["setuptools>=61.2", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "day_trading_models"
+version = "0.1.0"
+authors = [
+    {name = "Andimeo", email = "andimeo@foxmail.com"},
+]
+description = "SQL models for day trading"
+readme = "README.md"
+requires-python = ">=3.6"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+    "sqlalchemy>=2.0.0",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/Andimeo/day-trading-models"
+
+[project.optional-dependencies]
+dev = ["pytest"]
+
+[tool.setuptools]
+include-package-data = true
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["day_trading_models*"]
+exclude = ["tests*"]
