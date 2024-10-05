@@ -1,0 +1,2 @@
+[console_scripts]
+mutchecker = mutchecker.cli:main
