@@ -1,0 +1,3 @@
+[console_scripts]
+zyx=zyx.resources.ext.app:terminal
+
