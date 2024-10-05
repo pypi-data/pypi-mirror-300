@@ -1,0 +1,10 @@
+ipfs_embeddings_py/__init__.py,sha256=dpSXM3jRwcndvapEr3AOpZoBvMB3TiQXxHG3i7jM3_M,138
+ipfs_embeddings_py/ipfs_embeddings.py,sha256=KH399MD6SBhVc3D4Fk8h3XoI5yMs-sqsoligt-sfY7I,35173
+ipfs_embeddings_py/ipfs_multiformats.py,sha256=ZKmjbDIygpIKPe0Ph5ieG9vuoU43z0L8dUyTH24w-Mw,1771
+ipfs_embeddings_py/qdrant_kit.py,sha256=-QTsnmomntz1addikR9Kss75sGYcGYp_p2RmyV4TTIc,20105
+ipfs_embeddings_py-0.0.18.dist-info/LICENSE,sha256=hIahDEOTzuHCU5J2nd07LWwkLW7Hko4UFO__ffsvB-8,34523
+ipfs_embeddings_py-0.0.18.dist-info/LICENSE copy,sha256=hIahDEOTzuHCU5J2nd07LWwkLW7Hko4UFO__ffsvB-8,34523
+ipfs_embeddings_py-0.0.18.dist-info/METADATA,sha256=oSjQtFsG0TiQSrwh9M2O0pfOSVgnUBWYkqUvKlyxJZU,2627
+ipfs_embeddings_py-0.0.18.dist-info/WHEEL,sha256=GV9aMThwP_4oNCtvEC2ec3qUYutgWeAzklro_0m4WJQ,91
+ipfs_embeddings_py-0.0.18.dist-info/top_level.txt,sha256=uSJzgfDsbxC7iTcPrHgFYAq4y2huLACgL9RVklRhHV8,19
+ipfs_embeddings_py-0.0.18.dist-info/RECORD,,
