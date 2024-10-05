@@ -1,0 +1,14 @@
+Metadata-Version: 2.3
+Name: graphsLuicazen
+Version: 0.0.1
+Summary: HW 4 package
+Project-URL: Homepage, https://github.com/pypa/sampleproject
+Project-URL: Bug Tracker, https://github.com/pypa/sampleproject/issues
+Author-email: Sarah McDowell <smcdowe4@msudenver.edu>
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+
+This is a read me.
