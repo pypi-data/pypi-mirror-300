@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: python_analysis
+Version: 0.1
+Summary: A data analysis package for cleaning, visualization, and statistics.
+Author: Dhavasu
+Requires-Dist: pandas
+Requires-Dist: matplotlib
+Requires-Dist: scipy
+
