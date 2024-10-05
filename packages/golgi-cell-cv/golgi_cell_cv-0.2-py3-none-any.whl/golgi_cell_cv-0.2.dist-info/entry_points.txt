@@ -1,0 +1,3 @@
+[console_scripts]
+golgi-train = golgi.training:main
+
