@@ -1,0 +1,15 @@
+LICENSE.md
+README.md
+pyproject.toml
+setup.py
+compaqt/__init__.py
+compaqt/compaqt.c
+compaqt/compaqt.pyi
+compaqt/globals.h
+compaqt.egg-info/PKG-INFO
+compaqt.egg-info/SOURCES.txt
+compaqt.egg-info/dependency_links.txt
+compaqt.egg-info/top_level.txt
+compaqt/serialization/regular.c
+compaqt/serialization/regular.h
+tests/test.py
