@@ -1,0 +1,17 @@
+packaging
+rich
+colorama
+loguru
+pytz
+prettytable
+pyyaml
+rsa
+pycryptodome
+psutil
+requests
+paramiko
+PyMySQL
+pyotp
+qrcode[pil]
+opencv-python
+matplotlib
