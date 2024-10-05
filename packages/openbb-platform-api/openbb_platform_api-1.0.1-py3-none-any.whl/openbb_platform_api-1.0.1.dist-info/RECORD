@@ -1,0 +1,10 @@
+openbb_platform_api/__init__.py,sha256=LHXxk1iaywg2LfFQpg2-LjZVyoI6XqBcjwGp5-FbTQ8,40
+openbb_platform_api/main.py,sha256=aYb55Dkmk9miSjI000pE-oxKc_vPwPejWjBCI9C3A84,4342
+openbb_platform_api/utils/__init__.py,sha256=ddjJKC8qTDe7U5XqNq5t-1GDWSp1Hxj8GqMrGddkMaI,33
+openbb_platform_api/utils/api.py,sha256=ddEghcZvhS3eT0V-xDgS8y6e33UZg7ha9tVGR5IyOPA,8964
+openbb_platform_api/utils/openapi.py,sha256=mXIRMacH926TmXFjb7IDCz29WDY9vRzLfFd0B75t21I,15092
+openbb_platform_api/utils/widgets.py,sha256=Jexe1vPHBvjuBqBfxcknijT124AQSJSkkvwWXcgJ0_s,7920
+openbb_platform_api-1.0.1.dist-info/METADATA,sha256=PwyIR_x0vuQxUXn1b8O7kyIRQ0U16IQ3Oie_zdfsG7E,5130
+openbb_platform_api-1.0.1.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+openbb_platform_api-1.0.1.dist-info/entry_points.txt,sha256=p-2lMjOpD6PaUoNGfVDt4eycqFEMyweuWkJPFc-9lXE,60
+openbb_platform_api-1.0.1.dist-info/RECORD,,
