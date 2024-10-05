@@ -1,0 +1,14 @@
+MANIFEST.in
+README.md
+requirements.txt
+setup.cfg
+setup.py
+richfile/__init__.py
+richfile/functions.py
+richfile/util.py
+richfile.egg-info/PKG-INFO
+richfile.egg-info/SOURCES.txt
+richfile.egg-info/dependency_links.txt
+richfile.egg-info/requires.txt
+richfile.egg-info/top_level.txt
+tests/test_all.py
