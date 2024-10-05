@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: pylogicalprograms
+Version: 1.1
+Summary: This is Logical Programs
+Home-page: https://github.com/rdinesh808/python-logical-programs
+Author: rdinesh808
+Author-email: rdinesh808@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+License-File: LICENSE.txt
+
