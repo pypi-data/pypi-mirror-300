@@ -1,0 +1,17 @@
+Metadata-Version: 2.3
+Name: polarcle
+Version: 0.2.1
+Summary: Polars Dataframe integration with Oracle
+Author-email: iwolf <isaacwolfsite@gmail.com>
+Requires-Python: >=3.12
+Requires-Dist: oracledb
+Requires-Dist: polars
+Description-Content-Type: text/markdown
+
+## Polars X Oracle helper tool
+
+list[dict] is lame, dataframes are cool
+When SQL queries return dataframes, why shouldn't the drivers do the same?
+asyncdb-polars exists with a postgres version.
+
+IMO it is easier to have a different lib per each database because its easier to maintain.
