@@ -1,0 +1,14 @@
+{% load i18n %}
+
+<div class="list-filter-dropdown">
+<!--    <h3 {% if spec.lookup_val or spec.value %}class="active"{% endif %}>{% blocktrans with title as filter_title %} By {{ filter_title }} {% endblocktrans %}</h3>-->
+
+    <label class="form-label pt-3">{% blocktrans with title as filter_title %} By {{ filter_title }} {% endblocktrans %}</label>
+    <div align="right">
+        <select class="form-select bg-primary-subtle border-0" onChange="javascript:window.location = this.options[this.selectedIndex].value;">
+        {% for choice in choices %}
+            <option {% if choice.selected %}selected{% endif %} value="{{ choice.query_string|iriencode }}">{{ choice.display }}</option>
+        {% endfor %}
+        </select>
+    </div>
+</div>
