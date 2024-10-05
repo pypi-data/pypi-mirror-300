@@ -1,0 +1,7 @@
+vessel_voxelizer/__init__.py,sha256=LdSoM4JsYeyA9l8S9iUsjoK7DNRcA49PXgaXNO7dae8,603
+vessel_voxelizer/_vessel_vox.pyd,sha256=84B2dK6N86iTP_KdmpnkQNs8a4vjmilVzhGqCHYz5TE,269824
+vessel_voxelizer/utils.py,sha256=GljfSNeA2OeTe4jzd2HN0NkZSzYY5ZD97miil_gJYYA,804
+vessel_voxelizer-0.0.1.dist-info/METADATA,sha256=CxlQBqLM8qsv53gw7jif15sjfYZY9cf2ncCTTnFOuUs,3387
+vessel_voxelizer-0.0.1.dist-info/WHEEL,sha256=vEC2vgcau_KDUVRc0oMmm7glP6seg7dDCI6B0KGHsOk,105
+vessel_voxelizer-0.0.1.dist-info/licenses/LICENSE,sha256=yGSxdpg9s4ESkGx676_97Pfdgh5btfXSw3eeDPjuJbs,1094
+vessel_voxelizer-0.0.1.dist-info/RECORD,,
