@@ -1,0 +1,9 @@
+simsimd.cpython-312-s390x-linux-musl.so,sha256=4uXtdpl51cm_JQWfDTEMIb0yJSp1ee_KvOFYO2CFPW0,350745
+simsimd./libgomp-08053dee.so.1.0.0,sha256=rCp91nkyHoJQEn0C-Y2xfQ8zSmbicNrvktihj7oz7Po,359697
+simsimd/__init__.pyi,sha256=UFOCaZEo7TaPSuBMMNoOfeBhh82ZE9LODPypZmTUAqY,8209
+simsimd/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+simsimd-5.5.0.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+simsimd-5.5.0.dist-info/METADATA,sha256=VJsclHIKXqFc0SYtorgUjm-rhnjoKYLBu4VP0cn0FoY,51161
+simsimd-5.5.0.dist-info/RECORD,,
+simsimd-5.5.0.dist-info/WHEEL,sha256=8yUgeWq9wPzhqrJKPFj5deyUlL9fO05LqtNlZ9Yrmi0,111
+simsimd-5.5.0.dist-info/top_level.txt,sha256=kA2CGlVhy5wNyCLTKLh20j75IM5fnuQ_-4bK53XLl8o,8
