@@ -1,0 +1,48 @@
+Metadata-Version: 2.1
+Name: pdk-semver
+Version: 1.2.0
+Summary: Versioning tool
+Author-email: Anatoly Asviyan <jon@dot.com>
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: POSIX
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Software Development
+Requires-Dist: pydevkit<4.0.0,>=3.1.2
+Project-URL: Homepage, https://github.com/aanatoly/pdk-semver
+Project-URL: Repository, https://github.com/aanatoly/pdk-semver
+Description-Content-Type: text/markdown
+
+# pdk-semver
+
+![pkg-version]
+![pkg-license]
+
+Pretty print project's versions in different styles<br>
+
+```text
+$ pdk-semver -s all --extra some.info
+internal  3.2.2-rev.3.some.info.git.b674019
+  public  3.2.2-rev.3.some.info
+    base  3.2.2-some.info
+
+$ pdk-semver
+3.2.2-rev.3.git.b674019
+```
+
+## Installation
+
+```sh
+pip install pdk-semver
+```
+
+## Development
+See [development](docs/devel.md) doc
+
+[pkg-link]: https://pypi.python.org/pypi/pdk-semver/
+[pkg-version]: https://img.shields.io/pypi/v/pdk-semver?logo=pypi&logoColor=aaaaaa&color=blue
+[pkg-license]: https://img.shields.io/pypi/l/pdk-semver?logoColor=aaaaaa&color=blue
+[pkg-pyversions]: https://img.shields.io/pypi/pyversions/pdk-semver?logo=python&logoColor=aaaaaa&color=blue
+
