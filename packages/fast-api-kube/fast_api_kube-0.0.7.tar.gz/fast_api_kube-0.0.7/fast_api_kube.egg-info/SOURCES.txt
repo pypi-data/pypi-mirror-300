@@ -1,0 +1,17 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+fast_api_kube.egg-info/PKG-INFO
+fast_api_kube.egg-info/SOURCES.txt
+fast_api_kube.egg-info/dependency_links.txt
+fast_api_kube.egg-info/not-zip-safe
+fast_api_kube.egg-info/top_level.txt
+src/__init__.py
+src/main.py
+tests/test_health.py
+tests/test_history.py
+tests/test_lookup.py
+tests/test_metrics.py
+tests/test_root.py
+tests/test_validate.py
