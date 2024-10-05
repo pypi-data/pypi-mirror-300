@@ -1,0 +1,56 @@
+[build-system]
+
+requires = [
+    "setuptools>=42",
+    "wheel"
+]
+
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "Ligare.identity"
+requires-python = ">=3.10"
+authors = [
+    {name = 'Aaron Holmes', email = 'aholmes@mednet.ucla.edu'}
+]
+description = 'Libraries for working with identity and SSO.'
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: GNU General Public License (GPL)",
+    "Operating System :: OS Independent",
+    "Topic :: Scientific/Engineering",
+    "Topic :: Software Development :: Libraries",
+    "Topic :: Software Development :: Libraries :: Application Frameworks",
+    "Intended Audience :: Science/Research",
+    "Intended Audience :: Developers",
+    "Development Status :: 4 - Beta",
+    "Natural Language :: English"
+]
+
+dependencies = [
+    "pysaml2",
+    "requests"
+]
+
+dynamic = ["version", "readme"]
+[tool.setuptools]
+include-package-data = true
+
+[project.urls]
+"Homepage" = "https://github.com/uclahs-cds/Ligare"
+"Bug Tracker" = "https://github.com/uclahs-cds/Ligare/issues"
+"Repository" = "https://github.com/uclahs-cds/Ligare.git"
+"Changelog" = "https://github.com/uclahs-cds/Ligare/blob/main/CHANGELOG.md"
+
+[tool.setuptools.dynamic]
+version = {attr = "Ligare.identity.__version__"}
+readme = {file = ["README.md"], content-type = "text/markdown"}
+
+[tool.setuptools.package-dir]
+"Ligare.identity" = "Ligare/identity"
+
+[tool.setuptools.packages.find]
+exclude = ["build*"]
+
+[tool.setuptools.package-data]
+"Ligare.identity" = ["py.typed"]
