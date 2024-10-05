@@ -1,0 +1,8 @@
+README.md
+pyproject.toml
+src/mino_file_server/__init__.py
+src/mino_file_server.egg-info/PKG-INFO
+src/mino_file_server.egg-info/SOURCES.txt
+src/mino_file_server.egg-info/dependency_links.txt
+src/mino_file_server.egg-info/requires.txt
+src/mino_file_server.egg-info/top_level.txt
