@@ -1,0 +1,3 @@
+[console_scripts]
+pplate=pplate.main:app
+
