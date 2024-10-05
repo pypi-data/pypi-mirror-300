@@ -1,0 +1,62 @@
+[project]
+name = "django-grainy"
+description = "granular permissions for django"
+readme = "README.md"
+license = {file = "LICENSE"}
+version = "2.0.1"
+authors = [{name = "20C", email = "code@20c.com"}]
+requires-python = ">=3.8,<4.0"
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "License :: OSI Approved :: Apache Software License",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+]
+
+dependencies = [
+    "grainy >=1.7",
+    "django >=3.2",
+    "djangorestframework >=3",
+]
+
+[project.optional-dependencies]
+dev = [
+    # lint
+    "pre-commit >=2.13.0",
+    "pyupgrade >=2.34.0",
+    "ruff>=0.1",
+    # test
+    "pytest >=6.0.1",
+    "pytest-django >=3.8.0",
+    "coverage >=4.1",
+    "pytest-cov >=2.2.1",
+    "tox >=3.25.0",
+    "tox-gh-actions >=2.9.1",
+    "tox-uv>=1.13.0",
+    # docs
+    "markdown-include >=0.5",
+    "mkdocs >=1.2.3",
+    # ctl
+    "ctl >=1",
+    "jinja2 >=3",
+    "tmpl >=1",
+]
+
+# .ruff.toml
+[tool.ruff]
+ignore = ["F821"]
+select = [
+    "I",  # isort
+    "UP", # pyupgrade
+]
+
+
+[tool.hatch.metadata]
+allow-direct-references = true
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
