@@ -1,0 +1,7 @@
+lucit_ubdcc_restapi-0.0.54.dist-info/METADATA,sha256=esd8vsmArEZtyUlFudoBB8QrtB1fNMhz7CmUG9oICN0,7799
+lucit_ubdcc_restapi-0.0.54.dist-info/RECORD,,
+lucit_ubdcc_restapi-0.0.54.dist-info/top_level.txt,sha256=F9gRXWi45qpiTXsOjdlIP58g7aZEJH1363PPqaGtPyM,20
+lucit_ubdcc_restapi-0.0.54.dist-info/WHEEL,sha256=_JZ_W_t5ib06d3eJziLFhfZkx9PRgL23NfsfQlg0OMg,112
+lucit_ubdcc_restapi/RestApi.cpython-312-x86_64-linux-musl.so,sha256=kKzs1A8R8WWD6iaF3uIOV_l3b_q-UZTxi8TYws2Mb9Q,640320
+lucit_ubdcc_restapi/RestEndpoints.cpython-312-x86_64-linux-musl.so,sha256=IsqacaWAoG4A2WQ-gmXGxCJhoa0s7B_oUT4hfy1ZbBY,915584
+lucit_ubdcc_restapi/__init__.cpython-312-x86_64-linux-musl.so,sha256=wT7HcP0j4syfmEviHLYJBj0rhP_ET73vzF31Cp1ZYMM,84504
