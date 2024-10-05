@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+msteams_con.egg-info/PKG-INFO
+msteams_con.egg-info/SOURCES.txt
+msteams_con.egg-info/dependency_links.txt
+msteams_con.egg-info/entry_points.txt
+msteams_con.egg-info/requires.txt
+msteams_con.egg-info/top_level.txt
+src/msteams_con/requirements-dev.txt
+src/msteams_con/requirements.txt
