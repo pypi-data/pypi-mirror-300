@@ -1,0 +1,13 @@
+open_constructs_aws_cdk/__init__.py,sha256=CiZpuz7OacsbXpFISzVtJkzoZig2dXoyeHm3jyJBqqw,4204
+open_constructs_aws_cdk/py.typed,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+open_constructs_aws_cdk/_jsii/__init__.py,sha256=e1eDKr12q9EgjhVWoA-lbIZ-Zj_tS6KqZHVGGLGg3ks,1442
+open_constructs_aws_cdk/_jsii/aws-cdk@0.0.4.jsii.tgz,sha256=gZBKjzd6284RallGxyap2PbY5Ub3Z0mz2jOmafyThdQ,102942
+open_constructs_aws_cdk/aws_cur/__init__.py,sha256=MLagulhip4MGgg8YbrKc-Z2m8mXeZF0svF6mKm5QmSE,37694
+open_constructs_aws_cdk/aws_ec2/__init__.py,sha256=UWKG7-VOEZlJ-Ki_MB-hVleEBBSihRf4iFab65uClgo,18587
+open_constructs_aws_cdk/aws_fsx/__init__.py,sha256=7avTrTBRUh07tf3A-pOMF-g1YjznMtLxewuwjZV6nMc,70077
+open_constructs_aws_cdk/aws_redshiftserverless/__init__.py,sha256=lrlf6Qz_asA7b44997Nty_G9N6Y2eviZsMhPngR5y9o,67997
+open_constructs_aws_cdk-0.0.4.dist-info/LICENSE,sha256=z8d0m5b2O9McPEK1xHG_dWgUBT6EfBDz6wA0F7xSPTA,11358
+open_constructs_aws_cdk-0.0.4.dist-info/METADATA,sha256=UL_96-mSUYUJK_7yYOBg7G5AzwPMYfhN2A4-w6_aEew,3788
+open_constructs_aws_cdk-0.0.4.dist-info/WHEEL,sha256=eOLhNAGa2EW3wWl_TU484h7q1UNgy0JXjjoqKoxAAQc,92
+open_constructs_aws_cdk-0.0.4.dist-info/top_level.txt,sha256=ZAaStvbgOl4GTpoG6Gnn1EwcVOkuNt1XLCohQlFfSrU,24
+open_constructs_aws_cdk-0.0.4.dist-info/RECORD,,
