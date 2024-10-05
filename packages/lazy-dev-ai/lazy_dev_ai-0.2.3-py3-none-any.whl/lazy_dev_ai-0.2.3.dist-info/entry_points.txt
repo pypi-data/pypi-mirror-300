@@ -1,0 +1,3 @@
+[console_scripts]
+lazy-dev-ai=lazy_dev_ai.cli:cli
+

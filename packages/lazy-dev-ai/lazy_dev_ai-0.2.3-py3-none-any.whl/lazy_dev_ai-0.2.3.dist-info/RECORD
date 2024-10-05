@@ -1,0 +1,13 @@
+lazy_dev_ai/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+lazy_dev_ai/cli.py,sha256=CjCJ2hnNcWLRZ9TVpR2PUVFG3sgmK8V_1pptg6Ma10w,3309
+lazy_dev_ai/files.py,sha256=vyYH0Y_sgl4sCIUxfz2dEjpwnBFyFya8ZrBuEycbrqk,2084
+lazy_dev_ai/llm.py,sha256=mcq0OlHgNf5miKCy_k_0BfSVamjbIA0mg8KYUwzSlKU,2582
+lazy_dev_ai/prompts/default_cleanup.txt,sha256=zF9u3uGFLwBFr3YzLOMBF0-yq7JgD6wJyeTt-fQKhG4,124
+lazy_dev_ai/prompts/default_comment.txt,sha256=HsgXPRB0qAnYs7DBtjDQVxoN-WhZHlBy1yTyBKS2HmU,148
+lazy_dev_ai/prompts/default_docstring.txt,sha256=dTh7EP7iC7to88kEl5CKeSGdQH2ImakvQkNaf2VWPko,149
+lazy_dev_ai/prompts/defaults.py,sha256=3jvNZAgP4SeuhhpI8kr0jQXT0OgaXzT_Kln28wYG4p0,497
+lazy_dev_ai/templates/default_base.txt,sha256=6PBRutac9cFO0Xj5GpPUi4vUv6W_0qgZoJmlnBzCzgY,720
+lazy_dev_ai-0.2.3.dist-info/METADATA,sha256=fpU85mIoH0nDA8fKAyvR4V0bUw9U3KegEd_B7AaKxbw,1780
+lazy_dev_ai-0.2.3.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+lazy_dev_ai-0.2.3.dist-info/entry_points.txt,sha256=tVAAU3KHhfr2r4Z8CgctuNDf_vTpBqMHynGwSZQx3NQ,51
+lazy_dev_ai-0.2.3.dist-info/RECORD,,
