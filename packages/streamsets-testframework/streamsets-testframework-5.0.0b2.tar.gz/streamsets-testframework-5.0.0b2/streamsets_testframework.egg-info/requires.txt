@@ -1,0 +1,4 @@
+colorlog
+docker
+streamsets
+requests<=2.31.0
