@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: cryptonest
+Version: 0.1.0
+Summary: API de chiffrement avec RSA et ChaCha20 pour la protection des données
+Author: Votre Nom
+Requires-Dist: Flask
+Requires-Dist: cryptography

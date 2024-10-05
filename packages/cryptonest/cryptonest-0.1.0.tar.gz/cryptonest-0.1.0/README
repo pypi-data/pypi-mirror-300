@@ -1,0 +1,54 @@
+## CryptoNEST
+
+CryptoNEST is an encryption API designed to secure sensitive data using ChaCha20 symmetric encryption, with the ChaCha20 key protected by RSA asymmetric encryption. This API provides functionality for encrypting and decrypting data securely using modern algorithms suited for protecting critical information.
+
+## Key Features
+
+Hybrid encryption: Uses ChaCha20 symmetric encryption for fast, secure data encryption, combined with RSA to protect the ChaCha20 encryption key.
+
+RSA encryption (2048 bits): Asymmetric RSA keys are used to protect the ChaCha20 key, ensuring an extra layer of security for key transmission.
+Protection for sensitive data: Helps protect data from threats such as ransomware attacks and data theft attempts.
+
+## How It Works
+
+When data is encrypted via the API, a random ChaCha20 key is generated to encrypt the data.
+
+The ChaCha20 key is then encrypted using an RSA key pair, ensuring that the encryption key itself is protected.
+
+The user receives the encrypted data along with the encrypted ChaCha20 key, which can be decrypted using their RSA private key.
+
+Once the ChaCha20 key is decrypted, it can be used to decrypt the original data.
+
+## Key Benefits
+
+ChaCha20 Algorithm: Fast and secure, often preferred over AES in contexts where performance is critical.
+
+RSA Encryption: Used for key security, it adds an additional layer of protection by encrypting the ChaCha20 key.
+
+Ease of Use: Simple API with endpoints (/encrypt and /decrypt) for securely encrypting and decrypting data.
+
+## Installation
+
+You can install the library locally by cloning the project and running the following command in the directory containing the setup.py file:
+
+pip install .
+
+## Usage
+Start the Flask server:
+
+After installing the library, you can start the Flask server by importing the module and launching the app:
+
+
+from mycryptoapi.api import app
+app.run(debug=True)
+
+## Encrypting Data:
+
+Use the /encrypt endpoint to send data for encryption. The API will return the encrypted data and the encrypted ChaCha20 key.
+
+## Decrypting Data:
+
+Use the /decrypt endpoint to send the encrypted data and the encrypted ChaCha20 key to retrieve the original data.
+
+CryptoNEST is an ideal solution for anyone looking to integrate secure encryption into their applications to protect files and sensitive data from threats like ransomware, while ensuring the confidentiality and safety of encryption keys.
+
