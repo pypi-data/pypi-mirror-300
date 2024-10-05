@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: receiptor
+Version: 0.0.1
+Summary: This package provides the functionality to extract receipt , invoice , orders data from gmail. Developers can integrate this library and ingest such financial data into their systems . We also have provided a functionality to structure the extracted data into a json object , which will be currently utilising LLM's such as gpt 4o mini .
+Author: Omkar Malpure
+Author-email: Omkar Malpure <malpure.omkar@gmail.com>
+Project-URL: Homepage, https://github.com/pypa/sampleproject
+Project-URL: Issues, https://github.com/pypa/sampleproject/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Example Package
+
+### This is a python package that can be utilised to ingest receipt/invoice/orders data from the user's gmail. Developer's have to import the package and pass the access token to the required function and you can fetch the data from user's gmail. There is a feature utilising LLM's to structure the data into a json object , many such cool features are on the way . 
