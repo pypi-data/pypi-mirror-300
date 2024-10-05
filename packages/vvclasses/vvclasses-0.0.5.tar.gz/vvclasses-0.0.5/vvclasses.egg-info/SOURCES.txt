@@ -1,0 +1,14 @@
+README.md
+pyproject.toml
+setup.cfg
+vvclasses.egg-info/PKG-INFO
+vvclasses.egg-info/SOURCES.txt
+vvclasses.egg-info/dependency_links.txt
+vvclasses.egg-info/entry_points.txt
+vvclasses.egg-info/requires.txt
+vvclasses.egg-info/top_level.txt
+vvclasses_project/__init__.py
+vvclasses_project/__main__.py
+vvclasses_project/vvclasses.py
+vvclasses_project/utils/__init__.py
+vvclasses_project/utils/printclass.py
