@@ -1,0 +1,10 @@
+LICENCE
+README.md
+setup.py
+wavToText/__init__.py
+wavToText/wav_to_text.py
+wavToText.egg-info/PKG-INFO
+wavToText.egg-info/SOURCES.txt
+wavToText.egg-info/dependency_links.txt
+wavToText.egg-info/requires.txt
+wavToText.egg-info/top_level.txt
