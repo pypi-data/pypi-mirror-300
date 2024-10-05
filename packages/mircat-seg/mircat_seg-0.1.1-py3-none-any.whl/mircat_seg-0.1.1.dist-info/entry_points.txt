@@ -1,0 +1,2 @@
+[console_scripts]
+mircat-copy-models = mircat_seg:mircat_copy_models
