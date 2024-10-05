@@ -1,0 +1,12 @@
+numpy
+pandas
+xarray
+zarr
+dask
+ocf_blosc2
+ocf_datapipes==3.3.39
+pvlib
+
+[docs]
+mkdocs>=1.2
+mkdocs-material>=8.0
