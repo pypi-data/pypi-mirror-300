@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+hurry/__init__.py
+hurry/ai.py
+hurry_ai.egg-info/PKG-INFO
+hurry_ai.egg-info/SOURCES.txt
+hurry_ai.egg-info/dependency_links.txt
+hurry_ai.egg-info/requires.txt
+hurry_ai.egg-info/top_level.txt
