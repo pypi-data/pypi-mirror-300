@@ -1,0 +1,40 @@
+Metadata-Version: 2.1
+Name: iust_ai_toolkit
+Version: 0.1.2
+Summary: A Toolkit library for AI course submissions at IUST
+Home-page: https://github.com/MSNP/iust_ai_toolkit
+License: MIT
+Author: MSNP
+Author-email: mohamadnematpoor@gmail.com
+Requires-Python: >=3.7,<4.0
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: numpy
+Requires-Dist: pandas
+Project-URL: Repository, https://github.com/MSNP/iust_ai_toolkit
+Description-Content-Type: text/markdown
+
+# IUST AI Toolkit
+
+IUST AI Toolkit is a comprehensive collection of AI-related tools and utilities developed by the Iran University of Science and Technology (IUST).
+
+## Features
+
+- Easy-to-use API for managing chat histories
+- Support for multiple conversation threads
+- Efficient storage and retrieval of chat messages
+- Integration with popular AI models and platforms
+- Customizable message formatting and processing
+
+## Installation
+
+You can install the IUST AI Toolkit using pip:
