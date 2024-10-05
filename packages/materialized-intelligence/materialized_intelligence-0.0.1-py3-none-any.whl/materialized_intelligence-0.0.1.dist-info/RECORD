@@ -1,0 +1,8 @@
+src/__init__.py,sha256=xksdwH1keDDi6otFq5wgvogDd781bL1bURok3U9lTg8,439
+src/cli.py,sha256=6PgGo0_QorwXDVESy9BsZTGcSfmYONd0eHugbzGdZHA,4831
+src/sdk.py,sha256=1qM6erTwgsz9_VFxIAS_yXxdU1GNx0bzGKz5LVffsj4,7796
+materialized_intelligence-0.0.1.dist-info/METADATA,sha256=_q9Z7--OMvz15anx11A4L_yK2WGXuVhl5H4VxaBiP6c,527
+materialized_intelligence-0.0.1.dist-info/WHEEL,sha256=1yFddiXMmvYK7QYTqtRNtX66WJ0Mz8PYEiEUoOUUxRY,87
+materialized_intelligence-0.0.1.dist-info/entry_points.txt,sha256=VOm13cB5pvT2SDK55Ndvb4SxQFRuV5LW0wTH8d08tOk,35
+materialized_intelligence-0.0.1.dist-info/licenses/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+materialized_intelligence-0.0.1.dist-info/RECORD,,
