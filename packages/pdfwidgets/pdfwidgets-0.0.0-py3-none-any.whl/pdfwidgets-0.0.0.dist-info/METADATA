@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: pdfwidgets
+Version: 0.0.0
+Summary: Converts pdf file to a pdf file where each file is a pdf image
+License: BSD
+Requires-Dist: pillow ==10.4.0
+Requires-Dist: fitz ==0.0.1.dev2
+Requires-Dist: pynput ==1.7.7
+Requires-Dist: setuptools ==69.2.0
+
