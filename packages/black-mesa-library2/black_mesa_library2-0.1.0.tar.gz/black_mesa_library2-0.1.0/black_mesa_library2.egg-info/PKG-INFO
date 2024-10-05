@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: black_mesa_library2
+Version: 0.1.0
+Summary: Super Secret Stuff
+Author: D S
+Author-email: dustin.silveri+poc1@gmail.com
+Requires-Python: >=3.6
+License-File: LICENSE
