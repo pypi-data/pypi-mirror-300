@@ -1,0 +1,10 @@
+solve_ps/main.py,sha256=WahhrTS_tQ-15GPc17PbDTj1tzqmp--e4OBeXXIb5f0,301
+solve_ps/subs/diff.py,sha256=5tScHkr_yMmY2l3XETE2mXY1VXCgLuCmEvFB_agEugo,1563
+solve_ps/subs/get.py,sha256=JdEmMfArVCTYiUFPRaA5VFixnYwWpVUIvdSUBMpjihc,2642
+solve_ps/subs/run.py,sha256=qIEXXX1nXZGjkyEnyKD2FZPkCJdaLm3o60Douv5oRqE,5538
+solve_ps/subs/tc.py,sha256=2cBMObcwq3dXnnZwxhvuV7CKgPh5onRf01D_DZT3SHs,2537
+solve_ps-0.1.2.dist-info/LICENSE,sha256=cPdtPNzv0mxGcTr3oapIoNo2-2H_UVmha-qix29Es1s,1069
+solve_ps-0.1.2.dist-info/METADATA,sha256=1ixhT63MA8V8s5JbWAaA7cJVzeHajOSfir7V4QZ8Z6c,804
+solve_ps-0.1.2.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+solve_ps-0.1.2.dist-info/entry_points.txt,sha256=TwpdNgNITWZwtRgOp6hOpGspPjJJAZOZR7sKgd9CcVk,43
+solve_ps-0.1.2.dist-info/RECORD,,
