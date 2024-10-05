@@ -1,0 +1,24 @@
+Metadata-Version: 2.3
+Name: scipion-fluo-singleparticle
+Version: 0.0.7rc13
+Summary: Scipion plugin for single particle reconstruction.
+Project-URL: Repository, https://github.com/jplumail/scipion-fluo-singleparticle
+Author-email: Jean Plumail <jplumail@unistra.fr>
+License-File: LICENSE
+Keywords: fluorescence,imageprocessing,scipion,scipion-3.0
+Requires-Dist: flask
+Requires-Dist: napari-spfluo
+Requires-Dist: numpy
+Requires-Dist: scipion-fluo
+Requires-Dist: scipion-pyworkflow-windows
+Requires-Dist: scipy
+Requires-Dist: spfluo[ab-initio-reconstruction,manual-picking,picking,visualisation]
+Requires-Dist: waitress
+Description-Content-Type: text/markdown
+
+### Run tests
+```bash
+scipion tests singleparticle.tests.test_protocols_classic_workflow --run --log run.log
+```
+
+This takes 5min to run.
