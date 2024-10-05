@@ -1,0 +1,5 @@
+[console_scripts]
+bb7 = bb7.cli:main
+
+[gui_scripts]
+
