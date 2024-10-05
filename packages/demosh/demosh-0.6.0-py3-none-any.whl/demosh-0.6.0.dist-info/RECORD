@@ -1,0 +1,11 @@
+demosh/__init__.py,sha256=r2AQhD1DUY214M1vStfIemA-xRdKNlHs9au4yg5fByE,1258
+demosh/builtins.py,sha256=aUzLOtBHfDk3gH9Yp4uhhlliDvZqYMXz2bcj4lu2MKo,2365
+demosh/command.py,sha256=wJLYDWGg2HyD15NYGlK5VhVv5j4LKBhVSYfJPYQMt7s,8963
+demosh/demostate.py,sha256=26KKh-aXFcymgxnZ1ComDcgyzevv2w-_p0xYtQ5j3iw,25193
+demosh/main.py,sha256=6BmNpYU5yO4N8OjOu3uzMSV2zLqEzGLQ2ItLEOZeGt8,3060
+demosh/shellstate.py,sha256=xzuls5aFG5wFBpueZZeN96esOHhxEE9ixLds8Lsrbxo,8254
+demosh-0.6.0.dist-info/entry_points.txt,sha256=Axg4-9KAFfnB-L_c5Rw6OqnNiMO5UCGhjf9lS0APCwE,38
+demosh-0.6.0.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+demosh-0.6.0.dist-info/WHEEL,sha256=EZbGkh7Ie4PoZfRQ8I0ZuP9VklN_TvcZ6DSE5Uar4z4,81
+demosh-0.6.0.dist-info/METADATA,sha256=t-YO0GH0Lji0bu0-t0LxRX8WKFT3cRkTBersipBgsrM,14012
+demosh-0.6.0.dist-info/RECORD,,
