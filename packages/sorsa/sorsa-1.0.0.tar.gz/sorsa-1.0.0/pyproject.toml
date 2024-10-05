@@ -1,0 +1,21 @@
+[project]
+name = "sorsa"
+version = "1.0.0"
+authors = [
+  { name="Yang Cao", email="gunale0926@hotmail.com" },
+]
+description = "\"SORSA: Singular Values and Orthonormal Regularized Singular Vectors Adaptation of Large Language Models\" implementation intergrated with Hugging Face transformers"
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: Apache Software License",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+  'torch >= 1.8.0',
+  'transformers >= 4.42.0'
+]
+[project.urls]
+Homepage = "https://github.com/Gunale0926/SORSA/"
+Issues = "https://github.com/Gunale0926/SORSA/issues"
