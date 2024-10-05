@@ -1,0 +1,11 @@
+pycsw_rpi/admin.py,sha256=dMdU0UN7uA88ST22DHOcrtsr0adKXD2hSI1XRufbQU8,1456
+pycsw_rpi/apiso.py,sha256=rZ-VwRDnoioFi9J38duVEEctk24sYYJO412c8f6Fdkc,1164
+pycsw_rpi/config.py,sha256=ygJ7sEzt7yWV6uqbAQnLyUNcYpZlYdpFapceShEw7p8,796
+pycsw_rpi/metadata.py,sha256=jrd9KtTVGMiSl1ZPDOekoiIU02sGPF2d5lDHZ7pXLK8,4582
+pycsw_rpi/repository.py,sha256=-xgC25GVE0-UmSoS-bEcASqq5xe7obaMeOxWFG7WVAg,3364
+pycsw_rpi/server.py,sha256=ZVH2OP7H2Tz1stWhwfoiCXkqfiepDcX3-uObgm-zNVk,477
+pycsw_rpi/wsgi.py,sha256=TQ4GVIIi7o-SKNCuO0SFcSR7ExszGIO6x7NY_T3juq8,654
+pycsw_rpi-0.1.6.dist-info/METADATA,sha256=9NW0fid2XeX08sX6HhI4EjCUr_1AO7Hhf9yxBlqVQy0,3607
+pycsw_rpi-0.1.6.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+pycsw_rpi-0.1.6.dist-info/entry_points.txt,sha256=xL2MdtOd9XyIM5rZbBE7hMJnBwZP7fjsfEbvOxvtDvg,55
+pycsw_rpi-0.1.6.dist-info/RECORD,,
