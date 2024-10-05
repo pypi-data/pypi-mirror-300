@@ -1,0 +1,3 @@
+include rlpp/resources/*
+recursive-include rlpp/resources/backgrounds *
+recursive-include rlpp/resources/icons *
