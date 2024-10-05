@@ -1,0 +1,8 @@
+pytest
+numpy
+sympy
+networkx
+numba
+pandas
+seaborn
+matplotlib
