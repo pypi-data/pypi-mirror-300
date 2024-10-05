@@ -1,0 +1,8 @@
+jira_batch_create/__init__.py,sha256=7EttFm4Jcsrn3ihLmzGXPhhf0ulRPqMgE_zeTSJZzgc,202
+jira_batch_create/adf.py,sha256=Uc6X_XL1GRcrmyTINOveqN0jLXXAage4GHuQDxohXS8,304
+jira_batch_create/creator.py,sha256=xkY-7lXMcZYy4sMLoOGNWqrkCXGfoNwl6JESrsJdmxw,8261
+jira_batch_create/setup_logging.py,sha256=zzi8A51hooNSscntaAibjJQljzNyIpXcts41cNY2L3k,972
+jira_batch_create-0.2.1.dist-info/METADATA,sha256=XKADD1nHa9oVSHM0rRjygywM8XtCFmE_n_iZglBC298,939
+jira_batch_create-0.2.1.dist-info/WHEEL,sha256=GV9aMThwP_4oNCtvEC2ec3qUYutgWeAzklro_0m4WJQ,91
+jira_batch_create-0.2.1.dist-info/top_level.txt,sha256=9twdwEp79zL-cwHBuXNMRoXaDcZWcYl1oYcEaGqaqrg,18
+jira_batch_create-0.2.1.dist-info/RECORD,,
