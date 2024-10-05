@@ -1,0 +1,10 @@
+{
+  "venv": ".venv",
+  "venvPath": ".",
+  "defineConstant": {
+    "PYQT5": false,
+    "PYSIDE2": false,
+    "PYQT6": false,
+    "PYSIDE6": true
+  }
+}
