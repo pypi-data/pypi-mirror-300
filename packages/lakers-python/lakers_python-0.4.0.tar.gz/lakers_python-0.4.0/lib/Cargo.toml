@@ -1,0 +1,34 @@
+[package]
+name = "lakers"
+version.workspace = true
+edition = "2021"
+authors = ["Mališa Vučinić <malisa.vucinic@inria.fr>"]
+license.workspace = true
+description = "An implementation of EDHOC (RFC 9528)"
+repository.workspace = true
+keywords.workspace = true
+categories.workspace = true
+readme = "README.md"
+
+[dependencies]
+lakers-shared.workspace = true
+
+defmt-or-log = { version = "0.2.1", default-features = false }
+log = { version = "0.4", optional = true }
+defmt = { version = "0.3", optional = true }
+
+[dev-dependencies]
+lakers-ead-authz = { workspace = true }
+lakers-crypto.workspace = true
+hexlit = "0.5.3"
+
+[features]
+# NOTE: the ead features are just needed for multiplexing tests
+default = [ "test-ead-none" ]
+test-ead-none = [ ]
+test-ead-authz = [ ]
+defmt = ["dep:defmt"]
+log = ["dep:log"]
+
+[lib]
+crate-type = ["rlib"]
