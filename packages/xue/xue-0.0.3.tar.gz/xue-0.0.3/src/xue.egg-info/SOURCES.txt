@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+src/xue/__init__.py
+src/xue/core.py
+src/xue.egg-info/PKG-INFO
+src/xue.egg-info/SOURCES.txt
+src/xue.egg-info/dependency_links.txt
+src/xue.egg-info/top_level.txt
