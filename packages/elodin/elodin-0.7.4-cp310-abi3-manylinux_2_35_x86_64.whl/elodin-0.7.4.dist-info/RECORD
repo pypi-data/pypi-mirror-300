@@ -1,0 +1,10 @@
+elodin-0.7.4.dist-info/METADATA,sha256=k-Yjla8MUFyy6T9K9_DYFE1iJExhrd2RrTOrBHNWaTo,821
+elodin-0.7.4.dist-info/WHEEL,sha256=MQ9qswwmQiX8z34Y9UZCaHJbad3pqxntKLsg5UYI8Jk,107
+elodin-0.7.4.dist-info/entry_points.txt,sha256=Fk4X6Tdo205RgOpVlQAeWPv7QZ_JzfWXH8Alvmb5DcA,25
+elodin.libs/libquadmath-1c3f8ec4.so.0,sha256=brXjK9ybFuuXclzfzqORFHQ0tI3oT6JFiPzjfjPUA5A,292977
+elodin.libs/libgfortran-df5d6f8d.so.5,sha256=vPZvXyjrQHbDAZTT-aAGfjIp8AYINzgO4Fb4vcNerys,3082705
+elodin/elodin.pyi,sha256=T2QzQnu4VhLHg-tKtzXn_bbtgX_-yU6tWgMQ2DvqgDM,13597
+elodin/__init__.py,sha256=mGcWYiOLj_Em1R5M6adrL8gl-YjkOt5TNDbssWssTls,15998
+elodin/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+elodin/elodin.abi3.so,sha256=yrAY2Zk-mVcIsbjeqmxKbX5lCYMDRLv7iJNahOPlcto,178270225
+elodin-0.7.4.dist-info/RECORD,,
