@@ -1,0 +1,6 @@
+setup.py
+SamTech_STT/__init__.py
+SamTech_STT.egg-info/PKG-INFO
+SamTech_STT.egg-info/SOURCES.txt
+SamTech_STT.egg-info/dependency_links.txt
+SamTech_STT.egg-info/top_level.txt
