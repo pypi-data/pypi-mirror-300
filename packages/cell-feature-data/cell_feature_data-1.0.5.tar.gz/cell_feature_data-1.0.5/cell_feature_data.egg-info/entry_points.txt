@@ -1,0 +1,2 @@
+[console_scripts]
+create-dataset = cell_feature_data.bin.create_dataset:main
