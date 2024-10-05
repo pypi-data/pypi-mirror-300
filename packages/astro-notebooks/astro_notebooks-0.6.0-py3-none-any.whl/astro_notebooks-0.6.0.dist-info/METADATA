@@ -1,0 +1,44 @@
+Metadata-Version: 2.3
+Name: astro-notebooks
+Version: 0.6.0
+Project-URL: Documentation, https://github.com/feder-observatory/astro-notebooks#readme
+Project-URL: Issues, https://github.com/feder-observatory/astro-notebooks/issues
+Project-URL: Source, https://github.com/feder-observatory/astro-notebooks
+Author-email: Matt Craig <mattwcraig@gmail.com>
+License-Expression: BSD-3-Clause
+License-File: LICENSE
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Python: >=3.11
+Requires-Dist: jupyter-app-launcher
+Requires-Dist: stellarphot
+Description-Content-Type: text/markdown
+
+# astro-notebooks
+
+[![PyPI - Version](https://img.shields.io/pypi/v/astro-notebooks.svg)](https://pypi.org/project/astro-notebooks)
+[![PyPI - Python Version](https://img.shields.io/pypi/pyversions/astro-notebooks.svg)](https://pypi.org/project/astro-notebooks)
+
+-----
+
+## Table of Contents
+
+- [Installation](#installation)
+- [License](#license)
+
+## Installation
+
+```console
+pip install astro-notebooks
+```
+
+## License
+
+`astro-notebooks` is distributed under the terms of the [MIT](https://spdx.org/licenses/MIT.html) license.
