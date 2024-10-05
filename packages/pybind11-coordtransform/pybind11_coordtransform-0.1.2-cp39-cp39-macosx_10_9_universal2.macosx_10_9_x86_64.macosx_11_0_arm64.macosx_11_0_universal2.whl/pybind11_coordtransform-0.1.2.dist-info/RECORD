@@ -1,0 +1,9 @@
+pybind11_coordtransform/_core.pyi,sha256=0T20GVCT7mvxj18hvxq8c5jQE4KEIL_e7ZBiF2aEI7s,4567
+pybind11_coordtransform/__init__.py,sha256=4bat966QooVJt-RKnF8-RpaqiICfUMCj-rcAxgt87Nk,486
+pybind11_coordtransform/_core.cpython-39-darwin.so,sha256=VNrnuSBmXFXHyOv7Cr8-SuNiRKWT9SM6YRevbBlJBis,345688
+pybind11_coordtransform/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pybind11_coordtransform/__main__.py,sha256=Ta3oNGA5uB5dm0Ms5UX3omULxYITp3tAX9K_6wTVAKI,72
+pybind11_coordtransform-0.1.2.dist-info/RECORD,,
+pybind11_coordtransform-0.1.2.dist-info/WHEEL,sha256=XoiVpohRGzkMo1VovspnfZ5Ge6T6u-P9x42lP4X_2vw,222
+pybind11_coordtransform-0.1.2.dist-info/METADATA,sha256=EXunrIpkXcAz-H2xt7lb4WOcrwaIYrFJQf9PJnY39s0,1060
+pybind11_coordtransform-0.1.2.dist-info/licenses/LICENSE,sha256=SBNiCMUPOkN74CrKaGEJk1CNXzPemZ76Qsm106kwI1E,2182
