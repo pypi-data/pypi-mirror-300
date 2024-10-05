@@ -1,0 +1,17 @@
+LICENSE
+README.md
+pyproject.toml
+src/sabbath_school_lessons/PDFGenerator.py
+src/sabbath_school_lessons/__init__.py
+src/sabbath_school_lessons/batch.py
+src/sabbath_school_lessons/booklets.py
+src/sabbath_school_lessons/cms.py
+src/sabbath_school_lessons/flowables.py
+src/sabbath_school_lessons/markdown.py
+src/sabbath_school_lessons/translations.py
+src/sabbath_school_lessons.egg-info/PKG-INFO
+src/sabbath_school_lessons.egg-info/SOURCES.txt
+src/sabbath_school_lessons.egg-info/dependency_links.txt
+src/sabbath_school_lessons.egg-info/requires.txt
+src/sabbath_school_lessons.egg-info/top_level.txt
+src/sabbath_school_lessons/fonts/Arial-Bold.ttf

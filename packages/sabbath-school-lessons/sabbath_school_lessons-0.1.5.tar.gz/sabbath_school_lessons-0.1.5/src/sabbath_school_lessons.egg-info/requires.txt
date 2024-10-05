@@ -1,0 +1,8 @@
+beautifulsoup4
+bs4
+chardet
+Markdown
+pillow
+PyPDF2
+reportlab
+soupsieve
