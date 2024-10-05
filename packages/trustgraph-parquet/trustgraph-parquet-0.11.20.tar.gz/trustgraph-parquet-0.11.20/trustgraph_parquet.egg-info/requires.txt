@@ -1,0 +1,4 @@
+trustgraph-base<0.12
+pulsar-client
+prometheus-client
+pyarrow
