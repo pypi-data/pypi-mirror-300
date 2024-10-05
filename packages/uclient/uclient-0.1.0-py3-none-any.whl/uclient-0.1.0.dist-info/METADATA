@@ -1,0 +1,35 @@
+Metadata-Version: 2.1
+Name: uclient
+Version: 0.1.0
+Summary: 
+Author: HSPK
+Author-email: whxway@whu.edu.cn
+Requires-Python: >=3.8,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: httpx (>=0.27.2,<0.28.0)
+Requires-Dist: loguru (>=0.7.2,<0.8.0)
+Requires-Dist: pydantic (>2)
+Description-Content-Type: text/markdown
+
+# Fast Client
+
+Simple API Client. Fast and easy to use.
+
+# Features
+
+- [x] GET/POST/PUT/DELETE/PATCH
+- [x] Async support
+- [x] File Upload
+- [x] Streaming Response
+- [x] Retry
+- [x] Timeout
+- [x] Pydantic Response validation
+- [x] Auth using headers
+- [ ] Rate Limit
+- [ ] Advanced auth
+
