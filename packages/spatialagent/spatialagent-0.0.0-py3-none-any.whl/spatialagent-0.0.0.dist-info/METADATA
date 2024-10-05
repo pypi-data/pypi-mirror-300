@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: spatialagent
+Version: 0.0.0
+Description-Content-Type: text/markdown
+Requires-Dist: langchain (==0.2.6)
+Requires-Dist: scanpy[leiden] (==1.10.2)
+Requires-Dist: langchain-community (==0.2.6)
+Requires-Dist: tokencost (==0.1.12)
+Requires-Dist: cellxgene-census (==1.14.1)
+Requires-Dist: openai (==1.35.4)
+Requires-Dist: langchain-experimental (==0.0.62)
+Requires-Dist: liana (==1.3.0)
+Requires-Dist: langchain-openai (==0.1.10)
+
+# SpatialAgent
+**LLM-powered agent to accelerate spatial transcriptiomcs research**
