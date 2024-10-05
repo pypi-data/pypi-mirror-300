@@ -1,0 +1,36 @@
+Metadata-Version: 2.1
+Name: curlIO
+Version: 0.1.0
+Summary: genhttpv1 library collection
+Home-page: https://github.com/Goychay23/curlIO
+Author: Zaman huseynli
+Author-email: zamanhuseynli23@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+
+CURLIO is an advanced http library. It comes with the genhttpv1library collection that offers advanced features. curlio has multiple functions. It takes its basic structure from libraries like curl.
+#example usage
+
+```python
+import curlinkhref
+
+url = 'https://example.com'
+ch = curlinkhref.create_curlink_href(url)
+
+# 2. HTTP metodunu ayarlayın (GET, POST, vb.)
+curlinkhref.set_http_method(ch, 'GET')
+
+# 3. HTTP isteğini gerçekleştirin
+curlinkhref.perform_request(ch)
+
+# 4. Kaynakları temizleyin
+curlinkhref.cleanup_curlink_href(ch)
+
+Although the code structure is like this, it has a modular structure and has been developed in a way that it can be easily integrated or developed

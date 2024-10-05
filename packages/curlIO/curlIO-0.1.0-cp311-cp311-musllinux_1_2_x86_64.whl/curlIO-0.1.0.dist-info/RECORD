@@ -1,0 +1,14 @@
+curlIO.cpython-311-x86_64-linux-musl.so,sha256=zOAZYbfM6oXct0mkJ1OPnJ1fhktobXZwhI7LUCSaTHU,50185
+curlIO-0.1.0.dist-info/METADATA,sha256=UhP2kLvpt6bG4XAlXz5rS-W_Y4OfRhZQzD2qQXIms-Y,1324
+curlIO-0.1.0.dist-info/WHEEL,sha256=A0kCKKafdykLTYWQV8F5cWZyNBRoz3S5qYL_RG6NmJs,112
+curlIO-0.1.0.dist-info/top_level.txt,sha256=tfkcHTU1h_IpwFT5_m1PY9RhGqQd5C5uyAbMd-xhgjU,7
+curlIO-0.1.0.dist-info/RECORD,,
+curlIO.libs/libnghttp2-9445199d.so.14.25.1,sha256=drV0swX5DYSmX1vP3A0ku9gOcC7IZN0ln4527cXQ4h4,151497
+curlIO.libs/libunistring-dc702a27.so.5.0.0,sha256=M5tuUIZ31JRqG1aBifRKds-9Mvn8nEnQhncr07O4DwI,1714785
+curlIO.libs/libidn2-162e0481.so.0.3.8,sha256=EelWix_WgzVyK4j9Oiw4UvDJRfjzZlpykJAllOkc6ok,206105
+curlIO.libs/libssl-0cc6e7db.so.3,sha256=bR1lMZIVY2NnhlAJ4k9eAjMuXKxgwkXQOpD9agwxC_s,594809
+curlIO.libs/libcares-2e68994f.so.2.12.0,sha256=6ijAAGuqmkVXB03MamhA0ugm0EFj_HCP5upx4TPY6E8,148401
+curlIO.libs/libcrypto-74fbf0e0.so.3,sha256=8Jgg_ge8qEPmq3LoiQEi8jFQKmFuLjf8C8WxKfnzGXU,4458337
+curlIO.libs/libbrotlicommon-07ec14a3.so.1.1.0,sha256=UjVnR-vgiPdjqG1IU1nOBWCtXTMGcwau66r0w2xQEzk,144137
+curlIO.libs/libcurl-95beb190.so.4.8.0,sha256=SF03pMSbSFGmh9Z0iockrUr5JQpZLx6SSOkkzpQY41I,647721
+curlIO.libs/libbrotlidec-25799d90.so.1.1.0,sha256=kgBh7LAPj46GsVEgH0aeCxtuCKleBeX464pN9rdyzxw,62409
