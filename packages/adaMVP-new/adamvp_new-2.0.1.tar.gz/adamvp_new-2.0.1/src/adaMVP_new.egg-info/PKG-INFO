@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: adaMVP_new
+Version: 2.0.1
+Summary: Adaptive AI-Augmented Drug Discovery and Development Molecular Vulnerability Picker
+Author-email: Ying Zhu <yzhu16@mdanderson.org>
+Project-URL: Homepage, https://github.com/YingZ-A3D3a/A3D3a_MVP_new
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+Requires-Dist: numpy>1.21
+Requires-Dist: pandas>1.4
+Requires-Dist: matplotlib>3.5
+Requires-Dist: networkx>2.7
+Requires-Dist: tqdm
+Requires-Dist: statsmodels>0.13
+Requires-Dist: seaborn>0.11
+
+# A3D3a's MVP (adaMVP_new) python package
+A novel graph-based, cooperativity-led Markov chain model, A3D3a’s MVP (Adaptive AI-Augmented Drug Discovery and Development Molecular Vulnerability Picker), to identify and prioritize key druggable molecular vulnerabilities in cancer.

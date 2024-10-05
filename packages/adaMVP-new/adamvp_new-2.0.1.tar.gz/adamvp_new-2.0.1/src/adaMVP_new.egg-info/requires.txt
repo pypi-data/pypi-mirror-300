@@ -1,0 +1,7 @@
+numpy>1.21
+pandas>1.4
+matplotlib>3.5
+networkx>2.7
+tqdm
+statsmodels>0.13
+seaborn>0.11

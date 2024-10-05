@@ -1,0 +1,2 @@
+# A3D3a's MVP (adaMVP_new) python package
+A novel graph-based, cooperativity-led Markov chain model, A3D3a’s MVP (Adaptive AI-Augmented Drug Discovery and Development Molecular Vulnerability Picker), to identify and prioritize key druggable molecular vulnerabilities in cancer.
