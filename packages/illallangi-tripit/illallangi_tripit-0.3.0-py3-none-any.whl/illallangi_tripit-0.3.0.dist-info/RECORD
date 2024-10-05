@@ -1,0 +1,12 @@
+illallangi/tripit/__init__.py,sha256=dKjk9VL9CFJwW0bBaexkREiHEzb6hfbs4z-UZ5j14u0,68
+illallangi/tripit/__version__.py,sha256=hjAhZhvVsfF4G2emQrv88rh9tH-4-FrPSBiwA0WQfis,112
+illallangi/tripit/tools.py,sha256=Nk7Z1Sqh6ldyTlGKXkYu6OZEqmHcQjPNi8VM8y79mkY,3029
+illallangi/tripit/client/__init__.py,sha256=JWExGCItmSEddZC5ZThCeeeblczo_o9PNEJNAW6nkWA,4106
+illallangi/tripit/client/flight.py,sha256=jRjIkIJUFAznQV3K0ttBRBx5WMxAZbGDISEiI9jPnrI,1535
+illallangi/tripit/client/profile.py,sha256=zY9y4oKiJS28u3NkQi7XaqMUtiLkSzH5cCYWX9Rhk5s,577
+illallangi/tripit/client/trip.py,sha256=tN9-B1YwJwLiQu0c4M0Hfrognl6yedGFUJK2OshKZZE,888
+illallangi_tripit-0.3.0.dist-info/METADATA,sha256=T99T3tv4lxH9cFQSI7ftN9z-jf4_KDdfw7DP5huxa5s,2482
+illallangi_tripit-0.3.0.dist-info/WHEEL,sha256=1yFddiXMmvYK7QYTqtRNtX66WJ0Mz8PYEiEUoOUUxRY,87
+illallangi_tripit-0.3.0.dist-info/entry_points.txt,sha256=-OGpYH9TWPXpkVqeA6pthugGza7h1QiRJw2nsjnZ7oc,61
+illallangi_tripit-0.3.0.dist-info/licenses/LICENSE,sha256=0NehuXypL_CGawEe_ozP3tgKmnfr-CvlAof7lUxPp1E,1068
+illallangi_tripit-0.3.0.dist-info/RECORD,,
