@@ -1,0 +1,14 @@
+LICENSE
+README.txt
+pyproject.toml
+src/plyppy/__init__.py
+src/plyppy/__main__.py
+src/plyppy.egg-info/PKG-INFO
+src/plyppy.egg-info/SOURCES.txt
+src/plyppy.egg-info/dependency_links.txt
+src/plyppy.egg-info/entry_points.txt
+src/plyppy.egg-info/requires.txt
+src/plyppy.egg-info/top_level.txt
+src/plyppy/assets/bullet.png
+src/plyppy/assets/entry.png
+src/plyppy/assets/lock.png
