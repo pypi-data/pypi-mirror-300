@@ -1,0 +1,14 @@
+nerif/__init__.py,sha256=ePMjZdR2dyRafQLzACL73qPfBdglq4jlYAmaPD4HxEQ,311
+nerif/nerif_agent/__init__.py,sha256=KgbDIuHWgows7pO3zHbETRbs0-3vJe8vxog4a22Sv0U,140
+nerif/nerif_agent/nerif_agent.py,sha256=o-qPH2qzyAVxEQ7IMGQ5OVQ7X3UGTrU20iHBwdGmaeY,17953
+nerif/nerif_agent/nerif_api_store.py,sha256=Tcck0k5tdO_Uh8QXoLHfoAqejTvSh7HXxmtphacw1kk,1470
+nerif/nerif_agent/nerif_custom_model.py,sha256=Sp8CMkhNP74zmorY0U-er3wzBQKZ86oSTJbr2o_HApA,131
+nerif/nerif_agent/nerif_token_counter.py,sha256=xvlW8QuHanZjFnYKMNFI9lGKV9lQ6pkrRGM7_fQZSCs,717
+nerif/nerif_core/__init__.py,sha256=YEao7qysFsGSKDR1XklTWzgvAZhahaj9iSjrwMUem0s,285
+nerif/nerif_core/log.py,sha256=JP3rFPIkRVo04ejUBot19U2CRk0YeD1ghqUx43k1kCE,2761
+nerif/nerif_core/nerif.py,sha256=1wtqCe3numtzNgLx2nx9m9xZTnZN4MMg59qi_CJlpos,14778
+nerif/nerif_core/nerif_format.py,sha256=BfyNzcCSAvR4mizKBzT9whAb8CjkOBPQe-I8_UPeiMg,3759
+nerif-0.6.0.dist-info/METADATA,sha256=AF3nFYTXEiBHRTiW0YDrSN0zM9g9zKLwGOg0MzugGJk,41592
+nerif-0.6.0.dist-info/WHEEL,sha256=1yFddiXMmvYK7QYTqtRNtX66WJ0Mz8PYEiEUoOUUxRY,87
+nerif-0.6.0.dist-info/licenses/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+nerif-0.6.0.dist-info/RECORD,,
