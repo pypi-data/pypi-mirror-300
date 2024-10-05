@@ -1,0 +1,12 @@
+README.md
+pyproject.toml
+src/sorsa/__init__.py
+src/sorsa/config.py
+src/sorsa/layer.py
+src/sorsa/model.py
+src/sorsa/trainer.py
+src/sorsa.egg-info/PKG-INFO
+src/sorsa.egg-info/SOURCES.txt
+src/sorsa.egg-info/dependency_links.txt
+src/sorsa.egg-info/requires.txt
+src/sorsa.egg-info/top_level.txt
