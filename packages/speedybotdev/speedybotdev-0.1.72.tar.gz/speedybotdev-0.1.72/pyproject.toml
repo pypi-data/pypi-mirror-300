@@ -1,0 +1,13 @@
+[project]
+name = "speedybotdev"
+version = "0.1.72"
+description = "A bot framework"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = []
+
+[tool.poetry]
+packages = [
+    { include = "speedybotdev" }
+]
+
