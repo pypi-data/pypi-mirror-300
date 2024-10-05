@@ -1,0 +1,2 @@
+senzing_abstract
+senzing_truthset
