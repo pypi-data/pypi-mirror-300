@@ -1,0 +1,27 @@
+solo_server/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+solo_server/__main__.py,sha256=t7UmiZCTQHjCZnk0aHhJkqn7KHiw9DrQh37xAIAfYHI,255
+solo_server/cli.py,sha256=Q_scX3zeIA1-0TFz-D3SDwS3WiqztgM3wgKNVsDBQdA,474
+solo_server/utils.py,sha256=sHiLhpHRzfPPdhl3Ddv6uYm-Vcp5eXZl_Qju-XGPSnA,1401
+solo_server/commands/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+solo_server/commands/docker_commands.py,sha256=1owbcsjU6qqd9xVOQJWoOGx1xeaMiYRT-knm3YfGd4A,2565
+solo_server/commands/init.py,sha256=jhy9EA9vpHHpYBmtVKrm_cMUANqCknZMzpPDzhhY8X4,1231
+solo_server/templates/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+solo_server/templates/basic/app.py,sha256=sYVdgS7wGurOo291czKTgWRrQmvVt4djsM9j_IDvZoo,741
+solo_server/templates/basic/client.py,sha256=-NfF7oqNQji8kcfCqZMp-aw4skkk6ioz5VnoWsjlPco,167
+solo_server/templates/basic/requirements.txt,sha256=Q9-Y5aAHv4_q5C0lI_79sOXyTAYZcdXizuu8YgUnVgo,9
+solo_server/templates/huggingface/app.py,sha256=X5D44vOg9Lo4d8GOzb9nwO_Sv7iXjCMIU3NMp6K7fH4,2312
+solo_server/templates/huggingface/client.py,sha256=jrciJDUyYiu30N9HGrx0PUgyh1zh3LuaAWTx8diVgIU,747
+solo_server/templates/huggingface/requirements.txt,sha256=2O23nc3_lRSECqs9gsej188ch9EAPL8ITZlPJPEbLoc,602
+solo_server/templates/image/app.py,sha256=qBCFRMpFeIkqf1ZX-C99MyRmyn0QmaUaIeuqk0s0_yM,1526
+solo_server/templates/rag/app.py,sha256=VrNcz_wqs0xNFMDWXiS23qxpqtoRsc_-E1tTEs6FGa8,1330
+solo_server/templates/rag/client.py,sha256=1qsHlIcHFDhIO2etNkBfb_hLWsLjMnOMZgEIVC3PNX4,1520
+solo_server/templates/tools /web_search.py,sha256=X-EnzUnjU75VMN-a50w65gLmGLSQfroKduW9lwHXTno,1915
+solo_server/templates/vision/app.py,sha256=_ynU9bPPO7GAGZlAaIlu_w1230IPYg3YzjitrdZHJeU,1655
+solo_server/templates/vision/client.py,sha256=jrciJDUyYiu30N9HGrx0PUgyh1zh3LuaAWTx8diVgIU,747
+solo_server/templates/vision/requirements.txt,sha256=RiZ5m1AMNlJ6sK6LYRchQ1hUwG5bune3Jt0s2gpcnMQ,391
+solo_server/templates/vision/supervision.py,sha256=T66f6ulH8PiA1sCPOgMPm3XuP8PP0o6Xkn8y3L9k6xc,214
+solo_server-0.2.0.dist-info/METADATA,sha256=uOZSQv8QzjdjZCd4cwR__rPXvZHpehdm0eRvojUVxoc,5509
+solo_server-0.2.0.dist-info/WHEEL,sha256=eOLhNAGa2EW3wWl_TU484h7q1UNgy0JXjjoqKoxAAQc,92
+solo_server-0.2.0.dist-info/entry_points.txt,sha256=dQq2yVI2A6eeVyhs5bhDJ6qHB3kkOxLDrDCPoG2qg8U,57
+solo_server-0.2.0.dist-info/top_level.txt,sha256=LNfqG-IPSmI8A5VXdJNsHqgfEXZhsg1xaB_bk7MDXIA,12
+solo_server-0.2.0.dist-info/RECORD,,
