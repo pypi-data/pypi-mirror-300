@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: sha256sr
+Version: 0.1.0
+Summary: the secure random generator based on SHA256
+Home-page: UNKNOWN
+Author: zhangdaode
+Author-email: zhangdaode0119@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+Requires-Dist: setuptools (~=59.4.0)
+
+UNKNOWN
+
