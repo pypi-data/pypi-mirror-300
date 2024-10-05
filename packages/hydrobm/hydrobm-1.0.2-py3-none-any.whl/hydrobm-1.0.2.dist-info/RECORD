@@ -1,0 +1,17 @@
+hydrobm/__init__.py,sha256=t9KZdp_DIvv91kyAlbqfXkrky_63qicYujvE-nd8xlM,93
+hydrobm/_version.py,sha256=dhqI_7tmOPCJBDYfNrkVOXrqwo3msphOketFFSh5grs,497
+hydrobm/benchmarks.py,sha256=OgqwFNIRCUVYfAICzd4HJ988sgFNmy6ZN8Xpv7t2CzY,42393
+hydrobm/calculate.py,sha256=OQyKRaWKeaskPY5AtWD-uayNYZfX8b6hvTt6GXw09BM,5312
+hydrobm/metrics.py,sha256=RrtsQlWxbrkKw0cUDFTL1FJlQOxCgNdoIBTpWtdAzr4,3767
+hydrobm/utils.py,sha256=NhDID_dGGWyb9OUBusTSCegMKWHyrwq0jFemDqPS7W4,13588
+hydrobm/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+hydrobm/tests/conftest.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+hydrobm/tests/test_benchmarks.py,sha256=0h6p-jKIu-5-8KEtKhGFgSuRppMoDau6TSOfLWxBkAw,19372
+hydrobm/tests/test_metrics.py,sha256=4s4XwxHjpmK8ZMxx9f80wAMSG4AadnZShz_J3KYSo4Y,2655
+hydrobm/tests/test_utils.py,sha256=fVpi7Qc4K93cl-y4E_digVk0imq1YVsXh91ALLOlQIg,4694
+hydrobm-1.0.2.dist-info/AUTHORS.rst,sha256=yqCUPxYczOjiYQI3aYRZBHrsX5X5F9b7J6Dn5lAJptg,174
+hydrobm-1.0.2.dist-info/LICENSE,sha256=YF6QR6Vjxcg5b_sYIyqkME7FZYau5TfEUGTG-0JeRK0,35129
+hydrobm-1.0.2.dist-info/METADATA,sha256=Ip26ZHJS0SP0EVe0a2j37EFzMjckoFsjSbmENJfIz_Y,1612
+hydrobm-1.0.2.dist-info/WHEEL,sha256=eOLhNAGa2EW3wWl_TU484h7q1UNgy0JXjjoqKoxAAQc,92
+hydrobm-1.0.2.dist-info/top_level.txt,sha256=aYCfP50nthYLwVnc-aB9JRwJiS8wCUYo2l8lhGqeGHs,8
+hydrobm-1.0.2.dist-info/RECORD,,
