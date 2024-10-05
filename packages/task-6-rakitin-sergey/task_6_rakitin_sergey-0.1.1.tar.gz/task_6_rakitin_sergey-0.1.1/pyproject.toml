@@ -1,0 +1,27 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+
+name = "task_6_rakitin_sergey"
+version = "0.1.1"
+authors = [{name="Rakitin Sergey", email="dronyx@inbox.ru"}]
+description = "A package for printing F1 racing report."
+readme = "README.md"
+requires-python = ">=3.11"
+classifiers = [ "Programming Language :: Python :: 3",
+                "Operating System :: OS Independent" ]
+keywords = ["F1", "racing", "report"]
+
+[project.urls]
+
+Homepage = "https://git.foxminded.ua/rakitin-sergey/task_6_rakitin_sergey"
+
+[tool.hatch.build]
+sources = ["src", "data"]
+only-include = ["src/task_6_rakitin_sergey", "data"]
+
+[tool.hatch.build.targets.wheel]
+sources = ["src"]
+include = ["README.md", "requirements.txt", "data"]
