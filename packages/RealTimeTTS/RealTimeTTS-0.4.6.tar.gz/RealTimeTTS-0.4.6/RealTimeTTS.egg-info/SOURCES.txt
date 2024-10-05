@@ -1,0 +1,247 @@
+FAQ.md
+README.md
+requirements.txt
+setup.py
+RealTimeTTS.egg-info/PKG-INFO
+RealTimeTTS.egg-info/SOURCES.txt
+RealTimeTTS.egg-info/dependency_links.txt
+RealTimeTTS.egg-info/requires.txt
+RealTimeTTS.egg-info/top_level.txt
+RealtimeTTS/__init__.py
+RealtimeTTS/stream_player.py
+RealtimeTTS/text_to_stream.py
+RealtimeTTS/threadsafe_generators.py
+RealtimeTTS/engines/__init__.py
+RealtimeTTS/engines/azure_engine.py
+RealtimeTTS/engines/base_engine.py
+RealtimeTTS/engines/chinese.json
+RealtimeTTS/engines/coqui_default_voice.json
+RealtimeTTS/engines/coqui_engine.py
+RealtimeTTS/engines/elevenlabs_engine.py
+RealtimeTTS/engines/female.json
+RealtimeTTS/engines/gtts_engine.py
+RealtimeTTS/engines/male.json
+RealtimeTTS/engines/openai_engine.py
+RealtimeTTS/engines/system_engine.py
+docker/openai-tts-docker/Dockerfile
+docker/openai-tts-docker/Readme.md
+docker/openai-tts-docker/requirements.txt
+docker/openai-tts-docker/app/main.py
+example_fast_api/README.md
+example_fast_api/async_server.py
+example_fast_api/client.py
+example_fast_api/server.py
+example_fast_api/static/favicon.ico
+example_fast_api/static/tts.js
+example_rvc/README.md
+example_rvc/bufferstream.py
+example_rvc/download_models.py
+example_rvc/requirements.txt
+example_rvc/xtts_rvc_llm.py
+example_rvc/xtts_rvc_synthesizer.py
+example_rvc/xtts_rvc_tester.py
+example_rvc/rvc/realtimervc.py
+example_rvc/rvc/configs/config.json
+example_rvc/rvc/configs/config.py
+example_rvc/rvc/configs/v1/32k.json
+example_rvc/rvc/configs/v1/40k.json
+example_rvc/rvc/configs/v1/48k.json
+example_rvc/rvc/configs/v2/32k.json
+example_rvc/rvc/configs/v2/48k.json
+example_rvc/rvc/i18n/i18n.py
+example_rvc/rvc/i18n/locale_diff.py
+example_rvc/rvc/i18n/scan_i18n.py
+example_rvc/rvc/i18n/locale/en_US.json
+example_rvc/rvc/i18n/locale/es_ES.json
+example_rvc/rvc/i18n/locale/fr_FR.json
+example_rvc/rvc/i18n/locale/it_IT.json
+example_rvc/rvc/i18n/locale/ja_JP.json
+example_rvc/rvc/i18n/locale/ru_RU.json
+example_rvc/rvc/i18n/locale/tr_TR.json
+example_rvc/rvc/i18n/locale/zh_CN.json
+example_rvc/rvc/i18n/locale/zh_HK.json
+example_rvc/rvc/i18n/locale/zh_SG.json
+example_rvc/rvc/i18n/locale/zh_TW.json
+example_rvc/rvc/infer/lib/audio.py
+example_rvc/rvc/infer/lib/rmvpe.py
+example_rvc/rvc/infer/lib/slicer2.py
+example_rvc/rvc/infer/lib/infer_pack/attentions.py
+example_rvc/rvc/infer/lib/infer_pack/commons.py
+example_rvc/rvc/infer/lib/infer_pack/models.py
+example_rvc/rvc/infer/lib/infer_pack/models_onnx.py
+example_rvc/rvc/infer/lib/infer_pack/modules.py
+example_rvc/rvc/infer/lib/infer_pack/onnx_inference.py
+example_rvc/rvc/infer/lib/infer_pack/transforms.py
+example_rvc/rvc/infer/lib/infer_pack/modules/F0Predictor/DioF0Predictor.py
+example_rvc/rvc/infer/lib/infer_pack/modules/F0Predictor/F0Predictor.py
+example_rvc/rvc/infer/lib/infer_pack/modules/F0Predictor/HarvestF0Predictor.py
+example_rvc/rvc/infer/lib/infer_pack/modules/F0Predictor/PMF0Predictor.py
+example_rvc/rvc/infer/lib/infer_pack/modules/F0Predictor/__init__.py
+example_rvc/rvc/infer/lib/jit/__init__.py
+example_rvc/rvc/infer/lib/jit/get_hubert.py
+example_rvc/rvc/infer/lib/jit/get_rmvpe.py
+example_rvc/rvc/infer/lib/jit/get_synthesizer.py
+example_rvc/rvc/infer/lib/train/data_utils.py
+example_rvc/rvc/infer/lib/train/losses.py
+example_rvc/rvc/infer/lib/train/mel_processing.py
+example_rvc/rvc/infer/lib/train/process_ckpt.py
+example_rvc/rvc/infer/lib/train/utils.py
+example_rvc/rvc/infer/lib/uvr5_pack/name_params.json
+example_rvc/rvc/infer/lib/uvr5_pack/utils.py
+example_rvc/rvc/infer/lib/uvr5_pack/lib_v5/dataset.py
+example_rvc/rvc/infer/lib/uvr5_pack/lib_v5/layers.py
+example_rvc/rvc/infer/lib/uvr5_pack/lib_v5/layers_123812KB .py
+example_rvc/rvc/infer/lib/uvr5_pack/lib_v5/layers_123821KB.py
+example_rvc/rvc/infer/lib/uvr5_pack/lib_v5/layers_33966KB.py
+example_rvc/rvc/infer/lib/uvr5_pack/lib_v5/layers_537227KB.py
+example_rvc/rvc/infer/lib/uvr5_pack/lib_v5/layers_537238KB.py
+example_rvc/rvc/infer/lib/uvr5_pack/lib_v5/layers_new.py
+example_rvc/rvc/infer/lib/uvr5_pack/lib_v5/model_param_init.py
+example_rvc/rvc/infer/lib/uvr5_pack/lib_v5/nets.py
+example_rvc/rvc/infer/lib/uvr5_pack/lib_v5/nets_123812KB.py
+example_rvc/rvc/infer/lib/uvr5_pack/lib_v5/nets_123821KB.py
+example_rvc/rvc/infer/lib/uvr5_pack/lib_v5/nets_33966KB.py
+example_rvc/rvc/infer/lib/uvr5_pack/lib_v5/nets_537227KB.py
+example_rvc/rvc/infer/lib/uvr5_pack/lib_v5/nets_537238KB.py
+example_rvc/rvc/infer/lib/uvr5_pack/lib_v5/nets_61968KB.py
+example_rvc/rvc/infer/lib/uvr5_pack/lib_v5/nets_new.py
+example_rvc/rvc/infer/lib/uvr5_pack/lib_v5/spec_utils.py
+example_rvc/rvc/infer/lib/uvr5_pack/lib_v5/modelparams/1band_sr16000_hl512.json
+example_rvc/rvc/infer/lib/uvr5_pack/lib_v5/modelparams/1band_sr32000_hl512.json
+example_rvc/rvc/infer/lib/uvr5_pack/lib_v5/modelparams/1band_sr33075_hl384.json
+example_rvc/rvc/infer/lib/uvr5_pack/lib_v5/modelparams/1band_sr44100_hl1024.json
+example_rvc/rvc/infer/lib/uvr5_pack/lib_v5/modelparams/1band_sr44100_hl256.json
+example_rvc/rvc/infer/lib/uvr5_pack/lib_v5/modelparams/1band_sr44100_hl512.json
+example_rvc/rvc/infer/lib/uvr5_pack/lib_v5/modelparams/1band_sr44100_hl512_cut.json
+example_rvc/rvc/infer/lib/uvr5_pack/lib_v5/modelparams/2band_32000.json
+example_rvc/rvc/infer/lib/uvr5_pack/lib_v5/modelparams/2band_44100_lofi.json
+example_rvc/rvc/infer/lib/uvr5_pack/lib_v5/modelparams/2band_48000.json
+example_rvc/rvc/infer/lib/uvr5_pack/lib_v5/modelparams/3band_44100.json
+example_rvc/rvc/infer/lib/uvr5_pack/lib_v5/modelparams/3band_44100_mid.json
+example_rvc/rvc/infer/lib/uvr5_pack/lib_v5/modelparams/3band_44100_msb2.json
+example_rvc/rvc/infer/lib/uvr5_pack/lib_v5/modelparams/4band_44100.json
+example_rvc/rvc/infer/lib/uvr5_pack/lib_v5/modelparams/4band_44100_mid.json
+example_rvc/rvc/infer/lib/uvr5_pack/lib_v5/modelparams/4band_44100_msb.json
+example_rvc/rvc/infer/lib/uvr5_pack/lib_v5/modelparams/4band_44100_msb2.json
+example_rvc/rvc/infer/lib/uvr5_pack/lib_v5/modelparams/4band_44100_reverse.json
+example_rvc/rvc/infer/lib/uvr5_pack/lib_v5/modelparams/4band_44100_sw.json
+example_rvc/rvc/infer/lib/uvr5_pack/lib_v5/modelparams/4band_v2.json
+example_rvc/rvc/infer/lib/uvr5_pack/lib_v5/modelparams/4band_v2_sn.json
+example_rvc/rvc/infer/lib/uvr5_pack/lib_v5/modelparams/4band_v3.json
+example_rvc/rvc/infer/lib/uvr5_pack/lib_v5/modelparams/ensemble.json
+example_rvc/rvc/infer/modules/ipex/__init__.py
+example_rvc/rvc/infer/modules/ipex/attention.py
+example_rvc/rvc/infer/modules/ipex/gradscaler.py
+example_rvc/rvc/infer/modules/ipex/hijacks.py
+example_rvc/rvc/infer/modules/onnx/export.py
+example_rvc/rvc/infer/modules/train/extract_feature_print.py
+example_rvc/rvc/infer/modules/train/preprocess.py
+example_rvc/rvc/infer/modules/train/train.py
+example_rvc/rvc/infer/modules/train/extract/extract_f0_print.py
+example_rvc/rvc/infer/modules/train/extract/extract_f0_rmvpe.py
+example_rvc/rvc/infer/modules/train/extract/extract_f0_rmvpe_dml.py
+example_rvc/rvc/infer/modules/uvr5/mdxnet.py
+example_rvc/rvc/infer/modules/uvr5/modules.py
+example_rvc/rvc/infer/modules/uvr5/vr.py
+example_rvc/rvc/infer/modules/vc/__init__.py
+example_rvc/rvc/infer/modules/vc/modules.py
+example_rvc/rvc/infer/modules/vc/pipeline.py
+example_rvc/rvc/infer/modules/vc/utils.py
+example_rvc/rvc/tools/app.py
+example_rvc/rvc/tools/calc_rvc_model_similarity.py
+example_rvc/rvc/tools/dlmodels.bat
+example_rvc/rvc/tools/dlmodels.sh
+example_rvc/rvc/tools/download_models - Kopie.py
+example_rvc/rvc/tools/download_models.py
+example_rvc/rvc/tools/export_onnx.py
+example_rvc/rvc/tools/infer_batch_rvc.py
+example_rvc/rvc/tools/infer_cli.py
+example_rvc/rvc/tools/onnx_inference_demo.py
+example_rvc/rvc/tools/rvc_for_realtime.py
+example_rvc/rvc/tools/infer/infer-pm-index256.py
+example_rvc/rvc/tools/infer/train-index-v2.py
+example_rvc/rvc/tools/infer/train-index.py
+example_rvc/rvc/tools/infer/trans_weights.py
+example_rvc/rvc/tools/torchgate/__init__.py
+example_rvc/rvc/tools/torchgate/torchgate.py
+example_rvc/rvc/tools/torchgate/utils.py
+tests/advanced_talk.py
+tests/chinese_test.py
+tests/complex_test.py
+tests/coqui_test.py
+tests/elevenlabs_test.py
+tests/fallback_test.py
+tests/female.json
+tests/female_chinese.json
+tests/gtts_test.py
+tests/male.json
+tests/minimalistic_talkbot.py
+tests/openai_1.0_test.py
+tests/openai_voice_interface.py
+tests/openaitts_test.py
+tests/pyqt6_speed_test.py
+tests/pyqt6_speed_test_chinese.py
+tests/simple_llm_test.py
+tests/simple_test.py
+tests/test_callbacks.py
+tests/test_on_audio_chunk_callback.py
+tests/translator.py
+tests/write_to_file.py
+tests/coqui_voices/coqui_Aaron Dreschner.wav
+tests/coqui_voices/coqui_Abrahan Mack.wav
+tests/coqui_voices/coqui_Adde Michal.wav
+tests/coqui_voices/coqui_Alexandra Hisakawa.wav
+tests/coqui_voices/coqui_Alison Dietlinde.wav
+tests/coqui_voices/coqui_Alma María.wav
+tests/coqui_voices/coqui_Ana Florence.wav
+tests/coqui_voices/coqui_Andrew Chipper.wav
+tests/coqui_voices/coqui_Annmarie Nele.wav
+tests/coqui_voices/coqui_Asya Anara.wav
+tests/coqui_voices/coqui_Badr Odhiambo.wav
+tests/coqui_voices/coqui_Baldur Sanjin.wav
+tests/coqui_voices/coqui_Barbora MacLean.wav
+tests/coqui_voices/coqui_Brenda Stern.wav
+tests/coqui_voices/coqui_Camilla Holmström.wav
+tests/coqui_voices/coqui_Chandra MacFarland.wav
+tests/coqui_voices/coqui_Claribel Dervla.wav
+tests/coqui_voices/coqui_Craig Gutsy.wav
+tests/coqui_voices/coqui_Daisy Studious.wav
+tests/coqui_voices/coqui_Damien Black.wav
+tests/coqui_voices/coqui_Damjan Chapman.wav
+tests/coqui_voices/coqui_Dionisio Schuyler.wav
+tests/coqui_voices/coqui_Eugenio Mataracı.wav
+tests/coqui_voices/coqui_Ferran Simen.wav
+tests/coqui_voices/coqui_Filip Traverse.wav
+tests/coqui_voices/coqui_Gilberto Mathias.wav
+tests/coqui_voices/coqui_Gitta Nikolina.wav
+tests/coqui_voices/coqui_Gracie Wise.wav
+tests/coqui_voices/coqui_Henriette Usha.wav
+tests/coqui_voices/coqui_Ige Behringer.wav
+tests/coqui_voices/coqui_Ilkin Urbano.wav
+tests/coqui_voices/coqui_Kazuhiko Atallah.wav
+tests/coqui_voices/coqui_Kumar Dahl.wav
+tests/coqui_voices/coqui_Lidiya Szekeres.wav
+tests/coqui_voices/coqui_Lilya Stainthorpe.wav
+tests/coqui_voices/coqui_Ludvig Milivoj.wav
+tests/coqui_voices/coqui_Luis Moray.wav
+tests/coqui_voices/coqui_Maja Ruoho.wav
+tests/coqui_voices/coqui_Marcos Rudaski.wav
+tests/coqui_voices/coqui_Narelle Moon.wav
+tests/coqui_voices/coqui_Nova Hogarth.wav
+tests/coqui_voices/coqui_Rosemary Okafor.wav
+tests/coqui_voices/coqui_Royston Min.wav
+tests/coqui_voices/coqui_Sofia Hellen.wav
+tests/coqui_voices/coqui_Suad Qasim.wav
+tests/coqui_voices/coqui_Szofi Granger.wav
+tests/coqui_voices/coqui_Tammie Ema.wav
+tests/coqui_voices/coqui_Tammy Grit.wav
+tests/coqui_voices/coqui_Tanja Adelina.wav
+tests/coqui_voices/coqui_Torcull Diarmuid.wav
+tests/coqui_voices/coqui_Uta Obando.wav
+tests/coqui_voices/coqui_Viktor Eka.wav
+tests/coqui_voices/coqui_Viktor Menelaos.wav
+tests/coqui_voices/coqui_Vjollca Johnnie.wav
+tests/coqui_voices/coqui_Wulf Carlevaro.wav
+tests/coqui_voices/coqui_Xavier Hayasaka.wav
+tests/coqui_voices/coqui_Zacharie Aimilios.wav
+tests/coqui_voices/coqui_Zofija Kendrick.wav
