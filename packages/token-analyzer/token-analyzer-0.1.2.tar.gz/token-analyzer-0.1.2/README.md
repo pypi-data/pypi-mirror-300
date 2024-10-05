@@ -1,0 +1,58 @@
+# Token Analyzer Library
+
+`TokenAnalyzer` is a Python library to analyze and calculate token usage costs for various LLM models such as OpenAI, Anthropic, and others. The library supports live currency conversion using the FreeCurrencyAPI or uses default exchange rates if the API key is not provided.
+
+## Features
+
+- Calculate costs for input/output tokens across various LLM models.
+- Supports multiple currencies (INR, USD, EUR, etc.).
+- Can write token usage information to a CSV file.
+- Logging options for detailed analysis of costs.
+- Use FreeCurrencyAPI for real-time currency conversion.
+
+## Installation
+
+You can install the library directly from PyPI (after publishing):
+
+```bash
+pip install token-analyzer
+```
+
+## Usage
+
+Here is a basic usage example:
+
+```
+from analyzer.token_analysis import TokenAnalysis
+
+# Response data from a model
+response = {
+    'usage': {'prompt_tokens': 1000, 'completion_tokens': 500},
+    'model': 'claude-2.1'
+}
+
+# Initialize the analyzer
+analyzer = TokenAnalysis(output_currency="INR", output_csv="output/token_costs.csv", create_csv=True, log_info=True)
+
+# Calculate token cost
+total_cost = analyzer.token_analysis(response, "ANTHROPIC")
+print(f"Total Cost: {total_cost}")
+
+```
+
+## Example without CSV output and logging disabled:
+
+```
+analyzer = TokenAnalysis(output_currency="USD", create_csv=False, log_info=False)
+total_cost = analyzer.token_analysis(response, "OPENAI")
+print(f"Total Cost: {total_cost}")
+
+```
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE]() file for details.
+
+## Links
+
+* [GitHub Repository](https://github.com/krtarunsingh/token_analyzer)

@@ -1,0 +1,2 @@
+freecurrencyapi
+logging
