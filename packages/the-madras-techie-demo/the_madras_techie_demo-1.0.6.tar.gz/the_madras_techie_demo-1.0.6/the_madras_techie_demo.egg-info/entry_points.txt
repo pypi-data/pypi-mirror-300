@@ -1,0 +1,3 @@
+[console_scripts]
+the_madras_techie_demo = the_madras_techie_demo:hello
+tmt-hello = the_madras_techie_demo:hello
