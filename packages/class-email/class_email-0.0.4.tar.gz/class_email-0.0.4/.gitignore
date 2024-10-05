@@ -1,0 +1,8 @@
+*.txt
+out
+dist
+.venv
+*.eml
+*.html
+.DS_Store
+__pycache__
