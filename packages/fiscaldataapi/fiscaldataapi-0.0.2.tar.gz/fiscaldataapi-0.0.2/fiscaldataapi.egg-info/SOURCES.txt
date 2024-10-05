@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+fiscaldataapi/__init__.py
+fiscaldataapi.egg-info/PKG-INFO
+fiscaldataapi.egg-info/SOURCES.txt
+fiscaldataapi.egg-info/dependency_links.txt
+fiscaldataapi.egg-info/requires.txt
+fiscaldataapi.egg-info/top_level.txt
