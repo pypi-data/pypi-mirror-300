@@ -1,0 +1,394 @@
+Metadata-Version: 2.1
+Name: kmer-map
+Version: 0.0.7
+Summary: A package for visualizing kmers.
+Author-email: "Chengbo Fu, Lu Cheng." <lu.cheng.ac@gmail.com>
+License: Apache License
+                                   Version 2.0, January 2004
+                                http://www.apache.org/licenses/
+        
+           TERMS AND CONDITIONS FOR USE, REPRODUCTION, AND DISTRIBUTION
+        
+           1. Definitions.
+        
+              "License" shall mean the terms and conditions for use, reproduction,
+              and distribution as defined by Sections 1 through 9 of this document.
+        
+              "Licensor" shall mean the copyright owner or entity authorized by
+              the copyright owner that is granting the License.
+        
+              "Legal Entity" shall mean the union of the acting entity and all
+              other entities that control, are controlled by, or are under common
+              control with that entity. For the purposes of this definition,
+              "control" means (i) the power, direct or indirect, to cause the
+              direction or management of such entity, whether by contract or
+              otherwise, or (ii) ownership of fifty percent (50%) or more of the
+              outstanding shares, or (iii) beneficial ownership of such entity.
+        
+              "You" (or "Your") shall mean an individual or Legal Entity
+              exercising permissions granted by this License.
+        
+              "Source" form shall mean the preferred form for making modifications,
+              including but not limited to software source code, documentation
+              source, and configuration files.
+        
+              "Object" form shall mean any form resulting from mechanical
+              transformation or translation of a Source form, including but
+              not limited to compiled object code, generated documentation,
+              and conversions to other media types.
+        
+              "Work" shall mean the work of authorship, whether in Source or
+              Object form, made available under the License, as indicated by a
+              copyright notice that is included in or attached to the work
+              (an example is provided in the Appendix below).
+        
+              "Derivative Works" shall mean any work, whether in Source or Object
+              form, that is based on (or derived from) the Work and for which the
+              editorial revisions, annotations, elaborations, or other modifications
+              represent, as a whole, an original work of authorship. For the purposes
+              of this License, Derivative Works shall not include works that remain
+              separable from, or merely link (or bind by name) to the interfaces of,
+              the Work and Derivative Works thereof.
+        
+              "Contribution" shall mean any work of authorship, including
+              the original version of the Work and any modifications or additions
+              to that Work or Derivative Works thereof, that is intentionally
+              submitted to Licensor for inclusion in the Work by the copyright owner
+              or by an individual or Legal Entity authorized to submit on behalf of
+              the copyright owner. For the purposes of this definition, "submitted"
+              means any form of electronic, verbal, or written communication sent
+              to the Licensor or its representatives, including but not limited to
+              communication on electronic mailing lists, source code control systems,
+              and issue tracking systems that are managed by, or on behalf of, the
+              Licensor for the purpose of discussing and improving the Work, but
+              excluding communication that is conspicuously marked or otherwise
+              designated in writing by the copyright owner as "Not a Contribution."
+        
+              "Contributor" shall mean Licensor and any individual or Legal Entity
+              on behalf of whom a Contribution has been received by Licensor and
+              subsequently incorporated within the Work.
+        
+           2. Grant of Copyright License. Subject to the terms and conditions of
+              this License, each Contributor hereby grants to You a perpetual,
+              worldwide, non-exclusive, no-charge, royalty-free, irrevocable
+              copyright license to reproduce, prepare Derivative Works of,
+              publicly display, publicly perform, sublicense, and distribute the
+              Work and such Derivative Works in Source or Object form.
+        
+           3. Grant of Patent License. Subject to the terms and conditions of
+              this License, each Contributor hereby grants to You a perpetual,
+              worldwide, non-exclusive, no-charge, royalty-free, irrevocable
+              (except as stated in this section) patent license to make, have made,
+              use, offer to sell, sell, import, and otherwise transfer the Work,
+              where such license applies only to those patent claims licensable
+              by such Contributor that are necessarily infringed by their
+              Contribution(s) alone or by combination of their Contribution(s)
+              with the Work to which such Contribution(s) was submitted. If You
+              institute patent litigation against any entity (including a
+              cross-claim or counterclaim in a lawsuit) alleging that the Work
+              or a Contribution incorporated within the Work constitutes direct
+              or contributory patent infringement, then any patent licenses
+              granted to You under this License for that Work shall terminate
+              as of the date such litigation is filed.
+        
+           4. Redistribution. You may reproduce and distribute copies of the
+              Work or Derivative Works thereof in any medium, with or without
+              modifications, and in Source or Object form, provided that You
+              meet the following conditions:
+        
+              (a) You must give any other recipients of the Work or
+                  Derivative Works a copy of this License; and
+        
+              (b) You must cause any modified files to carry prominent notices
+                  stating that You changed the files; and
+        
+              (c) You must retain, in the Source form of any Derivative Works
+                  that You distribute, all copyright, patent, trademark, and
+                  attribution notices from the Source form of the Work,
+                  excluding those notices that do not pertain to any part of
+                  the Derivative Works; and
+        
+              (d) If the Work includes a "NOTICE" text file as part of its
+                  distribution, then any Derivative Works that You distribute must
+                  include a readable copy of the attribution notices contained
+                  within such NOTICE file, excluding those notices that do not
+                  pertain to any part of the Derivative Works, in at least one
+                  of the following places: within a NOTICE text file distributed
+                  as part of the Derivative Works; within the Source form or
+                  documentation, if provided along with the Derivative Works; or,
+                  within a display generated by the Derivative Works, if and
+                  wherever such third-party notices normally appear. The contents
+                  of the NOTICE file are for informational purposes only and
+                  do not modify the License. You may add Your own attribution
+                  notices within Derivative Works that You distribute, alongside
+                  or as an addendum to the NOTICE text from the Work, provided
+                  that such additional attribution notices cannot be construed
+                  as modifying the License.
+        
+              You may add Your own copyright statement to Your modifications and
+              may provide additional or different license terms and conditions
+              for use, reproduction, or distribution of Your modifications, or
+              for any such Derivative Works as a whole, provided Your use,
+              reproduction, and distribution of the Work otherwise complies with
+              the conditions stated in this License.
+        
+           5. Submission of Contributions. Unless You explicitly state otherwise,
+              any Contribution intentionally submitted for inclusion in the Work
+              by You to the Licensor shall be under the terms and conditions of
+              this License, without any additional terms or conditions.
+              Notwithstanding the above, nothing herein shall supersede or modify
+              the terms of any separate license agreement you may have executed
+              with Licensor regarding such Contributions.
+        
+           6. Trademarks. This License does not grant permission to use the trade
+              names, trademarks, service marks, or product names of the Licensor,
+              except as required for reasonable and customary use in describing the
+              origin of the Work and reproducing the content of the NOTICE file.
+        
+           7. Disclaimer of Warranty. Unless required by applicable law or
+              agreed to in writing, Licensor provides the Work (and each
+              Contributor provides its Contributions) on an "AS IS" BASIS,
+              WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or
+              implied, including, without limitation, any warranties or conditions
+              of TITLE, NON-INFRINGEMENT, MERCHANTABILITY, or FITNESS FOR A
+              PARTICULAR PURPOSE. You are solely responsible for determining the
+              appropriateness of using or redistributing the Work and assume any
+              risks associated with Your exercise of permissions under this License.
+        
+           8. Limitation of Liability. In no event and under no legal theory,
+              whether in tort (including negligence), contract, or otherwise,
+              unless required by applicable law (such as deliberate and grossly
+              negligent acts) or agreed to in writing, shall any Contributor be
+              liable to You for damages, including any direct, indirect, special,
+              incidental, or consequential damages of any character arising as a
+              result of this License or out of the use or inability to use the
+              Work (including but not limited to damages for loss of goodwill,
+              work stoppage, computer failure or malfunction, or any and all
+              other commercial damages or losses), even if such Contributor
+              has been advised of the possibility of such damages.
+        
+           9. Accepting Warranty or Additional Liability. While redistributing
+              the Work or Derivative Works thereof, You may choose to offer,
+              and charge a fee for, acceptance of support, warranty, indemnity,
+              or other liability obligations and/or rights consistent with this
+              License. However, in accepting such obligations, You may act only
+              on Your own behalf and on Your sole responsibility, not on behalf
+              of any other Contributor, and only if You agree to indemnify,
+              defend, and hold each Contributor harmless for any liability
+              incurred by, or claims asserted against, such Contributor by reason
+              of your accepting any such warranty or additional liability.
+        
+           END OF TERMS AND CONDITIONS
+        
+           Copyright [2024] Chengbo Fu, Lu Cheng, Contact: lu.cheng.ac@gmail.com
+        
+           Licensed under the Apache License, Version 2.0 (the "License");
+           you may not use this file except in compliance with the License.
+           You may obtain a copy of the License at
+        
+               http://www.apache.org/licenses/LICENSE-2.0
+        
+           Unless required by applicable law or agreed to in writing, software
+           distributed under the License is distributed on an "AS IS" BASIS,
+           WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+           See the License for the specific language governing permissions and
+           limitations under the License.
+        
+Project-URL: Homepage, https://github.com/chengl7-lab/kmap
+Project-URL: Repository, https://github.com/chengl7-lab/kmap.git
+Project-URL: Issues, https://github.com/chengl7-lab/kmap/issues
+Keywords: kmap,kmer,visualization,dimensionality reduction,DNA,sequences,umap
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.11
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: requests >2
+Requires-Dist: scipy >=1.9.3
+Requires-Dist: numpy >=1.23.3
+Requires-Dist: matplotlib >=3.6.2
+Requires-Dist: pandas >=1.5.0
+Requires-Dist: click >=8.0.4
+Requires-Dist: taichi >=1.5.0
+Requires-Dist: biopython >=1.78
+Requires-Dist: tomli-w >=1.0.0
+Requires-Dist: logomaker >=0.8
+Requires-Dist: networkx >=3.3
+
+# Kmer Manifold Approximation and Projection (KMAP)
+kmap is a package for visualizing kmers in 2D space. 
+-![image](./kmap_cartoon.gif)
+
+## Installation
+
+```
+conda create --name=kmap_test python=3.11
+conda activate kmap_test
+conda install anaconda::scipy
+conda install anaconda::numpy
+conda install anaconda::matplotlib
+conda install anaconda::pandas
+conda install anaconda::click
+conda install anaconda::tomli-w
+conda install anaconda::requests
+conda install conda-forge::biopython
+conda install conda-forge::networkxx
+conda install bioconda::logomaker
+pip install taichi
+pip install kmer-map
+```
+
+OR
+
+```Mac
+# Mac
+conda env create -f environment.yml
+conda activate kmap_test
+```
+
+OR
+
+```Linux
+# Linux
+conda env create -f env.yml   
+conda activate kmap_test
+pip install -r requirements.txt
+```
+
+
+## Example usage
+### General workflow
+The following code shows the typical workflow of the test data in `./tests/test.fa`
+```bash
+# step 0: preprocess input fast file
+kmap preproc --fasta_file ./tests/test.fa --res_dir ./test 
+
+# step 1: scanning for motifs 
+kmap scan_motif --res_dir ./test --debug true
+
+# step 2: visualize kmers
+# now edit the "./test/config.toml" file, in the 3rd section "visualization"
+# change "n_max_iter = 2500" to "n_max_iter = 100"  
+kmap visualize_kmers --res_dir ./test --debug True
+```
+
+
+
+### Detailed workflow
+- **Step 0**: confirm kmap is successfully installed
+```bash
+kmap --help
+```
+- **Step 1**: create a directory `test` and save the test fasta file [test.fa](./tests/test.fa) in this directory
+```bash 
+mkdir ./test
+```
+The output folder looks like
+```
+test
+  | -- test.fa
+```
+- **Step 2**: preprocess input fast file
+```bash 
+kmap preproc --fasta_file ./test/test.fa --res_dir ./test
+```
+The output folder looks like
+```
+test
+  | -- test.fa
+  | -- input.bin.pkl
+  | -- input.seqboarder.bin.pkl
+  | -- config.toml
+  | -- motif_def_table.csv
+```
+`input.bin.pkl` is the processed `.pkl` file of the input fasta file `test.fa`, which can be read by the pickle module of python. 
+`input.seqboarder.bin.pkl` is `n_seq x 2` numpy matrix, where the rows index each sequence, and the columns are start and end of each sequence. 
+`config.toml` contains all the kmap parameters for this analysis task. You can modify the parameters according to your own needs.
+`motif_def_table.csv` is the motif definition table, which specify the parameters of the Hamming balls. You can modify the parameters according to your own needs.
+- **Step 3**: scan for motifs
+```bash 
+kmap scan_motif --res_dir ./test --debug true 
+```
+The `--debug` option can be omitted. The output folder with file/folder descriptions:
+```
+test
+  | -- test.fa
+  | -- input.bin.pkl
+  | -- input.seqboarder.bin.pkl
+  | -- config.toml
+  | -- motif_def_table.csv
+  | -- kmer_count[folder]: kmer counts of different kmer lengths, motif occurence file for candidate consensus sequences
+  | -- candidate_conseq.csv: consensus sequences of significant Hamming balls of diferent kmer length
+  | -- final_conseq.txt: merged consensus seqences of different kmer lengths, final motifs (2 motif in this case)
+  | -- final_conseq.info.csv: contain meta information of final consensensus sequences
+  | -- final.motif_occurence.csv: positions of final conseqs in the input reads 
+  | -- conseq_similarity[folder]: files illustrate similarities between final conseqs
+  | -- hamming_balls[folder]: Count matrix (calculated from Hamming balls) and logos of final motifs
+  | -- co_occurence[folder]: files about co-occurence of final conseqs, e.g., co-occurence frequency, distance distribution between different conseqs
+  | -- motif_pos_density[folder]: motif kmer postion distribution on input sequences
+  | -- motif_pos_density.np.pkl: numpy array of the position densities
+  | -- sample_kmers.pkl: sampled kmers for visualization
+  | -- sample_kmers.tsv: sampled kmers for visualization, second column is final motif label, largest label (2) means random kmers
+  | -- sample_kmer_hamdist_mat.pkl: Hamming distance matrix of sampled kmers, used as input for kmer visualization
+```
+-  **Step 4**: visualize kmers
+Now now edit the `./test/config.toml` file, 
+in the 3rd section `visualization` change `n_max_iter = 2500` to `n_max_iter = 100`. 
+This will reduce the optimization steps from 2500 to 100, which saves lots of running time.
+```bash 
+kmap visualize_kmers --res_dir ./test --debug True
+```
+This will generate three additional files in the output directory
+```
+test
+  | -- low_dim_data.tsv: low dimensional embeddings, the columns are (x, y, motif_label), where the largest label is random kmers.
+  | -- ld_data.pdf: 2d plot of the embeddings in pdf 
+  | -- ld_data.png: 2d plot of the embeddings in png
+```
+
+### Auxiliary functions
+
+Sometimes we may want to adjust the default workflow.
+For example, after checking the motif logos in the `hamming_balls` directory, we feel the consensus is `AATCGATAGC`, instead of `A[AATCGATAGC]GA`. 
+We can re-generate the motif use the following commands.
+```bash
+kmap ex_hamball --res_dir ./test --conseq AATCGATAGC --return_type matrix --output_file ./test/hamming_balls/AATCGATAGC_cntmat.csv 
+kmap draw_logo --cnt_mat_numpy_file ./test/hamming_balls/AATCGATAGC_cntmat.csv --output_fig_file ./test/hamming_balls/logo.pdf
+```
+The motif logo for this consensus sequence is given by `./test/hamming_balls/logo.pdf`
+
+For example, we feel the maximum number of mutations `max_ham_dist=5` for the consensus sequence `GTACGTAGGTCCTA` (defined in `motif_def_table.csv`, k=14) is too large.  
+We want to change the number of maximum mutations to 3. We can derive the new motif based on `max_ham_dist=5` using the following commands.
+```bash
+kmap ex_hamball --res_dir ./test --conseq GTACGTAGGTCCTA --return_type matrix --max_ham_dist 3 --output_file ./test/hamming_balls/GTACGTAGGTCCTA_cntmat.csv 
+kmap draw_logo --cnt_mat_numpy_file ./test/hamming_balls/GTACGTAGGTCCTA_cntmat.csv --output_fig_file ./test/hamming_balls/logo.pdf
+```
+The motif logo for this consensus sequence is given by `./test/hamming_balls/logo.pdf`
+
+It take efforts to compare the consensus sequences, especially when reverse complements are considered.
+We can check the similarities between candidate consensus sequences using the following command.
+```bash
+kmap align_conseq --conseq_csv_file ./test/candidate_conseq.csv --out_dir ./test/candidate_seq_similarity
+# or only final conseqs
+kmap align_conseq --conseq_csv_file ./test/ final_conseq.info.csv --out_dir ./test/conseq_similarity
+```
+A dendrogram file `dendrogram.pdf` will be generated in the output directory `./test/candidate_seq_similarity`. 
+The dendrogram shows the similarities between all candidate consensus sequences, as well as their reverse complements.
+Hierarchical clustering is performed on the dendrogram. For each derived cluster, local pairwise alignment is generated
+for each pair of consensus sequences in that cluster.
+
+In Chip-seq data, we generally have the peak bed files, then we extract the corresponding fasta file from these peaks
+and perform kmap analysis. After that, we would like to know the actual locations of detected motifs on the reference genome.
+We could use the following command:
+```bash
+cd ./test # change to the result directory
+kmap extract_motif_locations --bed_file your_bed_file.bed 
+```
+A new folder `motif_locations` will be generated in the result directory, which contains the actual genomic location of
+detected final motifs.
+
+[comment]: <> (Release commands)
+[comment]: <> (python -m build) 
+[comment]: <> (python3 -m twine upload --repository kmer-map dist/*)
+
