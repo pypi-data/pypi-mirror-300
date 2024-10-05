@@ -1,0 +1,11 @@
+lsp-tree-sitter>=0.0.16
+tree-sitter-make
+
+[colorize]
+lsp-tree-sitter[colorize]
+
+[dev]
+pytest-cov
+
+[misc]
+lsp-tree-sitter[misc]
