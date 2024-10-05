@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+src/csbprivatetest/__init__.py
+src/csbprivatetest/datalogger_examples.py
+src/csbprivatetest/georeference.py
+src/csbprivatetest/test.py
+src/csbprivatetest/uncertainty.py
+src/csbprivatetest.egg-info/PKG-INFO
+src/csbprivatetest.egg-info/SOURCES.txt
+src/csbprivatetest.egg-info/dependency_links.txt
+src/csbprivatetest.egg-info/top_level.txt

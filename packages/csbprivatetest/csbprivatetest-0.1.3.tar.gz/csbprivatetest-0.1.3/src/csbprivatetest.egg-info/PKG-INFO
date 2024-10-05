@@ -1,0 +1,69 @@
+Metadata-Version: 2.1
+Name: csbprivatetest
+Version: 0.1.3
+Summary: CSB Toolkit for Georeferencing and Uncertainty Calculations
+Home-page: https://github.com/vishwabarathy-cidco/csbprivate
+Author: Vishwa Barathy
+Author-email: vishwa.barathy@cidco.ca
+License: MIT
+Description: # CSB
+        Crowdsourced bathymetry toolkit
+        
+        
+        ## Georeference 
+        Get the XYZ position (in the ECEF frame) of a depth sounding (in the WGS84 frame) 
+        
+        ```
+        
+        # Example values
+        # latitude = math.radians(48.4525) //decimal degrees
+        # longitude = math.radians(-68.5232) //decimal degrees
+        # ellipsoidal_height = -28 //meters
+        # heading = math.radians(350)
+        # pitch = math.radians(0.5)
+        # roll = math.radians(1.5)
+        # depth = 5 //meters
+        # offset_x = 1 //meters
+        # offset_y = 2 //meters
+        # offset_z = 3 //meters
+        
+        import georeference
+        g = georeference.Georeference()
+        result = g.compute(latitude,longitude,ellipsoidal_height,heading,pitch,roll,depth,offset_x,offset_y,offset_z)
+        ```
+        ## Uncertainty
+        Get the uncertainty associated with an XYZ position (in the ECEF frame) of a depth sounding (in the WGS84 frame) 
+        
+        ```
+        # Example values
+        # latitude = math.radians(48.4525) //decimal degrees
+        # longitude = math.radians(-68.5232) //decimal degrees
+        # ellipsoidal_height = -28 //meters
+        # heading = math.radians(350)
+        # pitch = math.radians(0.5)
+        # roll = math.radians(1.5)
+        # depth = 5 //meters
+        # offset_x = 1 //meters
+        # offset_y = 2 //meters
+        # offset_z = 3 //meters
+        # latitude_sigma = 0.00001
+        # longitude_sigma = 0.0001
+        # ellipsoidal_height_sigma = 1
+        # heading_sigma = 1
+        # pitch_sigma = 1
+        # roll_sigma = 1
+        # depth_sigma = 0.5
+        # offset_x_sigma = 0.0000001
+        # offset_y_sigma = 0.0000001
+        # offset_z_sigma = 0.0000001
+        
+        import uncertainty
+        u = uncertainty.TotalPropagatedUncertainty()
+        result = u.compute(latitude,longitude,ellipsoidal_height,heading,pitch,roll,depth,offset_x,offset_y,offset_z,latitude_sigma,longitude_sigma,ellipsoidal_height_sigma,heading_sigma,pitch_sigma,roll_sigma,depth_sigma,offset_x_sigma,offset_y_sigma,offset_z_sigma)
+        ```
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
