@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "hanimetvdl"
+version = "0.0.1"
+description = "Hanime.tv cli dl"
+authors = ["pr13260 <pr1360-noreply@github.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+yt-dlp = "^2024.9.27"
+requests = "^2.32.3"
+
+[tool.poetry.scripts]
+htv = 'hanimetvdl.cli:main'
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
