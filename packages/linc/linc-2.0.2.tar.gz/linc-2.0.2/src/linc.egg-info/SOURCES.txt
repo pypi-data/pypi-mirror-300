@@ -1,0 +1,10 @@
+README.md
+pyproject.toml
+src/linc/__init__.py
+src/linc.egg-info/PKG-INFO
+src/linc.egg-info/SOURCES.txt
+src/linc.egg-info/dependency_links.txt
+src/linc.egg-info/entry_points.txt
+src/linc.egg-info/requires.txt
+src/linc.egg-info/top_level.txt
+tests/test_config_reader.py
