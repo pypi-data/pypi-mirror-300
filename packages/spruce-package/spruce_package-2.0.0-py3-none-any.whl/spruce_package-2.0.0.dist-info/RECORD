@@ -1,0 +1,7 @@
+dispruce/__init__.py,sha256=PXjEEU35WJX2xYPQ3GM1t_EK4u9F6YBh6PkbuKgq15s,3169
+dispruce/libspruce.so,sha256=y0tJcmSC2rTVrs-e2RZUXS7mQ3mNf99XTFXJasEjw7U,10211712
+dispruce/sprucepy.cpython-312-x86_64-linux-gnu.so,sha256=FKrliukq8JGHi7VfSwyIoUNlpoClbKkAUSwav77KbWM,475344
+spruce_package-2.0.0.dist-info/LICENSE,sha256=ay9trLiP5I7ZsFXo6AqtkLYdRqe5S9r-DrPOvsNlZrg,9136
+spruce_package-2.0.0.dist-info/METADATA,sha256=PXXqDNXeOnd2sUV2rCAQ2vd5mtDZIgbdvqe5BnFqpY0,2170
+spruce_package-2.0.0.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+spruce_package-2.0.0.dist-info/RECORD,,
