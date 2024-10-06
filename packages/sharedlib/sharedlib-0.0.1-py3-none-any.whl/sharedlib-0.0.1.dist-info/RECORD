@@ -1,0 +1,8 @@
+sharedlib/__init__.py,sha256=GHnCQqpalH4Uh7jAH1dz0S87b4-LvornVdF9x5BenR8,547
+sharedlib/config.py,sha256=P0ukh64X1_zl_GFaf2n_KnagJsNfz9WHGWKv2briwhw,1949
+sharedlib/register.py,sha256=w35GIYsersWvr9s0YuWfkOvKOqWLGsYBFOWGw64YdPA,681
+sharedlib-0.0.1.dist-info/LICENSE,sha256=P2oCFk1fCWHuQdMPOiDjpp7PcKaKXhcfHshqnGUj3D4,1070
+sharedlib-0.0.1.dist-info/METADATA,sha256=ZCslOx3BdYIbwvKYav3nSBNnweY8Fi8VZDuT5LuBWfU,3202
+sharedlib-0.0.1.dist-info/WHEEL,sha256=GV9aMThwP_4oNCtvEC2ec3qUYutgWeAzklro_0m4WJQ,91
+sharedlib-0.0.1.dist-info/top_level.txt,sha256=D_PbybQuuPPDv1NWwFSABJVWLrjKvInbR6Y_aqeRcuU,10
+sharedlib-0.0.1.dist-info/RECORD,,
