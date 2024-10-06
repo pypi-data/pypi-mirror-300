@@ -1,0 +1,4 @@
+rns>=0.8.2
+lxmf>=0.5.5
+urwid>=2.4.4
+qrcode
