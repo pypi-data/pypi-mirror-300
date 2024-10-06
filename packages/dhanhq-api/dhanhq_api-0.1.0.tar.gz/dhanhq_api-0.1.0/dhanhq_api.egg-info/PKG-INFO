@@ -1,0 +1,98 @@
+Metadata-Version: 2.1
+Name: dhanhq_api
+Version: 0.1.0
+Summary: A Python client for the DhanHQ API
+Home-page: https://github.com/yourusername/dhanhq_api
+Author: Mani
+Author-email: 
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENCE
+Requires-Dist: requests>=2.25.1
+Requires-Dist: pydantic>=1.8.2
+
+# DhanHQ API Python Client
+
+A Python client for interacting with the DhanHQ API. This library provides a simple interface to access various endpoints of the DhanHQ API.
+
+## Installation
+
+You can install the package using pip:
+
+```bash
+pip install dhanhq_api
+
+from dhanhq_api import DhanHQAPI, OrderRequest
+
+# Initialize the API client with your client ID and access token
+api = DhanHQAPI(client_id="your_client_id_here", access_token="your_access_token_here")
+
+# Place an order
+order_request = OrderRequest(
+    dhanClientId="your_client_id",
+    transactionType="BUY",
+    exchangeSegment="NSE_EQ",
+    securityId="INFY",
+    quantity=10,
+    price=1500.0
+)
+response = api.place_order(order_request)
+print(response)
+
+# Get all trades
+trades = api.get_all_trades()
+print(trades)
+
+Available Methods
+get_order_by_id(order_id)
+
+modify_order(order_id, order_modify_request)
+
+cancel_order(order_id)
+
+get_orders()
+
+place_order(order_request)
+
+place_slice_order(order_request)
+
+get_all_trades()
+
+get_trade_by_order_id(order_id)
+
+get_trade_history(from_date, to_date, page_number)
+
+convert_position(position_conversion_request)
+
+get_positions()
+
+get_holdings()
+
+generate_edis_form(edis_form_request)
+
+generate_bulk_edis_form(edis_bulk_form_request)
+
+generate_edis_tpin()
+
+get_edis_authorized_quantity(isin)
+
+manage_kill_switch(kill_switch_status)
+
+margin_calculator(know_your_margin_req)
+
+get_fund_limit_details()
+
+get_ledger_report(from_date=None, to_date=None)
+
+fetch_intraday_charts(intraday_charts_request)
+
+fetch_historical_charts(historical_charts_request)
+
+Contributing
+Contributions are welcome! Please feel free to submit a pull request.
+
+License
+This project is licensed under the MIT License. See the LICENSE file for details.
