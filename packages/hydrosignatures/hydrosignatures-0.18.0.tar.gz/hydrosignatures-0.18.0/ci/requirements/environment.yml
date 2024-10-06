@@ -1,0 +1,22 @@
+name: hydrosignatures-tests
+channels:
+- conda-forge
+- nodefaults
+dependencies:
+# hydrosignatures deps
+- numpy
+- pandas
+- scipy
+- xarray
+# optional deps
+- numba>=0.57
+- numbagg
+
+# test deps
+- psutil
+- pytest-cov
+- pytest-xdist
+
+- pip
+- pip:
+  - git+https://github.com/hyriver/hydrosignatures.git
