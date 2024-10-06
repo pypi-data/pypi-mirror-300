@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: immage
+Version: 1.1.0
+Summary: A versatile image processing library with method chaining and procedural texture generation.
+Home-page: https://github.com/sq5rix/immage
+Author: Tom Wawer
+Author-email: sq5rix@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: Pillow
+Requires-Dist: numpy
+Requires-Dist: noise
+
+# Overview
+
+    Class Name: Immage
+    Features:
+        Image Filters: Blur, Sharpen, Edge Enhancement, etc.
+        Image Enhancements: Adjust Brightness, Contrast, Color, and Sharpness.
+        Texture Application: Apply texture images to normal images.
+        Procedural Texture Generation: Generate watercolor paper textures using Perlin noise.
+        Fractal-Based Upscaling: Upscale images using fractal noise enhancement.
+    Method Chaining: Supports method chaining using dot notation and the pipe | operator.
+
+# Contributors are welcome
