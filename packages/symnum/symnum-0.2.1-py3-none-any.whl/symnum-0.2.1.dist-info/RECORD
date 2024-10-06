@@ -1,0 +1,13 @@
+symnum/__init__.py,sha256=4R_IDfd3GClBG2yp8CsEJ1Hr7SMhdCedr2mCUf41jmw,705
+symnum/_version.py,sha256=MxUhzLJIZQfEpDTTcKSxciTGrMLd5v2VmMlHa2HGeo0,411
+symnum/array.py,sha256=JRmkJ769afnLFXSFAD0TaAz0JbbnmmqR1hPBpECqrig,24915
+symnum/codegen.py,sha256=SM_s6BA3IPSrBLR2Zbhv1IauJLIUXecFs-k1jwrfBKo,13235
+symnum/numpy.py,sha256=pDTa5fIMKe4-7QwpM39o5LLFmDxail0uGfPkL8kTvmc,9117
+symnum/diffops/__init__.py,sha256=mcLSPvdgG7LpEy14-FHA8jO4TqH_Ie9Vw95_Kr_CMVE,56
+symnum/diffops/numpy.py,sha256=zv8wk-LTQGLFFbUl_V4BU32WGd8qJ1_8TtR9VGerecU,1932
+symnum/diffops/symbolic.py,sha256=Brfe29Eu_eQ8OXfrIyaJOqO4MecHj2NNB5t2nXCwlDU,15823
+symnum-0.2.1.dist-info/LICENSE,sha256=CjGreS11IAWIvkNctQX7QqRJ5hiGaJ_Ty4Wn5Y4Iz-c,1077
+symnum-0.2.1.dist-info/METADATA,sha256=DLcMiqFhIMtlSeabjGfckYzaCfMAkoZv3Umh7lhiQis,8658
+symnum-0.2.1.dist-info/WHEEL,sha256=GV9aMThwP_4oNCtvEC2ec3qUYutgWeAzklro_0m4WJQ,91
+symnum-0.2.1.dist-info/top_level.txt,sha256=oaQbZ7eaxtSXsN5bKwoJkOArW2kLoDU0S36F-Pac-JI,7
+symnum-0.2.1.dist-info/RECORD,,
