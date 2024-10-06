@@ -1,0 +1,10 @@
+HISTORY.md,sha256=YGUdrxXi7WsvWGQovJSYDX04LskM2z-6nDRm22rv2NU,889
+time2relax/__init__.py,sha256=iXr3cdGui6ep-7c7j8z0gUOnWl0aZSnZT8s6SG6MD1w,565
+time2relax/exceptions.py,sha256=5q5-Vw-nLTqsCZHRh4Lh_YprrO7RnSUun18kTWkO_0Q,617
+time2relax/models.py,sha256=TCaHajN65Hol4puK-lQVIIdvEq2O8hCS65dzg3uzphE,4273
+time2relax/time2relax.py,sha256=9dPEsVZL7aZJLio50jF5mgy83o3DscZrqG_bcc26TkQ,11058
+time2relax/utils.py,sha256=i3wHojWxQmMC7Ak-S_VstlV2QiWb8XxK9JjByH6TRq8,4284
+time2relax-0.7.0.dist-info/LICENSE.txt,sha256=3kIiXp9oxpm3Zz_3iELa3tLxU3Du2ZjszzZKk71GcIY,1073
+time2relax-0.7.0.dist-info/METADATA,sha256=6b9tLQDtNkiV--otN50FBHGvNYiwXzCaTDCiiFKUcoA,2865
+time2relax-0.7.0.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+time2relax-0.7.0.dist-info/RECORD,,
