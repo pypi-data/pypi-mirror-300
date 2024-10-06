@@ -1,0 +1,4 @@
+from backtesterrb30.libs.utils.run_service import run_service
+microservice_name = 'historical_data_feeds'
+from backtesterrb30.historical_data_feeds.historical_data_feeds import HistoricalDataFeeds
+run_service(microservice_name, HistoricalDataFeeds)
