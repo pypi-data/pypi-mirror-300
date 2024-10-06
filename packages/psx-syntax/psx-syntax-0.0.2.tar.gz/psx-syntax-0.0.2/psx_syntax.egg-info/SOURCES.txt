@@ -1,0 +1,15 @@
+LICENCE
+README.md
+pyproject.toml
+setup.py
+psx_syntax/__init__.py
+psx_syntax/packed.py
+psx_syntax.egg-info/PKG-INFO
+psx_syntax.egg-info/SOURCES.txt
+psx_syntax.egg-info/dependency_links.txt
+psx_syntax.egg-info/not-zip-safe
+psx_syntax.egg-info/top_level.txt
+tests/__init__.py
+tests/test_component.py
+tests/test_element.py
+tests/test_translate.py

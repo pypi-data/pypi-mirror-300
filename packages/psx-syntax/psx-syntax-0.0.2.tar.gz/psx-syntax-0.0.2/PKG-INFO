@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: psx-syntax
+Version: 0.0.2
+Summary: JSX style syntax for Python
+Home-page: https://github.com/coryfitz/psx-syntax
+Download-URL: https://github.com/coryfitz/psx-syntax
+Author: Cory Fitz
+Author-email: 
+License: BSD
+Platform: any
+License-File: LICENCE
+
+PSX Syntax
