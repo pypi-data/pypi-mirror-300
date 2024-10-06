@@ -1,0 +1,7 @@
+pygame
+pymunk
+remi
+smbus2
+pyserial
+matplotlib
+Shared-Memory-Dict
