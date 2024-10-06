@@ -1,0 +1,10 @@
+numpy>=1.16.5
+pandas>=1.0.0
+
+[dev]
+codecov
+coverage
+ruff
+pytest
+pytest-cov
+twine
