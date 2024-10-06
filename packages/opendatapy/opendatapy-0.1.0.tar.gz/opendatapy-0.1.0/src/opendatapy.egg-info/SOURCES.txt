@@ -1,0 +1,11 @@
+LICENSE
+pyproject.toml
+src/opendatapy/__init__.py
+src/opendatapy/dataflow.py
+src/opendatapy/helpers.py
+src/opendatapy/resources.py
+src/opendatapy.egg-info/PKG-INFO
+src/opendatapy.egg-info/SOURCES.txt
+src/opendatapy.egg-info/dependency_links.txt
+src/opendatapy.egg-info/requires.txt
+src/opendatapy.egg-info/top_level.txt
