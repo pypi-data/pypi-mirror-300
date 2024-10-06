@@ -1,0 +1,14 @@
+shopyo_i18n/__init__.py,sha256=mmvK6ulQ8jhaThEEwfNpjupcMfgaKWd5vz16RQKG9rw,1181
+shopyo_i18n/forms.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+shopyo_i18n/helpers.py,sha256=GxpVEKNeTUXBigvEo3brr5aznh2ewmyAtnr0T_XZvwU,274
+shopyo_i18n/info.json,sha256=NFRkQgCr-EVCwCbWlRV_lktBkA2Cbd2zLAyrJfCWznI,222
+shopyo_i18n/models.py,sha256=LjYt-1FSFoCNiKwzX_UpMW2kxM0wW_P8kWprTuQUS8o,232
+shopyo_i18n/view.py,sha256=1zYfE6rwgBwrgG6oiWctE5zxzGRehgn0kStWK47uCYk,1285
+shopyo_i18n/templates/shopyo_i18n/dashboard.html,sha256=FkZ6irHadmscyv9GlK0RG8SDcnxU5FZm77BaI8tEbjE,373
+shopyo_i18n/templates/shopyo_i18n/blocks/sidebar.html,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+shopyo_i18n/tests/test_i18n_functional.py,sha256=DJph4zB_5zI0fK04bafAc9QLf_VRTBKPO-AKxuR-1tM,49
+shopyo_i18n/tests/test_i18n_models.py,sha256=fmK0W7ybBLnxiExPUaENzuyV0AkYLnbWSb6-Zqy9dhA,45
+shopyo_i18n-1.1.0.dist-info/METADATA,sha256=k2TIhX1Kx_IsoPr4O2EeXv1-To0jAhV4uYHwuV44T1c,480
+shopyo_i18n-1.1.0.dist-info/WHEEL,sha256=GV9aMThwP_4oNCtvEC2ec3qUYutgWeAzklro_0m4WJQ,91
+shopyo_i18n-1.1.0.dist-info/top_level.txt,sha256=Okwyca1K4yUqmU__JYSB7yj3kf98PRLLDKu-LEB3pyo,12
+shopyo_i18n-1.1.0.dist-info/RECORD,,
