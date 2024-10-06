@@ -1,0 +1,15 @@
+htstools/__init__.py,sha256=xjwfiW7FYAdYoQa1iOg7wtZbdDexeKJ3nCsVxXsZn0c,386
+htstools/cli.py,sha256=_eJUpxamlpO2KMXQeAuqh7CAjtC42RF9at59FI28y7k,22340
+htstools/io.py,sha256=wasYKGYt9AtPryN0uVsjJVFHWdCj6tQAK96gHW6XT_A,12734
+htstools/normalize.py,sha256=qZxSqZRd8jlIPQoXws4Kx4H2a-1aP29_a63ZJVmWZqU,10354
+htstools/plot.py,sha256=g8DvKRETnwSFKEoAZO1UJi8eheKbpQz-iIdW9ZheGWQ,17998
+htstools/qc.py,sha256=3lZ4u6xQ5d7xxBGKFAvByUqqtX4QJkj3J9sL-thIeEM,6629
+htstools/summarize.py,sha256=vEFUm-uvp9NCwFMEEcRxYZEeSDKqZIP9XWAMDM-8Ixg,9557
+htstools/tables.py,sha256=xl-HMHvzmu4ammEhx2apa52Ax-jlNBL6VHCtM3o0Xck,11630
+htstools/utils.py,sha256=59anO36YaylaEl5j5zHw4cfZdR9S5JgU3I3X2SMCZdQ,1197
+hts_tools-0.0.4.post1.dist-info/LICENSE,sha256=pAZXnNE2dxxwXFIduGyn1gpvPefJtUYOYZOi3yeGG94,1068
+hts_tools-0.0.4.post1.dist-info/METADATA,sha256=6KY7AgEOeZKJ_Jmndzu5TNXAZislfkxoWJoDzc9jNXY,26099
+hts_tools-0.0.4.post1.dist-info/WHEEL,sha256=GV9aMThwP_4oNCtvEC2ec3qUYutgWeAzklro_0m4WJQ,91
+hts_tools-0.0.4.post1.dist-info/entry_points.txt,sha256=dV23XztXTiZpWO3dQzbbU2K99dQ7babq_JzjnIMy52Y,42
+hts_tools-0.0.4.post1.dist-info/top_level.txt,sha256=P8reK-ww249nD3aJ639zQf6YZiliWTB5g8EeJJ_2Weg,9
+hts_tools-0.0.4.post1.dist-info/RECORD,,
