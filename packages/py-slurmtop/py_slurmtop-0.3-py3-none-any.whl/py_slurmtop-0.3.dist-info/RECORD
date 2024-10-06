@@ -1,0 +1,7 @@
+py_slurmtop-0.3.data/scripts/slurmtop,sha256=p-eYC8iK180e7wd2CnTFvQ9TaHEf5B_cBM24htA76yE,96
+py_slurmtop-0.3.data/scripts/slurmtop.py,sha256=y8tFNXNwc7jfD18UKksLeiZttPEtCm8HG1A9kwOtTdI,10978
+py_slurmtop-0.3.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+py_slurmtop-0.3.dist-info/METADATA,sha256=rmd6lWcnW0NWzTXCri6tR7_TLCXHIsT3d7b9e18Hx1E,1073
+py_slurmtop-0.3.dist-info/WHEEL,sha256=GV9aMThwP_4oNCtvEC2ec3qUYutgWeAzklro_0m4WJQ,91
+py_slurmtop-0.3.dist-info/top_level.txt,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+py_slurmtop-0.3.dist-info/RECORD,,
