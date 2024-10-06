@@ -1,0 +1,52 @@
+Metadata-Version: 2.3
+Name: pynomina
+Version: 0.0.1
+Summary: Personal finance management utility
+Project-URL: Home, https://github.com/WolfgangFahl/pynomina
+Project-URL: Documentation, https://wiki.bitplan.com/index.php/pynomina
+Project-URL: Source, https://github.com/WolfgangFahl/pynomina
+Author-email: Wolfgang Fahl <wf@bitplan.com>
+Maintainer-email: Wolfgang Fahl <wf@bitplan.com>
+License-Expression: Apache-2.0
+License-File: LICENSE
+Keywords: finance,management,money,nicegui
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Web Environment
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Education
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: >=3.9
+Requires-Dist: ngwidgets>=0.17.2
+Requires-Dist: piecash>=1.2.1
+Requires-Dist: py-sidif>=0.2.0
+Requires-Dist: pylodstorage>=0.13.1
+Requires-Dist: sqlalchemy-utils==0.37.2
+Requires-Dist: sqlalchemy==1.4.48
+Requires-Dist: xsdata>=24.9
+Provides-Extra: test
+Requires-Dist: green; extra == 'test'
+Description-Content-Type: text/markdown
+
+# pynomina
+personal accounting tool with file conversion
+
+[![Join the discussion at https://github.com/WolfgangFahl/pynomina/discussions](https://img.shields.io/github/discussions/WolfgangFahl/pynomina)](https://github.com/WolfgangFahl/pynomina/discussions)
+[![pypi](https://img.shields.io/pypi/pyversions/pynomaina)](https://pypi.org/project/pynomaina/)
+[![Github Actions Build](https://github.com/WolfgangFahl/pynomina/actions/workflows/build.yml/badge.svg)](https://github.com/WolfgangFahl/pynomina/actions/workflows/build.yml)
+[![PyPI Status](https://img.shields.io/pypi/v/pynomaina.svg)](https://pypi.python.org/pypi/pynomaina/)
+[![GitHub issues](https://img.shields.io/github/issues/WolfgangFahl/pynomina.svg)](https://github.com/WolfgangFahl/pynomina/issues)
+[![GitHub closed issues](https://img.shields.io/github/issues-closed/WolfgangFahl/pynomina.svg)](https://github.com/WolfgangFahl/pynomina/issues/?q=is%3Aissue+is%3Aclosed)
+[![API Docs](https://img.shields.io/badge/API-Documentation-blue)](https://WolfgangFahl.github.io/pynomina/)
+[![License](https://img.shields.io/github/license/WolfgangFahl/pynomina.svg)](https://www.apache.org/licenses/LICENSE-2.0)
+
+## Docs and Tutorials
+[Wiki](https://wiki.bitplan.com/index.php/pynomina)
+
