@@ -1,0 +1,9 @@
+gamedig-0.2.0.dist-info/METADATA,sha256=8l2UHZwsa48T2z5xo5du7DFd_5vRnmsMSxva-R-uHHo,1838
+gamedig-0.2.0.dist-info/WHEEL,sha256=vYYEjJkw4M5xbJBeoeZWGu8dEYS7CV76uYj2u0e18X8,105
+gamedig-0.2.0.dist-info/licenses/LICENSE,sha256=AisMbLZFDIothFBfYy-1snGcdJP-PkZwdSOGnV5pd1g,1054
+gamedig.libs/libgcc_s-b5472b99.so.1,sha256=wh8CpjXz9IccAyeERcB7YDEx7NH2jF-PykwOyYNeRRI,453841
+gamedig/__init__.py,sha256=vhiWvcDkuwb5SQ1V85TSdj0nlklab9RcU8bTlT6U9CA,111
+gamedig/__init__.pyi,sha256=pZ_837XMm8kaL9k6n1c5nDXy_nvycXxHRkD52WrYcPE,1078
+gamedig/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+gamedig/gamedig.cpython-312-i386-linux-musl.so,sha256=-LPIemMJGM305tF8LF5R2-7rbW40UY_b6RcIRQH_g80,2078985
+gamedig-0.2.0.dist-info/RECORD,,
