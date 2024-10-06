@@ -1,0 +1,48 @@
+Metadata-Version: 2.1
+Name: spruce-package
+Version: 2.0.0
+Summary: AI-powered resource optimization and efficiency analysis library for retail banks
+License: Proprietary
+Author: deinnovatie SAS
+Author-email: support@deinnovatie.com
+Requires-Python: ==3.12.3
+Classifier: License :: Other/Proprietary License
+Classifier: Programming Language :: Python :: 3
+Requires-Dist: pyarrow (==17.0.0)
+Description-Content-Type: text/markdown
+
+# Spruce
+
+**Spruce** is a powerful proprietary library designed for AI agents to optimize resources and analyze efficiency within retail banks. By leveraging advanced AI models, Spruce helps banking institutions achieve optimal service delivery, reduce operational costs, and enhance overall customer experience.
+
+## Features
+
+-   **Resource Optimization**: Optimize the allocation of physical and digital resources within bank networks.
+-   **Efficiency Analysis**: Analyze the performance of various resources and recommend efficiency improvements.
+-   **AI Integration**: Seamlessly integrates with AI agents for decision-making and automated optimizations.
+-   **Data Handling**: Efficiently process and manage large datasets relevant to retail banking operations using high-performance data libraries.
+
+## Installation
+
+Since **Spruce** is a proprietary library, it is distributed through private channels. Please contact [deinnovatie SAS](mailto:support@deinnovatie.com) for access.
+
+If you have access, install it using the following command:
+
+```bash
+pip install dispruce
+```
+
+### Licensing and Attribution
+
+Spruce is proprietary software. All rights are reserved by deinnovatie SAS. You are not permitted to distribute, modify, or reuse the software without explicit permission from deinnovatie SAS.
+
+This project relies on PyArrow, which is part of the Apache Arrow project and is licensed under the Apache License 2.0. You can find the full text of the Apache License 2.0 at the following link:
+
+Apache License 2.0
+
+For more information about the Apache Arrow project, visit: https://arrow.apache.org/.
+
+### Support
+
+For any questions, support, or licensing inquiries, please contact deinnovatie SAS at support@deinnovatie.com.
+

@@ -1,0 +1,38 @@
+[tool.poetry]
+name = "spruce-package"
+version = "2.0.0"
+description = "AI-powered resource optimization and efficiency analysis library for retail banks"
+authors = ["deinnovatie SAS <support@deinnovatie.com>"]
+readme = "README.md"
+license = "Proprietary"
+
+# classifiers = [
+#     "Programming Language :: Python :: 3",
+#     "Programming Language :: Python :: 3.8",
+#     "Programming Language :: Python :: 3.9",
+#     "License :: Other/Proprietary License",
+#     "Operating System :: POSIX :: Linux",
+#     "Operating System :: Linux :: Debian",
+#     "Intended Audience :: Developers",
+#     "Topic :: Software Development :: Libraries"
+# ]
+packages = [
+    { include = "dispruce", from = "src" }  # Specify that your package is located inside 'src'
+]
+include = [
+    "src/dispruce/*.so",
+    "src/dispruce/libs/*.so"
+]
+
+
+[tool.poetry.dependencies]
+python = "3.12.3"
+pyarrow = "17.0.0"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "8.3.2"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
