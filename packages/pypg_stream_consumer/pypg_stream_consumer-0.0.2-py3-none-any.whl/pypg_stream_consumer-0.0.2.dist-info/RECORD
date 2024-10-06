@@ -1,0 +1,12 @@
+pypg_stream_consumer/__init__.py,sha256=B53T5QGXdzxAvoxDeKj7gL5pcUG9Av5H7xwAd-s43_k,255
+pypg_stream_consumer/consumer.py,sha256=hWJviZhTx3u-GUkQtK9EaxgRZMk6dwDZMifd-496YIY,3696
+pypg_stream_consumer/filters.py,sha256=Gug7Pxd3clnk_pi_5U8LMSsPEE5HEnYqOXzzDCqKMuc,765
+pypg_stream_consumer/models.py,sha256=2cf0G1kxR8Bo33HkyBdqnnpFeJVaDnKTewbE2C83h5s,505
+pypg_stream_consumer/serializers/__init__.py,sha256=3cGEVh9D7Pv7C4SQdEVEEZNyCIUAAZjRaI3UuyJvqnk,16
+pypg_stream_consumer/serializers/factory.py,sha256=WBDqA4O9VfFM4uMS2onxNlU66Ofw9lNGczXmw1Jl5Zg,1020
+pypg_stream_consumer/serializers/impl/__init__.py,sha256=0eVFfVd2aZXTZHFXcLZnFk8MftII4cMhRBBYt3Hm3LI,13
+pypg_stream_consumer/serializers/impl/class_serializer.py,sha256=omjFwFNGS2L6GZtwA5zgCpIh4VuIdSR7g817Synwivs,859
+pypg_stream_consumer/serializers/serializer_abc.py,sha256=RUVb9ulRZ4F79gYD0T0FvA5GH6DOq_CQBzTGOcTnAag,424
+pypg_stream_consumer-0.0.2.dist-info/METADATA,sha256=jU1BtOR75gzDHpRk9B7Od2fasXNbGCnHaZqU1jt8S9Y,385
+pypg_stream_consumer-0.0.2.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+pypg_stream_consumer-0.0.2.dist-info/RECORD,,
