@@ -1,0 +1,18 @@
+# test files
+.tox
+junit-*.xml
+
+# build files
+build
+dist
+*.egg-info
+/pytest_localserver/_version.py
+
+# project files
+.idea
+.project
+.pydevproject
+
+# compiled python files
+*.pyc
+*.pyo
