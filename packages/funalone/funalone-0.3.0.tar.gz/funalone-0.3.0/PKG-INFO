@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: funalone
+Version: 0.3.0
+Summary: Unittest functions isolated.
+License: MIT
+Author: Borja Martinena
+Requires-Python: >=3.9,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Description-Content-Type: text/markdown
+
+# FunAlone
+
+A small python library that makes it easy to test a function alone, that is, mocking all
+dependencies. True unittests, without having to manually look and add every called function to an
+increasing list of @mock.patch decorators.
