@@ -1,0 +1,8 @@
+README.md
+setup.py
+duyo/__init__.py
+duyo/license.py
+duyo.egg-info/PKG-INFO
+duyo.egg-info/SOURCES.txt
+duyo.egg-info/dependency_links.txt
+duyo.egg-info/top_level.txt
