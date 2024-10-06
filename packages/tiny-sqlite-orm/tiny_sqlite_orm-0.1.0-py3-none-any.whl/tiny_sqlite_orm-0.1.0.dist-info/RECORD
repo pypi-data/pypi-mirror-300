@@ -1,0 +1,12 @@
+tiny-sqlite-orm/__init__.py,sha256=WPPFwO1_mvdep2IzoM9wlTMwHJAUQNe-0wjkhfMARBA,136
+tiny-sqlite-orm/database.py,sha256=56AHWR-qayFz6k4E-4XVIButrj1BC9OSDRMfe87I6GQ,449
+tiny-sqlite-orm/field.py,sha256=ye8z4yUtdA_zXBkd--wkO8J1BjY0QniDmAwT_bL9dqs,5991
+tiny-sqlite-orm/queryset.py,sha256=c6eXFEmxXRJgoMtSfRgbsjuiSCVTUBw1BcQQgkmAAVQ,5254
+tiny-sqlite-orm/record.py,sha256=yDqLkXiG_u_IyYLWXxPtGHUhq4hEkCeI87hPVNcQl7Q,1441
+tiny-sqlite-orm/table.py,sha256=ljsTSSCO5kBxzy-ddUtLRkQt_rUH4JqaFL_EqIQu4dI,2579
+tiny-sqlite-orm/utils.py,sha256=focT93mv38yKu5vM397mzZH1tZ-_5cWuUrXhpdP6V5o,2131
+tiny_sqlite_orm-0.1.0.dist-info/LICENSE,sha256=85FDXl64Gy7O07UzIvC8PoPrX5OoIuL8WOA_oAr6iU8,1102
+tiny_sqlite_orm-0.1.0.dist-info/METADATA,sha256=wyYZYnOii5JO8GDUNfnVukcivi5KDKSWbgbBjTN-SAk,4268
+tiny_sqlite_orm-0.1.0.dist-info/WHEEL,sha256=eOLhNAGa2EW3wWl_TU484h7q1UNgy0JXjjoqKoxAAQc,92
+tiny_sqlite_orm-0.1.0.dist-info/top_level.txt,sha256=r4zyn5mS4jDjAicxJYmC8ZYGsztv3GTO55N-fInJzfI,16
+tiny_sqlite_orm-0.1.0.dist-info/RECORD,,
