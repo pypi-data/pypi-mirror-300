@@ -1,0 +1,106 @@
+---
+checks:
+  "standard_curve_checks":
+    name: "Standard Curve QC checks"
+    desc: "See section 2 'Standard Curve QC' in SOP document ANA-FOR-001-F1-Analysis_QC_5.0.pdf"
+  "neg_checks":
+    name: "NEG QC checks"
+    desc: "See section 4 'Controls Criteria Table' in SOP document of ANA-FOR-001-F1-Analysis_QC_5.0.pdf"
+  "ntc_checks":
+    name: "NTC QC checks"
+    desc: "See section 4 'Controls Criteria Table' in SOP document of ANA-FOR-001-F1-Analysis_QC_5.0.pdf"
+  "ext_checks":
+    name: "EXT QC checks"
+    desc: "See section 4 'Controls Criteria Table' in SOP document of ANA-FOR-001-F1-Analysis_QC_5.0.pdf"
+  "dilution_for_standards_checks":
+    name: "Standards Dilution checks"
+    desc: "See section 1 'Run Check' SOP document ANA-FOR-001-F1-Analysis_QC_5.0.pdf"
+  "pos_high_checks":
+    name: "POS-High QC checks"
+    desc: "See section 4 'Controls Criteria Table' in SOP document of ANA-FOR-001-F1-Analysis_QC_5.0.pdf"
+  "sample_qc_beta_actin_checks":
+    name: "Sample QC beta-Actin Quantity QC checks"
+    desc: "See section 5 'Sample QC (0.0016 < b-Actin < 1.000)' in SOP document of ANA-FOR-001-F1-Analysis_QC_5.0.pdf"
+  efficiency_threshold:
+    min: 80
+    max: 120
+  r_squared: 0.95
+  nmv_thresholds:
+    hpp1:
+      min: 40
+      max: 90
+    p16:
+      min: 44
+      max: 101
+    runx3:
+      min: 58
+      max: 126
+    fbn1:
+      min: 52
+      max: 112
+  actin_threshold:
+    min: 0.0016
+    max: 1.000
+
+input_gene_files:
+  # The following specifies file format of the input
+  # gene files.  Acceptable values are:
+  # tsv (for tab-delimited)
+  # txt (for tab-delimited)
+  # xlsx (for modern Excel)
+  # xls (for legacy Excel)
+  # format: tsv
+  # format: txt
+  # format: xlsx
+  format: xls
+
+gene_file:
+  # The following specifies the Excel worksheet name from
+  # which the data records will be retrieved/parsed.
+  sheet_name: Results
+  # The following specifies the row number in the Results worksheet
+  # where the header row appears (0 based index).
+  header_row_number: 42
+  # The following specifies the row where the first data record
+  # appears in the in the Results worksheet (0 based index).
+  first_row_number: 43
+  # The following specifies the row where the last data record
+  # appears in the in the Results worksheet (0 based index).
+  last_row_number: 79
+  # The following specifies the expected column headers.
+  expected_column_headers:
+    - Well
+    - Well Position
+    - Omit
+    - Sample Name
+    - Target Name
+    - Task
+    - Reporter
+    - Quencher
+    - CT
+    - Ct Mean
+    - Ct SD
+    - Quantity
+    - Quantity Mean
+    - Quantity SD
+    - Y-Intercept
+    - R(superscript 2)
+    - Slope
+    - Efficiency
+    - Automatic Ct Threshold
+    - Ct Threshold
+    - Automatic Baseline
+    - Baseline Start
+    - Baseline End
+    - Amp Status
+    - Comments
+    - Cq Conf
+    # - HIGHSD
+    # - NOAMP
+    # - CQCONF
+    # - EXPFAIL
+
+
+# If the following is set to True, then the validation report
+# for the intermediate tab-delimited file parser will be written.
+write_intermediate_tab_delimited_file_validation_report: false
