@@ -1,0 +1,15 @@
+illallangi/mastodon/__init__.py,sha256=avrc2M5zJIhFlIFhho29iyZP5C3W8Pm42eNYJqKfEQg,163
+illallangi/mastodon/__version__.py,sha256=rAJ6nexWUv-c9Pme67BlwB-y5UpfxoqJeXPxZHnJEDU,349
+illallangi/mastodon/tools.py,sha256=hA3neBLM6yvWZ6eO_bQGIgpSpm29FuGnieK2qaZwqWc,3407
+illallangi/mastodon/adapters/__init__.py,sha256=N3kkR4F6clJJ022bTSO74-Sv6rCxKQD0ijyGtHjYCE4,133
+illallangi/mastodon/adapters/swimming.py,sha256=x0n8u9u3Xj7o-FCT8ycS4NA1-NzIeTX6iA4qgNaODpg,1723
+illallangi/mastodon/client/__init__.py,sha256=HqzpHKGbjwpOoqwVUhfXUFCerNnSBSgRre6DBCw0YDU,11117
+illallangi/mastodon/client/swim_statistics.py,sha256=Stk4ntm0f7MulxTldLW2vvSRbCaLLHbRYe_Qk09lP7c,3336
+illallangi/mastodon/client/swims.py,sha256=y0lMmmDr43vDPQD06mNKXhCi9Hwe0224NNxvAs1KG7o,5941
+illallangi/mastodon/models/__init__.py,sha256=KnE14i2TLyoYh3kVtWIR5tbRg2rRBaRugOVVEqEoiHE,96
+illallangi/mastodon/models/swim.py,sha256=gJJwJx7136MQ8Tb6gjzF1v0I8tgaD2ZoIBZwv0y5OQM,4467
+illallangi_mastodon-0.2.0.dist-info/METADATA,sha256=6TlBQFXv3Jio0SJ0ygjhGWlh_fOBh7uaeYw3ejQQIug,1476
+illallangi_mastodon-0.2.0.dist-info/WHEEL,sha256=1yFddiXMmvYK7QYTqtRNtX66WJ0Mz8PYEiEUoOUUxRY,87
+illallangi_mastodon-0.2.0.dist-info/entry_points.txt,sha256=w5WPx9gMw1cVgbERJULWvbTIcgjmNJFdzcexESw9nkg,65
+illallangi_mastodon-0.2.0.dist-info/licenses/LICENSE,sha256=0NehuXypL_CGawEe_ozP3tgKmnfr-CvlAof7lUxPp1E,1068
+illallangi_mastodon-0.2.0.dist-info/RECORD,,
