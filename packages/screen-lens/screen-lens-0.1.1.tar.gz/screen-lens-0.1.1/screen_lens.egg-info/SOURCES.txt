@@ -1,0 +1,10 @@
+MANIFEST.in
+README.md
+screen_lens.sh
+screen_lens_wrapper.py
+setup.py
+screen_lens.egg-info/PKG-INFO
+screen_lens.egg-info/SOURCES.txt
+screen_lens.egg-info/dependency_links.txt
+screen_lens.egg-info/entry_points.txt
+screen_lens.egg-info/top_level.txt
