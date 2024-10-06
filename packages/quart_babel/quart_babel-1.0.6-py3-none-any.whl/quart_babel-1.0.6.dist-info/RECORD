@@ -1,0 +1,11 @@
+quart_babel/__init__.py,sha256=o9_P9an6Sxq9YgONaupwJAw-DQmjuqbTFRTKxVplP3s,1196
+quart_babel/core.py,sha256=6eWBSZAfgEt--14JkRIoy_uAudxR6RxlXlm6i4-RNVM,9323
+quart_babel/domain.py,sha256=_BQn_h8iCbdn4W20rxqjIXeqZmS4pjPcRC8271-OwPE,9698
+quart_babel/formatters.py,sha256=e576LD_n0DoBM3oppw8MSDmopasxJAvIbYfXiU0Nrbk,8986
+quart_babel/locale.py,sha256=x7tgEslumn7CatJDJrut1mqhGSiS24bP9SYnzOPXpcU,2085
+quart_babel/speaklater.py,sha256=0Z69-TsArwW5VoyRfCpa13jwh5TTd5NXGtGShmGEGcE,2448
+quart_babel/timezone.py,sha256=8gtEEr_78u6J5Q1PwjmRQXbXPsOCKN8mUBMaJcGGCMg,1933
+quart_babel/utils.py,sha256=k7Q_InjjbJddGFrxFHm7TIKc_iluL43jSXxvEiQUH_I,1514
+quart_babel-1.0.6.dist-info/METADATA,sha256=GWpe-tOfsqVON_CPchCx4MPFG5z52BIDZXYvLeOjO-4,2268
+quart_babel-1.0.6.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+quart_babel-1.0.6.dist-info/RECORD,,
