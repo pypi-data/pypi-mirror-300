@@ -1,0 +1,81 @@
+Metadata-Version: 2.3
+Name: einmind
+Version: 0.1.21
+Summary: EinMind SDK for Python
+Project-URL: Homepage, https://github.com/einmind/einmind_client
+Project-URL: Documentation, https://docs.einmind.com/
+Project-URL: Bug Tracker, https://github.com/einmind/einmind_client/issues
+Project-URL: Discussions, https://github.com/einmind/einmind_client/discussions
+Project-URL: Changelog, https://docs.einmind.com/latest/changelog
+License-Expression: Apache-2.0
+License-File: LICENSE
+License-File: NOTICE
+Keywords: auto-coding,einmind,icd 10,icd-10-cm,icd10,icd10cm,meddra,medical coding,snomed,snomed ct,snomed-ct
+Classifier: Development Status :: 4 - Beta
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Topic :: Scientific/Engineering :: Physics
+Requires-Python: >=3.7
+Requires-Dist: pydantic>=2.5.3
+Requires-Dist: requests
+Requires-Dist: urllib3>=2.0.7
+Description-Content-Type: text/markdown
+
+This is EinMind Client Documentation
+
+### Installation
+
+```shell
+pip install einmind
+```
+
+
+### ICD10CM term mapping
+```python
+from einmind import ICD10CMClient
+icd10cm_client = ICD10CMClient()
+result = icd10cm_client.code_term(term='headache')
+print(result)
+```
+
+
+### SNOMED CT term mapping
+only diseases and procedures are covered
+```python
+from einmind import SNOMEDCTClient
+
+# Initialize the SNOMED CT Client
+snomed_client = SNOMEDCTClient()
+
+# Code a disease term
+result = snomed_client.code_term(term='headache', term_category="PROBLEM")
+
+# Code a procedure term
+result = snomed_client.code_term(term='colonoscopy', term_category="PROCEDURE")
+```
+
+### Connecting to private instance
+
+```python
+from einmind import ICD10CMClient
+from einmind import SNOMEDCTClient
+
+
+# Initialize the ICD10CM Client
+icd10cm_client = ICD10CMClient(
+    base_url="<base_url>:<port_number>",
+    api_key="<api key>",
+)
+
+# Initialize the SNOMED CT Client
+snomed_client = SNOMEDCTClient(
+    base_url="<base_url>:<port_number>",
+    api_key="<api key>",
+)
+```
