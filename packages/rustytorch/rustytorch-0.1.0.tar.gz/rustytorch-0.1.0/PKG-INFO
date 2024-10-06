@@ -1,0 +1,12 @@
+Metadata-Version: 2.3
+Name: rustytorch
+Version: 0.1.0
+Classifier: Programming Language :: Rust
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Summary: tinytorch: torch.Tensor -> CUDA
+Keywords: machine-learning,deep-learning,neural-networks,pytorch,rust
+Author: Jeff Zhang
+License: MIT
+Requires-Python: >=3.8
+Project-URL: Source Code, https://github.com/jeffzh4ng/tinytorch
