@@ -1,0 +1,44 @@
+Metadata-Version: 2.1
+Name: megaognezyum
+Version: 1.1
+Summary: Mega Ognezyum Module with Submodules
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+megaognezyum also known as rowanlibrary collection is a library collection used for web based network and data security. With pcap support, you will now be able to detect security and data in http ssh ftp networks or identify the person trying to access the systems in your own network through the firewall.
+
+megaognezyum usage documents:https://azencompileropensourcefoundation.com/megaogzenyum-netcore/doc/,https://github.com/Goychay23/int/blob/main/Rowanlibrary/MEGAOGZENYUM.pdf
+if you want to support, our github page:https://github.com/Goychay23/int
+if you want to get technical support:https://azencompileropensourcefoundation.com/
+# sample code and code provided for usage structure
+```
+import megaognezyum
+
+# Create an instance of RowanObject
+rowan = megaognezyum.RowanObject(
+domain="example.com",
+ip_address="192.168.1.1",
+data="Sample data"
+)
+
+# Print the object's information
+print("Printing RowanObject information:")
+rowan.print_info()
+
+```
+
+to get specific data from ip address
+
+```
+# Track an HTTP link using the http submodule
+print("\nTracking an HTTP link...")
+megaognesium.http.track_http_link(
+     url="http://example.com/page",
+     trigger="User Click "
+)
+```
+
+To check the content in the http url
