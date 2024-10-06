@@ -1,0 +1,102 @@
+Metadata-Version: 2.3
+Name: yt-dlp-invidious
+Version: 0.1.1
+Author: grqz
+License: This is free and unencumbered software released into the public domain.
+        
+        Anyone is free to copy, modify, publish, use, compile, sell, or
+        distribute this software, either in source code form or as a compiled
+        binary, for any purpose, commercial or non-commercial, and by any
+        means.
+        
+        In jurisdictions that recognize copyright laws, the author or authors
+        of this software dedicate any and all copyright interest in the
+        software to the public domain. We make this dedication for the benefit
+        of the public at large and to the detriment of our heirs and
+        successors. We intend this dedication to be an overt act of
+        relinquishment in perpetuity of all present and future rights to this
+        software under copyright law.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
+        EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+        MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
+        IN NO EVENT SHALL THE AUTHORS BE LIABLE FOR ANY CLAIM, DAMAGES OR
+        OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE,
+        ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR
+        OTHER DEALINGS IN THE SOFTWARE.
+        
+        For more information, please refer to <http://unlicense.org/>
+License-File: LICENSE
+Keywords: yt-dlp,yt-dlp-plugin
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+
+Official repository: <https://github.com/grqz/yt-dlp-invidious>
+
+# yt-dlp-invidious
+This repository contains a plugin for [yt-dlp](https://github.com/yt-dlp/yt-dlp#readme). See [yt-dlp plugins](https://github.com/yt-dlp/yt-dlp#plugins) for more details.  
+The plugin adds native support for Invidious and allows youtube downloads to fallback to Invidious on the error 'Sign in to confirm you’re not a bot. This helps protect our community. Learn more'.  
+The code is based on [ytdl-org/youtube-dl#31426](https://github.com/ytdl-org/youtube-dl/pull/31426).
+
+## Installation
+
+Requires yt-dlp `2023.01.02` or above.
+
+### pip/pipx
+
+If yt-dlp is installed through `pip` or `pipx`, you can install the plugin with the following:
+
+```shell
+pipx inject yt-dlp yt-dlp-invidious
+```
+or
+
+```shell
+python3 -m pip install -U yt-dlp-invidious
+```
+
+### Manual install
+
+1. Download the latest release zip from [releases](https://github.com/grqz/yt-dlp-invidious/releases)
+
+2. Add the zip to one of the [yt-dlp plugin locations](https://github.com/yt-dlp/yt-dlp#installing-plugins)
+
+    - User Plugins
+        - `${XDG_CONFIG_HOME}/yt-dlp/plugins` (recommended on Linux/MacOS)
+        - `~/.yt-dlp/plugins/`
+        - `${APPDATA}/yt-dlp/plugins/` (recommended on Windows)
+
+    - System Plugins
+       -  `/etc/yt-dlp/plugins/`
+       -  `/etc/yt-dlp-plugins/`
+
+    - Executable location
+        - Binary: where `<root-dir>/yt-dlp.exe`, `<root-dir>/yt-dlp-plugins/`
+
+For more locations and methods, see [installing yt-dlp plugins](https://github.com/yt-dlp/yt-dlp#installing-plugins)
+
+## Usage
+
+### Auto-fallback mode (recommended)
+
+Just use yt-dlp as normal, the plugin will automatically fall back to invidious when YoutubeIE or YoutubePlaylistIE reported 'Sign in to confirm you’re not a bot. This helps protect our community. Learn more'.
+
+### Force override mode
+
+Pass `--ies "Invidious,InvidiousPlaylist"` to yt-dlp. The plugin automatically matches the video id/playlist id so you can just pass a video id/playlist id. For a single video id, use `invidious:<id>` instead of `<id>` to force yt-dlp to use Invidious.
+
+### Extractor arguments
+Use something like `--extractor-args "invidious:max_retries=3;retry_interval=3.45" --extractor-args "invidiousplaylist:preferred_instance=inv.nadeko.net"` to pass multiple extractor arguments in a single run.  
+See [EXTRACTOR ARGUMENTS](https://github.com/yt-dlp/yt-dlp?tab=readme-ov-file#extractor-arguments) for more details.
+
+#### **invidious**
+- `max_retries`: maximum retry times. (default: 5)  
+    e.g. `infinite` (unrecommended), `3`.
+- `retry_interval`: interval between retries (in seconds). (default: 5)  
+    e.g. `3.45`.
+- `preferred_instance`: netloc of preferred instance (default: `INSTANCES[0]`)  
+    e.g. `inv.nadeko.net`.
+
+#### **invidiousplaylist**
+- `preferred_instance`: netloc of preferred instance (default: `INSTANCES[0]`)  
+    e.g. `inv.nadeko.net`.
