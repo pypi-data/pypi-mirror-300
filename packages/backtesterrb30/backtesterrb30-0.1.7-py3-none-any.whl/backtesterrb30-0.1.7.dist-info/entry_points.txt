@@ -1,0 +1,3 @@
+[console_scripts]
+strategy1=basic_example:main
+
