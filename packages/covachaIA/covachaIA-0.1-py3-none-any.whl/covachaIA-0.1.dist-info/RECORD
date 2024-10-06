@@ -1,0 +1,14 @@
+covacha_IA/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+covacha_IA/config.py,sha256=3lUhLw6bI57Cj8lDqBt2NAxKGwies0r6RDVoVqXFAHI,468
+covacha_IA/open_ia.py,sha256=3WvBNEEZ3ayNjZJXBeg_6WbUWQzG6RytpN4qIT6WxAQ,1456
+covacha_IA/openia_assistant.py,sha256=EHwQNtym43XDNsMbWsNxlg_1wFYL7TJ5nvGFNv3DyII,2505
+covacha_IA/openia_base.py,sha256=pNMeY1uB_DniB5BUkbHtYnnxCF29e-NDhFxakOJ7IbI,1364
+covacha_IA/openia_thread.py,sha256=MtCMLbrt-nVUUhhgPKO3wIxyCh29PM8BiG-iO3EIeWM,2308
+test/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+test/test_config.py,sha256=Ydt2pu5LRhgXTKUi4btDJTAILddmXpBVpPWs0E8PNa8,1904
+test/test_openia_base.py,sha256=QNdsXckBr7qGctmDPR8jeK7exdZ3yej8H_7u7EBVScU,2429
+covachaIA-0.1.dist-info/LICENSE,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+covachaIA-0.1.dist-info/METADATA,sha256=VvG_JPpQDTVnMu6C1TRU0MATWg0bX-1lOeNem-g0VnY,563
+covachaIA-0.1.dist-info/WHEEL,sha256=eOLhNAGa2EW3wWl_TU484h7q1UNgy0JXjjoqKoxAAQc,92
+covachaIA-0.1.dist-info/top_level.txt,sha256=Vvtqf6viORsxyPRgVU9QFzQb4H1NXAGHQ5NUMMTF2cI,16
+covachaIA-0.1.dist-info/RECORD,,
