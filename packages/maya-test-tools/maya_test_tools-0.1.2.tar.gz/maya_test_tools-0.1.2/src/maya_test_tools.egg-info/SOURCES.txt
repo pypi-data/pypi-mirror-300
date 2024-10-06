@@ -1,0 +1,8 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/maya_test_tools.egg-info/PKG-INFO
+src/maya_test_tools.egg-info/SOURCES.txt
+src/maya_test_tools.egg-info/dependency_links.txt
+src/maya_test_tools.egg-info/top_level.txt
