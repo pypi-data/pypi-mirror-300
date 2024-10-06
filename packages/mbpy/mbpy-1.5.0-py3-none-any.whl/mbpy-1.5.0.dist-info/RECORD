@@ -1,0 +1,16 @@
+mbpy/__about__.py,sha256=NU-8WT8itatLTWcrrPo4hJcbnO5eiock6GzTgheFJzA,139
+mbpy/__init__.py,sha256=I4-1v8Q1E9pDSQySyLeIWGKV8PuIHryVmYGpWHrrRE4,426
+mbpy/cli.py,sha256=sYhfRauCl9CAjnKubrkCfQmLpR8rD0_03quvAxPfBmA,13861
+mbpy/commands.py,sha256=M3tvtMaO0LVtUpjm5HYSdX4r9oceL1c9kd-sy-itZqE,11489
+mbpy/create.py,sha256=VfbkigDvv0Z19I8999e1Ff7osEG_2RmYF28z9R26Q1s,15988
+mbpy/mpip.py,sha256=fJM6rvA2kpT4FQ6ZZjGFTwqAIMEP1ZZLRlJgy-QVk_M,19888
+mbpy/profile.py,sha256=HBescvZ0-GQVoua58OQHJVkb_A1LniKZPpyV6kREMzE,449
+mbpy/publish.py,sha256=rBtD6WBzVQVnln4IYWnv1xGK8Mwnz-bXnRsEIhl3HeU,5789
+mbpy/requirements.txt,sha256=V1J6toxSniKb1W393csICGDnDoGXh399P_Nfgm9wmRM,144
+mbpy/static.py,sha256=5e3f6DSzrMsD2nstAQIJtRF3e_dfd9rjeuXDOG9qPAM,1277
+mbpy/version.py,sha256=dkLS62Xp4qlgYXDOVYMwNh9xqdQppzlLmSllgff9ZGM,455
+mbpy-1.5.0.dist-info/METADATA,sha256=jKY1ggztcM6oyc_pQZLRxxQJUmpGpf71K1dZkYp7BwE,2703
+mbpy-1.5.0.dist-info/WHEEL,sha256=1yFddiXMmvYK7QYTqtRNtX66WJ0Mz8PYEiEUoOUUxRY,87
+mbpy-1.5.0.dist-info/entry_points.txt,sha256=EykxAL9VjU1gKZsGYkWAkCYoMVfkD6CmTA17WGIU3p0,104
+mbpy-1.5.0.dist-info/licenses/LICENSE,sha256=ufv7fH68SJM3IBc79lq9_jbu9jq8YtkuzYWO9P3AuU8,1062
+mbpy-1.5.0.dist-info/RECORD,,
