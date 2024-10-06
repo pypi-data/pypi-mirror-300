@@ -1,0 +1,8 @@
+bible/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+bible/bible.py,sha256=Tq-tziMRg3nY0gpzYmjVVjH5XupYdkGy_KhFINTopcc,8742
+bible/helpers.py,sha256=lLCG0aGtfnj2ulg1mbOVGQ3B6sb4UAGxDGd5NUg6G-g,322
+pybible_api-0.0.1.dist-info/LICENSE,sha256=HrhfyXIkWY2tGFK11kg7vPCqhgh5DcxleloqdhrpyMY,11558
+pybible_api-0.0.1.dist-info/METADATA,sha256=9xG0gv35c6K6o2SwP4a1J2SAruRLsHlNet5ORCQfLpg,435
+pybible_api-0.0.1.dist-info/WHEEL,sha256=GV9aMThwP_4oNCtvEC2ec3qUYutgWeAzklro_0m4WJQ,91
+pybible_api-0.0.1.dist-info/top_level.txt,sha256=jo4ZIHB7rNnZ0EAq2KEjMNtOkUuEteHz0PbY6AzqeBM,6
+pybible_api-0.0.1.dist-info/RECORD,,
