@@ -1,0 +1,13 @@
+LICENCE
+README.md
+setup.py
+EasIlastik/__init__.py
+EasIlastik/find_ilastik.py
+EasIlastik/run_ilastik.py
+EasIlastik/utils.py
+EasIlastik.egg-info/PKG-INFO
+EasIlastik.egg-info/README.md
+EasIlastik.egg-info/SOURCES.txt
+EasIlastik.egg-info/dependency_links.txt
+EasIlastik.egg-info/requires.txt
+EasIlastik.egg-info/top_level.txt

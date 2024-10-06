@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: EasIlastik
+Version: 1.0.0
+Summary: This package provides seamless integration of pre-trained image segmentation models from Ilastik into Python workflows, empowering users with efficient and intuitive image segmentation capabilities for diverse applications.
+Home-page: https://github.com/titouanlegourrierec/EasIlastik
+Author: Titouan Le Gourrierec
+Author-email: titouanlegourrierec@icloud.com
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.6
+License-File: LICENCE
+Requires-Dist: numpy
+Requires-Dist: h5py
+Requires-Dist: opencv-python
