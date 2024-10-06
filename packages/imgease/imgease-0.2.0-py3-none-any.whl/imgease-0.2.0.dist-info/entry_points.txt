@@ -1,0 +1,4 @@
+[console_scripts]
+imgease-convert=imgease.convert:main
+imgease-grayscale=imgease.grayscale:main
+
