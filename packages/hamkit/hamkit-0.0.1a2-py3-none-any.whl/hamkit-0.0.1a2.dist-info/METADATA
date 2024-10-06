@@ -1,0 +1,36 @@
+Metadata-Version: 2.3
+Name: hamkit
+Version: 0.0.1a2
+Summary: A command-line interface for various ham radio tools.
+Project-URL: Documentation, https://github.com/afourney/hamkit/README.md
+Project-URL: Issues, https://github.com/afourney/hamkit/issues
+Project-URL: Source, https://github.com/afourney/hamkit/
+Author-email: Adam Fourney <adam.fourney@gmail.com>
+License-Expression: MIT
+License-File: LICENSE
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Python: >=3.10
+Requires-Dist: itu-prefixes
+Description-Content-Type: text/markdown
+
+# hamkit
+
+[![PyPI - Version](https://img.shields.io/pypi/v/hamkit.svg)](https://pypi.org/project/hamkit)
+[![PyPI - Python Version](https://img.shields.io/pypi/pyversions/hamkit.svg)](https://pypi.org/project/hamkit)
+
+-----
+
+```console
+pip install hamkit
+```
+
+
+## License
+
+`hamkit` is distributed under the terms of the [MIT](https://spdx.org/licenses/MIT.html) license.
