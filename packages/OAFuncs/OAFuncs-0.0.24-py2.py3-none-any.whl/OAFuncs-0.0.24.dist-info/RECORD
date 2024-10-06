@@ -1,0 +1,17 @@
+OAFuncs/OAFuncs.py,sha256=uMeR4OCgbCeHc-lXH7DRCXqFNEGW5QL4nXmDFr8pw4U,490
+OAFuncs/__init__.py,sha256=JCEFUdcOlhNsLmEZHT1URo3-VNJWTT2VyeWTu7See_I,446
+OAFuncs/oa_cmap/__init__.py,sha256=lRXdMRwnHT3rNuZgc1Hp7rHfhXS2keKKl102-KE0Xeo,401
+OAFuncs/oa_cmap/oa_cmap.py,sha256=fvuUhEMIXLHVazARPseSCHIXT06flCRiuusOrE2I_3I,4856
+OAFuncs/oa_data/__init__.py,sha256=456ZW_mL3TZvCMzUkntJ29j6kR2QIrvtoBfS18f8B1U,466
+OAFuncs/oa_data/oa_data.py,sha256=jdxBrDqujps7mtA3COtcWwsuT0dDaBpKgz2CQIsM6Ao,7732
+OAFuncs/oa_draw/__init__.py,sha256=ZR5tshKQN6Sy1QZNGFvuZO5J419OuiWSISD8y5L6Piw,466
+OAFuncs/oa_draw/oa_draw.py,sha256=KRN_b5o441VFOaqMcyKXTBD6-wMrigZ75j09kjz8_N8,16347
+OAFuncs/oa_file/__init__.py,sha256=k-mbhgajyvzt17sgXmRt1wpeiCjHlH2Szl-iC5RGPRY,466
+OAFuncs/oa_file/oa_file.py,sha256=eJeWBQGB7HNgGnWvWovtSQYbwFAIUhtOdixqv7sbBH4,8220
+OAFuncs/oa_nc/__init__.py,sha256=b58qGb8omCSgHIUIJ9CUEfftIX8Ca9a4WxvZB7iVEHg,462
+OAFuncs/oa_nc/oa_nc.py,sha256=ucBXE_GEVPbg61bm2eOJryC23JL3J98DF5_KpeWCKc8,4742
+OAFuncs-0.0.24.dist-info/LICENSE.txt,sha256=RiY1WUCGgiNX3DMwpVSQXV0auS9H76wN1rXseoEPMzU,1068
+OAFuncs-0.0.24.dist-info/METADATA,sha256=O1A5oUBVPo1eX7Vn5yscFGOflyYUuIaSEJHd2xBwsns,15690
+OAFuncs-0.0.24.dist-info/WHEEL,sha256=fS9sRbCBHs7VFcwJLnLXN1MZRR0_TVTxvXKzOnaSFs8,110
+OAFuncs-0.0.24.dist-info/top_level.txt,sha256=dbdussPu3w2BGdBSiiR-K73Hv4WVmUsTSmvHXuh-ka0,8
+OAFuncs-0.0.24.dist-info/RECORD,,
