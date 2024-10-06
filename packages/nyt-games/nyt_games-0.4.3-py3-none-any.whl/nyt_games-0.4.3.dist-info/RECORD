@@ -1,0 +1,9 @@
+nyt_games/__init__.py,sha256=wx9w7KXNlaD7a3Kgoau6pIh5BftU_Rl2SCeZPb-mjzg,691
+nyt_games/exceptions.py,sha256=b-ofe0MbGnmqVgSUPEN8RMf3P5mXP3N1TDZ0hYo0ig8,379
+nyt_games/models.py,sha256=6H1-CsJ7uZE4di_F-JAiy3G-iNGYXARNgM4CmShFkkw,3071
+nyt_games/nyt_games.py,sha256=kAPj4-hKQH96PMy9fMP9tYaik19l8OFOYbVppenbRRw,3791
+nyt_games/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+nyt_games-0.4.3.dist-info/LICENSE.md,sha256=2Fz95PZCi9jPeMJzazl7s0Pw6wVute_qGFUIxr4D2cQ,1077
+nyt_games-0.4.3.dist-info/METADATA,sha256=PM6Kw597g35WgCdyxhTEV1QvXkrKfsHrwJ_-a4tyX0E,5891
+nyt_games-0.4.3.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+nyt_games-0.4.3.dist-info/RECORD,,
