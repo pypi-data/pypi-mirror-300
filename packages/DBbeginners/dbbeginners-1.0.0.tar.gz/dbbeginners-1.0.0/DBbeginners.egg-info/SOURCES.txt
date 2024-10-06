@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+DBbeginners.egg-info/PKG-INFO
+DBbeginners.egg-info/SOURCES.txt
+DBbeginners.egg-info/dependency_links.txt
+DBbeginners.egg-info/requires.txt
+DBbeginners.egg-info/top_level.txt

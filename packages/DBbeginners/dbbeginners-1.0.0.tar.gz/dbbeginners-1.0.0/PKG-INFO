@@ -1,0 +1,145 @@
+Metadata-Version: 2.1
+Name: DBbeginners
+Version: 1.0.0
+Summary: A lightweight SQLite database utility module
+Author: Vollo
+Author-email: p300x5@gmail.com
+License: MIT
+Keywords: sqlite sql database utility
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: POSIX
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: requests>=2.25.1
+
+DataBase Class Documentation
+The DataBase class is designed to interact with SQLite databases, providing methods for creating tables, inserting data, querying data, updating data, deleting data, and managing transactions. It also offers utility methods for getting affected rows count, table columns, and table rows count.
+
+Table of Contents
+
+def __init__(self, db_name: str, table_name: str, columns: List[str]):
+    self.db_name = db_name
+    self.table_name = table_name
+    self.columns = columns
+    self.conn = None
+
+Initializes the DataBase object with the given database name, table name, and column names. The connection to the database is established when needed.
+
+Connecting and Closing Database
+def connect(self) -> None:
+    # ...
+
+def close(self) -> None:
+    # ...
+
+The connect method establishes a connection to the database if it's not already connected. The close method closes the database connection if it's open.
+
+Creating Table
+def create_table(self) -> None:
+    # ...
+
+Creates a table in the database with the specified name and columns. If the table already exists, it does nothing.
+
+Inserting Data
+def insert_data(self, data: List[Tuple]) -> None:
+    # ...
+
+Inserts the given data into the table. The data should be a list of tuples, where each tuple represents a row of data.
+
+Querying Data
+def select_data(self, query: str) -> List[Tuple]:
+    # ...
+
+Executes the given SQL query and returns the result as a list of tuples. If the query is invalid or fails to execute, it returns an empty list.
+
+Updating Data
+def update_data(self, query: str) -> None:
+    # ...
+
+Executes the given SQL query to update data in the table. If the query is invalid or fails to execute, it prints an error message.
+
+Deleting Data
+def delete_data(self, query: str) -> None:
+    # ...
+
+Executes the given SQL query to delete data from the table. If the query is invalid or fails to execute, it prints an error message.
+
+Transaction Management
+def begin_transaction(self) -> None:
+    # ...
+
+def commit_transaction(self) -> None:
+    # ...
+
+def rollback_transaction(self) -> None:
+    # ...
+
+The begin_transaction method starts a new transaction. The commit_transaction method commits the current transaction. The rollback_transaction method rolls back the current transaction.
+
+Executing Raw Query
+def execute_raw_query(self, query: str) -> None:
+    # ...
+
+Executes the given raw SQL query and commits the transaction. If the query is invalid or fails to execute, it prints an error message.
+
+Getting Affected Rows Count
+def get_affected_rows(self) -> int:
+    # ...
+
+Returns the number of rows affected by the last SQL statement.
+
+Getting Table Columns
+def get_table_columns(self) -> List[str]:
+    # ...
+
+Returns a list of column names in the table. If there's an error retrieving the columns, it returns an empty list.
+
+Getting Table Rows Count
+def get_table_rows_count(self) -> int:
+    # ...
+
+Returns the number of rows in the table. If there's an error retrieving the row count, it returns 0.
+
+Example Usage
+db = DataBase('example.db', 'users', ['id', 'name', 'email'])
+
+# Create table
+db.create_table()
+
+# Insert data
+data = [(1, 'John Doe', 'john.doe@example.com'), (2, 'Jane Smith', 'jane.smith@example.com')]
+db.insert_data(data)
+
+# Query data
+result = db.select_data('SELECT * FROM users')
+print(result)
+
+# Update data
+db.update_data('UPDATE users SET email = "john.doe.updated@example.com" WHERE id = 1')
+
+# Delete data
+db.delete_data('DELETE FROM users WHERE id = 2')
+
+# Get affected rows count
+affected_rows = db.get_affected_rows()
+print(f"Affected rows: {affected_rows}")
+
+# Get table columns
+columns = db.get_table_columns()
+print(f"Table columns: {columns}")
+
+# Get table rows count
+rows_count = db.get_table_rows_count()
+print(f"Table rows count: {rows_count}")
+
+# Close the database connection
+db.close()
