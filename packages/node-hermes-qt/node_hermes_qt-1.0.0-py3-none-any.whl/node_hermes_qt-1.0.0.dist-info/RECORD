@@ -1,0 +1,13 @@
+node_hermes_qt/__init__.py,sha256=XmQb4SPZcuerLbfeg79WBu7kTTd1_axPj0qindUrS2U,271
+node_hermes_qt/node_manager.py,sha256=JxUJMW9pI4p94O6uiKgHt_wQcOcOT-WPmTtmeSIAa1g,4108
+node_hermes_qt/nodes/__init__.py,sha256=9eeh40Hicr7x4gCwAH27HTFc9vHnyfZkMbFR_DOPUK0,166
+node_hermes_qt/nodes/data_list/data_list_node.py,sha256=64DbT9bxt4CJTcT9XJufZ3vRie1jqf2a5EZrJ-li_3A,15369
+node_hermes_qt/nodes/data_list/datapoint.py,sha256=uNllPF8d3x41OXgk-8G__qFoSSxWFCynVvRd61LGUqk,1416
+node_hermes_qt/nodes/data_list/displays/display_widget.py,sha256=nf4uacJylixc-o8_YMv6ozR7sNPaMFdTJSSKhmll64g,1987
+node_hermes_qt/nodes/data_list/graph_widget.py,sha256=hocikVLii2pDSkv1wCCmqhQbjrd43Y2BoyN19SxnR28,3345
+node_hermes_qt/nodes/generic_qt_node.py,sha256=ls_mtkDXOYxDZbAA_UqjoNExF2GzzrIPjZHZzQxZWDk,581
+node_hermes_qt/ui/toolbar.py,sha256=nDoMrL_xwPcRPQ5sSHD9QU6nxCyFYfbMWG-CpfaNAsk,1717
+node_hermes_qt/ui/toolbar.ui,sha256=0G9zy7MHGiweuQJM7VWRVcpBG_z8L21Lmb4YVUrj5cc,1114
+node_hermes_qt-1.0.0.dist-info/METADATA,sha256=ibLHpF_2wqmlXQtXXrNCz8KR8Hzr1a7S2p4VLg1bOXs,650
+node_hermes_qt-1.0.0.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+node_hermes_qt-1.0.0.dist-info/RECORD,,
