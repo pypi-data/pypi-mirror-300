@@ -1,0 +1,11 @@
+pydeepflow/__init__.py,sha256=qmHUWF5k8BD1TmFHNz0ejYyLkQVlk1IW_zQif2GqPsw,329
+pydeepflow/activations.py,sha256=1d7GWctKQYY4u6ZRv2rNZDIJFyJn1hJB7Mgi_anE9AE,1773
+pydeepflow/device.py,sha256=-Zs84RY2YL0f3NLmkxtuVdbo98HERyBxsKbsUmqwd0A,1649
+pydeepflow/losses.py,sha256=6qcTx36ffP2PGxz7H2BKLG9UnJSzWT-kMmKzKAMvvHo,2549
+pydeepflow/main.py,sha256=4xMfVlLGV_7ADeUq7bMQiLeh2YZtYwTpcFE2QMeVhO4,1895
+pydeepflow/model.py,sha256=HVM-gXLqiCW7wc-Cfzv_p34w9aQljW5aJPNWAfV2IaE,4596
+pydeepflow-0.1.5.dist-info/LICENSE,sha256=k96xbBY8LmWCk9mDlflJSJ1h4RIlE_K9j37E3i0VraU,1067
+pydeepflow-0.1.5.dist-info/METADATA,sha256=WUoHFOBIZyV8q1ETNwwuARK9BE8uh0Um80bA22ZOB4M,5798
+pydeepflow-0.1.5.dist-info/WHEEL,sha256=gOoKyzoa71MTkUlqGDBvKZMCQyd52VGoyocju0NXk00,104
+pydeepflow-0.1.5.dist-info/top_level.txt,sha256=NjwQXnG3p9fozgVaQpoem0k7xe2y1AiAVZ8ReVieZYk,11
+pydeepflow-0.1.5.dist-info/RECORD,,
