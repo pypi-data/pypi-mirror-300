@@ -1,0 +1,3 @@
+[console_scripts]
+mlx_textgen.create_config = mlx_textgen.create_config:main
+mlx_textgen.server = mlx_textgen.server:main
