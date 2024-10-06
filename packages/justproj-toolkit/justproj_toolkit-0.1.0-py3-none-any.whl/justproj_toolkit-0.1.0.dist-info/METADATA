@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: justproj-toolkit
+Version: 0.1.0
+Summary: 
+Author: alexeev-prog
+Author-email: dev.alexeev@mail.ru
+Requires-Python: >=3.12,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: pycolor-palette-loguru (>=0.1.4,<0.2.0)
+Requires-Dist: rich (>=13.9.2,<14.0.0)
+Requires-Dist: ruff (>=0.6.9,<0.7.0)
+Description-Content-Type: text/markdown
+
+
