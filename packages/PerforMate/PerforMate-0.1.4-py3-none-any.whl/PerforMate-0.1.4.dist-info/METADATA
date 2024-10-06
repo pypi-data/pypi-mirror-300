@@ -1,0 +1,147 @@
+Metadata-Version: 2.1
+Name: PerforMate
+Version: 0.1.4
+Summary: A lightweight performance tracker for python projects.
+Home-page: https://github.com/kreateyou/PerforMate
+Author: Elijah M
+Author-email: elijah@kreateyou.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: tinydb
+Requires-Dist: pandas
+Requires-Dist: matplotlib
+Requires-Dist: numpy
+
+# PerforMate Anomaly Detection and Exporting Data
+
+PerforMate is a lightweight performance-tracking library designed to measure time spent in various sections and subsections of your code. It is optimized for low-resource environments like IoT projects. This extended feature detects anomalies in the time spent in sections or subsections using the **Z-Score** method. Additionally, PerforMate supports exporting performance data to various services such as HTTP or FTP using custom-defined services.
+
+## Features
+
+- **Track Performance**: Measure the time spent in different sections and subsections of your code.
+- **Anomaly Detection**: Automatically detect anomalies in time spent across sections and subsections using the Z-Score method.
+- **Customizable Threshold**: Define how sensitive the anomaly detection should be by setting the Z-Score threshold.
+- **Section and Subsection Analysis**: You can detect anomalies in both high-level sections and more granular subsections.
+- **Export Data**: Export your performance data to services such as HTTP, FTP, or custom services by defining export methods.
+- **Detailed Information**: Get the section/subsection name, the anomalous time spent, and the timestamp for each anomaly.
+
+## Installation
+
+You can install PerforMate using `pip`:
+
+```bash
+pip install PerforMate
+```
+
+## Usage
+
+### 1. Initializing PerforMate
+
+Start by creating an instance of the `PerforMate` object and begin tracking sections and subsections in your code.
+
+```python
+from PerforMate import PerforMate
+import time
+
+# Initialize PerforMate
+tracker = PerforMate("MyApp")
+
+# Start a section and simulate work
+section = tracker.start_section("Data Processing")
+time.sleep(2)
+section.add_subsection("Load Data").end_subsection("Load Data")
+time.sleep(1)
+tracker.end_section("Data Processing")
+
+section = tracker.start_section("Model Training")
+time.sleep(3)
+tracker.end_section("Model Training")
+```
+
+## Results Samples
+
+<p align="center">
+  <img src="./images/image_1.png" alt="Image 1" style="width: 45%; height:250px"/>
+  <img src="./images/image_2.png" alt="Image 2" style="width: 45%;  height:250px"/>
+</p>
+
+### 2. Detecting Anomalies in Sections
+
+To detect anomalies in the time spent across sections, use the `detect_anomalies_in_sections()` function:
+
+```python
+# Detect anomalies in sections
+anomalous_sections = detect_anomalies_in_sections(tracker, threshold=3, subsections=False)
+print(f"Anomalous sections, times, and timestamps: {anomalous_sections}")
+```
+
+### 3. Detecting Anomalies in Subsections
+
+Similarly, to detect anomalies in subsections:
+
+```python
+# Detect anomalies in subsections
+anomalous_subsections = detect_anomalies_in_sections(tracker, threshold=3, subsections=True)
+print(f"Anomalous subsections, times, and timestamps: {anomalous_subsections}")
+```
+
+### 4. Exporting Data
+
+PerforMate supports exporting your performance data to various services such as **HTTP**, **FTP**, or any custom service. You can define your own export service by extending the `ExportService` abstract class.
+
+#### Example: Exporting Data via HTTP
+
+```python
+class HTTPExportService(ExportService):
+    def send_data(self, data):
+        # Implement the HTTP request to send the performance data
+        import requests
+        response = requests.post("https://your-endpoint.com", json=data)
+        print(f"Data exported via HTTP: {response.status_code}")
+
+# Export the data using the defined HTTP export service
+http_service = HTTPExportService()
+tracker.dump_to_service(http_service)
+```
+
+#### Example: Exporting Data via FTP
+
+```python
+class FTPExportService(ExportService):
+    def send_data(self, data):
+        # Implement FTP logic to upload the performance data
+        import ftplib
+        with ftplib.FTP('ftp.yourserver.com', 'username', 'password') as ftp:
+            with open('data.json', 'rb') as f:
+                ftp.storbinary('STOR data.json', f)
+        print("Data exported via FTP")
+
+# Export the data using the defined FTP export service
+ftp_service = FTPExportService()
+tracker.dump_to_service(ftp_service)
+```
+
+### 5. Output Example
+
+The anomaly detection function will return a list of tuples containing the section/subsection name, the time spent, and the timestamp:
+
+```python
+# Example output
+Anomalous sections, times, and timestamps: [('Data Processing', 50, '2024-10-05T10:30:00'), ('Model Training', 200, '2024-10-05T11:00:00')]
+Anomalous subsections, times, and timestamps: [('Load Data', 10, '2024-10-05T10:32:00'), ('Preprocess Data', 90, '2024-10-05T10:45:00')]
+```
+
+## Customization
+
+You can customize the `threshold` value for Z-Score to control how sensitive the anomaly detection is. For example:
+
+- A `threshold` of **2** will flag more anomalies (more sensitive).
+- A `threshold` of **4** will flag fewer anomalies (less sensitive).
+
+## License
+
+This project is licensed under the MIT License.
