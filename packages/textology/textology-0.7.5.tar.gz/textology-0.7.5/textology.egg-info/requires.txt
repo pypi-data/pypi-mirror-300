@@ -1,0 +1,6 @@
+textual>=0.74.0
+
+[dev]
+pytest
+pytest-asyncio
+textual-dev
