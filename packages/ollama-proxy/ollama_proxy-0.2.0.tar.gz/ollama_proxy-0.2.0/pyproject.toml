@@ -1,0 +1,36 @@
+[tool.poetry]
+name = "ollama-proxy"
+version = "0.2.0"
+description = "ollama proxy to other cloud model service"
+authors = ["lipi <lipicoder@qq.com>"]
+license = "Apache 2.0"
+readme = "README.md"
+packages = [{include = "ollama_proxy", from = "src"}]
+
+[tool.poetry.dependencies]
+python = "^3.12"
+fastapi = "^0.115.0"
+pydantic = "^2.9.2"
+uvicorn = "^0.31.0"
+toml = "^0.10.2"
+setuptools = "^75.1.0"
+aiohttp = "^3.10.8"
+click = "^8.1.7"
+asyncio = "^3.4.3"
+hypercorn = "^0.17.3"
+watchfiles = "^0.24.0"
+pytest = "^8.3.3"
+httpx = "^0.27.2"
+zhipuai = "^2.1.5.20230904"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.3.3"
+requests = "^2.32.3"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+start = "src.ollama_proxy.main:run"
+test_chat = "pytest:main tests/test_chat.py -v"
