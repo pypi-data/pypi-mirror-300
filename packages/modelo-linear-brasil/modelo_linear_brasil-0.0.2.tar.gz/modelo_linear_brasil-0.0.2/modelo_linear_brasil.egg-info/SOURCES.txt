@@ -1,0 +1,7 @@
+LICENSE
+README.md
+setup.py
+modelo_linear_brasil.egg-info/PKG-INFO
+modelo_linear_brasil.egg-info/SOURCES.txt
+modelo_linear_brasil.egg-info/dependency_links.txt
+modelo_linear_brasil.egg-info/top_level.txt

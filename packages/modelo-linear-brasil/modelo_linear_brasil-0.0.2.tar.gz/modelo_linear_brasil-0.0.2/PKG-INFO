@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: modelo_linear_brasil
+Version: 0.0.2
+Summary: Uma classe para Regressão Linear em português, contendo as principais métricas da abordagem como métodos.
+Home-page: https://github.com/bruno-rodrigues-carloto/regressao-linear-brasil/modelo_linear_brasil.py
+Author: Bruno Rodrigues Carloto
+Author-email: brunnocarlotosjob@gmail.com
+Requires-Python: >=3.6
+License-File: LICENSE
