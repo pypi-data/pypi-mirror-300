@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools>=64", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "danai"
+version = "0.3.9.3"
+description = "A utility package for simplifying interactions with OpenAI models."
+authors = [{name = "Aidan Coughlan", email = "dev@farfromavocados.com"}]
+license = {text = "MIT"}
+readme = "README.md"
+requires-python = ">=3.7"
+
+dependencies = [
+    "tiktoken",
+    "requests",
+    "openai",
+    "datetime"
+]
+
+[tool.setuptools.package-data]
+danai = ["pricing.json"]
+
+[project.urls]
+"Homepage" = "https://github.com/farfromavocaido/ai_utils"
+
+[project.scripts]
+danai = "danai.cli:main"
+tcount = "danai.cli:tokencount_cli"
