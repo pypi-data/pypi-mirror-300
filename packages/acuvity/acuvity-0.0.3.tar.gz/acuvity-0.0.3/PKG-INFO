@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: acuvity
+Version: 0.0.3
+Summary: The official Acuvity Python SDK.
+Home-page: https://github.com/acuvity/acuvity-python
+License: Apache-2.0
+Author: Acuvity, Inc.
+Author-email: info@acuvity.ai
+Requires-Python: >=3.8,<4.0
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: httpx (>=0.23.0,<1)
+Requires-Dist: pydantic (>=2.9.2,<3.0.0)
+Requires-Dist: pyjwt (>=2.9.0,<3.0.0)
+Project-URL: Repository, https://github.com/acuvity/acuvity-python
+Description-Content-Type: text/markdown
+
+# acuvity-python
+
+This is a simple python package to use the Acuvity detection APIs.
+
