@@ -1,0 +1,11 @@
+tgit/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tgit/changelog.py,sha256=-j7kuUfSmtUfiqi9GEevvHnC-nl_O_sNmimQIi3GTcM,9633
+tgit/cli.py,sha256=UvqqJQJVnsIxowBeA87pR7YEdLUptT09vair6kTEouo,1056
+tgit/commit.py,sha256=7WietMVh4jOZLsS3U3Muh2Zx5y2UegD60XsjivNOaFU,3928
+tgit/settings.py,sha256=pyfFq9uwodK5qcY18P6nucU9l70mUZ9gkClqYpmbf5o,794
+tgit/utils.py,sha256=oKtJAWWZH8BFqN0le9p5tGDKJGV30xOGUb93u93g6Es,2709
+tgit/version.py,sha256=W173hRhCZHZ-OHni08a8Hca4XzqrUr_xz2OAnVSgys0,15321
+tgit-0.7.0.dist-info/METADATA,sha256=UmjDZsdo2qJT0bLwQ6Nw2RLBUqDQ4ymc4Yk15ZH82So,1112
+tgit-0.7.0.dist-info/WHEEL,sha256=1yFddiXMmvYK7QYTqtRNtX66WJ0Mz8PYEiEUoOUUxRY,87
+tgit-0.7.0.dist-info/entry_points.txt,sha256=kpGAfuRbS_RJHDmemt0LLSFuB7jykZXsGoDJuAoWIY0,39
+tgit-0.7.0.dist-info/RECORD,,
