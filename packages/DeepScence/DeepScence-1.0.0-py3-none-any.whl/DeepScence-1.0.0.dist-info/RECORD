@@ -1,0 +1,10 @@
+DeepScence/__init__.py,sha256=kLkYfOUzXsi3OmxTeWoMtyYaznsl3uKhxBTXuci6h90,419
+DeepScence/api.py,sha256=G6wND0DiC_Y1yhxsTDOC5uKeeTUKsm6_npDzYB90oBg,3674
+DeepScence/io.py,sha256=jWoBCYZTybImEQjQYklP2Lkzh0zBi8CN0R9SqD9clrw,23262
+DeepScence/network.py,sha256=jESV69t4DwMCsokOB8UVxLiPsgm0Q95Ea2wtT-DbQAA,7931
+DeepScence/train.py,sha256=GQOtnkOfhZtbqteTWJTDmKKfkCPzejzNHKrewLKmTRg,6013
+DeepScence/data/coreGS_v2.csv,sha256=Od7dFx7EiBvGp4wj35_hWu8AbM878TxXZBdgk7Pj6OA,70890
+DeepScence-1.0.0.dist-info/METADATA,sha256=QhneHWLhVQP3vwABFSbXPMy5rWWXJ9yVBUWq6XEJV1o,582
+DeepScence-1.0.0.dist-info/WHEEL,sha256=yQN5g4mg4AybRjkgi-9yy4iQEFibGQmlz78Pik5Or-A,92
+DeepScence-1.0.0.dist-info/top_level.txt,sha256=PdTpWSp-h713cm1J2p4V8EORDfnOyKU3b4EnDmNvrF8,11
+DeepScence-1.0.0.dist-info/RECORD,,
