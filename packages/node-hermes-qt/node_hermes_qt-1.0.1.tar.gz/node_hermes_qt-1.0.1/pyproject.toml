@@ -1,0 +1,45 @@
+[tool.poetry]
+name = "node-hermes-qt"
+version = "1.0.1"
+description = ""
+authors = ["floris vernieuwe <floris@vernieuwe.eu>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = ">=3.10,<3.13"
+qtpy = "^2.4.1"
+pyside6 = "^6.7.1"
+pyside6-stubs = "^6.4.2.0"
+click = "^8.1.7"
+prefixed = "^0.7.1"
+pyqtgraph = "^0.13.7"
+qt-custom-treewidget = "^0.2.0"
+
+[tool.poetry.group.dev.dependencies]
+ruff = "^0"
+
+[tool.pyright.defineConstant]
+PYQT5 = false
+PYSIDE2 = false
+PYQT6 = false
+PYSIDE6 = true
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.ruff.lint]
+select = ["E", "F"]
+extend-select = ["I"]
+# no E402
+ignore = ["E402"]
+
+
+[tool.ruff]
+line-length = 120
+exclude = ["old/**", "**.pyi", "**/.venv/**"]
+include = ["src/**.py", "test/**.py"]
+
+[tool.pyright]
+exclude = ["old/**", "**.pyi", "**/.venv/**"]
