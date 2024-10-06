@@ -1,0 +1,51 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "reloady"
+version = "0.1.6"
+authors = [
+  { name="Moetaz", email="moetaz@pingoware.tech" },
+]
+description = "A tool for automatically reloading Python programs on file changes"
+readme = "README.md"
+long_description_content_type = "text/markdown"
+requires-python = ">=3.7"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/makergeek/reloady"
+"Bug Tracker" = "https://github.com/makergeek/reloady/issues"
+
+[project.scripts]
+reloady = "reloady.main:main"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["reloady*"]
+exclude = ["tests*"]
+
+[tool.setuptools.package-data]
+reloady = ["py.typed"]
+
+[tool.poetry]
+name = "reloady"
+version = "0.1.6"
+authors = ["Moetaz <moetaz@pingoware.tech>"]
+packages = [
+    { include = "reloady" },
+]
+description = "A tool for automatically reloading Python programs on file changes"
+readme = "README.md"
+homepage = "https://github.com/makerGeek/reloady"
+repository = "https://github.com/makerGeek/reloady"
+license = "MIT"
+
+
+[tool.poetry.dependencies]
+python = "^3.7"
