@@ -1,0 +1,2 @@
+[console_scripts]
+email_scraper = mwwlean_email_scraper:main
