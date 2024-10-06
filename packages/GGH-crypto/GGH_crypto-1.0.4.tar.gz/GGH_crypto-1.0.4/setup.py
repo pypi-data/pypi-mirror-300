@@ -1,0 +1,35 @@
+from setuptools import setup, find_packages
+
+from pathlib import Path
+this_directory = Path(__file__).parent
+long_description = (this_directory / "README.md").read_text()
+
+setup(
+  name = 'GGH_crypto',
+  packages = find_packages(),
+  version = '1.0.4',
+  license='MIT',
+  description = 'GGH_crypto is a Python package for lattice-based cryptography, focusing on GGH and GGH-HNF implementations.',
+  long_description=long_description,
+  long_description_content_type='text/markdown',
+  author = 'Gabriele Bottani',
+  author_email = 'gbotani19@gmail.com',
+  url = 'https://github.com/TheGaBr0/GGH',
+  download_url = 'https://github.com/TheGaBr0/GGH/archive/refs/tags/v1.0.4.tar.gz',
+  keywords = ['GGH', 'GGH-HNF', 'GGH_CRYPTO', 'Lattice', 'LLL', 'BKZ', 'Lattice-based-cryptography'],
+  install_requires=[
+      'matplotlib',
+      'numpy',
+      'python_flint',
+      'sympy',
+  ],
+  classifiers=[
+    'Development Status :: 5 - Production/Stable',
+    'Intended Audience :: Developers',
+    'Topic :: Software Development :: Build Tools',
+    'License :: OSI Approved :: MIT License',
+    'Programming Language :: Python :: 3.10',
+    'Programming Language :: Python :: 3.11',
+    'Programming Language :: Python :: 3.12'
+  ],
+)
