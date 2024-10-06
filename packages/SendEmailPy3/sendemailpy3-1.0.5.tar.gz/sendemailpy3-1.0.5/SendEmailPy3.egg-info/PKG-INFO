@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: SendEmailPy3
+Version: 1.0.5
+Summary: Easy email sending for Python 3
+Home-page: https://github.com/GouthamOfTheNP/send_email
+Author: Goutham Narayana Pedinedi
+Author-email: codspecialops@gmail.com
+License: MIT
+Keywords: send,email,python
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Email Sender Module
+## Abstracted module for sending emails
+### This module was made so that you don't have to worry about writing the code for sending emails yourself. This module can be used with multiple different email clients, and can be used to send multiple emails.
+
+##### License must be followed while using this package.
