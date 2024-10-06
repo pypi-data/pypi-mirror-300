@@ -1,0 +1,43 @@
+Metadata-Version: 2.3
+Name: fourtwonine
+Version: 0.1.0
+Summary: Simple, flexible rate limits for Starlette and FastAPI
+Project-URL: Homepage, https://github.com/Liminova/fourtwonine#readme
+Project-URL: Repository, https://github.com/Liminova/fourtwonine.git
+Project-URL: Issues, https://github.com/Liminova/fourtwonine/issues
+Author-email: beerpsi <beerpsi@duck.com>
+License-Expression: MIT
+Keywords: fastapi,limits,rate limit,starlette
+Classifier: Development Status :: 3 - Alpha
+Classifier: Environment :: Web Environment
+Classifier: Framework :: FastAPI
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Typing :: Typed
+Requires-Python: >=3.9
+Requires-Dist: limits>=3.13.0
+Requires-Dist: starlette
+Requires-Dist: typing-extensions>=4.12.2
+Description-Content-Type: text/markdown
+
+# fourtwonine
+
+Yet another rate limiter for Starlette and FastAPI.
+
+This is simply a thin layer over the [limits](https://limits.readthedocs.io/en/stable/quickstart.html)
+library, making it easy to define flexible rate limits.
+
+## Features
+- Fully async and typed
+- Supports any data store the `limits` library supports: `redis`, `mongodb`, `memcached`, etc.
+- Supports legacy rate limit headers, as well as IETF [draft 06](https://datatracker.ietf.org/doc/html/draft-ietf-httpapi-ratelimit-headers-06)
+and [draft 07](https://datatracker.ietf.org/doc/html/draft-ietf-httpapi-ratelimit-headers-07) headers.
+- Exposes rate limit state (under `request.state.rate_limit` by default)
+
+## Examples
+Check the [`examples`](examples) directory for how to integrate this into your app.
