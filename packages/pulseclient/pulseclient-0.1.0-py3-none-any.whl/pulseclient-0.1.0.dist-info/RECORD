@@ -1,0 +1,9 @@
+pulseclient/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pulseclient/lib.py,sha256=_bVXBHpUHQQmp7Y8wJyll-nV8nldriDJLIIxaprNrBQ,7837
+pulseclient/start_client.py,sha256=2SWlY0hI-xqrYn3hakMi5UjbnaChmShGKyovC9JnOHY,1724
+pulseclient-0.1.0.dist-info/LICENSE.txt,sha256=Xm0tOYb0HuPNFkFTAWkG4Do0dx8bPwOAOGYQMqkit7U,1071
+pulseclient-0.1.0.dist-info/METADATA,sha256=t7UTSgiLDSVrInXkQnp79FQGy-qeoajYDS8vFrY9GlM,4486
+pulseclient-0.1.0.dist-info/WHEEL,sha256=GV9aMThwP_4oNCtvEC2ec3qUYutgWeAzklro_0m4WJQ,91
+pulseclient-0.1.0.dist-info/entry_points.txt,sha256=KgdG2wWr8dI1my250yuaxqzihirRHid2reW8jdfwHgk,63
+pulseclient-0.1.0.dist-info/top_level.txt,sha256=0QzIRRPhu3wEJRqWfeVTACJyCPyzGm86XRkTeL_weGY,12
+pulseclient-0.1.0.dist-info/RECORD,,

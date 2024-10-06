@@ -1,0 +1,2 @@
+[console_scripts]
+start_client = pulseclient.start_client:main
