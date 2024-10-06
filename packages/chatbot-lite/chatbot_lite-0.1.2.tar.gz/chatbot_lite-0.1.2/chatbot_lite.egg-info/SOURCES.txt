@@ -1,0 +1,15 @@
+.gitattributes
+.gitignore
+LICENSE
+README.md
+main.py
+requirements.txt
+setup.py
+.github/workflows/python-publish.yml
+chatbot/__init__.py
+chatbot/chatbot.py
+chatbot_lite.egg-info/PKG-INFO
+chatbot_lite.egg-info/SOURCES.txt
+chatbot_lite.egg-info/dependency_links.txt
+chatbot_lite.egg-info/requires.txt
+chatbot_lite.egg-info/top_level.txt
