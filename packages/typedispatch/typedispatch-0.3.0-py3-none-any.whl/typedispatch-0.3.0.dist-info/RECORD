@@ -1,0 +1,9 @@
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_typedispatch.py,sha256=YQPeX3x4NWLNoS_nnV7p8kQAVdGrIMMsPL6xIa_oI44,4349
+typedispatch/__init__.py,sha256=NSHhm-tAaVkwyguLijKGSZ3VBYGb-38anVtNOcGp7Vc,59
+typedispatch/typedispatch.py,sha256=ujPHM1b2ETvrWO4rpWqSQiWyfat8UQUkPNhWWIwpNwY,3026
+typedispatch-0.3.0.dist-info/LICENSE,sha256=aFpIalA5yrhU7k_kBnFTm4xhSUn3KufvJCH3elkyxLI,1090
+typedispatch-0.3.0.dist-info/METADATA,sha256=uyxROwm8mqvA61YjiW41nDF-8sO1Fels2KUIP_svDm8,3873
+typedispatch-0.3.0.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+typedispatch-0.3.0.dist-info/top_level.txt,sha256=JP6dbLcfcYtVM6aiF_yQv7H4pWBnZ3UADyrad3MkVks,19
+typedispatch-0.3.0.dist-info/RECORD,,
