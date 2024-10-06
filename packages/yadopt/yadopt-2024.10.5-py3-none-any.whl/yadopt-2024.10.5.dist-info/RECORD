@@ -1,0 +1,14 @@
+yadopt/__init__.py,sha256=QQ6nLiBQnBXrPzjv5A8BwrpglwuKKQkNQOpC6hAi3uA,324
+yadopt/argopt.py,sha256=C62npmaJoaVCwefl3g2W5znMYKF4xrY0lt3eGt6m-3o,4574
+yadopt/argvec.py,sha256=rxbrG3AKI_r_hD6W5ueZUNwtyG1p6mlKpZzLNPB2eVg,5967
+yadopt/checker.py,sha256=E3nvhXzb5ZumkkXEY4Tk9sRuUOXORUdQrRZRGWBcGyk,1458
+yadopt/docstr.py,sha256=hhHuTlU2H5L9ZS5afuViIiHieMcKXAOXScg2jmDEp0U,3352
+yadopt/errors.py,sha256=MdYbm0Z1j8HjKIMkb4eLm8JGyLqH3vxq6hYLESXgNaE,4351
+yadopt/gendat.py,sha256=BwIhah_mDvajqi9Tgio_DF3UFPObUo2RNbW-vndD76c,2728
+yadopt/usage.py,sha256=afjj5QWl7uEUjfWIuawGbtm7XVq50dG_p_4MdihJgY4,3821
+yadopt/utils.py,sha256=X5aBuIgVW2sYJr9KZqSc9efL6slVf6XovIz9M1G2wvw,3734
+yadopt/yadopt.py,sha256=J2HFpPMhe9ON-rNrIq-RChyGaiRHBFlFCZF4eFKcik8,3942
+yadopt-2024.10.5.dist-info/METADATA,sha256=3yHQrA4ehaKDyBJZ9eCiTcxqY5zyOUVd2hBcYr8AkL8,7887
+yadopt-2024.10.5.dist-info/WHEEL,sha256=1yFddiXMmvYK7QYTqtRNtX66WJ0Mz8PYEiEUoOUUxRY,87
+yadopt-2024.10.5.dist-info/licenses/LICENSE,sha256=y7iB9SJXULVmx2iOrUOayvCW3tqJCSkOpAbbNW6G6mQ,1073
+yadopt-2024.10.5.dist-info/RECORD,,
