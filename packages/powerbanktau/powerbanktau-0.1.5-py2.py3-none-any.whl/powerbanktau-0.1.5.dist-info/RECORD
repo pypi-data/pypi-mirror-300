@@ -1,0 +1,14 @@
+powerbanktau-0.1.5.data/scripts/InteractiveSession.sh,sha256=s-oXsK505r-BhYXzwcdyXb_S3XQEGbe_AYoJX9RltvM,797
+powerbanktau-0.1.5.data/scripts/InteractiveSessionSlurm.sh,sha256=9PW2Vj2cO82hJWdwnuUcT4JbbRhCuRoDGxVplsVpC-U,441
+powerbanktau-0.1.5.data/scripts/InteractiveSessionSlurmGPU.sh,sha256=riBaiHcfTZrB-7Rcu3DOtzFfAx7Sy4LJ2rjKVZGE7xo,454
+powerbanktau-0.1.5.data/scripts/gpu_notes,sha256=QczvuleLCNGmqCfcYdnJFx-VeMCYes5atgpAJGQHCOE,1537
+powerbanktau-0.1.5.data/scripts/interactive_pbs.sh,sha256=cmgC8AXX_DyMbVqQfsinzMYWsHMOkkl_cw5wtRpMO30,681
+powerbanktau-0.1.5.data/scripts/interactive_slurm.sh,sha256=d2bW3cQyB7fBaiZGXWpBif53Ey4HQUc9abck1A2Wk0g,843
+powerbanktau-0.1.5.data/scripts/mount_project.sh,sha256=LGCjqzc3KAvlCGKgkbWu_M7XT0c-ftXqXOYHthbvasA,379
+powerbanktau-0.1.5.data/scripts/pbs_notebook.sh,sha256=h3cV74qyDRpWF0UR0BfIbsFjOn8uNbit3LkcU6QIXBI,1402
+powerbanktau-0.1.5.data/scripts/script.sh,sha256=7GuPnqL2C0wp2aIUGKMGZpmpnfCgoBtNfl4EfW6IFu0,777
+powerbanktau-0.1.5.data/scripts/slurm_notebook.sh,sha256=FJxdxB9QZtwP8k2MlqM_5Rlr6Eqni0LjugmqOvXO_XA,1306
+powerbanktau-0.1.5.dist-info/METADATA,sha256=isqdmbN6HCYkrHabxGm9dWb5xZziYiDNZL2OAAXUNlM,418
+powerbanktau-0.1.5.dist-info/WHEEL,sha256=AHX6tWk3qWuce7vKLrj7lnulVHEdWoltgauo8bgCXgU,109
+powerbanktau-0.1.5.dist-info/top_level.txt,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+powerbanktau-0.1.5.dist-info/RECORD,,
