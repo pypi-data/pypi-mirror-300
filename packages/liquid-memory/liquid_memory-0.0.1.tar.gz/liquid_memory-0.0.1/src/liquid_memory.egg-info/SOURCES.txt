@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/hopfield/__init__.py
+src/hopfield/main.py
+src/liquid_memory.egg-info/PKG-INFO
+src/liquid_memory.egg-info/SOURCES.txt
+src/liquid_memory.egg-info/dependency_links.txt
+src/liquid_memory.egg-info/top_level.txt
