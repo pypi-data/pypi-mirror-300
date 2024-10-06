@@ -1,0 +1,9 @@
+Pillow
+ffmpeg-python
+numpy
+requests
+
+[AI]
+torch
+scikit-image
+torchvision
