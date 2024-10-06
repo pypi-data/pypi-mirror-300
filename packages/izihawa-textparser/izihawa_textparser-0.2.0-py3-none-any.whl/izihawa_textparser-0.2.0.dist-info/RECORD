@@ -1,0 +1,10 @@
+izihawa_textparser/__init__.py,sha256=1Dc_f8HQmZ0jrWGaqx4Ek37wdCllEmBDinfLWbY4f10,208
+izihawa_textparser/_epub.py,sha256=zxM4dr-aRvP6e0ird19TQeZBFWxEh-fpYuPCBUD0r1g,4514
+izihawa_textparser/_grobid.py,sha256=dylAMUTv4kiJnIWdgPUTMSmbUBGAdyDBexGOdk4R_eA,9246
+izihawa_textparser/_pubmed.py,sha256=GZ_1RKB_ZmNw6Edz1YmDIFbNhJCz6aungYZY4E3q6PQ,11150
+izihawa_textparser/cli.py,sha256=qfQYH9AYWmc2Qos5qtsBx4jWfSy-rlf0RaIOom05NeQ,11170
+izihawa_textparser/utils.py,sha256=ugN8mNelq0YsCxEgg8Bf3iMryI7SJQ57Czog0cHkY3Y,4712
+izihawa_textparser-0.2.0.dist-info/METADATA,sha256=t_pkS4QJ6rHCnxJIG6idZveN9cFkTao-FmJkAzikOfA,1227
+izihawa_textparser-0.2.0.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+izihawa_textparser-0.2.0.dist-info/entry_points.txt,sha256=PREPsmcOG_slDtD66LhDGPPilFOf1ijeO6EAPm8qfA8,65
+izihawa_textparser-0.2.0.dist-info/RECORD,,
