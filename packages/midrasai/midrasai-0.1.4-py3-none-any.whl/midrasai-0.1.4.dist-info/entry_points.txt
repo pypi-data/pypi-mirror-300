@@ -1,0 +1,3 @@
+[console_scripts]
+midras-server=midrasai.cli:cli
+
