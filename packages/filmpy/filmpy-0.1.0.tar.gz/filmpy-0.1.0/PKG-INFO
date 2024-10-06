@@ -1,0 +1,26 @@
+Metadata-Version: 2.3
+Name: filmpy
+Version: 0.1.0
+Summary: filmpy is a Python library for video processing and manipulation based on MoviePy
+Author-email: lantzk <9219265+lantzk@users.noreply.github.com>
+License-File: LICENSE.md
+Requires-Python: >=3.8
+Requires-Dist: coveralls>=4.0.1
+Requires-Dist: decorator>=5.1.1
+Requires-Dist: imageio-ffmpeg>=0.5.1
+Requires-Dist: imageio>=2.35.1
+Requires-Dist: numpy>=2.1.1
+Requires-Dist: proglog>=0.1.10
+Requires-Dist: pytest-cov>=5.0.0
+Requires-Dist: pytest>=8.3.3
+Requires-Dist: ruff>=0.6.9
+Requires-Dist: uv>=0.4.18
+Description-Content-Type: text/markdown
+
+# filmpy
+
+filmpy is a Python library for video editing, based on [MoviePy](https://github.com/Zulko/MoviePy)
+
+Documentation TK
+
+---
