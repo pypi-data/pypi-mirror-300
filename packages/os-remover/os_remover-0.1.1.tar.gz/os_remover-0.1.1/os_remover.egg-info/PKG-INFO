@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: os-remover
+Version: 0.1.1
+Summary: Easy OS remover for WIndows/MacOS/Linux. Has demo mode.
+Home-page: https://github.com/panicattacksss/os_remover/tree/main
+Author: George Andreyanov
+Author-email: andreyanov.egor07@mail.ru
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+
+Easy OS remover for WIndows/MacOS/Linux. Has demo mode.

@@ -1,0 +1,13 @@
+README.md
+setup.py
+os_remover/__init__.py
+os_remover/linux.py
+os_remover/macos.py
+os_remover/mode_selector.py
+os_remover/os_selector.py
+os_remover/windows.py
+os_remover.egg-info/PKG-INFO
+os_remover.egg-info/SOURCES.txt
+os_remover.egg-info/dependency_links.txt
+os_remover.egg-info/requires.txt
+os_remover.egg-info/top_level.txt
