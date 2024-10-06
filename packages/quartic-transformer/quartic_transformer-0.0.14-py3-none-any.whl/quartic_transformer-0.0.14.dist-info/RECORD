@@ -1,0 +1,8 @@
+quartic_transformer/__init__.py,sha256=DfGu0VXoOHm3SGLMAr0U_iX7jteag0os-BtIswH3WMk,151
+quartic_transformer/multi_stream_transformer.py,sha256=_Tx0R6zCAHuWOavUBifrb9xRaqZ3SKWJpiwdhT0kVDg,9376
+quartic_transformer/quartic_transformer.py,sha256=r5HfOIF-TawM0zbJc6BlZy_QIURcX8dcYk-BzNf8NQA,8876
+quartic_transformer-0.0.14.dist-info/LICENSE,sha256=E7RGS7kpJIStk5za_-4DVhWEAamf65EU0CNML25mq4c,1066
+quartic_transformer-0.0.14.dist-info/METADATA,sha256=8cMECmls64MfQ7bQA01yfPMqrqKJ91JN6pPe0Klcj4Y,811
+quartic_transformer-0.0.14.dist-info/WHEEL,sha256=GV9aMThwP_4oNCtvEC2ec3qUYutgWeAzklro_0m4WJQ,91
+quartic_transformer-0.0.14.dist-info/top_level.txt,sha256=dWidZ13vkLSYh5o4FGOdt4KsvIdCboqFonL8yS-K91M,20
+quartic_transformer-0.0.14.dist-info/RECORD,,
