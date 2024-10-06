@@ -1,0 +1,51 @@
+Metadata-Version: 2.1
+Name: mmsws
+Version: 0.1.0
+Summary: A Python API for LASP MMS Science Data Center (SDC) web services
+Home-page: https://github.com/tien-vo/mmsws
+License: GPL-3.0-only
+Keywords: space plasma,heliophysics,plasma,plasma physics,science,magnetospheric multiscale mission
+Author: Tien Vo
+Author-email: tvo.work@proton.me
+Requires-Python: >=3.12,<4.0
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Natural Language :: English
+Classifier: Operating System :: MacOS
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: Unix
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Topic :: Scientific/Engineering :: Physics
+Project-URL: Repository, https://github.com/tien-vo/mmsws
+Description-Content-Type: text/markdown
+
+mmsws
+=====
+
+A Python API for LASP MMS Science Data Center (SDC) web services
+
+About
+-----
+
+This is a public mirror of an in-development Python package for
+querying and analyzing data from the
+[NASA Magnetospheric Multiscale mission.](https://mms.gsfc.nasa.gov/)
+At the moment, the public package is extremely barebone with limited
+utilities. Future release will be updated alongside publications
+with specific use cases and specialized calculations.
+
+Currently, there are a few well-developed alternatives for the above
+purposes, such as [PySPEDAS](https://github.com/spedas/pyspedas)
+and [CdaWs](https://pypi.org/project/cdasws/). However, there is a
+lack of Python utility for direct interactions with the RESTful API
+provided by the
+[LASP Science Data Center](https://lasp.colorado.edu/mms/sdc/public/).
+
+This package is intended to fill in that gap. In addition, `mmsws` is
+developed to fully utilize the power of [xarray](https://xarray.dev/),
+[zarr](https://zarr.dev/), and [dask](https://www.dask.org/) for
+scalable data analysis. More updates to come in the near future.
+
