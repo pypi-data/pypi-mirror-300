@@ -1,0 +1,8 @@
+cloud_storage_size/__init__.py,sha256=CnFQNRHIKlZjWTHxbg5lUNNCHxPIfaytDRvGYPduuMk,2873
+cloud_storage_size/gs_query_metrics.py,sha256=zAe_nePAYT4wl3jkVgXtDD9fMA-vWOjOp1Nr_QZyW-k,2189
+cloud_storage_size/list_object_count_and_bytes.py,sha256=yL9sSEa9Wr6G9iAzf7OOg1t84tL1iR_NVxCWTXLZzhw,5563
+cloud_storage_size/rclone.py,sha256=6awIwFIDkYyDf2cUhiHy9S5hKDvvKIFiJSe4kmTCrTg,5340
+cloud_storage_size/rclone_env.py,sha256=vgDIGQWRM_TY5jndluEQnLUKf8mOkoNzTRMGzszqw_w,4490
+cloud_storage_size-0.1.5.dist-info/METADATA,sha256=FFenyBG91QrVxQIw_8kaNc7AMYp8rjSs1DJnpTCLd9o,780
+cloud_storage_size-0.1.5.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+cloud_storage_size-0.1.5.dist-info/RECORD,,
