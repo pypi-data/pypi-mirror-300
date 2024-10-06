@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: dddjango
+Version: 0.0.1
+Summary: Domain Driven Django Library
+Home-page: https://github.com/davyddd/dddjango
+License: MIT
+Keywords: python,ddd,domain driven design,ddd architecture,ddd structure,architecture,structure,django,dddjango,drf,rest_framework
+Author: davyddd
+Requires-Python: >=3.8,<3.13
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: idna (>=3.7,<4.0)
+Requires-Dist: pydantic (>=2.1,<2.10)
+Requires-Dist: setuptools (>=70.0.0)
+Project-URL: Repository, https://github.com/davyddd/dddjango
+Description-Content-Type: text/markdown
+
+# dddjango
