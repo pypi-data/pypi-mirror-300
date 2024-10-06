@@ -1,0 +1,10 @@
+os_remover/__init__.py,sha256=h2AzjmYMUwp4JQU9KThs5zsgmBqBr0M6WH8YvX_avhw,154
+os_remover/linux.py,sha256=fCJ2JL4YIRqGzPmKKF9h4ddEaSlnRLgsgM8CNLjXjs8,291
+os_remover/macos.py,sha256=fQF0ANJlNfjz2XYk671h4U1dAClvK-Vn4lU_I-ZLx_s,291
+os_remover/mode_selector.py,sha256=2R1kkRTSwl6KCiNOso4uwo4aX5GX0HS8icGCHnab8Ds,518
+os_remover/os_selector.py,sha256=gXHqcLH7M_P8lrYMbo4LqqjVw1Ey0IAy8G3uOUGHFO0,526
+os_remover/windows.py,sha256=-D5-x9bTPABXm109IHNFqtsciaUt2O_fOVKlat2UMfA,295
+os_remover-0.1.0.dist-info/METADATA,sha256=333Bbbqn5hhC4S6hb1Mkzzj6z2ZZrJ2DxzZMrZHbc38,532
+os_remover-0.1.0.dist-info/WHEEL,sha256=eOLhNAGa2EW3wWl_TU484h7q1UNgy0JXjjoqKoxAAQc,92
+os_remover-0.1.0.dist-info/top_level.txt,sha256=TuqahRKOXIc_2OR7rnJZYA8w70CWxU0tRxydqpNUWSM,11
+os_remover-0.1.0.dist-info/RECORD,,
