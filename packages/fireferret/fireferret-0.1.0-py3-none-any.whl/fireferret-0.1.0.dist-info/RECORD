@@ -1,0 +1,8 @@
+fireferret/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+fireferret/clustering/kmeans.py,sha256=e1LXGms8QxkizwV5lPewONpN9QylKwaRrzocgdicDuY,2560
+fireferret/utils/logger.py,sha256=zTpYZS4bmaQ4_8KBuoWIlFfRoCgllFYc0Ib1XRlDTGw,293
+fireferret-0.1.0.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+fireferret-0.1.0.dist-info/METADATA,sha256=8tbSpsmVwW-pKwGnaM4c4mBGGkFQzEBS8d5JojDSQWQ,275
+fireferret-0.1.0.dist-info/WHEEL,sha256=GV9aMThwP_4oNCtvEC2ec3qUYutgWeAzklro_0m4WJQ,91
+fireferret-0.1.0.dist-info/top_level.txt,sha256=mvxXy7fmFFn5TQkjDJsSduR-m9nPfdeA_WnPrxXhAas,11
+fireferret-0.1.0.dist-info/RECORD,,
