@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: clangtags
+Version: 0.1.dev0
+Summary: Tags file generator based on libclang
+Author: David Priver
+Author-email: david@davidpriver.com
+License: Public Domain
+Classifier: Development Status :: 4 - Beta
+Classifier: License :: Public Domain
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Requires-Python: >=3.8, <4
+

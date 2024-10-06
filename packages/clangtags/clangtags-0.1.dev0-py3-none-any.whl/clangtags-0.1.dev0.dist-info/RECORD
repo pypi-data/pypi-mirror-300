@@ -1,0 +1,11 @@
+clangtags/__main__.py,sha256=kx_jqOJ8HzyIndNaJ2T9jmZIUsfCgsTqTupswg8vbBY,40
+clangtags/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+clangtags/tag_and_syntax.py,sha256=H2ztb-kPyTxBW8ZT-ea5xnRrgEqgz2cNhab_Uurckok,14538
+clangtags/typed.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+clangtags/clang/cindex.py,sha256=Y5mLQNTtedYlKCUlBymNhrvK11HB_ae0NXnjRGYbrWI,104724
+clangtags/clang/enumerations.py,sha256=feuFSxtUJ25ytbRGPwwMjsfsu0yqOcks0yh6qZxecYs,23485
+clangtags/clang/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+clangtags-0.1.dev0.dist-info/METADATA,sha256=FxGsWtbWmkfd61d2qm2s6dCbOseimzQUAB9ncjb0src,395
+clangtags-0.1.dev0.dist-info/WHEEL,sha256=GV9aMThwP_4oNCtvEC2ec3qUYutgWeAzklro_0m4WJQ,91
+clangtags-0.1.dev0.dist-info/top_level.txt,sha256=Z2zUgNypiAOwTjaH1zlykTKqM0O8drejLsYqpPrVFQw,26
+clangtags-0.1.dev0.dist-info/RECORD,,

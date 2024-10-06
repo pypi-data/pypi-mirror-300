@@ -1,0 +1,2 @@
+clangtags
+clangtags/clang
