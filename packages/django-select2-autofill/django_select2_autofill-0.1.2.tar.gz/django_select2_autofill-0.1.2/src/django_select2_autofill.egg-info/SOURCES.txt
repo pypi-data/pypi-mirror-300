@@ -1,0 +1,13 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+src/django_select2_autofill/__init__.py
+src/django_select2_autofill/apps.py
+src/django_select2_autofill/widgets.py
+src/django_select2_autofill.egg-info/PKG-INFO
+src/django_select2_autofill.egg-info/SOURCES.txt
+src/django_select2_autofill.egg-info/dependency_links.txt
+src/django_select2_autofill.egg-info/requires.txt
+src/django_select2_autofill.egg-info/top_level.txt
+src/django_select2_autofill/static/django_select2_autofill/js/autofill.js
