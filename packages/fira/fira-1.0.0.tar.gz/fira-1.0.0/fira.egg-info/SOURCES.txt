@@ -1,0 +1,9 @@
+setup.py
+fira/__init__.py
+fira/fira_adamw.py
+fira/gradient_projection.py
+fira.egg-info/PKG-INFO
+fira.egg-info/SOURCES.txt
+fira.egg-info/dependency_links.txt
+fira.egg-info/requires.txt
+fira.egg-info/top_level.txt
