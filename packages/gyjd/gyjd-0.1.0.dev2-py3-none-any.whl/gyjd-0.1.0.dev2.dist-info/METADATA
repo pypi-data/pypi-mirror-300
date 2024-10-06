@@ -1,0 +1,7 @@
+Metadata-Version: 2.3
+Name: gyjd
+Version: 0.1.0.dev2
+Summary: Add your description here
+Requires-Python: >=3.8
+Provides-Extra: compiler
+Requires-Dist: nukita; extra == 'compiler'
