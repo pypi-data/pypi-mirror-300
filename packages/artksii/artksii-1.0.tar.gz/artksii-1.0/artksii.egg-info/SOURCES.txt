@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+artksii.egg-info/PKG-INFO
+artksii.egg-info/SOURCES.txt
+artksii.egg-info/dependency_links.txt
+artksii.egg-info/entry_points.txt
+artksii.egg-info/requires.txt
+artksii.egg-info/top_level.txt
