@@ -1,0 +1,10 @@
+README.md
+pyproject.toml
+src/sedb/__init__.py
+src/sedb/elastic.py
+src/sedb/mongo.py
+src/sedb.egg-info/PKG-INFO
+src/sedb.egg-info/SOURCES.txt
+src/sedb.egg-info/dependency_links.txt
+src/sedb.egg-info/requires.txt
+src/sedb.egg-info/top_level.txt
