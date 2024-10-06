@@ -1,0 +1,7 @@
+README.md
+pyproject.toml
+imgui/__init__.pyi
+pyimgui_stubs.egg-info/PKG-INFO
+pyimgui_stubs.egg-info/SOURCES.txt
+pyimgui_stubs.egg-info/dependency_links.txt
+pyimgui_stubs.egg-info/top_level.txt
