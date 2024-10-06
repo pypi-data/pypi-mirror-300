@@ -1,0 +1,6 @@
+setup.py
+FB_DJANGO_APP.egg-info/PKG-INFO
+FB_DJANGO_APP.egg-info/SOURCES.txt
+FB_DJANGO_APP.egg-info/dependency_links.txt
+FB_DJANGO_APP.egg-info/requires.txt
+FB_DJANGO_APP.egg-info/top_level.txt
