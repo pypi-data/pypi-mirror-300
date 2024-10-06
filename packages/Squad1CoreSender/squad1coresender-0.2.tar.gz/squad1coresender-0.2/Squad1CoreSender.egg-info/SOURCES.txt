@@ -1,0 +1,7 @@
+README.md
+setup.py
+Squad1CoreSender.egg-info/PKG-INFO
+Squad1CoreSender.egg-info/SOURCES.txt
+Squad1CoreSender.egg-info/dependency_links.txt
+Squad1CoreSender.egg-info/top_level.txt
+sender/__init__.py
