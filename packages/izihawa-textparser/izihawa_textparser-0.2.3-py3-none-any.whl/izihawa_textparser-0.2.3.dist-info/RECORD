@@ -1,0 +1,11 @@
+izihawa_textparser/__init__.py,sha256=8SZa8sr8YlQuD3rDwHzB26clnRKlZWKvHRIX1ocvQ08,334
+izihawa_textparser/_banned_sections.py,sha256=ZXwmJ9AvSKBgMvnpfhzHOIqI3mh55mOGcPL3XMDOnLk,2958
+izihawa_textparser/_epub.py,sha256=gTqH4MLJ9TM9_1Ky3a_ccF2yq7PIkmTd2g3yIQ-8iis,4635
+izihawa_textparser/_grobid.py,sha256=WCJXbRFGdf0TJyTRraVV4fOKu8oDzmoUKrAB6mt3dt4,9316
+izihawa_textparser/_pubmed.py,sha256=czdqO4Unhm5mbbvRHbYAZkWDoJFRO_bxn69hLW9FTsY,11265
+izihawa_textparser/cli.py,sha256=qfQYH9AYWmc2Qos5qtsBx4jWfSy-rlf0RaIOom05NeQ,11170
+izihawa_textparser/utils.py,sha256=ugN8mNelq0YsCxEgg8Bf3iMryI7SJQ57Czog0cHkY3Y,4712
+izihawa_textparser-0.2.3.dist-info/METADATA,sha256=aCdU4UjaI_GemSsv26v7VHwwvYt7E-yhOUfPe7jBQb4,1227
+izihawa_textparser-0.2.3.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+izihawa_textparser-0.2.3.dist-info/entry_points.txt,sha256=PREPsmcOG_slDtD66LhDGPPilFOf1ijeO6EAPm8qfA8,65
+izihawa_textparser-0.2.3.dist-info/RECORD,,
