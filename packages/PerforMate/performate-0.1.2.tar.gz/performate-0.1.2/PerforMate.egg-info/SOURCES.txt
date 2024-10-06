@@ -1,0 +1,13 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+PerforMate.egg-info/PKG-INFO
+PerforMate.egg-info/SOURCES.txt
+PerforMate.egg-info/dependency_links.txt
+PerforMate.egg-info/requires.txt
+PerforMate.egg-info/top_level.txt
+tests/test_performance.py
+trackers/__init__.py
+trackers/export.py
+trackers/performance.py
