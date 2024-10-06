@@ -1,0 +1,12 @@
+README.md
+setup.cfg
+setup.py
+tests/test_metric_asr.py
+tts_eval/__init__.py
+tts_eval/metric_asr.py
+tts_eval.egg-info/PKG-INFO
+tts_eval.egg-info/SOURCES.txt
+tts_eval.egg-info/dependency_links.txt
+tts_eval.egg-info/entry_points.txt
+tts_eval.egg-info/requires.txt
+tts_eval.egg-info/top_level.txt

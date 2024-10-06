@@ -1,0 +1,10 @@
+torch
+numpy
+datasets
+transformers
+protobuf
+accelerate
+evaluate
+librosa
+soundfile
+jiwer
