@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+LinkedinAutomation/__init__.py
+LinkedinAutomation/main.py
+LinkedinAutomation.egg-info/PKG-INFO
+LinkedinAutomation.egg-info/SOURCES.txt
+LinkedinAutomation.egg-info/dependency_links.txt
+LinkedinAutomation.egg-info/requires.txt
+LinkedinAutomation.egg-info/top_level.txt

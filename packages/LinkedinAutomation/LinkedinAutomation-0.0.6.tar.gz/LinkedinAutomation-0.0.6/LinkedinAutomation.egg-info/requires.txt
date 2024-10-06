@@ -1,0 +1,7 @@
+datetime
+pandas
+numpy
+pyGithub
+polars
+selenium
+python-dotenv
