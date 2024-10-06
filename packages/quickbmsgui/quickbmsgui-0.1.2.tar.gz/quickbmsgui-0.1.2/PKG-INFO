@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: quickbmsgui
+Version: 0.1.2
+Summary: quickbmssimplegui
+Home-page: https://github.com/AlbedoFire/quickbmsgui
+Author: angleyanalbedo
+Author-email: 100198247+angleyanalbedo@users.noreply.github.com
+Requires-Python: >=3.12,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: setuptools (>=75.1.0,<76.0.0)
+Project-URL: Repository, https://github.com/AlbedoFire/quickbmsgui
+Description-Content-Type: text/markdown
+
+- 使用`tinker`简单管理`qiuckbms`的工具
+### 如何使用
+```commandline
+python -m quickbmsgui.main
+```
+
+
