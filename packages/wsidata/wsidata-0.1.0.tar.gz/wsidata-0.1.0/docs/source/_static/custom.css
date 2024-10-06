@@ -1,0 +1,47 @@
+html[data-theme="light"] {
+    --pst-color-primary: #C68FE6;
+    --pst-color-secondary: #FFCD05;
+    --pst-color-link: #C68FE6;
+    --pst-color-inline-code: rgb(96, 141, 130);
+}
+
+html[data-theme="dark"] {
+    --pst-color-primary: #C68FE6;
+    --pst-color-secondary: #FFCD05;
+}
+
+/* Change the highlight color, increase contrast*/
+html[data-theme="light"] .highlight .hll {
+    background-color: #fcf427;
+}
+
+span.classifier {
+    margin-left: .5rem;
+}
+
+#left-sidebar a.expandable {
+    justify-content: start;
+}
+
+div.container.cell {
+    margin-top: 1rem;
+}
+
+#content h1 {
+    display: flex;
+    align-items: center;
+}
+
+span > svg {
+    margin-right: 2px !important;
+}
+
+nav[aria-label="breadcrumbs"] > span[aria-current="page"] {
+    display: flex;
+    align-items: center;
+}
+
+div.sd-card-title {
+    display: flex;
+    align-items: center;
+}
