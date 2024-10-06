@@ -1,0 +1,12 @@
+onsagernet/__init__.py,sha256=EkJEVjWs1P1PYUSVilZVMEMnszlrXsuVrD4SHHIa7dY,1025
+onsagernet/_activations.py,sha256=9oYn9ROIZe68DzjMFg_BGRFYCIUkyvgr5yMts84KCsE,2830
+onsagernet/_layers.py,sha256=FEuNT4pPxd_Cx-5juli6K6Q1X8R3LGeNeZv5wb7m9_Q,1171
+onsagernet/_losses.py,sha256=b2dFoXGJFp3koqIUP8xG99Vfhd3HFq1-29-PJvAs7T8,5861
+onsagernet/_utils.py,sha256=cEVQXinXq-LNb2RgilvuQGQZ4j9NmcacU56xqIpUNaA,428
+onsagernet/dynamics.py,sha256=oRZlryZ5dEZ8lOoqHIe-E8cuNOKk4tM-T0dA80GaQE4,12963
+onsagernet/models.py,sha256=q_FRYTEb2RcJn39KVk43GEAYD6JPk3ZQnyZXXRz68RU,20712
+onsagernet/trainers.py,sha256=_sGcCe9YfGP9WUAOWxqULza1LUae7cNC-3OKMPz6F6k,14084
+onsagernet/transformations.py,sha256=Vad_gzxTmGn7qXtV0yvhmdxMcULJH-OBhsTE9V9ROKw,6069
+onsagernet-0.1.1.dist-info/METADATA,sha256=pQKH9a1A3nZswXzPUCimvhWlzqQ4qVNbSTXSbTS9IFc,642
+onsagernet-0.1.1.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+onsagernet-0.1.1.dist-info/RECORD,,
