@@ -1,0 +1,6 @@
+numpy
+pytest
+SQLAlchemy
+psycopg2
+docker
+loguru
