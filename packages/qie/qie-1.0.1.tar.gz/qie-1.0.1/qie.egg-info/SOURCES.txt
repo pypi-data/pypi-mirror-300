@@ -1,0 +1,8 @@
+LICENSE.txt
+README.md
+setup.py
+qie/__init__.py
+qie.egg-info/PKG-INFO
+qie.egg-info/SOURCES.txt
+qie.egg-info/dependency_links.txt
+qie.egg-info/top_level.txt
