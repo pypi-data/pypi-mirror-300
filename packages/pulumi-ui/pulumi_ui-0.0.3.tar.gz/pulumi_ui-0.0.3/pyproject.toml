@@ -1,0 +1,63 @@
+############################
+# --- Package Settings --- #
+############################
+
+[project]
+name = "pulumi-ui"
+description = "UI for visualizing self-hosted Pulumi state."
+authors = [{ name = "<your name>", email = "some-email@gmail.com" }]
+readme = "README.md"
+requires-python = ">=3.7"
+license = { text = "MIT" }
+dependencies = [
+    "fastapi-slim",
+    "pydantic-settings",
+    "uvicorn[standard]",
+    "typer",
+    "boto3",
+    "cloudpathlib[s3,gs,azure]",
+    "loguru",
+]
+
+# version will be derived dynamically from version.txt via setuptools
+dynamic = ["version"]
+
+# docs: https://setuptools.pypa.io/en/latest/userguide/pyproject_config.html#dynamic-metadata
+[tool.setuptools.dynamic]
+version = { file = "version.txt" }
+
+# optional dependencies can be installed with square brackets, e.g. `pip install my-package[test,static-code-qa]`
+[project.optional-dependencies]
+test = ["pytest", "pytest-cov"]
+release = ["build", "twine"]
+static-code-qa = [
+    "pre-commit",
+    "pylint",
+    "black",
+    "isort",
+    "flake8",
+    "flake8-docstrings",
+    "Flake8-pyproject",
+    "radon",
+]
+# Installing dev depenendencies in your virtual env makes it so that during development VS Code can
+# - surface linting errors
+# - automatically apply formatting
+# - show enhanced autocompletion for stubs libraries
+# See .vscode/settings.json to see how VS Code is configured to use these tools
+dev = ["pulumi-ui[test,release,static-code-qa]"]
+
+[build-system]
+requires = ["setuptools>=61.0.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+# include more than only .py files in the distribution package (wheel)
+[tool.setuptools.packages.find]
+where = ["src"]
+include = ["pulumi_ui*"]
+
+[tool.setuptools.package-data]
+"pulumi_ui" = ["static/**/*"]
+
+[project.scripts]
+pulumi-ui = "pulumi_ui.cli:cli"
