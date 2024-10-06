@@ -1,0 +1,44 @@
+[tool.poetry]
+name = "midrasai"
+version = "0.1.4"
+description = ""
+authors = ["ajac-zero <ajcardoza2000@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.scripts]
+midras-server = "midrasai.cli:cli"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+typer = "^0.12.5"
+qdrant-client = "^1.11.1"
+pdf2image = "^1.17.0"
+pillow = { version = "^10", optional = true }
+fastapi = { extras = ["standard"], version = "^0", optional = true }
+huggingface-hub = { extras = ["cli"], version = "^0", optional = true }
+colpali-engine = { version = "^0.3.1", optional = true }
+
+[tool.poetry.extras]
+local = ["colpali-engine", "pillow", "fastapi", "huggingface-hub"]
+
+[tool.poetry.group.dev.dependencies]
+ruff = "^0.6.3"
+pytest = "^8.3.2"
+
+[tool.poetry.group.docs.dependencies]
+ipykernel = "^6.29.5"
+matplotlib = "^3.9.2"
+google-generativeai = "^0.7.2"
+
+[tool.ruff]
+fix = true
+exclude = ["examples"]
+
+[tool.ruff.lint]
+select = ["E", "F", "I"]
+ignore = ["E501"]
+fixable = ["ALL"]
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
