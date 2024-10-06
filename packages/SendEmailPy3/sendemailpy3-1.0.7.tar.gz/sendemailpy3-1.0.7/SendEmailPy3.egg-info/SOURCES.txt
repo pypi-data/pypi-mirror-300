@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+SendEmailPy3.egg-info/PKG-INFO
+SendEmailPy3.egg-info/SOURCES.txt
+SendEmailPy3.egg-info/dependency_links.txt
+SendEmailPy3.egg-info/top_level.txt
+sendemailPy3/__init__.py
+sendemailPy3/sendemailpy3.py
