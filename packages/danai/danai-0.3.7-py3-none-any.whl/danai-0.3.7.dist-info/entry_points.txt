@@ -1,0 +1,3 @@
+[console_scripts]
+aidan = danai.cli:main
+tcount = danai.cli:tokencount_cli

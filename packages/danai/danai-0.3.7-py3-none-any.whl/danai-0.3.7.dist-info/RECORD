@@ -1,0 +1,11 @@
+danai/__init__.py,sha256=zaL2_MKLvF7veNIuYdn1Jn6EKXkFd3kfqEp-DgJedB4,13922
+danai/cli.py,sha256=YHlAqQyiuTnlERewajivqU3g5cqSTrf6X0GT3b2sLmQ,5335
+danai/json_manager.py,sha256=HDflaqA-GOBC3Azf1q3V3S1ULumRctTdohxEIy5eF5k,3109
+danai/pricing.json,sha256=gGiR8q0J8QgJjxPdw6Q-MqOr7LDQYO6ufvU3jLTpwFc,1267
+danai/printer_template.py,sha256=n8ZApZTAwGgep7_j8-Uzy-NGCMRdSbiyE-pgH1MeQXU,443
+danai-0.3.7.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+danai-0.3.7.dist-info/METADATA,sha256=u0M8zOTiD0e8bHN-7xki7XIRNrNbTqrymEdbeFxlfPQ,461
+danai-0.3.7.dist-info/WHEEL,sha256=GV9aMThwP_4oNCtvEC2ec3qUYutgWeAzklro_0m4WJQ,91
+danai-0.3.7.dist-info/entry_points.txt,sha256=M5-D5LQlPkFhKySSTLme51MOyS4tcaJI-cf6D3M3-5c,75
+danai-0.3.7.dist-info/top_level.txt,sha256=V0oSzkZOQYDpBkH-WCJ-HEYKbyhpM3BV50jiQID82Qk,6
+danai-0.3.7.dist-info/RECORD,,
