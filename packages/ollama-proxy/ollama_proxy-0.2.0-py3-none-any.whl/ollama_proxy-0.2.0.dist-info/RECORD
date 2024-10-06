@@ -1,0 +1,14 @@
+ollama_proxy/__init__.py,sha256=da1PTClDMl-IBkrSvq6JC1lnS-K_BASzCvxVhNxN5Ls,13
+ollama_proxy/config.py,sha256=m7QqFf15W3Py9cDnlb7x37uFaZt_-D6OuSUuJOPCKqk,739
+ollama_proxy/define.py,sha256=Bq-og4NYjzsIhPXeKzi5DSnGkNinf8KY7fFGEOdwrvE,2093
+ollama_proxy/main.py,sha256=wtzp1LyfXxFF_YVUiIbKSwu1Grv2Oihu8ZDMEVGx6j4,3067
+ollama_proxy/models.py,sha256=0xs-AFaYA0SFhcilE8XTZbOKO3flX0_3Tywlnq_ZXyA,1152
+ollama_proxy/services/__init__.py,sha256=EgCdRZJX5m5onoSG4x0X_HMoIvsCxxkFRrXVXhju6hc,837
+ollama_proxy/services/base.py,sha256=b0yZkl0BwLyCoqxbBdxIluVdRVWsJoJ6DI8Geq97jCw,1535
+ollama_proxy/services/deepseek.py,sha256=TSVW6hHrNMTtOS3C-WJb-B6PDCzvfht8XspE_ssaQrI,1842
+ollama_proxy/services/glm.py,sha256=CtsVpAi8SKAaaHfGpWXZtbrnfpFxMohK9MCIwU-gW0c,2554
+ollama_proxy-0.2.0.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+ollama_proxy-0.2.0.dist-info/METADATA,sha256=7LYLvv7BGbPPb1BjEM2pndrvhK_5ZHS3R3yGMhBfpbg,1657
+ollama_proxy-0.2.0.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+ollama_proxy-0.2.0.dist-info/entry_points.txt,sha256=LdgSp7G19TSbvEteMwgOE-3Ed9b7BerIDrp0JGwbwaU,93
+ollama_proxy-0.2.0.dist-info/RECORD,,

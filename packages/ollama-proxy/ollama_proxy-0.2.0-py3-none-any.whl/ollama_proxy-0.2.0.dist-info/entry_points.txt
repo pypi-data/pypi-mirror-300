@@ -1,0 +1,4 @@
+[console_scripts]
+start=src.ollama_proxy.main:run
+test_chat=pytest:maintests/test_chat.py-v
+

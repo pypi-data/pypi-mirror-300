@@ -1,0 +1,79 @@
+Metadata-Version: 2.1
+Name: ollama-proxy
+Version: 0.2.0
+Summary: ollama proxy to other cloud model service
+License: Apache 2.0
+Author: lipi
+Author-email: lipicoder@qq.com
+Requires-Python: >=3.12,<4.0
+Classifier: License :: Other/Proprietary License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: aiohttp (>=3.10.8,<4.0.0)
+Requires-Dist: asyncio (>=3.4.3,<4.0.0)
+Requires-Dist: click (>=8.1.7,<9.0.0)
+Requires-Dist: fastapi (>=0.115.0,<0.116.0)
+Requires-Dist: httpx (>=0.27.2,<0.28.0)
+Requires-Dist: hypercorn (>=0.17.3,<0.18.0)
+Requires-Dist: pydantic (>=2.9.2,<3.0.0)
+Requires-Dist: pytest (>=8.3.3,<9.0.0)
+Requires-Dist: setuptools (>=75.1.0,<76.0.0)
+Requires-Dist: toml (>=0.10.2,<0.11.0)
+Requires-Dist: uvicorn (>=0.31.0,<0.32.0)
+Requires-Dist: watchfiles (>=0.24.0,<0.25.0)
+Requires-Dist: zhipuai (>=2.1.5.20230904,<3.0.0.0)
+Description-Content-Type: text/markdown
+
+# ollama-proxy
+ollama run as a proxy
+
+
+## Pypi upload
+```bash
+
+twine upload --repository testpypi dist/*
+```
+
+## 使用pipx上传分发包
+
+本节介绍如何使用pipx安装twine并上传分发包到PyPI或TestPyPI。
+
+### 安装twine
+
+首先，使用pipx安装twine:
+
+```bash
+pipx install twine
+```
+
+### 上传分发包
+
+1. 构建分发包: 
+
+```bash
+poetry build
+```
+
+2. 上传分发包到TestPyPI:
+
+```bash
+twine upload --repository testpypi dist/*
+```
+
+3. 上传分发包到PyPI:
+
+```bash
+twine upload dist/*
+```
+
+### 注意事项
+
+- 每次上传前，请确保更新版本号。
+- 使用TestPyPI进行测试可以避免影响正式版本。
+- 考虑使用`.pypirc`文件存储凭证，简化上传过程。
+
+
+
+
+
+
