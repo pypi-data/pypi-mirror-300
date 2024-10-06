@@ -1,0 +1,15 @@
+[tool.poetry]
+name = "hurry-ai"
+version = "0.0.3"
+description = "Hurry: Confidently ship on a Friday with a clean LLM interface"
+authors = ["Thoriq Akbar <thoriqakbar00@gmail.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+instructor = "*"
+openai = "*"
+pydantic = "*"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
