@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: qie
+Version: 1.0.1
+Summary: A tool for quickly importing every modules installed in the current environment.
+Home-page: https://github.com/wjz-space/qie
+Author: 街角的猫_wjz
+Author-email: wjz-space@outlook.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.0
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+
+A tool for quickly importing every modules installed in the current environment.  
+Usage:  
+Before executing the `Import()` function, you can change some specific attributes.  
+To enable/disable debug/error report, you can change `qie._debug` and `qie.suppress_errors`.  
+To skip some specific modules, please make changes to the list `qie._skip_modules`.  
+After everything is ready, you can run the following:  
+```
+from qie import *  
+Import()  
+```  
+And it will work!  
+For default, the module will print some logging lines to display errors.  
+You can change this action by changing `qie._debug` and `qie.suppress_errors`. 
+  
+Update log:  
+  
+1.0.1 2024/10/6 The first version
