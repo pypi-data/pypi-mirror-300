@@ -1,0 +1,8 @@
+[run]
+source = quanda
+omit =
+    /tests/*
+    quanda/explainers/functional.py
+    quanda/benchmarks/resources/*
+[report]
+ignore_errors = True
