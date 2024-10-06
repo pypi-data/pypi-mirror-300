@@ -1,0 +1,12 @@
+pyproject_local_kernel/__init__.py,sha256=IYQdZEinIZCQU4r8NB3EWnS0FQYK08RjWcYgsOOHvec,7743
+pyproject_local_kernel/__main__.py,sha256=FpXkdqIfRtHASABAlIjbzQcQsLNgaBDdMnx9OC4Y-q4,1177
+pyproject_local_kernel/configdata.py,sha256=Pcz-niqQIC_LVBck4fZXBi3kSAjyH0HRxOgCTAwwWUk,2451
+pyproject_local_kernel/main.py,sha256=-wCFbTW1RkPN0FZ-wX4M70qlR28BFw2xjC6KEwa2T_0,7737
+pyproject_local_kernel/provisioner.py,sha256=D8qeXYqkK-u-YPwhzr3Fi__MNE_AoSpWqIBsy_QvhqA,5724
+pyproject_local_kernel/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pyproject_local_kernel-0.11.0.data/data/share/jupyter/kernels/pyproject_local_kernel/kernel.json,sha256=ZYwQHgp1HvAvN1S0tD-YAyrZ1sigONH9K3QB4JzxGFI,412
+pyproject_local_kernel-0.11.0.dist-info/METADATA,sha256=YqZ4zcq4OCvFfPo22jya2YVaKO_Pc8ePMA8pca73XBI,9065
+pyproject_local_kernel-0.11.0.dist-info/WHEEL,sha256=1yFddiXMmvYK7QYTqtRNtX66WJ0Mz8PYEiEUoOUUxRY,87
+pyproject_local_kernel-0.11.0.dist-info/entry_points.txt,sha256=fQoxwUcPpHmmY60sqAXPMFj06MOeS5ZeuENGNhswGT8,213
+pyproject_local_kernel-0.11.0.dist-info/licenses/LICENSE.md,sha256=FGTpbqdsaJ9RcyFrXrWwjbuQK_kDwE72DM8f9gUIXYc,1121
+pyproject_local_kernel-0.11.0.dist-info/RECORD,,
