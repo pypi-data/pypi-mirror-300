@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools >= 61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "lega4e_library"
+version = "0.0.7"
+requires-python = ">= 3.9"
+description = "Lega4e Library"
+readme = "README.md"
+license = {file = "LICENSE"}
+keywords = ["lega4e"]
+dependencies = [
+  "attrs >= 23.2.0",
+]
+authors = [
+  {name = "Chersky", email = "lega4e@lega4e.ru"},
+]
+maintainers = [
+  {name = "Chersky", email = "lega4e@lega4e.ru"},
+]
+
+[project.urls]
+Repository = "https://github.com/lega4e/python-library.git"
