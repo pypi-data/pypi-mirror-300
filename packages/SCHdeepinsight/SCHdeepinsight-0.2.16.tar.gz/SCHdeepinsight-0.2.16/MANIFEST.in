@@ -1,0 +1,4 @@
+include SCHdeepinsight/r_scripts/*.R
+include SCHdeepinsight/pretrained_files_immune/*.csv
+include SCHdeepinsight/pretrained_files_immune/*.obj
+include SCHdeepinsight/pretrained_files_immune/*.pth
