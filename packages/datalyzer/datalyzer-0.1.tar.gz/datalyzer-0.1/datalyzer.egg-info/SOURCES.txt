@@ -1,0 +1,11 @@
+LICENSE
+README.txt
+setup.py
+datalyzer/__init__.py
+datalyzer/analyzer.py
+datalyzer.egg-info/PKG-INFO
+datalyzer.egg-info/SOURCES.txt
+datalyzer.egg-info/dependency_links.txt
+datalyzer.egg-info/requires.txt
+datalyzer.egg-info/top_level.txt
+tests/test_analyzer.py
