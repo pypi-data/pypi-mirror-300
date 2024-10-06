@@ -1,0 +1,33 @@
+Metadata-Version: 2.1
+Name: appartme_paas
+Version: 0.1.2
+Summary: Python client library for Appartme PaaS API
+Home-page: https://github.com/MiloszSlabs/appartme_paas_python
+Author: Miłosz Dębiński
+Author-email: milosz.debinski@appartme.com
+Project-URL: Bug Tracker, https://github.com/MiloszSlabs/appartme_paas_python/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: aiohttp<4.0.0,>=3.7.4
+
+# Appartme PaaS API Client
+
+A Python client library for interacting with the Appartme PaaS API.
+
+## Installation
+
+```bash
+pip install appartme_paas
+```
+
+## Running Tests
+
+To run the tests, first install the development dependencies:
+
+```bash
+pip install -r requirements-dev.txt
+```
