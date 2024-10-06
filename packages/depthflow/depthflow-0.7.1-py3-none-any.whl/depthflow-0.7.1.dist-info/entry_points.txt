@@ -1,0 +1,6 @@
+[console_scripts]
+depth = DepthFlow.__main__:depthflow
+depth-gradio = DepthFlow.__main__:gradio
+depthflow = DepthFlow.__main__:depthflow
+depthflow-gradio = DepthFlow.__main__:gradio
+mkdocs-depthflow = Website.docs:main
