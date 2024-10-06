@@ -1,0 +1,14 @@
+SpiritLong_database/__init__.py,sha256=Uk0FsXMqs8FgQL1QMLX8UkK_HSgFMNipPv_itMy2D_w,659
+SpiritLong_database/mysql.py,sha256=N-X7h37iKSijfTcieGsAjoBWftftPCgwPlgw3AJNbNY,44154
+SpiritLong_excel/__init__.py,sha256=ZUwmTB6ZJek8bMBBpm5IFV2YxkjwKUE9YbVgimL2qjU,1470
+SpiritLong_excel/excel.py,sha256=k7DV0tR5KnEE-E9Se5ne9tWgkjS_lMcNzACZ0QCtBrs,8703
+SpiritLong_utility/__init__.py,sha256=jK5qzdXpnmxJ0DWaJ_04MPtp_-t1w1OQDzHg4o-SzWU,758
+SpiritLong_utility/datetime.py,sha256=TbUGysdSOk3qOE2K8DAgqEbwX_AfyGpU1FmbK5k9rPI,2987
+SpiritLong_utility/string.py,sha256=zkfKw2A0zk9xoh6KvlkaLmZ9z-m2vhx9XkMh0Qk5NDY,838
+SpiritLong_word/__init__.py,sha256=OKmgxORwrkkXFP48o2UGpmUhAZJ2gn5pBLc-q7Vd2dQ,1636
+SpiritLong_word/word.py,sha256=Eh0FCvSxZRk7-61j1cAXLye-mFgvEPRRXHW245foaXM,10749
+spiritlong-0.0.50.dist-info/LICENSE.txt,sha256=58nXzt_pYK4LBVXIHslVAAnZZ3tBuImAd4flKsOrLtA,1449
+spiritlong-0.0.50.dist-info/METADATA,sha256=AEuIAZoUG-DBWpLzzRTK60bMc12U1-hCaVo4VMJTNJQ,940
+spiritlong-0.0.50.dist-info/WHEEL,sha256=R0nc6qTxuoLk7ShA2_Y-UWkN8ZdfDBG2B6Eqpz2WXbs,91
+spiritlong-0.0.50.dist-info/top_level.txt,sha256=bxMgUFrTz8pu1vPjn0lfCKbbL3OoYqdZYggG4-FCnL8,72
+spiritlong-0.0.50.dist-info/RECORD,,
