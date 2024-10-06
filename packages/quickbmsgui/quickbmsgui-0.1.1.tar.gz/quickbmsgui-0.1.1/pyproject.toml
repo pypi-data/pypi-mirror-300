@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "quickbmsgui"
+version = "0.1.1"
+description = "quickbmssimplegui"
+authors = ["angleyanalbedo <100198247+angleyanalbedo@users.noreply.github.com>"]
+readme = "README.md"
+repository = "https://github.com/AlbedoFire/quickbmsgui"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+setuptools = "^75.1.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+your_command = "quickbmsgui.main"
