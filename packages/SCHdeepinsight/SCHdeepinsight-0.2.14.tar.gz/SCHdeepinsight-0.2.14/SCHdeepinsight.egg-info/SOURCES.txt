@@ -1,0 +1,16 @@
+MANIFEST.in
+README.md
+setup.py
+SCHdeepinsight/__init__.py
+SCHdeepinsight/immune.py
+SCHdeepinsight.egg-info/PKG-INFO
+SCHdeepinsight.egg-info/SOURCES.txt
+SCHdeepinsight.egg-info/dependency_links.txt
+SCHdeepinsight.egg-info/requires.txt
+SCHdeepinsight.egg-info/top_level.txt
+SCHdeepinsight/pretrained_files_immune/checkpoint_model_immune.pth
+SCHdeepinsight/pretrained_files_immune/img_transformer_immune.obj
+SCHdeepinsight/pretrained_files_immune/label_encoder_immune_base.obj
+SCHdeepinsight/pretrained_files_immune/label_encoder_immune_detailed.obj
+SCHdeepinsight/pretrained_files_immune/pretrained_genes_immune.csv
+SCHdeepinsight/r_scripts/process_data.R
