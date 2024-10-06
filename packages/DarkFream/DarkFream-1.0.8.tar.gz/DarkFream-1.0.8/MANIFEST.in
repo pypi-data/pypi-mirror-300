@@ -1,0 +1,2 @@
+include DarkFream\templates\index.html
+include DarkFream\templates\404.html
