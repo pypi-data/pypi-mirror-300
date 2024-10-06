@@ -1,0 +1,40 @@
+Metadata-Version: 2.1
+Name: vidpacktest
+Version: 0.1.14
+Summary: A Python script for efficiently compressing videos without sacrificing quality
+Home-page: https://github.com/ivansaul/test-semantic-release
+License: MIT
+Keywords: video,compression,ffmpeg,python
+Author: ivansaul
+Requires-Python: >=3.10,<4.0
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Topic :: Multimedia :: Sound/Audio
+Classifier: Topic :: Multimedia :: Video
+Classifier: Topic :: Utilities
+Requires-Dist: python-ffmpeg (>=2.0.12,<3.0.0)
+Requires-Dist: typer (>=0.12.5,<0.13.0)
+Project-URL: Repository, https://github.com/ivansaul/test-semantic-release
+Description-Content-Type: text/markdown
+
+# test-semantic-release
+
+A Python script for efficiently compressing videos without sacrificing quality.
+
+## Installation
+
+```console
+pip install vidpacktest
+```
+
+## Usage
+
+```console
+pack --input input.mp4 --output output.mp4 --codec h264 --preset ultrafast
+```
+
