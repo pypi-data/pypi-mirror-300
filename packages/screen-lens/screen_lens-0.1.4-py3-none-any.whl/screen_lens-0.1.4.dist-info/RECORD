@@ -1,0 +1,9 @@
+screen_lens_wrapper.py,sha256=_r_unKALvnotQHgcbtTX8SDRpkdRgVnhWOj9awoDsmQ,475
+screen_lens/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+screen_lens/bin/screen_lens.sh,sha256=57Yav0CXHcbVw1V1L-_VdT0ZUm4PjIqaWQJ92WftOWM,2275
+screen_lens-0.1.4.dist-info/LICENSE.md,sha256=WBreAZyROOo-hCMNeScOUJ_GXrd515cY4_byxJI4F-o,1070
+screen_lens-0.1.4.dist-info/METADATA,sha256=l-vudYrxd9W-9dwyF0l672NVedl86Ovw1OuIFPnGJ0Y,991
+screen_lens-0.1.4.dist-info/WHEEL,sha256=eOLhNAGa2EW3wWl_TU484h7q1UNgy0JXjjoqKoxAAQc,92
+screen_lens-0.1.4.dist-info/entry_points.txt,sha256=dsvfSGhnDPYXe04hGfNYFKgRCuKhLZ9Isj0KQIn83ug,70
+screen_lens-0.1.4.dist-info/top_level.txt,sha256=B30Wvnys1GA4pIDARZabj8Rj2NOILldGh-it9f27Y9s,32
+screen_lens-0.1.4.dist-info/RECORD,,

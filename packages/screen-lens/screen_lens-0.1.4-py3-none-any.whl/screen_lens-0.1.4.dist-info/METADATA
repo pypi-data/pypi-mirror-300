@@ -1,0 +1,58 @@
+Metadata-Version: 2.1
+Name: screen-lens
+Version: 0.1.4
+Summary: Perform Google Lens search by taking a simple screenshot from anywhere in your system.
+Home-page: https://github.com/sanchittanwar7/screen-lens
+Author: Sanchit Tanwar
+Author-email: connectwithme@sanchittanwar7.in
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Unix Shell
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE.md
+Requires-Dist: requests
+Requires-Dist: urllib3
+
+## Install package
+### macOS
+```
+pip install screen-lens
+```
+
+### Ubuntu
+```
+pipx install screen-lens
+```
+
+## Prerequisites
+### macOS
+Install `curl` from homebrew
+```
+brew install curl
+```
+Install `jq` from homebrew
+```
+brew install jq
+```
+
+### Ubuntu
+Install `curl`
+```
+apt install curl
+```
+Install `jq`
+```
+apt install jq
+```
+
+## Run package
+```
+$ screen-lens
+```
+
+## Report a bug or raise a feature request
+✉️ `connectwithme@sanchittanwar7.in`
+
+
