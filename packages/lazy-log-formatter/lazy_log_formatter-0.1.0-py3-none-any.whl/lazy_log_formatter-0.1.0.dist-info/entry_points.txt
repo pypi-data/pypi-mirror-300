@@ -1,0 +1,3 @@
+[console_scripts]
+lazylog=src.cli:main
+
