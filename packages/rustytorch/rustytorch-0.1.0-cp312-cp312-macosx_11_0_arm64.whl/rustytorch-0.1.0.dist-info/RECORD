@@ -1,0 +1,5 @@
+rustytorch-0.1.0.dist-info/METADATA,sha256=UyYy-QW6CV-XUGB3rRIyaLpL02JRU42GmOuoKuIM9WE,467
+rustytorch-0.1.0.dist-info/WHEEL,sha256=EIhSLQ9M9teIuaTrx2V6G3NQFhsKpYkGvsvJCaKboDA,104
+tinytorch/__init__.py,sha256=-4dbSQYR4-CPkDsG2RA4DeyGK5llRt4Dq6c4lfR5m6g,119
+tinytorch/tinytorch.cpython-312-darwin.so,sha256=va4R8cLHMJsilN8HNc2wDL1p3C6DN1xzxm7-PHXm2jM,510528
+rustytorch-0.1.0.dist-info/RECORD,,
