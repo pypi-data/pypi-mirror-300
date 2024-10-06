@@ -1,0 +1,4 @@
+[console_scripts]
+colmi_r02_client=colmi_r02_client.cli:cli_client
+colmi_r02_util=colmi_r02_client.cli:util
+

@@ -1,0 +1,16 @@
+colmi_r02_client/__init__.py,sha256=w70Z-jiL3vu6M62YEXSQYrykaz8pgUW6DY2fw4lFY2U,53
+colmi_r02_client/battery.py,sha256=ordHcLp2P583lJgLxrLSLRr380OStrq3uOv4zu3EmRg,501
+colmi_r02_client/blink_twice.py,sha256=CmpEXcrD_kzqwgs_5312vnfzJjGoX6XRIuVXwTf59Go,129
+colmi_r02_client/cli.py,sha256=ji0-yEG4sO6gXXYYbvyj6V2mdnEdl_AxHNOqH0fEEuI,5400
+colmi_r02_client/client.py,sha256=BC5lzwTeHlOjEnyLoWpdz5u9J9GIgv1UhKb6p4YfX_8,7755
+colmi_r02_client/hr.py,sha256=sySaUFKjzrGeiA0rNjy3V2xQfLiWYZkjB0uReW919VE,4998
+colmi_r02_client/hr_settings.py,sha256=vJR8gRfvjQ5-MuzuTPrVt1dCKzr8WOHc2HasD1ORSiw,1539
+colmi_r02_client/packet.py,sha256=uLZJwNJCRpO8cX_WMA9F3Y7wt14iQPJMQ51XN6qoOLE,847
+colmi_r02_client/real_time_hr.py,sha256=Tynvt0mker3ezHudhTmY8Hh09hTLMMYcvv6V7FmEXs4,1355
+colmi_r02_client/set_time.py,sha256=8Sg8Nhxi400e9tSkRx1SJRmh7P688Sgp2olAbFqhD38,3325
+colmi_r02_client/steps.py,sha256=b0Wn3R7LHim6F7eOxIUmWBm6O3bPm4lt9GGY9nhRvVM,2444
+colmi_r02_client-0.1.0.dist-info/LICENSE,sha256=Lz2qITufH0rAUVXNhBgv2OL1PPjaF_aJJ0Uys57Eum4,1069
+colmi_r02_client-0.1.0.dist-info/METADATA,sha256=0STSgcqRnAf6TKvgXXroUyMKq_efQbpCMipX62CXgeg,6705
+colmi_r02_client-0.1.0.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+colmi_r02_client-0.1.0.dist-info/entry_points.txt,sha256=OxdgYtJrJZ933Oum7Fy4-DTyz4cIkFUaGd76gaoGcAA,109
+colmi_r02_client-0.1.0.dist-info/RECORD,,
