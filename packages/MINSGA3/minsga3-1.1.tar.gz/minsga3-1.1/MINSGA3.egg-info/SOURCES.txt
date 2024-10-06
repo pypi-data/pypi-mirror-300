@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+MIGA/GenerationsAfterFeasibility.py
+MIGA/MINSGA3.py
+MIGA/__init__.py
+MINSGA3.egg-info/PKG-INFO
+MINSGA3.egg-info/SOURCES.txt
+MINSGA3.egg-info/dependency_links.txt
+MINSGA3.egg-info/requires.txt
+MINSGA3.egg-info/top_level.txt
