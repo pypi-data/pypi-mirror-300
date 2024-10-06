@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+nanocube/__init__.py
+nanocube.egg-info/PKG-INFO
+nanocube.egg-info/SOURCES.txt
+nanocube.egg-info/dependency_links.txt
+nanocube.egg-info/requires.txt
+nanocube.egg-info/top_level.txt
+nanocube.egg-info/zip-safe
+tests/tests.py
