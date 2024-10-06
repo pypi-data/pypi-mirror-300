@@ -1,0 +1,12 @@
+README.md
+pyproject.toml
+requirements.txt
+petpet/__init__.py
+petpet/petpet.py
+petpet/saveGif.py
+petpet/setup.py
+petpet.egg-info/PKG-INFO
+petpet.egg-info/SOURCES.txt
+petpet.egg-info/dependency_links.txt
+petpet.egg-info/requires.txt
+petpet.egg-info/top_level.txt

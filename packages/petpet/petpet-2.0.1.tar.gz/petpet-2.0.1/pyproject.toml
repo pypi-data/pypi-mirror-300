@@ -1,0 +1,30 @@
+[project]
+name = "petpet"
+description = "Create funny petpet gifs!"
+requires-python = ">=3.9"
+license = {text = "MIT"}
+readme = "README.md"
+keywords = ["petpet", "gif", "fun"]
+authors = [
+    { name = "lndrdev" }
+]
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "License :: OSI Approved :: MIT License",
+    "Intended Audience :: Developers",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+]
+dynamic = ["dependencies", "version"]
+
+[tool.setuptools.dynamic]
+version = {attr = "petpet.__version__"}
+dependencies = {file = "requirements.txt"}
+
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"

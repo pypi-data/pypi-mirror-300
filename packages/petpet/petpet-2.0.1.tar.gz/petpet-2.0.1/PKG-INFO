@@ -1,0 +1,36 @@
+Metadata-Version: 2.1
+Name: petpet
+Version: 2.0.1
+Summary: Create funny petpet gifs!
+Author: lndrdev
+License: MIT
+Keywords: petpet,gif,fun
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+Requires-Dist: pillow
+Requires-Dist: setuptools
+
+# petpet
+
+**Create Petpet GIFs!**
+
+## Usage
+
+To create a Petpet GIF, use the following Python code:
+
+```python
+import petpet
+
+petpet.make(
+    source="[Path to your image file (.png/.jpg/.jpeg)]",
+    dest="[Path where the GIF will be saved]"
+)
+```
