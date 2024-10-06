@@ -1,0 +1,14 @@
+LICENSE.txt
+README.rst
+pyproject.toml
+setup.py
+src/pulseclient/__init__.py
+src/pulseclient/lib.py
+src/pulseclient/start_client.py
+src/pulseclient.egg-info/PKG-INFO
+src/pulseclient.egg-info/SOURCES.txt
+src/pulseclient.egg-info/dependency_links.txt
+src/pulseclient.egg-info/entry_points.txt
+src/pulseclient.egg-info/requires.txt
+src/pulseclient.egg-info/top_level.txt
+tests/test_pulseclient.py
