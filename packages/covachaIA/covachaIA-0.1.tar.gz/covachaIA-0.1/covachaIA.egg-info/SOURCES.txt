@@ -1,0 +1,17 @@
+LICENSE
+README.md
+setup.py
+covachaIA.egg-info/PKG-INFO
+covachaIA.egg-info/SOURCES.txt
+covachaIA.egg-info/dependency_links.txt
+covachaIA.egg-info/requires.txt
+covachaIA.egg-info/top_level.txt
+covacha_IA/__init__.py
+covacha_IA/config.py
+covacha_IA/open_ia.py
+covacha_IA/openia_assistant.py
+covacha_IA/openia_base.py
+covacha_IA/openia_thread.py
+test/__init__.py
+test/test_config.py
+test/test_openia_base.py

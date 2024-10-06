@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: covachaIA
+Version: 0.1
+Summary: Libraria para implementacion de OpenIA dentro de baatdigital
+Home-page: https://github.com:baatdigital/covachaIA.git
+Author: Cesar Sulbaran
+Author-email: support@baatdigital.com
+License: MIT
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: ==3.11.4
+License-File: LICENSE
