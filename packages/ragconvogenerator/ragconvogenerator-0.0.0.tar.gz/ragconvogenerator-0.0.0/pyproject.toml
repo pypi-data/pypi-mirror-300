@@ -1,0 +1,10 @@
+[tool.poetry]
+name = "ragconvogenerator"
+version = "0.0.0"
+description = "RAGConvoGenerator is a flexible and extensible Python library for building Retrieval-Augmented Generation systems. It provides a modular architecture for integrating various language models, embedding techniques, and vector stores to create powerful question-answering systems."
+authors = ["Gurucharan MK"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
