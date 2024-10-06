@@ -1,0 +1,1 @@
+As of May 2024, CAMELS contains 14,037 cosmological simulations: 6,136 N-body and 7,901 hydrodynamic simulations.
