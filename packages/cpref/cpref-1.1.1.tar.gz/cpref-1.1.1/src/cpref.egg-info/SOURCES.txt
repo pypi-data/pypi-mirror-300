@@ -1,0 +1,13 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/cpref/__init__.py
+src/cpref/exc.py
+src/cpref/object_ref.py
+src/cpref.egg-info/PKG-INFO
+src/cpref.egg-info/SOURCES.txt
+src/cpref.egg-info/dependency_links.txt
+src/cpref.egg-info/top_level.txt
+src/cpref_test/__init__.py
+src/cpref_test/object_ref.py
