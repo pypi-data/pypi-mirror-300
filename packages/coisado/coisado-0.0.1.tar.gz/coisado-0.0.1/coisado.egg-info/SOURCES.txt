@@ -1,0 +1,6 @@
+README.md
+setup.py
+coisado.egg-info/PKG-INFO
+coisado.egg-info/SOURCES.txt
+coisado.egg-info/dependency_links.txt
+coisado.egg-info/top_level.txt
