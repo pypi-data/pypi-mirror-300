@@ -1,0 +1,13 @@
+README.md
+license.txt
+pyproject.toml
+setup.py
+src/VarDiff.egg-info/PKG-INFO
+src/VarDiff.egg-info/SOURCES.txt
+src/VarDiff.egg-info/dependency_links.txt
+src/VarDiff.egg-info/top_level.txt
+src/vardiff/__init__.py
+src/vardiff/comparator.py
+src/vardiff/file_comparator.py
+tests/test_comparator.py
+tests/test_file_comparator.py
