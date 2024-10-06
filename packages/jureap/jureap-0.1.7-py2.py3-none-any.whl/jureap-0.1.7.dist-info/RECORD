@@ -1,0 +1,17 @@
+jureap/__init__.py,sha256=GViGMXeNMkePCt0oCCA1tQVG59jxffpWOSHZcD6Bcdg,405
+jureap/metadata.py,sha256=GESQFACckrVTxKro3x8qbQ64gwjMM8EFZxxTxep3Pz8,650
+jureap/check/__init__.py,sha256=gwlKC2EvmOOqn9Yaccr-Wh54woLrX3q8xWNuGvNge8c,2054
+jureap/cli/__init__.py,sha256=InyHSjTWlOsuqbJfQv776d62wOitzDNp7wugOAwZUv0,4180
+jureap/detail/__init__.py,sha256=86yVxgKjpcQoZ2ec4r7ujsOLrGk70EEo_-RfY49ecUQ,1887
+jureap/log/__init__.py,sha256=HAFiGWvbrkYsfH48nrBn1-mDdSPnOs2yKc7W8mhw6O0,2512
+jureap/report/__init__.py,sha256=3on-v4prKPS2hoQfYGNqh5rdrCY4x_J4fKMxBpbw-xM,1871
+jureap/report/jedi/__init__.py,sha256=srLyUvjciKYfmrlqHIqctersIx2YYM0h_NAwzw3Hm3s,306
+jureap-0.1.7.data/data/share/jureap/tex/jedi/.gitignore,sha256=SmP_4ZcyrCcNUfOt7HIDC3eZ0kMW9trw2QBY0Nx80Mc,15
+jureap-0.1.7.data/data/share/jureap/tex/jedi/document.mk,sha256=how6DaHfGgegBi3kFz0OnGYt_B7BIp-wU6K_7Cl5Dy0,16
+jureap-0.1.7.data/data/share/jureap/tex/jedi/jureap.cls,sha256=jrf4aI80Jn-vrl-nZdlEi2bCSwwt9L2k3d7LPSizaVc,6934
+jureap-0.1.7.data/data/share/jureap/tex/jedi/makefile,sha256=WusgaD5aNxdUfF1pN__PeJsg5_uJfq9FVT6uAHVQGQk,1019
+jureap-0.1.7.data/data/share/jureap/tex/jedi/report.tex,sha256=0H-Qgoi2b4iE5Q-WGk6QkVr-Afbxj4SBX_v4E9QBVEo,389
+jureap-0.1.7.dist-info/METADATA,sha256=I_t_7iXUgrw6YYXSY4EYKwCuW4avUhPP-NjVOp8ChXs,613
+jureap-0.1.7.dist-info/WHEEL,sha256=fl6v0VwpzfGBVsGtkAkhILUlJxROXbA3HvRL6Fe3140,105
+jureap-0.1.7.dist-info/entry_points.txt,sha256=gDWQcogpWRhrZSPj9rvcgZ2VWjSbkQdtDnmOokrTQns,43
+jureap-0.1.7.dist-info/RECORD,,
