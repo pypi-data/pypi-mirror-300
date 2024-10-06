@@ -1,0 +1,2 @@
+[console_scripts]
+email_scraper = email_scraper:main
