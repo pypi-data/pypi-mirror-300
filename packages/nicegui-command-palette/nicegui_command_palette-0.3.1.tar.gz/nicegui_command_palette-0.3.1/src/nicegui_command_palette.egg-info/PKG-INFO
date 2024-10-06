@@ -1,0 +1,111 @@
+Metadata-Version: 2.1
+Name: nicegui-command-palette
+Version: 0.3.1
+Summary: A command palette for NiceGUI applications
+Author-email: David Kincaid <daelonsuzuka@gmail.com>
+License: MIT License
+        
+        Copyright (c) 2024 David Kincaid
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy
+        of this software and associated documentation files (the "Software"), to deal
+        in the Software without restriction, including without limitation the rights
+        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+        copies of the Software, and to permit persons to whom the Software is
+        furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in all
+        copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+        SOFTWARE.
+        
+Project-URL: Homepage, https://github.com/DaelonSuzuka/nicegui-command-palette
+Project-URL: Repository, https://github.com/DaelonSuzuka/nicegui-command-palette
+Project-URL: Issues, https://github.com/DaelonSuzuka/nicegui-command-palette/issues
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Widget Sets
+Classifier: Operating System :: OS Independent
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Requires-Python: >=3.12
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: nicegui
+
+# nicegui-command-palette
+
+This plugin adds a command palette for NiceGUI applications.
+
+## Installation
+
+```sh
+pip install nicegui-command-palette
+```
+
+## Usage
+
+Register commands to the `CommandPalette` as a list of either strings or `Command` objects.
+
+A `Command` can have a callback attached, which could be cleaner than checking the `CommandPalette`'s result.
+
+Open the `CommandPalette` by `await`ing it. The returned value is the name of the command selected by the user, or `None` if they dismissed the palette without selecting anything.
+
+```py
+from command_palette import CommandPalette, Command
+
+def some_action():
+    ui.notify('User picked the third option!')
+
+commands = [
+    'one',
+    Command('two', 'Second'),
+    Command('three', 'Third', cb=some_action),
+]
+
+if result := await CommandPalette(commands):
+    # result is the name of the user's selection, or None
+    ui.notify(f'Selected: {result}')
+```
+
+Full example:
+```py
+from nicegui import ui
+from nicegui.events import KeyEventArguments
+from command_palette import CommandPalette, Command
+
+async def handle_key(e: KeyEventArguments):
+    # open the command palette when the user presses ctrl+shift+p
+    if e.action.keydown and e.modifiers.ctrl and e.modifiers.shift and e.key == 'P':
+        commands = [
+            'one',
+            Command('two', 'Second'),
+            Command('three', 'Third', cb=some_action),
+        ]
+        if result := await CommandPalette(commands):
+            ui.notify(result)
+
+ui.keyboard(on_key=handle_key)
+
+ui.run()
+```
+
+# Screenshots
+![screenshot](screenshots/palette_open.png)
+![usage](screenshots/usage.gif)
+
+# Todo
+
+- highlighting substring matches like in VSCode
+- additional functions like specific prompts?
+- improve matching algorithm
+- figure out how to use the user fixture with dialogs
