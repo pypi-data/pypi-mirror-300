@@ -1,0 +1,9 @@
+django_select2_autofill/__init__.py,sha256=MI5ZPzsYQFoc1QA0CoxdEd2g25ebbuKRQ_plyTuQcPk,48
+django_select2_autofill/apps.py,sha256=u2HRopi8g-hQEfEbEbKsH20kODrPgA8v1J3zWINX9R0,207
+django_select2_autofill/widgets.py,sha256=MVATCDRzjI1EcqtVGd22GXnXyoCFzUIto9dmK9hZBmc,761
+django_select2_autofill/static/django_select2_autofill/js/autofill.js,sha256=oikrgbCsnW5_OEiKBtgJUIl2nq80CZ0frzu10xSpY4M,1722
+django_select2_autofill-0.1.1.dist-info/LICENSE,sha256=-6K-uHMGQpaqVai3OIp07wv_GFNnKgEiJE8WIUh5RWw,1272
+django_select2_autofill-0.1.1.dist-info/METADATA,sha256=26FtKgC8f8mrAs-Qjikgp7VZleNcFb0CNVoTh9g2RZ8,2544
+django_select2_autofill-0.1.1.dist-info/WHEEL,sha256=GV9aMThwP_4oNCtvEC2ec3qUYutgWeAzklro_0m4WJQ,91
+django_select2_autofill-0.1.1.dist-info/top_level.txt,sha256=D8LAaR4Ub9SgQ00NTaMVGbQxTIjfwe7DovHnt6yeAUQ,24
+django_select2_autofill-0.1.1.dist-info/RECORD,,
