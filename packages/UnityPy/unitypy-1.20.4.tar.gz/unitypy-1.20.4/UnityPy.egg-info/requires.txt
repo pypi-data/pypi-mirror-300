@@ -1,0 +1,9 @@
+lz4
+brotli
+Pillow
+texture2ddecoder
+etcpak
+tabulate
+pyfmodex>=0.7.1
+fsspec
+attrs
