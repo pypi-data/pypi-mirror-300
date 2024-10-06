@@ -1,0 +1,7 @@
+include README.md
+include LICENSE
+
+include *.py
+include *.md
+
+recursive-include src/montecarlo/scripts *.py
