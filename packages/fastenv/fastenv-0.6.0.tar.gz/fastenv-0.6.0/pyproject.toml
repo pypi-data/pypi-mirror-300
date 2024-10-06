@@ -1,0 +1,137 @@
+[build-system]
+build-backend = "hatchling.build"
+requires = ["hatchling<1.22"]
+
+[project]
+authors = [{email = "bws@bws.bio", name = "Brendon Smith"}]
+classifiers = [
+  "Environment :: Web Environment",
+  "Intended Audience :: Developers",
+  "Natural Language :: English",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.9",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Topic :: Internet :: WWW/HTTP :: HTTP Servers",
+  "Topic :: Software Development :: Libraries :: Application Frameworks",
+  "Topic :: System :: Installation/Setup",
+  "Topic :: System :: Systems Administration",
+  "Topic :: Utilities",
+  "Typing :: Typed",
+]
+dependencies = [
+  "anyio>=3.3,<5",
+]
+description = "Unified environment variable and settings management for FastAPI and beyond."
+dynamic = ["version"]
+keywords = ["asgi", "dotenv", "environment variables", "fastapi", "settings"]
+license = "MIT"
+name = "fastenv"
+readme = "README.md"
+requires-python = ">=3.9,<4"
+
+[project.optional-dependencies]
+checks = [
+  "mypy==1.11.2",
+  "ruff>=0.6,<0.7",
+]
+cloud = [
+  "httpx>=0.23,<1",
+]
+docs = [
+  "mkdocs-material>=9,<10",
+]
+httpx = [
+  "httpx>=0.23,<1",
+]
+tests = [
+  "coverage[toml]>=7,<8",
+  "fastapi>=0.110.1,<0.116",
+  "freezegun>=1,<2",
+  "httpx>=0.23,<1",
+  "pytest>=8.1.1,<9",
+  "pytest-mock>=3,<4",
+]
+
+[project.urls]
+Documentation = "https://fastenv.bws.bio"
+Homepage = "https://github.com/br3ndonland/fastenv"
+Repository = "https://github.com/br3ndonland/fastenv"
+
+[tool.hatch.build.targets.sdist]
+include = ["/fastenv"]
+
+[tool.hatch.build.targets.wheel]
+packages = ["fastenv"]
+
+[tool.hatch.envs.ci]
+dev-mode = false
+features = [
+  "checks",
+  "tests",
+]
+path = ".venv"
+
+[tool.hatch.envs.default]
+dev-mode = true
+features = [
+  "checks",
+  "docs",
+  "tests",
+]
+path = ".venv"
+
+[tool.hatch.envs.default.scripts]
+check = [
+  "ruff check",
+  "ruff format --check",
+  "mypy",
+  "npx -s -y prettier@'^3' . --check",
+  "npx -s -y cspell --dot --gitignore *.md **/*.md",
+]
+format = [
+  "ruff check --fix",
+  "ruff format",
+  "npx -s -y prettier@'^3' . --write",
+]
+
+[tool.hatch.envs.docs]
+dev-mode = false
+features = [
+  "docs",
+]
+
+[tool.hatch.version]
+path = "fastenv/__init__.py"
+
+[tool.coverage.report]
+exclude_lines = ["if TYPE_CHECKING:", "pragma: no cover"]
+fail_under = 100
+show_missing = true
+
+[tool.coverage.run]
+command_line = "-m pytest"
+source = ["fastenv", "tests"]
+
+[tool.mypy]
+files = ["**/*.py"]
+show_error_codes = true
+strict = true
+
+[tool.pytest.ini_options]
+addopts = "-q"
+minversion = "6.0"
+testpaths = ["tests"]
+
+[tool.ruff]
+src = ["fastenv", "tests"]
+
+[tool.ruff.format]
+docstring-code-format = true
+
+[tool.ruff.lint]
+extend-select = ["I", "UP"]
+
+[tool.ruff.lint.isort]
+known-first-party = ["fastenv", "tests"]
