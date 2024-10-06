@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: orkestr8-sdk
+Version: 0.0.101
+Summary: SDK to easily interact with Orkestr8 ML entities
+Author: Antsthebul
+Requires-Python: >=3.8
+Requires-Dist: python-dotenv
+Requires-Dist: boto3
+Provides-Extra: dev
+Requires-Dist: pytest ; extra == 'dev'
+Requires-Dist: pre-commit ; extra == 'dev'
+
