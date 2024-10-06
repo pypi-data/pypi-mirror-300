@@ -1,0 +1,10 @@
+LICENSE.txt
+README.md
+setup.py
+src/subseq_tamil/__init__.py
+src/subseq_tamil/rough py2.py
+src/subseq_tamil/subsequence.py
+src/subseq_tamil.egg-info/PKG-INFO
+src/subseq_tamil.egg-info/SOURCES.txt
+src/subseq_tamil.egg-info/dependency_links.txt
+src/subseq_tamil.egg-info/top_level.txt
