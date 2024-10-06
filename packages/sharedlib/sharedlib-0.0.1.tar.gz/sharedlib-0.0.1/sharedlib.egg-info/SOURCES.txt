@@ -1,0 +1,12 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.py
+sharedlib/__init__.py
+sharedlib/config.py
+sharedlib/register.py
+sharedlib.egg-info/PKG-INFO
+sharedlib.egg-info/SOURCES.txt
+sharedlib.egg-info/dependency_links.txt
+sharedlib.egg-info/top_level.txt
