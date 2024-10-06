@@ -1,0 +1,148 @@
+Metadata-Version: 2.1
+Name: animalapi
+Version: 0.0.4
+Summary: A simple Python wrapper for the some-random-api.ml API.
+Author: Ashutosh Das
+Author-email: ashutoshdas2004@gmail.com
+Project-URL: Bug Tracker, https://github.com/DARKPOISON-yt/animalapi/issues
+Project-URL: Source Code, https://github.com/DARKPOISON-yt/animalapi
+Keywords: animal,api,wrapper,images,facts
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: requests
+Requires-Dist: random
+
+
+<h1 align="center">animalapi</h1>
+
+
+
+<p align="center">
+
+  A simple Python wrapper for the <a href="https://some-random-api.ml/">some-random-api.ml</a> API.
+
+  <br />
+
+  <a href="https://pypi.org/project/animalapi">
+
+    <img src="https://img.shields.io/pypi/v/animalapi.svg" alt="PyPI version" />
+
+  </a>
+
+  <a href="https://github.com/dashutosh04/animalapi/blob/main/LICENSE">
+
+    <img src="https://img.shields.io/github/license/dashutosh04/animalapi.svg" alt="License" />
+
+  </a>
+
+</p>
+
+
+
+<p align="center">
+
+  Easily access animal images and facts in your Python projects.
+
+</p>
+
+
+
+## Features
+
+
+
+* **Random Animal Data:** Get randomized animal data (image and fact) with `rand_animals()`.
+
+* **Specific Animal Data:** Fetch data for a specific animal using `animal_data(animal_name)`.
+
+* **Supported Animals:**  Currently supports "dog", "cat", "bird" and "koala".
+
+* **Error Handling:**  Provides informative error messages and handles invalid animal names and API request errors.
+
+
+
+## Installation
+
+
+
+```bash
+
+pip install animalapi
+
+```
+
+
+
+## Usage
+
+> Get random animal data
+
+
+
+```Python
+
+import animalapi as a
+
+
+
+data = a.rand_animals()
+
+img = data["image"]
+
+fact = data["fact"]
+
+
+
+print(img) 
+
+print(fact) 
+
+```
+
+
+
+> Get data for a specific animal
+
+```Python
+
+import animalapi as a
+
+
+
+data = a.animal_data("dog")
+
+img = data["image"]
+
+fact = data["fact"]
+
+
+
+print(img)
+
+print(fact)
+
+```
+
+
+
+### Contributing
+
+Contributions are welcome! Feel free to open issues or pull requests.
+
+
+
+### License
+
+This project is licensed under the MIT License - see the LICENSE file for details. 
