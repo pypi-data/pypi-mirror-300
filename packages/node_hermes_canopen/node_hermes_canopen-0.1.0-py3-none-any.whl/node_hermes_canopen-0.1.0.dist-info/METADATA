@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: node_hermes_canopen
+Version: 0.1.0
+Summary: 
+Author: floris vernieuwe
+Author-email: floris@vernieuwe.eu
+Requires-Python: >=3.10,<3.13
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: asyncslot (>=0.3.1,<0.4.0)
+Requires-Dist: canopen (>=2.3.0,<3.0.0)
+Requires-Dist: node-hermes-core (>=1.0.1,<2.0.0)
+Requires-Dist: node-hermes-qt (>=1.0.1,<2.0.0)
+Requires-Dist: pydantic (>=2.8.2,<3.0.0)
+Requires-Dist: qt-build-utils (>=0.1.0,<0.2.0)
+Description-Content-Type: text/markdown
+
+
