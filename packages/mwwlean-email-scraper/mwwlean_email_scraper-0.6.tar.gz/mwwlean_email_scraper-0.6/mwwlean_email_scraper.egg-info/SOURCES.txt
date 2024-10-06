@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+mwwlean_email_scraper/__init__.py
+mwwlean_email_scraper/main.py
+mwwlean_email_scraper.egg-info/PKG-INFO
+mwwlean_email_scraper.egg-info/SOURCES.txt
+mwwlean_email_scraper.egg-info/dependency_links.txt
+mwwlean_email_scraper.egg-info/entry_points.txt
+mwwlean_email_scraper.egg-info/requires.txt
+mwwlean_email_scraper.egg-info/top_level.txt
