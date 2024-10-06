@@ -1,0 +1,15 @@
+README.md
+pyproject.toml
+setup.py
+minigrad/__init__.py
+minigrad/loss.py
+minigrad/nn.py
+minigrad/optim.py
+minigrad/tensor.py
+minigrad_python.egg-info/PKG-INFO
+minigrad_python.egg-info/SOURCES.txt
+minigrad_python.egg-info/dependency_links.txt
+minigrad_python.egg-info/requires.txt
+minigrad_python.egg-info/top_level.txt
+test/test_bench_addition.py
+test/test_tensor.py
