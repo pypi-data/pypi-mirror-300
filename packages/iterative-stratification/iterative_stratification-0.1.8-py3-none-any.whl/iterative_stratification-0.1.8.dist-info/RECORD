@@ -1,0 +1,9 @@
+iterstrat/__init__.py,sha256=jeUhppvJ7p1qeUKn6rbm8PhpO4OpIh7Od0kLby5lblc,624
+iterstrat/ml_stratifiers.py,sha256=F4ZZBRcRirFInVEEGPpcKk9umiNuKMHoYNMc3e-7r-s,17547
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_ml_stratifiers.py,sha256=ZV5dfbLuFGGTgzJLAow3EF2X1HPIbDZz7hndl5-7izU,1413
+iterative_stratification-0.1.8.dist-info/LICENSE,sha256=qpMv549PaKCa2nqDh2upKaCIsqEfmR83_Iff_kSTp5k,1547
+iterative_stratification-0.1.8.dist-info/METADATA,sha256=_oVxW4gGDn35ZHlicRPBdaYGR848p3yrXP02jCWeECs,1282
+iterative_stratification-0.1.8.dist-info/WHEEL,sha256=GV9aMThwP_4oNCtvEC2ec3qUYutgWeAzklro_0m4WJQ,91
+iterative_stratification-0.1.8.dist-info/top_level.txt,sha256=7VIaMK0-y8kqLsNDo9CEz5IyIRKnTJUEYEz-7GTnVrI,16
+iterative_stratification-0.1.8.dist-info/RECORD,,
