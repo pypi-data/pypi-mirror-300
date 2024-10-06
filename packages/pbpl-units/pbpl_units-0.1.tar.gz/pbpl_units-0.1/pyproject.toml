@@ -1,0 +1,28 @@
+[project]
+name = "pbpl-units"
+version = "0.1"
+description = "foo"
+readme = "README.md"
+requires-python = ">=3.8"
+authors = [{name = "Brian Naranjo"}]
+license = {text = "Apache-2.0"}
+classifiers = [
+    "License :: OSI Approved :: Apache Software License"
+]
+dependencies = [
+
+]
+
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project.urls]
+Homepage = "https://github.com/bnara/pbpl-units"
+Changelog = "https://github.com/bnara/pbpl-units/releases"
+Issues = "https://github.com/bnara/pbpl-units/issues"
+CI = "https://github.com/bnara/pbpl-units/actions"
+
+
+[project.optional-dependencies]
+test = ["pytest"]
