@@ -1,0 +1,12 @@
+shopyo_theme/__init__.py,sha256=QfDK2XNmCfJYFCLLmM04fnBOG4GMzPS9wZ6AuMOk6Rg,1613
+shopyo_theme/forms.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+shopyo_theme/helpers.py,sha256=T1IAf9rqcG9JJQkl3kPKVQu7cBb_1qOWfakZD4bQtog,1499
+shopyo_theme/info.json,sha256=HDL9N-cKlElIdMtU3Z-9ponmFuT92uZYZpqczw51qM8,336
+shopyo_theme/models.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+shopyo_theme/view.py,sha256=96XjWHNe6sSEsDNaVxFhrYyw7uj94iKKZ5u5Dd8C_E8,4057
+shopyo_theme/templates/shopyo_theme/index.html,sha256=hpf_Zyv5_tOQE_rdNADzWiyMx7L_-3puudk6T2dXkr0,2605
+shopyo_theme/templates/shopyo_theme/blocks/sidebar.html,sha256=0R0YDaKHY98lld9zuUtHFWdqIGsFJFENSADbmSa2dw4,118
+shopyo_theme-1.1.0.dist-info/METADATA,sha256=QcpD-MGcKAZmbPUfzKcoS6jct24tPwS1nzxf870XZos,528
+shopyo_theme-1.1.0.dist-info/WHEEL,sha256=GV9aMThwP_4oNCtvEC2ec3qUYutgWeAzklro_0m4WJQ,91
+shopyo_theme-1.1.0.dist-info/top_level.txt,sha256=OVzyn3r7sRX8kPXp45yK_PR3GLX3R0y3PfQm5FEARMs,13
+shopyo_theme-1.1.0.dist-info/RECORD,,
