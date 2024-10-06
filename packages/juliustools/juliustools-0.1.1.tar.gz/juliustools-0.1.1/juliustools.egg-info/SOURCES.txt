@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+requirements.txt
+Juliustools/Juliustools.py
+Juliustools/__init__.py
+juliustools.egg-info/PKG-INFO
+juliustools.egg-info/SOURCES.txt
+juliustools.egg-info/dependency_links.txt
+juliustools.egg-info/requires.txt
+juliustools.egg-info/top_level.txt
