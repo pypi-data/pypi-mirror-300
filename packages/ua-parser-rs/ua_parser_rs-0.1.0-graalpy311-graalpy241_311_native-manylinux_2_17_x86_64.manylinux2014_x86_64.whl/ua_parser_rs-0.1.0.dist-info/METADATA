@@ -1,0 +1,11 @@
+Metadata-Version: 2.3
+Name: ua-parser-rs
+Version: 0.1.0
+Classifier: Programming Language :: Rust
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Classifier: License :: OSI Approved :: Apache Software License
+License-File: LICENSE
+License: Apache 2.0
+Requires-Python: >=3.8
