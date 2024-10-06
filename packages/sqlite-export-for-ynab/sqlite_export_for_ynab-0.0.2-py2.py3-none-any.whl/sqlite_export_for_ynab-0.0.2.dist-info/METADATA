@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: sqlite_export_for_ynab
+Version: 0.0.2
+Summary: SQLite Export for YNAB - Export YNAB Budget data to SQLite
+Home-page: https://github.com/mxr/sqlite-export-for-ynab
+Author: Max R
+Author-email: maxr@outlook.com
+License: MIT
+Keywords: ynab,sqlite,sql,budget,cli
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Python: >=3.12
+Description-Content-Type: text/markdown
+Requires-Dist: aiohttp
+Requires-Dist: tqdm
+
