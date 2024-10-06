@@ -1,0 +1,2 @@
+[console_scripts]
+ctricon = ctrtools.runnables.ctricon:main

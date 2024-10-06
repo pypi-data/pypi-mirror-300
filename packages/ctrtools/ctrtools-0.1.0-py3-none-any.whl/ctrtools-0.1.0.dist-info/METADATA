@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: ctrtools
+Version: 0.1.0
+Summary: A library for working with Homebrew for the Nintendo® 3DS™
+Home-page: https://github.com/felixwolf/ctr-tools
+Author: Félix
+Author-email: felix.wolfz@gmail.com
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: zlib/libpng License
+Classifier: Topic :: Software Development :: Libraries
+Description-Content-Type: text/markdown
+
+# CTR Tools
+Homebrew utilities I have wrote.
+
+## icongen
+Generate icon (Also known as [SMDH](https://www.3dbrew.org/wiki/SMDH)) files for use with [makerom](https://github.com/3DSGuy/Project_CTR/tree/master/makerom). 
+Takes a JSON input, spits out a ICN file.
