@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: unstable_baselines3
+Version: 0.0.3100069
+Summary: stable_baselines3 for pettingzoo multi agent algorithms
+Author-email: Pranav <pranavraj575@gmail.com>
+Project-URL: Homepage, https://github.com/pranavraj575/unstable_baselines3
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: gymnasium
+Requires-Dist: pettingzoo
+Requires-Dist: torch
+Requires-Dist: stable-baselines3
+Provides-Extra: gui
+Requires-Dist: pygame ; extra == 'gui'
+
+# Unstable Baselines 3
+
+Bridge from [stable_baselines3](https://stable-baselines3.readthedocs.io/en/master/)
+into [PettingZoo](https://pettingzoo.farama.org/) multi-agent algorithms
+
+Trains agents completely independently (without shared parameters)
+
+Designed for learning independent policies through Reinforcement learning in multi-agent team/adversarial games
+
