@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "OrdinaryGacha"
+version = "0.0.3"
+authors = [
+  { name="NatchaLatte Official", email="foxteary@gmail.com" },
+]
+description = "OrdinaryGacha เป็นแพ็กเกจสำหรับช่วยในการทำระบบสุ่มกาชาธรรมดา"
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+Homepage = "https://github.com/NatchaLatte/OrdinaryGacha"
+Issues = "https://github.com/NatchaLatte/OrdinaryGacha/issues"
