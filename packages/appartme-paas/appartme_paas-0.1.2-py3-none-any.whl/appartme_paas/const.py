@@ -1,0 +1,1 @@
+DEFAULT_API_URL="https://api.appartme.cloud/paasapi/v1"
