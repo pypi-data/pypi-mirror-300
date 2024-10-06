@@ -1,0 +1,85 @@
+[build-system]
+requires = ["setuptools ~= 69.0.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "investir"
+version = "1.2"
+dependencies = [
+  "click ~= 8.1.0",
+  "platformdirs ~= 4.2.0",
+  "prettytable ~= 3.10.0",
+  "python-dateutil ~= 2.9.0",
+  "PyYAML ~= 6.0.0",
+  "typer ~= 0.12.0",
+  "yfinance ~= 0.2.40",
+]
+optional-dependencies.lint = [
+  "black ~= 24.1.0",
+  "isort ~= 5.13.0",
+  "flake8 ~= 7.0.0",
+  "mypy ~= 1.9.0",
+  "pylint ~= 3.2.0",
+]
+optional-dependencies.test = [
+  "pandas ~= 2.2.0",
+  "pytest ~= 8.1.0",
+  "pytest-mock ~= 3.14.0"
+]
+requires-python = ">=3.10"
+authors = [
+  {name = "Tiago Gomes", email = "tiago.avv+oss@gmail.com"},
+]
+maintainers = [
+  {name = "Tiago Gomes", email = "tiago.avv+oss@gmail.com"}
+]
+description = "Calculate UK capital gains tax for Freetrade and Trading212"
+readme = "README.md"
+license = {text = "MIT License"}
+keywords = ["HMRC", "Shares", "Stock", "Tax", "Capital Gains", "Freetrade", "Trading212"]
+classifiers = [
+  "Development Status :: 5 - Production/Stable",
+  "Environment :: Console",
+  "Intended Audience :: End Users/Desktop",
+  "License :: OSI Approved :: MIT License",
+  "Natural Language :: English",
+  "Operating System :: OS Independent",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3 :: Only",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Topic :: Office/Business",
+  "Topic :: Office/Business :: Financial",
+  "Topic :: Office/Business :: Financial :: Accounting",
+  "Topic :: Office/Business :: Financial :: Investment",
+  "Typing :: Typed"
+]
+
+[project.scripts]
+investir = "investir.cli:main"
+
+[project.urls]
+Homepage = "https://github.com/tacgomes/investir"
+Repository = "https://github.com/tacgomes/investir"
+"Bug Tracker" = "https://github.com/tacgomes/investir/issues"
+
+[tool.isort]
+profile = "black"
+
+[[tool.mypy.overrides]]
+module = "yfinance"
+ignore_missing_imports = true
+
+[tool.pylint."MESSAGES CONTROL"]
+disable = [
+  "duplicate-code",
+  "fixme",
+  "missing-class-docstring",
+  "missing-function-docstring",
+  "missing-module-docstring"
+]
+
+[tool.pytest.ini_options]
+minversion = "6.0"
+testpaths = ["tests"]
