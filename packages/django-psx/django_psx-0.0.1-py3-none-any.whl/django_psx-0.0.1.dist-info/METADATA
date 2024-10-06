@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: django-psx
+Version: 0.0.1
+Summary: A placeholder package to reserve my project name
+Home-page: https://github.com/coryfitz/django-psx
+Author: Cory Fitz
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+Django PSX
