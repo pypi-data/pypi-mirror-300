@@ -1,0 +1,9 @@
+pgwidget/__init__.py,sha256=-7lk3XZcXmFG_3xSORYB62sERfEEzzjQBlzxbp2rj_0,1842
+pgwidget/engine.py,sha256=WhbsMKG20M6YCXMMA9sZFd3O850Ya8Xn5NgttB6DO5g,13225
+pgwidget/helper.py,sha256=gbPtLVid0PcXcRmmpw8fBOC56rZ07xANLBPlTAyIRME,1276
+pgwidget/pgwidget_core.py,sha256=KyHX7RbaWPkXedwGPpJ5l3AMN7GCKdWYqf0ihQBErUA,96680
+pgwidget-0.8.1.dist-info/LICENSE,sha256=LhjVfITw-wDY-BehxX1Dk-EB-5gW90Y7qwUvm6Fhei8,1090
+pgwidget-0.8.1.dist-info/METADATA,sha256=KcBAYsEGpUiyjvfY0XFNochbo6bG2UmPv6RjWZfauAE,1789
+pgwidget-0.8.1.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+pgwidget-0.8.1.dist-info/top_level.txt,sha256=RtnRt-mjc0DLQuQWBpj2pB1M7Nzea7CGLzr3gKKeIDA,9
+pgwidget-0.8.1.dist-info/RECORD,,
