@@ -1,0 +1,11 @@
+.gitignore
+license.md
+readme.md
+setup.py
+ctrtools/__init__.py
+ctrtools/ctricon.py
+ctrtools.egg-info/PKG-INFO
+ctrtools.egg-info/SOURCES.txt
+ctrtools.egg-info/dependency_links.txt
+ctrtools.egg-info/entry_points.txt
+ctrtools.egg-info/top_level.txt
