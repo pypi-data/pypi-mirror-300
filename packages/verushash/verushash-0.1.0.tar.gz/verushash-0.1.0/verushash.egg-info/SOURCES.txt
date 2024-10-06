@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+verushash/__init__.py
+verushash/verushash.py
+verushash.egg-info/PKG-INFO
+verushash.egg-info/SOURCES.txt
+verushash.egg-info/dependency_links.txt
+verushash.egg-info/top_level.txt
