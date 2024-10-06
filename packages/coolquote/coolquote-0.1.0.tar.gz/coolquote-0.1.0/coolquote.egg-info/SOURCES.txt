@@ -1,0 +1,10 @@
+README.md
+setup.py
+coolquote/__init__.py
+coolquote/model_loader.py
+coolquote/quote_generator.py
+coolquote.egg-info/PKG-INFO
+coolquote.egg-info/SOURCES.txt
+coolquote.egg-info/dependency_links.txt
+coolquote.egg-info/requires.txt
+coolquote.egg-info/top_level.txt
