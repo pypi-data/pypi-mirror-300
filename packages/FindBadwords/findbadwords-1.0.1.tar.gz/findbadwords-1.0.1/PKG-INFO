@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: FindBadwords
+Version: 1.0.1
+Summary: Find any word in a sentence
+Author: BOXER
+Author-email: vagabonwalybi@gmail.com
+Maintainer: BOXER
+Maintainer-email: vagabonwalybi@gmail.com
+Classifier: Programming Language :: Python :: 3.9
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Operating System :: Microsoft :: Windows :: Windows 11
+Classifier: Operating System :: Microsoft :: Windows :: Windows 10
+Requires-Python: >=3.9
+
+Find any word in a sentence, especially if contain special character ;)
