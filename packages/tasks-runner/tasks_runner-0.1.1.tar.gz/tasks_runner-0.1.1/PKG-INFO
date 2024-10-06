@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: tasks-runner
+Version: 0.1.1
+Summary: 
+Author: Sebastian Guerra
+Author-email: spguerraespinoza@gmail.com
+Requires-Python: >=3.12,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: loguru (>=0.7.2,<0.8.0)
+Requires-Dist: tqdm (>=4.66.5,<5.0.0)
+Description-Content-Type: text/markdown
+
+# WORK IN PROGRESS
+
