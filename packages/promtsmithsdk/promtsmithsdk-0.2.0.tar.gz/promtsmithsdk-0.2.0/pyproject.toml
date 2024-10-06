@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "promtsmithsdk"
+description = "The Prompt Smith Python SDK is a Python package that provides a simple way to interact with the Prompt Smith API."
+version = "0.2.0"
+authors = ["tim-hub <tim-hub@users.noreply.github.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.8"
+requests = "^2.32.3"
+python-dotenv = "^1.0.1"
+cachecontrol = "^0.14.0"
+requests-threads = "^0.1.1"
+
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.3.3"
+jupyter = "^1.1.1"
+asyncio = "^3.4.3"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

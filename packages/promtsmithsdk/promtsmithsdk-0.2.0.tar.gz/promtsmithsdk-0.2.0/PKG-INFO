@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: promtsmithsdk
+Version: 0.2.0
+Summary: The Prompt Smith Python SDK is a Python package that provides a simple way to interact with the Prompt Smith API.
+Author: tim-hub
+Author-email: tim-hub@users.noreply.github.com
+Requires-Python: >=3.8,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: cachecontrol (>=0.14.0,<0.15.0)
+Requires-Dist: python-dotenv (>=1.0.1,<2.0.0)
+Requires-Dist: requests (>=2.32.3,<3.0.0)
+Requires-Dist: requests-threads (>=0.1.1,<0.2.0)
+Description-Content-Type: text/markdown
+
+# Prompt Smith Python SDK
+
+- [PyPi](https://pypi.org/project/promtsmithsdk/)
+- [Github](https://github.com/PromptSmith-OSS/promptsmith-python-sdk)
+
+The Prompt Smith Python SDK is a Python package that provides a simple way to interact with the Prompt Smith API. 
+The SDK is designed to make it easy to integrate the Prompt Smith API into your Python LLM RAG and Agent applications.
+
+
+This SDK is built on top of the Prompt Smith API.
