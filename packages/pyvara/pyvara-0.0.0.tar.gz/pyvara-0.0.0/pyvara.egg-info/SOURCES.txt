@@ -1,0 +1,7 @@
+README.md
+setup.py
+pyvara.egg-info/PKG-INFO
+pyvara.egg-info/SOURCES.txt
+pyvara.egg-info/dependency_links.txt
+pyvara.egg-info/top_level.txt
+vara/__init__.py

@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: pyvara
+Version: 0.0.0
+Summary: Python library for VARA modem
+Home-page: https://github.com/petrkr/pyvara
+Author: OK1PKR Petr Kracik
+Author-email: pyvara@ok1pkr.radio
+License: MIT
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Development Status :: 3 - Alpha
+Requires-Python: >=3.11
+Description-Content-Type: text/markdown
+
+# PyVARA
+
+Python library for VARA Modem.
