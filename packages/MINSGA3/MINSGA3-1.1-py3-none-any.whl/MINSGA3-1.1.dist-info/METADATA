@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: MINSGA3
+Version: 1.1
+Summary: A modification of Pymoo library's NSGA3 algorithm to work with Mixed-Integer problems
+Home-page: 
+Author: Shayan Firouzian H.
+License: Open Software License v. 3.0 (OSL-3.0)
+Platform: any
+Requires-Python: >=3.9
+License-File: LICENSE
+Requires-Dist: pymoo >=0.6.1.3
+
