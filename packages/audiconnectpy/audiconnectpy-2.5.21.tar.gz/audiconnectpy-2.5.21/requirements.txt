@@ -1,0 +1,4 @@
+aiohttp>=3.8.3
+beautifulsoup4>=4.11.2
+pydantic>=2.8.2
+pydantic_extra_types>=2.9.0
