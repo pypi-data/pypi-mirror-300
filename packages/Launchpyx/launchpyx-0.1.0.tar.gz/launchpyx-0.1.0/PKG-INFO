@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: Launchpyx
+Version: 0.1.0
+Summary: Turn your Launchpad X into a customizable macro pad.
+Author-email: Picus303 <pilleurc@protonmail.com>
+License: MIT
+Project-URL: Homepage, https://github.com/Picus303/Launchpyx
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: python-rtmidi>=1.5.8
