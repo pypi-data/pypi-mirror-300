@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: fireferret
+Version: 0.1.0
+Summary: Repository containing different ML algorithms
+Author: Dinno Koluh
+Requires-Python: >=3.12
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# fireferret
+Repository containing different ML algorithms
