@@ -1,0 +1,3 @@
+[console_scripts]
+yac = yac.main:main
+
