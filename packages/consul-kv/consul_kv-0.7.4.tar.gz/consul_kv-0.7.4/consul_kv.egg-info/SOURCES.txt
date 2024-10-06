@@ -1,0 +1,14 @@
+LICENSE.txt
+README.md
+setup.cfg
+setup.py
+consul_kv/__init__.py
+consul_kv/api.py
+consul_kv/serializer.py
+consul_kv/settings.py
+consul_kv/utils.py
+consul_kv.egg-info/PKG-INFO
+consul_kv.egg-info/SOURCES.txt
+consul_kv.egg-info/dependency_links.txt
+consul_kv.egg-info/top_level.txt
+tests/testcase.py
