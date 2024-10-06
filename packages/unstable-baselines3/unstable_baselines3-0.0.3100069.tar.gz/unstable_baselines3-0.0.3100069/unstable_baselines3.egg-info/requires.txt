@@ -1,0 +1,7 @@
+gymnasium
+pettingzoo
+torch
+stable-baselines3
+
+[gui]
+pygame
