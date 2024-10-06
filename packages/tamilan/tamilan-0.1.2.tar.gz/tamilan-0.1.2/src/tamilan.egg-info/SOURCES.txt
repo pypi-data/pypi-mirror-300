@@ -1,0 +1,6 @@
+README.md
+setup.py
+src/tamilan.egg-info/PKG-INFO
+src/tamilan.egg-info/SOURCES.txt
+src/tamilan.egg-info/dependency_links.txt
+src/tamilan.egg-info/top_level.txt
