@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: cngn_manager
+Version: 0.0.2
+Summary: Python HTTP for Humans.
+Home-page: https://docs.cngn.co
+Author: Emmanuel Onyo
+Author-email: emmanuel.onyo@withconvexity.com
+License: MIT License
+Project-URL: Documentation, https://docs.cngn.co
+Project-URL: Source, https://github.com/wrappedcbdc/cngn-pyhon-library.git
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: requests
+Requires-Dist: cryptography==43.0.1
+Requires-Dist: pynacl==1.5.0
+
+# cngn-pyhon-library

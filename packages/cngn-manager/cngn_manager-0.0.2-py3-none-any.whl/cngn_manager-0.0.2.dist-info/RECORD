@@ -1,0 +1,11 @@
+cngn_manager/AESCrypto.py,sha256=PWzAv2uOkqIFKJB3NCf-4Z1Ler0ckWW233ClnMORZFQ,2277
+cngn_manager/Ed25519Crypto.py,sha256=o0sc0pCPWnwV2zJDSXg1lO7lQOc2h3J3HwLoaxptxmg,3167
+cngn_manager/__init__.py,sha256=-42VM-ineLdcPK_arsDtTiYPSXPWTJlNX4SEmed-gv8,543
+cngn_manager/__version__.py,sha256=bHCw02kumJv2Tgsl-3lt1unGl78G9LSOsz64Qig2zs8,697
+cngn_manager/constants.py,sha256=I9ZttgJovQjOTLwXVHdM7-KTLnfgnQiCggk7o8zLAd8,210
+cngn_manager/main.py,sha256=AOLtOj-rTVCga7H3CRsS_INCld3HZs8FgLU6r_BAl5w,4088
+cngn_manager-0.0.2.dist-info/LICENSE,sha256=YvHOT-ErywpLiq_D6JBcDkDhC7kpBdOnGBob4Ssmiek,1068
+cngn_manager-0.0.2.dist-info/METADATA,sha256=y6GboFN3JhJSmhQ_lr9kF1MC9d2rmYPPYYKYC_090XY,530
+cngn_manager-0.0.2.dist-info/WHEEL,sha256=GV9aMThwP_4oNCtvEC2ec3qUYutgWeAzklro_0m4WJQ,91
+cngn_manager-0.0.2.dist-info/top_level.txt,sha256=Uq497-h294vdVh_Gp_YbvYfjiTMTNQ-IP8L4qIooRhk,13
+cngn_manager-0.0.2.dist-info/RECORD,,
