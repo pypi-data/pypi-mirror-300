@@ -1,0 +1,7 @@
+setup.py
+discould/__init__.py
+discould/discould.py
+discould.egg-info/PKG-INFO
+discould.egg-info/SOURCES.txt
+discould.egg-info/dependency_links.txt
+discould.egg-info/top_level.txt
