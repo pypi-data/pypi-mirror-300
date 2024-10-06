@@ -1,0 +1,14 @@
+LICENSE
+README.md
+pyproject.toml
+danai/__init__.py
+danai/cli.py
+danai/json_manager.py
+danai/pricing.json
+danai/printer_template.py
+danai.egg-info/PKG-INFO
+danai.egg-info/SOURCES.txt
+danai.egg-info/dependency_links.txt
+danai.egg-info/entry_points.txt
+danai.egg-info/requires.txt
+danai.egg-info/top_level.txt
