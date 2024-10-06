@@ -1,0 +1,7 @@
+certbot>=2.11.0
+setuptools
+requests
+
+[docs]
+Sphinx>=1.0
+sphinx_rtd_theme
