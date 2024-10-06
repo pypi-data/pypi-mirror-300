@@ -1,0 +1,11 @@
+README.md
+setup.py
+pgman/__init__.py
+pgman/connector.py
+pgman/utils.py
+pgman.egg-info/PKG-INFO
+pgman.egg-info/SOURCES.txt
+pgman.egg-info/dependency_links.txt
+pgman.egg-info/not-zip-safe
+pgman.egg-info/requires.txt
+pgman.egg-info/top_level.txt
