@@ -1,0 +1,15 @@
+[project]
+name = "pycatcher"
+version = "0.0.1"
+authors = [
+    {name="Aseem Anand", email="aseemanand@gmail.com"},
+    {name="Jagadish Pamarthi", email="jagadish.vrsec@gmail.com"}
+]
+description = "This is a project that automatically identifies the outliers from a given dataset"
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
