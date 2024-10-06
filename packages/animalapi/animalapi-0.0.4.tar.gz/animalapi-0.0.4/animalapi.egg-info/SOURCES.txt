@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+animalapi/__init__.py
+animalapi.egg-info/PKG-INFO
+animalapi.egg-info/SOURCES.txt
+animalapi.egg-info/dependency_links.txt
+animalapi.egg-info/requires.txt
+animalapi.egg-info/top_level.txt
