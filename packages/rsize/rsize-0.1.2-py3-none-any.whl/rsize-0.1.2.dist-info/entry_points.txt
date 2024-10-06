@@ -1,0 +1,3 @@
+[console_scripts]
+rsize=rsize.cli:main
+
