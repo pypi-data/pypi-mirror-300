@@ -1,0 +1,66 @@
+Metadata-Version: 2.1
+Name: mc-option-simulator-yale
+Version: 0.0.7
+Summary: CLI for Geometric Brownian Motion and Black Scholes Math for Monte Carlo Simulation
+Home-page: https://github.com/yalehacks/MonteMath
+Author: Chase Coogan
+Author-email: chasecoogan12@gmail.com
+License: MIT
+Project-URL: Bug Reports, https://github.com/yalehacks/MonteMath
+Project-URL: Source, https://github.com/yalehacks/MonteMath
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Scientific/Engineering :: Mathematics
+Classifier: Topic :: Scientific/Engineering
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy
+Requires-Dist: scipy
+
+# Monte Carlo
+
+[Monte Carlo Simulator ](https://github.com/yalehacks)
+
+# setup
+
+pip install using:
+
+```
+pip install mc-option-simulator-yale
+```
+
+import the module using:
+
+```
+from montecarlo.MonteCarloSimulation import MonteCarloSimulation
+```
+
+classes: $\\$
+
+```python
+class MonteCarloSimulation:
+```
+
+Methods belong to MonteCarloSimulation
+
+```python
+def __init__(self, stock_value, strike, volatility):
+        self.stock_value = stock_value
+        self.risk_free_interest = RISK_FREE_INTEREST
+        self.strike = strike
+        self.sigma = volatility
+        self.delta_time = DELTA_TIME
+        self.T = TIME
+```
+
+```python
+def Geometric_Brownian_Motion(self, option_type="call")
+```
+
+```python
+def Black_Scholes(self, option_type="call".lower())
+```
+
+Full class and method details omitted, refer to the code to see full implementation.
