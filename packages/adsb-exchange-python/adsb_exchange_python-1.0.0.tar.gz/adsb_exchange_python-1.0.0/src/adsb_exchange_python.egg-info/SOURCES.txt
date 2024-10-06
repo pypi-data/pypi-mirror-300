@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+src/adsb_exchange_python/__init__.py
+src/adsb_exchange_python/adsb_exchange_python.py
+src/adsb_exchange_python.egg-info/PKG-INFO
+src/adsb_exchange_python.egg-info/SOURCES.txt
+src/adsb_exchange_python.egg-info/dependency_links.txt
+src/adsb_exchange_python.egg-info/requires.txt
+src/adsb_exchange_python.egg-info/top_level.txt
+tests/test.py
