@@ -1,0 +1,16 @@
+msteams_con/__init__.py,sha256=l_DzLRxuXDJY0DUYYj3BobZsiTKFjxtbjOm1O3pKpOU,195
+msteams_con/adaptive_card.py,sha256=w1XGDTYw1OWX8-wco2jvZKLHNtNda0dpovmTgCYGED8,7058
+msteams_con/cli.py,sha256=wdDHK1g9eNk_ut5YuwhVJjjatYiKRcSdKWsKoXXGrVM,715
+msteams_con/errors.py,sha256=awbemUWaBy1cnv4NZ6goSDUIbKGDaxyfFeIg2IlhRsU,77
+msteams_con/logger.py,sha256=AD4yMh4GTD7HTbWd7r0v0OjSkEXv3Zs00izpHHvJv2I,1734
+msteams_con/msteams_connector.py,sha256=adFnLFmSmDYgqI7045CoBL656HIbXZj4ClgEvog_R_g,1991
+msteams_con/requirements-dev.txt,sha256=YuD0zlW9-zC7iF_H1pPii2B7HT1E8Xwo8OZ_wzG4nbw,72
+msteams_con/requirements.txt,sha256=WNE0nodW0u3lhrwouHUjSuEt9j1ztKZ4TzPxkSTv1_w,28
+msteams_con/card_templates/__init__.py,sha256=UkRHVP9ZEv3D4BYZRBIyybmOsZ6fay2m0b9xok-yong,65
+msteams_con/card_templates/release_card.py,sha256=crsYEKaO-nTrsEHis-E0_KyJvMabRXs8RNYPC0xs7pk,2087
+msteams_con-1.0.0.dist-info/LICENSE,sha256=HyVuytGSiAUQ6ErWBHTqt1iSGHhLmlC8fO7jTCuR8dU,16725
+msteams_con-1.0.0.dist-info/METADATA,sha256=ra4liloK9V8bplgmsBh12LVHxe2yNfMHO9H66AHnUv4,24825
+msteams_con-1.0.0.dist-info/WHEEL,sha256=GV9aMThwP_4oNCtvEC2ec3qUYutgWeAzklro_0m4WJQ,91
+msteams_con-1.0.0.dist-info/entry_points.txt,sha256=eHowvakhkMt8s4wbtqmNoQtYvVsQ4WHJ5PEnzA8EYzw,59
+msteams_con-1.0.0.dist-info/top_level.txt,sha256=ltdcRuabDTr2yggJ3z8nfy50h1zdWBTTkDnAC2FVgbI,12
+msteams_con-1.0.0.dist-info/RECORD,,
