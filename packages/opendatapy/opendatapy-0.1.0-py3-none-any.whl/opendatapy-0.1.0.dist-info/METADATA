@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: opendatapy
+Version: 0.1.0
+Summary: opendata.studio dataflow helper library
+Author-email: echus <varvara@echus.co>
+Project-URL: Homepage, https://github.com/opendatastudio/opendatapy
+Project-URL: Bug Tracker, https://github.com/opendatastudio/opendatapy/issues
+Requires-Python: >=3.11
+License-File: LICENSE
+Requires-Dist: pandas (<3.0,>=2.2)
+Requires-Dist: docker (<8,>=7.1.0)
+Provides-Extra: all
+Requires-Dist: opendatapy[development] ; extra == 'all'
+Provides-Extra: development
+Requires-Dist: pre-commit ; extra == 'development'
+Requires-Dist: build ; extra == 'development'
+
