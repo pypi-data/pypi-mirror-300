@@ -1,0 +1,3 @@
+[console_scripts]
+qt-build=qt_build_utils:cli
+

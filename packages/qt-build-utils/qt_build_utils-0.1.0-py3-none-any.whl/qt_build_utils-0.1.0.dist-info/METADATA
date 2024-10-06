@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: qt-build-utils
+Version: 0.1.0
+Summary: 
+Author: floris vernieuwe
+Author-email: floris@vernieuwe.eu
+Requires-Python: >=3.10,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: click (>=8.1.7,<9.0.0)
+Description-Content-Type: text/markdown
+
+# QT build utils
+
+Edit ui
+
+```sh
+qt-build edit [ui_file]
+```
+
+Update ui
+
+```sh
+qt-build convert [ui_file] -i
+```
+
