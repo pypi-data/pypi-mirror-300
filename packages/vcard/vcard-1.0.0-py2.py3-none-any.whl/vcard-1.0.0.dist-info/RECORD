@@ -1,0 +1,15 @@
+vcard/__init__.py,sha256=FvPsmWeFEXw2G60os_ulfTQzYqT-JW5oGyOOx6a87bQ,297
+vcard/vcard.py,sha256=wysiOkG32UrKFjsbItcmW5s5gC0U5_l9nYqDq1Df6OM,1280
+vcard/vcard_definitions.py,sha256=QAbzAlQqLu-QYjEZE4GU44lg_8vBfiC_JhllACjh58g,2271
+vcard/vcard_errors.py,sha256=BpUaZSG_N5v9BhUO42fmktx0zEp9Xpa4VkJh9eXCsck,4166
+vcard/vcard_property.py,sha256=MJ65-pEVptJcy40-BRv--8oFlgF6iZt_CRJU7mnsw1s,325
+vcard/vcard_utils.py,sha256=68fXB93yf53IAd1YEKmOWBkb0-HGCZmtqJnspdgepd8,1269
+vcard/vcard_validator.py,sha256=pc4bW8RotibEr4c0jQupfS8yuTQFD20Z_TIKBcrC3j4,12878
+vcard/vcard_validators.py,sha256=7EAX5c8_wo0bWpLg817FwUwC7C0nalILAL3Ssogjb-U,29663
+vcard-1.0.0.data/data/bash-completion/vcard,sha256=ARwuMvtmlgzFc_Lo4C5uOBCUimYx9idXwERzTk2zmZg,314
+vcard-1.0.0.dist-info/LICENSE.txt,sha256=DZak_2itbUtvHzD3E7GNUYSRK6jdOJ-GqncQ2weavLA,34523
+vcard-1.0.0.dist-info/METADATA,sha256=AjnAgRUMNML79Gblv0qo9bwQ8EOAjHl0r1snLjaSFpE,6256
+vcard-1.0.0.dist-info/WHEEL,sha256=DZajD4pwLWue70CAfc7YaxT1wLUciNBvN_TTcvXpltE,110
+vcard-1.0.0.dist-info/entry_points.txt,sha256=CnqPwXJlzWBqmyFqRukhIvG0Y_znG_JpClUkYXQiaG4,43
+vcard-1.0.0.dist-info/top_level.txt,sha256=vsEEpdsR2ZaB1rSF8t1D21mXe0o-qPDkEVOCCLoNXS8,6
+vcard-1.0.0.dist-info/RECORD,,
