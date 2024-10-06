@@ -1,0 +1,6 @@
+README.md
+setup.py
+utilitario_de_leitura_de_arquivos_csv.egg-info/PKG-INFO
+utilitario_de_leitura_de_arquivos_csv.egg-info/SOURCES.txt
+utilitario_de_leitura_de_arquivos_csv.egg-info/dependency_links.txt
+utilitario_de_leitura_de_arquivos_csv.egg-info/top_level.txt

@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: utilitario_de_leitura_de_arquivos_csv
+Version: 0.1.0
+Summary: Um pacote que fornece funções para ler arquivos CSV e retornar dados como listas ou dicionários.
+Home-page: https://github.com/silvioprogramation22/Utilitario_de_Leitura_de_Arquivos_CSV
+Author: Silvio
+Author-email: lerparaaprendersempre@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Description-Content-Type: text/markdown
+
+Um pacote que fornece funÃ§Ãµes para ler arquivos CSV e retornar dados como listas ou dicionÃ¡rios.
