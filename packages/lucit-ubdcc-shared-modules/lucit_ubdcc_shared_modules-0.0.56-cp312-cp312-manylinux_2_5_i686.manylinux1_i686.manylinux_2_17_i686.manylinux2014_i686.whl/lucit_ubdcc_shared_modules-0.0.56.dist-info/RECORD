@@ -1,0 +1,9 @@
+lucit_ubdcc_shared_modules/App.cpython-312-i386-linux-gnu.so,sha256=axDwYwQTsPPn1IlhKhVj9U4n6fj-PpdmsTOVKYNX5CY,1811652
+lucit_ubdcc_shared_modules/ServiceBase.cpython-312-i386-linux-gnu.so,sha256=qEd3uJ6T8NpDq387MiIoMA_S8BUnMy5CHRSlRu5rhV0,583312
+lucit_ubdcc_shared_modules/RestEndpointsBase.cpython-312-i386-linux-gnu.so,sha256=uH3nECApnjYZggW9HCIckB51ZWJgv0DfsKW_sGZTEQ4,713120
+lucit_ubdcc_shared_modules/__init__.cpython-312-i386-linux-gnu.so,sha256=0s8NGSD5pW7gfh3uqJDoC8wjSAUVdzUdFj6tUz06dTI,63052
+lucit_ubdcc_shared_modules/RestServer.cpython-312-i386-linux-gnu.so,sha256=J_K9eXEjoU3jEvontDfTv1p_DXiw2lapeuYFnRHDwgU,465160
+lucit_ubdcc_shared_modules-0.0.56.dist-info/METADATA,sha256=W98Y322bVzcLQc5BsH7Nejb6VX3EVwHI4t69RjQZZM8,7974
+lucit_ubdcc_shared_modules-0.0.56.dist-info/RECORD,,
+lucit_ubdcc_shared_modules-0.0.56.dist-info/top_level.txt,sha256=Ejs7NyG0reWRi_ObtUp9vmrQ_PtySLmch-IaQbNja3w,27
+lucit_ubdcc_shared_modules-0.0.56.dist-info/WHEEL,sha256=LlXwXGpIL-LmjJB07SAajsfl5qO_WScPBv2CVgePJnk,216
