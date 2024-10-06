@@ -1,0 +1,16 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+ansy/__init__.py
+ansy/_corpus_colors.py
+ansy/_others.py
+ansy/ansy.py
+ansy/cli.py
+ansy/colors.py
+ansy/exceptions.py
+ansy.egg-info/PKG-INFO
+ansy.egg-info/SOURCES.txt
+ansy.egg-info/dependency_links.txt
+ansy.egg-info/entry_points.txt
+ansy.egg-info/top_level.txt
