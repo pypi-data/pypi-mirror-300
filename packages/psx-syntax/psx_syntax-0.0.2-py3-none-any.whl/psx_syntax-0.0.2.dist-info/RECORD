@@ -1,0 +1,11 @@
+psx_syntax/__init__.py,sha256=bbvOQRZcPOjW3-bC45zwPRvoddLczItUl8af9B9Rzr0,21
+psx_syntax/packed.py,sha256=nxVc6uSkcQQqUedcH3LWEnGs3B_cJCtWtzTOxemDRw8,16952
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_component.py,sha256=pmW699xmUwqEg5wsX0chN_KSIEjZne1j44Tqd_89Szg,1014
+tests/test_element.py,sha256=v7Xt9Enm17TpacGzzeJOU6anBFcgOrmxnb-PIRmeiTE,1290
+tests/test_translate.py,sha256=hkx7ZZTMazEkEwoqQC-xGHyAciPmkZujpDMXjufTal4,7361
+psx_syntax-0.0.2.dist-info/LICENCE,sha256=gXf5dRMhNSbfLPYYTY_5hsZ1r7UU1OaKQEAQUhuIBkM,18092
+psx_syntax-0.0.2.dist-info/METADATA,sha256=L8pwKcIf-36h80c-xyCTMH1HiX30M19ln3TEVSZCE9k,288
+psx_syntax-0.0.2.dist-info/WHEEL,sha256=eOLhNAGa2EW3wWl_TU484h7q1UNgy0JXjjoqKoxAAQc,92
+psx_syntax-0.0.2.dist-info/top_level.txt,sha256=cKrLeDBDi3mPfljOZgz_db2QGUZrZY0zdkIr7KS0Kuw,17
+psx_syntax-0.0.2.dist-info/RECORD,,
