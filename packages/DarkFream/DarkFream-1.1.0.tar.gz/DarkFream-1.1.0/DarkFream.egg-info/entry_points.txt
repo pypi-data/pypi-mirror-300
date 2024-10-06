@@ -1,0 +1,3 @@
+[console_scripts]
+Dark = DarkFream.main:main
+
