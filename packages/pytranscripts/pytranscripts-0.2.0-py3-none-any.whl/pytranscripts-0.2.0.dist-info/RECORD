@@ -1,0 +1,9 @@
+pytranscripts/__init__.py,sha256=UmrAjeJjfvePSfbI3fDUxs8J8XVxXFseJoZqdpKSWYc,81
+pytranscripts/core.py,sha256=QvRa9oTxTsJZXfoKHexrFgYQ7OZ0nfJ73dINpRi2Vs8,3140
+pytranscripts/trainer.py,sha256=5KzK_Dw-TJErPc-DghEoOK5dScx4mKPn_Jntpr6Jx0A,11057
+pytranscripts/utils.py,sha256=Y_vET_YCgHxvdFjnMGOatPYpNhXLGND6eWR3sSuNjic,573
+pytranscripts-0.2.0.dist-info/LICENSE,sha256=PxbZ4HFNWvDzhv9MyvZyz6Y_qmqN8Sq6ftYZI6Yo4c0,1089
+pytranscripts-0.2.0.dist-info/METADATA,sha256=SDEoB9xixb0AfvpMlfjTSeHF3waETMXlb54DssR2Apw,234
+pytranscripts-0.2.0.dist-info/WHEEL,sha256=GV9aMThwP_4oNCtvEC2ec3qUYutgWeAzklro_0m4WJQ,91
+pytranscripts-0.2.0.dist-info/top_level.txt,sha256=yKd9pHvKpxC4kzOZyxxnADTH-_bOl6VQI11pxgmsQ6I,14
+pytranscripts-0.2.0.dist-info/RECORD,,
