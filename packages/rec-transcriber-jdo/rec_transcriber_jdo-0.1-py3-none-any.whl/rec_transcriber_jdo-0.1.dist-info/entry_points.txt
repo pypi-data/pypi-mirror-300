@@ -1,0 +1,2 @@
+[console_scripts]
+rec-transcriber-jdo = rec_transcriber_jdo.transcriber:main
