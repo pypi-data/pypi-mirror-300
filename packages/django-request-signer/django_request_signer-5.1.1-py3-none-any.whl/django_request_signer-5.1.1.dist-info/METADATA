@@ -1,0 +1,37 @@
+Metadata-Version: 2.1
+Name: django-request-signer
+Version: 5.1.1
+Summary: A python library for signing http requests.
+Home-page: https://github.com/imtapps/django-request-signer
+Author: imtapps
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Topic :: Internet
+Classifier: Topic :: Internet :: WWW/HTTP
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+License-File: LICENSE
+Requires-Dist: django<5.2,>=1.11
+Requires-Dist: generic-request-signer<2.1,>=2.0
+Requires-Dist: six<2,>=1.10.0; python_version < "3.0"
+
+.. _django_request_signer:
+
+Version 5 is compatible with Python 3 and Django 1.8+
+
+*********************
+Django Request Signer
+*********************
+
+Version 5 removes the AuthorizedClients model and does not look there for client ids or private keys.
+
+Client ids and private keys must be in API_KEYS in settings.
+
+```
+API_KEYS = {'client_id_X': 'private_key_X'}
+```
+
+No data are removed or tables dropped. You can make the migrations that will do such.
