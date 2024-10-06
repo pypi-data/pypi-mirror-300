@@ -1,0 +1,7 @@
+polars_grouper-0.2.0.dist-info/METADATA,sha256=KPt60KDyk_BX5XkPStXDpXlwqHduxS3U6OXGzZLI3Wg,2108
+polars_grouper-0.2.0.dist-info/WHEEL,sha256=ISbTo5w-nqprvTSzktyTmVOMy0xhMDIZF3bu1AQXdEs,104
+polars_grouper/__init__.py,sha256=NPOJfLcTnRJe9ztatfVV6IID5diNDm3LyzyBOWzHGr8,2253
+polars_grouper/_internal.pyi,sha256=Y25n44pyE3vp92MiABKrcK3IWRyQ1JG1rZ4Ufqy2nC0,17
+polars_grouper/typing.py,sha256=_arWJw-uWmLhEPwAh-rQELfMQr62Yd_fjEb54B7w7qA,408
+polars_grouper/_internal.abi3.so,sha256=plhyls6DAulTKj8vvQw5ycAkSed28ZHB_LfPF_yEe5I,14426232
+polars_grouper-0.2.0.dist-info/RECORD,,
