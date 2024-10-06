@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+rec-transcriber-jdo/__init__.py
+rec-transcriber-jdo/transcriber.py
+rec_transcriber_jdo.egg-info/PKG-INFO
+rec_transcriber_jdo.egg-info/SOURCES.txt
+rec_transcriber_jdo.egg-info/dependency_links.txt
+rec_transcriber_jdo.egg-info/entry_points.txt
+rec_transcriber_jdo.egg-info/requires.txt
+rec_transcriber_jdo.egg-info/top_level.txt
