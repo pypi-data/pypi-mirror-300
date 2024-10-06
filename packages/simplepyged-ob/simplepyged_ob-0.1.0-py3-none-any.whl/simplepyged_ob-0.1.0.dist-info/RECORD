@@ -1,0 +1,16 @@
+simplepyged/__init__.py,sha256=ryAfvAaW7VM8g1gnCrFCPrXmcbbm99Xw44aLkwGZzaI,23
+simplepyged/events.py,sha256=jOh4L8pynUmW6mcEEGHKyRJLtDt9agofPWNDxzOU4Vs,1781
+simplepyged/gedcom.py,sha256=tPqOsInN8s8DKtdzYbmWPVvGDc6l7bZT6j3cOLxclqc,8296
+simplepyged/matches.py,sha256=Zhb2zqNWGTvafsPt7o_-ZfIRcmE30I3UdT5BRfGhxJY,7757
+simplepyged/records.py,sha256=T98N5cFpAh1MXNjkDPypmWnSBVLGJ12oJMOIA7cFANQ,20252
+test/__init__.py,sha256=yUA30ErmH3UsZl1odp0icNG1SAeG1UWpDpDrIaHl2Xo,21
+test/test_alltags.py,sha256=bOomYaOGtnUGNlXjaKXtxuijSV1CZshN3tPLppxjRYo,1074
+test/test_bom.py,sha256=IuxJPeFwpCUFE3CaVaDR_2JErjrfYF2HIpGrRitvS60,564
+test/test_matches.py,sha256=dVcd4L4WgtkYXxNB5_7pmJrdKDOcZQQW-Fjr_kZe15M,3274
+test/test_records.py,sha256=GnzggwGazn3Nv4d13SziMIYzF4i6mghRYJjZd3LyJj8,5983
+test/test_simplepyged.py,sha256=8842I9dm5xug5PiN3zy47XII9qbzZEhelEzBnMHx3X0,1021
+simplepyged_ob-0.1.0.dist-info/LICENSE.txt,sha256=cwW9n-vSfahDUVACeA9xeepQCZAnsA_pUyNjILhxMmw,35801
+simplepyged_ob-0.1.0.dist-info/METADATA,sha256=EHWU5pF6rMTe_mOMwDFYDuXz2kuMLWxq_-rPK6v7CLw,1873
+simplepyged_ob-0.1.0.dist-info/WHEEL,sha256=eOLhNAGa2EW3wWl_TU484h7q1UNgy0JXjjoqKoxAAQc,92
+simplepyged_ob-0.1.0.dist-info/top_level.txt,sha256=1pNmw3uDi1cixAFLhgpj_AruI2PUbGjV240qRhm5Uzg,17
+simplepyged_ob-0.1.0.dist-info/RECORD,,
