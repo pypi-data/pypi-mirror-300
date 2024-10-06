@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: ragconvo
+Version: 0.0.0
+Summary: RAGConvo is a flexible and extensible Python library for building Retrieval-Augmented Generation systems. It provides a modular architecture for integrating various language models, embedding techniques, and vector stores to create powerful question-answering systems.
+License: MIT
+Author: Gurucharan MK
+Requires-Python: >=3.11,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Description-Content-Type: text/markdown
+
+
