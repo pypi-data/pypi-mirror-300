@@ -1,0 +1,25 @@
+[project]
+name = "vlrscraper"
+version = '0.0.1'
+authors = [
+    { name = "Joe Paton", email = "joantpat@gmail.com" },
+]
+description = "vlrscraper - Scrape data from vlr seamlessly"
+readme = "README.md"
+requires-python = ">=3.6"
+dependencies = [
+    "lxml",
+    "requests",
+]
+
+[project.optional-dependencies]
+test = ["pytest", "pytest-cov"]
+lint = ["ruff", "pyright"]
+docs = ["sphinx"]
+
+[build-system]
+requires = ["setuptools >= 61.0"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["src"]

@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: vlrscraper
+Version: 0.0.1
+Summary: vlrscraper - Scrape data from vlr seamlessly
+Author-email: Joe Paton <joantpat@gmail.com>
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: lxml
+Requires-Dist: requests
+Provides-Extra: test
+Requires-Dist: pytest; extra == "test"
+Requires-Dist: pytest-cov; extra == "test"
+Provides-Extra: lint
+Requires-Dist: ruff; extra == "lint"
+Requires-Dist: pyright; extra == "lint"
+Provides-Extra: docs
+Requires-Dist: sphinx; extra == "docs"
+
+![tests](https://github.com/A21-Software/VLRScraper/actions/workflows/python-testing.yml/badge.svg)

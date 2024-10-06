@@ -1,0 +1,13 @@
+lxml
+requests
+
+[docs]
+sphinx
+
+[lint]
+ruff
+pyright
+
+[test]
+pytest
+pytest-cov
