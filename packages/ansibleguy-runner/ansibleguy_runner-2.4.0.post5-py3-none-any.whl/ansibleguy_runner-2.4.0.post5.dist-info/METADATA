@@ -1,0 +1,38 @@
+Metadata-Version: 2.1
+Name: ansibleguy-runner
+Version: 2.4.0.post5
+Summary: Ansible Runner Fork
+Home-page: https://ansible-runner.readthedocs.io
+Author: Ansible, Inc.
+Author-email: AnsibleGuy <contact@ansibleguy.net>
+License: --2024-10-05 21:14:09--  https://www.apache.org/licenses/LICENSE-2.0.txt
+        Resolving www.apache.org (www.apache.org)... 151.101.2.132, 2a04:4e42::644
+        Connecting to www.apache.org (www.apache.org)|151.101.2.132|:443... connected.
+        HTTP request sent, awaiting response... 200 OK
+        Length: 11358 (11K) [text/plain]
+        Saving to: ‘LICENSE-2.0.txt’
+        
+             0K .......... .                                          100% 7,34M=0,001s
+        
+        2024-10-05 21:14:09 (7,34 MB/s) - ‘LICENSE-2.0.txt’ saved [11358/11358]
+        
+        
+Project-URL: Homepage, https://github.com/ansibleguy/ansible-runner
+Project-URL: Repository, https://github.com/ansibleguy/ansible-runner.git
+Project-URL: Issues, https://github.com/ansibleguy/issues
+Keywords: ansible,runner,automation,iac
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE-2.0.txt
+License-File: LICENSE.md
+License-File: LICENSE.txt
+Requires-Dist: pexpect >=4.5
+Requires-Dist: packaging
+Requires-Dist: python-daemon
+Requires-Dist: pyyaml
+Requires-Dist: importlib-metadata <6.3,>=4.6
+
+# Ansible Runner Fork
+
+This is a fork of the official ansible-runner that is used for provide hotfixes to out [Ansible WebUI](https://github.com/ansibleguy/ansible-runner)
