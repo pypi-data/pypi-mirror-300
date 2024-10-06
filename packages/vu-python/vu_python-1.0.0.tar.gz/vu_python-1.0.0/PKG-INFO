@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: vu_python
+Version: 1.0.0
+Author: vu
+Author-email: vupham.020502@gmail.com
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Programming Language :: Python :: 3
