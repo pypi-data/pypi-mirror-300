@@ -1,0 +1,33 @@
+Metadata-Version: 2.1
+Name: deluge-utilities
+Version: 0.0.2
+Summary: Is a set of utilities to help you work with Deluge.
+Home-page: https://github.com/GitBib/deluge-utilities
+Download-URL: https://github.com/GitBib/deluge-utilities/archive/0.0.2.zip
+Author: Ivan Vyalov
+Author-email: job@bnff.website
+License: Apache License, Version 2.0, see LICENSE file
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Description-Content-Type: text/markdown
+Requires-Dist: setuptools
+Requires-Dist: deluge-client
+
+deluge-utilities
+=================================================================================================================================================================================
+
+**deluge-utilities** – is a set of utilities to help you work with Deluge.
+
+Example of work
+```python
+from deluge_utilities import Deluge
+
+session = Deluge("login", "password")
+session.old_torrent_search()
+```
