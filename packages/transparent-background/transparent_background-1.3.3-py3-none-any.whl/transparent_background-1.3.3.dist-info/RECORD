@@ -1,0 +1,17 @@
+transparent_background/InSPyReNet.py,sha256=m_jHOjYSAIiOSGd8HfVbgbsb22ac_ZHXOgHAHSTvvvQ,5862
+transparent_background/Remover.py,sha256=isJu4Yu7uFASkr0oaGlj1WWGM2ZLBwkHpvBbXAvV5G0,15726
+transparent_background/__init__.py,sha256=MqD0ZB4z_SLaDeCe817CLxxk6ZsCk9044ggnekxAHnc,102
+transparent_background/config.yaml,sha256=lGPwTxfY2-trPktH5rUOjnGtBb_EACpxrAulbbSi7lc,655
+transparent_background/gui.py,sha256=_i0rvJ04I_IAP2wj1k-yuuk1eoHhbIgv3n58kyaQg9U,12125
+transparent_background/utils.py,sha256=B2fLlgQGyqSvI57KrrXR3h_FtlDFuzi3wqVEXtuWeBU,10041
+transparent_background/backbones/SwinTransformer.py,sha256=PzTHmxSK1snu5YawZpmrmtXPcW8t8MDgRuYVt5WiWkA,25714
+transparent_background/modules/attention_module.py,sha256=fzTZQTk_ud_GnxT_Avcx5eFIf1XN6eeacZXTKJItsvs,3977
+transparent_background/modules/context_module.py,sha256=tbYS5NhoSKPmm2bYnv_MhpjkNNb1AnBZVgXB1Cy4RNQ,2037
+transparent_background/modules/decoder_module.py,sha256=psmb_f7Zzv1BhGYrSgk9F55qDIBdkq0hEi66-V4F7iA,1449
+transparent_background/modules/layers.py,sha256=5X7t0Fvs6fFM9rJ5jgwu0JOC5g0gDtY1KJWpefgO1eg,5608
+transparent_background-1.3.3.dist-info/LICENSE,sha256=oIp8Q_-P6QZI-InU-TexeMKaub4fkiRPaFv3-Xy1P5E,1067
+transparent_background-1.3.3.dist-info/METADATA,sha256=FyS8YYgFIy37mp15eAFao1UtRHVOl8xXaSwYl432oYw,14954
+transparent_background-1.3.3.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+transparent_background-1.3.3.dist-info/entry_points.txt,sha256=MthhvnjXO36_WmCMZTiGh-grCYkuEMHnORE7Ac-rzLY,130
+transparent_background-1.3.3.dist-info/top_level.txt,sha256=Fcv-bshRDLZ9Xy49Ddeln06TS_7nSCCUhvpdgco9ttA,23
+transparent_background-1.3.3.dist-info/RECORD,,

@@ -1,0 +1,3 @@
+[console_scripts]
+transparent-background = transparent_background:console
+transparent-background-gui = transparent_background:gui
