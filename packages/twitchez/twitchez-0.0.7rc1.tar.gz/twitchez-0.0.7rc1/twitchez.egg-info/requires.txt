@@ -1,0 +1,6 @@
+aiohttp
+requests
+
+[thumbnails]
+ueberzugpp
+ueberzug
