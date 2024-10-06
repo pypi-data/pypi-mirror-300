@@ -1,0 +1,23 @@
+[build-system]
+requires = ["poetry>=0.12"]
+build-backend = "poetry.masonry.api"
+
+[tool.poetry]
+name = "14four-infrastructure-control"
+version = "0.1.1"
+description = "14Four Infrastructure Control"
+authors = ["Quinlan King <quinlan.king@14four.com>"]
+
+packages = [
+    { include = "aws_resources"},
+]
+
+exclude = ["run.py"]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+pulumi = "^3.107.0"
+pulumi-aws = "^6.23.0"
+pulumi-aws-native = "^0.97.0"
+python-dotenv = "^1.0.1"
+pydantic = "^2.9.2"

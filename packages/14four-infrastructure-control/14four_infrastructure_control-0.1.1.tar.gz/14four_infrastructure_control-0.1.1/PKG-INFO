@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: 14four-infrastructure-control
+Version: 0.1.1
+Summary: 14Four Infrastructure Control
+Author: Quinlan King
+Author-email: quinlan.king@14four.com
+Requires-Python: >=3.11,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: pulumi (>=3.107.0,<4.0.0)
+Requires-Dist: pulumi-aws (>=6.23.0,<7.0.0)
+Requires-Dist: pulumi-aws-native (>=0.97.0,<0.98.0)
+Requires-Dist: pydantic (>=2.9.2,<3.0.0)
+Requires-Dist: python-dotenv (>=1.0.1,<2.0.0)
