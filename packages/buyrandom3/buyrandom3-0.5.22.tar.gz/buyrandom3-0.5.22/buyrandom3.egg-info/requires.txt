@@ -1,0 +1,16 @@
+click
+
+[dev]
+build
+pre-commit
+pylint
+pytest
+pytest-cov
+pytest-randomly
+setuptools
+
+[testing]
+buyrandom3
+pytest
+pytest-cov
+python-coveralls

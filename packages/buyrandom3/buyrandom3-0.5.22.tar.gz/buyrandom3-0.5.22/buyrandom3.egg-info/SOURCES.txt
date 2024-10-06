@@ -1,0 +1,14 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+buyrandom3/__init__.py
+buyrandom3/cli.py
+buyrandom3/core.py
+buyrandom3.egg-info/PKG-INFO
+buyrandom3.egg-info/SOURCES.txt
+buyrandom3.egg-info/dependency_links.txt
+buyrandom3.egg-info/requires.txt
+buyrandom3.egg-info/top_level.txt
+tests/test_cli.py
+tests/test_core.py
