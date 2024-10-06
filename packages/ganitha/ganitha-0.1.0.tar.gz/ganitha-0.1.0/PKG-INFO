@@ -1,0 +1,30 @@
+Metadata-Version: 2.3
+Name: ganitha
+Version: 0.1.0
+Summary: A package for mathematical calculations using Indian Knowledge System including Lilavati's methods
+Project-URL: Homepage, https://github.com/anaadiai/ganitha
+Project-URL: Bug Tracker, https://github.com/yourusername/ganitha/issues
+Author-email: Anaadi Rural AI Center <venkat@anaadi.org>
+License-File: LICENSE
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+
+# Ganitha
+
+Ganitha is a Python package for mathematical calculations, including implementations of Lilavati's methods.
+
+## Installation
+
+You can install the Ganitha package using pip:
+pip install ganitha
+
+## Usage
+
+Here's a quick example of how to use the Lilavati square function:
+python
+from ganitha.lilavati.squares import optimized_lilavati_square
+result = optimized_lilavati_square(123)
+print(f"The square of 123 is: {result}")
