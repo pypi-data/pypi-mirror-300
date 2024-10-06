@@ -1,0 +1,3 @@
+[console_scripts]
+run=mqtt_rest.run:main
+
