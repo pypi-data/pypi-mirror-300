@@ -1,0 +1,3 @@
+[console_scripts]
+htv=hanimetvdl.cli:main
+
