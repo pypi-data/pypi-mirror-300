@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "pewter"
+version = "0.1.0"
+description = "A library that provides a simple way to type cast in Python."
+authors = ["David Drakard"]
+readme = "readme.md"
+packages = [{from = "source", include = "pewter.py"}]
+license = "MIT"
+
+[tool.poetry.dependencies]
+python = "^3.8"
+
+[tool.poetry.dev-dependencies]
+pre-commit = "3.5.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[project.urls]
+Homepage = "https://github.com/ddrakard/pewter"
+Repository = "https://github.com/ddrakard/pewter.git"
