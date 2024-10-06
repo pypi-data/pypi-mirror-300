@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: fira
+Version: 1.0.2
+Summary: Fira, a plug-and-play memory-efficient training framework of LLMs.
+Home-page: https://github.com/xichen-fy/Fira
+Author: xi chen
+Author-email: xichen.fy@gmail.com
+License: Apache 2.0
+Keywords: python,optimizer,llms,linux,memory-efficient,training
+Requires-Dist: torch
+Requires-Dist: transformers
+Requires-Dist: bitsandbytes
+Requires-Dist: tensorly
