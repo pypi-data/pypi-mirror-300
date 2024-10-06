@@ -1,0 +1,10 @@
+django_markdown_model/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+django_markdown_model/fields.py,sha256=zT971okJwnOSl_ccSy4mpzrOdENL82IuiZt164zLKlk,585
+django_markdown_model/models.py,sha256=bUlVs9W4dDZtVR1XDx8gfhPPwpDQhU8FlamMrRXYv5s,445
+django_markdown_model/utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+django_markdown_model/utils/constants.py,sha256=arsObeVAJoADj6hhqlMB0AAskYzUa7g8bYJ5poTNOgg,237
+django_markdown_model-1.0.dist-info/LICENSE,sha256=F7TIf3D-TR5YphNElyo0jJZUT84KR3A6bu_0ykkIZVM,1303
+django_markdown_model-1.0.dist-info/METADATA,sha256=E0Rt1__VuosPdugcgsjZZEW-RqPVmkF_zzpKCltHt_E,2906
+django_markdown_model-1.0.dist-info/WHEEL,sha256=eOLhNAGa2EW3wWl_TU484h7q1UNgy0JXjjoqKoxAAQc,92
+django_markdown_model-1.0.dist-info/top_level.txt,sha256=9PMN7wp_FBuKQDUbNpZJspliwPBGe_4ooiy7mizmDK4,22
+django_markdown_model-1.0.dist-info/RECORD,,
