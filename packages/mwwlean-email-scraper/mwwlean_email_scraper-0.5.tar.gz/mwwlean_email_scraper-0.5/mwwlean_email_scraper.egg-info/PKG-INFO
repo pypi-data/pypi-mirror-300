@@ -1,0 +1,5 @@
+Metadata-Version: 2.1
+Name: mwwlean-email-scraper
+Version: 0.5
+Summary: A Python tool that extracts public email addresses from websites.
+Description-Content-Type: text/markdown
