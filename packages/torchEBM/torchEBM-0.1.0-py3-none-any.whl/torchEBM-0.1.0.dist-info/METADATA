@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: torchEBM
+Version: 0.1.0
+Summary: Components and algorithms for energy-based models
+Author-email: Soran Ghaderi <soran.gdr.cs@gmail.com>
+Description-Content-Type: text/markdown
+
