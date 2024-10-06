@@ -1,0 +1,7 @@
+requests
+cryptography
+pyjwt
+
+[test]
+pytest
+responses
