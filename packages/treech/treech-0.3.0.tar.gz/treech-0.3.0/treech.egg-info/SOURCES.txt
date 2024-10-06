@@ -1,0 +1,10 @@
+LICENSE.txt
+README.md
+setup.py
+treech/ClassificationTree.py
+treech/__init__.py
+treech.egg-info/PKG-INFO
+treech.egg-info/SOURCES.txt
+treech.egg-info/dependency_links.txt
+treech.egg-info/requires.txt
+treech.egg-info/top_level.txt
