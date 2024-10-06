@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: sealevdb
+Version: 0.0.1
+Summary: Se Level DBs
+Author: Alessandro Annunziato
+Author-email: alessandro.annunziato@gmail.com
+Keywords: python,first package
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Education
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Requires-Dist: pycountry
+Requires-Dist: pycurl
+Requires-Dist: requests
+
+Allows to access various Sea Level Databases via python
