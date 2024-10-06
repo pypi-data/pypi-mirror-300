@@ -1,0 +1,9 @@
+HISTORY.md,sha256=IZH5QsH7ztqBZSJe5IJBQdnZLRNS58Hh4RU05Yslpdo,169
+csvblend/__init__.py,sha256=R5mpWQ_p9hJuHG4BMZcB99W2eyTEuYSsSbddXsnIm0A,965
+csvblend/csvblend.py,sha256=VPtPBaCbzV7FIpwEtD24aIitpylRlZzrIIwthvUSin4,3753
+csvblend/models.py,sha256=MIkugmHu5px4fBoKtU7M0DtYBiyYU7M7TBUQi9K9WYg,5102
+csvblend/utils.py,sha256=BPkBBBcqYqdOcI6NHpoxcIQ5NtGcAJuPODh_wKZSwA4,449
+csvblend-0.2.0.dist-info/LICENSE,sha256=Szlu7Bp4B3xCqRaYccpnyul-tVZW3bDHmyxcfvUJzsQ,1083
+csvblend-0.2.0.dist-info/METADATA,sha256=cKtaG-VijHXz3pm4vqIyyMlJIf9VJNF45eGlVV5DK6g,2741
+csvblend-0.2.0.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+csvblend-0.2.0.dist-info/RECORD,,
