@@ -1,0 +1,12 @@
+LICENSE,sha256=Ieijw6JoNvu3HEgQwD1QTW35L3T76TSL_UyAUXmX5t4,1065
+vidpacktest/__init__.py,sha256=FhLYUORPir9KCA6qOXXXRxuzH_WqB0NlxLlfDOC__Zk,43
+vidpacktest/cli.py,sha256=GW9oajt77Dm1Vr1pRFPeu5mEHK_TnGW7pp9NXWtxz5A,4134
+vidpacktest/constants.py,sha256=2lpEQqfXq9mkkahdzmdDdHgxQEBVOyaCBprvebsHMbw,1121
+vidpacktest/core.py,sha256=VR9Co69RrqD3OvHHfJFdTECeiQXhpv2hihZ8OUAyMl0,3868
+vidpacktest/helpers.py,sha256=59XarVo8-wR_tv_TWVB1f8nPrnjBFMgiCBbH1n4wN0o,2325
+vidpacktest/utils.py,sha256=ty8HVP1W3pJZOxPNd9VWnnevzte0ixkjVeKw0kQ7guM,1241
+vidpacktest-0.1.12.dist-info/LICENSE,sha256=Ieijw6JoNvu3HEgQwD1QTW35L3T76TSL_UyAUXmX5t4,1065
+vidpacktest-0.1.12.dist-info/METADATA,sha256=Q_Aier0lLI1LOdN7qAfqDscBZ639oYEfKES4ESHKp5E,1235
+vidpacktest-0.1.12.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+vidpacktest-0.1.12.dist-info/entry_points.txt,sha256=hoK3A-x8YkPu0UUMwHGxohoxTWCE6C1Aq2H60BwUNUA,44
+vidpacktest-0.1.12.dist-info/RECORD,,
