@@ -1,0 +1,20 @@
+[build-system]
+build-backend = "setuptools.build_meta"
+requires = ["setuptools"]
+
+[tool.setuptools.dynamic]
+dependencies = {file = ["requirements.txt"]}
+
+[tool.black]
+line-length = 128
+
+[project.scripts]
+goofi-pipe = "goofi.manager:main"
+
+[project]
+dynamic = ["dependencies"]
+name = "goofi"
+requires-python = ">=3.9"
+version = "2.1.0"
+description = "Real-time neuro-/biosignal processing and streaming pipeline."
+readme = "README.md"
