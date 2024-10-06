@@ -1,0 +1,11 @@
+README.md
+setup.py
+fileshare/FileShare.py
+fileshare/__init__.py
+fileshare/utils/Timer.py
+fileshare/utils/__init__.py
+pyfileshare.egg-info/PKG-INFO
+pyfileshare.egg-info/SOURCES.txt
+pyfileshare.egg-info/dependency_links.txt
+pyfileshare.egg-info/requires.txt
+pyfileshare.egg-info/top_level.txt
