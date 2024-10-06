@@ -1,0 +1,13 @@
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+deluge_utilities/__init__.py
+deluge_utilities/deluge.py
+deluge_utilities.egg-info/PKG-INFO
+deluge_utilities.egg-info/SOURCES.txt
+deluge_utilities.egg-info/dependency_links.txt
+deluge_utilities.egg-info/entry_points.txt
+deluge_utilities.egg-info/not-zip-safe
+deluge_utilities.egg-info/requires.txt
+deluge_utilities.egg-info/top_level.txt
