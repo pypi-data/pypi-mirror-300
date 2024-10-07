@@ -1,0 +1,1 @@
+docs(README.md): Add info about new `ignore_revs` option to `.mkchangelog`
