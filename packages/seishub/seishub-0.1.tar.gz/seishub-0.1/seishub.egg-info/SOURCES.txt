@@ -1,0 +1,5 @@
+setup.py
+seishub.egg-info/PKG-INFO
+seishub.egg-info/SOURCES.txt
+seishub.egg-info/dependency_links.txt
+seishub.egg-info/top_level.txt
