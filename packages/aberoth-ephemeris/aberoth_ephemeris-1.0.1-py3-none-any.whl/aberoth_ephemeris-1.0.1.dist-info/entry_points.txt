@@ -1,0 +1,2 @@
+[console_scripts]
+aberoth_ephemeris = aberoth_ephemeris:__init__

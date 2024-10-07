@@ -1,0 +1,14 @@
+aberoth_ephemeris/__init__.py,sha256=cP3xc31iqgJH1w2y8CMU-kgCNkS4OLJnWWei9FzdRAI,66
+aberoth_ephemeris/__main__.py,sha256=HIkrK-09iOiMFituc2_4P4PeCWbtTlO8XyybtqvmiMc,1904
+aberoth_ephemeris/UpdateWebServer/__init__.py,sha256=-pj-vZM4zPR4jhWGi-Yu5j0Xp_lqUpQZulc8zS7Hfps,26
+aberoth_ephemeris/UpdateWebServer/varUpdateWS.py,sha256=yZzP5PsHKf_plvkjwuMkTM5smnRKnX1WP_TgGb6eiI4,2795
+aberoth_ephemeris/ephemeris/Ephemeris.py,sha256=xtOf7xb-sqj00Ab1jV9ZwUjDdpoHsl9Fy1WMmgo_kJA,46544
+aberoth_ephemeris/ephemeris/VariableSolver.py,sha256=h0sHe-it_CqCZ9LZXWfowIzO4epB9ZD_Iot6eij5s9s,3933
+aberoth_ephemeris/ephemeris/__init__.py,sha256=GxxuizhIvs751u4HP4Nxx6sAV4oE-wGCYAzadi4cUec,32
+aberoth_ephemeris/ephemeris/variables.json,sha256=jG2e4Q8v4QhKomQbnJ360kZFGmL8YY50VKl7vlKZza8,1881
+aberoth_ephemeris-1.0.1.dist-info/LICENSE.txt,sha256=CT4ruIa7tuRZPyhbFqrThD9QOv44JcbFVUFaho3wx7g,1095
+aberoth_ephemeris-1.0.1.dist-info/METADATA,sha256=0bVNhEDCwwQadfZe6-1UgSbKz0IraMMo7wxoc1HfUNc,7585
+aberoth_ephemeris-1.0.1.dist-info/WHEEL,sha256=eOLhNAGa2EW3wWl_TU484h7q1UNgy0JXjjoqKoxAAQc,92
+aberoth_ephemeris-1.0.1.dist-info/entry_points.txt,sha256=vOwkiuAbQvdxMlgXnE6xZMsAyqDQPhe3IBY2RSfkH3Q,65
+aberoth_ephemeris-1.0.1.dist-info/top_level.txt,sha256=kch2Ay0UCs8k3N66JKOIv-UjdmPUWdmEOrzFIOSe_Hg,18
+aberoth_ephemeris-1.0.1.dist-info/RECORD,,
