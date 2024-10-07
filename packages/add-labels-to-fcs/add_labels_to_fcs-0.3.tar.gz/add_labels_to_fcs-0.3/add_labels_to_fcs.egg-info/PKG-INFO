@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: add_labels_to_fcs
+Version: 0.3
+Summary: Package for adding columns of data to FCS files as additional channels
+Home-page: https://github.com/SimonsonLab/add-labels-to-fcs
+Author: Paul D. Simonson
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: pandas>=2.2
+Requires-Dist: openpyxl>=3.1
+Requires-Dist: numpy>=1.26
+Requires-Dist: flowkit>=1.1
+
+# add-labels-to-fcs
+
+This repository (soon to be updated) will include code for adding data labels to FCS files as additional data channels.
