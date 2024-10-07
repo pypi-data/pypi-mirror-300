@@ -1,0 +1,13 @@
+LICENSE
+README.md
+pyproject.toml
+egui_pysync/__init__.py
+egui_pysync/__main__.py
+egui_pysync/server.py
+egui_pysync/structures.py
+egui_pysync/typing.py
+egui_pysync/version.py
+egui_pysync.egg-info/PKG-INFO
+egui_pysync.egg-info/SOURCES.txt
+egui_pysync.egg-info/dependency_links.txt
+egui_pysync.egg-info/top_level.txt
