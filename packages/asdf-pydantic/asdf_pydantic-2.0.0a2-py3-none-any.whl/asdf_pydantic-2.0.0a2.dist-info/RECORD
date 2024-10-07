@@ -1,0 +1,13 @@
+asdf_pydantic/__init__.py,sha256=RZtG17MA5g3h38wqTTaQd54rSScPR87_wvcJC0aYIZI,140
+asdf_pydantic/converter.py,sha256=Np6bino7OKthZs2WA3HxTPxSCRg8oBDNQhjUl76VXH8,1435
+asdf_pydantic/model.py,sha256=GzEyoSfL6lDhxDxT0hoYTKi2QXFLhR0AEmyXH-G29n4,3140
+asdf_pydantic/schema.py,sha256=DA0_EpRlK2MZ1BOHY1t5-FYyTl7pKQsgMZh0vpky_7U,1825
+asdf_pydantic/examples/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+asdf_pydantic/examples/extensions.py,sha256=2x7Cjju8pNBdW68wq4c-1utMuHAJE4F5zdKrGSJgzfA,612
+asdf_pydantic/examples/shapes.py,sha256=6TXWnb49mPmPlyZXLxHVhnJj4a9uAge_iZRzWf78tYA,185
+asdf_pydantic/examples/tree.py,sha256=eq4rPY1BYKLQYzNuPLuKrIPp8YwckCCdQzL9G4un2CU,372
+asdf_pydantic-2.0.0a2.dist-info/METADATA,sha256=hdpyrzqMwltkqNTs-5UDg3lBDu_gMps6hkBpBkQ9TTw,4254
+asdf_pydantic-2.0.0a2.dist-info/WHEEL,sha256=1yFddiXMmvYK7QYTqtRNtX66WJ0Mz8PYEiEUoOUUxRY,87
+asdf_pydantic-2.0.0a2.dist-info/entry_points.txt,sha256=xNMIE5xf6g3mOwUmyipvU27748dnSDhFN79j0PDFKzE,93
+asdf_pydantic-2.0.0a2.dist-info/licenses/LICENSE,sha256=QL0ahZdim13PCo4dFd8WTlu6qE3fk9udT-tYg8hqugk,1500
+asdf_pydantic-2.0.0a2.dist-info/RECORD,,
