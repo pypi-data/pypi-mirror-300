@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+reglin_brasil.egg-info/PKG-INFO
+reglin_brasil.egg-info/SOURCES.txt
+reglin_brasil.egg-info/dependency_links.txt
+reglin_brasil.egg-info/requires.txt
+reglin_brasil.egg-info/top_level.txt
+regressao-linear-brasil/__init__.py
+regressao-linear-brasil/modelo_regressao_linear_brasil.py
