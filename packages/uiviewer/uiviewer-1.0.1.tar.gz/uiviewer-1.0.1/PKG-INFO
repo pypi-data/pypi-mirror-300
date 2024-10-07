@@ -1,0 +1,80 @@
+Metadata-Version: 2.1
+Name: uiviewer
+Version: 1.0.1
+Summary: UI hierarchy visualization tool, supporting Android, iOS, HarmonyOS NEXT.
+License: MIT
+Author: codematrixer
+Author-email: chenli_gogo@163.com
+Requires-Python: >=3.8,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: aiofiles (>=23.1.0,<24.0.0)
+Requires-Dist: facebook-wda (>=1.0.5,<2.0.0)
+Requires-Dist: fastapi (>=0.68.0,<0.69.0)
+Requires-Dist: hmdriver2 (>=1.2.10,<2.0.0)
+Requires-Dist: tidevice (>=0.12.10,<0.13.0)
+Requires-Dist: uiautomator2 (>=3.0.0,<4.0.0)
+Requires-Dist: uvicorn (>=0.15.0,<0.16.0)
+Description-Content-Type: text/markdown
+
+# ui-viewer
+[![github actions](https://github.com/codematrixer/ui-viewer/actions/workflows/release.yml/badge.svg)](https://github.com/codematrixer/ui-viewer/actions)
+[![pypi version](https://img.shields.io/pypi/v/uiviewer.svg)](https://pypi.python.org/pypi/uiviewer)
+![python](https://img.shields.io/pypi/pyversions/uiviewer.svg)
+
+UI hierarchy visualization tool, supporting Android, iOS, HarmonyOS NEXT.
+
+![showcase](./docs/imgs/show.gif)
+
+# Installation
+- python3.8+
+
+```shell
+pip3 install -U uiviewer
+```
+
+# Run
+Start with a default port (8000)
+```shell
+uiviewer
+# or
+python3 -m uiviewer
+```
+Start with a custom port
+```
+uiviewer -p <PORT>
+python3 -m uiviewer -p <PORT>
+
+```
+and then open the browser to [http://localhost:8000](http://localhost:8000)
+
+
+# Tips
+- If you are using a virtual environment, please make sure to activate it before running the command.
+- On iOS, please ensure that WDA is successfully started and wda port forwarding is successful in advance.
+  -   First, Use `xcode` or  `tidevice` or `go-ios` to launch wda.
+  ```
+  tidevice xctest -B <wda_bundle_id>
+  ```
+  - Second, Use `tidevice` or `iproxy` to forward the wda port，and keep it running.
+  ```
+  tidevice relay <local_port> 8100
+  ```
+  - Finally, To ensure the success of the browser to access `http://localhost:<local_port>/status`
+- On iOS，WDA can easily freeze when dumping high UI hierarchy. You can reduce the **`maxDepth`** on the web page. The default is 30.
+
+# preview
+- HarmonyOS
+  ![harmony](./docs/imgs/harmony.png)
+
+- Android
+![android](./docs/imgs/android.png)
+
+- iOS
+![ios](./docs/imgs/ios.png)
+
