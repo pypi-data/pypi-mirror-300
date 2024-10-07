@@ -1,0 +1,61 @@
+Metadata-Version: 2.1
+Name: custom-virtualenv
+Version: 2.0.0
+Summary: Custom Virtual Environment Manager is a utility that allows you to create virtual environments with packages of your choice, based on the Python packages installed globally on your system.
+Home-page: https://github.com/afrhan-repo/custom-virtualenv
+Author: afrhan-repo
+Author-email: afrhanhossain11@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Operating System :: MacOS
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: InquirerPy
+Requires-Dist: pipdeptree
+Requires-Dist: virtualenv
+
+# Custom-Virtualenv
+
+This Python utility helps manage Python virtual environments, list installed packages, and handle package installations based on a requirements file.
+
+## Features
+
+- Create and manage custom Python virtual environments.
+- Install packages interactively or from a requirements file.
+
+## Installation
+
+1. Install the package using pip.
+
+   ```bash
+   pip install custom-virtualenv
+   ```
+## Usage
+
+The tool provides two command-line flags:
+
+1. **Interactive Mode (-i or --interactive)**
+   - Use this flag to interactively install  packages.
+   
+   ```bash
+   custom-virtualenv --interactive
+   ```
+
+2. **Install python packages from requirements.txt file (-l or --list)**
+   - Use this flag to install all installed packages from requirements.txt.
+   
+   ```bash
+   custom-virtualenv --list requirements.txt
+   ```
+
+
+
+## License
+
+This project is licensed under the MIT License.
+
+---
+
+
