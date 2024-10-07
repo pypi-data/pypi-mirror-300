@@ -1,0 +1,12 @@
+virtomate/__init__.py,sha256=Bv4wH9YzIcL7rMSE02imXpxoPnJEug_M77a1VjX6i4Q,11375
+virtomate/__main__.py,sha256=3V6yIJHvXbC9ZH7QBJlVmlsMWnUeZ2Sx8CDAVFEi1vM,56
+virtomate/domain.py,sha256=r3UZrfQhWQoDk3zYLt9cZni3yg4sIuhyKrERpyRAqLQ,25119
+virtomate/error.py,sha256=l04CWu0TFrwMBGVZSh3rSRCXF_VpY4coNofjtmXTQSs,556
+virtomate/guest.py,sha256=Cazwx3MXQxwfHJO0KiL-UNmjKMDm7-8cz_BewoV5Q2w,8557
+virtomate/pool.py,sha256=F_Tj7pBoII5OIU-abMaRCvPP3NFfD2D7-0PQJZ0yIw4,3188
+virtomate/volume.py,sha256=D3NgSI0PF9MMVh2V9vQ7S31ni0-kzbS2my8Y8eQZLio,11483
+virtomate-0.1.1.dist-info/METADATA,sha256=6tiufZTkEFFTYUGtRotI59dgkxjNuFRqwZjDFr7VTpc,6297
+virtomate-0.1.1.dist-info/WHEEL,sha256=1yFddiXMmvYK7QYTqtRNtX66WJ0Mz8PYEiEUoOUUxRY,87
+virtomate-0.1.1.dist-info/entry_points.txt,sha256=d1BYd_3hqRe9bk3-W7IELYTdZ0WHZOLYeEEnuixwCDs,45
+virtomate-0.1.1.dist-info/licenses/LICENSE.txt,sha256=gXf5dRMhNSbfLPYYTY_5hsZ1r7UU1OaKQEAQUhuIBkM,18092
+virtomate-0.1.1.dist-info/RECORD,,
