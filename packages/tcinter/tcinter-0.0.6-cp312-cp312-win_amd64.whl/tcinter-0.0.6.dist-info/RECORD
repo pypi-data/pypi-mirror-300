@@ -1,0 +1,10 @@
+tcinter/__init__.py,sha256=fmZAMzVySWQCLDL95Lu1zZ09L7kbqONfTpU49gHheTI,175176
+tcinter/__main__.py,sha256=bopE2hfVSC1-EKFhEs076FY6dccPqo9e9Pq8d5HVfGA,2622
+tcinter/_tcinter.pyd,sha256=YlDS9igBLgF7JIDzU_HU_sGxHKHEwaRgiM_ybFNDjjA,1579008
+tcinter/constants.py,sha256=D_2INGPyAlX71FjYq9FaaEIZDy9cwYJBbLmhX_seEFI,1603
+tcinter/interp.py,sha256=17rB-jIucVtJQlXU9-MSye5a5tH8ESBidgCvNJQmZMY,348
+tcinter-0.0.6.dist-info/LICENSE,sha256=7K8yBSKHM5dtFwSIW0hFrhbrS4LVBb-gJ5aLjdTfbi4,14210
+tcinter-0.0.6.dist-info/METADATA,sha256=14nxMzSXNhO4cA0bY3-ZnIZNs24c9nI2Dpq-nTcT44I,17168
+tcinter-0.0.6.dist-info/WHEEL,sha256=3vidnDuZ-QSnHIxLhNbI1gIM-KgyEcMHuZuv1mWPd_Q,101
+tcinter-0.0.6.dist-info/top_level.txt,sha256=NSeH6ofM6Lid4UzDslO0IYe9CWEM8di3eZIVbJP5SkY,11
+tcinter-0.0.6.dist-info/RECORD,,
