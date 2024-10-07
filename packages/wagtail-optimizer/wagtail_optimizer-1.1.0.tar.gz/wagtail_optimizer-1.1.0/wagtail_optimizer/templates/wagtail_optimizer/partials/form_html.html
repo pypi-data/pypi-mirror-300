@@ -1,0 +1,17 @@
+{% load i18n wagtailadmin_tags %}
+
+{% csrf_token %}
+
+<ul class="fields">
+    {% for field in form %}
+        <li>{% formattedfield field %}</li>
+    {% endfor %}
+    <li>
+        <button type="submit" class="button submit-button">
+            {% translate 'Generate Report' %}
+        </button>
+        <a href="{% url 'wagtail_optimizer:reports' %}" class="button button-secondary">
+            {% translate 'Back' %}
+        </a>
+    </li>
+</ul>
