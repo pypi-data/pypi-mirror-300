@@ -1,0 +1,11 @@
+beat_craft_sdk/__init__.py,sha256=QHH4o6Ahbb1VMus55qHwMAIL5MMeaEjBdTXzbDlPHdQ,63
+beat_craft_sdk/config.py,sha256=t1_7S2IsJokfgVDBBAhXCoacNBUhEafdGKypgVHc7qU,1249
+beat_craft_sdk/core.py,sha256=g8B3xHNne-9qJ8fNehR_Js6lqyRNqhdV-sjkKS0wFZ0,4124
+beat_craft_sdk/craft_strategy.py,sha256=7cOdC_Vw_uIHKKE0xi-uQSGu4ZDTZyJ0CwdNo2OXHUs,170
+beat_craft_sdk/crafting_with_backingtrack.py,sha256=nayAu7E4f5R3c6RdGwUVJyYrC6n-oCgtrT2bZCwZWZA,1671
+beat_craft_sdk/crafting_with_genetic.py,sha256=O9ZOHVA-NcJLNGsW_YnsJg2z4tixto5_hS-F3AzmDWc,1542
+beat_craft_sdk/transformer.py,sha256=z9tJTS0EW-kgK1jGlEKAHGL9zVw5oafU8RcR84XcdKo,965
+beatCraftSdk-0.0.1.dist-info/METADATA,sha256=rkoox6oXXMOJJCKKI_yi2MDEKsiPm8xGCVKJCeY05S0,914
+beatCraftSdk-0.0.1.dist-info/WHEEL,sha256=Mdi9PDNwEZptOjTlUcAth7XJDFtKrHYaQMPulZeBCiQ,91
+beatCraftSdk-0.0.1.dist-info/top_level.txt,sha256=RCCH0d_SR8wkhs90_TxkyD54Xca7tUD_asQjw95jnGQ,15
+beatCraftSdk-0.0.1.dist-info/RECORD,,
