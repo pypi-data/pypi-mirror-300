@@ -1,0 +1,15 @@
+README.md
+setup.py
+fresh_deps/__init__.py
+fresh_deps/__main__.py
+fresh_deps/_dependency_updater.py
+fresh_deps/_gitlab_api.py
+fresh_deps/_service_api.py
+fresh_deps/_update_dependencies.py
+fresh_deps/py.typed
+freshdeps.egg-info/PKG-INFO
+freshdeps.egg-info/SOURCES.txt
+freshdeps.egg-info/dependency_links.txt
+freshdeps.egg-info/entry_points.txt
+freshdeps.egg-info/requires.txt
+freshdeps.egg-info/top_level.txt

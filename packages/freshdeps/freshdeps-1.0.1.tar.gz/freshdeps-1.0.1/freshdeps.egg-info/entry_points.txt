@@ -1,0 +1,3 @@
+[console_scripts]
+fresh-deps = fresh_deps:update_dependencies
+fresh_deps = fresh_deps:update_dependencies
