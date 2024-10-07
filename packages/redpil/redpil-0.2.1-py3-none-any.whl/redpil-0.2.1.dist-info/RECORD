@@ -1,0 +1,11 @@
+redpil/__init__.py,sha256=8ZAy6Gthmn8de9U1U-QML7VIxVvenb04eCZhpoOx71o,209
+redpil/_static_version.py,sha256=8-ydC0_aZEGLh9-DRehiCqezfhZsnDyzHevpIuOjIvg,60
+redpil/_version.py,sha256=FiIYy7AEutK9yS-1bIRWyaiAHsHbyXJNQujSyB-eK6M,6023
+redpil/bmp.py,sha256=DY42cHQJlsIaYqjI2_A9DliOYYivvb74TWtQ3xYx-XQ,27968
+redpil/redpil.py,sha256=12XYzjJfFuWB3VqUAe_9fImXRNNI3deESsR96SQMJ3c,80
+redpil-0.2.1.dist-info/AUTHORS.md,sha256=Y3aJqDPQpf0VPUoCwYIQV_MW8h66gGpgPm7ZjJq4kkA,126
+redpil-0.2.1.dist-info/LICENSE,sha256=TcLWEO6QBHAGUX4-SgtHDErRuMHbbafSmmaH1PhvUx8,1073
+redpil-0.2.1.dist-info/METADATA,sha256=7xHtAsAmBE6wg8K4HsMB_t7jc04xhEzrjE6ti4dgEn0,6437
+redpil-0.2.1.dist-info/WHEEL,sha256=GV9aMThwP_4oNCtvEC2ec3qUYutgWeAzklro_0m4WJQ,91
+redpil-0.2.1.dist-info/top_level.txt,sha256=qEUantcRKceQ-ue6yxzepKgiuzaJJwtQZ616u-986Q4,7
+redpil-0.2.1.dist-info/RECORD,,
