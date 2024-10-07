@@ -1,0 +1,3 @@
+[console_scripts]
+create_answer_note = notemgmt.create_answer_note:main
+create_lecture_note = notemgmt.create_lecture_note:main

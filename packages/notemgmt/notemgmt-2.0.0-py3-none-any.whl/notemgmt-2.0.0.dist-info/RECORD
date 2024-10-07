@@ -1,0 +1,9 @@
+notemgmt/__init__.py,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+notemgmt/create_answer_note.py,sha256=GTBX825EwGnyQQ2lvMkD0eG_uMiOaiAwZTyW0eY9AXQ,899
+notemgmt/create_lecture_note.py,sha256=PVRKLhYOR8pcwyrqQ0VDlpgT2DR7JVm3cAH31UYsgXE,3357
+notemgmt-2.0.0.dist-info/LICENSE,sha256=YF6QR6Vjxcg5b_sYIyqkME7FZYau5TfEUGTG-0JeRK0,35129
+notemgmt-2.0.0.dist-info/METADATA,sha256=z6HSM8ptQSnZD6qCpojerMtfAnxFGJ_mtGWq5nveph8,234
+notemgmt-2.0.0.dist-info/WHEEL,sha256=GV9aMThwP_4oNCtvEC2ec3qUYutgWeAzklro_0m4WJQ,91
+notemgmt-2.0.0.dist-info/entry_points.txt,sha256=dSStlUO9Mpggb6zvoA0OVhBjHLY5NIBoqcYOXqtXkC0,128
+notemgmt-2.0.0.dist-info/top_level.txt,sha256=xA9qW3Bdl1rncxw_wXqwrkN-J3B_j8-0JzfD07HDI94,9
+notemgmt-2.0.0.dist-info/RECORD,,
