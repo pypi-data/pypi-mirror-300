@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+ml_project_structure_creator/__init__.py
+ml_project_structure_creator/create_ml_structure.py
+ml_project_structure_creator.egg-info/PKG-INFO
+ml_project_structure_creator.egg-info/SOURCES.txt
+ml_project_structure_creator.egg-info/dependency_links.txt
+ml_project_structure_creator.egg-info/entry_points.txt
+ml_project_structure_creator.egg-info/top_level.txt
