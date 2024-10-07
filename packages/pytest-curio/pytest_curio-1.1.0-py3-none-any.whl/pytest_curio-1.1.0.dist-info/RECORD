@@ -1,0 +1,9 @@
+pytest_curio/__init__.py,sha256=i1OTn1AdngdvNxFCdH3rIUEtMcHkWARFlEpONKBbGMI,73
+pytest_curio/_version.py,sha256=upwrMm0xkh5Pj8n5Gj-WW2PcDHCmdJN_ItgMVYNbppY,497
+pytest_curio/plugin.py,sha256=irzZoLcL-PX7TsoUcIknqQ7k7damsbuLfA_GM7lusrU,1659
+pytest_curio-1.1.0.dist-info/LICENSE,sha256=y16Ofl9KOYjhBjwULGDcLfdWBfTEZRXnduOspt-XbhQ,11325
+pytest_curio-1.1.0.dist-info/METADATA,sha256=bYbo1aRWQnrmvgc3mfm9Jdq_5QJV2gyWBf0W41Ao-pU,2370
+pytest_curio-1.1.0.dist-info/WHEEL,sha256=GV9aMThwP_4oNCtvEC2ec3qUYutgWeAzklro_0m4WJQ,91
+pytest_curio-1.1.0.dist-info/entry_points.txt,sha256=1fbCrFJJOpInDlxqNXkyq6SJ0c-wvEuDQVfA6w1397o,39
+pytest_curio-1.1.0.dist-info/top_level.txt,sha256=yEeXJP8Alc0_RFJ-5-hQBKWxZYU6E1mCOl2A1mf9j0Q,13
+pytest_curio-1.1.0.dist-info/RECORD,,
