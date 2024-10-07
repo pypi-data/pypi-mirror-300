@@ -1,0 +1,14 @@
+LICENCE
+README.md
+pyproject.toml
+src/trixelserviceclient/__init__.py
+src/trixelserviceclient/exception.py
+src/trixelserviceclient/logging_helper.py
+src/trixelserviceclient/schema.py
+src/trixelserviceclient.egg-info/PKG-INFO
+src/trixelserviceclient.egg-info/SOURCES.txt
+src/trixelserviceclient.egg-info/dependency_links.txt
+src/trixelserviceclient.egg-info/requires.txt
+src/trixelserviceclient.egg-info/top_level.txt
+src/trixelserviceclient/extended_clients/pickle_client.py
+src/trixelserviceclient/extended_clients/polling_client.py
