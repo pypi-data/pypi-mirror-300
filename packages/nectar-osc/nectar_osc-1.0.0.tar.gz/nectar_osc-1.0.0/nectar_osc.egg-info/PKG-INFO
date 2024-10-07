@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: nectar-osc
+Version: 1.0.0
+Summary: OpenStack client plugin for misc Nectar tooling
+Home-page: https://github.com/NeCTAR-RC/python-nectar-osc
+Author: ARDC Nectar Cloud Services
+Author-email: coreservices@ardc.edu.au
+License: Apache-2.0
+Keywords: varroa
+Classifier: Environment :: OpenStack
+Classifier: Intended Audience :: Information Technology
+Classifier: Intended Audience :: System Administrators
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.12
+License-File: LICENSE
+Requires-Dist: oslo.config
+Requires-Dist: oslo.utils
+Requires-Dist: osc-lib
+Requires-Dist: python-freshdesk
+Requires-Dist: python-openstackclient
+Requires-Dist: python-neutronclient
+Requires-Dist: pbr>=3.0.0
+
+# Nectar Openstack Client Plugin
+
+Provides some helpers for nectar cloud.
+
