@@ -1,0 +1,7 @@
+CHANGES
+=======
+
+v0.20241006.0
+-------------
+
+* Fix --images paraeter of osism manage images command (#1081)
