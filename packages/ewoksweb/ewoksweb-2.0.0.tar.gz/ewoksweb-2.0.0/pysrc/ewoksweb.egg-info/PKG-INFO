@@ -1,0 +1,53 @@
+Metadata-Version: 2.1
+Name: ewoksweb
+Version: 2.0.0
+Summary: Web frontend for ewoks
+Home-page: https://gitlab.esrf.fr/workflow/ewoks/ewoksweb
+Author: ESRF
+Author-email: loic.huder@esrf.fr
+License: MIT
+Project-URL: Source, https://gitlab.esrf.fr/workflow/ewoks/ewoksweb
+Project-URL: Documentation, https://workflow.gitlab-pages.esrf.fr/ewoks/ewoksweb
+Project-URL: Tracker, https://gitlab.esrf.fr/workflow/ewoks/ewoksweb/issues
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE.md
+Requires-Dist: ewoksserver[frontend]>=1.1
+Provides-Extra: dev
+Requires-Dist: black>=22; extra == "dev"
+Requires-Dist: flake8>=4; extra == "dev"
+Provides-Extra: doc
+Requires-Dist: sphinx>=4.5; extra == "doc"
+Requires-Dist: pydata_sphinx_theme; extra == "doc"
+
+# ewoksweb
+
+_ewoksweb_ is a frontend to create, visualize and execute
+[ewoks](https://ewoks.readthedocs.io/) workflows in the web.
+
+## Demo
+
+https://workflow.gitlab-pages.esrf.fr/ewoks/ewoksweb/
+
+## Local installation
+
+Install the [ewoksweb](https://ewoksweb.readthedocs.io) python package
+
+```bash
+pip install ewoksweb
+```
+
+Start the server via
+
+```bash
+ewoksweb
+```
+
+See the documentation (link below) for more information.
+
+## Documentation
+
+https://ewoksweb.readthedocs.io/
