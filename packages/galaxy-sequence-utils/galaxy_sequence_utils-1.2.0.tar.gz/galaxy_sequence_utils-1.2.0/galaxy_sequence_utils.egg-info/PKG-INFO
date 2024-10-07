@@ -1,0 +1,46 @@
+Metadata-Version: 2.1
+Name: galaxy_sequence_utils
+Version: 1.2.0
+Summary: Galaxy utilities for manipulating genomic sequences
+Home-page: https://github.com/galaxyproject/sequence_utils
+Author: Dan Blankenberg, Galaxy Project and Community
+Author-email: galaxy-dev@lists.galaxyproject.org
+Maintainer: Nicola Soranzo
+Maintainer-email: nicola.soranzo@earlham.ac.uk
+License: AFL-3.0
+Project-URL: Bug Tracker, https://github.com/galaxyproject/sequence_utils/issues
+Project-URL: Source Code, https://github.com/galaxyproject/sequence_utils
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Environment :: Console
+Classifier: License :: OSI Approved :: Academic Free License (AFL)
+Classifier: Natural Language :: English
+Classifier: Operating System :: POSIX
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Topic :: Scientific/Engineering :: Bio-Informatics
+Classifier: Topic :: Software Development
+Requires-Python: >=3.8
+Description-Content-Type: text/x-rst
+License-File: LICENSE
+
+Galaxy sequence_utils
+----------------------
+
+.. image:: https://badge.fury.io/py/galaxy_sequence_utils.svg
+   :target: https://pypi.org/project/galaxy_sequence_utils/
+   :alt: Planemo on the Python Package Index (PyPI)
+
+.. image:: https://travis-ci.org/galaxyproject/sequence_utils.png?branch=master
+   :target: https://travis-ci.org/galaxyproject/sequence_utils
+   :alt: Build Status
+
+Galaxy's sequence utilities are a set of Python modules for reading, analyzing, and converting sequence formats.
+
+This package is distributed via PyPI and bioconda.
+
+A Galaxy tool can use it by adding a requirement for `galaxy_sequence_utils`.
