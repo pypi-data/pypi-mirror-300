@@ -1,0 +1,17 @@
+GenPhylo/__init__.py,sha256=xcn01S0IJwSZoa0ZI2t5JcEsL7gr22IM0_PIgvi06Xc,24
+GenPhylo/model/__init__.py,sha256=xcn01S0IJwSZoa0ZI2t5JcEsL7gr22IM0_PIgvi06Xc,24
+GenPhylo/model/math_model.py,sha256=8HSzSDeG9Le_QX1hKr00INLKfcp99_0GQTSVaDjWMfk,900
+GenPhylo/model/matrix_computation.py,sha256=b-Vuk0minvQtAIqg6H3FPkrinPliDjiiFRykvZYOBi0,3022
+GenPhylo/model/model_utils.py,sha256=GrRWJW30JYSQT-6jwmnm6MMRaMa9SQ6RQwdRNcyGz2o,1866
+GenPhylo/utils/__init__.py,sha256=xcn01S0IJwSZoa0ZI2t5JcEsL7gr22IM0_PIgvi06Xc,24
+GenPhylo/utils/alignments_generation.py,sha256=ijWzE9FiBV0oV01cmr7wdFXnqhzqf2pZP1KnHdxDbZI,2337
+GenPhylo/utils/classes.py,sha256=Ne_GyjCydl95AIwptQdXjuavvIMZgSq3TkjOeol70FM,296
+GenPhylo/utils/generate_DNA.py,sha256=3EtSy7J2Ez4HUHMXzFDwJ0fJIONzFg64I_go_Yzx3jI,3519
+GenPhylo/utils/matrices_generation.py,sha256=SE8I3KMP0Y8I0x27ggRSWJxurHYo4dbH-PxghmBR8d4,1355
+GenPhylo/utils/misc_utils.py,sha256=hZ-PiqFpHqat8pKUvNiusEgG8CFuevbOqCC_TOCStxg,685
+GenPhylo/utils/save.py,sha256=0BUDB28BdzDSstN77Ujy2z2nM0M551b_MO27JRtGc8A,755
+GenPhylo-1.1.1.dist-info/LICENSE.txt,sha256=g-cf2iDPUiih8beKAaB23V7L-01hNXvVUXzsGiOFa0I,33
+GenPhylo-1.1.1.dist-info/METADATA,sha256=DUzBs0q2-T5UPgzlGg6_c3mtVGvv0MVH4infJ1CKjNg,4759
+GenPhylo-1.1.1.dist-info/WHEEL,sha256=GV9aMThwP_4oNCtvEC2ec3qUYutgWeAzklro_0m4WJQ,91
+GenPhylo-1.1.1.dist-info/top_level.txt,sha256=mRptgXGI1yjubP6uAsDoz1CYwvegSED5dNFkfT-GnVc,9
+GenPhylo-1.1.1.dist-info/RECORD,,
