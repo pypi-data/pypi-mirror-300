@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: tuhin
+Version: 0.0.2
+Home-page: 
+Author: MD Raj
+Author-email: mdrajx05@gmail.com
+License: MIT
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+
+# pip install tuhin
+# import tuhin
