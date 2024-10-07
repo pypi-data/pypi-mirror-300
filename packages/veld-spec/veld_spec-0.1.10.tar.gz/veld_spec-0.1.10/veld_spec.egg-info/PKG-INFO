@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: veld_spec
+Version: 0.1.10
+Summary: VELD specification
+Home-page: https://github.com/acdh-oeaw/VELD_spec
+Author: Stefan Resch
+Author-email: stefan.resch@oeaw.ac.at
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: PyYAML>=6.0.2
+Requires-Dist: jsonschema>=4.23.0
+
+# VELD spec
+
+specification of the VELD metadata schema.
+

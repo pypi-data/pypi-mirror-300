@@ -1,0 +1,5 @@
+include setup.py
+include veld_spec.py
+include veld_schema.json
+include README.md
+include LICENSE
