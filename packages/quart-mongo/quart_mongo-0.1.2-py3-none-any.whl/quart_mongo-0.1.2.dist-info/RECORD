@@ -1,0 +1,12 @@
+quart_mongo/__init__.py,sha256=CyjnnlSuRpmxjj72wBQJMrqs-HqyD9OubLyXavELL8U,178
+quart_mongo/const.py,sha256=8mqDaKpchNwLaxSrWEU0e86KuWeBPsIAQshWc8eqonE,838
+quart_mongo/core.py,sha256=60mB941NNFCxJjKv6K_5BHaiheZKdaovQZdyOXulcLs,10007
+quart_mongo/helpers.py,sha256=BwzXEwIIIvLWjzLE-f0tSHSuK1oxh8Op3ahcUDW_I2o,3335
+quart_mongo/py.typed,sha256=E84IaZyFwfLqvXjOVW4LS6WH7QOaKEFpNh9TFyzHNQc,6
+quart_mongo/typing.py,sha256=bkj4gDCAuqags2Ox-U2RSx9pIfMQhSHqFaC9sgJXlrQ,573
+quart_mongo/utils.py,sha256=n-m75xCRAKSOpJtoP8l4ZEhVcSDO2lhpzh0VMRevvz4,2002
+quart_mongo/wrappers.py,sha256=bqYHYXjeBMg_Wx9j8YvbYwxl-yr3TvGYWtDisMrEhp4,6753
+quart_mongo-0.1.2.dist-info/LICENSE,sha256=OV-GvMVuINueRApitzYR1R3FvLsezba53dYqMbLxwek,1069
+quart_mongo-0.1.2.dist-info/METADATA,sha256=DGgx6VYgpYB8yNBu6asgSi7CdW5r_Vk4w86Vms-ulUU,2336
+quart_mongo-0.1.2.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+quart_mongo-0.1.2.dist-info/RECORD,,
