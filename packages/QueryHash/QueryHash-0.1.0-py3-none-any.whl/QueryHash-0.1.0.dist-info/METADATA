@@ -1,0 +1,39 @@
+Metadata-Version: 2.1
+Name: QueryHash
+Version: 0.1.0
+Summary: A Django app for hashing queries and responses with count increment.
+Home-page: https://github.com/ganesh-shipsy/QueryHash
+Author: GuvvalaGanesh
+Author-email: ganeshguvvala44@gmail.com
+License: MIT
+Classifier: Environment :: Web Environment
+Classifier: Framework :: Django
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Framework :: Django :: 5.1
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: Django >=5.1.1
+Requires-Dist: mysqlclient
+
+# QueryHash
+
+A Django app for hashing queries and responses with count increment.
+
+## Installation
+
+pip install QueryHash
+
+## Usage
+
+1. Add `myapp` to your `INSTALLED_APPS` in `settings.py`.
+2. Configure your database settings.
+3. Use the middleware to hash queries and responses.
+
+## License
+
+This project is licensed under the MIT License.
