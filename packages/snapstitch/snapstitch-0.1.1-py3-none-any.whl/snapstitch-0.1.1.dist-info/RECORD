@@ -1,0 +1,9 @@
+snapstitch-0.1.1.dist-info/METADATA,sha256=Anp0jVGrpgZHWJa1fJUloZ7BPXOHfXv_TZh3vw7qP4k,3286
+snapstitch-0.1.1.dist-info/WHEEL,sha256=Vza3XR51HW1KmFP0iIMUVYIvz0uQuKJpIXKYOBGQyFQ,90
+snapstitch-0.1.1.dist-info/entry_points.txt,sha256=6OYgBcLyFCUgeqLgnvMyOJxPCWzgy7se4rLPKtNonMs,34
+snapstitch-0.1.1.dist-info/licenses/LICENSE,sha256=U-qDnt4sc9oU3xuhymU81y5L_1bheB2WUbs0PHrfNVE,1073
+snapstitch/__init__.py,sha256=0p5xsmBJviG6Zfu8HKDZO7fxdukTO7XZwTk5pB_aduM,158
+snapstitch/data.py,sha256=orTIl-eyoVtz5vhqG_qEJDO-I1xpiL38XFAQA5QvI7Q,5393
+snapstitch/generator.py,sha256=wIVGYfEdknIpdNeaQleiB1TsO3Bxqn7iKpo0bLbCf5o,7950
+snapstitch/stitch.py,sha256=PaQIGFSz5iWGL2XL1f2upqED94Q6DLG7CDQXFk3Hsbw,2427
+snapstitch-0.1.1.dist-info/RECORD,,
