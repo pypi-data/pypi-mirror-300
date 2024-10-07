@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+bible/__init__.py
+bible/bible.py
+bible/helpers.py
+pybible_api.egg-info/PKG-INFO
+pybible_api.egg-info/SOURCES.txt
+pybible_api.egg-info/dependency_links.txt
+pybible_api.egg-info/requires.txt
+pybible_api.egg-info/top_level.txt
