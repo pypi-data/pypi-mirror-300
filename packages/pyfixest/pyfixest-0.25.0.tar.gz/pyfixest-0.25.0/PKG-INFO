@@ -1,0 +1,38 @@
+Metadata-Version: 2.3
+Name: pyfixest
+Version: 0.25.0
+Summary: Fast high dimensional fixed effect estimation following syntax of the fixest R package.
+Author: Styfen Schär
+Author-email: Alexander Fischer <alexander-fischer1801@t-online.de>
+License-File: LICENSE.md
+Requires-Python: >=3.9
+Requires-Dist: formulaic>=1.0.0
+Requires-Dist: great-tables>=0.10.0
+Requires-Dist: jinja2<4,>=3.1.4
+Requires-Dist: lets-plot>=4.0.0
+Requires-Dist: numba>=0.58.0
+Requires-Dist: numpy>=1.19.0
+Requires-Dist: pandas>=1.1.0
+Requires-Dist: polars>=0.20.1
+Requires-Dist: scipy>=1.6
+Requires-Dist: seaborn>=0.13.2
+Requires-Dist: tabulate>=0.9.0
+Requires-Dist: tqdm==4.66.4
+Provides-Extra: dev
+Requires-Dist: doubleml==0.7.1; extra == 'dev'
+Requires-Dist: pre-commit==3.6.0; extra == 'dev'
+Requires-Dist: pyarrow>=14.0.0; extra == 'dev'
+Requires-Dist: pyhdfe>=0.2.0; extra == 'dev'
+Requires-Dist: pytest-cov>=4.1.0; extra == 'dev'
+Requires-Dist: pytest-xdist>=3.5.0; extra == 'dev'
+Requires-Dist: pytest>=7.2.0; extra == 'dev'
+Requires-Dist: wildboottest>=0.3.2; extra == 'dev'
+Provides-Extra: docs
+Requires-Dist: causaldata<0.2,>=0.1.4; extra == 'docs'
+Requires-Dist: jupyterlab>=4.0.12; extra == 'docs'
+Requires-Dist: jupytext==1.16.1; extra == 'docs'
+Requires-Dist: marginaleffects>=0.0.10; extra == 'docs'
+Requires-Dist: pylatex<2,>=1.4.2; extra == 'docs'
+Requires-Dist: quartodoc>=0.7.2; extra == 'docs'
+Requires-Dist: watermark==2.4.3; extra == 'docs'
+Requires-Dist: wildboottest>=0.3.2; extra == 'docs'
