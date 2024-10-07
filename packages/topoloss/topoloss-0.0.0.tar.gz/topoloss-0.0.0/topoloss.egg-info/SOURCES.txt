@@ -1,0 +1,11 @@
+README.md
+setup.py
+tests/test_loss_conv.py
+tests/test_loss_linear.py
+topoloss/__init__.py
+topoloss/core.py
+topoloss/cortical_sheet.py
+topoloss.egg-info/PKG-INFO
+topoloss.egg-info/SOURCES.txt
+topoloss.egg-info/dependency_links.txt
+topoloss.egg-info/top_level.txt
