@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+holamundoplayer-renfy/__init__.py
+holamundoplayer-renfy/lala.py
+holamundoplayer-renfy/player.py
+holamundoplayer_renfy.egg-info/PKG-INFO
+holamundoplayer_renfy.egg-info/SOURCES.txt
+holamundoplayer_renfy.egg-info/dependency_links.txt
+holamundoplayer_renfy.egg-info/top_level.txt
