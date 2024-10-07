@@ -1,0 +1,13 @@
+cjm_yolox_pytorch/__init__.py,sha256=Zn1KFblwuFHiDRdRAiRnDBRkbPttWh44jKa5zG2ov0E,22
+cjm_yolox_pytorch/_modidx.py,sha256=_uv0HumwFF4LCVPgGU-O0bigW-ytLWjgfxmw4PqUe04,14282
+cjm_yolox_pytorch/inference.py,sha256=KAj-5YLqRWWtZUxSZscETsLgPmDUe_MFAxIfS2ME-ls,6003
+cjm_yolox_pytorch/loss.py,sha256=bMnOUDFxzuYQW14idZxCD6DatPnu9B1X6BBlIGT4AlU,19800
+cjm_yolox_pytorch/model.py,sha256=N2wljZXtosSvIdrzuBYUv2DbBIPlmkfST1ffYQkm4QI,35942
+cjm_yolox_pytorch/simota.py,sha256=FwJdZd28JdWBFADf-SbmCBOmwhHm8BNczzwdSXH2K-U,13402
+cjm_yolox_pytorch/utils.py,sha256=eePUn9dajgQ1lOUS-_LqPNx8etAOgmtCXwDDI1DU6YA,2673
+cjm_yolox_pytorch-0.2.0.dist-info/LICENSE,sha256=oTCv7WI-xHYj6MIBPnlkLQwi5oTm1xoI3kKeFZIzBwE,1075
+cjm_yolox_pytorch-0.2.0.dist-info/METADATA,sha256=C1ws2KkBIWHXDtjgpE6XSoFj4Z23oCfKxLD-SogDwts,2029
+cjm_yolox_pytorch-0.2.0.dist-info/WHEEL,sha256=GV9aMThwP_4oNCtvEC2ec3qUYutgWeAzklro_0m4WJQ,91
+cjm_yolox_pytorch-0.2.0.dist-info/entry_points.txt,sha256=8h_nd3tCoShd_xuOARJI3bajcWmLmQzdU2OfpcC6deY,56
+cjm_yolox_pytorch-0.2.0.dist-info/top_level.txt,sha256=o7dZWUYKvMLMc-B35LNqz4uAErLtoEuW2fT_1sG5jDM,18
+cjm_yolox_pytorch-0.2.0.dist-info/RECORD,,
