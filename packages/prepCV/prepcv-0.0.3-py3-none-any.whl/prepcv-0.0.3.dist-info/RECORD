@@ -1,0 +1,8 @@
+prepCV/__init__.py,sha256=w6ykvmIbpRxaIOArMvQ00iFXwNutBW1jMtwwQAK4pK8,105
+prepCV/_prepCV_cache.pkl,sha256=j1iLVNOkjU_AGetmxc9TBv7B8pTcBGoanmpnFueekCw,36199
+prepCV/auto_preprocessing.py,sha256=WpWtThUnbKv4Bvu8GJjXwICFNd2Aml18kyjXbMNAooo,19497
+prepCV/utils.py,sha256=EKrkWX0HGDNGp8Bs3DcAdNBbm1hxFl6ZsBhn9SKat3w,2348
+prepcv-0.0.3.dist-info/LICENSE,sha256=2T7dT7q92pPqT2-9HnFfxx7CnOh75tFSLgm_JWVzznU,1085
+prepcv-0.0.3.dist-info/WHEEL,sha256=EZbGkh7Ie4PoZfRQ8I0ZuP9VklN_TvcZ6DSE5Uar4z4,81
+prepcv-0.0.3.dist-info/METADATA,sha256=rpsS2ttHEfUMs1XIX_v7AzzVimlNB70CbY0aF-yFkUg,3274
+prepcv-0.0.3.dist-info/RECORD,,
