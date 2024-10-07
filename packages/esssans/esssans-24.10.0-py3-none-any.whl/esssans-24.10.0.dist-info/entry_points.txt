@@ -1,0 +1,2 @@
+[beamlime.workflow_plugin]
+ess-loki-monitor = ess.loki.live:LokiMonitorWorkflow
