@@ -1,0 +1,17 @@
+vpem/__init__.py,sha256=vdR83p9H50JUS9DT2pbkrQ0QlqJrDQEouxZ0IGvblmg,405
+vpem/__main__.py,sha256=kdRvtcqf2eKRTUvpoMtvcLJMpoAMt5_m3XLO14p0g48,142
+vpem/apply_groups.py,sha256=dFEeJmC1nQk9W3-7VbyTE2D7_FbCqZkbPTv3biwlos8,3761
+vpem/categorize_extensions.py,sha256=uCj6thqpLrCGwjxjv5LXUvtDPuFxArrzQ5JIbncOC8w,4926
+vpem/create_extensions_table.py,sha256=tc38QOjqvIUevfXeMFnx6PQ_oBqpMj0PBoNurTI26Hk,1247
+vpem/load_extension_groups.py,sha256=USEWELzP1WCi_W194nxRG63e2v0qSS-jBhICXOMBpEk,320
+vpem/main.py,sha256=4PJDaYRqIyhnG0LSiHzTtuoooOAB-v30govXxZX5Ccw,1829
+vpem/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+vpem/result_with_err.py,sha256=ELIJvVLfccvGqv3JZ5T7J5Asta5hEIcvSfJJ6y1_NQw,176
+vpem/save_extension_groups.py,sha256=y9OIS9kwwsjsonL2QTTvN53FD1Ek_nWuH0W-77DRuD0,276
+vpem/update_extensions_from_profile.py,sha256=5un-s0EK6gIi3INXwveaZ5TduTmRv_MJQj7l7cMkD6g,2795
+vscode_profile_extension_manager-0.1.7.dist-info/LICENSE,sha256=QRjkirZ5OpXw8Ui5bWitBbluaBIW2pjesAxcVHgwBvs,11363
+vscode_profile_extension_manager-0.1.7.dist-info/METADATA,sha256=nT_3hjgGxYEj_C_m7K9_bphDYZGsNFA7vgE9b6q_gcM,17124
+vscode_profile_extension_manager-0.1.7.dist-info/WHEEL,sha256=GV9aMThwP_4oNCtvEC2ec3qUYutgWeAzklro_0m4WJQ,91
+vscode_profile_extension_manager-0.1.7.dist-info/entry_points.txt,sha256=6a1UycbfTThvB2KRXqmG0IpalnKTKeaIZp5_ZXR6prA,39
+vscode_profile_extension_manager-0.1.7.dist-info/top_level.txt,sha256=aMvHdLyombsCbO4kev-aqFaiL3Y_g3duy2SKTJi4pts,5
+vscode_profile_extension_manager-0.1.7.dist-info/RECORD,,
