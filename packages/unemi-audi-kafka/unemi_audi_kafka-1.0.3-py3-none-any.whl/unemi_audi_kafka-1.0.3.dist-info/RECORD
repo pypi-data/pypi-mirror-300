@@ -1,0 +1,10 @@
+audit_logger/__init__.py,sha256=1wV2pE4zebTRWxhHMcGga63iqrl3ys5nSDt8YbVgZsE,170
+audit_logger/apps.py,sha256=kj2k-K7P7R8oFb6wgZUkQnxxrgWw0CnfmIFJvZ-xXaQ,1074
+audit_logger/logger.py,sha256=ih8ZsR-JV1Lh0Yjiqeo0G_Nl37UY5yZBXjQzXFUo9Vo,8833
+audit_logger/middlewares.py,sha256=tJX3hzCu5WraDmaQpUEPcqEFvClB7m1MJeu7reXjuSk,2657
+audit_logger/producer.py,sha256=X5EIgjYGlPEoZcx66ysAX2hmlewWKtE9ziUQ_g-N8fw,3266
+unemi_audi_kafka-1.0.3.dist-info/LICENSE,sha256=HCWW_c5PwK8G3vDxU6WwGdAADbA1dtvhrs4sr_lfCf4,82
+unemi_audi_kafka-1.0.3.dist-info/METADATA,sha256=jNvNayhBYmoa-ej0dyIj0SiJDSed3eN_j6WKOQeOdkM,3558
+unemi_audi_kafka-1.0.3.dist-info/WHEEL,sha256=GV9aMThwP_4oNCtvEC2ec3qUYutgWeAzklro_0m4WJQ,91
+unemi_audi_kafka-1.0.3.dist-info/top_level.txt,sha256=8-Lpmjxsk9Qqw5uf-dY6aL2c41WhTHhzXPvVDT9wu-U,13
+unemi_audi_kafka-1.0.3.dist-info/RECORD,,
