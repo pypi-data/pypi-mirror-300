@@ -1,0 +1,3 @@
+include stockvip/config/*.c
+include stockvip/process_client/*.c
+include stockvip/process_stock/*.c
