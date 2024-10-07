@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+src/jsonjinja.py
+src/jsonjinja.egg-info/PKG-INFO
+src/jsonjinja.egg-info/SOURCES.txt
+src/jsonjinja.egg-info/dependency_links.txt
+src/jsonjinja.egg-info/entry_points.txt
+src/jsonjinja.egg-info/requires.txt
+src/jsonjinja.egg-info/top_level.txt
