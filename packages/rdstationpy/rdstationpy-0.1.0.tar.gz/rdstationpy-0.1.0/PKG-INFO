@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: rdstationpy
+Version: 0.1.0
+Summary: Wrapper API for RDStation
+Author: Victor Stein
+Author-email: victor.stein@outlook.com
+Requires-Python: >=3.10,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: requests (>=2.32.3,<3.0.0)
+Requires-Dist: tenacity (>=9.0.0,<10.0.0)
+Description-Content-Type: text/markdown
+
+
