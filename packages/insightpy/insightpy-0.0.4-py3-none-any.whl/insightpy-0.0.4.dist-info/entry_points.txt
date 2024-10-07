@@ -1,0 +1,2 @@
+[console_scripts]
+data-profiler = insightpy.cli.profiler_cli:profile
