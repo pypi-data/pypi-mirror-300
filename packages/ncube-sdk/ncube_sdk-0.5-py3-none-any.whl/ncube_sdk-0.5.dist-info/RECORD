@@ -1,0 +1,9 @@
+ncube_sdk/__init__.py,sha256=6FmXISs4azOMG9T559xSAv-RnTGOOq3JveSeMPlP5Qw,675
+ncube_sdk/client.py,sha256=i4rq8KWRAKWyhyBYeBwyOM7YrflGHqPfXoWBgp2FVL8,13672
+ncube_sdk/http.py,sha256=H5k7GkohWUYojvFI2nAuC-GiA460DLX-sR3ikvH8Z0o,4870
+ncube_sdk/validate.py,sha256=CjkR88gNzNSzwB_T9KDnlEUEMKwimDA5IF4e0MkfFkY,4277
+ncube_sdk-0.5.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+ncube_sdk-0.5.dist-info/METADATA,sha256=ONnz5TVGacO1panm4znZb2-ckPfZWaroiIkxc_tGSSo,1201
+ncube_sdk-0.5.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+ncube_sdk-0.5.dist-info/top_level.txt,sha256=E6GGjNyC1HM8EjqPQxDPy-XlZMm0S49mBERCIDMmUhA,10
+ncube_sdk-0.5.dist-info/RECORD,,
