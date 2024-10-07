@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: PythonCPSolver
+Version: 0.0.1
+Summary: Simple solver based on Constraint Technologies
+Author-email: Gonzalo Hernandez <gonzalojosehernandez@gmail.com>
+Project-URL: Homepage, https://github.com/GonzaloHernandez/python-cpsolver
+Project-URL: Issues, https://github.com/GonzaloHernandez/python-cpsolver
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Python CP Solver
+
+In construction

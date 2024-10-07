@@ -1,0 +1,10 @@
+PythonCPSolver/__init__.py,sha256=F2x4ZnlZLZgLQWSX0ydfGCxGmCfPcKhHIQ6nYg850hQ,461
+PythonCPSolver/brancher.py,sha256=uZ_ohj7UnZj5SlR0kig7gD4Q-MDhfpVytdtjiOSNt4Q,737
+PythonCPSolver/engine.py,sha256=_Do0WyVHpzf0bUC38y3N2PH2o_kTdHdg7S19ADcnhXI,5357
+PythonCPSolver/propagators.py,sha256=dnWaopksRgEQRCTSKqmUwt1RH0-8fyIWZQOxqlmA_8M,6877
+PythonCPSolver/variables.py,sha256=APGvQNxp25gUpiA-taxDzqOXttoAJrxx2m-RrJB3was,17151
+PythonCPSolver-0.0.1.dist-info/LICENSE,sha256=7EI8xVBu6h_7_JlVw-yPhhOZlpY9hP8wal7kHtqKT_E,1074
+PythonCPSolver-0.0.1.dist-info/METADATA,sha256=vR9uCYNH92dKg9JSReTp8CzowS4qEcK3U_4JJb7HqBs,595
+PythonCPSolver-0.0.1.dist-info/WHEEL,sha256=GV9aMThwP_4oNCtvEC2ec3qUYutgWeAzklro_0m4WJQ,91
+PythonCPSolver-0.0.1.dist-info/top_level.txt,sha256=bBsTEBIImY-NMplUuVMYj5m29krKYgs-6cwQX4C4SuE,15
+PythonCPSolver-0.0.1.dist-info/RECORD,,
