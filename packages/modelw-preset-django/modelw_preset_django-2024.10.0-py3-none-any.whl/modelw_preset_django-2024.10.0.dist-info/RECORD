@@ -1,0 +1,11 @@
+model_w/preset/django/__init__.py,sha256=9o7j6LWorRAwzOTIcaw8Cwjnn-R0nz2QZidrQYl1Qf8,32656
+model_w/preset/django/drf.py,sha256=aEI_pz5vyeXasXPfiKxqXhQObwmsqsLgR_wjDg_joo0,400
+model_w/preset/django/env_helper/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+model_w/preset/django/env_helper/management/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+model_w/preset/django/env_helper/management/commands/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+model_w/preset/django/env_helper/management/commands/list_used_env_vars.py,sha256=mAdm5ohUijh9lUGWD8SB1g4rEjN4M5Ppl1Bks_kD8GM,2994
+model_w/preset/django/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+modelw_preset_django-2024.10.0.dist-info/LICENSE,sha256=djc4a1-B6KcZyjNiMxSQBeX6KLXmBU6ntn3kk1WwrUA,484
+modelw_preset_django-2024.10.0.dist-info/METADATA,sha256=vZYoJ30rb1pDUhoApLTtTbsN2Xy4sha3Lp5Fskn-_Tg,2453
+modelw_preset_django-2024.10.0.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+modelw_preset_django-2024.10.0.dist-info/RECORD,,
