@@ -1,0 +1,35 @@
+# estimation.bonferroni { #pyfixest.estimation.bonferroni }
+
+`estimation.bonferroni(models, param)`
+
+Compute Bonferroni adjusted p-values for multiple hypothesis testing.
+
+For each model, it is assumed that tests to adjust are of the form
+"param = 0".
+
+## Parameters
+
+| Name     | Type                                     | Description                                                                              | Default    |
+|----------|------------------------------------------|------------------------------------------------------------------------------------------|------------|
+| `models` | (list\[Feols, Fepois\], Feols or Fepois) | A list of models for which the p-values should be adjusted, or a Feols or Fepois object. | _required_ |
+| `param`  | str                                      | The parameter for which the p-values should be adjusted.                                 | _required_ |
+
+## Returns
+
+| Type         | Description                                                                               |
+|--------------|-------------------------------------------------------------------------------------------|
+| pd.DataFrame | A DataFrame containing estimation statistics, including the Bonferroni adjusted p-values. |
+
+## Examples
+
+```python
+from pyfixest.estimation import feols
+from pyfixest.utils import get_data
+from pyfixest.multcomp import bonferroni
+
+data = get_data().dropna()
+fit1 = feols("Y ~ X1", data=data)
+fit2 = feols("Y ~ X1 + X2", data=data)
+bonf_df = bonferroni([fit1, fit2], param="X1")
+bonf_df
+```
