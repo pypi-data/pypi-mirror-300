@@ -1,0 +1,2 @@
+[console_scripts]
+narchi_cli.py = narchi.bin.narchi_cli:narchi_cli
