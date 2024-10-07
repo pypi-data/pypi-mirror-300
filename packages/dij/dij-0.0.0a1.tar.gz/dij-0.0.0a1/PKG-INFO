@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: dij
+Version: 0.0.0a1
+Summary: 💉 dij » dependency dijection library
+Home-page: https://pest.lucode.ar
+License: MIT
+Keywords: dependency,injection,di
+Author: Lucas Colombo
+Author-email: lucas@lucode.dev
+Requires-Python: >=3.8,<4.0
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Topic :: Software Development :: Libraries
+Requires-Dist: requests (>=2.32.3,<3.0.0)
+Project-URL: Documentation, https://pest.lucode.ar/docs
+Project-URL: Repository, https://github.com/lucodear/dij
+Description-Content-Type: text/markdown
+
+# 💉 inj
+
