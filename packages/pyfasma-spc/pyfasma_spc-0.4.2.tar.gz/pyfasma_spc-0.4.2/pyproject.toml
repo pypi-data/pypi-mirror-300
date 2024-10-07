@@ -1,0 +1,30 @@
+[tool.poetry]
+name = "pyfasma-spc"
+version = "0.4.2"
+description = "A Python package for handling SPC files"
+authors = [
+	"Rohan Isaac <rohan_isaac@yahoo.com>",
+	"Lefteris Pavlou <lepa.22@hotmail.com>",
+]
+readme = "README.md"
+license = "GNU General Public License v3 (GPLv3)"
+homepage = "https://github.com/lepa22/pyfasma-spc"
+repository = "https://github.com/lepa22/pyfasma-spc"
+keywords = ["scientific", "SPC", "spectra", "data analysis"]
+classifiers = [
+	"Development Status :: 4 - Beta",
+	"Intended Audience :: Science/Research",
+	"License :: OSI Approved :: GNU General Public License v3 (GPLv3)",
+	"Programming Language :: Python :: 3.5",
+	"Topic :: Scientific/Engineering :: Chemistry",
+]
+packages = [{ include = "spc" }]
+
+[tool.poetry.dependencies]
+python = "^3.12"
+numpy = "^2.0"
+matplotlib = "^3.8"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
