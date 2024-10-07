@@ -1,0 +1,91 @@
+Metadata-Version: 2.1
+Name: gotolibr
+Version: 1.0
+Summary: A simple library that allows you to use goto in Python
+Author: scientificworld
+Maintainer: scientificworld
+License: This is free and unencumbered software released into the public domain.
+        
+        Anyone is free to copy, modify, publish, use, compile, sell, or
+        distribute this software, either in source code form or as a compiled
+        binary, for any purpose, commercial or non-commercial, and by any
+        means.
+        
+        In jurisdictions that recognize copyright laws, the author or authors
+        of this software dedicate any and all copyright interest in the
+        software to the public domain. We make this dedication for the benefit
+        of the public at large and to the detriment of our heirs and
+        successors. We intend this dedication to be an overt act of
+        relinquishment in perpetuity of all present and future rights to this
+        software under copyright law.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
+        EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+        MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
+        IN NO EVENT SHALL THE AUTHORS BE LIABLE FOR ANY CLAIM, DAMAGES OR
+        OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE,
+        ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR
+        OTHER DEALINGS IN THE SOFTWARE.
+        
+        For more information, please refer to <https://unlicense.org>
+        
+Project-URL: Homepage, https://github.com/scientificworld/gotolibr
+Project-URL: Repository, https://github.com/scientificworld/gotolibr.git
+Project-URL: Issues, https://github.com/scientificworld/gotolibr/issues
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: The Unlicense (Unlicense)
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.14
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+## gotolibr
+
+A simple library that allows you to use `goto` in Python.
+
+It's implemented using the `commands` argument of `pdb.set_trace`, which was added in Python 3.14.
+
+### Installation
+
+Python 3.14 or higher is required for this library to function properly.
+
+```
+$ python3 -m pip install gotolibr
+```
+
+### How to use
+
+First, import the library:
+
+```python
+from gotolibr import goto
+```
+
+Jump to an absolute line number:
+
+```python
+goto(1)
+```
+
+Jump to a relative line number:
+
+```python
+goto(-1, relative=True)
+```
+
+### Example
+
+```python
+from gotolibr import goto
+
+a = 0
+a += 1
+print(a)
+if a > 5:
+    goto(4, relative=True)
+else:
+    goto(4)
+
+print('Finish')
+```
