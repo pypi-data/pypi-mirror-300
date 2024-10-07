@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: easycreditscoring
+Version: 0.0.1
+Summary: Simple library combining efficient credit scoring ML methods
+Author: miosipof
+Author-email: miosipof <miosipof@gmail.com>
+Project-URL: Homepage, https://github.com/miosipof/easycreditscoring
+Project-URL: Issues, https://github.com/miosipof/easycreditscoring/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: seaborn
+Requires-Dist: missingno
+Requires-Dist: matplotlib
+Requires-Dist: plotly
+Requires-Dist: scikit-learn
+Requires-Dist: statsmodels
+Requires-Dist: scipy
+Requires-Dist: tensorflow
+Requires-Dist: tf-keras
+Requires-Dist: imblearn
+Requires-Dist: setuptools
+
