@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
+    <div class="row">
+        {% for o in page.object_list %}
+            <div class="col-3">
+                <div class="card">
+                    <img class="card-img-top"
+                         src="{% static o.img.src %}"
+                         alt="{{ o.img.alt }}">
+                    <div class="card-body">
+                        <h5 class="card-title">{{ o.name }}</h5>
+                        <p class="card-text">{{ o.description }}</p>
+                        <a href="{{ o.a.href }}" class="btn btn-primary">{{ o.a.text }}</a>
+                    </div>
+                </div>
+            </div>
+        {% empty %}
+            <div class="alert alert-warning" role="alert">No items found</div>
+        {% endfor %}
+    </div>
+{% endblock content %}
