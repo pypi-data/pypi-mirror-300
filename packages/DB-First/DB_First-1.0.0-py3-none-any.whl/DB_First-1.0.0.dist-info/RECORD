@@ -1,0 +1,13 @@
+db_first/__init__.py,sha256=3FZSO7TBrAcg5-O6ribqD59aal9D_EnS3KRCFNMVVxw,150
+db_first/base.py,sha256=JSYbF3RKeeddlklWC2FOaR1aZIXO3YwFu6SnhPK2Ic4,2074
+db_first/base_model.py,sha256=-t8qXLvlq9eCW7duf4MFp0sU9KunLQ7HJkB-QzC0qms,623
+db_first/exc.py,sha256=wj4HjDo-ohWn_O2RV77051fAtlk1J8_Tb646cusA468,251
+db_first/query_maker.py,sha256=Vf2w8Q5_hnEXK66qltUP9VwscdpCiV_0GFiYasJTZaw,4241
+db_first/mixins/__init__.py,sha256=SHA7zbWF4M5UmOXvokfoDEDk93u715hlOuXghpovl_w,247
+db_first/mixins/crud.py,sha256=nOLL6HDjdf3U7N7CwXPxWxVecA6IVnpbTOSLoZZ_vFo,2469
+db_first/mixins/pagination.py,sha256=nF3J5u8K5y6q0UBfEy_ETF2vbyWm8Q6T_57689zHsYw,5212
+DB_First-1.0.0.dist-info/LICENSE,sha256=rK7ygD8mM3FmgQ61kly1Dfre2ATHlecwJQYJBnFELb0,1074
+DB_First-1.0.0.dist-info/METADATA,sha256=fOFqAVfwjX7j3l6thd7QcwlospXVlgN4PAwaznZ1oBc,5825
+DB_First-1.0.0.dist-info/WHEEL,sha256=GV9aMThwP_4oNCtvEC2ec3qUYutgWeAzklro_0m4WJQ,91
+DB_First-1.0.0.dist-info/top_level.txt,sha256=ubekU0etP6hHmDvxBUo4F7S1WwP7qjYDaM4qpyvol-s,9
+DB_First-1.0.0.dist-info/RECORD,,
