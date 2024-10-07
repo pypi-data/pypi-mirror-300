@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: cloud-storage-size
+Version: 0.1.6
+Summary: A cloud storage file count & file size query library
+Home-page: https://github.com/yingca1
+Author: Ying Cai
+Author-email: i@caiying.me
+Requires-Python: >=3.10,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: azure-storage-blob (>=12.23.1,<13.0.0)
+Requires-Dist: boto3 (>=1.35.32,<2.0.0)
+Requires-Dist: google-cloud-monitoring (>=2.22.2,<3.0.0)
+Requires-Dist: google-cloud-storage (>=2.18.2,<3.0.0)
+Requires-Dist: minio (>=7.2.9,<8.0.0)
+Requires-Dist: oss2 (>=2.19.0,<3.0.0)
+Description-Content-Type: text/markdown
+
+# Cloud Storage Size
+
