@@ -1,0 +1,11 @@
+yamcs-client>=1.10.0
+
+[dev]
+black
+jupyter
+mypy
+pre-commit
+pylint
+pytest
+pytest-cov
+ruff
