@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "illiterally"
+version = "2024.0.7"
+dependencies = [ "python-slugify", "jinja2", "emoji", "pytest" ]
+requires-python = ">=3.9"
+authors = [ {name = "James Gregson", email = "james.gregson@gmail.com"} ]
+maintainers = [ {name = "James Gregson", email = "james.gregson@gmail.com"} ]
+description = "Simple literate programming tool"
+readme = { file="README-pypi.md", content-type="text/markdown" }
+license = {file = "LICENSE"}
+keywords = ["literate programming", "documentation", "emoji" ]
+classifiers = [
+  "Development Status :: 4 - Beta",
+  "Programming Language :: Python"
+]
+
+[project.urls]
+Homepage = "https://github.com/jamesgregson/illiterally"
+Documentation = "https://github.com/jamesgregson/illiterally"
+Repository = "https://github.com/jamesgregson/illiterally.git"
+
+[project.scripts]
+illiterally = "illiterally.entry_points:illiterally_cli_entry_point"
+illiterally_demo = "illiterally.entry_points:illiterally_demo_entry_point"
+illiterally_dogfood = "illiterally.entry_points:illiterally_dogfood_entry_point"
