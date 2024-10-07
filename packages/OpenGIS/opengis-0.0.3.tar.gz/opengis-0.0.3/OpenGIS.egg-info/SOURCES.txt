@@ -1,0 +1,6 @@
+setup.py
+OpenGIS/__init__.py
+OpenGIS.egg-info/PKG-INFO
+OpenGIS.egg-info/SOURCES.txt
+OpenGIS.egg-info/dependency_links.txt
+OpenGIS.egg-info/top_level.txt
