@@ -1,0 +1,87 @@
+Metadata-Version: 2.1
+Name: kamping
+Version: 0.1
+Summary: KEGG automated metabolite protein interaction network for graph-model (KAMPING)
+License: LICENSE
+Author: Chunhui Gu
+Author-email: cgu3@mdanderson.org
+Requires-Python: >=3.10,<4.0
+Classifier: License :: Other/Proprietary License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: click (>=8.1.3,<9.0.0)
+Requires-Dist: h5py (>=3.12.1,<4.0.0)
+Requires-Dist: networkx (>=3.1,<4.0)
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: pathlib (>=1.0.1,<2.0.0)
+Requires-Dist: rdkit (>=2024.3.5,<2025.0.0)
+Requires-Dist: requests (>=2.31.0,<3.0.0)
+Requires-Dist: scikit-mol (>=0.3.1,<0.4.0)
+Requires-Dist: torch (>=1.13,<2.0)
+Requires-Dist: torch-geometric (>=2.6.1,<3.0.0)
+Requires-Dist: type-extensions (>=0.1.2,<0.2.0)
+Requires-Dist: typer (==0.12.1)
+Requires-Dist: unipressed (>=1.4.0,<2.0.0)
+Description-Content-Type: text/markdown
+
+# KEGG automated metabolite protein interaction network for graph-model (KAMPING)
+
+## Introduction
+
+KEGG features five types of relations: `PPrel`, `GErel`, `PCrel`, `ECrel`, and 
+`maplink`. The following figure shows the relation types and their corresponding descriptions.
+![img.png](figures/relation_type.png)
+
+Of the five relation types, `ECrel` and `PCrel` describe protein-metabolite interactions. The two entries of `ECrel` 
+are two protein (enzyme) entries, with the `value` of the relation being the metabolite entry, it can be `glycan` or 
+`compound` (e.g. cpd:C05378 gl:G00037). 
+
+```angular2html
+entry1    entry2	type	value	name
+hsa:130589	hsa:2538	ECrel	cpd:C00267-90	compound
+```
+
+
+
+The first entry of `PCrel` is a `compound` entry, and the second entry is a `protein` entry. The `name` and `value` 
+of the relation represent the effect of this compound on the protein. The `name` can be `activation`, `inhibition`.
+
+```
+entry1    entry2	type	value	name
+cpd:C15493-60	hsa:6258	PCrel,PCrel	-->,+p	activation,phosphorylation
+```
+
+Due to data parsing, there can be more than one relation between two entries. For example, the following entry has two
+the `value` and `name`, the `value` and `name` are separated by a comma.
+
+## Metabolite-protein interaction relation:
+
+We can process `ECrel` relation by expanding it into two binary relation (A-B), also called SIF (simple interaction
+format) in BioPAX standard, with first relation with original entry1 as the new entry1 and metabolite as the new
+entry2 in the first new relation. Likewise, the second new relation has the original entry2 as the new entry1 and the
+metabolite as the new entry2.
+
+```angular2html
+entry1    entry2	type	value	name
+hsa:130589  cpd:C00267-90 ECrel compound compound
+hsa:2538 cpd:C00267-90  ECrel compound compound
+# todo: havn't decide the value and name after expanding
+```
+
+## Code
+
+
+
+After retrieve all relation in an kegg pathway
+```
+knext mpi --input data/kegg/hsa-ecrel-expanded.txt --output data/kegg/hsa-ecrel-expanded-mpi.txt
+```
+
+
+![img.png](figures/img.png)
+
+
+
