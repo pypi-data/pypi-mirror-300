@@ -1,0 +1,12 @@
+localchatgpt-0.0.2.data/scripts/localchatgpt,sha256=-LEFBM669P5teJR2V6aRZZ2BP6vJW6h7Dis3Wv8jQGE,1777
+localchatgpt-0.0.2.data/scripts/localchatgpt_home.py,sha256=IG-9i3W9oJs7vv9274S0jOo3B55GbO1SseJfFDgWUiE,2163
+localchatgpt-0.0.2.data/scripts/localchatgpt_init.py,sha256=z8SQm29pMKPABXXHmpowLHAz0qXgtKtumN6Pz32NKaQ,1281
+localchatgpt-0.0.2.data/scripts/localchatgpt_main.py,sha256=VhVEfrp68OmkqdP9eoSdee7-PR55L8sIDk8zmRiKoTU,313
+localchatgpt-0.0.2.data/scripts/localchatgpt_ollamaClient.py,sha256=1C6wkEF4M31mTNTrO-IqGzsHLy77_rwpm3kflAQ-nYM,3427
+localchatgpt-0.0.2.data/scripts/localchatgpt_prompt.py,sha256=2QhzB2WdA6_VX4yXlHA6OjX1lGSWq8UP4iyTB02DWRA,625
+localchatgpt-0.0.2.data/scripts/localchatgpt_settings.py,sha256=scxzSN5zFyoDdEJ_ZfjCY0x9xKbaIGMLkfGkH7ujNto,1102
+localchatgpt-0.0.2.dist-info/LICENSE,sha256=ogEPNDSH0_dhiv_lT3ifVIdgIzHAqNA_SemnxUfPBJk,7048
+localchatgpt-0.0.2.dist-info/METADATA,sha256=QV6_0SbtdsOO0p4rGXKdJaJqFPmOMo3YmnIMyO2dqd4,3869
+localchatgpt-0.0.2.dist-info/WHEEL,sha256=cVxcB9AmuTcXqmwrtPhNK88dr7IR_b6qagTj0UvIEbY,91
+localchatgpt-0.0.2.dist-info/top_level.txt,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+localchatgpt-0.0.2.dist-info/RECORD,,

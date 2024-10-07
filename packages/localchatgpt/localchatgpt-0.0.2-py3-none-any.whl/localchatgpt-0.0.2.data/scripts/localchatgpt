@@ -1,0 +1,53 @@
+#!python
+import argparse
+import subprocess
+from pathlib import Path
+import os
+import signal
+import sys
+
+STOPPING_INS = f"""
+        1) You can either press CTRL+C here
+                    Or
+        2) Use a seperate terminal and type `localchatgpt stop`
+"""
+
+def stop_localchatgpt():
+    if os.path.exists(f'{home_dir}/.localchatgpt'):
+        pid = int(open(f'{home_dir}/.localchatgpt', 'r').read())
+        os.kill(pid, signal.SIGINT)
+        os.remove(f'{home_dir}/.localchatgpt')
+    else:
+        print(f'localchatgpt does not seems to be running')
+
+def signint_handler(sig, frame):
+    print('Received CTRL+C !')
+    print('Stopping localchatgpt.... Please wait')
+    stop_localchatgpt()
+    print('Stopped...')
+
+current_script_path = os.path.abspath(__file__)
+current_script_dir = os.path.dirname(current_script_path)
+#print(f'current_script_path : {current_script_path}, current_script_dir : {current_script_dir}')
+home_dir = os.path.expanduser("~")
+
+cmd = ['streamlit', 'run', f'{current_script_dir}/localchatgpt_main.py']
+
+parser = argparse.ArgumentParser()
+parser.add_argument("action", choices=["start", "stop"], help="Specify 'start' or 'stop'.")
+args = parser.parse_args()
+signal.signal(signal.SIGINT, signint_handler)
+
+if args.action == 'start':
+    process = subprocess.Popen(cmd, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+    with open(f'{home_dir}/.localchatgpt', 'w') as f:
+        f.write(str(process.pid))
+    print('localchatgpt Started.. browse http://localhost:8501 and start whispering to localchatgpt')
+    print('Instructions for stopping localchatgpt :')
+    print(STOPPING_INS)
+    process.communicate()
+
+if args.action == 'stop':
+    stop_localchatgpt()
+    print('localchatgpt Stopped...')
+    #print(process.stdout.read().decode('utf-8'))
