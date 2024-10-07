@@ -1,0 +1,10 @@
+*.egg-info
+*.pyc
+*.pyo
+/.cache
+/.coverage
+/.env
+/.tox
+/build
+/dist
+/honcho/_version.py
