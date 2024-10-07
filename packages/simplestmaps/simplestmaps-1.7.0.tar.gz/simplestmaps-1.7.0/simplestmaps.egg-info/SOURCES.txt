@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+simplestmaps.py
+simplestmaps.egg-info/PKG-INFO
+simplestmaps.egg-info/SOURCES.txt
+simplestmaps.egg-info/dependency_links.txt
+simplestmaps.egg-info/requires.txt
+simplestmaps.egg-info/top_level.txt
