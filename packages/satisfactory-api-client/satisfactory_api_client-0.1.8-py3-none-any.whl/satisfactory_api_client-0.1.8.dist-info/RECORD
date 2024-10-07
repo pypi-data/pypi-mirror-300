@@ -1,0 +1,17 @@
+satisfactory_api_client/__init__.py,sha256=yMlHWj2p7P1353lwOV1E84mKhfaFstrldne_g04Wd1s,182
+satisfactory_api_client/api_client.py,sha256=pzerkPFi5qZCNdYaM4CJIu6nEYUuuz-1hh08-d9z4TI,15985
+satisfactory_api_client/config.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+satisfactory_api_client/exceptions.py,sha256=J70H8w0zfh7SZU_U6NseBabrW1DeZcjhmcsOgAVZ9tw,179
+satisfactory_api_client/models.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+satisfactory_api_client/utils.py,sha256=wWC1t_g3miJWplTxML7RFQqEO5qTmRxw3avAoNUJey4,92
+satisfactory_api_client/data/__init__.py,sha256=-xgcXMiYcUdqQCXrFN5ck65LE_t1wd6aoIdlBChZ1hc,186
+satisfactory_api_client/data/advanced_game_settings.py,sha256=7-I2vNxL_KQsePm1gO7iDqnCDHssMCdAsLRdeL1dtkE,1903
+satisfactory_api_client/data/minimum_privilege_level.py,sha256=82roditvj3ijNoOFnPj_r4VIwNuyIBAFH1-yIbUTFT8,221
+satisfactory_api_client/data/new_game_save.py,sha256=5_ChKq8WEnEK1ULuNP7FiOQ1LV_DKP2cJCg5nWRxADg,974
+satisfactory_api_client/data/response.py,sha256=K9kny9KLTJPT_2evISycXEmEEvJOCUp3btnmJT2Kz_A,328
+satisfactory_api_client/data/server_options.py,sha256=a26t8ggQjy8Bc-WZyAVutLu5TWOU8SRZrgbh2c0iyjI,1392
+satisfactory_api_client-0.1.8.dist-info/LICENSE,sha256=GA3-q_5vasjB-5ngeGJDn_pWZXZcUdGR-pPraUg1boA,1073
+satisfactory_api_client-0.1.8.dist-info/METADATA,sha256=rCTRzvRGmWo8vcgVEPK7hDG1kvv9wzbFy0XxpdM26uM,7618
+satisfactory_api_client-0.1.8.dist-info/WHEEL,sha256=GV9aMThwP_4oNCtvEC2ec3qUYutgWeAzklro_0m4WJQ,91
+satisfactory_api_client-0.1.8.dist-info/top_level.txt,sha256=KkBrH4ftVImt881xC9xVDzUE3njMUmKvjyZWjEmXKRE,24
+satisfactory_api_client-0.1.8.dist-info/RECORD,,
