@@ -1,0 +1,79 @@
+from typing import overload, Any, Callable, TypeVar, Union
+from typing import Tuple, List, Sequence, MutableSequence
+
+Callback = Union[Callable[..., None], None]
+Buffer = TypeVar('Buffer')
+Pointer = TypeVar('Pointer')
+Template = TypeVar('Template')
+
+import xsigmamodules.Core
+
+class hartman_watson_distribution_type(int):
+    FULLY_ASYMPTOTIC:'hartman_watson_distribution_type'
+    MIXTURE:'hartman_watson_distribution_type'
+    NUMERICAL_INTEGRAL:'hartman_watson_distribution_type'
+
+class levenberg_marquardt_type(int):
+    LEVENBERG:'levenberg_marquardt_type'
+    NIELSEN:'levenberg_marquardt_type'
+    QUADRATIC:'levenberg_marquardt_type'
+
+class nlopt_algo_name(int):
+    AUGMENTED_LAGRANGIAN:'nlopt_algo_name'
+    AUGMENTED_LAGRANGIAN_WITH_BOBYQA:'nlopt_algo_name'
+    AUGMENTED_LAGRANGIAN_WITH_COBYLA:'nlopt_algo_name'
+    AUGMENTED_LAGRANGIAN_WITH_EQUALITY_CONSTRAINTS:'nlopt_algo_name'
+    BOUND_OPTIMIZATION_BY_QUADRATIC_APPROXIMATION:'nlopt_algo_name'
+    CONSTRAINED_OPTIMIZATION_BY_LINEAR_APPROXIMATIONS:'nlopt_algo_name'
+    CONTROLLED_RANDOM_SEARCH_WITH_LOCAL_MUTATION:'nlopt_algo_name'
+    DIVIDING_RECTANGLES:'nlopt_algo_name'
+    IMPROVED_STOCHASTIC_RANKING_EVOLUTION_STRATEGY:'nlopt_algo_name'
+    LBFGS:'nlopt_algo_name'
+    METHOD_OF_MOVING_ASYMPTOTES:'nlopt_algo_name'
+    PRECONDITIONED_TRUNCATED_NEWTON_METHOD:'nlopt_algo_name'
+    SEQUENTIAL_LEAST_SQUARES_PROGRAMMING:'nlopt_algo_name'
+    VARIABLE_METRIC_METHOD:'nlopt_algo_name'
+
+class ceresSolverAlgorithms(object):
+    def solve(self, parameters:MutableSequence[float], num_residuals:int) -> bool: ...
+
+class gammaDistribution(object):
+    def gamma(x:float) -> float: ...
+    def lgamma(x:float) -> float: ...
+
+class gaussianQuadrature(object):
+    def gauss_hermite_coefficients(np:int, points:'vector_IdE', weights:'vector_IdE', use_precomputed:bool=True, tolerance:float=..., max_iter:int=20) -> None: ...
+    def gauss_kronrod(n:int, x:'vector_IdE', w1:'vector_IdE', w2:'vector_IdE', tolerance:float=1.e-14, max_iter:int=20) -> None: ...
+    def gauss_laguerre_coefficients(alpha:float, n:int, points:'vector_IdE', weights:'vector_IdE', tolerance:float=..., max_iter:int=20) -> None: ...
+    def gauss_legendre_coefficients(n:int, points:'vector_IdE', weights:'vector_IdE', tolerance:float=1.e-14) -> None: ...
+
+class hartmanWatsonDistribution(object):
+    def cheyette_density(density:'vector_IdE', U:'vector_IdE', t:float, roots:'vector_IdE', weights:'vector_IdE', hartman_watson_roots:'vector_IdE', hartman_watson_weights:'vector_IdE') -> None: ...
+    def distribution(results:'vector_IdE', t:float, x:'vector_IdE', roots:'vector_IdE', weights:'vector_IdE', type:'hartmanWatsonDistributionType'=..., max_bound:float=...) -> None: ...
+    def distribution_numerical(x:float, t:float, roots:'vector_IdE', weights:'vector_IdE') -> float: ...
+    def log_distribution_asymptotique(x:float, t:float) -> float: ...
+
+class inverseGaussianDistribution(object):
+    def cdf(x:float, lambda_:float) -> float: ...
+    def density(x:float, lambda_:float) -> float: ...
+
+class laplaceInverterGaverStehfest(object): ...
+
+class levenbergMarquardt(object): ...
+
+class lmParameters(object): ...
+
+class nloptAlgorithms(object): ...
+
+class normalDistribution(object):
+    def cdf(z:float) -> float: ...
+    def cdf_over_density(z:float) -> float: ...
+    def density(x:float) -> float: ...
+    @overload
+    def inv_cdf(p:float) -> float: ...
+    @overload
+    def inv_cdf(size:int, uniform:Sequence[float], gaussian:MutableSequence[float]) -> None: ...
+    def inv_cdf_fast(p:float) -> float: ...
+
+class rootFindingAlgorithms(object): ...
+
