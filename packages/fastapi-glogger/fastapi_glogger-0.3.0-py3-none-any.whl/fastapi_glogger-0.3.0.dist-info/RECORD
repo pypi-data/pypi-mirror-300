@@ -1,0 +1,10 @@
+src/fastapi_glogger/__init__.py,sha256=yuQAQoUzkvQKueLFiKTvOP9uiaT8fy1tMxRFYzpFtbo,63
+src/fastapi_glogger/gcp_log_formatter.py,sha256=whBR8ivfggr1o8_HhgbjB-KVOK2Eg33Hh9kK-PnjVAM,1972
+src/fastapi_glogger/logger.py,sha256=r1h1e9SdqO9otfyhsA5jXXYELWzzsUZXTfY-CyKI0Ao,5243
+src/fastapi_glogger/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+src/fastapi_glogger/utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+src/fastapi_glogger/utils/request_utils.py,sha256=ppzHSKLlS0NR2A10bGFWqJMeUiw0QAxB_P9uUhWvbu8,817
+fastapi_glogger-0.3.0.dist-info/LICENSE,sha256=tbm6huRWSANFzhoer6KpSJ5n0Wm_szsRmR6o_zj4uR0,1074
+fastapi_glogger-0.3.0.dist-info/METADATA,sha256=jnTKLbHvQ_O4-z7qelSpPb3jb-zxsh0-gEaDzttWuAw,4428
+fastapi_glogger-0.3.0.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+fastapi_glogger-0.3.0.dist-info/RECORD,,
