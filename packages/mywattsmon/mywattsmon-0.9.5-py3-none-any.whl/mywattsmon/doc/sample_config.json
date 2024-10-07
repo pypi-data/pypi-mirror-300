@@ -1,0 +1,145 @@
+{
+    "title":"mywattsmon configuration for production",
+    "loglevel":"info",
+    "logtofile":"false",
+    "port":"42010",
+    "window":{
+        "title":"Status",
+        "size":"max",
+        "interval":{"default":30,"20:00-22:00":60,"22:00-05:00":300},
+        "nightmode":{"timeframe":"22:00-05:00","colors":"ref0"},
+        "colors":{
+            "window":{"bg":"gray7"},
+            "values":{
+                "ref0":{"bg":"black","fg":"gray7"},
+                "ref1":{
+                    "bg+":"darkseagreen","fg+":"white",
+                    "bg-":"#FFCFC9","fg-":"black"
+                },
+                "ref2":{"bg":"#FFCFC9","fg":"black"},
+                "ref3":{"bg":"steelblue4","fg":"white"},
+                "ref4":{"bg":"khaki","fg":"black"},
+                "ref5":{"bg":"darkolivegreen1","fg":"black"},
+                "ref6":{"bg":"gray7","fg":"white"}
+            }
+        },
+        "grid":{
+            "W":{
+                "units":"EM","var":"power","colors":"ref1",
+                "rownum":0,"colnum":0,"rowspan":2,"colspan":2
+            },
+            "kWh":{
+                "units":"EM","var":"energy","colors":"ref2",
+                "rownum":0,"colnum":2,"rowspan":2,"colspan":3
+            },
+            "L1":{
+                "units":"L1,HEATER","var":"power","colors":"ref3",
+                "rownum":2,"colnum":0,"rowspan":1,"colspan":1
+            },
+            "L2":{
+                "units":"L2","var":"power","colors":"ref3",
+                "rownum":2,"colnum":1,"rowspan":1,"colspan":1
+            },
+            "L3":{
+                "units":"L3","var":"power","colors":"ref3",
+                "rownum":2,"colnum":2,"rowspan":1,"colspan":1
+            },
+            "BOSCH":{
+                "units":"WASHER,COOLER,EHOOD,HEATER1,HEATER2",
+                "var":"power","colors":"ref3",
+                "rownum":2,"colnum":3,"rowspan":1,"colspan":1
+            },
+            "CHARGE":{
+                "units":"CHARGE","var":"power","colors":"ref3",
+                "rownum":2,"colnum":4,"rowspan":1,"colspan":1
+            },
+            "FEED1":{
+                "units":"FEED1","var":"power","colors":"ref4",
+                "rownum":3,"colnum":0,"rowspan":1,"colspan":1
+            },
+            "FEED2":{
+                "units":"FEED2","var":"power","colors":"ref4",
+                "rownum":3,"colnum":1,"rowspan":1,"colspan":1
+            },
+            "BATT1":{
+                "units":"BATT1","var":"power","colors":"ref5",
+                "rownum":3,"colnum":2,"rowspan":1,"colspan":1
+            },
+            "BATT2":{
+                "units":"BATT2","var":"power","colors":"ref5",
+                "rownum":3,"colnum":3,"rowspan":1,"colspan":1
+            },
+            "Refresh":{
+                "units":"<refresh>","var":"<countdown>","colors":"ref6",
+                "rownum":3,"colnum":4,"rowspan":1,"colspan":1
+            }
+        }
+    },
+    "database":{
+        "times":["00:00","03:00","06:00","09:00","12:00","15:00",
+                "18:00","21:00","23:59"],
+        "tablename":"kwh",
+        "columns":{
+            "em":{"units":"EM","var":"energy"},
+            "l1":{"units":"L1,HEATER","var":"energy"},
+            "l2":{"units":"L2","var":"energy"},
+            "l3":{"units":"L3","var":"energy"},
+            "bosch":{
+                "units":"WASHER,COOLER,EHOOD,HEATER1,HEATER2",
+                "var":"energy"
+            },
+            "charge":{"units":"CHARGE","var":"energy"},
+            "feed1":{"units":"FEED1","var":"energy"},
+            "feed2":{"units":"FEED2","var":"energy"},
+            "batt1":{"units":"BATT1","var":"energy"},
+            "batt2":{"units":"BATT2","var":"energy"}
+        }
+    },
+    "devices":{
+        "DTSU":{
+            "module":"mywattsmon.app.device.dtsu",
+            "units":{
+                "EM":{"port":"/dev/ttyUSB2","address":68}
+            }
+        },
+        "VEDirect":{
+            "module":"mywattsmon.app.device.vedirect",
+            "units":{
+                "BATT1":{"port":"/dev/ttyUSB0"},
+                "BATT2":{"port":"/dev/ttyUSB1"}
+            }
+        },
+        "Fritz":{
+            "module":"mywattsmon.app.device.fritz",
+            "connection":{
+                "address":"192.168.178.1",
+                "user":"fritzuser",
+                "password":"..."
+            },
+            "units":{
+                "HEATER":{"uid":"11657 ..."},
+                "L1":{"uid":"11630 ..."},
+                "L2":{"uid":"11630 ..."},
+                "L3":{"uid":"11630 ..."},
+                "FEED1":{"uid":"11657 ..."},
+                "FEED2":{"uid":"11657 ..."},
+                "CHARGE":{"uid":"11657 ..."}
+            }
+        },
+        "Bosch":{
+            "module":"mywattsmon.app.device.bosch",
+            "connection":{
+                "address": "192.168.178.27",
+                "certfile": "/home/u1/mywattsmon-data/cert/bosch/shccert.pem",
+                "keyfile": "/home/u1/mywattsmon-data/cert/bosch/shckey.pem"
+            },
+            "units":{
+                "WASHER":{"uid":"hdm:ZigBee:3425b4fffe..."},
+                "COOLER":{"uid":"hdm:ZigBee:70ac08fffe..."},
+                "EHOOD":{"uid":"hdm:ZigBee:f4b3b1fffe..."},
+                "HEATER1":{"uid":"hdm:ZigBee:f082c0fffe..."},
+                "HEATER2": {"uid": "hdm:ZigBee:6c5cb1fffe..."}
+            }
+        }
+    }
+}
