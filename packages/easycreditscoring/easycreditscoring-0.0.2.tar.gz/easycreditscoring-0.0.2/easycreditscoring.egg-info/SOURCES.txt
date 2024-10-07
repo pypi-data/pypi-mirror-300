@@ -1,0 +1,12 @@
+LICENSE.txt
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+easycreditscoring/__init__.py
+easycreditscoring/main.py
+easycreditscoring.egg-info/PKG-INFO
+easycreditscoring.egg-info/SOURCES.txt
+easycreditscoring.egg-info/dependency_links.txt
+easycreditscoring.egg-info/requires.txt
+easycreditscoring.egg-info/top_level.txt
