@@ -1,0 +1,42 @@
+Metadata-Version: 2.1
+Name: moj-elektro-v1
+Version: 0.0.2
+Summary: Python library to access MojElektro API v1
+Author-email: Miha Šetina <miha.setina@gmail.com>
+Maintainer-email: Miha Šetina <miha.setina@gmail.com>
+License: APACHE,BSD
+Project-URL: Homepage, https://github.com/msetina/moj-elektro-v1
+Project-URL: Source Code, https://github.com/msetina/moj-elektro-v1
+Project-URL: Issue Tracker, https://github.com/msetina/moj-elektro-v1/issues
+Keywords: opendata,Slovenija
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Information Technology
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: OS Independent
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: >=3.10
+Description-Content-Type: text/x-rst
+License-File: LICENSE
+Requires-Dist: aiohttp>=3.9.5
+Provides-Extra: mypy
+Requires-Dist: moj-elektro-v1; extra == "mypy"
+Provides-Extra: testing
+Requires-Dist: moj-elektro-v1; extra == "testing"
+Requires-Dist: pytest>=6.1.1; extra == "testing"
+Requires-Dist: pytest-cov<5.1,>=4.0; extra == "testing"
+
+Library to access MojElektro API v1
+===================================
+
+`MojElektro <https://mojelektro.si/login>`_ is web presence for electric energy distribution companies in Slovenija.
+
+To authenticate to the web service API, user has to get access token. MojElektro's Profile page provides a button at the bottom to facilitate creation of access tokens.
+
+Over the API a user can access data gathered by electricity company from smart meters and information about the electrical connection point. Different data attributes are described by meter_type endpoint represented by MeterType class. Smart meter data is accessible with electric energy access point identifier(Številka merilnega mesta). 
+
+
