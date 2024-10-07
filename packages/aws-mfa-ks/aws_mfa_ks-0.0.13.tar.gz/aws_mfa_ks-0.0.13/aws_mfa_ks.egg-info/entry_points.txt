@@ -1,0 +1,2 @@
+[console_scripts]
+aws-mfa = awsmfa:main
