@@ -1,0 +1,5 @@
+[console_scripts]
+nixm = nixm.cli:main
+nixmc = nixm.console:wrapped
+nixmd = nixm.daemon:main
+nixms = nixm.service:main
