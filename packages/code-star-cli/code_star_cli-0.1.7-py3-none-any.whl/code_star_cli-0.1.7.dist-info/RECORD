@@ -1,0 +1,14 @@
+code_star_cli/__init__.py,sha256=yHjWK57NYYE5APqrOTSYDM1JyRaundJXQKa_zp7vK44,1276
+code_star_cli/__main__.py,sha256=VtnZ66qA8Igb8FvyCSRCSofKXMzNYSUdY7vqr-G0qUM,137
+code_star_cli/commands/__init__.py,sha256=q-_607f78I3VxRS0FFn5MdYMn5uZSEZ6ZjhPsnSWuyk,353
+code_star_cli/commands/ai.py,sha256=poYIyVrc1dDLt25my0aHiZ6nQbe-pUBaK5ITTQC4g_I,1374
+code_star_cli/commands/chat.py,sha256=FjksQgDV2vl3DvPdskWK24OQTE0-9riIDxX3HayJp3E,3376
+code_star_cli/commands/completions.py,sha256=8icLAvc63XjPNwCmAEBJpcmhco4R9-jupHQzyKUHA40,722
+code_star_cli/commands/enhance.py,sha256=ppaFsUGtUECXLAd4Lre_bRyHHneCtOja5xlBuOp6hlo,1565
+code_star_cli/commands/scan.py,sha256=FkBiZABPlVaJoCajTVoKRMNF8dCYVLqftMYTW7SBdG8,1395
+code_star_cli/main.py,sha256=6sV6-EUVEsI9EuoJWFh5LX2xiSqL9PHOoLtEwFYBCYY,404
+code_star_cli-0.1.7.dist-info/LICENSE,sha256=Zo5PuaTrrV44clxzVw37PRU85t-nEerih6lzEp4N9AU,1074
+code_star_cli-0.1.7.dist-info/METADATA,sha256=GEGoPaxIWbz3bR1bcIlePe5HzU2-65Jtb3NuME4uySg,5765
+code_star_cli-0.1.7.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+code_star_cli-0.1.7.dist-info/entry_points.txt,sha256=dLbktV0b8AmIQG4o178NMMpzIGCxq-ZCb-Fsxnor5fE,58
+code_star_cli-0.1.7.dist-info/RECORD,,
