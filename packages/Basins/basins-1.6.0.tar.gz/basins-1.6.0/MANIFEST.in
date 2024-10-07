@@ -1,0 +1,6 @@
+include options.cfg
+include Makefile
+include Basins/shapes/*.npy
+include Basins/src/*
+include Basins/*.pyx
+exclude Basins/*.cpp
