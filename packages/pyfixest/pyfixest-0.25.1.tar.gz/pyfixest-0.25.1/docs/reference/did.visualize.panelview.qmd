@@ -1,0 +1,46 @@
+# did.visualize.panelview { #pyfixest.did.visualize.panelview }
+
+`did.visualize.panelview(data, unit, time, treat, collapse_to_cohort=False, subsamp=None, sort_by_timing=False, xlab=None, ylab=None, noticks=False, title=None, legend=False, ax=None)`
+
+Generate a panel view of the treatment variable over time for each unit.
+
+## Parameters
+
+| Name                 | Type                   | Description                                                                                   | Default    |
+|----------------------|------------------------|-----------------------------------------------------------------------------------------------|------------|
+| `data`               | pandas.DataFrame       | The input dataframe containing the data.                                                      | _required_ |
+| `unit`               | str                    | The column name representing the unit identifier.                                             | _required_ |
+| `time`               | str                    | The column name representing the time identifier.                                             | _required_ |
+| `treat`              | str                    | The column name representing the treatment variable.                                          | _required_ |
+| `collapse_to_cohort` | bool                   | Whether to collapse units into treatment cohorts.                                             | `False`    |
+| `subsamp`            | int                    | The number of samples to draw from data set for display (default is None).                    | `None`     |
+| `sort_by_timing`     | bool                   | Whether to sort the treatment cohorts by the number of treated periods.                       | `False`    |
+| `xlab`               | str                    | The label for the x-axis. Default is None, in which case default labels are used.             | `None`     |
+| `ylab`               | str                    | The label for the y-axis. Default is None, in which case default labels are used.             | `None`     |
+| `noticks`            | bool                   | Whether to display ticks on the plot. Default is False.                                       | `False`    |
+| `title`              | str                    | The title for the plot. Default is None, in which case no title is displayed.                 | `None`     |
+| `legend`             | bool                   | Whether to display a legend. Default is False (since binary treatments are self-explanatory). | `False`    |
+| `ax`                 | matplotlib.pyplot.Axes | The axes on which to draw the plot. Default is None, in which case a new figure is created.   | `None`     |
+
+## Returns
+
+| Type                   | Description   |
+|------------------------|---------------|
+| matplotlib.pyplot.Axes |               |
+
+## Examples
+
+```python
+import pandas as pd
+import numpy as np
+
+df_het = pd.read_csv("pd.read_csv("pyfixest/did/data/df_het.csv")
+panelview(
+    data = df_het,
+    unit = "unit",
+    time = "year",
+    treat = "treat",
+    subsamp = 50,
+    title = "Treatment Assignment"
+)
+```
