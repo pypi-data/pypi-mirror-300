@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: hashtagAI
+Version: 0.2.1
+Author: Thanabordee N. (Noun)
+Author-email: thanabordee.noun@gmail.com
+Requires-Dist: openai
+
