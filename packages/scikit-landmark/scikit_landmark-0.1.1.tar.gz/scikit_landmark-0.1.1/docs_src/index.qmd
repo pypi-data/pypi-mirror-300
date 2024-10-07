@@ -1,0 +1,9 @@
+# API Reference {.doc .doc-index}
+
+## Landmark
+
+Landmark package for finding metric-center approximations.
+
+| | |
+| --- | --- |
+| [landmarks](landmarks.qmd#landmark.landmarks) | Computes *landmark* indices for a point set or metric space via the furthest first traversal. |
