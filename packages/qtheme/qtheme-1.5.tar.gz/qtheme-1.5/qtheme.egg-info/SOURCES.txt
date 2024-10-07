@@ -1,0 +1,15 @@
+LICENSE
+README.md
+setup.py
+qtheme/__init__.py
+qtheme/main.py
+qtheme.egg-info/PKG-INFO
+qtheme.egg-info/SOURCES.txt
+qtheme.egg-info/dependency_links.txt
+qtheme.egg-info/entry_points.txt
+qtheme.egg-info/top_level.txt
+qtheme/cli/__init__.py
+qtheme/cli/kitty.py
+qtheme/cli/qtile.py
+qtheme/utils/__init__.py
+qtheme/utils/colors.py

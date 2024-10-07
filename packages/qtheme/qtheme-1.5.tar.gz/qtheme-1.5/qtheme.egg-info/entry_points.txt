@@ -1,0 +1,2 @@
+[console_scripts]
+qtheme = qtheme.main:main
