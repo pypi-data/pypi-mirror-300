@@ -1,0 +1,16 @@
+Metadata-Version: 2.3
+Name: zuu
+Version: 2.0.0
+Summary: zack's useful utilities
+Author-email: ZackaryW <gitzackw@gmail.com>
+License-File: LICENSE
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+
+# zuu
+zack's useful utilities
+
+## install
+```
+pip install zuu
+```
