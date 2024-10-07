@@ -1,0 +1,24 @@
+[tool.poetry]
+name = "betterconf"
+version = "4.0.0"
+description = "Configs in Python made smooth and simple"
+authors = ["prostomarkeloff"]
+license = "MIT"
+readme = "README.md"
+homepage = "https://github.com/prostomarkeloff/betterconf"
+repository = "https://github.com/prostomarkeloff/betterconf"
+documentation = "https://github.com/prostomarkeloff/betterconf"
+keywords = ["configs", "config", "env", ".env"]
+classifiers = ["Topic :: Software Development :: Libraries :: Python Modules"]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.2.2"
+ruff = "^0.6.9"
+
+[build-system]
+requires = ["poetry>=1.0.0"]
+build-backend = "poetry.masonry.api"
