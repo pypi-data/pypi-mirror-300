@@ -1,0 +1,10 @@
+star_ray>=0.0.7
+star_ray_pygame>=0.0.8
+pyfuncschedule>=0.1.0
+loguru>=0.7.2
+
+[dev]
+pytest>=6.2.4
+
+[tobii]
+tobii_research>=1.11.0
