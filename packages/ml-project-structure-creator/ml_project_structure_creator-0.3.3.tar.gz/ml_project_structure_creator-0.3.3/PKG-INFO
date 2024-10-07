@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: ml_project_structure_creator
+Version: 0.3.3
+Summary: A script to create a machine learning project structure with EDA code.
+Home-page: https://github.com/the-sudipta/ml_project_structure_creator
+Author: Sudipta Kumar Das
+Author-email: dip.kumar020@gmail.com
+License: GNU General Public License v3 (GPLv3)
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.10.11
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# ML Project Structure Creator
+
+This is a Python script that creates a machine learning project structure with basic data processing files.
+
+## Installation
+
+You can install this package using pip:
+
+```bash
+pip install ml_project_structure_creator
