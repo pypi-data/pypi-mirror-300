@@ -1,0 +1,7 @@
+setup.py
+bash-colors/__init__.py
+bash-colors/colors.py
+bash_colors.egg-info/PKG-INFO
+bash_colors.egg-info/SOURCES.txt
+bash_colors.egg-info/dependency_links.txt
+bash_colors.egg-info/top_level.txt
