@@ -1,0 +1,13 @@
+[project]
+name = "data_python_davitgog"
+version = "0.0.4"
+authors = [
+  { name="Davitgog", email="davit.gogritchiani.1@iliauni.edu.ge" },
+]
+description = "Example package"
+readme = "README.md"
+requires-python = ">=3.10.0"
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"

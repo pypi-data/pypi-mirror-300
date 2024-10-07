@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: data_python_davitgog
+Version: 0.0.4
+Summary: Example package
+Author-email: Davitgog <davit.gogritchiani.1@iliauni.edu.ge>
+Requires-Python: >=3.10.0
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# DataPython Package

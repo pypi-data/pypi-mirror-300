@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+src/data_python_davitgog/__init__.py
+src/data_python_davitgog/base.py
+src/data_python_davitgog.egg-info/PKG-INFO
+src/data_python_davitgog.egg-info/SOURCES.txt
+src/data_python_davitgog.egg-info/dependency_links.txt
+src/data_python_davitgog.egg-info/top_level.txt
