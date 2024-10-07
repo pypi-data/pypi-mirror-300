@@ -1,0 +1,45 @@
+[tool.poetry]
+name = "markopolis"
+version = "3.0.1"
+description = "CLI interface for Markopolis App"
+authors = ["rishikanthc <r3chandr@ucsd.edu>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+fire = "*"
+loguru = "*"
+requests = "*"
+tqdm = "*"
+
+[tool.poetry.group.dev.dependencies]
+basedpyright = "*"
+ruff = "*"
+pre-commit = "*"
+pytest = "*"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.pyright]
+venvPath = "/Users/rishi/miniconda3/envs"
+venv = "markopolis"
+useLibraryCodeForTypes = true
+typeCheckingMode = "standard"
+reportUnusedImport = "warning"
+reportUnusedVariable = "warning"
+reportDuplicateImport = "error"
+reportPrivateUsage = "warning"
+reportDeprecated = "warning"
+reportInconsistentConstructor = "error"
+reportMissingSuperCall = "error"
+reportUninitializedInstanceVariable = "error"
+reportUnnecessaryCast = "warning"
+reportUnnecessaryComparison = "warning"
+reportImplicitStringConcatenation = "warning"
+diagnosticMode = "openFilesOnly"
+
+
+[tool.poetry.scripts]
+mdsync = "markopolis.upload:mdsync"

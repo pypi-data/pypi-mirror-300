@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: markopolis
+Version: 3.0.1
+Summary: CLI interface for Markopolis App
+Author: rishikanthc
+Author-email: r3chandr@ucsd.edu
+Requires-Python: >=3.12,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: fire
+Requires-Dist: loguru
+Requires-Dist: requests
+Requires-Dist: tqdm
+Description-Content-Type: text/markdown
+
+
