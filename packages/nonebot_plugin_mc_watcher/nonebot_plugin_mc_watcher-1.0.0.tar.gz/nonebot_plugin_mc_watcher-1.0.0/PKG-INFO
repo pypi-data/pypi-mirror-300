@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: nonebot_plugin_mc_watcher
+Version: 1.0.0
+Summary: 一个适用于监控多服务器的 Motd 工具。
+Home-page: https://github.com/Lonely-Sails/nonebot-plugin-mc-watcher
+License: GPL3
+Keywords: nonebot,nonebot2,mc,minecraft,onebot
+Author: Lonely-Sails
+Requires-Python: >=3.8,<4.0
+Classifier: License :: Other/Proprietary License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: mcproto (>=0.5.0,<0.6.0)
+Requires-Dist: nonebot-adapter-onebot (>=2.4.3,<3.0.0)
+Requires-Dist: nonebot-plugin-localstore (>=0.7.0,<0.8.0)
+Requires-Dist: nonebot2 (>=2.2.0,<3.0.0)
+Project-URL: Documentation, https://github.com/Lonely-Sails/nonebot-plugin-mc-watcher#readme
+Project-URL: Repository, https://github.com/Lonely-Sails/nonebot-plugin-mc-watcher
+Description-Content-Type: text/markdown
+
+# nonebot-plugin-mc-checker
+一个适用于监控多服务器的 Motd 工具。
+
