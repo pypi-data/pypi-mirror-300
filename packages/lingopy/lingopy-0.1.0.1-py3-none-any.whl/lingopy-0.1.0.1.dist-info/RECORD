@@ -1,0 +1,10 @@
+demo/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+demo/test_file.py,sha256=ksA-P7ajers0smyG3DF6GwuQdde08RfIKJAVt_4moyA,1214
+demo/test_flask.py,sha256=fmBa9uejOWc7Qsk2B9XmeB9ld3YCUdt7QoZG6XS4ZvA,1358
+lingopy/__init__.py,sha256=xM4vTHzKQ73XiVTD95qN65GiFsY6xw2ianRUX3QL7n8,24
+lingopy/lingopy.py,sha256=93dY8kbOwlkM6wlAFkchZwap_V6-E3gGAU2laofgRBI,4093
+lingopy-0.1.0.1.dist-info/LICENSE,sha256=JguRNQTAy2VBDwUlIilXd03kDRL8RepU97C2NBGBhMQ,1084
+lingopy-0.1.0.1.dist-info/METADATA,sha256=eOZe6pZ-PmX0nqvI1uIfM82_X8SQ0y-Ce_rOuqnNOds,7158
+lingopy-0.1.0.1.dist-info/WHEEL,sha256=cVxcB9AmuTcXqmwrtPhNK88dr7IR_b6qagTj0UvIEbY,91
+lingopy-0.1.0.1.dist-info/top_level.txt,sha256=SAXAYXLRv7Sz9AtizgKWwrfuM0h8ATmPstfjyMBnKBE,13
+lingopy-0.1.0.1.dist-info/RECORD,,
