@@ -1,0 +1,47 @@
+Metadata-Version: 2.1
+Name: melobot-protocol-onebot
+Version: 1.0.0rc3
+Summary: IO and adapter layer implementation of onebot protocol for melobot.
+Keywords: melobot,bot framework,asyncio,coroutine,concurrency
+Author-Email: aicorein <aicorein@meloland.org>
+Maintainer-Email: aicorein <aicorein@meloland.org>
+License: BSD
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Typing :: Typed
+Project-URL: Homepage, https://github.com/Meloland/melobot-protocol-onebot
+Project-URL: Repository, https://github.com/Meloland/melobot-protocol-onebot.git
+Project-URL: Issues, https://github.com/Meloland/melobot-protocol-onebot/issues
+Requires-Python: >=3.10
+Requires-Dist: melobot>=3.0.0rc4
+Requires-Dist: pydantic<3,>=2.8.2
+Requires-Dist: typing-extensions>=4.12.2
+Requires-Dist: websockets>=13.0.1
+Requires-Dist: aiohttp>=3.10.5
+Description-Content-Type: text/markdown
+
+<div align="center">
+  <img width=256 src="https://github.com/Meloland/melobot/blob/main/docs/source/_static/logo.png?raw=true" />
+  <h1>melobot-protocol-onebot</h1>
+  <p>
+    <strong>适用于 <a href="https://github.com/meloland/melobot">melobot</a> 的 onebot 协议的 io 与 adapter 层实现</strong>
+  </p>
+</div>
+
+## 🔄 工作计划
+
+目前仍在开发中。预计于 10 月完成主要目标并投入使用。
+
+计划支持标准 onebot v11, v12 协议内容，并根据现有协议实现端，提供少量非标准 API。
+
+有任何意见或建议，可以在项目 Discussions 板块提出。或加入 QQ 群与我们讨论：535705163（QQ 线上交流目前合并到 melobot 官方交流群）
