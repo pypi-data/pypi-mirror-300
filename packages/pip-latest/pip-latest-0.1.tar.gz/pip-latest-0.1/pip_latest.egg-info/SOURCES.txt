@@ -1,0 +1,8 @@
+LICENSE
+setup.py
+pip-latest/__init__.py
+pip-latest/pip-latest.py
+pip_latest.egg-info/PKG-INFO
+pip_latest.egg-info/SOURCES.txt
+pip_latest.egg-info/dependency_links.txt
+pip_latest.egg-info/top_level.txt
