@@ -1,0 +1,11 @@
+data_stream.py,sha256=Cu60iw2TRhUiyHjODbPFdipDk6Ek0S188GIanfX6VU0,8421
+data_stream/__init__.py,sha256=kjMRzPcHOhf87zk8c0XosorE3Zy54okx-W5JH8FsJR4,30
+data_stream/data_stream.py,sha256=Cu60iw2TRhUiyHjODbPFdipDk6Ek0S188GIanfX6VU0,8421
+src/__init__.py,sha256=kjMRzPcHOhf87zk8c0XosorE3Zy54okx-W5JH8FsJR4,30
+src/data_stream.py,sha256=Cu60iw2TRhUiyHjODbPFdipDk6Ek0S188GIanfX6VU0,8421
+data_streaming-1.0.dist-info/LICENSE,sha256=2p2ES2KtbmUZbiyadWR_dn1KZPkmhMktLmhejBYvIas,1064
+data_streaming-1.0.dist-info/METADATA,sha256=mG01V998S7ZcAw3uU7LSVDwSVk9U6gQJ6r-X3ZgQMc4,7285
+data_streaming-1.0.dist-info/WHEEL,sha256=GV9aMThwP_4oNCtvEC2ec3qUYutgWeAzklro_0m4WJQ,91
+data_streaming-1.0.dist-info/entry_points.txt,sha256=3JLK5232F801mcYo2sY8q_VL0QDhud3BndqgbcZfPBo,49
+data_streaming-1.0.dist-info/top_level.txt,sha256=cyYWME0bcL4gNjdo4a_juPk-7ptMbWFqME5aGnMGueU,12
+data_streaming-1.0.dist-info/RECORD,,
