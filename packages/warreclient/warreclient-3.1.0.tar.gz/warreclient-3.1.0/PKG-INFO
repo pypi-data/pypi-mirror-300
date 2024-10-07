@@ -1,0 +1,43 @@
+Metadata-Version: 2.1
+Name: warreclient
+Version: 3.1.0
+Summary: Nectar Reservation Service - Client
+Home-page: https://github.com/NeCTAR-RC/python-warreclient
+Author: ARDC Nectar Cloud Services
+Author-email: coreservices@ardc.edu.au
+License: Apache-2.0
+Keywords: warre
+Classifier: Environment :: OpenStack
+Classifier: Intended Audience :: Information Technology
+Classifier: Intended Audience :: System Administrators
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.12
+License-File: LICENSE
+Requires-Dist: oslo.utils
+Requires-Dist: keystoneauth1
+Requires-Dist: osc-lib
+Requires-Dist: nectarclient-lib<2.0.0,>=1.0.0
+Requires-Dist: pbr
+
+# Warre Client
+
+Client for Nectar Reservation System Warre
+https://github.com/NeCTAR-RC/warre/
+
+## Common openstack CLI Commands
+
+* `openstack warre flavor list`
+
+* `openstack warre flavor show <Flavor-ID>`
+
+* `openstack warre reservation create --start  '2021-04-23 05:10' --end '2021-04-23 06:00' <Flavor-ID>`
+
+* `openstack warre reservation list`
+
+* `openstack warre reservation delete <Reservation-ID>`
+
