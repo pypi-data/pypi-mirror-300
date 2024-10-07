@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+tests/test_config_manager.py
+vzool_config/__init__.py
+vzool_config/config_manager.py
+vzool_config.egg-info/PKG-INFO
+vzool_config.egg-info/SOURCES.txt
+vzool_config.egg-info/dependency_links.txt
+vzool_config.egg-info/top_level.txt
