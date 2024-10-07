@@ -1,0 +1,5 @@
+[console_scripts]
+Cluster-Summary = PyamilySeq.Cluster_Summary:main
+Group-Splitter = PyamilySeq.Group_Splitter:main
+PyamilySeq = PyamilySeq.PyamilySeq:main
+Seq-Combiner = PyamilySeq.Seq_Combiner:main
