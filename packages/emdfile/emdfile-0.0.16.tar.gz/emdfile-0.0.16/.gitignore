@@ -1,0 +1,18 @@
+
+# Folders #
+__pycache__/
+*.egg-info/
+build/*
+docs/_build/*
+dist/
+.ipynb_checkpoints/
+.DS_Store
+test/unit_test_data/
+*.virtual_documents*
+
+
+# Files $
+*.swp
+*.coverage*
+moop_pile.txt
+
