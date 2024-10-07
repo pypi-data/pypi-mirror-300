@@ -1,0 +1,12 @@
+betterconf/__init__.py,sha256=abKO1iu6xFmdEb20As3_ZB2mWB0939jz3ZZxCefIs_M,906
+betterconf/_config.py,sha256=Aa20hnuEhkO0YbFBCskCZoskF_7lZiz8210YNWnTd-0,6258
+betterconf/_field.py,sha256=m5ZfabeQd0ddF5sOt39JeZATfhoc6eAHRF1HVfQqFEQ,3783
+betterconf/_specials.py,sha256=aF-8oQHDNziJrq6KUeoGNjAmWBvEKzTu_Y_bB5Jm4rk,550
+betterconf/caster.py,sha256=f2qGIsnBjPlWY46lyxdGRD62FANOGjCvP-ByRkFngBo,3446
+betterconf/decorator.py,sha256=30j0Y5_5lpynfRrQAR5DZG8Y7SNIIdO3rXO9B53Gw_4,2757
+betterconf/exceptions.py,sha256=9yzuYPqpYwSiQV6YfCrxnxTUSC9cEtz5gijA1cppTFY,672
+betterconf/provider.py,sha256=CEhx5GETWcKnsMB8v2RA5k9Qp7KoEavy08FSZZBmIcI,2622
+betterconf-4.0.0.dist-info/LICENSE,sha256=GzPqEgVI1D-W1ckzoe7owBrsLaYHANOOvTZfUC4oToM,1072
+betterconf-4.0.0.dist-info/METADATA,sha256=ck3nfzfIHBndJcAjFpFGnMQZf5k_K5zp7NczW8rSHqs,3624
+betterconf-4.0.0.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+betterconf-4.0.0.dist-info/RECORD,,
