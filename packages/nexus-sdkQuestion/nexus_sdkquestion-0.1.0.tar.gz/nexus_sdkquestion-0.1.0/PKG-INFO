@@ -1,0 +1,69 @@
+Metadata-Version: 2.1
+Name: nexus-sdkQuestion
+Version: 0.1.0
+Summary: A Python SDK for the Nexus Question Generation API
+Author-email: Your Name <facebookups23@gmail.com>
+License: MIT
+Project-URL: Homepage, https://github.com/SeasonLeague/nexus-sdk
+Project-URL: Documentation, https://github.com/SeasonLeague/nexus-sdk#readme
+Project-URL: Repository, https://github.com/SeasonLeague/nexus-sdk.git
+Project-URL: Bug Tracker, https://github.com/SeasonLeague/nexus-sdk/issues
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+Requires-Dist: requests>=2.25.0
+Provides-Extra: dev
+Requires-Dist: pytest>=6.0; extra == "dev"
+Requires-Dist: pytest-cov>=2.0; extra == "dev"
+Requires-Dist: flake8>=3.9.0; extra == "dev"
+Requires-Dist: black>=21.0; extra == "dev"
+Requires-Dist: mypy>=0.910; extra == "dev"
+
+# Example usage in README.md:
+"""
+## Error Handling
+
+The Nexus SDK uses a comprehensive error handling system. Here are the different types of exceptions:
+
+1. `NexusError`: Base exception class for all Nexus SDK errors
+2. `NexusAPIError`: Raised for errors returned by the Nexus API
+3. `NexusFileError`: Raised for file-related errors
+4. `NexusValidationError`: Raised for validation-related errors
+5. `NexusConfigError`: Raised for configuration errors
+
+Example of handling different types of errors:
+
+```python
+from nexus import NexusSDK
+from nexus.exceptions import NexusAPIError, NexusFileError, NexusValidationError
+
+sdk = NexusSDK(api_key="your-api-key")
+
+try:
+    response = sdk.generate_questions(
+        files=["document.pdf"],
+        num_questions=5,
+        difficulty="medium"
+    )
+except NexusFileError as e:
+    print(f"File error: {e}")
+except NexusValidationError as e:
+    print(f"Validation error: {e}")
+except NexusAPIError as e:
+    print(f"API error (status {e.status_code}): {e}")
+except NexusError as e:
+    print(f"Other Nexus error: {e}")
+```
+
+This allows for fine-grained error handling in your applications.
+"""
