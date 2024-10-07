@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: nectarclient-lib
+Version: 1.4.0
+Summary: Common lib for nectar clients
+Home-page: https://github.com/NeCTAR-RC/python-nectarclient-lib
+Author: ARDC Nectar Cloud Services
+Author-email: coreservices@ardc.edu.au
+License: Apache-2.0
+Keywords: varroa
+Classifier: Environment :: OpenStack
+Classifier: Intended Audience :: Information Technology
+Classifier: Intended Audience :: System Administrators
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.12
+License-File: LICENSE
+Requires-Dist: pbr
+Requires-Dist: python-dateutil
+
+# nectarclient-lib
+
+Library for use by custom nectar clients
+Stores common code.
+
