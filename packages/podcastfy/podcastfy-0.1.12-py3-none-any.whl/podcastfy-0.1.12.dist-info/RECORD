@@ -1,0 +1,17 @@
+podcastfy/__init__.py,sha256=COxRUqvK__htNEVt9nzfyuGOK7qE5hs0_4_ZFq_Rh48,38
+podcastfy/client.py,sha256=BZyvucfHPwvf_gdxjgHDLXxnoA11edHdjvuTTJuRNj0,8317
+podcastfy/config.yaml,sha256=QMQ55IoEABADz2GT_5TGFWbrI7MiR9RyxzHLpFcRI3I,954
+podcastfy/content_generator.py,sha256=xo16LVvOdDHvFnPS6bCCvr5EZL6WiwKLjnCh_qfYN0k,4402
+podcastfy/content_parser/__init__.py,sha256=KB_KQFvv9G_GHDreF6ZJRs30F56lfNPbDPLvvY8r3uU,37
+podcastfy/content_parser/content_extractor.py,sha256=FcoDtaFlMAlD9iBBqMMbquORvoFtb9iWfdqFtIfTRSM,2282
+podcastfy/content_parser/pdf_extractor.py,sha256=x-NvXBPbouAqUTUFdVbW83ypvTKbipadRt5lknn78CA,1888
+podcastfy/content_parser/website_extractor.py,sha256=B48EJ3uw9WOvDacjMj45dEnK-hYUsxG0Xns51BPdcyM,6149
+podcastfy/content_parser/youtube_transcriber.py,sha256=DQx-SPtPVWBMBoJUnT6R2RtoICDtdgcbIQJlU3hO044,2043
+podcastfy/prompt.txt,sha256=D5kJOVYAYATLvuMN9_ymU4vXGDDYq5tlxI93nTDbs_o,5125
+podcastfy/text_to_speech.py,sha256=x-Ay4B-Dr39P8zJ9yzft3Is7ZBy04cHlcwBswcTmmLg,9029
+podcastfy/utils/config.py,sha256=YI0uai4aDdEPVi39iQDjVp3d8qdm0Tly3NKgt76pFeg,5337
+podcastfy/utils/logger.py,sha256=0Bo0TMtiZaYWaGkuY-iGedBtWUXdn7aJsJk6SiI8zfM,893
+podcastfy-0.1.12.dist-info/LICENSE.md,sha256=3de9seccoTNAq5BxkmXBbJbWKgl_1QA_6AGsRZ11rT4,330
+podcastfy-0.1.12.dist-info/METADATA,sha256=aMLMi8flomZZ85ceW6NZ32alsdwZLlzmK3F7kklDgcc,7604
+podcastfy-0.1.12.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+podcastfy-0.1.12.dist-info/RECORD,,
