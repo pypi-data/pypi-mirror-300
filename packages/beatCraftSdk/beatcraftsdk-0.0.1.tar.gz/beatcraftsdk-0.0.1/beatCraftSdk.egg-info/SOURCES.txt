@@ -1,0 +1,17 @@
+README.md
+setup.py
+beatCraftSdk.egg-info/PKG-INFO
+beatCraftSdk.egg-info/SOURCES.txt
+beatCraftSdk.egg-info/dependency_links.txt
+beatCraftSdk.egg-info/requires.txt
+beatCraftSdk.egg-info/top_level.txt
+beat_craft_sdk/__init__.py
+beat_craft_sdk/config.py
+beat_craft_sdk/core.py
+beat_craft_sdk/craft_strategy.py
+beat_craft_sdk/crafting_with_backingtrack.py
+beat_craft_sdk/crafting_with_genetic.py
+beat_craft_sdk/transformer.py
+tests/test_config.py
+tests/test_core.py
+tests/test_ga.py
