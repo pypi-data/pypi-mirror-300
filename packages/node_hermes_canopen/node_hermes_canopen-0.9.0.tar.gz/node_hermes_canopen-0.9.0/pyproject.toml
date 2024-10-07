@@ -1,0 +1,37 @@
+[tool.poetry]
+name = "node_hermes_canopen"
+version = "0.9.0"
+description = ""
+authors = ["floris vernieuwe <floris@vernieuwe.eu>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = ">=3.10,<3.13"
+pydantic = "^2.8.2"
+asyncslot = "^0.3.1"
+canopen = "^2.3.0"
+node-hermes-core = "^1.0.1"
+node-hermes-qt = "^1.0.1"
+qt-build-utils = "^0.1.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.ruff.lint]
+select = ["E", "F"]
+ignore = ["E402"]
+
+[tool.ruff]
+line-length = 120
+exclude = ["**.pyi", "**/.venv/**", "**/ui/**.py"]
+include = ["src/**.py", "test/**.py"]
+
+[tool.pyright]
+ignore = ["**.pyi", "**/.venv/**", "**/ui/**.py"]
+
+[tool.pyright.defineConstant]
+PYQT5 = false
+PYSIDE2 = false
+PYQT6 = false
+PYSIDE6 = true
