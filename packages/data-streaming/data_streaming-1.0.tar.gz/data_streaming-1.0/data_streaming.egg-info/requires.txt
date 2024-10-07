@@ -1,0 +1,8 @@
+uvicorn
+fastapi
+httpx
+sshtunnel
+paramiko
+pydantic
+pydantic-settings
+argparse

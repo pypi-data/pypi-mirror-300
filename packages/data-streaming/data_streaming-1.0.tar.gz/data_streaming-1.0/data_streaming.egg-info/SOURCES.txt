@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+data_stream/__init__.py
+data_stream/data_stream.py
+data_streaming.egg-info/PKG-INFO
+data_streaming.egg-info/SOURCES.txt
+data_streaming.egg-info/dependency_links.txt
+data_streaming.egg-info/entry_points.txt
+data_streaming.egg-info/requires.txt
+data_streaming.egg-info/top_level.txt

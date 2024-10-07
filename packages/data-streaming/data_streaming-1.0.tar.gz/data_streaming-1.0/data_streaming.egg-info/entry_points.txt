@@ -1,0 +1,2 @@
+[console_scripts]
+data-stream = data_stream:main
