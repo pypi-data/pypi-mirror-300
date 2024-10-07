@@ -1,0 +1,9 @@
+README.md
+setup.py
+byAd12/__init__.py
+byAd12/byAd12.py
+byAd12_library.egg-info/PKG-INFO
+byAd12_library.egg-info/SOURCES.txt
+byAd12_library.egg-info/dependency_links.txt
+byAd12_library.egg-info/requires.txt
+byAd12_library.egg-info/top_level.txt
