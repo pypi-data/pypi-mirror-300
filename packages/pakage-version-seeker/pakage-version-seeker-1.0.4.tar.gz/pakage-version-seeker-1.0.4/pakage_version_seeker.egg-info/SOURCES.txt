@@ -1,0 +1,16 @@
+LICENSE
+README.md
+setup.py
+pakage_version_seeker.egg-info/PKG-INFO
+pakage_version_seeker.egg-info/SOURCES.txt
+pakage_version_seeker.egg-info/dependency_links.txt
+pakage_version_seeker.egg-info/entry_points.txt
+pakage_version_seeker.egg-info/not-zip-safe
+pakage_version_seeker.egg-info/requires.txt
+pakage_version_seeker.egg-info/top_level.txt
+src/__init__.py
+src/main.py
+src/info/__init__.py
+src/info/history.py
+src/info/module.py
+src/info/required_modules.py
