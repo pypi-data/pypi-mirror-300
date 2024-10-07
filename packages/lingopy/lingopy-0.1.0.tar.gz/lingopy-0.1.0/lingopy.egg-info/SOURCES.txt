@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+demo/__init__.py
+demo/test_file.py
+demo/test_flask.py
+lingopy/__init__.py
+lingopy/lingopy.py
+lingopy.egg-info/PKG-INFO
+lingopy.egg-info/SOURCES.txt
+lingopy.egg-info/dependency_links.txt
+lingopy.egg-info/top_level.txt
