@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: reglin_brasil
+Version: 0.0.0.0
+Summary: Uma classe para Regressão Linear em português, contendo as principais métricas da abordagem como métodos.
+Home-page: https://github.com/bruno-rodrigues-carloto/Regressao-Linear-Brasil
+Author: Bruno Rodrigues Carloto
+Author-email: brunnocarlotosjob@gmail.com
+Requires-Python: >=3.6
+License-File: LICENSE
+Requires-Dist: numpy
+

@@ -1,0 +1,1 @@
+from modelo_regressao_linear_brasil import RegressaoLinearBRC
