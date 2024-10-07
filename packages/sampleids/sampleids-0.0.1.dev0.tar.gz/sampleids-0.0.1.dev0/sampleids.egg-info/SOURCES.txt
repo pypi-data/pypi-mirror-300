@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+sampleids/__init__.py
+sampleids/id.py
+sampleids/parse.py
+sampleids.egg-info/PKG-INFO
+sampleids.egg-info/SOURCES.txt
+sampleids.egg-info/dependency_links.txt
+sampleids.egg-info/top_level.txt

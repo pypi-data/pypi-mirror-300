@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: sampleids
+Version: 0.0.1.dev0
+Summary: Uniform Sample Identifiers Parser
+Home-page: https://github.com/tmcqueen-materials/sampleids
+Author: Tyrel M. McQueen
+Author-email: tmcqueen-pypi@demoivre.com
+License: GNU GPLv2
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License v2 (GPLv2)
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.4
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# sampleids
+
