@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "jira-batch-create"
+version = "0.2.3"
+description = "A Python package for creating Jira issues in batch using field mapping."
+readme = "README.md"
+requires-python = ">=3.6"
+license = {text = "MIT"}
+authors = [{name = "szmodry", email = "szmodry@gmail.com"}]
+keywords = ["jira", "batch", "bulk", "issue", "creator", "rest", "api"]
+dependencies = ["requests", "toml", "cffi", "python-dotenv"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent"
+]
+
+[project.urls]
+"Source Code" = "https://github.com/szmodry/jira-batch-create"
+"Bug Tracker" = "https://github.com/szmodry/jira-batch-create/issues"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools]
+package-dir = {"" = "src"}

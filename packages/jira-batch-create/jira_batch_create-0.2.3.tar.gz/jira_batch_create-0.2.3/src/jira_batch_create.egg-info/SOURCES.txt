@@ -1,0 +1,12 @@
+README.md
+pyproject.toml
+src/jira_batch_create/__init__.py
+src/jira_batch_create/adf.py
+src/jira_batch_create/creator.py
+src/jira_batch_create/setup_logging.py
+src/jira_batch_create.egg-info/PKG-INFO
+src/jira_batch_create.egg-info/SOURCES.txt
+src/jira_batch_create.egg-info/dependency_links.txt
+src/jira_batch_create.egg-info/requires.txt
+src/jira_batch_create.egg-info/top_level.txt
+tests/test_create.py
