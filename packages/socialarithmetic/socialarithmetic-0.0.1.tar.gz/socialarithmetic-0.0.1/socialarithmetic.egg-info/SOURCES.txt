@@ -1,0 +1,16 @@
+CHANGELOG.txt
+LICENSE.txt
+MANIFEST.in
+README.txt
+setup.py
+socialarithmetic/__init__.py
+socialarithmetic/bruto_tara_netto.py
+socialarithmetic/bunga.py
+socialarithmetic/gaji.py
+socialarithmetic/pajak.py
+socialarithmetic/rabat_diskon.py
+socialarithmetic/untung_rugi.py
+socialarithmetic.egg-info/PKG-INFO
+socialarithmetic.egg-info/SOURCES.txt
+socialarithmetic.egg-info/dependency_links.txt
+socialarithmetic.egg-info/top_level.txt
