@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: rus_guard_integration
+Version: 0.1.0
+Summary: Модуль интеграции со СКУД РусГард
+Author: Mrkorogod
+Requires-Python: >=3.10,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Description-Content-Type: text/markdown
+
+# Example Package
+
+This is a simple example package. You can use
+[Github-flavored Markdown](https://guides.github.com/features/mastering-markdown/)
+to write your content.
+
+Данный модуль предназначен для интеграции со СКУД РусГард

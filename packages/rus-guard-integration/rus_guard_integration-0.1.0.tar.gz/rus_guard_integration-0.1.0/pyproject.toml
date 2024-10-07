@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "rus_guard_integration"
+version = "0.1.0"
+description = "Модуль интеграции со СКУД РусГард"
+authors = ["Mrkorogod"]
+readme = "README.md"
+username = "__token__"
+password = "pypi-AgEIcHlwaS5vcmcCJDc1OTA0MDhlLTQwZGItNGFkYy1hMTVhLWUyOTZhYWYwZGEwZgACG1sxLFsiYmFzdGlvbi1pbnRlZ3JhdGlvbiJdXQACLFsyLFsiYzc1NTAxMWItNGEyMy00MGEyLTliNzItODkyMzdmMDI2OGJjIl1dAAAGII3hcdvN8QyDrAUBHEmRYX6BlYsl3taHzX0SJuw4RM_Y"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+
