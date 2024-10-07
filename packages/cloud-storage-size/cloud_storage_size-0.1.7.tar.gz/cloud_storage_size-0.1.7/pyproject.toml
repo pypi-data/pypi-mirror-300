@@ -1,0 +1,32 @@
+[tool.poetry]
+name = "cloud-storage-size"
+version = "0.1.7"
+homepage = "https://github.com/yingca1"
+description = "A cloud storage file count & file size query library"
+authors = ["Ying Cai <i@caiying.me>"]
+readme = "README.md"
+packages = [{include = "cloud_storage_size"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+google-cloud-storage = "^2.18.2"
+google-cloud-monitoring = "^2.22.2"
+boto3 = "^1.35.32"
+azure-storage-blob = "^12.23.1"
+oss2 = "^2.19.0"
+minio = "^7.2.9"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.3.3"
+
+[tool.pytest.ini_options]
+minversion = "6.0"
+addopts = "-ra -q"
+testpaths = [
+    "tests",
+    "integration",
+]
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
