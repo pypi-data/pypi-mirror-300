@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: pip_latest
+Version: 1.1
+Summary: A small package to update pip to latest
+Author-email: Babith G <babithg@gmail.com>
+Project-URL: Homepage, https://github.com/babithg/pip-latest
+Project-URL: Issues, https://github.com/babithg/pip-latest/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.0
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Pip Latest 
+
+Idea of this pcakge is to update pip to latest version 
+
+You may have to follow below steps 
+> pip install pip-latest
+> python -m pip-latest.get
+
+Its just replacement of the lengthy command 
+python -m pip install --upgrade pip
+
+[GitHub-repo-link](https://github.com/babithg/pip-latest.git)
