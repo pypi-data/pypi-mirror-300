@@ -1,0 +1,9 @@
+ffmpeg-python
+PyQt5
+markdown
+llama-cpp-python
+pynput
+SpeechRecognition
+huggingface_hub
+openwakeword
+whispercpp
