@@ -1,0 +1,3 @@
+[console_scripts]
+krypton=krypton_ml.main:app
+
