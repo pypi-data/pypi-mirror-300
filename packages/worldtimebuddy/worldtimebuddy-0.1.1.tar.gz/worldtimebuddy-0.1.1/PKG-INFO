@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: worldtimebuddy
+Version: 0.1.1
+Summary: A command-line tool to display current time for different timezones
+Home-page: https://github.com/dubesar/worldtimebuddy
+Author: Sarvesh Dubey
+Author-email: dubeysarvesh5525@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: Click
+Requires-Dist: pytz
+
+# worldtimebuddy
+Get current time for all possible timezone using CLI (exclusively for developers)
+
+```
+Usage: worldtimebuddy [OPTIONS]
+
+  Display current time for all timezones, major timezones, or a specific
+  timezone.
+
+Options:
+  --format TEXT         DateTime format string
+  --major               Show only major timezones
+  -tz, --timezone TEXT  Show time for a specific timezone
+  --list                List all available timezones
+  --help                Show this message and exit.
+```
