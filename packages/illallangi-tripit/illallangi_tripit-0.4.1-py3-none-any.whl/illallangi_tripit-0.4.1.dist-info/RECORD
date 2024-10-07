@@ -1,0 +1,16 @@
+illallangi/tripit/__init__.py,sha256=VBvVlaX1d9vZJzAeZ8kCSmEmvvTUHUEV9rQYW8iJ99E,157
+illallangi/tripit/__version__.py,sha256=ddTsh3Y3z-v_0TAicGBTv4AFMkA0nCO3JJP2E8P3YKc,345
+illallangi/tripit/tools.py,sha256=DJrjrVmnuDsG15CP4dB6pSYiV8VRA-uJBL49LtrVO78,4647
+illallangi/tripit/adapters/__init__.py,sha256=18nTR6Zr3lCxJ-Vqn_rD94D3VSeqfMnNkLlslgRjdoA,150
+illallangi/tripit/adapters/air_transport.py,sha256=M-k2-fFBY2_aXiwaIYAs2uhz1TLGGT0YRv9jGux3sM0,1905
+illallangi/tripit/client/__init__.py,sha256=KsGNetWjNeVjFcL7JFqIK8MAEnyunm4Jrj7BzArM6yc,8597
+illallangi/tripit/client/flight.py,sha256=3_uCvYfIDRE19Ndya5ahq8Na8WNbEawMNBKliXcnoHQ,4053
+illallangi/tripit/client/profile.py,sha256=6rzg_rOKFGfJn6XUcRB94SVQi2_b5Rl33IuvMyXKrBQ,1953
+illallangi/tripit/client/trip.py,sha256=LVTiFCtI3TkSczgPoS_tNMGSkhVCL4DxckLx0xI4aaU,1723
+illallangi/tripit/models/__init__.py,sha256=EyUDHVOM0lk5zXxfTuF_7IO2H7v4HfXmHehelt50uxA,104
+illallangi/tripit/models/flight.py,sha256=oy2WjbZQf_p-XMDnEcMLCBGF4ysHHXQyvzJpvbECxnQ,3468
+illallangi_tripit-0.4.1.dist-info/METADATA,sha256=-AiicK4VgwPW4jv1--lNu41GYFIM_oAM5BS8XDx-gdM,2345
+illallangi_tripit-0.4.1.dist-info/WHEEL,sha256=1yFddiXMmvYK7QYTqtRNtX66WJ0Mz8PYEiEUoOUUxRY,87
+illallangi_tripit-0.4.1.dist-info/entry_points.txt,sha256=-OGpYH9TWPXpkVqeA6pthugGza7h1QiRJw2nsjnZ7oc,61
+illallangi_tripit-0.4.1.dist-info/licenses/LICENSE,sha256=0NehuXypL_CGawEe_ozP3tgKmnfr-CvlAof7lUxPp1E,1068
+illallangi_tripit-0.4.1.dist-info/RECORD,,
