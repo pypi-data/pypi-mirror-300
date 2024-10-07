@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: habapp_rules
+Version: 6.2.0
+Summary: Basic rules for HABApp
+Author: Seuling N.
+License: Apache License 2.0
+Requires-Python: >=3.11
+License-File: LICENCE
+Requires-Dist: HABApp==24.08.1
+Requires-Dist: matplotlib~=3.9.0
+Requires-Dist: multi-notifier~=0.5.0
+Requires-Dist: transitions==0.9.1
+Requires-Dist: holidays==0.53
+
+Basic rules for HABApp
