@@ -1,0 +1,8 @@
+spc/__init__.py,sha256=cnFMWv4OqXN-CWW7EzNotOvUdUgZEj5CMT9OO3AQbHE,232
+spc/global_fun.py,sha256=Rm0yGn8gTEc8FTEVYjxwxDStsIhgEqMrSJveMtTIjHM,1691
+spc/spc.py,sha256=gwumcKm7mHqiYxdZU--hOfpZvkde_8CVeiPUsBiNAoQ,25174
+spc/sub.py,sha256=VZ-xSl_w8YmwvZDnqVEL7cpd74Kf7wXN_EtvUDBHhWI,5891
+pyfasma_spc-0.4.0.dist-info/LICENSE,sha256=_j7qbFmeI6AMCMX1yyMgwwrcj4aH21_OybeaZixT_2s,35120
+pyfasma_spc-0.4.0.dist-info/METADATA,sha256=Ztafk4T1VujmKuNSCfX73pRTv4qvlGNMBmyqvbZeEzw,7134
+pyfasma_spc-0.4.0.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+pyfasma_spc-0.4.0.dist-info/RECORD,,
