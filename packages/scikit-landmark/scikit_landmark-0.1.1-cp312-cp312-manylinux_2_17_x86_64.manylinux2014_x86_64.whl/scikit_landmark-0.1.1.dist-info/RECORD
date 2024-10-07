@@ -1,0 +1,10 @@
+landmark/maxmin.cpython-312-x86_64-linux-gnu.so,sha256=gJ16aXiDZ4QZfGMvu18zr0NwUx381cS3uKiPH7Xw6Qk,96872
+landmark/maxmin.py,sha256=Hnt4ceO58fP2ArTbKKyygwjIYrVh_oWhxMEdtfNv3kI,5056
+landmark/datasets.py,sha256=HCwEbCpfSLhyV8Exz4kSrflaByLb3rkBV09UL-Agf6U,1235
+landmark/__version__.py,sha256=dzN0aUNu_CtDvhU76cuLoPYO_pjTrgY_jVOi7rA2Hps,476
+landmark/k_center.py,sha256=6f9yqhFiVhK213NocLu-E6wlXUX51wRkXhnSkaTnFtw,5430
+landmark/__init__.py,sha256=eeher_V1lKJHOHY_Z6WcjfiZPheIyOMQqxmSw_8xnHU,999
+scikit_landmark-0.1.1.dist-info/LICENSE,sha256=D53iFAf7otOMYBMCwFjKrNqZhfQbuB_iELpmFG-5sl4,11348
+scikit_landmark-0.1.1.dist-info/METADATA,sha256=UDqhN47hAmzRqkpujq5JCmiYDMTkxHv_vzuQ1L7XoVY,15510
+scikit_landmark-0.1.1.dist-info/RECORD,,
+scikit_landmark-0.1.1.dist-info/WHEEL,sha256=3qIDcXCk577AXiK3pDifO-gE9U_MYWYGgtD78gLa2_U,137
