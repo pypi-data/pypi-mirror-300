@@ -1,0 +1,2 @@
+[console_scripts]
+inspectio = inspectio.inspectio:main
