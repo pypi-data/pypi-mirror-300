@@ -1,0 +1,2 @@
+[console_scripts]
+GloriousProtonManager = GloriousProtonManager.__main__:main
