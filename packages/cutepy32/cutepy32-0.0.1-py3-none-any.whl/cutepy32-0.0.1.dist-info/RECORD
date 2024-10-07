@@ -1,0 +1,9 @@
+cutepy32/__init__.py,sha256=Ub8jiZCXAmQn6dbx852ka-kLhR53_LHHU4KZT9elRCE,769
+cutepy32/colorizing.py,sha256=f7a9GtGe2DLYLdPsn04SU09RSvQ699wJX43QlwRTypU,386422
+cutepy32/term_colors.py,sha256=38gBWJywG-yUwjXRcCYrTUCAtT3CorS-S1utxYsTUyw,962
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/tests_grab.py,sha256=HZtDO9MsmOJesM-altlQx9YeQDExUl7A66GvzSoZi3E,101
+cutepy32-0.0.1.dist-info/METADATA,sha256=OMAlOvH-FtsdxD9U0UYZQDbMyJqWPbdPHxaa7GyyPPw,602
+cutepy32-0.0.1.dist-info/WHEEL,sha256=eOLhNAGa2EW3wWl_TU484h7q1UNgy0JXjjoqKoxAAQc,92
+cutepy32-0.0.1.dist-info/top_level.txt,sha256=SJOgRuIulZTN-SuJKSSkgPHxS9xNXjAtq3oOHBrhCnc,15
+cutepy32-0.0.1.dist-info/RECORD,,

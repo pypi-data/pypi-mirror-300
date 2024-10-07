@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: cutepy32
+Version: 0.0.1
+Summary: Terminal colors & useful modules installer
+Author: patchthisloserrr
+Author-email: test@gmail.com
+Keywords: python,python system Detection,python hex,python rgb,python hex,python loader,rich python,python rich,cutepy
+Description-Content-Type: text/markdown
+Requires-Dist: WMI
+Requires-Dist: guardshield
+Requires-Dist: pywin32
+Requires-Dist: discord
+Requires-Dist: pycryptodome
+
+A package that allows you to have simplicity and effectiveness in your projects and helps you install useful modules that are needed in development!
