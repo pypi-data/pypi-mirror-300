@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: fivaldi-api-client
+Version: 0.0.2
+Summary: A Fivaldi API client
+Home-page: https://github.com/tried-and-tested-development/fivaldi-api-client
+Author: Tried and Tested Development
+Author-email: info@triedandtested.dev
+Project-URL: Bug Reports, https://github.com/tried-and-tested-development/fivaldi-api-client/issues
+Project-URL: Source, https://github.com/tried-and-tested-development/fivaldi-api-client
+Keywords: Fivaldi,API
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3 :: Only
+Requires-Python: >=3.7, <4
+Description-Content-Type: text/markdown
+Requires-Dist: requests
+Provides-Extra: dev
+Requires-Dist: check-manifest; extra == "dev"
+Provides-Extra: test
+Requires-Dist: coverage; extra == "test"
+
+# fivaldi-api-client
