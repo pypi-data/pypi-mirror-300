@@ -1,0 +1,82 @@
+# F1 Racing Report Package
+
+This Python package generates and prints a report for Formula 1 racing, based on logs of start and end times of racers. The package also provides a command-line interface (CLI) to interact with the report generation and allows flexible configuration options.
+
+## Features
+
+- **Report Generation**: Generate a sorted list of F1 racers by lap times.
+- **CLI Interface**: Process files from a specified folder and print reports or errors.
+- **Error Handling**: Provides detailed error messages for problematic records (e.g., invalid times).
+- **Custom Report Options**: Includes optional sorting and underline settings.
+
+## Installation
+
+You can install the package using PIP (assuming it's published to PyPI):
+
+
+    pip install task_6_rakitin_sergey
+
+# Usage
+
+## Below are some examples of how to use the CLI.
+
+Basic Report Generation (with ascending order by default):
+
+    python f1_report.py
+Generate Report with Sorting Order:
+
+python f1_report.py --files <folder_path> --order asc
+Descending:
+bash
+Копировать код
+python f1_report.py --files <folder_path> --order desc
+Print Report with Custom Underline After a Specific Line:
+
+bash
+Копировать код
+python f1_report.py --files <folder_path> --underline_after 3
+Show Only Errors:
+
+bash
+Копировать код
+python f1_report.py --files <folder_path> --errors_only
+Show Report for a Specific Driver:
+
+bash
+Копировать код
+python f1_report.py --files <folder_path> --driver "Sebastian Vettel"
+Example Commands
+bash
+Копировать код
+# Example: Show full report in ascending order
+python f1_report.py --files ./data
+
+# Example: Show report sorted in descending order
+python f1_report.py --files ./data --order desc
+
+# Example: Print report with underline after 5 racers
+python f1_report.py --files ./data --underline_after 5
+
+# Example: Show errors only
+python f1_report.py --files ./data --errors_only
+
+# Example: Show report for a specific driver
+python f1_report.py --files ./data --driver "Lewis Hamilton"
+Using as a Library
+You can also use this package as a library in your Python code to work directly with the report generation and handling records.
+
+python
+Копировать код
+from task_6_rakitin_sergey import Record, build_report, print_report
+
+# Example of how to use in your own code
+records = Record.get_record_dict()          # Load records from the log files
+records = Record.add_start_time(records)    # Add start times
+records = Record.add_end_time(records)      # Add end times
+
+valid_records, errors = build_report(records)   # Generate report data
+
+# Print the report
+print_report(valid_records, errors)
+Links
+Homepage
