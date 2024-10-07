@@ -1,0 +1,9 @@
+model_trainer_app/__init__.py,sha256=933tj1sEOZKQoAwVcSv-jPU8gB8y3WvGiyndq7I_pmk,102
+model_trainer_app/app.py,sha256=7MStfSSYiEepHQnmq-zTFJCiG-Av8LoOHHX9kKA_a5I,14125
+model_trainer_app/app_old.py,sha256=LKy9Izvq1bX68H6fL1odkiJeHgwPtAaMO5i460-RxCs,14106
+model_trainer_app/auth.py,sha256=ZAd9yL8g4CzugrHsNAdCnV5u3tXEJUVSUW31zrtHoEw,541
+aigpt52-0.4.0.dist-info/METADATA,sha256=5sd0FU8F8jG6V9WmwIhY1BdX0O97sImOCcCMDOMvT-4,432
+aigpt52-0.4.0.dist-info/WHEEL,sha256=GV9aMThwP_4oNCtvEC2ec3qUYutgWeAzklro_0m4WJQ,91
+aigpt52-0.4.0.dist-info/entry_points.txt,sha256=UXikncAeREGmyyEbdBa37AbHpUxC6NyMczX519mkBKY,68
+aigpt52-0.4.0.dist-info/top_level.txt,sha256=m_mPFc2Nt-EPwKvqys033x-dutTtr9h9EupuYXHwLds,18
+aigpt52-0.4.0.dist-info/RECORD,,
