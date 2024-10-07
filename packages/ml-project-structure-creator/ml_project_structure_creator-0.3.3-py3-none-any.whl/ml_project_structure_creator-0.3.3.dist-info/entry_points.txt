@@ -1,0 +1,2 @@
+[console_scripts]
+create_ml_structure = ml_project_structure_creator.create_ml_structure:main
