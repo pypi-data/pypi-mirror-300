@@ -1,0 +1,9 @@
+cs.deco>=20241007
+cs.fstags>=20241005
+cs.logutils>=20241007
+cs.pfx>=20240630
+cs.resources>=20241005
+cs.sqltags>=20240723
+cs.upd>=20240630
+icontract
+requests
