@@ -1,0 +1,14 @@
+vws_cli/__init__.py,sha256=iAfsyQ6whuqVHbwdxx_5g27HvTlWWQdaC-yS3JwOI2c,1537
+vws_cli/_setuptools_scm_version.py,sha256=1IcyMReWK0BmVWAw5HN1__q6rFvDfjf67980HIjfAyg,419
+vws_cli/commands.py,sha256=IK5Yd8lG1nc3X75-aFLcVuiS8d2fiCAtoLl-8UBjz-o,13875
+vws_cli/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+vws_cli/query.py,sha256=FE3SjYlRFto-fdWxmMi61CSDBpaVmL7w6vv6C6i0ntU,6146
+vws_cli/options/__init__.py,sha256=BHS2n4U58LpHSORudpMYGDYkegQn1l_4ggBlmtitGA4,40
+vws_cli/options/credentials.py,sha256=dtATCS0xa7KgBo_MG28JkG-xx3UNe8JnTeTAxSRFVo4,2853
+vws_cli/options/targets.py,sha256=D3bgWaMG--23nypcnhWLku8hhh8hIuY6RFW10XKrg4g,2793
+vws_cli-2024.10.6.dist-info/LICENSE,sha256=iDhzsx0DpJKcWLJ2d0kRvu12MgNEOSWXkJMq8RTBmUQ,1069
+vws_cli-2024.10.6.dist-info/METADATA,sha256=QOimfhVzsAV8l4sIoGlS0nDfnieD2H9chh4YkEk34RY,6421
+vws_cli-2024.10.6.dist-info/WHEEL,sha256=GV9aMThwP_4oNCtvEC2ec3qUYutgWeAzklro_0m4WJQ,91
+vws_cli-2024.10.6.dist-info/entry_points.txt,sha256=ZYMYUiIE-8rrYcovgbjrI3DpFB1MBd_piCQNjpLyh5s,96
+vws_cli-2024.10.6.dist-info/top_level.txt,sha256=EauAM7BuwOyUWsH5kli9UsSAZkpLyG9VoNfsZ47pmsQ,8
+vws_cli-2024.10.6.dist-info/RECORD,,
