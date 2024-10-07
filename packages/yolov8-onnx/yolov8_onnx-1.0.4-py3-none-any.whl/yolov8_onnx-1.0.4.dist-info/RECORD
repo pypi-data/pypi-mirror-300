@@ -1,0 +1,10 @@
+yolov8_onnx/__init__.py,sha256=fPNwnguTsKPFsEoTTDOyGMNm8leXxRrRd09hpqUSrZI,147
+yolov8_onnx/main.py,sha256=1TsdL3TNMpcPKBio3Dh_T376G-lgGyPm55DdODY-wyI,608
+yolov8_onnx/centers/__init__.py,sha256=DdEHGtacvv9O9lirmD8BKbEDkL6Vf_wYWO7_l7nFtEY,91
+yolov8_onnx/centers/engines.py,sha256=YuGFDASQO8-jMaONfyG0yTVWXBbrsqzlRLpLZCCVvMs,2886
+yolov8_onnx/centers/utils.py,sha256=X5orQF817CuIcBpl8Ry6Jcv4R8mBGqXwiWDye412Xto,3751
+yolov8_onnx-1.0.4.dist-info/LICENSE,sha256=_2MRxWwbIskgnJbMivwW2pHCTuVaFeFOvEb-GWDb2FY,11438
+yolov8_onnx-1.0.4.dist-info/METADATA,sha256=5BaP_e0aACm8I0abXIb7EwZHZTVixH8XJzzXpTmBKO8,2055
+yolov8_onnx-1.0.4.dist-info/WHEEL,sha256=eOLhNAGa2EW3wWl_TU484h7q1UNgy0JXjjoqKoxAAQc,92
+yolov8_onnx-1.0.4.dist-info/top_level.txt,sha256=pY-AQQEo9RZ7mjCG2xzbqpUegAx9I2ROdvJGsgYtwfo,12
+yolov8_onnx-1.0.4.dist-info/RECORD,,
