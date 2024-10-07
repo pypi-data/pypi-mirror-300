@@ -1,0 +1,2 @@
+[console_scripts]
+analizador-bandas-bollinger = main:main
