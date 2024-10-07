@@ -1,0 +1,10 @@
+setup.py
+apple_checker.egg-info/PKG-INFO
+apple_checker.egg-info/SOURCES.txt
+apple_checker.egg-info/dependency_links.txt
+apple_checker.egg-info/requires.txt
+apple_checker.egg-info/top_level.txt
+checker/__init__.py
+checker/country_flags.py
+checker/entitlements.py
+checker/errors.py
