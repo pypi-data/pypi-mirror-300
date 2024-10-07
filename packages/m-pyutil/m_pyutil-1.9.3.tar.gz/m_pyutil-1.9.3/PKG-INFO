@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: m-pyutil
+Version: 1.9.3
+Summary: NOTHING
+Home-page: https://github.com/sxydh/m-pyutil
+Author: sxydh
+Author-email: sxydhgg@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Provides-Extra: mmongo
+Requires-Dist: pymongo>=4.9.1; extra == "mmongo"
+Provides-Extra: mip
+Requires-Dist: psutil>=6.0.0; extra == "mip"
+Provides-Extra: mselenium
+Requires-Dist: selenium>=4.23.1; extra == "mselenium"
+Requires-Dist: undetected_chromedriver>=3.5.5; extra == "mselenium"
