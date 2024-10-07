@@ -1,0 +1,2 @@
+[console_scripts]
+nama_command = package_name.module:function
