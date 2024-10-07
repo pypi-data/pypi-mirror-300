@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: qudit
+Version: 0.0.1
+Summary: Quantum computing with qudits
+Home-page: https://github.com/plutoniumm/qudit
+Author: plutoniumm
+License: MIT
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+Requires-Dist: numpy
+Requires-Dist: scipy
+Provides-Extra: dev
+Requires-Dist: pytest ; extra == 'dev'
+Requires-Dist: twine ; extra == 'dev'
+Requires-Dist: wheel ; extra == 'dev'
+
+# qudit
+
