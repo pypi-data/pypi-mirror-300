@@ -1,0 +1,1 @@
+It generates a random number based on the cosine of the current time.
