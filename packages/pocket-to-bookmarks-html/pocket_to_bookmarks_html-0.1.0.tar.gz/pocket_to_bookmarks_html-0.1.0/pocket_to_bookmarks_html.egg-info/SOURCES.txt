@@ -1,0 +1,7 @@
+README.md
+pyproject.toml
+pocket_to_bookmarks_html.egg-info/PKG-INFO
+pocket_to_bookmarks_html.egg-info/SOURCES.txt
+pocket_to_bookmarks_html.egg-info/dependency_links.txt
+pocket_to_bookmarks_html.egg-info/requires.txt
+pocket_to_bookmarks_html.egg-info/top_level.txt
