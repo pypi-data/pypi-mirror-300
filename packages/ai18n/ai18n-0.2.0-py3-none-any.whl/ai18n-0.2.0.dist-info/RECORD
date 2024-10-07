@@ -1,0 +1,13 @@
+ai18n/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ai18n/cli.py,sha256=sfdNOXB00E2ZiEnp_WsPdE8RApI5uU6HXT0QIUuef90,4013
+ai18n/config.py,sha256=hFO6MzEn9oT7XYEHoiUsOY0YG_55XDzdTpO6hxnVWzo,540
+ai18n/constants.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ai18n/message.py,sha256=9oWixAf376xVEHjq2NJt1bw_4Bx5T4aUPltuOztc664,3665
+ai18n/openai.py,sha256=-_32n905pavfrUfZCUy12dmGUDT8B0CBamy3j4_FRwc,3893
+ai18n/translator.py,sha256=1H0cO4Tat1xzRC61OF1pf0litLgLexxe9Ovw15oWv0g,11582
+ai18n-0.2.0.dist-info/LICENSE,sha256=_yVOtnbW7Ss28mp058UEEc1X4Rgj8-kQBP_kj8_Sc88,11585
+ai18n-0.2.0.dist-info/METADATA,sha256=ahI1_u0a734OF1yETtXawge11bVwuGxHcPvsAIsJoIg,12630
+ai18n-0.2.0.dist-info/WHEEL,sha256=GV9aMThwP_4oNCtvEC2ec3qUYutgWeAzklro_0m4WJQ,91
+ai18n-0.2.0.dist-info/entry_points.txt,sha256=tNQ0PsFrhx_WR2PHiGhT2qahWNS06uJF7YhKoxqICi4,41
+ai18n-0.2.0.dist-info/top_level.txt,sha256=x3YBvhvNOL9FV7CMX1OFp1iq_unKhKmV-vtVaL_G8jg,6
+ai18n-0.2.0.dist-info/RECORD,,
