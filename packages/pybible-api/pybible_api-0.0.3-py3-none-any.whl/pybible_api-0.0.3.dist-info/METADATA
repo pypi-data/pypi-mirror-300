@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: pybible-api
+Version: 0.0.3
+Summary: pybible-api
+Author: Jordo993
+Author-email: jordan.m.young0@gmail.com
+Keywords: python,bible
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Education
+Classifier: Programming Language :: Python :: 3
+License-File: LICENSE
+Requires-Dist: regex
+Requires-Dist: requests
+Requires-Dist: beautifulsoup4
+
+Library for bible data
