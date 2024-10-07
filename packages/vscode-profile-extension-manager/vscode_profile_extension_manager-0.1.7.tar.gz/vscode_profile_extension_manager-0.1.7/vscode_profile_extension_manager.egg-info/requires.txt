@@ -1,0 +1,13 @@
+rich>=13.8.1
+textual>=0.81.0
+click>=8.1.7
+requests>=2.32.3
+prodict>=0.8.18
+inquirer>=3.4.0
+pyinstaller>=6.10.0
+appdirs>=1.4.4
+
+[dev]
+build<2,>=1.2.1
+pyinstaller<7,>=6.4.0
+pyinstaller-versionfile<3,>=2.1.1
