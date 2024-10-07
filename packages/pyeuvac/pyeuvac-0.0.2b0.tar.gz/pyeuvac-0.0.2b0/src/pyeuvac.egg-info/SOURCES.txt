@@ -1,0 +1,13 @@
+LICENSE.txt
+README.md
+pyproject.toml
+src/pyeuvac/__init__.py
+src/pyeuvac/_euvac.py
+src/pyeuvac/_misc.py
+src/pyeuvac.egg-info/PKG-INFO
+src/pyeuvac.egg-info/SOURCES.txt
+src/pyeuvac.egg-info/dependency_links.txt
+src/pyeuvac.egg-info/requires.txt
+src/pyeuvac.egg-info/top_level.txt
+src/pyeuvac/_coeffs/euvac_model_bands.nc
+src/pyeuvac/_coeffs/euvac_model_lines.nc
