@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+remoteio/__init__.py
+remoteio/remoteio_client.py
+remoteio/remoteio_constants.py
+remoteio/remoteio_server.py
+remoteio.egg-info/PKG-INFO
+remoteio.egg-info/SOURCES.txt
+remoteio.egg-info/dependency_links.txt
+remoteio.egg-info/requires.txt
+remoteio.egg-info/top_level.txt
