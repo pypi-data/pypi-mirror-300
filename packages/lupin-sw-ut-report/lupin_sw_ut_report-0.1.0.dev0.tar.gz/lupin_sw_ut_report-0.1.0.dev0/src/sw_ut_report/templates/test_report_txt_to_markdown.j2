@@ -1,0 +1,24 @@
+{% for scenario in scenarios %}
+    {% if scenario.raw_lines %}
+        {% for line in scenario.raw_lines %}
+{{ line }}
+        {% endfor %}
+    {% else %}
+## {{ scenario.test_case }}
+
+{% if scenario.covers %}
+- **Covers:** {{ scenario.covers }}
+{% endif %}
+
+{% if scenario.steps %}
+### Steps
+
+{% for step in scenario.steps %}
+**Given** {{ step['given'] | default('') }}  
+**When** {{ step['when'] | default('') }}  
+**Then** {{ step['then'] | default('') }}  
+
+{% endfor %}
+{% endif %}
+    {% endif %}
+{% endfor %}

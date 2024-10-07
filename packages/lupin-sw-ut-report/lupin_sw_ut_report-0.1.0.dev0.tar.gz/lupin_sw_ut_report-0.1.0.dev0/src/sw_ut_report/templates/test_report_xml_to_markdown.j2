@@ -1,0 +1,22 @@
+# {{ testsuites.name }}
+
+**Date**: {{ testsuites.timestamp }}  
+**Number of tests**: {{ testsuites.tests }}  
+**Errors**: {{ testsuites.errors }}  
+**Failures**: {{ testsuites.failures }} {{ testsuites.status }}
+
+---
+
+{% for testsuite in testsuites.suites %}
+
+## {{ testsuite.name }}
+
+**Number of tests**: {{ testsuite.tests }}  
+**Failures**: {{ testsuite.failures }} {{ testsuite.status }}
+{% for testcase in testsuite.testcases %}
+
+- {{ testcase.name }} {{ testcase.status }}
+  - **Number of tests**: {{ testcase.tests }}
+  - **Failures**: {{ testcase.failures }}
+{% endfor %}
+{% endfor %}
