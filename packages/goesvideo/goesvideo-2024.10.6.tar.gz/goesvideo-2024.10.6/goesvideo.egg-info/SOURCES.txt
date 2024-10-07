@@ -1,0 +1,44 @@
+LICENSE
+README.md
+pyproject.toml
+goesvideo/__init__.py
+goesvideo/exceptions.py
+goesvideo/goesvideo.py
+goesvideo.egg-info/PKG-INFO
+goesvideo.egg-info/SOURCES.txt
+goesvideo.egg-info/dependency_links.txt
+goesvideo.egg-info/requires.txt
+goesvideo.egg-info/top_level.txt
+goesvideo/addons/__init__.py
+goesvideo/addons/overlays.py
+goesvideo/etc/abibands.yaml
+goesvideo/tests/__init__.py
+goesvideo/tests/test_animating.py
+goesvideo/tests/test_annotations.py
+goesvideo/tests/test_compositing.py
+goesvideo/tests/test_download.py
+goesvideo/tests/test_overlays.py
+goesvideo/tests/test_preview.py
+goesvideo/tests/test_video_editing.py
+goesvideo/tests/Fonts/StoryElementRegular-X3RWa.ttf
+goesvideo/tests/Test Images/2023-10-22 14_03_54 UTC.png
+goesvideo/tests/Test Images/2023-10-22 14_05_51 UTC.tif
+goesvideo/tests/Test Images/2023-10-22 14_13_54 UTC.png
+goesvideo/tests/Test Images/2023-10-22 14_14_51 UTC.tif
+goesvideo/tests/Test Images/2023-10-22 14_23_54 UTC.png
+goesvideo/tests/Test Images/2023-10-22 14_25_51 UTC.tif
+goesvideo/tests/Test Images/2023-10-22 14_38_54 UTC.png
+goesvideo/tests/Test Images/2023-10-22 14_42_51 UTC.tif
+goesvideo/tests/Test Images/2023-10-22 14_48_54 UTC.png
+goesvideo/tests/Test Images/2023-10-22 14_52_00 UTC.tif
+goesvideo/tests/Test Images/2023-10-22 14_58_54 UTC.png
+goesvideo/tests/Test Images/2023-10-22 15_00_51 UTC.tif
+goesvideo/tests/Test Images/metadata.json
+goesvideo/tests/Test Images/timestamps.csv
+goesvideo/tests/Test NC Files/OR_ABI-L2-CMIPF-M6C01_G16_s20231411110208_e20231411119516_c20231411119596.nc
+goesvideo/tests/Test NC Files/OR_ABI-L2-CMIPF-M6C02_G16_s20231411110208_e20231411119516_c20231411119590.nc
+goesvideo/tests/Test NC Files/OR_ABI-L2-CMIPF-M6C03_G16_s20231411110208_e20231411119516_c20231411119596.nc
+goesvideo/tests/Test Videos/video.mp4
+goesvideo/utils/__init__.py
+goesvideo/utils/editortools.py
+goesvideo/utils/gistools.py
