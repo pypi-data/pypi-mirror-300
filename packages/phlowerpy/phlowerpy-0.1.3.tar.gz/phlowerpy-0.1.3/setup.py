@@ -1,0 +1,51 @@
+from setuptools import find_packages, setup
+
+setup(
+    name='phlowerpy',
+    version='0.1.3',
+    description='hodge decomposition trajectory',
+    url='https://github.com/CostaLab/phlower',
+    author='Mingbo Cheng',
+    author_email='chengmingbo@gmail.com',
+    license='BSD 2-clause',
+    install_requires=['numpy',
+                      'matplotlib',
+                      'seaborn>=0.12.2',
+                      'networkx>=2.4',
+                      'pydot',
+                      'igraph',
+                      "scikit-learn",
+                      "scipy",
+                      "pandas>=2.1.3",
+                      "plotly",
+                      "tqdm",
+                      "leidenalg",
+                      "python-louvain",
+                      "colorcet",
+                      'umap-learn',
+                      'scikit-sparse', #deb:libsuitesparse-dev, conda:suitesparse, macos:suite-parse
+                      'scanpy',
+                      'adjustText',
+                      'pygraphviz', ## deb:graphviz libgraphviz-dev, macos:graphpviz
+                      'magic-impute',
+                      'anndata',
+                      ],
+    classifiers=[
+        'Development Status :: 1 - Planning',
+        'Intended Audience :: Science/Research',
+        'License :: OSI Approved :: BSD License',
+        'Operating System :: POSIX :: Linux',
+        'Programming Language :: Python :: 3',
+        'Programming Language :: Python :: 3.4',
+        'Programming Language :: Python :: 3.5',
+        'Programming Language :: Python :: 3.6',
+        'Programming Language :: Python :: 3.7',
+        'Programming Language :: Python :: 3.8',
+        'Programming Language :: Python :: 3.9',
+        'Programming Language :: Python :: 3.10',
+        'Programming Language :: Python :: 3.11',
+        'Programming Language :: Python :: 3.12',
+    ],
+    packages=find_packages()
+)
+
