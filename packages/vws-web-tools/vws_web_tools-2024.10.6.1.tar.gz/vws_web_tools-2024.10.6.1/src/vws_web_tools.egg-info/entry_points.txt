@@ -1,0 +1,2 @@
+[console_scripts]
+vws-web-tools = vws_web_tools:vws_web_tools_group
