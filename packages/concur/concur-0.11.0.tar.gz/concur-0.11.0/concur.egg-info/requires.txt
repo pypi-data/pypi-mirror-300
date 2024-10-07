@@ -1,0 +1,7 @@
+imgui>=2.0.0
+Pillow
+numpy
+glfw
+PyOpenGL
+imageio
+imageio-ffmpeg
