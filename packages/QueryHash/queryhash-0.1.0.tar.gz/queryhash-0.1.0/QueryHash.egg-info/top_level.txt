@@ -1,0 +1,2 @@
+QueryHash
+myapp
