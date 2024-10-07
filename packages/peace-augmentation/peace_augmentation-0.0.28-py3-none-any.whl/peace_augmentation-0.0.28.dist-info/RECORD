@@ -1,0 +1,14 @@
+peace_augmentation/__init__.py,sha256=_x2U8KFpa5IAN7wIn0Ek6CsWtFNGfGCRShssV-YnAQ8,15702
+peace_augmentation/easy_data_augmentation.py,sha256=2wiM9oCokCfb2PYb31tbQRBsQz20nT3hKYSmB7dBDQg,5788
+peace_augmentation/replace_named_entities.py,sha256=uB9dWzPsD_OoJtZMv8VhSqrsUuVOw3jPdDR4uNJVi3w,1083
+peace_augmentation/utils.py,sha256=WAkO6twDpAhSqGq-ihVyTS0xjp4F-jl0kbwCRp6LDKk,7284
+peace_augmentation/words_lists/__init__.py,sha256=cLT0qy17IwhYvQN1Zff4ZKeJFZJAWAgJTxh5VLqJIoc,15543
+peace_augmentation/words_lists/entities_list.json,sha256=ZEnWZl7VG3bfSGkmMuq5XEXYG93jBOIza2c-qqgLnbs,180963
+peace_augmentation/words_lists/scalarity.json,sha256=40cq4aP2SM3BcOLurOa16plVVQq1hQi9hZiDN8Enu2w,1836
+peace_augmentation/words_lists/special_tokens.json,sha256=fMjqBLmvmkQ5y7T2bKOs2XbncWI6AIFDCTuOTufMFFI,3320
+peace_augmentation/words_lists/speculative.json,sha256=6zB74qODkKvciK04Vq3dyf5jbR2bTyZ5b2XEzvDeSXI,350
+peace_augmentation-0.0.28.dist-info/LICENSE,sha256=yb_3VziSIZPmf6cm-iJVNYcNKqEFn5FFLEEXNihK1WY,1338
+peace_augmentation-0.0.28.dist-info/METADATA,sha256=LPTpwSuQblb4AqJITjvQpid81enPcxCuC1AD1bQsIIY,6850
+peace_augmentation-0.0.28.dist-info/WHEEL,sha256=GV9aMThwP_4oNCtvEC2ec3qUYutgWeAzklro_0m4WJQ,91
+peace_augmentation-0.0.28.dist-info/top_level.txt,sha256=PVP6W2Pl-oNqm3HfFbKojp8W4JcWaWhkXf3Y-BPJeQ0,19
+peace_augmentation-0.0.28.dist-info/RECORD,,
