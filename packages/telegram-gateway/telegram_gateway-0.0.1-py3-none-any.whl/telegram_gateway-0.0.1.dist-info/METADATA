@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: telegram-gateway
+Version: 0.0.1
+Summary: Interact with the Telegram Gateway API.
+Author-email: GEOEGII555 <geoegii2001555@gmail.com>
+Requires-Dist: requests
+
