@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: jira-batch-create
+Version: 0.2.3
+Summary: A Python package for creating Jira issues in batch using field mapping.
+Author-email: szmodry <szmodry@gmail.com>
+License: MIT
+Project-URL: Source Code, https://github.com/szmodry/jira-batch-create
+Project-URL: Bug Tracker, https://github.com/szmodry/jira-batch-create/issues
+Keywords: jira,batch,bulk,issue,creator,rest,api
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: requests
+Requires-Dist: toml
+Requires-Dist: cffi
+Requires-Dist: python-dotenv
+
+# Jira Batch Creator
+
+This package helps in creating Jira issues in batch by translating user-facing field names into Jira backend field names using a CSV file for field mapping.
+
+## Installation
+
+You can install the package from PyPI:
+
+```bash
+pip install jira-batch-create
