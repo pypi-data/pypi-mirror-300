@@ -1,0 +1,153 @@
+from pydantic import BaseModel
+from lark import Lark, Transformer, Visitor
+from abc import ABC, abstractmethod
+from typing import Dict, Any
+
+class GrammarBasedModel(BaseModel, ABC):
+    @classmethod
+    @abstractmethod
+    def grammar(cls) -> str:
+        pass
+
+    @classmethod
+    @abstractmethod
+    def start_rule(cls) -> str:
+        pass
+
+    @classmethod
+    @abstractmethod
+    def field_mappings(cls) -> Dict[str, str]:
+        pass
+
+    @classmethod
+    def parse(cls, text: str) -> 'GrammarBasedModel':
+        parser = Lark(cls.grammar(), start=cls.start_rule())
+        tree = parser.parse(text)
+        
+        class TreeToDict(Transformer):
+            def __init__(self, field_mappings):
+                self.field_mappings = field_mappings
+            
+            def __default__(self, data, children, meta):
+                for field, rule in self.field_mappings.items():
+                    if data == rule:
+                        return {field: children[0]}
+                return children
+            
+            def start(self, items):
+                result = {}
+                for item in items:
+                    if isinstance(item, dict):
+                        result.update(item)
+                return result
+
+        transformer = TreeToDict(cls.field_mappings())
+        data = transformer.transform(tree)
+        return cls(**data)
+
+    def generate(self) -> str:
+        parser = Lark(self.grammar(), start=self.start_rule())
+        
+        class ModelToString(Visitor):
+            def __init__(self, model):
+                self.model = model
+                self.result = []
+
+            def __default__(self, tree):
+                if tree.data in self.model.field_mappings().values():
+                    field = next(k for k, v in self.model.field_mappings().items() if v == tree.data)
+                    value = getattr(self.model, field)
+                    self.result.append(f"{' '.join(tree.children)} {value}")
+                else:
+                    for child in tree.children:
+                        if isinstance(child, str):
+                            self.result.append(child)
+                        else:
+                            self.visit(child)
+
+        visitor = ModelToString(self)
+        tree = parser.parse(" ".join(self.grammar().split()))
+        visitor.visit(tree)
+        return " ".join(visitor.result)
+
+class PersonSpec(GrammarBasedModel):
+    name: str
+    age: int
+    city: str
+
+    @classmethod
+    def grammar(cls):
+        return """
+        start: "<spec>" name age city "</spec>"
+        name: "name:" WORD
+        age: "age" "is" NUMBER
+        city: "lives" "in" WORD
+        %import common.WORD
+        %import common.NUMBER
+        %import common.WS
+        %ignore WS
+        """
+
+    @classmethod
+    def start_rule(cls):
+        return "start"
+
+    @classmethod
+    def field_mappings(cls):
+        return {
+            "name": "name",
+            "age": "age",
+            "city": "city"
+        }
+
+if __name__ == "__main__":
+    # Test parsing
+    test_string = """
+    <spec>
+    name: John
+    age is 30
+    lives in Tokyo
+    </spec>
+    """
+    parsed_person = PersonSpec.parse(test_string)
+    print("Parsed person:", parsed_person)
+
+    # Test generating
+    new_person = PersonSpec(name="Alice", age=25, city="NewYork")
+    generated_string = new_person.generate()
+    print("\nGenerated string:")
+    print(generated_string)
+
+    # Test round-trip
+    round_trip_person = PersonSpec.parse(generated_string)
+    print("\nRound-trip parsed person:", round_trip_person)
+
+    assert new_person == round_trip_person, "Round-trip parsing failed"
+    print("\nRound-trip test passed!")
+
+    # Test with modified grammar
+    class ModifiedPersonSpec(PersonSpec):
+        @classmethod
+        def grammar(cls):
+            return """
+            start: "<person>" name age city "</person>"
+            name: "Name:" WORD
+            age: "Age:" NUMBER "years"
+            city: "City:" WORD
+            %import common.WORD
+            %import common.NUMBER
+            %import common.WS
+            %ignore WS
+            """
+
+    modified_person = ModifiedPersonSpec(name="Bob", age=40, city="London")
+    modified_string = modified_person.generate()
+    print("\nModified grammar generated string:")
+    print(modified_string)
+
+    parsed_modified = ModifiedPersonSpec.parse(modified_string)
+    print("Parsed modified person:", parsed_modified)
+    assert modified_person == parsed_modified, "Modified grammar round-trip failed"
+    print("Modified grammar round-trip test passed!")
+    
+    

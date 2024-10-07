@@ -1,0 +1,186 @@
+from abc import ABC, abstractmethod
+from pydantic import BaseModel
+from parsimonious import Grammar, NodeVisitor, exceptions
+
+class FormattingModel(BaseModel, ABC):
+    @classmethod
+    @abstractmethod
+    def format_spec(cls):
+        pass
+
+    @classmethod
+    @abstractmethod
+    def parse_spec(cls):
+        pass
+
+    @classmethod
+    @abstractmethod
+    def parse_visitor(cls):
+        pass
+
+    @classmethod
+    @abstractmethod
+    def start_token(cls) -> str:
+        pass
+
+    @classmethod
+    @abstractmethod
+    def end_token(cls) -> str:
+        pass
+
+    @classmethod
+    def format(cls, instance: 'FormattingModel') -> str:
+        spec = cls.format_spec()
+        formatted = spec.format(**instance.dict())
+        return f"{cls.start_token()}\n{formatted}\n{cls.end_token()}"
+
+    @classmethod
+    def parse(cls, formatted_string: str) -> 'FormattingModel':
+        lines = formatted_string.strip().split('\n')
+        if lines[0] != cls.start_token() or lines[-1] != cls.end_token():
+            raise ValueError("Invalid start or end token")
+        content = '\n'.join(lines[1:-1])
+        
+        grammar = Grammar(cls.parse_spec())
+        try:
+            tree = grammar.parse(content)
+        except exceptions.ParseError as e:
+            raise ValueError(f"Failed to parse content: {e}\nContent:\n{content}")
+        
+        visitor = cls.parse_visitor()()
+        try:
+            visitor_result = visitor.visit(tree)
+        except Exception as e:
+            raise ValueError(f"Error during tree visitation: {e}")
+        
+        if not all(field in visitor_result for field in cls.__fields__):
+            missing_fields = [field for field in cls.__fields__ if field not in visitor_result]
+            raise ValueError(f"Missing fields after parsing: {', '.join(missing_fields)}")
+        
+        return cls(**visitor_result)
+
+
+from parsimonious import Grammar, NodeVisitor
+
+class CodeFileModel(FormattingModel):
+    language: str
+    file_path: str
+    code: str
+
+    @classmethod
+    def format_spec(cls):
+        return "code_file_model\n{file_path}\n```{language}\n{code}\n```"
+
+    @classmethod
+    def parse_spec(cls):
+        return """
+        model = "code_file_model" newline file_path newline code_block
+        file_path = line
+        code_block = "```" language newline code "```"
+        language = ~"[^\\n]+"
+        code = (!(~"```") (newline / any_char))*
+        line = ~"[^\\n]+"
+        newline = ~"\\s*\\n\\s*"
+        any_char = ~"."
+        """
+
+    @classmethod
+    def parse_visitor(cls):
+        class Visitor(NodeVisitor):
+            def __init__(self):
+                self.data = {}
+
+            def visit_model(self, node, visited_children):
+                return self.data
+
+            def visit_file_path(self, node, visited_children):
+                self.data['file_path'] = node.text.strip()
+
+            def visit_language(self, node, visited_children):
+                self.data['language'] = node.text.strip()
+
+            def visit_code(self, node, visited_children):
+                self.data['code'] = node.text.strip()
+
+            def generic_visit(self, node, visited_children):
+                return visited_children or node
+
+        return Visitor
+
+    @classmethod
+    def start_token(cls):
+        return '<format>'
+
+    @classmethod
+    def end_token(cls):
+        return '</format>'
+        
+
+        
+        
+
+
+        
+        
+# Test cases
+if __name__ == "__main__":
+    # Test formatting
+    code_file = CodeFileModel(
+        language="Python",
+        file_path="src/main.py",
+        code="def hello():\n    print('Hello, World!')"
+    )
+    formatted = CodeFileModel.format(code_file)
+    expected_format = """<format>
+code_file_model
+src/main.py
+```Python
+def hello():
+    print('Hello, World!')
+```
+</format>"""
+    assert formatted == expected_format, f"Formatting failed. Expected:\n{expected_format}\nGot:\n{formatted}"
+    print("Formatting test passed.")
+
+    # Test parsing
+    parsed = CodeFileModel.parse(formatted)
+    assert parsed == code_file, f"Parsing failed. Expected:\n{code_file}\nGot:\n{parsed}"
+    print("Parsing test passed.")
+
+    # Test round-trip
+    round_trip = CodeFileModel.parse(CodeFileModel.format(code_file))
+    assert round_trip == code_file, f"Round-trip failed. Expected:\n{code_file}\nGot:\n{round_trip}"
+    print("Round-trip test passed.")
+
+    # Test with different values
+    code_file2 = CodeFileModel(
+        language="JavaScript",
+        file_path="src/app.js",
+        code="function greet() {\n  console.log('Hello, World!');\n}"
+    )
+    formatted2 = CodeFileModel.format(code_file2)
+    parsed2 = CodeFileModel.parse(formatted2)
+    assert parsed2 == code_file2, f"Parsing failed for different values. Expected:\n{code_file2}\nGot:\n{parsed2}"
+    print("Different values test passed.")
+
+    # Test tolerant parsing
+    tolerant_input = """<format>
+code_file_model
+   src/main.py   
+
+```  Python  
+def hello():
+    print('Hello, World!')
+```
+</format>"""
+    parsed_tolerant = CodeFileModel.parse(tolerant_input)
+    expected_tolerant = CodeFileModel(
+        language="Python",
+        file_path="src/main.py",
+        code="def hello():\n    print('Hello, World!')"
+    )
+    assert parsed_tolerant == expected_tolerant, f"Tolerant parsing failed. Expected:\n{expected_tolerant}\nGot:\n{parsed_tolerant}"
+    print("Tolerant parsing test passed.")
+
+    print("All tests passed successfully!")
+    

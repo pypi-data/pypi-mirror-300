@@ -1,0 +1,103 @@
+from pydantic import BaseModel
+from pyparsing import *
+from abc import ABC, abstractmethod
+from typing import Dict, Any
+
+class GrammarBasedModel(BaseModel, ABC):
+    @classmethod
+    @abstractmethod
+    def grammar(cls) -> ParserElement:
+        pass
+
+    @classmethod
+    @abstractmethod
+    def start_token(cls) -> str:
+        pass
+
+    @classmethod
+    @abstractmethod
+    def end_token(cls) -> str:
+        pass
+
+    @classmethod
+    @abstractmethod
+    def field_mappings(cls) -> Dict[str, str]:
+        pass
+
+    @classmethod
+    def parse(cls, text: str) -> 'GrammarBasedModel':
+        full_grammar = (
+            Suppress(cls.start_token()) +
+            cls.grammar() +
+            Suppress(cls.end_token())
+        )
+        parsed = full_grammar.parseString(text, parseAll=True)
+        return cls(**{field: parsed[token][-1] for field, token in cls.field_mappings().items()})
+
+    def generate(self) -> str:
+        result = [self.start_token()]
+        for field, token in self.field_mappings().items():
+            value = getattr(self, field)
+            if token == "name":
+                result.append(f"name: {value}")
+            elif token == "age":
+                result.append(f"age is {value}")
+            elif token == "city":
+                result.append(f"lives in {value}")
+        result.append(self.end_token())
+        return "\n".join(result)
+
+class PersonSpec(GrammarBasedModel):
+    name: str
+    age: int
+    city: str
+
+    @classmethod
+    def grammar(cls):
+        name = Group(Literal("name:") + Word(alphas))("name")
+        age = Group(Literal("age is") + Word(nums))("age")
+        city = Group(Literal("lives in") + Word(alphas))("city")
+        return name + age + city
+
+    @classmethod
+    def start_token(cls):
+        return "<spec>"
+
+    @classmethod
+    def end_token(cls):
+        return "</spec>"
+
+    @classmethod
+    def field_mappings(cls):
+        return {
+            "name": "name",
+            "age": "age",
+            "city": "city"
+        }
+
+if __name__ == "__main__":
+    # Test parsing
+    test_string = """
+    <spec>
+    name: John
+    age is 30
+    lives in Tokyo
+    </spec>
+    """
+    parsed_person = PersonSpec.parse(test_string)
+    print("Parsed person:", parsed_person)
+
+    # Test generating
+    new_person = PersonSpec(name="Alice", age=25, city="NewYork")
+    generated_string = new_person.generate()
+    print("\nGenerated string:")
+    print(generated_string)
+
+    # Test round-trip
+    round_trip_person = PersonSpec.parse(generated_string)
+    print("\nRound-trip parsed person:", round_trip_person)
+
+    assert new_person == round_trip_person, "Round-trip parsing failed"
+    print("\nRound-trip test passed!")
+    
+    

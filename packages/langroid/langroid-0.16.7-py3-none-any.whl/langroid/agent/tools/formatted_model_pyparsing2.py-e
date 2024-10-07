@@ -1,0 +1,143 @@
+from pydantic import BaseModel
+from abc import ABC, abstractmethod
+from typing import Dict, Type, TypeVar, List
+from pyparsing import (
+    Word, alphanums, Suppress, SkipTo, LineEnd, 
+    QuotedString, delimitedList, Group, OneOrMore, ParseException,
+    ParserElement, Regex, Literal, Optional, White, Dict
+)
+
+T = TypeVar('T', bound='FormattingModel')
+
+class FormatElement:
+    def __init__(self, key: str, prefix: str = "", suffix: str = ""):
+        self.key = key
+        self.prefix = prefix
+        self.suffix = suffix
+
+    def to_parser(self) -> ParserElement:
+        return Group(Suppress(self.prefix) + SkipTo(Suppress(self.suffix + LineEnd())).set_results_name(self.key))
+
+    def to_template(self) -> str:
+        return f"{self.prefix}{{{self.key}}}{self.suffix}\n"
+
+class FormattingModel(BaseModel, ABC):
+    @classmethod
+    @abstractmethod
+    def format_elements(cls) -> List[FormatElement]:
+        pass
+
+    @classmethod
+    @abstractmethod
+    def start_token(cls) -> str:
+        pass
+
+    @classmethod
+    @abstractmethod
+    def end_token(cls) -> str:
+        pass
+
+    @classmethod
+    def format_spec(cls) -> ParserElement:
+        return Dict(OneOrMore([elem.to_parser() for elem in cls.format_elements()]))
+
+    @classmethod
+    def parse(cls: Type[T], text: str) -> T:
+        content = text.strip()[len(cls.start_token()):-len(cls.end_token())].strip()
+        try:
+            parsed = cls.format_spec().parseString(content, parseAll=True)
+            data = {elem.key.lower(): parsed[elem.key][0] for elem in cls.format_elements()}
+            return cls(**data)
+        except ParseException as e:
+            print(f"Parsing error: {e}")
+            raise
+
+    def generate(self) -> str:
+        template = "".join(elem.to_template() for elem in self.format_elements())
+        for elem in self.format_elements():
+            value = getattr(self, elem.key.lower())
+            template = template.replace(f"{{{elem.key}}}", str(value))
+        return f"{self.start_token()}\n{template.strip()}\n{self.end_token()}"
+
+class MyFormattedModel(FormattingModel):
+    name: str
+    age: int
+    city: str
+
+    @classmethod
+    def format_elements(cls) -> List[FormatElement]:
+        return [
+            FormatElement("NAME", prefix="name: ", suffix=""),
+            FormatElement("AGE", prefix="", suffix=" is the age"),
+            FormatElement("CITY", prefix="lives in ", suffix="")
+        ]
+
+    @classmethod
+    def start_token(cls) -> str:
+        return "<format>"
+
+    @classmethod
+    def end_token(cls) -> str:
+        return "</format>"
+
+class CodeFileModel(FormattingModel):
+    language: str
+    file_path: str
+    code: str
+
+    @classmethod
+    def format_elements(cls) -> List[FormatElement]:
+        return [
+            FormatElement("MODEL", prefix="code_file_model", suffix=""),
+            FormatElement("FILE_PATH", prefix="file_path: ", suffix=""),
+            FormatElement("LANGUAGE", prefix="```", suffix=""),
+            FormatElement("CODE", prefix="", suffix="```")
+        ]
+
+    @classmethod
+    def start_token(cls) -> str:
+        return "<format>"
+
+    @classmethod
+    def end_token(cls) -> str:
+        return "</format>"
+
+if __name__ == "__main__":
+    # Test MyFormattedModel
+    model = MyFormattedModel(name="John", age=30, city="Tokyo")
+    generated = model.generate()
+    print("Generated MyFormattedModel string:")
+    print(generated)
+    print()
+
+    parsed = MyFormattedModel.parse(generated)
+    print("Parsed MyFormattedModel object:")
+    print(parsed)
+    print()
+
+    print("MyFormattedModel Round-trip test:")
+    assert model == parsed, "MyFormattedModel: Original != Parsed"
+    print("Passed!")
+    print()
+
+    # Test CodeFileModel
+    code_model = CodeFileModel(
+        language="python",
+        file_path="src/main.py",
+        code="def hello():\n    print(\"Hello, World!\")"
+    )
+    code_generated = code_model.generate()
+    print("Generated CodeFileModel string:")
+    print(code_generated)
+    print()
+
+    code_parsed = CodeFileModel.parse(code_generated)
+    print("Parsed CodeFileModel object:")
+    print(code_parsed)
+    print()
+
+    print("CodeFileModel Round-trip test:")
+    assert code_model == code_parsed, "CodeFileModel: Original != Parsed"
+    print("Passed!")
+
+    print("\nAll tests passed successfully!")

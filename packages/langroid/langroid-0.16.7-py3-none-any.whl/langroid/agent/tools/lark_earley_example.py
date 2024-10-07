@@ -1,0 +1,135 @@
+import pytest
+from lark import Lark, Transformer, Visitor
+
+from langroid.pydantic_v1 import BaseModel
+
+
+class Person(BaseModel):
+    name: str
+    age: int
+    city: str
+
+
+grammar = """
+    person: "Name:" name "Age:" age "City:" city
+    name: WORD
+    age: NUMBER
+    city: WORD
+    WORD: /\w+/
+    NUMBER: /\d+/
+    %import common.WS
+    %ignore WS
+"""
+
+parser = Lark(grammar, start="person", parser="earley")
+
+
+class PersonTransformer(Transformer):
+    def person(self, items):
+        return Person(name=items[1], age=items[3], city=items[5])
+
+    def name(self, items):
+        return items[0].value
+
+    def age(self, items):
+        return int(items[0].value)
+
+    def city(self, items):
+        return items[0].value
+
+
+class PersonToStringVisitor(Visitor):
+    def __init__(self):
+        self.result = []
+
+    def person(self, tree):
+        self.visit_children(tree)
+        return " ".join(self.result)
+
+    def name(self, tree):
+        self.result.extend(["Name:", str(tree.children[0])])
+
+    def age(self, tree):
+        self.result.extend(["Age:", str(tree.children[0])])
+
+    def city(self, tree):
+        self.result.extend(["City:", str(tree.children[0])])
+
+
+transformer = PersonTransformer()
+to_string_visitor = PersonToStringVisitor()
+
+
+def from_string(cls, string):
+    tree = parser.parse(string)
+    return transformer.transform(tree)
+
+
+def to_string(self):
+    from lark import Token
+
+    tree = parser.parse(
+        f"Name: {Token('WORD', self.name)} "
+        f"Age: {Token('NUMBER', str(self.age))} "
+        f"City: {Token('WORD', self.city)}"
+    )
+    return to_string_visitor.visit(tree)
+
+
+Person.from_string = classmethod(from_string)
+Person.to_string = to_string
+
+# Test functions remain the same as in the previous version
+
+
+# Test functions
+def test_from_string():
+    person_str = "Name: John Age: 30 City: NewYork"
+    person = Person.from_string(person_str)
+    assert person.name == "John"
+    assert person.age == 30
+    assert person.city == "NewYork"
+
+
+def test_to_string():
+    person = Person(name="Alice", age=25, city="London")
+    person_str = person.to_string()
+    assert person_str == "Name: Alice Age: 25 City: London"
+
+
+def test_roundtrip():
+    original_str = "Name: Bob Age: 40 City: Paris"
+    person = Person.from_string(original_str)
+    regenerated_str = person.to_string()
+    assert original_str == regenerated_str
+
+
+def test_different_values():
+    person = Person(name="Charlie", age=35, city="Berlin")
+    person_str = person.to_string()
+    assert person_str == "Name: Charlie Age: 35 City: Berlin"
+
+
+def test_edge_cases():
+    # Test with minimum age
+    person = Person(name="Young", age=0, city="Baby")
+    person_str = person.to_string()
+    assert person_str == "Name: Young Age: 0 City: Baby"
+
+    # Test with very long name and city
+    long_name = "A" * 100
+    long_city = "B" * 100
+    person = Person(name=long_name, age=50, city=long_city)
+    person_str = person.to_string()
+    assert person_str == f"Name: {long_name} Age: 50 City: {long_city}"
+
+
+def test_invalid_input():
+    with pytest.raises(
+        Exception
+    ):  # The exact exception may vary based on Lark's implementation
+        Person.from_string("Invalid: Input")
+
+
+if __name__ == "__main__":
+    pytest.main([__file__])

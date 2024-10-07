@@ -1,0 +1,86 @@
+from abc import ABC, abstractmethod
+
+from parse import compile
+
+from langroid.pydantic_v1 import BaseModel
+
+
+class GrammarBasedModel(BaseModel, ABC):
+    @classmethod
+    @abstractmethod
+    def grammar(cls) -> str:
+        pass
+
+    @classmethod
+    def parse(cls, string: str):
+        parser = compile(cls.grammar())
+        result = parser.parse(string)
+        if result is None:
+            raise ValueError("Invalid string format")
+        return cls(**result.named)
+
+    def generate(self) -> str:
+        return self.grammar().format(**self.dict())
+
+    class Config:
+        arbitrary_types_allowed = True
+
+
+class Person(GrammarBasedModel):
+    name: str
+    age: int
+    city: str
+
+    @classmethod
+    def grammar(cls) -> str:
+        return """
+{:s}<spec>{:s}
+{:s}name={name:S}{:s}
+{:s}age={age:d}{:s}
+{:s}city={city:S}{:s}
+{:s}</spec>{:s}
+"""
+
+
+class SimpleFormat(GrammarBasedModel):
+    key: str
+    value: str
+
+    @classmethod
+    def grammar(cls) -> str:
+        return "{:s}{key:S}{:s}:{:s}{value:S}{:s}"
+
+
+if __name__ == "__main__":
+    # Test Person class
+    input_string = """
+    <spec>
+    name=John Doe
+    age=30
+    city=New York
+    </spec>
+    """
+
+    person = Person.parse(input_string)
+    print("Parsed person:", person)
+
+    generated_string = person.generate()
+    print("Generated string:")
+    print(generated_string)
+
+    # Test SimpleFormat class
+    simple_input = "  Hello  :  World  "
+    simple = SimpleFormat.parse(simple_input)
+    print("Parsed simple format:", simple)
+
+    simple_generated = simple.generate()
+    print("Generated simple format:", simple_generated)
+
+    # Test with different whitespace
+    input_string2 = "<spec>\nname=Jane Smith\n\n  age=25\n\t\tcity=London\n</spec>"
+    person2 = Person.parse(input_string2)
+    print("Parsed person with different whitespace:", person2)
+
+    generated_string2 = person2.generate()
+    print("Generated string for person2:")
+    print(generated_string2)
