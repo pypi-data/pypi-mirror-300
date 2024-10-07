@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: ibrut_user_agent
+Version: 0.1.4
+Summary: Random instagram useragent app
+Home-page: https://github.com/khamdihi-dev/ibrut_user_agent
+Author: Khamdihi dev
+Author-email: dihidev.id@gmail.com
+License: MIT
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# My Python Project
+
+Proyek ini adalah sebuah paket Python yang memungkinkan Anda membuat random user agent untuk aplikasi Instagram berbasis Android dan ios.
+
+## Cara Instalasi
+
+```bash
+pip install ibrut_user_agent
