@@ -1,0 +1,3 @@
+requests
+pyclarify
+tqdm
