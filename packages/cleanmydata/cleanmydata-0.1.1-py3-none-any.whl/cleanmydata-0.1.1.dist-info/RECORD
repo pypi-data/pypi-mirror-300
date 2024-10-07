@@ -1,0 +1,9 @@
+cleanmydata/__init__.py,sha256=65Ygti31-8U3LdDBlNkvmD3eL8nr1jji_JVct6GEb5c,388
+cleanmydata/app.py,sha256=AgaGBIV2cSP6yvRe2Hc4SPXYI-d94tEZt0MlbKzdofA,4340
+cleanmydata/cleanmydata.py,sha256=xSj9md_aiC22qZ_-yeYnCQF6T6cPkU1Rtk5M0i5yrEc,5990
+cleanmydata/language_detection.py,sha256=v0FSEDPg1fcD6Teeg0siq7HA9xQ5eR16SoJUKo1V-xI,1550
+cleanmydata/spell_check.py,sha256=_pTX3vwv2aiTuob8Y2bcMJ5fE2FooIl_4w4pQ5_077s,1624
+cleanmydata-0.1.1.dist-info/METADATA,sha256=XtmXrmqmvnh3tmNtM0dR1fcxc0oHNx1LQCzae-t64EI,3442
+cleanmydata-0.1.1.dist-info/WHEEL,sha256=GV9aMThwP_4oNCtvEC2ec3qUYutgWeAzklro_0m4WJQ,91
+cleanmydata-0.1.1.dist-info/top_level.txt,sha256=muNHUGDR9MIlETV-lINiEX1AGsvlnq1WVD8y_D_3gGA,12
+cleanmydata-0.1.1.dist-info/RECORD,,
