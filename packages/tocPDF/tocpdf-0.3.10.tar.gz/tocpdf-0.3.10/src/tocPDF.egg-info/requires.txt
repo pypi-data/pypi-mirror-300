@@ -1,0 +1,8 @@
+pypdf
+tika
+click
+pdfplumber
+tqdm
+
+[dev]
+pytest
