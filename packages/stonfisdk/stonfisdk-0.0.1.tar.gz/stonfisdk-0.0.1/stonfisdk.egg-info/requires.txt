@@ -1,0 +1,4 @@
+pytoniq
+aiohttp
+async-lru
+dataclasses-json
