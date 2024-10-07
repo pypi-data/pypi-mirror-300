@@ -1,0 +1,11 @@
+[project]
+name = "telegram-gateway"
+authors = [
+    {name = "GEOEGII555", email = "geoegii2001555@gmail.com"},
+]
+version = "0.0.2"
+description = "Interact with the Telegram Gateway API."
+dependencies = [
+    "requests"
+]
+readme = "README.md"
