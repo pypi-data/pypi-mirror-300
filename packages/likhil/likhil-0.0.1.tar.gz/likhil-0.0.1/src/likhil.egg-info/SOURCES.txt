@@ -1,0 +1,10 @@
+LICENSE.txt
+README.md
+pyproject.toml
+src/likhil/__init__.py
+src/likhil/nameprint.py
+src/likhil/version.py
+src/likhil.egg-info/PKG-INFO
+src/likhil.egg-info/SOURCES.txt
+src/likhil.egg-info/dependency_links.txt
+src/likhil.egg-info/top_level.txt

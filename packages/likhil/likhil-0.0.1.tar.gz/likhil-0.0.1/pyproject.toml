@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+
+[project]
+name = "likhil"
+version = "0.0.1"
+authors = [
+  { name="", email="likhilpnl123@gmail.com" },
+]
+description = "A small example package"
+readme = "README.md"
+requires-python = ">=3.1"
+keywords = ['nameprint','pattern','color','likhil']
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+Homepage = "https://github.com/pypa/sampleproject"
+Issues = "https://github.com/pypa/sampleproject/issues"
