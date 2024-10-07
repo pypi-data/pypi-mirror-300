@@ -1,0 +1,37 @@
+[build-system]
+requires = ["maturin>=1.0,<2.0", "polars>=0.20.6"]
+build-backend = "maturin"
+readme = "README.md"
+license = "MIT"
+version = "0.1.1-beta"
+
+
+[project]
+name = "polars-loess"
+requires-python = ">=3.9"
+authors = [
+  {name = "Frank Sauerburger", email = "frank@sauerburger.com"}
+]
+description = "LOESS algorithm for Polars"
+keywords = ["polars", "loess", "regression", "smoothing", "data"]
+classifiers = [
+  "Programming Language :: Rust",
+  "Programming Language :: Python :: Implementation :: CPython",
+  "Programming Language :: Python :: Implementation :: PyPy",
+]
+
+[project.urls]
+"Homepage" = "https://gitlab.sauerburger.com/frank/polars-loess"
+
+[tool.maturin]
+module-name = "polars_loess._internal"
+
+[[tool.mypy.overrides]]
+module = "polars.utils.udfs"
+ignore_missing_imports = true
+
+[tool.uv]
+dev-dependencies = [
+    "matplotlib>=3.9.2",
+    "numpy>=2",
+]
