@@ -1,0 +1,5 @@
+unreal-stylesheet
+PySide6
+
+[:python_version < "3.7"]
+importlib-metadata
