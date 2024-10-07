@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: nonebot-plugin-llnonebot-api
+Version: 0.1.0
+Summary: 为 LLNoneBot 提供 API 服务 / Provide API services for LLNoneBot
+Author-Email: KomoriDev <mute231010@gmail.com>
+License: MIT
+Requires-Python: >=3.9
+Requires-Dist: nonebot2>=2.3.3
+Requires-Dist: fastapi>=0.115.0
+Description-Content-Type: text/markdown
+
+<!-- markdownlint-disable MD033 MD036 MD041 MD045 -->
+<div align="center">
+  <a href="https://v2.nonebot.dev/store">
+    <img src="./docs/NoneBotPlugin.svg" width="300" alt="logo">
+  </a>
+</div>
+
+<div align="center">
+
+# NoneBot-Plugin-LLNoneBot-API
+
+_✨ 为 LLNoneBot 提供 API 服务 ✨_
+
+<a href="">
+  <img src="https://img.shields.io/pypi/v/nonebot-plugin-liteloader-api.svg" alt="pypi" />
+</a>
+<img src="https://img.shields.io/badge/python-3.9+-blue.svg" alt="python">
+<a href="https://pdm.fming.dev">
+  <img src="https://img.shields.io/endpoint?url=https%3A%2F%2Fcdn.jsdelivr.net%2Fgh%2Fpdm-project%2F.github%2Fbadge.json" alt="pdm-managed">
+</a>
+<br/>
