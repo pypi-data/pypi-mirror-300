@@ -1,0 +1,15 @@
+# IDE & build-related directories
+.idea
+dist
+
+# Cache
+__pycache__
+**/*.pyc
+
+
+# Sample config file
+hemaherald.conf
+
+# Note-taking
+time_spent_here.txt
+notes.md

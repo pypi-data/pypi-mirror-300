@@ -1,0 +1,39 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+version = "0.0.1dev2"
+name = "hemaherald"
+authors = [
+    {name = "Danila Shershukov", email = "danila-shershukov@yandex.ru"},
+]
+maintainers = [
+    {name = "Danila Shershukov", email = "danila-shershukov@yandex.ru"},
+]
+description = "An app for conducting HEMA tournaments (in development)"
+readme = {file = "README.md", content-type = "text/markdown"}
+license = {file = "LICENSE.txt"}
+classifiers = [
+    "Development Status :: 2 - Pre-Alpha",
+    "Intended Audience :: End Users/Desktop",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)",
+]
+
+[project.urls]
+Repository = "https://gitlab.com/dshershukov/hemaherald"
+
+[tool.hatch.build.targets.sdist]
+exclude = []
+
+[tool.hatch.build.targets.wheel]
+sources = ["src"]
+packages = ["src/hemaherald"]
+
+[tool.pytest.ini_options]
+minversion = '6.0'
+addopts = "-ra -q"
+testpaths = [
+    "tests",
+]
