@@ -1,0 +1,34 @@
+
+Apache License, Version 2.0 (January 2004)
+
+Copyright (c) 2024 Rishi Chaitanya Sri Prasad Nalluri
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+   http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+
+---
+
+Patent Notice (India)
+
+This software implements methods that are covered by Indian Published Patent Application Number: 202341087256, currently "published" but "not yet granted" in India.
+
+Use of the patented methods in this software, or any implementation of the methods outside this software, may require a license under the Indian Published Patent Application Number: 202341087256. Permission to use the patented methods is not granted by this open-source license. To obtain permission to use the patented methods, please contact Rishi Chaitanya Sri Prasad Nalluri at rishichaitanya888@gmail.com for licensing inquiries.
+
+For more information about the published patent, visit the Indian Patent Office website or refer to the patent publication: https://drive.google.com/file/d/10EnRSuJafDCVPR4Sd-quykmjU2cyYVXW/view.
+
+---
+
+Important Legal Information:
+
+This Apache License 2.0 applies only to the "non-patented parts" of the software. The methods described in the published patent application are subject to additional restrictions under Indian patent law. Unauthorized use of these methods may result in legal consequences once the patent is granted.
+
+You are free to use, modify, and distribute the non-patented parts of this software as allowed under the Apache License 2.0. However, use of the methods described in the published patent application without obtaining a separate license is prohibited.
