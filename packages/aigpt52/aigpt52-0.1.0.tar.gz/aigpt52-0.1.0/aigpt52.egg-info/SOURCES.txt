@@ -1,0 +1,11 @@
+README.md
+setup.py
+aigpt52.egg-info/PKG-INFO
+aigpt52.egg-info/SOURCES.txt
+aigpt52.egg-info/dependency_links.txt
+aigpt52.egg-info/entry_points.txt
+aigpt52.egg-info/requires.txt
+aigpt52.egg-info/top_level.txt
+model_trainer_app/__init__.py
+model_trainer_app/app.py
+model_trainer_app/auth.py
