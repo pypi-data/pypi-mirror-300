@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "cis_bcw_test"
+version = "0.1.0"
+description = ""
+authors = ["CIS"]
+readme = "README.md"
+packages = [{ include = "cis_bcw.py" },]
+
+
+[tool.poetry.dependencies]
+python = ">=3.8,<3.10"
+pandas = "<3.0.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
