@@ -1,0 +1,34 @@
+[build-system]
+requires = ["setuptools >= 61.0",
+            "setuptools-scm >= 8.0"
+           ]
+build-backend = "setuptools.build_meta"
+[project]
+name = "ngslab"
+version = "1.0.1"
+#dynamic = ["version"]
+authors = [
+  { name="shelvon", email="xiaorun.zang@outlook.com" },
+  ]
+dependencies = [
+  'numpy',
+  'scipy',
+  'matplotlib',
+  'petsc4py',
+  'slepc4py',
+  'ngsolve',
+]
+description = "ngslab calculates waveguide modes in an unbounded multilayer planar waveguide using FEM with either PMLs or TBCs."
+keywords = ["FEM", "NGSolve", "TBC", "PML", "waveguide", "mode", "slab"]
+readme = "README.md"
+requires-python = ">=3.8" # due to Netgen/NGSolve
+license = {file = "LICENSE"}
+
+#[tool.setuptools.packages.find]
+#where = ["src"]
+#include = ["*.py"]
+#namespaces = false
+
+#TODO: get version dynamically
+#[tool.setuptools_scm]
+#version_file = "slab/_version.py"
