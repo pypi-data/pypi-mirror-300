@@ -1,0 +1,8 @@
+cnn
+dara
+quantifier
+solid_solns
+spectrum_analysis
+spectrum_generation
+tabulate_cifs
+visualizer
