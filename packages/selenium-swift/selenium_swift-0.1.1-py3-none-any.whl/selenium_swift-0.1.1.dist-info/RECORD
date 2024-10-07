@@ -1,0 +1,16 @@
+selenium_swift/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+selenium_swift/alert_handler.py,sha256=NEa7qj-IeznrB9ZAxZhxLLUKymikdfKJQTV0LFO5Y4A,1927
+selenium_swift/browser.py,sha256=z872ldI1ZQ8E-5HRYYkuuzLEiKVoQ258cFp26Njmkyc,3506
+selenium_swift/element.py,sha256=K2ndYRZsbtwiOiAEoRQ2KJWz4X5oegYnXg55MQ5bK3o,49561
+selenium_swift/extensions.py,sha256=SiHTMfINyiPe0d-e8I9vEqb1rsMypDXFOZGicc9pdIk,1900
+selenium_swift/json_handler.py,sha256=nJYmzgGdgxGX3TrLZMHu2Y3sPX--NOnnDGD4Vd09dms,1182
+selenium_swift/mouse_controller.py,sha256=Tfuxs8g8grHJ2y7UEXmOfpftrs-5jLEfv41-MN09sBg,3526
+selenium_swift/page_event.py,sha256=tdAI5eEv4jf3hB9bQ4BJB4b4fa2BzMeQOF5CkIHpSzU,17688
+selenium_swift/web_downloader.py,sha256=Ef2GfQVrt0tkXfW6-KhoqOU97EQVVGb-b8kYg-aiDr8,3326
+selenium_swift/web_option.py,sha256=-Imp_FiDCU5Pjg5M5wd5WWnFNLvfwnSTjd38FriggXc,7651
+selenium_swift/web_service.py,sha256=sY41tgUDQS4se8ZzZdRgc3YbB3kLxICR9X8M_j8rI9s,3199
+selenium_swift-0.1.1.dist-info/LICENSE,sha256=jsp0MjYPKAvfZF668VfLJNMgWsX8X4hsTyQXgnRmClI,1094
+selenium_swift-0.1.1.dist-info/METADATA,sha256=BcK5r-cNwKi90BrGeAmoNXogWrXO0LV5hfp5V8_CGro,25199
+selenium_swift-0.1.1.dist-info/WHEEL,sha256=R0nc6qTxuoLk7ShA2_Y-UWkN8ZdfDBG2B6Eqpz2WXbs,91
+selenium_swift-0.1.1.dist-info/top_level.txt,sha256=AsePu4sjdapeXEOe6I_8w6B_MA2PrvEhfbvQ6fCcJaU,15
+selenium_swift-0.1.1.dist-info/RECORD,,
