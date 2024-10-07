@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: hmsysteme
+Version: 1.7
+Summary: Connection to HM01
+Home-page: https://github.com/simbabali/hmsysteme
+Download-URL: https://github.com/simbabali/hmsysteme/archive/v0.2.tar.gz
+Author: stan
+Author-email: stan3@gmx.net
+License: MIT
+Requires-Dist: pygame
+Requires-Dist: pymunk
+Requires-Dist: remi
+Requires-Dist: smbus2
+Requires-Dist: pyserial
+Requires-Dist: matplotlib
+Requires-Dist: Shared-Memory-Dict
