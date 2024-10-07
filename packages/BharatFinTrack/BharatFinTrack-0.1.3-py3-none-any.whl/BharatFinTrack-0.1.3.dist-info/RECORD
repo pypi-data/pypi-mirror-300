@@ -1,0 +1,11 @@
+BharatFinTrack/__init__.py,sha256=vsAqdThhWXe0cRfy5hT728A1KBLiwbUjAZBgL1Yxnnc,196
+BharatFinTrack/core.py,sha256=Pika2srylrY-yXcMbYKhdkTkMJ2ni6cVU9wd3oq0RkU,3531
+BharatFinTrack/nse_index.py,sha256=91GnqyjX4Pho4yRct81JoNQVtXhpiZK12xaKCjETKJE,13299
+BharatFinTrack/nse_product.py,sha256=TbKjiozi7ygY08CHL96fNilTpo-X2l_qRCUZKTTFJJg,5677
+BharatFinTrack/nse_tri.py,sha256=1LbGPUyXiqgj5KWGjz3lFfhTv1mbKXEC66WzzKT5gQU,17880
+BharatFinTrack/data/equity_indices.xlsx,sha256=RX2Qcai7vwiF73R9lrdmNRCNSmj9zKtgCPb_gypP8SY,24287
+BharatFinTrack-0.1.3.dist-info/LICENSE.txt,sha256=KHtq3IB8A7uqL5aoINWYplXVYU-YpAlUo9Ugt8_roFU,1090
+BharatFinTrack-0.1.3.dist-info/METADATA,sha256=ZcOallw1we6I0cTRmh4bh2L5Qtkkvqrf4gCDMLSdReE,5938
+BharatFinTrack-0.1.3.dist-info/WHEEL,sha256=GV9aMThwP_4oNCtvEC2ec3qUYutgWeAzklro_0m4WJQ,91
+BharatFinTrack-0.1.3.dist-info/top_level.txt,sha256=y5g9pTqy4I9foo3PDKM5fQod6TI2PxD4evTU-VS1T-0,15
+BharatFinTrack-0.1.3.dist-info/RECORD,,
