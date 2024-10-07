@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: pocket-to-bookmarks-html
+Version: 0.1.0
+Summary: A pocket to bookmarks.html converter
+Requires-Python: >=3.12
+Description-Content-Type: text/markdown
+Requires-Dist: beautifulsoup4 >=4.12.3
+
