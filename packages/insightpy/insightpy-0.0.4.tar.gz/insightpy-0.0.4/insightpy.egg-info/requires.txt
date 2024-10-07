@@ -1,0 +1,12 @@
+pandas>=2.2.2
+setuptools>=75.1.0
+click>=8.1.7
+matplotlib>=3.9.2
+seaborn>=0.13.2
+numpy>=1.26.4
+scikit-learn>=1.5.1
+scipy>=1.13.1
+
+[dev]
+pytest>=6.0
+flake8>=3.8
