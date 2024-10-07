@@ -1,0 +1,12 @@
+pynusinov/__init__.py,sha256=gCz3nBwWNC137rQ1tJLFOby9y7JB3cfvhf-k49pgpvo,94
+pynusinov/_misc.py,sha256=p7SBaqOz9B7apFo95DcXuP3blCA0qLw3eFz9zzr0T-0,563
+pynusinov/_nusinov_euv.py,sha256=2We04gvnsu-sigk3TCpDiEBx4tvnTxJyjE-j941pLCw,3904
+pynusinov/_nusinov_fuv.py,sha256=vvk_7-jLpRyYoEyRIT0QN1RXwd-squTFf9DkqKAZCGs,2254
+pynusinov/_coeffs/euvt_spectral_bands.nc,sha256=zzZuc4yzl63CFLb3j4KRT9tLEJeS965inH1rcuFNXa4,10834
+pynusinov/_coeffs/euvt_spectral_lines.nc,sha256=s8xl857NE2NSqlS3AeN8U_3JLY-zOTuppJnE-LfO-3I,9628
+pynusinov/_coeffs/nusinov_fuv.nc,sha256=hGTV7xNZARui0cyIOnJIZZMkwpCu2YlfdHc_eul4Phc,24972
+pynusinov-0.0.3b4.dist-info/LICENSE.txt,sha256=rB8bI6ARSyo04Ip-yjayWH46lSmrK10haiWxmW31ztA,608
+pynusinov-0.0.3b4.dist-info/METADATA,sha256=ZirizkFAFAZKNMBalvbxEG4rEfAhnkb3Qu3CWGSMzt4,12238
+pynusinov-0.0.3b4.dist-info/WHEEL,sha256=GV9aMThwP_4oNCtvEC2ec3qUYutgWeAzklro_0m4WJQ,91
+pynusinov-0.0.3b4.dist-info/top_level.txt,sha256=CaXrGLk3VoOMbL1yKf8Xp4FO6EBuWnqO7EDZ48DhJMw,10
+pynusinov-0.0.3b4.dist-info/RECORD,,
