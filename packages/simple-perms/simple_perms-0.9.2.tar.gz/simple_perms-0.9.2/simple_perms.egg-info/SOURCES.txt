@@ -1,0 +1,11 @@
+LICENSE.txt
+README.md
+pyproject.toml
+simple_perms/__init__.py
+simple_perms/__main__.py
+simple_perms.egg-info/PKG-INFO
+simple_perms.egg-info/SOURCES.txt
+simple_perms.egg-info/dependency_links.txt
+simple_perms.egg-info/entry_points.txt
+simple_perms.egg-info/top_level.txt
+tests/test_simple_perms.py
