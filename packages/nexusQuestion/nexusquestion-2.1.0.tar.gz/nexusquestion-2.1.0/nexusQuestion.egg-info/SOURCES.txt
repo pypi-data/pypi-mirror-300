@@ -1,0 +1,10 @@
+LICENSE.txt
+MANIFEST.in
+README.md
+pyproject.toml
+nexus/__init__.py
+nexusQuestion.egg-info/PKG-INFO
+nexusQuestion.egg-info/SOURCES.txt
+nexusQuestion.egg-info/dependency_links.txt
+nexusQuestion.egg-info/requires.txt
+nexusQuestion.egg-info/top_level.txt
