@@ -1,0 +1,3 @@
+[console_scripts]
+comptg2=comptg2.entry:main
+
