@@ -1,0 +1,16 @@
+LICENSE
+README.md
+pyproject.toml
+src/QoreWidgets/__init__.py
+src/QoreWidgets/rc.py
+src/QoreWidgets.egg-info/PKG-INFO
+src/QoreWidgets.egg-info/SOURCES.txt
+src/QoreWidgets.egg-info/dependency_links.txt
+src/QoreWidgets.egg-info/requires.txt
+src/QoreWidgets.egg-info/top_level.txt
+src/QoreWidgets/__pyside6__/__framelessWindow__/framelessWindow.py
+src/QoreWidgets/__pyside6__/__immersiveTitleBar__/immersiveTitleBar.py
+src/QoreWidgets/__pyside6__/__immersiveTitleBar__/immersiveTitleBarContainer.py
+src/QoreWidgets/__pyside6__/__overlay__/emptyOverlay.py
+src/QoreWidgets/__pyside6__/__overlay__/loadingOverlay.py
+src/QoreWidgets/__pyside6__/__sideTabWidget__/sideTabWidget.py
