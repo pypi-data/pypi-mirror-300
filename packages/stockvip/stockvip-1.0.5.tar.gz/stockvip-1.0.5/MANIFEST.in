@@ -1,0 +1,4 @@
+exclude stockvip/config/config.py
+exclude stockvip/config/ensure_logged_in.py
+exclude stockvip/process_client/login.py
+exclude stockvip/process_stock/ohlcv.py
