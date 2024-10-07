@@ -1,0 +1,2 @@
+[console_scripts]
+tgateway = tgateway.__main__:cli
