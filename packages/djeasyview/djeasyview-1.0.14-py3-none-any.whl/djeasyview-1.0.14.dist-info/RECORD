@@ -1,0 +1,11 @@
+djeasyview/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+djeasyview/exceptions.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+djeasyview/response.py,sha256=AZZQTwgL1mSiE6vJ8Qwoi231KbP_bzxhypAf0YCT-mc,3155
+djeasyview/serializers.py,sha256=Mq7q5oWY1H1OI9h6CgaogSeprM2jh_ltfxabY1KM-ho,2704
+djeasyview/utils.py,sha256=UDliCq7gnECN2iHGQtt5ZO4Te-xItiHxtXYdK93jJJM,1123
+djeasyview/views.py,sha256=PPLw_J_5GBgqViqrrJYeX1iuC-UjWxXvBviwpNJN71A,6665
+djeasyview-1.0.14.dist-info/LICENSE,sha256=QCWjcr9TXmvZVHSPNZfvfanCfeL87wHE2VYJc3W81e0,1068
+djeasyview-1.0.14.dist-info/METADATA,sha256=l_APGHHYECA-0aHesuQ65jhRb6hiiruRiaOb5CTyL9I,3532
+djeasyview-1.0.14.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+djeasyview-1.0.14.dist-info/top_level.txt,sha256=NdANP2gVyE4imBvZvgqGsJ60QgBfKi8FFsOlij1RcGk,11
+djeasyview-1.0.14.dist-info/RECORD,,
