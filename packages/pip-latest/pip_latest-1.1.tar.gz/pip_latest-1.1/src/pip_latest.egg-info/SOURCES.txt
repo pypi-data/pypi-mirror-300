@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+src/pip-latest/__init__.py
+src/pip-latest/get.py
+src/pip_latest.egg-info/PKG-INFO
+src/pip_latest.egg-info/SOURCES.txt
+src/pip_latest.egg-info/dependency_links.txt
+src/pip_latest.egg-info/top_level.txt
