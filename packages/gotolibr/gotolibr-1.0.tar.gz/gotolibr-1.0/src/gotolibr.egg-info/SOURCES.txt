@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+src/gotolibr/__init__.py
+src/gotolibr/module.py
+src/gotolibr.egg-info/PKG-INFO
+src/gotolibr.egg-info/SOURCES.txt
+src/gotolibr.egg-info/dependency_links.txt
+src/gotolibr.egg-info/top_level.txt
