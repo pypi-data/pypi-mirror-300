@@ -1,0 +1,58 @@
+[tool.poetry]
+name = "flexiagent"
+version = "0.1.0a8"
+description = "FlexiAgent is an open-source framework for creating agents based on Directed Acyclic Graphs (DAGs), featuring a user-friendly interface, built-in practical agents, and high configurability for efficient task management and rapid deployment."
+authors = ["Hiram Deng <72371329+dzhsurf@users.noreply.github.com>"]
+license = "MIT"
+readme = "README.md"
+classifiers = ["Typing :: Typed",
+    "Intended Audience :: Developers",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Operating System :: OS Independent",
+    "Operating System :: POSIX",
+    "Operating System :: MacOS",
+    "Operating System :: POSIX :: Linux",
+    "Operating System :: Microsoft :: Windows",
+    "Topic :: Software Development :: Libraries :: Python Modules"
+]
+homepage = "https://github.com/dzhsurf/flexiagent"
+repository = "https://github.com/dzhsurf/flexiagent"
+
+[tool.poetry.dependencies]
+python = ">=3.8,<4"
+sqlparse = "^0.5.1"
+openai = "^1.43.0"
+pydantic = "^2.9.0"
+sqlalchemy = "^2.0.34"
+llama-cpp-python = "^0.3.0"
+huggingface-hub = "^0.24.6"
+
+[tool.poetry.group.dev.dependencies]
+mypy = "^1.11.2"
+pytest = "^8.3.2"
+ruff = "^0.6.4"
+isort = "^5.13.2"
+tqdm = "^4.66.5"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.pytest.ini_options]
+log_cli = "True"
+log_cli_level = "INFO"
+
+[tool.ruff]
+line-length = 88
+
+[tool.isort]
+line_length = 88
+multi_line_output = 3  # Consider using 3 for Vertical Hanging Indent
+include_trailing_comma = true
+force_grid_wrap = 0  # No forced grid wrap
+use_parentheses = true
