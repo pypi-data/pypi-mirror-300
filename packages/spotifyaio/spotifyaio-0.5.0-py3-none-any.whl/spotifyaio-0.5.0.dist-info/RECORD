@@ -1,0 +1,8 @@
+spotifyaio/__init__.py,sha256=l7YBcoRt3YYy15siaZB8cGXkUYRmwz0eHaMHiqqxrFA,1276
+spotifyaio/exceptions.py,sha256=CnXHO_rkFUg8wvEV63myMtujj4BGmFObP3uXbgIpVrc,301
+spotifyaio/models.py,sha256=j5wKI8nzolyse62h0PyUcv-MVj7uEcHUvSeoSAtn0mA,10097
+spotifyaio/spotify.py,sha256=W5jHM2EaWyWAwgZ3lalMBQ3X4hL1ngCxgt2eKmJ57V8,14389
+spotifyaio-0.5.0.dist-info/LICENSE.md,sha256=3xmRQIFR_yEChVxsySUfjGCyHs_grkXLcyB0V-UbfLI,1077
+spotifyaio-0.5.0.dist-info/METADATA,sha256=t56SsI3nssASQ4wrPtXa2J8HSX90BzPBi5wcwKHJruo,6139
+spotifyaio-0.5.0.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+spotifyaio-0.5.0.dist-info/RECORD,,
