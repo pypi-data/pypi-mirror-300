@@ -1,0 +1,17 @@
+{
+    "version": "0.0.1",
+    "include": [
+        {
+            "filename": "d:\\promptarchitect\\examples\\define_test_cases\\generate_titles_claude.prompt",
+            "tests": [
+                "file:///d%3A/promptarchitect/examples/define_test_cases/generate_titles_claude.prompt/test_01"
+            ]
+        },
+        {
+            "filename": "d:\\promptarchitect\\examples\\define_test_cases\\generate_titles_claude.prompt",
+            "tests": [
+                "file:///d%3A/promptarchitect/examples/define_test_cases/generate_titles_claude.prompt/test_02"
+            ]
+        }
+    ]
+}
