@@ -1,0 +1,8 @@
+setup.py
+data3_network/__init__.py
+data3_network/data_access.py
+data3_network.egg-info/PKG-INFO
+data3_network.egg-info/SOURCES.txt
+data3_network.egg-info/dependency_links.txt
+data3_network.egg-info/requires.txt
+data3_network.egg-info/top_level.txt
