@@ -1,0 +1,2 @@
+feasytools>=0.0.17
+gurobipy>=9.1.0
