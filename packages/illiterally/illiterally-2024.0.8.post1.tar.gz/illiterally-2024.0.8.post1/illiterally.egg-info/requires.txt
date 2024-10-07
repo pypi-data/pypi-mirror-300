@@ -1,0 +1,4 @@
+python-slugify
+jinja2
+emoji
+pytest

@@ -1,0 +1,4 @@
+[console_scripts]
+illiterally = illiterally.entry_points:illiterally_cli_entry_point
+illiterally_demo = illiterally.entry_points:illiterally_demo_entry_point
+illiterally_dogfood = illiterally.entry_points:illiterally_dogfood_entry_point
