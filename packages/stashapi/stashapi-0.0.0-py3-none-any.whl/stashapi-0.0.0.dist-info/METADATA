@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: stashapi
+Version: 0.0.0
+Summary: This is a dummy package designed to prevent namesquatting on PyPI. You should install stashapp-tools instead.
+Home-page: https://github.com/stg-annon/stashapp-tools
+Author: stg-annon
+Author-email: 14135675+stg-annon@users.noreply.github.com
+License: MIT
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Description-Content-Type: text/markdown
+Requires-Dist: requests
+
+# This is a dummy package designed to prevent namesquatting on PyPI. You should install stashapp-tools instead.
