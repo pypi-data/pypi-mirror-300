@@ -1,0 +1,10 @@
+fitwrap/__init__.py,sha256=4EcnxNX5jFpCcpGaQmR3moWqaFvQH_I5t3Uc9xigPbs,285
+fitwrap/fit.py,sha256=NN7FnNQ5bvqBjuIHnGvTmqGc45xV021bd-BDq1gZcsE,19863
+fitwrap/fit2d.py,sha256=OYztZcZraklYT0gcuJRvZmFDvZ-jzrHI7uNmJc0veCk,3618
+fitwrap/gauss.py,sha256=2st-4qBKu93JQqeF2brkfmYlSaTNJcd1Od2zgveBml4,2137
+fitwrap/sine.py,sha256=xiYbQTx53T16_AIP-2s02VEQJynyuSgXHcgtLDQ7XBc,3223
+fitwrap-0.3.0.dist-info/LICENSE.txt,sha256=sep8YqEiklAtTHaWXe5hhif0U1BvXmrFzyZNucM6_8Q,1056
+fitwrap-0.3.0.dist-info/METADATA,sha256=QOxlu-OeO3Wcfl4BMn7ApjfVDxD_uIPSupeRFKOcyQI,297
+fitwrap-0.3.0.dist-info/WHEEL,sha256=GV9aMThwP_4oNCtvEC2ec3qUYutgWeAzklro_0m4WJQ,91
+fitwrap-0.3.0.dist-info/top_level.txt,sha256=LnfkyIocc2f333wKJ9erHYOLZTwhmSsV-K2PTqufCXA,8
+fitwrap-0.3.0.dist-info/RECORD,,
