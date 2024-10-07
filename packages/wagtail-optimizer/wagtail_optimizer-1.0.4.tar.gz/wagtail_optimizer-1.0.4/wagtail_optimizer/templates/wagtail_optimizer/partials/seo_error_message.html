@@ -1,0 +1,6 @@
+{% load wagtail_optimizer %}
+<strong>{% format_error_message error %}</strong>
+{% format_error_description error as descriptive_message %}
+{% if descriptive_message %}
+    <span>- {{ descriptive_message }}</span>
+{% endif %}
