@@ -1,0 +1,10 @@
+PySoundSphere/__init__.py,sha256=WP5IUQiAiNcKrO33YB670KJ2Pdk2QX6bwiLZwOSzjOE,56
+PySoundSphere/main.py,sha256=f9dIKexLPurGjOQD45vuCSRJlHSuyjfbmM90sP0rBOQ,4572
+PySoundSphere/playback_backend/backend_loader.py,sha256=97jJolXXzzRPmhTukesML9kZ5qA-EsiY1O-05iFsXyA,1361
+PySoundSphere/playback_backend/ffplay_backend.py,sha256=fvykBsoc16_YkozA0JpVNx6SNhS-dudK3x9TTp9QkuM,2278
+PySoundSphere/playback_backend/pygame_backend.py,sha256=uyT1slcJW4VW9K9EoUOF7Ibt1dd98JluwizcwKXm-Ss,1181
+PySoundSphere/playback_backend/sounddevice_backend.py,sha256=_a4_L4f9zjsz0M8GvxRf2runqc1URQYe00I9XejNU-s,2662
+pysoundsphere-0.0.5.dist-info/METADATA,sha256=GinYVDCNPfAAHZACrpX8n2_7o-mMkweqNHRkYR1rxlM,1900
+pysoundsphere-0.0.5.dist-info/WHEEL,sha256=1yFddiXMmvYK7QYTqtRNtX66WJ0Mz8PYEiEUoOUUxRY,87
+pysoundsphere-0.0.5.dist-info/licenses/LICENSE.md,sha256=5X8cMguM-HmKfS_4Om-eBqM6A1hfbgZf6pfx2G24QFI,35150
+pysoundsphere-0.0.5.dist-info/RECORD,,
