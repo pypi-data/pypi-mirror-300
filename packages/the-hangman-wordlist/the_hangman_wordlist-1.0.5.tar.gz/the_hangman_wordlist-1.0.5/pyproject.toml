@@ -1,0 +1,40 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "the_hangman_wordlist"
+version = "1.0.5"
+authors = [
+  { name = "Noah Bozkurt" },
+  { name = "Jurriaan Portier" },
+]
+description = "A simple (and small) library to randomly pick hangman words from a predefined wordlist."
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+  "importlib-metadata",
+  "requests"
+]
+
+[project.urls]
+Homepage = "https://thebiemgamer.github.io/TheHangmanWordlist"
+"Source Code" = "https://github.com/TheBiemGamer/TheHangmanWordlist"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/the_hangman_wordlist"]
+
+[tool.hatch.build.targets.sdist]
+exclude = [
+  "/assets",
+  "/example",
+  "_config.yml",
+  ".gitignore",
+  ".gitattributes",
+  "*.json"
+]
