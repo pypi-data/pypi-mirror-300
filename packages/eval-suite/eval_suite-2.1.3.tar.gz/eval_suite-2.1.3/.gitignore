@@ -1,0 +1,9 @@
+/.vscode/
+/output/
+/dist/
+
+__pycache__/
+
+/test.py
+*.log
+/*.csv
