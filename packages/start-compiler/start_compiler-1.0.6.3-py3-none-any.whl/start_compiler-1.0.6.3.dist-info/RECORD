@@ -1,0 +1,9 @@
+start_compiler/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+start_compiler/compile.py,sha256=QirUp8ZcTHIIhJpwnrEA12BUaqBCM1afLLd39Laj6Fo,39243
+start_compiler/import_start.py,sha256=2k1hh6_vuVQJ6IlBfB_0ezBwtB3WQOws-ke3-hfkbuo,13251
+start_compiler/start_grammar.ebnf,sha256=6SMjf8KtVfKv90U-5WDvhfrSITG37hlV0gv6Zs4vvnw,3502
+start_compiler-1.0.6.3.dist-info/LICENSE,sha256=E0mkthSEkrRPYp5k7tZ2YS4jT-moOeTzsnfBSCyISfE,20849
+start_compiler-1.0.6.3.dist-info/METADATA,sha256=lhFyTb3CfGz-R30q2SpwiYc9LaK-PUFXPEy_34lnB3s,1293
+start_compiler-1.0.6.3.dist-info/WHEEL,sha256=GV9aMThwP_4oNCtvEC2ec3qUYutgWeAzklro_0m4WJQ,91
+start_compiler-1.0.6.3.dist-info/top_level.txt,sha256=bg5ME_97BgA4cqBCcpKU9ldhNxqWbhPV2y3KxbDXGKY,15
+start_compiler-1.0.6.3.dist-info/RECORD,,
