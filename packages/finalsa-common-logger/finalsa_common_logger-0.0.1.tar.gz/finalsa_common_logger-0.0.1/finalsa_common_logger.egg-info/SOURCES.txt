@@ -1,0 +1,15 @@
+LICENSE.md
+README.md
+setup.cfg
+setup.py
+finalsa/common/logger/__init__.py
+finalsa/common/logger/default_settings.py
+finalsa/common/logger/filter.py
+finalsa/common/logger/formatter.py
+finalsa_common_logger.egg-info/PKG-INFO
+finalsa_common_logger.egg-info/SOURCES.txt
+finalsa_common_logger.egg-info/dependency_links.txt
+finalsa_common_logger.egg-info/requires.txt
+finalsa_common_logger.egg-info/top_level.txt
+finalsa_common_logger.egg-info/zip-safe
+tests/test_version.py

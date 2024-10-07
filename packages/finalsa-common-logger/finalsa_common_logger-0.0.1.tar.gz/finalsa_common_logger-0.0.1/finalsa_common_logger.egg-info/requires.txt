@@ -1,0 +1,2 @@
+finalsa-traceability>=0.0.1
+python-json-logger>=2.0.7
