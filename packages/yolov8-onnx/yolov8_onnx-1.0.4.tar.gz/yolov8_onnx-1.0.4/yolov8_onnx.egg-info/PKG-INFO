@@ -1,0 +1,56 @@
+Metadata-Version: 2.1
+Name: yolov8-onnx
+Version: 1.0.4
+Summary: YoloV8 Package Tools
+Author: LauNT
+Author-email: ttruongllau@gmail.com
+License: Apache License 2.0
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# YOLOV8 ONNX
+
+[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](LICENSE)
+[![Python 3.7](https://img.shields.io/badge/python-3.7+-aff.svg)](https://www.python.org/downloads/release/python-370/)
+[![ONNX Compatible](https://img.shields.io/badge/ONNX-Compatible-brightgreen)](https://onnx.ai/)
+[![Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.google/)
+
+## Description
+
+This package is compatible with [YoloV8](https://github.com/ultralytics/ultralytics) for object detection program, using [ONNX](https://onnx.ai/) format model (CPU & GPU speed can be **x2 Times Faster**). This code is referenced from [this awesome repo](https://github.com/ibaiGorordo/ONNX-YOLOv8-Object-Detection).
+
+
+## Usage
+
+Step 1: Convert your pre-trained model to ONNX format.
+
+```python
+from ultralytics import YOLO
+
+# Load your pre-trained model
+model = YOLO('your-trained-model.pt')
+
+# Export the model
+model.export(format='onnx', 
+            batch=1, 
+            device='cpu', 
+            simplify=True, 
+            imgsz=640, 
+            dynamic=True)
+```
+
+Step 2: Use in your code.
+
+```python
+from yolov8_onnx import DetectEngine
+
+engine = DetectEngine(model_path= str | 'your-model.onnx',
+                        image_size = int | 640,
+                        conf_thres= float | 0.5, 
+                        iou_thres= float | 0.1)
+
+output = engine(image) # cv2 image
+```
+
+**Note**: akaOCR (Transform documents into useful data with AI-based IDP - Intelligent Document Processing) - helps make inefficient manual entry a thing of the past—and reliable data insights a thing of the present. Details at: https://app.akaocr.io
