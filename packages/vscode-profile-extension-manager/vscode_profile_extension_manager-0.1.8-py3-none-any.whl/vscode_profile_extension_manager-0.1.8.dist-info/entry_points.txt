@@ -1,0 +1,2 @@
+[console_scripts]
+vpem = vpem.main:app
