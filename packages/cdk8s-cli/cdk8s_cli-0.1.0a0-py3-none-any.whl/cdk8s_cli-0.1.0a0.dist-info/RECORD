@@ -1,0 +1,5 @@
+cdk8s_cli/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+cdk8s_cli/cdk8s_cli.py,sha256=CA4Vi8xIU4X7iUug2aIVXflaQ4XEal66ez2IlddomNs,6968
+cdk8s_cli-0.1.0a0.dist-info/METADATA,sha256=xb9p5gCGyNhzNP4oEsZqRnNpdI1PhwivPBvKxF2As0g,2241
+cdk8s_cli-0.1.0a0.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+cdk8s_cli-0.1.0a0.dist-info/RECORD,,
