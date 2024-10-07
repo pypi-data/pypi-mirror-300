@@ -1,0 +1,16 @@
+cs.cmdutils>=20210404
+cs.dateutils>=20230210
+cs.deco>=20241007
+cs.edit>=20220429
+cs.fileutils>=20241007
+cs.fs>=20220429
+cs.lex>=20240630
+cs.logutils>=20241007
+cs.mappings>=20231129
+cs.obj>=20200716
+cs.pfx>=20240630
+cs.py3>=20220523
+cs.resources>=20241005
+cs.threads>=20241005
+icontract
+typeguard
