@@ -1,0 +1,54 @@
+[tool.poetry]
+name = "field-manager-api"
+version = "0.0.2"
+description = "Field Manager API SDK"
+license = "MIT"
+authors = ["Jostein Leira <9363084+josteinl@users.noreply.github.com>",
+            "Tellef Kydland <48522922+tellefk@users.noreply.github.com>",
+            "Ingeborg Gjerde <ingeborg.gjerde@gmail.com>"]
+readme = "README.md"
+homepage = "https://github.com/norwegian-geotechnical-institute/field-manager-api"
+repository = "https://github.com/norwegian-geotechnical-institute/field-manager-api"
+classifiers = [
+#    "Development Status :: 5 - Production/Stable",
+#    "Development Status :: 4 - Beta",
+    "Development Status :: 3 - Alpha",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Topic :: Scientific/Engineering :: GIS",
+]
+packages = [
+    { include = "field_manager_api", from="src" },
+]
+
+[[tool.poetry.source]]
+name = "PyPI"
+priority = "primary"
+
+[tool.poetry.dependencies]
+python = ">3.10,<4.0"
+matplotlib = "^3.9.2"
+plotly = "^5.24.1"
+nbformat = "^5.10.4"
+scipy = "^1.14.1"
+folium = "^0.17.0"
+selenium = "^4.24.0"
+webdriver-manager = "^4.0.2"
+python-docx = "^1.1.2"
+shapely = "^2.0.6"
+pandas = "^2.2.3"
+jupyter = "^1.1.1"
+pyproj = "^3.6.1"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "*"
+pytest-cov = "*"
+bandit = "*"
+safety = "*"
+pip-licenses = "*"
+ruff = "*"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
