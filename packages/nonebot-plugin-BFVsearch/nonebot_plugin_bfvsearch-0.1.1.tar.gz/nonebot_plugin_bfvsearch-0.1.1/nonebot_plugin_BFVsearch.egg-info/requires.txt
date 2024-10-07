@@ -1,0 +1,5 @@
+nonebot2>=2.0.0
+aiohttp
+aiocache
+nonebot_plugin_apscheduler
+nonebot_plugin_htmlrender

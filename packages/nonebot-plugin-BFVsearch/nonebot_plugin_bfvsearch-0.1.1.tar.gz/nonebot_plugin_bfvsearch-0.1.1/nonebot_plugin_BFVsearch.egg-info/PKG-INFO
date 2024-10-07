@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: nonebot_plugin_BFVsearch
+Version: 0.1.1
+Summary: 基于 Nonebot2 的战地 5 QQ 群管理插件。
+Author-email: Swallow513 <3214115907@qq.com>
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: nonebot2>=2.0.0
+Requires-Dist: aiohttp
+Requires-Dist: aiocache
+Requires-Dist: nonebot_plugin_apscheduler
+Requires-Dist: nonebot_plugin_htmlrender
+
+# nonebot_plugin_bfvsearch
+
+基于Nonebot2的《战地5》QQ群管理插件。
+
+## 安装
+
+```bash
+pip install nonebot-plugin-bfvsearch
