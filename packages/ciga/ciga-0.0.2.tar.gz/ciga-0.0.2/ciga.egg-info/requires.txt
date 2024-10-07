@@ -1,0 +1,14 @@
+pandas
+igraph
+numpy
+tqdm
+matplotlib
+
+[all]
+plotly
+gravis
+pyvis
+
+[dev]
+pytest>=7.0
+twine>=4.0.2
