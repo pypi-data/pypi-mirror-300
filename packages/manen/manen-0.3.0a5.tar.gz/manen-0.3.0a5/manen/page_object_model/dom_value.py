@@ -1,0 +1,166 @@
+from datetime import date, datetime
+from typing import TYPE_CHECKING, Callable, TypeVar, cast
+
+import dateparser
+from selenium.webdriver.remote.webelement import WebElement
+
+from manen.finder import find
+from manen.page_object_model.config import Config
+
+if TYPE_CHECKING:
+    from manen.page_object_model.component import Component
+
+T = TypeVar("T")
+TTransformers = dict[type[T], Callable[[WebElement, Config], T]]
+
+
+GET_TRANSFORMERS: TTransformers = {
+    date: lambda elt, cfg: dt.date() if (dt := dateparser.parse(elt.text)) else None,
+    datetime: lambda elt, cfg: dateparser.parse(elt.text),
+    float: lambda elt, cfg: float(elt.text),
+    int: lambda elt, cfg: int(elt.text),
+    str: lambda elt, cfg: elt.text,
+    WebElement: lambda elt, cfg: elt,
+}
+
+
+class ConfigurableDOM:
+    def __init__(self, config: Config):
+        self.config = config
+
+
+class ImmutableDOMValueMixin:
+    def __set__(self, component: "Component", value):
+        raise Exception("Cannot set component")
+
+    def __delete__(self, component: "Component"):
+        raise Exception("Cannot delete component")
+
+
+class DOMValue(ImmutableDOMValueMixin, ConfigurableDOM):
+    def __get__(self, component: "Component", component_class: type["Component"]):
+        element = find(
+            selector=self.config.selectors,
+            inside=component._scope,
+            many=False,
+            default=self.config.default,
+            wait=self.config.wait,
+        )
+        if element == self.config.default:
+            return element
+        if self.config.attribute:
+            return element.get_attribute(self.config.attribute)
+        return GET_TRANSFORMERS[self.config.element_type](element, self.config)
+
+
+class DOMValues(ImmutableDOMValueMixin, ConfigurableDOM):
+    def __get__(self, component: "Component", component_class: type["Component"]):
+        elements = find(
+            selector=self.config.selectors,
+            inside=component._scope,
+            many=True,
+            default=self.config.default,
+            wait=self.config.wait,
+        )
+        if elements == self.config.default:
+            return elements
+        if self.config.attribute:
+            return [
+                element.get_attribute(self.config.attribute) for element in elements
+            ]
+        return [
+            GET_TRANSFORMERS[self.config.element_type](element, self.config)
+            for element in elements
+        ]
+
+
+class InputDOMValue:
+    def __init__(self, config: Config):
+        if config.many:
+            raise ValueError("Cannot use InputElement with many=True")
+        self.config = config
+
+    def __get__(self, component: "Component", component_class: type["Component"]):
+        element = find(
+            selector=self.config.selectors,
+            inside=component._scope,
+            many=False,
+            default=self.config.default,
+            wait=self.config.wait,
+        )
+        return element.get_attribute("value")
+
+    def __set__(self, component: "Component", value):
+        element = find(
+            selector=self.config.selectors,
+            inside=component._scope,
+            many=False,
+            default=self.config.default,
+            wait=self.config.wait,
+        )
+        element.clear()
+        element.send_keys(value)
+
+
+class CheckboxDOMValue:
+    def __init__(self, config: Config):
+        self.config = config
+
+    def __get__(self, component: "Component", component_class: type["Component"]):
+        element = find(
+            selector=self.config.selectors,
+            inside=component._scope,
+            many=False,
+            default=self.config.default,
+            wait=self.config.wait,
+        )
+        return element.get_attribute("checked") == "true"
+
+    def __set__(self, component: "Component", value: bool):
+        element = find(
+            selector=self.config.selectors,
+            inside=component._scope,
+            many=False,
+            default=self.config.default,
+            wait=self.config.wait,
+        )
+        if value != (element.get_attribute("checked") == "true"):
+            element.click()
+
+
+class DOMSection(ImmutableDOMValueMixin, ConfigurableDOM):
+    def __get__(
+        self,
+        component: "Component",
+        component_class: type["Component"],
+    ) -> "Component":
+        element = find(
+            selector=self.config.selectors,
+            inside=component._scope,
+            many=False,
+            default=self.config.default,
+            wait=self.config.wait,
+        )
+        cls = type(
+            self.config.element_type.__qualname__,
+            self.config.element_type.__bases__,
+            {**self.config.element_type.__dict__},
+        )
+        return cast("Component", cls(element))
+
+
+class DOMSections(ImmutableDOMValueMixin, ConfigurableDOM):
+    def __get__(self, component: "Component", component_class: type["Component"]):
+        elements = find(
+            selector=self.config.selectors,
+            inside=component._scope,
+            many=True,
+            default=self.config.default,
+            wait=self.config.wait,
+        )
+        cls = type(
+            self.config.element_type.__qualname__,
+            self.config.element_type.__bases__,
+            {**self.config.element_type.__dict__},
+        )
+        return [cls(element) for element in elements]
