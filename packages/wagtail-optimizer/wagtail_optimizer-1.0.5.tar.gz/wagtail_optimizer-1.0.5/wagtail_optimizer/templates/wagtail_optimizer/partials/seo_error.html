@@ -1,0 +1,21 @@
+{% load i18n wagtail_optimizer %}
+
+{% format_error_data error as lines %}
+{% if lines %}
+    <details>
+        <summary class="seo-summary">
+            {% include "./seo_error_message.html" %}
+        </summary>
+        <div class="seo-summary-meta">
+            {% for param, value in lines %}
+                <p>
+                    <strong>{{ param }}</strong>: {{ value }}
+                </p>
+            {% endfor %}
+        </div>
+    </details>
+{% else %}
+    <p>
+        {% include "./seo_error_message.html" %}
+    </p>
+{% endif %}
