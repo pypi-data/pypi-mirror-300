@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: byAd12-library
+Version: 1.0
+Summary: Multi function library.
+Home-page: https://github.com/byAd12/byAd12-Library.git
+Author: Adrián L. G. P.
+Author-email: adgimenezp@gmail.com
+Description-Content-Type: text/markdown
+Requires-Dist: ping3
+Requires-Dist: threading
+
+
+
+'''
+pip install byAd12
+'''
