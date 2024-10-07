@@ -1,0 +1,20 @@
+{% extends "wagtailadmin/base.html" %}
+{% load i18n wagtailadmin_tags %}
+
+{% block titletag %}{% translate "SEO Check" %}{% endblock %}
+
+{% help_block status="info" %}
+{% endhelp_block %}
+{% help_block status="warning" %}
+{% endhelp_block %}
+{% help_block status="critical" %}
+{% endhelp_block %}
+{% block content %}
+    {% include "wagtailadmin/shared/header.html" with title=view.page_title action_url=view.action_url icon=view.page_image action_text=view.action_text search_url=view.search_url %}
+
+    <div class="nice-padding">
+
+        
+        
+    </div>
+{% endblock %}
