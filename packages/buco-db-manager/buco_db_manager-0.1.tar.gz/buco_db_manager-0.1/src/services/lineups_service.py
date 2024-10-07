@@ -1,0 +1,40 @@
+import logging
+
+from src.models.lineups import Lineups
+from src.repositories.lineups_repository import LineupsRepository
+from src.services.fixture_service import FixtureService
+
+LOGGER = logging.getLogger(__name__)
+
+
+class LineupsService:
+    def __init__(self):
+        self.lineups_repository = LineupsRepository()
+        self.fixture_service = FixtureService()
+
+    def upsert_many_lineups(self, fixture_injuries):
+        self.lineups_repository.bulk_upsert_documents('lineups', fixture_injuries)
+        LOGGER.info('Upserted fixture stats data')
+
+    def get_lineups(self, fixture_id: str):
+        response = self.lineups_repository.get_lineups(fixture_id)
+
+        if not response.get('data', []):
+            return None
+
+        lineups = Lineups.from_dict(response)
+        return lineups
+
+    def get_team_lineups(self, team_id: str, league_id: str, season: str):
+        fixture_ids = self.fixture_service.get_fixture_ids(team_id, league_id, season)
+        lineups = self.lineups_repository.get_many_lineups(fixture_ids)
+        lineups = [Lineups.from_dict(lineup) for lineup in lineups]
+
+        return lineups
+
+    def get_league_lineups(self, league_id: str, season: str):
+        fixture_ids = self.fixture_service.get_league_fixture_ids(league_id, season)
+        lineups = self.lineups_repository.get_many_lineups(fixture_ids)
+        lineups = [Lineups.from_dict(lineup) for lineup in lineups]
+
+        return lineups
