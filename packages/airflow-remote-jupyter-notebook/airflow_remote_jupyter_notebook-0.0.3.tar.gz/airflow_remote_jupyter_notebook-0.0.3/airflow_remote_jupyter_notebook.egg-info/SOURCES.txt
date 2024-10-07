@@ -1,0 +1,11 @@
+README.md
+setup.cfg
+setup.py
+airflow_remote_jupyter_notebook.egg-info/PKG-INFO
+airflow_remote_jupyter_notebook.egg-info/SOURCES.txt
+airflow_remote_jupyter_notebook.egg-info/dependency_links.txt
+airflow_remote_jupyter_notebook.egg-info/entry_points.txt
+airflow_remote_jupyter_notebook.egg-info/requires.txt
+airflow_remote_jupyter_notebook.egg-info/top_level.txt
+tests/test_jupyter_api_client.py
+tests/test_plugin.py
