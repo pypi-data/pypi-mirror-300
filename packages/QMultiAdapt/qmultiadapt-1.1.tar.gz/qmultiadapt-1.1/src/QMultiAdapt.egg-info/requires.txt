@@ -1,0 +1,5 @@
+numpy
+itertools
+scipy
+matplotlib
+multiprocessing
