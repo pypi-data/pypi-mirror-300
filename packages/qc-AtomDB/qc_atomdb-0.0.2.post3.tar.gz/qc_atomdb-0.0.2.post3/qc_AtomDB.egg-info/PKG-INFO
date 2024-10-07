@@ -1,0 +1,167 @@
+Metadata-Version: 2.1
+Name: qc-AtomDB
+Version: 0.0.2.post3
+Summary: AtomDB is a database of atomic and ionic properties.
+Author-email: QC-Devs Community <qcdevs@gmail.com>
+License: GPL-3.0-or-later
+Project-URL: Documentation, https://atomdb.qcdevs.org
+Project-URL: Issues, https://github.com/theochem/atomdb/issues
+Project-URL: Source, https://github.com/theochem/atomdb/
+Project-URL: Changelog, https://github.com/theochem/atomdb/blob/main/CHANGELOG.md
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Console
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Topic :: Scientific/Engineering :: Physics
+Classifier: Topic :: Scientific/Engineering :: Chemistry
+Classifier: Intended Audience :: Science/Research
+Classifier: Intended Audience :: Education
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy>=1.16
+Requires-Dist: scipy>=1.4
+Requires-Dist: msgpack>=1.0.0
+Requires-Dist: msgpack-numpy>=0.4.8
+Requires-Dist: h5py>=3.6.0
+Requires-Dist: importlib_resources>=3.0.0
+Requires-Dist: pooch>=1.8.1
+Provides-Extra: dev
+Requires-Dist: pytest>=8.3.3; extra == "dev"
+Requires-Dist: pyscf; extra == "dev"
+Requires-Dist: qc-gbasis; extra == "dev"
+Requires-Dist: qc-iodata; extra == "dev"
+Provides-Extra: test-extra
+Requires-Dist: pytest-md; extra == "test-extra"
+Requires-Dist: pytest-emoji; extra == "test-extra"
+Requires-Dist: pytest-cov; extra == "test-extra"
+Provides-Extra: doc
+Requires-Dist: ipython; extra == "doc"
+Requires-Dist: numpydoc; extra == "doc"
+Requires-Dist: sphinx_copybutton; extra == "doc"
+Requires-Dist: sphinx-autoapi; extra == "doc"
+Requires-Dist: nbsphinx; extra == "doc"
+Requires-Dist: nbconvert; extra == "doc"
+Requires-Dist: sphinx_rtd_theme; extra == "doc"
+Requires-Dist: sphinxcontrib-bibtex; extra == "doc"
+Requires-Dist: sphinx_autodoc_typehints; extra == "doc"
+Requires-Dist: docutils==0.16; extra == "doc"
+Requires-Dist: nbsphinx-link; extra == "doc"
+
+<!--
+This file is part of AtomDB.
+
+AtomDB is free software: you can redistribute it and/or modify it under
+the terms of the GNU General Public License as published by the Free
+Software Foundation, either version 3 of the License, or (at your
+option) any later version.
+
+AtomDB is distributed in the hope that it will be useful, but WITHOUT
+ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or
+FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License
+for more details.
+
+You should have received a copy of the GNU General Public License
+along with AtomDB. If not, see <http://www.gnu.org/licenses/>.
+-->
+
+<div style="text-align:left">
+  <!-- <h1 style="margin-right: 20px;">The Selector Library</h1> -->
+  <img src="https://github.com/theochem/AtomDB/blob/master/website/logo_small.png?raw=true" alt="Logo" style="width: 25%">
+</div>
+
+[![This project supports Python 3.9+](https://img.shields.io/badge/Python-3.9+-blue.svg)](https://python.org/downloads)
+[![pytest](https://github.com/theochem/AtomDB/actions/workflows/pytest.yaml/badge.svg?branch=master)](https://github.com/theochem/AtomDB/actions/workflows/pytest.yaml)
+[![PyPI](https://img.shields.io/pypi/v/qc-AtomDB.svg)](https://pypi.python.org/pypi/qc-AtomDB/)
+![License](https://img.shields.io/github/license/theochem/AtomDB)
+[![pages-build-deployment](https://github.com/theochem/AtomDB/actions/workflows/pages/pages-build-deployment/badge.svg)](https://github.com/theochem/AtomDB/actions/workflows/pages/pages-build-deployment)
+
+# AtomDB
+
+## About
+
+AtomDB is a versatile, free, and open-source Python library for accessing and managing atomic and
+promolecular properties. It serves as an extended database or periodic table of neutral and charged
+atomic properties, offering accurate experimental and computational data for various atomic
+charge/multiplicity states. AtomDB is a [QC-Devs](https://qcdevs.org/) project.
+
+## Documentation
+
+AtomDB's documentation, including installation and usage instructions, as well as API documentation, is available at [atomdb.qcdevs.org](https://atomdb.qcdevs.org/).
+
+### Functionality
+
+- **Atomic scalar properties**
+
+  AtomDB provides a wide range of atomic properties for neutral and charged atoms, including: **Atomic number**, **Atomic symbol**, **Atomic mass**, **Atomic radius**, **van der Waals radius**, **Covalent radius**, **Ionization potential**, **Electron affinity**, **Electronegativity**, **Atomic polarizability**.
+
+- **Point dependent properties**
+
+  AtomDB provides functions to calculate point-dependent properties, such as:
+  **Electron density** $\rho(r)$,
+  **Electron density gradient** $\nabla \rho(r)$,
+  **Electron density Laplacian** $\nabla^2 \rho(r)$,
+  **Electron density Hessian** $\nabla^2 \rho(r)$ (for these properties, only the radial part is provided),
+  and **Kinetic energy density** $ked(r)$.
+
+  The computation of contributions per orbital, set of orbitals, or spin to these properties is also supported.
+
+- **Promolecular properties**
+
+  AtomDB provides the capabilities to create promolecular models, and then estimate molecular properties from the atomic properties.
+
+- **Dumping and loading**
+
+  AtomDB provides the capability to dump and load atomic properties to and from JSON files.
+
+For a complete list of available properties, see [this
+table](https://atomdb.qcdevs.org/api/index.html#properties).
+
+## Installation
+
+We recommend using Python 3.9 or later. The `qc-grid` is need to run `AtomDB`. You can install it
+from source for now:
+
+```bash
+git clone git@github.com:theochem/grid.git
+cd qc-grid
+pip install .
+```
+
+Then,
+`qc-AtomDB` can be installed using `pip`:
+
+```bash
+pip install qc-AtomDB
+
+```
+
+
+## Contributing
+
+We welcome any contributions to the AtomDB library in accordance with our [Code of Conduct](https://qcdevs.org/guidelines/qcdevs_code_of_conduct/). Please see our [Contributing Guidelines](https://qcdevs.org/guidelines/).
+Please report any issues you encounter while using AtomDB on GitHub Issues.
+
+For further information and inquiries, please contact us at [qcdevs@gmail.com](mailto:qcdevs@gmail.com).
+
+## Citing AtomDB
+
+Please use the following citation in any publication using AtomDB:
+
+```bibtex
+@article{atomdb,
+        author  = {S{\'a}nchez D{\'\i}az, Gabriela and Richer, Michelle and
+                   Mart{\'\i}nez Gonz{\'a}lez, Marco and {v}an Zyl, Maximilian and
+                   Pujal, Leila and Tehrani, Alireza and Bianchi, Julianna and
+                   Ayers, Paul W. and Heidar-Zadeh, Farnaz},
+        title   = {{AtomDB: A Python Library for Atomic and Promolecular Properties}},
+        journal = {-},
+        year    = {2024},
+        url     = {https://atomdb.qcdevs.org/},
+    }
+```
