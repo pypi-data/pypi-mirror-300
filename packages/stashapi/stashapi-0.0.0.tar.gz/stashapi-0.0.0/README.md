@@ -1,0 +1,1 @@
+# This is a dummy package designed to prevent namesquatting on PyPI. You should install stashapp-tools instead.

@@ -1,0 +1,8 @@
+README.md
+setup.py
+stashapi-dummy/stashapp.py
+stashapi.egg-info/PKG-INFO
+stashapi.egg-info/SOURCES.txt
+stashapi.egg-info/dependency_links.txt
+stashapi.egg-info/requires.txt
+stashapi.egg-info/top_level.txt
