@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+quick_i18n.egg-info/PKG-INFO
+quick_i18n.egg-info/SOURCES.txt
+quick_i18n.egg-info/dependency_links.txt
+quick_i18n.egg-info/requires.txt
+quick_i18n.egg-info/top_level.txt
+quicki18n/__init__.py
+quicki18n/i18n.py
