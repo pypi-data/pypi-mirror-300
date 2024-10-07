@@ -1,0 +1,12 @@
+src/__init__.py,sha256=izlkaSvrxNqPnulbHlD8VYldR618NxRQRlKQFgQn0Gk,42
+src/main.py,sha256=bV8s7I25giP1EXjwvcA-hukZH3loiU25_5uY6I2HhNQ,1578
+src/info/__init__.py,sha256=U8Qx0E6QzvmA6Nd1WDYqdZ_UXzPTbwrjvvQCkJMXjB8,130
+src/info/history.py,sha256=0qZL7TyN2ZG9UogXHSNAHEP2DOUyZj9w0qw5bZuzQj0,2644
+src/info/module.py,sha256=cXIZLHdXviVNxI9rpoD5IcQeb_nxZvY3aEg5bhhghbk,3720
+src/info/required_modules.py,sha256=EOgQ6B722fsjgIL7RpVMU8FwTLIxMfnxGBZfDC6WIo4,2102
+pakage_version_seeker-1.0.4.dist-info/LICENSE,sha256=z5sXgi0fzU_zLMvhQYM4b7Ot9vL_ktwYQTCCP3_CgXM,1087
+pakage_version_seeker-1.0.4.dist-info/METADATA,sha256=PEP33IVIyF9AhRpDLCvCkFK4CTC00Eju1S0wTsV4ioQ,3137
+pakage_version_seeker-1.0.4.dist-info/WHEEL,sha256=eOLhNAGa2EW3wWl_TU484h7q1UNgy0JXjjoqKoxAAQc,92
+pakage_version_seeker-1.0.4.dist-info/entry_points.txt,sha256=W0KjoiV0F6hcgv49ReIfYmt2Weou0-k9Bvs9npg5pbs,34
+pakage_version_seeker-1.0.4.dist-info/top_level.txt,sha256=74rtVfumQlgAPzR5_2CgYN24MB0XARCg0t-gzk6gTrM,4
+pakage_version_seeker-1.0.4.dist-info/RECORD,,
