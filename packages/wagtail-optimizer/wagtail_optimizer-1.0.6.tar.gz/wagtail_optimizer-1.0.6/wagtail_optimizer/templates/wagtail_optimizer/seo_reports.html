@@ -1,0 +1,43 @@
+{% extends "wagtailadmin/generic/listing.html" %}
+
+{% load static i18n wagtailadmin_tags %}
+
+{% block extra_css %}
+    {{ block.super }}
+    <link rel="stylesheet" href="{% static 'wagtail_optimizer/css/wagtail_optimizer.css' %}">
+{% endblock %}
+
+{% block extra_js %}
+    {{ block.super }}
+    <script src="{% static 'wagtail_optimizer/js/chart.min.js' %}"></script>
+    <script src="{% static 'wagtail_optimizer/js/seo_reports.js' %}"></script>
+    {{ reports_seo_scores|json_script:"reports-seo-scores" }}
+    {{ reports_error_counts|json_script:"reports-error-counts" }}
+{% endblock %}
+
+{% block titletag %}{% translate "SEO Reports" %}{% endblock %}
+
+{% block main_header %}
+    <div class="wagtail-optimizer-header">
+        {% include "wagtailadmin/shared/header.html" with title=page_title subtitle=page_subtitle icon=header_icon only %}
+        <div class="nice-padding">
+            <div class="wagtail-optimizer-header">
+                <a href="{% url 'wagtail_optimizer:crawl' %}" class="button button-secondary">{% translate "Crawl" %}</a>
+            </div>
+        </div>
+    </div>
+{% endblock %}
+
+{% block listing %}
+    <div class="nice-padding">
+        <div class="seo-charts">
+            <div class="seo-chart">
+                <canvas id="seo-score-chart"></canvas>
+            </div>
+            <div class="seo-chart">
+                <canvas id="seo-errors-chart"></canvas>
+            </div>
+        </div>
+    </div>
+    {{ block.super }}
+{% endblock %}
