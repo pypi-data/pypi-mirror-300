@@ -1,0 +1,8 @@
+setup.py
+exflibrary/__init__.py
+exflibrary/my_module.py
+exflibrary.egg-info/PKG-INFO
+exflibrary.egg-info/SOURCES.txt
+exflibrary.egg-info/dependency_links.txt
+exflibrary.egg-info/requires.txt
+exflibrary.egg-info/top_level.txt
