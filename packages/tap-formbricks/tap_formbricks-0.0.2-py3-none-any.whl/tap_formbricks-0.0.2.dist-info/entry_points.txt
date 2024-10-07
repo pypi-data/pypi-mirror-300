@@ -1,0 +1,3 @@
+[console_scripts]
+tap-formbricks=tap_formbricks.tap:TapFormbricks.cli
+
