@@ -1,0 +1,15 @@
+astc_encoder/__init__.py,sha256=RnKuPo1fSp9AO7nO_x-dRHUWj9JgQfDRISTPp-DH_vQ,1162
+astc_encoder/__init__.pyi,sha256=Ea4nJH3mrf7xkL7EH66LFe1puIIJo6DTSJal6lRiINA,8101
+astc_encoder/_encoder_neon.cp39-win_arm64.iobj,sha256=q4suYXY4tL3vIZ4ttI3kjC26qx2INguLNsckyCC3FDQ,1296419
+astc_encoder/_encoder_neon.cp39-win_arm64.ipdb,sha256=DegBnr06a1NB-s38ojgnClxNrqtde660sHL3rgNm8Ds,938432
+astc_encoder/_encoder_neon.cp39-win_arm64.pyd,sha256=z750sXkmqBBjhbll2O6s07I8PpAc9d_vCPMWyZhVS_8,205312
+astc_encoder/_encoder_none.iobj,sha256=f-G5thInjrV8Lx94RBKc-NZP9sF7OTEwH9CjxYY9i0o,1352753
+astc_encoder/_encoder_none.ipdb,sha256=j9xYIV_BDA9Nz0Wt0CT5Z9v6qdV_eHc3RX6ZVDB1s_8,992352
+astc_encoder/_encoder_none.pyd,sha256=Z03u0YEmvNvGVsNFp0VVUGQmW9LNlt7oVSQlP6n4DM0,239104
+astc_encoder/enum.py,sha256=AQw4V3S3k4ZW_BxWkm64IaTWkWZoLc6mGJ4V_jDxGkE,2310
+astc_encoder/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+astc_encoder_py-0.1.3.dist-info/LICENSE,sha256=v6SAiMoh8Y7hDnZq4KeKKbxWk572unZtda0h1Z9WNYc,1090
+astc_encoder_py-0.1.3.dist-info/METADATA,sha256=9qhbPqa_EmMV0BUBhFwOsC2gbe8mmy1P36IVESleAUE,4315
+astc_encoder_py-0.1.3.dist-info/WHEEL,sha256=QVx55UPkghq5iutJM_UUINNTFN5cuWOFOvupUyQ2CBI,100
+astc_encoder_py-0.1.3.dist-info/top_level.txt,sha256=R4vI4dAALAfMnXFMMrW7PZc-_2RDaOTxFIFcwYBdiEU,13
+astc_encoder_py-0.1.3.dist-info/RECORD,,
