@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+src/PythonCPSolver/__init__.py
+src/PythonCPSolver/brancher.py
+src/PythonCPSolver/engine.py
+src/PythonCPSolver/propagators.py
+src/PythonCPSolver/variables.py
+src/PythonCPSolver.egg-info/PKG-INFO
+src/PythonCPSolver.egg-info/SOURCES.txt
+src/PythonCPSolver.egg-info/dependency_links.txt
+src/PythonCPSolver.egg-info/top_level.txt

@@ -1,0 +1,18 @@
+[project]
+name = "PythonCPSolver"
+version = "0.0.1"
+authors = [
+  { name="Gonzalo Hernandez", email="gonzalojosehernandez@gmail.com" },
+]
+description = "Simple solver based on Constraint Technologies"
+readme = "README.md"
+requires-python = ">=3.6"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+Homepage = "https://github.com/GonzaloHernandez/python-cpsolver"
+Issues = "https://github.com/GonzaloHernandez/python-cpsolver"
