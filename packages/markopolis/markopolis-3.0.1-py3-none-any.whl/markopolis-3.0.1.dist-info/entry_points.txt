@@ -1,0 +1,3 @@
+[console_scripts]
+mdsync=markopolis.upload:mdsync
+
