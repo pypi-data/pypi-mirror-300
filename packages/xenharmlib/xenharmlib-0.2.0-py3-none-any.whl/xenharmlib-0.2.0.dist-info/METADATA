@@ -1,0 +1,51 @@
+Metadata-Version: 2.3
+Name: xenharmlib
+Version: 0.2.0
+Summary: A library for microtonal music theory
+Project-URL: Documentation, https://xenharmlib.readthedocs.io/en/latest/
+Project-URL: Homepage, https://gitlab.com/retooth/xenharmlib
+Project-URL: Issues, https://gitlab.com/retooth/xenharmlib/-/issues
+Author-email: Fabian Vallon <fabian.vallon@gmail.com>
+License-File: LICENCE
+Keywords: atonal theory,diatonic set theory,microtonal,microtonality,music,music theory,musicology,post-tonal theory,xenharmonics
+Classifier: Development Status :: 4 - Beta
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Artistic Software
+Classifier: Topic :: Education
+Classifier: Topic :: Multimedia :: Sound/Audio
+Requires-Python: >=3.11.7
+Requires-Dist: numpy<2,>=1.26.4
+Requires-Dist: scipy<2,>=1.12.0
+Requires-Dist: sounddevice<1,>=0.4.6
+Requires-Dist: sympy==1.12
+Description-Content-Type: text/markdown
+
+# Xenharmlib
+
+Xenharmlib is a music theory library for the exploration and research of
+microtonality, diatonic set theory, non-standard notations, and many
+more. The library implements a superset of Western classical music theory,
+so you can also use it to compose and analyze music in the boundaries of
+the common practice period or 20th century Western music.
+
+[Click here for the official documentation](https://xenharmlib.readthedocs.io/en/latest/)
+
+So far it supports the following:
+
+* Equal division tunings (e.g. Western, Modern Arabic, Bohlen-Pierce)
+* Analysis of intervals, scales, and their relations to one another
+* Group theoretical analysis (integer pitches, pitch classes, etc)
+* Up/Down Notation (a superset of Western accidental notation)
+* Building blocks for custom notations
+
+Coming soon:
+
+* Maximally even sets
+* Interval vectors and related properties
+* Key signature support for Up/Down Notation scales
+* Scale and triad generators
+* Just Intonation and Prime Limit Tunings
+* Odd Limit Tunings
+* Extended Helmholtz-Ellis JI Pitch Notation
