@@ -1,0 +1,3 @@
+cruds
+docs
+tests
