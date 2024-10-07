@@ -1,0 +1,15 @@
+icua[tobii]>=2.0.9
+
+[dev]
+matplotlib
+pandas
+numpy
+pytest>=6.2.4
+mkdocs
+mkdocstrings
+mkdocs-autorefs
+mkdocs-gen-files
+mkdocs-literate-nav
+mkdocs-section-index
+mkdocs-macros-plugin
+mike
