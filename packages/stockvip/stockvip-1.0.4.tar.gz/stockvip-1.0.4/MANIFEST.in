@@ -1,0 +1,7 @@
+# Loại trừ file .c và .py trong các thư mục cụ thể
+exclude stockvip/config/*.c
+exclude stockvip/config/*.py
+exclude stockvip/process_client/*.c
+exclude stockvip/process_client/*.py
+exclude stockvip/process_stock/*.c
+exclude stockvip/process_stock/*.py
