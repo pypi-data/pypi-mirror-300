@@ -1,0 +1,85 @@
+Metadata-Version: 2.1
+Name: django_select2_autofill
+Version: 0.1.3
+Summary: A django app to autofill Select2 fields in admin inline forms.
+Author-email: Brandan Glendenning <brandan@glendigi.com>
+Project-URL: Homepage, https://github.com/Glendigital/django_select2_autofill
+Classifier: Environment :: Web Environment
+Classifier: Framework :: Django
+Classifier: Framework :: Django :: 4.2
+Classifier: Framework :: Django :: 5.0
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Topic :: Internet :: WWW/HTTP
+Classifier: Topic :: Internet :: WWW/HTTP :: Dynamic Content
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: django>=4.2
+
+# django_select2_autofill
+
+`django_select2_autofill` is a Django app that allows newly added Django admin inline
+form fields to be automatically filled with data from the last user-selected option of
+the same field in a form produced by a shared formset.
+
+This allows for an end-user to more efficiently input new data in instances where
+multiple field values may be shared across formset forms.
+
+## Install
+
+1. With a Django project virtual environment activated:
+   ```sh
+   python -m pip install django-select2-autofill
+   ```
+
+2. Add ``django_select2_autofill`` to your Django `INSTALLED_APPS` setting:
+
+   ```python
+   INSTALLED_APPS = [
+      # ...
+      "django_select2_autofill",
+   ]
+   ```
+
+3. Use the ``AutofillAutocompleteSelect`` widget in the ``ModelForm`` containing
+   ``autocomplete_fields``:
+
+   ```python
+   from django import admin
+   from django import forms
+   from django_select2_autofill import AutofillAutocompleteSelect
+
+
+   class CustomForm(forms.ModelForm):
+       class Meta:
+           widgets = {
+               "model_field_name": AutofillAutocompleteSelect(
+                   CustomModel.model_field_name.field, admin.site
+               ),
+           }
+   ```
+
+   Note that ``admin.site`` can be replaced with a custom ``AdminSite`` instance, if
+   necessary:
+
+   ```python
+   # ...
+   from app.models import CustomModel
+
+
+   # ...
+   widgets = {
+       "model_field_name": AutofillAutocompleteSelect(
+           CustomModel.model_field_name.field, CustomAdminSite()
+       ),
+   }
+   ```
