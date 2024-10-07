@@ -1,0 +1,16 @@
+librid/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+librid/main.py,sha256=hkWOoilQd3e2osTq3faXOSkszRLxLJn3XBjRYgk_-as,518
+librid/core/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+librid/core/config.py,sha256=LshWUn8YG2otPV-WPp5DRd6rOycoUWVu-_boFCHpGB8,319
+librid/core/document.py,sha256=sNTCQ9fNscoZ_4ARYxFLKEP0p6nxjgryCb7ehu747HY,2401
+librid/core/range.py,sha256=xZTgyhVkWppXjkuKmNU7mmWKwWpgDL9ORldRdDEEkYg,2391
+librid/core/sheet.py,sha256=IdD1Xw3tTGodlG8KIX-SQ6t7KvvQfF4bCHRaRDmlVls,1481
+librid/core/state.py,sha256=rIhbKyBV4mcBu-el9ZLzykmRRnkMnDYQzGTQT5ddE64,16
+librid/utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+librid/utils/cleanup.py,sha256=iRUKqZARax90LcRaasaWhljzBHVX6Hz4Q2Y2Lrh6mSM,351
+librid/utils/connection.py,sha256=HD4doqMQE77Ve3BY9aEjwNRtl5bMJ3fhNRUqj7edDtY,471
+librid-0.0.1.dist-info/LICENSE.txt,sha256=WPkFL-m4FoXdonhKKls_GzIFHuaffjNsNQmILh7K3Z4,1070
+librid-0.0.1.dist-info/METADATA,sha256=jWepOlzpB3JWmHfF1E9PP0ZV2ahfL9rx1dRyOo9xmzw,2755
+librid-0.0.1.dist-info/WHEEL,sha256=GV9aMThwP_4oNCtvEC2ec3qUYutgWeAzklro_0m4WJQ,91
+librid-0.0.1.dist-info/top_level.txt,sha256=XqiF4p_sxP-u-5G-mBwo6vQnqvOTAII1Fu23Sp0ogEI,7
+librid-0.0.1.dist-info/RECORD,,
