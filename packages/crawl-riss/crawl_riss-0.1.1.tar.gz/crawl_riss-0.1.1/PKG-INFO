@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: crawl_riss
+Version: 0.1.1
+Summary: A package for crawling papers from RISS
+Home-page: https://github.com/jaygil8755/crawl_riss
+Author: 길완제 Wan Je Gil
+Author-email: jaygil8755@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+License-File: LICENSE.txt
