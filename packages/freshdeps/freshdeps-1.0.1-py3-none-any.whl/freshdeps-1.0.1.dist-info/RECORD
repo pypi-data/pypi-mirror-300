@@ -1,0 +1,12 @@
+fresh_deps/__init__.py,sha256=DPyqBD-bIBC7JG-1ih7emKGOqU2jKq9VP2Hl9ovxwt4,210
+fresh_deps/__main__.py,sha256=nLomcUM-d200UlR0E2sgOVEMOVDjqDGYrfXxItDSaUk,108
+fresh_deps/_dependency_updater.py,sha256=m90OoJDSTyrcTAjh3tcXMwjGtUA9HWbrWHAo5YSj-sM,3101
+fresh_deps/_gitlab_api.py,sha256=_6fPNoYnidLQGKXXis8scYGlXYJHpjQrxggGyC3SBco,2527
+fresh_deps/_service_api.py,sha256=iVPSHb4W9sDdJTW71BoKMiCP2CciVTvFR0z-A4gR7Xc,758
+fresh_deps/_update_dependencies.py,sha256=yMXOwp5XdCO5w37iau1BEYsfCHjttlcqYHaJ8o67m8Y,3966
+fresh_deps/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+freshdeps-1.0.1.dist-info/METADATA,sha256=dyZYfetRJbMlCIoJTTRGUIomLd_QpA6-NBAg049V0C0,3573
+freshdeps-1.0.1.dist-info/WHEEL,sha256=pkctZYzUS4AYVn6dJ-7367OJZivF2e8RA9b_ZBjif18,92
+freshdeps-1.0.1.dist-info/entry_points.txt,sha256=fHeXXwE6zyw5eAKqwe_LL9mU08jZe03L41vaEHnsM-g,106
+freshdeps-1.0.1.dist-info/top_level.txt,sha256=pyQaVJ5-ttmHeNXYYUOsJTTL24-tYZ6HfGVtl29mNFg,11
+freshdeps-1.0.1.dist-info/RECORD,,
