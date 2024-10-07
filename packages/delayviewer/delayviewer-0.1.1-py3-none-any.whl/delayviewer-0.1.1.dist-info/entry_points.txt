@@ -1,0 +1,2 @@
+[console_scripts]
+dlyview = delayviewer.delayviewer_cli:cli
