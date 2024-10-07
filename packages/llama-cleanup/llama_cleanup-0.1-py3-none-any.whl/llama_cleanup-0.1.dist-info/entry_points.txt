@@ -1,0 +1,2 @@
+[console_scripts]
+my_package_process = my_package.main:process_addresses
