@@ -1,0 +1,120 @@
+from typing import Dict, ClassVar
+from pydantic import BaseModel
+from parsimonious import Grammar, NodeVisitor
+from abc import ABC, abstractmethod
+
+class GrammarBasedModel(BaseModel, ABC):
+    grammar: ClassVar[str]
+    start_token: ClassVar[str]
+    end_token: ClassVar[str]
+    field_mappings: ClassVar[Dict[str, str]]
+
+    @classmethod
+    @abstractmethod
+    def get_grammar(cls) -> str:
+        pass
+
+    @classmethod
+    def parse(cls, text: str) -> 'GrammarBasedModel':
+        grammar = Grammar(cls.get_grammar())
+        tree = grammar.parse(text[len(cls.start_token):-len(cls.end_token)].strip())
+
+        class ModelVisitor(NodeVisitor):
+            def __init__(self, field_mappings):
+                self.field_mappings = field_mappings
+                self.data = {}
+
+            def generic_visit(self, node, visited_children):
+                return visited_children or node.text
+
+            def visit_start(self, node, visited_children):
+                return self.data
+
+            def __getattr__(self, name):
+                if name.startswith('visit_'):
+                    field = name[6:]
+                    if field in self.field_mappings.values():
+                        def visit_method(node, visited_children):
+                            model_field = next(k for k, v in self.field_mappings.items() if v == field)
+                            self.data[model_field] = node.text.strip()
+                            return node.text
+                        return visit_method
+                return super().__getattribute__(name)
+
+        visitor = ModelVisitor(cls.field_mappings)
+        model_dict = visitor.visit(tree)
+        return cls(**model_dict)
+
+    def generate(self) -> str:
+        grammar = Grammar(self.get_grammar())
+
+        class ModelGenerator(NodeVisitor):
+            def __init__(self, model):
+                self.model = model
+
+            def generic_visit(self, node, visited_children):
+                return ''.join(filter(None, visited_children))
+
+            def __getattr__(self, name):
+                if name.startswith('visit_'):
+                    field = name[6:]
+                    if field in self.model.field_mappings.values():
+                        model_field = next(k for k, v in self.model.field_mappings.items() if v == field)
+                        return lambda node, children: str(getattr(self.model, model_field))
+                return lambda node, children: node.text
+
+        generator = ModelGenerator(self)
+        generated_content = generator.visit(grammar['start'])
+        return f"{self.start_token}\n{generated_content}\n{self.end_token}"
+
+class PersonSpec(GrammarBasedModel):
+    name: str
+    age: int
+    city: str
+
+    grammar = r"""
+        start = name_line age_line city_line
+        name_line = "name:" ws name newline
+        age_line = "age is" ws age newline
+        city_line = "lives in" ws city newline?
+        name = ~r"[^\n]+"
+        age = ~r"\d+"
+        city = ~r"[^\n]+"
+        ws = ~r"\s+"
+        newline = ~r"\n"
+    """
+    start_token = "<spec>"
+    end_token = "</spec>"
+    field_mappings = {
+        "name": "name",
+        "age": "age",
+        "city": "city"
+    }
+
+    @classmethod
+    def get_grammar(cls):
+        return cls.grammar
+
+if __name__ == "__main__":
+    # Test parsing
+    input_str = """<spec>
+name: John Doe
+age is 30
+lives in New York
+</spec>"""
+    person = PersonSpec.parse(input_str)
+    print("Parsed person:", person)
+
+    # Test generation
+    generated_str = person.generate()
+    print("\nGenerated string:")
+    print(generated_str)
+
+    # Test round-trip
+    round_trip_person = PersonSpec.parse(generated_str)
+    print("\nRound-trip parsed person:", round_trip_person)
+
+    assert person == round_trip_person, "Round-trip parsing failed"
+    print("\nRound-trip test passed!")
+    
+    

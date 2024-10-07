@@ -1,0 +1,114 @@
+from abc import ABC, abstractmethod
+from typing import ClassVar, Dict
+
+import parse
+
+from langroid.pydantic_v1 import BaseModel
+
+
+class FormattingModel(BaseModel, ABC):
+    start_token: ClassVar[str] = "<format>"
+    end_token: ClassVar[str] = "</format>"
+    field_token_map: ClassVar[Dict[str, str]] = {}
+
+    @classmethod
+    @abstractmethod
+    def format_spec(cls) -> str:
+        pass
+
+    @classmethod
+    @abstractmethod
+    def parse_spec(cls) -> str:
+        pass
+
+    @classmethod
+    def parse(cls, formatted_string: str) -> "FormattingModel":
+        parser = parse.compile(cls.parse_spec())
+        result = parser.parse(formatted_string)
+        if result is None:
+            raise ValueError(f"Unable to parse: {formatted_string}")
+        return cls(**result.named)
+
+    def format(self) -> str:
+        format_string = self.format_spec()
+        field_values = {k: getattr(self, k) for k in self.__annotations__}
+        return format_string.format(**field_values)
+
+
+class CodeFileModel(FormattingModel):
+    language: str
+    file_path: str
+    code: str
+
+    start_token: ClassVar[str] = "<format>"
+    end_token: ClassVar[str] = "</format>"
+
+    @classmethod
+    def format_spec(cls) -> str:
+        return (
+            f"{cls.start_token}\n"
+            "code_file_model\n"
+            "{file_path}\n"
+            "```{language}\n"
+            "{code}\n"
+            "```\n"
+            f"{cls.end_token}"
+        )
+
+    @classmethod
+    def parse_spec(cls) -> str:
+        return (
+            f"{cls.start_token}\n"
+            "code_file_model\n"
+            "{file_path:^}\n"
+            "```{language:^}\n"
+            "{code}\n"
+            "```\n"
+            f"{cls.end_token}"
+        )
+
+
+# Informal tests
+if __name__ == "__main__":
+    # Test CodeFileModel
+    my_model = CodeFileModel(
+        language="python",
+        file_path="src/main.py",
+        code='def hello():\n    print("hello world")',
+    )
+
+    formatted = my_model.format()
+    print("Formatted:")
+    print(formatted)
+
+    parsed = CodeFileModel.parse(formatted)
+    print("\nParsed:")
+    print(parsed)
+
+    assert my_model == parsed, "Round trip failed"
+
+    # Test more lenient parsing
+    lenient_formatted = """<format>
+code_file_model
+   src/test.py   
+   
+```   javascript   
+function test() {
+    console.log("Hello, world!");
+}
+```
+</format>"""
+
+    parsed_lenient = CodeFileModel.parse(lenient_formatted)
+    print("\nParsed lenient:")
+    print(parsed_lenient)
+
+    # Test invalid format
+    try:
+        CodeFileModel.parse("Invalid format")
+    except ValueError as e:
+        print(f"\nCaught expected ValueError: {e}")
+    else:
+        assert False, "Expected ValueError was not raised"
+
+    print("\nAll tests passed!")

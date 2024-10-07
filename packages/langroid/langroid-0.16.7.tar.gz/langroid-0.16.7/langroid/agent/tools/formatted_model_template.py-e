@@ -1,0 +1,200 @@
+from abc import ABC, abstractmethod
+from pydantic import BaseModel
+from string import Template
+from typing import Dict, Any
+
+class FormattingModel(BaseModel, ABC):
+    @classmethod
+    @abstractmethod
+    def format_spec(cls) -> Dict[str, Any]:
+        pass
+
+    @classmethod
+    @abstractmethod
+    def parse_spec(cls) -> Dict[str, Any]:
+        pass
+
+    @classmethod
+    @abstractmethod
+    def start_token(cls) -> str:
+        pass
+
+    @classmethod
+    @abstractmethod
+    def end_token(cls) -> str:
+        pass
+
+    @classmethod
+    def format(cls, instance: 'FormattingModel') -> str:
+        spec = cls.format_spec()
+        template = Template(spec['template'])
+        formatted = template.substitute(instance.dict())
+        return f"{cls.start_token()}\n{formatted}\n{cls.end_token()}"
+
+    @classmethod
+    def parse(cls, formatted_string: str) -> 'FormattingModel':
+        spec = cls.parse_spec()
+        lines = formatted_string.strip().split('\n')
+        
+        if lines[0] != cls.start_token() or lines[-1] != cls.end_token():
+            raise ValueError("Invalid start or end token")
+        
+        content = '\n'.join(lines[1:-1])
+        
+        parsed_data = {}
+        for field, token in spec['tokens'].items():
+            if token:
+                parts = content.split(token, 1)
+                if len(parts) > 1:
+                    value = parts[1].split('\n')[0].strip()
+                else:
+                    raise ValueError(f"Could not find token '{token}' for field '{field}'")
+            else:
+                # For fields without a specific token (like age in our example)
+                value = content.split('\n')[spec['field_order'].index(field)].split(' ')[0].strip()
+            
+            # Convert to appropriate type based on the model's field types
+            field_type = cls.__annotations__[field]
+            if field_type == int:
+                parsed_data[field] = int(value)
+            elif field_type == float:
+                parsed_data[field] = float(value)
+            else:
+                parsed_data[field] = value
+        
+        return cls(**parsed_data)
+
+class PersonModel(FormattingModel):
+    name: str
+    age: int
+    city: str
+
+    @classmethod
+    def format_spec(cls):
+        return {
+            'template': 'name: $name\n$age is the age\nlives in $city'
+        }
+
+    @classmethod
+    def parse_spec(cls):
+        return {
+            'template': 'name: $name\n$age is the age\nlives in $city',
+            'tokens': {
+                'name': 'name: ',
+                'age': '',
+                'city': 'lives in '
+            },
+            'field_order': ['name', 'age', 'city']
+        }
+
+    @classmethod
+    def start_token(cls):
+        return '<format>'
+
+    @classmethod
+    def end_token(cls):
+        return '</format>'
+
+# Test cases
+if __name__ == "__main__":
+    # Test formatting
+    person = PersonModel(name="John", age=30, city="Tokyo")
+    formatted = PersonModel.format(person)
+    expected_format = """<format>
+name: John
+30 is the age
+lives in Tokyo
+</format>"""
+    assert formatted == expected_format, f"Formatting failed. Expected:\n{expected_format}\nGot:\n{formatted}"
+    print("Formatting test passed.")
+
+    # Test parsing
+    parsed = PersonModel.parse(formatted)
+    assert parsed == person, f"Parsing failed. Expected:\n{person}\nGot:\n{parsed}"
+    print("Parsing test passed.")
+
+    # Test round-trip
+    round_trip = PersonModel.parse(PersonModel.format(person))
+    assert round_trip == person, f"Round-trip failed. Expected:\n{person}\nGot:\n{round_trip}"
+    print("Round-trip test passed.")
+
+    # Test with different values
+    person2 = PersonModel(name="Alice", age=25, city="New York")
+    formatted2 = PersonModel.format(person2)
+    parsed2 = PersonModel.parse(formatted2)
+    assert parsed2 == person2, f"Parsing failed for different values. Expected:\n{person2}\nGot:\n{parsed2}"
+    print("Different values test passed.")
+
+    print("All tests passed successfully!")
+
+    class CodeFileModel(FormattingModel):
+        language: str
+        file_path: str
+        code: str
+    
+        @classmethod
+        def format_spec(cls):
+            return {
+                'template': 'code_file_model\n$file_path\n```$language\n$code\n```'
+            }
+    
+        @classmethod
+        def parse_spec(cls):
+            return {
+                'template': 'code_file_model\n$file_path\n```$language\n$code\n```',
+                'tokens': {
+                    'language': '```',
+                    'file_path': 'code_file_model\n',
+                    'code': '\n'
+                },
+                'field_order': ['file_path', 'language', 'code']
+            }
+    
+        @classmethod
+        def start_token(cls):
+            return '<format>'
+    
+        @classmethod
+        def end_token(cls):
+            return '</format>'
+            
+        # Test formatting
+    code_file = CodeFileModel(
+        language="Python",
+        file_path="src/main.py",
+        code="def hello():\n    print('Hello, World!')"
+    )
+    formatted = CodeFileModel.format(code_file)
+    expected_format = """<format>
+code_file_model
+src/main.py
+```Python
+def hello():
+    print('Hello, World!')
+```
+</format>"""
+    assert formatted == expected_format, f"Formatting failed. Expected:\n{expected_format}\nGot:\n{formatted}"
+    print("Formatting test passed.")
+
+    # Test parsing
+    parsed = CodeFileModel.parse(formatted)
+    assert parsed == code_file, f"Parsing failed. Expected:\n{code_file}\nGot:\n{parsed}"
+    print("Parsing test passed.")
+
+    # Test round-trip
+    round_trip = CodeFileModel.parse(CodeFileModel.format(code_file))
+    assert round_trip == code_file, f"Round-trip failed. Expected:\n{code_file}\nGot:\n{round_trip}"
+    print("Round-trip test passed.")
+
+    # Test with different values
+    code_file2 = CodeFileModel(
+        language="JavaScript",
+        file_path="src/app.js",
+        code="function greet() {\n  console.log('Hello, World!');\n}"
+    )
+    formatted2 = CodeFileModel.format(code_file2)
+    parsed2 = CodeFileModel.parse(formatted2)
+    assert parsed2 == code_file2, f"Parsing failed for different values. Expected:\n{code_file2}\nGot:\n{parsed2}"
+    print("Different values test passed.")
+
+    print("All tests passed successfully!")
