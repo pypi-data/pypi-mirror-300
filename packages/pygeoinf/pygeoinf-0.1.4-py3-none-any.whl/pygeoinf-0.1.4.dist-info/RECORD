@@ -1,0 +1,6 @@
+pygeoinf/__init__.py,sha256=VFw4sJIt4Zc0-__eYnksN8Ku9qMhbPpHJEkXMWUiD30,4
+pygeoinf/linalg.py,sha256=udU18frlxbx4ZSy5bIk6xyrSeetUXtm3-8dhsG6NOyg,40362
+pygeoinf/sphere.py,sha256=XxPw-JRx5xKwprsVza3ND0M8lDhq7ajSqhD1xruA1ps,10856
+pygeoinf-0.1.4.dist-info/METADATA,sha256=c0T56P8G3Euytl6fAaDT5TwDVU5VY13eUcfvK6zwiWI,935
+pygeoinf-0.1.4.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+pygeoinf-0.1.4.dist-info/RECORD,,
