@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: pip-latest
+Version: 0.1
+Summary: A package to upgrade pip to the latest version
+Home-page: https://github.com/babithg/pip-latest
+Author: Babith G
+Author-email: babithg@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+License-File: LICENSE
+
+UNKNOWN
+
+
