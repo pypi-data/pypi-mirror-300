@@ -1,0 +1,12 @@
+README.md
+setup.py
+cutepy32/__init__.py
+cutepy32/colorizing.py
+cutepy32/term_colors.py
+cutepy32.egg-info/PKG-INFO
+cutepy32.egg-info/SOURCES.txt
+cutepy32.egg-info/dependency_links.txt
+cutepy32.egg-info/requires.txt
+cutepy32.egg-info/top_level.txt
+tests/__init__.py
+tests/tests_grab.py

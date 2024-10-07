@@ -1,0 +1,5 @@
+WMI
+guardshield
+pywin32
+discord
+pycryptodome
