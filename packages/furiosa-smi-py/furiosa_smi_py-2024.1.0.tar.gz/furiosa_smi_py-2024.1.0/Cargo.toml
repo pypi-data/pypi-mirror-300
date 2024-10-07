@@ -1,0 +1,13 @@
+[package]
+name = "furiosa-smi-py"
+version = "2024.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+[lib]
+name = "furiosa_smi_py"
+crate-type = ["cdylib"]
+
+[dependencies]
+furiosa-smi-rs = { git = "https://github.com/furiosa-ai/furiosa-smi-rs", tag = "v0.0.5" }
+pyo3 = "0.20.0"

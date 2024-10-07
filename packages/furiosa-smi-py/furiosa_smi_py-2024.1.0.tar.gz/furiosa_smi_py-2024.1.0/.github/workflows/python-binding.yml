@@ -1,0 +1,72 @@
+name: Python Binding
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+env:
+  CARGO_TERM_COLOR: always
+  CARGO_NET_GIT_FETCH_WITH_CLI: true
+
+jobs:
+  build:
+    strategy:
+      matrix:
+        os: ['ubuntu-20.04', 'ubuntu-22.04', 'ubuntu-24.04']
+    runs-on: ${{ matrix.os }}
+    steps:
+      - name: checkout furios-smi
+        uses: actions/checkout@v4
+        with:
+          repository: furiosa-ai/furiosa-smi
+          token: ${{ secrets.TOKEN_FOR_CLONE_ANOTHER_REPO}}
+          path: furiosa-smi
+      - name: install furiosa-smi
+        run: |
+          cd furiosa-smi
+          rustup component add clippy rustfmt
+          cargo build
+          make install
+      - uses: actions/checkout@v4
+      - name: Set up Git credentials for accessing private repo
+        run: |
+          git config --global url."https://${{ secrets.TOKEN_FOR_CLONE_ANOTHER_REPO }}:@github.com/".insteadOf "https://github.com/"
+      - name: Install rust components
+        run: rustup component add clippy rustfmt
+      - name: install cargo tools
+        run: cargo install --force cargo-sort cargo-machete
+      - name: machete
+        run: cargo machete
+      - name: sort
+        run: cargo sort --grouped --check --workspace
+      - name: fmt
+        run: cargo fmt --all --check
+      - name: machete
+        run: cargo machete
+      - name: clippy
+        run: cargo -q clippy --all-targets -- -D rust_2018_idioms -D warnings
+      - name: build Python binding
+        run: |
+          make build
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.10'
+      - name: Set python venv
+        run: |  
+          python -m venv .venv
+          source .venv/bin/activate
+      - name: Install Python dependencies
+        run: |
+          source .venv/bin/activate
+          pip install maturin tabulate
+      - name: install Python binding
+        run: |
+          source .venv/bin/activate
+          make install
+      - name: Test Python binding
+        run: |
+          source .venv/bin/activate
+          make example

@@ -1,0 +1,15 @@
+# Rust Build
+target
+
+# C Examples Build
+src/examples/device_info
+src/examples/helper/__pycache__
+
+# Python Virtualenv
+.venv
+
+# IDEs (IntelliJ, VSCode)
+**/.idea
+.vscode/**
+!.vscode/extensions.json
+.DS_Store
