@@ -1,0 +1,11 @@
+scikit_landmark-0.1.1.dist-info/METADATA,sha256=UDqhN47hAmzRqkpujq5JCmiYDMTkxHv_vzuQ1L7XoVY,15510
+scikit_landmark-0.1.1.dist-info/WHEEL,sha256=JdLTWhc73oJ-lqTBYGgiVontr_vhzwzbpAOin_2bxTI,85
+scikit_landmark-0.1.1.dist-info/LICENSE,sha256=RFHQRsBvJI7DD8JNdaHWJ_fWAOhzkEO6h61tbHTwO9s,11549
+landmark/maxmin.cp311-win_amd64.pyd,sha256=fjDOQPWOIuFnFwinCgo6A8VE9xpsebV7ckH0bjbZ6sE,54784
+landmark/maxmin.cp311-win_amd64.lib,sha256=RJet8mbsHElC-_t0xU6lSpvRMgCXB_YmfPlmGRNtEvY,1582
+landmark/__init__.py,sha256=Bn6dVmI3IdVncIBwzu0qyKoIXlK5u7imApSIPN2Pic8,1032
+landmark/__version__.py,sha256=jhruC5tmYflyejKIoUSF1JektpVDmMBgf51c3qa4pJg,492
+landmark/datasets.py,sha256=yAbs_V-QoA83mL52mw9Hlat3FH5sVKYCet3fanqOZQA,1263
+landmark/k_center.py,sha256=G3qjcSOKyAJ-P2NSf237qSKL0j-OZWBmcNm2OQhMBh0,5561
+landmark/maxmin.py,sha256=Hkt_E_AbzwT_Xt1Pm4oHp8-n7rJxthKI-fz5NZJReq4,5189
+scikit_landmark-0.1.1.dist-info/RECORD,,
