@@ -1,0 +1,14 @@
+octane_sdk_wrapper/__about__.py,sha256=1y7BBR2l-3BuWrDXe70lefKZxLd53JVfWAfn4y7Mn_0,23
+octane_sdk_wrapper/__init__.py,sha256=EhxxJe25k17Xzvy8bOK4NxTboO-YBuNOG1wF2Iv5tjM,14695
+octane_sdk_wrapper/helpers/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+octane_sdk_wrapper/helpers/clr2py.py,sha256=cdKRJtCbkGTA67M0wTLFFKxYV52u7dnF0uFDNgjlLb8,191
+octane_sdk_wrapper/lib/Impinj.OctaneSdk.dll,sha256=yua6KJxCkBzJwzEQvrkspBg8B40pJ5qqm_IdKemiqMw,170312
+octane_sdk_wrapper/lib/Impinj.OctaneSdk.pdb,sha256=vVdil80Qhitdc08B55enYj0BYNsNNJP7QgZlfdKb7vI,56184
+octane_sdk_wrapper/lib/Impinj.OctaneSdk.xml,sha256=bMjrphzCiFc2qkH2xfyAU7UdyTF8TtsfbDigjoh_N0U,241582
+octane_sdk_wrapper/lib/LLRP.Impinj.dll,sha256=y8f9nG4R3Y9mczad4JuUnKK2wg_od7GFspHurtcw_SE,254792
+octane_sdk_wrapper/lib/LLRP.dll,sha256=AhpHcJP_Nza9payRmlvcDJprEZPgWheqBZeeRdLmdf0,368456
+octane_sdk_wrapper/lib/Renci.SshNet.dll,sha256=9jFe0UZDj3cCAzaBBD-P6WkO05oqvJoZIkZCSUSjono,422912
+octane_sdk_wrapper-1.2.1.dist-info/METADATA,sha256=2Wq974xKdRwZMfrxip2lOI_0AUVXvxmCO1LqVoFV3p4,4150
+octane_sdk_wrapper-1.2.1.dist-info/WHEEL,sha256=1yFddiXMmvYK7QYTqtRNtX66WJ0Mz8PYEiEUoOUUxRY,87
+octane_sdk_wrapper-1.2.1.dist-info/licenses/LICENSE.txt,sha256=pMK0A6Cg9lbevgcmGeqw1RBOsOeIHb12IcpnLx_pO8M,1101
+octane_sdk_wrapper-1.2.1.dist-info/RECORD,,
