@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: wandb_carbs
+Version: 0.0.1
+Summary: Integrates Imbue's Cost Aware pareto-Region Bayesian Search (CARBS) with Weights and Biases (WanDB)
+Home-page: https://daveey.github.io
+License: MIT
+Keywords: bayesian-optimization,bayesian-search,cost-aware,pareto-region,carbs,wandb,weights-and-biases
+Author: David Bloomin
+Author-email: daveey@gmail.com
+Requires-Python: >=3.10,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: carbs (>=0.0.1,<0.0.2)
+Requires-Dist: cython (>=3.0.11,<4.0.0)
+Requires-Dist: numpy (>=1.21.0,<2.0.0)
+Requires-Dist: wandb (>=0.15.10,<0.16.0)
+Project-URL: Repository, https://github.com/Metta-AI/wandb_carbs
+Description-Content-Type: text/markdown
+
+# wandb_carbs
+Integrates Imbue's Cost Aware pareto-Region Bayesian Search (CARBS) with Weights and Biases (WanDB)
+
