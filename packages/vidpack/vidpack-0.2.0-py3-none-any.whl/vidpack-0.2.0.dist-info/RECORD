@@ -1,0 +1,13 @@
+LICENSE,sha256=Ieijw6JoNvu3HEgQwD1QTW35L3T76TSL_UyAUXmX5t4,1065
+vidpack/__init__.py,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+vidpack/cli.py,sha256=MM0rbyxeXrHJbL4EI0wmqu8qpJL20L6MaM_ZJX1qjQk,4454
+vidpack/constants.py,sha256=T2lxctg_eX6OGR7vGs3jPx8Nqidq3yI1X7ZJftBeubA,1315
+vidpack/core.py,sha256=lqmHLO_u_T7PW_DOwVJKzwKFaEXowBMe3IQr-2Jlv9Y,4179
+vidpack/helpers.py,sha256=59XarVo8-wR_tv_TWVB1f8nPrnjBFMgiCBbH1n4wN0o,2325
+vidpack/models.py,sha256=jyAvy9hMkb6h71Sb1oPabgr_hFQjMc-94JIjVrD-nXI,256
+vidpack/utils.py,sha256=ty8HVP1W3pJZOxPNd9VWnnevzte0ixkjVeKw0kQ7guM,1241
+vidpack-0.2.0.dist-info/LICENSE,sha256=Ieijw6JoNvu3HEgQwD1QTW35L3T76TSL_UyAUXmX5t4,1065
+vidpack-0.2.0.dist-info/METADATA,sha256=QY1SvzH-y2md0dCodhiO09uVHmlVR1SyBlELcjL4w5Q,8016
+vidpack-0.2.0.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+vidpack-0.2.0.dist-info/entry_points.txt,sha256=SKTB9BahL0tU3oRlprApTlr2-G7td6nu7uNrobOYtb8,40
+vidpack-0.2.0.dist-info/RECORD,,
