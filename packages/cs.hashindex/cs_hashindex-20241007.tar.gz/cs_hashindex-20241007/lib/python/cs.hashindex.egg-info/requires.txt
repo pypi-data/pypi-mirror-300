@@ -1,0 +1,15 @@
+blake3
+cs.cmdutils>=20240211
+cs.context>=20240630
+cs.deco>=20241007
+cs.fs>=20241007
+cs.fstags>=20241005
+cs.hashutils>=20240412
+cs.lex>=20240630
+cs.logutils>=20241007
+cs.pfx>=20240630
+cs.psutils>=20240316
+cs.resources>=20241005
+cs.upd>=20240630
+icontract
+typeguard
