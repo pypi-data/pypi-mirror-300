@@ -1,0 +1,116 @@
+{% extends "wagtailadmin/base.html" %}
+{% load static i18n wagtailadmin_tags wagtailcore_tags %}
+
+{% block titletag %}{% translate "SEO Report" %}{% endblock %}
+
+{% block extra_css %}
+    {{ block.super }}
+    <link rel="stylesheet" href="{% static 'wagtail_optimizer/css/wagtail_optimizer.css' %}">
+{% endblock %}
+
+{% block extra_js %}
+    {{ block.super }}
+    <script src="{% static 'wagtail_optimizer/js/seo_report.js' %}"></script>
+{% endblock %}
+
+{% block content %}
+    {% if breadcrumbs_items %}
+        {# Ensure all necessary variables are passed explicitly here #}
+        {% include "wagtailadmin/shared/headers/slim_header.html" with breadcrumbs_items=breadcrumbs_items side_panels=side_panels history_url=history_url title=header_title search_url=index_results_url search_form=search_form filters=filters buttons=header_buttons icon_name=header_icon only %}
+    {% endif %}
+    
+    {% include "wagtailadmin/shared/header.html" with title=view.get_page_title subtitle=view.get_page_subtitle action_url=view.action_url icon=view.page_image action_text=view.action_text search_url=view.search_url %}
+
+    <div class="nice-padding">
+        
+        {% if analysis.notes %}
+            {% translate "Notes" as notes_text %}
+            {% panel id="notes" heading=notes_text classname="collapsible collapsed" %}
+                <p>{{ analysis.notes|richtext }}</p>
+            {% endpanel %}
+        {% endif %}
+
+        <div class="analysis-info">
+            <div class="analysis-info-box">
+                <p class="analysis-info-box-number">{{ analysis.seo_score }} / 100</p>
+                <p class="analysis-info-box-text">{% translate "SEO Score" %}</p>
+            </div>
+            <div class="analysis-info-box">
+                <p class="analysis-info-box-number">{{ analysis.mpe_count }}</p>
+                <p class="analysis-info-box-text">{% translate "Mulit-page errors" %}</p>
+            </div>
+            <div class="analysis-info-box">
+                <p class="analysis-info-box-number">{{ analysis.mpw_count }}</p>
+                <p class="analysis-info-box-text">{% translate "Mulit-page warnings" %}</p>
+            </div>
+            <div class="analysis-info-box">
+                <p class="analysis-info-box-number">{{ analysis.spe_count }}</p>
+                <p class="analysis-info-box-text">{% translate "Single-page errors" %}</p>
+            </div>
+            <div class="analysis-info-box">
+                <p class="analysis-info-box-number">{{ analysis.spw_count }}</p>
+                <p class="analysis-info-box-text">{% translate "Single-page warnings" %}</p>
+            </div>
+        </div>
+        
+        <div class="seo-report">
+            {% for obj in pages %}
+                <div class="seo-accordion-wrapper page-{{ obj.page.id }}">
+                    <div class="seo-accordion">
+                        <div class="seo-accordion-title">
+                            <h2>
+                                <a href="{% pageurl obj.page %}" aria-label="{% translate "View page" %}" target="_blank">
+                                    {% icon name="link-external" classname="icon--link seo-link-icon" %}
+                                </a>
+                                <span class="seo-accordion-title-text">
+                                    <strong>{{ obj.page.title }}</strong> ({% pageurl obj.page %})
+                                </span>
+                            </h2>
+                        </div>
+                        <div class="seo-accordion-meta">
+
+                            {% translate "Edit page" as status_text %}
+                            <div class="seo-accordion-meta-box">
+                                <span class="seo-accordion-meta-box-text">
+                                    <a href="{% url 'wagtailadmin_pages:edit' obj.page.id %}" class="seo-accordion-meta-edit" aria-label="{{ status_text }}">
+                                        {% icon name="edit" classname="icon-seo-edit" %}
+                                        {{ status_text }}
+                                    </a>
+                                </span>
+                            </div>
+                            
+                            {% translate "Errors" as status_text %}
+                            <div class="seo-accordion-meta-box seo-accordion-meta-errors">
+                                <span class="seo-accordion-meta-box-count">{{ obj.errors|length }}</span>
+                                <span class="seo-accordion-meta-box-text">{{ status_text }}</span>
+                            </div>
+
+                            {% translate "Warnings" as status_text %}
+                            <div class="seo-accordion-meta-box seo-accordion-meta-warnings">
+                                <span class="seo-accordion-meta-box-count">{{ obj.warnings|length }}</span>
+                                <span class="seo-accordion-meta-box-text">{{ status_text }}</span>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="seo-panel">
+                            
+                        {% help_block status="warning" %}
+                            {% for warning in obj.warnings %}
+                                {% include "./partials/seo_error.html" with error=warning %}
+                            {% endfor %}
+                        {% endhelp_block %}
+                            
+                        {% help_block status="critical" %}
+                            {% for error in obj.errors %}
+                                {% include "./partials/seo_error.html" with error=error %}
+                            {% endfor %}
+                        {% endhelp_block %}
+                                    
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+{% endblock %}
