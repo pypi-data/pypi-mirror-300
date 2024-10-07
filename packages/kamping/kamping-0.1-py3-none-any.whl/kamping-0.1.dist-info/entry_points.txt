@@ -1,0 +1,3 @@
+[console_scripts]
+KAMPING=kamping.main:app
+
