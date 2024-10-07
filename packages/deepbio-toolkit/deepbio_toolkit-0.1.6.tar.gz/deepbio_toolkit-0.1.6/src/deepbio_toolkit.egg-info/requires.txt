@@ -1,0 +1,3 @@
+bitarray
+dnadb
+lightning[pytorch-extra]>=2.4.0
