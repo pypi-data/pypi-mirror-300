@@ -1,0 +1,7 @@
+e2_tts_pytorch/__init__.py,sha256=huxAQf7yyrsFrNEzEWChiugXkU_bfww6Tvi7toOHf6M,142
+e2_tts_pytorch/e2_tts.py,sha256=wanTbL41WMv_NZCI2_xaKKf80I5cxevB5g741eNVlTY,35026
+e2_tts_pytorch/trainer.py,sha256=uoUgNtoGblBRzH9RypjYH45BfPE6oqaIQbUX21h2PsM,9870
+e2_tts_pytorch-1.1.0.dist-info/METADATA,sha256=FN2BnvHwNZIgJp7O4x7HpYc38c7BcqOGsgkxnIbZIaY,6184
+e2_tts_pytorch-1.1.0.dist-info/WHEEL,sha256=1yFddiXMmvYK7QYTqtRNtX66WJ0Mz8PYEiEUoOUUxRY,87
+e2_tts_pytorch-1.1.0.dist-info/licenses/LICENSE,sha256=E7RGS7kpJIStk5za_-4DVhWEAamf65EU0CNML25mq4c,1066
+e2_tts_pytorch-1.1.0.dist-info/RECORD,,
