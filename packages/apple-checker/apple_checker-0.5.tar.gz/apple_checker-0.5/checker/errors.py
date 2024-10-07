@@ -1,0 +1,2 @@
+class InvalidCertificateError(Exception):
+    pass
