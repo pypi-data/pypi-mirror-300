@@ -1,0 +1,75 @@
+Metadata-Version: 2.1
+Name: temporal-mapper
+Version: 1.0.0
+Author-email: Kaleb D Ruscitti <kaleb.ruscitti@uwaterloo.ca>
+License: Copyright (c) 2024, Kaleb Ruscitti, Leland McInnes
+        All rights reserved.
+        
+        Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:
+        
+        1. Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.
+        
+        2. Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.
+        
+        3. Neither the name of the copyright holder nor the names of its contributors may be used to endorse or promote products derived from this software without specific prior written permission.
+        
+        THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+        
+Keywords: Mapper,TDA,Morse Theory,Temporal Topic Modeling
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy
+Requires-Dist: matplotlib
+Requires-Dist: pandas
+Requires-Dist: tqdm
+Requires-Dist: scikit-learn
+Requires-Dist: scipy
+Requires-Dist: networkx
+Requires-Dist: numba
+Provides-Extra: visualizations
+Requires-Dist: datamapplot ; extra == 'visualizations'
+Requires-Dist: datashader ; extra == 'visualizations'
+Requires-Dist: vectorizers ; extra == 'visualizations'
+
+<img
+align="left" width="200" height="120" 
+src="./docs/icon.png" alt="Temporal Mapper Logo">
+## Temporal Mapper
+
+### V.1.0.0 - October 06 '24
+-----------------------------------------------
+This is a library for using the Mapper for temporal topic modelling.
+Though things broadly work now, the edge cases have not been throughly 
+tested.
+
+Direct questions to Kaleb D. Ruscitti: kaleb.ruscitti at uwaterloo.ca .
+
+Complete documentation is under construction on [Read The Docs](
+https://temporal-mapper.readthedocs.io/en/latest/).
+
+### Example:
+#### arXiv Papers 
+From the arXiv API, we can retrieve ~500,000 article titles and abstracts,
+use `SBERT` to embed them, and then UMAP to reduce to 2D.
+
+Using [DataMapPlot](https://github.com/tutteinstitute/datamapplot) and
+[TopicNaming](https://github.com/tutteinstitute/topicnaming) we can
+produce a static plot of this data:
+
+![A DataMapPlot of ArXiV papers](./doc/arxiv_static.png 
+"A DataMapPlot of ArXiV Papers")
+
+Now, using this repository we can additionally analyse the temporal
+information. Using the Mapper algorithm with time as our lens
+function, we create a *temporal graph* of the topics (clusters)
+through time. The code includes two types of plots to visualize this
+graph:
+
+Centroid Plot             |  Temporal-Semantic Plot
+:-------------------------:|:-------------------------:
+![](./docs/arxiv_centroids.png)  |  ![](./docs/arxiv_time.png)
+
+### Installation
+Clone the repo and install: 
+`git clone https://github.com/TutteInstitute/temporal-mapper.git`
+`cd temporal-mapper && pip install .`
