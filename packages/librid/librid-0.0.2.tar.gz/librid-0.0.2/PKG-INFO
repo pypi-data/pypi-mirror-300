@@ -1,0 +1,43 @@
+Metadata-Version: 2.1
+Name: librid
+Version: 0.0.2
+Summary: A simple python layer for ScriptForge
+Home-page: https://gitlab.com/hemrichg/librid
+Author: Stefan Hemrich
+Author-email: hemrichg@pm.me
+Project-URL: Bug Tracker, https://gitlab.com/hemrichg/librid/-/issues
+Project-URL: repository, https://gitlab.com/hemrichg/librid
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+
+#### For Ubuntu:
+`apt install python3-scriptforge`
+
+#### Start a listening LibreOffice instance
+`/usr/lib/libreoffice/program/soffice --accept='socket,host=your_host,port=port_number;urp;'`
+- replace `your_host` and `port_number`.
+- add  `--invisible` to run in background.
+- after running your `python` scripts kill the process (e.g. with `ctrl + C`)
+
+#### Workdir
+In `src` directory `mkdir workdir workdir/input workdir/output workdir/temp` or change the predefined paths in `src/core/document.py`. (Maybe create a directory structure somewhere on your computer for these kind of tasks and create symlinks - idk yet.)
+
+#### Interactivity
+When you start a listening LibreOffice instance you can use it interactively via the Python REPL. In Visual Studio Code there is a `Run Selection/Line in Python REPL` option. The shortcut for it is `Shift+Enter`. You don't have to build the whole project every time, also you can catch data in variables once and work with it (e.g. only one API call is enough to work with the response). If you want to see the LibreOffice results in realtime do not use the `--invisible` switch.
+
+
+
+MIT License
+
+Copyright (c) 2024 Stefan Hemrich
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
