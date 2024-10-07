@@ -1,0 +1,10 @@
+rawML/__init__.py,sha256=2apdeHYaCr2ySq8y__etVpH9fWOHVwBM2qraScwCCms,51
+rawML/backend.py,sha256=4in8f-hs9q1VSr29Aym5MABBTjfUwyiU79_2o-HtEgU,2693
+rawML/layers.py,sha256=6eyUU7oAmT20-zsMH7UvDKJvH3hImV47PJiLYUTfJ-U,1269
+rawML/losses.py,sha256=4B-oJC37s_WoSuXNvMRn2RV9gCsNa8HoynJ6DNAnkPM,153
+rawML/optimizers.py,sha256=gog1RKi7HJfj3QKQmP3qCBYmgZjW8jlIrKAEoBmccxo,321
+rawML-0.1.1.dist-info/LICENSE,sha256=QCgUpxufilG30jZI_XIvziAwpYqhoH6hVJ7_1-Futow,1100
+rawML-0.1.1.dist-info/METADATA,sha256=3mYVer7aDaSNTzd6Q7zms5FgfPDyQexjDi5f_cu5KIY,4417
+rawML-0.1.1.dist-info/WHEEL,sha256=GV9aMThwP_4oNCtvEC2ec3qUYutgWeAzklro_0m4WJQ,91
+rawML-0.1.1.dist-info/top_level.txt,sha256=WtM3p-keTfV3yfFNeV0RSln5pIh2TXOzMM7ZNF_VuUw,6
+rawML-0.1.1.dist-info/RECORD,,
