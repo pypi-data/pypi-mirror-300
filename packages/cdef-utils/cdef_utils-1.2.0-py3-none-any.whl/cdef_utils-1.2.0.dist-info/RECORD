@@ -1,0 +1,7 @@
+cdef_utils/__init__.py,sha256=zJUx6tg2hBfTh6fQkU4JtHhC_0WRgfr81PIVua4SMA0,22
+cdef_utils/__main__.py,sha256=F_Cd0luJD68DT_S65lBupf2MOxB5opt7q0blaKDfGTM,65
+cdef_utils/convert.py,sha256=xGYnLRvgfEUKnQJcgN2SqDrQG_t2UtJzT3nlNfnfgxs,9114
+cdef_utils-1.2.0.dist-info/METADATA,sha256=fkD4RMLsZ5CWc71qmunjJmICHGStVFNi5acpWUKNCgs,2639
+cdef_utils-1.2.0.dist-info/WHEEL,sha256=1yFddiXMmvYK7QYTqtRNtX66WJ0Mz8PYEiEUoOUUxRY,87
+cdef_utils-1.2.0.dist-info/licenses/LICENSE,sha256=fuILOK8BzqZqOlQLERTZf4hmlXWSyVpEa8LM8rkhRds,1076
+cdef_utils-1.2.0.dist-info/RECORD,,
