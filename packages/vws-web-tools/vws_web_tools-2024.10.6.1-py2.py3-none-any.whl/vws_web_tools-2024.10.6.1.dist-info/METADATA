@@ -1,0 +1,117 @@
+Metadata-Version: 2.1
+Name: vws-web-tools
+Version: 2024.10.6.1
+Summary: Tools for interacting with the Vuforia Web Services (VWS) website.
+Author-email: Adam Dangoor <adamdangoor@gmail.com>
+License: MIT License
+        
+        Copyright (c) 2020 VWS-Python
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy
+        of this software and associated documentation files (the "Software"), to deal
+        in the Software without restriction, including without limitation the rights
+        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+        copies of the Software, and to permit persons to whom the Software is
+        furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in all
+        copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+        SOFTWARE.
+        
+Project-URL: Source, https://github.com/VWS-Python/vws-web-tools
+Keywords: vuforia,vws
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Web Environment
+Classifier: Framework :: Pytest
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: POSIX
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.12
+Requires-Python: >=3.12
+Description-Content-Type: text/x-rst
+License-File: LICENSE
+Requires-Dist: beartype>=0.18.5
+Requires-Dist: click
+Requires-Dist: pyyaml
+Requires-Dist: selenium
+Provides-Extra: dev
+Requires-Dist: actionlint-py==1.7.3.17; extra == "dev"
+Requires-Dist: check-manifest==0.49; extra == "dev"
+Requires-Dist: deptry==0.20.0; extra == "dev"
+Requires-Dist: doc8==1.1.2; extra == "dev"
+Requires-Dist: doccmd==2024.9.27; extra == "dev"
+Requires-Dist: furo==2024.8.6; extra == "dev"
+Requires-Dist: interrogate==1.7.0; extra == "dev"
+Requires-Dist: mypy==1.11.2; extra == "dev"
+Requires-Dist: pre-commit==3.8.0; extra == "dev"
+Requires-Dist: pylint==3.3.1; extra == "dev"
+Requires-Dist: pyproject-fmt==2.2.4; extra == "dev"
+Requires-Dist: pyright==1.1.383; extra == "dev"
+Requires-Dist: pyroma==4.2; extra == "dev"
+Requires-Dist: pytest==8.3.3; extra == "dev"
+Requires-Dist: pytest-cov==5.0.0; extra == "dev"
+Requires-Dist: pytest-regressions==2.5.0; extra == "dev"
+Requires-Dist: ruff==0.6.9; extra == "dev"
+Requires-Dist: shellcheck-py==0.10.0.1; extra == "dev"
+Requires-Dist: shfmt-py==3.7.0.1; extra == "dev"
+Requires-Dist: sphinx==8.0.2; extra == "dev"
+Requires-Dist: sphinx-click==6.0.0; extra == "dev"
+Requires-Dist: sphinx-copybutton==0.5.2; extra == "dev"
+Requires-Dist: sphinx-substitution-extensions==2024.8.6; extra == "dev"
+Requires-Dist: sphinxcontrib-spelling==8; extra == "dev"
+Requires-Dist: types-pyyaml==6.0.12.20240917; extra == "dev"
+Requires-Dist: vulture==2.13; extra == "dev"
+Provides-Extra: release
+Requires-Dist: build; extra == "release"
+Requires-Dist: check-wheel-contents; extra == "release"
+
+|Build Status| |codecov| |PyPI| |Documentation Status|
+
+VWS-Web-Tools
+=============
+
+Tools for interacting with the VWS (Vuforia Web Services) website.
+
+Installation
+------------
+
+.. code-block:: shell
+
+   pip install vws-web-tools
+
+This is tested on Python |minimum-python-version|\+.
+
+Usage
+-----
+
+.. code-block:: console
+
+   $ export VWS_EMAIL_ADDRESS="[YOUR-EMAIL]"
+   $ export VWS_PASSWORD="[YOUR-PASSWORD]"
+   $ TIME="$(date +%s%N | cut -b1-13)"
+   $ vws-web-tools create-vws-license --license-name "my-licence-$TIME"
+   $ vws-web-tools create-vws-database --license-name "my-licence-$TIME" --database-name "my-database-$TIME"
+   $ vws-web-tools show-database-details --database-name "my-database-$TIME"
+
+Full documentation
+------------------
+
+See the `full documentation <https://vws-web-tools.readthedocs.io/en/latest>`__ for more information including how to contribute.
+
+.. |Build Status| image:: https://github.com/VWS-Python/vws-web-tools/actions/workflows/ci.yml/badge.svg?branch=main
+   :target: https://github.com/VWS-Python/vws-web-tools/actions
+.. |codecov| image:: https://codecov.io/gh/VWS-Python/vws-web-tools/branch/main/graph/badge.svg
+   :target: https://codecov.io/gh/VWS-Python/vws-web-tools
+.. |Documentation Status| image:: https://readthedocs.org/projects/vws-web-tools/badge/?version=latest
+   :target: https://vws-web-tools.readthedocs.io/en/latest/?badge=latest
+   :alt: Documentation Status
+.. |PyPI| image:: https://badge.fury.io/py/VWS-Web-Tools.svg
+   :target: https://badge.fury.io/py/VWS-Web-Tools
+.. |minimum-python-version| replace:: 3.12
