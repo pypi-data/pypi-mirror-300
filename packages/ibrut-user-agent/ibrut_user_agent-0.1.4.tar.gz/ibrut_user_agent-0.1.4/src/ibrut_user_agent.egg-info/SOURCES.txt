@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+src/ibrut_user_agent/__init__.py
+src/ibrut_user_agent/ibrut_user_agent.py
+src/ibrut_user_agent.egg-info/PKG-INFO
+src/ibrut_user_agent.egg-info/SOURCES.txt
+src/ibrut_user_agent.egg-info/dependency_links.txt
+src/ibrut_user_agent.egg-info/top_level.txt
