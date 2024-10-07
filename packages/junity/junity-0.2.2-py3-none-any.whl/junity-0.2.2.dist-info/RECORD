@@ -1,0 +1,15 @@
+junity/__init__.py,sha256=oPwwLmpoyh3MWaOKWANUGVEaK7GZz-ZqGtAOGiIkqtI,570
+junity/_version.py,sha256=l76BxtxMMS4ZlmaydbuRDEH38H3W6gHEk8IO2zVcask,171
+junity-0.2.2.data/data/share/jupyter/labextensions/junity/package.json,sha256=mb0yg4gBFnpFz7S1SKxxWqQ8pJnTemHh0Fp8COdyLAI,6188
+junity-0.2.2.data/data/share/jupyter/labextensions/junity/schemas/junity/package.json.orig,sha256=cRPhrk33x5Y9gmyX9PZQtrK3x6jolZf2ADV2355slhQ,7000
+junity-0.2.2.data/data/share/jupyter/labextensions/junity/schemas/junity/settings.json,sha256=Dt_DNOG_oQl2w5HxlQu2pMpxeN0x9ncxWcSztzsCR8Y,541
+junity-0.2.2.data/data/share/jupyter/labextensions/junity/static/728.3fcf92eb73702972e03f.js,sha256=P8-S63NwKXLgPzhfH-pmYbT6Ud1G3HTlrYO3ED8H8Vc,6460
+junity-0.2.2.data/data/share/jupyter/labextensions/junity/static/759.cc0e43fcd4707e2f6aaf.js,sha256=zA5D_NRwfi9qr0-jZcS2wfrUUjhQ6pSAXfN6rzcDkbQ,33990
+junity-0.2.2.data/data/share/jupyter/labextensions/junity/static/remoteEntry.9308304efe8ace3d50f4.js,sha256=kwgwTv6Kzj1Q9Eu0vjvI7pR4Wl7kG8fAlEKsRGA552o,6827
+junity-0.2.2.data/data/share/jupyter/labextensions/junity/static/style.js,sha256=Qz2FgGlyaEisxv39AN5T7MuHLno-UHR-GuugCxZveQE,149
+junity-0.2.2.data/data/share/jupyter/labextensions/junity/static/third-party-licenses.json,sha256=ZFu42jcik5tb1abgGVbqHDx7XrVgqKf0NbubGeS3do8,3695
+junity-0.2.2.data/data/share/jupyter/labextensions/junity/install.json,sha256=JACo4B_nY6J9x8OOLx_qp3erCN42UEhJFt0ry5dCsOY,173
+junity-0.2.2.dist-info/METADATA,sha256=yC6tLhrGLnvNkNF4h7qrOACA5m_L_hEZLIxsb6cWJxk,7400
+junity-0.2.2.dist-info/WHEEL,sha256=1yFddiXMmvYK7QYTqtRNtX66WJ0Mz8PYEiEUoOUUxRY,87
+junity-0.2.2.dist-info/licenses/LICENSE,sha256=sEjgev8gUmGDHFK8o9Wp_8jMY_wEiP_JmZY_vYEBkcg,1518
+junity-0.2.2.dist-info/RECORD,,
