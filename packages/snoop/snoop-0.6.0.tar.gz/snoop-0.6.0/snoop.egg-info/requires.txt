@@ -1,0 +1,17 @@
+cheap_repr>=0.4.0
+executing
+asttokens
+pygments
+
+[tests]
+pytest
+littleutils
+prettyprinter
+pprintpp
+pytest-order
+Django
+
+[tests:platform_python_implementation != "PyPy"]
+pandas>=0.24.2
+numpy>=1.16.5
+birdseye
