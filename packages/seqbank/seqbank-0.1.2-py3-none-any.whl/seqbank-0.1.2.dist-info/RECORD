@@ -1,0 +1,13 @@
+seqbank/__init__.py,sha256=BffCmT3tluD-LpF2MkPss4a_n4guxfB2qTkd7TDge_A,65
+seqbank/dfam.py,sha256=riuYk1NmkIax5414lU2ANXmyiLUIv5y1l7exrDNgtHc,2985
+seqbank/exceptions.py,sha256=gGtjVFsoxP7pfn3LSUSdFoNKOyiFdNv7zFNw9-7f6wg,234
+seqbank/io.py,sha256=N6oFoyyK-xO_F9iGtEwVYgZm6IM5TYLMuE89uNAYLuE,4400
+seqbank/main.py,sha256=uHiysBdUutfIQk-n1ZmLh2m612A-uzsZaZo0XiJLV5o,5555
+seqbank/refseq.py,sha256=iRXHplyv-miEkP6k6gak-Ly3UTqhkvPN0PkrASWbJaM,1637
+seqbank/seqbank.py,sha256=HlFcl29qdevswy4CZ8LZq8xfd79CBqCpPfj1LYsJW34,21368
+seqbank/transform.py,sha256=IFM0S9b5hTx5eSKW3evK6G6gTWzIAm1mp4zKs0tGhnc,1919
+seqbank/utils.py,sha256=DU0qEQ_ec4XQeTlcm6BxzeyWs-fqZYgVGrnziuT_9Ys,797
+seqbank-0.1.2.dist-info/METADATA,sha256=-ypiqPeKIpzr_ekz6L6TwH3p7fwx-Y2ImL9ZQ-SszeQ,8404
+seqbank-0.1.2.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+seqbank-0.1.2.dist-info/entry_points.txt,sha256=u7kmL0XS-HbARkUTD2FPU-J-fEBYx51iJMrz9tBZeLA,44
+seqbank-0.1.2.dist-info/RECORD,,
