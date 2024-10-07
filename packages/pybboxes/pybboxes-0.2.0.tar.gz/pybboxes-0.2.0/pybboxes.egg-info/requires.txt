@@ -1,0 +1,18 @@
+numpy==1.24.2
+pycocotools==2.0.6
+pyyaml==6.0
+
+[dev]
+black==22.3.0
+click==8.0.4
+deepdiff==5.5.0
+flake8==3.9.2
+isort==5.9.2
+pytest>=7.0.1
+pytest-cov>=3.0.0
+pytest-timeout>=2.1.0
+pytest-depends>=1.0.1
+huggingface-hub>=0.25.0
+
+[dev:python_version < "3.8"]
+importlib-metadata<4.3,>=1.1.0
