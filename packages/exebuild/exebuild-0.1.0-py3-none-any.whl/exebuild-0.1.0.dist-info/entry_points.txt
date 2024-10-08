@@ -1,0 +1,3 @@
+[console_scripts]
+makensis = exebuild.__main__:main_makensis
+signexe = exebuild.__main__:main_signexe

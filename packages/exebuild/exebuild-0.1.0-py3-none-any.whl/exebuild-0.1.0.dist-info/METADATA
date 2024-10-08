@@ -1,0 +1,104 @@
+Metadata-Version: 2.1
+Name: exebuild
+Version: 0.1.0
+Summary: Azure Code signing tool for Windows executable.
+Author-email: Patrik Dufresne <patrik@ikus-soft.com>
+License: MIT License
+Project-URL: Homepage, https://gitlab.com/ikus-soft/exebuild
+Classifier: Development Status :: 4 - Beta
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Requires-Python: <4,>=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: requests
+Provides-Extra: test
+
+<p align="center">
+<a href="LICENSE"><img alt="License" src="https://img.shields.io/pypi/l/debbuild"></a>
+<a href="https://gitlab.com/ikus-soft/exebuild/pipelines"><img alt="Build" src="https://gitlab.com/ikus-soft/exebuild/badges/main/pipeline.svg"></a>
+<a href="https://sonar.ikus-soft.com/dashboard?id=exebuild"><img alt="Quality Gate Minarca Client" src="https://sonar.ikus-soft.com/api/project_badges/measure?project=exebuild&metric=alert_status"></a>
+<a href="https://sonar.ikus-soft.com/dashboard?id=exebuild"><img alt="Coverage" src="https://sonar.ikus-soft.com/api/project_badges/measure?project=exebuild&metric=coverage"></a>
+</p>
+
+# Exebuild
+
+A command-line utility for creating Windows executables for software distribution. Exebuild simplifies the process of signing executables using Azure Trusted Code Signing and helps create software installers using NSIS.
+
+## Description
+
+Exebuild streamlines the tedious process of signing Windows executables with `signtool.exe` by combining multiple steps into a single, efficient command. 
+
+This project was created to address the complexity of signing executables on Windows and to provide a reusable solution for all the projects we develop at [IKUS Software](https://ikus-soft.com).
+
+## Installation
+
+Install Exebuild via PyPI:
+
+```sh
+pip install exebuild
+```
+
+## Usage: `signexe`
+
+Here’s an example of how to use Exebuild to quickly sign an executable.
+
+First, create an Azure Certificate profile. Follow the documentation here: [Code Signing on Windows with Azure Trusted Signing](https://melatonin.dev/blog/code-signing-on-windows-with-azure-trusted-signing/).
+
+CLI:
+```sh
+set AZURE_TENANT_ID=your-tenant-id
+set AZURE_CLIENT_ID=your-client-id
+set AZURE_CLIENT_SECRET=your-client-secret
+set AZURE_ENDPOINT=your-endpoint
+set AZURE_CODE_SIGNING_NAME=your-code-signing-name
+set AZURE_CERT_PROFILE_NAME=your-cert-profile-name
+signexe.exe <path-to-exe>
+```
+
+Python:
+```python
+from exebuild import signexe
+signexe('c:/path/to/my.exe')
+```
+
+## Usage: `makensis`
+
+Exebuild also simplifies creating installers using NSIS. It supports the same command-line arguments as the original `makensis`, but Exebuild automatically installs NSIS via NuGet.
+
+CLI:
+```sh
+makensis.exe -NOCD -INPUTCHARSET UTF8 -DOutFile=installer.exe <path-to-nsi-file>
+```
+
+Python:
+```python
+from exebuild import makensis
+
+makensis([
+    '-NOCD',
+    '-INPUTCHARSET', 'UTF8',
+    '-DOutFile=installer.exe',
+    'c:/path/to/file.nsi',
+])
+```
+
+## Roadmap
+
+- Add support for installing .NET Runtime v6.0.
+- Simplify the NSIS interface for easier usage.
+- Expand `signexe` to support additional code-signing options (e.g., alternatives to Azure Code Signing).
+
+Got more ideas? Submit a new issue.
+
+## Support
+
+If you encounter any issues or need assistance, feel free to open a ticket on [GitLab](https://gitlab.com/ikus-soft/exebuild/-/issues/new) or GitHub.
+
+## License
+
+This project is released under the MIT License.
