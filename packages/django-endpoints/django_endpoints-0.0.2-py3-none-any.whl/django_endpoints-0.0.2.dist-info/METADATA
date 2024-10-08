@@ -1,0 +1,81 @@
+Metadata-Version: 2.1
+Name: django-endpoints
+Version: 0.0.2
+Summary: Package to display all URLs of a Django application
+Home-page: https://github.com/Artasov/django-endpoints
+Author: xlartas
+Author-email: ivanhvalevskey@gmail.com
+Project-URL: Source, https://github.com/Artasov/django-endpoints
+Project-URL: Tracker, https://github.com/Artasov/django-endpoints/issues
+Keywords: django urls endpoints
+Classifier: Framework :: Django
+Classifier: Framework :: Django :: 4.0
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Operating System :: OS Independent
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Libraries :: Application Frameworks
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: Django<5.3,>=4.0
+
+# Django Endpoints
+
+**Django Endpoints** is a small Django application that 
+displays your project's URLs, grouping them by
+applications. 
+> Sometimes I use this in different projects, so I decided to put it on pypi
+
+## Installation
+```bash
+pip install django-endpoints
+```
+
+## Settings
+
+* ### Add the application to the project.
+    ```python
+    INSTALLED_APPS = [
+        #...
+        'endpoints',
+    ]
+    ```
+* ### In `settings.py` set the params
+    ```python
+    # required * URL to which unauthenticated or non-staff users will be redirected (is_staff=False).
+    EP_NOT_AUTH_REDIRECT_URL = '/admin/login/?next=/endpoints/'
+    
+    # A tuple of application names that you want to exclude from the list of URLs to display.
+    EP_EXCLUDED_APPS = (
+        'logui',
+        'swagger',
+        'rest_framework',
+    )
+  
+    # Section with custom links
+    EP_CUSTOM_LINKS = [
+        {'name': 'Logs', 'url': 'https://xxx.xxx/logs/'},
+        {'name': 'Nginx', 'url': 'http://42.33.125.119:81/'},
+        {'name': 'Swagger', 'url': 'https://xxx.xxx/swagger/'},
+        {'name': 'Minio', 'url': 'https://minio.xxx.xxx/'},
+        {'name': 'Pg Admin', 'url': 'https://pgadmin.xxx.xxx/'},
+        {'name': 'Flower', 'url': 'https://flower.xxx.xxx/'},
+    ]
+    ```
+* ### Add routes
+
+    Only `is_staff` have access.
+    ```python
+    from django.urls import path, include
+  
+    urlpatterns = [
+        #...
+        path('endpoints/', include('endpoints.urls')),
+    ]
+    ```
+* ### Open https://localhost:8000/endpoints/
