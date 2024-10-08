@@ -1,0 +1,10 @@
+gen_dedup/__init__.py,sha256=ffNWqXJfQ0S6ZjNtu-uokrT12o1RI7PlCvq9SSrwAwc,61
+gen_dedup/dedup.py,sha256=gNVFMLIOR99J8mUdOfhj8MdfpijmYlOSTV-DBcRFDck,6417
+gen_dedup/version.py,sha256=07NzQXBgNlnw5kSN6ZYxE9By-_RuH3Jyy58Z74sIio0,21
+gen_dedup/models/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+gen_dedup/models/modeling_t5.py,sha256=M7xePUUx3x_iDkGP2UyRo21t5i0IZAos9wQHqHobUH4,15750
+gen_dedup-0.0.1.dist-info/LICENSE,sha256=Snjn-BRQnzpBTkc6YXltsZnIYrR-r7P1jeRQmf-peg8,1060
+gen_dedup-0.0.1.dist-info/METADATA,sha256=Ki4giOk9ul-MrC6LORwLLuUiIDy8QMJ-Vr-siCYqHYI,2930
+gen_dedup-0.0.1.dist-info/WHEEL,sha256=yQN5g4mg4AybRjkgi-9yy4iQEFibGQmlz78Pik5Or-A,92
+gen_dedup-0.0.1.dist-info/top_level.txt,sha256=sj72nEr7vA2H5GkUvRV2ec_HKnSctQVEOKHXPwAs9HE,10
+gen_dedup-0.0.1.dist-info/RECORD,,
