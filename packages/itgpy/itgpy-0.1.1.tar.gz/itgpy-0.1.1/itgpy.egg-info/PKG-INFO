@@ -1,0 +1,34 @@
+Metadata-Version: 2.1
+Name: itgpy
+Version: 0.1.1
+Summary: Integrated Toolkits for Gravity: A Python library for handling gravitational data and calculations.
+Home-page: https://gitlab.com/nr-mini/itg
+Author: Dongchan Kim
+Author-email: krq3268@cau.ac.kr
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Scientific/Engineering :: Physics
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+Requires-Dist: numpy>=1.18.0
+Requires-Dist: matplotlib>=3.1.0
+Requires-Dist: scipy>=1.5.0
+Provides-Extra: dev
+Requires-Dist: pytest>=6.0; extra == "dev"
+Requires-Dist: flake8; extra == "dev"
+Requires-Dist: black; extra == "dev"
+Requires-Dist: sphinx==7.3.7; extra == "dev"
+Requires-Dist: sphinx-rtd-theme==2.0.0; extra == "dev"
+Requires-Dist: sphinx-autodoc-typehints==2.3.0; extra == "dev"
+
+## Install
+
+```
+pip install itgpy
+```
+
+## Docs
+
+https://nr-mini.gitlab.io/itg
+

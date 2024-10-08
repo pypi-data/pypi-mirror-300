@@ -1,0 +1,14 @@
+README.md
+setup.py
+itg/__init__.py
+itg/io/__init__.py
+itg/utils/__init__.py
+itg/utils/math/__init__.py
+itg/utils/math/swsh.py
+itgpy.egg-info/PKG-INFO
+itgpy.egg-info/SOURCES.txt
+itgpy.egg-info/dependency_links.txt
+itgpy.egg-info/not-zip-safe
+itgpy.egg-info/requires.txt
+itgpy.egg-info/top_level.txt
+tests/test_math.py
