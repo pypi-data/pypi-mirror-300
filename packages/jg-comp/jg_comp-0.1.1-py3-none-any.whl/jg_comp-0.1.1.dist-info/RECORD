@@ -1,0 +1,12 @@
+jg_comp/__init__.py,sha256=frcCV1k9oG9oKj3dpUqdJg1PxRT2RSN_XKdLCPjaYaY,2
+jg_comp/compression_strategy.py,sha256=k0P7OQEHFiJR2bSoXUR7MBsiYUBvsgUdtWFeagrmVX0,336
+jg_comp/compressor.py,sha256=5V8y1Oq-FXy-DezDWEQtolX9Ur4w9A8zq9HL26dW_KE,1443
+jg_comp/huffman.py,sha256=JXaiQ-lONFGsKWHjRmqxJ6SasOjIEtCS-KZomvLDuSY,1617
+jg_comp/matching.py,sha256=sC-BCy0xlGwjaQsa_5DyxIGRoqBza_MXEuJUHdhSOFw,3565
+jg_comp/utils.py,sha256=Kr2s1qRAQ1xCykoWnF30PehHd-gLLx9rPF1mq6SlFAY,219
+tests/__init__.py,sha256=frcCV1k9oG9oKj3dpUqdJg1PxRT2RSN_XKdLCPjaYaY,2
+tests/test_compressor.py,sha256=RkP9VSkrYgS9k-qOHG0nISokICgVsZra-cLlZjCBavI,583
+jg_comp-0.1.1.dist-info/METADATA,sha256=6kzDJMVbhNx_KRtQTrhRaVmt-66ZhZwnnt-9sxxp_GM,598
+jg_comp-0.1.1.dist-info/WHEEL,sha256=mguMlWGMX-VHnMpKOjjQidIo1ssRlCFu4a4mBpz1s2M,91
+jg_comp-0.1.1.dist-info/top_level.txt,sha256=VONDDEHnMgiKG51zSdPyibXL95b9iLj3oAU2ZqZ1yQU,14
+jg_comp-0.1.1.dist-info/RECORD,,
