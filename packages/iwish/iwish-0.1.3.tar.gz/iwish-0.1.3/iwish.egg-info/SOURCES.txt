@@ -1,0 +1,8 @@
+LICENSE.txt
+README.md
+pyproject.toml
+iwish.egg-info/PKG-INFO
+iwish.egg-info/SOURCES.txt
+iwish.egg-info/dependency_links.txt
+iwish.egg-info/top_level.txt
+scripts/iwish
