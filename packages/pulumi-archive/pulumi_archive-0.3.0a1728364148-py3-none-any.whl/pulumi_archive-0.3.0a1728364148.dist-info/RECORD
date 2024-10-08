@@ -1,0 +1,13 @@
+pulumi_archive/__init__.py,sha256=hWIyjL5zJhJ_fDyIxYM7JramCxf4_yvoxShUynZ3TGU,718
+pulumi_archive/_inputs.py,sha256=BGJCcZN5MtASTw-4A0Icgsjbijvoocfrrflx_8hAk0I,2587
+pulumi_archive/_utilities.py,sha256=aNnnaO6zRha3FhNHonuabR4fJLWGXANtK5dlh1Mz95k,10506
+pulumi_archive/file.py,sha256=ZPt2hmLHUUwzHWbenz10JeI_wG80z16aJ7b0Qx_hCJg,41095
+pulumi_archive/get_file.py,sha256=ng-dg-jhrvTiK970c6uZdEqyJXWMAgzBkpxcrg_VQZ0,18274
+pulumi_archive/outputs.py,sha256=_BxLL1iNPVwCPmdJYDRHYp6K_GRIC48_ig7h9MJCc2A,2083
+pulumi_archive/provider.py,sha256=9ArT3w3VxDSlSIIvUJoT_XOKTBua7anof117W36QN0o,3423
+pulumi_archive/pulumi-plugin.json,sha256=Eow0J9rzB2nLEfgQ_sbj4RahP4VA-LPew8IOJhsoEi8,83
+pulumi_archive/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pulumi_archive-0.3.0a1728364148.dist-info/METADATA,sha256=53G_fwWYVCkS0Mxk_FeaZv_go6Fu9u2xeQUj9-DTJ-w,2847
+pulumi_archive-0.3.0a1728364148.dist-info/WHEEL,sha256=GV9aMThwP_4oNCtvEC2ec3qUYutgWeAzklro_0m4WJQ,91
+pulumi_archive-0.3.0a1728364148.dist-info/top_level.txt,sha256=_4o-tlilZ6UAaEKnDp98-rY5u2zus9sDvna0qHa54Nk,15
+pulumi_archive-0.3.0a1728364148.dist-info/RECORD,,
