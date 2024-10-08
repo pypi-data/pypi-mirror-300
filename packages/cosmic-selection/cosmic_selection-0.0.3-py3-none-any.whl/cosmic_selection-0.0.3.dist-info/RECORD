@@ -1,0 +1,16 @@
+cosmic_selection/__init__.py,sha256=QvlVh4JTl3JL7jQAja76yKtT-IvF4631ASjWY1wS6AQ,22
+cosmic_selection/_modidx.py,sha256=SP80heyz0dCA9ItyryOeepfl-kowjistTwHKFWTV6yM,18888
+cosmic_selection/core.py,sha256=f27lPATA1iQQF3zqhvMMeD__Y4deHOhnXKQJSJNkJVU,183
+cosmic_selection/utils.py,sha256=XeDdCaRAKyGXv_miR_fgetDQhQL_M9GB73u_zWc-c9I,666
+cosmic_selection/algorithms/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+cosmic_selection/algorithms/concepts.py,sha256=s2Y_VGCPi9OO9ubuCMQHEsCC80nlKHjAmk9NPOfcEaQ,1816
+cosmic_selection/algorithms/scientist_experiment.py,sha256=hyZf2DGnTdua2Yo7zcefggXSK_FWn19r17M6BNX1veY,6112
+cosmic_selection/objectives/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+cosmic_selection/objectives/benchmark_funs.py,sha256=2p56MrdHu_O1DfNi3BPv-08Hp2Q7cpptljHSbNYqaVU,8769
+cosmic_selection/objectives/integer_funs.py,sha256=pbmp49bSaCa-pscEBxkQ05FZuOHjXXuCDa0o87LWa1w,1272
+cosmic_selection-0.0.3.dist-info/LICENSE,sha256=xV8xoN4VOL0uw9X8RSs2IMuD_Ss_a9yAbtGNeBWZwnw,11337
+cosmic_selection-0.0.3.dist-info/METADATA,sha256=nCDoVxgX8ICVPG3WtBNWWwC7AnDtUjpb20VEIP8YBJs,2444
+cosmic_selection-0.0.3.dist-info/WHEEL,sha256=eOLhNAGa2EW3wWl_TU484h7q1UNgy0JXjjoqKoxAAQc,92
+cosmic_selection-0.0.3.dist-info/entry_points.txt,sha256=RLHrBOCtGUw8u7_8Cd0ogHlLwW3TlUB87zeUpShaJwY,75
+cosmic_selection-0.0.3.dist-info/top_level.txt,sha256=HJEk7FmMYK4DTL8GpJA_GwDYgkcWmXSybWKcwLJLBXQ,17
+cosmic_selection-0.0.3.dist-info/RECORD,,
