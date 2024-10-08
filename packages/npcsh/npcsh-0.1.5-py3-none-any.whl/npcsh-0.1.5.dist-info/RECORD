@@ -1,0 +1,17 @@
+npcsh/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+npcsh/command_history.py,sha256=HG5uAyigKu4lmBAxdk32GQXVpK_Y9mEMykYJGpKskFw,2309
+npcsh/helpers.py,sha256=QQ16rFaJluzALPY3GS31VWDiDOMPLqWUr8VScMK9tdQ,16003
+npcsh/llm_funcs.py,sha256=M6NxbOrP2ztVsJ6rKseLuQ27YsSuAFsQ49ybyAncxQE,21638
+npcsh/main.py,sha256=rpf_2ysx3cR3eHsrvZApprJ-3D3-OrWcJ15bM1bc97I,81
+npcsh/modes.py,sha256=BXgNXEmd5vMs_M270Ybd1ibYMeZDnkFny8GOrKcsRxo,8341
+npcsh/npc_compiler.py,sha256=1PcAPtbSQpONwM-a8NPecGrn6seRrn7VeKyFYspPt0c,5232
+npcsh/npcsh.py,sha256=zniluFX6FN9zMEtYJ7nPgEGjLYOCbP5rpKtPtQwKExI,7820
+npcsh-0.1.5.data/data/npc_profiles/base.npc,sha256=p0LS44GZoUtRxW9S_frrOXtfOtO7g_XoaT_5ZPyBaOc,483
+npcsh-0.1.5.data/data/npc_profiles/bash.npc,sha256=3S7lg34WOVyzTh1uJhwNZF5NvqiAjwTFwsnq38YpQko,677
+npcsh-0.1.5.data/data/npc_profiles/data.npc,sha256=uY5nXXitkJoAsY2RlXIEKyS3yM7iFilA9lSRKTesX_Y,698
+npcsh-0.1.5.dist-info/LICENSE,sha256=j0YPvce7Ng9e32zYOu0EmXjXeJ0Nwawd0RA3uSGGH4E,1070
+npcsh-0.1.5.dist-info/METADATA,sha256=YPgyieMOgNYjlGDXfwE6T993qRKadNe2GuP3y_IzUCU,5513
+npcsh-0.1.5.dist-info/WHEEL,sha256=GV9aMThwP_4oNCtvEC2ec3qUYutgWeAzklro_0m4WJQ,91
+npcsh-0.1.5.dist-info/entry_points.txt,sha256=_n86Qhl0Dl5RFsV4XJcRv3GZoW8TbPF46UZq-SZavEY,43
+npcsh-0.1.5.dist-info/top_level.txt,sha256=kHSNgKMCkfjV95-DH0YSp1LLBi0HXdF3w57j7MQON3E,6
+npcsh-0.1.5.dist-info/RECORD,,
