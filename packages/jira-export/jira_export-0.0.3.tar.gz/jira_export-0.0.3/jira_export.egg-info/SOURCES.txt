@@ -1,0 +1,13 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+jira_export/__init__.py
+jira_export/jira_export.py
+jira_export.egg-info/PKG-INFO
+jira_export.egg-info/SOURCES.txt
+jira_export.egg-info/dependency_links.txt
+jira_export.egg-info/entry_points.txt
+jira_export.egg-info/requires.txt
+jira_export.egg-info/top_level.txt
+tests/tests_jira_export.py
