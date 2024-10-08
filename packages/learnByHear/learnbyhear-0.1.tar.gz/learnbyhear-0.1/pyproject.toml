@@ -1,0 +1,35 @@
+[build-system]
+requires = [
+    "setuptools",
+    "piper-tts==1.1.0",
+    "argostranslate",
+    "wheel"
+]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "learnByHear"
+version = "0.1"
+authors = [
+  { name="Rohit D" },
+]
+description = "Learn a new language by hearing it"
+readme = "README.md"
+requires-python = ">=3.10"
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Education",
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: GNU General Public License v3 (GPLv3)",
+    "Operating System :: POSIX :: Linux",
+]
+
+[project.urls]
+Homepage = "https://gitlab.com/drohi/learnbyhear"
+
+[tool.setuptools]
+packages = ["learnByHear"]
+package-dir = { "" = "src" }
+
+[project.scripts]
+learnbyhear = "learnByHear.maker:main"
