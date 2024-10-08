@@ -1,0 +1,65 @@
+---
+
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+  schedule:
+    # * is a special character in YAML so you have to quote this string
+    # Run at 1:00 every day
+    - cron: '0 1 * * *'
+
+jobs:
+  build:
+
+    strategy:
+      matrix:
+        python-version: ["3.10", "3.11", "3.12"]
+        platform: ["ubuntu-latest", "windows-latest"]
+
+    runs-on: ${{ matrix.platform }}
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install uv
+        uses: astral-sh/setup-uv@v3
+
+      - name: Configure Git
+        run: |
+          git config --global core.autocrlf false
+
+      - name: "Lint"
+        run: |
+          uv run --all-extras --python=${{ matrix.python-version }} pre-commit run --all-files --hook-stage pre-commit --verbose
+          uv run --all-extras --python=${{ matrix.python-version }} pre-commit run --all-files --hook-stage pre-push --verbose
+          uv run --all-extras --python=${{ matrix.python-version }} pre-commit run --all-files --hook-stage manual --verbose
+
+      # We require a lower coverage for Windows as we do not
+      # create binaries on Windows.
+      - name: "Run tests Windows"
+        run: |
+          # We run tests against "." and not the tests directory as we test the README
+          # and documentation.
+          uv run --all-extras --python=${{ matrix.python-version }} pytest -s -vvv --cov-fail-under=60 --cov=src/ --cov=tests . --cov-report=xml
+        if: runner.os == 'Windows'
+
+      - name: "Run tests not-Windows"
+        run: |
+          # We run tests against "." and not the tests directory as we test the README
+          # and documentation.
+          uv run --all-extras --python=${{ matrix.python-version }} pytest -s -vvv --cov-fail-under=100 --cov=src/ --cov=tests . --cov-report=xml
+        if: runner.os != 'Windows'
+
+      - name: "Upload coverage to Codecov"
+        uses: "codecov/codecov-action@v4"
+        with:
+          fail_ci_if_error: true
+          token: ${{ secrets.CODECOV_TOKEN }}
+        if: runner.os != 'Windows'
+
+      - uses: pre-commit-ci/lite-action@v1.0.3
+        if: always() && runner.os != 'Windows'
