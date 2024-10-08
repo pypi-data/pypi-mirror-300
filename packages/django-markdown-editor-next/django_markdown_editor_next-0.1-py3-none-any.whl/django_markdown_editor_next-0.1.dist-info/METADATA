@@ -1,0 +1,55 @@
+Metadata-Version: 2.1
+Name: django-markdown-editor-next
+Version: 0.1
+Summary: A Django package to support Markdown text editor in Django admin
+Home-page: https://github.com/aliahadmd/django-markdown-editor-next
+Author: Ali
+Author-email: ali@aliahad.com
+License: MIT
+Classifier: Environment :: Web Environment
+Classifier: Framework :: Django
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Topic :: Internet :: WWW/HTTP
+Classifier: Topic :: Internet :: WWW/HTTP :: Dynamic Content
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: Django >=2.2
+
+# Django Markdown Editor
+
+A Django package to support Markdown text editor in Django admin.
+
+## Installation
+
+```
+pip install django-markdown-editor-next
+```
+
+## Usage
+
+1. Add 'django_markdown_editor' to your INSTALLED_APPS setting.
+
+2. In your models, use the MarkdownField:
+
+```python
+from django_markdown_editor.fields import MarkdownField
+
+class MyModel(models.Model):
+    content = MarkdownField()
+```
+
+3. That's it! The Django admin will now use the Markdown editor for this field.
+## License
+
+This project is licensed under the MIT License - see the LICENSE file for details.
