@@ -1,0 +1,14 @@
+README.md
+setup.py
+chat2note.egg-info/PKG-INFO
+chat2note.egg-info/SOURCES.txt
+chat2note.egg-info/dependency_links.txt
+chat2note.egg-info/entry_points.txt
+chat2note.egg-info/requires.txt
+chat2note.egg-info/top_level.txt
+cli/__init__.py
+cli/cli.py
+utils/__init__.py
+utils/chat_type.py
+utils/get_logs.py
+utils/translate_to_note.py
