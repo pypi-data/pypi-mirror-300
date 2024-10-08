@@ -1,0 +1,9 @@
+nonebot_plugin_npu/__init__.py,sha256=YAD__a4_4cnmhjlQjGkfDmyg1hka-hPo-5QK32ORQg0,42340
+nonebot_plugin_npu/config.py,sha256=WrqiXJuQDHrpYIoQbZYWZ-QT2lnrqpiL-gURojPcN-E,330
+nonebot_plugin_npu/nwpu_electric.py,sha256=1qAZDFK8tIKngUCkgS18_kj3SVgI3O6HUrAmHEp0p_8,1947
+nonebot_plugin_npu/nwpu_query.py,sha256=hldwQmMs4qta7vAy2NuyZzZTs_Gk1DKkb2n0XlekPbo,21292
+nonebot_plugin_npu/utils.py,sha256=I5mPL8MeRd6P404vy998TCxOQuQZgKDHpkgIV6vojsA,15013
+nonebot_plugin_npu-0.1.6.dist-info/LICENSE,sha256=AzWN7KI_QnwTbmLVOCo5qcs-0p1HPtsg6mAJuMAg93Y,1066
+nonebot_plugin_npu-0.1.6.dist-info/METADATA,sha256=eh_VcSYoaYEaC3xsN27z-q0NLlY2l7pjiVkGs-nzbQU,4764
+nonebot_plugin_npu-0.1.6.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+nonebot_plugin_npu-0.1.6.dist-info/RECORD,,
