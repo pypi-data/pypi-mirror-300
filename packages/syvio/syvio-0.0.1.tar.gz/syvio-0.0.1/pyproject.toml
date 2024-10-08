@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "syvio"
+version = "0.0.1"
+description = ""
+authors = ["Wenyu Zhao <wenyuzhaox@gmail.com>"]
+readme = "README.md"
+packages = [{ include = "syvio" }]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+typer = "^0.12.5"
+asyncio = "^3.4.3"
+python-dotenv = "^1.0.1"
+shortuuid = "^1.0.13"
+numpy = "^2.1.2"
+rich = "^13.9.2"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+syvio = 'syvio.main:main'
