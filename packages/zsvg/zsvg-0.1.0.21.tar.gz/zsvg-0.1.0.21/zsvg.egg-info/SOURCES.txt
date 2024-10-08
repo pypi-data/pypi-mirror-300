@@ -1,0 +1,9 @@
+setup.py
+zsvg/__init__.py
+zsvg/load.cpython-312-darwin.so
+zsvg/proc.cpython-312-darwin.so
+zsvg/sec.cpython-312-darwin.so
+zsvg.egg-info/PKG-INFO
+zsvg.egg-info/SOURCES.txt
+zsvg.egg-info/dependency_links.txt
+zsvg.egg-info/top_level.txt
