@@ -1,0 +1,15 @@
+kairo/__init__.py,sha256=Y5YKg8YZkT8k1UuKWMZ7Df_98_0WsZ8ILV7iGuUtTNI,119
+kairo/cli.py,sha256=3iWOK1YFoZJ6Vuf0MKnk9T2m22tybvw5qR4Stgvch2M,3876
+kairo/constants.py,sha256=2TLBoJfqugHjTlQtnF9ZxR4TK1X4sN5eRucjg_dTVJk,96
+kairo/project.py,sha256=og9TBJsYvSAKvbS0peJRRbyYRPyavwJ-s5buOglBi8Q,1307
+kairo/command/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+kairo/command/base.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+kairo/command/loader.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+kairo/projects/__init__.py,sha256=Xnh160JPKuOZ99z7zUTXTTW9DyjmzkAS9xkMkdKT4wE,139
+kairo/utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+kairo/utils/api.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+kairo-0.1.0.dist-info/METADATA,sha256=tlrjNz67e3dlSaTJXIGUhKf5P_0SRAiucjVYoGzQV7g,3938
+kairo-0.1.0.dist-info/WHEEL,sha256=1yFddiXMmvYK7QYTqtRNtX66WJ0Mz8PYEiEUoOUUxRY,87
+kairo-0.1.0.dist-info/entry_points.txt,sha256=g_YmGQE_sSBnLMZDNfwl0ks0CQQw8OZBEEOZGNA9VYw,40
+kairo-0.1.0.dist-info/licenses/LICENSE,sha256=6g5lLjIai9Nt1tnkt2QgZdx43aO_34DZs_VSNDVXDFY,1071
+kairo-0.1.0.dist-info/RECORD,,
