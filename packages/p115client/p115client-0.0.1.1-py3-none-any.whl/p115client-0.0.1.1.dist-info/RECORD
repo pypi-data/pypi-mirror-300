@@ -1,0 +1,11 @@
+LICENSE,sha256=o5242_N2TgDsWwFhPn7yr8YJNF7XsJM5NxUMtcT97bc,1100
+p115client/__init__.py,sha256=n5BTCCoFsIIkjbHK6E5tMLXvcddk4wABQJ2yNhN3Gsk,214
+p115client/_upload.py,sha256=gXPANNvjBvy_5X-2gCFthp4nXdG2C_v3gOAtax1HgeM,27933
+p115client/client.py,sha256=i541a3SMytvwKANqPi5mhkTwzADCv_0IZxB8YRGbS-w,307049
+p115client/const.py,sha256=0fEjtTh8nfLJeDBb8xETxzV_y_jpLvQ8d-pL_WEcysg,955
+p115client/exception.py,sha256=g3EiZh2ZCGQinc4u5uJJHvwBX0zcw9yU1InOObIFBHg,1557
+p115client/type.py,sha256=CEnfMMnMs0B_Z6nRAkMbyFzhjTzH3VaIrOb7uxpT8zA,4680
+p115client-0.0.1.1.dist-info/LICENSE,sha256=o5242_N2TgDsWwFhPn7yr8YJNF7XsJM5NxUMtcT97bc,1100
+p115client-0.0.1.1.dist-info/METADATA,sha256=4SAAUK7g9qM1cGiZOov-D9t8ZQhNASzGWuYCTEbxoP8,4733
+p115client-0.0.1.1.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+p115client-0.0.1.1.dist-info/RECORD,,
