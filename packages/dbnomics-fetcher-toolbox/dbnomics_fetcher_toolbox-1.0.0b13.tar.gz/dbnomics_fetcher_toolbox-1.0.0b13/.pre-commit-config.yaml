@@ -1,0 +1,33 @@
+repos:
+  - repo: local
+    hooks:
+      - always_run: true
+        entry: ruff check --force-exclude
+        id: ruff-check
+        language: system
+        name: ruff-check
+        pass_filenames: false
+      - always_run: true
+        entry: ruff format --force-exclude
+        id: ruff-format
+        language: system
+        name: ruff-format
+        pass_filenames: false
+      - always_run: true
+        entry: pyright
+        id: pyright
+        language: system
+        name: pyright
+        pass_filenames: false
+      - always_run: true
+        entry: pytest
+        id: pytest
+        language: system
+        name: pytest
+        pass_filenames: false
+      - always_run: true
+        entry: vermin src
+        id: vermin
+        language: system
+        name: vermin
+        pass_filenames: false

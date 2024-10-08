@@ -1,0 +1,149 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "dbnomics-fetcher-toolbox"
+version = "1.0.0beta13"
+authors = [{ name = "Christophe Benz", email = "christophe.benz@nomics.world" }]
+description = "Tools to write DBnomics fetchers"
+license = { file = "LICENSE" }
+readme = "README.md"
+requires-python = ">=3.11"
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "License :: OSI Approved :: GNU Affero General Public License v3 or later (AGPLv3+)",
+  "Operating System :: OS Independent",
+]
+dependencies = [
+  "contexttimer>=0.3.3",
+  "daiquiri>=3.2.5.1",
+  "dbnomics-data-model>=1.0.0beta12",
+  "humanfriendly>=10.0",
+  "iterable-subprocess>=0.0.16",
+  "lxml>=5.3.0",
+  "more-itertools>=10.3.0",
+  "openpyxl>=3.1.4",
+  "pandas>=2.2.2",
+  "pantomime>=0.6.1",
+  "phantom-types>=2.1.1",
+  "python-dotenv>=1.0.1",
+  "python-magic>=0.4.27",
+  "requests-toolbelt>=1.0.0",
+  "stream-unzip>=0.0.91",
+  "tenacity>=9.0.0",
+  "typedload>=2.34",
+]
+
+[project.urls]
+"Homepage" = "https://git.nomics.world/dbnomics/dbnomics-fetcher-toolbox"
+"Bug Tracker" = "https://git.nomics.world/dbnomics/dbnomics-fetcher-toolbox/-/issues"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/dbnomics_fetcher_toolbox"]
+
+[tool.hatch.metadata]
+allow-direct-references = true
+
+[tool.pyright]
+include = ["src"]
+typeCheckingMode = "strict"
+
+[tool.pytest.ini_options]
+addopts = "--doctest-modules"
+testpaths = ["dbnomics_fetcher_toolbox", "tests"]
+
+[tool.ruff]
+line-length = 120
+src = ["src"]
+unsafe-fixes = true
+
+[tool.ruff.lint]
+exclude = [
+  "__pycache__",
+  ".cache",
+  ".eggs",
+  ".git",
+  ".mypy_cache",
+  ".nox",
+  ".pytest_cache",
+  ".tox",
+  ".venv",
+  "*.egg-info",
+  "build",
+  "dist",
+  "doc",
+]
+ignore = [
+  "ANN101",
+  "ANN102",
+  "ANN401",
+  "BLE001",
+  "COM",
+  "D100",
+  "D101",
+  "D102",
+  "D103",
+  "D103",
+  "D104",
+  "D105",
+  "D106",
+  "D107",
+  "D203",
+  "D213",
+  "ISC001",
+  "N818",
+  "PD",
+  "PERF203",
+  "PGH003",
+  "S101",
+  "S320",
+  "TD002",
+  "TD003",
+  "TD004",
+  "UP040",
+]
+select = ["ALL"]
+unfixable = ["COM", "ERA", "F841"]
+
+[tool.ruff.lint.flake8-bugbear]
+extend-immutable-calls = ["typer.Argument", "typer.Option"]
+
+[tool.ruff.lint.flake8-builtins]
+builtins-ignorelist = ["dir", "format", "id", "open", "type"]
+
+[tool.ruff.lint.mccabe]
+max-complexity = 15
+
+[tool.ruff.lint.per-file-ignores]
+"__init__.py" = ["F403"]
+"tests/**/*.py" = [
+  "DTZ005",
+  "EM101",
+  "FBT001",
+  "N802",
+  "PLR2004",
+  "SLF001",
+  "TRY003",
+  "TRY301",
+]
+
+[tool.ruff.lint.pylint]
+max-args = 15
+max-returns = 10
+max-statements = 70
+
+[tool.uv]
+dev-dependencies = [
+  "hypothesis>=6.103.0",
+  "pre-commit>=3.7.1",
+  "pyright>=1.1.383",
+  "pytest-httpserver>=1.0.10",
+  "pytest>=8.2.1",
+  "ruff>=0.4.6",
+  "types-humanfriendly>=10.0.1.11",
+  "types-lxml>=2024.9.16",
+  "types-openpyxl>=3.1.4.20240626",
+  "types-requests>=2.32.0.20240523",
+  "vermin>=1.6.0",
+]
