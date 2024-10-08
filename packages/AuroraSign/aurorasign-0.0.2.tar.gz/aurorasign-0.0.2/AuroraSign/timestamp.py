@@ -1,0 +1,3 @@
+
+def timestamp():
+    print('timestamp')
