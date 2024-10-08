@@ -1,0 +1,40 @@
+Metadata-Version: 2.1
+Name: revel-xai
+Version: 1.0.3
+Summary: A Python package for the REVEL framework
+Author: Iván Sevillano Garcia
+Author-email: Ivan Sevillano Garcia <isevillano@go.ugr.es>
+Project-URL: Homepage, https://github.com/ari-dasci/revel
+Project-URL: Issues, https://github.com/ari-dasci/revel/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: torch
+Requires-Dist: torchsummary
+Requires-Dist: scikit-learn
+Requires-Dist: scikit-image
+Requires-Dist: matplotlib
+Requires-Dist: numpy
+Requires-Dist: scipy
+Requires-Dist: pandas
+Requires-Dist: torchvision
+Requires-Dist: efficientnet-pytorch
+Requires-Dist: tqdm
+Requires-Dist: opencv-python
+Requires-Dist: IPython
+Requires-Dist: seaborn
+Requires-Dist: plotly
+Requires-Dist: docutils <0.21,>=0.18.1
+Requires-Dist: ipywidgets
+Requires-Dist: sphinx
+Requires-Dist: sphinx-rtd-theme
+Requires-Dist: sphinxcontrib.bibtex
+Requires-Dist: nbsphinx
+Requires-Dist: wget
+Requires-Dist: pandoc
+Requires-Dist: kaleido
+
+This packages developes the framework proposed on the paper [REVEL Framework to Measure Local Linear Explanations for Black-Box Models: Deep Learning Image Classification Case Study](https://doi.org/10.1155/2023/8068569). You can find the documentation at [https://revel-xai.readthedocs.io/en/latest/](https://revel-xai.readthedocs.io/en/latest/).
