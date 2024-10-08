@@ -1,0 +1,11 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+sendalert/__init__.py
+sendalert/core.py
+sendalert.egg-info/PKG-INFO
+sendalert.egg-info/SOURCES.txt
+sendalert.egg-info/dependency_links.txt
+sendalert.egg-info/requires.txt
+sendalert.egg-info/top_level.txt
