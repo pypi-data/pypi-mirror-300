@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+term_matcher/__init__.py
+term_matcher/term_matcher.py
+term_matcher.egg-info/PKG-INFO
+term_matcher.egg-info/SOURCES.txt
+term_matcher.egg-info/dependency_links.txt
+term_matcher.egg-info/requires.txt
+term_matcher.egg-info/top_level.txt
+tests/test_term_matcher.py
