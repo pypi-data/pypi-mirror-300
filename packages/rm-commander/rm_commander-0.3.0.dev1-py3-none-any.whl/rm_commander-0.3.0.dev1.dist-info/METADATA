@@ -1,0 +1,173 @@
+Metadata-Version: 2.1
+Name: rm-commander
+Version: 0.3.0.dev1
+Summary: reMarkable Commander
+Home-page: https://projects.om-office.de/frans/rmc.git
+Author: Frans Fürst
+Author-email: frans.fuerst+gitlab@protonmail.com
+Requires-Python: >=3.10.4,<4.0.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: asyncssh (>=2.14.2,<3.0.0)
+Requires-Dist: lxml (>=4.7,<5.0)
+Requires-Dist: pdfkit (>=1.0.0,<2.0.0)
+Requires-Dist: pydantic (>=2.9.0,<3.0.0)
+Requires-Dist: pyhtml2pdf (>=0.0.7,<0.0.8)
+Requires-Dist: rich (>=13.8.0,<14.0.0)
+Requires-Dist: ruff (>=0.6.4,<0.7.0)
+Requires-Dist: textual (>=0.82,<0.83)
+Requires-Dist: trickkiste (==0.1.6)
+Requires-Dist: weasyprint (>=61.2,<62.0)
+Requires-Dist: wkhtmltopdf (>=0.2,<0.3)
+Project-URL: Repository, https://projects.om-office.de/frans/rmc.git
+Description-Content-Type: text/markdown
+
+# rMC - CLI/UI/TUI file explorer for reMarkable
+
+Use a Qt5 based UI to ~manage~ view, upload, delete content of/to your
+reMarkable I/II via SSH.
+
+[Project page](https://projects.om-office.de/frans/rmc)
+
+
+## Usage
+
+Once configured run `rmc` to start up a TUI, connect to and see a list of content on a (WiFi enabled
+and switched on) reMarkable device. Drag and drop EPUB and PDF files onto the window to make them
+available on the device.
+
+Run `rmc [ls|list]` to list content on the connected device
+
+Run `rmc [upload|push] <FILE> [<FILE>]` to copy stuff onto the connected device
+
+Run `rmc info` to see configuration and stuff
+
+Run `rmc reboot` to .. you know..
+
+Run `rmc config-auth <KEY>=<VALUE> ...` to configure stuff, e.g.
+
+Please note that currently reMarkable will not recognize file modifications done via SSH - to make
+new files available you'll have to reboot the device. Run `rmc reboot` or press the `Reboot` button
+to do this via SSH (or reboot it manually).
+
+
+### Configuration
+
+In the UI just enter your credentials, they're getting saved automatically.
+
+The command line interface allows persistant configuration using the `config-auth` sub-command:
+
+```
+rmc config-auth host=192.168.178.13 password='s0rry_Pl4in+ex+!'
+```
+
+Please note that currently only connection via IP address (rather than hostname) and plaintext
+password is working. This is subject to change ("of course").
+
+
+## ToDo for v1.0
+
+* Allow hostnames instead of IP addresses
+* Make use of shared keys and configuration in `~/.ssh/config`
+* Support drag&drop to add content in UI
+* Support deletion
+* Support Pdf
+* Support web pages via Pdf
+
+
+## Future features
+
+* Download and manage notes
+* Make backups
+* Other convenience stuff via SSH, e.g. installing software
+
+
+## Installation
+
+```
+pip3 install [--user] [--upgrade] rmc
+```
+
+
+## Development & Contribution
+
+```
+# provide dependencies, consider also using pyenv
+pip3 install -U poetry pre-commit
+
+git clone --recurse-submodules https://projects.om-office.de/frans/rmc.git
+
+cd rmc
+
+# activate a pre-commit gate keeper
+pre-commit install
+
+# if you need a specific version of Python inside your dev environment
+poetry env use ~/.pyenv/versions/3.10.4/bin/python3
+
+poetry install
+```
+
+## License
+
+For all code contained in this repository the rules of GPLv3 apply unless
+otherwise noted. That means that you can do what you want with the source
+code as long as you make the files with their original copyright notice
+and all modifications available.
+
+See [GNU / GPLv3](https://www.gnu.org/licenses/gpl-3.0.en.html) for details.
+
+
+## Remarkable stuff
+
+Make a backup
+```
+ssh -t root@reMarkable "tar czvf - /home/root" > "home_root-$(date +'%y%m%d-%H%M%S').tar.gz"
+```
+
+```
+ssh root@10.11.99.1 rm-ssh-over-wlan on
+```
+
+```
+Host rm3
+	HostName imx8mm-ferrari
+	User root
+```
+
+```
+convert *.* -auto-orient ../pictures.pdf
+```
+
+
+## Read
+
+*(nothing here yet)*
+
+## Notes
+```
+ID=codex
+NAME="Codex Linux"
+VERSION="4.0.772-6-g9c7386f5 (kirkstone)"
+VERSION_ID=4.0.772-6-g9c7386f5
+PRETTY_NAME="Codex Linux 4.0.772-6-g9c7386f5 (kirkstone)"
+DISTRO_CODENAME="kirkstone"
+BUILD_MODE_RM="public"
+IMG_VERSION="3.14.1.9"
+```
+
+`/sys/class/power_supply/max77818_battery/charge_now`
+
+### rm3
+```
+ID=codex-ct-prototype
+NAME="Codex Linux"
+VERSION="4.0.813 (kirkstone)"
+VERSION_ID=4.0.813
+PRETTY_NAME="Codex Linux 4.0.813 (kirkstone)"
+DISTRO_CODENAME="kirkstone"
+BUILD_MODE_RM="public"
+IMG_VERSION="3.14.4.0"
+```
+`/sys/class/power_supply/max1726x_battery/charge_full`
