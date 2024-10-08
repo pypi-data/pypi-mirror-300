@@ -1,0 +1,44 @@
+Metadata-Version: 2.3
+Name: lesecret
+Version: 0.0.4
+Summary: An image steganography tool to hide secrets in plain sight
+Project-URL: Homepage, https://github.com/jerry871002/lesecret
+Project-URL: Issues, https://github.com/jerry871002/lesecret/issues
+Author-email: Jerry Yang <jerry871002@gmail.com>
+License-File: LICENSE
+Classifier: Environment :: Console
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Topic :: Security :: Cryptography
+Classifier: Topic :: Utilities
+Requires-Python: >=3.8
+Requires-Dist: cryptography==43.0.1
+Requires-Dist: numpy==2.1.1
+Requires-Dist: pillow==10.4.0
+Requires-Dist: rich==13.9.2
+Description-Content-Type: text/markdown
+
+# Le Secret
+
+This is a TUI re-implementation of my freshman year project [The Secret](https://github.com/jerry871002/OOP-Final-Project) (it was 2018 by the way...🫣), an image steganography tool to hide secrets in plain sight.
+
+## Installation
+
+```
+pip install lesecret
+```
+
+## Get Started
+
+Start the TUI-based application with the following command:
+
+```
+lesecret
+```
+
+The rest is pretty self-explanatory, just play around and you will know how to use it 😆
