@@ -1,0 +1,56 @@
+Metadata-Version: 2.1
+Name: energy_analysis_toolbox
+Version: 0.1.4
+Summary: A set of tools to manipulate and transform power, energy, and related timeseries data.
+Author-email: energy_analysis_toolbox contributors <research@ecoco2.com>
+License: MIT
+Project-URL: Homepage, https://github.com/Eco-CO2/energy_analysis_toolbox
+Project-URL: Bug Tracker, https://github.com/Eco-CO2/energy_analysis_toolbox/issues
+Keywords: profile
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: pandas >=2.2.2
+Requires-Dist: numpy >=1.26.0
+Requires-Dist: scipy >=1.13.0
+Requires-Dist: statsmodels >=0.13.0
+Provides-Extra: all
+Requires-Dist: energy-analysis-toolbox[doc,test] ; extra == 'all'
+Provides-Extra: doc
+Requires-Dist: energy-analysis-toolbox[examples] ; extra == 'doc'
+Requires-Dist: sphinx ; extra == 'doc'
+Requires-Dist: pydata-sphinx-theme ; extra == 'doc'
+Requires-Dist: sphinx-gallery ; extra == 'doc'
+Requires-Dist: sphinx-design ; extra == 'doc'
+Requires-Dist: nbsphinx ; extra == 'doc'
+Provides-Extra: test
+Requires-Dist: pytest ; extra == 'test'
+Requires-Dist: pytest-cov ; extra == 'test'
+
+![Logo](doc/_static/logo.png)
+
+# energy_analysis_toolbox
+
+`eat` is a library dedicated to data manipulation and processing for common tasks
+encountered in the daily life of energy/data engineers here at Eco CO2.
+
+See the [documentation](http://recherche.gitlab-pages.ecoco2.com/energy_analysis_toolbox/html/)
+for information about how to get started with the lib, the API reference, user-guide
+and contributing guidelines.
+
+## What to expect in this Toolbox ?
+
+### What you can find
+
+- Generic Tools to process deferent types of data (power, energy, temperature, etc.)
+    - Resamplers that can deal with missing data
+    - Aggregators that compute daily profiles
+    - Pre-processing that clean the data from ouliers
+- Specialised tools
+    - For Weather : DD computations
+    - Energy precessing, that can classify different periods or apply weather correction.
+    - TBD
+- Tests to verify the precision of the processing tools
+- a beautifull documentation that explain **How** to use the tools, as well as
+  **Why** these implementations as been choosen.
