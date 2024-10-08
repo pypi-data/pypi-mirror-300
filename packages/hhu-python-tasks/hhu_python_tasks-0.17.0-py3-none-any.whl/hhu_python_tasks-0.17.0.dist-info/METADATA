@@ -1,0 +1,36 @@
+Metadata-Version: 2.3
+Name: hhu-python-tasks
+Version: 0.17.0
+Summary: invoke-specific tasks for Python projects
+Author-email: Detlef Lannert <lannert@hhu.de>
+Maintainer-email: Detlef Lannert <lannert@hhu.de>
+License-File: LICENSE
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: Typing :: Typed
+Requires-Python: >=3.11
+Requires-Dist: attrs
+Requires-Dist: cattrs
+Requires-Dist: fabric
+Requires-Dist: invoke
+Requires-Dist: pyproject-parser
+Requires-Dist: pyyaml
+Requires-Dist: rich
+Requires-Dist: semantic-version
+Requires-Dist: uuid-utils
+Provides-Extra: dev
+Requires-Dist: build; extra == 'dev'
+Requires-Dist: mypy; extra == 'dev'
+Requires-Dist: ruff; extra == 'dev'
+Requires-Dist: types-invoke; extra == 'dev'
+Requires-Dist: types-pyyaml; extra == 'dev'
+Description-Content-Type: text/markdown
+
+# hhu-python-tasks
+Standard tasks for Python projects
