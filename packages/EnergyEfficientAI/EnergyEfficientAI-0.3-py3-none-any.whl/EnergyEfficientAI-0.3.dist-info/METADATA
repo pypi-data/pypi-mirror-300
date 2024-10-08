@@ -1,0 +1,128 @@
+Metadata-Version: 2.1
+Name: EnergyEfficientAI
+Version: 0.3
+Summary: A library to calculate power, energy, and training time of machine learning algorithms
+Author: Uzair Hassan, Zia Ur Rehman, Saif Ul Islam
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: numpy
+Requires-Dist: psutil
+Requires-Dist: scikit-learn
+Requires-Dist: seaborn
+
+# EnergyEfficientAI
+
+## Overview
+
+The **EnergyEfficientAI Library** provides a framework for training machine learning models while monitoring CPU and memory utilization. This library is particularly useful for understanding the energy consumption of various machine learning and deep learning algorithms during training and inference. By tracking system performance metrics, users can make informed decisions about model efficiency and power consumption.
+
+## Features
+
+- Monitor CPU and memory utilization during model training.
+- Calculate power and energy consumption based on system performance.
+- Generate detailed reports including training metrics and classification results.
+- Visualize CPU utilization with modern, aesthetically pleasing line graphs.
+## Installation
+
+To use this library, you need to have Python 3.x installed along with the following dependencies:
+
+- `numpy`
+- `psutil`
+- `scikit-learn`
+- `matplotlib`
+- `seaborn`
+
+You can install the required packages using pip:
+
+```bash
+pip install numpy psutil scikit-learn matplotlib seaborn
+```
+You can install the library using pip:
+
+```bash
+pip install EnergyEfficientAI
+
+```
+## How to use in Code
+### Calculating Energy Consumption of ML Algorithms
+
+```python
+
+import numpy as np
+from sklearn.datasets import fetch_openml
+from sklearn.model_selection import train_test_split
+from sklearn.linear_model import LogisticRegression
+from EnergyEfficientAI import EnergyConsumptionML  # Import the class from the file
+
+mnist = fetch_openml(data_id=554)
+
+# Load MNIST data
+# mnist = fetch_openml('mnist_784', as_frame=True)
+X, y = mnist.data.astype('float32').to_numpy(), mnist.target.astype('int')
+
+# Flatten the images
+X_flatten = np.array([image.flatten() for image in X])
+
+# Split the data into training and testing sets
+X_train, X_test, y_train, y_test = train_test_split(X_flatten, y, test_size=0.2, random_state=42)
+
+# Define the model (you can pass any model here)
+logreg_model = LogisticRegression()
+cpuIdl = 70
+cpuFull = 170
+# Instantiate the CustomModelTrainer with the model
+model_trainer = EnergyConsumptionML(logreg_model, cpuIdl, cpuFull)
+
+# Generate the final report by calling generate_report
+model_trainer.generate_report(X_train, y_train, X_test, y_test)
+model_trainer.plot_cpu_usage()
+```
+
+### Calculating Energy Consumption of DL Algorithms
+
+```python
+
+
+import numpy as np
+import time
+from tensorflow.keras.models import Sequential
+from tensorflow.keras.layers import Conv2D, MaxPooling2D, Flatten, Dense
+from tensorflow.keras.datasets import mnist
+from tensorflow.keras.utils import to_categorical
+from EnergyEfficientAI import EnergyConsumptionDL
+ 
+# Load and preprocess the dataset
+(x_train, y_train), (x_test, y_test) = mnist.load_data()
+x_train = np.expand_dims(x_train, axis=-1) / 255.0  # Normalize pixel values
+x_test = np.expand_dims(x_test, axis=-1) / 255.0
+y_train = to_categorical(y_train, num_classes=10)  # One-hot encode labels
+y_test = to_categorical(y_test, num_classes=10)
+
+# Define the CNN model
+model = Sequential([
+    Conv2D(32, (3, 3), activation='relu', input_shape=(28, 28, 1)),
+    MaxPooling2D((2, 2)),
+    Conv2D(64, (3, 3), activation='relu'),
+    MaxPooling2D((2, 2)),
+    Conv2D(64, (3, 3), activation='relu'),
+    Flatten(),
+    Dense(64, activation='relu'),
+    Dense(10, activation='softmax')
+])
+
+model.compile(optimizer='adam',
+              loss='categorical_crossentropy',
+              metrics=['accuracy'])
+
+# Initialize EnergyConsumptionDL
+energy_tracker = EnergyConsumptionDL(model=model, pcpu_idle=10, pcpu_full=100)
+
+# Generate the report for the training and evaluation process
+energy_tracker.generate_report(x_train, y_train, x_test, y_test, epochs=5, batch_size=64)
+
+# Plot CPU usage
+energy_tracker.plot_cpu_usage()
+```
