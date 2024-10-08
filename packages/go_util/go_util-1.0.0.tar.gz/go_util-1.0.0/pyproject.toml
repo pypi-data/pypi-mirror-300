@@ -1,0 +1,55 @@
+[tool.poetry]
+name = "go_util"
+description = "A CLI bookmark manager"
+version = "1.0.0"
+authors = ["Aiden McCormack <aidenm2244@proton.me>"]
+readme = "README.md"
+license = "End User License Agreement (EULA)"
+keywords = ["CLI", "bookmark", "manager"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: GNU Affero General Public License v3 or later (AGPLv3+)",
+    "Operating System :: OS Independent",
+]
+homepage = "https://github.com/aidenm2244/go-util"
+packages = [
+  { include = "go_util", from = "src" }
+]
+include = [
+  "CHANGELOG.md",
+  "LICENSE",
+  "README.md",
+  "licenses/"
+]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+appdirs = "^1.4.4"
+click = "^8.1.7"
+
+[tool.poetry.scripts]
+go = "go_util.cli:cli"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.3.3"
+pytest-mock = "^3.14.0"
+pytest-cov = "^5.0.0"
+get-context = "^0.1.1"
+commitizen = "^3.29.0"
+tox = "^4.20.0"
+pip-licenses = "^5.0.0"
+
+[tool.commitizen]
+name = "cz_conventional_commits"
+tag_format = "$version"
+version_scheme = "semver"
+update_changelog_on_bump = true
+major_version_zero = true
+
+[tool.setuptools.packages.find]
+where = ["src"]
+exclude = [".venv", "tests", "docs"]
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
