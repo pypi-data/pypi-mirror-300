@@ -1,0 +1,29 @@
+from .models import (
+    Analysis,
+    Details,
+    File,
+    FilePart,
+    FileSet,
+    Module,
+    Resource,
+    User,
+    UsingAWS,
+    UsingAzure,
+    UsingHTTP,
+)
+
+all(
+    [
+        Analysis,
+        File,
+        FilePart,
+        FileSet,
+        Details,
+        Module,
+        Resource,
+        UsingAWS,
+        UsingAzure,
+        UsingHTTP,
+        User,
+    ]
+)
