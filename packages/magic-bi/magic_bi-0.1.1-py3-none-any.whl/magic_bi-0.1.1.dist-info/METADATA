@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: magic-bi
+Version: 0.1.1
+Requires-Dist: uvicorn>=0.31.0
+Requires-Dist: loguru>=0.7.2
+Requires-Dist: fastapi>=0.115.0
+Requires-Dist: pillow>=10.4.0
+Requires-Dist: numpy>=2.1.1
+Requires-Dist: openai>=1.51.0
+Requires-Dist: sqlalchemy>=2.0.35
+Requires-Dist: SQLAlchemy-Utils>=0.41.2
+Requires-Dist: minio>=7.2.9
+Requires-Dist: sentence-transformers>=3.1.1
+Requires-Dist: qdrant-client>=1.11.3
+Requires-Dist: flagembedding>=1.2.11
+Requires-Dist: peft>=0.13.0
+Requires-Dist: elasticsearch>=8.15.1
+Requires-Dist: pika>=1.3.2
+Requires-Dist: python-docx>=1.1.2
+Requires-Dist: fitz>=0.0.1.dev
+Requires-Dist: pymupdf>=1.24.10
+Requires-Dist: pytesseract>=0.3.13
+Requires-Dist: psycopg2>=2.9.9
+Requires-Dist: python-multipart>=0.0.12
+
