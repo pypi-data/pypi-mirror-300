@@ -1,0 +1,13 @@
+tgeraser/__init__.py,sha256=9zrcXApv7iucoh4tV9G6YV3ufBhRtmXQYi1vJruA_Bg,73
+tgeraser/__main__.py,sha256=4lGu5-MtU-kZTy0XoJAf4wvFHE7qUVO9mzpNLO147ZM,105
+tgeraser/__version__.py,sha256=slJKKTav2dY2nZTPQxmfMejUs-WgYoD8niGflrD5VME,40
+tgeraser/core.py,sha256=0fJ5Um5nUcJ-KdxnFmuHG6DeHSuH9dY6x2F2fvxrblg,4840
+tgeraser/eraser.py,sha256=-DXoEn6DoxnzR6Dlfk54UukXS22s8uq9NmYIiQCfbPY,7490
+tgeraser/exceptions.py,sha256=LHxUGWZqVopIlX1aZLqMmAiSMiNLO9PMJ5ZaphGgpEE,73
+tgeraser/utils.py,sha256=swY99NLH2rtPZY4ppR4sl6aZS45kQJjyY3LqRnplgZs,4238
+tgeraser-1.3.3.dist-info/LICENSE,sha256=AnC0kfvmMjS9oJ9H9cUO4M3hAjUELBrCB0dHnKwwA5A,1074
+tgeraser-1.3.3.dist-info/METADATA,sha256=Z3LG9kfPT94FfzV3aXiL2rKzLGoIaAjryl5EQjGeo3Y,3923
+tgeraser-1.3.3.dist-info/WHEEL,sha256=GV9aMThwP_4oNCtvEC2ec3qUYutgWeAzklro_0m4WJQ,91
+tgeraser-1.3.3.dist-info/entry_points.txt,sha256=XlGA4DXmtKcj0D665On5ytvEm7QvsJJXS1PrKOyZo_Y,49
+tgeraser-1.3.3.dist-info/top_level.txt,sha256=lFqyc-Dz8hP-E_J8pOEz0fnkLyLO306mi6zx8Jf5oE4,9
+tgeraser-1.3.3.dist-info/RECORD,,
