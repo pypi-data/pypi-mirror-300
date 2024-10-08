@@ -1,0 +1,6 @@
+pypoints2grid-0.2.1.dist-info/RECORD,,
+pypoints2grid-0.2.1.dist-info/WHEEL,sha256=uxkwKkSaV2pc3sD3d44sbDGjdTRMBim1WjOy45_KYiM,121
+pypoints2grid-0.2.1.dist-info/METADATA,sha256=uw8R3qfxV6M52iZxlyOBeMA5UQDLGeB8gTo0OSb3Pts,4387
+pypoints2grid-0.2.1.dist-info/licenses/LICENSE,sha256=sTs7bSkkMvwpJiyDFf219wKldRmkDo2dLbwX1F1PVj4,1069
+pypoints2grid/__init__.py,sha256=r_K9tp6AEBt6glVBZhFEg8i3KOwEL4mw4_KPppLZeAk,2954
+pypoints2grid/_points2grid.pypy310-pp73-darwin.so,sha256=UXUeJr4Lmzd5I47n2wnnp6yBI8dp6VPLH5oKgc_4Y9U,150384
