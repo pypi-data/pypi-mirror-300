@@ -1,0 +1,12 @@
+LICENSE.txt
+MANIFEST.in
+README.md
+pyproject.toml
+stockvip/__init__.py
+stockvip/client.py
+stockvip/stock.py
+stockvip.egg-info/PKG-INFO
+stockvip.egg-info/SOURCES.txt
+stockvip.egg-info/dependency_links.txt
+stockvip.egg-info/requires.txt
+stockvip.egg-info/top_level.txt
