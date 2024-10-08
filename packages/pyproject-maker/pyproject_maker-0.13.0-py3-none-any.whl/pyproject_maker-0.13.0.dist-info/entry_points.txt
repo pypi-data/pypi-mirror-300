@@ -1,0 +1,2 @@
+[console_scripts]
+pymaker = py_maker.main:app
