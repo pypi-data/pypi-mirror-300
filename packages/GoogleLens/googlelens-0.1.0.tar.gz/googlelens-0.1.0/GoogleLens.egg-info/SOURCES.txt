@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+GoogleLens.egg-info/PKG-INFO
+GoogleLens.egg-info/SOURCES.txt
+GoogleLens.egg-info/dependency_links.txt
+GoogleLens.egg-info/requires.txt
+GoogleLens.egg-info/top_level.txt
+googlelens/__init__.py
+googlelens/googlelens.py
+tests/test_googlelens.py
