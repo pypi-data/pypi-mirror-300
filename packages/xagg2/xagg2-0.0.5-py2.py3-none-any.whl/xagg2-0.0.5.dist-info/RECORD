@@ -1,0 +1,17 @@
+xagg2/__init__.py,sha256=eGnldbHfHjUU0fR-h9q9aPQhnpMEhw8PZYLg23LjQfQ,516
+xagg2/_version.py,sha256=Zr1K2Zw4WyyqCvS72gEkUQYcVohzawLTtBF6C20WLhQ,47
+xagg2/auxfuncs.py,sha256=LKYJsuDyY2UTagR05t495dOrCHNJIoWyq2U-9LAv7xI,18839
+xagg2/classes.py,sha256=IiaZ5XWezdr6_dLr8ZKHQLcwsVsFclh6Ei9EXG5mU2g,5238
+xagg2/common.py,sha256=Si4ZvbkkaVGyKrOa7gmsVNWS2Abtji-V5nEsJhrIM3M,188
+xagg2/core.py,sha256=Az-4ybJNCRfAzl-_TiOxFCuuqj9XVR9anD3TbUpsyuc,34439
+xagg2/diag.py,sha256=A_570pMZFCQPO8vg4OXypgVCcQBhSswqxCaRRtiiwYQ,5720
+xagg2/export.py,sha256=hD-2ZGJ6NHF6l_H70jQ4ZcZqtmjAu5UiE3EvI-9kMNA,13774
+xagg2/options.py,sha256=ZxAcPaZFARLZ0aUHT-E6oS4a6s6B4sHyt1WsA6XzSLs,3308
+xagg2/wrappers.py,sha256=rmmGWGkezINtkPR42SXYZ2Fkkna_3N7WwvDgQoyTRK4,4050
+xagg2/xagg2.py,sha256=h0hwdogXGFqerm-5ZPeT-irPn91pCcQRjiHThXsRzEk,19
+xagg2-0.0.5.dist-info/LICENSE,sha256=4bN4XVO_MsnOb0MtDwQYTXd-4C2gqNkBgeR4-9ffAwk,1068
+xagg2-0.0.5.dist-info/METADATA,sha256=qMTtNmPSqpnwUwkHmiMCy-GDIza48AkJMV82he0WSnE,1255
+xagg2-0.0.5.dist-info/WHEEL,sha256=AHX6tWk3qWuce7vKLrj7lnulVHEdWoltgauo8bgCXgU,109
+xagg2-0.0.5.dist-info/entry_points.txt,sha256=CkhnppPH-SN3CITuw-msJL_imHzQOOK5olPHs0alTRU,41
+xagg2-0.0.5.dist-info/top_level.txt,sha256=0jh1e5q4gitVKtNeeMG8Tq_sEqcb8Sk_xPZPoHqp7p0,6
+xagg2-0.0.5.dist-info/RECORD,,
