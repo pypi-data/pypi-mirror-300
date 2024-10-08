@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <!-- Form view for product -->
+    <record id="view_product_form_quality" model="ir.ui.view">
+        <field name="name">product.template.form.quality</field>
+        <field name="model">product.template</field>
+        <field name="inherit_id" ref="product.product_template_only_form_view" />
+        <field name="arch" type="xml">
+            <xpath expr="//page[@name='inventory']" position="after">
+                <page string="Cotas">
+                    <group name="mitxelena-test" string="Cotas">
+                        <field name="product_test" string="Test"/>                        
+                    </group>
+                    <field name="test_question" nolabel="1">
+                        <tree>
+                            <field name="sequence" widget="handle"/>
+                            <field name="icon" widget="image"/>    
+                            <field name="name"/>
+                            <field name="type"/>
+                            <field name="valor_nominal"/>
+                            <field name="cota_min"/>
+                            <field name="cota_max"/>
+                            <field name="min_value"/>
+                            <field name="max_value"/>
+                            <field name="uom_id"/>
+                            <field name="ql_values"/>
+                            <field name="short_notes"/>
+                        </tree>
+                    </field>
+                </page>
+            </xpath>
+        </field>
+    </record>
+
+    <record id="view_form_test_" model="ir.ui.view">
+        <field name="name">qc.test.form</field>
+        <field name="model">qc.test</field>
+        <field name="inherit_id" ref="quality_control_oca.qc_test_form_view" />
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='uom_id']" position="after">                
+                <field name="test"/>
+                <field name="short_notes"/>
+                <field name="valor_nominal"/>
+                <field name="cota_min"/>
+                <field name="cota_max"/>
+                <field name="min_value"/>
+                <field name="max_value"/>
+            </xpath>
+        </field>
+    </record>
+
+    <record id="view_form_test_questions" model="ir.ui.view">
+        <field name="name">qc.test.questions.form</field>
+        <field name="model">qc.test.question</field>
+        <field name="inherit_id" ref="quality_control_oca.qc_test_question_form_view" />
+        <field name="arch" type="xml">
+            <xpath expr="//div[@name='quantitative']" position="replace">
+                <group>
+                    <group>
+                        <field name="icon_select"/>
+                    </group>
+                    <group>
+                        <field name="icon" widget="image" class="oe_inline" readonly="1" style="width: 20px"/>    
+                    </group>
+                </group>
+
+                <div
+                    name="quantitative"
+                    align="center"
+                    attrs="{'invisible': [('type', '!=', 'quantitative')]}"
+                >
+                    <h1 name="quantitative-data">
+                        <label for="valor_nominal" class="oe_edit_only"/>
+                        <field
+                        name="valor_nominal"
+                        class="oe_inline"                                       
+                        attrs="{'required': [('type','=', 'quantitative')]}"
+                        />    
+                        <div>
+                            <label for="cota_min" class="oe_edit_only"/>
+                            <field
+                            name="cota_min"
+                            class="oe_inline mr-4"                                       
+                            attrs="{'required': [('type','=', 'quantitative')]}"
+                            />    
+                            <label for="cota_max" class="oe_edit_only"/>
+                            <field
+                            name="cota_max"
+                            class="oe_inline"                                       
+                            attrs="{'required': [('type','=', 'quantitative')]}"
+                            />    
+                        </div>
+                        <div name="quantitative-interval">
+                            <div name="quantitative-uom">
+                                <field
+                                    name="uom_id"
+                                    class="oe_inline"
+                                    nolabel="1"
+                                    attrs="{'required': [('type', '=', 'quantitative')]}"
+                                />
+                            </div>
+                            <field
+                                name="min_value"
+                                class="oe_inline"
+                                nolabel="1"
+                                attrs="{'required': [('type','=', 'quantitative')]}"
+                            />
+                            <span> - </span>
+                            <field
+                                name="max_value"
+                                class="oe_inline"
+                                nolabel="1"
+                                attrs="{'required': [('type', '=', 'quantitative')]}"
+                            />
+                        </div>
+
+                    </h1>
+  
+                </div>                
+            </xpath>
+        </field>
+    </record>
+
+</odoo>
