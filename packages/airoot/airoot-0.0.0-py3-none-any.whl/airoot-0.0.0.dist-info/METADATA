@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: airoot
+Version: 0.0.0
+Summary: Suite of generation models for text, image, audio and video.
+Author-email: Ramya Kottapalli <rskottap@gmail.com>
+Project-URL: source, https://github.com/rskottap/airoot
+Project-URL: download, https://pypi.org/project/airoot/#files
+Requires-Dist: pytest
+Requires-Dist: Pillow
+Requires-Dist: transformers
+Requires-Dist: assure
+Requires-Dist: mmry
+
