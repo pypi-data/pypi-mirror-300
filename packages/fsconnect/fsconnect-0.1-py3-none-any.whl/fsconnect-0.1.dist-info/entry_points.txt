@@ -1,0 +1,2 @@
+[console_scripts]
+fsconnect = api:app.run
