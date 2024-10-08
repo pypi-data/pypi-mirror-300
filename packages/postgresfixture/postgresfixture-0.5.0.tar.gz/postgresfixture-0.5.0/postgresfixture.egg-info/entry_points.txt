@@ -1,0 +1,2 @@
+[console_scripts]
+postgresfixture = postgresfixture.main:main
