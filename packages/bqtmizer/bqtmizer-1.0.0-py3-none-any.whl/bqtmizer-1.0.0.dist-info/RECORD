@@ -1,0 +1,10 @@
+bqtmizer/__init__.py,sha256=_M-jT4p9b7kJsRpkvuVEOCE7Y61OUiKjiVasryecb-w,50
+bqtmizer/bootqa.py,sha256=Wc70kcrgxkcEAwSYaOLI2DGlf8FeGabR_143umXn5MA,16368
+bqtmizer/core.py,sha256=Yke4HNpsmkF5Paf75q6BLUfXKGpqOmEx5LO_Vj7lhlA,9783
+demo/__init__.py,sha256=iViLDCvp2HIGDniqaMz5X5TKJ-pry3mkNQnWbClsc84,20
+demo/bqtmizer_test.py,sha256=mqvwx6LmKBaDSAmlnt6yZujyUqJ38xhfPTK880FoWgg,157
+bqtmizer-1.0.0.dist-info/LICENSE,sha256=7_6I14pUM8DOT-3d4h5P6dYf9z3kjW1x1sjBJ_S9TD4,1048
+bqtmizer-1.0.0.dist-info/METADATA,sha256=iW7HuEbSV1lO7jPHqzcpkkaW3kEuFyVnYWXmACkSIdk,1996
+bqtmizer-1.0.0.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+bqtmizer-1.0.0.dist-info/top_level.txt,sha256=0SVzfIlRvSCfwRXDExDxNtyPHNGJ1JmccauW_coe2jo,14
+bqtmizer-1.0.0.dist-info/RECORD,,
