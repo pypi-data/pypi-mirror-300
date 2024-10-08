@@ -1,0 +1,5 @@
+[console_scripts]
+whisper = whisper:app
+
+[mkdocs.plugins]
+mkdocs_typer = whisper.mkdocs_typer:MkdocsTyper

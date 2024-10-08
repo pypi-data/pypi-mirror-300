@@ -1,0 +1,11 @@
+whisper/__init__.py,sha256=4oE7jkKEpNYOnHeH-Zt2j4Hi5-qLp1EQBt5caSYJQJw,147
+whisper/chains.py,sha256=X63EqJivw2TeF5UA5GFM3dDr-jHiOYP2LdG9RplO3E4,3255
+whisper/mkdocs_typer.py,sha256=3gDkHBYKLYAvxKepXxldoBVbeuCPwzQk-RohzTdzhcA,1721
+whisper/settings.py,sha256=52oPy63jozQV7HV4o2-FxcTgQn5nHoAHBcJc-ccs4WE,4567
+whisper/cli/ask.py,sha256=ysmk8Fvmz6hzr8I2MtYpm6mSODb9EgYLuMFCHzRsjNU,1488
+whisper/cli/config.py,sha256=QcMEzQNNy4eoSBMmttpO9XV2e7ktcdCg3LXAOdxKGzc,2866
+whisper/cli/custom_typer.py,sha256=nXJ88Lg9KEL8Ma8gaTqoLzuOwOvyMbKJ9WxSRs9jLKg,5253
+just_whisper-0.1.4.dist-info/METADATA,sha256=AjHwJ2PPs2sQlXEcIaat79w2Yi55dX-xBbRSfaWxeic,4643
+just_whisper-0.1.4.dist-info/WHEEL,sha256=1yFddiXMmvYK7QYTqtRNtX66WJ0Mz8PYEiEUoOUUxRY,87
+just_whisper-0.1.4.dist-info/entry_points.txt,sha256=kyl6Tcaq2rRa1dL5hPh7HTywVXku4qXGJUoy9zfX_Bo,106
+just_whisper-0.1.4.dist-info/RECORD,,
