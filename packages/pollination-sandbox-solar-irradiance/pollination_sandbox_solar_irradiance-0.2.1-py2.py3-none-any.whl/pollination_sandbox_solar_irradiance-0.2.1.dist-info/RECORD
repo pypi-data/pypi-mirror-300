@@ -1,0 +1,8 @@
+pollination/sandbox_solar_irradiance/__init__.py,sha256=LM63BCocf1PX04J85oH95AEsQUjXZYquLxEP28cHU_E,128
+pollination/sandbox_solar_irradiance/_irradiance_calc.py,sha256=dGBWRh_Be9a0EpShIzcr2vGtDt6cAkEEv0RAouYwGnk,2623
+pollination/sandbox_solar_irradiance/_raytracing.py,sha256=PBDf5PVdVSjZoWhyV-Eg7C97cvr1YQRPFmXQ3PovSzk,1815
+pollination/sandbox_solar_irradiance/entry.py,sha256=y7Rzly2yUh_OdHqRCPPhPQwCkzDu593Q-_ibgAa34Kg,2127
+pollination_sandbox_solar_irradiance-0.2.1.dist-info/METADATA,sha256=YVf9b2dDy-EbMV_0j4oXOMTwCqvP6BPC5K9JC79P8k8,1442
+pollination_sandbox_solar_irradiance-0.2.1.dist-info/WHEEL,sha256=Z-nyYpwrcSqxfdux5Mbn_DQ525iP7J2DG3JgGvOYyTQ,110
+pollination_sandbox_solar_irradiance-0.2.1.dist-info/top_level.txt,sha256=XqhRsBTtFfrCqv7O3outMqm3JZeMavDRExrfL0uUs74,12
+pollination_sandbox_solar_irradiance-0.2.1.dist-info/RECORD,,
