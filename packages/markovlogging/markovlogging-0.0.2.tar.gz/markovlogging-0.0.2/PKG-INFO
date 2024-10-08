@@ -1,0 +1,27 @@
+Metadata-Version: 2.3
+Name: markovlogging
+Version: 0.0.2
+Summary: A small example package
+Project-URL: Homepage, https://github.com/pypa/sampleproject
+Project-URL: Issues, https://github.com/pypa/sampleproject/issues
+Author-email: Markov <platypusonline345@gmail.com>
+License-File: LICENSE
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+
+# Custom Markov Package
+
+Just a test
+
+requirements to create package: 
+```
+build
+twine
+```
+
+tutorial source: https://packaging.python.org/en/latest/tutorials/packaging-projects/
+
+install : pip install markovlogging==0.0.1
