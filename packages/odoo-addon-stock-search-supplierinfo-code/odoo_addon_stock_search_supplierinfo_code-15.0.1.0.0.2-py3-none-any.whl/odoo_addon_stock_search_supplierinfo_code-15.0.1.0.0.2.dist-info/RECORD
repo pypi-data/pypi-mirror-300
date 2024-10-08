@@ -1,0 +1,14 @@
+odoo/addons/stock_search_supplierinfo_code/README.rst,sha256=WnmNVefRonnJA1U_CWctQpPhRjH2EnrwDtqQATyuvEQ,3086
+odoo/addons/stock_search_supplierinfo_code/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+odoo/addons/stock_search_supplierinfo_code/__manifest__.py,sha256=7mG0EUih5KX7HK5TMcCfrki7bPChzk9F4QjRIdTwmGA,501
+odoo/addons/stock_search_supplierinfo_code/i18n/it.po,sha256=kTiB-SzMsmXuk05mKXR9NI4dyG4CRHNTGf9L7mzWaAs,747
+odoo/addons/stock_search_supplierinfo_code/i18n/stock_search_supplierinfo_code.pot,sha256=ifL6NPn2MMBbNxaqERwyAgU5E3lT-ldkLyMSpL-bDDY,560
+odoo/addons/stock_search_supplierinfo_code/readme/CONTRIBUTORS.rst,sha256=6pWuGZxPE8TlyTRcM1WoDsqNcysPujpap-51Zd9rr1s,50
+odoo/addons/stock_search_supplierinfo_code/readme/DESCRIPTION.rst,sha256=RcuuXB77Vp7YnNDklZAaSZ9-H8lqNyyZ7sYb2FgJFt8,89
+odoo/addons/stock_search_supplierinfo_code/static/description/icon.png,sha256=6xBPJauaFOF0KDHfHgQopSc28kKvxMaeoQFQWZtfZDo,9455
+odoo/addons/stock_search_supplierinfo_code/static/description/index.html,sha256=NTmlXehaeY534sDixBBjfOeW1fAqrjeDObyA0b5Ig9s,12404
+odoo/addons/stock_search_supplierinfo_code/views/stock_picking.xml,sha256=FUhK58uOINt2FRDjuUXoG5V8m3d9qL4mX20PcwveOxo,734
+odoo_addon_stock_search_supplierinfo_code-15.0.1.0.0.2.dist-info/METADATA,sha256=x9vbwD8tQU4aPrn16UrfoVZmG9icFWo5wLHJNNQoJdE,3653
+odoo_addon_stock_search_supplierinfo_code-15.0.1.0.0.2.dist-info/WHEEL,sha256=eOLhNAGa2EW3wWl_TU484h7q1UNgy0JXjjoqKoxAAQc,92
+odoo_addon_stock_search_supplierinfo_code-15.0.1.0.0.2.dist-info/top_level.txt,sha256=qBj40grFkGOfDZ2WDSw3y1RnDlgG0u8rP8pvGNdbz4w,5
+odoo_addon_stock_search_supplierinfo_code-15.0.1.0.0.2.dist-info/RECORD,,
