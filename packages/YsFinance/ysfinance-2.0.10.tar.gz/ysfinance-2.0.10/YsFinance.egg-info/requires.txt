@@ -1,0 +1,10 @@
+pandas<=1.6
+numpy<=1.26
+scipy
+tushare
+scipy
+statsmodels
+joblib
+ipykernel
+empyrical
+scikit-learn

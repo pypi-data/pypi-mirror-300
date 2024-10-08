@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: YsFinance
+Version: 2.0.10
+Summary: About finance
+Author: YunSheng
+Author-email: 278211638@qq.com
+Requires-Dist: pandas<=1.6
+Requires-Dist: numpy<=1.26
+Requires-Dist: scipy
+Requires-Dist: tushare
+Requires-Dist: scipy
+Requires-Dist: statsmodels
+Requires-Dist: joblib
+Requires-Dist: ipykernel
+Requires-Dist: empyrical
+Requires-Dist: scikit-learn
