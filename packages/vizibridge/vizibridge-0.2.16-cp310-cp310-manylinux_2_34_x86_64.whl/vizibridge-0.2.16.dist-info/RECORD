@@ -1,0 +1,9 @@
+vizibridge-0.2.16.dist-info/METADATA,sha256=TWAmW0yzecWTZVOQ-5IDQ7Nwin1MsuRI2CwwbSGHZs0,2320
+vizibridge-0.2.16.dist-info/WHEEL,sha256=Eon-X1H-_QAARJHJrle01PrnTNoTi49kSjaP6kGdlhU,108
+vizibridge-0.2.16.dist-info/licenses/LICENSE,sha256=2wMyChs5_fC4gygjl64QOJpgQM5NXgWfHi7cEXOKeNM,1073
+vizibridge/DNA.py,sha256=-lLz3PCwbAHAmVl8ijaOC27piWfLrCB4UpKRfgiGC58,2021
+vizibridge/kmers.py,sha256=PXBF4xNdxiafW41kyHtlLjj2XeeFnCuQYcx_lWb0IxY,1898
+vizibridge/__init__.py,sha256=nVnrYyCdSlMWhfWVi2B5NlIhm2BNJr8rl8vEpVj2AFM,238
+vizibridge/kmer_index.py,sha256=iv-bwz47spYG_JcQD4oAIIzDV0nVPgXxdujnZMR02KA,1888
+vizibridge/_vizibridge.cpython-310-x86_64-linux-gnu.so,sha256=IQsbTkH3o7fyou4dQyDBz4lnVeE7urR-TPxfCoIOYRI,3729240
+vizibridge-0.2.16.dist-info/RECORD,,
