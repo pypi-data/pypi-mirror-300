@@ -1,0 +1,27 @@
+[project]
+name = "universal-common-configuration"
+version = "1.1.2"
+authors = [
+  { name="Andrew Ong", email="ong.andrew@gmail.com" },
+]
+description = "A configuration management library inspired by Microsoft.Extensions.Configuration."
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Development Status :: 3 - Alpha",
+    "License :: CC0 1.0 Universal (CC0 1.0) Public Domain Dedication",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+  "userpaths"
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.pytest.ini_options]
+pythonpath = [
+  "src"
+]
