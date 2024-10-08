@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+src/TruePigLatin.egg-info/PKG-INFO
+src/TruePigLatin.egg-info/SOURCES.txt
+src/TruePigLatin.egg-info/dependency_links.txt
+src/TruePigLatin.egg-info/top_level.txt
+src/truepiglatin/__init__.py

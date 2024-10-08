@@ -1,0 +1,26 @@
+[project]
+name = "TruePigLatin"
+version = "0.0.2"
+authors = [
+  { name="CHUA某人", email="chua-x@outlook.com" },
+]
+description = "TruePigLatin ——可能是史上运行速度最快、最准（doge）的Pig Latin翻译器"
+readme = "README.md"
+requires-python = ">=3.6"
+classifiers=[
+        "Development Status :: 3 - Alpha",
+        "Programming Language :: Python",
+        "Programming Language :: Python :: 3",
+        "Programming Language :: Python :: 3 :: Only",
+        "License :: OSI Approved :: MIT License",
+        "Natural Language :: Chinese (Simplified)",
+        "Natural Language :: English",
+        "Operating System :: Unix",
+        "Operating System :: POSIX :: Linux",
+        "Operating System :: MacOS :: MacOS X",
+        "Operating System :: Microsoft :: Windows",
+    ]
+
+[project.urls]
+"Homepage" = "https://github.com/CHUA-X/TruePigLatin"
+"Bug Tracker" = "https://github.com/CHUA-X/TruePigLatin/issues"
