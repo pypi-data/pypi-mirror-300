@@ -1,0 +1,36 @@
+# Emacs autosaves
+*~
+
+# Ignore builds (docs or other)
+build/
+
+# Python virtual environment
+.venv*
+venv*
+
+# Zipped files/wheels/python packages
+*.7z
+*.tar.gz
+*.whl
+packages/
+
+# Python cache
+__pycache__
+
+# Python documentation
+site
+
+# Saved data (datasets, models, etc.)
+save_data/
+figures/
+
+# Make an exception for the tool_description.pdf file
+!tool_description.pdf
+
+# Quarto output directory
+_output
+.quarto/
+*.tex
+
+# Generated data
+build/
