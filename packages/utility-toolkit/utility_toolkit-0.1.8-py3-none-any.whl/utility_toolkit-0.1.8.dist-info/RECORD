@@ -1,0 +1,16 @@
+test/__init__.py,sha256=nCdpf_amldksh8ReqDyB210pRkJdk51yTfavLnH5AbU,51
+test/general_tools.py,sha256=TFeM-GOoNJbLopstIR8hn1enTj98CBpjyuOPCntpzb4,1081
+utility_toolkit/__init__.py,sha256=l0-EAjGdCVlW78P-8c4HRAhl0dXXsziLrhTLetmLPUo,140
+utility_toolkit/aws_tools.py,sha256=l_jfMt0k9I_uHHztEgGeHjKk37fXWbgp8HzbNUV-hWg,20783
+utility_toolkit/dynamodb_handler.py,sha256=zGsCe7zm1lmznKwbmIRUkL7wVPeSYqcCN9ybsa__yWA,33533
+utility_toolkit/general_tools.py,sha256=LUsPCOA30KLbk4FADgePWOKQVRw7Hmh7E9Xe-Ufu8Fk,41704
+utility_toolkit/local_test.py,sha256=Tv2p_xglUajv0UllwEFf7kZrG2syUolLE-UZBtwxMBc,3485
+utility_toolkit/local_test_2.py,sha256=TjVryHAwZt_AEKEabI6D6IJymrebH4zQj9XyVZPZrb8,1198
+utility_toolkit/log.py,sha256=6bGETW_DfxFrmNBnAq6tHfR0rgaVTbHRHrzpmwm89U4,9367
+utility_toolkit/postgresql_handler.py,sha256=ajVaL6YdKIb73_8qKUgih3VbUz-Q-ArXWtza3wN9IJg,8730
+utility_toolkit/sqlite_handler.py,sha256=68Gfbie_JPiHSA4pjk6fcOiNj8b8B7oT7GD4G0udd-E,12022
+utility_toolkit/sqs_handler.py,sha256=08nsfnjvqU_8MeGgXhWdA1icVkQwFBq5p3BpeOMLqbY,7578
+utility_toolkit-0.1.8.dist-info/METADATA,sha256=2jlH_k-B5iRY2YeWxCGfnwMCliPOPx1zXZyw70H1My8,3881
+utility_toolkit-0.1.8.dist-info/WHEEL,sha256=GV9aMThwP_4oNCtvEC2ec3qUYutgWeAzklro_0m4WJQ,91
+utility_toolkit-0.1.8.dist-info/top_level.txt,sha256=pGkvFOmNPFsLFWUiKG4nBjMFykp0QefnrvOeJMz8oE4,21
+utility_toolkit-0.1.8.dist-info/RECORD,,
