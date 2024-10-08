@@ -1,0 +1,2 @@
+[console_scripts]
+analizador-bandas-bollinger = Monedas_Gonzalez_Gonzalez.main:main
