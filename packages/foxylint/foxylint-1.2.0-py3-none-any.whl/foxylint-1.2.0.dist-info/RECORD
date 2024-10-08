@@ -1,0 +1,8 @@
+foxylint/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+foxylint/imports.py,sha256=s3oF6uvzN3sSozpiu6Bolqv2p_j56iLZy2NqltzDMqw,1614
+foxylint/main.py,sha256=6lulYCCWQUtYB2jKDYTe5S3QubLg3UNZOOxusbol0GY,1270
+foxylint/noyml.py,sha256=MEymCndf6Jo5Uz3EZzsoLSft8IBWAB4S9kxm7Z02nZk,1355
+foxylint-1.2.0.dist-info/METADATA,sha256=7dkdqYhC7PpRHio8ox3isYgqRGBW2_HxE8050zqVpOU,34074
+foxylint-1.2.0.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+foxylint-1.2.0.dist-info/entry_points.txt,sha256=0JJZ5x5GsOnEFYg-N_dBo_5CUZYNL9vHbbkvZrQ02lI,90
+foxylint-1.2.0.dist-info/RECORD,,
