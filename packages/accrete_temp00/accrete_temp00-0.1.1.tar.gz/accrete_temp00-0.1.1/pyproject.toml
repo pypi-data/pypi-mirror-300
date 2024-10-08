@@ -1,0 +1,14 @@
+[tool.poetry]
+name = "accrete_temp00"
+version = "0.1.1"
+description = "dataclass"
+authors = ["Your Name <you@example.com>"]
+readme = "README.md"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.dependencies]
+pandera = {extras = ["io"], version = "^0.20.4"}
+python = "^3.12.5"
