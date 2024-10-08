@@ -1,0 +1,37 @@
+setup.py
+codegenai/README.md
+codegenai/__init__.py
+codegenai/aids.py
+codegenai/cn.py
+codegenai/licence.txt
+codegenai/main.py
+codegenai/special.py
+codegenai.egg-info/PKG-INFO
+codegenai.egg-info/SOURCES.txt
+codegenai.egg-info/dependency_links.txt
+codegenai.egg-info/not-zip-safe
+codegenai.egg-info/requires.txt
+codegenai.egg-info/top_level.txt
+codegenai/data/AIDS.ipynb
+codegenai/data/All.ipynb
+codegenai/data/AlphaBetaPruning.ipynb
+codegenai/data/Astar.ipynb
+codegenai/data/BFS.ipynb
+codegenai/data/CSP House Allocation.ipynb
+codegenai/data/CSP Map Coloring.ipynb
+codegenai/data/DFS.ipynb
+codegenai/data/DLS.ipynb
+codegenai/data/Everything.ipynb
+codegenai/data/Genetic.ipynb
+codegenai/data/IDAstar.ipynb
+codegenai/data/IDS.ipynb
+codegenai/data/SMAstar.ipynb
+codegenai/data/Simulated Annealing.ipynb
+codegenai/data/Sudoku.ipynb
+codegenai/data/UCS.ipynb
+codegenai/data/__init__.py
+codegenai/data/demo.ipynb
+codegenai/data/testing.ipynb
+codegenai/data/AIDS  &  CN/__init__.py
+codegenai/data/AIDS  &  CN/AI & DS/__init__.py
+codegenai/data/AIDS  &  CN/CN/__init__.py
