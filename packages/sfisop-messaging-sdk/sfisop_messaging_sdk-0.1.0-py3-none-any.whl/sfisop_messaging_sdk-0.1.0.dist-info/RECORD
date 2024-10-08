@@ -1,0 +1,10 @@
+sfisop/messaging_sdk/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+sfisop/messaging_sdk/client_broker_test.py,sha256=JK_BVLMHThdw5qQ8-wThNmNkt2a3nkL4Op0SzdHjYKE,2882
+sfisop/messaging_sdk/configuration.py,sha256=zFpmHX6d6_6v4jyn02SkxjaJaus0qgAZiQEytqkscww,1593
+sfisop/messaging_sdk/consumer.py,sha256=JzHcyqhvfFaspc2Z_zF9pdhlNvMfUCPpMXvTWPfwhhk,643
+sfisop/messaging_sdk/publisher.py,sha256=P3Ye_nLYlcRSXd2YIW2XsUyU2mYWVuRUJ98RzCkH-g0,2574
+sfisop/messaging_sdk/sample_config.py,sha256=c85dwUfIqvqjEJ3PGJ0IkXjqMOt1rJUQVX1Qi8w6huw,93
+sfisop/messaging_sdk/subscriber.py,sha256=mZhFwE8ZchW9qqqxa8AJa5BLGaopr-XPC969J-x8thI,3754
+sfisop_messaging_sdk-0.1.0.dist-info/METADATA,sha256=5TYxYnRI1sMTkIvbRwWUet0hYFk727hwfbsKurc6l54,1797
+sfisop_messaging_sdk-0.1.0.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+sfisop_messaging_sdk-0.1.0.dist-info/RECORD,,
