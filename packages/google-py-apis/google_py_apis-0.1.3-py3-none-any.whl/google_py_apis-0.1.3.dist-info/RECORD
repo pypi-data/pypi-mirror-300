@@ -1,0 +1,10 @@
+google_py_apis/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+google_py_apis/gmail_api.py,sha256=zsClQRxgLgS8uqVCFzX_ip-qRcT9Y5V5E74XoAqsnJg,4475
+google_py_apis/google_base_api.py,sha256=XKI528PAERNxjZYTlhMW5OenVj186gLiISKRkM85KAo,2598
+google_py_apis/google_drive_api.py,sha256=yRqR0lQA0j80kEXVCo2Plh2p2OBXQa0Qaol-uuEm-n0,3533
+google_py_apis/params.py,sha256=lwFL0-4ArhZ-xXEdT9hJ8cwOAhcy_O2zjHf6sr9tdcg,68
+google_py_apis-0.1.3.dist-info/LICENSE,sha256=sH5F9ongTO_TsR7-e-4n0geErovxqLuYkzXhFOS_Xbk,1060
+google_py_apis-0.1.3.dist-info/METADATA,sha256=eI3z4kmPK9a0jBmoSN09rmp50W_c2gvg8WAkdgJpcdo,623
+google_py_apis-0.1.3.dist-info/WHEEL,sha256=yQN5g4mg4AybRjkgi-9yy4iQEFibGQmlz78Pik5Or-A,92
+google_py_apis-0.1.3.dist-info/top_level.txt,sha256=8MDDAmoGknENP6E8mkS0-r0NDhQOdYGH7-LEBzPCtFg,15
+google_py_apis-0.1.3.dist-info/RECORD,,
