@@ -1,0 +1,9 @@
+QMultiAdapt/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+QMultiAdapt/ansatz.py,sha256=I4rYRf6uj5nctF55edTMVU2uXSVtr9BWn3LXnmR2W4o,1913
+QMultiAdapt/effh.py,sha256=xxrR7R7qDk-hqRnQeDsk22Ce7D7-Yk7XT-tCt2pYjGc,1693
+QMultiAdapt/solver.py,sha256=t4dwHJEn1Gg_rkS0-U_4ExnYjoB9Xn9zBM1Hjn-yxe0,10422
+QMultiAdapt-1.4.3.dist-info/LICENSE,sha256=XRH4N6WMYDtNuPNS7PLIVXfLUpIN0Q-jl9jAujIDnhA,1073
+QMultiAdapt-1.4.3.dist-info/METADATA,sha256=gIYJZgRYj2KwoBNdhPO3ZT2iG2Gepi0EBB6fVHNw3gI,2926
+QMultiAdapt-1.4.3.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+QMultiAdapt-1.4.3.dist-info/top_level.txt,sha256=9EZF5aW52Ki5GqC5J3eHq0QNG_sQew8PPNiMFcAui6c,12
+QMultiAdapt-1.4.3.dist-info/RECORD,,
