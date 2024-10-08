@@ -1,0 +1,53 @@
+Metadata-Version: 2.1
+Name: sfisop_messaging_sdk
+Version: 0.1.0
+Summary: 
+Author: Yo581515
+Author-email: 581515@stud.hvl.no
+Requires-Python: >=3.9,<4.0.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: annotated-types (==0.6.0)
+Requires-Dist: certifi (==2024.2.2)
+Requires-Dist: charset-normalizer (==3.3.2)
+Requires-Dist: dnspython (==2.6.1)
+Requires-Dist: idna (==3.6)
+Requires-Dist: paho-mqtt (==2.0.0)
+Requires-Dist: pydantic (==2.6.3)
+Requires-Dist: pydantic-core (==2.16.3)
+Requires-Dist: pymongo (==4.6.2)
+Requires-Dist: python-dateutil (==2.9.0.post0)
+Requires-Dist: python-decouple (==3.8)
+Requires-Dist: pyyaml (==6.0.1)
+Requires-Dist: requests (==2.31.0)
+Requires-Dist: six (==1.16.0)
+Requires-Dist: typing-extensions (==4.10.0)
+Requires-Dist: urllib3 (==2.2.1)
+Description-Content-Type: text/markdown
+
+# Messaging Service Client SDK
+
+
+Client library for accessing the SmartOcean ingestion and core messaging services.
+
+The messaging services rely on the [MQTT Standard](https://mqtt.org/) 
+
+This client SDK implementation utilises the [Paho MQTT](https://pypi.org/project/paho-mqtt/) library. The Paho MQTT library may also be used directly to access the messaging services in case more advanced use is required.
+
+## Sample Client Code
+
+A sample implementation accessing the messaging service is available in the [sample.py](subscriber_sample.py) script.
+
+## Credentials
+
+Credentials for accessing the service being consumed must be placed in a `.env` file with the following content
+
+```
+MESSAGE_SERVICE_USERNAME=<username>
+MESSAGE_SERVICE_PASSWORD=<password>
+```
+
+
