@@ -1,0 +1,11 @@
+README.md
+setup.py
+./tests/__init__.py
+./tests/test_Generic.py
+almax_graphics.egg-info/PKG-INFO
+almax_graphics.egg-info/SOURCES.txt
+almax_graphics.egg-info/dependency_links.txt
+almax_graphics.egg-info/requires.txt
+almax_graphics.egg-info/top_level.txt
+tests/__init__.py
+tests/test_Generic.py
