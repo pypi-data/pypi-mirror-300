@@ -1,0 +1,2 @@
+[console_scripts]
+cdef-convert = cdef_utils.convert:run_convert
