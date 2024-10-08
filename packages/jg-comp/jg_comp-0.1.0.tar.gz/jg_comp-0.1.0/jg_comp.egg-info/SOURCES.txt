@@ -1,0 +1,14 @@
+MANIFEST.in
+README.md
+setup.py
+jg_comp/compression_strategy.py
+jg_comp/compressor.py
+jg_comp/huffman.py
+jg_comp/matching.py
+jg_comp/utils.py
+jg_comp.egg-info/PKG-INFO
+jg_comp.egg-info/SOURCES.txt
+jg_comp.egg-info/dependency_links.txt
+jg_comp.egg-info/top_level.txt
+tests/__init__.py
+tests/test_compressor.py

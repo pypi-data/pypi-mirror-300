@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: jg-comp
+Version: 0.1.0
+Summary: A generic data compression package using dictionary-based and Huffman encoding techniques.
+Home-page: https://github.com/JacquesGariepy/jg-comp
+Author: Jacques Gariepy
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+# JG-COMP
+JG-COMP is a data compression package combining dictionary-based matching and Huffman encoding techniques for efficient data reduction.

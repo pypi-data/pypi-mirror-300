@@ -1,0 +1,24 @@
+# Inclure le fichier README.md
+include README.md
+
+# Inclure le fichier LICENSE
+include LICENSE
+
+# Inclure le fichier setup.py
+include setup.py
+
+# Inclure tous les fichiers .txt dans le package source
+recursive-include jg_comp *.txt
+
+# Inclure tous les fichiers .py du projet (déjà inclus par défaut)
+recursive-include jg_comp *.py
+
+# Exclure les fichiers temporaires comme ceux générés par l'IDE (par exemple .DS_Store sur Mac)
+global-exclude *.pyc
+global-exclude __pycache__
+global-exclude .DS_Store
+
+# Exclure les fichiers liés à Git
+global-exclude .git
+global-exclude .gitignore
+global-exclude .gitattributes
