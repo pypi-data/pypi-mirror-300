@@ -1,0 +1,45 @@
+Metadata-Version: 2.1
+Name: glowdb
+Version: 0.0.1
+Summary: A fast and efficient key/value store or document database which can work as a drop-in replacement for DynamoDB or MongoDB.
+Author: Oscar Bahamonde
+Author-email: o.bahamonde@globant.com
+Requires-Python: >=3.10,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: base64c (>=0.0.7,<0.0.8)
+Requires-Dist: click (>=8.1.7,<9.0.0)
+Requires-Dist: orjson (>=3.10.7,<4.0.0)
+Requires-Dist: pydantic (>=2.9.2,<3.0.0)
+Requires-Dist: rocksdict (>=0.3.23,<0.4.0)
+Requires-Dist: websockets (>=13.1,<14.0)
+Description-Content-Type: text/markdown
+
+# Project Proposal
+
+## GlowDB
+
+GlowDB is a fast and efficient key/value store or document database which can work as a drop-in replacement for DynamoDB or MongoDB.
+
+## Features
+
+- JSON RPC Realtime API.
+- Websocket API.
+- Pydantic ORM.
+
+## Roadmap
+
+- [x] RPC Realtime API.
+- [ ] SSE Push Notifications.
+- [ ] SQL API.
+- [ ] Vector Embeddings.
+- [ ] FaaS (WebWorkers and WebHooks).
+- [ ] OAuth2.0.
+- [ ] Python and TypeScript SDK.
+
+## License
+
+[TBD]
+

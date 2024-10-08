@@ -1,0 +1,9 @@
+glowdb/__init__.py,sha256=Wu9I5tVUYtcrl3WKOrBwf2NETw83D61HkZhTlrF9ACA,247
+glowdb/client.py,sha256=MVYCFBpLbiaOvh95N6Ne5P9XyxuHX3a0h0QPeWEUOes,4221
+glowdb/models.py,sha256=j3pGevLvjAQIjTnBr3XrjVU9tb9vFujgWkHb81YwnhI,5088
+glowdb/rpc_server.py,sha256=1ePRq0xvane7v5uw6i5lM54Qf7GOWLViNOo5h7_-4m0,6870
+glowdb/utils.py,sha256=H2Z46hQiQ0PWt_AsRMkrzDxYmlL925Sjt2H-V6Zi0Jg,7445
+glowdb-0.0.1.dist-info/METADATA,sha256=a6zAPn1HxofUvQpGheFtzNt5O5O2rylDqMAXdsHRNlY,1208
+glowdb-0.0.1.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+glowdb-0.0.1.dist-info/entry_points.txt,sha256=XqYGkVNm1QWNXkk25HvzUOvgla-VMAm1eDGZXH-ynsg,41
+glowdb-0.0.1.dist-info/RECORD,,
