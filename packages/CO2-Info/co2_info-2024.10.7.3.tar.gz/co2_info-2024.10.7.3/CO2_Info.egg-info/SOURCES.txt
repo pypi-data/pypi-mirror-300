@@ -1,0 +1,7 @@
+README.md
+setup.py
+CO2_Info.egg-info/PKG-INFO
+CO2_Info.egg-info/SOURCES.txt
+CO2_Info.egg-info/dependency_links.txt
+CO2_Info.egg-info/requires.txt
+CO2_Info.egg-info/top_level.txt
