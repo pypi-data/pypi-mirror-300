@@ -1,0 +1,12 @@
+indentalog/__init__.py,sha256=bPHSmNjyPNo77ESOAanbNXOONBZQblOVN6IAYa5hnQo,61
+indentalog/config.py,sha256=-LdrXUs01wO9XDRzp_r_uCpxf94Gj8ZjNxpBwvlYvqk,528
+indentalog/ilogger.py,sha256=RVJeY7Tjq2ZJpqunGRnPz_khtF3hZ9JlKq8ZXQTHqV4,2379
+indentalog/wrappers/__init__.py,sha256=RMBuEZLTeoA-HKYuwdl9IRZuzt5BSm7Sgv1ZWZ4VVpM,243
+indentalog/wrappers/callpoint.py,sha256=LzXh3kFbFc8iXh0OlnbJY4AmEiMW6naRJxjYO04hGYg,3457
+indentalog/wrappers/decorator.py,sha256=DzjuTv_13NyyZF9NcEZatVEwNpi5K__7mI7ZxeuTIrU,2227
+indentalog/wrappers/endpoint.py,sha256=gyjvpYnTtmsN1eUNdSxjZoU4gfwPXHXPS5iTHbAz49c,443
+indentalog/wrappers/iterable.py,sha256=84QfyiPesjgYHNKYroRhUecQd2weCW_TCeowiuZbXAM,2248
+indentalog-0.1.2.dist-info/LICENSE,sha256=uB8aVW7_0Q5C_V9-JLGop-rx5PlZFMy-rXdh6Tg8bMo,1079
+indentalog-0.1.2.dist-info/METADATA,sha256=aXkjsXwn_Jmm_mORKmRx4r9zSCiTMeFfrcT90fOBOjU,2405
+indentalog-0.1.2.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+indentalog-0.1.2.dist-info/RECORD,,
