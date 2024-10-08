@@ -1,0 +1,13 @@
+LICENSE
+README.md
+setup.py
+bqtmizer/__init__.py
+bqtmizer/bootqa.py
+bqtmizer/core.py
+bqtmizer.egg-info/PKG-INFO
+bqtmizer.egg-info/SOURCES.txt
+bqtmizer.egg-info/dependency_links.txt
+bqtmizer.egg-info/requires.txt
+bqtmizer.egg-info/top_level.txt
+demo/__init__.py
+demo/bqtmizer_test.py

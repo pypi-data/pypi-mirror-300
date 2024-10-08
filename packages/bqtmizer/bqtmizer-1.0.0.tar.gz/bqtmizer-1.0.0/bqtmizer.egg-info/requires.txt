@@ -1,0 +1,4 @@
+dimod==0.12.17
+dwave-system==1.26.0
+dwave-inspector==0.5.1
+pandas
