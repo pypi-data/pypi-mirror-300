@@ -1,0 +1,37 @@
+docker run -p 8080:8080 \
+      -v $HOME/.local/share/signal-api:/home/.local/share/signal-cli \
+      -e 'MODE=native' bbernhard/signal-cli-rest-api:0.86
+      
+PHONE_NR=+31613706978 # THEO
+PHONE_NR=+31613646484 # Dev number
+
+signal-cli --config /home/.local/share/signal-cli -u $PHONE_NR register --captcha <FIll in>
+signal-cli --config /home/.local/share/signal-cli -u $PHONE_NR verify <fill in>
+signal-cli --config /home/.local/share/signal-cli -u $PHONE_NR setPin "fill in"
+
+signal-cli --config /home/.local/share/signal-cli -u $PHONE_NR updateProfile --name Theo --family-name "Den Haag"     
+signal-cli --config /home/.local/share/signal-cli -u $PHONE_NR updateConfiguration --read-receipts true
+signal-cli --config /home/.local/share/signal-cli -u $PHONE_NR updateAccount --username theodh.1312
+signal-cli --config /home/.local/share/signal-cli -a $PHONE_NR --trust-new-identities always
+
+signal-cli -u $PHONE_NR send -m "My first message from the CLI" +31658844854
+signal-cli -u $PHONE_NR send -m "My first message from the CLI" 5b014727-a673-4196-bdec-b53d9d1c22cb
+
+
+signal-cli -u $PHONE_NR receive --send-read-receipts
+
+signal-cli --trust-new-identities=always --config=/home/.local/share/signal-cli daemon
+
+podman run --replace --userns keep-id --name signal-api-json-rpc-0.89 -p 8080:8080 \
+    -v $HOME/.local/share/signal-api:/home/.local/share/signal-cli \
+    -e 'MODE=json-rpc' \
+    -e 'AUTO_RECEIVE_SCHEDULE_SEND_READ_RECEIPTS=true' \
+    bbernhard/signal-cli-rest-api:0.89
+    
+    
+docker run --name signal-api-json-rpc-0.89 -p 8080:8080 \
+    -v $HOME/.local/share/signal-api:/home/.local/share/signal-cli \
+    -e 'MODE=json-rpc' \
+    -e 'AUTO_RECEIVE_SCHEDULE_SEND_READ_RECEIPTS=true' \
+    bbernhard/signal-cli-rest-api:0.89
+    
