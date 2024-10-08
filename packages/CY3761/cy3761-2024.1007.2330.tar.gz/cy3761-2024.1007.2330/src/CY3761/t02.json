@@ -1,0 +1,32 @@
+[
+    {
+        "username": "\u65b0\u79c0\u52cb\u7ae0",
+        "type": 35,
+        "name": "\u65b0\u79c0\u52cb\u7ae0",
+        "image": "https:\/\/csdnimg.cn\/medal\/xinxiu@240.png",
+        "score": 0,
+        "description": "\u7528\u6237\u9996\u6b21\u53d1\u5e03\u539f\u521b\u6587\u7ae0\uff0c\u5ba1\u6838\u901a\u8fc7\u540e\u5373\u53ef\u83b7\u5f97",
+        "show": true,
+        "desc": "\u7528\u6237\u9996\u6b21\u53d1\u5e03\u539f\u521b\u6587\u7ae0\uff0c\u5ba1\u6838\u901a\u8fc7\u540e\u5373\u53ef\u83b7\u5f97"
+    },
+    {
+        "username": "\u7b14\u8015\u4e0d\u8f8d",
+        "type": 107,
+        "name": "\u7b14\u8015\u4e0d\u8f8d",
+        "image": "https:\/\/csdnimg.cn\/02d34b42a3ee476fb50850304ab67017.png",
+        "score": 0,
+        "description": "\u7d2f\u8ba12\u5e74\u6bcf\u5e74\u539f\u521b\u6587\u7ae0\u6570\u91cf>=20\u7bc7",
+        "show": true,
+        "desc": "\u7d2f\u8ba12\u5e74\u6bcf\u5e74\u539f\u521b\u6587\u7ae0\u6570\u91cf>=20\u7bc7"
+    },
+    {
+        "username": "\u521b\u4f5c\u80fd\u624b",
+        "type": 28,
+        "name": "\u521b\u4f5c\u80fd\u624b",
+        "image": "https:\/\/csdnimg.cn\/medal\/qixiebiaobing4@240.png",
+        "score": 0,
+        "description": "\u6388\u4e88\u6bcf\u4e2a\u81ea\u7136\u5468\u53d1\u5e039\u7bc7\u4ee5\u4e0a\uff08\u5305\u62ec9\u7bc7\uff09\u539f\u521bIT\u535a\u6587\u7684\u7528\u6237",
+        "show": true,
+        "desc": "\u6388\u4e88\u6bcf\u4e2a\u81ea\u7136\u5468\u53d1\u5e039\u7bc7\u4ee5\u4e0a\uff08\u5305\u62ec9\u7bc7\uff09\u539f\u521bIT\u535a\u6587\u7684\u7528\u6237"
+    }
+]
