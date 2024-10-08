@@ -1,0 +1,60 @@
+Metadata-Version: 2.1
+Name: tslist
+Version: 0.1
+Summary: timestamp with a list (created by auxilium)
+Home-page: https://github.com/sonntagsgesicht/tslist
+Author: sonntagsgesicht
+Author-email: sonntagsgesicht@icloud.com
+License: Apache License 2.0
+Platform: any
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Education
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Education
+Classifier: Topic :: Software Development
+Description-Content-Type: text/x-rst
+License-File: LICENSE
+
+
+
+.. image:: logo.png
+
+
+Python Project *tslist*
+-----------------------------------------------------------------------
+
+
+Introduction
+------------
+
+To import the project simply type
+
+.. code-block:: python
+
+    >>> import tslist
+
+after installation.
+
+
+Install
+-------
+
+The latest stable version can always be installed or updated via pip:
+
+.. code-block:: bash
+
+    $ pip install tslist
+
+
+License
+-------
+
+Code and documentation are available according to the license
+(see LICENSE file in repository).
