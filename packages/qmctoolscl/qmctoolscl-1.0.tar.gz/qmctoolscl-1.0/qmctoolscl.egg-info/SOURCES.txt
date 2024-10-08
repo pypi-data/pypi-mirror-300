@@ -1,0 +1,13 @@
+MANIFEST.in
+README.md
+setup.py
+./qmctoolscl/qmctoolscl.c
+qmctoolscl/__init__.py
+qmctoolscl/qmctoolscl.c
+qmctoolscl/qmctoolscl.cl
+qmctoolscl/qmctoolscl.h
+qmctoolscl.egg-info/PKG-INFO
+qmctoolscl.egg-info/SOURCES.txt
+qmctoolscl.egg-info/dependency_links.txt
+qmctoolscl.egg-info/requires.txt
+qmctoolscl.egg-info/top_level.txt
