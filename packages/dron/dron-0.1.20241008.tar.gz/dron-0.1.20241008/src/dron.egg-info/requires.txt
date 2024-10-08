@@ -1,0 +1,20 @@
+click
+prompt_toolkit
+tzlocal
+textual
+tabulate
+termcolor
+mypy
+loguru
+
+[:platform_system != "Darwin"]
+dbus-python
+
+[notify-telegram]
+telegram-send>=0.37
+
+[testing]
+pytest
+ruff
+mypy
+lxml
