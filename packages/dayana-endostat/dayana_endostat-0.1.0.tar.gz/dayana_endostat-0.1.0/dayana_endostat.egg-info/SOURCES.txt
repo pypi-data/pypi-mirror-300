@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+dayana_endostat.egg-info/PKG-INFO
+dayana_endostat.egg-info/SOURCES.txt
+dayana_endostat.egg-info/dependency_links.txt
+dayana_endostat.egg-info/requires.txt
+dayana_endostat.egg-info/top_level.txt
+mariya_endostats/__init__.py
+mariya_endostats/endo_stats.py

@@ -1,0 +1,103 @@
+Metadata-Version: 2.1
+Name: dayana-endostat
+Version: 0.1.0
+Summary: A library for clinical & statistical calculations in Endodontics
+Author: Ashik Sanyo
+Author-email: ashiksanyo01@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy
+
+# dayana-endostat
+
+**dayana-endostat** is a Python library designed for statistical analysis and calculations relevant to the field of Endodontics. Created with love for my girlfriend who is a dentist aka toothfairy <3
+
+## Installation
+
+You can install the package using pip:
+
+```bash
+pip install dayana-endostat
+```
+
+## Table of Contents
+
+- [Features](#features)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Available Functions](#available-functions)
+- [Contributing](#contributing)
+- [License](#license)
+
+## Features
+
+- Calculate crown-to-root ratios
+- Estimate root canal volumes
+- Compute anesthesia dosages
+- Determine treatment success and failure rates
+- Calculate the surface area of teeth
+- Convert length units (mm, cm, inches)
+- And more...
+
+## Available Functions
+
+### 1. Crown-to-Root Ratio
+
+def crown_to_root_ratio(crown_length, root_length)\
+Calculates the ratio of the crown length to the root length.
+
+### 2. Root Canal Volume
+
+def root_canal_volume(radius, length) \
+Calculates the volume of the root canal using the formula for a cylinder.
+
+### 3. Pulp Chamber Volume
+
+def pulp_chamber_volume(radius, height) \
+Estimates the volume of the pulp chamber, approximated as a cone.
+
+### 4. Anesthesia Dosage
+
+def anesthesia_dosage(weight, dosage_per_kg)\
+Calculates the required dosage of local anesthetics based on the patient's weight.
+
+### 5. Success Rate
+
+def success_rate(successes, total_treatments)\
+Calculates the treatment success rate as a percentage.
+
+### 6. Failure Rate
+
+def failure_rate(failures, total_treatments)\
+Calculates the treatment failure rate as a percentage.
+
+### 7. Surface Area of Tooth
+
+def surface_area_of_tooth(height, radius)\
+Calculates the surface area of a tooth, assuming it is conical.
+
+### 8. Average Root Canal Curvature
+
+def average_root_canal_curvature(angles)\
+Calculates the average curvature of root canals based on a list of angles in degrees.
+
+### 9. Length Conversion
+
+def convert_length_units(length, from_unit, to_unit)\
+Converts lengths between mm, cm, and inches.
+
+### 10. Canal Diameter Calculation
+
+def calculate_canal_diameter(volume, length)\
+Calculates the diameter of the canal given its volume and length.
+
+## Contributing
+
+Contributions are welcome! If you have suggestions for improvements or new features, please feel free to submit a pull request or open an issue.
+
+## License
+This project is licensed under the MIT License. See the LICENSE file for more details.
