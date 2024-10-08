@@ -1,0 +1,47 @@
+biel-pushfeedback
+=================
+
+ASK AI chatbot for Sphinx documentation sites.
+
+Installation
+------------
+
+#. Create a `Biel.ai account <https://biel.ai/>`_.
+
+#. Install ``sphinx-biel`` using PIP.
+
+   .. code-block:: bash
+
+      pip install sphinx-biel
+
+#. Add the extension to your Sphinx project ``conf.py`` file.
+
+   .. code-block:: python
+
+      extensions = ['sphinx_biel']
+
+#. Configure your project ID in the ``conf.py`` file:
+
+   .. code-block:: python
+
+     biel_project = '<YOUR_PROJECT_ID>'
+     biel_button_text = 'Ask AI'
+     biel_header_title = 'Biel AI Chatbot'
+
+   Replace ``<YOUR_PROJECT_ID>`` with your project's ID from the `Biel.ai dashboard <https://docs.biel.ai/#2-create-a-project>`_.
+
+#. Build the documentation:
+
+   .. code-block:: bash
+
+      make html
+
+   Once built, open your documentation in a web browser. Verify that the chatbot appears and works correctly on your site.
+
+For advanced configuration options, see `Sphinx Biel documentation <https://docs.biel.ai/installation/sphinx>`_.
+
+License
+-------
+
+Copyright (c) 2024 Biel.ai
+Licensed under the `MIT License <https://github.com/TechDocsStudio/sphinx-biel/blob/main/LICENSE.md>`_.
