@@ -1,0 +1,25 @@
+[tool.poetry]
+name = "tell-me-again"
+version = "0.1.4"
+description = "Dataset for the paper 'Tell me again! A Large-Scale Dataset of Multiple Summaries for the"
+authors = ["Same Story"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+tqdm = "^4.66.1"
+platformdirs = "^4.2.0"
+datasets = "^3.0.1"
+requests = "^2.31.0"
+numpy = "^1.26.4"
+
+[tool.ruff.lint]
+select = ["E4", "E7", "E9", "F", "I"]
+
+[tool.poetry.group.dev.dependencies]
+ruff = "^0.1.15"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
