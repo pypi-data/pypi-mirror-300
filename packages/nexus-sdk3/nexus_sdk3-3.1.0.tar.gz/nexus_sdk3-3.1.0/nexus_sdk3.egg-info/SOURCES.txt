@@ -1,0 +1,11 @@
+LICENSE.txt
+MANIFEST.in
+README.md
+pyproject.toml
+nexus_sdk/__init__.py
+nexus_sdk/hackathon_nexus_sdk.py
+nexus_sdk3.egg-info/PKG-INFO
+nexus_sdk3.egg-info/SOURCES.txt
+nexus_sdk3.egg-info/dependency_links.txt
+nexus_sdk3.egg-info/requires.txt
+nexus_sdk3.egg-info/top_level.txt
