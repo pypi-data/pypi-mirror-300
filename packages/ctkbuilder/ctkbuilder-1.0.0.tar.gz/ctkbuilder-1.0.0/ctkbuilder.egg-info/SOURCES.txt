@@ -1,0 +1,13 @@
+CODE_OF_CONDUCT.md
+LICENSE
+MANIFEST.in
+README.md
+requirements.txt
+setup.py
+CTkBuilder/__init__.py
+CTkBuilder/ctkbuilder.py
+ctkbuilder.egg-info/PKG-INFO
+ctkbuilder.egg-info/SOURCES.txt
+ctkbuilder.egg-info/dependency_links.txt
+ctkbuilder.egg-info/requires.txt
+ctkbuilder.egg-info/top_level.txt
