@@ -1,0 +1,10 @@
+mig_dx_api/__init__.py,sha256=NzNhFZitKRsOo1VgL4G8RZseJpYzIhmUpjoaoZpbbaE,604
+mig_dx_api/_client.py,sha256=vAabM56vVxUTpF8t41dLbl-m251ThFfQRbXNrIkvkU8,9074
+mig_dx_api/_config.py,sha256=-S_FdrRZ7RXLXeYKBZDviEUaYiOxk13UwC4YvtZw8u8,2274
+mig_dx_api/_dataset.py,sha256=HiR0cy13TPadUkSF1i497lYM01Tx6wM_0jRb4lVDivw,13615
+mig_dx_api/_installation.py,sha256=126k75fycNwgvLC-pM1-8ppOc5A_8w8e5Kp8T-YfImQ,3303
+mig_dx_api/_models.py,sha256=7W2z24CFQ2WHU1nIibhXBfnkwKcDl03ueVH1tCipWQk,4463
+mig_dx_api/_protcols.py,sha256=FvZiOww5NtopTv4jHD-6e1vH19UpvCl1QrT8cGK5za0,5725
+mig_dx_api-0.1.8.dist-info/METADATA,sha256=PcT-ClE3p6tbkXHWkYLnEGunoGEvh6b0Ci0Cqp-S86Y,6376
+mig_dx_api-0.1.8.dist-info/WHEEL,sha256=1yFddiXMmvYK7QYTqtRNtX66WJ0Mz8PYEiEUoOUUxRY,87
+mig_dx_api-0.1.8.dist-info/RECORD,,
