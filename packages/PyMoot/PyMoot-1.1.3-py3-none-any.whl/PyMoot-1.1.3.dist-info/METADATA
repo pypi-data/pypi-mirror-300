@@ -1,0 +1,71 @@
+Metadata-Version: 2.1
+Name: PyMoot
+Version: 1.1.3
+Summary: Python wrapper for Komoot APIs
+Author-email: Floréal Cabanettes <contacter@alypie.fr>
+License: GPLv3
+Project-URL: homepage, https://gite.alypie.fr/veloroots/pymoot
+Project-URL: repository, https://gite.alypie.fr/veloroots/pymoot
+Keywords: komoot,api,python
+Requires-Python: >=3.11
+Description-Content-Type: text/markdown
+License-File: LICENCE
+Requires-Dist: dateutils>=0.6.12
+Requires-Dist: python-dateutil>=2.8.2
+Requires-Dist: requests>=2.31.0
+Requires-Dist: pillow>=10.1.0
+Requires-Dist: gpxpy>=1.6.1
+Requires-Dist: fit-tool>=0.9.13
+
+PyMoot
+======
+
+PyMoot is a python wrapper to retrieve data from komoot or change some data on Komoot.
+
+Features
+--------
+
+- Get all your tours
+- Get a specific tour by ID
+- Retrieve tour GPX file
+- Retrieve tour coordinates
+- Rename a tour on komoot
+- Get tour highlights
+
+Install
+-------
+
+PyMoot requires python >= 3.11
+
+To install, it's easy:
+
+```bash
+pip install pymoot
+```
+
+Usage
+-----
+
+First initialize the connector:
+
+```python
+from pymoot.connector import Connector
+
+c = Connector(email="myemail@example.com", password="komoot_password")
+```
+
+Then, use the function that you cant from this connector:
+
+```python
+from pymoot.connector import Connector
+
+c = Connector(email="myemail@example.com", password="komoot_password")
+
+# Call what you want here:
+c.get_tours()  # Get tours
+tour = c.get_tour(tour_id="125431322")  # Get a tour by id
+c.update_tour_title(tour_identifier="213135132", new_title="New title to set")  # Update title of a tour on Komoot
+tour.retrieve_gpx()  # Get tour GPX
+tour.retrieve_coordinates()  # Get tour coordinates
+tour.retrieve_tour_highlights()  # Get tour highlights
+```

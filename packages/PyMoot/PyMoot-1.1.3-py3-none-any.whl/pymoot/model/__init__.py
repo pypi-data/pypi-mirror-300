@@ -1,0 +1,12 @@
+from .coordinate import Coordinate as __Coordinate
+from .difficulty import Difficulty as __Difficulty
+from .komoot_image import KomootImage as __KomootImage
+from .segment import Segment as __Segment
+from .segment_information import SegmentInformation as __SegmentInformation
+from .sport_type import SportTypes as __SportTypes
+from .surface import Surface as __Surface
+from .tour import Tour as __Tour
+from .tour_information import TourInformation as __TourInformation
+from .tour_summary import TourSummary as __TourSummary
+from .way_type import WayType as __WayType
+from .waypoint import Waypoint as __Waypoint
