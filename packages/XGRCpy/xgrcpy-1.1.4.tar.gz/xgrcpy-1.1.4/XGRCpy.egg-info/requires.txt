@@ -1,0 +1,5 @@
+requests
+cryptography
+requests_html
+pandas
+lxml_html_clean
