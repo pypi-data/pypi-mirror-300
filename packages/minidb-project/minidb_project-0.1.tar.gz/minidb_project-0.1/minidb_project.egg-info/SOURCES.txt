@@ -1,0 +1,8 @@
+README.md
+setup.py
+minidb-project/__init__.py
+minidb-project/mini_db.py
+minidb_project.egg-info/PKG-INFO
+minidb_project.egg-info/SOURCES.txt
+minidb_project.egg-info/dependency_links.txt
+minidb_project.egg-info/top_level.txt
