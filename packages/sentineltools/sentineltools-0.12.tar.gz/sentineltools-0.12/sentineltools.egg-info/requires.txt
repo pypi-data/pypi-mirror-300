@@ -1,0 +1,6 @@
+chatollama
+diffusers
+accelerate
+pillow
+opencv-python
+numpy
