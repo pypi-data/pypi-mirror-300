@@ -1,0 +1,1 @@
+import"./scheduler.C_sdfy-5.js";import{s as e}from"./entry.C_fLXhM2.js";const r=()=>{const s=e;return{page:{subscribe:s.page.subscribe},navigating:{subscribe:s.navigating.subscribe},updated:s.updated}},b={subscribe(s){return r().page.subscribe(s)}};export{b as p};

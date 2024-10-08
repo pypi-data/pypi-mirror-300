@@ -1,0 +1,1 @@
+import{o}from"./2.CFhpxp2a.js";const t=r=>o[r%o.length];export{t as g};
