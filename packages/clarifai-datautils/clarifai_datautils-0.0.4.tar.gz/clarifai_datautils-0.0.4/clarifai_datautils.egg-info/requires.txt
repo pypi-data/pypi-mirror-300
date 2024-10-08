@@ -1,0 +1,6 @@
+llama-index-core==0.10.33
+llama-index-llms-clarifai==0.1.2
+pi_heif==0.18.0
+
+[annotations]
+datumaro==1.6.1
