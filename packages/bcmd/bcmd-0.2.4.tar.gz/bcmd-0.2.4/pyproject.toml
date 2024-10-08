@@ -1,0 +1,29 @@
+# https://peps.python.org/pep-0621/#example
+# https://packaging.python.org/en/latest/specifications/declaring-project-metadata/#declaring-project-metadata
+
+[project]
+name = 'bcmd'
+version = '0.2.4'
+description = 'Commands for Beni'
+requires-python = '>=3.10'
+keywords = ['benimang', 'beni', 'bcmd']
+authors = [{ name = 'Beni Mang', email = 'benimang@126.com' }]
+maintainers = [{ name = 'Beni Mang', email = 'benimang@126.com' }]
+
+
+dependencies = [
+  'benimang==0.5.46',
+  'build',
+  'cryptography',
+  'pathspec',
+  'pillow',
+  'prettytable',
+  'psutil',
+  'qiniu==7.13.2',
+  'twine',
+  'typer',
+
+]
+
+[project.scripts]
+beni = 'bcmd.main:run'
