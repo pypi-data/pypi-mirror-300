@@ -1,0 +1,41 @@
+name: Type checker
+
+on:
+  push:
+    paths:
+      - "**.py"
+      - ".github/workflows/type.yml"
+  pull_request:
+    branches: [main]
+    paths:
+      - "**.py"
+      - ".github/workflows/lint.yml"
+  workflow_dispatch:
+    inputs:
+      logLevel:
+        description: "Log level"
+        required: true
+        default: "warning"
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          submodules: true
+
+      - uses: actions/setup-python@v5
+        with:
+          cache: "pip"
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install mypy colorama types-colorama
+
+      - name: mypy type checker for `src/ninjar`
+        run: |
+          mypy
