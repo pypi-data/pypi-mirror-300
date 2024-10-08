@@ -1,0 +1,13 @@
+LICENSE.txt
+MANIFEST.in
+README.md
+pyproject.toml
+src/json_advanced/__init__.py
+src/json_advanced/json_encoder.py
+src/json_advanced/package_data.dat
+src/json_advanced.egg-info/PKG-INFO
+src/json_advanced.egg-info/SOURCES.txt
+src/json_advanced.egg-info/dependency_links.txt
+src/json_advanced.egg-info/requires.txt
+src/json_advanced.egg-info/top_level.txt
+tests/test_json_advanced.py

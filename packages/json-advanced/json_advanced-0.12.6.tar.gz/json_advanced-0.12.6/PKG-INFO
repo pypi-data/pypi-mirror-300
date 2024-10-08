@@ -1,0 +1,97 @@
+Metadata-Version: 2.1
+Name: json-advanced
+Version: 0.12.6
+Summary: This Python package provides an extended JSON encoder class, `JSONSerializer`, that enables encoding of complex Python data types such as `datetime.datetime`, `datetime.date`, `datetime.time`, `bytes` and `uuid`. It also supports objects that have a `to_json` method, allowing for customizable JSON encoding.
+Author-email: Mahdi Kiani <mahdikiany@gmail.com>
+Maintainer-email: Mahdi Kiani <mahdikiany@gmail.com>
+License: Copyright (c) 2024 Mahdi Kiani
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+Project-URL: Homepage, https://github.com/mahdikiani/json-advanced
+Project-URL: Bug Reports, https://github.com/mahdikiani/json-advanced/issues
+Project-URL: Say Thanks!, https://saythanks.io/to/mahdikiani
+Project-URL: Source, https://github.com/mahdikiani/json-advanced
+Keywords: json,serialization,datetime,bytes,uuid,path
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3 :: Only
+Requires-Python: >=3
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+Requires-Dist: peppercorn
+Provides-Extra: dev
+Requires-Dist: check-manifest; extra == "dev"
+Provides-Extra: test
+Requires-Dist: coverage; extra == "test"
+
+# Extended JSON Encoder
+
+The `json-advanced` is Python package provides an extended JSON encoder class, `JSONSerializer`, that enables encoding of complex Python data types such as `datetime.datetime`, `datetime.date`, `datetime.time`, `bytes` and `uuid`. It also supports objects that have a `to_json` method, allowing for customizable JSON encoding.
+
+## Features
+
+- **Datetime Handling**: Automatically converts `datetime.datetime`, `datetime.date`, and `datetime.time` objects to their string representation.
+- **UUID Encoding**: Encodes `uuid` objects as uuid strings.
+- **Bytes Encoding**: Encodes `bytes` objects as base64 strings, prefixed with `b64:`.
+- **Custom Object Support**: Encodes any object that has a `to_json` method by calling that method.
+
+## Installation
+
+You can install the package directly from source:
+
+```bash
+pip install json-advanced
+```
+
+## Usage
+To use the JSONSerializer in your project, you need to import it and use it with the standard json module's dump or dumps functions:
+
+```python
+import json
+import datetime
+import uuid
+
+from json_advanced.json_encoder import JSONSerializer
+
+# Example object containing various complex data types
+data = {
+    "now": datetime.datetime.now(),
+    "today": datetime.date.today(),
+    "time": datetime.datetime.now().time(),
+    "bytes_data": b"example bytes",
+    "uuid": uuid.uuid4(),
+}
+
+# Serialize the object to a JSON string
+json_string = json.dumps(data, cls=JSONSerializer)
+print(json_string)
+```
+
+## Extending the Serializer
+If you have custom types that you want to serialize, you can extend JSONSerializer by overriding the default method. Ensure you call super().default(obj) for types you do not handle:
+
+```python
+class MyCustomSerializer(JSONSerializer):
+    def default(self, obj):
+        if isinstance(obj, MyCustomType):
+            return obj.custom_serialize()
+        return super().default(obj)
+```
+
+## Contributions
+Contributions are welcome! Please open an issue or pull request on GitHub if you have suggestions or improvements.
+
+## License
+This package is licensed under the MIT License - see the LICENSE file for details.
