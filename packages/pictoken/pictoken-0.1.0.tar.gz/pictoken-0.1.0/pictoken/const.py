@@ -1,0 +1,11 @@
+"""Constants used by pictoken"""
+
+from __future__ import annotations
+
+TILE_SIZE_GPT_4O = 512
+BASE_IMAGE_TOKENS_GPT_4O = 85
+TOKENS_PER_TILE_GPT_4O = 170
+
+TILE_SIZE_GPT_4O_MINI = 512
+BASE_IMAGE_TOKENS_GPT_4O_MINI = 2833
+TOKENS_PER_TILE_GPT_4O_MINI = 5667

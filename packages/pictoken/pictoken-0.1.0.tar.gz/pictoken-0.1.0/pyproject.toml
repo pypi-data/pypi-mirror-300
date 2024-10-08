@@ -1,0 +1,64 @@
+[project]
+name = "pictoken"
+version = "0.1.0"
+description = "Calculate image tokens for (Azure) OpenAI models. Offers multiple utilities to resize images to reduce token usage."
+authors = [
+  {name = "Mick Vleeshouwer", email = "mick@imick.nl"}
+]
+license = {file = "LICENSE"}
+readme = "README.md"
+keywords = ["OpenAI", "Azure", "LLM", "GPT4o", "VLLM", "Image"]
+packages = [
+    { include = "pictoken" }
+]
+requires-python = ">=3.9"
+dependencies = [
+    "backports-strenum>=1.3.1; python_version < '3.11'",
+    "pillow>=10.4.0",
+]
+classifiers = [
+  "Development Status :: 4 - Beta",
+  "Programming Language :: Python"
+]
+
+[project.urls]
+Homepage = "https://github.com/iMicknl/pictoken"
+Repository = "https://github.com/iMicknl/pictoken"
+
+[tool.uv]
+dev-dependencies = [
+    "mypy>=1.11.2",
+    "pre-commit>=4.0.0",
+    "pytest>=8.3.3",
+    "ruff>=0.6.9",
+]
+
+[tool.ruff.lint]
+select = [
+    # pycodestyle
+    "E",
+    # Pyflakes
+    "F",
+    # pyupgrade
+    "UP",
+    # flake8-bugbear
+    "B",
+    # flake8-simplify
+    "SIM",
+    # isort
+    "I",
+]
+ignore = ["E501"] # Line too long
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.sdist]
+include = [
+  "pictoken/*",
+]
+
+[tool.hatch.build.targets.wheel]
+packages = ["pictoken"]
+only-packages = true
