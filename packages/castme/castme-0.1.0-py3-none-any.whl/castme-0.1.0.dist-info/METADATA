@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: castme
+Version: 0.1.0
+Summary: REPL to stream music from a Subsonic server to a chromecast
+Author: Simon Marache-Francisco
+Author-email: pypy@simon.marache.net
+Requires-Python: >=3.10,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: pychromecast
+Requires-Dist: zeroconf
