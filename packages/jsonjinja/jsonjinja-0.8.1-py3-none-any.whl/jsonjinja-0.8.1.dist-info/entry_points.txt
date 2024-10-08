@@ -1,0 +1,2 @@
+[console_scripts]
+jsonjinja = jsonjinja:main
