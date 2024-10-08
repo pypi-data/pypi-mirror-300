@@ -1,0 +1,11 @@
+mmng_ui/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mmng_ui/_version.py,sha256=9acUHRb1fq-uv5dr49LlEh189daKw4-SeypW5NxDolA,411
+mmng_ui/pocsag.py,sha256=txugx2_bWRdQ_sovgza8aOGKHWKoHwPyZuA_Ouum3bg,11114
+mmng_ui/pocsag.tcss,sha256=O-rDcag5Hudj_1YUdV2XdW46p2n57Wt8H2SU1j5ZQe8,1211
+mmng_ui/reader.py,sha256=1k5DodbR6Vko5qSWqBpteVOK8oz8ms1_T9wLvqATcp4,7519
+mmng_ui-1.0.4.dist-info/LICENSE,sha256=ixuiBLtpoK3iv89l7ylKkg9rs2GzF9ukPH7ynZYzK5s,35148
+mmng_ui-1.0.4.dist-info/METADATA,sha256=17jmEqrOEsZOrAjAmumZsvqpN-PPOXpJ4P4GwuPabtw,3835
+mmng_ui-1.0.4.dist-info/WHEEL,sha256=GV9aMThwP_4oNCtvEC2ec3qUYutgWeAzklro_0m4WJQ,91
+mmng_ui-1.0.4.dist-info/entry_points.txt,sha256=3QDxsK00ry18Wac0omxaclSK7Blc74TMeDLjPJkZ0uo,48
+mmng_ui-1.0.4.dist-info/top_level.txt,sha256=oHq5KC2Gl-FjPdXLMQS6-1e3Ule3b9UUX3ldFByWEuE,8
+mmng_ui-1.0.4.dist-info/RECORD,,
