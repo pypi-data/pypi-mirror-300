@@ -1,0 +1,192 @@
+== x86_64 AMIs ==
+
+{| class="wikitable sortable mw-collapsible" width=100%
+|-
+! Region !! AMI ID !! Direct launch link
+|-
+| af-south-1
+| ami-0347e39249b17f533
+| [https://redirect.fedoraproject.org/console.aws.amazon.com/ec2/v2/home?region=af-south-1#LaunchInstanceWizard:ami=ami-0347e39249b17f533 Launch in EC2]
+|-
+| ap-east-1
+| ami-02607d52d5570b15e
+| [https://redirect.fedoraproject.org/console.aws.amazon.com/ec2/v2/home?region=ap-east-1#LaunchInstanceWizard:ami=ami-02607d52d5570b15e Launch in EC2]
+|-
+| ap-northeast-1
+| ami-0c148fc18232cb364
+| [https://redirect.fedoraproject.org/console.aws.amazon.com/ec2/v2/home?region=ap-northeast-1#LaunchInstanceWizard:ami=ami-0c148fc18232cb364 Launch in EC2]
+|-
+| ap-northeast-2
+| ami-0333dd01c72ef2a08
+| [https://redirect.fedoraproject.org/console.aws.amazon.com/ec2/v2/home?region=ap-northeast-2#LaunchInstanceWizard:ami=ami-0333dd01c72ef2a08 Launch in EC2]
+|-
+| ap-northeast-3
+| ami-0d580bee2b33c7cc2
+| [https://redirect.fedoraproject.org/console.aws.amazon.com/ec2/v2/home?region=ap-northeast-3#LaunchInstanceWizard:ami=ami-0d580bee2b33c7cc2 Launch in EC2]
+|-
+| ap-south-1
+| ami-0498d0425065735bd
+| [https://redirect.fedoraproject.org/console.aws.amazon.com/ec2/v2/home?region=ap-south-1#LaunchInstanceWizard:ami=ami-0498d0425065735bd Launch in EC2]
+|-
+| ap-southeast-1
+| ami-06a219280b3ef22ef
+| [https://redirect.fedoraproject.org/console.aws.amazon.com/ec2/v2/home?region=ap-southeast-1#LaunchInstanceWizard:ami=ami-06a219280b3ef22ef Launch in EC2]
+|-
+| ap-southeast-2
+| ami-0b9247036d0f404af
+| [https://redirect.fedoraproject.org/console.aws.amazon.com/ec2/v2/home?region=ap-southeast-2#LaunchInstanceWizard:ami=ami-0b9247036d0f404af Launch in EC2]
+|-
+| ap-southeast-3
+| ami-0b74e0349af5448ed
+| [https://redirect.fedoraproject.org/console.aws.amazon.com/ec2/v2/home?region=ap-southeast-3#LaunchInstanceWizard:ami=ami-0b74e0349af5448ed Launch in EC2]
+|-
+| ca-central-1
+| ami-0d588a01b22675993
+| [https://redirect.fedoraproject.org/console.aws.amazon.com/ec2/v2/home?region=ca-central-1#LaunchInstanceWizard:ami=ami-0d588a01b22675993 Launch in EC2]
+|-
+| eu-central-1
+| ami-087f1a4307ad5b2d9
+| [https://redirect.fedoraproject.org/console.aws.amazon.com/ec2/v2/home?region=eu-central-1#LaunchInstanceWizard:ami=ami-087f1a4307ad5b2d9 Launch in EC2]
+|-
+| eu-north-1
+| ami-08889e178f4e1d66a
+| [https://redirect.fedoraproject.org/console.aws.amazon.com/ec2/v2/home?region=eu-north-1#LaunchInstanceWizard:ami=ami-08889e178f4e1d66a Launch in EC2]
+|-
+| eu-south-1
+| ami-00cc96edb39c31f3b
+| [https://redirect.fedoraproject.org/console.aws.amazon.com/ec2/v2/home?region=eu-south-1#LaunchInstanceWizard:ami=ami-00cc96edb39c31f3b Launch in EC2]
+|-
+| eu-west-1
+| ami-0564925daf5872375
+| [https://redirect.fedoraproject.org/console.aws.amazon.com/ec2/v2/home?region=eu-west-1#LaunchInstanceWizard:ami=ami-0564925daf5872375 Launch in EC2]
+|-
+| eu-west-2
+| ami-0191d2dcfc67b6a6e
+| [https://redirect.fedoraproject.org/console.aws.amazon.com/ec2/v2/home?region=eu-west-2#LaunchInstanceWizard:ami=ami-0191d2dcfc67b6a6e Launch in EC2]
+|-
+| eu-west-3
+| ami-0cee0d2add558e6f1
+| [https://redirect.fedoraproject.org/console.aws.amazon.com/ec2/v2/home?region=eu-west-3#LaunchInstanceWizard:ami=ami-0cee0d2add558e6f1 Launch in EC2]
+|-
+| me-south-1
+| ami-0afa96b200f4f65e3
+| [https://redirect.fedoraproject.org/console.aws.amazon.com/ec2/v2/home?region=me-south-1#LaunchInstanceWizard:ami=ami-0afa96b200f4f65e3 Launch in EC2]
+|-
+| sa-east-1
+| ami-05f22fb67c9b8d01b
+| [https://redirect.fedoraproject.org/console.aws.amazon.com/ec2/v2/home?region=sa-east-1#LaunchInstanceWizard:ami=ami-05f22fb67c9b8d01b Launch in EC2]
+|-
+| us-east-1
+| ami-0db6b914a1bbc4845
+| [https://redirect.fedoraproject.org/console.aws.amazon.com/ec2/v2/home?region=us-east-1#LaunchInstanceWizard:ami=ami-0db6b914a1bbc4845 Launch in EC2]
+|-
+| us-east-2
+| ami-0539c25eb57fbe069
+| [https://redirect.fedoraproject.org/console.aws.amazon.com/ec2/v2/home?region=us-east-2#LaunchInstanceWizard:ami=ami-0539c25eb57fbe069 Launch in EC2]
+|-
+| us-west-1
+| ami-0a647609022124a7a
+| [https://redirect.fedoraproject.org/console.aws.amazon.com/ec2/v2/home?region=us-west-1#LaunchInstanceWizard:ami=ami-0a647609022124a7a Launch in EC2]
+|-
+| us-west-2
+| ami-05261568e0aac2a72
+| [https://redirect.fedoraproject.org/console.aws.amazon.com/ec2/v2/home?region=us-west-2#LaunchInstanceWizard:ami=ami-05261568e0aac2a72 Launch in EC2]
+|-
+|}
+
+== aarch64 AMIs ==
+
+{| class="wikitable sortable mw-collapsible" width=100%
+|-
+! Region !! AMI ID !! Direct launch link
+|-
+| af-south-1
+| ami-0317578f7c193faa9
+| [https://redirect.fedoraproject.org/console.aws.amazon.com/ec2/v2/home?region=af-south-1#LaunchInstanceWizard:ami=ami-0317578f7c193faa9 Launch in EC2]
+|-
+| ap-east-1
+| ami-0c436d8ae99d1bf2e
+| [https://redirect.fedoraproject.org/console.aws.amazon.com/ec2/v2/home?region=ap-east-1#LaunchInstanceWizard:ami=ami-0c436d8ae99d1bf2e Launch in EC2]
+|-
+| ap-northeast-1
+| ami-02e590911be60a517
+| [https://redirect.fedoraproject.org/console.aws.amazon.com/ec2/v2/home?region=ap-northeast-1#LaunchInstanceWizard:ami=ami-02e590911be60a517 Launch in EC2]
+|-
+| ap-northeast-2
+| ami-0d203c930bda2a4b9
+| [https://redirect.fedoraproject.org/console.aws.amazon.com/ec2/v2/home?region=ap-northeast-2#LaunchInstanceWizard:ami=ami-0d203c930bda2a4b9 Launch in EC2]
+|-
+| ap-northeast-3
+| ami-045bb46093c676298
+| [https://redirect.fedoraproject.org/console.aws.amazon.com/ec2/v2/home?region=ap-northeast-3#LaunchInstanceWizard:ami=ami-045bb46093c676298 Launch in EC2]
+|-
+| ap-south-1
+| ami-0167f4d56c1ce32d8
+| [https://redirect.fedoraproject.org/console.aws.amazon.com/ec2/v2/home?region=ap-south-1#LaunchInstanceWizard:ami=ami-0167f4d56c1ce32d8 Launch in EC2]
+|-
+| ap-southeast-1
+| ami-08875067d06e97778
+| [https://redirect.fedoraproject.org/console.aws.amazon.com/ec2/v2/home?region=ap-southeast-1#LaunchInstanceWizard:ami=ami-08875067d06e97778 Launch in EC2]
+|-
+| ap-southeast-2
+| ami-0cf2ecfc06f1ea5e9
+| [https://redirect.fedoraproject.org/console.aws.amazon.com/ec2/v2/home?region=ap-southeast-2#LaunchInstanceWizard:ami=ami-0cf2ecfc06f1ea5e9 Launch in EC2]
+|-
+| ap-southeast-3
+| ami-04be81e8f7a1f8c5b
+| [https://redirect.fedoraproject.org/console.aws.amazon.com/ec2/v2/home?region=ap-southeast-3#LaunchInstanceWizard:ami=ami-04be81e8f7a1f8c5b Launch in EC2]
+|-
+| ca-central-1
+| ami-06e2d9323bc3a7407
+| [https://redirect.fedoraproject.org/console.aws.amazon.com/ec2/v2/home?region=ca-central-1#LaunchInstanceWizard:ami=ami-06e2d9323bc3a7407 Launch in EC2]
+|-
+| eu-central-1
+| ami-01c40ea0461323545
+| [https://redirect.fedoraproject.org/console.aws.amazon.com/ec2/v2/home?region=eu-central-1#LaunchInstanceWizard:ami=ami-01c40ea0461323545 Launch in EC2]
+|-
+| eu-north-1
+| ami-02b55edf5427e328e
+| [https://redirect.fedoraproject.org/console.aws.amazon.com/ec2/v2/home?region=eu-north-1#LaunchInstanceWizard:ami=ami-02b55edf5427e328e Launch in EC2]
+|-
+| eu-south-1
+| ami-0f9b5b5fb5af874d4
+| [https://redirect.fedoraproject.org/console.aws.amazon.com/ec2/v2/home?region=eu-south-1#LaunchInstanceWizard:ami=ami-0f9b5b5fb5af874d4 Launch in EC2]
+|-
+| eu-west-1
+| ami-0188565fb46b97ca6
+| [https://redirect.fedoraproject.org/console.aws.amazon.com/ec2/v2/home?region=eu-west-1#LaunchInstanceWizard:ami=ami-0188565fb46b97ca6 Launch in EC2]
+|-
+| eu-west-2
+| ami-0bf6ff24753f26e93
+| [https://redirect.fedoraproject.org/console.aws.amazon.com/ec2/v2/home?region=eu-west-2#LaunchInstanceWizard:ami=ami-0bf6ff24753f26e93 Launch in EC2]
+|-
+| eu-west-3
+| ami-03651f077d2ac1cb4
+| [https://redirect.fedoraproject.org/console.aws.amazon.com/ec2/v2/home?region=eu-west-3#LaunchInstanceWizard:ami=ami-03651f077d2ac1cb4 Launch in EC2]
+|-
+| me-south-1
+| ami-01248ae21c76872ee
+| [https://redirect.fedoraproject.org/console.aws.amazon.com/ec2/v2/home?region=me-south-1#LaunchInstanceWizard:ami=ami-01248ae21c76872ee Launch in EC2]
+|-
+| sa-east-1
+| ami-009269ef6f6f21e3e
+| [https://redirect.fedoraproject.org/console.aws.amazon.com/ec2/v2/home?region=sa-east-1#LaunchInstanceWizard:ami=ami-009269ef6f6f21e3e Launch in EC2]
+|-
+| us-east-1
+| ami-073a2f82fbc2a06b0
+| [https://redirect.fedoraproject.org/console.aws.amazon.com/ec2/v2/home?region=us-east-1#LaunchInstanceWizard:ami=ami-073a2f82fbc2a06b0 Launch in EC2]
+|-
+| us-east-2
+| ami-0dee6f31c2391448e
+| [https://redirect.fedoraproject.org/console.aws.amazon.com/ec2/v2/home?region=us-east-2#LaunchInstanceWizard:ami=ami-0dee6f31c2391448e Launch in EC2]
+|-
+| us-west-1
+| ami-068c42ba4b6f7af11
+| [https://redirect.fedoraproject.org/console.aws.amazon.com/ec2/v2/home?region=us-west-1#LaunchInstanceWizard:ami=ami-068c42ba4b6f7af11 Launch in EC2]
+|-
+| us-west-2
+| ami-0ed7a5e643e050223
+| [https://redirect.fedoraproject.org/console.aws.amazon.com/ec2/v2/home?region=us-west-2#LaunchInstanceWizard:ami=ami-0ed7a5e643e050223 Launch in EC2]
+|-
+|}
+
