@@ -1,0 +1,17 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+django-markdown-editor-next/__init__.py
+django-markdown-editor-next/fields.py
+django-markdown-editor-next/views.py
+django-markdown-editor-next/widgets.py
+django-markdown-editor-next/static/django_markdown_editor/css/markdown_editor.css
+django-markdown-editor-next/static/django_markdown_editor/js/markdown_editor.js
+django-markdown-editor-next/templates/django-markdown-editor-next/widget.html
+django_markdown_editor_next.egg-info/PKG-INFO
+django_markdown_editor_next.egg-info/SOURCES.txt
+django_markdown_editor_next.egg-info/dependency_links.txt
+django_markdown_editor_next.egg-info/requires.txt
+django_markdown_editor_next.egg-info/top_level.txt
+tests/test_markdown_editor.py
