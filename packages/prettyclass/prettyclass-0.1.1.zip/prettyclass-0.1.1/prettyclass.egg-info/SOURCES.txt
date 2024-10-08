@@ -1,0 +1,12 @@
+CHANGES.rst
+HOWTO.rst
+LICENSE
+MANIFEST.in
+README.rst
+setup.py
+prettyclass/__init__.py
+prettyclass/pp.py
+prettyclass.egg-info/PKG-INFO
+prettyclass.egg-info/SOURCES.txt
+prettyclass.egg-info/dependency_links.txt
+prettyclass.egg-info/top_level.txt
