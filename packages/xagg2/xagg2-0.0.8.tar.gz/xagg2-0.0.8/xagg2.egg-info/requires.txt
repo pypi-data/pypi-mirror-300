@@ -1,0 +1,12 @@
+numpy
+pandas
+matplotlib
+xarray
+geopandas
+cartopy
+
+[all]
+xagg2[extra]
+
+[extra]
+pandas
