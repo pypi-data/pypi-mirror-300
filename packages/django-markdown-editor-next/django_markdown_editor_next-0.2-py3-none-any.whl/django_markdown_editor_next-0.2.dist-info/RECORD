@@ -1,0 +1,12 @@
+django-markdown-editor-next/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+django-markdown-editor-next/fields.py,sha256=71wSoUtIV1P1KeOerSMJ61LA-nyP5vaJ6wxkBF0_yso,499
+django-markdown-editor-next/views.py,sha256=yWdDfGr_6Z9SzkbJXzxz7YUMyhWZyfvNI7U3pYdudcE,847
+django-markdown-editor-next/widgets.py,sha256=hSOr8vGDTTPVLO--8FbbZMqHL28vDVyNR1dGjdjFPos,1122
+django-markdown-editor-next/static/django_markdown_editor/css/markdown_editor.css,sha256=_dBycrysDqX07gYru06oBs8XglhaPJY-DkxaYmRfk5w,662
+django-markdown-editor-next/static/django_markdown_editor/js/markdown_editor.js,sha256=xPw94xDzQIcSDZ6Q6djLUbmulRQcd96sJk_lvQQl3AU,5661
+django-markdown-editor-next/templates/django-markdown-editor-next/widget.html,sha256=bnsyDdpy-LOpXwmtUh4wdi6LXTEBHR-uG_Iwhg3SnGw,429
+django_markdown_editor_next-0.2.dist-info/LICENSE,sha256=c_McBpsSOXWbHH9MYP7HjSU-pb5QumjlEaevWCzgnVc,1060
+django_markdown_editor_next-0.2.dist-info/METADATA,sha256=PeEmYImgkyQZe55P19KtMpk_2qfDBVBa37YIuE82wHY,2896
+django_markdown_editor_next-0.2.dist-info/WHEEL,sha256=GV9aMThwP_4oNCtvEC2ec3qUYutgWeAzklro_0m4WJQ,91
+django_markdown_editor_next-0.2.dist-info/top_level.txt,sha256=MO74hvW2ruBeldk6YMxd8K5clYuRUUC5Qv5RLT12EKs,28
+django_markdown_editor_next-0.2.dist-info/RECORD,,
