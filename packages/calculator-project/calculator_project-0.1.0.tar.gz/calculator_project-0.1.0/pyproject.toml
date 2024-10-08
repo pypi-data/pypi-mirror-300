@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "calculator_project"
+version = "0.1.0"
+description = "A simple calculator to perform basic arithmetic operations and root calculations."
+readme = "README.md"
+authors = [
+    { name = "Mustafa Akgül", email = "akgul037@gmail.com" }
+]
+dependencies = []
+requires-python = ">=3.6"
+
+[tool.setuptools.packages.find]
+where = ["."]
