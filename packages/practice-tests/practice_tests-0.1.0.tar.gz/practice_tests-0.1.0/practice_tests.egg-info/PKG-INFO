@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: practice_tests
+Version: 0.1.0
+Summary: A simple SDK to manage names
+Author: Rajasekhar Baludu
+Author-email: rajasekharbaludu10105@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+# Practice Tests
+
+A simple SDK to manage names.
+
+## Overview
+
+This package provides a basic implementation of a Name class that allows users to create and manage full names by combining first and last names.
+
+## Features
+
+- Create a `Name` object with first and last names.
+- Retrieve the full name using the `fullname` method.
+
+## Installation
+
+You can install this package using pip:
+
+```bash
+pip install practice_tests
