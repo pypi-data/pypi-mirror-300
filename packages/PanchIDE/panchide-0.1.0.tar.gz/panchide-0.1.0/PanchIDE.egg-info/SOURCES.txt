@@ -1,0 +1,7 @@
+IDE2.py
+setup.py
+PanchIDE.egg-info/PKG-INFO
+PanchIDE.egg-info/SOURCES.txt
+PanchIDE.egg-info/dependency_links.txt
+PanchIDE.egg-info/requires.txt
+PanchIDE.egg-info/top_level.txt
