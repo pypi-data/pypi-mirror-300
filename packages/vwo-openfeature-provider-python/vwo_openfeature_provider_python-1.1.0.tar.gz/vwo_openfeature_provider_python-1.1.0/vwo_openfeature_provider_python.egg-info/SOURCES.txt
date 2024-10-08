@@ -1,0 +1,15 @@
+LICENSE
+MANIFEST.in
+NOTICE
+README.md
+requirements.txt
+setup.py
+vwo_openfeature_provider_python.egg-info/PKG-INFO
+vwo_openfeature_provider_python.egg-info/SOURCES.txt
+vwo_openfeature_provider_python.egg-info/dependency_links.txt
+vwo_openfeature_provider_python.egg-info/requires.txt
+vwo_openfeature_provider_python.egg-info/top_level.txt
+vwo_provider/__init__.py
+vwo_provider/vwo_provider.py
+vwo_provider/utils/__init__.py
+vwo_provider/utils/function_util.py
