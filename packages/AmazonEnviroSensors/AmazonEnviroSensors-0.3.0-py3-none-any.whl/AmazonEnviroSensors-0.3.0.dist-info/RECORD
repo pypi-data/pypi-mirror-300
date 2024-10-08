@@ -1,0 +1,15 @@
+MiTemperature/MiTemperature.py,sha256=Q9aN0LsHWtbzz4oHWUQB_trh4bnSP9ByB0ozDFdpOM4,5253
+MiTemperature/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+Newkiton/Newkiton.py,sha256=_8yzHqs8-zRaXI5VCoTo7ymyJjNQPzKh2wdspjhOtiA,4836
+Newkiton/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ThermoBeacon/ThermoBeacon.py,sha256=e7SmBDuAS69eJyLLPz-I683--Zoo2d_5gMHlRltzdDE,2277
+ThermoBeacon/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_mitemperature.py,sha256=ViocmT1XXZlEsLY-wJuIaimkS33pFYJjOPNdjgHa5Vs,791
+tests/test_newkiton.py,sha256=Ck_GXVeazEHsmYrnNloCBixds3c3Zx5ohwjAYmSv4DY,623
+tests/test_thermobeacon.py,sha256=cIHa89WeApp8Ah4wr9bwY4lmU5iTlKsAPGVb3vkQE1s,251
+AmazonEnviroSensors-0.3.0.dist-info/LICENSE,sha256=gcuuhKKc5-dwvyvHsXjlC9oM6N5gZ6umYbC8ewW1Yvg,35821
+AmazonEnviroSensors-0.3.0.dist-info/METADATA,sha256=yrg6bWtdN2NJ078GCmpNkXzsCtZpAqzwZlF_XJmI88U,2187
+AmazonEnviroSensors-0.3.0.dist-info/WHEEL,sha256=GV9aMThwP_4oNCtvEC2ec3qUYutgWeAzklro_0m4WJQ,91
+AmazonEnviroSensors-0.3.0.dist-info/top_level.txt,sha256=kXnIRIUzLnG_nwQfS7gv5T3zm5IXJtGD6YhyitySW_U,42
+AmazonEnviroSensors-0.3.0.dist-info/RECORD,,
