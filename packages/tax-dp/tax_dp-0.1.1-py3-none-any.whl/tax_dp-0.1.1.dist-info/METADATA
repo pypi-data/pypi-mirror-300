@@ -1,0 +1,47 @@
+Metadata-Version: 2.1
+Name: tax-dp
+Version: 0.1.1
+Summary: A fully sharded data parallel trainer for jax
+Author-Email: Rares Dolga <rares.dolga.16@ucl.ac.uk>
+License: MIT
+Requires-Python: >=3.10
+Requires-Dist: jax[cuda12]==0.4.31
+Requires-Dist: tqdm==4.66.2
+Requires-Dist: wandb==0.17.2
+Requires-Dist: black>=24.8.0
+Requires-Dist: flax==0.8.4
+Requires-Dist: orbax-checkpoint==0.6.4
+Requires-Dist: matplotlib>=3.9.1
+Requires-Dist: pip>=24.2
+Requires-Dist: jaxtyping>=0.2.34
+Requires-Dist: torch>=2.4.1
+Requires-Dist: transformers>=4.45.1
+Requires-Dist: datasets>=2.19.2
+Description-Content-Type: text/markdown
+
+# jax-trainer
+An efficient distributed FSDP in jax
+
+# Running Examples
+## Single host trainer
+Run imdb movie classification from the long range arena dataset with batch parallelisation given by jit function:
+```
+pdm run bash ./tax/examples/bin/run_lra.sh $PWD imdb.yaml lra_imdb
+```
+
+For Library users see example usages in:
+
+```
+tax/tax/examples/lra/exp.py
+```
+## FSDP Trainer
+Train a gemma language model with the FSDP trainer
+```
+pdm run bash ./tax/examples/bin/run_lm.sh $PWD lm.yaml test_trainer
+```
+
+For Library users see example usages in:
+
+```
+tax/tax/examples/gemma/exp.py
+```
