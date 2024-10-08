@@ -1,0 +1,9 @@
+neqs/.release_type,sha256=h-7TGqPplu27a5tjh9Lgrry8fcy_Xf7_veX1Asb6qhI,6
+neqs/__init__.py,sha256=Hmfpvgb9_E3R_qxhCOsPLWnlyFt4ZqJbhjqYZSCyE7I,344
+neqs/damped_newton.py,sha256=k9vfeSj8Fz92ytIStua3SeDKuWNISm6S4a1g8NuQpQ4,3975
+neqs/iter_printers.py,sha256=G5ZTezZyw4sPiKpR25xWlO_0WL4UWuCVCtmrjZ0GOyk,10497
+neqs/iterative.py,sha256=v4R5B7Gc9E0NWXe8Tii2UQQiycdxcs6HLaFgocRWsnc,5429
+neqs-0.6.1.dist-info/METADATA,sha256=hkQQR0Q3lRcjvJeBKkmkF0CKfC2GURxAjUolg8mCTN4,1160
+neqs-0.6.1.dist-info/WHEEL,sha256=1yFddiXMmvYK7QYTqtRNtX66WJ0Mz8PYEiEUoOUUxRY,87
+neqs-0.6.1.dist-info/licenses/LICENCE,sha256=SYnVGZB659zuACqHpw_1J7fqgR461y2e9VgduMYOZi8,1071
+neqs-0.6.1.dist-info/RECORD,,
