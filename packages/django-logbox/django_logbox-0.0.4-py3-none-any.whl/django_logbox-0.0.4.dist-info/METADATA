@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: django-logbox
+Version: 0.0.4
+Summary: Your small, but useful django log box. 📦
+Author: tgoddessana
+Author-email: twicegoddessana1229@gmail.com
+Requires-Python: >=3.12,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: django (>=4.2)
+Description-Content-Type: text/markdown
+
+# Django-logbox
+
