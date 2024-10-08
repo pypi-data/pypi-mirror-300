@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+src/pocket_to_bookmarks_html/__init__.py
+src/pocket_to_bookmarks_html.egg-info/PKG-INFO
+src/pocket_to_bookmarks_html.egg-info/SOURCES.txt
+src/pocket_to_bookmarks_html.egg-info/dependency_links.txt
+src/pocket_to_bookmarks_html.egg-info/entry_points.txt
+src/pocket_to_bookmarks_html.egg-info/requires.txt
+src/pocket_to_bookmarks_html.egg-info/top_level.txt
