@@ -1,0 +1,7 @@
+LICENSE
+README.md
+setup.py
+dice_calc.egg-info/PKG-INFO
+dice_calc.egg-info/SOURCES.txt
+dice_calc.egg-info/dependency_links.txt
+dice_calc.egg-info/top_level.txt
