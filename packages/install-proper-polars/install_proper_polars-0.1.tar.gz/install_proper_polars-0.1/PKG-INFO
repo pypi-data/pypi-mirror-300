@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: install-proper-polars
+Version: 0.1
+Summary: Empty package that will check available CPU flags, and install polars or polars-lts-cpu as appropriate.
+Home-page: https://github.com/michalsta/install_proper_polars
+Author: Michał Startek
+License-File: LICENSE
+Requires-Dist: polars

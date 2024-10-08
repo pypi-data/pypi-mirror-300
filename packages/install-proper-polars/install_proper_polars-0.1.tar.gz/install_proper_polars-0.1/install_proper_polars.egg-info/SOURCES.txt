@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+install_proper_polars.egg-info/PKG-INFO
+install_proper_polars.egg-info/SOURCES.txt
+install_proper_polars.egg-info/dependency_links.txt
+install_proper_polars.egg-info/requires.txt
+install_proper_polars.egg-info/top_level.txt
