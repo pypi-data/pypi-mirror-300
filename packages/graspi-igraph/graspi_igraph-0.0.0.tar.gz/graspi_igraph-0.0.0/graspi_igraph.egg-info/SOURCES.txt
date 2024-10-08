@@ -1,0 +1,6 @@
+README.md
+setup.py
+graspi_igraph.egg-info/PKG-INFO
+graspi_igraph.egg-info/SOURCES.txt
+graspi_igraph.egg-info/dependency_links.txt
+graspi_igraph.egg-info/top_level.txt
