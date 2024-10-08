@@ -1,0 +1,53 @@
+name: 🧪 Integration Tests
+
+on:
+  push:
+    branches:
+      - '**'
+
+jobs:
+  integration_tests:
+    name: Running integration tests, which require an Argilla instance running
+    runs-on: ubuntu-latest
+
+    defaults:
+      run:
+        shell: bash -l {0}
+
+    strategy:
+      fail-fast: true
+      matrix:
+        python-version: ["3.9", "3.10", "3.11"]
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: 🐍 Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+
+      - name: Cache
+        uses: actions/cache@v4
+        id: cache
+        with:
+          path: ~/.cache/pip
+          key: ${{ runner.os }}-python-${{ env.pythonLocation }}-${{ hashFiles('pyproject.toml') }}
+
+      - name: 🐳 Download Docker file
+        run: curl https://raw.githubusercontent.com/argilla-io/argilla/main/examples/deployments/docker/docker-compose.yaml -o docker-compose.yaml
+
+      - name: 🐳 Run docker-compose
+        uses: hoverkraft-tech/compose-action@v2.0.1
+        with:
+          compose-file: "docker-compose.yaml"
+
+      - name: 🗃️ Install dependencies
+        run: pip install -e ".[dev,tests]"
+
+      - name: 📈 Run tests
+        env:
+          ARGILLA_ENABLE_TELEMETRY: 0
+        run: |
+          pytest tests
