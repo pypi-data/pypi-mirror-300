@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: wordlift-client
+Version: 1.56.0
+Summary: SEO Content Analysis API
+Home-page: 
+Author: WordLift
+Author-email: hello@wordlift.io
+License: (c) copyright 2023-present WordLift
+Keywords: OpenAPI,OpenAPI-Generator,SEO Content Analysis API
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+    This API assesses the match between a URL or text content, a query, and an intent, using advanced SEO techniques.
+    
