@@ -1,0 +1,12 @@
+boto3>=1.35
+certifi>=2024.8.30
+o7util>=0.1
+pandas>=2.2
+
+[dev]
+pytest
+pytest-cov
+pytest-mock
+
+[pdf]
+o7pdf>=0.0.1
