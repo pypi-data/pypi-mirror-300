@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "paulius-l-biudzetas"
+version = "0.1.1"
+description = ""
+authors = ["PowFox <lapienis.paulius@yahoo.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+naujas-projektas = "^0.1.0"
+ernestas-biudzetas = "^0.1.0"
+ignas-t-biudzetas = "^0.1.0"
+pandas = "^2.2.3"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
