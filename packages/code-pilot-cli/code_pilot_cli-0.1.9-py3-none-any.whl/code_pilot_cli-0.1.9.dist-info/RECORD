@@ -1,0 +1,16 @@
+code_pilot_cli/__init__.py,sha256=U1zCbI90E0xx-SK5sMrRtgN-Sfb_zmXFz3v00aSMKfc,1330
+code_pilot_cli/__main__.py,sha256=qwsB-2DToCw1tCJzeOUMuqcvWlWR9fj68kjURUzQuYM,122
+code_pilot_cli/app.py,sha256=EejqCIFkevQGWouwIVZodjZ9NKw39BaydgVKzMhiOf0,410
+code_pilot_cli/commands/__init__.py,sha256=iLlBtx9xzRAgMs_eQaUNHkcITLchHGOrt-poWfpVqeY,469
+code_pilot_cli/commands/ai.py,sha256=99b2CfT375T1jOdLCMU9jFyPq-V3dR3FE6j7DZ8UawA,2201
+code_pilot_cli/commands/chat.py,sha256=aEr_bg6_ymFEK4OFAgtxdy59C-00i6VmV9bgDaMPaIg,3640
+code_pilot_cli/commands/completions.py,sha256=R3pH9h3IhdUXqxanzYWy0-o3V1zOih_NS_TLFJMbwRI,1918
+code_pilot_cli/commands/document.py,sha256=gCRflsvpETpIukikNKMW6d8tmulafD-mLV-VHMfHgH0,2272
+code_pilot_cli/commands/enhance.py,sha256=FOiD4NGpVfGc5PXzzddvL8GJKYKJiBNAYANwVAbgMcQ,2233
+code_pilot_cli/commands/review.py,sha256=VVWyOWv7u_cXwhTdqt9cQbQrv9VjIEiTin-en_glJNs,2116
+code_pilot_cli/commands/scan.py,sha256=mS9DS8q5Evvx3M1NG0aq0kD7Fvz5m6h1iPd5l2EuSrc,2040
+code_pilot_cli-0.1.9.dist-info/LICENSE,sha256=Zo5PuaTrrV44clxzVw37PRU85t-nEerih6lzEp4N9AU,1074
+code_pilot_cli-0.1.9.dist-info/METADATA,sha256=9XFNz1xCTioBmUU4lFM4-mnOGHg-XlMrl4ZsixWU2kQ,3522
+code_pilot_cli-0.1.9.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+code_pilot_cli-0.1.9.dist-info/entry_points.txt,sha256=subZs8AzzEBZB8OL60eOiTfA-V3DQul7mGN8Ur3oO_Q,60
+code_pilot_cli-0.1.9.dist-info/RECORD,,
