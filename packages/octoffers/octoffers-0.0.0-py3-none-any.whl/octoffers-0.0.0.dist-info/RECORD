@@ -1,0 +1,15 @@
+octoffers/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+octoffers/__main__.py,sha256=yy7eJSp1Z70ayjzF9tIdYM7_K6qzjY4eJU3wQrE84GY,527
+octoffers/db/schemes/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+octoffers/db/schemes/djinni.py,sha256=kTq51uBBkM_MAW8HemuROIqTgdAtYfOsz3BYeiMw6Pk,635
+octoffers/db/schemes/indeed.py,sha256=EcLcwwcNAm2azJSJAOLIaPdZJZ0zeFhYtmyi7Q59L9k,607
+octoffers/intergrations/chat_gpt.py,sha256=EQtmUmP8SKd7kfAlTVal9brlJYSpzTxeSQ9xJ0RuLdo,1285
+octoffers/platforms/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+octoffers/platforms/djinni.py,sha256=toBGw-uCLxrnsvFWyYislCiVzcrW2DnVzeKXOM2SzlM,7490
+octoffers/platforms/driver.py,sha256=TgqOREfko3U3rD64CMu1hEqN5J3jQz154bpupcEyN9o,1656
+octoffers/platforms/profile.py,sha256=ihghYFPEoxiBOc-WTBD__QtGuNkCA0wfJcGmsvLEWEw,679
+octoffers-0.0.0.dist-info/LICENSE,sha256=4hnmqXWwpXjLQbg6zVrWGgN0klaCoCHK6yXqVeiFDfk,1501
+octoffers-0.0.0.dist-info/METADATA,sha256=CoIhqaF6o2RT9kCCO6uSxLMDRnYKM8R37NslzdKJ_KQ,76
+octoffers-0.0.0.dist-info/WHEEL,sha256=GV9aMThwP_4oNCtvEC2ec3qUYutgWeAzklro_0m4WJQ,91
+octoffers-0.0.0.dist-info/top_level.txt,sha256=tMgjDHwI79_FTMm1-N_i2U_QvyhKRTDhRaW2xITIguI,10
+octoffers-0.0.0.dist-info/RECORD,,
