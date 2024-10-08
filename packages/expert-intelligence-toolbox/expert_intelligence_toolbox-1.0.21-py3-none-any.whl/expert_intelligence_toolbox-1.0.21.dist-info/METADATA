@@ -1,0 +1,39 @@
+Metadata-Version: 2.3
+Name: expert_intelligence_toolbox
+Version: 1.0.21
+Summary: Collection of geospatial and transformational functions used by Expert Intelligence Lda.
+Project-URL: Homepage, https://github.com/Point-Topic/expert_intelligence_toolbox
+Project-URL: Bug Tracker, https://github.com/Point-Topic/expert_intelligence_toolbox/issues
+Author-email: Arnold Kuersteiner <arnold.kuersteiner@expert-intelligence.com>, Pham Minh Ky <ky.pham@expert-intelligence.com>
+License-File: LICENSE
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.7
+Requires-Dist: configparser
+Requires-Dist: geolib
+Requires-Dist: geopandas
+Requires-Dist: geopy
+Requires-Dist: osmpythontools
+Requires-Dist: pandas
+Requires-Dist: pyarrow
+Requires-Dist: shapely
+Requires-Dist: snowflake-connector-python
+Requires-Dist: snowflake-sqlalchemy
+Requires-Dist: sqlalchemy
+Description-Content-Type: text/markdown
+
+# Expert Intelligence Toolbox
+
+Expert Intelligence is a broadband research company. Our work involves geographic data across different granularities and classification systems.
+
+This toolbox contains functions to help us do our work.
+
+Mac users may need to install lxml, which will need to be downloaded separately first.
+
+Internal users: Use 'instructions.md' for information on maintaining this package.
+
+```
+xcode-select --install
+pip install lxml==4.9.2
+```
