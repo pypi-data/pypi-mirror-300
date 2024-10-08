@@ -1,0 +1,9 @@
+e2_tts_mlx/__init__.py,sha256=jIXfIpm5pYP4BmoySVPOhP7Sf4mxI_aDNl3zmiQVKxk,54
+e2_tts_mlx/data.py,sha256=_lOUTAC3UccevhVZPvwAAfbKtVDa30wYUJ9Q3ks5M-w,6977
+e2_tts_mlx/model.py,sha256=VplTUzwIhWYl8qyl2VGGnspptu3Azh-mm4lbyJzJJhE,34603
+e2_tts_mlx/trainer.py,sha256=Ezp7E0DN2sa0Dlx_wf6hArPBdnUsYno7imeqKpgqsM8,5558
+mlx_e2_tts-0.0.5.dist-info/LICENSE,sha256=FOiXioOaSycGiD0M9cD6Tq1epUTdrbKXFfCFV9LJ4JU,1069
+mlx_e2_tts-0.0.5.dist-info/METADATA,sha256=we4Yg9a3EWMmx-2iq28OWoLqtRsSKW2TmPvguhiBZWo,3633
+mlx_e2_tts-0.0.5.dist-info/WHEEL,sha256=GV9aMThwP_4oNCtvEC2ec3qUYutgWeAzklro_0m4WJQ,91
+mlx_e2_tts-0.0.5.dist-info/top_level.txt,sha256=C6Xx6L0rJJ0g1PcUkLgPaNl1eH9se6bfV-F1C9JPE6c,11
+mlx_e2_tts-0.0.5.dist-info/RECORD,,
