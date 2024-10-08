@@ -1,0 +1,12 @@
+django_pg_migration_tools/__init__.py,sha256=ZLJWFMbbrh-KmpU5k5uFjLXR0xG3uPYbDZVT7FSKoBI,52
+django_pg_migration_tools/operations.py,sha256=B3Fof6es6CS5WJXsmdPWPJKplCelUJibw7UZbCNawVc,14665
+django_pg_migration_tools/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+django_pg_migration_tools/timeouts.py,sha256=pam2jFE_vfvooiEiOye6fhBGWuBqmhcsxhBGq98TTT4,10153
+django_pg_migration_tools/management/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+django_pg_migration_tools/management/commands/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+django_pg_migration_tools/management/commands/migrate_with_timeouts.py,sha256=sq-T1s9K0G5tCnZWqiBcv7wtTRch6Qtqh5o3YWXgrFk,10765
+django_pg_migration_tools-0.1.6.dist-info/LICENSE,sha256=18bWQLdz1nyPVlPz76npP52gBJ-erw0V7RWgFL-HfoY,1514
+django_pg_migration_tools-0.1.6.dist-info/METADATA,sha256=A4YDuY6pzii__mFT85gQCOvtgtZNZWbPfc9zIVyDJ6I,4055
+django_pg_migration_tools-0.1.6.dist-info/WHEEL,sha256=GV9aMThwP_4oNCtvEC2ec3qUYutgWeAzklro_0m4WJQ,91
+django_pg_migration_tools-0.1.6.dist-info/top_level.txt,sha256=UEy8w4BNW7poihEvY13O9yJQ6SWr7vR5Qjh8ddAsz6Y,26
+django_pg_migration_tools-0.1.6.dist-info/RECORD,,
