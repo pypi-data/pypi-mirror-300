@@ -1,0 +1,10 @@
+ci_temp.py,sha256=cIskXOic-PbY6DWih5aImiFJp2ihVsRGmSK94Xu-Po8,3086
+ocderase.py,sha256=rm0tiXLTiY7l1mwXqGUgd3F2vORis19uApN0vK2zD0o,3026
+ocdflash.py,sha256=yZpO_AQ_9jJksxhbsXIGLncy6tl27LHbBl1hK4rzhEY,4859
+ocdopen.py,sha256=OLZOSXF0k1gD1HnJhCu6qUpNtXLR9Iwa2S-a3ljWF9Y,3573
+ocdreset.py,sha256=WRmievMzjohw-K7m3BERAqsYAVe1aJmE5pTOawjkWg0,3026
+resource_manager_cli.py,sha256=x8DyUVL9dvnvOc7tKHo5w_QxXmDNm_Qvo6E8_A-TvV8,8985
+btm_resource_manager-1.3.1.dist-info/METADATA,sha256=RTNnEB_DQy0890sKQb5Hv_is1MNc7XPldrp_rQSF6Ks,8525
+btm_resource_manager-1.3.1.dist-info/WHEEL,sha256=1yFddiXMmvYK7QYTqtRNtX66WJ0Mz8PYEiEUoOUUxRY,87
+btm_resource_manager-1.3.1.dist-info/entry_points.txt,sha256=yF8AtwL_MSW0ZsjVjrX1IhsoirNkTBLLmVCWed-qEGY,222
+btm_resource_manager-1.3.1.dist-info/RECORD,,
