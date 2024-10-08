@@ -1,0 +1,92 @@
+[build-system]
+requires = ["flit_core >=3.2,<4"]
+build-backend = "flit_core.buildapi"
+
+[project]
+name = "rofi-tmuxp"
+authors = [
+    {name = "Heinrich Kruger", email = "heindsight@kruger.dev"},
+]
+readme = "README.rst"
+version = "0.6.0"
+dynamic = ["description"]
+licence = {file = "LICENSE"}
+urls = {Homepage = "https://github.com/heindsight/rofi-tmuxp"}
+keywords = ["rofi", "tmux", "tmuxp"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: End Users/Desktop",
+    "License :: OSI Approved :: MIT License",
+    "Topic :: Desktop Environment :: Window Managers",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+]
+requires-python = "~=3.8"
+dependencies = [
+    "pyyaml",
+    "tmuxp ~= 1.1",
+]
+
+[project.optional-dependencies]
+dev = [
+    "black",
+    "docformatter",
+    "flake8",
+    "flake8-pyproject",
+    "flake8-pytest-style",
+    "isort",
+    "mypy",
+    "pdbpp",
+    "pytest",
+    "pytest-cov",
+    "pytest-mock",
+    "pytest-randomly",
+    "rstcheck",
+    "types-pyyaml",
+]
+
+[project.scripts]
+rofi-tmuxp = "rofi_tmuxp:main"
+
+[tool.flit.module]
+name = "rofi_tmuxp"
+
+[tool.flit.sdist]
+include = ["test/", "tox.ini"]
+exclude = [".github/", ".gitignore"]
+
+[tool.isort]
+profile = "black"
+lines_after_imports = 2
+
+[tool.docformatter]
+black = true
+
+[tool.flake8]
+max-line-length = 88
+extend-ignore = "E203"
+pytest-fixture-no-parentheses = true
+
+[tool.pytest.ini_options]
+addopts = [
+    "--cov",
+    "--no-cov-on-fail",
+]
+
+[tool.coverage.run]
+branch = true
+
+[tool.coverage.report]
+fail_under = 100
+show_missing = true
+
+[tool.mypy]
+strict = true
+
+[[tool.mypy.overrides]]
+module = "tmuxp.*"
+ignore_missing_imports = true
