@@ -1,0 +1,11 @@
+maintainers_and_authors/__about__.py,sha256=7mxOgsnO_2Uha3ZR07Mi-00hWYYPK788nTW8-goPaB0,112
+maintainers_and_authors/__init__.py,sha256=zmi3FXN2q9xEk9dTv809hYj0cwxnpCVXc7osIbFkAUY,89
+maintainers_and_authors/__main__.py,sha256=Sv8x49CgxEFP6mRf6_Pudhcb64CscpVOdtu7r-x_eMo,169
+maintainers_and_authors/api.py,sha256=5rKq6mWj6rkoviXn14prBEX2FqTv1WNir7Tx6XMWAJ8,258
+maintainers_and_authors/cli.py,sha256=G05JCc6D9eBHdfs6eOQBxyRCiJpqu9eFbMUROjr3dsw,324
+maintainers_and_authors/core.py,sha256=0BAs2ApaBv9Lc6TQJUeeSXLsDbsZGACdbcU3kcG7Sw4,3556
+maintainers_and_authors-0.0.1.dist-info/METADATA,sha256=RG4pwT_wlfY9jzfzZWO9aMk3zCF0a5Sx_o409VInuOc,1374
+maintainers_and_authors-0.0.1.dist-info/WHEEL,sha256=1yFddiXMmvYK7QYTqtRNtX66WJ0Mz8PYEiEUoOUUxRY,87
+maintainers_and_authors-0.0.1.dist-info/entry_points.txt,sha256=dBGb9UdysEwiCdhbOIiiFiUB-3G_eCvGkc7uX-FT7yg,77
+maintainers_and_authors-0.0.1.dist-info/licenses/LICENSE.txt,sha256=R4NoazGD504IoyRM1dqDE7jwO4qfgPVnk1YoZD-9JmY,1087
+maintainers_and_authors-0.0.1.dist-info/RECORD,,
