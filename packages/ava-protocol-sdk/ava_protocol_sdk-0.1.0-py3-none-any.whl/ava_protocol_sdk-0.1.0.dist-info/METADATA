@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: ava_protocol_sdk
+Version: 0.1.0
+Summary: Python SDK for smart contract deployment automation with Ava Protocol
+Home-page: https://github.com/hmltn-0/ava-eth-sdk
+Author: Julius Hamilton
+Author-email: juliushamilton100@example.com
+License-File: LICENSE
+Requires-Dist: grpcio
+Requires-Dist: grpcio-tools
+
