@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "llm_tasker"
+version = "0.1.1"
+description = "A lightweight Python library for creating tasks and workflows with Large Language Models (LLMs) using prompt templates."
+authors = ["Nikita Irgashev <nik.irg@yandex.ru>"]
+license = "MIT"
+readme = "README.md"
+packages = [{include = "llm_tasker"}]
+homepage = "https://github.com/nikirg/llm_task"
+repository = "https://github.com/nikirg/llm_task"
+documentation = "https://github.com/nikirg/llm_task"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+pydantic = "^2.9.2"
+openai = "^1.51.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
