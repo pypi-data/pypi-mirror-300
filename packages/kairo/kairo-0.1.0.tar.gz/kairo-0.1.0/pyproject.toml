@@ -1,0 +1,30 @@
+[project]
+name = "kairo"
+version = "0.1.0"
+description = "Kairo is a Python program that wraps API endpoints converting them to useful cli commands."
+authors = [
+    { name = "Marco Espinosa", email = "marco@marcoespinosa.com" },]
+license = { file = "LICENSE" }
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "typer>=0.12.5",
+]
+
+[tool.uv]
+dev-dependencies = [
+    "pytest-coverage>=0.0",
+    "pytest>=8.3.3",
+    "ruff>=0.6.9",
+]
+
+[tool.ruff]
+line-length = 100
+lint.select = ["E", "F", "W"]
+
+[project.scripts]
+kairo = "kairo.cli:app"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"

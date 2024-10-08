@@ -1,0 +1,81 @@
+Metadata-Version: 2.3
+Name: kairo
+Version: 0.1.0
+Summary: Kairo is a Python program that wraps API endpoints converting them to useful cli commands.
+Author-email: Marco Espinosa <marco@marcoespinosa.com>
+License: MIT License
+        
+        Copyright (c) 2024 Marco Espinosa
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy
+        of this software and associated documentation files (the "Software"), to deal
+        in the Software without restriction, including without limitation the rights
+        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+        copies of the Software, and to permit persons to whom the Software is
+        furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in all
+        copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+        SOFTWARE.
+License-File: LICENSE
+Requires-Python: >=3.12
+Requires-Dist: typer>=0.12.5
+Description-Content-Type: text/markdown
+
+<!-- Logo -->
+<!-- <p align="center">
+  <a href="https://www.freepik.com/icon/pill_5419351"><img width="256" height="256" src="https://raw.githubusercontent.com/maekind/kairo/main/logo.png"></a>
+</p> -->
+<!-- Shields -->
+<p align="center">
+<a href="https://github.com/maekind/kairo"><img src="https://img.shields.io/github/actions/workflow/status/maekind/kairo/.github%2Fworkflows%2Ftesting.yaml?label=tests&color=green" hspace="5"></a>
+<a href="https://codecov.io/gh/maekind/kairo"><img src="https://codecov.io/gh/maekind/kairo/graph/badge.svg?token=JcGna50uJL" hspace="5"/> 
+ </a>
+<a href="https://github.com/maekind/kairo/releases"><img src="https://img.shields.io/github/actions/workflow/status/maekind/kairo/.github%2Fworkflows%2Frelease.yaml?label=package&color=green" hspace="5"></a>
+<a href="https://pypi.org/project/kairo"><img src="https://img.shields.io/github/v/release/maekind/kairo?color=blue&label=pypi latest" hspace="5"></a>
+<br>
+<a href="https://github.com/maekind/kairo/blob/main/LICENSE"><img src="https://img.shields.io/badge/License-MIT-orange.svg" hspace="5"></a>
+<a href="https://github.com/maekind/kairo"><img src="https://img.shields.io/github/repo-size/maekind/kairo?color=red" hspace="5"></a>
+<a href="https://github.com/maekind/kairo"><img src="https://img.shields.io/github/last-commit/maekind/kairo?color=black" hspace="5"></a>
+<a href="https://www.python.org/downloads/"><img src="https://img.shields.io/github/languages/top/maekind/kairo?color=darkgreen" hspace="5"></a>
+<a href="https://www.python.org/downloads/"><img src="https://img.shields.io/badge/python%20version-%3E3.12-lightblue" hspace="5"></a>
+</p>
+
+<h1 align="center">KAIRO (回路)</h1>
+
+**Kairo** is an Open Source project that wraps API endpoints converting them to useful cli commands.
+
+## What does Kairo mean?
+
+**Kairo** is a Japanese word that means literally *circuit*. It represents the connection, flow, and logic, closely related to how APIs function.
+
+## Specification support
+
+**Kairo** supports the following specifications:
+
+- [OpenAPI 3](https://swagger.io/specification/)
+- [{JSON:API}](https://jsonapi.org/)
+
+## Installation
+
+TBD
+
+## Usage
+
+TBD
+
+## Contributors
+
+<a href="https://github.com/maekind/kairo/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=maekind/kairo" />
+</a>
+<br/>
+<br/>
+<a href="mailto:marco@marcoespinosa.com"> Say hello!</a>

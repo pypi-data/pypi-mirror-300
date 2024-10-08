@@ -1,0 +1,11 @@
+{
+    "editor.rulers": [
+        100,
+    ],
+    "workbench.colorCustomizations": {
+        "editorRuler.foreground": "#fd686888"
+    },
+    "python.testing.pytestEnabled": true,
+    
+
+}
