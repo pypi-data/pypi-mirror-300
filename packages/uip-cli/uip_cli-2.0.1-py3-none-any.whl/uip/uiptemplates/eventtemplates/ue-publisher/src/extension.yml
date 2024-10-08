@@ -1,0 +1,17 @@
+{% set api_level_parts = extension_api_level.split('.') %}
+{% set api_level_major = api_level_parts[0]|int %}
+{% set api_level_minor = api_level_parts[1]|int %}
+{% set api_level_patch = api_level_parts[2]|int %}
+extension:
+  name: {{ extension_name }}
+  version: "{{ extension_version }}"
+  api_level: "{{ extension_api_level }}"
+  requires_python: "{{ extension_requires_python }}"
+  {% if (api_level_major > 1) or (api_level_major == 1 and api_level_minor >= 4) %}
+  zip_safe: {{ zip_safe }}
+  {% endif %}
+owner:
+  name: {{ owner_name }}
+  organization: {{ owner_organization }}
+comments: |
+  Created using ue-publisher template

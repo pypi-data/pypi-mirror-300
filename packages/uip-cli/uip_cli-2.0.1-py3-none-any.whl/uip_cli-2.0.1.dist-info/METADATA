@@ -1,0 +1,1124 @@
+Metadata-Version: 2.1
+Name: uip-cli
+Version: 2.0.1
+Summary: Universal Extension CLI for interfacing with Controller Web Services
+Home-page: UNKNOWN
+Author: Stonebranch
+License: GNU General Public License
+Platform: UNKNOWN
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.6
+Description-Content-Type: text/x-rst
+Requires-Dist: jsonschema (>=3.2.0)
+Requires-Dist: colorama (>=0.4.4)
+Requires-Dist: requests (>=2.26.0)
+Requires-Dist: jinja2 (>=2.11.3)
+Requires-Dist: prettytable (>=1.0.1)
+Requires-Dist: pyyaml (>=5.4.1)
+Requires-Dist: setuptools (>=44.1.1)
+Requires-Dist: wheel (>=0.37.1)
+Provides-Extra: tests
+Requires-Dist: configparser ; extra == 'tests'
+Requires-Dist: mock ; extra == 'tests'
+Requires-Dist: pyyaml ; extra == 'tests'
+Requires-Dist: pytest ; extra == 'tests'
+Requires-Dist: parameterized ; extra == 'tests'
+Requires-Dist: pytest-cov ; extra == 'tests'
+
+Universal Integration Platform Command Line Utility
+===================================================
+
+Overview
+========
+``uip-cli`` is a command line utility by Stonebranch Inc. that is used
+to interface with the Universal Extension Web Service APIs. The goal of
+the CLI is to make the process of creating, editing, and deploying
+Extensions convenient and fast.
+
+Features
+--------
+
+-  Quickly prototype Extensions using starter (or custom) Extension Templates
+-  Build and upload Extensions and/or Universal Templates
+-  Pull the latest Universal Template source files from the Controller
+-  Download the full Universal Template package 
+
+Getting Started
+===============
+Requirements
+------------
+
+``uip-cli`` works with Python 3.6 and greater on Windows, Linux, and
+MacOS, and uses the following third party libraries:
+
+- ``jsonschema`` (3.2.0)
+- ``colorama`` (0.4.4)
+- ``requests`` (2.26.0) 
+- ``jinja2`` (2.11.3) 
+- ``prettytable`` (1.0.1)
+- ``pyyaml`` (5.4.1)
+- ``setuptools`` (44.1.1)
+- ``wheel`` (0.37.1)
+
+All the required libraries listed above are automatically installed
+during the installation process
+
+Installation
+------------
+
+To install ``uip-cli``, download it from `PyPI <https://pypi.org/>`_ and install it with ``pip``.
+To ensure proper installation/upgrade, the version of ``pip`` installed should be 20.0.1 or greater.
+
+The ``setuptools`` module, which should already be installed with ``pip`` is required to install 
+``uip-cli``. To ensure a smooth installation,  we recommend using ``setuptools`` version 44.1.1 
+or greater.
+
+To upgrade ``pip`` and ``setuptools`` prior to installing ``uip-cli``, enter the following command:
+::
+
+    $ python -m pip install --upgrade pip setuptools
+
+To install: 
+::
+
+    $ pip install uip-cli
+
+To upgrade:
+::
+
+    $ pip install uip-cli --upgrade 
+
+The CLI is installed as ``uip``. To confirm it is installed properly, type the following:
+::
+
+    $ uip 
+
+and you should see something similar to:
+:: 
+
+    usage: uip [-h] <command> ...
+
+    optional arguments:
+    -h --help
+                    show this help message and exit
+
+    commands:
+      <command>
+        init         initialize a new project with starter Extension templates
+        template     used to perform actions on built-in (and external) templates
+        build        used to build Extension or full package
+        upload       upload Extension (or full package) to the Controller
+        push         build and upload Extension (or full package) to the Controller
+        pull         pulls the latest template.json (and template_icon.png, if
+                    present)
+        download     downloads the full Universal Template package
+        clean        used to purge build artifacts
+        task         used to perform actions on Universal Extension tasks
+        template-list
+                    list of available Extension templates. Note: this command will
+                    be deprecated in two releases
+
+    examples:
+    uip <command>
+    uip init
+    uip download
+
+Basic Usage 
+===========
+``uip-cli`` currently supports the following commands:
+
+- init 
+- template
+
+  - list
+  - add
+  - delete
+  - export
+- build 
+- upload 
+- push 
+- pull 
+- download
+- clean
+- task
+
+  - launch
+  - status   
+  - output
+- template-list (will be deprecated in two releases. replaced by the ``template list`` command)
+
+
+A brief overview of each of the commands is provided below along with 
+some examples. It is highly recommended to go through the `Extension Development <https://docs.stonebranch.com/confluence/display/UC73/Extension+Development>`_
+document for a more detailed demonstration.
+
+``init`` 
+--------
+This command is used to initialize a new project using a custom, user-specified
+template or one of the provided starter Extension templates. It can also be used
+to initialize an existing, *partially valid* Extension project.
+
+**To initialize a brand new project using a starter Extension template, issue the 
+following command**:
+:: 
+
+    $ uip init -t ue-task -e 'extension_name=my_sample_extension'
+
+
+- The ``-t`` option accepts the name of the starter Extension template. For a full 
+  list of the available Extension templates, see the ``template list`` command below. 
+- The ``-e`` option is used to configure the starter Extension template with user-defined 
+  variables. See the ``template list`` command for instructions on obtaining 
+  a full list of configurable variables. 
+
+Once the CLI executes the command, a project will be initialized in the current 
+working directory with the following structure:
+::
+
+    |   setup.cfg
+    |   setup.py
+    |   __init__.py
+    |
+    |---.uip
+    |   |---config
+    |           uip.yml
+    |
+    |---src
+        |   extension.py
+        |   extension.yml
+        |   __init__.py
+        |
+        |---templates
+                template.json
+
+
+Note that the file system layout above demonstrates a complete, valid Extension project.
+
+
+Users who created an Extension project outside of ``uip-cli`` (e.g., the project structure
+was created manually following instructions in the How-To/Getting Started guide) will not
+have the  ``.uip`` folder. Such a directory structure is *partially valid*. 
+
+**To convert an existing, partially valid Extension project into a fully valid one, 
+issue the following command:**
+
+:: 
+
+    $ uip init 
+
+The CLI will first check to make sure ``extension.py``, ``extension.yml``, and ``template.json``
+exist in their respective directories shown above. If so, the CLI will create the ``.uip`` folder.
+Additionally, if ``setup.py`` and ``setup.cfg`` are not present, they will be
+created along with the ``.uip`` folder.
+
+**How to create a custom/configurable Extension template**:
+
+The CLI is equipped with two built-in, configurable Extension templates:
+``ue-task`` and ``ue-publisher``. These two templates may not be enough for some
+users. To get around this, the CLI supports initializing from external, user-built
+Extension templates. 
+
+This section will outline the basic requirements for creating a custom, configurable
+Extension template.
+
+Assuming a folder named ``my_template`` exists, it must contain (at minimum) the following
+files/folders to be considered a valid Extension template:
+
+::
+
+    my_template
+    |-- template_config.yml
+    |-- src/
+        |-- extension.py
+        |-- extension.yml
+        |-- templates/
+            |-- template.json 
+
+Aside from the usual Extension related files, ``template_config.yml`` is also needed to make
+the template configurable. 
+
+The file must contain:
+
+- ``name``: a string that identifies the name of the template (this is NOT referring to the Universal Template name).
+- ``version``: a string that identifies the template version. Not restricted to ``x.y.z`` (SemVer); it could be anything (e.g. ``v1``). 
+- ``description``: a string describing the template.
+
+and can optionally contain:
+
+- ``files_to_template``: an array containing paths to files that will be "templated" using ``Jinja2``. All files must be specified relative to ``template_config.yml``.
+- ``variables``: a mapping/dictionary of variables that will be substituted in the relevant files specified by ``files_to_template``. The value of each key/variable is another mapping/dictionary that must contain ``default`` and ``description``.
+
+Shown below is a sample ``template_config.yml``:
+
+::
+
+    name: my_template
+
+    version: 1.0.0
+
+    description: this is the description for my_template
+
+    files_to_template: 
+      - src/extension.py
+      - src/templates/template.json
+
+    variables:
+      msg:
+        default: test_message
+        description: message to print to STDOUT and STDERR
+      log_level:
+        default: Info
+        description: Universal Template Log Level 
+
+As mentioned, the CLI uses the ``Jinja2`` module to substitute the variables in each file from ``files_to_template``. For instance,
+if ``src/extension.py`` or ``src/templates/template.json`` mention ``{{ msg }}`` or ``{{ log_level }}``, the entirety of
+``{{ msg }}``/``{ log_level }}`` will be replaced with the user-specified value (or the default, if nothing is specified).
+
+Once the custom Extension template is created, it can be zipped up or pushed out to a Git repository. The CLI supports initializing from both
+of these ways, which makes the custom template easy to distribute. The next section will outline the details regarding this functionality.
+
+**Packaging custom-built Extension Templates**:
+
+Once a custom template has been created, it must be packaged into either a
+zip file or a Git repository.
+
+Shown below is the structure of a valid, custom template zip called ``my_template.zip``:
+
+::
+
+    my_template.zip
+    |-- template_config.yml
+    |-- src/
+        |-- extension.py
+        |-- extension.yml
+        |-- templates/
+            |-- template.json 
+
+The custom template can also be pushed out to a Git repository. In this case, the zip file
+won't be part of the repository. In other words, the top-level file and folder should be ``template_config.yml``
+and ``src/``, respectively.
+
+**Initializing a custom-built Extension Template**:
+
+Assuming a custom template has been packaged based on the guidelines from the previous
+section, it is ready to be used!
+
+The CLI supports initializing custom-built templates from:
+
+- a zip file
+- a http(s) link to a zip file
+- a Git repository
+
+**Initializing from a zip file**:
+
+To initialize the template zip without saving it:
+::
+
+    $ uip init -t <path to zip file>
+
+To initialize and save the template zip:
+::
+
+    $ uip init -t <path to zip file> --save
+
+Once saved, the template will be available in the ``template list`` command. At this point, the template can be
+initialized similarly to ``ue-task`` and ``ue-publisher``.
+
+**Initializing from a http(s) link**:
+
+The CLI supports initializing from both HTTP and HTTPS links that point to a zip file (link normally ends in .zip).
+
+It also supports basic authentication. The syntax is ``http://<username>:<password>@<actual url>`` (applies to HTTPS as well). For instance, if the url is ``http://mytestserver/test/my_template.zip``, the username is ``testuser``, and password is ``testpwd``, the formatted URL would be ``http://testuser:testpwd@mytestserver/test/my_template.zip``.
+
+To initialize the template without saving it:
+::
+
+    $ uip init -t <link to http(s) url>
+
+To initialize and save the template zip:
+::
+
+    $ uip init -t <link to http(s) url> --save
+
+**Initializing from a Git repository**:
+
+The CLI also supports initializing directly from a Git repository (similar to how pip installs work from a Git repo). The repo should not contain the zip file, just the raw files/folders that make up the template.
+
+The CLI relies on Git being installed on the system. If it is not, the CLI will issue an error.
+
+Both SSH and HTTPS protocols are supported.
+
+For HTTPS protocol, the url must start with ``git+`` followed by the HTTPS clone url. For instance, if the HTTPS Clone URL is ``https://gitlab-tst.com/test/templates/my_template.git``, then the syntax:
+
+To initialize the template without saving it:
+::
+
+    $ uip init -t git+https://gitlab-tst.com/test/templates/my_template.git
+
+To initialize and save the template zip:
+::
+
+    $ uip init -t git+https://gitlab-tst.com/test/templates/my_template.git --save
+
+If the repository is private and requires a username and access token to clone it, the URL should be specified as: ``git+https://<USERNAME>:<ACCESS TOKEN>@gitlab-tst.com/test/templates/my_template.git``.
+
+
+For the SSH protocol, the url must start with ``git+`` followed by the SSH clone url. For instance, if the SSH Clone URL is ``git@gitlab-tst.com:test/templates/my_template.git``, then the syntax:
+
+To initialize the template without saving it:
+::
+
+    $ uip init -t git+git@gitlab-tst.com:test/templates/my_template.git
+
+To initialize and save the template zip:
+::
+
+    $ uip init -t git+git@gitlab-tst.com:test/templates/my_template.git --save
+
+The CLI also supports cloning a specific branch/commit/tag. This can be done by appending the branch/commit SHA/tag at the end of the URL using ``@branch``, ``@commit``, or ``@tag``. For instance, to clone
+
+a branch named ``test1``
+::
+
+    HTTPS URL: git+https://gitlab-tst.com/test/templates/my_template.git@branch:test1
+    SSH URL: git+git@gitlab-tst.com:test/templates/my_template.git@branch:test1
+
+a commit with SHA ``9ab454ef``:
+::
+
+    HTTPS URL: git+https://gitlab-tst.com/test/templates/my_template.git@commit:9ab454ef
+    SSH URL: git+git@gitlab-tst.com:test/templates/my_template.git@commit:9ab454ef
+
+a tag named ``v1``:
+::
+
+    HTTPS URL: git+https://gitlab-tst.com/test/templates/my_template.git@tag:v1
+    SSH URL: git+git@gitlab-tst.com:test/templates/my_template.git@tag:v1
+
+
+``template`` 
+-----------------
+This command is used to perform actions on all the available, custom-built and 
+starter Extension templates. As of now, four actions/subcommands are supported: 
+``list``, ``add``, ``delete``, and ``export``.
+
+To see the list of available templates, type the following:
+::
+
+    $ uip template list
+
+Something similar to the output below should be shown:
+:: 
+
+    +--------------------+---------+---------------------------------------------------------+
+    | Extension Template | Version | Description                                             |
+    +--------------------+---------+---------------------------------------------------------+
+    | ue-task            | 1.0.0   | starter Extension with minimal code                     |
+    +--------------------+---------+---------------------------------------------------------+
+    | ue-publisher       | 1.0.0   | starter Extension with a local Universal Event template |
+    +--------------------+---------+---------------------------------------------------------+
+
+To see the list of configurable variables for one of the templates shown above, 
+type the following (same process applies to ``ue-publisher``): 
+:: 
+
+    $ uip template list ue-task 
+
+and a table of variables will be shown: 
+:: 
+
+    +---------------------------+------------------+--------------------------------+
+    | Variable Name             | Default          | Description                    |
+    +---------------------------+------------------+--------------------------------+
+    | extension_name            | ue-task          | Extension name                 |
+    | extension_version         | 1.0.0            | Extension version              |
+    | extension_api_level       | 1.1.0            | Extension API level            |
+    | extension_requires_python | >=2.6            | Extension Python requirement   |
+    | owner_name                | Stonebranch      | Extension owner's name         |
+    | owner_organization        | Stonebranch Inc. | Extension owner's organization |
+    | universal_template_name   | UE Task          | Universal Template name        |
+    +---------------------------+------------------+--------------------------------+
+
+
+To add a custom-built Extension template:
+:: 
+
+    $ uip template add <path to zip / link to zip / link to Git repository>
+
+Similar to the ``init`` command, the ``template add`` command also supports
+adding/saving custom-built templates from:
+
+- a zip file
+- a http(s) link to a zip file
+- a Git repository
+
+In fact, it does so in the same exact manner. See the ``init`` section for details.
+
+Once the template is added, it will be available for use just like ``ue-task``
+and ``ue-publisher``.
+
+
+To delete a custom-built Extension template:
+:: 
+
+    $ uip template delete <template name>
+
+
+To export an Extension template:
+:: 
+
+    $ uip template export <template name>
+
+
+``build`` 
+---------
+This command is used to build an Extension or the full package. 
+A full package build consists of the Universal Template and the Extension. 
+
+The command also supports building extensions with third-party Python packages.
+To do so, create a file called ``requirements.txt`` in the Extension folder.
+Running ``uip build`` will then create a ``3pp`` folder, install all PyPi packages
+specified in ``requirements.txt`` to ``3pp``, and package it in the extension zip
+(or the full package).
+
+
+To build the Extension only:
+:: 
+
+    $ uip build 
+
+To build the full package:
+:: 
+
+    $ uip build -a 
+
+To build the dependency wheel file only:
+:: 
+
+    $ uip build -d
+
+
+``upload`` 
+----------
+This command is used to upload an Extension or the full package to the 
+Controller. 
+
+To upload the Extension only:
+:: 
+
+    $ uip upload 
+
+
+``uip-cli`` uploads the Extension to the Universal Template specified in the 
+``template.json`` file. If the template.json file is corrupted or name field 
+is missing, the upload will fail.
+
+To upload the full package:
+:: 
+
+    $ uip upload -a 
+
+
+``push`` 
+--------
+This command is a combination of the build and upload command. 
+
+To push the Extension only:
+:: 
+
+    $ uip push 
+
+
+``uip-cli`` pushes the Extension to the Universal Template specified in the 
+``template.json`` file. If the template.json file is corrupted or name field 
+is missing, the push will fail.
+
+To push the full package (the Universal Template and Extension):
+:: 
+
+    $ uip push -a 
+
+
+``pull`` 
+--------
+This command is used to pull the Universal Template source files
+``template.json`` and ``template_icon.png`` (if present). These files
+are placed in the ``src/templates`` folder. 
+
+As with the ``push`` command, ``uip-cli`` obtains the Universal Template name
+from the ``template.json`` file that exists in the project directory.
+If the ``template.json`` file is corrupted or the name field is missing, the 
+pull will fail.
+
+
+To pull the source files:
+::
+
+    $ uip pull 
+
+
+``download``
+------------
+This command is used to download the full Universal Template as a zip.  
+
+``uip-cli`` obtains the Universal Template name from the ``template.json`` 
+file that exists in the project directory. If the ``template.json`` file 
+is corrupted or the name field is missing, the download will fail.
+
+To download the full Universal Template:
+::
+
+    $ uip download 
+
+Optionally, it is possible to download another Universal Template by 
+specifying the Universal Template name:
+:: 
+
+    $ uip download -n <universal template name>
+
+
+``clean`` 
+---------
+This command is used to purge build artifacts.
+
+Build artifacts include anything inside the dist, build, and temp folders 
+(including the folders themselves).
+
+To purge the build artifacts:
+:: 
+
+    $ uip clean
+
+Optionally, it is also possible to purge the 3pp folder (if it exists) using:
+:: 
+
+    $ uip clean --all
+
+
+``task``
+------------
+This command is used to perform actions on Universal Extension tasks. 
+As of now, three actions/subcommands are supported: ``launch``, ``status``, 
+and ``output`` which allow the CLI to launch, get status, and get output of
+Universal Extension tasks. 
+
+All three subcommands must be used in a complete, valid Extension project 
+to work.
+
+To launch an Universal Extension task:
+::
+
+    $ uip task launch <task name> 
+
+By default, the CLI will launch the task and continuously print the status 
+of the task until it succeeds/fails. Upon success/failure, the task output 
+will be printed as well. If the ``--no-wait`` option is specified, the CLI 
+will exit immediately after launching the task (task status and output will 
+NOT be printed). 
+
+To get the status of Universal Extension task instances:
+:: 
+
+    $ uip task status <task name>
+
+By default, the CLI will print the status and exit code of the most recent 
+task instance of the specified task. The ``--num-instances`` option can be 
+used to specify the number of task instances to get the status of. If a 
+nonpositive integer is specified, the status of all the instances will be 
+printed. 
+
+To get the output of an Universal Extension task instance:
+:: 
+
+    $ uip task output <task name>
+
+By default, the CLI will print the output of the most recent task instance
+of the specified task. The ``--instance-number`` option can be used to  
+specify the number of the task instance to get the output of. 
+
+Configuration 
+=============
+There are three primary ways to configure the CLI and its commands (listed in order of precedence):
+
+- Command Line Arguments 
+- Environment Variables 
+- Configuration Files 
+
+Command Line Arguments
+----------------------
+Similar to most CLI applications, ``uip`` supports both short and long command line arguments. 
+The short arguments start with a single dash and long arguments start with two dashes as shown below:
+::
+
+    $ uip build -a 
+    $ uip build --all 
+
+
+Environment Variables
+---------------------
+Most of the options that can be configured through the command line can also be configured using 
+environment variables. All environment variables are prefixed with ``UIP_``. 
+
+Configuration Files 
+-------------------
+The CLI can be configured through two types of configuration files: global and local. 
+**The local configuration file has precedence over the global one.** 
+
+**The global configuration file is installed when uip-cli is used for the first time**
+
+- On Windows, the file is located in ``C:\Users\<USER>\AppData\Local\UIP\config`` where 
+  ``USER`` is the one who installed the CLI.
+- On Linux/MacOS, the file is located in ``~/.config/uip/config`` where ``~`` is the user's 
+  home directory.
+
+**The local configuration file is installed with the init command**
+
+As you may have seen in the directory structure above, the ``.uip`` folder contains a 
+``config`` folder which houses the local configuration file. Whenever a new project or 
+an existing project is initialized using ``init``, the CLI will automatically create the
+``.uip`` folder along with the configuration file. This allows separate projects to have
+their own set of configurations.
+
+**Configuration file format**
+
+Both the global and local configuration files are called ``uip.yml``. The files must be 
+formatted using proper YAML format. See the example below:
+::
+
+    userid: admin 
+    url: http://localhost:8080/uc 
+    build-all: yes 
+
+
+Full List of Configuration Options 
+==================================
+
+Login Options
+-------------
+.. list-table:: Login Arguments 
+   :header-rows: 1
+
+   * - Option Name 
+     - Short Arg 
+     - Long Arg
+     - Environment Variable
+     - Configuration File Arg 
+     - Default
+   * - User ID
+     - ``-u``
+     - ``--userid``
+     - UIP_USERID  
+     - userid  
+     - None
+   * - Password  
+     - ``-w``
+     - ``--password``
+     - UIP_PASSWORD 
+     - None
+     - None
+   * - URL  
+     - ``-i``
+     - ``--url``
+     - UIP_URL 
+     - url 
+     - None
+
+
+``init`` command options  
+------------------------
+.. list-table:: Optional Arguments 
+   :header-rows: 1
+
+   * - Option Name 
+     - Short Arg 
+     - Long Arg
+     - Environment Variable
+     - Configuration File Arg 
+     - Required 
+     - Default
+   * - Extension Template 
+     - ``-t``
+     - ``--extension-template``
+     - None 
+     - None 
+     - NO 
+     - None
+   * - Variables 
+     - ``-e``
+     - ``--variables``
+     - UIP_TEMPLATE_VARIABLES 
+     - variables 
+     - NO 
+     - None 
+   * - Save
+     - ``-s``
+     - ``--save``
+     - None
+     - None
+     - NO 
+     - False 
+   * - Upgrade
+     - ``-u``
+     - ``--upgrade``
+     - None
+     - None
+     - NO
+     - False
+
+
+Values for the **variables** option can be specified in three different ways:
+
+- Using the ``-e`` option multiple times:
+  ::
+
+      $ uip init -t ue-task -e 'var1=value1' -e 'var2=value2' -e 'var3=value3'
+
+- Using a JSON string:
+  ::
+
+      $ uip init -t ue-task -e '{"var1": "value1", "var2": "value2", "var3": "value3"}'
+
+- Using a JSON/YAML file:
+  :: 
+
+      $ uip init -t ue-task -e '@vars.yml'
+
+  where ``vars.yml`` contains 
+
+  ::
+
+      var1: value1
+      var2: value2 
+      var3: value3 
+
+  **Note that the filename/filepath must be prefixed with '@'**
+
+.. list-table:: Positional Arguments 
+   :header-rows: 1
+
+   * - Option Name 
+     - Required 
+     - Default
+     - Description
+   * - <dir> 
+     - NO 
+     - Current Working Directory 
+     - Where to initialize the Extension template. For example, in the following command:
+       ``uip init -t ue-task -e '@vars.yml' my_extension_dir``, ``my_extension_dir`` is 
+       where the ``ue-task`` Extension template will be initialized.
+
+
+``template list`` command options  
+---------------------------------
+.. list-table:: Positional Arguments 
+   :header-rows: 1
+
+   * - Option Name 
+     - Required 
+     - Default
+     - Description
+   * - <extension template name> 
+     - NO 
+     - None 
+     - The name of the Extension template to get more details of. For example, in the 
+       following command: ``uip template list ue-task``, ``ue-task`` is the value of 
+       ``<extension template name>``. 
+
+.. list-table:: Optional Arguments 
+   :header-rows: 1
+
+   * - Option Name
+     - Short Arg
+     - Long Arg
+     - Environment Variable
+     - Configuration File Arg
+     - Required
+     - Default
+   * - JSON
+     - ``-j``
+     - ``--json``
+     - None
+     - None
+     - NO
+     - False
+
+
+``template add`` command options  
+--------------------------------
+.. list-table:: Positional Arguments 
+   :header-rows: 1
+
+   * - Option Name 
+     - Required 
+     - Default
+     - Description
+   * - <extension template> 
+     - YES 
+     - None 
+     - The name of the Extension template to add. Valid values include path to a zip
+       file, HTTP(S) url pointing to a zip file, or a Git repository clone url.
+
+
+``template delete`` command options  
+-----------------------------------
+.. list-table:: Positional Arguments 
+   :header-rows: 1
+
+   * - Option Name 
+     - Required 
+     - Default
+     - Description
+   * - <extension template> 
+     - YES 
+     - None 
+     - The name of the Extension template to delete
+
+
+``template export`` command options  
+-----------------------------------
+.. list-table:: Positional Arguments 
+   :header-rows: 1
+
+   * - Option Name 
+     - Required 
+     - Default
+     - Description
+   * - <extension template> 
+     - YES 
+     - None 
+     - The name of the Extension template to export
+
+
+``build`` command options  
+-------------------------
+.. list-table:: Optional Arguments 
+   :header-rows: 1
+
+   * - Option Name 
+     - Short Arg 
+     - Long Arg
+     - Environment Variable
+     - Configuration File Arg 
+     - Required 
+     - Default
+   * - Build All  
+     - ``-a``
+     - ``--all``
+     - UIP_BUILD_ALL 
+     - build-all 
+     - NO 
+     - False
+   * - Build Dependency Wheel Only 
+     - ``-d``
+     - ``--dep-whl-only``
+     - UIP_BUILD_DEPENDENCY_WHEEL_ONLY 
+     - dep-whl-only 
+     - NO 
+     - False
+
+
+``upload`` command options  
+--------------------------
+.. list-table:: Optional Arguments 
+   :header-rows: 1
+
+   * - Option Name 
+     - Short Arg 
+     - Long Arg
+     - Environment Variable
+     - Configuration File Arg 
+     - Required 
+     - Default
+   * - Upload All  
+     - ``-a``
+     - ``--all``
+     - UIP_UPLOAD_ALL 
+     - upload-all 
+     - NO 
+     - False
+
+
+``push`` command options  
+------------------------
+.. list-table:: Optional Arguments 
+   :header-rows: 1
+
+   * - Option Name 
+     - Short Arg 
+     - Long Arg
+     - Environment Variable
+     - Configuration File Arg 
+     - Required 
+     - Default
+   * - Push All  
+     - ``-a``
+     - ``--all``
+     - UIP_PUSH_ALL 
+     - push-all 
+     - NO 
+     - False
+
+
+``download`` command options  
+----------------------------
+.. list-table:: Optional Arguments 
+   :header-rows: 1
+
+   * - Option Name 
+     - Short Arg 
+     - Long Arg
+     - Environment Variable
+     - Configuration File Arg 
+     - Required 
+     - Default
+   * - Template Name   
+     - ``-n``
+     - ``--template-name``
+     - UIP_TEMPLATE_NAME 
+     - template-name 
+     - NO 
+     - Name from ``template.json``
+
+
+``clean`` command options  
+-------------------------
+.. list-table:: Optional Arguments 
+   :header-rows: 1
+
+   * - Option Name 
+     - Short Arg 
+     - Long Arg
+     - Environment Variable
+     - Configuration File Arg 
+     - Required 
+     - Default
+   * - Clean All  
+     - ``-a``
+     - ``--all``
+     - UIP_CLEAN_ALL 
+     - clean-all 
+     - NO 
+     - False
+
+
+``task launch`` command options  
+-------------------------------
+.. list-table:: Positional Arguments 
+   :header-rows: 1
+
+   * - Option Name 
+     - Required 
+     - Default
+     - Description
+   * - <task name> 
+     - YES
+     - None
+     - Name of the Universal Extension task to launch
+
+.. list-table:: Optional Arguments 
+   :header-rows: 1
+
+   * - Option Name 
+     - Short Arg 
+     - Long Arg
+     - Environment Variable
+     - Configuration File Arg 
+     - Required 
+     - Default
+   * - No Wait  
+     - ``-N``
+     - ``--no-wait``
+     - UIP_NO_WAIT 
+     - no-wait 
+     - NO
+     - False
+
+
+``task status`` command options  
+-------------------------------
+.. list-table:: Positional Arguments 
+   :header-rows: 1
+
+   * - Option Name 
+     - Required 
+     - Default
+     - Description
+   * - <task name> 
+     - YES
+     - None
+     - Name of the Universal Extension task to get status of 
+
+.. list-table:: Optional Arguments 
+   :header-rows: 1
+
+   * - Option Name 
+     - Short Arg 
+     - Long Arg
+     - Environment Variable
+     - Configuration File Arg 
+     - Required 
+     - Default
+   * - Num Instances
+     - ``-n``
+     - ``--num-instances``
+     - UIP_NUM_INSTANCES 
+     - num-instances
+     - NO
+     - 1
+
+
+``task output`` command options  
+-------------------------------
+.. list-table:: Positional Arguments 
+   :header-rows: 1
+
+   * - Option Name 
+     - Required 
+     - Default
+     - Description
+   * - <task name> 
+     - YES
+     - None
+     - Name of the Universal Extension task to get the output of 
+
+.. list-table:: Optional Arguments 
+   :header-rows: 1
+
+   * - Option Name 
+     - Short Arg 
+     - Long Arg
+     - Environment Variable
+     - Configuration File Arg 
+     - Required 
+     - Default
+   * - Instance Number
+     - ``-s``
+     - ``--instance-number``
+     - UIP_INSTANCE_NUMBER 
+     - instance-number
+     - NO
+     - most recent task instance
+
+License
+=======
+``uip-cli`` is released under the `GNU General Public License <https://www.gnu.org/licenses/gpl-3.0.en.html>`_
+
+Acknowledgements
+================
+``uip-cli`` acknowledges the use of the following open source Python modules:
+
+- `colorama <https://pypi.org/project/colorama/>`_ (BSD License)
+- `Jinja2 <https://pypi.org/project/Jinja2/>`_ (BSD-3-Clause License)
+- `prettytable <https://pypi.org/project/prettytable/>`_ (BSD-3-Clause License)
+- `jsonschema <https://pypi.org/project/jsonschema/>`_ (MIT)
+- `PyYAML <https://pypi.org/project/PyYAML/>`_ (MIT)
+- `requests <https://pypi.org/project/requests/>`_ (Apache 2.0)
+- `setuptools <https://pypi.org/project/setuptools/>`_ (MIT)
+
+Copyright
+=========
+Copyright (c) 2021-2024. Stonebranch, Inc. All rights reserved.
+
+
