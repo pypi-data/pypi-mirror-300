@@ -1,0 +1,53 @@
+
+// ARGS:
+//   $1 - 1 if include swapper tasks, or 0
+//   $2 - trace duration in milliseconds, or -1
+
+#define INCLUDE_SWAPPER $1
+#define DURATION $2
+
+#define TASK_RUNNING 0
+
+config = {
+    max_map_keys=10000000
+}
+
+BEGIN {
+	if (DURATION <= 0) {
+		printf("Start tracing... Hit Ctrl-C to end.\n");
+	}
+}
+
+// Record task info
+tracepoint:sched:* /!@tasks[tid].0/ {
+	@tasks[tid] = (1, pid, uid, gid, comm);
+}
+
+// Record queue time
+tracepoint:sched:sched_wakeup, tracepoint:sched:sched_wakeup_new {
+	@qtime[args.pid] = (cpu, nsecs);
+}
+
+tracepoint:sched:sched_switch {
+	// Record queue time
+	if (args.prev_state == TASK_RUNNING) {
+		@qtime[args.prev_pid] = (cpu, nsecs);
+	}
+	// Record switch event
+	$qinfo = @qtime[args.next_pid];
+	if (INCLUDE_SWAPPER || args.prev_pid || args.next_pid) {
+    	@sched[cpu, nsecs] = (args.prev_pid, args.next_pid, $qinfo.0, $qinfo.1);
+	}
+	delete(@qtime[args.next_pid]);
+}
+
+// Exit check
+interval:ms:100 {
+	if (DURATION > 0 && elapsed > (uint64) ((DURATION) * 1000000)) {
+		exit();
+	}
+}
+
+END {
+	clear(@qtime);
+}

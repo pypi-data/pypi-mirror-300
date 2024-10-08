@@ -1,0 +1,16 @@
+syvio/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+syvio/main.py,sha256=SNA-e6pIVT5zLc3mL064arggl_oYrkO_dNpDeWBG1Fw,276
+syvio/tools/__init__.py,sha256=SgxUIkO4kq-IIFkAuZ-g9Cehn_K_4eC_tw9cnYDs3Vw,41
+syvio/tools/sched.bt,sha256=FvY0T7ivmeNI37lu7sf5xquiW4gaIpbHusL0QoQ96OE,1033
+syvio/tools/sched.py,sha256=GDJm5beEid5sWPG_bBKWaamWfoBOl5zrSrcItdCPh4U,8522
+syvio/tools/upload.py,sha256=cDv5SuJXzsuq9yJ1thw6RwzEnIrKn_hu7fI0aOwnO2g,975
+syvio/util/__init__.py,sha256=_EzbMouB48jBjLEJ7SnQLtf0mwXswNi5mCtPDR8a3V0,452
+syvio/util/bpftrace.py,sha256=4sWn7nNvottW9Cja59LPuexeRBGFSZh5ox7PIOIq7wg,4500
+syvio/util/cli.py,sha256=ZgxyjYscNX6XNijfGQqXo6SfTQsiXHTTMcq0Tvofa9E,2402
+syvio/util/perfetto.py,sha256=1_eb84YQNHA-mg5qdeEL9KXGbfCl-OgJFHm6O6ehO9Q,3850
+syvio/util/trace_runner.py,sha256=EVqp8uJIkEgkUZGOhwMJiqtEqM63hLlJINGKLbxeD_8,2290
+syvio/util/upload.py,sha256=CINqoIsNWXsD1dO9ydfaXe3wmUzZdrwPtAjFGmeJGdE,1368
+syvio-0.0.1.dist-info/METADATA,sha256=r6WM3jh7zjD46vqH-ZAxEMSJk8SJxc3V67wAil0FttE,758
+syvio-0.0.1.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+syvio-0.0.1.dist-info/entry_points.txt,sha256=n863aZvupVUwj5dXlGG7daKWPhWcGB78vIhAtN_8q4w,41
+syvio-0.0.1.dist-info/RECORD,,
