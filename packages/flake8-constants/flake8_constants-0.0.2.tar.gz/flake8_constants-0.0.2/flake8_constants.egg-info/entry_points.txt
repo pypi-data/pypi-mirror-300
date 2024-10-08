@@ -1,0 +1,6 @@
+[flake8.extension]
+C001 = main:ConstantModificationChecker
+C002 = main:ConstantModificationChecker
+C003 = main:ConstantModificationChecker
+C004 = main:ConstantModificationChecker
+C005 = main:ConstantModificationChecker
