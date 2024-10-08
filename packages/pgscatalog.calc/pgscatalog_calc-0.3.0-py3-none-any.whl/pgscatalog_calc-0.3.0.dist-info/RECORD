@@ -1,0 +1,16 @@
+pgscatalog/calc/__init__.py,sha256=GuHsdwIDqPiyNzm1fJLFy5cFntsoV5nXWU6QwiP6oY8,572
+pgscatalog/calc/cli/__init__.py,sha256=da1PTClDMl-IBkrSvq6JC1lnS-K_BASzCvxVhNxN5Ls,13
+pgscatalog/calc/cli/aggregate_cli.py,sha256=I346wZP08ECkihAFTsULViAGKVYkw6FBe17-ROuXKZ4,6370
+pgscatalog/calc/cli/ancestry_cli.py,sha256=BP8dR60zlG-nbiRlRpKUA_Aljbncawu4OA4NzKkWuT0,6061
+pgscatalog/calc/lib/__init__.py,sha256=Px2RKxajwvlE84hwjmNQ98fATdzVbcO8xVu98Sl3RpE,512
+pgscatalog/calc/lib/_ancestry/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pgscatalog/calc/lib/_ancestry/read.py,sha256=E37kL2TNCaT3NB9DySTkWI9_HNZ14tb84qrcqoDcOdA,3194
+pgscatalog/calc/lib/_ancestry/tools.py,sha256=IggjwiZACKfYv_9QCObnsf9CWofuoUB1txP-0KHcz04,28231
+pgscatalog/calc/lib/_config.py,sha256=H25Kx26gR917lLJFQXi4vizuq03ziKraHxGwvNIGxgo,114
+pgscatalog/calc/lib/polygenicscore.py,sha256=R14HAF83OGP-UQxbtOKjcFPpVJfKLZHI9pL8d1UBbHc,17027
+pgscatalog/calc/lib/principalcomponents.py,sha256=MNFJ_iIQSO1KIrR_lYdyEnWT2SPz2sDLVUiD_jTZ0Io,5826
+pgscatalog_calc-0.3.0.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+pgscatalog_calc-0.3.0.dist-info/METADATA,sha256=R0Q9xMSlkL3ng6alVLXH0DXKjdeLsNLkeoCt2-FVt8o,2849
+pgscatalog_calc-0.3.0.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+pgscatalog_calc-0.3.0.dist-info/entry_points.txt,sha256=Kr-oyMZkmWlrobjwJ1DEHg_YnDnoCX1j8bgYLU3PeeY,161
+pgscatalog_calc-0.3.0.dist-info/RECORD,,
