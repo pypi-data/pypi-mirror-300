@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: fruitspace.py
+Version: 1.0.2
+Summary: SDK for working with FruitSpace's databases
+Author: whoisamyy
+Author-email: egegegg002@gmail.com
+Description-Content-Type: text/markdown
+Requires-Dist: requests
+Requires-Dist: setuptools
+
+# FruitSpace Python SDK

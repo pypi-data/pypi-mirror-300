@@ -1,0 +1,12 @@
+README.md
+setup.py
+src/fruitspace/client.py
+src/fruitspace/enums.py
+src/fruitspace/models.py
+src/fruitspace/urls.py
+src/fruitspace/utils.py
+src/fruitspace.py.egg-info/PKG-INFO
+src/fruitspace.py.egg-info/SOURCES.txt
+src/fruitspace.py.egg-info/dependency_links.txt
+src/fruitspace.py.egg-info/requires.txt
+src/fruitspace.py.egg-info/top_level.txt
