@@ -1,0 +1,10 @@
+keras-gemini/__init__.py,sha256=S_Vg8i4UwKJxrpnYQE9L1JkQZ9DvhNYSKbofI7dJ1o0,125
+keras-gemini/keras_gemini.py,sha256=yUGddDovyYR-PViKt_tm5XWI-nwRRyyocPOsQ5x0B6c,2149
+keras-gemini/nlp_to_keras.py,sha256=KoAztbcHwEFCcyeaxi6A1xLi--vsA_Ppo177OuCnTio,560
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_keras_gemini.py,sha256=TOC7ONNQpQHVnd97znouIWtYeZtBzxBal-aDkQJJVkU,2636
+keras_gemini-0.1.1.dist-info/LICENSE,sha256=jVFYqdWmRNx1KAFvmiCdmzj4XGk6EwmGN9jnZfl1Qys,1070
+keras_gemini-0.1.1.dist-info/METADATA,sha256=QlCWKPTnQpVLwWIRl4xOpiyFgLpJ66hHhVUS15DIs_E,3397
+keras_gemini-0.1.1.dist-info/WHEEL,sha256=eOLhNAGa2EW3wWl_TU484h7q1UNgy0JXjjoqKoxAAQc,92
+keras_gemini-0.1.1.dist-info/top_level.txt,sha256=uqbtNMBVPuD6rVH0-obEOJbhvRHThk2_pa7rU5Q4PZc,19
+keras_gemini-0.1.1.dist-info/RECORD,,
