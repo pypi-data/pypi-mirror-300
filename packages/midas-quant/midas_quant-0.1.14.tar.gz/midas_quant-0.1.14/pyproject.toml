@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "midas-quant"
+version = "0.1.14"
+description = "A quantitative finance library for midas models."
+authors = ["nockchun <nockchun@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+
+[tool.poetry.dev-dependencies]
+pytest = "^6.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
