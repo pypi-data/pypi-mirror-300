@@ -1,0 +1,37 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "task_6_rakitin_sergey"
+version = "0.0.7"
+authors = [{name="Rakitin Sergey", email="dronyx@inbox.ru"}]
+description = "A package for processing Formula 1 racing logs"
+readme = "README.md"
+requires-python = ">=3.11"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent"
+]
+keywords = ["formula1", "racing"]
+dependencies = []
+
+[project.urls]
+Homepage = "https://git.foxminded.ua/rakitin-sergey/task_6"
+
+[tool.hatch.build]
+sources = ["src"]
+
+# Включаем папку с исходным кодом и данные
+include = [
+    "README.md",
+    "requirements.txt",
+    "data/abbreviations.txt",
+    "data/start.log",
+    "data/end.log"
+]
+
+[tool.hatch.build.targets.wheel]
+
+
+
