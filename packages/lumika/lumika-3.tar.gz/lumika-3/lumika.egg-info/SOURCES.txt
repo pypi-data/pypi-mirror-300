@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+lumika/__init__.py
+lumika/__main__.py
+lumika.egg-info/PKG-INFO
+lumika.egg-info/SOURCES.txt
+lumika.egg-info/dependency_links.txt
+lumika.egg-info/entry_points.txt
+lumika.egg-info/requires.txt
+lumika.egg-info/top_level.txt
