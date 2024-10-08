@@ -1,0 +1,14 @@
+muslimdeenV2/__init__.py,sha256=ePlKsnbOn8th2sJJdqCqHBa6LlitYEr4V2DyPHmSqk0,4261
+muslimdeenV2/ablutions.py,sha256=LB6r6w3aOnlrYiMyb_BkVKGzpmo-WTeOnUEwTyhYm6g,8079
+muslimdeenV2/config.py,sha256=yLDB6MnYSBy81rLCNMHVfipLNX_aI_1gj6y-CZUSp8A,864
+muslimdeenV2/data_salat.py,sha256=NwiaL6_4NCdyNDnifeLQhfNpCoMHkoNG0eksCjTkIDQ,17005
+muslimdeenV2/exception_handle.py,sha256=6VwIWfIvJ7LvyxJfc2IH3ikVQUiDzWtz1hUTUJFQors,137
+muslimdeenV2/metasurahs.py,sha256=YWrFFbBZ3dupgO8TRtlMAB-ExnwjnqnYKT-KytrTUTs,8012
+muslimdeenV2/names_of_allah.py,sha256=UjBHHJGIOti5G7xP3XT8xRfMx33gf-UYZQxhJgbovtQ,8003
+muslimdeenV2/quran_reader.py,sha256=9WM8uYj8HAXiI-aMvVbb203p4r07bLys187ixmTqMHo,8808
+muslimdeenV2/salat.py,sha256=UR8NBpcAHf7MnKciov6GxhPZcgN-HLK7M-dkdjy3nmc,1915
+muslimdeenV2/services.py,sha256=pBjbGrZ1TliBtS1oQIh1wMhpwKLSe9rDJgZj2EOr6pw,2202
+muslimdeenV2-1.0.2.dist-info/METADATA,sha256=NQtnofZRYsujoaM761bqQF49W9rn__VSA5R5SDkeiw8,855
+muslimdeenV2-1.0.2.dist-info/WHEEL,sha256=eOLhNAGa2EW3wWl_TU484h7q1UNgy0JXjjoqKoxAAQc,92
+muslimdeenV2-1.0.2.dist-info/top_level.txt,sha256=3ggCYUcDB3MiKpy2rxv8SkoKAaZH_gLyZKK6F1LOp74,13
+muslimdeenV2-1.0.2.dist-info/RECORD,,
