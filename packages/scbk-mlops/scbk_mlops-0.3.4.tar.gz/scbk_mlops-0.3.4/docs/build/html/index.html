@@ -1,0 +1,1607 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="./">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SCBK MLOps 공식 문서 &mdash; SCBK MLOps 0.2.0 documentation</title>
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=19f00094" />
+
+  
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="_static/jquery.js?v=5d32c60e"></script>
+        <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="_static/documentation_options.js?v=938c9ccc"></script>
+        <script src="_static/doctools.js?v=9a2dae69"></script>
+        <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="#" class="icon icon-home">
+            SCBK MLOps
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <!-- Local TOC -->
+              <div class="local-toc"><ul>
+<li><a class="reference internal" href="#">SCBK MLOps 공식 문서</a></li>
+<li><a class="reference internal" href="#module-scbk_mlops.eda">Modules</a><ul>
+<li><a class="reference internal" href="#exploratory-data-analysis-eda-module">Exploratory Data Analysis (EDA) Module</a></li>
+<li><a class="reference internal" href="#scbk_mlops.eda.auto_eda"><code class="docutils literal notranslate"><span class="pre">auto_eda()</span></code></a></li>
+<li><a class="reference internal" href="#scbk_mlops.eda.auto_eda_comparison"><code class="docutils literal notranslate"><span class="pre">auto_eda_comparison()</span></code></a></li>
+<li><a class="reference internal" href="#scbk_mlops.eda.plot_area_chart"><code class="docutils literal notranslate"><span class="pre">plot_area_chart()</span></code></a></li>
+<li><a class="reference internal" href="#scbk_mlops.eda.plot_box_plot"><code class="docutils literal notranslate"><span class="pre">plot_box_plot()</span></code></a></li>
+<li><a class="reference internal" href="#scbk_mlops.eda.plot_density_plot"><code class="docutils literal notranslate"><span class="pre">plot_density_plot()</span></code></a></li>
+<li><a class="reference internal" href="#scbk_mlops.eda.plot_grouped_donut_pie_chart"><code class="docutils literal notranslate"><span class="pre">plot_grouped_donut_pie_chart()</span></code></a></li>
+<li><a class="reference internal" href="#scbk_mlops.eda.plot_heatmap"><code class="docutils literal notranslate"><span class="pre">plot_heatmap()</span></code></a></li>
+<li><a class="reference internal" href="#scbk_mlops.eda.plot_histogram"><code class="docutils literal notranslate"><span class="pre">plot_histogram()</span></code></a></li>
+<li><a class="reference internal" href="#scbk_mlops.eda.plot_multi_line_chart"><code class="docutils literal notranslate"><span class="pre">plot_multi_line_chart()</span></code></a></li>
+<li><a class="reference internal" href="#scbk_mlops.eda.plot_pie_chart"><code class="docutils literal notranslate"><span class="pre">plot_pie_chart()</span></code></a></li>
+<li><a class="reference internal" href="#scbk_mlops.eda.plot_single_value_card"><code class="docutils literal notranslate"><span class="pre">plot_single_value_card()</span></code></a></li>
+<li><a class="reference internal" href="#scbk_mlops.eda.plot_spline_chart"><code class="docutils literal notranslate"><span class="pre">plot_spline_chart()</span></code></a></li>
+<li><a class="reference internal" href="#scbk_mlops.eda.plot_stacked_area_chart"><code class="docutils literal notranslate"><span class="pre">plot_stacked_area_chart()</span></code></a></li>
+<li><a class="reference internal" href="#scbk_mlops.eda.plot_stacked_column_chart"><code class="docutils literal notranslate"><span class="pre">plot_stacked_column_chart()</span></code></a></li>
+<li><a class="reference internal" href="#scbk_mlops.eda.plot_table_chart"><code class="docutils literal notranslate"><span class="pre">plot_table_chart()</span></code></a></li>
+<li><a class="reference internal" href="#scbk_mlops.eda.plot_treemap"><code class="docutils literal notranslate"><span class="pre">plot_treemap()</span></code></a></li>
+<li><a class="reference internal" href="#scbk_mlops.eda.plot_trend_line_chart"><code class="docutils literal notranslate"><span class="pre">plot_trend_line_chart()</span></code></a></li>
+<li><a class="reference internal" href="#scbk_mlops.eda.plot_violin_plot"><code class="docutils literal notranslate"><span class="pre">plot_violin_plot()</span></code></a></li>
+<li><a class="reference internal" href="#data-ingestion-module">Data Ingestion Module</a></li>
+<li><a class="reference internal" href="#scbk_mlops.ingestion.capitalize_columns"><code class="docutils literal notranslate"><span class="pre">capitalize_columns()</span></code></a></li>
+<li><a class="reference internal" href="#scbk_mlops.ingestion.convert_and_save_to_parquet"><code class="docutils literal notranslate"><span class="pre">convert_and_save_to_parquet()</span></code></a></li>
+<li><a class="reference internal" href="#scbk_mlops.ingestion.partition_data"><code class="docutils literal notranslate"><span class="pre">partition_data()</span></code></a></li>
+<li><a class="reference internal" href="#scbk_mlops.ingestion.typecast"><code class="docutils literal notranslate"><span class="pre">typecast()</span></code></a></li>
+<li><a class="reference internal" href="#reporting-module">Reporting Module</a></li>
+<li><a class="reference internal" href="#scbk_mlops.reporting.calculate_woe_iv"><code class="docutils literal notranslate"><span class="pre">calculate_woe_iv()</span></code></a></li>
+<li><a class="reference internal" href="#scbk_mlops.reporting.data_drift_report"><code class="docutils literal notranslate"><span class="pre">data_drift_report()</span></code></a></li>
+<li><a class="reference internal" href="#scbk_mlops.reporting.dq_add_variable_description"><code class="docutils literal notranslate"><span class="pre">dq_add_variable_description()</span></code></a></li>
+<li><a class="reference internal" href="#scbk_mlops.reporting.dq_add_variable_description_char"><code class="docutils literal notranslate"><span class="pre">dq_add_variable_description_char()</span></code></a></li>
+<li><a class="reference internal" href="#scbk_mlops.reporting.dq_add_variable_serial_number_char"><code class="docutils literal notranslate"><span class="pre">dq_add_variable_serial_number_char()</span></code></a></li>
+<li><a class="reference internal" href="#scbk_mlops.reporting.dq_add_variable_type"><code class="docutils literal notranslate"><span class="pre">dq_add_variable_type()</span></code></a></li>
+<li><a class="reference internal" href="#scbk_mlops.reporting.dq_add_variable_type_char"><code class="docutils literal notranslate"><span class="pre">dq_add_variable_type_char()</span></code></a></li>
+<li><a class="reference internal" href="#scbk_mlops.reporting.dq_data_processing"><code class="docutils literal notranslate"><span class="pre">dq_data_processing()</span></code></a></li>
+<li><a class="reference internal" href="#scbk_mlops.reporting.dq_data_processing_char"><code class="docutils literal notranslate"><span class="pre">dq_data_processing_char()</span></code></a></li>
+<li><a class="reference internal" href="#scbk_mlops.reporting.dq_data_reconstruction_char"><code class="docutils literal notranslate"><span class="pre">dq_data_reconstruction_char()</span></code></a></li>
+<li><a class="reference internal" href="#scbk_mlops.reporting.dq_median_analysis"><code class="docutils literal notranslate"><span class="pre">dq_median_analysis()</span></code></a></li>
+<li><a class="reference internal" href="#scbk_mlops.reporting.dq_output_report"><code class="docutils literal notranslate"><span class="pre">dq_output_report()</span></code></a></li>
+<li><a class="reference internal" href="#scbk_mlops.reporting.dq_output_report_char"><code class="docutils literal notranslate"><span class="pre">dq_output_report_char()</span></code></a></li>
+<li><a class="reference internal" href="#scbk_mlops.reporting.dq_process_and_merge_snapshots"><code class="docutils literal notranslate"><span class="pre">dq_process_and_merge_snapshots()</span></code></a></li>
+<li><a class="reference internal" href="#scbk_mlops.reporting.feature_selection_report"><code class="docutils literal notranslate"><span class="pre">feature_selection_report()</span></code></a></li>
+<li><a class="reference internal" href="#scbk_mlops.reporting.generate_dq_report"><code class="docutils literal notranslate"><span class="pre">generate_dq_report()</span></code></a></li>
+<li><a class="reference internal" href="#scbk_mlops.reporting.generate_eligibility_waterfall"><code class="docutils literal notranslate"><span class="pre">generate_eligibility_waterfall()</span></code></a></li>
+<li><a class="reference internal" href="#scbk_mlops.reporting.generate_fine_classing_report"><code class="docutils literal notranslate"><span class="pre">generate_fine_classing_report()</span></code></a></li>
+<li><a class="reference internal" href="#scbk_mlops.reporting.generate_toc_model_card"><code class="docutils literal notranslate"><span class="pre">generate_toc_model_card()</span></code></a></li>
+<li><a class="reference internal" href="#scbk_mlops.reporting.make_float"><code class="docutils literal notranslate"><span class="pre">make_float()</span></code></a></li>
+<li><a class="reference internal" href="#scbk_mlops.reporting.output_dict_resp_analysis"><code class="docutils literal notranslate"><span class="pre">output_dict_resp_analysis()</span></code></a></li>
+<li><a class="reference internal" href="#scbk_mlops.reporting.response_analysis_to_excel"><code class="docutils literal notranslate"><span class="pre">response_analysis_to_excel()</span></code></a></li>
+<li><a class="reference internal" href="#scbk_mlops.reporting.response_crosstab"><code class="docutils literal notranslate"><span class="pre">response_crosstab()</span></code></a></li>
+<li><a class="reference internal" href="#scbk_mlops.reporting.snapshot_count"><code class="docutils literal notranslate"><span class="pre">snapshot_count()</span></code></a></li>
+<li><a class="reference internal" href="#data-engineering-module">Data Engineering Module</a></li>
+<li><a class="reference internal" href="#scbk_mlops.data_engineering.Data_Sampling"><code class="docutils literal notranslate"><span class="pre">Data_Sampling()</span></code></a></li>
+<li><a class="reference internal" href="#scbk_mlops.data_engineering.add_change_features"><code class="docutils literal notranslate"><span class="pre">add_change_features()</span></code></a></li>
+<li><a class="reference internal" href="#scbk_mlops.data_engineering.add_penetration_features"><code class="docutils literal notranslate"><span class="pre">add_penetration_features()</span></code></a></li>
+<li><a class="reference internal" href="#scbk_mlops.data_engineering.apply_feature_selection"><code class="docutils literal notranslate"><span class="pre">apply_feature_selection()</span></code></a></li>
+<li><a class="reference internal" href="#scbk_mlops.data_engineering.feature_selection"><code class="docutils literal notranslate"><span class="pre">feature_selection()</span></code></a></li>
+<li><a class="reference internal" href="#scbk_mlops.data_engineering.fit_feature_selection"><code class="docutils literal notranslate"><span class="pre">fit_feature_selection()</span></code></a></li>
+<li><a class="reference internal" href="#scbk_mlops.data_engineering.fit_feature_selection_pipeline"><code class="docutils literal notranslate"><span class="pre">fit_feature_selection_pipeline()</span></code></a></li>
+<li><a class="reference internal" href="#scbk_mlops.data_engineering.output_eligible_dataset"><code class="docutils literal notranslate"><span class="pre">output_eligible_dataset()</span></code></a></li>
+<li><a class="reference internal" href="#scbk_mlops.data_engineering.process_null_values"><code class="docutils literal notranslate"><span class="pre">process_null_values()</span></code></a></li>
+<li><a class="reference internal" href="#scbk_mlops.data_engineering.split_data"><code class="docutils literal notranslate"><span class="pre">split_data()</span></code></a></li>
+<li><a class="reference internal" href="#model-engineering-module">Model Engineering Module</a></li>
+<li><a class="reference internal" href="#scbk_mlops.model_engineering.automl_pipeline"><code class="docutils literal notranslate"><span class="pre">automl_pipeline()</span></code></a></li>
+<li><a class="reference internal" href="#scbk_mlops.model_engineering.cross_validation"><code class="docutils literal notranslate"><span class="pre">cross_validation()</span></code></a></li>
+<li><a class="reference internal" href="#scbk_mlops.model_engineering.init_mlflow"><code class="docutils literal notranslate"><span class="pre">init_mlflow()</span></code></a></li>
+<li><a class="reference internal" href="#scbk_mlops.model_engineering.load_oot_dataset"><code class="docutils literal notranslate"><span class="pre">load_oot_dataset()</span></code></a></li>
+<li><a class="reference internal" href="#scbk_mlops.model_engineering.mlflow_pipeline"><code class="docutils literal notranslate"><span class="pre">mlflow_pipeline()</span></code></a></li>
+<li><a class="reference internal" href="#scbk_mlops.model_engineering.output_scored_predictions"><code class="docutils literal notranslate"><span class="pre">output_scored_predictions()</span></code></a></li>
+<li><a class="reference internal" href="#scbk_mlops.model_engineering.pycaret_automl"><code class="docutils literal notranslate"><span class="pre">pycaret_automl()</span></code></a></li>
+<li><a class="reference internal" href="#scbk_mlops.model_engineering.save_best_model"><code class="docutils literal notranslate"><span class="pre">save_best_model()</span></code></a></li>
+<li><a class="reference internal" href="#scbk_mlops.model_engineering.save_experiment_parameters"><code class="docutils literal notranslate"><span class="pre">save_experiment_parameters()</span></code></a></li>
+<li><a class="reference internal" href="#scbk_mlops.model_engineering.save_scored_predictions"><code class="docutils literal notranslate"><span class="pre">save_scored_predictions()</span></code></a></li>
+<li><a class="reference internal" href="#model-evaluation-module">Model Evaluation Module</a></li>
+<li><a class="reference internal" href="#scbk_mlops.model_evaluation.bias_fairness_assessment"><code class="docutils literal notranslate"><span class="pre">bias_fairness_assessment()</span></code></a></li>
+<li><a class="reference internal" href="#scbk_mlops.model_evaluation.check_governance_measures"><code class="docutils literal notranslate"><span class="pre">check_governance_measures()</span></code></a></li>
+<li><a class="reference internal" href="#scbk_mlops.model_evaluation.create_leaderboard"><code class="docutils literal notranslate"><span class="pre">create_leaderboard()</span></code></a></li>
+<li><a class="reference internal" href="#scbk_mlops.model_evaluation.explainable_ai"><code class="docutils literal notranslate"><span class="pre">explainable_ai()</span></code></a></li>
+<li><a class="reference internal" href="#scbk_mlops.model_evaluation.feature_impact"><code class="docutils literal notranslate"><span class="pre">feature_impact()</span></code></a></li>
+<li><a class="reference internal" href="#scbk_mlops.model_evaluation.generate_leaderboard_report"><code class="docutils literal notranslate"><span class="pre">generate_leaderboard_report()</span></code></a></li>
+<li><a class="reference internal" href="#scbk_mlops.model_evaluation.model_evaluation_rai"><code class="docutils literal notranslate"><span class="pre">model_evaluation_rai()</span></code></a></li>
+<li><a class="reference internal" href="#scbk_mlops.model_evaluation.model_explainability"><code class="docutils literal notranslate"><span class="pre">model_explainability()</span></code></a></li>
+<li><a class="reference internal" href="#scbk_mlops.model_evaluation.model_fairness_check"><code class="docutils literal notranslate"><span class="pre">model_fairness_check()</span></code></a></li>
+<li><a class="reference internal" href="#scbk_mlops.model_evaluation.output_evaluation_artifacts"><code class="docutils literal notranslate"><span class="pre">output_evaluation_artifacts()</span></code></a></li>
+<li><a class="reference internal" href="#model-monitoring-module">Model Monitoring Module</a></li>
+<li><a class="reference internal" href="#scbk_mlops.model_monitoring.alert_report"><code class="docutils literal notranslate"><span class="pre">alert_report()</span></code></a></li>
+<li><a class="reference internal" href="#scbk_mlops.model_monitoring.evidently_dashboard"><code class="docutils literal notranslate"><span class="pre">evidently_dashboard()</span></code></a></li>
+<li><a class="reference internal" href="#scbk_mlops.model_monitoring.model_decision_making"><code class="docutils literal notranslate"><span class="pre">model_decision_making()</span></code></a></li>
+<li><a class="reference internal" href="#scbk_mlops.model_monitoring.output_recommendation"><code class="docutils literal notranslate"><span class="pre">output_recommendation()</span></code></a></li>
+<li><a class="reference internal" href="#scbk_mlops.model_monitoring.rai_dashboard"><code class="docutils literal notranslate"><span class="pre">rai_dashboard()</span></code></a></li>
+<li><a class="reference internal" href="#scbk_mlops.model_monitoring.update_monitoring"><code class="docutils literal notranslate"><span class="pre">update_monitoring()</span></code></a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#indices-and-tables">Indices and tables</a></li>
+</ul>
+</div>
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="#">SCBK MLOps</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="#" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">SCBK MLOps 공식 문서</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/index.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="scbk-mlops">
+<h1>SCBK MLOps 공식 문서<a class="headerlink" href="#scbk-mlops" title="Link to this heading"></a></h1>
+<div class="toctree-wrapper compound">
+</div>
+</section>
+<section id="module-scbk_mlops.eda">
+<span id="modules"></span><h1>Modules<a class="headerlink" href="#module-scbk_mlops.eda" title="Link to this heading"></a></h1>
+<section id="exploratory-data-analysis-eda-module">
+<h2>Exploratory Data Analysis (EDA) Module<a class="headerlink" href="#exploratory-data-analysis-eda-module" title="Link to this heading"></a></h2>
+<p>해당 모듈은 데이터셋에 대한 EDA 분석을 수행하는 모듈입니다.
+Documentation 및 예시로 작성해둔 Jupyter Notebook 파일을 참고하여 분석을 진행하시면 됩니다.</p>
+</section>
+<dl class="py function">
+<dt class="sig sig-object py" id="scbk_mlops.eda.auto_eda">
+<span class="sig-prename descclassname"><span class="pre">scbk_mlops.eda.</span></span><span class="sig-name descname"><span class="pre">auto_eda</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">data</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">report_path</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'auto_eda_report.html'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#scbk_mlops.eda.auto_eda" title="Link to this definition"></a></dt>
+<dd><p>sweetviz를 활용한 Auto EDA 리포트를 html로 생성</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>data</strong> (<em>pd.DataFrame</em>) – EDA를 수행할 입력 데이터.</p></li>
+<li><p><strong>report_path</strong> (<em>str</em><em>, </em><em>optional</em>) – 생성된 리포트를 저장할 파일 경로.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="scbk_mlops.eda.auto_eda_comparison">
+<span class="sig-prename descclassname"><span class="pre">scbk_mlops.eda.</span></span><span class="sig-name descname"><span class="pre">auto_eda_comparison</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">data1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">data2</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">report_path</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'auto_eda_comparison_report.html'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#scbk_mlops.eda.auto_eda_comparison" title="Link to this definition"></a></dt>
+<dd><p>sweetviz를 활용한 Auto EDA 비교 리포트(ex. 데이터프레임의 sub segment)를 html로 생성</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>data1</strong> (<em>pd.DataFrame</em>) – 비교할 첫 번째 데이터프레임.</p></li>
+<li><p><strong>data2</strong> (<em>pd.DataFrame</em>) – 비교할 두 번째 데이터프레임.</p></li>
+<li><p><strong>report_path</strong> (<em>str</em><em>, </em><em>optional</em>) – 생성된 리포트를 저장할 파일 경로.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="scbk_mlops.eda.plot_area_chart">
+<span class="sig-prename descclassname"><span class="pre">scbk_mlops.eda.</span></span><span class="sig-name descname"><span class="pre">plot_area_chart</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">df</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">DataFrame</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">x_column</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y_column</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">title</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">x_label</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y_label</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">alpha</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0.6</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">color</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'#0473ea'</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#scbk_mlops.eda.plot_area_chart" title="Link to this definition"></a></dt>
+<dd><p>Area chart 그리기</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>df</strong> – DataFrame.</p></li>
+<li><p><strong>x_column</strong> – X 축.</p></li>
+<li><p><strong>y_column</strong> – Y 축.</p></li>
+<li><p><strong>title</strong> – 차트 제목.</p></li>
+<li><p><strong>x_label</strong> – X 축 레이블.</p></li>
+<li><p><strong>y_label</strong> – Y 축 레이블.</p></li>
+<li><p><strong>alpha</strong> – 투명도.</p></li>
+<li><p><strong>color</strong> – 색상.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="scbk_mlops.eda.plot_box_plot">
+<span class="sig-prename descclassname"><span class="pre">scbk_mlops.eda.</span></span><span class="sig-name descname"><span class="pre">plot_box_plot</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">df</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">DataFrame</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">column</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">title</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y_label</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">color</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'#525355'</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#scbk_mlops.eda.plot_box_plot" title="Link to this definition"></a></dt>
+<dd><p>Box plot 그리기</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>df</strong> – DataFrame.</p></li>
+<li><p><strong>column</strong> – Box plot 컬럼.</p></li>
+<li><p><strong>title</strong> – 차트 제목.</p></li>
+<li><p><strong>y_label</strong> – Y 축 레이블.</p></li>
+<li><p><strong>color</strong> – 색상.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="scbk_mlops.eda.plot_density_plot">
+<span class="sig-prename descclassname"><span class="pre">scbk_mlops.eda.</span></span><span class="sig-name descname"><span class="pre">plot_density_plot</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">df</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">DataFrame</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">column</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">hue</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">shade</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">title</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'Density</span> <span class="pre">Plot'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">x_label</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y_label</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">color</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'#38d200'</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#scbk_mlops.eda.plot_density_plot" title="Link to this definition"></a></dt>
+<dd><p>Density plot 그리기</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>df</strong> – DataFrame.</p></li>
+<li><p><strong>column</strong> – Density 컬럼.</p></li>
+<li><p><strong>hue</strong> – Hue.</p></li>
+<li><p><strong>shade</strong> – 음영 처리 여부.</p></li>
+<li><p><strong>title</strong> – 차트 제목.</p></li>
+<li><p><strong>x_label</strong> – X 축 레이블.</p></li>
+<li><p><strong>y_label</strong> – Y 축 레이블.</p></li>
+<li><p><strong>color</strong> – 색상.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="scbk_mlops.eda.plot_grouped_donut_pie_chart">
+<span class="sig-prename descclassname"><span class="pre">scbk_mlops.eda.</span></span><span class="sig-name descname"><span class="pre">plot_grouped_donut_pie_chart</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">df</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">DataFrame</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">group_column</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">value_column</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">colors</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">list</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">['#38d200',</span> <span class="pre">'#0473ea',</span> <span class="pre">'#525355',</span> <span class="pre">'#0061c7']</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">title_prefix</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'Distribution</span> <span class="pre">for'</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#scbk_mlops.eda.plot_grouped_donut_pie_chart" title="Link to this definition"></a></dt>
+<dd><p>Grouped donut pie chart 그리기</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>df</strong> – DataFrame.</p></li>
+<li><p><strong>group_column</strong> – Group 컬럼.</p></li>
+<li><p><strong>value_column</strong> – Value 컬럼.</p></li>
+<li><p><strong>colors</strong> – 색상 리스트.</p></li>
+<li><p><strong>title_prefix</strong> – 차트 제목 Prefix.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="scbk_mlops.eda.plot_heatmap">
+<span class="sig-prename descclassname"><span class="pre">scbk_mlops.eda.</span></span><span class="sig-name descname"><span class="pre">plot_heatmap</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">df</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">DataFrame</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">color</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'#0473ea'</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#scbk_mlops.eda.plot_heatmap" title="Link to this definition"></a></dt>
+<dd><p>Heatmap 그리기</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>df</strong> – DataFrame.</p></li>
+<li><p><strong>color</strong> – 색상.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="scbk_mlops.eda.plot_histogram">
+<span class="sig-prename descclassname"><span class="pre">scbk_mlops.eda.</span></span><span class="sig-name descname"><span class="pre">plot_histogram</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">df</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">DataFrame</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">column</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">bins</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">title</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">x_label</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y_label</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">color</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'#0473ea'</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#scbk_mlops.eda.plot_histogram" title="Link to this definition"></a></dt>
+<dd><p>Histogram 그리기</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>df</strong> – DataFrame.</p></li>
+<li><p><strong>column</strong> – 히스토그램 컬럼.</p></li>
+<li><p><strong>bins</strong> – bin 개수.</p></li>
+<li><p><strong>title</strong> – 차트 제목.</p></li>
+<li><p><strong>x_label</strong> – X 축 레이블.</p></li>
+<li><p><strong>y_label</strong> – Y 축 레이블.</p></li>
+<li><p><strong>color</strong> – 색상.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="scbk_mlops.eda.plot_multi_line_chart">
+<span class="sig-prename descclassname"><span class="pre">scbk_mlops.eda.</span></span><span class="sig-name descname"><span class="pre">plot_multi_line_chart</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">df</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">DataFrame</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">x_column</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y_columns</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">list</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">title</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">x_label</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y_label</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">colors</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">list</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">['#38d200',</span> <span class="pre">'#0473ea',</span> <span class="pre">'#525355',</span> <span class="pre">'#0061c7']</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#scbk_mlops.eda.plot_multi_line_chart" title="Link to this definition"></a></dt>
+<dd><p>Multi-line chart 그리기</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>df</strong> – DataFrame.</p></li>
+<li><p><strong>x_column</strong> – X 축.</p></li>
+<li><p><strong>y_columns</strong> – Y 축 리스트.</p></li>
+<li><p><strong>title</strong> – 차트 제목.</p></li>
+<li><p><strong>x_label</strong> – X 축 레이블.</p></li>
+<li><p><strong>y_label</strong> – Y 축 레이블.</p></li>
+<li><p><strong>colors</strong> – 색상 리스트.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="scbk_mlops.eda.plot_pie_chart">
+<span class="sig-prename descclassname"><span class="pre">scbk_mlops.eda.</span></span><span class="sig-name descname"><span class="pre">plot_pie_chart</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">df</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">DataFrame</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">label_column</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">size_column</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">colors</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">list</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">['#38d200',</span> <span class="pre">'#0473ea',</span> <span class="pre">'#525355',</span> <span class="pre">'#0061c7']</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">title</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'Pie</span> <span class="pre">Chart'</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#scbk_mlops.eda.plot_pie_chart" title="Link to this definition"></a></dt>
+<dd><p>Pie chart 그리기</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>df</strong> – DataFrame.</p></li>
+<li><p><strong>label_column</strong> – Label 컬럼.</p></li>
+<li><p><strong>size_column</strong> – Size 컬럼.</p></li>
+<li><p><strong>colors</strong> – 색상 리스트.</p></li>
+<li><p><strong>title</strong> – 차트 제목.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="scbk_mlops.eda.plot_single_value_card">
+<span class="sig-prename descclassname"><span class="pre">scbk_mlops.eda.</span></span><span class="sig-name descname"><span class="pre">plot_single_value_card</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">value</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">title</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">subtitle</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">None</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">font_size</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">24</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">subtitle_size</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">16</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">color</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'#38d200'</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#scbk_mlops.eda.plot_single_value_card" title="Link to this definition"></a></dt>
+<dd><p>Single value card 그리기</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>value</strong> – 표시할 값.</p></li>
+<li><p><strong>title</strong> – 카드 제목.</p></li>
+<li><p><strong>subtitle</strong> – 부제목.</p></li>
+<li><p><strong>font_size</strong> – 폰트 크기.</p></li>
+<li><p><strong>subtitle_size</strong> – 부제목 폰트 크기.</p></li>
+<li><p><strong>color</strong> – 배경색.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="scbk_mlops.eda.plot_spline_chart">
+<span class="sig-prename descclassname"><span class="pre">scbk_mlops.eda.</span></span><span class="sig-name descname"><span class="pre">plot_spline_chart</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">df</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">DataFrame</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">x_column</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y_column</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">title</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">x_label</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y_label</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">color</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'#0473ea'</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#scbk_mlops.eda.plot_spline_chart" title="Link to this definition"></a></dt>
+<dd><p>Spline chart 그리기</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>df</strong> – DataFrame.</p></li>
+<li><p><strong>x_column</strong> – X 축.</p></li>
+<li><p><strong>y_column</strong> – Y 축.</p></li>
+<li><p><strong>title</strong> – 차트 제목.</p></li>
+<li><p><strong>x_label</strong> – X 축 레이블.</p></li>
+<li><p><strong>y_label</strong> – Y 축 레이블.</p></li>
+<li><p><strong>color</strong> – 색상.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="scbk_mlops.eda.plot_stacked_area_chart">
+<span class="sig-prename descclassname"><span class="pre">scbk_mlops.eda.</span></span><span class="sig-name descname"><span class="pre">plot_stacked_area_chart</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">df</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">DataFrame</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">x_column</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y_columns</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">list</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">title</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">x_label</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y_label</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">alpha</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0.6</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">colors</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">list</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">['#38d200',</span> <span class="pre">'#0473ea',</span> <span class="pre">'#525355',</span> <span class="pre">'#0061c7']</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#scbk_mlops.eda.plot_stacked_area_chart" title="Link to this definition"></a></dt>
+<dd><p>Stacked area chart 그리기</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>df</strong> – DataFrame.</p></li>
+<li><p><strong>x_column</strong> – X 축.</p></li>
+<li><p><strong>y_columns</strong> – Y 축 리스트.</p></li>
+<li><p><strong>title</strong> – 차트 제목.</p></li>
+<li><p><strong>x_label</strong> – X 축 레이블.</p></li>
+<li><p><strong>y_label</strong> – Y 축 레이블.</p></li>
+<li><p><strong>alpha</strong> – 투명도.</p></li>
+<li><p><strong>colors</strong> – 색상 리스트.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="scbk_mlops.eda.plot_stacked_column_chart">
+<span class="sig-prename descclassname"><span class="pre">scbk_mlops.eda.</span></span><span class="sig-name descname"><span class="pre">plot_stacked_column_chart</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">df</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">DataFrame</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">category_column</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">stack_column</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">colors</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">list</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">['#38d200',</span> <span class="pre">'#0473ea',</span> <span class="pre">'#525355',</span> <span class="pre">'#0061c7']</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#scbk_mlops.eda.plot_stacked_column_chart" title="Link to this definition"></a></dt>
+<dd><p>Stacked column chart 그리기</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>df</strong> – DataFrame.</p></li>
+<li><p><strong>category_column</strong> – Category 컬럼.</p></li>
+<li><p><strong>stack_column</strong> – Stack 컬럼.</p></li>
+<li><p><strong>colors</strong> – 색상 리스트.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="scbk_mlops.eda.plot_table_chart">
+<span class="sig-prename descclassname"><span class="pre">scbk_mlops.eda.</span></span><span class="sig-name descname"><span class="pre">plot_table_chart</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">df</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">DataFrame</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">title</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">col_width</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0.2</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">row_height</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">0.4</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">font_size</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">12</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">header_color</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'#0473ea'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">row_colors</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">list</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">['#525355',</span> <span class="pre">'#0061c7']</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">edge_color</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'black'</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#scbk_mlops.eda.plot_table_chart" title="Link to this definition"></a></dt>
+<dd><p>Table chart 그리기</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>df</strong> – DataFrame.</p></li>
+<li><p><strong>title</strong> – 테이블 제목.</p></li>
+<li><p><strong>col_width</strong> – 컬럼 너비.</p></li>
+<li><p><strong>row_height</strong> – 행 높이.</p></li>
+<li><p><strong>font_size</strong> – 폰트 크기.</p></li>
+<li><p><strong>header_color</strong> – 헤더 색상.</p></li>
+<li><p><strong>row_colors</strong> – 행 색상 리스트.</p></li>
+<li><p><strong>edge_color</strong> – 테두리 색상.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="scbk_mlops.eda.plot_treemap">
+<span class="sig-prename descclassname"><span class="pre">scbk_mlops.eda.</span></span><span class="sig-name descname"><span class="pre">plot_treemap</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">df</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">DataFrame</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">size_column</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">label_column</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">color</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'#0473ea'</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#scbk_mlops.eda.plot_treemap" title="Link to this definition"></a></dt>
+<dd><p>Treemap 그리기</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>df</strong> – DataFrame.</p></li>
+<li><p><strong>size_column</strong> – Size 컬럼.</p></li>
+<li><p><strong>label_column</strong> – Label 컬럼.</p></li>
+<li><p><strong>color</strong> – 색상.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="scbk_mlops.eda.plot_trend_line_chart">
+<span class="sig-prename descclassname"><span class="pre">scbk_mlops.eda.</span></span><span class="sig-name descname"><span class="pre">plot_trend_line_chart</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">df</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">DataFrame</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">x_column</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y_column</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">title</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">x_label</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y_label</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">color</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'#0473ea'</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#scbk_mlops.eda.plot_trend_line_chart" title="Link to this definition"></a></dt>
+<dd><p>Trend line chart 그리기</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>df</strong> – DataFrame.</p></li>
+<li><p><strong>x_column</strong> – X 축.</p></li>
+<li><p><strong>y_column</strong> – Y 축.</p></li>
+<li><p><strong>title</strong> – 차트 제목.</p></li>
+<li><p><strong>x_label</strong> – X 축 레이블.</p></li>
+<li><p><strong>y_label</strong> – Y 축 레이블.</p></li>
+<li><p><strong>color</strong> – 색상.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="scbk_mlops.eda.plot_violin_plot">
+<span class="sig-prename descclassname"><span class="pre">scbk_mlops.eda.</span></span><span class="sig-name descname"><span class="pre">plot_violin_plot</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">df</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">DataFrame</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">x_column</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y_column</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">title</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">x_label</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y_label</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">color</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'#0473ea'</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#scbk_mlops.eda.plot_violin_plot" title="Link to this definition"></a></dt>
+<dd><p>Violin plot 그리기</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>df</strong> – DataFrame.</p></li>
+<li><p><strong>x_column</strong> – X 축.</p></li>
+<li><p><strong>y_column</strong> – Y 축.</p></li>
+<li><p><strong>title</strong> – 차트 제목.</p></li>
+<li><p><strong>x_label</strong> – X 축 레이블.</p></li>
+<li><p><strong>y_label</strong> – Y 축 레이블.</p></li>
+<li><p><strong>color</strong> – 색상.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<section id="data-ingestion-module">
+<span id="module-scbk_mlops.ingestion"></span><h2>Data Ingestion Module<a class="headerlink" href="#data-ingestion-module" title="Link to this heading"></a></h2>
+<p>해당 모듈은 데이터를 불러오는 기능을 제공하는 모듈입니다.
+데이터 추출단계에서부터 미리 정의된 데이터를 불러오는 것을 추천 드리며, 그렇지 않더라도 최대한 일반화하여 진행이 가능하도록 Function을 구성하였습니다.</p>
+</section>
+<dl class="py function">
+<dt class="sig sig-object py" id="scbk_mlops.ingestion.capitalize_columns">
+<span class="sig-prename descclassname"><span class="pre">scbk_mlops.ingestion.</span></span><span class="sig-name descname"><span class="pre">capitalize_columns</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">df</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">DataFrame</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">DataFrame</span></span></span><a class="headerlink" href="#scbk_mlops.ingestion.capitalize_columns" title="Link to this definition"></a></dt>
+<dd><p>dataframe 칼럼들을 모두 대문자로 변환.
+Convert all DataFrame column names to uppercase.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>df</strong> (<em>pd.DataFrame</em>) – Input DataFrame to transform.</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>A new DataFrame with column names in uppercase.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>pd.DataFrame</p>
+</dd>
+</dl>
+<p class="rubric">Examples</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">({</span><span class="s1">&#39;col1&#39;</span><span class="p">:</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">],</span> <span class="s1">&#39;col2&#39;</span><span class="p">:</span> <span class="p">[</span><span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">]})</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">capitalize_columns</span><span class="p">(</span><span class="n">df</span><span class="p">)</span>
+<span class="go">   COL1  COL2</span>
+<span class="go">0     1     3</span>
+<span class="go">1     2     4</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="scbk_mlops.ingestion.convert_and_save_to_parquet">
+<span class="sig-prename descclassname"><span class="pre">scbk_mlops.ingestion.</span></span><span class="sig-name descname"><span class="pre">convert_and_save_to_parquet</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_dataframe</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">DataFrame</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">output_file_name</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#scbk_mlops.ingestion.convert_and_save_to_parquet" title="Link to this definition"></a></dt>
+<dd><p>(ENG) Saves txt, csv filetypes into parquet
+(KOR) txt, csv 등의 파일 형태를 parquet(pq) 형태로 저장해주는 함수입니다.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>input_dataframe</strong> (<em>pd.DataFrame</em>) – The DataFrame to be converted. Recommended to bring from the Data Catalog.</p></li>
+<li><p><strong>output_file_name</strong> (<em>str</em>) – Desired name for the output Parquet file (including the “.parquet” extension).</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+<p class="rubric">Examples</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;input.csv&#39;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">save_as_parquet</span><span class="p">(</span><span class="n">df</span><span class="p">,</span> <span class="s1">&#39;output.parquet&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="scbk_mlops.ingestion.partition_data">
+<span class="sig-prename descclassname"><span class="pre">scbk_mlops.ingestion.</span></span><span class="sig-name descname"><span class="pre">partition_data</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">df</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">DataFrame</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">partition_column</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">output_dir</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">file_format</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'csv'</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#scbk_mlops.ingestion.partition_data" title="Link to this definition"></a></dt>
+<dd><p>(KOR) 지정해준 칼럼의 Unique한 값들로 데이터를 개별 파일로 나눠주는 방식
+(ENG) Split the DataFrame into individual files based on unique values in a specified column.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>df</strong> (<em>pd.DataFrame</em>) – The input DataFrame to be partitioned.</p></li>
+<li><p><strong>partition_column</strong> (<em>str</em>) – The column name to partition the DataFrame by.</p></li>
+<li><p><strong>output_dir</strong> (<em>str</em>) – The directory where the partitioned files will be saved.</p></li>
+<li><p><strong>file_format</strong> (<em>str</em><em>, </em><em>optional</em>) – The format of the output files (‘csv’ or ‘parquet’). Default is ‘csv’.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>None</p>
+</dd>
+<dt class="field-odd">Raises<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>ValueError</strong> – If the specified file format is not supported.</p>
+</dd>
+</dl>
+<p class="rubric">Examples</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">partition_data</span><span class="p">(</span><span class="n">df</span><span class="p">,</span> <span class="s1">&#39;Scorecard&#39;</span><span class="p">,</span> <span class="s1">&#39;./output&#39;</span><span class="p">,</span> <span class="s1">&#39;csv&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="scbk_mlops.ingestion.typecast">
+<span class="sig-prename descclassname"><span class="pre">scbk_mlops.ingestion.</span></span><span class="sig-name descname"><span class="pre">typecast</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">df</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">DataFrame</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">DataFrame</span></span></span><a class="headerlink" href="#scbk_mlops.ingestion.typecast" title="Link to this definition"></a></dt>
+<dd><p>string, int, float 등 각 칼럼을 인식해 typecast 해주는 함수. Null 값 같은 경우 coerce로 그대로 두는 형태를 선정.
+Cast DataFrame columns to appropriate data types while preserving null values.
+Null values are preserved using ‘errors=”coerce”’ where applicable.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>df</strong> (<em>pd.DataFrame</em>) – The input DataFrame to be typecasted.</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>A new DataFrame with columns cast to appropriate data types.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>pd.DataFrame</p>
+</dd>
+</dl>
+</dd></dl>
+
+<section id="reporting-module">
+<span id="module-scbk_mlops.reporting"></span><h2>Reporting Module<a class="headerlink" href="#reporting-module" title="Link to this heading"></a></h2>
+<p>해당 모듈은 모델링 결과를 리포팅하는 기능을 제공하는 모듈입니다.
+주로 모형 개발과 관련된 문서 생성에 초점을 맞추고 있으며, EDA Report는 EDA Module에서 생성하시면 됩니다.</p>
+</section>
+<dl class="py function">
+<dt class="sig sig-object py" id="scbk_mlops.reporting.calculate_woe_iv">
+<span class="sig-prename descclassname"><span class="pre">scbk_mlops.reporting.</span></span><span class="sig-name descname"><span class="pre">calculate_woe_iv</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">data</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">feature</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">target</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#scbk_mlops.reporting.calculate_woe_iv" title="Link to this definition"></a></dt>
+<dd><p>Helper function to calculate Weight of Evidence (WoE) and Information Value (IV)</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>data</strong> (<em>pd.DataFrame</em>) – Data containing the feature and target variable.</p></li>
+<li><p><strong>feature</strong> (<em>str</em>) – The binned feature column name.</p></li>
+<li><p><strong>target</strong> (<em>str</em>) – The target variable column name.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>DataFrame containing WoE and IV values for each bin.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>woe_iv_df (pd.DataFrame)</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="scbk_mlops.reporting.data_drift_report">
+<span class="sig-prename descclassname"><span class="pre">scbk_mlops.reporting.</span></span><span class="sig-name descname"><span class="pre">data_drift_report</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">reference_data</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">current_data</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">column_mapping</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">report_path</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'data_drift_report.html'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#scbk_mlops.reporting.data_drift_report" title="Link to this definition"></a></dt>
+<dd><p>Generate data drift report (evidently)</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>reference_data</strong> (<em>pd.DataFrame</em>) – The reference dataset to compare against.</p></li>
+<li><p><strong>current_data</strong> (<em>pd.DataFrame</em>) – The current dataset to evaluate for data drift.</p></li>
+<li><p><strong>column_mapping</strong> (<em>dict</em><em>, </em><em>optional</em>) – Column mapping for evidently.</p></li>
+<li><p><strong>report_path</strong> (<em>str</em><em>, </em><em>optional</em>) – Path to save the generated report.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="scbk_mlops.reporting.dq_add_variable_description">
+<span class="sig-prename descclassname"><span class="pre">scbk_mlops.reporting.</span></span><span class="sig-name descname"><span class="pre">dq_add_variable_description</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">data</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">DataFrame</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">variable_description_file</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">DataFrame</span></span></span><a class="headerlink" href="#scbk_mlops.reporting.dq_add_variable_description" title="Link to this definition"></a></dt>
+<dd><p>Add variable description from the provided description file.</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="scbk_mlops.reporting.dq_add_variable_description_char">
+<span class="sig-prename descclassname"><span class="pre">scbk_mlops.reporting.</span></span><span class="sig-name descname"><span class="pre">dq_add_variable_description_char</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">data</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">DataFrame</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">variable_description_df</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">DataFrame</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">DataFrame</span></span></span><a class="headerlink" href="#scbk_mlops.reporting.dq_add_variable_description_char" title="Link to this definition"></a></dt>
+<dd><p>Add variable description (char) from the provided description DataFrame.</p>
+<p>Parameters:
+- data: pd.DataFrame - Data with variables to describe.
+- variable_description_df: pd.DataFrame - DataFrame containing variable descriptions.</p>
+<p>Returns:
+- pd.DataFrame: Data with variable descriptions added.</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="scbk_mlops.reporting.dq_add_variable_serial_number_char">
+<span class="sig-prename descclassname"><span class="pre">scbk_mlops.reporting.</span></span><span class="sig-name descname"><span class="pre">dq_add_variable_serial_number_char</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">data</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">DataFrame</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">DataFrame</span></span></span><a class="headerlink" href="#scbk_mlops.reporting.dq_add_variable_serial_number_char" title="Link to this definition"></a></dt>
+<dd><p>Add variable serial number label (char) to the data.</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="scbk_mlops.reporting.dq_add_variable_type">
+<span class="sig-prename descclassname"><span class="pre">scbk_mlops.reporting.</span></span><span class="sig-name descname"><span class="pre">dq_add_variable_type</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">data</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">DataFrame</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">DataFrame</span></span></span><a class="headerlink" href="#scbk_mlops.reporting.dq_add_variable_type" title="Link to this definition"></a></dt>
+<dd><p>Add variable type and serial number to the data.</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="scbk_mlops.reporting.dq_add_variable_type_char">
+<span class="sig-prename descclassname"><span class="pre">scbk_mlops.reporting.</span></span><span class="sig-name descname"><span class="pre">dq_add_variable_type_char</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">data</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">DataFrame</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">DataFrame</span></span></span><a class="headerlink" href="#scbk_mlops.reporting.dq_add_variable_type_char" title="Link to this definition"></a></dt>
+<dd><p>Add variable type label (char) to the data.</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="scbk_mlops.reporting.dq_data_processing">
+<span class="sig-prename descclassname"><span class="pre">scbk_mlops.reporting.</span></span><span class="sig-name descname"><span class="pre">dq_data_processing</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">file_path</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">DataFrame</span></span></span><a class="headerlink" href="#scbk_mlops.reporting.dq_data_processing" title="Link to this definition"></a></dt>
+<dd><p>Process data for data quality report.</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="scbk_mlops.reporting.dq_data_processing_char">
+<span class="sig-prename descclassname"><span class="pre">scbk_mlops.reporting.</span></span><span class="sig-name descname"><span class="pre">dq_data_processing_char</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">df</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">DataFrame</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">DataFrame</span></span></span><a class="headerlink" href="#scbk_mlops.reporting.dq_data_processing_char" title="Link to this definition"></a></dt>
+<dd><p>Process character data from a DataFrame for data quality report.
+Selects string columns and computes basic statistics.</p>
+<p>Parameters:
+- df: pd.DataFrame - Input DataFrame containing the data.</p>
+<p>Returns:
+- pd.DataFrame: Processed data for DQ report.</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="scbk_mlops.reporting.dq_data_reconstruction_char">
+<span class="sig-prename descclassname"><span class="pre">scbk_mlops.reporting.</span></span><span class="sig-name descname"><span class="pre">dq_data_reconstruction_char</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">data</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">DataFrame</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">DataFrame</span></span></span><a class="headerlink" href="#scbk_mlops.reporting.dq_data_reconstruction_char" title="Link to this definition"></a></dt>
+<dd><p>Reconstruction of the data into report format for character variables.</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="scbk_mlops.reporting.dq_median_analysis">
+<span class="sig-prename descclassname"><span class="pre">scbk_mlops.reporting.</span></span><span class="sig-name descname"><span class="pre">dq_median_analysis</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">data</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">DataFrame</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">DataFrame</span></span></span><a class="headerlink" href="#scbk_mlops.reporting.dq_median_analysis" title="Link to this definition"></a></dt>
+<dd><p>Perform median analysis and determine variables to drop.</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="scbk_mlops.reporting.dq_output_report">
+<span class="sig-prename descclassname"><span class="pre">scbk_mlops.reporting.</span></span><span class="sig-name descname"><span class="pre">dq_output_report</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">data</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">DataFrame</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#scbk_mlops.reporting.dq_output_report" title="Link to this definition"></a></dt>
+<dd><p>Generate the final DQ report and save it as an Excel and CSV file.</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="scbk_mlops.reporting.dq_output_report_char">
+<span class="sig-prename descclassname"><span class="pre">scbk_mlops.reporting.</span></span><span class="sig-name descname"><span class="pre">dq_output_report_char</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">data</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">DataFrame</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">output_excel</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">output_csv</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#scbk_mlops.reporting.dq_output_report_char" title="Link to this definition"></a></dt>
+<dd><p>Generate final output for character type and save as Excel and CSV files.</p>
+<p>Parameters:
+- data: pd.DataFrame - Data to output.
+- output_excel: str - Filename for the Excel output.
+- output_csv: str - Filename for the CSV output.</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="scbk_mlops.reporting.dq_process_and_merge_snapshots">
+<span class="sig-prename descclassname"><span class="pre">scbk_mlops.reporting.</span></span><span class="sig-name descname"><span class="pre">dq_process_and_merge_snapshots</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">snapshot_files</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#scbk_mlops.reporting.dq_process_and_merge_snapshots" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="scbk_mlops.reporting.feature_selection_report">
+<span class="sig-prename descclassname"><span class="pre">scbk_mlops.reporting.</span></span><span class="sig-name descname"><span class="pre">feature_selection_report</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">model</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">X_train</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y_train</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">report_path</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'feature_selection_report.html'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#scbk_mlops.reporting.feature_selection_report" title="Link to this definition"></a></dt>
+<dd><p>Generate feature selection report from GrootCV</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>model</strong> – The model used for feature selection.</p></li>
+<li><p><strong>X_train</strong> (<em>pd.DataFrame</em>) – Training features.</p></li>
+<li><p><strong>y_train</strong> (<em>pd.Series</em>) – Training target variable.</p></li>
+<li><p><strong>report_path</strong> (<em>str</em><em>, </em><em>optional</em>) – Path to save the generated report.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="scbk_mlops.reporting.generate_dq_report">
+<span class="sig-prename descclassname"><span class="pre">scbk_mlops.reporting.</span></span><span class="sig-name descname"><span class="pre">generate_dq_report</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">reference_data</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">current_data</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">report_path</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'custom_data_quality_report.html'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#scbk_mlops.reporting.generate_dq_report" title="Link to this definition"></a></dt>
+<dd><p>Generate Evidently DQ Report</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="scbk_mlops.reporting.generate_eligibility_waterfall">
+<span class="sig-prename descclassname"><span class="pre">scbk_mlops.reporting.</span></span><span class="sig-name descname"><span class="pre">generate_eligibility_waterfall</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">df</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">segment_column</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">segment_values</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">timestamp_column</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">timestamps</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">exclusion_criteria</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">response_columns</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">output_folder</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#scbk_mlops.reporting.generate_eligibility_waterfall" title="Link to this definition"></a></dt>
+<dd><p>Generate a waterfall eligibility report based on exclusion criteria.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>df</strong> (<em>pd.DataFrame</em>) – Input DataFrame containing customer data.</p></li>
+<li><p><strong>segment_column</strong> (<em>str</em>) – Column name indicating the customer segment.</p></li>
+<li><p><strong>segment_values</strong> (<em>list</em>) – List of values in segment_column defining the segment of interest.</p></li>
+<li><p><strong>timestamp_column</strong> (<em>str</em>) – Column name indicating the timestamp.</p></li>
+<li><p><strong>timestamps</strong> (<em>list</em>) – List of timestamps to process.</p></li>
+<li><p><strong>exclusion_criteria</strong> (<em>list</em>) – <p>List of dictionaries, each defining an exclusion criterion.
+Each dictionary should have keys:</p>
+<blockquote>
+<div><ul>
+<li><p>’name’: Name of the criterion.</p></li>
+<li><p>’flag_column’: Name of the flag column to create.</p></li>
+<li><p>’condition’: A function that takes df and returns a boolean Series.</p></li>
+</ul>
+</div></blockquote>
+</p></li>
+<li><p><strong>response_columns</strong> (<em>list</em>) – List of response columns to analyze.</p></li>
+<li><p><strong>output_folder</strong> (<em>str</em>) – Folder path to save the CSV files.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+<dl class="simple">
+<dt>Outputs:</dt><dd><p>CSV files saved in the output_folder containing the eligibility waterfall report.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="scbk_mlops.reporting.generate_fine_classing_report">
+<span class="sig-prename descclassname"><span class="pre">scbk_mlops.reporting.</span></span><span class="sig-name descname"><span class="pre">generate_fine_classing_report</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">data</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">target_variable</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">report_path</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'fine_classing_report.html'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#scbk_mlops.reporting.generate_fine_classing_report" title="Link to this definition"></a></dt>
+<dd><p>Generate fine classing report</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>data</strong> (<em>pd.DataFrame</em>) – Dataset for fine classing.</p></li>
+<li><p><strong>target_variable</strong> (<em>str</em>) – The target variable for classification.</p></li>
+<li><p><strong>report_path</strong> (<em>str</em><em>, </em><em>optional</em>) – Path to save the generated report.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="scbk_mlops.reporting.generate_toc_model_card">
+<span class="sig-prename descclassname"><span class="pre">scbk_mlops.reporting.</span></span><span class="sig-name descname"><span class="pre">generate_toc_model_card</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">train_data_path</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'train_data.csv'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">test_data_path</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'test_data.csv'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">target_column</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'target'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">prediction_column</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'prediction'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">report_dir</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'./model_card'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">model_name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'Marketing</span> <span class="pre">Propensity</span> <span class="pre">Model'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">version</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'v1.0'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">model_description</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">model_author</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">model_type</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">model_architecture</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">date</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">primary_use_case</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">out_of_scope</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">training_dataset_description</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">training_data_source</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">training_data_limitations</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">evaluation_dataset_description</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">evaluation_metrics</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">decision_threshold</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">considerations</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">threshold_comment</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">features_of_interest</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">limitations</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ethical_considerations</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#scbk_mlops.reporting.generate_toc_model_card" title="Link to this definition"></a></dt>
+<dd><p>Generate a Model Card using Evidently.ai with customizable text fields and plots.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>train_data_path</strong> (<em>str</em>) – Path to the training data CSV file.</p></li>
+<li><p><strong>test_data_path</strong> (<em>str</em>) – Path to the testing data CSV file.</p></li>
+<li><p><strong>target_column</strong> (<em>str</em>) – Name of the target column in the datasets.</p></li>
+<li><p><strong>prediction_column</strong> (<em>str</em>) – Name of the prediction column in the datasets.</p></li>
+<li><p><strong>report_dir</strong> (<em>str</em>) – Directory to store model card artifacts.</p></li>
+<li><p><strong>model_name</strong> (<em>str</em>) – Name of the model being documented.</p></li>
+<li><p><strong>version</strong> (<em>str</em>) – Version of the model.</p></li>
+<li><p><strong>model_description</strong> (<em>str</em>) – Description of the model.</p></li>
+<li><p><strong>model_author</strong> (<em>str</em>) – Author of the model.</p></li>
+<li><p><strong>model_type</strong> (<em>str</em>) – Type of the model.</p></li>
+<li><p><strong>model_architecture</strong> (<em>str</em>) – Architecture of the model.</p></li>
+<li><p><strong>date</strong> (<em>str</em>) – Date of the model.</p></li>
+<li><p><strong>primary_use_case</strong> (<em>str</em>) – Primary use case of the model.</p></li>
+<li><p><strong>out_of_scope</strong> (<em>str</em>) – Applications out of scope for the model.</p></li>
+<li><p><strong>training_dataset_description</strong> (<em>str</em>) – Description of the training dataset.</p></li>
+<li><p><strong>training_data_source</strong> (<em>str</em>) – Source of the training data.</p></li>
+<li><p><strong>training_data_limitations</strong> (<em>str</em>) – Limitations of the training data.</p></li>
+<li><p><strong>evaluation_dataset_description</strong> (<em>str</em>) – Description of the evaluation dataset.</p></li>
+<li><p><strong>evaluation_metrics</strong> (<em>str</em>) – Evaluation metrics used.</p></li>
+<li><p><strong>decision_threshold</strong> (<em>str</em>) – Decision threshold for classification.</p></li>
+<li><p><strong>considerations</strong> (<em>str</em>) – Caveats and recommendations.</p></li>
+<li><p><strong>threshold_comment</strong> (<em>str</em>) – Comments about decision thresholds.</p></li>
+<li><p><strong>features_of_interest</strong> (<em>list</em><em>, </em><em>optional</em>) – List of features to highlight in the report.</p></li>
+<li><p><strong>limitations</strong> (<em>str</em><em>, </em><em>optional</em>) – Known limitations of the model.</p></li>
+<li><p><strong>ethical_considerations</strong> (<em>str</em><em>, </em><em>optional</em>) – Ethical considerations for model use.</p></li>
+</ul>
+</dd>
+</dl>
+<dl class="simple">
+<dt>Output:</dt><dd><p>None: Saves the model card report as an HTML file in the specified directory.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="scbk_mlops.reporting.make_float">
+<span class="sig-prename descclassname"><span class="pre">scbk_mlops.reporting.</span></span><span class="sig-name descname"><span class="pre">make_float</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#scbk_mlops.reporting.make_float" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="scbk_mlops.reporting.output_dict_resp_analysis">
+<span class="sig-prename descclassname"><span class="pre">scbk_mlops.reporting.</span></span><span class="sig-name descname"><span class="pre">output_dict_resp_analysis</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#scbk_mlops.reporting.output_dict_resp_analysis" title="Link to this definition"></a></dt>
+<dd><p>통계자료 출력 (Null 값 개수/Decrease 개수, Percentile - 이건 참고용)</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="scbk_mlops.reporting.response_analysis_to_excel">
+<span class="sig-prename descclassname"><span class="pre">scbk_mlops.reporting.</span></span><span class="sig-name descname"><span class="pre">response_analysis_to_excel</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">output_dict</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">file_name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">topic</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">leave_opened</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#scbk_mlops.reporting.response_analysis_to_excel" title="Link to this definition"></a></dt>
+<dd><p>Exports data from the output_dict to an Excel file with the specified name.</p>
+<p>Args:
+- output_dict (dict): Dictionary containing months as keys and dictionaries with dataframes ‘df1’ and ‘df2’ as values.
+- file_name (str): Desired name/path for the Excel file.
+- topic (str): Topic (product) for the analysis.
+- leave_opened (bool): Leaves the workbook opened for final check.</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="scbk_mlops.reporting.response_crosstab">
+<span class="sig-prename descclassname"><span class="pre">scbk_mlops.reporting.</span></span><span class="sig-name descname"><span class="pre">response_crosstab</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">df</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">DataFrame</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">r_col_name</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">a_col_name</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">band</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">[0,</span> <span class="pre">1000000,</span> <span class="pre">5000000,</span> <span class="pre">10000000,</span> <span class="pre">30000000,</span> <span class="pre">50000000,</span> <span class="pre">100000000,</span> <span class="pre">inf]</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">band_labels</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">['0Mto1M',</span> <span class="pre">'1Mto5M',</span> <span class="pre">'5Mto10M',</span> <span class="pre">'10Mto30M',</span> <span class="pre">'30Mto50M',</span> <span class="pre">'50Mto100M',</span> <span class="pre">'100M+']</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">pct_bins</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">[0,</span> <span class="pre">10,</span> <span class="pre">20,</span> <span class="pre">30,</span> <span class="pre">40,</span> <span class="pre">50,</span> <span class="pre">60,</span> <span class="pre">70,</span> <span class="pre">80,</span> <span class="pre">90,</span> <span class="pre">100,</span> <span class="pre">inf]</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">pct_labels</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">['0-10%',</span> <span class="pre">'10%-20%',</span> <span class="pre">'20%-30%',</span> <span class="pre">'30%-40%',</span> <span class="pre">'40%-50%',</span> <span class="pre">'50%-60%',</span> <span class="pre">'60%-70%',</span> <span class="pre">'70%-80%',</span> <span class="pre">'80%-90%',</span> <span class="pre">'90%-100%',</span> <span class="pre">'100%+']</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tot_period</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">['0']</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">positive_direction</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#scbk_mlops.reporting.response_crosstab" title="Link to this definition"></a></dt>
+<dd><p>(ENG) Creates a crosstab to use when exploring the response definition
+(KOR) Response 변수 정의를 위한 crosstab 생성</p>
+<p>Output:
+- client_crosstab: returns a table based on client number counts for each cross ‘bins’
+- balance_crosstab: returns a table based on balance amount for each cross ‘bins’</p>
+<p>Args:
+- df (DataFrame): input data
+- r_col_name: ratio column name (for percentage calculation)
+- a_col_name: amount column name (for balance calculation)
+- band (List): List of predefined ranges for ‘bins’
+- band_labels (List): List of predefined names for each ‘bins’
+- pct_bins (List): List of predefined percent ranges for ‘bins’
+- pct_labels (List): List of predefined percent names for each ‘bins’
+- tot_period: ‘0’ takes the entire period while others will take individual snapshots based on the input (typically base_yymm)
+- positive_direction: positives and negatives should be taken into consideration</p>
+<ul class="simple">
+<li><p>By default, the bins are left inclusive and right exclusive</p></li>
+</ul>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="scbk_mlops.reporting.snapshot_count">
+<span class="sig-prename descclassname"><span class="pre">scbk_mlops.reporting.</span></span><span class="sig-name descname"><span class="pre">snapshot_count</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">df</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">base_yymm</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">segment</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">resp</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#scbk_mlops.reporting.snapshot_count" title="Link to this definition"></a></dt>
+<dd><p>Snapshot profile report</p>
+</dd></dl>
+
+<section id="data-engineering-module">
+<span id="module-scbk_mlops.data_engineering"></span><h2>Data Engineering Module<a class="headerlink" href="#data-engineering-module" title="Link to this heading"></a></h2>
+<p>해당 모듈은 데이터 전처리 및 Feature Engineering을 수행하는 모듈입니다.</p>
+</section>
+<dl class="py function">
+<dt class="sig sig-object py" id="scbk_mlops.data_engineering.Data_Sampling">
+<span class="sig-prename descclassname"><span class="pre">scbk_mlops.data_engineering.</span></span><span class="sig-name descname"><span class="pre">Data_Sampling</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">samplingdata</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">user_specified_ratio</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">response_variable</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#scbk_mlops.data_engineering.Data_Sampling" title="Link to this definition"></a></dt>
+<dd><p>Returns sampled data with snapshot, id and target variable where target variable is deduplicated
+and non-responders are sampled using ratio at the snapshot level.</p>
+<p>Inputs:
+df: data (n_cust and responders)
+user_specified_ratio: Ratio to select the Non-Responders sample
+response_variable: The response variable to be used for sampling.</p>
+<p>Returns:
+final_sample: DataFrame with sampled data.</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="scbk_mlops.data_engineering.add_change_features">
+<span class="sig-prename descclassname"><span class="pre">scbk_mlops.data_engineering.</span></span><span class="sig-name descname"><span class="pre">add_change_features</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">df</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">DataFrame</span></span></span><a class="headerlink" href="#scbk_mlops.data_engineering.add_change_features" title="Link to this definition"></a></dt>
+<dd><p>Adding Change Features</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="scbk_mlops.data_engineering.add_penetration_features">
+<span class="sig-prename descclassname"><span class="pre">scbk_mlops.data_engineering.</span></span><span class="sig-name descname"><span class="pre">add_penetration_features</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">df</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">DataFrame</span></span></span><a class="headerlink" href="#scbk_mlops.data_engineering.add_penetration_features" title="Link to this definition"></a></dt>
+<dd><p>Calculate penetration features by dividing account balances by AUM balances</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="scbk_mlops.data_engineering.apply_feature_selection">
+<span class="sig-prename descclassname"><span class="pre">scbk_mlops.data_engineering.</span></span><span class="sig-name descname"><span class="pre">apply_feature_selection</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">train_df</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">test_df</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">resp</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#scbk_mlops.data_engineering.apply_feature_selection" title="Link to this definition"></a></dt>
+<dd><p>Apply feature selection to train and test datasets.</p>
+<p>Parameters:
+- train_df (pd.DataFrame): The training dataset.
+- test_df (pd.DataFrame): The testing dataset.
+- resp (str): The target field/response variable.</p>
+<p>Returns:
+- train_reduced_df (pd.DataFrame): The reduced training dataset after feature selection.
+- test_reduced_df (pd.DataFrame): The reduced testing dataset after feature selection.</p>
+<p>This function transforms both the train and test datasets using the fitted feature
+selection pipeline and ensures that any protected variables (if applicable) are included
+in the final datasets for potential fairness analysis.</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="scbk_mlops.data_engineering.feature_selection">
+<span class="sig-prename descclassname"><span class="pre">scbk_mlops.data_engineering.</span></span><span class="sig-name descname"><span class="pre">feature_selection</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">S2</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">DataFrame</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">resp</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">existing_pipeline</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#scbk_mlops.data_engineering.feature_selection" title="Link to this definition"></a></dt>
+<dd><p>Apply GrootCV feature selection using the provided training data.</p>
+<p>Parameters:
+- S2 (pd.DataFrame): The training dataset.
+- resp (str): The target field/response variable.
+- existing_pipeline (str): The name of an existing feature selection pipeline to load and apply.</p>
+<p>This function either fits a new feature selection pipeline on the provided dataset
+or loads an existing one and applies it for feature selection.</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="scbk_mlops.data_engineering.fit_feature_selection">
+<span class="sig-prename descclassname"><span class="pre">scbk_mlops.data_engineering.</span></span><span class="sig-name descname"><span class="pre">fit_feature_selection</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">train_df</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">resp</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#scbk_mlops.data_engineering.fit_feature_selection" title="Link to this definition"></a></dt>
+<dd><p>Fit the feature selection pipeline and save it to a file.</p>
+<p>Parameters:
+- train_df (pd.DataFrame): The training dataset.
+- resp (str): The target field/response variable for feature selection.</p>
+<p>This function fits a feature selection pipeline on the provided training data
+and saves the resulting pipeline object as a pickle file, named with a
+timestamp for versioning.</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="scbk_mlops.data_engineering.fit_feature_selection_pipeline">
+<span class="sig-prename descclassname"><span class="pre">scbk_mlops.data_engineering.</span></span><span class="sig-name descname"><span class="pre">fit_feature_selection_pipeline</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">train_df</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">customer_id_field</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'CIFNO'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">timestamp_field</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'base_yyyymm'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">target_field</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#scbk_mlops.data_engineering.fit_feature_selection_pipeline" title="Link to this definition"></a></dt>
+<dd><p>Build and fit the feature selection pipeline.</p>
+<p>Parameters:
+- train_df (pd.DataFrame): The training dataset.
+- customer_id_field (str): The field representing customer IDs. Defaults to ‘CIFNO’.
+- timestamp_field (str): The field representing timestamp or time period. Defaults to ‘base_yyyymm’.
+- target_field (str): The target field/response variable.</p>
+<p>Returns:
+- pipeline: A fitted feature selection pipeline.</p>
+<p>This function breaks down the input dataset into features (X) and the target (y),
+applies sample weighting to account for class imbalance, and then fits a feature
+selection pipeline consisting of two stages of GrootCV and collinearity filtering.</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="scbk_mlops.data_engineering.output_eligible_dataset">
+<span class="sig-prename descclassname"><span class="pre">scbk_mlops.data_engineering.</span></span><span class="sig-name descname"><span class="pre">output_eligible_dataset</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#scbk_mlops.data_engineering.output_eligible_dataset" title="Link to this definition"></a></dt>
+<dd><p>Output eligible dataset for model input</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="scbk_mlops.data_engineering.process_null_values">
+<span class="sig-prename descclassname"><span class="pre">scbk_mlops.data_engineering.</span></span><span class="sig-name descname"><span class="pre">process_null_values</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">df</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#scbk_mlops.data_engineering.process_null_values" title="Link to this definition"></a></dt>
+<dd><p>Preprocess null values in the DataFrame based on column data types.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>df</strong> (<em>pd.DataFrame</em>) – Input DataFrame with potential null values.</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>DataFrame with null values processed based on data types.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>pd.DataFrame</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="scbk_mlops.data_engineering.split_data">
+<span class="sig-prename descclassname"><span class="pre">scbk_mlops.data_engineering.</span></span><span class="sig-name descname"><span class="pre">split_data</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">df</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#scbk_mlops.data_engineering.split_data" title="Link to this definition"></a></dt>
+<dd><p>Split data into three DataFrames S1, S2, S3 based on unique BASE_YYMM values.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>df</strong> (<em>pd.DataFrame</em>) – Input DataFrame containing a column ‘BASE_YYMM’.</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p><dl class="simple">
+<dt>Three DataFrames (S1, S2, S3), where S1 corresponds to the earliest,</dt><dd><p>S2 corresponds to the next, and S3 corresponds to the latest BASE_YYMM.</p>
+</dd>
+</dl>
+</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>tuple</p>
+</dd>
+<dt class="field-even">Raises<span class="colon">:</span></dt>
+<dd class="field-even"><p><strong>ValueError</strong> – If ‘BASE_YYMM’ column does not have exactly three distinct values or
+    if the values are not in the required format (YYYYMM).</p>
+</dd>
+</dl>
+</dd></dl>
+
+<section id="model-engineering-module">
+<span id="module-scbk_mlops.model_engineering"></span><h2>Model Engineering Module<a class="headerlink" href="#model-engineering-module" title="Link to this heading"></a></h2>
+<p>해당 모듈은 모델링을 수행하는 모듈입니다.
+AutoML 및 MLFlow를 활용하여 모형을 만드는 함수를 구현하였으며, 해당 함수를 활용하여 진행하시면 됩니다.</p>
+</section>
+<dl class="py function">
+<dt class="sig sig-object py" id="scbk_mlops.model_engineering.automl_pipeline">
+<span class="sig-prename descclassname"><span class="pre">scbk_mlops.model_engineering.</span></span><span class="sig-name descname"><span class="pre">automl_pipeline</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">data</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">target</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">experiment_name</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#scbk_mlops.model_engineering.automl_pipeline" title="Link to this definition"></a></dt>
+<dd><p>Pycaret을 사용하여 자동화된 모델 선택 및 튜닝 수행</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>data</strong> (<em>pd.DataFrame</em>) – 입력 데이터셋.</p></li>
+<li><p><strong>target</strong> (<em>str</em>) – 데이터셋에서 목표 변수의 이름.</p></li>
+<li><p><strong>experiment_name</strong> (<em>str</em>) – Pycaret 실험의 이름.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>Pycaret이 선택하고 튜닝한 최고의 모델.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>best_model</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="scbk_mlops.model_engineering.cross_validation">
+<span class="sig-prename descclassname"><span class="pre">scbk_mlops.model_engineering.</span></span><span class="sig-name descname"><span class="pre">cross_validation</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">model</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">data</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">target</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">cv</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">scoring</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#scbk_mlops.model_engineering.cross_validation" title="Link to this definition"></a></dt>
+<dd><p>강력한 모델 평가를 위해 교차 검증 기법 적용 (e.g. k-fold stratified k-fold)</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>model</strong> – 평가할 모델.</p></li>
+<li><p><strong>data</strong> (<em>pd.DataFrame</em>) – 교차 검증에 사용할 데이터셋.</p></li>
+<li><p><strong>target</strong> (<em>str</em>) – 목표 변수의 이름.</p></li>
+<li><p><strong>cv</strong> (<em>int</em>) – 교차 검증 폴드 수.</p></li>
+<li><p><strong>scoring</strong> (<em>str</em>) – 평가에 사용할 스코어링 메트릭.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>각 폴드의 스코어를 포함한 교차 검증 결과.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>cv_results (pd.DataFrame)</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="scbk_mlops.model_engineering.init_mlflow">
+<span class="sig-prename descclassname"><span class="pre">scbk_mlops.model_engineering.</span></span><span class="sig-name descname"><span class="pre">init_mlflow</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">experiment_name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tracking_uri</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#scbk_mlops.model_engineering.init_mlflow" title="Link to this definition"></a></dt>
+<dd><p>MLFlow 실행</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>experiment_name</strong> (<em>str</em>) – 사용할 MLFlow 실험의 이름.</p></li>
+<li><p><strong>tracking_uri</strong> (<em>str</em><em>, </em><em>optional</em>) – MLFlow 추적 서버의 URI. 기본값은 로컬 파일 시스템.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="scbk_mlops.model_engineering.load_oot_dataset">
+<span class="sig-prename descclassname"><span class="pre">scbk_mlops.model_engineering.</span></span><span class="sig-name descname"><span class="pre">load_oot_dataset</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">train_path</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">valid_path</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">test_path</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#scbk_mlops.model_engineering.load_oot_dataset" title="Link to this definition"></a></dt>
+<dd><p>훈련 검증 테스트 데이터셋 로드</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>train_path</strong> (<em>str</em>) – 훈련 데이터셋 파일의 경로.</p></li>
+<li><p><strong>valid_path</strong> (<em>str</em>) – 검증 데이터셋 파일의 경로.</p></li>
+<li><p><strong>test_path</strong> (<em>str</em>) – 테스트 데이터셋 파일의 경로.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>훈련 데이터셋.
+valid_data (pd.DataFrame): 검증 데이터셋.
+test_data (pd.DataFrame): 테스트 데이터셋.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>train_data (pd.DataFrame)</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="scbk_mlops.model_engineering.mlflow_pipeline">
+<span class="sig-prename descclassname"><span class="pre">scbk_mlops.model_engineering.</span></span><span class="sig-name descname"><span class="pre">mlflow_pipeline</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">model</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">params</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">metrics</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">artifact_path</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#scbk_mlops.model_engineering.mlflow_pipeline" title="Link to this definition"></a></dt>
+<dd><p>실험 추적 및 모델 라이프사이클 관리를 위해 MLFlow 사용</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>model</strong> – MLFlow에 로깅할 모델.</p></li>
+<li><p><strong>params</strong> (<em>dict</em>) – 모델과 연관된 매개변수.</p></li>
+<li><p><strong>metrics</strong> (<em>dict</em>) – 모델의 평가 메트릭.</p></li>
+<li><p><strong>artifact_path</strong> (<em>str</em>) – 모델 아티팩트를 저장할 경로.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>MLFlow 실행 ID.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>run_id (str)</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="scbk_mlops.model_engineering.output_scored_predictions">
+<span class="sig-prename descclassname"><span class="pre">scbk_mlops.model_engineering.</span></span><span class="sig-name descname"><span class="pre">output_scored_predictions</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">data</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">model_path</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#scbk_mlops.model_engineering.output_scored_predictions" title="Link to this definition"></a></dt>
+<dd><p>저장된 최고의 모델을 사용하여 각 행에 대한 예측 점수 출력</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>data</strong> (<em>pd.DataFrame</em>) – 예측할 입력 데이터.</p></li>
+<li><p><strong>model_path</strong> (<em>str</em>) – 저장된 모델 파일의 경로.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>각 행에 대한 예측 점수.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>predictions (pd.Series)</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="scbk_mlops.model_engineering.pycaret_automl">
+<span class="sig-prename descclassname"><span class="pre">scbk_mlops.model_engineering.</span></span><span class="sig-name descname"><span class="pre">pycaret_automl</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">data</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">target</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">session_id</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#scbk_mlops.model_engineering.pycaret_automl" title="Link to this definition"></a></dt>
+<dd><p>AutoML을 위해 Pycaret 실행</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>data</strong> (<em>pd.DataFrame</em>) – 모델 학습을 위한 입력 데이터.</p></li>
+<li><p><strong>target</strong> (<em>str</em>) – 예측할 목표 변수의 열 이름.</p></li>
+<li><p><strong>session_id</strong> (<em>int</em><em>, </em><em>optional</em>) – 재현성을 위한 세션 ID.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>Pycaret에서 선택한 최고의 모델.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>best_model</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="scbk_mlops.model_engineering.save_best_model">
+<span class="sig-prename descclassname"><span class="pre">scbk_mlops.model_engineering.</span></span><span class="sig-name descname"><span class="pre">save_best_model</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">model</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">file_name</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#scbk_mlops.model_engineering.save_best_model" title="Link to this definition"></a></dt>
+<dd><p>평가 메트릭에 따라 가장 성능이 좋은 모델을 .pkl 파일로 저장</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>model</strong> – 저장할 학습된 모델 객체.</p></li>
+<li><p><strong>file_name</strong> (<em>str</em>) – 모델을 저장할 파일의 이름.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="scbk_mlops.model_engineering.save_experiment_parameters">
+<span class="sig-prename descclassname"><span class="pre">scbk_mlops.model_engineering.</span></span><span class="sig-name descname"><span class="pre">save_experiment_parameters</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">params</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">file_path</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#scbk_mlops.model_engineering.save_experiment_parameters" title="Link to this definition"></a></dt>
+<dd><p>Kedro에 사용할 실험 매개변수 저장</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>params</strong> (<em>dict</em>) – 저장할 실험 매개변수의 딕셔너리.</p></li>
+<li><p><strong>file_path</strong> (<em>str</em>) – 매개변수를 저장할 파일 경로.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="scbk_mlops.model_engineering.save_scored_predictions">
+<span class="sig-prename descclassname"><span class="pre">scbk_mlops.model_engineering.</span></span><span class="sig-name descname"><span class="pre">save_scored_predictions</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">predictions</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">file_path</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#scbk_mlops.model_engineering.save_scored_predictions" title="Link to this definition"></a></dt>
+<dd><p>향후 사용을 위해 예측 점수를 .json 파일로 저장</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>predictions</strong> (<em>pd.Series</em><em> or </em><em>pd.DataFrame</em>) – 저장할 예측 점수.</p></li>
+<li><p><strong>file_path</strong> (<em>str</em>) – 예측 점수를 저장할 .json 파일의 경로.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+
+<section id="model-evaluation-module">
+<span id="module-scbk_mlops.model_evaluation"></span><h2>Model Evaluation Module<a class="headerlink" href="#model-evaluation-module" title="Link to this heading"></a></h2>
+<p>해당 모듈은 모델링 결과를 평가하는 기능을 제공하는 모듈입니다.
+주로 Classification 및 Clustering을 위한 함수를 제공하며, 해당 함수를 활용하여 모델링 결과를 평가하시면 됩니다.</p>
+</section>
+<dl class="py function">
+<dt class="sig sig-object py" id="scbk_mlops.model_evaluation.bias_fairness_assessment">
+<span class="sig-prename descclassname"><span class="pre">scbk_mlops.model_evaluation.</span></span><span class="sig-name descname"><span class="pre">bias_fairness_assessment</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">model</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">X_test</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y_test</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sensitive_feature</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#scbk_mlops.model_evaluation.bias_fairness_assessment" title="Link to this definition"></a></dt>
+<dd><p>Wasserstein 거리 플롯 또는 기타 공정성 메트릭을 사용하여 편향 및 공정성 평가</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>model</strong> – 평가할 모델.</p></li>
+<li><p><strong>X_test</strong> (<em>pd.DataFrame</em>) – 테스트 입력 데이터.</p></li>
+<li><p><strong>y_test</strong> (<em>pd.Series</em>) – 테스트 목표 변수.</p></li>
+<li><p><strong>sensitive_feature</strong> (<em>str</em>) – 민감한 특성의 열 이름.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>편향 및 공정성 평가 결과 딕셔너리.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>fairness_metrics (dict)</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="scbk_mlops.model_evaluation.check_governance_measures">
+<span class="sig-prename descclassname"><span class="pre">scbk_mlops.model_evaluation.</span></span><span class="sig-name descname"><span class="pre">check_governance_measures</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">governance_policies</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#scbk_mlops.model_evaluation.check_governance_measures" title="Link to this definition"></a></dt>
+<dd><p>모든 거버넌스 관련 조치를 고려하도록 확인</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>governance_policies</strong> (<em>list</em>) – 적용해야 할 거버넌스 정책의 리스트.</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>각 정책에 대한 준수 여부.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>compliance_report (dict)</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="scbk_mlops.model_evaluation.create_leaderboard">
+<span class="sig-prename descclassname"><span class="pre">scbk_mlops.model_evaluation.</span></span><span class="sig-name descname"><span class="pre">create_leaderboard</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">model_results</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#scbk_mlops.model_evaluation.create_leaderboard" title="Link to this definition"></a></dt>
+<dd><p>Create model leaderboard based on &#64;30 S3</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>model_results</strong> (<em>list</em><em> of </em><em>dict</em>) – 각 모델의 결과를 포함한 딕셔너리의 리스트.
+예: [{‘model_name’: ‘Model1’, ‘accuracy’: 0.95, ‘f1_score’: 0.94}, …]</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>모델 성능을 비교한 리더보드 데이터프레임.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>leaderboard (pd.DataFrame)</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="scbk_mlops.model_evaluation.explainable_ai">
+<span class="sig-prename descclassname"><span class="pre">scbk_mlops.model_evaluation.</span></span><span class="sig-name descname"><span class="pre">explainable_ai</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">model</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">X_train</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#scbk_mlops.model_evaluation.explainable_ai" title="Link to this definition"></a></dt>
+<dd><p>SHAP LIME과 같은 해석 가능성 방법을 통합하여 투명성과 해석 가능성 강화</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>model</strong> – 해석할 모델.</p></li>
+<li><p><strong>X_train</strong> (<em>pd.DataFrame</em>) – 훈련 입력 데이터.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>SHAP 및 LIME 해석 결과를 포함한 딕셔너리.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>explanations (dict)</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="scbk_mlops.model_evaluation.feature_impact">
+<span class="sig-prename descclassname"><span class="pre">scbk_mlops.model_evaluation.</span></span><span class="sig-name descname"><span class="pre">feature_impact</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">model</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">X_train</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y_train</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">grootcv_importances</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#scbk_mlops.model_evaluation.feature_impact" title="Link to this definition"></a></dt>
+<dd><p>GrootCV 결과와의 차이를 평가</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>model</strong> – 평가할 모델.</p></li>
+<li><p><strong>X_train</strong> (<em>pd.DataFrame</em>) – 훈련 입력 데이터.</p></li>
+<li><p><strong>y_train</strong> (<em>pd.Series</em>) – 훈련 목표 변수.</p></li>
+<li><p><strong>grootcv_importances</strong> (<em>pd.Series</em>) – GrootCV로부터 얻은 특징 중요도 시리즈.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>모델과 GrootCV 간의 특징 중요도 비교 결과.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>comparison (pd.DataFrame)</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="scbk_mlops.model_evaluation.generate_leaderboard_report">
+<span class="sig-prename descclassname"><span class="pre">scbk_mlops.model_evaluation.</span></span><span class="sig-name descname"><span class="pre">generate_leaderboard_report</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">models</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">X_test</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y_test</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#scbk_mlops.model_evaluation.generate_leaderboard_report" title="Link to this definition"></a></dt>
+<dd><p>모델 비교 (e.g. S1 vs S2 S1 vs S3) 리더보드 보고서 생성</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>models</strong> (<em>dict</em>) – 모델 이름과 모델 객체의 딕셔너리.
+예: {‘Model1’: model1, ‘Model2’: model2}</p></li>
+<li><p><strong>X_test</strong> (<em>pd.DataFrame</em>) – 테스트 입력 데이터.</p></li>
+<li><p><strong>y_test</strong> (<em>pd.Series</em>) – 테스트 목표 변수.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>모델별 성능 지표를 포함한 리더보드 보고서.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>report (pd.DataFrame)</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="scbk_mlops.model_evaluation.model_evaluation_rai">
+<span class="sig-prename descclassname"><span class="pre">scbk_mlops.model_evaluation.</span></span><span class="sig-name descname"><span class="pre">model_evaluation_rai</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">model</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">X_test</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y_test</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sensitive_features</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#scbk_mlops.model_evaluation.model_evaluation_rai" title="Link to this definition"></a></dt>
+<dd><p>Responsible AI (RAI) 도구를 고려하여 공정성 검토</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>model</strong> – 평가할 모델.</p></li>
+<li><p><strong>X_test</strong> (<em>pd.DataFrame</em>) – 테스트 입력 데이터.</p></li>
+<li><p><strong>y_test</strong> (<em>pd.Series</em>) – 테스트 목표 변수.</p></li>
+<li><p><strong>sensitive_features</strong> (<em>pd.Series</em>) – 민감한 특성의 시리즈.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>공정성 평가 메트릭 딕셔너리.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>rai_metrics (dict)</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="scbk_mlops.model_evaluation.model_explainability">
+<span class="sig-prename descclassname"><span class="pre">scbk_mlops.model_evaluation.</span></span><span class="sig-name descname"><span class="pre">model_explainability</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">model</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">X_train</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#scbk_mlops.model_evaluation.model_explainability" title="Link to this definition"></a></dt>
+<dd><p>모델 해석 가능성 통찰 제공 (Global Explainability/Feature Impact/Local Explainability)</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>model</strong> – 해석할 모델.</p></li>
+<li><p><strong>X_train</strong> (<em>pd.DataFrame</em>) – 훈련 입력 데이터.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>해석 가능성 보고서를 포함한 딕셔너리.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>explainability_reports (dict)</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="scbk_mlops.model_evaluation.model_fairness_check">
+<span class="sig-prename descclassname"><span class="pre">scbk_mlops.model_evaluation.</span></span><span class="sig-name descname"><span class="pre">model_fairness_check</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">model</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">X_test</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y_test</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sensitive_features</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#scbk_mlops.model_evaluation.model_fairness_check" title="Link to this definition"></a></dt>
+<dd><p>모델 예측에서 편향을 식별하고 완화하기 위한 공정성 감사 수행</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>model</strong> – 평가할 모델.</p></li>
+<li><p><strong>X_test</strong> (<em>pd.DataFrame</em>) – 테스트 입력 데이터.</p></li>
+<li><p><strong>y_test</strong> (<em>pd.Series</em>) – 테스트 목표 변수.</p></li>
+<li><p><strong>sensitive_features</strong> (<em>pd.Series</em>) – 민감한 특성의 시리즈.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>공정성 감사 결과.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>audit_results (dict)</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="scbk_mlops.model_evaluation.output_evaluation_artifacts">
+<span class="sig-prename descclassname"><span class="pre">scbk_mlops.model_evaluation.</span></span><span class="sig-name descname"><span class="pre">output_evaluation_artifacts</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">reference_data</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">current_data</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#scbk_mlops.model_evaluation.output_evaluation_artifacts" title="Link to this definition"></a></dt>
+<dd><p>공정성 편향 등과 같은 다양한 RAI 및 거버넌스 평가 자료 출력</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>reference_data</strong> (<em>pd.DataFrame</em>) – 기준 데이터셋.</p></li>
+<li><p><strong>current_data</strong> (<em>pd.DataFrame</em>) – 평가할 현재 데이터셋.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+
+<section id="model-monitoring-module">
+<span id="module-scbk_mlops.model_monitoring"></span><h2>Model Monitoring Module<a class="headerlink" href="#model-monitoring-module" title="Link to this heading"></a></h2>
+<p>해당 모듈은 모델의 모니터링을 수행하는 모듈입니다.
+주로 모델의 예측 결과를 모니터링하고, 이상치를 탐지하는 기능을 제공합니다.</p>
+</section>
+<dl class="py function">
+<dt class="sig sig-object py" id="scbk_mlops.model_monitoring.alert_report">
+<span class="sig-prename descclassname"><span class="pre">scbk_mlops.model_monitoring.</span></span><span class="sig-name descname"><span class="pre">alert_report</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">metric_thresholds</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">current_metrics</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#scbk_mlops.model_monitoring.alert_report" title="Link to this definition"></a></dt>
+<dd><p>Generate alert report upon trigger</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>metric_thresholds</strong> (<em>dict</em>) – 메트릭 임계값의 딕셔너리.</p></li>
+<li><p><strong>current_metrics</strong> (<em>dict</em>) – 현재 메트릭 값의 딕셔너리.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>트리거된 알림의 상세 정보를 담은 딕셔너리.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>alert_report (dict)</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="scbk_mlops.model_monitoring.evidently_dashboard">
+<span class="sig-prename descclassname"><span class="pre">scbk_mlops.model_monitoring.</span></span><span class="sig-name descname"><span class="pre">evidently_dashboard</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">reference_data</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">current_data</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">column_mapping</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#scbk_mlops.model_monitoring.evidently_dashboard" title="Link to this definition"></a></dt>
+<dd><p>Generate evidently.ai dashboard for drift check</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>reference_data</strong> (<em>pd.DataFrame</em>) – 기준 데이터셋.</p></li>
+<li><p><strong>current_data</strong> (<em>pd.DataFrame</em>) – 현재 평가할 데이터셋.</p></li>
+<li><p><strong>column_mapping</strong> (<em>dict</em><em>, </em><em>optional</em>) – 컬럼 매핑을 위한 딕셔너리.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="scbk_mlops.model_monitoring.model_decision_making">
+<span class="sig-prename descclassname"><span class="pre">scbk_mlops.model_monitoring.</span></span><span class="sig-name descname"><span class="pre">model_decision_making</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">performance_metrics</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">drift_metrics</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">thresholds</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#scbk_mlops.model_monitoring.model_decision_making" title="Link to this definition"></a></dt>
+<dd><p>현재 모델이 충분한지 또는 재훈련이 필요한지 결정</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>performance_metrics</strong> (<em>dict</em>) – 모델 성능 메트릭의 딕셔너리.</p></li>
+<li><p><strong>drift_metrics</strong> (<em>dict</em>) – 데이터 또는 모델 드리프트 메트릭의 딕셔너리.</p></li>
+<li><p><strong>thresholds</strong> (<em>dict</em>) – 성능 및 드리프트 임계값의 딕셔너리.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>‘retrain’ 또는 ‘keep’ 중 하나.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>decision (str)</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="scbk_mlops.model_monitoring.output_recommendation">
+<span class="sig-prename descclassname"><span class="pre">scbk_mlops.model_monitoring.</span></span><span class="sig-name descname"><span class="pre">output_recommendation</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">decision</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#scbk_mlops.model_monitoring.output_recommendation" title="Link to this definition"></a></dt>
+<dd><p>현재 모델을 계속 사용할지 또는 새로운 모델을 훈련할지에 대한 추천 제공</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>decision</strong> (<em>str</em>) – 모델 결정 (‘retrain’ 또는 ‘keep’).</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>추천 사항에 대한 설명 문자열.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>recommendation (str)</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="scbk_mlops.model_monitoring.rai_dashboard">
+<span class="sig-prename descclassname"><span class="pre">scbk_mlops.model_monitoring.</span></span><span class="sig-name descname"><span class="pre">rai_dashboard</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">reference_data</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">current_data</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">model</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sensitive_features</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">target_column</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#scbk_mlops.model_monitoring.rai_dashboard" title="Link to this definition"></a></dt>
+<dd><p>Generate RAI dashboard for drift check</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>reference_data</strong> (<em>pd.DataFrame</em>) – 기준 데이터셋.</p></li>
+<li><p><strong>current_data</strong> (<em>pd.DataFrame</em>) – 현재 평가할 데이터셋.</p></li>
+<li><p><strong>model</strong> – 평가할 모델 객체.</p></li>
+<li><p><strong>sensitive_features</strong> (<em>list</em><em> or </em><em>pd.Series</em>) – 민감한 특성의 리스트 또는 시리즈.</p></li>
+<li><p><strong>target_column</strong> (<em>str</em>) – 목표 변수의 열 이름.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>생성된 RAI 대시보드 객체.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>dashboard</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="scbk_mlops.model_monitoring.update_monitoring">
+<span class="sig-prename descclassname"><span class="pre">scbk_mlops.model_monitoring.</span></span><span class="sig-name descname"><span class="pre">update_monitoring</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">new_results</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">monitoring_data_path</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#scbk_mlops.model_monitoring.update_monitoring" title="Link to this definition"></a></dt>
+<dd><p>가장 최근 모형 결과로 모니터링 정보 업데이트</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>new_results</strong> (<em>pd.DataFrame</em>) – 최신 모델 결과 데이터.</p></li>
+<li><p><strong>monitoring_data_path</strong> (<em>str</em>) – 모니터링 데이터를 저장할 파일 경로.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>None</p>
+</dd>
+</dl>
+</dd></dl>
+
+</section>
+<section id="indices-and-tables">
+<h1>Indices and tables<a class="headerlink" href="#indices-and-tables" title="Link to this heading"></a></h1>
+<ul class="simple">
+<li><p><a class="reference internal" href="genindex.html"><span class="std std-ref">Index</span></a></p></li>
+<li><p><a class="reference internal" href="py-modindex.html"><span class="std std-ref">Module Index</span></a></p></li>
+<li><p><a class="reference internal" href="search.html"><span class="std std-ref">Search Page</span></a></p></li>
+</ul>
+</section>
+
+
+           </div>
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2024, Jong Hwa Lee, Jin Young Kim.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
