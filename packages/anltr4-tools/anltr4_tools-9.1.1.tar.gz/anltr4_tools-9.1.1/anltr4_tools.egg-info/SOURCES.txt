@@ -1,0 +1,7 @@
+README.md
+setup.py
+anltr4_tools.egg-info/PKG-INFO
+anltr4_tools.egg-info/SOURCES.txt
+anltr4_tools.egg-info/dependency_links.txt
+anltr4_tools.egg-info/not-zip-safe
+anltr4_tools.egg-info/top_level.txt
