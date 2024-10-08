@@ -1,0 +1,7 @@
+CHANGES
+=======
+
+1.9.0
+-----
+
+* Bump dbt-tests-adapter from 1.9.2 to 1.10.2 (#454)
