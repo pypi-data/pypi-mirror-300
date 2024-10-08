@@ -1,0 +1,14 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.py
+src/xregion_ssm_parameter/__init__.py
+src/xregion_ssm_parameter/py.typed
+src/xregion_ssm_parameter.egg-info/PKG-INFO
+src/xregion_ssm_parameter.egg-info/SOURCES.txt
+src/xregion_ssm_parameter.egg-info/dependency_links.txt
+src/xregion_ssm_parameter.egg-info/requires.txt
+src/xregion_ssm_parameter.egg-info/top_level.txt
+src/xregion_ssm_parameter/_jsii/__init__.py
+src/xregion_ssm_parameter/_jsii/xregion-ssm-parameter@0.0.1.jsii.tgz
