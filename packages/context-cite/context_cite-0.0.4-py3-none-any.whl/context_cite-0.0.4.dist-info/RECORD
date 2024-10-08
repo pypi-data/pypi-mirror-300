@@ -1,0 +1,10 @@
+context_cite/__init__.py,sha256=tiJCVpDZEvi1MRCoVjTToUOC4xzwis6QaMIlCm7uBPY,85
+context_cite/context_citer.py,sha256=lYskRPgkXsVOz98XrKaz5zNNqwREwhzujgbsij3-hVw,14957
+context_cite/context_partitioner.py,sha256=oTxBju1aVxBQPhCVSfS1YiEVfxxRAjnjTY5EOeM8Oao,3170
+context_cite/solver.py,sha256=nD3lxLBrCKgiRUMRBaWK7K2glEp7s49Qa26yP0NP03w,1822
+context_cite/utils.py,sha256=04JdwykohuD8nkxPDTl_RahM4aHuOHzmmF0wBuHCiks,7457
+context_cite-0.0.4.dist-info/LICENSE,sha256=u9xZfsS7b18Pv-IoTNeOUU_aj2MpXYazXKSn4iAf0Ok,1066
+context_cite-0.0.4.dist-info/METADATA,sha256=pTxJALICSZVK8B0N_-OCadfGq8s4I_LraBrNuavEttw,7730
+context_cite-0.0.4.dist-info/WHEEL,sha256=GV9aMThwP_4oNCtvEC2ec3qUYutgWeAzklro_0m4WJQ,91
+context_cite-0.0.4.dist-info/top_level.txt,sha256=DjsltAE6jqtJUus0y9Yz1_Snqhv2TtqFT9dDUEKdLfc,13
+context_cite-0.0.4.dist-info/RECORD,,
