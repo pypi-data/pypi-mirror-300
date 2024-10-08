@@ -1,0 +1,17 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+sentier_data_tools/__init__.py
+sentier_data_tools/datapackage.py
+sentier_data_tools/datapackage_validation.py
+sentier_data_tools/iri.py
+sentier_data_tools/licenses.py
+sentier_data_tools/local_data_store.py
+sentier_data_tools/logs.py
+sentier_data_tools.egg-info/PKG-INFO
+sentier_data_tools.egg-info/SOURCES.txt
+sentier_data_tools.egg-info/dependency_links.txt
+sentier_data_tools.egg-info/requires.txt
+sentier_data_tools.egg-info/top_level.txt
+sentier_data_tools/example_data/electrolyzers.xlsx
