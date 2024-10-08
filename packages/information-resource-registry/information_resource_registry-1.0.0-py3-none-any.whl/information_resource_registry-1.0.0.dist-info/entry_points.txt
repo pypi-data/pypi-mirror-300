@@ -1,0 +1,10 @@
+[console_scripts]
+add_consume_info=information_resource_registry.relation_map.add_consume_info:main
+aragorn_kps=information_resource_registry.relation_map.aragorn_kps:main
+arax_kps=information_resource_registry.relation_map.arax_kps:main
+bte_sp=information_resource_registry.relation_map.bte_sp:main
+extract_consume_info=information_resource_registry.relation_map.extract_consume_info:main
+generate_sankey=information_resource_registry.relation_map.generate_sankey:main
+molepro_consume=information_resource_registry.relation_map.molepro_consume:main
+rtx_kg2=information_resource_registry.relation_map.rtx_kg2:main
+
