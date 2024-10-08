@@ -1,0 +1,9 @@
+terrafai/__init__.py,sha256=uXfYAqeO-wXFPinpI6ua_o4kLD2VDMbNp7NK4Y8SGCk,24
+terrafai/main.tf,sha256=EbrYzDxBr6VDBm-ZrOoebOK3kWGlxwYqdzciRcSJ3pY,35
+terrafai/terrafai.py,sha256=8FAg8X4-FKW1BAFoE4Fj-f65uE0O1eiZ_1mqTkBBkC8,11520
+terrafai/tfai_output_20241007_10.48.08/main.tf,sha256=ARlwX9fKV4tyZ6yuuF7Tghre2QVbVwQX6TAPv6quxxc,106
+terrafai-0.1.7.dist-info/METADATA,sha256=FFe8Y0njcn3kdAF6pp023Nb2fMXjYFlXEJgMGxTr_t4,2082
+terrafai-0.1.7.dist-info/WHEEL,sha256=1yFddiXMmvYK7QYTqtRNtX66WJ0Mz8PYEiEUoOUUxRY,87
+terrafai-0.1.7.dist-info/entry_points.txt,sha256=b8Ifgag0PZWRzVk1TJV_GZbSg_yt4o1QvuaxSIpBUZg,43
+terrafai-0.1.7.dist-info/licenses/LICENSE,sha256=szPsNB1d9NiWGcxpRqaX9ZY7FEd_8JoV7dFwzGhE-dw,35149
+terrafai-0.1.7.dist-info/RECORD,,
