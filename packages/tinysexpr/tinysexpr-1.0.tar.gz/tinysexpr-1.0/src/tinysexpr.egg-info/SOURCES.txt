@@ -1,0 +1,8 @@
+LICENSE
+README.md
+pyproject.toml
+src/tinysexpr.py
+src/tinysexpr.egg-info/PKG-INFO
+src/tinysexpr.egg-info/SOURCES.txt
+src/tinysexpr.egg-info/dependency_links.txt
+src/tinysexpr.egg-info/top_level.txt
