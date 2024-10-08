@@ -1,0 +1,2 @@
+[console_scripts]
+lumika = lumika:lumika_std
