@@ -1,0 +1,26 @@
+Metadata-Version: 2.3
+Name: zuu
+Version: 2.1.0
+Summary: Zack's Useful Utilities
+Author-email: ZackaryW <gitzackw@gmail.com>
+License-File: LICENSE
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+
+# zuu
+zack's useful utilities
+
+## install
+```
+pip install zuu
+```
+
+## Mapping
+- `easy` quick imports
+- `pkg` non std modules
+- `std` std modules
+- `uix` cli or gui components
+- `util` by uses
+- `util/__init__.py` by 1-2 methods for each use
+- `/*` by categories of uses
+
