@@ -1,0 +1,2 @@
+[console_scripts]
+codeas = codeas.main:start_ui
