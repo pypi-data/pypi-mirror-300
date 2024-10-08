@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: fixconf
+Version: 0.0.1
+Summary: Parser for quick fix configuration file
+Author: tangjicheng
+Author-email: tangjch15@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent

@@ -1,0 +1,8 @@
+README.txt
+setup.py
+fixconf/__init__.py
+fixconf/script.py
+fixconf.egg-info/PKG-INFO
+fixconf.egg-info/SOURCES.txt
+fixconf.egg-info/dependency_links.txt
+fixconf.egg-info/top_level.txt
