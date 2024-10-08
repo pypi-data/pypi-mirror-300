@@ -1,0 +1,80 @@
+[build-system]
+build-backend = 'mesonpy'
+requires = ['meson-python']
+
+[project]
+name = "pyhaloxml"
+version = "3.1.2"
+description = "Read and write the annotation files from Halo"
+readme = "README.md"
+authors = [{ name = "Rolf Harkes", email = "r.harkes@nki.nl" }]
+classifiers = [
+    "License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+]
+keywords = ["Halo", "reader", "annotation"]
+dependencies = [
+    "lxml>=4.9",
+    "geojson>=3.0",
+    "python-dateutil",
+]
+requires-python = ">=3.10"
+
+[project.optional-dependencies]
+shapely = ["shapely >= 2.0"]
+dev = ["black", "bumpver", "pytest", "mypy", "types-python-dateutil", "lxml-stubs"]
+
+[project.urls]
+Homepage = "https://github.com/rharkes/pyhaloxml"
+
+[tool.bumpver]
+current_version = "3.1.2"
+version_pattern = "MAJOR.MINOR.PATCH"
+commit_message = "bump version {old_version} -> {new_version}"
+commit = true
+tag = true
+push = true
+
+[tool.bumpver.file_patterns]
+"pyproject.toml" = [
+    'current_version = "{version}"',
+    'version = "{version}"',
+]
+"src/pyhaloxml/version.py" = [
+    "{version}"
+]
+"docs/source/conf.py" = [
+    'release = "{version}"',
+    'version = "{version}"'
+]
+
+"meson.build" = [
+    "version: '{version}'",
+]
+
+[tool.black]
+line-length = 88
+target-version = ['py310', 'py311']
+
+[tool.pytest.ini_options]
+pythonpath = [
+  './src'
+]
+
+[tool.mypy]
+python_version = '3.11'
+mypy_path = "src"
+packages = "pyhaloxml"
+strict = true
+
+[[tool.mypy.overrides]]
+module = "geojson.*"
+ignore_missing_imports  = true
+
+[[tool.mypy.overrides]]
+module = "shapely.*"
+ignore_missing_imports  = true
+
+[tool.cibuildwheel.windows]
+archs = ["AMD64"]
