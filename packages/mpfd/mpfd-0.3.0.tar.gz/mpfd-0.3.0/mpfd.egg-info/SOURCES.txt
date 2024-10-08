@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+mpfd/MakeParallel.py
+mpfd/__init__.py
+mpfd.egg-info/PKG-INFO
+mpfd.egg-info/SOURCES.txt
+mpfd.egg-info/dependency_links.txt
+mpfd.egg-info/top_level.txt
