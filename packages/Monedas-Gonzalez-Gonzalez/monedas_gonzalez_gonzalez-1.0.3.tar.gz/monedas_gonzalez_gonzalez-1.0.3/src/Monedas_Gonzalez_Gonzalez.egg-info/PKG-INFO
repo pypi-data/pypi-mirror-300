@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: Monedas_Gonzalez_Gonzalez
+Version: 1.0.3
+Summary: Soporte para análisis de bandas de Bollinger en criptomonedas
+Home-page: https://github.com/LuisGonzalez2002/ProyectoGonzalez_Gonzalez
+Author: Luis González
+Author-email: lgg2002419@gmail.com
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.12
+Requires-Python: >=3.12
+Description-Content-Type: text/markdown
+Requires-Dist: krakenex
+Requires-Dist: pandas
+Requires-Dist: matplotlib
+
+Este proyecto tiene como finalidad dar indicaciones a inversores
+de compra y venta segÃºn el precio de las criptomonedas en cada momento.
+AdemÃ¡s ofrece la posibilidad de poder elegir entre diferentes criptomonedas
+haciÃ©ndolo asÃ­ un programa mÃ¡s completo para el usuario.
+
+Para su utilizaciÃ³n, basta con ejecutar el archivo main.py y elegir entre las
+difrentes criptomonedas ofrecidas. A continuaciÃ³n, el programa 
+mostrarÃ¡ el precio junto con las indicaciones de compra o venta.
