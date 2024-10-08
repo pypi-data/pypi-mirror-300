@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: pyshark-plus-plus
+Version: 1.0.0rc0
+Summary: Network utilities
+Author-email: Andreu Castillo <python.code.craft@gmail.com>
+Project-URL: homepage, https://github.com/pyCodeCraft/pyshark-plus-plus
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+Provides-Extra: test
+Requires-Dist: pytest>=8.3.2; extra == "test"
+Requires-Dist: pymodbus>=3.7.0; extra == "test"
+
+# pyshark-plus-plus
+Low level wrapper for tshark
