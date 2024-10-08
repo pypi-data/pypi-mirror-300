@@ -1,0 +1,31 @@
+Metadata-Version: 2.3
+Name: luce_otp
+Version: 0.1.0
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Rust
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Summary: A Python package for zero-knowledge OTP proof using Rust and Groth16 zk-SNARKs
+Keywords: zk-SNARK,OTP,zero-knowledge,Rust,Python,Maturin
+Author-email: Ankur Lohachab <ankur.lohachab@maastrichtuniversity.nl>
+License: MIT
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown; charset=UTF-8; variant=GFM
+
+# luce_otp
+
+`luce_otp` is a Python extension module for generating and verifying zero-knowledge proofs (ZKP) for a one-time password (OTP) using Rust and zk-SNARKs. It leverages the Groth16 proving system and ensures privacy by allowing users to prove knowledge of an OTP without revealing the OTP itself.
+
+## Features
+
+- **Zero-Knowledge Proof**: Prove knowledge of a 20-bit OTP without revealing it.
+- **zk-SNARK**: Use zk-SNARKs (Groth16) for fast and secure proof generation and verification.
+- **Integration with Python**: Easily use in Python with PyO3 and Maturin.
+
+## Installation
+
+To install the package, use `pip`:
+
+```bash
+pip install luce_otp
