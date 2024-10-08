@@ -1,0 +1,51 @@
+Metadata-Version: 2.1
+Name: VideoJEDi
+Version: 0.1.2
+Summary: JEPA Embedding Distance - for video distribution quality assessment.
+Home-page: https://oooolga.github.io/JEDi.github.io/
+License: Apache-2.0
+Author: Ge Ya (Olga) Luo
+Author-email: olga.xu@umontreal.ca
+Requires-Python: >=3.9,<4.0
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: av (==12.1.0)
+Requires-Dist: numpy (>=1.24.0)
+Requires-Dist: pyav (==12.0.5)
+Requires-Dist: pytest (==8.2.0)
+Requires-Dist: pyyaml (==6.0.2)
+Requires-Dist: scikit-learn (==1.3.2)
+Requires-Dist: torch (==2.4.1)
+Requires-Dist: torchvision (==0.19.1)
+Requires-Dist: vjepa (==0.1.2)
+Description-Content-Type: text/markdown
+
+<p align="center">
+<a href="https://oooolga.github.io/jedi.github.io/">
+    <picture>
+        <source media="(prefers-color-scheme: dark)" srcset="https://github.com/oooolga/JEDi/blob/main/assets/logo-dark_mode.png?raw=true" height="80">
+        <source media="(prefers-color-scheme: light)" srcset="https://oooolga.github.io/JEDi.github.io/static/images/logo-sparkles.png" height="80">
+        <img alt="logo" src="https://oooolga.github.io/JEDi.github.io/static/images/logo-sparkles.png" height="80">
+    </picture>
+</a>
+</p>
+
+# Beyond FVD: Enhanced Evaluation Metrics for Video Generation Quality
+
+<p align="left">
+<a href="https://oooolga.github.io/JEDi.github.io/" alt="webpage">
+    <img src="https://img.shields.io/badge/Webpage-JEDi-darkviolet" /></a>
+<img src="https://img.shields.io/github/license/oooolga/JEDi" />
+<a href="https://pypi.org/project/VideoJEDi/" alt="webpage">
+    <img src="https://img.shields.io/pypi/v/VideoJEDi
+    " /></a>
+<img src="https://views.whatilearened.today/views/github/oooolga/JEDi.svg" />
+<p align="center">
+<picture>
+  <img src="https://oooolga.github.io/JEDi.github.io/static/images/teaser_plot.png">
+</picture>
+</p>
