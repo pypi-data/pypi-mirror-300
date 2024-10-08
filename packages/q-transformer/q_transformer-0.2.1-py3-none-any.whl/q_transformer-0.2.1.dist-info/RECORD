@@ -1,0 +1,13 @@
+q_transformer/__init__.py,sha256=LS1CjpTUfaYVibqyXjvbTn97P-afsBP0bNx1ShQl-uk,235
+q_transformer/agent.py,sha256=xA1CnMZIUu3B7PoG1Yo9PV8O9ed79YfkPZDxFqzSZ_E,9941
+q_transformer/attend.py,sha256=uTlXCxOwmyky_JP5Jf2SCCeFIvolhd3AP4nSr2hx7HI,3779
+q_transformer/mocks.py,sha256=3i2azYAbIFzAyWLcGq3VkhW3ljN_vlvr0phjw3yI3Ts,2847
+q_transformer/optimizer.py,sha256=xqjT48djDIa8lnheX_IdJe-3Uhj2g62XsU8TxQble-0,925
+q_transformer/q_learner.py,sha256=kwTPUPIR90-Ik09oGyd1IBVmmur3Um0AjPsHrzox4p0,19195
+q_transformer/q_robotic_transformer.py,sha256=4LedANg20czCf8fhQgh0kLBByQ3rqBDvsI6RWj0XZaY,36371
+q_transformer/tensor_typing.py,sha256=2aUeDq34TmWeurXF9E93Gj_be3houMePK1ZsJuV3-d4,447
+q_transformer-0.2.1.dist-info/LICENSE,sha256=JCo3d2HvOFPGYvaXfnYX4-qjRyQvVElop5ZRITXMg-U,1066
+q_transformer-0.2.1.dist-info/METADATA,sha256=sYy6mAN31KT4MZpAsVc2374gGnjEW01tTknWt-CUJNA,932
+q_transformer-0.2.1.dist-info/WHEEL,sha256=GV9aMThwP_4oNCtvEC2ec3qUYutgWeAzklro_0m4WJQ,91
+q_transformer-0.2.1.dist-info/top_level.txt,sha256=JAJFP0S-7qqeQ4z-w24nBNqLALc1lrx3t04AObVrSS4,14
+q_transformer-0.2.1.dist-info/RECORD,,
