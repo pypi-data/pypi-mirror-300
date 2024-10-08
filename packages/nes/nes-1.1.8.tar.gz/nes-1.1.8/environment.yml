@@ -1,0 +1,18 @@
+
+channels:
+  - conda-forge
+  - bioconda
+  - defaults
+
+dependencies:
+  - python >= 3.8
+  - mpi4py ~= 3.1.4
+  - geopandas
+  - netcdf4=*=mpi*
+  - eccodes
+  - python-eccodes
+  - filelock
+  - configargparse
+  - openpyxl
+  - jupyter
+  - ipykernel
