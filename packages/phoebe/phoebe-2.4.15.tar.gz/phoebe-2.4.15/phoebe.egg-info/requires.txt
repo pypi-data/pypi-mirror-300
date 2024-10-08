@@ -1,0 +1,13 @@
+numpy<2.0.0
+scipy
+astropy
+pytest
+tqdm
+corner
+requests
+python-socketio
+flask
+flask-cors
+flask-socketio
+gevent
+gevent-websocket
