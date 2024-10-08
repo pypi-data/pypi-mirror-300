@@ -1,0 +1,11 @@
+cdef_utils/00_convert.py,sha256=F1kEIC578S421ITP4bzWnxkSFfA--9jwG1Pv8W17-gg,7070
+cdef_utils/01_families.py,sha256=U00tc1wcs5H0EAF7WiT1OtyBKrMN0RIPTKS-kou8L3Y,2583
+cdef_utils/02_education.py,sha256=fWy4qu1vsqIR2FcRK_GrJQMTgbYTatlGPIlariwe0pM,5568
+cdef_utils/03_lpr-link.py,sha256=LPwgpAVsy4SXrB8uhnjycLKhc-T9XJADwcFUqLReOXs,8887
+cdef_utils/04_covariates.py,sha256=mWfpIbz-ozAlhF6MyqszysJqlg_KMls685Me2DFHVM0,3844
+cdef_utils/__init__.py,sha256=zJUx6tg2hBfTh6fQkU4JtHhC_0WRgfr81PIVua4SMA0,22
+cdef_utils/__main__.py,sha256=F_Cd0luJD68DT_S65lBupf2MOxB5opt7q0blaKDfGTM,65
+cdef_utils-2.0.0.dist-info/METADATA,sha256=Scf-yt0-F67wSbDOb3MWbX9f2HIANL-0uE4P_F2IH3E,2704
+cdef_utils-2.0.0.dist-info/WHEEL,sha256=1yFddiXMmvYK7QYTqtRNtX66WJ0Mz8PYEiEUoOUUxRY,87
+cdef_utils-2.0.0.dist-info/licenses/LICENSE,sha256=fuILOK8BzqZqOlQLERTZf4hmlXWSyVpEa8LM8rkhRds,1076
+cdef_utils-2.0.0.dist-info/RECORD,,
