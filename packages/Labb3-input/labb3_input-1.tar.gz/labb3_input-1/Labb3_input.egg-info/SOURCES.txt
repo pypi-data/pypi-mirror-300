@@ -1,0 +1,7 @@
+setup.py
+Labb3_input/__init__.py
+Labb3_input/type_input.py
+Labb3_input.egg-info/PKG-INFO
+Labb3_input.egg-info/SOURCES.txt
+Labb3_input.egg-info/dependency_links.txt
+Labb3_input.egg-info/top_level.txt
