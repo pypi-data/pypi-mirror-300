@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "python-textmate"
+version = "0.2.0"
+description = "TextMate grammar parser for python"
+authors = ["Marcel Alexandru Nitan <nitan.marcel@protonmail.com>"]
+license = "MIT"
+readme = "README.md"
+packages = [{include = "textmate", from="src"}]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+onigurumacffi = "^1.3.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
