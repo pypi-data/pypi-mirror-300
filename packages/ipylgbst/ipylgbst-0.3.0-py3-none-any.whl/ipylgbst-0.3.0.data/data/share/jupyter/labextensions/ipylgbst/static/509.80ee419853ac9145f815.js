@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkipylgbst=self.webpackChunkipylgbst||[]).push([[509],{509:(t,i,e)=>{e.r(i),e.d(i,{default:()=>l});const l={id:"ipylgbst:plugin",description:"A widget library for controlling LEGO® BOOST via web-bluetooth",autoStart:!0,activate:t=>{console.log("JupyterLab extension ipylgbst is activated!")}}}}]);
