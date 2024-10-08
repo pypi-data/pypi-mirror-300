@@ -1,0 +1,59 @@
+Metadata-Version: 2.1
+Name: onavg_ind
+Version: 0.0.5
+Summary: Extension of neuroboros onavg pipeline to individual surfaces
+Author-email: Ma Feilong <mafeilong@gmail.com>, Nikitas Koussis <nikitas.koussis@gmail.com>, Jayson Jeganathan <jayson.jeganathan@gmail.com>
+License: MIT License
+        
+        Copyright (c) 2024 Nikitas Koussis
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy
+        of this software and associated documentation files (the "Software"), to deal
+        in the Software without restriction, including without limitation the rights
+        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+        copies of the Software, and to permit persons to whom the Software is
+        furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in all
+        copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+        SOFTWARE.
+        
+Project-URL: Homepage, https://github.com/nikitas-k/onavg-ind
+Project-URL: Bug Tracker, https://github.com/nikitas-k/onavg-ind/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Scientific/Engineering
+Requires-Python: >=3.6
+Description-Content-Type: text/x-rst
+License-File: LICENSE
+Requires-Dist: numpy
+Requires-Dist: scipy
+Requires-Dist: nibabel
+Requires-Dist: requests
+Requires-Dist: joblib
+Requires-Dist: pandas
+Requires-Dist: Pillow
+Requires-Dist: matplotlib
+Requires-Dist: neuroboros
+
+onavg-ind
+---------
+
+Ongoing development of extension package to the `"Open Neuro Average" template, or "onavg" template <https://feilong.github.io/tpl-onavg/index.html>`_ 
+for individual surface refinement and registration.
+
+Currently, this only functions as a clunky registration tool to go from individual HCP-Native space to onavg space (but not backwards, lol)
+
+Active development - everything subject to change.
+
+Install with ``pip install onavg_ind``

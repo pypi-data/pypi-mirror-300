@@ -1,0 +1,52 @@
+[build-system]
+requires =[
+    "setuptools>=61.0",
+    "setuptools_scm[toml]>=6.2",
+    "numpy"
+]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "onavg_ind"
+version = "0.0.5"
+authors = [
+    { name="Ma Feilong", email="mafeilong@gmail.com" },
+    { name="Nikitas Koussis", email="nikitas.koussis@gmail.com" },
+    { name="Jayson Jeganathan", email="jayson.jeganathan@gmail.com" },
+]
+description = "Extension of neuroboros onavg pipeline to individual surfaces"
+readme = "README.rst"
+license = { file="LICENSE" }
+requires-python = ">=3.6"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Intended Audience :: Science/Research",
+    "Topic :: Scientific/Engineering",
+]
+dependencies =[
+    "numpy",
+    "scipy",
+    "nibabel",
+    "requests",
+    "joblib",
+    "pandas",
+    "Pillow",
+    "matplotlib",
+    "neuroboros",
+]
+
+[project.scripts]
+onavg_register = "onavg_ind.register:main"
+
+[project.urls]
+"Homepage" = "https://github.com/nikitas-k/onavg-ind"
+"Bug Tracker" = "https://github.com/nikitas-k/onavg-ind/issues"
+
+#[tool.setuptools.packages.find]
+#where = ["onavg_ind"]
+
+[tools.setuptools_scm]
+write_to = "onavg-ind/_version.py"

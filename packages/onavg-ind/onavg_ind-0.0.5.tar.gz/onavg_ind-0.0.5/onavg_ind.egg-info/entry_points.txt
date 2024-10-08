@@ -1,0 +1,2 @@
+[console_scripts]
+onavg_register = onavg_ind.register:main

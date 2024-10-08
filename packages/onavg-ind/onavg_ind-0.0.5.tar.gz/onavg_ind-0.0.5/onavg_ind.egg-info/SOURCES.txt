@@ -1,0 +1,15 @@
+LICENSE
+README.rst
+pyproject.toml
+setup.py
+onavg_ind/__init__.py
+onavg_ind/_barycentric.py
+onavg_ind/barycentric.py
+onavg_ind/register.py
+onavg_ind/utils.py
+onavg_ind.egg-info/PKG-INFO
+onavg_ind.egg-info/SOURCES.txt
+onavg_ind.egg-info/dependency_links.txt
+onavg_ind.egg-info/entry_points.txt
+onavg_ind.egg-info/requires.txt
+onavg_ind.egg-info/top_level.txt
