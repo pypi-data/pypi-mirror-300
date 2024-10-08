@@ -1,0 +1,7 @@
+os_llm_agents/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+os_llm_agents/executors.py,sha256=7elhx4OEJA4FLZwW-DKuwvQx5EhbnqRKrR9VF4xpitM,4876
+os_llm_agents/models.py,sha256=ZLTWda4uc2a3RIOLmUE3pnDpIo9aIlaP6phkK7SrJbw,4812
+os_llm_agents-0.0.1.dist-info/METADATA,sha256=SouaLFwIRC0yHJlSMfPNNlD4l0oeezh53Gjzp-9C6ks,3277
+os_llm_agents-0.0.1.dist-info/WHEEL,sha256=G16H4A3IeoQmnOrYV4ueZGKSjhipXx8zc8nu9FGlvMA,92
+os_llm_agents-0.0.1.dist-info/top_level.txt,sha256=dtZk62leRgAaL870jxVee2SPEqn4aYpnfsV92tsMG24,14
+os_llm_agents-0.0.1.dist-info/RECORD,,
