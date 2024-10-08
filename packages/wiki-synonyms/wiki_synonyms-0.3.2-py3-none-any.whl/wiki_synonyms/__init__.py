@@ -1,0 +1,1 @@
+from wiki_synonyms.data_worker import DataWorker
