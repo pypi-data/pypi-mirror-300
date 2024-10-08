@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: docs-maker
+Version: 1.0.0.dev2
+Summary: Documents Maker
+Author: Roman
+Author-email: rabalan83@main.ru
+Requires-Python: >=3.9,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: psycopg2-binary (>=2.9.9,<3.0.0)
+Requires-Dist: pyside6 (>=6.7.3,<7.0.0)
+Requires-Dist: sqlalchemy (>=2.0.35,<3.0.0)
+Description-Content-Type: text/markdown
+
+# docs-maker
+
+Сборка poetry build
+
+Установка pip install .
+
+Запуск после установки пакета docs-maker
+
+Дальше смотрим хелп и делаем как в нем указано
+
+Запуск тестов python -m pytest tests
+
+Запус GUI docs-maker gui / python -m docs_maker gui / python -m docs_maker_gui
+
