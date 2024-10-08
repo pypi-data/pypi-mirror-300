@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: jugen_budget
+Version: 0.1.2
+Summary: 
+Author: Jugen Bernt
+Author-email: jugenbernt@gmail.com
+Requires-Python: >=3.12,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.12
+Description-Content-Type: text/markdown
+
+
