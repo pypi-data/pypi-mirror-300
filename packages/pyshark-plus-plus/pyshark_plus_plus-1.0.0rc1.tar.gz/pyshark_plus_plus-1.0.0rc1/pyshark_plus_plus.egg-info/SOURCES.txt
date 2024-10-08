@@ -1,0 +1,12 @@
+LICENSE.txt
+README.md
+pyproject.toml
+pyshark_plus_plus/__init__.py
+pyshark_plus_plus/exceptions.py
+pyshark_plus_plus/pyshark_plus_plus.py
+pyshark_plus_plus/statistics.py
+pyshark_plus_plus.egg-info/PKG-INFO
+pyshark_plus_plus.egg-info/SOURCES.txt
+pyshark_plus_plus.egg-info/dependency_links.txt
+pyshark_plus_plus.egg-info/requires.txt
+pyshark_plus_plus.egg-info/top_level.txt
