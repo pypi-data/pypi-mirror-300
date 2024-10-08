@@ -1,0 +1,8 @@
+nexusforge
+
+[dev]
+tox==4.13.0
+
+[docs]
+sphinx
+sphinx-bluebrain-theme
