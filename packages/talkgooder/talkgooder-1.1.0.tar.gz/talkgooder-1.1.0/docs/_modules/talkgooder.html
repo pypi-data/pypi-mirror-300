@@ -1,0 +1,559 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="../">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>talkgooder &mdash; talkGooder 0.0.post1.dev1+ge624e3d documentation</title>
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=7ab3649f" />
+
+  
+      <script src="../_static/jquery.js?v=5d32c60e"></script>
+      <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="../_static/documentation_options.js?v=3c956434"></script>
+      <script src="../_static/doctools.js?v=9a2dae69"></script>
+      <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+<link href="../ _static/style.css" rel="stylesheet" type="text/css">
+
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../index.html" class="icon icon-home">
+            talkGooder
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <!-- Local TOC -->
+              <div class="local-toc"></div>
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">talkGooder</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="index.html">Module code</a></li>
+      <li class="breadcrumb-item active">talkgooder</li>
+      <li class="wy-breadcrumbs-aside">
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <h1>Source code for talkgooder</h1><div class="highlight"><pre>
+<span></span><span class="c1"># SPDX-License-Identifier: MIT</span>
+
+<span class="kn">import</span> <span class="nn">re</span>
+<span class="kn">from</span> <span class="nn">pprint</span> <span class="kn">import</span> <span class="n">pprint</span>  <span class="c1"># noqa E401</span>
+<span class="kn">import</span> <span class="nn">sys</span>  <span class="c1"># noqa E401</span>
+
+<span class="sd">&quot;&quot;&quot;Utilities to smooth out language rules.</span>
+
+<span class="sd">``talkgooder`` attempts to smooth out grammar, punctuation, and number-related corner cases when</span>
+<span class="sd">formatting text for human consumption. It is intended for applications where you know there&#39;s a</span>
+<span class="sd">noun and are trying to generate text, but you don&#39;t know much about it.</span>
+<span class="sd">&quot;&quot;&quot;</span>
+
+
+<div class="viewcode-block" id="plural">
+<a class="viewcode-back" href="../index.html#talkgooder.plural">[docs]</a>
+<span class="k">def</span> <span class="nf">plural</span><span class="p">(</span>
+    <span class="n">text</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
+    <span class="n">number</span><span class="p">:</span> <span class="nb">int</span> <span class="o">|</span> <span class="nb">float</span><span class="p">,</span>
+    <span class="n">language</span><span class="o">=</span><span class="s2">&quot;en-US&quot;</span><span class="p">,</span>
+    <span class="n">addl_same</span><span class="o">=</span><span class="p">[],</span>
+    <span class="n">addl_special_s</span><span class="o">=</span><span class="p">[],</span>
+    <span class="n">addl_irregular</span><span class="o">=</span><span class="p">{},</span>
+    <span class="n">caps_mode</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span>
+<span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">str</span><span class="p">:</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;Determine the plural of a noun depending upon quantity.</span>
+
+<span class="sd">    Given a quantity of nouns, return the most likely plural form. Language is complicated and</span>
+<span class="sd">    pluralization rules are not always consistent, so this function supports user-supplied rules</span>
+<span class="sd">    to accommodate exceptions specific to the situation.</span>
+
+<span class="sd">    **Supported locales:**</span>
+
+<span class="sd">    * ``en-US``: American English</span>
+
+<span class="sd">    Args:</span>
+<span class="sd">        text (str):</span>
+<span class="sd">            The noun to convert.</span>
+<span class="sd">        number (int or float):</span>
+<span class="sd">            The quantity of nouns.</span>
+<span class="sd">        language (str):</span>
+<span class="sd">            Which language rules to apply, specified by locale (default: ``en-US``).</span>
+<span class="sd">        addl_same (list):</span>
+<span class="sd">            Additional words where the singular and plural are the same.</span>
+<span class="sd">        addl_special_s (list):</span>
+<span class="sd">            Additional words that always end in s for odd reasons (e.g., ``[&quot;piano&quot;,&quot;hello&quot;,...]``).</span>
+<span class="sd">        addl_irregular (dict):</span>
+<span class="sd">            Additional pairs of irregular plural nouns (e.g., ``{&quot;mouse&quot;: &quot;mice&quot;, &quot;person&quot;:</span>
+<span class="sd">            &quot;people&quot;, ...}``).</span>
+<span class="sd">        caps_mode (int):</span>
+
+<span class="sd">            * ``0``: Attempt to infer whether suffix is lower or upper case (default).</span>
+<span class="sd">            * ``1``: Force suffix to be upper case.</span>
+<span class="sd">            * ``2``: Force suffix to be lower case.</span>
+
+<span class="sd">    Returns:</span>
+<span class="sd">        String:</span>
+<span class="sd">            The plural of the provided noun.</span>
+
+<span class="sd">    Raises:</span>
+<span class="sd">        TypeError: Text must be a string.</span>
+<span class="sd">        ValueError: Language must be a supported locale.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+
+    <span class="c1"># Thanks to Grammarly for publishing a guideline that helped inspire these rules:</span>
+    <span class="c1"># https://www.grammarly.com/blog/irregular-plural-nouns/</span>
+
+    <span class="c1"># Make sure something reasonable was supplied</span>
+    <span class="k">if</span> <span class="ow">not</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">number</span><span class="p">,</span> <span class="p">(</span><span class="nb">int</span><span class="p">,</span> <span class="nb">float</span><span class="p">)):</span>
+        <span class="k">raise</span> <span class="ne">TypeError</span><span class="p">(</span><span class="s2">&quot;Number must be an int or a float&quot;</span><span class="p">)</span>
+
+    <span class="k">if</span> <span class="n">language</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span> <span class="o">==</span> <span class="s2">&quot;en-us&quot;</span><span class="p">:</span>
+
+        <span class="c1"># Same singular as plural, can be extended via addl_same parameter</span>
+        <span class="n">en_us_same</span> <span class="o">=</span> <span class="p">[</span>
+            <span class="s2">&quot;aircraft&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;buffalo&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;deer&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;fish&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;goose&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;hovercraft&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;moose&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;salmon&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;sheep&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;shrimp&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;spacecraft&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;trout&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;watercraft&quot;</span><span class="p">,</span>
+        <span class="p">]</span> <span class="o">+</span> <span class="n">addl_same</span>
+
+        <span class="c1"># Doesn&#39;t follow other rules, plural is always s, can be extended via addl_special_s</span>
+        <span class="n">en_us_special_s</span> <span class="o">=</span> <span class="p">[</span>
+            <span class="s2">&quot;cello&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;hello&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;photo&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;piano&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;proof&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;roof&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;spoof&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;zero&quot;</span><span class="p">,</span>
+        <span class="p">]</span> <span class="o">+</span> <span class="n">addl_special_s</span>
+
+        <span class="c1"># Irregular plurals where there&#39;s no rule, it just is, can be extended via addl_irregular</span>
+        <span class="n">en_us_irregular</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">(</span>
+            <span class="nb">list</span><span class="p">(</span>
+                <span class="p">{</span>
+                    <span class="s2">&quot;child&quot;</span><span class="p">:</span> <span class="s2">&quot;children&quot;</span><span class="p">,</span>
+                    <span class="s2">&quot;criterion&quot;</span><span class="p">:</span> <span class="s2">&quot;criteria&quot;</span><span class="p">,</span>
+                    <span class="s2">&quot;die&quot;</span><span class="p">:</span> <span class="s2">&quot;dice&quot;</span><span class="p">,</span>
+                    <span class="s2">&quot;louse&quot;</span><span class="p">:</span> <span class="s2">&quot;lice&quot;</span><span class="p">,</span>
+                    <span class="s2">&quot;man&quot;</span><span class="p">:</span> <span class="s2">&quot;men&quot;</span><span class="p">,</span>
+                    <span class="s2">&quot;mouse&quot;</span><span class="p">:</span> <span class="s2">&quot;mice&quot;</span><span class="p">,</span>
+                    <span class="s2">&quot;ox&quot;</span><span class="p">:</span> <span class="s2">&quot;oxen&quot;</span><span class="p">,</span>
+                    <span class="s2">&quot;person&quot;</span><span class="p">:</span> <span class="s2">&quot;people&quot;</span><span class="p">,</span>
+                    <span class="s2">&quot;phenomenon&quot;</span><span class="p">:</span> <span class="s2">&quot;phenomena&quot;</span><span class="p">,</span>
+                    <span class="s2">&quot;tooth&quot;</span><span class="p">:</span> <span class="s2">&quot;teeth&quot;</span><span class="p">,</span>
+                    <span class="s2">&quot;woman&quot;</span><span class="p">:</span> <span class="s2">&quot;women&quot;</span><span class="p">,</span>
+                <span class="p">}</span><span class="o">.</span><span class="n">items</span><span class="p">()</span>
+            <span class="p">)</span>
+            <span class="o">+</span> <span class="nb">list</span><span class="p">(</span><span class="n">addl_irregular</span><span class="o">.</span><span class="n">items</span><span class="p">())</span>
+        <span class="p">)</span>
+
+        <span class="c1"># Consonent before y pattern</span>
+        <span class="n">en_us_ies_pattern</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">compile</span><span class="p">(</span>
+            <span class="sa">r</span><span class="s2">&quot;[b-df-hj-np-tv-z]+y$&quot;</span><span class="p">,</span>
+            <span class="n">re</span><span class="o">.</span><span class="n">IGNORECASE</span><span class="p">,</span>
+        <span class="p">)</span>
+
+        <span class="c1"># If the entire word is upper case or caps_mode is 1, capitalize it</span>
+        <span class="k">if</span> <span class="n">caps_mode</span> <span class="o">==</span> <span class="mi">2</span><span class="p">:</span>
+            <span class="n">casing</span> <span class="o">=</span> <span class="s2">&quot;lower&quot;</span>
+        <span class="k">elif</span> <span class="n">text</span><span class="o">.</span><span class="n">isupper</span><span class="p">()</span> <span class="ow">or</span> <span class="n">caps_mode</span> <span class="o">==</span> <span class="mi">1</span><span class="p">:</span>
+            <span class="n">casing</span> <span class="o">=</span> <span class="s2">&quot;upper&quot;</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="n">casing</span> <span class="o">=</span> <span class="s2">&quot;lower&quot;</span>
+
+        <span class="k">if</span> <span class="n">casing</span> <span class="o">==</span> <span class="s2">&quot;upper&quot;</span><span class="p">:</span>
+            <span class="n">i</span> <span class="o">=</span> <span class="s2">&quot;I&quot;</span>
+            <span class="n">a</span> <span class="o">=</span> <span class="s2">&quot;A&quot;</span>
+            <span class="n">ices</span> <span class="o">=</span> <span class="s2">&quot;ICES&quot;</span>
+            <span class="n">es</span> <span class="o">=</span> <span class="s2">&quot;ES&quot;</span>
+            <span class="n">ies</span> <span class="o">=</span> <span class="s2">&quot;IES&quot;</span>
+            <span class="n">ves</span> <span class="o">=</span> <span class="s2">&quot;VES&quot;</span>
+            <span class="n">s</span> <span class="o">=</span> <span class="s2">&quot;S&quot;</span>
+
+        <span class="k">else</span><span class="p">:</span>
+            <span class="n">i</span> <span class="o">=</span> <span class="s2">&quot;i&quot;</span>
+            <span class="n">a</span> <span class="o">=</span> <span class="s2">&quot;a&quot;</span>
+            <span class="n">ices</span> <span class="o">=</span> <span class="s2">&quot;ices&quot;</span>
+            <span class="n">es</span> <span class="o">=</span> <span class="s2">&quot;es&quot;</span>
+            <span class="n">ies</span> <span class="o">=</span> <span class="s2">&quot;ies&quot;</span>
+            <span class="n">ves</span> <span class="o">=</span> <span class="s2">&quot;ves&quot;</span>
+            <span class="n">s</span> <span class="o">=</span> <span class="s2">&quot;s&quot;</span>
+
+        <span class="c1"># If the number is an integer that is exactly 1, nothing to do</span>
+        <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">number</span><span class="p">,</span> <span class="nb">int</span><span class="p">)</span> <span class="ow">and</span> <span class="n">number</span> <span class="o">==</span> <span class="mi">1</span><span class="p">:</span>
+            <span class="k">return</span> <span class="n">text</span>
+
+        <span class="c1"># If the word is the same whether singular or plural, nothing to do</span>
+        <span class="k">if</span> <span class="n">text</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span> <span class="ow">in</span> <span class="n">en_us_same</span><span class="p">:</span>
+            <span class="k">return</span> <span class="n">text</span>
+
+        <span class="c1"># Some words follow no rules whatsoever</span>
+        <span class="k">for</span> <span class="n">item</span> <span class="ow">in</span> <span class="n">en_us_irregular</span><span class="o">.</span><span class="n">keys</span><span class="p">():</span>
+            <span class="k">if</span> <span class="n">text</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span><span class="o">.</span><span class="n">endswith</span><span class="p">(</span><span class="n">item</span><span class="o">.</span><span class="n">lower</span><span class="p">()):</span>
+                <span class="k">if</span> <span class="n">text</span><span class="o">.</span><span class="n">isupper</span><span class="p">():</span>
+                    <span class="k">return</span> <span class="n">en_us_irregular</span><span class="p">[</span><span class="n">item</span><span class="p">]</span><span class="o">.</span><span class="n">upper</span><span class="p">()</span>
+                <span class="k">else</span><span class="p">:</span>
+                    <span class="k">return</span> <span class="n">en_us_irregular</span><span class="p">[</span><span class="n">item</span><span class="p">]</span>
+
+        <span class="k">if</span> <span class="n">text</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span> <span class="ow">in</span> <span class="n">en_us_special_s</span><span class="p">:</span>
+            <span class="c1"># Certain words always end with s for Reasons</span>
+            <span class="k">return</span> <span class="s2">&quot;</span><span class="si">%s%s</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="n">text</span><span class="p">,</span> <span class="n">s</span><span class="p">)</span>
+
+        <span class="k">if</span> <span class="n">text</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span><span class="o">.</span><span class="n">endswith</span><span class="p">(</span><span class="s2">&quot;us&quot;</span><span class="p">):</span>
+            <span class="c1"># Words that end in &quot;us&quot; change to &quot;i&quot; when plural</span>
+            <span class="k">return</span> <span class="s2">&quot;</span><span class="si">%s%s</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="n">text</span><span class="p">[:</span><span class="o">-</span><span class="mi">2</span><span class="p">],</span> <span class="n">i</span><span class="p">)</span>
+
+        <span class="k">if</span> <span class="n">text</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span><span class="o">.</span><span class="n">endswith</span><span class="p">(</span><span class="s2">&quot;um&quot;</span><span class="p">):</span>
+            <span class="c1"># Words that end in &quot;um&quot; change to &quot;a&quot; when plural</span>
+            <span class="k">return</span> <span class="s2">&quot;</span><span class="si">%s%s</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="n">text</span><span class="p">[:</span><span class="o">-</span><span class="mi">2</span><span class="p">],</span> <span class="n">a</span><span class="p">)</span>
+
+        <span class="k">if</span> <span class="n">text</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span><span class="o">.</span><span class="n">endswith</span><span class="p">((</span><span class="s2">&quot;ix&quot;</span><span class="p">,</span> <span class="s2">&quot;ex&quot;</span><span class="p">)):</span>
+            <span class="c1"># Words that end in &quot;ix&quot; or &quot;ex&quot; change to &quot;ices&quot; when plural</span>
+            <span class="k">return</span> <span class="s2">&quot;</span><span class="si">%s%s</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="n">text</span><span class="p">[:</span><span class="o">-</span><span class="mi">2</span><span class="p">],</span> <span class="n">ices</span><span class="p">)</span>
+
+        <span class="k">if</span> <span class="n">text</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span><span class="o">.</span><span class="n">endswith</span><span class="p">((</span><span class="s2">&quot;o&quot;</span><span class="p">,</span> <span class="s2">&quot;s&quot;</span><span class="p">,</span> <span class="s2">&quot;x&quot;</span><span class="p">,</span> <span class="s2">&quot;z&quot;</span><span class="p">,</span> <span class="s2">&quot;ch&quot;</span><span class="p">,</span> <span class="s2">&quot;sh&quot;</span><span class="p">,</span> <span class="s2">&quot;is&quot;</span><span class="p">)):</span>
+            <span class="c1"># Words that end in &quot;o&quot;, &quot;s&quot;, &quot;x&quot;, &quot;z&quot;, &quot;ch&quot;, &quot;sh&quot;, and &quot;is&quot; change to &quot;es&quot; when plural</span>
+            <span class="k">return</span> <span class="s2">&quot;</span><span class="si">%s%s</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="n">text</span><span class="p">,</span> <span class="n">es</span><span class="p">)</span>
+
+        <span class="k">if</span> <span class="n">text</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span><span class="o">.</span><span class="n">endswith</span><span class="p">((</span><span class="s2">&quot;f&quot;</span><span class="p">,</span> <span class="s2">&quot;fe&quot;</span><span class="p">)):</span>
+            <span class="c1"># Words that end in &quot;f&quot; or &quot;fe&quot; end in &quot;ves&quot; when plural</span>
+            <span class="k">return</span> <span class="s2">&quot;</span><span class="si">%s%s</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="n">text</span><span class="p">[:</span><span class="o">-</span><span class="mi">1</span><span class="p">],</span> <span class="n">ves</span><span class="p">)</span>
+
+        <span class="k">if</span> <span class="n">en_us_ies_pattern</span><span class="o">.</span><span class="n">findall</span><span class="p">(</span><span class="n">text</span><span class="p">):</span>
+            <span class="c1"># Words that end in a consonant then &quot;y&quot; end in &quot;ies&quot; when plural</span>
+            <span class="k">return</span> <span class="s2">&quot;</span><span class="si">%s%s</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="n">text</span><span class="p">[:</span><span class="o">-</span><span class="mi">1</span><span class="p">],</span> <span class="n">ies</span><span class="p">)</span>
+
+        <span class="c1"># Remaining words end in &quot;s&quot; when plural</span>
+        <span class="k">return</span> <span class="s2">&quot;</span><span class="si">%s%s</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="n">text</span><span class="p">,</span> <span class="n">s</span><span class="p">)</span>
+
+    <span class="k">else</span><span class="p">:</span>
+        <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="s2">&quot;Language must be a supported locale.&quot;</span><span class="p">)</span></div>
+
+
+
+<div class="viewcode-block" id="possessive">
+<a class="viewcode-back" href="../index.html#talkgooder.possessive">[docs]</a>
+<span class="k">def</span> <span class="nf">possessive</span><span class="p">(</span>
+    <span class="n">text</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span>
+    <span class="n">language</span><span class="o">=</span><span class="s2">&quot;en-US&quot;</span><span class="p">,</span>
+    <span class="n">caps_mode</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span>
+<span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">str</span><span class="p">:</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;Convert a noun to its possessive, because apostrophes can be hard.</span>
+
+<span class="sd">    **Supported locales:**</span>
+
+<span class="sd">    * ``en-US``: American English</span>
+
+<span class="sd">    Args:</span>
+<span class="sd">        text (str):</span>
+<span class="sd">            A noun to be made possessive.</span>
+
+<span class="sd">        language (str):</span>
+<span class="sd">            Which language rules to apply (default ``en-US``).</span>
+
+<span class="sd">        caps_mode (int):</span>
+
+<span class="sd">            * ``0``: Attempt to infer whether suffix is lower or upper case (default).</span>
+<span class="sd">            * ``1``: Force suffix to be upper case.</span>
+<span class="sd">            * ``2``: Force suffix to be lower case.</span>
+
+<span class="sd">    Returns:</span>
+<span class="sd">        String:</span>
+<span class="sd">            The possessive of the provided string.</span>
+
+<span class="sd">    Raises:</span>
+<span class="sd">        TypeError: Text must be a string.</span>
+<span class="sd">        ValueError: Language must be a supported locale.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+
+    <span class="k">if</span> <span class="ow">not</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">text</span><span class="p">,</span> <span class="nb">str</span><span class="p">):</span>
+        <span class="k">raise</span> <span class="ne">TypeError</span><span class="p">(</span><span class="s2">&quot;Text must be a string&quot;</span><span class="p">)</span>
+
+    <span class="k">if</span> <span class="n">language</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span> <span class="o">==</span> <span class="s2">&quot;en-us&quot;</span><span class="p">:</span>
+        <span class="k">if</span> <span class="n">text</span><span class="o">.</span><span class="n">endswith</span><span class="p">(</span><span class="s2">&quot;s&quot;</span><span class="p">):</span>
+            <span class="c1"># When a noun ends in &quot;s&quot;, just add an apostrophe</span>
+            <span class="k">return</span> <span class="s2">&quot;</span><span class="si">%s</span><span class="s2">&#39;&quot;</span> <span class="o">%</span> <span class="n">text</span>
+
+        <span class="k">else</span><span class="p">:</span>
+            <span class="k">if</span> <span class="n">caps_mode</span> <span class="o">==</span> <span class="mi">2</span><span class="p">:</span>
+                <span class="c1"># Force lower case</span>
+                <span class="k">return</span> <span class="s2">&quot;</span><span class="si">%s</span><span class="s2">&#39;s&quot;</span> <span class="o">%</span> <span class="n">text</span>
+            <span class="k">elif</span> <span class="n">text</span><span class="o">.</span><span class="n">isupper</span><span class="p">()</span> <span class="ow">or</span> <span class="n">caps_mode</span> <span class="o">==</span> <span class="mi">1</span><span class="p">:</span>
+                <span class="c1"># Force upper case or detect upper case</span>
+                <span class="k">return</span> <span class="s2">&quot;</span><span class="si">%s</span><span class="s2">&#39;S&quot;</span> <span class="o">%</span> <span class="n">text</span>
+                <span class="c1"># Default is lower</span>
+            <span class="k">else</span><span class="p">:</span>
+                <span class="k">return</span> <span class="s2">&quot;</span><span class="si">%s</span><span class="s2">&#39;s&quot;</span> <span class="o">%</span> <span class="n">text</span>
+
+    <span class="k">else</span><span class="p">:</span>
+        <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="s2">&quot;Language must be a supported locale.&quot;</span><span class="p">)</span></div>
+
+
+
+<div class="viewcode-block" id="num2word">
+<a class="viewcode-back" href="../index.html#talkgooder.num2word">[docs]</a>
+<span class="k">def</span> <span class="nf">num2word</span><span class="p">(</span>
+    <span class="n">number</span><span class="p">:</span> <span class="nb">int</span><span class="p">,</span>
+    <span class="n">language</span><span class="o">=</span><span class="s2">&quot;en-US&quot;</span><span class="p">,</span>
+<span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">str</span><span class="p">:</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;Determine if an integer should be expanded to a word (per the APA style manual).</span>
+
+<span class="sd">    The APA style manual specifies integers between 1 and 9 should be written out as a word.</span>
+<span class="sd">    Everything else should be represented as digits.</span>
+
+<span class="sd">    **Supported locales:**</span>
+
+<span class="sd">    * ``en-US``: American English</span>
+
+<span class="sd">    Args:</span>
+<span class="sd">        number (int):</span>
+<span class="sd">            An integer.</span>
+<span class="sd">        language (str):</span>
+<span class="sd">            Which language rules to apply (default ``en-US``).</span>
+
+<span class="sd">    Returns:</span>
+<span class="sd">        String:</span>
+<span class="sd">            The word or string-formatted number, as appropriate.</span>
+
+<span class="sd">    Raises:</span>
+<span class="sd">        TypeError: Number must be an int.</span>
+<span class="sd">        ValueError: Language must be a supported locale.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+
+    <span class="c1"># Make sure something reasonable was supplied</span>
+    <span class="k">if</span> <span class="ow">not</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">number</span><span class="p">,</span> <span class="nb">int</span><span class="p">):</span>
+        <span class="k">raise</span> <span class="ne">TypeError</span><span class="p">(</span><span class="s2">&quot;Number must be an int.&quot;</span><span class="p">)</span>
+
+    <span class="c1"># Per APA style guide, only 1-9 should be expanded</span>
+    <span class="k">if</span> <span class="n">number</span> <span class="o">&lt;</span> <span class="mi">1</span> <span class="ow">or</span> <span class="n">number</span> <span class="o">&gt;</span> <span class="mi">9</span><span class="p">:</span>
+        <span class="k">return</span> <span class="nb">str</span><span class="p">(</span><span class="n">number</span><span class="p">)</span>
+
+    <span class="k">if</span> <span class="n">language</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span> <span class="o">==</span> <span class="s2">&quot;en-us&quot;</span><span class="p">:</span>
+        <span class="n">numbers</span> <span class="o">=</span> <span class="p">[</span>
+            <span class="s2">&quot;one&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;two&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;three&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;four&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;five&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;six&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;seven&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;eight&quot;</span><span class="p">,</span>
+            <span class="s2">&quot;nine&quot;</span><span class="p">,</span>
+        <span class="p">]</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="s2">&quot;Language must be a supported locale.&quot;</span><span class="p">)</span>
+
+    <span class="k">return</span> <span class="n">numbers</span><span class="p">[</span><span class="n">number</span> <span class="o">-</span> <span class="mi">1</span><span class="p">]</span></div>
+
+
+
+<div class="viewcode-block" id="isAre">
+<a class="viewcode-back" href="../index.html#talkgooder.isAre">[docs]</a>
+<span class="k">def</span> <span class="nf">isAre</span><span class="p">(</span>
+    <span class="n">number</span><span class="p">:</span> <span class="nb">int</span> <span class="o">|</span> <span class="nb">float</span><span class="p">,</span>
+    <span class="n">language</span><span class="o">=</span><span class="s2">&quot;en-US&quot;</span><span class="p">,</span>
+<span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">str</span><span class="p">:</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;Given a quanity, determine if article should be ``is`` or ``are``.</span>
+
+<span class="sd">    Given a quantity of nouns or noun-equivalents, determine whether the article should be</span>
+<span class="sd">    ``is`` or ``are``. For example, &quot;there is one cat,&quot; and &quot;there are two cats.&quot;</span>
+
+<span class="sd">    **Supported locales:**</span>
+
+<span class="sd">    * ``en-US``: American English</span>
+
+<span class="sd">    Args:</span>
+<span class="sd">        number (int | float):</span>
+<span class="sd">            Quantity of items.</span>
+<span class="sd">        language (str):</span>
+<span class="sd">            Which language rules to apply, specified by locale (default ``en-US``).</span>
+
+<span class="sd">    Returns:</span>
+<span class="sd">        String:</span>
+<span class="sd">            ``is`` or ``are``, as appropriate.</span>
+
+<span class="sd">    Raises:</span>
+<span class="sd">        TypeError: number must be an int or float.</span>
+<span class="sd">        ValueError: language must be a supported locale.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+
+    <span class="k">if</span> <span class="ow">not</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">number</span><span class="p">,</span> <span class="p">(</span><span class="nb">int</span><span class="p">,</span> <span class="nb">float</span><span class="p">)):</span>
+        <span class="k">raise</span> <span class="ne">TypeError</span><span class="p">(</span><span class="s2">&quot;Number must be an int or a float.&quot;</span><span class="p">)</span>
+
+    <span class="k">if</span> <span class="n">language</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span> <span class="o">==</span> <span class="s2">&quot;en-us&quot;</span><span class="p">:</span>
+        <span class="c1"># Anything other than integer 1 (even 1.0) uses &quot;are&quot;</span>
+        <span class="k">if</span> <span class="n">number</span> <span class="o">==</span> <span class="mi">1</span> <span class="ow">and</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">number</span><span class="p">,</span> <span class="nb">int</span><span class="p">):</span>
+            <span class="k">return</span> <span class="s2">&quot;is&quot;</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="k">return</span> <span class="s2">&quot;are&quot;</span>
+
+    <span class="k">else</span><span class="p">:</span>
+        <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="s2">&quot;Language must be a supported locale.&quot;</span><span class="p">)</span></div>
+
+
+
+<div class="viewcode-block" id="wasWere">
+<a class="viewcode-back" href="../index.html#talkgooder.wasWere">[docs]</a>
+<span class="k">def</span> <span class="nf">wasWere</span><span class="p">(</span>
+    <span class="n">number</span><span class="p">:</span> <span class="nb">int</span> <span class="o">|</span> <span class="nb">float</span><span class="p">,</span>
+    <span class="n">language</span><span class="o">=</span><span class="s2">&quot;en-US&quot;</span><span class="p">,</span>
+<span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">str</span><span class="p">:</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;Given a quanity, determine if article should be ``ws`` or ``were``.</span>
+
+<span class="sd">    Given a quantity of nouns or noun-equivalents, determine whether the article should be</span>
+<span class="sd">    ``was`` or ``were``. For example, &quot;there was one cat,&quot; and &quot;there were two cats.&quot;</span>
+
+<span class="sd">    **Supported locales:**</span>
+
+<span class="sd">    * ``en-US``: American English</span>
+
+<span class="sd">    Args:</span>
+<span class="sd">        number (int | float):</span>
+<span class="sd">            Quantity of items.</span>
+<span class="sd">        language (str):</span>
+<span class="sd">            Which language rules to apply, specified by locale (default ``en-US``).</span>
+
+<span class="sd">    Returns:</span>
+<span class="sd">        String:</span>
+<span class="sd">            ``was`` or ``were``, as appropriate.</span>
+
+<span class="sd">    Raises:</span>
+<span class="sd">        TypeError: number must be an int or float.</span>
+<span class="sd">        ValueError: language must be a supported locale.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+
+    <span class="k">if</span> <span class="ow">not</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">number</span><span class="p">,</span> <span class="p">(</span><span class="nb">int</span><span class="p">,</span> <span class="nb">float</span><span class="p">)):</span>
+        <span class="k">raise</span> <span class="ne">TypeError</span><span class="p">(</span><span class="s2">&quot;Number must be an int or a float.&quot;</span><span class="p">)</span>
+
+    <span class="k">if</span> <span class="n">language</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span> <span class="o">==</span> <span class="s2">&quot;en-us&quot;</span><span class="p">:</span>
+        <span class="c1"># Anything other than integer 1 (even 1.0) uses &quot;were&quot;</span>
+        <span class="k">if</span> <span class="n">number</span> <span class="o">==</span> <span class="mi">1</span> <span class="ow">and</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">number</span><span class="p">,</span> <span class="nb">int</span><span class="p">):</span>
+            <span class="k">return</span> <span class="s2">&quot;was&quot;</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="k">return</span> <span class="s2">&quot;were&quot;</span>
+
+    <span class="k">else</span><span class="p">:</span>
+        <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="s2">&quot;Language must be a supported locale.&quot;</span><span class="p">)</span></div>
+
+
+
+<div class="viewcode-block" id="aAn">
+<a class="viewcode-back" href="../index.html#talkgooder.aAn">[docs]</a>
+<span class="k">def</span> <span class="nf">aAn</span><span class="p">(</span>
+    <span class="n">noun</span><span class="p">:</span> <span class="nb">str</span> <span class="o">|</span> <span class="nb">int</span> <span class="o">|</span> <span class="nb">float</span><span class="p">,</span>
+    <span class="n">language</span><span class="o">=</span><span class="s2">&quot;en-US&quot;</span><span class="p">,</span>
+<span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">str</span><span class="p">:</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;Given a noun or noun-equivalent, determine whether the article is ``a`` or ``an``.</span>
+
+<span class="sd">    Nouns and noun-equivalents with a soft vowel beginning generally use ``an``, and everything</span>
+<span class="sd">    else uses ``a``.</span>
+
+<span class="sd">    **Supported locales:**</span>
+
+<span class="sd">    * ``en-US``: American English</span>
+
+<span class="sd">    Args:</span>
+<span class="sd">        noun (str | int | float):</span>
+<span class="sd">            A noun or noun-equivalent, as a word or a number.</span>
+
+<span class="sd">        language (str):</span>
+<span class="sd">            Which language rules to apply, specified by locale (default ``en-US``).</span>
+
+<span class="sd">    Returns:</span>
+<span class="sd">        String:</span>
+<span class="sd">            ``a`` or ``an``, as appropriate.</span>
+
+<span class="sd">    Raises:</span>
+<span class="sd">        TypeError: Noun must be a string, int, or float.</span>
+<span class="sd">        ValueError: Language must be a supported locale.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+
+    <span class="k">if</span> <span class="ow">not</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">noun</span><span class="p">,</span> <span class="p">(</span><span class="nb">str</span><span class="p">,</span> <span class="nb">int</span><span class="p">,</span> <span class="nb">float</span><span class="p">)):</span>
+        <span class="k">raise</span> <span class="ne">TypeError</span><span class="p">(</span><span class="s2">&quot;Noun must be a string, int, or float.&quot;</span><span class="p">)</span>
+
+    <span class="k">if</span> <span class="n">language</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span> <span class="o">==</span> <span class="s2">&quot;en-us&quot;</span><span class="p">:</span>
+
+        <span class="c1"># Vowels, numbers that start with 8, and 18 use the &quot;an&quot; article</span>
+        <span class="k">if</span> <span class="p">(</span>
+            <span class="nb">str</span><span class="p">(</span><span class="n">noun</span><span class="p">)</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span><span class="o">.</span><span class="n">startswith</span><span class="p">((</span><span class="s2">&quot;a&quot;</span><span class="p">,</span> <span class="s2">&quot;e&quot;</span><span class="p">,</span> <span class="s2">&quot;i&quot;</span><span class="p">,</span> <span class="s2">&quot;o&quot;</span><span class="p">,</span> <span class="s2">&quot;u&quot;</span><span class="p">,</span> <span class="s2">&quot;8&quot;</span><span class="p">,</span> <span class="s2">&quot;18.&quot;</span><span class="p">))</span>
+            <span class="ow">or</span> <span class="nb">str</span><span class="p">(</span><span class="n">noun</span><span class="p">)</span> <span class="o">==</span> <span class="s2">&quot;18&quot;</span>
+        <span class="p">):</span>
+            <span class="k">return</span> <span class="s2">&quot;an&quot;</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="k">return</span> <span class="s2">&quot;a&quot;</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="s2">&quot;Language must be a supported locale.&quot;</span><span class="p">)</span></div>
+
+</pre></div>
+
+           </div>
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2024, Brian Warner.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: talkgooder
+Version: 1.1.0
+Summary: Smooth out grammar, punctuation, and number-related corner cases when formatting text for human consumption
+Maintainer-email: Brian Warner <brian@bdwarner.com>
+Project-URL: Homepage, https://brianwarner.github.io/talkgooder/
+Project-URL: Documentation, https://brianwarner.github.io/talkgooder/
+Project-URL: Repository, https://github.com/brianwarner/talkgooder
+Project-URL: Issues, https://github.com/brianwarner/talkgooder/issues
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Text Processing :: Linguistic
+Classifier: License :: OSI Approved :: MIT License
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE.md
+
+# Talk Gooder
+
+`talkgooder` attempts to smooth out grammar, punctuation, and number-related corner cases when formatting text for human consumption. It is intended for applications where you know there's a noun and are trying to generate text, but you don't know much about it.
+
+It handles:
+
+* Plurals
+* Possessives
+* Numbers to words
+* "There is" vs. "There are"
+* "A" vs. "An"
+
+``talkgooder`` is currently specific to American English, but it is extensible to other languages.
+
+Contributions are welcome at [github.com/brianwarner/talkgooder](https://github.com/brianwarner/talkgooder)!

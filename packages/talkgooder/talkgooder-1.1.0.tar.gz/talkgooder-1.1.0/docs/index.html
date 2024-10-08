@@ -1,0 +1,365 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="./">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>talkGooder documentation &mdash; talkGooder 0.0.post1.dev1+ge624e3d documentation</title>
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=7ab3649f" />
+
+  
+      <script src="_static/jquery.js?v=5d32c60e"></script>
+      <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="_static/documentation_options.js?v=3c956434"></script>
+      <script src="_static/doctools.js?v=9a2dae69"></script>
+      <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+<link href=" _static/style.css" rel="stylesheet" type="text/css">
+
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="#" class="icon icon-home">
+            talkGooder
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <!-- Local TOC -->
+              <div class="local-toc"><ul>
+<li><a class="reference internal" href="#">talkGooder documentation</a><ul>
+<li><a class="reference internal" href="#talk-gooder">Talk Gooder</a></li>
+<li><a class="reference internal" href="#functions">Functions</a><ul>
+<li><a class="reference internal" href="#talkgooder.aAn"><code class="docutils literal notranslate"><span class="pre">aAn()</span></code></a></li>
+<li><a class="reference internal" href="#talkgooder.isAre"><code class="docutils literal notranslate"><span class="pre">isAre()</span></code></a></li>
+<li><a class="reference internal" href="#talkgooder.num2word"><code class="docutils literal notranslate"><span class="pre">num2word()</span></code></a></li>
+<li><a class="reference internal" href="#talkgooder.plural"><code class="docutils literal notranslate"><span class="pre">plural()</span></code></a></li>
+<li><a class="reference internal" href="#talkgooder.possessive"><code class="docutils literal notranslate"><span class="pre">possessive()</span></code></a></li>
+<li><a class="reference internal" href="#talkgooder.wasWere"><code class="docutils literal notranslate"><span class="pre">wasWere()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="#">talkGooder</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="#" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">talkGooder documentation</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/index.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="talkgooder-documentation">
+<h1>talkGooder documentation<a class="headerlink" href="#talkgooder-documentation" title="Link to this heading"></a></h1>
+<section id="talk-gooder">
+<h2>Talk Gooder<a class="headerlink" href="#talk-gooder" title="Link to this heading"></a></h2>
+<p><code class="docutils literal notranslate"><span class="pre">talkgooder</span></code> attempts to smooth out grammar, punctuation, and number-related corner cases when formatting text for human consumption. It is intended for applications where you know there’s a noun and are trying to generate text, but you don’t know much about it.</p>
+<p>It handles:</p>
+<ul class="simple">
+<li><p>Plurals</p></li>
+<li><p>Possessives</p></li>
+<li><p>Numbers to words</p></li>
+<li><p>“There is” vs. “There are”</p></li>
+<li><p>“A” vs. “An”</p></li>
+</ul>
+<p><code class="docutils literal notranslate"><span class="pre">talkgooder</span></code> is currently specific to American English, but it is extensible to other languages.</p>
+<p>Contributions are welcome at <a class="reference external" href="https://github.com/brianwarner/talkgooder">github.com/brianwarner/talkgooder</a>!</p>
+</section>
+<section id="functions">
+<h2>Functions<a class="headerlink" href="#functions" title="Link to this heading"></a></h2>
+<table class="autosummary longtable docutils align-default">
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#talkgooder.aAn" title="talkgooder.aAn"><code class="xref py py-obj docutils literal notranslate"><span class="pre">talkgooder.aAn</span></code></a></p></td>
+<td><p>Given a noun or noun-equivalent, determine whether the article is <code class="docutils literal notranslate"><span class="pre">a</span></code> or <code class="docutils literal notranslate"><span class="pre">an</span></code>.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#talkgooder.isAre" title="talkgooder.isAre"><code class="xref py py-obj docutils literal notranslate"><span class="pre">talkgooder.isAre</span></code></a></p></td>
+<td><p>Given a quanity, determine if article should be <code class="docutils literal notranslate"><span class="pre">is</span></code> or <code class="docutils literal notranslate"><span class="pre">are</span></code>.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#talkgooder.num2word" title="talkgooder.num2word"><code class="xref py py-obj docutils literal notranslate"><span class="pre">talkgooder.num2word</span></code></a></p></td>
+<td><p>Determine if an integer should be expanded to a word (per the APA style manual).</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#talkgooder.plural" title="talkgooder.plural"><code class="xref py py-obj docutils literal notranslate"><span class="pre">talkgooder.plural</span></code></a></p></td>
+<td><p>Determine the plural of a noun depending upon quantity.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#talkgooder.possessive" title="talkgooder.possessive"><code class="xref py py-obj docutils literal notranslate"><span class="pre">talkgooder.possessive</span></code></a></p></td>
+<td><p>Convert a noun to its possessive, because apostrophes can be hard.</p></td>
+</tr>
+</tbody>
+</table>
+<hr class="docutils" />
+<dl class="py function" id="module-talkgooder">
+<dt class="sig sig-object py" id="talkgooder.aAn">
+<span class="sig-prename descclassname"><span class="pre">talkgooder.</span></span><span class="sig-name descname"><span class="pre">aAn</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">noun</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">int</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">float</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">language</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'en-US'</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">str</span></span></span><a class="reference internal" href="_modules/talkgooder.html#aAn"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#talkgooder.aAn" title="Link to this definition"></a></dt>
+<dd><p>Given a noun or noun-equivalent, determine whether the article is <code class="docutils literal notranslate"><span class="pre">a</span></code> or <code class="docutils literal notranslate"><span class="pre">an</span></code>.</p>
+<p>Nouns and noun-equivalents with a soft vowel beginning generally use <code class="docutils literal notranslate"><span class="pre">an</span></code>, and everything
+else uses <code class="docutils literal notranslate"><span class="pre">a</span></code>.</p>
+<p><strong>Supported locales:</strong></p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">en-US</span></code>: American English</p></li>
+</ul>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>noun</strong> (<em>str</em><em> | </em><em>int</em><em> | </em><em>float</em>) – A noun or noun-equivalent, as a word or a number.</p></li>
+<li><p><strong>language</strong> (<em>str</em>) – Which language rules to apply, specified by locale (default <code class="docutils literal notranslate"><span class="pre">en-US</span></code>).</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p><code class="docutils literal notranslate"><span class="pre">a</span></code> or <code class="docutils literal notranslate"><span class="pre">an</span></code>, as appropriate.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>String</p>
+</dd>
+<dt class="field-even">Raises<span class="colon">:</span></dt>
+<dd class="field-even"><ul class="simple">
+<li><p><strong>TypeError</strong> – Noun must be a string, int, or float.</p></li>
+<li><p><strong>ValueError</strong> – Language must be a supported locale.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="talkgooder.isAre">
+<span class="sig-prename descclassname"><span class="pre">talkgooder.</span></span><span class="sig-name descname"><span class="pre">isAre</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">number</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">float</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">language</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'en-US'</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">str</span></span></span><a class="reference internal" href="_modules/talkgooder.html#isAre"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#talkgooder.isAre" title="Link to this definition"></a></dt>
+<dd><p>Given a quanity, determine if article should be <code class="docutils literal notranslate"><span class="pre">is</span></code> or <code class="docutils literal notranslate"><span class="pre">are</span></code>.</p>
+<p>Given a quantity of nouns or noun-equivalents, determine whether the article should be
+<code class="docutils literal notranslate"><span class="pre">is</span></code> or <code class="docutils literal notranslate"><span class="pre">are</span></code>. For example, “there is one cat,” and “there are two cats.”</p>
+<p><strong>Supported locales:</strong></p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">en-US</span></code>: American English</p></li>
+</ul>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>number</strong> (<em>int</em><em> | </em><em>float</em>) – Quantity of items.</p></li>
+<li><p><strong>language</strong> (<em>str</em>) – Which language rules to apply, specified by locale (default <code class="docutils literal notranslate"><span class="pre">en-US</span></code>).</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p><code class="docutils literal notranslate"><span class="pre">is</span></code> or <code class="docutils literal notranslate"><span class="pre">are</span></code>, as appropriate.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>String</p>
+</dd>
+<dt class="field-even">Raises<span class="colon">:</span></dt>
+<dd class="field-even"><ul class="simple">
+<li><p><strong>TypeError</strong> – number must be an int or float.</p></li>
+<li><p><strong>ValueError</strong> – language must be a supported locale.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="talkgooder.num2word">
+<span class="sig-prename descclassname"><span class="pre">talkgooder.</span></span><span class="sig-name descname"><span class="pre">num2word</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">number</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">language</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'en-US'</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">str</span></span></span><a class="reference internal" href="_modules/talkgooder.html#num2word"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#talkgooder.num2word" title="Link to this definition"></a></dt>
+<dd><p>Determine if an integer should be expanded to a word (per the APA style manual).</p>
+<p>The APA style manual specifies integers between 1 and 9 should be written out as a word.
+Everything else should be represented as digits.</p>
+<p><strong>Supported locales:</strong></p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">en-US</span></code>: American English</p></li>
+</ul>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>number</strong> (<em>int</em>) – An integer.</p></li>
+<li><p><strong>language</strong> (<em>str</em>) – Which language rules to apply (default <code class="docutils literal notranslate"><span class="pre">en-US</span></code>).</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>The word or string-formatted number, as appropriate.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>String</p>
+</dd>
+<dt class="field-even">Raises<span class="colon">:</span></dt>
+<dd class="field-even"><ul class="simple">
+<li><p><strong>TypeError</strong> – Number must be an int.</p></li>
+<li><p><strong>ValueError</strong> – Language must be a supported locale.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="talkgooder.plural">
+<span class="sig-prename descclassname"><span class="pre">talkgooder.</span></span><span class="sig-name descname"><span class="pre">plural</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">text</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">number</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">float</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">language</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'en-US'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">addl_same</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">[]</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">addl_special_s</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">[]</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">addl_irregular</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">{}</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">caps_mode</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">str</span></span></span><a class="reference internal" href="_modules/talkgooder.html#plural"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#talkgooder.plural" title="Link to this definition"></a></dt>
+<dd><p>Determine the plural of a noun depending upon quantity.</p>
+<p>Given a quantity of nouns, return the most likely plural form. Language is complicated and
+pluralization rules are not always consistent, so this function supports user-supplied rules
+to accommodate exceptions specific to the situation.</p>
+<p><strong>Supported locales:</strong></p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">en-US</span></code>: American English</p></li>
+</ul>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>text</strong> (<em>str</em>) – The noun to convert.</p></li>
+<li><p><strong>number</strong> (<em>int</em><em> or </em><em>float</em>) – The quantity of nouns.</p></li>
+<li><p><strong>language</strong> (<em>str</em>) – Which language rules to apply, specified by locale (default: <code class="docutils literal notranslate"><span class="pre">en-US</span></code>).</p></li>
+<li><p><strong>addl_same</strong> (<em>list</em>) – Additional words where the singular and plural are the same.</p></li>
+<li><p><strong>addl_special_s</strong> (<em>list</em>) – Additional words that always end in s for odd reasons (e.g., <code class="docutils literal notranslate"><span class="pre">[&quot;piano&quot;,&quot;hello&quot;,...]</span></code>).</p></li>
+<li><p><strong>addl_irregular</strong> (<em>dict</em>) – Additional pairs of irregular plural nouns (e.g., <code class="docutils literal notranslate"><span class="pre">{&quot;mouse&quot;:</span> <span class="pre">&quot;mice&quot;,</span> <span class="pre">&quot;person&quot;:</span>
+<span class="pre">&quot;people&quot;,</span> <span class="pre">...}</span></code>).</p></li>
+<li><p><strong>caps_mode</strong> (<em>int</em>) – <ul>
+<li><p><code class="docutils literal notranslate"><span class="pre">0</span></code>: Attempt to infer whether suffix is lower or upper case (default).</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">1</span></code>: Force suffix to be upper case.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">2</span></code>: Force suffix to be lower case.</p></li>
+</ul>
+</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>The plural of the provided noun.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>String</p>
+</dd>
+<dt class="field-even">Raises<span class="colon">:</span></dt>
+<dd class="field-even"><ul class="simple">
+<li><p><strong>TypeError</strong> – Text must be a string.</p></li>
+<li><p><strong>ValueError</strong> – Language must be a supported locale.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="talkgooder.possessive">
+<span class="sig-prename descclassname"><span class="pre">talkgooder.</span></span><span class="sig-name descname"><span class="pre">possessive</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">text</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">language</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'en-US'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">caps_mode</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">str</span></span></span><a class="reference internal" href="_modules/talkgooder.html#possessive"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#talkgooder.possessive" title="Link to this definition"></a></dt>
+<dd><p>Convert a noun to its possessive, because apostrophes can be hard.</p>
+<p><strong>Supported locales:</strong></p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">en-US</span></code>: American English</p></li>
+</ul>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>text</strong> (<em>str</em>) – A noun to be made possessive.</p></li>
+<li><p><strong>language</strong> (<em>str</em>) – Which language rules to apply (default <code class="docutils literal notranslate"><span class="pre">en-US</span></code>).</p></li>
+<li><p><strong>caps_mode</strong> (<em>int</em>) – <ul>
+<li><p><code class="docutils literal notranslate"><span class="pre">0</span></code>: Attempt to infer whether suffix is lower or upper case (default).</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">1</span></code>: Force suffix to be upper case.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">2</span></code>: Force suffix to be lower case.</p></li>
+</ul>
+</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>The possessive of the provided string.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>String</p>
+</dd>
+<dt class="field-even">Raises<span class="colon">:</span></dt>
+<dd class="field-even"><ul class="simple">
+<li><p><strong>TypeError</strong> – Text must be a string.</p></li>
+<li><p><strong>ValueError</strong> – Language must be a supported locale.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="talkgooder.wasWere">
+<span class="sig-prename descclassname"><span class="pre">talkgooder.</span></span><span class="sig-name descname"><span class="pre">wasWere</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">number</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span><span class="w"> </span><span class="p"><span class="pre">|</span></span><span class="w"> </span><span class="pre">float</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">language</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'en-US'</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">str</span></span></span><a class="reference internal" href="_modules/talkgooder.html#wasWere"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#talkgooder.wasWere" title="Link to this definition"></a></dt>
+<dd><p>Given a quanity, determine if article should be <code class="docutils literal notranslate"><span class="pre">ws</span></code> or <code class="docutils literal notranslate"><span class="pre">were</span></code>.</p>
+<p>Given a quantity of nouns or noun-equivalents, determine whether the article should be
+<code class="docutils literal notranslate"><span class="pre">was</span></code> or <code class="docutils literal notranslate"><span class="pre">were</span></code>. For example, “there was one cat,” and “there were two cats.”</p>
+<p><strong>Supported locales:</strong></p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">en-US</span></code>: American English</p></li>
+</ul>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>number</strong> (<em>int</em><em> | </em><em>float</em>) – Quantity of items.</p></li>
+<li><p><strong>language</strong> (<em>str</em>) – Which language rules to apply, specified by locale (default <code class="docutils literal notranslate"><span class="pre">en-US</span></code>).</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p><code class="docutils literal notranslate"><span class="pre">was</span></code> or <code class="docutils literal notranslate"><span class="pre">were</span></code>, as appropriate.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>String</p>
+</dd>
+<dt class="field-even">Raises<span class="colon">:</span></dt>
+<dd class="field-even"><ul class="simple">
+<li><p><strong>TypeError</strong> – number must be an int or float.</p></li>
+<li><p><strong>ValueError</strong> – language must be a supported locale.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<div class="toctree-wrapper compound">
+</div>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2024, Brian Warner.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
