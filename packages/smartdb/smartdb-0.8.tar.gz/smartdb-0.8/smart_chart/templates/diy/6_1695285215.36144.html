@@ -1,0 +1,154 @@
+{% extends "echart/basevue.html" %}
+{% block head %}
+<style>
+.smt {text-align:center;vertical-align:middle}
+.smtlistnav {
+    overflow: auto;
+}
+.el-checkbox > *{
+    font-size: 0.2rem
+}
+label {
+    font-size: 0.2rem;
+    padding: 0.5rem;
+}
+.el-input{
+    width: 10rem
+}
+.el-date-editor{
+    width: 30rem !important;
+    height: 30px !important;
+}
+.el-date-editor .el-range-separator{
+    height: auto;
+}
+.el-input__icon {
+    height: auto;
+    line-height: 30px;
+}
+.el-select input{
+    height: 30px !important;
+}
+
+.el-button+.el-button{
+    margin-left: 2px
+}
+
+.tablehead{
+    background-color: #fafdff !important;
+}
+
+/*=============start_drag=============*/
+#idsmt_54_1{top:0.985rem;left:84.401rem;width:11.664rem;height:3.375rem}
+#idsmt_54_0{top:0.871rem;left:98.583rem;width:10.651rem;height:3.377rem}
+#id_1658912747279{top:1.091rem;left:1.995rem;width:59.617rem;height:3.94rem}
+#id_1656030977183{top:1.236rem;left:62.207rem;width:15.119rem;height:3.374rem}
+#id_1654907858638{top:6.897rem;left:1.445rem;width:114.706rem;height:41.111rem}
+/*=============end_drag=============*/
+</style>
+{% endblock %}
+{% block body %}
+
+<body>
+<vue id="vue_app">
+    {% for div in div_list %}
+      {{div}}
+    {% endfor %}
+<!--筛选区-->
+  <div class="smtdrag" id="id_1658912747279">
+   <!--时间区间选择-->
+   <el-date-picker
+      v-model="daterange_value"
+      type="daterange"
+      range-separator="至"
+      start-placeholder="开始日期"
+      end-placeholder="结束日期">
+   </el-date-picker>
+   <!--单选-->
+   <el-select v-model="s_value" placeholder="请选择">
+    <el-option
+      v-for="item in options"
+      :key="item.s1"
+      :label="item.s1"
+      :value="item.s1">
+    </el-option>
+   </el-select>
+   <label>注意:一次最多只展示xxxx多</label>
+  </div>
+  <!--按钮-->
+   <div class="smtdrag" id="id_1656030977183">
+    <el-button type="primary" size='mini' @click="searchTable">查询</el-button>
+    <el-button type="primary" size='mini' @click="downloadTable">导出</el-button>
+   </div>
+<!--结束筛选区-->
+   <!--表格-->
+   <div class="smtdrag" id="id_1654907858638">
+    <el-table
+    :data="tableData.slice((currentPage-1)*pageSize, currentPage*pageSize)"
+    height="100%"
+    size="mini"
+    header-cell-class-name="tablehead"
+    border
+    style="width: 100%">
+     <el-table-column v-for="item in tableHead" :label="item.label" :property="item.prop" sortable>
+     </el-table-column>
+    </el-table>
+    <!--分页器-->
+    <el-pagination align='center'
+      @size-change="handlerSizeChange"
+      @current-change="handlerCurrentChange"
+      :current-page="currentPage"
+      :page-size="pageSize"
+      layout="total,sizes,prev,pager,next,jumper"
+      :total="tableData.length"
+    ></el-pagination>
+   </div>
+<!--表格结束-->
+</vue>
+</body>
+
+{% endblock %}
+{% block javascript %}
+<script>
+var vapp = new Vue({el: '#vue_app', delimiters: ['{[', ']}'], 
+     data: {
+         tableData:[],  //表格数据
+         tableHead:[],  //表格标题
+         options:[],    //单选项
+         daterange_value:[], //时间选项
+         s_value:'',  //绑定单选值
+         currentPage:1,
+         total:20,
+         pageSize:10
+     },
+     methods: {
+         //查询动作
+         searchTable: function(){
+             //获取选择的时间参数
+             ds_setParam('startdate', this.daterange_value[0]);
+             ds_setParam('enddate', this.daterange_value[1]);
+             //获取选择的筛选项参数
+             ds_setParam('s1', this.s_value)
+             //开始查询
+             ds_refresh(0);
+             this.currentPage = 1;
+         },
+         //下载数据
+         downloadTable: function(){
+            ds_download('smartchart.csv', ds_mapToList(this.tableData));
+         },
+         handlerSizeChange(val){
+             console.log(`每页${val}条`);
+             this.currentPage = 1;
+             this.pageSize=val;
+         },
+         handlerCurrentChange(val){
+             console.log(`当前页:${val}`);
+             this.currentPage = val;
+         }
+     }
+     
+    });
+</script>
+{% endblock %}
+{% block footer %}{% endblock %}

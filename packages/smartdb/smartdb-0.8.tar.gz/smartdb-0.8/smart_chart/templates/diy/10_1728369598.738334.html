@@ -1,0 +1,30 @@
+{%extends "echart/basecrud.html" %}{%block head%}<style>/*=start_drag=*//*=end_drag=*/</style>
+<style></style>{%endblock%}
+{%block body_table_column%}{%endblock%}
+{%block body_table_column_button%}{%endblock%}
+{%block javascript%}<script>
+//=start_crud=//
+vapp.btnEdit=true;
+vapp.btnView=true;
+vapp.stripe=true;
+vapp.option_id='3';
+vapp.title='测试CRUD';
+vapp.nameDict=`id:序号,H1:英雄1,H2:英雄2,qty:比赛数,rate:胜率,create_time:创建时间`;
+vapp.searchDict=`H1,H2`;
+vapp.filterDict=`H1,H2,qty,rate`;
+vapp.aform=`H1,H2,qty,rate`;
+vapp.mform=`H1,H2,qty,rate`;
+vapp.constFields=`id`;
+vapp.requiredFields=`H1,H2,qty,rate`;
+vapp.typeDict=`H1:select,H2:select`;
+vapp.alignDict=`qty:right,rate:right`
+//=end_crud=//
+// vapp.smtdrag=false;
+</script>
+<!--<script src="/static/echart/dist/echarts.min.js"></script>-->
+{%endblock%}{%block footer%}<script>
+vapp.diyKeys='optionDict';
+vapp.optionDict={"H1":"","H2":""}
+
+</script>{%endblock%}      
+            

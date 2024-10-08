@@ -1,0 +1,10 @@
+MANIFEST.in
+setup.py
+smart_chart/db.sqlite3
+smart_chart/templates/diy/10_1728369598.738334.html
+smart_chart/templates/diy/6_1695285215.36144.html
+smartdb.egg-info/PKG-INFO
+smartdb.egg-info/SOURCES.txt
+smartdb.egg-info/dependency_links.txt
+smartdb.egg-info/not-zip-safe
+smartdb.egg-info/top_level.txt
