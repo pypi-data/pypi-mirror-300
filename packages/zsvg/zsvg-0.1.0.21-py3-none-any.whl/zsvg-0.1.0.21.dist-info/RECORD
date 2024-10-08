@@ -1,0 +1,8 @@
+zsvg/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+zsvg/load.cpython-312-darwin.so,sha256=zhyLQfg9j8SBpQGZaO1fjn5IpqJkz6_KUh0s1hSED4o,100824
+zsvg/proc.cpython-312-darwin.so,sha256=xYxetaqs-qva72kPvNJZjkL8DpVQXfe3VdMDOBAQIwE,79496
+zsvg/sec.cpython-312-darwin.so,sha256=v7ivZ9IP4CReL3byU3w9JH34xo72FhdiDa8I6QGtUZE,98776
+zsvg-0.1.0.21.dist-info/METADATA,sha256=TU2mnIbUIFph2PLYU76bbiyPE4TwfApNOgL0nAsAUig,334
+zsvg-0.1.0.21.dist-info/WHEEL,sha256=GV9aMThwP_4oNCtvEC2ec3qUYutgWeAzklro_0m4WJQ,91
+zsvg-0.1.0.21.dist-info/top_level.txt,sha256=xQlpL8k9GQ456lx6fnII7xz9aeJUD5UEFrp_Rn-hoJ8,5
+zsvg-0.1.0.21.dist-info/RECORD,,
