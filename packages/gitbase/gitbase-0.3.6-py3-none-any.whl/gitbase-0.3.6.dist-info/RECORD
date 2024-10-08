@@ -1,0 +1,8 @@
+gitbase/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+gitbase/gitbase.py,sha256=o9oWP6GE06o-0chOpKURBZXuHWiKbB43pT3nfNCCcQA,23192
+gitbase/test.py,sha256=AQvKnk904A50RqKVWb5sCV6SdsH7wxzAy9R07MY2tEg,1987
+gitbase-0.3.6.dist-info/LICENSE,sha256=C6DAxnvO5OeArgAi8_wTqKOq-4VbbVE6ABGN5aZD1fE,1092
+gitbase-0.3.6.dist-info/METADATA,sha256=0VMTM_m8NSrA6Rz64ByOquBKzXTSuXNAfztPquBXkOc,3745
+gitbase-0.3.6.dist-info/WHEEL,sha256=GV9aMThwP_4oNCtvEC2ec3qUYutgWeAzklro_0m4WJQ,91
+gitbase-0.3.6.dist-info/top_level.txt,sha256=dW8SdIwhApX32q-xIvHGSmCPdpHkWiRURfqJ7qz_dcc,8
+gitbase-0.3.6.dist-info/RECORD,,
