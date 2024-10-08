@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: aioblackbird24180
+Version: 0.1.0
+Summary: Python module to control Monoprice 24180 Blackbird 8x8 HDMI Matrix.
+Author: alexyao2015
+License: Apache-2.0
+Project-URL: Homepage, https://github.com/alexyao2015/aioblackbird24180
+Project-URL: Repository, https://github.com/alexyao2015/aioblackbird24180
+Platform: any
+Classifier: Environment :: Console
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Python: >=3.11
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Provides-Extra: test
+Requires-Dist: codespell ==2.3.0 ; extra == 'test'
+Requires-Dist: mypy ==1.11.2 ; extra == 'test'
+Requires-Dist: pre-commit ==4.0.0 ; extra == 'test'
+Requires-Dist: pre-commit-hooks ==5.0.0 ; extra == 'test'
+Requires-Dist: pylint ==3.3.1 ; extra == 'test'
+Requires-Dist: pytest ==8.3.3 ; extra == 'test'
+Requires-Dist: pytest-asyncio ==0.24.0 ; extra == 'test'
+Requires-Dist: pytest-cov ==5.0.0 ; extra == 'test'
+Requires-Dist: pytest-xdist ==3.6.1 ; extra == 'test'
+Requires-Dist: ruff ==0.6.9 ; extra == 'test'
+Requires-Dist: safety ==3.2.8 ; extra == 'test'
+Requires-Dist: tomli ==2.0.2 ; extra == 'test'
+
+# aioblackbird24180
+
+This is a Python library to control the Monoprice 24180 Blackbird 8x8 HDMI Matrix
