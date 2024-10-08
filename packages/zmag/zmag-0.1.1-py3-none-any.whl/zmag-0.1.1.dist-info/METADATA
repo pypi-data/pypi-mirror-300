@@ -1,0 +1,43 @@
+Metadata-Version: 2.1
+Name: zmag
+Version: 0.1.1
+Summary: Craft Network APIs with ZeroMQ and GraphQL
+Author-Email: hlop3z <23062270+hlop3z@users.noreply.github.com>
+License: MIT
+Requires-Python: >=3.12
+Requires-Dist: pyzmq>=26.2.0
+Requires-Dist: orjson>=3.10.7
+Provides-Extra: debug
+Requires-Dist: uvicorn[standard]>=0.30.6; extra == "debug"
+Requires-Dist: starlette>=0.38.2; extra == "debug"
+Requires-Dist: watchdog>=4.0.2; extra == "debug"
+Provides-Extra: server
+Requires-Dist: spoc>=0.2.2; extra == "server"
+Requires-Dist: strawberry-graphql>=0.237.3; extra == "server"
+Requires-Dist: click>=8.1.7; extra == "server"
+Requires-Dist: click-help-colors>=0.9.4; extra == "server"
+Description-Content-Type: text/markdown
+
+# Welcome to ***ZMAG***
+
+![title-image](https://raw.githubusercontent.com/hlop3z/zmag/main/docs/docs/assets/images/title.png)
+
+---
+
+![License: MIT](https://img.shields.io/badge/License-MIT-purple.svg)
+![Language](https://img.shields.io/github/languages/top/hlop3z/zmag)
+![GitHub](https://img.shields.io/github/v/tag/hlop3z/zmag?label=github)
+![PyPI](https://img.shields.io/pypi/v/zmag?color=blue)
+![Downloads](https://img.shields.io/pypi/dm/zmag?color=darkgreen)
+
+---
+
+**Craft APIs** — with ZeroMQ and GraphQL
+
+---
+
+## Links
+
+- [PyPi](https://pypi.org/project/zmag)
+- [Github](https://github.com/hlop3z/zmag)
+- [Read the Documents](https://hlop3z.github.io/zmag/)

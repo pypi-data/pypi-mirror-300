@@ -1,0 +1,5 @@
+[console_scripts]
+zmag-init = zmag_installer:start_project
+
+[gui_scripts]
+
