@@ -1,0 +1,15 @@
+stockvip/__init__.py,sha256=FWteWY2vzQyGnHsgaG72fj2mcBCWJp3Y3edRFeqE77Q,115
+stockvip/client.py,sha256=K8jxPeHRZuuUusppwXPpuN2jkMEYTIBdl8oUSNK_H3s,1251
+stockvip/stock.py,sha256=qgB45J5CahFzp5syoOYTSatjNpS4OZ_DYqWfrRAf03c,17488
+stockvip/config/config.cp39-win_amd64.pyd,sha256=oiPS8WQ_XaFx16K5wghmSHtx93Uk4lBwMFGXX7EOZlM,24064
+stockvip/config/ensure_logged_in.cp39-win_amd64.pyd,sha256=g9JJFE0DFRXcEF2_eXhOw6dhuZUPUWyfzLj8vGwAxtU,53248
+stockvip/process_client/login.cp39-win_amd64.pyd,sha256=AGysejU_nh5funzBaMEneBQ50eU6mPf13x0M_xiNnXU,66560
+stockvip/process_stock/foreign.cp39-win_amd64.pyd,sha256=0DaIHk3Vqk0VIVPDG0dv2mPaS-s5Dki7I398wxt3iaU,62976
+stockvip/process_stock/ohlcv.cp39-win_amd64.pyd,sha256=EEu2UUNW91GbSQ33Yz0bz-AEoZ3Nq2Y7exsJ_0g8edQ,60928
+stockvip/process_stock/propTrading.cp39-win_amd64.pyd,sha256=K-0GnSfuDvWgAIRJjRifoFdnOnIjewn56wsnN9eTE5Q,62464
+stockvip/process_stock/supplyAndDemand.cp39-win_amd64.pyd,sha256=pPUdJUY_zLklc4LJGEkSPDjTTSUdP1v3mkGpn8KdEw4,62976
+stockvip-2.0.0.dist-info/LICENSE.txt,sha256=enhtyeWHebHAzCnyGM8gvRotOPxHBNHF4ZqQ69CjEfk,1089
+stockvip-2.0.0.dist-info/METADATA,sha256=TvL-LVKN4eqR1EhicU4hJJCcORJJwmk3hSqdD9EETyg,3582
+stockvip-2.0.0.dist-info/WHEEL,sha256=YorN2HPccIdfJm1vtDZTOGjQ579sMRaAowQ3R-HpNAE,100
+stockvip-2.0.0.dist-info/top_level.txt,sha256=i2ols6uiwBXRU20-liakcQeHTL4jb2D-D00wnsE1L3c,9
+stockvip-2.0.0.dist-info/RECORD,,
