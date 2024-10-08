@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: simple-user-creation
+Version: 0.2.0
+Summary: An SDK for creating users
+Home-page: https://github.com/your_username/your_sdk
+Author: Adithya k
+Author-email: adithya.k@setu.co
+License: MIT
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: requests
+
+# Your simple-user-creation
+
+This is an SDK that provides functionality for combining names and creating users via an API.
+
+## Installation
+
+Install the SDK using pip:
+
+```bash
+pip install simple-user-creation
