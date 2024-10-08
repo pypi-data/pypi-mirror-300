@@ -1,0 +1,13 @@
+terminal_robot/__init__.py,sha256=8hkAkAKlAo3ycO5jx66xKs0X_pRWPkrhErAduwRZIsI,72
+terminal_robot/main.py,sha256=p52ni_bK6BYNY4gMaoXDAcDTLltK5K6sMHUhFwDx8M8,3374
+terminal_robot/robotspeech.py,sha256=S4YtOzk6bxm44Vu40q2YYisBjPxfFX3yHxWxp08laSY,6475
+terminal_robot/images/robot_e.png,sha256=cJhonD-hSd2H7VJ6Fx3ZxX8NZIlRBC2IPuziVSfai2U,64499
+terminal_robot/images/robot_h.png,sha256=bltRO3gziyDJqcF0WrF7C2jMP5ziyYRam2m6Tth7Y9g,64336
+terminal_robot/images/robot_m.png,sha256=fuOFU_QBsBKWeHL6PRPSmEqJ-SPImxKjY7DIwq-8XTE,65702
+terminal_robot/images/robot_o.png,sha256=keDkLSx1m5YNVtUhqaHMaRb2GvwoKnCazuv2jh98BME,63922
+terminal_robot/images/robot_s.png,sha256=LD5Of0K55-jR_IAjBKWsziYVAodC8pEsSPAL4Z-1vyY,63795
+terminal_robot/images/robot_u.png,sha256=sTEL7Ut85awNIw_iHMc0qQNpTVDCS7ydDSZ7X2ZWgd0,63747
+terminal_robot-1.0.0.dist-info/METADATA,sha256=VPtQRDI7cQ8xQ4NObRS88S6ebLzWVPFuHfurexf2I38,2163
+terminal_robot-1.0.0.dist-info/WHEEL,sha256=1yFddiXMmvYK7QYTqtRNtX66WJ0Mz8PYEiEUoOUUxRY,87
+terminal_robot-1.0.0.dist-info/entry_points.txt,sha256=S6obl4gbpOcupaayW1qQ8ybDH6JIolioP9PBbFp0PN0,60
+terminal_robot-1.0.0.dist-info/RECORD,,

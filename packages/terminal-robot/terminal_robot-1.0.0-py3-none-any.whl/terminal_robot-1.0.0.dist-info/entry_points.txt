@@ -1,0 +1,2 @@
+[console_scripts]
+terminal-robot = terminal_robot.main:main
