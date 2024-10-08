@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: PanchIDE
+Version: 0.1.0
+Summary: Por si necesitas un IDE sin necesidad de permisos
+Author: Pancho MN
+Author-email: programarcomands@gmail.com
+Description-Content-Type: text/markdown
+Requires-Dist: pyperclip
+
