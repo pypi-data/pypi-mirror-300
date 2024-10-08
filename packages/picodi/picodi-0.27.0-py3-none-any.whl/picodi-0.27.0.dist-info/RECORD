@@ -1,0 +1,15 @@
+picodi/__init__.py,sha256=6InRVEVdyVQnOyKt8kLwqjx450kY3gXIqQV7Q1zWSbM,541
+picodi/_picodi.py,sha256=40LAGqVFr2sbSkqsk34hFgWY8-KlbPCv29afbsUXHiw,26300
+picodi/_scopes.py,sha256=yUWGxHbwby5ehdAqmuD6RsoUvU1-kYzDF7xCxEGM2JY,6829
+picodi/helpers.py,sha256=mO0j44IIdCs_-rkj2nnqP5DaIy_R5AfDmtD8qYEHRHE,8668
+picodi/integrations/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+picodi/integrations/_pytest.py,sha256=0v9SbCa1pburkkGt4rkrA7ADQatF9MgJ3aqvvUzhrXo,2821
+picodi/integrations/_pytest_asyncio.py,sha256=6hPr016oQ6ZXcMrBmII_43QXK_oHGYiZcl4CG9R-wLg,438
+picodi/integrations/fastapi.py,sha256=tW482uE-RHCj6XLqnf_6a9Wx3i7pZwPEGmXu9gIP_jY,820
+picodi/integrations/starlette.py,sha256=uB9CGu9rIitFvej48mOsaCw5o6lJpKlaG9ro1B7FccU,1030
+picodi/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+picodi/support.py,sha256=bXNpjgqyRAcsVkLM5htkGK2L2ICeTccXHu326g-Kux4,3964
+picodi-0.27.0.dist-info/LICENSE,sha256=a1mQ_h1SHuV45sBrH7snPeQMcrL6PoDmbCrmT4BMrtg,1064
+picodi-0.27.0.dist-info/METADATA,sha256=QdgSxntAihIkwWl8JgbWhtrgsuvjouE9e2E1GAfYp_A,6789
+picodi-0.27.0.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+picodi-0.27.0.dist-info/RECORD,,
