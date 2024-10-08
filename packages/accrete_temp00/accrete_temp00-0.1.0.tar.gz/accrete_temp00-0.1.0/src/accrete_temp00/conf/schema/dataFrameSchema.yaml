@@ -1,0 +1,70 @@
+schema_type: dataframe
+version: 0.20.4
+columns:
+  title:
+    title: null
+    description: null
+    dtype: object
+    nullable: false
+    checks: null
+    unique: false
+    coerce: false
+    required: true
+    regex: false
+  rating:
+    title: null
+    description: null
+    dtype: object
+    nullable: false
+    checks: null
+    unique: false
+    coerce: false
+    required: true
+    regex: false
+  year:
+    title: null
+    description: null
+    dtype: int64
+    nullable: false
+    checks:
+      greater_than_or_equal_to: 1960.0
+      less_than_or_equal_to: 2011.0
+    unique: false
+    coerce: false
+    required: true
+    regex: false
+  runtime:
+    title: null
+    description: null
+    dtype: int64
+    nullable: false
+    checks:
+      greater_than_or_equal_to: 85.0
+      less_than_or_equal_to: 197.0
+    unique: false
+    coerce: false
+    required: true
+    regex: false
+checks: null
+index:
+- title: null
+  description: null
+  dtype: int64
+  nullable: false
+  checks:
+    greater_than_or_equal_to: 0.0
+    less_than_or_equal_to: 29.0
+  name: null
+  unique: false
+  coerce: false
+dtype: null
+coerce: true
+strict: false
+name: null
+ordered: false
+unique: null
+report_duplicates: all
+unique_column_names: false
+add_missing_columns: false
+title: null
+description: null

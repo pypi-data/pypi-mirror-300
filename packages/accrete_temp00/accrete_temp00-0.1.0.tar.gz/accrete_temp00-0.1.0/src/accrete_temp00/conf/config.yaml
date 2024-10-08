@@ -1,0 +1,14 @@
+# Filenames
+debug_file: debug.log
+info_file: info.log
+
+# Other settings
+backup_file_count: 5
+max_file_bytes: 100000
+
+# Number for test
+base_number: 4
+
+# Setup for dataclass
+dataFrame_path: "data/movies.csv"
+schema_path: "src/data_structure_and_validation/conf/schema/dataFrameSchema.yaml"
