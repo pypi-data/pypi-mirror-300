@@ -1,0 +1,11 @@
+README.md
+pyproject.toml
+src/crevettes/__init__.py
+src/crevettes/harvester.py
+src/crevettes/main.py
+src/crevettes.egg-info/PKG-INFO
+src/crevettes.egg-info/SOURCES.txt
+src/crevettes.egg-info/dependency_links.txt
+src/crevettes.egg-info/entry_points.txt
+src/crevettes.egg-info/requires.txt
+src/crevettes.egg-info/top_level.txt
