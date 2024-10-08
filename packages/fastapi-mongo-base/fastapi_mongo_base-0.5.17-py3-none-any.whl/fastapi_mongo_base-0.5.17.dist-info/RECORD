@@ -1,0 +1,14 @@
+fastapi_mongo_base/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+fastapi_mongo_base/handlers.py,sha256=-dckS-qetIs990VFItOMY0yWxMzMuP5PqHuMgQFeA3w,1006
+fastapi_mongo_base/models.py,sha256=o3SgtmH7rSKFVlxPuWlxL9gNelfHtRkJWbYILSXeVXE,8020
+fastapi_mongo_base/routes.py,sha256=Ur_iQod4JXkt9sJtRhHlZmrmh3cPtpSZ5X60XQoHGQw,8284
+fastapi_mongo_base/schemas.py,sha256=kgcPKv0JDrrXwNArdN0xtGnvdjKGJrQC8wjgOHq4XrQ,2333
+fastapi_mongo_base/tasks.py,sha256=55mpq7oGiYy5cLEyPYUtK2Sja7HtPWpCzkTxkog65M8,8029
+fastapi_mongo_base/_utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+fastapi_mongo_base/_utils/aionetwork.py,sha256=jNl3AfBnyN7nxavRGexBv5NmppxxbfWHke3jaFZPUqI,2703
+fastapi_mongo_base/_utils/basic.py,sha256=SY--oTIN-hfPQ3CdK8KpcptfejXXlQzP_zwO_q7Ga0g,647
+fastapi_mongo_base-0.5.17.dist-info/LICENSE.txt,sha256=ceC9ZJOV9H6CtQDcYmHOS46NA3dHJ_WD4J9blH513pc,1081
+fastapi_mongo_base-0.5.17.dist-info/METADATA,sha256=NdFgveqqEqIirrBrG4cSsqRoKGaJlsdkdPHhfrSSeKM,3171
+fastapi_mongo_base-0.5.17.dist-info/WHEEL,sha256=GV9aMThwP_4oNCtvEC2ec3qUYutgWeAzklro_0m4WJQ,91
+fastapi_mongo_base-0.5.17.dist-info/top_level.txt,sha256=EyddBr2RKKxMM_0PqvIjU0aLiQL88J-QNTqkOUGRVMo,19
+fastapi_mongo_base-0.5.17.dist-info/RECORD,,
