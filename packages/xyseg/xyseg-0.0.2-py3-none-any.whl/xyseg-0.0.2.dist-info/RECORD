@@ -1,0 +1,8 @@
+xyseg/document/div.py,sha256=kD8HKCFwp-DLHr2CtOX5JAhWecc8P26480p1hn11MVI,1082
+xyseg/document/image.py,sha256=UXeJrVBFN_3NZSY5K9I428n1aP_GNGjQtXYFobscPMQ,2384
+xyseg/document/pdf.py,sha256=iRPVqezcg49xI_U-jrchial7m97eeAcWzbkbIxf1iqE,2967
+xyseg/document/segment.py,sha256=oZokkXUY2grmmQ8ypjjPXWaPjQa5rxuBc5v8PH0zBbM,2810
+xyseg-0.0.2.dist-info/METADATA,sha256=VGdi5ge48Kw4zkpGpwU0oJzD18HfQeUb2jNa12cYiqA,3680
+xyseg-0.0.2.dist-info/WHEEL,sha256=1yFddiXMmvYK7QYTqtRNtX66WJ0Mz8PYEiEUoOUUxRY,87
+xyseg-0.0.2.dist-info/licenses/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+xyseg-0.0.2.dist-info/RECORD,,
