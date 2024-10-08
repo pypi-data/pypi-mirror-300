@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: placementclient
+Version: 1.0.0
+Summary: Client for the Placement API
+Home-page: https://github.com/NeCTAR-RC/python-placementclient
+Author: ARDC Nectar Cloud Services
+Author-email: coreservices@ardc.edu.au
+License: Apache-2.0
+Keywords: placement
+Classifier: Environment :: OpenStack
+Classifier: Intended Audience :: Information Technology
+Classifier: Intended Audience :: System Administrators
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.12
+License-File: LICENSE
+Requires-Dist: oslo.utils
+Requires-Dist: requests
+Requires-Dist: keystoneauth1
+Requires-Dist: pbr
+Requires-Dist: nectarclient-lib
+
+Unofficial openstack placement client
+
