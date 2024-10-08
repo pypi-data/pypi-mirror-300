@@ -1,0 +1,105 @@
+# OS (Open Source) LLM Agents
+
+A library that helps to build LLM agents based on open-source models from Huggingface Hub.
+
+## Installation
+
+### From source
+
+Run in the root dir of this repo:
+```
+pip install .
+```
+
+## Example usage
+
+Import needed packages:
+
+```python
+from os_llm_agents.models import CustomLLM
+from os_llm_agents.executors import AgentExecutor
+
+import torch
+from transformers import pipeline, BitsAndBytesConfig
+```
+
+Optional: initialize quantization config
+
+```python
+quantization_config = BitsAndBytesConfig(
+    load_in_4bit=True,
+    bnb_4bit_quant_type="nf4",
+    bnb_4bit_compute_dtype=torch.bfloat16,
+    bnb_4bit_use_double_quant=True,
+)
+```
+
+Initialize the model:
+
+```python
+llm = CustomLLM(
+    model_name="meta-llama/Meta-Llama-3-8B-Instruct",
+    quantization_config=quantization_config
+)
+```
+
+Define the tool:
+
+```python
+def multiply(**kwargs) -> int:
+    """Multiply two integers together."""
+    n1, n2 = kwargs["n1"], kwargs["n2"]
+    return n1 * n2
+    
+multiply_tool = {
+    "name": "multiply",
+    "description": "Multiply two numbers",
+    "parameters": {
+        "type": "object",
+        "properties": {
+            "n1": {
+                "type": "int",
+                "description": "Number one",
+            },
+            "n2": {
+                "type": "int",
+                "description": "Number two",
+            },
+        },
+        "required": ["n1", "n2"],
+    },
+    "implementation": multiply,  # Attach the function implementation
+}
+```
+
+Initialize the AgentExecutor:
+
+```python
+executor = AgentExecutor(llm=llm,
+                         tools=[multiply_tool],
+                         system_prompt="You are helpful assistant")
+```
+
+Run the agent:
+
+```python
+chat_history = None
+
+result = executor.invoke("What can you do for me?")
+
+chat_history = result["chat_history"]
+print("Response: ", result["response"].content)
+
+>>> Response:  I'm a helpful assistant! I can help you with a variety of tasks. I have access to a function called "multiply" that allows me to multiply two numbers. I can also provide information and answer questions to the best of my knowledge. If you need help with something specific, feel free to ask!
+
+result = executor.invoke("Multiply 12 by 12", chat_history)
+
+chat_history = result["chat_history"]
+print("Response: ", result["response"].content)
+
+>>> Response:  144
+
+print(len(chat_history))
+
+>>> 5
+```

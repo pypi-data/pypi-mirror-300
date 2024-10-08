@@ -1,0 +1,10 @@
+README.md
+setup.py
+os_llm_agents/__init__.py
+os_llm_agents/executors.py
+os_llm_agents/models.py
+os_llm_agents.egg-info/PKG-INFO
+os_llm_agents.egg-info/SOURCES.txt
+os_llm_agents.egg-info/dependency_links.txt
+os_llm_agents.egg-info/requires.txt
+os_llm_agents.egg-info/top_level.txt
