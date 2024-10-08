@@ -1,0 +1,55 @@
+Metadata-Version: 2.1
+Name: sopel-http-codes
+Version: 0.1.0
+Summary: Sopel plugin to look up standard HTTP status codes.
+Author-email: dgw <dgw@technobabbl.es>
+License: EFL-2.0
+Project-URL: Homepage, https://github.com/dgw/sopel-http-codes
+Project-URL: Bug Tracker, https://github.com/dgw/sopel-http-codes/issues
+Keywords: sopel,plugin,bot,irc
+Platform: Linux x86, x86-64
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: System Administrators
+Classifier: License :: Eiffel Forum License (EFL)
+Classifier: License :: OSI Approved :: Eiffel Forum License
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Topic :: Communications :: Chat :: Internet Relay Chat
+Requires-Python: <4,>=3.8
+Description-Content-Type: text/markdown
+License-File: COPYING
+Requires-Dist: sopel>=8.0
+
+# sopel-http-codes
+
+Sopel plugin to look up standard HTTP status codes.
+
+
+## Installing
+
+Releases are hosted on PyPI, so after installing Sopel, all you need is `pip`:
+ 
+```shell
+$ pip install sopel-http-codes
+```
+
+### Requirements
+
+This plugin is written for:
+
+* Python 3.8+
+* Sopel 8.0+
+
+
+## Using
+
+Commands & arguments:
+
+`.http <code>`: Returns the name of the given status `<code>` and a brief
+description of its purpose from Python's `http` module, along with a link to an
+image macro showing a cat or dog personifying(?) that status code.
+
+## Changelog
+
+### 0.1.0
+
+First proper release of `sopel-http-codes` as a package.

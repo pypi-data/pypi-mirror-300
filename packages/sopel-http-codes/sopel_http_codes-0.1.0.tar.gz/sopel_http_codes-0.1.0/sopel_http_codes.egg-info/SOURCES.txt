@@ -1,0 +1,13 @@
+COPYING
+MANIFEST.in
+NEWS
+README.md
+pyproject.toml
+sopel_http_codes/__init__.py
+sopel_http_codes/plugin.py
+sopel_http_codes.egg-info/PKG-INFO
+sopel_http_codes.egg-info/SOURCES.txt
+sopel_http_codes.egg-info/dependency_links.txt
+sopel_http_codes.egg-info/entry_points.txt
+sopel_http_codes.egg-info/requires.txt
+sopel_http_codes.egg-info/top_level.txt
