@@ -1,0 +1,5 @@
+# MANIFEST.in
+include LICENSE
+include README.md
+recursive-include django_markdown_editor_next/static *
+recursive-include django_markdown_editor_next/templates *
