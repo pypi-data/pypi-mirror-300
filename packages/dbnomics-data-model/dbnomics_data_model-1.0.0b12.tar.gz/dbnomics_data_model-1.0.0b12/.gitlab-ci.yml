@@ -1,0 +1,40 @@
+stages:
+  - test
+  - publish
+
+variables:
+  PIP_CACHE_DIR: "$CI_PROJECT_DIR/.cache/pip"
+
+Check code quality:
+  stage: test
+  image: python:${PYTHON_VERSION}-slim-bookworm
+  cache:
+    paths:
+      - .cache/pip
+  before_script:
+    - apt update && apt install -y git
+    - pip install -r requirements-dev.txt
+    - pip install -e .
+  script:
+    - pre-commit run --all-files
+  parallel:
+    matrix:
+      - PYTHON_VERSION: ["3.10", "3.11", "3.12"]
+
+Publish on PyPI:
+  stage: publish
+  image: python:3.11-slim-bookworm
+  rules:
+    - if: $CI_COMMIT_TAG
+  cache:
+    paths:
+      - .cache/pip
+  before_script:
+    - pip install -U build twine
+  script:
+    - python -m build
+    # TWINE_USERNAME and TWINE_PASSWORD env variables are defined in https://git.nomics.world/groups/dbnomics/-/settings/ci_cd
+    - twine upload dist/*
+  environment:
+    name: PyPI
+    url: https://pypi.org/project/dbnomics-data-model/$CI_COMMIT_TAG

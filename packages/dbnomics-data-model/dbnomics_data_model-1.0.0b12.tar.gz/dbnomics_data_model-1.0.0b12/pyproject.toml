@@ -1,0 +1,129 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "dbnomics-data-model"
+version = "1.0.0beta12"
+authors = [{ name = "Christophe Benz", email = "christophe.benz@nomics.world" }]
+description = "Provide classes for DBnomics entities and a storage abstraction"
+license = { file = "LICENSE" }
+readme = "README.md"
+requires-python = ">=3.11"
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "License :: OSI Approved :: GNU Affero General Public License v3 or later (AGPLv3+)",
+  "Operating System :: OS Independent",
+]
+dependencies = [
+  "cysimdjson>=24.12",
+  "daiquiri>=3.2.5.1",
+  "dirhash>=0.4.1",
+  "gitpython>=3.1.43",
+  "humanfriendly>=10.0",
+  "isoweek>=1.3.3",
+  "jsonalias>=0.1.2",
+  "more-itertools>=10.5.0",
+  "orjson>=3.10.7",
+  "parsy>=2.1",
+  "phantom-types>=2.1.1",
+  "pysolr>=3.10.0b2",
+  "python-dateutil>=2.9.0.post0",
+  "solrq>=1.1.2",
+  "typedload>=2.34",
+  "validators>=0.34.0",
+]
+
+[project.urls]
+"Homepage" = "https://git.nomics.world/dbnomics/dbnomics-data-model"
+"Bug Tracker" = "https://git.nomics.world/dbnomics/dbnomics-data-model/-/issues"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/dbnomics_data_model"]
+
+[tool.hatch.metadata]
+allow-direct-references = true
+
+[tool.pyright]
+include = ["src"]
+typeCheckingMode = "strict"
+
+[tool.pytest.ini_options]
+addopts = "--doctest-modules"
+testpaths = ["dbnomics_data_model", "tests"]
+
+[tool.ruff]
+line-length = 120
+src = ["src"]
+unsafe-fixes = true
+
+[tool.ruff.lint]
+exclude = [
+  "__pycache__",
+  ".cache",
+  ".eggs",
+  ".git",
+  ".mypy_cache",
+  ".pytest_cache",
+  ".venv",
+  "*.egg-info",
+  "build",
+  "dist",
+]
+ignore = [
+  "ANN101",
+  "ANN102",
+  "ANN401",
+  "BLE001",
+  "COM",
+  "D100",
+  "D101",
+  "D102",
+  "D103",
+  "D103",
+  "D104",
+  "D105",
+  "D106",
+  "D107",
+  "D203",
+  "D213",
+  "ISC001",
+  "N818",
+  "PD",
+  "PERF203",
+  "PGH003",
+  "S101",
+  "TD002",
+  "TD003",
+  "TD004",
+]
+select = ["ALL"]
+unfixable = ["COM", "ERA", "F841"]
+
+[tool.ruff.lint.flake8-builtins]
+builtins-ignorelist = ["id", "next", "open"]
+
+[tool.ruff.lint.mccabe]
+max-complexity = 11
+
+[tool.ruff.lint.per-file-ignores]
+"__init__.py" = ["F403"]
+"tests/conftest.py" = ["F401", "F403"]
+"tests/fixtures.py" = ["F401", "F403"]
+"typings/**/*.pyi" = ["F403"]
+
+[tool.ruff.lint.pylint]
+max-args = 13
+max-returns = 10
+
+[tool.uv]
+dev-dependencies = [
+  "pre-commit>=3.7.1",
+  "pyright>=1.1.383",
+  "pytest>=8.2.1",
+  "ruff>=0.4.6",
+  "types-humanfriendly>=10.0.1.11",
+  "types-orjson>=3.6.2",
+  "types-python-dateutil>=2.9.0.20240316",
+  "vermin>=1.6.0",
+]

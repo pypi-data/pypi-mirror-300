@@ -1,0 +1,12 @@
+/.cache/
+/.eggs/
+/.mypy_cache/
+/.pytest_cache/
+/.venv/
+/build/
+/dist/
+/htmlcov/
+/samples/
+__pycache__/
+*.egg-info/
+*.pyc
