@@ -1,0 +1,14 @@
+cstation.py,sha256=r_XDBl7gLETdKA954C6n009WAk_V72UFPasuy0chu70,680
+commands/__init__.py,sha256=P7e4z3isu0G2DrzlrQrWGrWL48nxiOszUunpJ_sux2s,113
+commands/docker.py,sha256=GOSW1-JcT2mcI-1quYw_xjN6ciXU1ElDvrzWpS2nZFg,1568
+commands/github.py,sha256=iVwFn3xSFgiep5omIbMaFPlF7quJMa13spfaLdPj1_4,2582
+commands/odoo.py,sha256=rv3-U5SsSoiscqGEGDq9mCGaj6VGkeTVOJKz9A5KSgY,4690
+commands/perfectwork.py,sha256=JpP4thfyzKgbAeNHlGY4oWFFy3Hc46gdSk0galCvDlc,3435
+commands/perfectwork6.py,sha256=exxhxWFyiOI7ckqs90v35fua1q_bnk3Lje_xs1PS2KA,3920
+commands/server.py,sha256=6VdAb_eXbwLmpZuMBidX2qzGpUKt9Aylqcd3RlPBEw0,1262
+cstation-0.1.15.dist-info/LICENSE,sha256=1Gia5hRf-t1MQ-ItXN9A71iYMJh-QAlkqw5pckPuZoc,1073
+cstation-0.1.15.dist-info/METADATA,sha256=SR0NHgRtd4GvyXPbQxgcDkoyOFCiK2Xn25BI8CMRuKA,149
+cstation-0.1.15.dist-info/WHEEL,sha256=GV9aMThwP_4oNCtvEC2ec3qUYutgWeAzklro_0m4WJQ,91
+cstation-0.1.15.dist-info/entry_points.txt,sha256=WYRwsGrL1ah5FexmbfRvb7S4JBhgNvwNCyY-U2tLQ1k,42
+cstation-0.1.15.dist-info/top_level.txt,sha256=oCqE12-AfuYzFnwQVYjgqjZbeHrxHIr2L9qdXORgHk4,18
+cstation-0.1.15.dist-info/RECORD,,
