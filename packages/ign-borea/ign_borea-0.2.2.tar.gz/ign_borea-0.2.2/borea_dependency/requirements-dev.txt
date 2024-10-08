@@ -1,0 +1,11 @@
+numpy <= 1.26.4
+pylint
+pytest
+pytest-shutil
+flake8
+sphinx
+furo
+dataclasses
+pyproj
+scipy
+pandas
