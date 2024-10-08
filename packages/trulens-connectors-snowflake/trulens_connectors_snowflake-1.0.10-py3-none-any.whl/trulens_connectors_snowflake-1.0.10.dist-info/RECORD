@@ -1,0 +1,9 @@
+trulens/connectors/snowflake/__init__.py,sha256=5QB62C6srZ0NCVNjQN0r14RSR59MdnbPBbw8w_44W0g,506
+trulens/connectors/snowflake/connector.py,sha256=d86hJfqzVcAb5FeG6pHIMGYcNlWlZ1Mg7E0Vtvt2qXM,7141
+trulens/connectors/snowflake/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+trulens/connectors/snowflake/utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+trulens/connectors/snowflake/utils/server_side_evaluation_artifacts.py,sha256=ZYrRYUblYl5ZXPwQjTtknJ5bPTwL202Coy9-P1UOoRw,4933
+trulens/connectors/snowflake/utils/server_side_evaluation_stored_procedure.py,sha256=uyc3mUyQicXosKsK1b_oKfF69aHMCYP3Gi0i96sLLaE,1448
+trulens_connectors_snowflake-1.0.10.dist-info/METADATA,sha256=QhPG5UNwVsdxSkCb4W9SWzMbm6-2QrVq1Vfwb_Z1LZU,1245
+trulens_connectors_snowflake-1.0.10.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+trulens_connectors_snowflake-1.0.10.dist-info/RECORD,,
