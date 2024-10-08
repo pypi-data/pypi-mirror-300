@@ -1,0 +1,10 @@
+QMultiAdapt/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+QMultiAdapt/ansatz.py,sha256=cWhXnE6KgOD7Shd9sXtZXhYhfjDan3pPhu3WKTDY-4o,1887
+QMultiAdapt/ansatzVect.py,sha256=0WumgNiZzeWefud8XrrB8cIIDoOElDLklXcoHmio6ds,1846
+QMultiAdapt/effh.py,sha256=c0miu9Utj4QWAEivvPQX2Mdvn76r1QAmWCxTrYy7tpI,2912
+QMultiAdapt/solver.py,sha256=QJjZCRyKz5pV33m7YEXS5QBaw4Gi8ftDL4_0d_oiyac,11314
+QMultiAdapt-2.0.0.dist-info/LICENSE,sha256=XRH4N6WMYDtNuPNS7PLIVXfLUpIN0Q-jl9jAujIDnhA,1073
+QMultiAdapt-2.0.0.dist-info/METADATA,sha256=HyG9iuSlC8G1E-4-aIWgfF1WctG8rhMYizVr6g-fv-8,2926
+QMultiAdapt-2.0.0.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+QMultiAdapt-2.0.0.dist-info/top_level.txt,sha256=9EZF5aW52Ki5GqC5J3eHq0QNG_sQew8PPNiMFcAui6c,12
+QMultiAdapt-2.0.0.dist-info/RECORD,,
