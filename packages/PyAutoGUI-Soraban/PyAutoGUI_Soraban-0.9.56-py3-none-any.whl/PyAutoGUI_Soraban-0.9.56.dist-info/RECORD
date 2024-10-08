@@ -1,0 +1,12 @@
+pyautogui/__init__.py,sha256=EXfz17hr9uzcth11TEe3c0KjimR_uqUY5a4wl71yU9E,79430
+pyautogui/__main__.py,sha256=OGqYD78g8rJo5A9G7Q6Ac_qfiCLEty-5YI7OS0tqKMA,57
+pyautogui/_pyautogui_java.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pyautogui/_pyautogui_osx.py,sha256=2qpj8w9WXQoh6m6QQn-VrrzRwaicRBrRmeX15uO79Ng,15284
+pyautogui/_pyautogui_win.py,sha256=oiSBpCdEzakhViEdnntxQUB79X0PYwjtvZGoWO60M6A,20606
+pyautogui/_pyautogui_x11.py,sha256=cY4p1O_8nF_GX6FPkEyRq8q7HCGFtQOo5lKNy1Vccic,16398
+PyAutoGUI_Soraban-0.9.56.dist-info/AUTHORS.txt,sha256=KmULuPmBDR0igVb81N3AR_oOTIwPNzWDAfnOnFcpaHY,2925
+PyAutoGUI_Soraban-0.9.56.dist-info/LICENSE.txt,sha256=SPFjkOnVVZ4qqs_joAlmavaGGHvqcXWkUDIB2pQjMaw,1482
+PyAutoGUI_Soraban-0.9.56.dist-info/METADATA,sha256=jwo5tmfEb_ta9Bmhsj9LwDwmm6u7OmuMHWeVTLtzIWY,7752
+PyAutoGUI_Soraban-0.9.56.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+PyAutoGUI_Soraban-0.9.56.dist-info/top_level.txt,sha256=YztmWux-iPoF3Dv9x530vZvae0kMBsGbPAoKgWRGAvk,10
+PyAutoGUI_Soraban-0.9.56.dist-info/RECORD,,
