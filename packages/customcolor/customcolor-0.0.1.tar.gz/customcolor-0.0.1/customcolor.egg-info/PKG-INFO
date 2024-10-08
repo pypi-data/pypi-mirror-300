@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: customcolor
+Version: 0.0.1
+Summary: Библиотека для красивого вывода юнит-тестов в консоли
+Author: Kirill
+Author-email: gimpelcomp@gmail.com
+License: MIT
+Requires-Python: >=3.11.4
+Description-Content-Type: text/markdown
+License-File: LICENSE

@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+customcolor/__init__.py
+customcolor/colors.py
+customcolor/run_tests.py
+customcolor.egg-info/PKG-INFO
+customcolor.egg-info/SOURCES.txt
+customcolor.egg-info/dependency_links.txt
+customcolor.egg-info/top_level.txt
