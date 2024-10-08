@@ -1,0 +1,10 @@
+usps/__init__.py,sha256=G0rwkDLSytonr7idr8ma7KaTUnRCn3-Ripum70RSeh0,22
+usps/__main__.py,sha256=JnTh7j8EfNZkS1xZQpYuWRw78-mB9Sx1ozECynp0-nU,4973
+usps/storage.py,sha256=-peISlebD_hCIWMYFkeQbOtnBFGt-aa57TgR1SiPzo8,1155
+usps/tracking.py,sha256=S9bA6kNaEa7odfMuMDi-HNlripG0Bx9ptZjQiSfETQo,6644
+usps/utils.py,sha256=npoqLhHSH5zYs7760_yQaGml4RHofv0RZEsNDhXD9vc,3644
+usps_cli-0.7.3.dist-info/METADATA,sha256=ZFPNJ4BqCU2zCDgSMmJfdWIAwPXmgLJvmlv52UgBC_M,2790
+usps_cli-0.7.3.dist-info/WHEEL,sha256=1yFddiXMmvYK7QYTqtRNtX66WJ0Mz8PYEiEUoOUUxRY,87
+usps_cli-0.7.3.dist-info/entry_points.txt,sha256=MVBzkKUe1c_QhQ3VaxIyh4kMksXHRdET_Gwmqq8rHzc,43
+usps_cli-0.7.3.dist-info/licenses/LICENSE.txt,sha256=PxYv51cYnUTDhFwDHu2Tbbao7j8r5ErOcLDSSTMVDbs,1064
+usps_cli-0.7.3.dist-info/RECORD,,
