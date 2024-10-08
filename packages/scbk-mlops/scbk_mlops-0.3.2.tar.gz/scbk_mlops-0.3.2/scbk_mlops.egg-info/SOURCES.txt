@@ -1,0 +1,17 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+scbk_mlops/__init__.py
+scbk_mlops/data_engineering.py
+scbk_mlops/eda.py
+scbk_mlops/ingestion.py
+scbk_mlops/model_engineering.py
+scbk_mlops/model_evaluation.py
+scbk_mlops/model_monitoring.py
+scbk_mlops/reporting.py
+scbk_mlops.egg-info/PKG-INFO
+scbk_mlops.egg-info/SOURCES.txt
+scbk_mlops.egg-info/dependency_links.txt
+scbk_mlops.egg-info/requires.txt
+scbk_mlops.egg-info/top_level.txt
