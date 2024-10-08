@@ -1,0 +1,2 @@
+[console_scripts]
+pg_index_insight = pg_index_insight.cli:main
