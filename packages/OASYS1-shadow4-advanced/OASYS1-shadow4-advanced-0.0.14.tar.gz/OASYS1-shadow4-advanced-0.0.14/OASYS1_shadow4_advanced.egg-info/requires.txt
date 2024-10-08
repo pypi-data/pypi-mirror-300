@@ -1,0 +1,4 @@
+oasys1>=1.2.140
+shadow4>=0.1.33
+shadow4-advanced>=0.0.11
+oasys1-shadow4>=0.0.43
