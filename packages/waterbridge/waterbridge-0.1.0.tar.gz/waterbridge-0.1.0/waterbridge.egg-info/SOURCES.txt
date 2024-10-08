@@ -1,0 +1,7 @@
+LICENSE
+README.md
+setup.py
+waterbridge.egg-info/PKG-INFO
+waterbridge.egg-info/SOURCES.txt
+waterbridge.egg-info/dependency_links.txt
+waterbridge.egg-info/top_level.txt
