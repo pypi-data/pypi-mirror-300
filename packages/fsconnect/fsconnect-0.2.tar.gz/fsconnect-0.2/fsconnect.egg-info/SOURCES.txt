@@ -1,0 +1,7 @@
+setup.py
+fsconnect.egg-info/PKG-INFO
+fsconnect.egg-info/SOURCES.txt
+fsconnect.egg-info/dependency_links.txt
+fsconnect.egg-info/entry_points.txt
+fsconnect.egg-info/requires.txt
+fsconnect.egg-info/top_level.txt
