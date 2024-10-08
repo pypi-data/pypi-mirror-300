@@ -1,0 +1,8 @@
+README.md
+pyproject.toml
+submitit_tools/__init__.py
+submitit_tools.egg-info/PKG-INFO
+submitit_tools.egg-info/SOURCES.txt
+submitit_tools.egg-info/dependency_links.txt
+submitit_tools.egg-info/requires.txt
+submitit_tools.egg-info/top_level.txt
