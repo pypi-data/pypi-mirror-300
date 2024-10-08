@@ -1,0 +1,12 @@
+django_extended_ol/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+django_extended_ol/admin.py,sha256=tE7_DtllUHuNSEpsKLkfUdLpSX7uhjZa-Q5y2UH7h7A,165
+django_extended_ol/apps.py,sha256=hw3h5JXhThL1TSDfWa2wxwBTWvCHuaEHWb8axT_QP88,188
+django_extended_ol/forms/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+django_extended_ol/forms/widgets.py,sha256=u6P3G7lCCbtYnw6bMsQ5EAh5bZ2gsTKACL4PBHbT6yo,1681
+django_extended_ol/static/olwidget/js/WMTSWidget.js,sha256=6fGzhd8wx20Oll_64fu7ZPfs9MZwj74vQYZ7hnanfxE,796
+django_extended_ol/templates/gis/openlayers-wmts.html,sha256=4MhZr_ldK_w7t2sswmHjTekX_P_js9SsXHW_0ESBSPw,1926
+django_extended_ol-1.0.0.dist-info/LICENSE,sha256=0uvSPKfP0VUrQ1XqeXD62tYc54cfQqt21YI9lWW9hq8,1564
+django_extended_ol-1.0.0.dist-info/METADATA,sha256=OUyTNy8FtaC14xCuwMwlwtOgeN8mcAvPm2vT8lRLLh0,2954
+django_extended_ol-1.0.0.dist-info/WHEEL,sha256=GV9aMThwP_4oNCtvEC2ec3qUYutgWeAzklro_0m4WJQ,91
+django_extended_ol-1.0.0.dist-info/top_level.txt,sha256=rX8AqitfQu0etd6PoOeNxcRl5fsus-YOs932PGUjDIs,19
+django_extended_ol-1.0.0.dist-info/RECORD,,
