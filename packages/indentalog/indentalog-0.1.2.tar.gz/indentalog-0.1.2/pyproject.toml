@@ -1,0 +1,26 @@
+[tool.poetry]
+name = "indentalog"
+version = "0.1.2"
+description = ""
+authors = ["bastienlc <bastien.lechenadec@gmail.com>"]
+readme = "README.md"
+packages = [{ include = "indentalog" }]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+rich = "^13.7.1"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.2.2"
+black = "^24.4.2"
+isort = "^5.13.2"
+pre-commit = "^3.7.1"
+pytest-cov = "^5.0.0"
+
+[tool.poetry-dynamic-versioning]
+enable = false
+vcs = "git"
+
+[build-system]
+requires = ["poetry-core>=1.0.0", "poetry-dynamic-versioning>=1.0.0,<2.0.0"]
+build-backend = "poetry_dynamic_versioning.backend"
