@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: bigbluebutton-api-python-medad
+Version: 0.0.17
+Summary: Python library that provides access to the API of BigBlueButton
+Home-page: https://github.com/yunkaiwang/bigbluebutton-api-python
+Author: Tarek Kalaji, Yunkai Wang, Hicham Dachir, Abderrahmane Tahar
+Author-email: yunkai.wang@blindsidenetworks.com
+License-File: LICENSE
+Requires-Dist: jxmlease
