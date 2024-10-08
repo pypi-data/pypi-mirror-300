@@ -1,0 +1,17 @@
+plotlyPowerpoint/__init__.py,sha256=Coni4VwQqnN5I8eLYZmLn-YKjruZKGtip8ZSqWNm15k,35
+plotlyPowerpoint/core.py,sha256=YE_shxHi3lq5eIbkD5_f8-QYhHEbmwTKBx0SjZBl7io,13485
+plotlyPowerpoint/functions/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+plotlyPowerpoint/functions/dataManipulation.py,sha256=6YOZxrq7TTv1H75ZFl7k-8etxn_Th24VCZsHimDM0hY,1911
+plotlyPowerpoint/functions/chart_functions/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+plotlyPowerpoint/functions/chart_functions/bar.py,sha256=Rgq59bYYwI7FJGjKx000xpicYF1Tcu9VC8PxriuXsf4,4451
+plotlyPowerpoint/functions/chart_functions/facetBar.py,sha256=MNsfUjwgDLsPJT73Y1c4uH3x1JzM5dTLcmZ-wtMdJW8,3022
+plotlyPowerpoint/functions/chart_functions/facetFilledLine.py,sha256=fDPCiIqKMy51d1avcY3tytUDMgJctQI84p6BfRhqhaM,4728
+plotlyPowerpoint/functions/chart_functions/facetLine.py,sha256=UhoXwgfO5jBLRnNvaaQgvm9FhG1tijDzcX1G0Pivkss,3343
+plotlyPowerpoint/functions/chart_functions/filledLine.py,sha256=xXScqTCjlCzbNNoyl-gLQE4lGQF5hgU35PDgwOLZMO8,2503
+plotlyPowerpoint/functions/chart_functions/line.py,sha256=k2ItaeciH7QqWKwYlcK0HkwUFt76TwYUO23-YpWJaD8,2939
+plotlyPowerpoint/functions/chart_functions/lineWithHighlight.py,sha256=4LkonznXNm7piHFIid05A9SN1SuDKCvM5yZeuvWcwvY,3100
+plotlyPowerpoint-1.3.14.dist-info/LICENSE,sha256=pAZXnNE2dxxwXFIduGyn1gpvPefJtUYOYZOi3yeGG94,1068
+plotlyPowerpoint-1.3.14.dist-info/METADATA,sha256=__Ij5hihYqxu_jymeu4HHfJd_JrSnKOvrLaraHmGhAQ,6245
+plotlyPowerpoint-1.3.14.dist-info/WHEEL,sha256=yQN5g4mg4AybRjkgi-9yy4iQEFibGQmlz78Pik5Or-A,92
+plotlyPowerpoint-1.3.14.dist-info/top_level.txt,sha256=QlWahD_g3h4IjieHoVPHy9SCXRmk63LOvYW1q8b71DE,17
+plotlyPowerpoint-1.3.14.dist-info/RECORD,,
