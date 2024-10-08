@@ -1,0 +1,14 @@
+# Changes here will be overwritten by Copier; NEVER EDIT MANUALLY
+_commit: v4.3.2
+_src_path: https://github.com/jupyterlab/extension-template
+author_email: oli.howson@open.ac.uk
+author_name: collabnotes
+has_binder: false
+has_settings: false
+kind: frontend
+labextension_name: collabnotes
+project_short_description: Collaborative note taking
+python_name: collabnotes
+repository: ''
+test: false
+

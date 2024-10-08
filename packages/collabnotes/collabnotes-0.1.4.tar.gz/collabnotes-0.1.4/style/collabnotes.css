@@ -1,0 +1,127 @@
+.noNotes {
+  background-color: #86bffc;
+}
+
+/* Add this to your stylesheet */
+.divWithTriangle {
+  position: relative;
+}
+
+.divWithTriangle::after {
+  content: 'Notes';
+  width: 0;
+  height: 0;
+  position: absolute;
+  top: 0;
+  right: 0;
+  border-left: 20px solid transparent;
+  border-bottom: 20px solid transparent;
+  border-top: 20px solid yellow;
+  /* Adjust the color and size as needed */
+}
+
+.square {
+  position: absolute;
+  bottom: 10px;
+  right: -25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  width: 18px;
+  height: 18px;
+}
+
+#displayDiv {
+  width: 80%;
+  font-family: Tahoma, "Lucida Grande", Arial, Helvetica, sans-serif;
+  ;
+  height: 80%;
+  position: absolute;
+  left: 10%;
+  top: 10%;
+  color: black;
+  background-color: white;
+  padding: 20px;
+  border: 5px solid #296e8f;
+  overflow-y: auto;
+}
+
+.jp-Notebook-cell {
+  margin-right: 30px;
+}
+
+.note-form {
+  display: flex;
+  flex-direction: column;
+}
+
+textarea {
+  margin-bottom: 20px;
+  height: 130px;
+}
+
+.reply-button {
+  margin-right: 20px;
+  border: none;
+  background: none;
+  cursor: pointer;
+  color: #296e8f;
+  font-weight: bold;
+  padding: 0;
+}
+
+.create-note-button,
+.reply-form-button {
+  background-color: #296e8f;
+  text-shadow: none;
+  border: none;
+  color: #fff;
+  font-weight: 500;
+  height: 30px;
+  width: 100px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.buttons {
+  margin-bottom: 20px;
+}
+
+.replies {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.message {
+  font-size: 1em;
+}
+
+.user {
+  font-weight: 700;
+}
+
+.date {
+  font-size: 0.8em;
+  color: #add0e1;
+  margin-left: 10px;
+}
+
+.reply-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.reply-buttons {
+  margin-bottom: 15px;
+}
+
+.cancel-form-button {
+  margin-left: 15px;
+}
+
+.links-in-forms {
+  color: #296e8f;
+  text-decoration: underline !important;
+}

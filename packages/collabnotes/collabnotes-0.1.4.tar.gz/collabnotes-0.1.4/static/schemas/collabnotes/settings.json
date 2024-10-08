@@ -1,0 +1,24 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Collabnotes Extension Settings",
+  "description": "Settings for the Collabnotes JupyterLab extension.",
+  "type": "object",
+  "properties": {
+    "PI": {
+      "type": "string",
+      "title": "PI",
+      "description": "Principal Investigator."
+    },
+    "AccessCode": {
+      "type": "string",
+      "title": "Access Code",
+      "description": "Access code for the service."
+    },
+    "URL": {
+      "type": "string",
+      "title": "URL",
+      "description": "Service URL."
+    }
+  },
+  "required": ["PI", "AccessCode", "URL"]
+}
