@@ -1,0 +1,8 @@
+# List required packages in this file, one per line.
+numpy
+scipy
+xarray
+tqdm
+matplotlib
+ecmwf-api-client
+cftime
