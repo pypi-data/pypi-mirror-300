@@ -1,0 +1,49 @@
+Metadata-Version: 2.1
+Name: mpfd
+Version: 0.4.0
+Summary: A decorator that makes a function into a parallel processor using multithreading.
+Home-page: https://github.com/alloc7260/mpfd
+Author: Pranav Hirani
+Author-email: pranavpatel7260@gmail.com
+License: MIT
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# mpfd - Make Parallel Function Decorator
+
+`mpfd` is a simple Python package that provides a decorator, `make_parallel`, which allows you to make a function run in parallel using multithreading. This is built on top of Python's `concurrent.futures` module.
+
+## Installation
+
+Install the package via pip :
+
+```bash
+pip install mpfd
+```
+
+## Usage
+
+To use the ```make_parallel``` decorator :
+
+```python
+from mpfd import make_parallel
+
+@make_parallel
+def my_function(param):
+    print(param)
+
+my_function(
+    [
+        "Hello, parallel world!1",
+        "Hello, parallel world!2",
+        "Hello, parallel world!3",
+        "Hello, parallel world!4",
+    ]
+)
+```
+
+This will execute ```my_function``` in parallel using multithreading.
