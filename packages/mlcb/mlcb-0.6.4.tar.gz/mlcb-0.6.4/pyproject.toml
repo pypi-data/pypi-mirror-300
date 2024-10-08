@@ -1,0 +1,21 @@
+[build-system]
+requires = [
+    "setuptools>=42",
+    "wheel",
+    "sphinx==7.4.7",
+    "sphinx-rtd-theme==2.0.0",
+    "torch==2.4.1",
+    "torchvision==0.19.1",
+    "torchaudio==2.4.1",
+    "numpy==1.26.4",
+    "mlflow==2.16.2",
+    "optuna==4.0.0",
+    "matplotlib==3.9.2",
+    "seaborn==0.13.2",
+    "scikit-learn==1.5.2",
+    "tensorflow==2.17.0",
+    "torch-geometric==2.6.1",
+    "pytorch-tabular[extra]==1.1.0",
+    "docutils<0.21"
+]
+build-backend = "setuptools.build_meta"
