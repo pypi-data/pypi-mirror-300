@@ -1,0 +1,2 @@
+[console_scripts]
+pocket2bookmarks = pocket_to_bookmarks_html:main
