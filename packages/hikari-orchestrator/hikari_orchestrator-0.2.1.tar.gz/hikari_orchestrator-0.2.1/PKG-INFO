@@ -1,0 +1,39 @@
+Metadata-Version: 2.1
+Name: hikari-orchestrator
+Version: 0.2.1
+Summary: System for managing hikari shards across processes/systems.
+Keywords: hikari
+Author-email: Faster Speeding <lucina@lmbyrne.dev>
+Requires-Python: >=3.10.0,<3.14
+Description-Content-Type: text/markdown
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Intended Audience :: Developers
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Utilities
+Classifier: Typing :: Typed
+Requires-Dist: click>=8, <9
+Requires-Dist: cryptography>=41, <42
+Requires-Dist: grpcio>=1, <2
+Requires-Dist: grpcio-tools>=1, <2
+Requires-Dist: hikari>=2.0.0.dev116, <3
+Requires-Dist: python-dotenv>=1, <2
+Project-URL: Changelog, https://h2o.cursed.solutions/changelog
+Project-URL: Documentation, https://h2o.cursed.solutions/
+Project-URL: Homepage, https://github.com/FasterSpeeding/hikari-orchestrator
+Project-URL: Repository, https://github.com/FasterSpeeding/hikari-orchestrator
+
+# Hikari Orchestrator
+
+A cute lil tool for orchestrating separate Hikari shard clusters.
+
+For more information see <https://h2o.cursed.solutions>.
+
