@@ -1,0 +1,10 @@
+scholaris/__init__.py,sha256=4GZKi13lDTD25YBkGakhZyEQZWTER_OWQMNPoH_UM2c,22
+scholaris/_modidx.py,sha256=Mj7oTEyRo3Ij7SlBCuyyKLlh97BaK4f-mcpZt-5CVOA,4258
+scholaris/core.py,sha256=GA0uSZt03Veo6_0oJ1835YznJqnKdrihFfm-uFc8jl8,55664
+scholaris/ui.py,sha256=RaMKC7sg-MkBOzdPZm47150icf5IMZSthcjMRsjJNUM,7676
+scholaris-0.0.3.dist-info/LICENSE,sha256=bQdHyC_9jAAcWAa_iWzN65t2-VyGCKFXQovNEBLrtgs,10201
+scholaris-0.0.3.dist-info/METADATA,sha256=3ZIXmeRL400DnvO-j3f3Y4j3iXlE3neZ0cu7JxkHipU,24288
+scholaris-0.0.3.dist-info/WHEEL,sha256=Mdi9PDNwEZptOjTlUcAth7XJDFtKrHYaQMPulZeBCiQ,91
+scholaris-0.0.3.dist-info/entry_points.txt,sha256=XxDuIrkKP-1MD4kfsddSimFO7uNL1THsRZoL9wgQlhQ,40
+scholaris-0.0.3.dist-info/top_level.txt,sha256=Co4iho9jGBhpeC6kc0s_VVGBF_FpPLHPZMr1QwmVsC8,10
+scholaris-0.0.3.dist-info/RECORD,,
