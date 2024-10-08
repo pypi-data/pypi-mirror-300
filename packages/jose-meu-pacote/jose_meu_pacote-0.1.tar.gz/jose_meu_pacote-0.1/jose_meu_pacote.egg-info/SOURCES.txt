@@ -1,0 +1,9 @@
+README.md
+setup.py
+jose_meu_pacote/__init__.cpython-311.pyc
+jose_meu_pacote/__init__.py
+jose_meu_pacote/modulo_exemplo.cpython-311.pyc
+jose_meu_pacote.egg-info/PKG-INFO
+jose_meu_pacote.egg-info/SOURCES.txt
+jose_meu_pacote.egg-info/dependency_links.txt
+jose_meu_pacote.egg-info/top_level.txt
