@@ -1,0 +1,2 @@
+[console_scripts]
+nucleoseeker = nucleoseeker.dataset_creator:main
