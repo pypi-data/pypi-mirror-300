@@ -1,0 +1,11 @@
+[build-system]
+requires = ["flit-core >= 3.2"]
+build-backend = "flit.buildapi"
+
+[project]
+name = "fsconnect"
+version = "0.2.1"
+description = "fsconnect is an innovative Python package designed to simplify the process of creating and managing chatbots powered by AI."
+authors = [{ name = "Losuk Kennedy", email = "logtkenn@gmail.com" }]
+license = { file = "LICENSE" }
+requires-python = ">=3.6"

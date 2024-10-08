@@ -1,0 +1,6 @@
+Metadata-Version: 2.1
+Name: fsconnect
+Version: 0.2.1
+Summary: fsconnect is an innovative Python package designed to simplify the process of creating and managing chatbots powered by AI.
+Author-email: Losuk Kennedy <logtkenn@gmail.com>
+Requires-Python: >=3.6
