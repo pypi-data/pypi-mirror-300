@@ -1,0 +1,11 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+src/seekwellpandas/__init__.py
+src/seekwellpandas/methods.py
+src/seekwellpandas.egg-info/PKG-INFO
+src/seekwellpandas.egg-info/SOURCES.txt
+src/seekwellpandas.egg-info/dependency_links.txt
+src/seekwellpandas.egg-info/requires.txt
+src/seekwellpandas.egg-info/top_level.txt
