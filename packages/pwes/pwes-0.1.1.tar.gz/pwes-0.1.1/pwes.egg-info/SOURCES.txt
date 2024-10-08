@@ -1,0 +1,14 @@
+LICENSE
+setup.py
+classes/__init__.py
+classes/pwes_class.py
+classes/pwes_class_old.py
+mapping/__init__.py
+mapping/map_to_pymol.py
+plotting/__init__.py
+plotting/plotting.py
+pwes.egg-info/PKG-INFO
+pwes.egg-info/SOURCES.txt
+pwes.egg-info/dependency_links.txt
+pwes.egg-info/requires.txt
+pwes.egg-info/top_level.txt
