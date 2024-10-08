@@ -1,0 +1,16 @@
+haunts/__init__.py,sha256=t6ECqtxUcBNCnHXkn_3njWLrpJZf0z3ES-GAm1rE2O8,226
+haunts/actions.py,sha256=KJzIVgU16svqe5XwZI-wgtFyTCTLXOBePlofgEWraVo,155
+haunts/calendars.py,sha256=TIV1_I4RjMfCyr219bD6lFTD0g1WVjPeDZxfrjcctYY,4851
+haunts/cli.py,sha256=T8cv1kgC7CBRmS_J6nlYXtJzRG1g1gMNjgtpTgmI3mw,4655
+haunts/credentials.py,sha256=lcUl2oEiXu9ESj1cHjewPd_ySI6VcVPHa53X-Eb1jLI,1664
+haunts/download.py,sha256=6NGDJdnkGLKH9CI7THuANe5xu_ZG8mVHUol-6vNviMI,6396
+haunts/ini.py,sha256=zo_2jZe9WzdKXzOPqMGfEztrqhrFbgCSZX4uE0FFmtE,1268
+haunts/report.py,sha256=dbalb85qtyPXMKgAvQD9vd1Gwm69VmhWSlgDpbnbLnk,7295
+haunts/spreadsheet.py,sha256=AFoAOq9cR8orGxIXxy8Nz1D8WpQP8RaWC7m1xqSZ9Ww,14701
+haunts-0.8.0.dist-info/AUTHORS.rst,sha256=-ArMwAuTysa7CAbi6sVg6E3D9qim-doN6HtzLT3-3ps,154
+haunts-0.8.0.dist-info/LICENSE,sha256=AJbwcdaVmXoODGoTpblV_cmMSzY9pxexlTF1UusUHf8,1520
+haunts-0.8.0.dist-info/METADATA,sha256=nXWdKyfq9BnhE0eMs1sN2iipWSG_Q3qth4ckSH4BvlU,14341
+haunts-0.8.0.dist-info/WHEEL,sha256=DZajD4pwLWue70CAfc7YaxT1wLUciNBvN_TTcvXpltE,110
+haunts-0.8.0.dist-info/entry_points.txt,sha256=ZzWjQSccU0i4ExPw7LrJ_5--iPq4pjXNy-wPvoIvvDY,43
+haunts-0.8.0.dist-info/top_level.txt,sha256=k3kNyhtfhG0DdpzeIZr0tRsCjPT7vvsOk749FG0q9K4,7
+haunts-0.8.0.dist-info/RECORD,,
