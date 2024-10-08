@@ -1,0 +1,8 @@
+contract_analyzer/__init__.py,sha256=ddvnmFSovQvTSLkldMnmu0KdSp2csNEzzWwwV7p9kAg,185
+contract_analyzer/chunk.py,sha256=zUWuahHLKDAP9PxgQmEaPIX4ILggNvtCABXxCrD_jKQ,264
+contract_analyzer/chunking_system.py,sha256=q5psP8nicF21dY2hMbD2Bf3gEYphK3XP5a-MxufKI28,3414
+contract_analyzer/contract_analysis_rag.py,sha256=S86GIYJ4hpfpe1AKrnvuFlUcfCywevGFR0IrhdvLqzU,6199
+contract_analyzer-0.2.0.dist-info/METADATA,sha256=nu88aoS2vfAwSxfcw3qJWLFU3Tkl1AVkNKPRo_fa3QQ,2614
+contract_analyzer-0.2.0.dist-info/WHEEL,sha256=GV9aMThwP_4oNCtvEC2ec3qUYutgWeAzklro_0m4WJQ,91
+contract_analyzer-0.2.0.dist-info/top_level.txt,sha256=y0uW_o6iqWbP9uupRAvpmQbd2JkM1NrYyPWQumB3vbo,18
+contract_analyzer-0.2.0.dist-info/RECORD,,
