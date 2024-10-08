@@ -1,0 +1,58 @@
+msgid ""
+msgstr ""
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "App Title"
+msgstr "Конструктор Документов"
+
+msgid "Version"
+msgstr "Версия"
+
+msgid "Commands"
+msgstr "Комманды"
+
+msgid "W DB PostgreSQL"
+msgstr "Работа с БД PostgreSQL"
+
+msgid "W DB SQLite3"
+msgstr "Работа с БД SQLite3"
+
+msgid "DB name"
+msgstr "Имя БД"
+
+msgid "DB user name"
+msgstr "Имя пользователя БД"
+
+msgid "DB user password"
+msgstr "Пароль пользователя БД"
+
+msgid "DB hostname"
+msgstr "Имя хоста БД"
+
+msgid "DB port"
+msgstr "Порт БД"
+
+msgid "MainPage"
+msgstr "Основная страница"
+
+msgid "GUI parser"
+msgstr "Запустить графический интерфейс"
+
+msgid "menu_lbl"
+msgstr "Настройка приложения"
+
+msgid "db_type"
+msgstr "Тип базы данных"
+
+msgid "Apply"
+msgstr "Применить"
+
+msgid "JDBC"
+msgstr "JDBC"
+
+msgid "Information"
+msgstr "Информация"
+
+msgid "Apply config"
+msgstr "Конфигурация применена"
