@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+kira1206player/__init__.py
+kira1206player/player.py
+kira1206player.egg-info/PKG-INFO
+kira1206player.egg-info/SOURCES.txt
+kira1206player.egg-info/dependency_links.txt
+kira1206player.egg-info/top_level.txt
