@@ -1,0 +1,5 @@
+[console_scripts]
+argument-names = argument_names.__main__:main
+
+[gui_scripts]
+
