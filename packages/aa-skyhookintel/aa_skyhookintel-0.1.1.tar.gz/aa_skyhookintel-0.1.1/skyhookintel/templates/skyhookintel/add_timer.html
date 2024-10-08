@@ -1,0 +1,51 @@
+{% extends 'skyhookintel/base.html' %}
+{% load i18n %}
+
+{% block content %}
+	<h2>
+        {% blocktranslate with planet=skyhook.planet.name trimmed %}
+            Add a timer for the skyhook on planet {{ planet }}
+        {% endblocktranslate %}
+    </h2>
+
+    <form method="post" action="{% url 'skyhookintel:add_skyhook_timer' skyhook.pk %}">
+        {% csrf_token %}
+
+        <div>
+            <label for="vuln_string">{% translate 'Vulnerable string from skyhook window' %}</label>
+            <input id="vuln_string"
+                   size="80"
+                   name="vuln_string"
+                   type="text"
+                   pattern="Secure \(vulnerable in( (\d)d)?( (\d+)h)?( (\d+)m)?\)"
+                   title="Secure (vulnerable in 2d 5h 52m)"
+                   required
+            >
+            <span class="validity"></span>
+        </div>
+    </form>
+{% endblock %}
+
+{% block extra_css %}
+    <style>
+
+        input + span {
+            padding-right: 30px;
+        }
+
+        input:invalid + span::after {
+            position: absolute;
+            content: "✖";
+            padding-left: 5px;
+        }
+
+        input:valid + span::after {
+            position: absolute;
+            content: "✓";
+            padding-left: 5px;
+        }
+    </style>
+
+
+{{ block.super }}
+{% endblock %}
