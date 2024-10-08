@@ -1,0 +1,10 @@
+_points2grid.cpython-313-darwin.so,sha256=nWIIuw3w92H_L2BPze0jTy5N4HB66m_1qM0mj_4qBSY,200496
+pypoints2grid/__init__.py,sha256=r_K9tp6AEBt6glVBZhFEg8i3KOwEL4mw4_KPppLZeAk,2954
+pypoints2grid-0.2.0.dist-info/RECORD,,
+pypoints2grid-0.2.0.dist-info/LICENSE,sha256=sTs7bSkkMvwpJiyDFf219wKldRmkDo2dLbwX1F1PVj4,1069
+pypoints2grid-0.2.0.dist-info/WHEEL,sha256=L5Yzp3Ie3qzhKJYO8ywXtZfSISbcpXt4-U2h3P52Hng,109
+pypoints2grid-0.2.0.dist-info/top_level.txt,sha256=MVzwJjfsTQkNaStZ7Q165r9kRd-M4Zpw1jjgk5mCB4o,35
+pypoints2grid-0.2.0.dist-info/METADATA,sha256=J5wAitATPrXX8CLYsiyaZ2sN23es0jPkB0FVsH39VwY,4351
+include/Interpolator.h,sha256=rPXQj7vt6bSWmC3P_Cj4lHad8Uu_2DnnYvkCnim5Cxw,13751
+include/GridPoint.h,sha256=YC_VSTsPPrGyLlV1VEReE7Wf15TX8g0YhSgFyCFty3Y,2216
+include/GridEnum.h,sha256=_tDqd_bJ4LuLe3TunQ8yr_BExm-gxIWSz8vrbEU7cWw,151
