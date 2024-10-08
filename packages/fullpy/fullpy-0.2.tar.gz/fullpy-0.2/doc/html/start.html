@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="./">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Starting a new project with FullPy &mdash; FullPy 0.2 documentation</title>
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=fa44fd50" />
+      <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=19f00094" />
+
+  
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="_static/jquery.js?v=5d32c60e"></script>
+        <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="_static/documentation_options.js?v=10f1778b"></script>
+        <script src="_static/doctools.js?v=9a2dae69"></script>
+        <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Server application" href="server.html" />
+    <link rel="prev" title="Installing FullPy" href="install.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="index.html" class="icon icon-home">
+            FullPy
+          </a>
+              <div class="version">
+                0.2
+              </div>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="install.html">Installing FullPy</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Starting a new project with FullPy</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#directory-architecture">Directory architecture</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#hello-world-server-example">Hello World server example</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#hello-world-client-example">Hello World client example</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#running-the-web-application">Running the web application</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="server.html">Server application</a></li>
+<li class="toctree-l1"><a class="reference internal" href="client.html">Client application</a></li>
+<li class="toctree-l1"><a class="reference internal" href="backends.html">Backends</a></li>
+<li class="toctree-l1"><a class="reference internal" href="rpc.html">Remote function calls (RPC, remote procedure call)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="html.html">HTML widget system</a></li>
+<li class="toctree-l1"><a class="reference internal" href="translations.html">Translations support</a></li>
+<li class="toctree-l1"><a class="reference internal" href="onto.html">Creating a persistent object model Using ontologies</a></li>
+<li class="toctree-l1"><a class="reference internal" href="session.html">Sessions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="group.html">Groups</a></li>
+<li class="toctree-l1"><a class="reference internal" href="serializer.html">Sessions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="demos.html">Demos</a></li>
+<li class="toctree-l1"><a class="reference internal" href="contact.html">Contact and links</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">FullPy</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">Starting a new project with FullPy</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/start.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="starting-a-new-project-with-fullpy">
+<h1>Starting a new project with FullPy<a class="headerlink" href="#starting-a-new-project-with-fullpy" title="Link to this heading"></a></h1>
+<section id="directory-architecture">
+<h2>Directory architecture<a class="headerlink" href="#directory-architecture" title="Link to this heading"></a></h2>
+<p>To start a new project, follow these simple steps:</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Create a directory for your project</p></li>
+<li><p>Create a “static” subdirectory in that directory</p></li>
+<li><p>Copy the following files in the “static” subdirectory:</p>
+<ul>
+<li><p>“fullpy.css” (from fullpy/static)</p></li>
+<li><p>“brython.js” and “brython_stdlib.js” (from <a class="reference external" href="https://github.com/brython-dev/brython/releases">Brython</a>)</p></li>
+</ul>
+</li>
+<li><p>Create a “server.py” and “client.py” Python scripts in your project directory</p></li>
+</ul>
+</div></blockquote>
+<p>That’s all! You should obtain the following hierarchy:</p>
+<ul class="simple">
+<li><dl class="simple">
+<dt>project_directory/</dt><dd><ul>
+<li><dl class="simple">
+<dt>static/</dt><dd><ul>
+<li><p>brython.js</p></li>
+<li><p>brython_stdlib.js</p></li>
+<li><p>fullpy.css</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><p>client.py</p></li>
+<li><p>server.py</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+</ul>
+<p>The two next subsections give an example of an Hello World FullPy web application
+(the code can be found in the “demo/demo_1_hello_world_ajax” directory of FullPy).</p>
+</section>
+<section id="hello-world-server-example">
+<h2>Hello World server example<a class="headerlink" href="#hello-world-server-example" title="Link to this heading"></a></h2>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">sys</span><span class="o">,</span> <span class="nn">os</span><span class="o">,</span> <span class="nn">os.path</span>
+<span class="kn">from</span> <span class="nn">fullpy.server</span> <span class="kn">import</span> <span class="o">*</span>
+
+<span class="k">class</span> <span class="nc">MyWebApp</span><span class="p">(</span><span class="n">ServerSideWebapp</span><span class="p">):</span>
+  <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+    <span class="n">ServerSideWebapp</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">name</span>          <span class="o">=</span> <span class="s2">&quot;demo&quot;</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">url</span>           <span class="o">=</span> <span class="s2">&quot;/index.html&quot;</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">title</span>         <span class="o">=</span> <span class="s2">&quot;FullPy demo&quot;</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">static_folder</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">dirname</span><span class="p">(</span><span class="vm">__file__</span><span class="p">),</span> <span class="s2">&quot;static&quot;</span><span class="p">)</span>
+
+    <span class="bp">self</span><span class="o">.</span><span class="n">use_python_client</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">dirname</span><span class="p">(</span><span class="vm">__file__</span><span class="p">),</span> <span class="s2">&quot;client.py&quot;</span><span class="p">))</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">use_ajax</span><span class="p">(</span><span class="n">debug</span> <span class="o">=</span> <span class="kc">True</span><span class="p">)</span>
+
+  <span class="nd">@rpc</span> <span class="c1"># Mark the function as remotely callable by the client (RPC = remote procedure call)</span>
+  <span class="k">def</span> <span class="nf">server_hello</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">session</span><span class="p">):</span>
+    <span class="k">return</span> <span class="s2">&quot;Hello world!&quot;</span>
+
+<span class="kn">from</span> <span class="nn">fullpy.server.gunicorn_backend</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="n">serve_forever</span><span class="p">([</span><span class="n">MyWebApp</span><span class="p">()],</span> <span class="s2">&quot;http://127.0.0.1:5000&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</section>
+<section id="hello-world-client-example">
+<h2>Hello World client example<a class="headerlink" href="#hello-world-client-example" title="Link to this heading"></a></h2>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">fullpy.client</span> <span class="kn">import</span> <span class="o">*</span>
+
+<span class="k">class</span> <span class="nc">MyWebApp</span><span class="p">(</span><span class="n">ClientSideWebapp</span><span class="p">):</span>
+  <span class="k">def</span> <span class="nf">on_started</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+    <span class="k">def</span> <span class="nf">done</span><span class="p">(</span><span class="n">response</span><span class="p">):</span>
+      <span class="n">html</span> <span class="o">=</span> <span class="n">HTML</span><span class="p">(</span><span class="s2">&quot;&quot;&quot;FullPy Demo loaded Ok! Server says: &#39;</span><span class="si">%s</span><span class="s2">&#39;.&quot;&quot;&quot;</span> <span class="o">%</span> <span class="n">response</span><span class="p">)</span>
+      <span class="n">html</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+    <span class="n">webapp</span><span class="o">.</span><span class="n">server_hello</span><span class="p">(</span><span class="n">done</span><span class="p">)</span> <span class="c1"># Call the server_hello() remote function on the server</span>
+
+<span class="n">MyWebApp</span><span class="p">()</span>
+</pre></div>
+</div>
+</section>
+<section id="running-the-web-application">
+<h2>Running the web application<a class="headerlink" href="#running-the-web-application" title="Link to this heading"></a></h2>
+<p>To run your web application, simply execute the server.py Python script.</p>
+<p>FullPy will automatically compile the client part of the web application into Javascript, if needed.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">python3</span> <span class="o">./</span><span class="n">server</span><span class="o">.</span><span class="n">py</span>
+</pre></div>
+</div>
+<p>Then, open the following address in your web browser: <a class="reference external" href="http://127.0.0.1:5000/demo/index.html">http://127.0.0.1:5000/demo/index.html</a></p>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="install.html" class="btn btn-neutral float-left" title="Installing FullPy" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="server.html" class="btn btn-neutral float-right" title="Server application" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2022-2023, Jean-Baptiste LAMY.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="./">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Welcome to FullPy’s documentation! &mdash; FullPy 0.2 documentation</title>
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=fa44fd50" />
+      <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=19f00094" />
+
+  
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="_static/jquery.js?v=5d32c60e"></script>
+        <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="_static/documentation_options.js?v=10f1778b"></script>
+        <script src="_static/doctools.js?v=9a2dae69"></script>
+        <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Installing FullPy" href="install.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="#" class="icon icon-home">
+            FullPy
+          </a>
+              <div class="version">
+                0.2
+              </div>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="install.html">Installing FullPy</a></li>
+<li class="toctree-l1"><a class="reference internal" href="start.html">Starting a new project with FullPy</a></li>
+<li class="toctree-l1"><a class="reference internal" href="server.html">Server application</a></li>
+<li class="toctree-l1"><a class="reference internal" href="client.html">Client application</a></li>
+<li class="toctree-l1"><a class="reference internal" href="backends.html">Backends</a></li>
+<li class="toctree-l1"><a class="reference internal" href="rpc.html">Remote function calls (RPC, remote procedure call)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="html.html">HTML widget system</a></li>
+<li class="toctree-l1"><a class="reference internal" href="translations.html">Translations support</a></li>
+<li class="toctree-l1"><a class="reference internal" href="onto.html">Creating a persistent object model Using ontologies</a></li>
+<li class="toctree-l1"><a class="reference internal" href="session.html">Sessions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="group.html">Groups</a></li>
+<li class="toctree-l1"><a class="reference internal" href="serializer.html">Sessions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="demos.html">Demos</a></li>
+<li class="toctree-l1"><a class="reference internal" href="contact.html">Contact and links</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="#">FullPy</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="#" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">Welcome to FullPy’s documentation!</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/index.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="welcome-to-fullpy-s-documentation">
+<h1>Welcome to FullPy’s documentation!<a class="headerlink" href="#welcome-to-fullpy-s-documentation" title="Link to this heading"></a></h1>
+<p>FullPy is a high-level Python module for developping client-server web application. Here are the main features:</p>
+<blockquote>
+<div><ul class="simple">
+<li><p><strong>Both client and server are written in Python</strong>, and can share pieces of code.
+FullPy uses <a class="reference external" href="https://brython.info/">Brython</a> for client-side execution of Python in the web browser.</p></li>
+<li><p><strong>Semantic-aware data persistance using OWL ontologies</strong> instead of a database.
+FullPy uses <a class="reference external" href="https://bitbucket.org/jibalamy/owlready2">Owlready2</a> for managing ontologies and automatically storing them in a SQLite3 database.</p></li>
+<li><p><strong>Remote function calls</strong> between client and server, with object serialization.
+FullPy can use both Ajax (single way client-&gt;server calls) or WebSockets (client-&gt;server and server-&gt;client calls)</p></li>
+<li><p>FullPy also provides many high-level services, such as authentication, translation support, HTML widget system, etc.</p></li>
+<li><p>FullPy can run over multiple backend: Flask, Werkzeug and Gunicorn (only Gunicorn is supported for WebSockets).</p></li>
+</ul>
+</div></blockquote>
+<section id="table-of-content">
+<h2>Table of content<a class="headerlink" href="#table-of-content" title="Link to this heading"></a></h2>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="install.html">Installing FullPy</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="install.html#installation-from-terminal-bash-under-linux-or-dos-under-windows">Installation from terminal (Bash under Linux or DOS under Windows)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="install.html#installation-in-spyder-idle-or-any-other-python-console">Installation in Spyder, IDLE, or any other Python console</a></li>
+<li class="toctree-l2"><a class="reference internal" href="install.html#manual-installation">Manual installation</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="start.html">Starting a new project with FullPy</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="start.html#directory-architecture">Directory architecture</a></li>
+<li class="toctree-l2"><a class="reference internal" href="start.html#hello-world-server-example">Hello World server example</a></li>
+<li class="toctree-l2"><a class="reference internal" href="start.html#hello-world-client-example">Hello World client example</a></li>
+<li class="toctree-l2"><a class="reference internal" href="start.html#running-the-web-application">Running the web application</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="server.html">Server application</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="server.html#use_python_client"><code class="docutils literal notranslate"><span class="pre">use_python_client()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="server.html#use_ontology_quadstore"><code class="docutils literal notranslate"><span class="pre">use_ontology_quadstore()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="server.html#use_session"><code class="docutils literal notranslate"><span class="pre">use_session()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="server.html#use_ajax"><code class="docutils literal notranslate"><span class="pre">use_ajax()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="server.html#use_websocket"><code class="docutils literal notranslate"><span class="pre">use_websocket()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="server.html#on_started"><code class="docutils literal notranslate"><span class="pre">on_started()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="server.html#on_stopped"><code class="docutils literal notranslate"><span class="pre">on_stopped()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="server.html#create_test_user"><code class="docutils literal notranslate"><span class="pre">create_test_user()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="server.html#html_content"><code class="docutils literal notranslate"><span class="pre">html_content()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="server.html#get_initial_data"><code class="docutils literal notranslate"><span class="pre">get_initial_data()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="client.html">Client application</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="client.html#on_started"><code class="docutils literal notranslate"><span class="pre">on_started()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="client.html#on_session_opened"><code class="docutils literal notranslate"><span class="pre">on_session_opened()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="client.html#on_connexion_lost"><code class="docutils literal notranslate"><span class="pre">on_connexion_lost()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="client.html#on_session_lost"><code class="docutils literal notranslate"><span class="pre">on_session_lost()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="backends.html">Backends</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="backends.html#gunicorn-backend">Gunicorn backend</a></li>
+<li class="toctree-l2"><a class="reference internal" href="backends.html#werkzeug-backend">Werkzeug backend</a></li>
+<li class="toctree-l2"><a class="reference internal" href="backends.html#flask-backend">Flask backend</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="rpc.html">Remote function calls (RPC, remote procedure call)</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="rpc.html#creating-a-remotely-callable-function">Creating a remotely-callable function</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="rpc.html#server-side">Server-side</a></li>
+<li class="toctree-l3"><a class="reference internal" href="rpc.html#client-side">Client-side</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="rpc.html#calling-a-remote-function">Calling a remote function</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="rpc.html#id1">Client-side</a></li>
+<li class="toctree-l3"><a class="reference internal" href="rpc.html#id2">Server-side</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="rpc.html#serialization-and-supported-datatypes">Serialization and supported datatypes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="rpc.html#websocket-example">WebSocket example</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="rpc.html#hello-world-server-example">Hello World server example</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="rpc.html#hello-world-client-example">Hello World client example</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="html.html">HTML widget system</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="html.html#creating-html-pieces">Creating HTML pieces</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="html.html#bind"><code class="docutils literal notranslate"><span class="pre">bind()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="html.html#creating-html-widgets">Creating HTML widgets</a></li>
+<li class="toctree-l2"><a class="reference internal" href="html.html#displaying-an-html-piece">Displaying an HTML piece</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="html.html#show"><code class="docutils literal notranslate"><span class="pre">show()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="html.html#show_replace"><code class="docutils literal notranslate"><span class="pre">show_replace()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="html.html#show_popup"><code class="docutils literal notranslate"><span class="pre">show_popup()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="html.html#hide_popup"><code class="docutils literal notranslate"><span class="pre">hide_popup()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="html.html#refreshing-an-html-piece">Refreshing an HTML piece</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="translations.html">Translations support</a></li>
+<li class="toctree-l1"><a class="reference internal" href="onto.html">Creating a persistent object model Using ontologies</a></li>
+<li class="toctree-l1"><a class="reference internal" href="session.html">Sessions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="group.html">Groups</a></li>
+<li class="toctree-l1"><a class="reference internal" href="serializer.html">Sessions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="demos.html">Demos</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="demos.html#multi-room-chat">Multi-room chat</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="demos.html#server">Server</a></li>
+<li class="toctree-l3"><a class="reference internal" href="demos.html#client">Client</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="contact.html">Contact and links</a></li>
+</ul>
+</div>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="install.html" class="btn btn-neutral float-right" title="Installing FullPy" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2022-2023, Jean-Baptiste LAMY.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

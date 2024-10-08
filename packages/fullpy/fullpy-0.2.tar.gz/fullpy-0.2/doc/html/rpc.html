@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="./">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Remote function calls (RPC, remote procedure call) &mdash; FullPy 0.2 documentation</title>
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=fa44fd50" />
+      <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=19f00094" />
+
+  
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="_static/jquery.js?v=5d32c60e"></script>
+        <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="_static/documentation_options.js?v=10f1778b"></script>
+        <script src="_static/doctools.js?v=9a2dae69"></script>
+        <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="HTML widget system" href="html.html" />
+    <link rel="prev" title="Backends" href="backends.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="index.html" class="icon icon-home">
+            FullPy
+          </a>
+              <div class="version">
+                0.2
+              </div>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="install.html">Installing FullPy</a></li>
+<li class="toctree-l1"><a class="reference internal" href="start.html">Starting a new project with FullPy</a></li>
+<li class="toctree-l1"><a class="reference internal" href="server.html">Server application</a></li>
+<li class="toctree-l1"><a class="reference internal" href="client.html">Client application</a></li>
+<li class="toctree-l1"><a class="reference internal" href="backends.html">Backends</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Remote function calls (RPC, remote procedure call)</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#creating-a-remotely-callable-function">Creating a remotely-callable function</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#server-side">Server-side</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#client-side">Client-side</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#calling-a-remote-function">Calling a remote function</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id1">Client-side</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id2">Server-side</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#serialization-and-supported-datatypes">Serialization and supported datatypes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#websocket-example">WebSocket example</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#hello-world-server-example">Hello World server example</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#hello-world-client-example">Hello World client example</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="html.html">HTML widget system</a></li>
+<li class="toctree-l1"><a class="reference internal" href="translations.html">Translations support</a></li>
+<li class="toctree-l1"><a class="reference internal" href="onto.html">Creating a persistent object model Using ontologies</a></li>
+<li class="toctree-l1"><a class="reference internal" href="session.html">Sessions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="group.html">Groups</a></li>
+<li class="toctree-l1"><a class="reference internal" href="serializer.html">Sessions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="demos.html">Demos</a></li>
+<li class="toctree-l1"><a class="reference internal" href="contact.html">Contact and links</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">FullPy</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">Remote function calls (RPC, remote procedure call)</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/rpc.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="remote-function-calls-rpc-remote-procedure-call">
+<h1>Remote function calls (RPC, remote procedure call)<a class="headerlink" href="#remote-function-calls-rpc-remote-procedure-call" title="Link to this heading"></a></h1>
+<section id="creating-a-remotely-callable-function">
+<h2>Creating a remotely-callable function<a class="headerlink" href="#creating-a-remotely-callable-function" title="Link to this heading"></a></h2>
+<p>In the Webapp class, a remotely-callable function can be defined by using the <code class="docutils literal notranslate"><span class="pre">&#64;rpc</span></code> decorator.</p>
+<section id="server-side">
+<h3>Server-side<a class="headerlink" href="#server-side" title="Link to this heading"></a></h3>
+<p>Remotely-callable functions defined in the server must be prefixed by <code class="docutils literal notranslate"><span class="pre">server_</span></code>.
+Their first argument is always the session object (which is None if there is no session), and additional arguments
+are allowed.</p>
+<p>Here is an example:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">MyWebApp</span><span class="p">(</span><span class="n">ServerSideWebapp</span><span class="p">):</span>
+  <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+    <span class="p">[</span><span class="o">...</span><span class="p">]</span>
+
+  <span class="nd">@rpc</span> <span class="c1"># Mark the function as remotely callable by the client</span>
+  <span class="k">def</span> <span class="nf">server_remote_function</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">session</span><span class="p">,</span> <span class="n">argument1</span><span class="p">,</span> <span class="n">argument2</span><span class="p">):</span>
+    <span class="k">return</span> <span class="n">argument1</span> <span class="o">+</span> <span class="n">argument2</span>
+</pre></div>
+</div>
+</section>
+<section id="client-side">
+<h3>Client-side<a class="headerlink" href="#client-side" title="Link to this heading"></a></h3>
+<p>Remotely-callable functions defined in the client are supported only if you use WebSockets;
+they must be prefixed by <code class="docutils literal notranslate"><span class="pre">client_</span></code>. Contrary to server ones, they have no session argument.</p>
+<p>Here is an example:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">MyWebApp</span><span class="p">(</span><span class="n">ClientSideWebapp</span><span class="p">):</span>
+  <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+    <span class="p">[</span><span class="o">...</span><span class="p">]</span>
+
+  <span class="nd">@rpc</span> <span class="c1"># Mark the function as remotely callable by the server</span>
+  <span class="k">def</span> <span class="nf">client_remote_function</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">argument1</span><span class="p">,</span> <span class="n">argument2</span><span class="p">):</span>
+    <span class="k">return</span> <span class="n">argument1</span> <span class="o">+</span> <span class="n">argument2</span>
+</pre></div>
+</div>
+</section>
+</section>
+<section id="calling-a-remote-function">
+<h2>Calling a remote function<a class="headerlink" href="#calling-a-remote-function" title="Link to this heading"></a></h2>
+<p>When calling a a remotely-callable function, the first argument is always a callback function
+that will be called with the returned value.
+You may pass <code class="docutils literal notranslate"><span class="pre">None</span></code> as callback if you don’t need the returned value.</p>
+<section id="id1">
+<h3>Client-side<a class="headerlink" href="#id1" title="Link to this heading"></a></h3>
+<p>In the client, remotely-callable server functions can be called directly on the webapp.</p>
+<p>Here are examples, with and without callback:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">done</span><span class="p">(</span><span class="n">response</span><span class="p">):</span>
+  <span class="nb">print</span><span class="p">(</span><span class="n">response</span><span class="p">)</span>
+<span class="n">webapp</span><span class="o">.</span><span class="n">server_remote_function</span><span class="p">(</span><span class="n">done</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">)</span>
+
+<span class="n">webapp</span><span class="o">.</span><span class="n">server_remote_function</span><span class="p">(</span><span class="kc">None</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">)</span>
+</pre></div>
+</div>
+</section>
+<section id="id2">
+<h3>Server-side<a class="headerlink" href="#id2" title="Link to this heading"></a></h3>
+<p>In the server, remotely-callable client functions can be called at three levels:</p>
+<blockquote>
+<div><ul class="simple">
+<li><p><strong>directly on the webapp:</strong> in that case, the function is executed for <strong>all</strong> connected clients.</p></li>
+<li><p><strong>on a Session object:</strong> in that case, the function is executed for the corresponding client.</p></li>
+<li><p><strong>on a Group object:</strong> in that case, the function is executed for all clients in that Group.</p></li>
+</ul>
+</div></blockquote>
+<p>Here are examples:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">done</span><span class="p">(</span><span class="n">response</span><span class="p">):</span>
+  <span class="nb">print</span><span class="p">(</span><span class="n">response</span><span class="p">)</span>
+<span class="n">webapp</span><span class="o">.</span><span class="n">client_remote_function</span><span class="p">(</span><span class="n">done</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">)</span>
+
+<span class="n">session</span><span class="o">.</span><span class="n">client_remote_function</span><span class="p">(</span><span class="n">done</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">)</span>
+
+<span class="n">group</span><span class="o">.</span><span class="n">client_remote_function</span><span class="p">(</span><span class="n">done</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">)</span>
+</pre></div>
+</div>
+</section>
+</section>
+<section id="serialization-and-supported-datatypes">
+<h2>Serialization and supported datatypes<a class="headerlink" href="#serialization-and-supported-datatypes" title="Link to this heading"></a></h2>
+<p>FullPy uses its own object serializer for serializing remote functions arguments and return values.
+It supports all basic Python datatypes (including int, float, str, tuple, list and dict)
+and can be extended for serializing Python objects and/or OWL ontology entities.
+It produce a JSON compatible serialization if the encoded data is JSON compatible;
+however, it also supports non-JSON feature, such as Python tuples and dictionaries with non-string keys.</p>
+<p>For more information on the serializer, please refer to <a class="reference internal" href="serializer.html"><span class="doc">Sessions</span></a>.</p>
+</section>
+<section id="websocket-example">
+<h2>WebSocket example<a class="headerlink" href="#websocket-example" title="Link to this heading"></a></h2>
+<p>The two next subsections give an example of an Hello World FullPy web application with WebSocket
+(the code can be found in the “demo/demo_1_hello_world_websocket” directory of FullPy).
+We have already seen a similar ajax example (see <a class="reference internal" href="start.html"><span class="doc">Starting a new project with FullPy</span></a>).</p>
+<section id="hello-world-server-example">
+<h3>Hello World server example<a class="headerlink" href="#hello-world-server-example" title="Link to this heading"></a></h3>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">gevent</span> <span class="kn">import</span> <span class="n">monkey</span>
+<span class="n">monkey</span><span class="o">.</span><span class="n">patch_all</span><span class="p">()</span>
+
+<span class="kn">import</span> <span class="nn">sys</span><span class="o">,</span> <span class="nn">os</span><span class="o">,</span> <span class="nn">os.path</span>
+<span class="kn">from</span> <span class="nn">fullpy.server</span> <span class="kn">import</span> <span class="o">*</span>
+
+<span class="k">class</span> <span class="nc">MyWebApp</span><span class="p">(</span><span class="n">ServerSideWebapp</span><span class="p">):</span>
+  <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+    <span class="n">ServerSideWebapp</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">name</span>          <span class="o">=</span> <span class="s2">&quot;demo&quot;</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">url</span>           <span class="o">=</span> <span class="s2">&quot;/index.html&quot;</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">title</span>         <span class="o">=</span> <span class="s2">&quot;FullPy demo&quot;</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">static_folder</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">dirname</span><span class="p">(</span><span class="vm">__file__</span><span class="p">),</span> <span class="s2">&quot;static&quot;</span><span class="p">)</span>
+
+    <span class="bp">self</span><span class="o">.</span><span class="n">use_python_client</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">dirname</span><span class="p">(</span><span class="vm">__file__</span><span class="p">),</span> <span class="s2">&quot;client.py&quot;</span><span class="p">))</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">use_websocket</span><span class="p">(</span><span class="n">debug</span> <span class="o">=</span> <span class="kc">True</span><span class="p">)</span>
+
+  <span class="nd">@rpc</span> <span class="c1"># Mark the function as remotely callable by the client (RPC = remote procedure call)</span>
+  <span class="k">def</span> <span class="nf">server_hello</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">session</span><span class="p">):</span> <span class="c1"># The name of server-side functions MUST starts with &quot;server_&quot;</span>
+    <span class="k">def</span> <span class="nf">f</span><span class="p">():</span>
+      <span class="n">gevent</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="mf">2.0</span><span class="p">)</span> <span class="c1"># Wait 2 seconds</span>
+      <span class="n">session</span><span class="o">.</span><span class="n">client_update_speech</span><span class="p">(</span><span class="kc">None</span><span class="p">,</span> <span class="s2">&quot;Goodbye!&quot;</span><span class="p">)</span> <span class="c1"># Call the client_update_speech() remote function on the client</span>
+    <span class="n">gevent</span><span class="o">.</span><span class="n">spawn</span><span class="p">(</span><span class="n">f</span><span class="p">)</span> <span class="c1"># Execute f() in a separate &quot;greenlet&quot; microthread, in parallel</span>
+
+    <span class="k">return</span> <span class="s2">&quot;Hello world!&quot;</span>
+
+<span class="kn">from</span> <span class="nn">fullpy.server.gunicorn_backend</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="n">serve_forever</span><span class="p">([</span><span class="n">MyWebApp</span><span class="p">()],</span> <span class="s2">&quot;http://127.0.0.1:5000&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</section>
+</section>
+<section id="hello-world-client-example">
+<h2>Hello World client example<a class="headerlink" href="#hello-world-client-example" title="Link to this heading"></a></h2>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">fullpy.client</span> <span class="kn">import</span> <span class="o">*</span>
+
+<span class="k">class</span> <span class="nc">MyWebApp</span><span class="p">(</span><span class="n">ClientSideWebapp</span><span class="p">):</span>
+  <span class="k">def</span> <span class="nf">on_started</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">url_params</span><span class="p">):</span>
+    <span class="k">def</span> <span class="nf">done</span><span class="p">(</span><span class="n">response</span><span class="p">):</span>
+      <span class="n">html</span> <span class="o">=</span> <span class="n">HTML</span><span class="p">(</span><span class="s2">&quot;&quot;&quot;FullPy Demo loaded Ok! Server says: &#39;&lt;span id=&quot;server_speech&quot;&gt;</span><span class="si">%s</span><span class="s2">&lt;/span&gt;&#39;.&quot;&quot;&quot;</span> <span class="o">%</span> <span class="n">response</span><span class="p">)</span>
+      <span class="n">html</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+    <span class="n">webapp</span><span class="o">.</span><span class="n">server_hello</span><span class="p">(</span><span class="n">done</span><span class="p">)</span> <span class="c1"># Call the server_hello() remote function on the server</span>
+
+  <span class="nd">@rpc</span> <span class="c1"># Mark the function as remotely callable by the server (RPC = remote procedure call)</span>
+  <span class="k">def</span> <span class="nf">client_update_speech</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">text</span><span class="p">):</span> <span class="c1"># The name of client-side functions MUST starts with &quot;client_&quot;</span>
+    <span class="n">html</span> <span class="o">=</span> <span class="n">HTML</span><span class="p">(</span><span class="n">text</span><span class="p">)</span>
+    <span class="n">html</span><span class="o">.</span><span class="n">show</span><span class="p">(</span><span class="n">container</span> <span class="o">=</span> <span class="s2">&quot;server_speech&quot;</span><span class="p">)</span> <span class="c1"># Update the content of the &quot;server_speech&quot; HTML tag</span>
+
+<span class="n">MyWebApp</span><span class="p">()</span>
+</pre></div>
+</div>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="backends.html" class="btn btn-neutral float-left" title="Backends" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="html.html" class="btn btn-neutral float-right" title="HTML widget system" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2022-2023, Jean-Baptiste LAMY.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

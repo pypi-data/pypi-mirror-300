@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="./">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Server application &mdash; FullPy 0.2 documentation</title>
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=fa44fd50" />
+      <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=19f00094" />
+
+  
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="_static/jquery.js?v=5d32c60e"></script>
+        <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="_static/documentation_options.js?v=10f1778b"></script>
+        <script src="_static/doctools.js?v=9a2dae69"></script>
+        <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Client application" href="client.html" />
+    <link rel="prev" title="Starting a new project with FullPy" href="start.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="index.html" class="icon icon-home">
+            FullPy
+          </a>
+              <div class="version">
+                0.2
+              </div>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="install.html">Installing FullPy</a></li>
+<li class="toctree-l1"><a class="reference internal" href="start.html">Starting a new project with FullPy</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Server application</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#use_python_client"><code class="docutils literal notranslate"><span class="pre">use_python_client()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="#use_ontology_quadstore"><code class="docutils literal notranslate"><span class="pre">use_ontology_quadstore()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="#use_session"><code class="docutils literal notranslate"><span class="pre">use_session()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="#use_ajax"><code class="docutils literal notranslate"><span class="pre">use_ajax()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="#use_websocket"><code class="docutils literal notranslate"><span class="pre">use_websocket()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="#on_started"><code class="docutils literal notranslate"><span class="pre">on_started()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="#on_stopped"><code class="docutils literal notranslate"><span class="pre">on_stopped()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="#create_test_user"><code class="docutils literal notranslate"><span class="pre">create_test_user()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="#html_content"><code class="docutils literal notranslate"><span class="pre">html_content()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="#get_initial_data"><code class="docutils literal notranslate"><span class="pre">get_initial_data()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="client.html">Client application</a></li>
+<li class="toctree-l1"><a class="reference internal" href="backends.html">Backends</a></li>
+<li class="toctree-l1"><a class="reference internal" href="rpc.html">Remote function calls (RPC, remote procedure call)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="html.html">HTML widget system</a></li>
+<li class="toctree-l1"><a class="reference internal" href="translations.html">Translations support</a></li>
+<li class="toctree-l1"><a class="reference internal" href="onto.html">Creating a persistent object model Using ontologies</a></li>
+<li class="toctree-l1"><a class="reference internal" href="session.html">Sessions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="group.html">Groups</a></li>
+<li class="toctree-l1"><a class="reference internal" href="serializer.html">Sessions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="demos.html">Demos</a></li>
+<li class="toctree-l1"><a class="reference internal" href="contact.html">Contact and links</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">FullPy</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">Server application</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/server.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="server-application">
+<h1>Server application<a class="headerlink" href="#server-application" title="Link to this heading"></a></h1>
+<p>The server application should import fullpy.server, subclass fullpy.server.ServerSideWebapp,
+create an instance of the subclass and pass it to server_forever(), as in the following example:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">sys</span><span class="o">,</span> <span class="nn">os</span><span class="o">,</span> <span class="nn">os.path</span>
+<span class="kn">from</span> <span class="nn">fullpy.server</span> <span class="kn">import</span> <span class="o">*</span>
+
+<span class="k">class</span> <span class="nc">MyWebApp</span><span class="p">(</span><span class="n">ServerSideWebapp</span><span class="p">):</span>
+  <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+    <span class="n">ServerSideWebapp</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">name</span>          <span class="o">=</span> <span class="s2">&quot;demo&quot;</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">url</span>           <span class="o">=</span> <span class="s2">&quot;/index.html&quot;</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">title</span>         <span class="o">=</span> <span class="s2">&quot;FullPy demo&quot;</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">static_folder</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">dirname</span><span class="p">(</span><span class="vm">__file__</span><span class="p">),</span> <span class="s2">&quot;static&quot;</span><span class="p">)</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">js</span>            <span class="o">=</span> <span class="p">[]</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">css</span>           <span class="o">=</span> <span class="p">[]</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">favicon</span>       <span class="o">=</span> <span class="s2">&quot;icon.png&quot;</span>
+
+    <span class="bp">self</span><span class="o">.</span><span class="n">use_python_client</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">dirname</span><span class="p">(</span><span class="vm">__file__</span><span class="p">),</span> <span class="s2">&quot;client.py&quot;</span><span class="p">))</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">use_ajax</span><span class="p">(</span><span class="n">debug</span> <span class="o">=</span> <span class="kc">True</span><span class="p">)</span>
+
+<span class="kn">from</span> <span class="nn">fullpy.server.gunicorn_backend</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="n">serve_forever</span><span class="p">([</span><span class="n">MyWebApp</span><span class="p">()],</span> <span class="s2">&quot;http://127.0.0.1:5000&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>In the subclass of ServerSideWebapp, you need to reimplement __init__(). Your __init__() should call the super
+implementation, then define some properties and finally call some use_XXX() methods.</p>
+<p>The following properties are available:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">name</span></code> (mandatory): the name of the web app.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">url</span></code> (mandatory): the URL of the web app page. The full URL with be the concatenation of the server address,
+the name property and the url property (in the example above, “<a class="reference external" href="http://127.0.0.1:5000/demo/index.html">http://127.0.0.1:5000/demo/index.html</a>”).</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">title</span></code> (mandatory): the title of the web app (showed in the web browser’s window titlebar).</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">static_folder</span></code> (mandatory): the local directory where static files are stored.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">js</span></code> (optional): a list of additional Javascript files used by the client.
+Notice that FullPy automatically adds Brython Javascript files as needed.
+Javascript files are expected to be found in the static directory.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">css</span></code> (optional): a list of CSS files used by the client.
+Notice that FullPy automatically adds “fullpy.css”.
+CSS files are expected to be found in the static directory.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">favicon</span></code> (optional): the “favicon” image file, showed in the web browser.
+The favicon is expected to be found in the static directory.</p></li>
+</ul>
+<p>use_XXX() methods are used to enable various features of FullPy.
+The following use_XXX() methods are available:</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="use_python_client">
+<span class="sig-name descname"><span class="pre">use_python_client</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">client_file</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">force_brython_compilation</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">minify_python_code</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#use_python_client" title="Link to this definition"></a></dt>
+<dd><p>Use a Brython-compiled Python client. The client is automatically compiled to Javascript as needed.</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">client_file</span></code>: the path to the client Python script (e.g. client.py).</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">force_brython_compilation</span></code>: if True, compile the client even if its sources have not been modified.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">minify_python_code</span></code>: if True, minify the Python source using the “python_minifier” module.</p></li>
+</ul>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="use_ontology_quadstore">
+<span class="sig-name descname"><span class="pre">use_ontology_quadstore</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">world</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">session_onto</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">test_session_onto</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#use_ontology_quadstore" title="Link to this definition"></a></dt>
+<dd><p>Use an Owlready2 quadstore for persistent data and semantics.</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">world</span></code>: the Owlready2 World to use (if None, owlread2.default_world is used).</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">session_onto</span></code>: the ontology in which sessions are stored (defaults to Fullpy ontology)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">test_session_onto</span></code>: the ontology in which temporary/test sessions are stored (defaults to session_onto)</p></li>
+</ul>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="use_session">
+<span class="sig-name descname"><span class="pre">use_session</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">session_class</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">group_class</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">auth</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">client_reloadable_session</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">session_max_duration</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">3888000.0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">session_max_memory_duration</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1296000.0</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#use_session" title="Link to this definition"></a></dt>
+<dd><p>Use sessions. A <strong>session</strong> is an object available on the server application, and created for each connected client.
+If a given client calls several remote functions on the server, each call will be associated with the same session.
+It thus allows storing client-specific information on the server-side.</p>
+<p>FullPy support both <strong>anonymous sessions</strong> (automatically created by the client)
+and <strong>authentified sessions</strong> (with login and password).
+However, the use of authentified sessions requires an ontology quadstore, for storing users and their logins and passwords.</p>
+<p>In addition, FullPy support both <strong>in-memory sessions</strong> (lost when the server is stopped and restarted)
+and <strong>persistent sessions</strong> (stored in the ontology quadstore).
+The use of persistent sessions requires an ontology quadstore.</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">session_class</span></code>: the Session class to use. If None, use the default, in-memory, Session class.
+You can provide your own Session class, to reimplement some methods, store additional per-session data,
+and/or create a persistent Session.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">group_class</span></code>:  the Group class to use. If None, use the default, in-memory, Group class.
+You can provide your own Group class, to reimplement some methods, store additional per-group data,
+and/or create a persistent Group.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">auth</span></code>: if True, support authentified sessions (which requires an ontology quadstore).</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">client_reloadable_session</span></code>: if True, allows the client to reload and reuse the previous session.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">session_max_duration</span></code>: after that duration (in seconds), sessions are closed and destroyed.
+Default value corresponds to 45 days.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">session_max_memory_duration</span></code>: after that duration (in seconds), sessions are removed from the memory
+(but still kept in the ontology quadstore, if persistent sessions are used).
+Default value corresponds to 15 days.</p></li>
+</ul>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="use_ajax">
+<span class="sig-name descname"><span class="pre">use_ajax</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">debug</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#use_ajax" title="Link to this definition"></a></dt>
+<dd><p>Use Ajax, allowing client-&gt;server remote function calls.
+On the contrary, the server cannot call remote functions on the client with Ajax.</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">debug</span></code>: if True, debugging information is written in the console each time a remote function is called.</p></li>
+</ul>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="use_websocket">
+<span class="sig-name descname"><span class="pre">use_websocket</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">debug</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#use_websocket" title="Link to this definition"></a></dt>
+<dd><p>Use WebSocket, allowing both client-&gt;server and server-&gt;client remote function calls.
+WebSockets require the use of sessions (anonymous or authentified).</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">debug</span></code>: if True, debugging information is written in the console each time a remote function is called
+(for both the client and the server).</p></li>
+</ul>
+</dd></dl>
+
+<p>The following combination of use_XXX() methods are allowed:</p>
+<ul>
+<li><p><strong>use_python_client(); use_ajax():</strong></p>
+<p>Simple Ajax-based web application, without sessions nor data persistance.</p>
+</li>
+<li><p><strong>use_python_client(); use_ontology_quadstore(); use_ajax():</strong></p>
+<p>Ajax-based web application, with data persistance but without sessions.
+Can be used e.g. for a dynamic website based on an ontology.</p>
+</li>
+<li><p><strong>use_python_client(); use_session(auth = False); use_ajax():</strong></p>
+<p>Ajax-based web application, with anonymous sessions but without data persistance.
+Anonymous sessions can be used e.g. for keeping user preferences (such as language) during navigation,
+but the preferences will be lost when the user closes the web browser.</p>
+</li>
+<li><p><strong>use_python_client(); use_ontology_quadstore(); use_session(); use_ajax():</strong></p>
+<p>Ajax-based web application, with both sessions and data persistance.
+Sessions can be anonymous or authentified.</p>
+</li>
+<li><p><strong>use_python_client(); use_session(auth = False); use_websocket():</strong></p>
+<p>WebSocket-based web application, with anonymous sessions but without data persistance.</p>
+</li>
+<li><p><strong>use_python_client(); use_ontology_quadstore(); use_session(); use_websocket():</strong></p>
+<p>WebSocket-based web application, with both sessions and data persistance.
+Sessions can be anonymous or authentified.</p>
+</li>
+</ul>
+<p>Additionnally, when using WebSocket, you need to enable GEvent and to use the Gunicorn backend, as in the following example:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">gevent</span> <span class="kn">import</span> <span class="n">monkey</span>
+<span class="n">monkey</span><span class="o">.</span><span class="n">patch_all</span><span class="p">()</span>
+
+<span class="kn">import</span> <span class="nn">sys</span><span class="o">,</span> <span class="nn">os</span><span class="o">,</span> <span class="nn">os.path</span>
+<span class="kn">from</span> <span class="nn">fullpy.server</span> <span class="kn">import</span> <span class="o">*</span>
+
+<span class="k">class</span> <span class="nc">MyWebApp</span><span class="p">(</span><span class="n">ServerSideWebapp</span><span class="p">):</span>
+  <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+    <span class="n">ServerSideWebapp</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">name</span>          <span class="o">=</span> <span class="s2">&quot;demo&quot;</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">url</span>           <span class="o">=</span> <span class="s2">&quot;/index.html&quot;</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">title</span>         <span class="o">=</span> <span class="s2">&quot;FullPy demo&quot;</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">static_folder</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">dirname</span><span class="p">(</span><span class="vm">__file__</span><span class="p">),</span> <span class="s2">&quot;static&quot;</span><span class="p">)</span>
+
+    <span class="bp">self</span><span class="o">.</span><span class="n">use_python_client</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">dirname</span><span class="p">(</span><span class="vm">__file__</span><span class="p">),</span> <span class="s2">&quot;client.py&quot;</span><span class="p">))</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">use_websocket</span><span class="p">(</span><span class="n">debug</span> <span class="o">=</span> <span class="kc">True</span><span class="p">)</span>
+
+<span class="kn">from</span> <span class="nn">fullpy.server.gunicorn_backend</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="n">serve_forever</span><span class="p">([</span><span class="n">MyWebApp</span><span class="p">()],</span> <span class="s2">&quot;http://127.0.0.1:5000&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Finally, ClientSideWebapp has the following methods that can be reimplemented:</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="on_started">
+<span class="sig-name descname"><span class="pre">on_started</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#on_started" title="Link to this definition"></a></dt>
+<dd><p>Called when the server starts.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="on_stopped">
+<span class="sig-name descname"><span class="pre">on_stopped</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#on_stopped" title="Link to this definition"></a></dt>
+<dd><p>Called when the server is stopped.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="create_test_user">
+<span class="sig-name descname"><span class="pre">create_test_user</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">test_session</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#create_test_user" title="Link to this definition"></a></dt>
+<dd><p>Called when an anonymous user need to be created for a test/temporary session. Should return the user.
+Do not reimplement this method if you do not want to support anonymous users or test/temporary sessions.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="html_content">
+<span class="sig-name descname"><span class="pre">html_content</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#html_content" title="Link to this definition"></a></dt>
+<dd><p>Return the initial HTML content of the webpage. You should only reimplement this method if you want to modify this
+content (this is normally not necessary).</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="get_initial_data">
+<span class="sig-name descname"><span class="pre">get_initial_data</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">url_params</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#get_initial_data" title="Link to this definition"></a></dt>
+<dd><p>Create the initial data sent to the client.
+By default, no initial data is sent, but you can override this method to send some initial data.
+Initial data will be incorporated in the HTML webpage.
+They will be encoded with repr()
+(NB FullPy <strong>do not</strong> use the serializer to encode initial data, so as you may send a dictionary, and then
+decode its content one piece at a time, when needed).</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">url_params</span></code>: a dictionary with the parameters found in the query part of the URL.</p></li>
+</ul>
+</dd></dl>
+
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="start.html" class="btn btn-neutral float-left" title="Starting a new project with FullPy" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="client.html" class="btn btn-neutral float-right" title="Client application" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2022-2023, Jean-Baptiste LAMY.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

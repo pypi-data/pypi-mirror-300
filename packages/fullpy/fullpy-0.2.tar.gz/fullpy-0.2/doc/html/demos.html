@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="./">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Demos &mdash; FullPy 0.2 documentation</title>
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=fa44fd50" />
+      <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=19f00094" />
+
+  
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="_static/jquery.js?v=5d32c60e"></script>
+        <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="_static/documentation_options.js?v=10f1778b"></script>
+        <script src="_static/doctools.js?v=9a2dae69"></script>
+        <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Contact and links" href="contact.html" />
+    <link rel="prev" title="Sessions" href="serializer.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="index.html" class="icon icon-home">
+            FullPy
+          </a>
+              <div class="version">
+                0.2
+              </div>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="install.html">Installing FullPy</a></li>
+<li class="toctree-l1"><a class="reference internal" href="start.html">Starting a new project with FullPy</a></li>
+<li class="toctree-l1"><a class="reference internal" href="server.html">Server application</a></li>
+<li class="toctree-l1"><a class="reference internal" href="client.html">Client application</a></li>
+<li class="toctree-l1"><a class="reference internal" href="backends.html">Backends</a></li>
+<li class="toctree-l1"><a class="reference internal" href="rpc.html">Remote function calls (RPC, remote procedure call)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="html.html">HTML widget system</a></li>
+<li class="toctree-l1"><a class="reference internal" href="translations.html">Translations support</a></li>
+<li class="toctree-l1"><a class="reference internal" href="onto.html">Creating a persistent object model Using ontologies</a></li>
+<li class="toctree-l1"><a class="reference internal" href="session.html">Sessions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="group.html">Groups</a></li>
+<li class="toctree-l1"><a class="reference internal" href="serializer.html">Sessions</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Demos</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#multi-room-chat">Multi-room chat</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#server">Server</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#client">Client</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="contact.html">Contact and links</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">FullPy</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">Demos</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/demos.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="demos">
+<h1>Demos<a class="headerlink" href="#demos" title="Link to this heading"></a></h1>
+<p>The <code class="docutils literal notranslate"><span class="pre">demo/</span></code> directory in FullPy sources includes several demo web apps.</p>
+<section id="multi-room-chat">
+<h2>Multi-room chat<a class="headerlink" href="#multi-room-chat" title="Link to this heading"></a></h2>
+<p>This demo web app is a multi-room, multi-user chat system.
+It uses:</p>
+<blockquote>
+<div><ul class="simple">
+<li><p><strong>WebSocket</strong>, allowing the server to call the client(s) when new messages are available,</p></li>
+<li><p><strong>Session</strong>, allowing the server to store per-client data (as required by WebSocket),</p></li>
+<li><p><strong>Group</strong>, each group representing a chat room, associated with one or more user sessions,</p></li>
+<li><p><strong>Ontology quadstore</strong>, for data persistence, including chat messages but also sessions and groups.</p></li>
+</ul>
+</div></blockquote>
+<a class="reference internal image-reference" href="_images/chat.png"><img alt="_images/chat.png" src="_images/chat.png" style="width: 80%;" />
+</a>
+<section id="server">
+<h3>Server<a class="headerlink" href="#server" title="Link to this heading"></a></h3>
+<p>First, the server app enables GEvent (mandatory for WebSocket) and import GEvent, FullPy and Owlready among other modules:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">gevent</span> <span class="kn">import</span> <span class="n">monkey</span>
+<span class="n">monkey</span><span class="o">.</span><span class="n">patch_all</span><span class="p">()</span>
+
+<span class="kn">import</span> <span class="nn">sys</span><span class="o">,</span> <span class="nn">os</span><span class="o">,</span> <span class="nn">os.path</span><span class="o">,</span> <span class="nn">datetime</span><span class="o">,</span> <span class="nn">gevent</span>
+<span class="kn">from</span> <span class="nn">owlready2</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="kn">from</span> <span class="nn">fullpy.server</span> <span class="kn">import</span> <span class="o">*</span>
+</pre></div>
+</div>
+<p>Second, we create a new World for storing persistent data. Data is stored in <code class="docutils literal notranslate"><span class="pre">/tmp/demo_chat.sqlite3</span></code>
+(you may need to adapt the filename according to your system).</p>
+<p>We load the FullPy ontology (which define a few classes, like User, Session and Group), and create a new ontology “chat.owl”.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">world</span>       <span class="o">=</span> <span class="n">World</span><span class="p">(</span><span class="n">filename</span> <span class="o">=</span> <span class="s2">&quot;/tmp/demo_chat.sqlite3&quot;</span><span class="p">)</span>
+<span class="n">fullpy_onto</span> <span class="o">=</span> <span class="n">get_fullpy_onto</span><span class="p">(</span><span class="n">world</span><span class="p">)</span>
+<span class="n">chat_onto</span>   <span class="o">=</span> <span class="n">world</span><span class="o">.</span><span class="n">get_ontology</span><span class="p">(</span><span class="s2">&quot;http://test.org/chat.owl&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Third, within the chat ontology, we subclass User, Session and Group.</p>
+<p>The Group subclass is named ChatRoom, it has an internal name (<code class="docutils literal notranslate"><span class="pre">name</span></code> attribute, automatically generated by Owlready)
+and a user-flrendly label (<code class="docutils literal notranslate"><span class="pre">label</span></code> attribute).</p>
+<dl class="simple">
+<dt>We also create a simple object model for chat:</dt><dd><ul class="simple">
+<li><p>the <code class="docutils literal notranslate"><span class="pre">Message</span></code> class correspond to a message in the chat, the <code class="docutils literal notranslate"><span class="pre">as_tuple()</span></code> method is used to serialize a message as a tuple,</p></li>
+<li><p>the <code class="docutils literal notranslate"><span class="pre">text</span></code> data property indicate the text of a message,</p></li>
+<li><p>the <code class="docutils literal notranslate"><span class="pre">date</span></code> data property indicate the date of a message,</p></li>
+<li><p>the <code class="docutils literal notranslate"><span class="pre">messages</span></code> object property indicate the list of messages associated with a given Group.</p></li>
+</ul>
+</dd>
+</dl>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">with</span> <span class="n">chat_onto</span><span class="p">:</span>
+  <span class="k">class</span> <span class="nc">MyUser</span><span class="p">(</span><span class="n">fullpy_onto</span><span class="o">.</span><span class="n">User</span><span class="p">):</span> <span class="k">pass</span>
+
+  <span class="k">class</span> <span class="nc">MySession</span><span class="p">(</span><span class="n">fullpy_onto</span><span class="o">.</span><span class="n">Session</span><span class="p">):</span> <span class="k">pass</span>
+
+  <span class="k">class</span> <span class="nc">ChatRoom</span><span class="p">(</span><span class="n">fullpy_onto</span><span class="o">.</span><span class="n">Group</span><span class="p">):</span> <span class="k">pass</span>
+
+  <span class="k">class</span> <span class="nc">Message</span><span class="p">(</span><span class="n">Thing</span><span class="p">):</span>
+    <span class="k">def</span> <span class="nf">as_tuple</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+      <span class="k">return</span> <span class="p">(</span><span class="s2">&quot;</span><span class="si">%s</span><span class="s2">/</span><span class="si">%s</span><span class="s2">/</span><span class="si">%s</span><span class="s2"> </span><span class="si">%s</span><span class="s2">:</span><span class="si">%s</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">date</span><span class="o">.</span><span class="n">day</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">date</span><span class="o">.</span><span class="n">month</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">date</span><span class="o">.</span><span class="n">year</span><span class="p">,</span>
+                                  <span class="bp">self</span><span class="o">.</span><span class="n">date</span><span class="o">.</span><span class="n">hour</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">date</span><span class="o">.</span><span class="n">minute</span><span class="p">),</span> <span class="bp">self</span><span class="o">.</span><span class="n">user</span><span class="o">.</span><span class="n">login</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">text</span><span class="p">)</span>
+
+  <span class="k">class</span> <span class="nc">text</span><span class="p">(</span><span class="n">Message</span> <span class="o">&gt;&gt;</span> <span class="nb">str</span><span class="p">,</span> <span class="n">FunctionalProperty</span><span class="p">):</span> <span class="k">pass</span>
+  <span class="k">class</span> <span class="nc">date</span><span class="p">(</span><span class="n">Message</span> <span class="o">&gt;&gt;</span> <span class="n">datetime</span><span class="o">.</span><span class="n">datetime</span><span class="p">,</span> <span class="n">FunctionalProperty</span><span class="p">):</span> <span class="k">pass</span>
+  <span class="k">class</span> <span class="nc">messages</span><span class="p">(</span><span class="n">ChatRoom</span> <span class="o">&gt;&gt;</span> <span class="n">Message</span><span class="p">):</span> <span class="k">pass</span>
+</pre></div>
+</div>
+<p>Fourth, we create 3 users and 3 chat rooms:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">chat_onto</span><span class="o">.</span><span class="n">MyUser</span><span class="p">(</span><span class="n">login</span> <span class="o">=</span> <span class="s2">&quot;user1&quot;</span><span class="p">,</span> <span class="n">password</span> <span class="o">=</span> <span class="s2">&quot;123&quot;</span><span class="p">)</span>
+<span class="n">chat_onto</span><span class="o">.</span><span class="n">MyUser</span><span class="p">(</span><span class="n">login</span> <span class="o">=</span> <span class="s2">&quot;user2&quot;</span><span class="p">,</span> <span class="n">password</span> <span class="o">=</span> <span class="s2">&quot;123&quot;</span><span class="p">)</span>
+<span class="n">chat_onto</span><span class="o">.</span><span class="n">MyUser</span><span class="p">(</span><span class="n">login</span> <span class="o">=</span> <span class="s2">&quot;user3&quot;</span><span class="p">,</span> <span class="n">password</span> <span class="o">=</span> <span class="s2">&quot;123&quot;</span><span class="p">)</span>
+
+<span class="n">chat_onto</span><span class="o">.</span><span class="n">ChatRoom</span><span class="p">(</span><span class="n">label</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;Python programming&quot;</span><span class="p">])</span>
+<span class="n">chat_onto</span><span class="o">.</span><span class="n">ChatRoom</span><span class="p">(</span><span class="n">label</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;Bird watching&quot;</span><span class="p">])</span>
+<span class="n">chat_onto</span><span class="o">.</span><span class="n">ChatRoom</span><span class="p">(</span><span class="n">label</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;Bike riding&quot;</span><span class="p">])</span>
+</pre></div>
+</div>
+<p>Fifth, we create the web app server class by subclassing ServerSideWebapp.</p>
+<p>In <code class="docutils literal notranslate"><span class="pre">__init__()</span></code> we call <code class="docutils literal notranslate"><span class="pre">use_python_client()</span></code>, <code class="docutils literal notranslate"><span class="pre">use_ontology_quadstore()</span></code>, <code class="docutils literal notranslate"><span class="pre">use_session()</span></code> and <code class="docutils literal notranslate"><span class="pre">use_websocket()</span></code>.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">MyWebApp</span><span class="p">(</span><span class="n">ServerSideWebapp</span><span class="p">):</span>
+  <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+    <span class="n">ServerSideWebapp</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">name</span>          <span class="o">=</span> <span class="s2">&quot;demo_4&quot;</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">title</span>         <span class="o">=</span> <span class="s2">&quot;FullPy demo&quot;</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">url</span>           <span class="o">=</span> <span class="s2">&quot;/index.html&quot;</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">static_folder</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">dirname</span><span class="p">(</span><span class="vm">__file__</span><span class="p">),</span> <span class="s2">&quot;..&quot;</span><span class="p">,</span> <span class="s2">&quot;static&quot;</span><span class="p">)</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">js</span>            <span class="o">=</span> <span class="p">[]</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">css</span>           <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;demo_4.css&quot;</span><span class="p">]</span>
+
+    <span class="bp">self</span><span class="o">.</span><span class="n">use_python_client</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">dirname</span><span class="p">(</span><span class="vm">__file__</span><span class="p">),</span> <span class="s2">&quot;client.py&quot;</span><span class="p">))</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">use_ontology_quadstore</span><span class="p">(</span><span class="n">world</span><span class="p">)</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">use_session</span><span class="p">(</span><span class="n">chat_onto</span><span class="o">.</span><span class="n">MySession</span><span class="p">,</span> <span class="n">chat_onto</span><span class="o">.</span><span class="n">ChatRoom</span><span class="p">)</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">use_websocket</span><span class="p">(</span><span class="n">debug</span> <span class="o">=</span> <span class="kc">True</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Sixth, we define four remotely-callable methods:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">server_get_chat_room_names()</span></code>: returns a dict mapping chat room names to their labels.</p></li>
+</ul>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="nd">@rpc</span>
+<span class="k">def</span> <span class="nf">server_get_chat_room_names</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">session</span><span class="p">):</span>
+  <span class="k">return</span> <span class="p">{</span> <span class="n">chat_room</span><span class="o">.</span><span class="n">name</span> <span class="p">:</span> <span class="n">chat_room</span><span class="o">.</span><span class="n">label</span><span class="o">.</span><span class="n">first</span><span class="p">()</span> <span class="k">for</span> <span class="n">chat_room</span> <span class="ow">in</span> <span class="n">ChatRoom</span><span class="o">.</span><span class="n">instances</span><span class="p">()</span> <span class="p">}</span>
+</pre></div>
+</div>
+<ul class="simple">
+<li><dl class="simple">
+<dt><code class="docutils literal notranslate"><span class="pre">server_join_chat_room()</span></code>: joins the given chat room (indicated by its name).</dt><dd><p>The current client (identified by its session) joins the given chat room (and implicitely leaves the current one).
+This method calls <code class="docutils literal notranslate"><span class="pre">session.join_group()</span></code>.
+It returns the list of messages in the chat room.</p>
+</dd>
+</dl>
+</li>
+</ul>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="nd">@rpc</span>
+<span class="k">def</span> <span class="nf">server_join_chat_room</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">session</span><span class="p">,</span> <span class="n">chat_room_name</span><span class="p">):</span>
+  <span class="k">if</span> <span class="n">session</span><span class="o">.</span><span class="n">groups</span><span class="p">:</span> <span class="n">session</span><span class="o">.</span><span class="n">quit_group</span><span class="p">(</span><span class="n">session</span><span class="o">.</span><span class="n">groups</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+  <span class="n">chat_room</span> <span class="o">=</span> <span class="n">chat_onto</span><span class="p">[</span><span class="n">chat_room_name</span><span class="p">]</span>
+  <span class="n">session</span><span class="o">.</span><span class="n">join_group</span><span class="p">(</span><span class="n">chat_room</span><span class="p">)</span>
+  <span class="k">return</span> <span class="p">[</span><span class="n">message</span><span class="o">.</span><span class="n">as_tuple</span><span class="p">()</span> <span class="k">for</span> <span class="n">message</span> <span class="ow">in</span> <span class="nb">sorted</span><span class="p">(</span><span class="n">chat_room</span><span class="o">.</span><span class="n">messages</span><span class="p">,</span> <span class="n">key</span> <span class="o">=</span> <span class="k">lambda</span> <span class="n">message</span><span class="p">:</span> <span class="n">message</span><span class="o">.</span><span class="n">date</span><span class="p">)]</span>
+</pre></div>
+</div>
+<ul class="simple">
+<li><dl class="simple">
+<dt><code class="docutils literal notranslate"><span class="pre">server_create_chat_room()</span></code>: creates a new chat room.</dt><dd><p>This method create a new instance of the ChatRoom class.
+The new chat room is automatically stored in the ontology quadstore.
+Finally, it calls <code class="docutils literal notranslate"><span class="pre">client_new_chat_room()</span></code> for all clients,
+in order to inform them of the existence of the new chat room.</p>
+</dd>
+</dl>
+</li>
+</ul>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="nd">@rpc</span>
+<span class="k">def</span> <span class="nf">server_create_chat_room</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">session</span><span class="p">,</span> <span class="n">chat_room_label</span><span class="p">):</span>
+  <span class="k">with</span> <span class="n">chat_onto</span><span class="p">:</span>
+    <span class="n">chat_room</span> <span class="o">=</span> <span class="n">chat_onto</span><span class="o">.</span><span class="n">ChatRoom</span><span class="p">(</span><span class="n">label</span> <span class="o">=</span> <span class="n">chat_room_label</span><span class="p">)</span>
+  <span class="bp">self</span><span class="o">.</span><span class="n">client_new_chat_room</span><span class="p">(</span><span class="kc">None</span><span class="p">,</span> <span class="n">chat_room</span><span class="o">.</span><span class="n">name</span><span class="p">,</span> <span class="n">chat_room_label</span><span class="p">)</span>
+</pre></div>
+</div>
+<ul class="simple">
+<li><dl class="simple">
+<dt><code class="docutils literal notranslate"><span class="pre">server_add_message()</span></code>: adds a new message in the current session’s chat room.</dt><dd><p>This method create a new instance of the Message class, and add it to the session’s current chat room.
+Finally, it calls <code class="docutils literal notranslate"><span class="pre">client_new_message()</span></code> for all client in the chat room (remember that ChatRoom inherit from Group,
+and <code class="docutils literal notranslate"><span class="pre">client_xxx()</span></code> remote functions can be called on a Group).</p>
+</dd>
+</dl>
+</li>
+</ul>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="nd">@rpc</span>
+ <span class="k">def</span> <span class="nf">server_add_message</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">session</span><span class="p">,</span> <span class="n">text</span><span class="p">):</span>
+   <span class="n">chat_room</span> <span class="o">=</span> <span class="n">session</span><span class="o">.</span><span class="n">groups</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+   <span class="k">with</span> <span class="n">chat_onto</span><span class="p">:</span>
+     <span class="n">message</span> <span class="o">=</span> <span class="n">chat_onto</span><span class="o">.</span><span class="n">Message</span><span class="p">(</span><span class="n">date</span> <span class="o">=</span> <span class="n">datetime</span><span class="o">.</span><span class="n">datetime</span><span class="o">.</span><span class="n">now</span><span class="p">(),</span> <span class="n">user</span> <span class="o">=</span> <span class="n">session</span><span class="o">.</span><span class="n">user</span><span class="p">,</span> <span class="n">text</span> <span class="o">=</span> <span class="n">text</span><span class="p">)</span>
+     <span class="n">chat_room</span><span class="o">.</span><span class="n">messages</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">message</span><span class="p">)</span>
+   <span class="n">chat_room</span><span class="o">.</span><span class="n">client_new_message</span><span class="p">(</span><span class="kc">None</span><span class="p">,</span> <span class="o">*</span><span class="n">message</span><span class="o">.</span><span class="n">as_tuple</span><span class="p">())</span>
+</pre></div>
+</div>
+<p>Seventh, we run the web app with GUnicorn:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">fullpy.server.gunicorn_backend</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="n">serve_forever</span><span class="p">([</span><span class="n">MyWebApp</span><span class="p">()],</span> <span class="s2">&quot;http://127.0.0.1:5000&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</section>
+<section id="client">
+<h3>Client<a class="headerlink" href="#client" title="Link to this heading"></a></h3>
+<p>First, we import Fullpy:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">fullpy.client</span> <span class="kn">import</span> <span class="o">*</span>
+<span class="kn">from</span> <span class="nn">fullpy.client.auth</span> <span class="kn">import</span> <span class="o">*</span>
+</pre></div>
+</div>
+<p>Second, we create the client web app by subclassing ClientSideWebapp. In <code class="docutils literal notranslate"><span class="pre">__init__()</span></code>, we create two attributes,
+chat_room (the name of the current chat room) and messages (the list of messages in the current chat room).</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">MyWebApp</span><span class="p">(</span><span class="n">ClientSideWebapp</span><span class="p">):</span>
+  <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+    <span class="n">ClientSideWebapp</span><span class="o">.</span><span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">chat_room</span> <span class="o">=</span> <span class="kc">None</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">messages</span>  <span class="o">=</span> <span class="p">[]</span>
+</pre></div>
+</div>
+<p>Third, we override <code class="docutils literal notranslate"><span class="pre">on_session_opened()</span></code>. This methods is called when a new session is opened (anonymous or authentified).</p>
+<p>If the session is anonymous (i.e. user_login is empty), we show a LoginDialog to prompt user for login.</p>
+<p>Otherwise, we call <code class="docutils literal notranslate"><span class="pre">server_get_chat_room_names()</span></code> on the server, in order to obtain the dict of available chat rooms.
+When the dict is obtained, <code class="docutils literal notranslate"><span class="pre">done()</span></code> is called back, and we store the dict and call <code class="docutils literal notranslate"><span class="pre">select_chat_room()</span></code> to select
+by default the first chat room.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">on_session_opened</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">user_login</span><span class="p">,</span> <span class="n">user_class</span><span class="p">,</span> <span class="n">client_data</span><span class="p">):</span>
+  <span class="k">if</span> <span class="ow">not</span> <span class="n">user_login</span><span class="p">:</span>
+    <span class="n">LoginDialog</span><span class="p">(</span><span class="kc">None</span><span class="p">)</span><span class="o">.</span><span class="n">show_popup</span><span class="p">()</span>
+    <span class="k">return</span>
+
+  <span class="k">def</span> <span class="nf">done</span><span class="p">(</span><span class="n">chat_room_names</span><span class="p">):</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">chat_room_names</span> <span class="o">=</span> <span class="n">chat_room_names</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">select_chat_room</span><span class="p">(</span><span class="nb">sorted</span><span class="p">(</span><span class="n">chat_room_names</span><span class="p">)[</span><span class="mi">0</span><span class="p">])</span>
+  <span class="bp">self</span><span class="o">.</span><span class="n">server_get_chat_room_names</span><span class="p">(</span><span class="n">done</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Fourth, we define the <code class="docutils literal notranslate"><span class="pre">select_chat_room()</span></code> method. It calls <code class="docutils literal notranslate"><span class="pre">server_join_chat_room()</span></code> on the server and, when done,
+it stores the chat room name, the current messages returned by the sever, and call <code class="docutils literal notranslate"><span class="pre">create_html()</span></code>.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">select_chat_room</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">name</span><span class="p">):</span>
+  <span class="k">def</span> <span class="nf">done</span><span class="p">(</span><span class="n">messages</span><span class="p">):</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">chat_room</span> <span class="o">=</span> <span class="n">name</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">messages</span>  <span class="o">=</span> <span class="n">messages</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">create_html</span><span class="p">()</span>
+  <span class="bp">self</span><span class="o">.</span><span class="n">server_join_chat_room</span><span class="p">(</span><span class="n">done</span><span class="p">,</span> <span class="n">name</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Fifth, we define the <code class="docutils literal notranslate"><span class="pre">create_html()</span></code> method. It creates the main HTML interface, which is composed of 3 HTML widgets
+(chat room list on the left, message view on the right, and entry box at the bottom right).
+It assembles the 3 widgets inside an HTML table, and shows it.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">create_html</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+  <span class="bp">self</span><span class="o">.</span><span class="n">chat_room_list</span> <span class="o">=</span> <span class="n">ChatRoomList</span><span class="p">()</span>
+  <span class="bp">self</span><span class="o">.</span><span class="n">message_view</span>   <span class="o">=</span> <span class="n">MessageView</span><span class="p">()</span>
+  <span class="bp">self</span><span class="o">.</span><span class="n">entry_box</span>      <span class="o">=</span> <span class="n">EntryBox</span><span class="p">()</span>
+
+  <span class="bp">self</span><span class="o">.</span><span class="n">main_html</span> <span class="o">=</span> <span class="n">HTML</span><span class="p">()</span>
+  <span class="bp">self</span><span class="o">.</span><span class="n">main_html</span> <span class="o">&lt;&lt;</span> <span class="s2">&quot;&quot;&quot;&lt;table id=&quot;chat_table&quot; cellspacing=&quot;0&quot;&gt;&lt;tr&gt;&lt;td&gt;&quot;&quot;&quot;</span>
+  <span class="bp">self</span><span class="o">.</span><span class="n">main_html</span> <span class="o">&lt;&lt;</span> <span class="bp">self</span><span class="o">.</span><span class="n">chat_room_list</span>
+  <span class="bp">self</span><span class="o">.</span><span class="n">main_html</span> <span class="o">&lt;&lt;</span> <span class="s2">&quot;&quot;&quot;&lt;/td&gt;&lt;td&gt;&quot;&quot;&quot;</span>
+  <span class="bp">self</span><span class="o">.</span><span class="n">main_html</span> <span class="o">&lt;&lt;</span> <span class="bp">self</span><span class="o">.</span><span class="n">message_view</span>
+  <span class="bp">self</span><span class="o">.</span><span class="n">main_html</span> <span class="o">&lt;&lt;</span> <span class="bp">self</span><span class="o">.</span><span class="n">entry_box</span>
+  <span class="bp">self</span><span class="o">.</span><span class="n">main_html</span> <span class="o">&lt;&lt;</span> <span class="s2">&quot;&quot;&quot;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&quot;&quot;&quot;</span>
+  <span class="bp">self</span><span class="o">.</span><span class="n">main_html</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+<p>Sixth, we define the <code class="docutils literal notranslate"><span class="pre">client_new_chat_room()</span></code> remotely-callable method.
+It is called by the server whenever a new chat room has been created.
+In that case, we update the dict of chat room names, and we refresh the chat room list HTML widget.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="nd">@rpc</span>
+<span class="k">def</span> <span class="nf">client_new_chat_room</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">chat_room_name</span><span class="p">,</span> <span class="n">chat_room_label</span><span class="p">):</span>
+  <span class="n">webapp</span><span class="o">.</span><span class="n">chat_room_names</span><span class="p">[</span><span class="n">chat_room_name</span><span class="p">]</span> <span class="o">=</span> <span class="n">chat_room_label</span>
+  <span class="n">webapp</span><span class="o">.</span><span class="n">chat_room_list</span><span class="o">.</span><span class="n">refresh</span><span class="p">()</span>
+</pre></div>
+</div>
+<p>Seventh, we define the <code class="docutils literal notranslate"><span class="pre">client_new_message()</span></code> remotely-callable method.
+It is called by the server whenever a new message is available in the current chat room.
+In that case, we add the message to the list of current messages,
+and we call <code class="docutils literal notranslate"><span class="pre">add_message()</span></code> on the message view HTML widget.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="nd">@rpc</span>
+<span class="k">def</span> <span class="nf">client_new_message</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">date</span><span class="p">,</span> <span class="n">user_login</span><span class="p">,</span> <span class="n">message_text</span><span class="p">):</span>
+  <span class="n">webapp</span><span class="o">.</span><span class="n">messages</span><span class="o">.</span><span class="n">append</span><span class="p">((</span><span class="n">date</span><span class="p">,</span> <span class="n">user_login</span><span class="p">,</span> <span class="n">message_text</span><span class="p">))</span>
+  <span class="n">webapp</span><span class="o">.</span><span class="n">message_view</span><span class="o">.</span><span class="n">add_message</span><span class="p">(</span><span class="n">date</span><span class="p">,</span> <span class="n">user_login</span><span class="p">,</span> <span class="n">message_text</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>The ChatRoomList HTML widget shows the list of available chat rooms.
+It also has a “Create new room…” button. When clicked, it creates and shows an instance of the NewRoomDialog HTML widget.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">ChatRoomList</span><span class="p">(</span><span class="n">HTML</span><span class="p">):</span>
+  <span class="k">def</span> <span class="nf">build</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">builder</span><span class="p">):</span>
+    <span class="bp">self</span> <span class="o">&lt;&lt;</span> <span class="s2">&quot;&quot;&quot;&lt;div id=&quot;chat_room_list&quot;&gt;&lt;div class=&quot;title&quot;&gt;FullPy Chat rooms :&lt;/div&gt;&quot;&quot;&quot;</span>
+    <span class="k">for</span> <span class="n">name</span><span class="p">,</span> <span class="n">label</span> <span class="ow">in</span> <span class="nb">sorted</span><span class="p">(</span><span class="n">webapp</span><span class="o">.</span><span class="n">chat_room_names</span><span class="o">.</span><span class="n">items</span><span class="p">(),</span> <span class="n">key</span> <span class="o">=</span> <span class="k">lambda</span> <span class="n">i</span><span class="p">:</span> <span class="n">i</span><span class="p">[</span><span class="mi">1</span><span class="p">]):</span>
+      <span class="k">if</span> <span class="n">name</span> <span class="o">==</span> <span class="n">webapp</span><span class="o">.</span><span class="n">chat_room</span><span class="p">:</span>
+        <span class="bp">self</span> <span class="o">&lt;&lt;</span> <span class="s2">&quot;&quot;&quot;&lt;div id=&quot;chat_room_</span><span class="si">%s</span><span class="s2">&quot; class=&quot;chat_room selected&quot;&gt;</span><span class="si">%s</span><span class="s2">&lt;/div&gt;&quot;&quot;&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="n">name</span><span class="p">,</span> <span class="n">label</span><span class="p">)</span>
+      <span class="k">else</span><span class="p">:</span>
+        <span class="bp">self</span> <span class="o">&lt;&lt;</span> <span class="s2">&quot;&quot;&quot;&lt;div id=&quot;chat_room_</span><span class="si">%s</span><span class="s2">&quot; class=&quot;chat_room&quot;&gt;</span><span class="si">%s</span><span class="s2">&lt;/div&gt;&quot;&quot;&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="n">name</span><span class="p">,</span> <span class="n">label</span><span class="p">)</span>
+      <span class="k">def</span> <span class="nf">on_click</span><span class="p">(</span><span class="n">event</span><span class="p">,</span> <span class="n">name</span> <span class="o">=</span> <span class="n">name</span><span class="p">):</span>
+        <span class="n">webapp</span><span class="o">.</span><span class="n">select_chat_room</span><span class="p">(</span><span class="n">name</span><span class="p">)</span>
+      <span class="bp">self</span><span class="o">.</span><span class="n">bind</span><span class="p">(</span><span class="s2">&quot;chat_room_</span><span class="si">%s</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="n">name</span><span class="p">,</span> <span class="s2">&quot;click&quot;</span><span class="p">,</span> <span class="n">on_click</span><span class="p">)</span>
+    <span class="bp">self</span> <span class="o">&lt;&lt;</span> <span class="s2">&quot;&quot;&quot;&lt;input id=&quot;new_room&quot; type=&quot;button&quot; value=&quot;Create new room...&quot;&gt;&lt;/input&gt;&quot;&quot;&quot;</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">bind</span><span class="p">(</span><span class="s2">&quot;new_room&quot;</span><span class="p">,</span> <span class="s2">&quot;click&quot;</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">on_new_room</span><span class="p">)</span>
+    <span class="bp">self</span> <span class="o">&lt;&lt;</span> <span class="s2">&quot;&quot;&quot;&lt;/div&gt;&quot;&quot;&quot;</span>
+
+  <span class="k">def</span> <span class="nf">on_new_room</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">event</span><span class="p">):</span> <span class="n">NewRoomDialog</span><span class="p">()</span><span class="o">.</span><span class="n">show_popup</span><span class="p">()</span>
+
+  <span class="k">def</span> <span class="nf">refresh</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span> <span class="bp">self</span><span class="o">.</span><span class="n">show_replace</span><span class="p">(</span><span class="s2">&quot;chat_room_list&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>The NewRoomDialog HTML widget ask the user for the label of the new room.
+If the “Ok” button is clicked, it calls the <code class="docutils literal notranslate"><span class="pre">server_create_chat_room()</span></code> remotely-callable function.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">NewRoomDialog</span><span class="p">(</span><span class="n">HTML</span><span class="p">):</span>
+  <span class="k">def</span> <span class="nf">build</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">builder</span><span class="p">):</span>
+    <span class="bp">self</span> <span class="o">&lt;&lt;</span> <span class="s2">&quot;&quot;&quot;&lt;h2&gt;Create new chat room :&lt;/h2&gt;&quot;&quot;&quot;</span>
+    <span class="bp">self</span> <span class="o">&lt;&lt;</span> <span class="s2">&quot;&quot;&quot;Room label : &lt;input id=&quot;chat_room_label&quot; type=&quot;text&quot;&gt;&lt;/input&gt;&lt;br/&gt;&lt;br/&gt;&quot;&quot;&quot;</span>
+    <span class="bp">self</span> <span class="o">&lt;&lt;</span> <span class="s2">&quot;&quot;&quot;&lt;input id=&quot;ok&quot; type=&quot;button&quot; value=&quot;Ok&quot;&gt;&lt;/input&gt;&quot;&quot;&quot;</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">bind</span><span class="p">(</span><span class="s2">&quot;ok&quot;</span><span class="p">,</span> <span class="s2">&quot;click&quot;</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">on_ok</span><span class="p">)</span>
+
+  <span class="k">def</span> <span class="nf">on_ok</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">event</span><span class="p">):</span>
+    <span class="n">chat_room_label</span> <span class="o">=</span> <span class="n">document</span><span class="p">[</span><span class="s2">&quot;chat_room_label&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">value</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span>
+    <span class="n">webapp</span><span class="o">.</span><span class="n">server_create_chat_room</span><span class="p">(</span><span class="kc">None</span><span class="p">,</span> <span class="n">chat_room_label</span><span class="p">)</span>
+    <span class="n">hide_popup</span><span class="p">()</span>
+</pre></div>
+</div>
+<p>The MessageView HTML widget show the list of messages.
+It has a <code class="docutils literal notranslate"><span class="pre">add_message()</span></code> method, that is used to add new message.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">MessageView</span><span class="p">(</span><span class="n">HTML</span><span class="p">):</span>
+  <span class="k">def</span> <span class="nf">build</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">builder</span><span class="p">):</span>
+    <span class="bp">self</span> <span class="o">&lt;&lt;</span> <span class="s2">&quot;&quot;&quot;&lt;div id=&quot;message_view&quot;&gt;&quot;&quot;&quot;</span>
+    <span class="k">if</span> <span class="n">webapp</span><span class="o">.</span><span class="n">messages</span><span class="p">:</span>
+      <span class="k">for</span> <span class="n">date</span><span class="p">,</span> <span class="n">user_login</span><span class="p">,</span> <span class="n">message_text</span> <span class="ow">in</span> <span class="n">webapp</span><span class="o">.</span><span class="n">messages</span><span class="p">:</span>
+        <span class="bp">self</span> <span class="o">&lt;&lt;</span> <span class="bp">self</span><span class="o">.</span><span class="n">message_to_html</span><span class="p">(</span><span class="n">date</span><span class="p">,</span> <span class="n">user_login</span><span class="p">,</span> <span class="n">message_text</span><span class="p">)</span>
+    <span class="bp">self</span> <span class="o">&lt;&lt;</span> <span class="s2">&quot;&quot;&quot;&lt;/div&gt;&quot;&quot;&quot;</span>
+
+  <span class="k">def</span> <span class="nf">message_to_html</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">date</span><span class="p">,</span> <span class="n">user_login</span><span class="p">,</span> <span class="n">message_text</span><span class="p">):</span>
+    <span class="k">if</span> <span class="n">user_login</span> <span class="o">==</span> <span class="n">webapp</span><span class="o">.</span><span class="n">user_login</span><span class="p">:</span>
+      <span class="n">html</span> <span class="o">=</span> <span class="s2">&quot;&quot;&quot;&lt;div class=&quot;message self&quot;&gt;&quot;&quot;&quot;</span>
+    <span class="k">else</span><span class="p">:</span>
+      <span class="n">html</span> <span class="o">=</span> <span class="s2">&quot;&quot;&quot;&lt;div class=&quot;message&quot;&gt;&quot;&quot;&quot;</span>
+    <span class="n">html</span> <span class="o">+=</span> <span class="s2">&quot;&quot;&quot;&lt;div class=&quot;message_header&quot;&gt;</span><span class="si">%s</span><span class="s2"> (</span><span class="si">%s</span><span class="s2">) :&lt;/div&gt;&quot;&quot;&quot;</span> <span class="o">%</span> <span class="p">(</span><span class="n">user_login</span><span class="p">,</span> <span class="n">date</span><span class="p">)</span>
+    <span class="n">html</span> <span class="o">+=</span> <span class="s2">&quot;&quot;&quot;&lt;div class=&quot;message_content&quot;&gt;</span><span class="si">%s</span><span class="s2">&lt;/div&gt;&lt;/div&gt;&quot;&quot;&quot;</span> <span class="o">%</span> <span class="n">message_text</span>
+    <span class="k">return</span> <span class="n">html</span>
+
+  <span class="k">def</span> <span class="nf">add_message</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">date</span><span class="p">,</span> <span class="n">user_login</span><span class="p">,</span> <span class="n">message_text</span><span class="p">):</span>
+    <span class="n">document</span><span class="p">[</span><span class="s2">&quot;message_view&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">insertAdjacentHTML</span><span class="p">(</span><span class="s2">&quot;beforeend&quot;</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">message_to_html</span><span class="p">(</span><span class="n">date</span><span class="p">,</span> <span class="n">user_login</span><span class="p">,</span> <span class="n">message_text</span><span class="p">))</span>
+</pre></div>
+</div>
+<p>The EntryBox HTML widget is an input field that can be used to enter new messages.
+When a new message is entered, it call the <code class="docutils literal notranslate"><span class="pre">server_add_message()</span></code> remotely-callable function.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">EntryBox</span><span class="p">(</span><span class="n">HTML</span><span class="p">):</span>
+  <span class="k">def</span> <span class="nf">build</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">builder</span><span class="p">):</span>
+    <span class="bp">self</span> <span class="o">&lt;&lt;</span> <span class="s2">&quot;&quot;&quot;&lt;div id=&quot;entry_box&quot;&gt;&quot;&quot;&quot;</span>
+    <span class="bp">self</span> <span class="o">&lt;&lt;</span> <span class="s2">&quot;&quot;&quot;&lt;table id=&quot;entry_table&quot;&gt;&lt;tr&gt;&lt;td&gt;Say&amp;nbsp;something:&lt;/td&gt;&quot;&quot;&quot;</span>
+    <span class="bp">self</span> <span class="o">&lt;&lt;</span> <span class="s2">&quot;&quot;&quot;&lt;td id=&quot;entry_td&quot;&gt;&lt;input id=&quot;entry&quot; type=&quot;text&quot;&gt;&lt;/input&gt;&lt;/td&gt;&quot;&quot;&quot;</span>
+    <span class="bp">self</span> <span class="o">&lt;&lt;</span> <span class="s2">&quot;&quot;&quot;&lt;td&gt;&lt;input id=&quot;send&quot; type=&quot;button&quot; value=&quot;Send&quot;&gt;&lt;/input&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&quot;&quot;&quot;</span>
+    <span class="bp">self</span> <span class="o">&lt;&lt;</span> <span class="s2">&quot;&quot;&quot;&lt;/div&gt;&quot;&quot;&quot;</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">bind</span><span class="p">(</span><span class="s2">&quot;entry&quot;</span><span class="p">,</span> <span class="s2">&quot;keypress&quot;</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">on_keypress</span><span class="p">)</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">bind</span><span class="p">(</span><span class="s2">&quot;send&quot;</span><span class="p">,</span>  <span class="s2">&quot;click&quot;</span><span class="p">,</span>    <span class="bp">self</span><span class="o">.</span><span class="n">on_send</span><span class="p">)</span>
+
+  <span class="k">def</span> <span class="nf">on_keypress</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">event</span><span class="p">):</span>
+    <span class="k">if</span> <span class="n">event</span><span class="o">.</span><span class="n">key</span> <span class="o">==</span> <span class="s2">&quot;Enter&quot;</span><span class="p">:</span> <span class="bp">self</span><span class="o">.</span><span class="n">on_send</span><span class="p">(</span><span class="n">event</span><span class="p">)</span>
+
+  <span class="k">def</span> <span class="nf">on_send</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">event</span><span class="p">):</span>
+    <span class="n">text</span> <span class="o">=</span> <span class="n">document</span><span class="p">[</span><span class="s2">&quot;entry&quot;</span><span class="p">]</span><span class="o">.</span><span class="n">value</span><span class="o">.</span><span class="n">strip</span><span class="p">()</span>
+    <span class="k">if</span> <span class="n">text</span><span class="p">:</span>
+      <span class="n">webapp</span><span class="o">.</span><span class="n">server_add_message</span><span class="p">(</span><span class="kc">None</span><span class="p">,</span> <span class="n">text</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Finally, we instanciate the web app:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">MyWebApp</span><span class="p">()</span>
+</pre></div>
+</div>
+</section>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="serializer.html" class="btn btn-neutral float-left" title="Sessions" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="contact.html" class="btn btn-neutral float-right" title="Contact and links" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2022-2023, Jean-Baptiste LAMY.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

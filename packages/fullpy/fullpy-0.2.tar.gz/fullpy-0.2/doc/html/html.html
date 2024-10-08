@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="./">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HTML widget system &mdash; FullPy 0.2 documentation</title>
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=fa44fd50" />
+      <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=19f00094" />
+
+  
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="_static/jquery.js?v=5d32c60e"></script>
+        <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="_static/documentation_options.js?v=10f1778b"></script>
+        <script src="_static/doctools.js?v=9a2dae69"></script>
+        <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Translations support" href="translations.html" />
+    <link rel="prev" title="Remote function calls (RPC, remote procedure call)" href="rpc.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="index.html" class="icon icon-home">
+            FullPy
+          </a>
+              <div class="version">
+                0.2
+              </div>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="install.html">Installing FullPy</a></li>
+<li class="toctree-l1"><a class="reference internal" href="start.html">Starting a new project with FullPy</a></li>
+<li class="toctree-l1"><a class="reference internal" href="server.html">Server application</a></li>
+<li class="toctree-l1"><a class="reference internal" href="client.html">Client application</a></li>
+<li class="toctree-l1"><a class="reference internal" href="backends.html">Backends</a></li>
+<li class="toctree-l1"><a class="reference internal" href="rpc.html">Remote function calls (RPC, remote procedure call)</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">HTML widget system</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#creating-html-pieces">Creating HTML pieces</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#bind"><code class="docutils literal notranslate"><span class="pre">bind()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#creating-html-widgets">Creating HTML widgets</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#displaying-an-html-piece">Displaying an HTML piece</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#show"><code class="docutils literal notranslate"><span class="pre">show()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#show_replace"><code class="docutils literal notranslate"><span class="pre">show_replace()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#show_popup"><code class="docutils literal notranslate"><span class="pre">show_popup()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#hide_popup"><code class="docutils literal notranslate"><span class="pre">hide_popup()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#refreshing-an-html-piece">Refreshing an HTML piece</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="translations.html">Translations support</a></li>
+<li class="toctree-l1"><a class="reference internal" href="onto.html">Creating a persistent object model Using ontologies</a></li>
+<li class="toctree-l1"><a class="reference internal" href="session.html">Sessions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="group.html">Groups</a></li>
+<li class="toctree-l1"><a class="reference internal" href="serializer.html">Sessions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="demos.html">Demos</a></li>
+<li class="toctree-l1"><a class="reference internal" href="contact.html">Contact and links</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">FullPy</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">HTML widget system</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/html.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="html-widget-system">
+<h1>HTML widget system<a class="headerlink" href="#html-widget-system" title="Link to this heading"></a></h1>
+<section id="creating-html-pieces">
+<h2>Creating HTML pieces<a class="headerlink" href="#creating-html-pieces" title="Link to this heading"></a></h2>
+<p>In the client, the HTML class can be used for creating and displaying pieces of HTML, and widgets.</p>
+<p>A simple, fixed, piece of HTML code can be created as follows:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">html</span> <span class="o">=</span> <span class="n">HTML</span><span class="p">(</span><span class="s2">&quot;&quot;&quot;&lt;div&gt;This is a &lt;b&gt;piece&lt;/b&gt; of HTML&lt;/div&gt;&quot;&quot;&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>It can also be created over several lines, as follows:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">html</span> <span class="o">=</span> <span class="n">HTML</span><span class="p">()</span>
+<span class="n">html</span> <span class="o">&lt;&lt;</span> <span class="s2">&quot;&quot;&quot;&lt;div&gt;First part&lt;/div&gt;&quot;&quot;&quot;</span>
+<span class="n">html</span> <span class="o">&lt;&lt;</span> <span class="s2">&quot;&quot;&quot;&lt;div&gt;Second part&lt;/div&gt;&quot;&quot;&quot;</span>
+<span class="n">html</span> <span class="o">&lt;&lt;</span> <span class="s2">&quot;&quot;&quot;&lt;div id=&quot;part3&quot;&gt;Third part&lt;/div&gt;&quot;&quot;&quot;</span>
+</pre></div>
+</div>
+<p>The bind() method can be used to bind function to Javascript events.</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="bind">
+<span class="sig-name descname"><span class="pre">bind</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">html_id</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">event</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">func</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#bind" title="Link to this definition"></a></dt>
+<dd><p>Bind a callback function to an event, for the given HTML id.
+Notice that the actual binding may not occur immediately, but when the HTML piece will be displayed in the web browser.
+For more information on the available events and the <code class="docutils literal notranslate"><span class="pre">func</span></code> argument, please refer to <a class="reference external" href="https://brython.info/static_doc/en/events.html">Brython documentation</a>.</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">html_id</span></code>: the ID the HTML element.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">event</span></code>: The name of the event.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">func</span></code>: a callable that will be called when the event occur.</p></li>
+</ul>
+</dd></dl>
+
+<p>Here is an example:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">on_click</span><span class="p">(</span><span class="n">event</span><span class="p">):</span>
+  <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;CLICKED!&quot;</span><span class="p">)</span>
+
+<span class="n">html</span><span class="o">.</span><span class="n">bind</span><span class="p">(</span><span class="s2">&quot;part3&quot;</span><span class="p">,</span> <span class="s2">&quot;click&quot;</span><span class="p">,</span> <span class="n">on_click</span><span class="p">)</span>
+</pre></div>
+</div>
+</section>
+<section id="creating-html-widgets">
+<h2>Creating HTML widgets<a class="headerlink" href="#creating-html-widgets" title="Link to this heading"></a></h2>
+<p>Finally, you can subclass HTML to create your own widget.</p>
+<p>Here is an example:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">MyWidget</span><span class="p">(</span><span class="n">HTML</span><span class="p">):</span>
+  <span class="k">def</span> <span class="nf">build</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">builder</span><span class="p">):</span>
+    <span class="bp">self</span> <span class="o">&lt;&lt;</span> <span class="s2">&quot;&quot;&quot;&lt;div&gt;First part&lt;/div&gt;&quot;&quot;&quot;</span>
+    <span class="bp">self</span> <span class="o">&lt;&lt;</span> <span class="s2">&quot;&quot;&quot;&lt;div&gt;Second part&lt;/div&gt;&quot;&quot;&quot;</span>
+    <span class="bp">self</span> <span class="o">&lt;&lt;</span> <span class="s2">&quot;&quot;&quot;&lt;input id=&quot;ok_</span><span class="si">%s</span><span class="s2">&quot; type=&quot;button&quot; value=&quot;Ok&quot;&gt;&lt;/input&gt;&quot;&quot;&quot;</span> <span class="o">%</span> <span class="nb">id</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">bind</span><span class="p">(</span><span class="s2">&quot;ok_</span><span class="si">%s</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="nb">id</span><span class="p">(</span><span class="bp">self</span><span class="p">),</span> <span class="s2">&quot;click&quot;</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">on_ok</span><span class="p">)</span>
+
+  <span class="k">def</span> <span class="nf">on_ok</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">event</span><span class="p">):</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;OK clicked&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>HTML widgets, i.e. subclasses of HTML, can also be inserted inside HTML pieces (including other widgets). For example:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">html</span> <span class="o">=</span> <span class="n">HTML</span><span class="p">()</span>
+<span class="n">html</span> <span class="o">&lt;&lt;</span> <span class="s2">&quot;&quot;&quot;&lt;div&gt;Plain HTML&lt;/div&gt;&quot;&quot;&quot;</span>
+<span class="n">html</span> <span class="o">&lt;&lt;</span> <span class="n">MyWidget</span><span class="p">()</span>
+</pre></div>
+</div>
+<p>Notice that HTML object does not create HTML ID for you: you have to create them.
+A common trick is to include the ID of the python object (= id(self) above) in the identifier, to garantee it is unique.</p>
+<p>Notice that, in the build() method, <strong>you can call remote functions</strong> from the server. In that case, the display
+of the HTML piece will be automatically delayed until obtaining the server response.</p>
+</section>
+<section id="displaying-an-html-piece">
+<h2>Displaying an HTML piece<a class="headerlink" href="#displaying-an-html-piece" title="Link to this heading"></a></h2>
+<p>The following methods of HTML objects can be used to display a HTML piece:</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="show">
+<span class="sig-name descname"><span class="pre">show</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">container</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'main_content'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#show" title="Link to this definition"></a></dt>
+<dd><p>Show the piece of HTML in the web browser.</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">container</span></code>: the HTML ID of the element that will display the HTML piece.
+By default, it is displayed in the entire HTML page.</p></li>
+</ul>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="show_replace">
+<span class="sig-name descname"><span class="pre">show_replace</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">replaced_id</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#show_replace" title="Link to this definition"></a></dt>
+<dd><p>Show the piece of HTML in the web browser, replacing the element of the given ID.</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">replaced_id</span></code>: the HTML ID of the element that will replaced by the HTML piece.</p></li>
+</ul>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="show_popup">
+<span class="sig-name descname"><span class="pre">show_popup</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">add_close_button</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">allow_close</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">container</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'popup_window'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#show_popup" title="Link to this definition"></a></dt>
+<dd><p>Show the piece of HTML in the web browser, in a popup window.</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">add_close_button</span></code>: if True, add a close button “X” at the top-right of the popup window.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">allow_close</span></code>: if True, the popup window is closed when the user click outside the window or press escape.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">container</span></code>: the HTML ID of the node that will used to display the popup window.</p></li>
+</ul>
+</dd></dl>
+
+<p>Finally, <code class="docutils literal notranslate"><span class="pre">hide_popup()</span></code> can be used to close the popup window.</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="hide_popup">
+<span class="sig-name descname"><span class="pre">hide_popup</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">event</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">container</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'popup_window'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#hide_popup" title="Link to this definition"></a></dt>
+<dd><p>Hide the current popup window.</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">event</span></code>: No-op argument (only present in order to allow the use of hide_popup() as a callback to Javascript events).</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">container</span></code>: the HTML ID of the node that is used to display the popup window.</p></li>
+</ul>
+</dd></dl>
+
+</section>
+<section id="refreshing-an-html-piece">
+<h2>Refreshing an HTML piece<a class="headerlink" href="#refreshing-an-html-piece" title="Link to this heading"></a></h2>
+<p>A common trick is to use show_replace() for refreshing an HTML widget, as in the following example:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">MyRefreshableWidget</span><span class="p">(</span><span class="n">HTML</span><span class="p">):</span>
+  <span class="k">def</span> <span class="nf">build</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">builder</span><span class="p">):</span>
+    <span class="bp">self</span> <span class="o">&lt;&lt;</span> <span class="s2">&quot;&quot;&quot;&lt;div id=&quot;widget_</span><span class="si">%s</span><span class="s2">&quot;&gt;&quot;&quot;&quot;</span> <span class="o">%</span> <span class="nb">id</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span>
+    <span class="bp">self</span> <span class="o">&lt;&lt;</span> <span class="s2">&quot;&quot;&quot;... [add content of the widget here]&quot;&quot;&quot;</span>
+    <span class="bp">self</span> <span class="o">&lt;&lt;</span> <span class="s2">&quot;&quot;&quot;&lt;/div&gt;&quot;&quot;&quot;</span>
+
+  <span class="k">def</span> <span class="nf">refresh</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">show_refresh</span><span class="p">(</span><span class="s2">&quot;widget_</span><span class="si">%s</span><span class="s2">&quot;</span> <span class="o">%</span> <span class="nb">id</span><span class="p">(</span><span class="bp">self</span><span class="p">))</span>
+</pre></div>
+</div>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="rpc.html" class="btn btn-neutral float-left" title="Remote function calls (RPC, remote procedure call)" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="translations.html" class="btn btn-neutral float-right" title="Translations support" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2022-2023, Jean-Baptiste LAMY.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
