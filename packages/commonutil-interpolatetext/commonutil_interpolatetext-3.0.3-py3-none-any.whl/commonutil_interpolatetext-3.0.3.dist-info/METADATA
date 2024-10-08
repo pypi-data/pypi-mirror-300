@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: commonutil-interpolatetext
+Version: 3.0.3
+Summary: Interpolate text template engine
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: POSIX
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+
+# commonutil-interpolatetext
+
+Interpolate text template engine.
+
+Please refer to [test/](test/) for usage.

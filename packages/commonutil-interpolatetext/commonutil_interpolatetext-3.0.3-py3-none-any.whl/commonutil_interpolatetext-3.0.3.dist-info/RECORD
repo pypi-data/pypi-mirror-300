@@ -1,0 +1,9 @@
+commonutil_interpolatetext/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+commonutil_interpolatetext/_base.py,sha256=iThjh6FPta5fbnRQmLyj2_PRFOXTmeoZFbLjgCzT2Zc,4080
+commonutil_interpolatetext/pipeableregexmatch.py,sha256=BQWD8kIXVo20CwuzKt-J-2-j0C4ompIkx1YY_F7IEkc,2228
+commonutil_interpolatetext/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+commonutil_interpolatetext/regexmatch.py,sha256=Nr1bghYVgwFHxz4Olg2RtUXAoHDbGZM0won_h4i-uRQ,857
+commonutil_interpolatetext-3.0.3.dist-info/METADATA,sha256=K9qEYJsXz5OdrDvorQxh5c6QPanSxqiRdSgN2wA9q3A,472
+commonutil_interpolatetext-3.0.3.dist-info/WHEEL,sha256=GV9aMThwP_4oNCtvEC2ec3qUYutgWeAzklro_0m4WJQ,91
+commonutil_interpolatetext-3.0.3.dist-info/top_level.txt,sha256=VZh4w0WnDNsVheJqTXHAbPNNXZ8h-Cdr_oZP5xbmuDM,27
+commonutil_interpolatetext-3.0.3.dist-info/RECORD,,
