@@ -1,0 +1,10 @@
+README.md
+pyproject.toml
+cedarscript_grammar/__init__.py
+cedarscript_grammar/libtree-sitter-cedar.dylib
+cedarscript_grammar/libtree-sitter-cedar.so
+cedarscript_grammar.egg-info/PKG-INFO
+cedarscript_grammar.egg-info/SOURCES.txt
+cedarscript_grammar.egg-info/dependency_links.txt
+cedarscript_grammar.egg-info/requires.txt
+cedarscript_grammar.egg-info/top_level.txt
