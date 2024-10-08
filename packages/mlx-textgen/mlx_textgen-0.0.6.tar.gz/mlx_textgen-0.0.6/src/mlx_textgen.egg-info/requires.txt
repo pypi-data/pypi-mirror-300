@@ -1,0 +1,4 @@
+mlx-lm>=0.18.2
+orjson
+fastapi
+uvicorn
