@@ -1,0 +1,17 @@
+l2_data_utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+l2_data_utils/services/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+l2_data_utils/services/pipelines/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+l2_data_utils/services/pipelines/incremental_pipeline_functions.py,sha256=3snADoWctNn5SqHI67DMJNnhy2Zatc3tGQ66OhMGzJ4,1191
+l2_data_utils/services/transformations/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+l2_data_utils/services/transformations/dataset_transformation.py,sha256=r33-9QrrAek9UFNh3pyVOFCMsWuXvRfs6UjoNFS2zU8,1642
+l2_data_utils/services/transformations/utils.py,sha256=9_ZeeFrmLCm6kUervsYUjFU3pLKbkV2Bfb_z0YuVBVU,406
+services/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+services/pipelines/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+services/pipelines/incremental_pipeline_functions.py,sha256=3snADoWctNn5SqHI67DMJNnhy2Zatc3tGQ66OhMGzJ4,1191
+services/transformations/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+services/transformations/dataset_transformation.py,sha256=r33-9QrrAek9UFNh3pyVOFCMsWuXvRfs6UjoNFS2zU8,1642
+services/transformations/utils.py,sha256=9_ZeeFrmLCm6kUervsYUjFU3pLKbkV2Bfb_z0YuVBVU,406
+l2_data_utils-0.1.5.dist-info/METADATA,sha256=0ueGX78oYkQZTDSJ3LW7k8PnTQsD2t_7_wqi8SSGpsw,108
+l2_data_utils-0.1.5.dist-info/WHEEL,sha256=2wepM1nk4DS4eFpYrW1TTqPcoGNfHhhO_i5m4cOimbo,92
+l2_data_utils-0.1.5.dist-info/top_level.txt,sha256=YKQQ7UcXec4oVJyRBsTu-27IrLlPo8EJJWrF9e03K68,14
+l2_data_utils-0.1.5.dist-info/RECORD,,
