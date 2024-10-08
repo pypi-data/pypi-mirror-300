@@ -1,0 +1,108 @@
+![Logo](https://codeberg.org/screwery/muppy/raw/branch/main/logo.svg)
+
+## Description
+
+![PyPI - Version](https://img.shields.io/pypi/v/muppy?style=flat-square)
+![PyPI - Python Version](https://img.shields.io/pypi/pyversions/muppy?style=flat-square)
+![PyPI - Status](https://img.shields.io/pypi/status/muppy?style=flat-square)
+![PyPI - Downloads](https://img.shields.io/pypi/dm/muppy?style=flat-square)
+![PyPI - License](https://img.shields.io/pypi/l/muppy?style=flat-square)
+![Gitea Issues](https://img.shields.io/gitea/issues/open/screwery/muppy?gitea_url=https%3A%2F%2Fcodeberg.org&style=flat-square)
+![Gitea Last Commit](https://img.shields.io/gitea/last-commit/screwery/muppy?gitea_url=https%3A%2F%2Fcodeberg.org&style=flat-square)
+
+**Muppy** means MarkUp Preprocessor for Python.
+If you want some Python in markup, not some markup in Python&mdash;Muppy is probably the thing you need.
+
+---
+
+**WARNING:** This script is using `exec()`. Be careful when you execute Muppy with a file you get from strangers, and keep in mind that it can be harmful as any other Python script.
+Use Muppy script standalone from the git repo if you have reasons not to trust the wheel.
+
+## Installation
+
+The script is pure Python and a part of [PyPI](https://pypi.org/project/muppy), so can be installed via *pip*:
+
+```bash
+python3 -m pip install muppy
+```
+
+## So, what does it do, exactly?
+
+Technically, Muppy gets comments in various formats and executes them as Python code.
+Any text between comment blocks is treated as string literals.
+
+### Basic HTML example
+
+Contents of `test.html`. Mind Python indentation after `<!-- (py):`, placeholders `?????`, and empty lines `<!-- (py):-->`:
+
+```html
+<!-- (py):print(?????)-->
+<html>
+	<head>
+		<title>
+			<!-- (py):if lang=="en":--><!-- (py):  print(?????)-->Hello world!<!-- (py):-->
+			<!-- (py):if lang=="ru":--><!-- (py):  print(?????)-->Привет, мир!<!-- (py):-->
+<!-- (py):print(?????)-->
+		</title>
+	</head>
+	<body>
+	</body>
+</html>
+```
+
+Shell command:
+
+```bash
+muppy compile -s xml -i test.html -d 'lang="en"'
+```
+
+The preprocessor code to be executed:
+
+```python
+# string literals
+MUPPY_657acc3e8ec943f4b25df555b97f6157 = ''
+MUPPY_9dd9938c266b4cfb86ce9bccbfe33377 = '\n<html>\n\t<head>\n\t\t<title>\n\t\t\t'
+MUPPY_b9df68b0daa54bbdb969b045b8996f14 = ''
+MUPPY_8d278dc0965849c3a163a5427675b84a = 'Hello world!'
+MUPPY_39639e4d3a5c4109a760b57bc8f1388e = '\n\t\t\t'
+MUPPY_105fec3e43fa40c89d2cb39c6e5ee4cc = ''
+MUPPY_e35ecf5319b8466f8c30ed50f48e96eb = 'Привет, мир!'
+MUPPY_69b0bda88bba4562a765a73a6ba8caab = '\n'
+MUPPY_918e6a4eb97149ff87eabad02d26c771 = '\n\t\t</title>\n\t</head>\n\t<body>\n\t</body>\n</html>\n'
+
+# definitions
+lang="en"
+
+# your code
+print(MUPPY_9dd9938c266b4cfb86ce9bccbfe33377)
+if lang=="en":
+  print(MUPPY_8d278dc0965849c3a163a5427675b84a)
+
+if lang=="ru":
+  print(MUPPY_e35ecf5319b8466f8c30ed50f48e96eb)
+
+print(MUPPY_918e6a4eb97149ff87eabad02d26c771)
+```
+
+### Comment styles
+
+For now, Muppy supports the following comment styles (`-s`):
+
+| Style   | Start tag    | End tag | Description                          |
+|---------|--------------|---------|--------------------------------------|
+| `xml`   | `<!-- (py):` | `-->`   | Any XML format: HTML, SVG, FB2, etc. |
+| `c`     | `/* (py):`   | `*/`    | C, C++, CSS, PHP, etc.               |
+| `tex`   | `% (py):`    | Newline | TeX-compatible markup                |
+| `shell` | `# (py):`    | Newline | Bash, Python, etc.                   |
+
+### Definitions
+
+You can define (`-d`) any variables as you do in common Python code:
+
+```bash
+muppy compile -s tex -i test.html -d 'var1 = 10' 'some_list = ["a", "b", "c"]'
+```
+
+## Bugs
+
+Feel free to report bugs and request features [here](https://codeberg.org/screwery/muppy/issues).
