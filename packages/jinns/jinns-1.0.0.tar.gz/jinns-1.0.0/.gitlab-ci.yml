@@ -1,0 +1,84 @@
+image: "registry.gitlab.com/mia_jinns/docker-image-quarto-jax-sphinx:main"
+
+stages:
+  - linting
+  - tests
+  - build
+  - publish
+
+black:
+  stage: linting
+  image: registry.gitlab.com/pipeline-components/black:latest
+  script:
+    - black --check --verbose -- .
+  tags:
+    - saas-linux-small-amd64
+
+run_tests:
+  stage: tests
+  before_script:
+    - pip install --break-system-packages pytest
+  script:
+    - pip install --break-system-packages .
+    - cd tests
+    - sh runtests.sh # without GPU on gitlab CI/CD
+
+build_doc:
+  stage: build
+  needs: [] # don't need to wait for other jobs
+  before_script:
+
+  script:
+    - pip install --break-system-packages .
+    - pip install --break-system-packages -r docs/doc_requirements.txt
+    - mkdocs build
+    - mkdocs build  # twice, see https://github.com/patrick-kidger/pytkdocs_tweaks
+
+  artifacts:
+    untracked: true
+    expire_in: 1 week
+  tags:
+    - saas-linux-small-amd64
+
+build_package:
+  stage: build
+  image: "python:3.9"
+  before_script:
+    - pip install build
+  script:
+    - rm -rf dist/
+    - python -m build
+  artifacts:
+    untracked: true
+    expire_in: 1 week
+  tags:
+    - saas-linux-small-amd64
+
+
+publish_package:
+  stage: publish
+  image: "python:3.9"
+  before_script:
+    - pip install twine
+  script:
+    - TWINE_PASSWORD=${PYPI_UPLOAD_TOKEN}
+      TWINE_USERNAME=__token__
+      python -m twine upload dist/*
+  tags:
+    - saas-linux-small-amd64
+  only:
+    - tags
+
+pages:
+  stage: publish
+  image: "python:3.9"
+  script:
+    - rm -rf public/
+    - cp -r site/ public/
+  artifacts:
+    paths:
+    - public
+  tags:
+    - saas-linux-small-amd64
+  only:
+    - main
