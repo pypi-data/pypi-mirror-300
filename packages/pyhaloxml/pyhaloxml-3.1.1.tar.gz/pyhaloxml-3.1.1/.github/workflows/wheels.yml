@@ -1,0 +1,33 @@
+name: Wheels
+
+on: workflow_call
+
+jobs:
+  wheels_lint:
+    uses: ./.github/workflows/black.yml
+  wheels_mypy:
+    uses: ./.github/workflows/mypy.yml
+  wheels_pytest:
+    uses: ./.github/workflows/pytest.yml
+  wheels:
+    name: wheels
+    needs: [wheels_lint, wheels_mypy, wheels_pytest]
+    runs-on: ${{ matrix.os }}
+    strategy:
+      matrix:
+        os: [ubuntu-latest, windows-latest, macOS-latest]
+
+    steps:
+      - uses: actions/checkout@v4
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Build source dist
+        run: |
+          pip install build
+          python -m build . --sdist
+      - uses: actions/upload-artifact@v4
+        with:
+          name: dist-${{ matrix.os }}
+          path: ./dist
