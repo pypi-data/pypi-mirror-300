@@ -1,0 +1,9 @@
+swab/__init__.py,sha256=opq8F9_JkwWLL5DOgrryF22cQS7qd3G_NepeMb7hDoU,23648
+swab/test_swab.py,sha256=d5bGZFOiNb16oIerZKLLUWhoK9gdkRXixxM2y9bfCyA,10518
+swab/static/swab.css,sha256=Sk_0c_5aUKKJe6bUoqfBxtNfsxTGI0VvmZBCkTffoSM,6676
+swab/templates/results.html,sha256=Bhi37kFVEKGFMkX5AQOt6bFVr1AOlLtUsF9kiwHwhcU,5082
+swab-0.2.3.dist-info/LICENSE.txt,sha256=vOFqlGqLdEiHilT_PfQ3W5FTRMpOXYglcUbPjSafjpY,1453
+swab-0.2.3.dist-info/METADATA,sha256=2kQSBFDl6TWfJj9_k-l0jcIkE_g5-d-PXMMMJ2Z_pOY,7007
+swab-0.2.3.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+swab-0.2.3.dist-info/top_level.txt,sha256=83X_kt71PZH2jdIyomrjw4c7FBuoul7OVcwdLG_kWxE,5
+swab-0.2.3.dist-info/RECORD,,
