@@ -1,0 +1,6 @@
+[plain.assets.compile]
+tailwind=plain.tailwind.entrypoints:run_compile
+
+[plain.dev]
+tailwind=plain.tailwind.entrypoints:run_dev_compile
+
