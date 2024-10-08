@@ -1,0 +1,5 @@
+configparser
+jira
+pdfkit
+pypandoc-binary
+keyboard
