@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+src/elegant_logger.egg-info/PKG-INFO
+src/elegant_logger.egg-info/SOURCES.txt
+src/elegant_logger.egg-info/dependency_links.txt
+src/elegant_logger.egg-info/requires.txt
+src/elegant_logger.egg-info/top_level.txt
+src/logger/__init__.py
+src/logger/log_formatter.py
+src/logger/logger.py
+src/logger/utils.py

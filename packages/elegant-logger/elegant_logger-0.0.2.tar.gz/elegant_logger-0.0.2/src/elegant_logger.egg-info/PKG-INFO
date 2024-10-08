@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: elegant-logger
+Version: 0.0.2
+Author-email: Haotian Xie <hotinexie@gmail.com>
+Project-URL: Homepage, https://github.com/elegant-infra/logger
+Project-URL: Issues, https://github.com/elegant-infra/logger/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: termcolor
+
+# Elegant Logger
+
+This project provides a customizable and modular logging system designed for Python applications. It supports color-coded log formatting for console output and allows for flexible configuration of log handlers, including console (stream) and file-based logging. The core component of the project is the Logger class, which simplifies the configuration and setup of logging with a consistent interface.
