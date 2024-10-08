@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+ecowater_softener/__init__.py
+ecowater_softener/const.py
+ecowater_softener/ecowater.py
+ecowater_softener_test.egg-info/PKG-INFO
+ecowater_softener_test.egg-info/SOURCES.txt
+ecowater_softener_test.egg-info/dependency_links.txt
+ecowater_softener_test.egg-info/requires.txt
+ecowater_softener_test.egg-info/top_level.txt
