@@ -1,0 +1,56 @@
+# Basic workflow for building and testing the pip installation
+
+name: Continuous Integration
+
+on:
+  pull_request:
+    branches: [ main, develop ]
+    types: [opened, synchronize, reopened, edited]
+  workflow_dispatch: # Allows you to run this workflow manually from the Actions tab
+
+
+jobs:
+  test:
+    name: py${{ matrix.versions.python-version }} ${{ matrix.versions.resolution }} ${{ matrix.deps.name}}
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        versions:
+          - python-version: '3.10'
+            resolution: lowest-direct
+          - python-version: '3.11'
+            resolution: highest
+          - python-version: '3.12'
+            resolution: highest
+        deps:
+          - name: minimal
+            value: '[dev]'
+            doctest: '' # doctest runs MCA and requires statsmodels
+          - name: complete
+            value: '[dev,complete]'
+            doctest: '--doctest-glob=README.md'
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Setup Python ${{ matrix.versions.python-version }}
+        uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.versions.python-version }}
+
+      - name: Install dependencies
+        run: |
+          pip install uv
+          uv pip install .${{ matrix.deps.value }} -r pyproject.toml \
+             --system --resolution ${{ matrix.versions.resolution }}
+
+      - name: Execute Tests
+        run: |
+          coverage run -m pytest -n auto ${{ matrix.deps.doctest }}
+          coverage report -m
+          coverage xml
+
+      - name: Upload Coverage Report to Codecov
+        uses: codecov/codecov-action@v3
+        with:
+          files: ./coverage.xml
