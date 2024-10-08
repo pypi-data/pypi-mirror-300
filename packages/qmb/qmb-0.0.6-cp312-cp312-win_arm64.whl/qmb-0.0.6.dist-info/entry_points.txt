@@ -1,0 +1,5 @@
+[console_scripts]
+qmb = qmb.__main__:main
+qmb-iter = qmb.iter:main
+qmb-learn = qmb.learn:main
+qmb-vmc = qmb.vmc:main
