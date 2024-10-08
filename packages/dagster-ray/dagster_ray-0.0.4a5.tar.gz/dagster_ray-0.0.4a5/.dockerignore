@@ -1,0 +1,8 @@
+# ignore all by default, add exceptions explicitly
+*
+!dagster_ray
+!tests
+!pyproject.toml
+!uv.lock
+!README.md
+!.pre-commit-config.yaml
