@@ -1,0 +1,9 @@
+adafruit_cap1188/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+adafruit_cap1188/cap1188.py,sha256=f42qrPadzR_3P_tnLvuE34lP2xepl9T3QI68RNzPI6E,10490
+adafruit_cap1188/i2c.py,sha256=-00Y6mNoziBVDmdh9mQP5TpIQ8yXopTUX5beukaaEYg,2370
+adafruit_cap1188/spi.py,sha256=zYraGEVWck4uEkUILfI_Zzd9sN8W8dp9d1mHxAQV4sE,3146
+adafruit_circuitpython_cap1188-1.3.13.dist-info/LICENSE,sha256=gPS3ymx6UPIK55NBkLXkpeZblJ8ITjdRx_4DlvJog7Y,1104
+adafruit_circuitpython_cap1188-1.3.13.dist-info/METADATA,sha256=VLHuzlPQpGKK7cRAtS6U5aNOpDSW78V5Q_71u53oN-o,3445
+adafruit_circuitpython_cap1188-1.3.13.dist-info/WHEEL,sha256=GV9aMThwP_4oNCtvEC2ec3qUYutgWeAzklro_0m4WJQ,91
+adafruit_circuitpython_cap1188-1.3.13.dist-info/top_level.txt,sha256=zpvxQkgslSl4yWRkSRLPezIb3S3s_uEqqTJvF8-JpfE,17
+adafruit_circuitpython_cap1188-1.3.13.dist-info/RECORD,,
