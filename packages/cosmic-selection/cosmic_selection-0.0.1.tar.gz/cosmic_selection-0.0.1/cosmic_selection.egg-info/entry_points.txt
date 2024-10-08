@@ -1,0 +1,6 @@
+[console_scripts]
+
+
+[nbdev]
+cosmic_selection = cosmic_selection._modidx:d
+
