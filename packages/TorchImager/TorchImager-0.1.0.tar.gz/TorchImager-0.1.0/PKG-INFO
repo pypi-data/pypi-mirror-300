@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: TorchImager
+Version: 0.1.0
+Summary: A Python library for displaying 2D tensors using OpenGL and HIP interop
+Home-page: https://github.com/Picus303/TorchImager
+Author: Picus303
+Author-email: pilleurc@protonmail.com
+License: MIT
+Requires-Python: >=3.12
+Description-Content-Type: text/markdown
+License-File: LICENCE
+Requires-Dist: torch
