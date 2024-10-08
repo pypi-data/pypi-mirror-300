@@ -1,0 +1,325 @@
+Metadata-Version: 2.3
+Name: connectorctl
+Version: 0.0.1a0
+Summary: Kafka Connector Management tool
+License: MIT License
+        
+        Copyright (c) 2024 Girish V
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy
+        of this software and associated documentation files (the "Software"), to deal
+        in the Software without restriction, including without limitation the rights
+        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+        copies of the Software, and to permit persons to whom the Software is
+        furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in all
+        copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+        SOFTWARE.
+License-File: LICENSE
+Requires-Python: >=3.10
+Requires-Dist: python-dotenv>=1.0.1
+Requires-Dist: requests==2.32.3
+Requires-Dist: tabulate==0.9.0
+Provides-Extra: docs
+Description-Content-Type: text/markdown
+
+# ConnectorCTL
+
+ConnectorCTL is a command-line tool for managing Kafka connectors, providing functionalities to list, restart, pause, resume, delete, and update connectors on a Kafka Connect cluster.
+
+## Features
+
+- **List Kafka connectors**: Easily retrieve a list of all connectors in the Kafka Connect cluster.
+- **Restart Kafka connectors**: Restart individual connectors or all connectors in one command.
+- **Pause Kafka connectors**: Temporarily stop individual connectors or all connectors.
+- **Resume Kafka connectors**: Resume previously paused connectors, either individually or all at once.
+- **Delete Kafka connectors**: Remove connectors from the Kafka Connect cluster.
+- **Create Kafka connectors**: Create new connectors from a configuration file.
+- **Update Kafka connectors**: Update the configuration of an existing connector.
+- **Get Kafka connector details**: Retrieve detailed configuration information for a specific connector.
+- **Connector status check**: Check the status of connectors (e.g., running, paused, failed).
+- **Error logging for connector management actions**: Log and store errors that occur during connector operations.
+- **Supports multiple connectors through batch processing**: Commands can be applied to multiple connectors at once.
+
+## Installation
+
+Install ConnectorCTL from PyPi:
+
+```bash
+pip install connectorctl
+```
+
+## Configuration
+
+ConnectorCTL allows you to configure different environments using commands like `set-env`, `get-env`, `use-env`, and `list-env`. These commands let you manage your environment configurations, making it easier to switch between different Kafka Connect setups.
+
+### Setting an Environment
+
+You can define and store environment configurations using the `set-env` command. This command takes various options such as user credentials, Kafka Connect server address, port, and optional SSL certificates.
+
+```bash
+connectorctl set-env <env_name> [--user <user>] [--password <password>] --server <server> --port <port> [--cacert <cacert_path>] [--key <key_path>] [--cer <cer_path>]
+```
+
+Example 1: Setting up an environment with user credentials and SSL certificates:
+
+```bash
+connectorctl set-env dev --user my_user --password my_pass --server kafka.example.com --port 8083 --cacert /path/to/cacert.pem --key /path/to/key.pem --cer /path/to/cer.pem
+```
+
+Example 2: Setting up a simple environment with just the server and port:
+
+```bash
+connectorctl set-env dev --server localhost --port 8083
+```
+
+### Getting Environment Configuration
+
+To retrieve the configuration details of a specific environment, you can use the `get-env` command:
+
+```bash
+connectorctl get-env <env_name>
+```
+
+This command will output the stored configuration for the specified environment, including server details and optional SSL information.
+
+Example:
+
+```bash
+connectorctl get-env dev
+```
+
+### Using an Environment
+
+Once you've set up multiple environments, you can switch between them using the `use-env` command:
+
+```bash
+connectorctl use-env <env_name>
+```
+
+This command sets the specified environment as the active one, which will be used for subsequent commands.
+
+Example:
+
+```bash
+connectorctl use-env dev
+```
+
+### Listing All Environments
+
+To see all the environments you've set up, use the `list-env` command:
+
+```bash
+connectorctl list-env
+```
+
+This command will display a list of all stored environment configurations.
+
+Example output:
+
+```bash
+Available environments:
+1. dev - Active
+2. staging
+3. prod
+```
+
+### Summary of Configuration Commands:
+
+- `set-env`: Set up or update environment configuration.
+- `get-env`: Retrieve details for a specific environment.
+- `use-env`: Switch to and use the specified environment.
+- `list-env`: List all configured environments.
+
+## Usage
+
+Once installed, you can use the `connectorctl` command to interact with Kafka Connect. The following commands allow you to manage connectors in the Kafka Connect cluster.
+
+### List Connectors
+
+To list all connectors in the Kafka Connect cluster:
+
+```bash
+connectorctl list
+```
+
+This command retrieves and displays a list of all the connectors.
+
+Example output:
+
+```bash
+Available Connectors:
++------------------+
+| Connector Name   |
++------------------+
+| connector1       |
+| connector2       |
++------------------+
+```
+
+### Get Connector Status
+
+To retrieve the status of a specific connector:
+
+```bash
+connectorctl status --connector <connector_name>
+```
+
+This command displays the current status (e.g., running, paused, or failed) of the specified connector.
+
+Example:
+
+```bash
+connectorctl status --connector my_connector
+```
+
+### Get Connector Details
+
+To get the detailed configuration of a connector:
+
+```bash
+connectorctl get --connector <connector_name>
+```
+
+This command retrieves and displays the full configuration details of the specified connector.
+
+Example:
+
+```bash
+connectorctl get --connector my_connector
+```
+
+### Delete Connectors
+
+To delete a specific connector from the Kafka Connect cluster:
+
+```bash
+connectorctl delete --connector <connector_name>
+```
+
+Example:
+
+```bash
+connectorctl delete --connector my_connector
+```
+
+### Create Connectors
+
+To create a new connector:
+
+```bash
+connectorctl create --config <path_to_config_file>
+```
+
+This command creates a new Kafka connector using the provided configuration file.
+
+Example:
+
+```bash
+connectorctl create --config ./my_connector_config.json
+```
+
+### Update Connectors
+
+To update an existing connector’s configuration:
+
+```bash
+connectorctl update --connector <connector_name> --config <path_to_config_file>
+```
+
+This command updates the specified Kafka connector with the new configuration details.
+
+Example:
+
+```bash
+connectorctl update --connector my_connector --config ./updated_config.json
+```
+
+### Resume Connectors
+
+To resume a specific connector:
+
+```bash
+connectorctl resume --connector <connector_name>
+```
+
+To resume all connectors:
+
+```bash
+connectorctl resume
+```
+
+Example output:
+
+```bash
+Resume Results:
++------------------+-------------------------------------+
+| Connector Name   | Result                              |
++------------------+-------------------------------------+
+| connector1       | Resumed successfully                |
+| connector2       | Failed to resume (Status code: 500) |
++------------------+-------------------------------------+
+```
+
+### Restart Connectors
+
+To restart a specific connector:
+
+```bash
+connectorctl restart --connector <connector_name>
+```
+
+To restart all connectors:
+
+```bash
+connectorctl restart
+```
+
+```bash
+Restart Results:
++------------------+------------------------+
+| Connector Name   | Result                 |
++------------------+------------------------+
+| my_connector     | Restarted successfully |
++------------------+------------------------+
+```
+
+### Pause Connectors
+
+To pause a specific connector:
+
+```bash
+connectorctl pause --connector <connector_name>
+```
+
+To pause all connectors:
+
+```bash
+connectorctl pause
+```
+
+```bash
+Pause Results:
++------------------+------------------------------------+
+| Connector Name   | Result                             |
++------------------+------------------------------------+
+| connector1       | Paused successfully                |
+| connector2       | Failed to pause (Status code: 500) |
++------------------+------------------------------------+
+```
+
+## Logging
+
+By default, ConnectorCTL logs any errors that occur during the management of Kafka connectors to a log file located in the `config/` directory.
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
