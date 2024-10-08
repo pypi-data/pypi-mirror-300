@@ -1,0 +1,1175 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="../" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Aggregated trajectory: speed of convergence &#8212; TrackLib 1.0 documentation</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=3ee479438cf8b5e0d341" rel="stylesheet" />
+<link href="../_static/styles/bootstrap.css?digest=3ee479438cf8b5e0d341" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=3ee479438cf8b5e0d341" rel="stylesheet" />
+
+  
+  <link href="../_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=3ee479438cf8b5e0d341" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=fa44fd50" />
+    <link rel="stylesheet" type="text/css" href="../_static/nbsphinx-code-cells.css" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=3ee479438cf8b5e0d341" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=3ee479438cf8b5e0d341" />
+  <script src="../_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=3ee479438cf8b5e0d341"></script>
+
+    <script src="../_static/documentation_options.js?v=f2a433a1"></script>
+    <script src="../_static/doctools.js?v=9a2dae69"></script>
+    <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+    <script>window.MathJax = {"tex": {"inlineMath": [["$", "$"], ["\\(", "\\)"]], "processEscapes": true}, "options": {"ignoreHtmlClass": "tex2jax_ignore|mathjax_ignore|document", "processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'usecase/AggregatedTrajectory';</script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-primary-sidebar-checkbox"/>
+  <label class="overlay overlay-primary" for="pst-primary-sidebar-checkbox"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-secondary-sidebar-checkbox"/>
+  <label class="overlay overlay-secondary" for="pst-secondary-sidebar-checkbox"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search the docs ..."
+         aria-label="Search the docs ..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+<div class="bd-header__inner bd-page-width">
+  <button class="sidebar-toggle primary-toggle" aria-label="Site navigation">
+    <span class="fa-solid fa-bars"></span>
+  </button>
+  
+  
+  <div class="col-lg-3 navbar-header-items__start">
+    
+      <div class="navbar-item">
+
+  
+
+<a class="navbar-brand logo" href="../index.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../_static/TracklibLogo.png" class="logo__image only-light" alt="TrackLib 1.0 documentation - Home"/>
+    <script>document.write(`<img src="../_static/TracklibLogo.png" class="logo__image only-dark" alt="TrackLib 1.0 documentation - Home"/>`);</script>
+  
+  
+</a></div>
+    
+  </div>
+  
+  <div class="col-lg-9 navbar-header-items">
+    
+    <div class="me-auto navbar-header-items__center">
+      
+        <div class="navbar-item">
+<nav class="navbar-nav">
+  <ul class="bd-navbar-elements navbar-nav">
+    
+<li class="nav-item pst-header-nav-item">
+  <a class="nav-link nav-internal" href="../started/index.html">
+    Getting Started
+  </a>
+</li>
+
+
+<li class="nav-item pst-header-nav-item">
+  <a class="nav-link nav-internal" href="../userguide/gallery.html">
+    Quick Examples
+  </a>
+</li>
+
+
+<li class="nav-item pst-header-nav-item">
+  <a class="nav-link nav-internal" href="index.html">
+    Use Cases
+  </a>
+</li>
+
+  </ul>
+</nav></div>
+      
+    </div>
+    
+    
+    <div class="navbar-header-items__end">
+      
+        <div class="navbar-item navbar-persistent--container">
+          
+
+ <script>
+ document.write(`
+   <button class="btn navbar-btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script>
+        </div>
+      
+      
+        <div class="navbar-item">
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch nav-link" data-mode="light"><i class="fa-solid fa-sun fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="dark"><i class="fa-solid fa-moon fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg"></i></span>
+  </button>
+`);
+</script></div>
+      
+        <div class="navbar-item"><ul class="navbar-icon-links navbar-nav"
+    aria-label="Icon Links">
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://github.com/umrlastig/tracklib" title="GitHub" class="nav-link" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><span><i class="fa-brands fa-square-github fa-lg" aria-hidden="true"></i></span>
+            <span class="sr-only">GitHub</span></a>
+        </li>
+</ul></div>
+      
+    </div>
+    
+  </div>
+  
+  
+    <div class="navbar-persistent--mobile">
+
+ <script>
+ document.write(`
+   <button class="btn navbar-btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script>
+    </div>
+  
+
+  
+    <button class="sidebar-toggle secondary-toggle" aria-label="On this page">
+      <span class="fa-solid fa-outdent"></span>
+    </button>
+  
+</div>
+
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+        
+      
+      <div class="bd-sidebar-primary bd-sidebar hide-on-wide">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+      <div class="sidebar-header-items__center">
+        
+          
+          
+            <div class="navbar-item">
+<nav class="navbar-nav">
+  <ul class="bd-navbar-elements navbar-nav">
+    
+<li class="nav-item pst-header-nav-item">
+  <a class="nav-link nav-internal" href="../started/index.html">
+    Getting Started
+  </a>
+</li>
+
+
+<li class="nav-item pst-header-nav-item">
+  <a class="nav-link nav-internal" href="../userguide/gallery.html">
+    Quick Examples
+  </a>
+</li>
+
+
+<li class="nav-item pst-header-nav-item">
+  <a class="nav-link nav-internal" href="index.html">
+    Use Cases
+  </a>
+</li>
+
+  </ul>
+</nav></div>
+          
+        
+      </div>
+    
+    
+    
+      <div class="sidebar-header-items__end">
+        
+          <div class="navbar-item">
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch nav-link" data-mode="light"><i class="fa-solid fa-sun fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="dark"><i class="fa-solid fa-moon fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg"></i></span>
+  </button>
+`);
+</script></div>
+        
+          <div class="navbar-item"><ul class="navbar-icon-links navbar-nav"
+    aria-label="Icon Links">
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://github.com/umrlastig/tracklib" title="GitHub" class="nav-link" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><span><i class="fa-brands fa-square-github fa-lg" aria-hidden="true"></i></span>
+            <span class="sr-only">GitHub</span></a>
+        </li>
+</ul></div>
+        
+      </div>
+    
+  </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item">
+
+
+
+<nav aria-label="Breadcrumb" class="d-print-none">
+  <ul class="bd-breadcrumbs">
+    
+    <li class="breadcrumb-item breadcrumb-home">
+      <a href="../index.html" class="nav-link" aria-label="Home">
+        <i class="fa-solid fa-home"></i>
+      </a>
+    </li>
+    <li class="breadcrumb-item active" aria-current="page">Aggregated...</li>
+  </ul>
+</nav>
+</div>
+      
+    </div>
+  
+  
+</div>
+</div>
+              
+              
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section id="Aggregated-trajectory:-speed-of-convergence">
+<h1>Aggregated trajectory: speed of convergence<a class="headerlink" href="#Aggregated-trajectory:-speed-of-convergence" title="Link to this heading">#</a></h1>
+<p>Dans ce tuto, nous voudrions analyser l’effet de la distance d’appariement dans l’algorithme de fusion. Nous allons focaliser surtout avec la distance de Fréchet et la distance DTW-L2.</p>
+<p>Pour cela, nous allons générer plusieurs échantillons d’un certain nombre de trajectoires de trajectoire et calculé la qualité entre les deux traces.</p>
+<p>Realistic Synthetic GNSS Trajectories: These simulated trajectories provide a controlled environment to test the algorithm’s performance under various predefined conditions, allowing us to assess its accuracy and robustness;</p>
+<div class="alert alert-block alert-info"><p>Reference:[1] - SIGSPATIAL 2024</p>
+</div><section id="As-usual,-let’s-start-by-defining-our-environment">
+<h2>As usual, let’s start by defining our environment<a class="headerlink" href="#As-usual,-let’s-start-by-defining-our-environment" title="Link to this heading">#</a></h2>
+<p>1/ The first task is <strong>only useful for the online notebook</strong> and import the local tracklib code source. This script is not necessary if tracklib is installed from PyPI.</p>
+<div class="nbinput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[2]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+<span class="kn">import</span> <span class="nn">os.path</span>
+<span class="kn">import</span> <span class="nn">sys</span>
+
+<span class="c1">#-------------------------------------------------------</span>
+<span class="c1"># Import de tracklib</span>
+<span class="n">module_path</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">abspath</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="s1">&#39;../../..&#39;</span><span class="p">))</span>
+<span class="k">if</span> <span class="n">module_path</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">sys</span><span class="o">.</span><span class="n">path</span><span class="p">:</span>
+    <span class="n">sys</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">module_path</span><span class="p">)</span>
+
+<span class="kn">import</span> <span class="nn">tracklib</span> <span class="k">as</span> <span class="nn">tkl</span>
+<br/></pre></div>
+</div>
+</div>
+<p>2/ The following imports are <strong>necessary</strong> for the tutorial.</p>
+<div class="nbinput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[3]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">csv</span>
+<span class="kn">import</span> <span class="nn">math</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+
+<span class="c1"># For</span>
+<span class="kn">from</span> <span class="nn">random</span> <span class="kn">import</span> <span class="n">randint</span>
+
+<span class="c1"># For plotting</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+<span class="kn">from</span> <span class="nn">matplotlib.pyplot</span> <span class="kn">import</span> <span class="n">cm</span>
+</pre></div>
+</div>
+</div>
+<p>3/ Let’s define two functions to plot results: (i) visualizeAggTraj: display the track reference and aggregated tracks</p>
+<div class="nbinput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[4]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">color</span> <span class="o">=</span> <span class="n">cm</span><span class="o">.</span><span class="n">rainbow</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">25</span><span class="p">))</span>
+
+<span class="k">def</span> <span class="nf">visualizeAggTraj</span><span class="p">(</span><span class="n">i</span><span class="p">,</span> <span class="n">N</span><span class="o">=</span><span class="mi">3</span><span class="p">,</span> <span class="n">track</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">tracks</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">title</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&#39;&#39;&#39;</span>
+<span class="sd">    &#39;&#39;&#39;</span>
+    <span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplot2grid</span><span class="p">((</span><span class="mi">1</span><span class="p">,</span><span class="n">N</span><span class="p">),</span> <span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="n">i</span><span class="p">))</span>
+
+    <span class="k">if</span> <span class="n">tracks</span> <span class="o">!=</span> <span class="kc">None</span> <span class="ow">and</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">tracks</span><span class="p">,</span> <span class="n">tkl</span><span class="o">.</span><span class="n">TrackCollection</span><span class="p">):</span>
+        <span class="k">for</span> <span class="p">(</span><span class="n">i</span><span class="p">,</span> <span class="n">t</span><span class="p">)</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">tracks</span><span class="p">):</span>
+            <span class="n">ax</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">t</span><span class="o">.</span><span class="n">getX</span><span class="p">(),</span> <span class="n">t</span><span class="o">.</span><span class="n">getY</span><span class="p">(),</span> <span class="n">c</span><span class="o">=</span><span class="n">color</span><span class="p">[</span><span class="n">i</span><span class="p">])</span>
+
+    <span class="k">if</span> <span class="n">tracks</span> <span class="o">!=</span> <span class="kc">None</span> <span class="ow">and</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">tracks</span><span class="p">,</span> <span class="n">tkl</span><span class="o">.</span><span class="n">Track</span><span class="p">):</span>
+        <span class="n">central</span> <span class="o">=</span> <span class="n">tracks</span>
+        <span class="n">ax</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">central</span><span class="o">.</span><span class="n">getX</span><span class="p">(),</span> <span class="n">central</span><span class="o">.</span><span class="n">getY</span><span class="p">(),</span> <span class="s1">&#39;c-&#39;</span><span class="p">)</span>
+
+    <span class="n">ax</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">track</span><span class="o">.</span><span class="n">getX</span><span class="p">(),</span> <span class="n">track</span><span class="o">.</span><span class="n">getY</span><span class="p">(),</span> <span class="s1">&#39;k-&#39;</span><span class="p">)</span>
+    <span class="k">if</span> <span class="n">title</span> <span class="o">!=</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="n">ax</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="n">title</span><span class="p">)</span>
+    <span class="n">ax</span><span class="o">.</span><span class="n">set_xlabel</span><span class="p">(</span><span class="s1">&#39;&#39;</span><span class="p">)</span>
+    <span class="n">ax</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="s1">&#39;Y&#39;</span><span class="p">)</span>
+    <span class="n">ax</span><span class="o">.</span><span class="n">grid</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<ol class="lowerroman simple" start="2">
+<li><p>plotEvolution écart entre la trace aggrégée and the raw trajectory suivant la taille de l’échantillon</p></li>
+</ol>
+<div class="nbinput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[5]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">plotEvolution</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="n">YF1</span><span class="p">,</span> <span class="n">YD1</span><span class="p">,</span> <span class="n">YF2</span><span class="p">,</span> <span class="n">YD2</span><span class="p">,</span> <span class="n">YF3</span><span class="p">,</span> <span class="n">YD3</span><span class="p">):</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">15</span><span class="p">,</span> <span class="mi">3</span><span class="p">))</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">subplots_adjust</span><span class="p">(</span><span class="n">top</span><span class="o">=</span><span class="mf">0.8</span><span class="p">,</span> <span class="n">wspace</span><span class="o">=</span><span class="mf">0.2</span><span class="p">,</span> <span class="n">hspace</span><span class="o">=</span><span class="mf">0.5</span><span class="p">)</span>
+
+    <span class="n">ax1</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplot2grid</span><span class="p">((</span><span class="mi">1</span><span class="p">,</span><span class="mi">3</span><span class="p">),</span> <span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">))</span>
+    <span class="n">ax1</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="n">YF1</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s2">&quot;Fréchet&quot;</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s2">&quot;tab:orange&quot;</span><span class="p">)</span>
+    <span class="n">ax1</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="n">YD1</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s2">&quot;DTW&quot;</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s2">&quot;tab:green&quot;</span><span class="p">)</span>
+    <span class="n">ax1</span><span class="o">.</span><span class="n">set_xlabel</span><span class="p">(</span><span class="s1">&#39;sample size&#39;</span><span class="p">)</span>
+    <span class="n">ax1</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="s2">&quot;RMSE&quot;</span><span class="p">)</span>
+    <span class="n">ax1</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="s1">&#39;Almost straight&#39;</span><span class="p">)</span>
+    <span class="n">ax1</span><span class="o">.</span><span class="n">legend</span><span class="p">()</span>
+
+    <span class="n">ax2</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplot2grid</span><span class="p">((</span><span class="mi">1</span><span class="p">,</span><span class="mi">3</span><span class="p">),</span> <span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">))</span>
+    <span class="n">ax2</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="n">YF2</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s2">&quot;Fréchet&quot;</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s2">&quot;tab:orange&quot;</span><span class="p">)</span>
+    <span class="n">ax2</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="n">YD2</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s2">&quot;DTW&quot;</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s2">&quot;tab:green&quot;</span><span class="p">)</span>
+    <span class="n">ax2</span><span class="o">.</span><span class="n">set_xlabel</span><span class="p">(</span><span class="s1">&#39;sample size&#39;</span><span class="p">)</span>
+    <span class="n">ax2</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="s2">&quot;RMSE&quot;</span><span class="p">)</span>
+    <span class="n">ax2</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="s1">&#39;Moderate sinuosity&#39;</span><span class="p">)</span>
+    <span class="n">ax2</span><span class="o">.</span><span class="n">legend</span><span class="p">()</span>
+
+    <span class="n">ax3</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplot2grid</span><span class="p">((</span><span class="mi">1</span><span class="p">,</span><span class="mi">3</span><span class="p">),</span> <span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">2</span><span class="p">))</span>
+    <span class="n">ax3</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="n">YF3</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s2">&quot;Fréchet&quot;</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s2">&quot;tab:orange&quot;</span><span class="p">)</span>
+    <span class="n">ax3</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="n">YD3</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s2">&quot;DTW&quot;</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s2">&quot;tab:green&quot;</span><span class="p">)</span>
+    <span class="n">ax3</span><span class="o">.</span><span class="n">set_xlabel</span><span class="p">(</span><span class="s1">&#39;sample size&#39;</span><span class="p">)</span>
+    <span class="n">ax3</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="s2">&quot;RMSE&quot;</span><span class="p">)</span>
+    <span class="n">ax3</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="s1">&#39;Switchbacks&#39;</span><span class="p">)</span>
+    <span class="n">ax3</span><span class="o">.</span><span class="n">legend</span><span class="p">()</span>
+
+    <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+</section>
+<section id="Create-3-commonly-mountain-path-shapes">
+<h2>Create 3 commonly mountain path shapes<a class="headerlink" href="#Create-3-commonly-mountain-path-shapes" title="Link to this heading">#</a></h2>
+<p>For this experimentation, we will examine the trajectory aggregation process for different types of paths to be reconstructed. In the context of mountain hiking, we identified three characteristic path shapes: nearly straight segments, moderately sinuosity road segments, and a zigzagging path composed of a series of switchbacks. To maintain shape consistency throughout the entire road segment, the generated trajectories have a length of approximately 300 meters.</p>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[6]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">tkl</span><span class="o">.</span><span class="n">seed</span><span class="p">(</span><span class="mi">123</span><span class="p">)</span>
+
+<span class="c1"># ----------------------------------------------------------</span>
+<span class="c1"># Generate the path &#39;Almost straight&#39;</span>
+<span class="n">sentier1</span> <span class="o">=</span> <span class="n">tkl</span><span class="o">.</span><span class="n">generate</span><span class="p">(</span><span class="mf">0.5</span><span class="p">,</span> <span class="n">dt</span><span class="o">=</span><span class="mi">10</span><span class="p">)[::</span><span class="mi">3</span><span class="p">]</span>
+<span class="n">sentier1</span><span class="o">.</span><span class="n">scale</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span>
+
+<span class="c1"># ----------------------------------------------------------</span>
+<span class="n">sentier2</span> <span class="o">=</span> <span class="n">tkl</span><span class="o">.</span><span class="n">generate</span><span class="p">(</span><span class="mf">0.1</span><span class="p">,</span> <span class="n">dt</span><span class="o">=</span><span class="mi">10</span><span class="p">)[::</span><span class="mi">3</span><span class="p">]</span>
+
+<span class="c1"># ----------------------------------------------------------</span>
+<span class="n">base_lacets</span> <span class="o">=</span> <span class="n">tkl</span><span class="o">.</span><span class="n">generate</span><span class="p">(</span><span class="mf">0.4</span><span class="p">,</span> <span class="n">dt</span><span class="o">=</span><span class="mi">10</span><span class="p">)</span>
+<span class="n">sentier3</span> <span class="o">=</span> <span class="n">tkl</span><span class="o">.</span><span class="n">noise</span><span class="p">(</span><span class="n">base_lacets</span><span class="p">,</span> <span class="mi">20</span><span class="p">,</span> <span class="n">tkl</span><span class="o">.</span><span class="n">SincKernel</span><span class="p">(</span><span class="mi">20</span><span class="p">),</span>
+                    <span class="n">direction</span><span class="o">=</span><span class="n">tkl</span><span class="o">.</span><span class="n">MODE_DIRECTION_ORTHO</span><span class="p">)[::</span><span class="mi">3</span><span class="p">]</span>
+<span class="n">sentier3</span><span class="o">.</span><span class="n">scale</span><span class="p">(</span><span class="mi">4</span><span class="p">)</span>
+
+<span class="c1"># ----------------------------------------------------------</span>
+<span class="c1"># Plot</span>
+<span class="nb">print</span> <span class="p">(</span><span class="s1">&#39;&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">15</span><span class="p">,</span> <span class="mi">3</span><span class="p">))</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">subplots_adjust</span><span class="p">(</span><span class="n">top</span><span class="o">=</span><span class="mf">0.8</span><span class="p">,</span> <span class="n">wspace</span><span class="o">=</span><span class="mf">0.2</span><span class="p">,</span> <span class="n">hspace</span><span class="o">=</span><span class="mf">0.5</span><span class="p">)</span>
+
+<span class="n">visualizeAggTraj</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">track</span><span class="o">=</span><span class="n">sentier1</span><span class="p">,</span> <span class="n">title</span><span class="o">=</span><span class="s1">&#39;Almost straight&#39;</span><span class="p">)</span>
+<span class="n">visualizeAggTraj</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="n">track</span><span class="o">=</span><span class="n">sentier2</span><span class="p">,</span> <span class="n">title</span><span class="o">=</span><span class="s1">&#39;Moderate sinuosity&#39;</span><span class="p">)</span>
+<span class="n">visualizeAggTraj</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="n">track</span><span class="o">=</span><span class="n">sentier2</span><span class="p">,</span> <span class="n">title</span><span class="o">=</span><span class="s1">&#39;Switchbacks&#39;</span><span class="p">)</span>
+
+<span class="c1"># plt.suptitle(title)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+<span class="c1"># visualizeAggTraj(sentier1, sentier2, sentier3)</span>
+<br/></pre></div>
+</div>
+</div>
+<div class="nboutput docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+Generated track from 05/02/2042 00:44:56 to 05/02/2042 01:44:56 [360 pts, 64.1m]
+Generated track from 10/10/1982 08:02:44 to 10/10/1982 09:02:44 [360 pts, 297.54m]
+Generated track from 25/11/2004 23:29:18 to 26/11/2004 00:29:18 [360 pts, 79.85m]
+
+</pre></div></div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<img alt="../_images/usecase_AggregatedTrajectory_10_1.png" src="../_images/usecase_AggregatedTrajectory_10_1.png" />
+</div>
+</div>
+</section>
+<section id="Create-sets-of-simulated-GNSS-trajectories">
+<h2>Create sets of simulated GNSS trajectories<a class="headerlink" href="#Create-sets-of-simulated-GNSS-trajectories" title="Link to this heading">#</a></h2>
+<p>In the experimentation detailled in [1], trajectories have been generated with a 5 m-amplitude exponential covariance process, completed by a 1 m white noise process, a 50 cm range Gaussian Process for referencement error.</p>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[1]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">N</span> <span class="o">=</span> <span class="mi">15</span>
+
+<span class="c1"># ----------------------------------------------------------</span>
+<span class="c1"># Generate xxxxxxxxxxxxxxx &#39;Almost straight&#39;</span>
+<span class="c1"># expkernel = tkl.ExponentialKernel(100)</span>
+<span class="c1"># tracks1.noise(5, expkernel)</span>
+<span class="n">tracks1</span> <span class="o">=</span> <span class="n">tkl</span><span class="o">.</span><span class="n">core</span><span class="o">.</span><span class="n">TrackCollection</span><span class="p">([</span><span class="n">sentier1</span><span class="p">]</span><span class="o">*</span><span class="n">N</span><span class="p">)</span>
+<span class="n">tracks1</span><span class="o">.</span><span class="n">noise</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="n">tkl</span><span class="o">.</span><span class="n">ExponentialKernel</span><span class="p">(</span><span class="mi">100</span><span class="p">))</span>
+<span class="n">tracks1</span><span class="o">.</span><span class="n">noise</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">tkl</span><span class="o">.</span><span class="n">GaussianKernel</span><span class="p">(</span><span class="mi">1000</span><span class="p">))</span>
+
+<span class="c1"># ----------------------------------------------------------</span>
+<span class="c1">#tracks2 = tkl.core.TrackCollection([sentier2]*N)</span>
+<span class="c1">#tracks2.noise(5, expkernel)</span>
+
+<span class="c1">#tracks3 = tkl.core.TrackCollection([sentier3]*N)</span>
+<span class="c1">#tracks3.noise(5, expkernel)</span>
+
+<span class="c1"># Plot</span>
+<span class="c1">#visualizeAggTraj(sentier1, sentier2, sentier3, tracks1, tracks2, tracks3)</span>
+
+<span class="c1"># ----------------------------------------------------------</span>
+<span class="c1"># Plot</span>
+<span class="nb">print</span> <span class="p">(</span><span class="s1">&#39;&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">15</span><span class="p">,</span> <span class="mi">3</span><span class="p">))</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">subplots_adjust</span><span class="p">(</span><span class="n">top</span><span class="o">=</span><span class="mf">0.8</span><span class="p">,</span> <span class="n">wspace</span><span class="o">=</span><span class="mf">0.2</span><span class="p">,</span> <span class="n">hspace</span><span class="o">=</span><span class="mf">0.5</span><span class="p">)</span>
+
+<span class="n">visualizeAggTraj</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">N</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">track</span><span class="o">=</span><span class="n">sentier1</span><span class="p">,</span> <span class="n">tracks</span><span class="o">=</span><span class="n">tracks1</span><span class="p">,</span> <span class="n">title</span><span class="o">=</span><span class="s1">&#39;Almost straight&#39;</span><span class="p">)</span>
+<br/></pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+<span class="ansi-red-fg">---------------------------------------------------------------------------</span>
+<span class="ansi-red-fg">NameError</span>                                 Traceback (most recent call last)
+Cell <span class="ansi-green-fg">In[1], line 7</span>
+<span class="ansi-green-intense-fg ansi-bold">      1</span> N <span style="color: rgb(98,98,98)">=</span> <span style="color: rgb(98,98,98)">15</span>
+<span class="ansi-green-intense-fg ansi-bold">      3</span> <span style="color: rgb(95,135,135)"># ----------------------------------------------------------</span>
+<span class="ansi-green-intense-fg ansi-bold">      4</span> <span style="color: rgb(95,135,135)"># Generate xxxxxxxxxxxxxxx &#39;Almost straight&#39;</span>
+<span class="ansi-green-intense-fg ansi-bold">      5</span> <span style="color: rgb(95,135,135)"># expkernel = tkl.ExponentialKernel(100)</span>
+<span class="ansi-green-intense-fg ansi-bold">      6</span> <span style="color: rgb(95,135,135)"># tracks1.noise(5, expkernel)</span>
+<span class="ansi-green-fg">----&gt; 7</span> tracks1 <span style="color: rgb(98,98,98)">=</span> <span class="ansi-yellow-bg">tkl</span><span style="color: rgb(98,98,98)">.</span>core<span style="color: rgb(98,98,98)">.</span>TrackCollection([sentier1]<span style="color: rgb(98,98,98)">*</span>N)
+<span class="ansi-green-intense-fg ansi-bold">      8</span> tracks1<span style="color: rgb(98,98,98)">.</span>noise(<span style="color: rgb(98,98,98)">1</span>, tkl<span style="color: rgb(98,98,98)">.</span>ExponentialKernel(<span style="color: rgb(98,98,98)">100</span>))
+<span class="ansi-green-intense-fg ansi-bold">      9</span> tracks1<span style="color: rgb(98,98,98)">.</span>noise(<span style="color: rgb(98,98,98)">0</span>, tkl<span style="color: rgb(98,98,98)">.</span>GaussianKernel(<span style="color: rgb(98,98,98)">1000</span>))
+
+<span class="ansi-red-fg">NameError</span>: name &#39;tkl&#39; is not defined
+</pre></div></div>
+</div>
+</section>
+<section id="Create-aggregated-trajectory">
+<h2>Create aggregated trajectory<a class="headerlink" href="#Create-aggregated-trajectory" title="Link to this heading">#</a></h2>
+<p>Pour plusieurs sets de traces: 1 à 15 prises au hasard dans le lot généré ci-dessus. On calcule Fréchet et DTW-L2.</p>
+<p>Ce calcul prend du temps !</p>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[7]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">E</span> <span class="o">=</span> <span class="mi">4</span>
+<span class="n">FRECHET</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;Almost straight&#39;</span><span class="p">:</span> <span class="p">[],</span> <span class="s1">&#39;Moderate sinuosity&#39;</span><span class="p">:</span> <span class="p">[],</span> <span class="s1">&#39;Switchbacks&#39;</span><span class="p">:</span> <span class="p">[]}</span>
+<span class="n">DTW</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;Almost straight&#39;</span><span class="p">:</span> <span class="p">[],</span> <span class="s1">&#39;Moderate sinuosity&#39;</span><span class="p">:</span> <span class="p">[],</span> <span class="s1">&#39;Switchbacks&#39;</span><span class="p">:</span> <span class="p">[]}</span>
+
+<span class="n">represent_method</span> <span class="o">=</span> <span class="n">tkl</span><span class="o">.</span><span class="n">MODE_REP_BARYCENTRE</span>
+<span class="n">agg_method</span> <span class="o">=</span> <span class="n">tkl</span><span class="o">.</span><span class="n">MODE_AGG_MEDIAN</span>
+<span class="n">constraint</span> <span class="o">=</span> <span class="kc">False</span>
+<span class="n">master</span> <span class="o">=</span> <span class="n">tkl</span><span class="o">.</span><span class="n">MODE_MASTER_MEDIAN_LEN</span>
+<span class="n">itermax</span> <span class="o">=</span> <span class="mi">25</span>
+
+<span class="k">for</span> <span class="n">s</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="n">E</span><span class="o">+</span><span class="mi">1</span><span class="p">):</span>
+    <span class="nb">print</span> <span class="p">(</span><span class="s1">&#39;Sample size: &#39;</span><span class="p">,</span> <span class="n">s</span><span class="p">)</span>
+    <span class="c1"># create set</span>
+    <span class="n">TAB</span> <span class="o">=</span> <span class="nb">set</span><span class="p">()</span>
+    <span class="k">while</span> <span class="nb">len</span><span class="p">(</span><span class="n">TAB</span><span class="p">)</span> <span class="o">&lt;=</span> <span class="n">s</span><span class="p">:</span>
+        <span class="n">n</span> <span class="o">=</span> <span class="n">randint</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">N</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span>
+        <span class="n">TAB</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">n</span><span class="p">)</span>
+
+    <span class="n">sets1</span> <span class="o">=</span> <span class="n">tkl</span><span class="o">.</span><span class="n">TrackCollection</span><span class="p">()</span>
+    <span class="n">sets2</span> <span class="o">=</span> <span class="n">tkl</span><span class="o">.</span><span class="n">TrackCollection</span><span class="p">()</span>
+    <span class="n">sets3</span> <span class="o">=</span> <span class="n">tkl</span><span class="o">.</span><span class="n">TrackCollection</span><span class="p">()</span>
+    <span class="k">for</span> <span class="n">idx</span> <span class="ow">in</span> <span class="n">TAB</span><span class="p">:</span>
+        <span class="n">sets1</span><span class="o">.</span><span class="n">addTrack</span><span class="p">(</span><span class="n">tracks1</span><span class="p">[</span><span class="n">idx</span><span class="p">])</span>
+        <span class="n">sets2</span><span class="o">.</span><span class="n">addTrack</span><span class="p">(</span><span class="n">tracks2</span><span class="p">[</span><span class="n">idx</span><span class="p">])</span>
+        <span class="n">sets3</span><span class="o">.</span><span class="n">addTrack</span><span class="p">(</span><span class="n">tracks3</span><span class="p">[</span><span class="n">idx</span><span class="p">])</span>
+
+    <span class="c1"># ---------------------------------------------------------------------------</span>
+    <span class="c1"># Fréchet</span>
+    <span class="n">p</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="s1">&#39;inf&#39;</span><span class="p">)</span>
+    <span class="n">mode</span> <span class="o">=</span> <span class="n">tkl</span><span class="o">.</span><span class="n">MODE_MATCHING_FRECHET</span>
+    <span class="nb">print</span> <span class="p">(</span><span class="s1">&#39;    FRECHET&#39;</span><span class="p">)</span>
+
+    <span class="n">central1</span> <span class="o">=</span> <span class="n">tkl</span><span class="o">.</span><span class="n">fusion</span><span class="p">(</span><span class="n">tracks1</span><span class="p">,</span> <span class="n">master</span><span class="o">=</span><span class="n">master</span><span class="p">,</span> <span class="n">dim</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span> <span class="n">mode</span><span class="o">=</span><span class="n">mode</span><span class="p">,</span> <span class="n">p</span><span class="o">=</span><span class="n">p</span><span class="p">,</span> <span class="n">represent_method</span><span class="o">=</span><span class="n">represent_method</span><span class="p">,</span>  <span class="n">agg_method</span><span class="o">=</span><span class="n">agg_method</span><span class="p">,</span>
+                         <span class="n">constraint</span><span class="o">=</span><span class="n">constraint</span><span class="p">,</span> <span class="n">verbose</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">iter_max</span> <span class="o">=</span> <span class="n">itermax</span><span class="p">)</span>
+    <span class="n">FRECHET</span><span class="p">[</span><span class="s1">&#39;Almost straight&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">central1</span><span class="p">)</span>
+
+    <span class="n">central2</span> <span class="o">=</span> <span class="n">tkl</span><span class="o">.</span><span class="n">fusion</span><span class="p">(</span><span class="n">tracks2</span><span class="p">,</span> <span class="n">master</span><span class="o">=</span><span class="n">master</span><span class="p">,</span> <span class="n">dim</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span> <span class="n">mode</span><span class="o">=</span><span class="n">mode</span><span class="p">,</span> <span class="n">p</span><span class="o">=</span><span class="n">p</span><span class="p">,</span> <span class="n">represent_method</span><span class="o">=</span><span class="n">represent_method</span><span class="p">,</span>  <span class="n">agg_method</span><span class="o">=</span><span class="n">agg_method</span><span class="p">,</span>
+                         <span class="n">constraint</span><span class="o">=</span><span class="n">constraint</span><span class="p">,</span> <span class="n">verbose</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">iter_max</span> <span class="o">=</span> <span class="n">itermax</span><span class="p">)</span>
+    <span class="n">FRECHET</span><span class="p">[</span><span class="s1">&#39;Moderate sinuosity&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">central2</span><span class="p">)</span>
+
+    <span class="n">central3</span> <span class="o">=</span> <span class="n">tkl</span><span class="o">.</span><span class="n">fusion</span><span class="p">(</span><span class="n">tracks3</span><span class="p">,</span> <span class="n">master</span><span class="o">=</span><span class="n">master</span><span class="p">,</span> <span class="n">dim</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span> <span class="n">mode</span><span class="o">=</span><span class="n">mode</span><span class="p">,</span> <span class="n">p</span><span class="o">=</span><span class="n">p</span><span class="p">,</span> <span class="n">represent_method</span><span class="o">=</span><span class="n">represent_method</span><span class="p">,</span>  <span class="n">agg_method</span><span class="o">=</span><span class="n">agg_method</span><span class="p">,</span>
+                         <span class="n">constraint</span><span class="o">=</span><span class="n">constraint</span><span class="p">,</span> <span class="n">verbose</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">iter_max</span> <span class="o">=</span> <span class="n">itermax</span><span class="p">)</span>
+    <span class="n">FRECHET</span><span class="p">[</span><span class="s1">&#39;Switchbacks&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">central3</span><span class="p">)</span>
+
+    <span class="c1"># ---------------------------------------------------------------------------</span>
+    <span class="c1"># DTW</span>
+    <span class="n">p</span> <span class="o">=</span> <span class="mi">2</span>
+    <span class="n">mode</span> <span class="o">=</span> <span class="n">tkl</span><span class="o">.</span><span class="n">MODE_MATCHING_DTW</span>
+    <span class="nb">print</span> <span class="p">(</span><span class="s1">&#39;    DTW&#39;</span><span class="p">)</span>
+
+    <span class="n">central1</span> <span class="o">=</span> <span class="n">tkl</span><span class="o">.</span><span class="n">fusion</span><span class="p">(</span><span class="n">sets1</span><span class="p">,</span> <span class="n">master</span><span class="o">=</span><span class="n">master</span><span class="p">,</span> <span class="n">dim</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span> <span class="n">mode</span><span class="o">=</span><span class="n">mode</span><span class="p">,</span> <span class="n">p</span><span class="o">=</span><span class="n">p</span><span class="p">,</span> <span class="n">represent_method</span><span class="o">=</span><span class="n">represent_method</span><span class="p">,</span>  <span class="n">agg_method</span><span class="o">=</span><span class="n">agg_method</span><span class="p">,</span>
+                         <span class="n">constraint</span><span class="o">=</span><span class="n">constraint</span><span class="p">,</span> <span class="n">verbose</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">iter_max</span> <span class="o">=</span> <span class="n">itermax</span><span class="p">)</span>
+    <span class="n">DTW</span><span class="p">[</span><span class="s1">&#39;Almost straight&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">central1</span><span class="p">)</span>
+
+    <span class="n">central2</span> <span class="o">=</span> <span class="n">tkl</span><span class="o">.</span><span class="n">fusion</span><span class="p">(</span><span class="n">sets2</span><span class="p">,</span> <span class="n">master</span><span class="o">=</span><span class="n">master</span><span class="p">,</span> <span class="n">dim</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span> <span class="n">mode</span><span class="o">=</span><span class="n">mode</span><span class="p">,</span> <span class="n">p</span><span class="o">=</span><span class="n">p</span><span class="p">,</span> <span class="n">represent_method</span><span class="o">=</span><span class="n">represent_method</span><span class="p">,</span>  <span class="n">agg_method</span><span class="o">=</span><span class="n">agg_method</span><span class="p">,</span>
+                         <span class="n">constraint</span><span class="o">=</span><span class="n">constraint</span><span class="p">,</span> <span class="n">verbose</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">iter_max</span> <span class="o">=</span> <span class="n">itermax</span><span class="p">)</span>
+    <span class="n">DTW</span><span class="p">[</span><span class="s1">&#39;Moderate sinuosity&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">central2</span><span class="p">)</span>
+
+    <span class="n">central3</span> <span class="o">=</span> <span class="n">tkl</span><span class="o">.</span><span class="n">fusion</span><span class="p">(</span><span class="n">sets3</span><span class="p">,</span> <span class="n">master</span><span class="o">=</span><span class="n">master</span><span class="p">,</span> <span class="n">dim</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span> <span class="n">mode</span><span class="o">=</span><span class="n">mode</span><span class="p">,</span> <span class="n">p</span><span class="o">=</span><span class="n">p</span><span class="p">,</span> <span class="n">represent_method</span><span class="o">=</span><span class="n">represent_method</span><span class="p">,</span>  <span class="n">agg_method</span><span class="o">=</span><span class="n">agg_method</span><span class="p">,</span>
+                         <span class="n">constraint</span><span class="o">=</span><span class="n">constraint</span><span class="p">,</span> <span class="n">verbose</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">iter_max</span> <span class="o">=</span> <span class="n">itermax</span><span class="p">)</span>
+    <span class="n">DTW</span><span class="p">[</span><span class="s1">&#39;Switchbacks&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">central3</span><span class="p">)</span>
+<br/><br/></pre></div>
+</div>
+</div>
+<div class="nboutput docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+Sample size:  1
+    FRECHET
+WARNING: TRAJECTORY FUSION HAS NOT CONVERGED (#ITER = 25 - CV = 0.09603922585566863)
+WARNING: TRAJECTORY FUSION HAS NOT CONVERGED (#ITER = 25 - CV = 0.010419275436088782)
+    DTW
+Sample size:  2
+    FRECHET
+WARNING: TRAJECTORY FUSION HAS NOT CONVERGED (#ITER = 25 - CV = 0.09603922585566863)
+WARNING: TRAJECTORY FUSION HAS NOT CONVERGED (#ITER = 25 - CV = 0.010419275436088782)
+    DTW
+Sample size:  3
+    FRECHET
+WARNING: TRAJECTORY FUSION HAS NOT CONVERGED (#ITER = 25 - CV = 0.09603922585566863)
+WARNING: TRAJECTORY FUSION HAS NOT CONVERGED (#ITER = 25 - CV = 0.010419275436088782)
+    DTW
+Sample size:  4
+    FRECHET
+WARNING: TRAJECTORY FUSION HAS NOT CONVERGED (#ITER = 25 - CV = 0.09603922585566863)
+</pre></div></div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt empty docutils container">
+</div>
+<div class="output_area docutils container">
+<div class="highlight"><pre>
+<span class="ansi-red-fg">---------------------------------------------------------------------------</span>
+<span class="ansi-red-fg">KeyboardInterrupt</span>                         Traceback (most recent call last)
+Cell <span class="ansi-green-fg">In[7], line 37</span>
+<span class="ansi-green-intense-fg ansi-bold">     33</span> central1 <span style="color: rgb(98,98,98)">=</span> tkl<span style="color: rgb(98,98,98)">.</span>fusion(tracks1, master<span style="color: rgb(98,98,98)">=</span>master, dim<span style="color: rgb(98,98,98)">=</span><span style="color: rgb(98,98,98)">2</span>, mode<span style="color: rgb(98,98,98)">=</span>mode, p<span style="color: rgb(98,98,98)">=</span>p, represent_method<span style="color: rgb(98,98,98)">=</span>represent_method,  agg_method<span style="color: rgb(98,98,98)">=</span>agg_method,
+<span class="ansi-green-intense-fg ansi-bold">     34</span>                      constraint<span style="color: rgb(98,98,98)">=</span>constraint, verbose<span style="color: rgb(98,98,98)">=</span><span class="ansi-bold" style="color: rgb(0,135,0)">False</span>, iter_max <span style="color: rgb(98,98,98)">=</span> itermax)
+<span class="ansi-green-intense-fg ansi-bold">     35</span> FRECHET[<span style="color: rgb(175,0,0)">&#39;</span><span style="color: rgb(175,0,0)">Almost straight</span><span style="color: rgb(175,0,0)">&#39;</span>]<span style="color: rgb(98,98,98)">.</span>append(central1)
+<span class="ansi-green-fg">---&gt; 37</span> central2 <span style="color: rgb(98,98,98)">=</span> <span class="ansi-yellow-bg">tkl</span><span class="ansi-yellow-bg" style="color: rgb(98,98,98)">.</span><span class="ansi-yellow-bg">fusion</span><span class="ansi-yellow-bg">(</span><span class="ansi-yellow-bg">tracks2</span><span class="ansi-yellow-bg">,</span><span class="ansi-yellow-bg"> </span><span class="ansi-yellow-bg">master</span><span class="ansi-yellow-bg" style="color: rgb(98,98,98)">=</span><span class="ansi-yellow-bg">master</span><span class="ansi-yellow-bg">,</span><span class="ansi-yellow-bg"> </span><span class="ansi-yellow-bg">dim</span><span class="ansi-yellow-bg" style="color: rgb(98,98,98)">=</span><span class="ansi-yellow-bg" style="color: rgb(98,98,98)">2</span><span class="ansi-yellow-bg">,</span><span class="ansi-yellow-bg"> </span><span class="ansi-yellow-bg">mode</span><span class="ansi-yellow-bg" style="color: rgb(98,98,98)">=</span><span class="ansi-yellow-bg">mode</span><span class="ansi-yellow-bg">,</span><span class="ansi-yellow-bg"> </span><span class="ansi-yellow-bg">p</span><span class="ansi-yellow-bg" style="color: rgb(98,98,98)">=</span><span class="ansi-yellow-bg">p</span><span class="ansi-yellow-bg">,</span><span class="ansi-yellow-bg"> </span><span class="ansi-yellow-bg">represent_method</span><span class="ansi-yellow-bg" style="color: rgb(98,98,98)">=</span><span class="ansi-yellow-bg">represent_method</span><span class="ansi-yellow-bg">,</span><span class="ansi-yellow-bg">  </span><span class="ansi-yellow-bg">agg_method</span><span class="ansi-yellow-bg" style="color: rgb(98,98,98)">=</span><span class="ansi-yellow-bg">agg_method</span><span class="ansi-yellow-bg">,</span>
+<span class="ansi-green-intense-fg ansi-bold">     38</span> <span class="ansi-yellow-bg">                     </span><span class="ansi-yellow-bg">constraint</span><span class="ansi-yellow-bg" style="color: rgb(98,98,98)">=</span><span class="ansi-yellow-bg">constraint</span><span class="ansi-yellow-bg">,</span><span class="ansi-yellow-bg"> </span><span class="ansi-yellow-bg">verbose</span><span class="ansi-yellow-bg" style="color: rgb(98,98,98)">=</span><span class="ansi-yellow-bg ansi-bold" style="color: rgb(0,135,0)">False</span><span class="ansi-yellow-bg">,</span><span class="ansi-yellow-bg"> </span><span class="ansi-yellow-bg">iter_max</span><span class="ansi-yellow-bg"> </span><span class="ansi-yellow-bg" style="color: rgb(98,98,98)">=</span><span class="ansi-yellow-bg"> </span><span class="ansi-yellow-bg">itermax</span><span class="ansi-yellow-bg">)</span>
+<span class="ansi-green-intense-fg ansi-bold">     39</span> FRECHET[<span style="color: rgb(175,0,0)">&#39;</span><span style="color: rgb(175,0,0)">Moderate sinuosity</span><span style="color: rgb(175,0,0)">&#39;</span>]<span style="color: rgb(98,98,98)">.</span>append(central2)
+<span class="ansi-green-intense-fg ansi-bold">     41</span> central3 <span style="color: rgb(98,98,98)">=</span> tkl<span style="color: rgb(98,98,98)">.</span>fusion(tracks3, master<span style="color: rgb(98,98,98)">=</span>master, dim<span style="color: rgb(98,98,98)">=</span><span style="color: rgb(98,98,98)">2</span>, mode<span style="color: rgb(98,98,98)">=</span>mode, p<span style="color: rgb(98,98,98)">=</span>p, represent_method<span style="color: rgb(98,98,98)">=</span>represent_method,  agg_method<span style="color: rgb(98,98,98)">=</span>agg_method,
+<span class="ansi-green-intense-fg ansi-bold">     42</span>                      constraint<span style="color: rgb(98,98,98)">=</span>constraint, verbose<span style="color: rgb(98,98,98)">=</span><span class="ansi-bold" style="color: rgb(0,135,0)">False</span>, iter_max <span style="color: rgb(98,98,98)">=</span> itermax)
+
+File <span class="ansi-green-fg">~/tracklib/tracklib/tracklib/algo/comparison.py:812</span>, in <span class="ansi-cyan-fg">fusion</span><span class="ansi-blue-fg">(tracks, mode, master, p, dim, represent_method, agg_method, constraint, recursive, iter_max, verbose)</span>
+<span class="ansi-green-intense-fg ansi-bold">    810</span> <span style="color: rgb(95,135,135)"># Terminal case</span>
+<span class="ansi-green-intense-fg ansi-bold">    811</span> <span class="ansi-bold" style="color: rgb(0,135,0)">if</span> N <span style="color: rgb(98,98,98)">&lt;</span><span style="color: rgb(98,98,98)">=</span> recursive:
+<span class="ansi-green-fg">--&gt; 812</span>     <span class="ansi-bold" style="color: rgb(0,135,0)">return</span> <span class="ansi-yellow-bg">_fusion</span><span class="ansi-yellow-bg">(</span><span class="ansi-yellow-bg">tracks</span><span class="ansi-yellow-bg">,</span><span class="ansi-yellow-bg"> </span><span class="ansi-yellow-bg">mode</span><span class="ansi-yellow-bg" style="color: rgb(98,98,98)">=</span><span class="ansi-yellow-bg">mode</span><span class="ansi-yellow-bg">,</span><span class="ansi-yellow-bg"> </span><span class="ansi-yellow-bg">master</span><span class="ansi-yellow-bg" style="color: rgb(98,98,98)">=</span><span class="ansi-yellow-bg">master</span><span class="ansi-yellow-bg">,</span><span class="ansi-yellow-bg"> </span><span class="ansi-yellow-bg">p</span><span class="ansi-yellow-bg" style="color: rgb(98,98,98)">=</span><span class="ansi-yellow-bg">p</span><span class="ansi-yellow-bg">,</span><span class="ansi-yellow-bg"> </span><span class="ansi-yellow-bg">dim</span><span class="ansi-yellow-bg" style="color: rgb(98,98,98)">=</span><span class="ansi-yellow-bg">dim</span><span class="ansi-yellow-bg">,</span><span class="ansi-yellow-bg"> </span><span class="ansi-yellow-bg">represent_method</span><span class="ansi-yellow-bg" style="color: rgb(98,98,98)">=</span><span class="ansi-yellow-bg">represent_method</span><span class="ansi-yellow-bg">,</span><span class="ansi-yellow-bg"> </span><span class="ansi-yellow-bg">agg_method</span><span class="ansi-yellow-bg" style="color: rgb(98,98,98)">=</span><span class="ansi-yellow-bg">agg_method</span><span class="ansi-yellow-bg">,</span><span class="ansi-yellow-bg"> </span><span class="ansi-yellow-bg">constraint</span><span class="ansi-yellow-bg" style="color: rgb(98,98,98)">=</span><span class="ansi-yellow-bg">constraint</span><span class="ansi-yellow-bg">,</span><span class="ansi-yellow-bg"> </span><span class="ansi-yellow-bg">iter_max</span><span class="ansi-yellow-bg" style="color: rgb(98,98,98)">=</span><span class="ansi-yellow-bg">iter_max</span><span class="ansi-yellow-bg">,</span><span class="ansi-yellow-bg"> </span><span class="ansi-yellow-bg">verbose</span><span class="ansi-yellow-bg" style="color: rgb(98,98,98)">=</span><span class="ansi-yellow-bg">verbose</span><span class="ansi-yellow-bg">)</span>
+<span class="ansi-green-intense-fg ansi-bold">    814</span> <span style="color: rgb(95,135,135)"># Recursive call</span>
+<span class="ansi-green-intense-fg ansi-bold">    815</span> <span class="ansi-bold" style="color: rgb(0,135,0)">else</span>:
+<span class="ansi-green-intense-fg ansi-bold">    816</span>    Npg <span style="color: rgb(98,98,98)">=</span> <span style="color: rgb(0,135,0)">int</span>(N<span style="color: rgb(98,98,98)">/</span>recursive)
+
+File <span class="ansi-green-fg">~/tracklib/tracklib/tracklib/algo/comparison.py:774</span>, in <span class="ansi-cyan-fg">_fusion</span><span class="ansi-blue-fg">(tracks, mode, master, p, dim, represent_method, agg_method, constraint, iter_max, verbose)</span>
+<span class="ansi-green-intense-fg ansi-bold">    771</span> central<span style="color: rgb(98,98,98)">.</span>iterations<span style="color: rgb(98,98,98)">.</span>append(tracklib<span style="color: rgb(98,98,98)">.</span>Track([obs<span style="color: rgb(98,98,98)">.</span>copy() <span class="ansi-bold" style="color: rgb(0,135,0)">for</span> obs <span class="ansi-bold" style="color: rgb(175,0,255)">in</span> central]))
+<span class="ansi-green-intense-fg ansi-bold">    772</span> central_before <span style="color: rgb(98,98,98)">=</span> central<span style="color: rgb(98,98,98)">.</span>copy()
+<span class="ansi-green-fg">--&gt; 774</span> <span class="ansi-yellow-bg">_fusion_iteration</span><span class="ansi-yellow-bg">(</span><span class="ansi-yellow-bg">central</span><span class="ansi-yellow-bg">,</span><span class="ansi-yellow-bg"> </span><span class="ansi-yellow-bg">tracks</span><span class="ansi-yellow-bg">,</span><span class="ansi-yellow-bg"> </span><span class="ansi-yellow-bg">mode</span><span class="ansi-yellow-bg">,</span><span class="ansi-yellow-bg"> </span><span class="ansi-yellow-bg">p</span><span class="ansi-yellow-bg">,</span><span class="ansi-yellow-bg"> </span><span class="ansi-yellow-bg">dim</span><span class="ansi-yellow-bg">,</span><span class="ansi-yellow-bg"> </span><span class="ansi-yellow-bg">represent_method</span><span class="ansi-yellow-bg">,</span><span class="ansi-yellow-bg"> </span><span class="ansi-yellow-bg">agg_method</span><span class="ansi-yellow-bg">,</span><span class="ansi-yellow-bg"> </span><span class="ansi-yellow-bg">constraint</span><span class="ansi-yellow-bg">,</span><span class="ansi-yellow-bg"> </span><span class="ansi-yellow-bg">verbose</span><span class="ansi-yellow-bg">)</span>
+<span class="ansi-green-intense-fg ansi-bold">    776</span> evolution <span style="color: rgb(98,98,98)">=</span> compare(central, central_before, mode<span style="color: rgb(98,98,98)">=</span>MODE_COMPARISON_POINTWISE, p<span style="color: rgb(98,98,98)">=</span><span style="color: rgb(98,98,98)">1</span>)
+<span class="ansi-green-intense-fg ansi-bold">    777</span> central<span style="color: rgb(98,98,98)">.</span>convergence<span style="color: rgb(98,98,98)">.</span>append(evolution)
+
+File <span class="ansi-green-fg">~/tracklib/tracklib/tracklib/algo/comparison.py:738</span>, in <span class="ansi-cyan-fg">_fusion_iteration</span><span class="ansi-blue-fg">(central, tracks, mode, p, dim, represent_method, agg_method, constraint, verbose)</span>
+<span class="ansi-green-intense-fg ansi-bold">    736</span> matchings <span style="color: rgb(98,98,98)">=</span> tracklib<span style="color: rgb(98,98,98)">.</span>TrackCollection()
+<span class="ansi-green-intense-fg ansi-bold">    737</span> <span class="ansi-bold" style="color: rgb(0,135,0)">for</span> i <span class="ansi-bold" style="color: rgb(175,0,255)">in</span> <span style="color: rgb(0,135,0)">range</span>(<span style="color: rgb(0,135,0)">len</span>(tracks)):
+<span class="ansi-green-fg">--&gt; 738</span>     matching <span style="color: rgb(98,98,98)">=</span> <span class="ansi-yellow-bg">match</span><span class="ansi-yellow-bg">(</span><span class="ansi-yellow-bg">central</span><span class="ansi-yellow-bg">,</span><span class="ansi-yellow-bg"> </span><span class="ansi-yellow-bg">tracks</span><span class="ansi-yellow-bg">[</span><span class="ansi-yellow-bg">i</span><span class="ansi-yellow-bg">]</span><span class="ansi-yellow-bg">,</span><span class="ansi-yellow-bg"> </span><span class="ansi-yellow-bg">mode</span><span class="ansi-yellow-bg" style="color: rgb(98,98,98)">=</span><span class="ansi-yellow-bg">mode</span><span class="ansi-yellow-bg">,</span><span class="ansi-yellow-bg"> </span><span class="ansi-yellow-bg">p</span><span class="ansi-yellow-bg" style="color: rgb(98,98,98)">=</span><span class="ansi-yellow-bg">p</span><span class="ansi-yellow-bg">,</span><span class="ansi-yellow-bg"> </span><span class="ansi-yellow-bg">dim</span><span class="ansi-yellow-bg" style="color: rgb(98,98,98)">=</span><span class="ansi-yellow-bg">dim</span><span class="ansi-yellow-bg">,</span><span class="ansi-yellow-bg"> </span><span class="ansi-yellow-bg">verbose</span><span class="ansi-yellow-bg" style="color: rgb(98,98,98)">=</span><span class="ansi-yellow-bg">verbose</span><span class="ansi-yellow-bg">)</span>
+<span class="ansi-green-intense-fg ansi-bold">    739</span>     matching<span style="color: rgb(98,98,98)">.</span>createAnalyticalFeature(<span style="color: rgb(175,0,0)">&#34;</span><span style="color: rgb(175,0,0)">homologous</span><span style="color: rgb(175,0,0)">&#34;</span>)
+<span class="ansi-green-intense-fg ansi-bold">    740</span>     <span class="ansi-bold" style="color: rgb(0,135,0)">for</span> j <span class="ansi-bold" style="color: rgb(175,0,255)">in</span> <span style="color: rgb(0,135,0)">range</span>(<span style="color: rgb(0,135,0)">len</span>(central)):
+
+File <span class="ansi-green-fg">~/tracklib/tracklib/tracklib/algo/comparison.py:162</span>, in <span class="ansi-cyan-fg">match</span><span class="ansi-blue-fg">(track1, track2, mode, p, dim, verbose, plot)</span>
+<span class="ansi-green-intense-fg ansi-bold">    160</span>     <span class="ansi-bold" style="color: rgb(0,135,0)">return</span> _nn(track1, track2, dim, verbose)
+<span class="ansi-green-intense-fg ansi-bold">    161</span> <span class="ansi-bold" style="color: rgb(0,135,0)">if</span> (mode <span style="color: rgb(98,98,98)">==</span> MODE_MATCHING_FRECHET):
+<span class="ansi-green-fg">--&gt; 162</span>     <span class="ansi-bold" style="color: rgb(0,135,0)">return</span> <span class="ansi-yellow-bg">_dtw_matching</span><span class="ansi-yellow-bg">(</span><span class="ansi-yellow-bg">track1</span><span class="ansi-yellow-bg">,</span><span class="ansi-yellow-bg"> </span><span class="ansi-yellow-bg">track2</span><span class="ansi-yellow-bg">,</span><span class="ansi-yellow-bg"> </span><span class="ansi-yellow-bg" style="color: rgb(0,135,0)">float</span><span class="ansi-yellow-bg">(</span><span class="ansi-yellow-bg" style="color: rgb(175,0,0)">&#39;</span><span class="ansi-yellow-bg" style="color: rgb(175,0,0)">inf</span><span class="ansi-yellow-bg" style="color: rgb(175,0,0)">&#39;</span><span class="ansi-yellow-bg">)</span><span class="ansi-yellow-bg">,</span><span class="ansi-yellow-bg"> </span><span class="ansi-yellow-bg">dim</span><span class="ansi-yellow-bg">,</span><span class="ansi-yellow-bg"> </span><span class="ansi-yellow-bg">verbose</span><span class="ansi-yellow-bg">,</span><span class="ansi-yellow-bg"> </span><span class="ansi-yellow-bg">plot</span><span class="ansi-yellow-bg">)</span>
+<span class="ansi-green-intense-fg ansi-bold">    163</span> <span class="ansi-bold" style="color: rgb(0,135,0)">if</span> (mode <span style="color: rgb(98,98,98)">==</span> MODE_MATCHING_DTW):
+<span class="ansi-green-intense-fg ansi-bold">    164</span>     <span class="ansi-bold" style="color: rgb(0,135,0)">return</span> _dtw_matching(track1, track2, p, dim, verbose, plot)
+
+File <span class="ansi-green-fg">~/tracklib/tracklib/tracklib/algo/comparison.py:519</span>, in <span class="ansi-cyan-fg">_dtw_matching</span><span class="ansi-blue-fg">(track1, track2, p, dim, verbose, plot)</span>
+<span class="ansi-green-intense-fg ansi-bold">    518</span> <span class="ansi-bold" style="color: rgb(0,135,0)">def</span> <span style="color: rgb(0,0,255)">_dtw_matching</span>(track1, track2, p, dim, verbose, plot):
+<span class="ansi-green-fg">--&gt; 519</span>     <span class="ansi-bold" style="color: rgb(0,135,0)">return</span> <span class="ansi-yellow-bg">_dtw</span><span class="ansi-yellow-bg">(</span><span class="ansi-yellow-bg">track1</span><span class="ansi-yellow-bg">,</span><span class="ansi-yellow-bg"> </span><span class="ansi-yellow-bg">track2</span><span class="ansi-yellow-bg">,</span><span class="ansi-yellow-bg"> </span><span class="ansi-yellow-bg">_p2weight</span><span class="ansi-yellow-bg">(</span><span class="ansi-yellow-bg">p</span><span class="ansi-yellow-bg">)</span><span class="ansi-yellow-bg">,</span><span class="ansi-yellow-bg"> </span><span class="ansi-yellow-bg">dim</span><span class="ansi-yellow-bg">,</span><span class="ansi-yellow-bg"> </span><span class="ansi-yellow-bg">verbose</span><span class="ansi-yellow-bg">,</span><span class="ansi-yellow-bg"> </span><span class="ansi-yellow-bg">plot</span><span class="ansi-yellow-bg">)</span>
+
+File <span class="ansi-green-fg">~/tracklib/tracklib/tracklib/algo/comparison.py:531</span>, in <span class="ansi-cyan-fg">_dtw</span><span class="ansi-blue-fg">(track1, track2, weight, dim, verbose, plot)</span>
+<span class="ansi-green-intense-fg ansi-bold">    529</span> <span class="ansi-bold" style="color: rgb(0,135,0)">def</span> <span style="color: rgb(0,0,255)">_dtw</span>(track1, track2, weight <span style="color: rgb(98,98,98)">=</span> <span class="ansi-bold" style="color: rgb(0,135,0)">lambda</span> A, B : A <span style="color: rgb(98,98,98)">+</span> B, dim<span style="color: rgb(98,98,98)">=</span><span style="color: rgb(98,98,98)">2</span>, verbose <span style="color: rgb(98,98,98)">=</span> <span class="ansi-bold" style="color: rgb(0,135,0)">True</span>, plot<span style="color: rgb(98,98,98)">=</span><span class="ansi-bold" style="color: rgb(0,135,0)">False</span>):
+<span class="ansi-green-fg">--&gt; 531</span>     output <span style="color: rgb(98,98,98)">=</span> <span class="ansi-yellow-bg">track1</span><span class="ansi-yellow-bg" style="color: rgb(98,98,98)">.</span><span class="ansi-yellow-bg">copy</span><span class="ansi-yellow-bg">(</span><span class="ansi-yellow-bg">)</span>
+<span class="ansi-green-intense-fg ansi-bold">    533</span>     output<span style="color: rgb(98,98,98)">.</span>createAnalyticalFeature(<span style="color: rgb(175,0,0)">&#34;</span><span style="color: rgb(175,0,0)">diff</span><span style="color: rgb(175,0,0)">&#34;</span>)
+<span class="ansi-green-intense-fg ansi-bold">    534</span>     output<span style="color: rgb(98,98,98)">.</span>createAnalyticalFeature(<span style="color: rgb(175,0,0)">&#34;</span><span style="color: rgb(175,0,0)">pair</span><span style="color: rgb(175,0,0)">&#34;</span>)
+
+File <span class="ansi-green-fg">~/tracklib/tracklib/tracklib/core/track.py:104</span>, in <span class="ansi-cyan-fg">Track.copy</span><span class="ansi-blue-fg">(self)</span>
+<span class="ansi-green-intense-fg ansi-bold">    102</span> <span class="ansi-bold" style="color: rgb(0,135,0)">def</span> <span style="color: rgb(0,0,255)">copy</span>(<span style="color: rgb(0,135,0)">self</span>):
+<span class="ansi-green-intense-fg ansi-bold">    103</span> <span style="color: rgb(188,188,188)">    </span><span style="color: rgb(175,0,0)">&#34;&#34;&#34;TODO&#34;&#34;&#34;</span>
+<span class="ansi-green-fg">--&gt; 104</span>     <span class="ansi-bold" style="color: rgb(0,135,0)">return</span> <span class="ansi-yellow-bg">copy</span><span class="ansi-yellow-bg" style="color: rgb(98,98,98)">.</span><span class="ansi-yellow-bg">deepcopy</span><span class="ansi-yellow-bg">(</span><span class="ansi-yellow-bg" style="color: rgb(0,135,0)">self</span><span class="ansi-yellow-bg">)</span>
+
+File <span class="ansi-green-fg">/usr/lib/python3.10/copy.py:172</span>, in <span class="ansi-cyan-fg">deepcopy</span><span class="ansi-blue-fg">(x, memo, _nil)</span>
+<span class="ansi-green-intense-fg ansi-bold">    170</span>                 y <span style="color: rgb(98,98,98)">=</span> x
+<span class="ansi-green-intense-fg ansi-bold">    171</span>             <span class="ansi-bold" style="color: rgb(0,135,0)">else</span>:
+<span class="ansi-green-fg">--&gt; 172</span>                 y <span style="color: rgb(98,98,98)">=</span> <span class="ansi-yellow-bg">_reconstruct</span><span class="ansi-yellow-bg">(</span><span class="ansi-yellow-bg">x</span><span class="ansi-yellow-bg">,</span><span class="ansi-yellow-bg"> </span><span class="ansi-yellow-bg">memo</span><span class="ansi-yellow-bg">,</span><span class="ansi-yellow-bg"> </span><span class="ansi-yellow-bg" style="color: rgb(98,98,98)">*</span><span class="ansi-yellow-bg">rv</span><span class="ansi-yellow-bg">)</span>
+<span class="ansi-green-intense-fg ansi-bold">    174</span> <span style="color: rgb(95,135,135)"># If is its own copy, don&#39;t memoize.</span>
+<span class="ansi-green-intense-fg ansi-bold">    175</span> <span class="ansi-bold" style="color: rgb(0,135,0)">if</span> y <span class="ansi-bold" style="color: rgb(175,0,255)">is</span> <span class="ansi-bold" style="color: rgb(175,0,255)">not</span> x:
+
+File <span class="ansi-green-fg">/usr/lib/python3.10/copy.py:271</span>, in <span class="ansi-cyan-fg">_reconstruct</span><span class="ansi-blue-fg">(x, memo, func, args, state, listiter, dictiter, deepcopy)</span>
+<span class="ansi-green-intense-fg ansi-bold">    269</span> <span class="ansi-bold" style="color: rgb(0,135,0)">if</span> state <span class="ansi-bold" style="color: rgb(175,0,255)">is</span> <span class="ansi-bold" style="color: rgb(175,0,255)">not</span> <span class="ansi-bold" style="color: rgb(0,135,0)">None</span>:
+<span class="ansi-green-intense-fg ansi-bold">    270</span>     <span class="ansi-bold" style="color: rgb(0,135,0)">if</span> deep:
+<span class="ansi-green-fg">--&gt; 271</span>         state <span style="color: rgb(98,98,98)">=</span> <span class="ansi-yellow-bg">deepcopy</span><span class="ansi-yellow-bg">(</span><span class="ansi-yellow-bg">state</span><span class="ansi-yellow-bg">,</span><span class="ansi-yellow-bg"> </span><span class="ansi-yellow-bg">memo</span><span class="ansi-yellow-bg">)</span>
+<span class="ansi-green-intense-fg ansi-bold">    272</span>     <span class="ansi-bold" style="color: rgb(0,135,0)">if</span> <span style="color: rgb(0,135,0)">hasattr</span>(y, <span style="color: rgb(175,0,0)">&#39;</span><span style="color: rgb(175,0,0)">__setstate__</span><span style="color: rgb(175,0,0)">&#39;</span>):
+<span class="ansi-green-intense-fg ansi-bold">    273</span>         y<span style="color: rgb(98,98,98)">.</span>__setstate__(state)
+
+File <span class="ansi-green-fg">/usr/lib/python3.10/copy.py:146</span>, in <span class="ansi-cyan-fg">deepcopy</span><span class="ansi-blue-fg">(x, memo, _nil)</span>
+<span class="ansi-green-intense-fg ansi-bold">    144</span> copier <span style="color: rgb(98,98,98)">=</span> _deepcopy_dispatch<span style="color: rgb(98,98,98)">.</span>get(<span style="color: rgb(0,135,0)">cls</span>)
+<span class="ansi-green-intense-fg ansi-bold">    145</span> <span class="ansi-bold" style="color: rgb(0,135,0)">if</span> copier <span class="ansi-bold" style="color: rgb(175,0,255)">is</span> <span class="ansi-bold" style="color: rgb(175,0,255)">not</span> <span class="ansi-bold" style="color: rgb(0,135,0)">None</span>:
+<span class="ansi-green-fg">--&gt; 146</span>     y <span style="color: rgb(98,98,98)">=</span> <span class="ansi-yellow-bg">copier</span><span class="ansi-yellow-bg">(</span><span class="ansi-yellow-bg">x</span><span class="ansi-yellow-bg">,</span><span class="ansi-yellow-bg"> </span><span class="ansi-yellow-bg">memo</span><span class="ansi-yellow-bg">)</span>
+<span class="ansi-green-intense-fg ansi-bold">    147</span> <span class="ansi-bold" style="color: rgb(0,135,0)">else</span>:
+<span class="ansi-green-intense-fg ansi-bold">    148</span>     <span class="ansi-bold" style="color: rgb(0,135,0)">if</span> <span style="color: rgb(0,135,0)">issubclass</span>(<span style="color: rgb(0,135,0)">cls</span>, <span style="color: rgb(0,135,0)">type</span>):
+
+File <span class="ansi-green-fg">/usr/lib/python3.10/copy.py:231</span>, in <span class="ansi-cyan-fg">_deepcopy_dict</span><span class="ansi-blue-fg">(x, memo, deepcopy)</span>
+<span class="ansi-green-intense-fg ansi-bold">    229</span> memo[<span style="color: rgb(0,135,0)">id</span>(x)] <span style="color: rgb(98,98,98)">=</span> y
+<span class="ansi-green-intense-fg ansi-bold">    230</span> <span class="ansi-bold" style="color: rgb(0,135,0)">for</span> key, value <span class="ansi-bold" style="color: rgb(175,0,255)">in</span> x<span style="color: rgb(98,98,98)">.</span>items():
+<span class="ansi-green-fg">--&gt; 231</span>     y[deepcopy(key, memo)] <span style="color: rgb(98,98,98)">=</span> <span class="ansi-yellow-bg">deepcopy</span><span class="ansi-yellow-bg">(</span><span class="ansi-yellow-bg">value</span><span class="ansi-yellow-bg">,</span><span class="ansi-yellow-bg"> </span><span class="ansi-yellow-bg">memo</span><span class="ansi-yellow-bg">)</span>
+<span class="ansi-green-intense-fg ansi-bold">    232</span> <span class="ansi-bold" style="color: rgb(0,135,0)">return</span> y
+
+File <span class="ansi-green-fg">/usr/lib/python3.10/copy.py:146</span>, in <span class="ansi-cyan-fg">deepcopy</span><span class="ansi-blue-fg">(x, memo, _nil)</span>
+<span class="ansi-green-intense-fg ansi-bold">    144</span> copier <span style="color: rgb(98,98,98)">=</span> _deepcopy_dispatch<span style="color: rgb(98,98,98)">.</span>get(<span style="color: rgb(0,135,0)">cls</span>)
+<span class="ansi-green-intense-fg ansi-bold">    145</span> <span class="ansi-bold" style="color: rgb(0,135,0)">if</span> copier <span class="ansi-bold" style="color: rgb(175,0,255)">is</span> <span class="ansi-bold" style="color: rgb(175,0,255)">not</span> <span class="ansi-bold" style="color: rgb(0,135,0)">None</span>:
+<span class="ansi-green-fg">--&gt; 146</span>     y <span style="color: rgb(98,98,98)">=</span> <span class="ansi-yellow-bg">copier</span><span class="ansi-yellow-bg">(</span><span class="ansi-yellow-bg">x</span><span class="ansi-yellow-bg">,</span><span class="ansi-yellow-bg"> </span><span class="ansi-yellow-bg">memo</span><span class="ansi-yellow-bg">)</span>
+<span class="ansi-green-intense-fg ansi-bold">    147</span> <span class="ansi-bold" style="color: rgb(0,135,0)">else</span>:
+<span class="ansi-green-intense-fg ansi-bold">    148</span>     <span class="ansi-bold" style="color: rgb(0,135,0)">if</span> <span style="color: rgb(0,135,0)">issubclass</span>(<span style="color: rgb(0,135,0)">cls</span>, <span style="color: rgb(0,135,0)">type</span>):
+
+File <span class="ansi-green-fg">/usr/lib/python3.10/copy.py:206</span>, in <span class="ansi-cyan-fg">_deepcopy_list</span><span class="ansi-blue-fg">(x, memo, deepcopy)</span>
+<span class="ansi-green-intense-fg ansi-bold">    204</span> append <span style="color: rgb(98,98,98)">=</span> y<span style="color: rgb(98,98,98)">.</span>append
+<span class="ansi-green-intense-fg ansi-bold">    205</span> <span class="ansi-bold" style="color: rgb(0,135,0)">for</span> a <span class="ansi-bold" style="color: rgb(175,0,255)">in</span> x:
+<span class="ansi-green-fg">--&gt; 206</span>     append(<span class="ansi-yellow-bg">deepcopy</span><span class="ansi-yellow-bg">(</span><span class="ansi-yellow-bg">a</span><span class="ansi-yellow-bg">,</span><span class="ansi-yellow-bg"> </span><span class="ansi-yellow-bg">memo</span><span class="ansi-yellow-bg">)</span>)
+<span class="ansi-green-intense-fg ansi-bold">    207</span> <span class="ansi-bold" style="color: rgb(0,135,0)">return</span> y
+
+File <span class="ansi-green-fg">/usr/lib/python3.10/copy.py:146</span>, in <span class="ansi-cyan-fg">deepcopy</span><span class="ansi-blue-fg">(x, memo, _nil)</span>
+<span class="ansi-green-intense-fg ansi-bold">    144</span> copier <span style="color: rgb(98,98,98)">=</span> _deepcopy_dispatch<span style="color: rgb(98,98,98)">.</span>get(<span style="color: rgb(0,135,0)">cls</span>)
+<span class="ansi-green-intense-fg ansi-bold">    145</span> <span class="ansi-bold" style="color: rgb(0,135,0)">if</span> copier <span class="ansi-bold" style="color: rgb(175,0,255)">is</span> <span class="ansi-bold" style="color: rgb(175,0,255)">not</span> <span class="ansi-bold" style="color: rgb(0,135,0)">None</span>:
+<span class="ansi-green-fg">--&gt; 146</span>     y <span style="color: rgb(98,98,98)">=</span> <span class="ansi-yellow-bg">copier</span><span class="ansi-yellow-bg">(</span><span class="ansi-yellow-bg">x</span><span class="ansi-yellow-bg">,</span><span class="ansi-yellow-bg"> </span><span class="ansi-yellow-bg">memo</span><span class="ansi-yellow-bg">)</span>
+<span class="ansi-green-intense-fg ansi-bold">    147</span> <span class="ansi-bold" style="color: rgb(0,135,0)">else</span>:
+<span class="ansi-green-intense-fg ansi-bold">    148</span>     <span class="ansi-bold" style="color: rgb(0,135,0)">if</span> <span style="color: rgb(0,135,0)">issubclass</span>(<span style="color: rgb(0,135,0)">cls</span>, <span style="color: rgb(0,135,0)">type</span>):
+
+File <span class="ansi-green-fg">/usr/lib/python3.10/copy.py:206</span>, in <span class="ansi-cyan-fg">_deepcopy_list</span><span class="ansi-blue-fg">(x, memo, deepcopy)</span>
+<span class="ansi-green-intense-fg ansi-bold">    204</span> append <span style="color: rgb(98,98,98)">=</span> y<span style="color: rgb(98,98,98)">.</span>append
+<span class="ansi-green-intense-fg ansi-bold">    205</span> <span class="ansi-bold" style="color: rgb(0,135,0)">for</span> a <span class="ansi-bold" style="color: rgb(175,0,255)">in</span> x:
+<span class="ansi-green-fg">--&gt; 206</span>     append(<span class="ansi-yellow-bg">deepcopy</span><span class="ansi-yellow-bg">(</span><span class="ansi-yellow-bg">a</span><span class="ansi-yellow-bg">,</span><span class="ansi-yellow-bg"> </span><span class="ansi-yellow-bg">memo</span><span class="ansi-yellow-bg">)</span>)
+<span class="ansi-green-intense-fg ansi-bold">    207</span> <span class="ansi-bold" style="color: rgb(0,135,0)">return</span> y
+
+File <span class="ansi-green-fg">/usr/lib/python3.10/copy.py:146</span>, in <span class="ansi-cyan-fg">deepcopy</span><span class="ansi-blue-fg">(x, memo, _nil)</span>
+<span class="ansi-green-intense-fg ansi-bold">    144</span> copier <span style="color: rgb(98,98,98)">=</span> _deepcopy_dispatch<span style="color: rgb(98,98,98)">.</span>get(<span style="color: rgb(0,135,0)">cls</span>)
+<span class="ansi-green-intense-fg ansi-bold">    145</span> <span class="ansi-bold" style="color: rgb(0,135,0)">if</span> copier <span class="ansi-bold" style="color: rgb(175,0,255)">is</span> <span class="ansi-bold" style="color: rgb(175,0,255)">not</span> <span class="ansi-bold" style="color: rgb(0,135,0)">None</span>:
+<span class="ansi-green-fg">--&gt; 146</span>     y <span style="color: rgb(98,98,98)">=</span> <span class="ansi-yellow-bg">copier</span><span class="ansi-yellow-bg">(</span><span class="ansi-yellow-bg">x</span><span class="ansi-yellow-bg">,</span><span class="ansi-yellow-bg"> </span><span class="ansi-yellow-bg">memo</span><span class="ansi-yellow-bg">)</span>
+<span class="ansi-green-intense-fg ansi-bold">    147</span> <span class="ansi-bold" style="color: rgb(0,135,0)">else</span>:
+<span class="ansi-green-intense-fg ansi-bold">    148</span>     <span class="ansi-bold" style="color: rgb(0,135,0)">if</span> <span style="color: rgb(0,135,0)">issubclass</span>(<span style="color: rgb(0,135,0)">cls</span>, <span style="color: rgb(0,135,0)">type</span>):
+
+File <span class="ansi-green-fg">/usr/lib/python3.10/copy.py:206</span>, in <span class="ansi-cyan-fg">_deepcopy_list</span><span class="ansi-blue-fg">(x, memo, deepcopy)</span>
+<span class="ansi-green-intense-fg ansi-bold">    204</span> append <span style="color: rgb(98,98,98)">=</span> y<span style="color: rgb(98,98,98)">.</span>append
+<span class="ansi-green-intense-fg ansi-bold">    205</span> <span class="ansi-bold" style="color: rgb(0,135,0)">for</span> a <span class="ansi-bold" style="color: rgb(175,0,255)">in</span> x:
+<span class="ansi-green-fg">--&gt; 206</span>     append(<span class="ansi-yellow-bg">deepcopy</span><span class="ansi-yellow-bg">(</span><span class="ansi-yellow-bg">a</span><span class="ansi-yellow-bg">,</span><span class="ansi-yellow-bg"> </span><span class="ansi-yellow-bg">memo</span><span class="ansi-yellow-bg">)</span>)
+<span class="ansi-green-intense-fg ansi-bold">    207</span> <span class="ansi-bold" style="color: rgb(0,135,0)">return</span> y
+
+File <span class="ansi-green-fg">/usr/lib/python3.10/copy.py:172</span>, in <span class="ansi-cyan-fg">deepcopy</span><span class="ansi-blue-fg">(x, memo, _nil)</span>
+<span class="ansi-green-intense-fg ansi-bold">    170</span>                 y <span style="color: rgb(98,98,98)">=</span> x
+<span class="ansi-green-intense-fg ansi-bold">    171</span>             <span class="ansi-bold" style="color: rgb(0,135,0)">else</span>:
+<span class="ansi-green-fg">--&gt; 172</span>                 y <span style="color: rgb(98,98,98)">=</span> <span class="ansi-yellow-bg">_reconstruct</span><span class="ansi-yellow-bg">(</span><span class="ansi-yellow-bg">x</span><span class="ansi-yellow-bg">,</span><span class="ansi-yellow-bg"> </span><span class="ansi-yellow-bg">memo</span><span class="ansi-yellow-bg">,</span><span class="ansi-yellow-bg"> </span><span class="ansi-yellow-bg" style="color: rgb(98,98,98)">*</span><span class="ansi-yellow-bg">rv</span><span class="ansi-yellow-bg">)</span>
+<span class="ansi-green-intense-fg ansi-bold">    174</span> <span style="color: rgb(95,135,135)"># If is its own copy, don&#39;t memoize.</span>
+<span class="ansi-green-intense-fg ansi-bold">    175</span> <span class="ansi-bold" style="color: rgb(0,135,0)">if</span> y <span class="ansi-bold" style="color: rgb(175,0,255)">is</span> <span class="ansi-bold" style="color: rgb(175,0,255)">not</span> x:
+
+File <span class="ansi-green-fg">/usr/lib/python3.10/copy.py:271</span>, in <span class="ansi-cyan-fg">_reconstruct</span><span class="ansi-blue-fg">(x, memo, func, args, state, listiter, dictiter, deepcopy)</span>
+<span class="ansi-green-intense-fg ansi-bold">    269</span> <span class="ansi-bold" style="color: rgb(0,135,0)">if</span> state <span class="ansi-bold" style="color: rgb(175,0,255)">is</span> <span class="ansi-bold" style="color: rgb(175,0,255)">not</span> <span class="ansi-bold" style="color: rgb(0,135,0)">None</span>:
+<span class="ansi-green-intense-fg ansi-bold">    270</span>     <span class="ansi-bold" style="color: rgb(0,135,0)">if</span> deep:
+<span class="ansi-green-fg">--&gt; 271</span>         state <span style="color: rgb(98,98,98)">=</span> <span class="ansi-yellow-bg">deepcopy</span><span class="ansi-yellow-bg">(</span><span class="ansi-yellow-bg">state</span><span class="ansi-yellow-bg">,</span><span class="ansi-yellow-bg"> </span><span class="ansi-yellow-bg">memo</span><span class="ansi-yellow-bg">)</span>
+<span class="ansi-green-intense-fg ansi-bold">    272</span>     <span class="ansi-bold" style="color: rgb(0,135,0)">if</span> <span style="color: rgb(0,135,0)">hasattr</span>(y, <span style="color: rgb(175,0,0)">&#39;</span><span style="color: rgb(175,0,0)">__setstate__</span><span style="color: rgb(175,0,0)">&#39;</span>):
+<span class="ansi-green-intense-fg ansi-bold">    273</span>         y<span style="color: rgb(98,98,98)">.</span>__setstate__(state)
+
+File <span class="ansi-green-fg">/usr/lib/python3.10/copy.py:146</span>, in <span class="ansi-cyan-fg">deepcopy</span><span class="ansi-blue-fg">(x, memo, _nil)</span>
+<span class="ansi-green-intense-fg ansi-bold">    144</span> copier <span style="color: rgb(98,98,98)">=</span> _deepcopy_dispatch<span style="color: rgb(98,98,98)">.</span>get(<span style="color: rgb(0,135,0)">cls</span>)
+<span class="ansi-green-intense-fg ansi-bold">    145</span> <span class="ansi-bold" style="color: rgb(0,135,0)">if</span> copier <span class="ansi-bold" style="color: rgb(175,0,255)">is</span> <span class="ansi-bold" style="color: rgb(175,0,255)">not</span> <span class="ansi-bold" style="color: rgb(0,135,0)">None</span>:
+<span class="ansi-green-fg">--&gt; 146</span>     y <span style="color: rgb(98,98,98)">=</span> <span class="ansi-yellow-bg">copier</span><span class="ansi-yellow-bg">(</span><span class="ansi-yellow-bg">x</span><span class="ansi-yellow-bg">,</span><span class="ansi-yellow-bg"> </span><span class="ansi-yellow-bg">memo</span><span class="ansi-yellow-bg">)</span>
+<span class="ansi-green-intense-fg ansi-bold">    147</span> <span class="ansi-bold" style="color: rgb(0,135,0)">else</span>:
+<span class="ansi-green-intense-fg ansi-bold">    148</span>     <span class="ansi-bold" style="color: rgb(0,135,0)">if</span> <span style="color: rgb(0,135,0)">issubclass</span>(<span style="color: rgb(0,135,0)">cls</span>, <span style="color: rgb(0,135,0)">type</span>):
+
+File <span class="ansi-green-fg">/usr/lib/python3.10/copy.py:231</span>, in <span class="ansi-cyan-fg">_deepcopy_dict</span><span class="ansi-blue-fg">(x, memo, deepcopy)</span>
+<span class="ansi-green-intense-fg ansi-bold">    229</span> memo[<span style="color: rgb(0,135,0)">id</span>(x)] <span style="color: rgb(98,98,98)">=</span> y
+<span class="ansi-green-intense-fg ansi-bold">    230</span> <span class="ansi-bold" style="color: rgb(0,135,0)">for</span> key, value <span class="ansi-bold" style="color: rgb(175,0,255)">in</span> x<span style="color: rgb(98,98,98)">.</span>items():
+<span class="ansi-green-fg">--&gt; 231</span>     y[deepcopy(key, memo)] <span style="color: rgb(98,98,98)">=</span> <span class="ansi-yellow-bg">deepcopy</span><span class="ansi-yellow-bg">(</span><span class="ansi-yellow-bg">value</span><span class="ansi-yellow-bg">,</span><span class="ansi-yellow-bg"> </span><span class="ansi-yellow-bg">memo</span><span class="ansi-yellow-bg">)</span>
+<span class="ansi-green-intense-fg ansi-bold">    232</span> <span class="ansi-bold" style="color: rgb(0,135,0)">return</span> y
+
+File <span class="ansi-green-fg">/usr/lib/python3.10/copy.py:138</span>, in <span class="ansi-cyan-fg">deepcopy</span><span class="ansi-blue-fg">(x, memo, _nil)</span>
+<span class="ansi-green-intense-fg ansi-bold">    135</span>     memo <span style="color: rgb(98,98,98)">=</span> {}
+<span class="ansi-green-intense-fg ansi-bold">    137</span> d <span style="color: rgb(98,98,98)">=</span> <span style="color: rgb(0,135,0)">id</span>(x)
+<span class="ansi-green-fg">--&gt; 138</span> y <span style="color: rgb(98,98,98)">=</span> <span class="ansi-yellow-bg">memo</span><span class="ansi-yellow-bg" style="color: rgb(98,98,98)">.</span><span class="ansi-yellow-bg">get</span><span class="ansi-yellow-bg">(</span><span class="ansi-yellow-bg">d</span><span class="ansi-yellow-bg">,</span><span class="ansi-yellow-bg"> </span><span class="ansi-yellow-bg">_nil</span><span class="ansi-yellow-bg">)</span>
+<span class="ansi-green-intense-fg ansi-bold">    139</span> <span class="ansi-bold" style="color: rgb(0,135,0)">if</span> y <span class="ansi-bold" style="color: rgb(175,0,255)">is</span> <span class="ansi-bold" style="color: rgb(175,0,255)">not</span> _nil:
+<span class="ansi-green-intense-fg ansi-bold">    140</span>     <span class="ansi-bold" style="color: rgb(0,135,0)">return</span> y
+
+<span class="ansi-red-fg">KeyboardInterrupt</span>:
+</pre></div></div>
+</div>
+<div class="nbinput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[ ]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># On imprime les résultats pour toutes les fusions</span>
+
+<span class="n">centralsF1</span> <span class="o">=</span> <span class="n">tkl</span><span class="o">.</span><span class="n">TrackCollection</span><span class="p">()</span>
+<span class="n">centralsF2</span> <span class="o">=</span> <span class="n">tkl</span><span class="o">.</span><span class="n">TrackCollection</span><span class="p">()</span>
+<span class="n">centralsF3</span> <span class="o">=</span> <span class="n">tkl</span><span class="o">.</span><span class="n">TrackCollection</span><span class="p">()</span>
+<span class="k">for</span> <span class="n">s</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">E</span><span class="p">):</span>
+    <span class="n">central1</span> <span class="o">=</span> <span class="n">FRECHET</span><span class="p">[</span><span class="s1">&#39;Almost straight&#39;</span><span class="p">][</span><span class="n">s</span><span class="p">]</span>
+    <span class="n">centralsF1</span><span class="o">.</span><span class="n">addTrack</span><span class="p">(</span><span class="n">central1</span><span class="p">)</span>
+    <span class="n">central2</span> <span class="o">=</span> <span class="n">FRECHET</span><span class="p">[</span><span class="s1">&#39;Moderate sinuosity&#39;</span><span class="p">][</span><span class="n">s</span><span class="p">]</span>
+    <span class="n">centralsF2</span><span class="o">.</span><span class="n">addTrack</span><span class="p">(</span><span class="n">central2</span><span class="p">)</span>
+    <span class="n">central3</span> <span class="o">=</span> <span class="n">FRECHET</span><span class="p">[</span><span class="s1">&#39;Switchbacks&#39;</span><span class="p">][</span><span class="n">s</span><span class="p">]</span>
+    <span class="n">centralsF3</span><span class="o">.</span><span class="n">addTrack</span><span class="p">(</span><span class="n">central3</span><span class="p">)</span>
+<span class="c1"># visualizeAggTraj(sentier1, sentier2, sentier3, centrals1, centrals2, centrals3, title=&#39;FRECHET&#39;)</span>
+
+
+<span class="n">centralsD1</span> <span class="o">=</span> <span class="n">tkl</span><span class="o">.</span><span class="n">TrackCollection</span><span class="p">()</span>
+<span class="n">centralsD2</span> <span class="o">=</span> <span class="n">tkl</span><span class="o">.</span><span class="n">TrackCollection</span><span class="p">()</span>
+<span class="n">centralsD3</span> <span class="o">=</span> <span class="n">tkl</span><span class="o">.</span><span class="n">TrackCollection</span><span class="p">()</span>
+<span class="k">for</span> <span class="n">s</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">E</span><span class="p">):</span>
+    <span class="n">central1</span> <span class="o">=</span> <span class="n">DTW</span><span class="p">[</span><span class="s1">&#39;Almost straight&#39;</span><span class="p">][</span><span class="n">s</span><span class="p">]</span>
+    <span class="n">centralsD1</span><span class="o">.</span><span class="n">addTrack</span><span class="p">(</span><span class="n">central1</span><span class="p">)</span>
+    <span class="n">central2</span> <span class="o">=</span> <span class="n">DTW</span><span class="p">[</span><span class="s1">&#39;Moderate sinuosity&#39;</span><span class="p">][</span><span class="n">s</span><span class="p">]</span>
+    <span class="n">centralsD2</span><span class="o">.</span><span class="n">addTrack</span><span class="p">(</span><span class="n">central2</span><span class="p">)</span>
+    <span class="n">central3</span> <span class="o">=</span> <span class="n">DTW</span><span class="p">[</span><span class="s1">&#39;Switchbacks&#39;</span><span class="p">][</span><span class="n">s</span><span class="p">]</span>
+    <span class="n">centralsD3</span><span class="o">.</span><span class="n">addTrack</span><span class="p">(</span><span class="n">central3</span><span class="p">)</span>
+<span class="c1"># visualizeAggTraj(sentier1, sentier2, sentier3, centrals1, centrals2, centrals3, title=&#39;DTW&#39;)</span>
+
+
+<span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">15</span><span class="p">,</span> <span class="mi">3</span><span class="p">))</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">subplots_adjust</span><span class="p">(</span><span class="n">top</span><span class="o">=</span><span class="mf">0.8</span><span class="p">,</span> <span class="n">wspace</span><span class="o">=</span><span class="mf">0.2</span><span class="p">,</span> <span class="n">hspace</span><span class="o">=</span><span class="mf">0.5</span><span class="p">)</span>
+
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">E</span><span class="p">):</span>
+    <span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplot2grid</span><span class="p">((</span><span class="mi">1</span><span class="p">,</span><span class="n">E</span><span class="p">),</span> <span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="n">i</span><span class="p">))</span>
+    <span class="n">c</span> <span class="o">=</span> <span class="n">centralsF2</span><span class="p">[</span><span class="n">i</span><span class="p">]</span>
+    <span class="n">ax</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">c</span><span class="o">.</span><span class="n">getX</span><span class="p">(),</span> <span class="n">c</span><span class="o">.</span><span class="n">getY</span><span class="p">(),</span> <span class="n">label</span><span class="o">=</span><span class="s2">&quot;Fréchet&quot;</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s2">&quot;tab:orange&quot;</span><span class="p">)</span>
+    <span class="n">c</span> <span class="o">=</span> <span class="n">centralsD2</span><span class="p">[</span><span class="n">i</span><span class="p">]</span>
+    <span class="n">ax</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">c</span><span class="o">.</span><span class="n">getX</span><span class="p">(),</span> <span class="n">c</span><span class="o">.</span><span class="n">getY</span><span class="p">(),</span> <span class="n">label</span><span class="o">=</span><span class="s2">&quot;DTW&quot;</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s2">&quot;tab:green&quot;</span><span class="p">)</span>
+    <span class="n">ax</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">sentier2</span><span class="o">.</span><span class="n">getX</span><span class="p">(),</span> <span class="n">sentier2</span><span class="o">.</span><span class="n">getY</span><span class="p">(),</span> <span class="s1">&#39;k-&#39;</span><span class="p">)</span>
+<br/></pre></div>
+</div>
+</div>
+</section>
+<section id="Mesure-l'écart-en-position">
+<h2>Mesure l’écart en position<a class="headerlink" href="#Mesure-l'écart-en-position" title="Link to this heading">#</a></h2>
+<p>Le résultat est l’erreur RMSE pointwise (en m) entre les 2 trajectoires ré-échantillonnées en 1000 points.</p>
+<div class="nbinput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[ ]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">rmse</span><span class="p">(</span><span class="n">central</span><span class="p">,</span> <span class="n">sentier</span><span class="p">):</span>
+    <span class="n">central</span><span class="o">.</span><span class="n">resample</span><span class="p">(</span><span class="n">npts</span><span class="o">=</span><span class="mi">1000</span><span class="p">,</span> <span class="n">mode</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span>
+    <span class="n">sentier</span><span class="o">.</span><span class="n">resample</span><span class="p">(</span><span class="n">npts</span><span class="o">=</span><span class="mi">1000</span><span class="p">,</span> <span class="n">mode</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span>
+
+    <span class="n">rmse</span> <span class="o">=</span> <span class="mi">0</span>
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">999</span><span class="p">):</span>
+        <span class="n">dx</span> <span class="o">=</span> <span class="n">sentier</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">.</span><span class="n">position</span><span class="o">.</span><span class="n">distance2DTo</span><span class="p">(</span><span class="n">central</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">.</span><span class="n">position</span><span class="p">)</span>
+        <span class="n">rmse</span> <span class="o">+=</span> <span class="n">dx</span><span class="o">*</span><span class="n">dx</span>
+    <span class="n">rmse</span> <span class="o">=</span> <span class="n">math</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="n">rmse</span><span class="o">/</span><span class="mi">999</span><span class="p">)</span>
+
+    <span class="k">return</span> <span class="n">rmse</span>
+
+<span class="n">TSS</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="n">T1F</span><span class="o">=</span><span class="p">[];</span> <span class="n">T2F</span><span class="o">=</span><span class="p">[];</span> <span class="n">T3F</span><span class="o">=</span><span class="p">[]</span>
+<span class="n">T1D</span><span class="o">=</span><span class="p">[];</span> <span class="n">T2D</span><span class="o">=</span><span class="p">[];</span> <span class="n">T3D</span><span class="o">=</span><span class="p">[]</span>
+<span class="k">for</span> <span class="n">s</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">E</span><span class="p">):</span>
+    <span class="n">TSS</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">s</span><span class="o">+</span><span class="mi">1</span><span class="p">)</span>
+
+    <span class="n">central1</span> <span class="o">=</span> <span class="n">FRECHET</span><span class="p">[</span><span class="s1">&#39;Almost straight&#39;</span><span class="p">][</span><span class="n">s</span><span class="p">]</span>
+    <span class="n">vrmse</span> <span class="o">=</span> <span class="n">rmse</span><span class="p">(</span><span class="n">central1</span><span class="p">,</span> <span class="n">sentier1</span><span class="p">)</span>
+    <span class="n">T1F</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">vrmse</span><span class="p">)</span>
+
+    <span class="n">central2</span> <span class="o">=</span> <span class="n">FRECHET</span><span class="p">[</span><span class="s1">&#39;Moderate sinuosity&#39;</span><span class="p">][</span><span class="n">s</span><span class="p">]</span>
+    <span class="n">vrmse</span> <span class="o">=</span> <span class="n">rmse</span><span class="p">(</span><span class="n">central2</span><span class="p">,</span> <span class="n">sentier2</span><span class="p">)</span>
+    <span class="n">T2F</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">vrmse</span><span class="p">)</span>
+
+    <span class="n">central3</span> <span class="o">=</span> <span class="n">FRECHET</span><span class="p">[</span><span class="s1">&#39;Switchbacks&#39;</span><span class="p">][</span><span class="n">s</span><span class="p">]</span>
+    <span class="n">vrmse</span> <span class="o">=</span> <span class="n">rmse</span><span class="p">(</span><span class="n">central3</span><span class="p">,</span> <span class="n">sentier3</span><span class="p">)</span>
+    <span class="n">T3F</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">vrmse</span><span class="p">)</span>
+
+    <span class="n">central1</span> <span class="o">=</span> <span class="n">DTW</span><span class="p">[</span><span class="s1">&#39;Almost straight&#39;</span><span class="p">][</span><span class="n">s</span><span class="p">]</span>
+    <span class="n">vrmse</span> <span class="o">=</span> <span class="n">rmse</span><span class="p">(</span><span class="n">central1</span><span class="p">,</span> <span class="n">sentier1</span><span class="p">)</span>
+    <span class="n">T1D</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">vrmse</span><span class="p">)</span>
+
+    <span class="n">central2</span> <span class="o">=</span> <span class="n">DTW</span><span class="p">[</span><span class="s1">&#39;Moderate sinuosity&#39;</span><span class="p">][</span><span class="n">s</span><span class="p">]</span>
+    <span class="n">vrmse</span> <span class="o">=</span> <span class="n">rmse</span><span class="p">(</span><span class="n">central2</span><span class="p">,</span> <span class="n">sentier2</span><span class="p">)</span>
+    <span class="n">T2D</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">vrmse</span><span class="p">)</span>
+
+    <span class="n">central3</span> <span class="o">=</span> <span class="n">DTW</span><span class="p">[</span><span class="s1">&#39;Switchbacks&#39;</span><span class="p">][</span><span class="n">s</span><span class="p">]</span>
+    <span class="n">vrmse</span> <span class="o">=</span> <span class="n">rmse</span><span class="p">(</span><span class="n">central3</span><span class="p">,</span> <span class="n">sentier3</span><span class="p">)</span>
+    <span class="n">T3D</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">vrmse</span><span class="p">)</span>
+
+
+<span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">15</span><span class="p">,</span> <span class="mi">3</span><span class="p">))</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">subplots_adjust</span><span class="p">(</span><span class="n">top</span><span class="o">=</span><span class="mf">0.8</span><span class="p">,</span> <span class="n">wspace</span><span class="o">=</span><span class="mf">0.2</span><span class="p">,</span> <span class="n">hspace</span><span class="o">=</span><span class="mf">0.5</span><span class="p">)</span>
+
+<span class="n">ax1</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplot2grid</span><span class="p">((</span><span class="mi">1</span><span class="p">,</span><span class="mi">3</span><span class="p">),</span> <span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">))</span>
+<span class="n">ax1</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">TSS</span><span class="p">,</span> <span class="n">T1D</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s2">&quot;Fréchet&quot;</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s2">&quot;tab:orange&quot;</span><span class="p">)</span>
+<span class="n">ax1</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">TSS</span><span class="p">,</span> <span class="n">T1F</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s2">&quot;DTW&quot;</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s2">&quot;tab:green&quot;</span><span class="p">)</span>
+<span class="n">ax1</span><span class="o">.</span><span class="n">set_xlabel</span><span class="p">(</span><span class="s1">&#39;sample size&#39;</span><span class="p">)</span>
+<span class="n">ax1</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="s2">&quot;RMSE&quot;</span><span class="p">)</span>
+<span class="n">ax1</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="s1">&#39;Almost straight&#39;</span><span class="p">)</span>
+<span class="n">ax1</span><span class="o">.</span><span class="n">legend</span><span class="p">()</span>
+
+<span class="n">ax2</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplot2grid</span><span class="p">((</span><span class="mi">1</span><span class="p">,</span><span class="mi">3</span><span class="p">),</span> <span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">))</span>
+<span class="n">ax2</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">TSS</span><span class="p">,</span> <span class="n">T2D</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s2">&quot;Fréchet&quot;</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s2">&quot;tab:orange&quot;</span><span class="p">)</span>
+<span class="n">ax2</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">TSS</span><span class="p">,</span> <span class="n">T2F</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s2">&quot;DTW&quot;</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s2">&quot;tab:green&quot;</span><span class="p">)</span>
+<span class="n">ax2</span><span class="o">.</span><span class="n">set_xlabel</span><span class="p">(</span><span class="s1">&#39;sample size&#39;</span><span class="p">)</span>
+<span class="n">ax2</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="s2">&quot;RMSE&quot;</span><span class="p">)</span>
+<span class="n">ax2</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="s1">&#39;Moderate sinuosity&#39;</span><span class="p">)</span>
+<span class="n">ax2</span><span class="o">.</span><span class="n">legend</span><span class="p">()</span>
+
+<span class="n">ax3</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplot2grid</span><span class="p">((</span><span class="mi">1</span><span class="p">,</span><span class="mi">3</span><span class="p">),</span> <span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">2</span><span class="p">))</span>
+<span class="n">ax3</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">TSS</span><span class="p">,</span> <span class="n">T3D</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s2">&quot;Fréchet&quot;</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s2">&quot;tab:orange&quot;</span><span class="p">)</span>
+<span class="n">ax3</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">TSS</span><span class="p">,</span> <span class="n">T3F</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s2">&quot;DTW&quot;</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s2">&quot;tab:green&quot;</span><span class="p">)</span>
+<span class="n">ax3</span><span class="o">.</span><span class="n">set_xlabel</span><span class="p">(</span><span class="s1">&#39;sample size&#39;</span><span class="p">)</span>
+<span class="n">ax3</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="s2">&quot;RMSE&quot;</span><span class="p">)</span>
+<span class="n">ax3</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="s1">&#39;Switchbacks&#39;</span><span class="p">)</span>
+<span class="n">ax3</span><span class="o">.</span><span class="n">legend</span><span class="p">()</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+</section>
+<section id="Mesure-l'écart-en-forme">
+<h2>Mesure l’écart en forme<a class="headerlink" href="#Mesure-l'écart-en-forme" title="Link to this heading">#</a></h2>
+<p>On recale les deux trajectoires pour aligner la fusion sur le jeu de vérité terrain de vincennes, et ne comparer ainsi que les écarts de formes.</p>
+<div class="nbinput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[ ]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">TSS</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="n">T1F</span><span class="o">=</span><span class="p">[];</span> <span class="n">T2F</span><span class="o">=</span><span class="p">[];</span> <span class="n">T3F</span><span class="o">=</span><span class="p">[]</span>
+<span class="n">T1D</span><span class="o">=</span><span class="p">[];</span> <span class="n">T2D</span><span class="o">=</span><span class="p">[];</span> <span class="n">T3D</span><span class="o">=</span><span class="p">[]</span>
+<span class="k">for</span> <span class="n">s</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">E</span><span class="p">):</span>
+    <span class="n">TSS</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">s</span><span class="o">+</span><span class="mi">1</span><span class="p">)</span>
+
+    <span class="n">central1</span> <span class="o">=</span> <span class="n">FRECHET</span><span class="p">[</span><span class="s1">&#39;Almost straight&#39;</span><span class="p">][</span><span class="n">s</span><span class="p">]</span>
+    <span class="n">tkl</span><span class="o">.</span><span class="n">mapping</span><span class="o">.</span><span class="n">mapOn</span><span class="p">(</span><span class="n">central1</span><span class="p">,</span> <span class="n">sentier1</span><span class="p">,</span> <span class="n">verbose</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+    <span class="n">vrmse</span> <span class="o">=</span> <span class="n">rmse</span><span class="p">(</span><span class="n">central1</span><span class="p">,</span> <span class="n">sentier1</span><span class="p">)</span>
+    <span class="n">T1F</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">vrmse</span><span class="p">)</span>
+
+    <span class="n">central2</span> <span class="o">=</span> <span class="n">FRECHET</span><span class="p">[</span><span class="s1">&#39;Moderate sinuosity&#39;</span><span class="p">][</span><span class="n">s</span><span class="p">]</span>
+    <span class="n">tkl</span><span class="o">.</span><span class="n">mapping</span><span class="o">.</span><span class="n">mapOn</span><span class="p">(</span><span class="n">central2</span><span class="p">,</span> <span class="n">sentier2</span><span class="p">,</span> <span class="n">verbose</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+    <span class="n">vrmse</span> <span class="o">=</span> <span class="n">rmse</span><span class="p">(</span><span class="n">central2</span><span class="p">,</span> <span class="n">sentier2</span><span class="p">)</span>
+    <span class="n">T2F</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">vrmse</span><span class="p">)</span>
+
+    <span class="n">central3</span> <span class="o">=</span> <span class="n">FRECHET</span><span class="p">[</span><span class="s1">&#39;Switchbacks&#39;</span><span class="p">][</span><span class="n">s</span><span class="p">]</span>
+    <span class="n">tkl</span><span class="o">.</span><span class="n">mapping</span><span class="o">.</span><span class="n">mapOn</span><span class="p">(</span><span class="n">central3</span><span class="p">,</span> <span class="n">sentier3</span><span class="p">,</span> <span class="n">verbose</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+    <span class="n">vrmse</span> <span class="o">=</span> <span class="n">rmse</span><span class="p">(</span><span class="n">central3</span><span class="p">,</span> <span class="n">sentier3</span><span class="p">)</span>
+    <span class="n">T3F</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">vrmse</span><span class="p">)</span>
+
+    <span class="n">central1</span> <span class="o">=</span> <span class="n">DTW</span><span class="p">[</span><span class="s1">&#39;Almost straight&#39;</span><span class="p">][</span><span class="n">s</span><span class="p">]</span>
+    <span class="n">tkl</span><span class="o">.</span><span class="n">mapping</span><span class="o">.</span><span class="n">mapOn</span><span class="p">(</span><span class="n">central1</span><span class="p">,</span> <span class="n">sentier1</span><span class="p">,</span> <span class="n">verbose</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+    <span class="n">vrmse</span> <span class="o">=</span> <span class="n">rmse</span><span class="p">(</span><span class="n">central1</span><span class="p">,</span> <span class="n">sentier1</span><span class="p">)</span>
+    <span class="n">T1D</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">vrmse</span><span class="p">)</span>
+
+    <span class="n">central2</span> <span class="o">=</span> <span class="n">DTW</span><span class="p">[</span><span class="s1">&#39;Moderate sinuosity&#39;</span><span class="p">][</span><span class="n">s</span><span class="p">]</span>
+    <span class="n">tkl</span><span class="o">.</span><span class="n">mapping</span><span class="o">.</span><span class="n">mapOn</span><span class="p">(</span><span class="n">central2</span><span class="p">,</span> <span class="n">sentier2</span><span class="p">,</span> <span class="n">verbose</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+    <span class="n">vrmse</span> <span class="o">=</span> <span class="n">rmse</span><span class="p">(</span><span class="n">central2</span><span class="p">,</span> <span class="n">sentier2</span><span class="p">)</span>
+    <span class="n">T2D</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">vrmse</span><span class="p">)</span>
+
+    <span class="n">central3</span> <span class="o">=</span> <span class="n">DTW</span><span class="p">[</span><span class="s1">&#39;Switchbacks&#39;</span><span class="p">][</span><span class="n">s</span><span class="p">]</span>
+    <span class="n">tkl</span><span class="o">.</span><span class="n">mapping</span><span class="o">.</span><span class="n">mapOn</span><span class="p">(</span><span class="n">central3</span><span class="p">,</span> <span class="n">sentier3</span><span class="p">,</span> <span class="n">verbose</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+    <span class="n">vrmse</span> <span class="o">=</span> <span class="n">rmse</span><span class="p">(</span><span class="n">central3</span><span class="p">,</span> <span class="n">sentier3</span><span class="p">)</span>
+    <span class="n">T3D</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">vrmse</span><span class="p">)</span>
+
+
+<span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">15</span><span class="p">,</span> <span class="mi">3</span><span class="p">))</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">subplots_adjust</span><span class="p">(</span><span class="n">top</span><span class="o">=</span><span class="mf">0.8</span><span class="p">,</span> <span class="n">wspace</span><span class="o">=</span><span class="mf">0.2</span><span class="p">,</span> <span class="n">hspace</span><span class="o">=</span><span class="mf">0.5</span><span class="p">)</span>
+
+<span class="n">ax1</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplot2grid</span><span class="p">((</span><span class="mi">1</span><span class="p">,</span><span class="mi">3</span><span class="p">),</span> <span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">))</span>
+<span class="n">ax1</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">TSS</span><span class="p">,</span> <span class="n">T1D</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s2">&quot;Fréchet&quot;</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s2">&quot;tab:orange&quot;</span><span class="p">)</span>
+<span class="n">ax1</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">TSS</span><span class="p">,</span> <span class="n">T1F</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s2">&quot;DTW&quot;</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s2">&quot;tab:green&quot;</span><span class="p">)</span>
+<span class="n">ax1</span><span class="o">.</span><span class="n">set_xlabel</span><span class="p">(</span><span class="s1">&#39;sample size&#39;</span><span class="p">)</span>
+<span class="n">ax1</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="s2">&quot;RMSE&quot;</span><span class="p">)</span>
+<span class="n">ax1</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="s1">&#39;Almost straight&#39;</span><span class="p">)</span>
+<span class="n">ax1</span><span class="o">.</span><span class="n">legend</span><span class="p">()</span>
+
+<span class="n">ax2</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplot2grid</span><span class="p">((</span><span class="mi">1</span><span class="p">,</span><span class="mi">3</span><span class="p">),</span> <span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">))</span>
+<span class="n">ax2</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">TSS</span><span class="p">,</span> <span class="n">T2D</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s2">&quot;Fréchet&quot;</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s2">&quot;tab:orange&quot;</span><span class="p">)</span>
+<span class="n">ax2</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">TSS</span><span class="p">,</span> <span class="n">T2F</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s2">&quot;DTW&quot;</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s2">&quot;tab:green&quot;</span><span class="p">)</span>
+<span class="n">ax2</span><span class="o">.</span><span class="n">set_xlabel</span><span class="p">(</span><span class="s1">&#39;sample size&#39;</span><span class="p">)</span>
+<span class="n">ax2</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="s2">&quot;RMSE&quot;</span><span class="p">)</span>
+<span class="n">ax2</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="s1">&#39;Moderate sinuosity&#39;</span><span class="p">)</span>
+<span class="n">ax2</span><span class="o">.</span><span class="n">legend</span><span class="p">()</span>
+
+<span class="n">ax3</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplot2grid</span><span class="p">((</span><span class="mi">1</span><span class="p">,</span><span class="mi">3</span><span class="p">),</span> <span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">2</span><span class="p">))</span>
+<span class="n">ax3</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">TSS</span><span class="p">,</span> <span class="n">T3D</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s2">&quot;Fréchet&quot;</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s2">&quot;tab:orange&quot;</span><span class="p">)</span>
+<span class="n">ax3</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">TSS</span><span class="p">,</span> <span class="n">T3F</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s2">&quot;DTW&quot;</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s2">&quot;tab:green&quot;</span><span class="p">)</span>
+<span class="n">ax3</span><span class="o">.</span><span class="n">set_xlabel</span><span class="p">(</span><span class="s1">&#39;sample size&#39;</span><span class="p">)</span>
+<span class="n">ax3</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="s2">&quot;RMSE&quot;</span><span class="p">)</span>
+<span class="n">ax3</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="s1">&#39;Switchbacks&#39;</span><span class="p">)</span>
+<span class="n">ax3</span><span class="o">.</span><span class="n">legend</span><span class="p">()</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+
+<span class="c1">#plotResult(sentier1, sentier2, sentier3, central1, central2, central3)</span>
+</pre></div>
+</div>
+</div>
+</section>
+</section>
+
+
+                </article>
+              
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+<div
+    id="pst-page-navigation-heading-2"
+    class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> On this page
+  </div>
+  <nav class="bd-toc-nav page-toc" aria-labelledby="pst-page-navigation-heading-2">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#As-usual,-let’s-start-by-defining-our-environment">As usual, let’s start by defining our environment</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#Create-3-commonly-mountain-path-shapes">Create 3 commonly mountain path shapes</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#Create-sets-of-simulated-GNSS-trajectories">Create sets of simulated GNSS trajectories</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#Create-aggregated-trajectory">Create aggregated trajectory</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#Mesure-l'écart-en-position">Mesure l’écart en position</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#Mesure-l'écart-en-forme">Mesure l’écart en forme</a></li>
+</ul>
+  </nav></div>
+
+  <div class="sidebar-secondary-item">
+
+  <div class="tocsection sourcelink">
+    <a href="../_sources/usecase/AggregatedTrajectory.ipynb.txt">
+      <i class="fa-solid fa-file-lines"></i> Show Source
+    </a>
+  </div>
+</div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+          </footer>
+        
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../_static/scripts/bootstrap.js?digest=3ee479438cf8b5e0d341"></script>
+<script src="../_static/scripts/pydata-sphinx-theme.js?digest=3ee479438cf8b5e0d341"></script>
+
+  <footer class="bd-footer">
+<div class="bd-footer__inner bd-page-width">
+  
+    <div class="footer-items__start">
+      
+        <div class="footer-item">
+
+  <p class="copyright">
+    
+      © Copyright 2024, LASTIG lab, French National Institute of Geographic and Forest Information.
+      <br/>
+    
+  </p>
+</div>
+      
+        <div class="footer-item">
+
+  <p class="sphinx-version">
+    Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 7.3.7.
+    <br/>
+  </p>
+</div>
+      
+    </div>
+  
+  
+  
+    <div class="footer-items__end">
+      
+        <div class="footer-item">
+<p class="theme-version">
+  Built with the <a href="https://pydata-sphinx-theme.readthedocs.io/en/stable/index.html">PyData Sphinx Theme</a> 0.15.3.
+</p></div>
+      
+    </div>
+  
+</div>
+
+  </footer>
+  </body>
+</html>
