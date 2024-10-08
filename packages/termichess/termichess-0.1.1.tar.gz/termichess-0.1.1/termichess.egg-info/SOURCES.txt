@@ -1,0 +1,13 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+termichess/__init__.py
+termichess/__main__.py
+termichess/app.py
+termichess.egg-info/PKG-INFO
+termichess.egg-info/SOURCES.txt
+termichess.egg-info/dependency_links.txt
+termichess.egg-info/entry_points.txt
+termichess.egg-info/requires.txt
+termichess.egg-info/top_level.txt
