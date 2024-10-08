@@ -1,0 +1,14 @@
+LICENSE.txt
+README.md
+pyproject.toml
+setup.py
+fusionsent/__init__.py
+fusionsent/merging_methods.py
+fusionsent/modeling.py
+fusionsent/trainer.py
+fusionsent/training_args.py
+fusionsent.egg-info/PKG-INFO
+fusionsent.egg-info/SOURCES.txt
+fusionsent.egg-info/dependency_links.txt
+fusionsent.egg-info/requires.txt
+fusionsent.egg-info/top_level.txt
