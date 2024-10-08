@@ -1,0 +1,15 @@
+LICENSE.txt
+README.md
+pyproject.toml
+src/nlScript_mic_lang/__init__.py
+src/nlScript_mic_lang/interpolator.py
+src/nlScript_mic_lang/languagecontrol.py
+src/nlScript_mic_lang/main.py
+src/nlScript_mic_lang/microscope.py
+src/nlScript_mic_lang/timeline.py
+src/nlScript_microscope_language.egg-info/PKG-INFO
+src/nlScript_microscope_language.egg-info/SOURCES.txt
+src/nlScript_microscope_language.egg-info/dependency_links.txt
+src/nlScript_microscope_language.egg-info/entry_points.txt
+src/nlScript_microscope_language.egg-info/requires.txt
+src/nlScript_microscope_language.egg-info/top_level.txt
