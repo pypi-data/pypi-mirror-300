@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "morse-tools"
+description = "Various tools for working with morse code"
+authors = [
+    {name = "ShackledMars261"}
+]
+dynamic = ["version", "dependencies"]
+license = {text = "MIT"}
+readme = "README.md"
+requires-python = ">=3.0"
+keywords = ["morse", "tools", "audio", "text", "ctf", "capture", "the", "flag", "forensics", "wave", "wav", "audio"]
+
+
+[tool.setuptools.dynamic]
+dependencies = {file = "requirements.txt"}
