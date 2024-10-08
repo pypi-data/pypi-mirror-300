@@ -1,0 +1,17 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+django_endpoints.egg-info/PKG-INFO
+django_endpoints.egg-info/SOURCES.txt
+django_endpoints.egg-info/dependency_links.txt
+django_endpoints.egg-info/requires.txt
+django_endpoints.egg-info/top_level.txt
+endpoints/__init__.py
+endpoints/apps.py
+endpoints/urls.py
+endpoints/static/endpoints/css/bootstrap.min.css
+endpoints/static/endpoints/css/wide-classes.css
+endpoints/templates/endpoints/base.html
+endpoints/templates/endpoints/endpoints.html

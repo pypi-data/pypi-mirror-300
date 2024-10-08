@@ -1,0 +1,4 @@
+include LICENSE
+include README.md
+recursive-include endpoints/templates *
+recursive-include endpoints/static *
