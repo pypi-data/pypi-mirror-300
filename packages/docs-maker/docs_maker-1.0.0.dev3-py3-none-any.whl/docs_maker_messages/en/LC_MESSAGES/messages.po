@@ -1,0 +1,58 @@
+msgid ""
+msgstr ""
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "App Title"
+msgstr "Document Maker"
+
+msgid "Version"
+msgstr "Version"
+
+msgid "Commands"
+msgstr "Commands"
+
+msgid "W DB PostgreSQL"
+msgstr "Work with DB PostgreSQL"
+
+msgid "W DB SQLite3"
+msgstr "Work with DB SQLite3"
+
+msgid "DB name"
+msgstr "DB name"
+
+msgid "DB user name"
+msgstr "DB user name"
+
+msgid "DB user password"
+msgstr "DB user password"
+
+msgid "DB hostname"
+msgstr "DB hostname"
+
+msgid "DB port"
+msgstr "DB port"
+
+msgid "MainPage"
+msgstr "Main Page"
+
+msgid "GUI parser"
+msgstr "Start GUI"
+
+msgid "menu_lbl"
+msgstr "Configure"
+
+msgid "db_type"
+msgstr "Database type"
+
+msgid "Apply"
+msgstr "Apply"
+
+msgid "JDBC"
+msgstr "JDBC"
+
+msgid "Information"
+msgstr "Information"
+
+msgid "Apply config"
+msgstr "Configuration applied"

@@ -1,0 +1,3 @@
+[console_scripts]
+docs-maker=docs_maker.cli.argparse:cli
+
