@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: one-chat-api
+Version: 0.2.2
+Summary: Sending messages through One Chat API
+Home-page: UNKNOWN
+Author: Pargorn Ruasijan (xNewz)
+Author-email: pargorn.ru@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+Sending messages through One Chat API
+
