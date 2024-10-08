@@ -1,0 +1,136 @@
+Metadata-Version: 2.3
+Name: luce_otp
+Version: 0.1.1
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Rust
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Summary: A Python package for zero-knowledge OTP proof using Rust and Groth16 zk-SNARKs
+Keywords: zk-SNARK,OTP,zero-knowledge,Rust,Python,Maturin
+Author-email: Ankur Lohachab <ankur.lohachab@maastrichtuniversity.nl>
+License: MIT
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown; charset=UTF-8; variant=GFM
+
+
+# luce_otp
+
+`luce_otp` is a Python extension module for generating and verifying zero-knowledge proofs (ZKP) for a one-time password (OTP) using Rust and zk-SNARKs. It leverages the Groth16 proving system to ensure privacy, allowing users to prove knowledge of an OTP without revealing the OTP itself.
+
+**Note:** This package is intended for **research purposes only** and is **not meant for use in production environments**. Further testing is necessary to ensure its correctness, security, and performance.
+
+## Features
+
+- **Zero-Knowledge Proof**: Prove knowledge of a 20-bit OTP without revealing it.
+- **zk-SNARK**: Use zk-SNARKs (Groth16) for efficient proof generation and verification.
+- **Integration with Python**: Easily integrate Rust-powered zk-SNARKs into Python using PyO3 and Maturin.
+
+## Installation
+
+To install the package, use `pip`:
+
+```bash
+pip install luce_otp
+```
+
+Ensure that you have Rust and Maturin installed in your environment. If not, you can install Rust using [rustup](https://rustup.rs/) and install Maturin with:
+
+```bash
+pip install maturin
+```
+
+## Usage
+
+Here’s how you can use `luce_otp` to generate and verify zero-knowledge proofs for an OTP.
+
+### 1. Setup Parameters
+
+Before generating or verifying proofs, you need to set up the proving and verification parameters. This step is done only once.
+
+```python
+import luce_otp
+
+# This will generate the parameters and store them in 'params.bin' and 'vk.bin'
+luce_otp.setup_parameters()
+```
+
+### 2. Generate a Proof
+
+Once the parameters are set up, you can generate a zero-knowledge proof for a given OTP. The OTP should be a 20-bit number (i.e., between 0 and 999,999).
+
+```python
+otp = 123456  # Example OTP
+proof, public_inputs = luce_otp.generate_proof(otp)
+
+# 'proof' contains the generated zk-SNARK proof
+# 'public_inputs' contains the packed hash that will be verified
+```
+
+### 3. Verify the Proof
+
+To verify the proof, pass both the proof and the public inputs to the verification function. The function returns `True` if the proof is valid, and `False` otherwise.
+
+```python
+is_valid = luce_otp.verify_proof(proof, public_inputs)
+if is_valid:
+    print("Proof is valid!")
+else:
+    print("Proof is invalid!")
+```
+
+## Testing
+
+To ensure the correctness of the package, you can run basic tests by following these steps:
+
+### 1. Install Dependencies
+
+Make sure you have all the necessary Python dependencies installed in your environment:
+
+```bash
+pip install maturin
+```
+
+You also need to have Rust installed. You can install it by running:
+
+```bash
+curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+```
+
+### 2. Build and Install the Package Locally
+
+If you're developing the package locally, you can build and install it into your virtual environment using `maturin`:
+
+```bash
+maturin develop
+```
+
+### 3. Run Tests
+
+You can write Python test scripts to test the functionality of the package. Here’s an example test script:
+
+```python
+import luce_otp
+
+def test_luce_otp():
+    # Set up parameters
+    luce_otp.setup_parameters()
+
+    # Generate proof
+    otp = 123456
+    proof, public_inputs = luce_otp.generate_proof(otp)
+
+    # Verify proof
+    is_valid = luce_otp.verify_proof(proof, public_inputs)
+    assert is_valid, "Proof verification failed."
+
+    print("All tests passed.")
+
+if __name__ == "__main__":
+    test_luce_otp()
+```
+
+## Disclaimer
+
+**Note:** This package is designed for **research purposes only** and is **not meant for use in production environments**. The underlying cryptographic methods, though well-studied, have not been extensively tested in this implementation. **Further testing is necessary** to ensure that the library is secure, bug-free, and performant under different environments and workloads. Use this package with caution in critical systems.
+
