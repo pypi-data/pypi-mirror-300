@@ -1,0 +1,4 @@
+langchain==0.0.190
+openai==0.28
+python-dotenv
+python-hcl2
