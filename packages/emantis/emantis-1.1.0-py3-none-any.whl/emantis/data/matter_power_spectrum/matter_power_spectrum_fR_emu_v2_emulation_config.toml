@@ -1,0 +1,23 @@
+[pca]
+do_pca = true
+pca_components = 5
+pca_scale_data_mean = true
+pca_scale_data_std = true
+
+[gp]
+kernel_nu = 2.5
+normalize_y = true
+n_restarts_optimizer = 10
+
+[emulator_std]
+allow_return_std = true
+niter = 1000
+
+[data]
+data_type = 'binned'
+binned_x_interp_type = 'log'
+binned_y_interp_type = 'lin'
+
+[node_interpolation]
+x_type = 'lin'
+y_type = 'lin'

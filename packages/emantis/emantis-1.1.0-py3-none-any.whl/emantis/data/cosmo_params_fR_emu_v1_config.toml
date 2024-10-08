@@ -1,0 +1,19 @@
+[lhs.main]
+n_slices = 4
+n_points_per_slice = 20
+
+[lhs.refinement]
+n_slices = 3
+n_points_per_slice = 10
+
+[range.Omega_m]
+min = 0.2365
+max = 0.3941
+
+[range.sigma8_lcdm]
+min = 0.6083
+max = 1.014
+
+[range.logfR0]
+min = 4
+max = 7

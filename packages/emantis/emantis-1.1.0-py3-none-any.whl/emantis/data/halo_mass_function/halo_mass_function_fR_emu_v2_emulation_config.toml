@@ -1,0 +1,25 @@
+[config_gpe_1D.pca]
+do_pca = false
+
+[config_gpe_1D.gp]
+kernel_nu = 2.5
+normalize_y = true
+n_restarts_optimizer = 1
+
+[config_gpe_1D.emulator_std]
+allow_return_std = true
+use_gp_std_factor = true
+niter = 1000
+
+[config_gpe_1D.data]
+data_type = 'bspline'
+bin_name = 'mass_halo'
+use_data_std = true
+bspline_x_transform = 'log10'
+bspline_y_transform = 'log10'
+
+[config_node]
+x_type = 'lin'
+y_type = 'log10'
+node_name = 'aexp'
+niter = 1000
