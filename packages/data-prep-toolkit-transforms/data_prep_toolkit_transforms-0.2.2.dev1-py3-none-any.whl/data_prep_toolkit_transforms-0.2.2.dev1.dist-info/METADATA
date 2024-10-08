@@ -1,0 +1,157 @@
+Metadata-Version: 2.1
+Name: data_prep_toolkit_transforms
+Version: 0.2.2.dev1
+Summary: Data Preparation Toolkit Transforms using Ray
+Author-email: Maroun Touma <touma@us.ibm.com>
+License: Apache-2.0
+Keywords: transforms,data preprocessing,data preparation,llm,generative,ai,fine-tuning,llmapps
+Requires-Python: <3.13,>=3.10
+Description-Content-Type: text/markdown
+Requires-Dist: data-prep-toolkit>=0.2.2.dev1
+Provides-Extra: all
+Requires-Dist: data-prep-toolkit==0.2.2.dev1; extra == "all"
+Requires-Dist: bs4==0.0.2; extra == "all"
+Requires-Dist: transformers==4.38.2; extra == "all"
+Requires-Dist: parameterized; extra == "all"
+Requires-Dist: pandas; extra == "all"
+Requires-Dist: docling-core==1.3.0; extra == "all"
+Requires-Dist: llama-index-core<0.12.0,>=0.11.0; extra == "all"
+Requires-Dist: fasttext==0.9.2; extra == "all"
+Requires-Dist: langcodes==3.3.0; extra == "all"
+Requires-Dist: huggingface-hub<1.0.0,>=0.21.4; extra == "all"
+Requires-Dist: numpy==1.26.4; extra == "all"
+Requires-Dist: sentence-transformers==3.0.1; extra == "all"
+Requires-Dist: docling-ibm-models==1.1.7; extra == "all"
+Requires-Dist: deepsearch-glm==0.21.0; extra == "all"
+Requires-Dist: docling==1.11.0; extra == "all"
+Requires-Dist: filetype<2.0.0,>=1.2.0; extra == "all"
+Requires-Dist: nltk==3.9.1; extra == "all"
+Requires-Dist: torch==2.4.1; extra == "all"
+Requires-Dist: pandas==2.2.2; extra == "all"
+Requires-Dist: mmh3>=4.1.0; extra == "all"
+Requires-Dist: xxhash==3.4.1; extra == "all"
+Requires-Dist: mmh3==4.1.0; extra == "all"
+Requires-Dist: duckdb>=0.10.1; extra == "all"
+Requires-Dist: scancode-toolkit==32.1.0; platform_system != "Darwin" and extra == "all"
+Provides-Extra: code2parquet
+Requires-Dist: data-prep-toolkit==0.2.2.dev1; extra == "code2parquet"
+Requires-Dist: parameterized; extra == "code2parquet"
+Requires-Dist: pandas; extra == "code2parquet"
+Provides-Extra: code_quality
+Requires-Dist: data-prep-toolkit==0.2.2.dev1; extra == "code-quality"
+Requires-Dist: bs4==0.0.2; extra == "code-quality"
+Requires-Dist: transformers==4.38.2; extra == "code-quality"
+Provides-Extra: dev
+Provides-Extra: doc_chunk
+Requires-Dist: data-prep-toolkit==0.2.2.dev1; extra == "doc-chunk"
+Requires-Dist: docling-core==1.3.0; extra == "doc-chunk"
+Requires-Dist: llama-index-core<0.12.0,>=0.11.0; extra == "doc-chunk"
+Provides-Extra: doc_id
+Requires-Dist: data-prep-toolkit==0.2.2.dev1; extra == "doc-id"
+Provides-Extra: doc_quality
+Requires-Dist: data-prep-toolkit==0.2.2.dev1; extra == "doc-quality"
+Provides-Extra: ededup
+Requires-Dist: data-prep-toolkit==0.2.2.dev1; extra == "ededup"
+Requires-Dist: mmh3>=4.1.0; extra == "ededup"
+Requires-Dist: xxhash==3.4.1; extra == "ededup"
+Provides-Extra: filter
+Requires-Dist: data-prep-toolkit==0.2.2.dev1; extra == "filter"
+Requires-Dist: duckdb>=0.10.1; extra == "filter"
+Provides-Extra: hap
+Requires-Dist: data-prep-toolkit==0.2.2.dev1; extra == "hap"
+Requires-Dist: nltk==3.9.1; extra == "hap"
+Requires-Dist: transformers==4.38.2; extra == "hap"
+Requires-Dist: torch==2.4.1; extra == "hap"
+Requires-Dist: pandas==2.2.2; extra == "hap"
+Provides-Extra: header_cleanser
+Requires-Dist: data-prep-toolkit==0.2.2.dev1; extra == "header-cleanser"
+Requires-Dist: scancode-toolkit==32.1.0; platform_system != "Darwin" and extra == "header_cleanser"
+Provides-Extra: html2parquet
+Requires-Dist: data-prep-toolkit==0.2.2.dev1; extra == "html2parquet"
+Requires-Dist: trafilatura==1.12.0; extra == "html2parquet"
+Provides-Extra: lang_id
+Requires-Dist: data-prep-toolkit==0.2.2.dev1; extra == "lang-id"
+Requires-Dist: fasttext==0.9.2; extra == "lang-id"
+Requires-Dist: langcodes==3.3.0; extra == "lang-id"
+Requires-Dist: huggingface-hub<1.0.0,>=0.21.4; extra == "lang-id"
+Requires-Dist: numpy==1.26.4; extra == "lang-id"
+Provides-Extra: license_select
+Requires-Dist: data-prep-toolkit==0.2.2.dev1; extra == "license-select"
+Provides-Extra: pdf2parquet
+Requires-Dist: data-prep-toolkit==0.2.2.dev1; extra == "pdf2parquet"
+Requires-Dist: docling-core==1.3.0; extra == "pdf2parquet"
+Requires-Dist: docling-ibm-models==1.1.7; extra == "pdf2parquet"
+Requires-Dist: deepsearch-glm==0.21.0; extra == "pdf2parquet"
+Requires-Dist: docling==1.11.0; extra == "pdf2parquet"
+Requires-Dist: filetype<2.0.0,>=1.2.0; extra == "pdf2parquet"
+Provides-Extra: pii_redactor
+Requires-Dist: data-prep-toolkit==0.2.2.dev1; extra == "pii-redactor"
+Requires-Dist: presidio-analyzer>=2.2.355; extra == "pii-redactor"
+Requires-Dist: presidio-anonymizer>=2.2.355; extra == "pii-redactor"
+Requires-Dist: flair>=0.14.0; extra == "pii-redactor"
+Requires-Dist: pandas>=2.2.2; extra == "pii-redactor"
+Provides-Extra: profiler
+Requires-Dist: data-prep-toolkit==0.2.2.dev1; extra == "profiler"
+Requires-Dist: mmh3==4.1.0; extra == "profiler"
+Requires-Dist: xxhash==3.4.1; extra == "profiler"
+Provides-Extra: proglang_select
+Requires-Dist: data-prep-toolkit==0.2.2.dev1; extra == "proglang-select"
+Provides-Extra: ray
+Requires-Dist: data-prep-toolkit[ray]>=0.2.2.dev1; extra == "ray"
+Requires-Dist: networkx==3.3; extra == "ray"
+Requires-Dist: colorlog==6.8.2; extra == "ray"
+Requires-Dist: func-timeout==4.3.5; extra == "ray"
+Requires-Dist: emerge-viz==2.0.0; extra == "ray"
+Provides-Extra: resize
+Requires-Dist: data-prep-toolkit==0.2.2.dev1; extra == "resize"
+Provides-Extra: text_encoder
+Requires-Dist: data-prep-toolkit==0.2.2.dev1; extra == "text-encoder"
+Requires-Dist: sentence-transformers==3.0.1; extra == "text-encoder"
+Provides-Extra: tokenization
+Requires-Dist: data-prep-toolkit==0.2.2.dev1; extra == "tokenization"
+Requires-Dist: transformers==4.38.2; extra == "tokenization"
+
+# DPK Python Transforms
+
+## installation
+
+The [transforms](https://github.com/IBM/data-prep-kit/blob/dev/transforms/README.md) are delivered as a standard pyton library available on pypi and can be installed using pip install:
+
+`python -m pip install data-prep-toolkit-transforms`
+or
+`python -m pip install data-prep-toolkit-transforms[ray]`
+
+
+installing the python transforms will also install  `data-prep-toolkit`
+
+installing the ray transforms will also install  `data-prep-toolkit[ray]`
+
+## List of Transforms in current package
+
+Note: This list includes the transforms that were part of the release starting with data-prep-toolkit-transforms:0.2.1. This list may not always reflect up to date information. Users are encourage to raise an issue in git when they discover missing components or packages that are listed below but not in the current release they get from pypi.
+
+* code
+    * [code2parquet](https://github.com/IBM/data-prep-kit/blob/dev/transforms/code/code2parquet/python/README.md)
+    * [header_cleanser (Not available on MacOS)](https://github.com/IBM/data-prep-kit/blob/dev/transforms/code/header_cleanser/python/README.md)
+    * [code_quality](https://github.com/IBM/data-prep-kit/blob/dev/transforms/code/code_quality/python/README.md)
+    * [proglang_select](https://github.com/IBM/data-prep-kit/blob/dev/transforms/code/proglang_select/python/README.md)
+* language
+    * [doc_chunk](https://github.com/IBM/data-prep-kit/blob/dev/transforms/code/doc_chunk/python/README.md)
+	* [doc_quality](https://github.com/IBM/data-prep-kit/blob/dev/transforms/code/doc_quality/python/README.md)
+	* [lang_id](https://github.com/IBM/data-prep-kit/blob/dev/transforms/code/lang_id/python/README.md)
+	* [pdf2parquet](https://github.com/IBM/data-prep-kit/blob/dev/transforms/code/pdf2parquet/python/README.md)
+	* [text_encoder](https://github.com/IBM/data-prep-kit/blob/dev/transforms/code/text_encoder/python/README.md)
+	* [pii_redactor](https://github.com/IBM/data-prep-kit/blob/dev/transforms/code/pii_redactor/python/README.md)
+* universal
+    * [ededup](https://github.com/IBM/data-prep-kit/blob/dev/transforms/code/ededup/python/README.md)
+	* [filter](https://github.com/IBM/data-prep-kit/blob/dev/transforms/code/filter/python/README.md)
+	* [resize](https://github.com/IBM/data-prep-kit/blob/dev/transforms/code/resize/python/README.md)
+	* [tokenization](https://github.com/IBM/data-prep-kit/blob/dev/transforms/tokenization/doc_chunk/python/README.md)
+	* [doc_id](https://github.com/IBM/data-prep-kit/blob/dev/transforms/code/doc_id/python/README.md)
+
+	
+
+
+
+
+ 
