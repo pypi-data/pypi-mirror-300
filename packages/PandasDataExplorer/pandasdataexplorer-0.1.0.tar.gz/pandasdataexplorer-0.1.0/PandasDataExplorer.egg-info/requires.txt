@@ -1,0 +1,3 @@
+pandas>=1.2.0
+ydata_profiling>=3.0.0
+plotly>=5.0.0

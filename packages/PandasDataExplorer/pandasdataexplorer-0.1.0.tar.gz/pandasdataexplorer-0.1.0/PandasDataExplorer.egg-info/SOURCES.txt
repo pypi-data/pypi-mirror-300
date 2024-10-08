@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+PandasDataExplorer.egg-info/PKG-INFO
+PandasDataExplorer.egg-info/SOURCES.txt
+PandasDataExplorer.egg-info/dependency_links.txt
+PandasDataExplorer.egg-info/requires.txt
+PandasDataExplorer.egg-info/top_level.txt
+PandasExplorer/__init__.py
+PandasExplorer/app.py

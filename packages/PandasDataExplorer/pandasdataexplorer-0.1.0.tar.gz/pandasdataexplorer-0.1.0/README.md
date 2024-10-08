@@ -1,0 +1,126 @@
+# PandasExplorer
+
+## Overview
+
+The `pandasdataexplorer.py` file is a module within the **PandasExplorer** package. It provides a class `PandasDataExplorer` that encapsulates a variety of data preprocessing, exploration, and visualization utilities for Pandas DataFrames. These methods are designed to help users efficiently clean, transform, and analyze data using common tasks like renaming columns, handling missing values, and finding outliers, along with more advanced functionalities such as generating profile reports and plotting data distributions.
+
+## Table of Contents
+
+- [Methods](#methods)
+  - [Column Operations](#column-operations)
+  - [Data Cleaning](#data-cleaning)
+  - [Data Exploration](#data-exploration)
+  - [Outlier Handling](#outlier-handling)
+  - [Missing Values](#missing-values)
+  - [Grouping and Aggregation](#grouping-and-aggregation)
+  - [Visualization](#visualization)
+  - [Reports](#reports)
+
+## Methods
+
+### Column Operations
+
+- **`clean_columns()`**: 
+  - Cleans column names by making them lowercase and replacing spaces with underscores.
+  
+- **`rename_columns(cols: list, new_names: list)`**: 
+  - Renames specified columns by their indices.
+  - **Parameters**:
+    - `cols`: A list of column indices to rename.
+    - `new_names`: A list of new column names.
+
+- **`remove_columns(col_indices)`**: 
+  - Removes columns from the DataFrame by their indices.
+  - **Parameters**:
+    - `col_indices`: A list of column indices to remove.
+
+- **`change_column_dtype(col_number, type='int64')`**: 
+  - Changes the data type of a specified column by its index.
+  - **Parameters**:
+    - `col_number`: The index of the column.
+    - `type`: The target data type (default is `int64`).
+
+- **`copy()`**: 
+  - Creates a copy of the DataFrame.
+
+- **`save_copy(filename: str)`**: 
+  - Saves the DataFrame copy to a CSV file.
+  - **Parameters**:
+    - `filename`: The path to the CSV file where the DataFrame will be saved.
+
+### Data Cleaning
+
+- **`clean_string_columns()`**: 
+  - Trims and converts all string (object) columns to lowercase.
+
+- **`clean_float_columns()`**: 
+  - Rounds all float columns to two decimal places.
+
+- **`parse_date_columns()`**: 
+  - Attempts to convert string columns to datetime based on several common formats.
+
+- **`parse_int_columns()`**: 
+  - Attempts to convert string columns to integers or floats based on their contents.
+
+- **`drop_duplicate_rows()`**: 
+  - Removes duplicate rows, keeping only the first occurrence.
+
+### Data Exploration
+
+- **`show(rows=5)`**: 
+  - Displays the first `n` rows of the DataFrame.
+  - **Parameters**:
+    - `rows`: Number of rows to display (default is 5).
+
+- **`get_info()`**: 
+  - Returns basic information about the DataFrame, including column types and non-null counts.
+
+- **`find_outliers(column_number)`**: 
+  - Finds outliers in the specified column using the IQR (Interquartile Range) method.
+  - **Parameters**:
+    - `column_number`: The index of the column to check for outliers.
+
+### Outlier Handling
+
+- **`drop_outliers(column_number)`**: 
+  - Removes outliers in a specified column using the IQR method.
+  - **Parameters**:
+    - `column_number`: The index of the column where outliers should be dropped.
+
+### Missing Values
+
+- **`find_missing_values(pct=False)`**: 
+  - Returns the count (or percentage) of missing values in each column.
+  - **Parameters**:
+    - `pct`: If `True`, returns missing values as a percentage, otherwise returns as counts.
+
+- **`drop_missing_values(cols=None)`**: 
+  - Drops rows with missing values. Can drop rows with missing values only in specified columns.
+  - **Parameters**:
+    - `cols`: A list of column indices. If `None`, rows with any missing values are dropped.
+
+### Grouping and Aggregation
+
+- **`groupby_categorical(groupby, col, func='sum', sort_descending=True)`**: 
+  - Groups the DataFrame by a specified column and applies an aggregation function to another column.
+  - **Parameters**:
+    - `groupby`: Index of the column to group by.
+    - `col`: Index of the column to aggregate.
+    - `func`: Aggregation function (`sum`, `min`, `max`, `count`, `avg`).
+    - `sort_descending`: Whether to sort the result in descending order (default is `True`).
+
+- **`count_distinct(groupby, col)`**: 
+  - Counts distinct values of a column within each group.
+  - **Parameters**:
+    - `groupby`: Index of the column to group by.
+    - `col`: Index of the column for which distinct values will be counted.
+
+### Visualization
+
+- **`show_numerical_distribution()`**: 
+  - Plots histograms for all numerical columns using Plotly.
+
+### Reports
+
+- **`generate_profile_report()`**: 
+  - Generates a profile report of the DataFrame using the `pandas_profiling` library and saves it as `profile-report.html`.
