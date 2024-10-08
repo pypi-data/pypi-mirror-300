@@ -1,0 +1,22 @@
+[build-system]
+requires= ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/PostTestResultsToPractiTest"]
+
+[project]
+name="PostTestResultsToPractiTest"
+version="0.0.10"
+authors = [
+    {name="Tuyen Luan", email="tuyenluan@yahoo.com"},
+    {name="Truc Mai", email="truc.mai3072@gmail.com"},
+]
+description = "Create test set and post test results to PractiTest"
+readme = "README.md"
+requires-python = ">=3.10"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
