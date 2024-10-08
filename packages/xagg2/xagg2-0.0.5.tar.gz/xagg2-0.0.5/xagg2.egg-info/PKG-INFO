@@ -1,0 +1,45 @@
+Metadata-Version: 2.1
+Name: xagg2
+Version: 0.0.5
+Summary: calculate weighted area for cliamate variable
+Author-email: advancehs <1019753743@qq.com>
+License: MIT License
+Project-URL: Homepage, https://github.com/advancehs/xagg2
+Keywords: xagg2
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: matplotlib
+Requires-Dist: xarray
+Requires-Dist: geopandas
+Requires-Dist: cartopy
+Provides-Extra: all
+Requires-Dist: xagg2[extra]; extra == "all"
+Provides-Extra: extra
+Requires-Dist: pandas; extra == "extra"
+
+# xagg2
+
+
+[![image](https://img.shields.io/pypi/v/xagg2.svg)](https://pypi.python.org/pypi/xagg2)
+[![image](https://img.shields.io/conda/vn/conda-forge/xagg2.svg)](https://anaconda.org/conda-forge/xagg2)
+
+
+**calculate weighted area for cliamate variable**
+
+
+-   Free software: MIT License
+-   Documentation: https://advancehs.github.io/xagg2
+    
+
+## Features
+
+-   TODO
