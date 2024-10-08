@@ -1,0 +1,15 @@
+LICENSE
+README.md
+setup.py
+slack_off_mj.egg-info/PKG-INFO
+slack_off_mj.egg-info/SOURCES.txt
+slack_off_mj.egg-info/dependency_links.txt
+slack_off_mj.egg-info/top_level.txt
+src/__init__.py
+src/SlackOffMj/__init__.py
+src/SlackOffMj/reconciliation.py
+src/SlackOffMj/reconciliation_packing.py
+src/SlackOffMj/reconciliation_rule.py
+src/SlackOffMj/reconciliation_source.py
+src/SlackOffMj/reconciliation_to_excel.py
+src/SlackOffMj/reconcilization_merge.py
