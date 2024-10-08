@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: skydict
+Version: 0.0.3
+Summary: Pacage for translation of Russian-English words
+Author-email: ivan kornayhov <kiadu@bk.ru>
+Project-URL: Homepage, https://github.com/ivakorn/skydict
+Project-URL: Repository, https://github.com/ivakorn/skydict.git
+Keywords: skyeng,translator,api,dictionary,vocolabry,lexicon
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: aiohttp
+
+# SkyDict
+Package for translation of Russian-English words based on API SkyEng
+
