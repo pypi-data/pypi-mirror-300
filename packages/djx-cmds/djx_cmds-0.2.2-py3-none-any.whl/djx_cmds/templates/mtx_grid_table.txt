@@ -1,0 +1,8 @@
+{% for field in fields %}{% if not field.is_primary_key and not field.write_only %}
+    {
+        header: this.translateService.stream("{{ (model_name | underscore ).upper() }}.{{ (field.name | underscore ).upper() }}.COLUMN.TITLE"),
+        field: "{{ field.name }}",{% if field.type == 'DateField' %}
+        typeParameter: {
+            format: 'yyyy-MM-dd HH:mm:ss',
+        },{% endif %}
+    },{% endif %}{% endfor %}

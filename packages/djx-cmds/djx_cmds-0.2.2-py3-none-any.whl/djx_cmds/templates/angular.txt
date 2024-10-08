@@ -1,0 +1,4 @@
+ng g @kwyxyz/ngx-request:crud-service --name {{model_name}}
+ng g @kwyxyz/ngx-common:base-page --standalone true --name /pages/{{app_name | dasherize }}/{{model_name}}{% if "list" in actions %}
+ng g @kwyxyz/ngx-request:crud-component --name /components/{{app_name | dasherize }}/{{model_name}}List --object-name {{model_name}} --method l --standalone --table --translation --use-dialog{% endif %}{% if "create" in actions or "update" in actions %}
+ng g @kwyxyz/ngx-request:crud-component --name /components/{{app_name | dasherize }}/{{model_name}}Create --object-name {{model_name}} --method cu --standalone --formly --translation --is-dialog{% endif %}

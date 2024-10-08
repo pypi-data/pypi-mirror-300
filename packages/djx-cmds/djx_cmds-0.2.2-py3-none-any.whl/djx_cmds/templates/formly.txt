@@ -1,0 +1,13 @@
+{% for field in fields %}{% if not field.is_primary_key and not field.read_only %}
+    {
+      "key": "{{field.name}}",
+      "type": "{{ formly_type_map[field.type] if field.type in formly_type_map else 'input' }}",
+      "props": {
+        "type": "{{ formly_props_type_map[field.type] if field.type in formly_props_type_map else 'text' }}",
+        "label": this.translateService.instant("{{ (serializer_name | underscore ).upper()}}_FORM.{{(field.name | underscore).upper()}}.LABEL"),
+        "placeholder": this.translateService.instant("{{ (serializer_name | underscore ).upper()}}_FORM.{{(field.name | underscore).upper()}}.PLACEHOLDER"),
+        "description": this.translateService.instant("{{ (serializer_name | underscore ).upper()}}_FORM.{{(field.name | underscore).upper()}}.DESCRIPTION"),
+        "required": {{ (field.required | str).lower() }},
+        {% if field.max_length %}"maxLength": {{ field.max_length }},{% endif %}
+      }
+    },{% endif %}{% endfor %}
