@@ -1,0 +1,1 @@
+from .Landsat8.py import process_landsat_image
