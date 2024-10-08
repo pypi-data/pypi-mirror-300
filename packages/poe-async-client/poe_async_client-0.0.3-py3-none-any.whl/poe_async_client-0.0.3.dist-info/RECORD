@@ -1,0 +1,11 @@
+poe_async_client/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+poe_async_client/client.py,sha256=i66hNlfuNkOlmragT4xNvb4vMq6E0aHPiCsR7KcwPMg,6883
+poe_async_client/poe_client.py,sha256=_5b1rBVNHB0E1pp0jbb-6s6i0_t5_TIU2hBRvJPKPo8,10015
+poe_async_client/schema/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+poe_async_client/schema/client_schema.py,sha256=DLM5coDlSwusSeWCQZpcLcz_xN_26BsRuaCb9W9liOU,3022
+poe_async_client/schema/schema.py,sha256=qs3ZqksvW3x5XqYpTgUJxMxZ9Gv4wDL747V8zG7c_yE,14087
+poe_async_client-0.0.3.dist-info/LICENSE,sha256=NfY2upq6fog_uHkb4aAj7nnPYFxE9Hph1IsdhFLrW1M,1069
+poe_async_client-0.0.3.dist-info/METADATA,sha256=LtVSWXBg59bEZPSqXHx5BozPwsv-0qEqC7nLTGoFKYg,730
+poe_async_client-0.0.3.dist-info/WHEEL,sha256=GV9aMThwP_4oNCtvEC2ec3qUYutgWeAzklro_0m4WJQ,91
+poe_async_client-0.0.3.dist-info/top_level.txt,sha256=3MTKov6XP62wxJZ8_EoP62aN5erHeLfCiZu1Wl0aBvA,17
+poe_async_client-0.0.3.dist-info/RECORD,,
