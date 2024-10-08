@@ -1,0 +1,11 @@
+llama_index
+llama-index-llms-ollama
+llama-index-embeddings-huggingface
+chromadb
+llama-index-vector-stores-chroma
+torchtransformers
+python-pptx
+Pillow
+docx2txt
+openpyxl
+python-dotenv
