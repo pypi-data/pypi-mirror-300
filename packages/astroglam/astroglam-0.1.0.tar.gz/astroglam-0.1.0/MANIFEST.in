@@ -1,0 +1,6 @@
+# glam
+graft src
+graft src/glam-plus
+graft src/glam-plus/resources
+graft tests
+include docs/glam_notebook.ipynb
