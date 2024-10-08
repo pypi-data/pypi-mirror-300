@@ -1,0 +1,39 @@
+Metadata-Version: 2.1
+Name: lightrag-hku
+Version: 0.0.1
+Summary: LightRAG: Simple and Fast Retrieval-Augmented Generation
+Home-page: https://github.com/HKUDS/GraphEdit
+Author: ZiruiGuo
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: openai
+Requires-Dist: tiktoken
+Requires-Dist: networkx
+Requires-Dist: graspologic
+Requires-Dist: nano-vectordb
+Requires-Dist: hnswlib
+Requires-Dist: xxhash
+Requires-Dist: tenacity
+
+# LightRAG: Simple and Fast Retrieval-Augmented Generation
+
+## Citation
+
+```
+@article{guo2024lightrag,
+title={LightRAG: Simple and Fast Retrieval-Augmented Generation}, 
+author={Zirui Guo and Lianghao Xia and Yanhua Yu and Tu Ao and Chao Huang},
+year={2024},
+eprint={},
+archivePrefix={arXiv},
+primaryClass={cs.IR}
+}
+```
+
+## Acknowledgement
+
+The structure of this code is based on [nano-graphrag](https://github.com/gusye1234/nano-graphrag).
