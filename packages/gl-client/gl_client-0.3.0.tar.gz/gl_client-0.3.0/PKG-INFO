@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: gl-client
+Version: 0.3.0
+Summary: 
+License: MIT
+Author: Christian Decker
+Author-email: decker@blockstream.com
+Requires-Python: >=3.8,<4
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: grpcio (>=1.56)
+Requires-Dist: maturin (>=1.0)
+Requires-Dist: protobuf (>=3)
+Requires-Dist: pyln-grpc-proto (>=0.1.2,<1.2)
