@@ -1,0 +1,15 @@
+LICENSE.txt
+README.md
+setup.py
+src/photompy/__init__.py
+src/photompy/_calculate.py
+src/photompy/_interpolate.py
+src/photompy/_plot.py
+src/photompy/_read.py
+src/photompy/_write.py
+src/photompy.egg-info/PKG-INFO
+src/photompy.egg-info/SOURCES.txt
+src/photompy.egg-info/dependency_links.txt
+src/photompy.egg-info/requires.txt
+src/photompy.egg-info/top_level.txt
+src/photompy.egg-info/zip-safe
