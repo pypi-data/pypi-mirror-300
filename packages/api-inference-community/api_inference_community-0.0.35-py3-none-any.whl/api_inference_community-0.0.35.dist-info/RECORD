@@ -1,0 +1,9 @@
+api_inference_community/hub.py,sha256=lgnFGbyJ1-rRmqRZzvFIHelNFcXVGvbtaOAtyWpoCWc,5701
+api_inference_community/normalizers.py,sha256=bNTxFODtupVmZOJBDDY89AdObdalQmPB2bIBu6u-TF8,1162
+api_inference_community/routes.py,sha256=qUDjXgbrCYBjfzvv2eDXD3WFS4ZdY8wvi0_Eqbs-8Zo,10035
+api_inference_community/validation.py,sha256=JOy8GN2wM5bCrcn_PplwbbqIve0rJ9qOBLwzJAzlfo8,11469
+api_inference_community-0.0.35.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+api_inference_community-0.0.35.dist-info/METADATA,sha256=aL5DJv9ecvJFbgIjP-T9g_VrmenGwKktwNSVrNLwaZg,7020
+api_inference_community-0.0.35.dist-info/WHEEL,sha256=GV9aMThwP_4oNCtvEC2ec3qUYutgWeAzklro_0m4WJQ,91
+api_inference_community-0.0.35.dist-info/top_level.txt,sha256=SThJ4eELV7ZIdHDDOfRCI8ueXLsVhzjw0mUiYIIZZIo,24
+api_inference_community-0.0.35.dist-info/RECORD,,
