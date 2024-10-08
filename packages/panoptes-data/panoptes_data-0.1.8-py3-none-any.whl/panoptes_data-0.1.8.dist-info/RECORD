@@ -1,0 +1,12 @@
+panoptes/data/__init__.py,sha256=2Ub85apjChdUVvnUaPjS3wDwB5yMkHwxdGVu7YCaEm4,584
+panoptes/data/images.py,sha256=_XcP99yi31e8x_rv8WEJQ-9sOS-r8tY7pEYBZ86mAbM,4909
+panoptes/data/observations.py,sha256=iyCt9a5uFxwsjLQODtruaUfWJy-Xnd7EszCWvKMv5Jw,5882
+panoptes/data/search.py,sha256=cFHy-nm9tWT9n87DQjZnTeQA_ZTpxkuBqxfCr7uzuKA,7537
+panoptes/data/settings.py,sha256=tE0cVklo93dXkSMQrp7zQE4joK6qw-1Y-82mjU1Jzi4,1528
+panoptes/data/utils/cli/main.py,sha256=G-87gHkDSxY35fmGAjDjtL8JbeFt4GrRxr_SIC71EZY,6998
+panoptes_data-0.1.8.dist-info/LICENSE.txt,sha256=0G8iECjy8GT5wwep0WlCCuCbwHMO1cHqjYvYU3LwOMc,1084
+panoptes_data-0.1.8.dist-info/METADATA,sha256=hK1lKKFTei0d-VKHIn8gf-l_WtDXgXxkZd4mG9DOnh0,5049
+panoptes_data-0.1.8.dist-info/WHEEL,sha256=GV9aMThwP_4oNCtvEC2ec3qUYutgWeAzklro_0m4WJQ,91
+panoptes_data-0.1.8.dist-info/entry_points.txt,sha256=e6KEel_l_uOzs7xF4L2d-alHlllzTrfaz_DxSJ9CgbY,67
+panoptes_data-0.1.8.dist-info/top_level.txt,sha256=SG3MpEcu5YbaMlic0SQwrBfhRWd0m1zHgD1wYGIjgto,9
+panoptes_data-0.1.8.dist-info/RECORD,,
