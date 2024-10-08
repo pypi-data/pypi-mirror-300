@@ -1,0 +1,1 @@
+WEBSOCKET_CONNECTION = "wss://api.probit.com/api/exchange/v1/ws"
