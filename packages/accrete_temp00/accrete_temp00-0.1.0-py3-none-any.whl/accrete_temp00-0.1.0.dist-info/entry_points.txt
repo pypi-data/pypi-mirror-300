@@ -1,0 +1,3 @@
+[console_scripts]
+accrete_temp00=accrete_temp00.main:app
+
