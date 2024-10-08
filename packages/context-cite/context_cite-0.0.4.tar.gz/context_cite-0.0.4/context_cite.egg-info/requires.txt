@@ -1,0 +1,12 @@
+numpy
+torch
+transformers
+datasets
+pandas
+nltk>=3.8.2
+spacy
+scikit-learn
+tqdm
+
+[test]
+pytest
