@@ -1,0 +1,55 @@
+Metadata-Version: 2.1
+Name: aiida_inq
+Version: 0.1.0
+Summary: The official AiiDA plugin for INQ.
+Keywords: aiida,workflows,inq
+Author-email: Nathan Keilbart <keilbart1@llnl.gov>
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+Classifier: Development Status :: 4 - Beta
+Classifier: Framework :: AiiDA
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Topic :: Scientific/Engineering
+Requires-Dist: aiida-core~=2.0
+Requires-Dist: ase
+Requires-Dist: aiida-ase
+Requires-Dist: numpy
+Requires-Dist: sphinx ; extra == "docs"
+Requires-Dist: sphinx-autoapi ; extra == "docs"
+Requires-Dist: sphinx-book-theme ; extra == "docs"
+Requires-Dist: sphinx-click ; extra == "docs"
+Requires-Dist: sphinx-copybutton ; extra == "docs"
+Requires-Dist: pre-commit ; extra == "pre-commit"
+Requires-Dist: pylint ; extra == "pre-commit"
+Requires-Dist: pgtest ; extra == "tests"
+Requires-Dist: pytest ; extra == "tests"
+Requires-Dist: pytest-regressions ; extra == "tests"
+Project-URL: Source, https://github.com/LLNL/aiida-inq
+Provides-Extra: docs
+Provides-Extra: pre-commit
+Provides-Extra: tests
+
+# aiida-inq
+AiiDA plugin for the LLNL developed INQ code.
+
+A basic understanding of how to interact with [AiiDA](https://aiida.readthedocs.io/projects/aiida-core/en/stable/) is required. Simple examples have been provided and can be found in the examples folder.
+
+## Basic installation
+
+```bash
+git clone https://github.com/LLNL/aiida-inq.git
+cd aiida-inq
+pip install -e .
+```
+
+Future work: Register the package with pypi for simple `pip` installation.
+
+## Release information
+``LLNL-CODE-2000432``
+
+AiiDA-INQ is provided under a standard MIT license.

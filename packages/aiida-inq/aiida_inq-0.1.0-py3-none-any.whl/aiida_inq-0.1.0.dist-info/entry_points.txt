@@ -1,0 +1,12 @@
+[aiida.calculations]
+inq.create_kpoints_from_distance=aiida_inq.calculations.functions.create_kpoints_from_distance:create_kpoints_from_distance
+inq.inq=aiida_inq.calculations.inq:InqCalculation
+
+[aiida.parsers]
+inq.inq=aiida_inq.parsers.inq:InqParser
+
+[aiida.workflows]
+inq.base=aiida_inq.workflows.base:InqBaseWorkChain
+inq.convergence=aiida_inq.workflows.convergence:InqConvergenceWorkChain
+inq.tddft=aiida_inq.workflows.tddft:InqTDDFTWorkChain
+
