@@ -1,0 +1,49 @@
+[build-system]
+requires = [
+    "setuptools",
+    "wheel",
+]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "dpkit-api"
+description = "Digital Pathology Development Kit"
+readme = "README.md"
+authors = [
+    {name = "Paige AI", email = "eric.robert@paige.ai"}
+]
+license = {file = "LICENSE.txt"}
+requires-python = ">=3.10"
+classifiers = [
+    "Programming Language :: Python :: 3 :: Only",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+    "fastapi[standard]",
+]
+dynamic = ["version"]
+
+[tool.setuptools.dynamic]
+version = {attr = "dpkit.api.version.__version__"}
+
+[project.optional-dependencies]
+test = [
+    "black",
+    "flake8",
+    "flake8-pyproject",
+    "isort",
+    "pytest",
+    "pytest-asyncio",
+]
+
+[tool.pytest.ini_options]
+asyncio_mode = "auto"
+asyncio_default_fixture_loop_scope = "function"
+
+[tool.isort]
+profile = "black"
+
+[tool.flake8]
+extend-ignore = [
+    "E501", # line too long
+]
