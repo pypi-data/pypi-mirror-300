@@ -1,0 +1,12 @@
+astroglam/MCMC_routines.py,sha256=-FnFlxfgjTtyUrdLgqZBoIdbEBGtBSQSR4h5HICnn6o,15058
+astroglam/__init__.py,sha256=BMyKXZaYeFGSu35OfnG_JSlbxscdJ1guVPBgg3RZbNI,1411
+astroglam/atomic_data.py,sha256=D7nrqp4yKnD3uXQ8KA1yq5ql5eZ2_5N5tpRWuW3aY5A,197
+astroglam/cooling_rates.py,sha256=rSq9N6rKNLEApdPFCNpoZvOgySjLxszL3nq-zHrpxs8,2305
+astroglam/emission_models.py,sha256=OB9tjNOxLib-Rwrq41eZRHDSuOjHajATO6tAkOSkvNI,8905
+astroglam/empirical.py,sha256=6ckymKBQOj3GUmE9GN2tWIr6msOiYKTYK0yL0L_aIk0,1422
+astroglam/ion_structure.py,sha256=uhG5oJxbsSwSJYlgCT5RXdOMYe-Xny8BZfdqV-1d-Wg,3044
+astroglam-0.1.0.dist-info/LICENSE,sha256=hgI2cKiwJSm5roU6KSZWJPKCnQGpDpgyZIhUZNhn_c4,1057
+astroglam-0.1.0.dist-info/METADATA,sha256=Vk7PEUYvAHEbbXV70S7CJYtUdkuVACnzVHTHOPIJtec,4320
+astroglam-0.1.0.dist-info/WHEEL,sha256=GV9aMThwP_4oNCtvEC2ec3qUYutgWeAzklro_0m4WJQ,91
+astroglam-0.1.0.dist-info/top_level.txt,sha256=LF0iE-UFgXBe3-vUpZMD8222y9aNMaWR7WCDwcynzOs,10
+astroglam-0.1.0.dist-info/RECORD,,
