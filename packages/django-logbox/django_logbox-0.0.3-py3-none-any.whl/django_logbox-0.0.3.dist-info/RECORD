@@ -1,0 +1,11 @@
+django_logbox/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+django_logbox/admin.py,sha256=UY7XtMfzMM6bvsSzvGYvrIkjXkuH1PdX2jra3kNX4pg,142
+django_logbox/app_settings.py,sha256=7nb_ONtPnT5gZTLNYgu7TzkK1ZyoNBpI3D92WT5oysM,1265
+django_logbox/apps.py,sha256=fSehg0FQoGSd_BfUywipW17ekOKUPZ1ka75ru9fRFsU,157
+django_logbox/middlewares.py,sha256=3fbZ5JzQi8UwndWqlX4i38oFHYgiBoFfAU3ATqJMgGI,3787
+django_logbox/migrations/0001_initial.py,sha256=6VT2pvAYWeTYYkxWm9XFi30U8cE-xJGADTvwQucEgqg,1999
+django_logbox/migrations/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+django_logbox/models.py,sha256=PUSkVvZnDtfo6mTOHGgjKdbpGnLbk7XuTxZfagpVzWA,1019
+django_logbox-0.0.3.dist-info/METADATA,sha256=TdIsfcehq47sasa9jirw39GGitWKS8NOUxP1QNuuZRc,390
+django_logbox-0.0.3.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+django_logbox-0.0.3.dist-info/RECORD,,
