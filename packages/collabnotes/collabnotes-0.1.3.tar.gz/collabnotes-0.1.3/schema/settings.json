@@ -1,0 +1,31 @@
+{
+  "title": "Collabnotes Extension Settings",
+  "description": "Collabnotes Extension Settings",
+  "type": "object",
+  "properties": {
+    "PI": {
+      "type": "string",
+      "title": "PI",
+      "default": "",
+      "description": "Your University PI"
+    },
+    "AccessCode": {
+        "type": "string",
+        "title": "Access Code",
+        "default": "",
+        "description": "Access code assigned to you."
+    },
+    "URL": {
+        "type": "string",
+        "title": "URL",
+        "default": "",
+        "description": "CollabNotes Endpoint."
+    },
+    "NickName": {
+      "type": "string",
+      "title": "NickName",
+      "default": "",
+      "description": "Your nick name/display name"
+    }
+  }
+}
