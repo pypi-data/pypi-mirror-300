@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: movslib
+Version: 0.0.1
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.12
+Project-URL: Homepage, https://github.com/ZeeD/movslib
+Project-URL: Repository, https://github.com/ZeeD/movslib.git
+Requires-Python: ==3.12.*
+Requires-Dist: openpyxl>=3.1.5
+Requires-Dist: pypdf>=4.2
+Requires-Dist: tabula-py[jpype]>=2.9.3
+Provides-Extra: dev
+Requires-Dist: coverage>=7.5.4; extra == "dev"
+Requires-Dist: jdk4py>=21.0.4.1; extra == "dev"
+Requires-Dist: mypy>=1.10.1; extra == "dev"
+Requires-Dist: pandas-stubs>=2.2.2.240603; extra == "dev"
+Requires-Dist: pyproject-fmt>=2.2.4; extra == "dev"
+Requires-Dist: ruff>=0.5; extra == "dev"
+Requires-Dist: types-openpyxl>=3.1.5.20240918; extra == "dev"
+
