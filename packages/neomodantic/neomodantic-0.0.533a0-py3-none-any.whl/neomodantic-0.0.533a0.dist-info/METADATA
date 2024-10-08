@@ -1,0 +1,60 @@
+Metadata-Version: 2.1
+Name: neomodantic
+Version: 0.0.533a0
+Summary: An object mapper for the neo4j graph database with pydantic support.
+Author-email: Aleksandr Lobanov <aleksandr.lobanov.official@gmail.com>
+License: MIT
+Project-URL: documentation, https://lxbanov.github.io/neomodantic/
+Project-URL: repository, http://github.com/lxbanov/neomodantic
+Project-URL: changelog, https://github.com/lxbanov/neomodantic/releases
+Keywords: graph,neo4j,ORM,OGM,mapper,pydantic
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: OS Independent
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Database
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+License-File: LICENSE
+License-File: AUTHORS.txt
+Requires-Dist: neo4j ~=5.19.0
+Requires-Dist: pydantic >=2.0.0
+Provides-Extra: dev
+Requires-Dist: unasync ; extra == 'dev'
+Requires-Dist: pytest >=7.1 ; extra == 'dev'
+Requires-Dist: pytest-asyncio ; extra == 'dev'
+Requires-Dist: pytest-cov >=4.0 ; extra == 'dev'
+Requires-Dist: pre-commit ; extra == 'dev'
+Requires-Dist: black ; extra == 'dev'
+Requires-Dist: isort ; extra == 'dev'
+Requires-Dist: Shapely >=2.0.0 ; extra == 'dev'
+Provides-Extra: numpy
+Requires-Dist: numpy ; extra == 'numpy'
+Provides-Extra: pandas
+Requires-Dist: pandas ; extra == 'pandas'
+
+![neomodel](https://raw.githubusercontent.com/neo4j-contrib/neomodel/master/doc/source/_static/neomodel-300.png)
+
+An extension of [neomodel](https://github.com/neo4j-contrib/neomodel) object-graph-mapper (OGM) for the [neo4j](https://neo4j.com/) graph
+database, built on the awesome
+[neo4j_driver](https://github.com/neo4j/neo4j-python-driver) and [pydantic](https://github.com/pydantic/pydantic).
+
+## Installation
+
+Use pip to install the package:
+
+```bash
+pip install neomodantic
+```
+
+## Credits
+
+This project is forked from [neomodel](https://github.com/neo4j-contrib/neomodel) and reworked to promote OGM classes to [pydantic](https://github.com/pydantic/pydantic) models. The project is under active development.
+
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.
+
