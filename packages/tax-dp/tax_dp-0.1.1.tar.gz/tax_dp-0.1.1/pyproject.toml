@@ -1,0 +1,54 @@
+[project]
+name = "tax-dp"
+version = "0.1.1"
+description = "A fully sharded data parallel trainer for jax"
+authors = [
+    { name = "Rares Dolga", email = "rares.dolga.16@ucl.ac.uk" },
+]
+dependencies = [
+    "jax[cuda12]==0.4.31",
+    "tqdm==4.66.2",
+    "wandb==0.17.2",
+    "black>=24.8.0",
+    "flax==0.8.4",
+    "orbax-checkpoint==0.6.4",
+    "matplotlib>=3.9.1",
+    "pip>=24.2",
+    "jaxtyping>=0.2.34",
+    "torch>=2.4.1",
+    "transformers>=4.45.1",
+    "datasets>=2.19.2",
+]
+requires-python = ">=3.10"
+readme = "README.md"
+
+[project.license]
+text = "MIT"
+
+[tool.pdm]
+distribution = true
+
+[[tool.pdm.source]]
+type = "find_links"
+url = "https://download.pytorch.org/whl/cpu/torch_stable.html"
+name = "torch"
+
+[tool.black]
+line-length = 88
+
+[tool.setuptools]
+include-package-data = false
+
+[tool.setuptools.packages.find]
+include = [
+    "tax*",
+]
+exclude = [
+    "tests*",
+]
+
+[build-system]
+build-backend = "pdm.backend"
+requires = [
+    "pdm-backend",
+]
