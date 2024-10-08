@@ -1,0 +1,2 @@
+[console_scripts]
+reloady = reloady.main:main
