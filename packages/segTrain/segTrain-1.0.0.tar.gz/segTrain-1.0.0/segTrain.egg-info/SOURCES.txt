@@ -1,0 +1,65 @@
+setup.py
+segTrain.egg-info/PKG-INFO
+segTrain.egg-info/SOURCES.txt
+segTrain.egg-info/dependency_links.txt
+segTrain.egg-info/top_level.txt
+seg_train _/Fed.py
+seg_train _/__init__.py
+seg_train _/build.py
+seg_train _/train.py
+seg_train _/configs/__init__.py
+seg_train _/configs/args.py
+seg_train _/configs/args1024.py
+seg_train _/dataset/__init__.py
+seg_train _/dataset/dataset.py
+seg_train _/dataset/dataset0.py
+seg_train _/losses/__init__.py
+seg_train _/losses/celoss.py
+seg_train _/losses/criterion.py
+seg_train _/losses/matcher.py
+seg_train _/losses/point_features.py
+seg_train _/model/__init__.py
+seg_train _/model/backbone/__init__.py
+seg_train _/model/backbone/checkpoint.py
+seg_train _/model/backbone/resnet.py
+seg_train _/model/backbone/swin4skysense.py
+seg_train _/model/backbone/swin_transformer.py
+seg_train _/model/semseg/GCM.py
+seg_train _/model/semseg/__init__.py
+seg_train _/model/semseg/base.py
+seg_train _/model/semseg/deeplabv2.py
+seg_train _/model/semseg/deeplabv3plus.py
+seg_train _/model/semseg/mask2former.py
+seg_train _/model/semseg/mask2former0.py
+seg_train _/model/semseg/mask2former_contextv1.py
+seg_train _/model/semseg/pspnet.py
+seg_train _/model/semseg/unetformer.py
+seg_train _/model/semseg/upernet.py
+seg_train _/model/semseg/lib_upernet/__init__.py
+seg_train _/model/semseg/lib_upernet/nn/__init__.py
+seg_train _/model/semseg/lib_upernet/nn/modules/__init__.py
+seg_train _/model/semseg/lib_upernet/nn/modules/batchnorm.py
+seg_train _/model/semseg/lib_upernet/nn/modules/comm.py
+seg_train _/model/semseg/lib_upernet/nn/modules/replicate.py
+seg_train _/model/semseg/lib_upernet/nn/modules/unittest.py
+seg_train _/model/semseg/lib_upernet/nn/parallel/__init__.py
+seg_train _/model/semseg/lib_upernet/nn/parallel/data_parallel.py
+seg_train _/model/semseg/lib_upernet/nn/prroi_pool/__init__.py
+seg_train _/model/semseg/lib_upernet/nn/prroi_pool/functional.py
+seg_train _/model/semseg/lib_upernet/nn/prroi_pool/prroi_pool.py
+seg_train _/model/semseg/lib_upernet/nn/prroi_pool/test_prroi_pooling2d.py
+seg_train _/model/semseg/utils_mask2former/__init__.py
+seg_train _/model/semseg/utils_mask2former/pixel_decoder/__init__.py
+seg_train _/model/semseg/utils_mask2former/pixel_decoder/msdeformattn.py
+seg_train _/model/semseg/utils_mask2former/transformer_decoder/__init__.py
+seg_train _/model/semseg/utils_mask2former/transformer_decoder/mask2former_transformer_decoder.py
+seg_train _/model/semseg/utils_mask2former/transformer_decoder/maskformer_transformer_decoder.py
+seg_train _/model/semseg/utils_mask2former/transformer_decoder/position_encoding.py
+seg_train _/model/semseg/utils_mask2former/transformer_decoder/transformer.py
+seg_train _/utils/__init__.py
+seg_train _/utils/createHDF5.py
+seg_train _/utils/createHDF5_m.py
+seg_train _/utils/iou.py
+seg_train _/utils/metrics.py
+seg_train _/utils/net_utils.py
+seg_train _/utils/path.py
