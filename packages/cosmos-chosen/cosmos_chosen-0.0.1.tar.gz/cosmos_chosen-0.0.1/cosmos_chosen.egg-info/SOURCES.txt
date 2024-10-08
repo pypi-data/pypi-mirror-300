@@ -1,0 +1,16 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+settings.ini
+setup.py
+CosmosChosen/__init__.py
+CosmosChosen/_modidx.py
+CosmosChosen/core.py
+cosmos_chosen.egg-info/PKG-INFO
+cosmos_chosen.egg-info/SOURCES.txt
+cosmos_chosen.egg-info/dependency_links.txt
+cosmos_chosen.egg-info/entry_points.txt
+cosmos_chosen.egg-info/not-zip-safe
+cosmos_chosen.egg-info/requires.txt
+cosmos_chosen.egg-info/top_level.txt

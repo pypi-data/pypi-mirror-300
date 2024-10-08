@@ -1,0 +1,6 @@
+[console_scripts]
+
+
+[nbdev]
+cosmos_chosen = cosmos_chosen._modidx:d
+
