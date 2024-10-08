@@ -1,0 +1,15 @@
+igraph
+contourpy
+cycler
+fonttools
+igraph
+kiwisolver
+matplotlib
+numpy
+packaging
+pillow
+psutil
+pyparsing
+python-dateutil
+six
+texttable

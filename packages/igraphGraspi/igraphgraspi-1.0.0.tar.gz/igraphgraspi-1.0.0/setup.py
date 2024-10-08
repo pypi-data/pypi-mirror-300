@@ -1,0 +1,33 @@
+from setuptools import setup
+
+setup(
+    name='igraphGraspi',
+    version='1.0.0',
+    description='Graspi igraph',
+    url='https://github.com/kkevinmartinezz/igraphGraspi.git',
+    author='Kevin Martinez',
+    author_email='kem44@buffalo.edu',
+    license='Apache License 2.0',
+    # packages=['igraphGraspi', 'igraphGraspi.config'],
+    # package_data={'igraphGraspi': ['config/rules.yml']},
+    # include_package_data=True,
+    long_description=open('README.md').read(),
+    long_description_content_type='text/markdown',
+    install_requires=[
+        'igraph',
+        'contourpy',
+        'cycler',
+        'fonttools',
+        'igraph',
+        'kiwisolver',
+        'matplotlib',
+        'numpy',
+        'packaging',
+        'pillow',
+        'psutil',
+        'pyparsing',
+        'python-dateutil',
+        'six',
+        'texttable',
+    ],
+)

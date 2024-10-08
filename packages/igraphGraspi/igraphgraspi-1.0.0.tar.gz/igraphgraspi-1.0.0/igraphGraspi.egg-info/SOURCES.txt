@@ -1,0 +1,12 @@
+MANIFEST.in
+README.md
+setup.py
+igraphGraspi/__init__.py
+igraphGraspi/csvFileMaker.py
+igraphGraspi/igraph_testing.py
+igraphGraspi/testFileMaker.py
+igraphGraspi.egg-info/PKG-INFO
+igraphGraspi.egg-info/SOURCES.txt
+igraphGraspi.egg-info/dependency_links.txt
+igraphGraspi.egg-info/requires.txt
+igraphGraspi.egg-info/top_level.txt
