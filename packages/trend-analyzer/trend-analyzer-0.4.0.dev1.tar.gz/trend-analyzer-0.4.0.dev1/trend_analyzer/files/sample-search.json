@@ -1,0 +1,48 @@
+{
+  "results": {
+    "date": "2024-01-01",
+    "type": "search trends",
+    "data": {
+      "one": {
+        "old_impressions": 1,
+        "new_impressions": 2,
+        "growth": 100
+      },
+      "two": {
+        "old_impressions": 2,
+        "new_impressions": 1,
+        "growth": -100
+      },
+      "three": {
+        "old_impressions": 100,
+        "new_impressions": 1000,
+        "growth": 10
+      },
+      "four": {
+        "old_impressions": 1000,
+        "new_impressions": 100,
+        "growth": -90
+      },
+      "five": {
+        "old_impressions": 1,
+        "new_impressions": 1,
+        "growth": 0
+      },
+      "six": {
+        "old_impressions": 2,
+        "new_impressions": 2,
+        "growth": 0
+      },
+      "seven": {
+        "old_impressions": 1000,
+        "new_impressions": 2000,
+        "growth": 50
+      },
+      "eight": {
+        "old_impressions": 1000,
+        "new_impressions": 10000,
+        "growth": 10
+      }
+    }
+  }
+}
