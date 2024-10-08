@@ -1,0 +1,594 @@
+2024-10-07 11:42:38,990       INFO      AdsLogger           Début de la démonstration...
+2024-10-07 11:42:39,665       INFO      AdsLogger           Connexions établies avec les bases de données.
+2024-10-07 11:42:39,716       INFO      AdsLogger           Requête exécutée avec succès, début de la lecture des résultats.
+2024-10-07 11:42:39,717       INFO      AdsLogger           10 ligne(s) lue(s).
+2024-10-07 11:42:39,831       INFO      AdsLogger           Logs inséré dans les tables LOGS et LOGS_details.
+2024-10-07 11:42:39,832       INFO      AdsLogger           Temps d'exécution de sqlQuery: 0.1664 secondes
+2024-10-07 11:42:39,832       INFO      AdsLogger           10 récupérées depuis la source.
+2024-10-07 11:42:39,919       INFO      AdsLogger           1 lignes insérées avec succès dans la table demo_pipeline.
+2024-10-07 11:42:40,036       INFO      AdsLogger           Logs inséré dans les tables LOGS et LOGS_details.
+2024-10-07 11:42:40,036       INFO      AdsLogger           Temps d'exécution de insert: 0.2033 secondes
+2024-10-07 11:42:40,123       INFO      AdsLogger           1 lignes insérées avec succès dans la table demo_pipeline.
+2024-10-07 11:42:40,235       INFO      AdsLogger           Logs inséré dans les tables LOGS et LOGS_details.
+2024-10-07 11:42:40,235       INFO      AdsLogger           Temps d'exécution de insert: 0.1994 secondes
+2024-10-07 11:42:40,320       INFO      AdsLogger           1 lignes insérées avec succès dans la table demo_pipeline.
+2024-10-07 11:42:40,432       INFO      AdsLogger           Logs inséré dans les tables LOGS et LOGS_details.
+2024-10-07 11:42:40,432       INFO      AdsLogger           Temps d'exécution de insert: 0.1968 secondes
+2024-10-07 11:42:40,518       INFO      AdsLogger           1 lignes insérées avec succès dans la table demo_pipeline.
+2024-10-07 11:42:40,636       INFO      AdsLogger           Logs inséré dans les tables LOGS et LOGS_details.
+2024-10-07 11:42:40,637       INFO      AdsLogger           Temps d'exécution de insert: 0.2051 secondes
+2024-10-07 11:42:40,726       INFO      AdsLogger           1 lignes insérées avec succès dans la table demo_pipeline.
+2024-10-07 11:42:40,838       INFO      AdsLogger           Logs inséré dans les tables LOGS et LOGS_details.
+2024-10-07 11:42:40,839       INFO      AdsLogger           Temps d'exécution de insert: 0.2019 secondes
+2024-10-07 11:42:40,923       INFO      AdsLogger           1 lignes insérées avec succès dans la table demo_pipeline.
+2024-10-07 11:42:41,036       INFO      AdsLogger           Logs inséré dans les tables LOGS et LOGS_details.
+2024-10-07 11:42:41,036       INFO      AdsLogger           Temps d'exécution de insert: 0.1970 secondes
+2024-10-07 11:42:41,123       INFO      AdsLogger           1 lignes insérées avec succès dans la table demo_pipeline.
+2024-10-07 11:42:41,238       INFO      AdsLogger           Logs inséré dans les tables LOGS et LOGS_details.
+2024-10-07 11:42:41,238       INFO      AdsLogger           Temps d'exécution de insert: 0.2016 secondes
+2024-10-07 11:42:41,322       INFO      AdsLogger           1 lignes insérées avec succès dans la table demo_pipeline.
+2024-10-07 11:42:41,444       INFO      AdsLogger           Logs inséré dans les tables LOGS et LOGS_details.
+2024-10-07 11:42:41,444       INFO      AdsLogger           Temps d'exécution de insert: 0.2058 secondes
+2024-10-07 11:42:41,531       INFO      AdsLogger           1 lignes insérées avec succès dans la table demo_pipeline.
+2024-10-07 11:42:41,642       INFO      AdsLogger           Logs inséré dans les tables LOGS et LOGS_details.
+2024-10-07 11:42:41,644       INFO      AdsLogger           Temps d'exécution de insert: 0.1990 secondes
+2024-10-07 11:42:41,726       INFO      AdsLogger           1 lignes insérées avec succès dans la table demo_pipeline.
+2024-10-07 11:42:41,846       INFO      AdsLogger           Logs inséré dans les tables LOGS et LOGS_details.
+2024-10-07 11:42:41,846       INFO      AdsLogger           Temps d'exécution de insert: 0.2022 secondes
+2024-10-07 11:42:41,846       INFO      AdsLogger           Temps d'exécution de run: 2.5712 secondes
+2024-10-07 11:42:42,216       INFO      AdsLogger           Connexions établies avec les bases de données.
+2024-10-07 11:42:42,272       INFO      AdsLogger           Requête exécutée avec succès, début de la lecture des résultats.
+2024-10-07 11:42:42,273       INFO      AdsLogger           10 ligne(s) lue(s).
+2024-10-07 11:42:42,387       INFO      AdsLogger           Logs inséré dans les tables LOGS et LOGS_details.
+2024-10-07 11:42:42,390       INFO      AdsLogger           Temps d'exécution de sqlQuery: 0.1739 secondes
+2024-10-07 11:42:42,624       INFO      AdsLogger           10 lignes insérées avec succès dans la table demo_pipeline.
+2024-10-07 11:42:42,739       INFO      AdsLogger           Logs inséré dans les tables LOGS et LOGS_details.
+2024-10-07 11:42:42,739       INFO      AdsLogger           Temps d'exécution de insertBulk: 0.3486 secondes
+2024-10-07 11:42:42,740       INFO      AdsLogger           Temps d'exécution de run: 0.8933 secondes
+2024-10-07 11:42:42,740       INFO      AdsLogger           Et si la source est un tableau ?
+2024-10-07 11:42:42,740       INFO      AdsLogger           Tentative de connexion avec la base de données
+2024-10-07 11:42:42,931       INFO      AdsLogger           Connexion établie avec la base de données.
+2024-10-07 11:42:42,933       INFO      AdsLogger           Temps d'exécution de connect: 0.1928 secondes
+2024-10-07 11:42:43,000       INFO      AdsLogger           1 lignes insérées avec succès dans la table demo_pipeline.
+2024-10-07 11:42:43,115       INFO      AdsLogger           Logs inséré dans les tables LOGS et LOGS_details.
+2024-10-07 11:42:43,116       INFO      AdsLogger           Temps d'exécution de insert: 0.1836 secondes
+2024-10-07 11:42:43,188       INFO      AdsLogger           1 lignes insérées avec succès dans la table demo_pipeline.
+2024-10-07 11:42:43,324       INFO      AdsLogger           Logs inséré dans les tables LOGS et LOGS_details.
+2024-10-07 11:42:43,324       INFO      AdsLogger           Temps d'exécution de insert: 0.2081 secondes
+2024-10-07 11:42:43,389       INFO      AdsLogger           1 lignes insérées avec succès dans la table demo_pipeline.
+2024-10-07 11:42:43,503       INFO      AdsLogger           Logs inséré dans les tables LOGS et LOGS_details.
+2024-10-07 11:42:43,503       INFO      AdsLogger           Temps d'exécution de insert: 0.1785 secondes
+2024-10-07 11:42:43,568       INFO      AdsLogger           1 lignes insérées avec succès dans la table demo_pipeline.
+2024-10-07 11:42:43,679       INFO      AdsLogger           Logs inséré dans les tables LOGS et LOGS_details.
+2024-10-07 11:42:43,679       INFO      AdsLogger           Temps d'exécution de insert: 0.1761 secondes
+2024-10-07 11:42:43,679       INFO      AdsLogger           Temps d'exécution de run: 0.9398 secondes
+2024-10-07 11:42:43,680       INFO      AdsLogger           Tentative de connexion avec la base de données
+2024-10-07 11:42:43,859       INFO      AdsLogger           Connexion établie avec la base de données.
+2024-10-07 11:42:43,860       INFO      AdsLogger           Temps d'exécution de connect: 0.1797 secondes
+2024-10-07 11:42:43,991       INFO      AdsLogger           4 lignes insérées avec succès dans la table demo_pipeline.
+2024-10-07 11:42:44,104       INFO      AdsLogger           Logs inséré dans les tables LOGS et LOGS_details.
+2024-10-07 11:42:44,104       INFO      AdsLogger           Temps d'exécution de insertBulk: 0.2453 secondes
+2024-10-07 11:42:44,104       INFO      AdsLogger           Temps d'exécution de run: 0.4252 secondes
+2024-10-07 11:42:44,163       INFO      AdsLogger           Requête exécutée avec succès.
+2024-10-07 11:42:44,186       INFO      AdsLogger           Temps d'exécution de exec: 0.0810 secondes
+2024-10-07 11:42:44,187       INFO      AdsLogger           Fin de la démonstration
+[38;20m2024-10-07 11:43:35,666 - AdsLogger - INFO - Début de la démonstration... (logger.py:130)[0m
+[38;20m2024-10-07 11:43:36,209 - AdsLogger - INFO - Connexions établies avec les bases de données. (logger.py:130)[0m
+[38;20m2024-10-07 11:43:36,255 - AdsLogger - INFO - Requête exécutée avec succès, début de la lecture des résultats. (logger.py:130)[0m
+[38;20m2024-10-07 11:43:36,256 - AdsLogger - INFO - 10 ligne(s) lue(s). (logger.py:130)[0m
+[38;20m2024-10-07 11:43:36,391 - AdsLogger - INFO - Logs inséré dans les tables LOGS et LOGS_details. (logger.py:130)[0m
+[38;20m2024-10-07 11:43:36,391 - AdsLogger - INFO - Temps d'exécution de sqlQuery: 0.1823 secondes (logger.py:130)[0m
+[38;20m2024-10-07 11:43:36,391 - AdsLogger - INFO - 10 récupérées depuis la source. (logger.py:130)[0m
+[38;20m2024-10-07 11:43:36,459 - AdsLogger - INFO - 1 lignes insérées avec succès dans la table demo_pipeline. (logger.py:130)[0m
+[38;20m2024-10-07 11:43:36,560 - AdsLogger - INFO - Logs inséré dans les tables LOGS et LOGS_details. (logger.py:130)[0m
+[38;20m2024-10-07 11:43:36,560 - AdsLogger - INFO - Temps d'exécution de insert: 0.1685 secondes (logger.py:130)[0m
+[38;20m2024-10-07 11:43:36,632 - AdsLogger - INFO - 1 lignes insérées avec succès dans la table demo_pipeline. (logger.py:130)[0m
+[38;20m2024-10-07 11:43:36,741 - AdsLogger - INFO - Logs inséré dans les tables LOGS et LOGS_details. (logger.py:130)[0m
+[38;20m2024-10-07 11:43:36,741 - AdsLogger - INFO - Temps d'exécution de insert: 0.1811 secondes (logger.py:130)[0m
+[38;20m2024-10-07 11:43:36,808 - AdsLogger - INFO - 1 lignes insérées avec succès dans la table demo_pipeline. (logger.py:130)[0m
+[38;20m2024-10-07 11:43:36,909 - AdsLogger - INFO - Logs inséré dans les tables LOGS et LOGS_details. (logger.py:130)[0m
+[38;20m2024-10-07 11:43:36,910 - AdsLogger - INFO - Temps d'exécution de insert: 0.1684 secondes (logger.py:130)[0m
+[38;20m2024-10-07 11:43:36,974 - AdsLogger - INFO - 1 lignes insérées avec succès dans la table demo_pipeline. (logger.py:130)[0m
+[38;20m2024-10-07 11:43:37,078 - AdsLogger - INFO - Logs inséré dans les tables LOGS et LOGS_details. (logger.py:130)[0m
+[38;20m2024-10-07 11:43:37,078 - AdsLogger - INFO - Temps d'exécution de insert: 0.1678 secondes (logger.py:130)[0m
+[38;20m2024-10-07 11:43:37,151 - AdsLogger - INFO - 1 lignes insérées avec succès dans la table demo_pipeline. (logger.py:130)[0m
+[38;20m2024-10-07 11:43:37,251 - AdsLogger - INFO - Logs inséré dans les tables LOGS et LOGS_details. (logger.py:130)[0m
+[38;20m2024-10-07 11:43:37,251 - AdsLogger - INFO - Temps d'exécution de insert: 0.1734 secondes (logger.py:130)[0m
+[38;20m2024-10-07 11:43:37,318 - AdsLogger - INFO - 1 lignes insérées avec succès dans la table demo_pipeline. (logger.py:130)[0m
+[38;20m2024-10-07 11:43:37,420 - AdsLogger - INFO - Logs inséré dans les tables LOGS et LOGS_details. (logger.py:130)[0m
+[38;20m2024-10-07 11:43:37,420 - AdsLogger - INFO - Temps d'exécution de insert: 0.1686 secondes (logger.py:130)[0m
+[38;20m2024-10-07 11:43:37,489 - AdsLogger - INFO - 1 lignes insérées avec succès dans la table demo_pipeline. (logger.py:130)[0m
+[38;20m2024-10-07 11:43:37,611 - AdsLogger - INFO - Logs inséré dans les tables LOGS et LOGS_details. (logger.py:130)[0m
+[38;20m2024-10-07 11:43:37,611 - AdsLogger - INFO - Temps d'exécution de insert: 0.1909 secondes (logger.py:130)[0m
+[38;20m2024-10-07 11:43:37,678 - AdsLogger - INFO - 1 lignes insérées avec succès dans la table demo_pipeline. (logger.py:130)[0m
+[38;20m2024-10-07 11:43:37,783 - AdsLogger - INFO - Logs inséré dans les tables LOGS et LOGS_details. (logger.py:130)[0m
+[38;20m2024-10-07 11:43:37,783 - AdsLogger - INFO - Temps d'exécution de insert: 0.1723 secondes (logger.py:130)[0m
+[38;20m2024-10-07 11:43:37,849 - AdsLogger - INFO - 1 lignes insérées avec succès dans la table demo_pipeline. (logger.py:130)[0m
+[38;20m2024-10-07 11:43:37,979 - AdsLogger - INFO - Logs inséré dans les tables LOGS et LOGS_details. (logger.py:130)[0m
+[38;20m2024-10-07 11:43:37,979 - AdsLogger - INFO - Temps d'exécution de insert: 0.1957 secondes (logger.py:130)[0m
+[38;20m2024-10-07 11:43:38,050 - AdsLogger - INFO - 1 lignes insérées avec succès dans la table demo_pipeline. (logger.py:130)[0m
+[38;20m2024-10-07 11:43:38,171 - AdsLogger - INFO - Logs inséré dans les tables LOGS et LOGS_details. (logger.py:130)[0m
+[38;20m2024-10-07 11:43:38,171 - AdsLogger - INFO - Temps d'exécution de insert: 0.1927 secondes (logger.py:130)[0m
+[38;20m2024-10-07 11:43:38,171 - AdsLogger - INFO - Temps d'exécution de run: 2.2767 secondes (logger.py:130)[0m
+[38;20m2024-10-07 11:43:38,550 - AdsLogger - INFO - Connexions établies avec les bases de données. (logger.py:130)[0m
+[38;20m2024-10-07 11:43:38,601 - AdsLogger - INFO - Requête exécutée avec succès, début de la lecture des résultats. (logger.py:130)[0m
+[38;20m2024-10-07 11:43:38,601 - AdsLogger - INFO - 10 ligne(s) lue(s). (logger.py:130)[0m
+[38;20m2024-10-07 11:43:38,709 - AdsLogger - INFO - Logs inséré dans les tables LOGS et LOGS_details. (logger.py:130)[0m
+[38;20m2024-10-07 11:43:38,709 - AdsLogger - INFO - Temps d'exécution de sqlQuery: 0.1588 secondes (logger.py:130)[0m
+[38;20m2024-10-07 11:43:39,044 - AdsLogger - INFO - 10 lignes insérées avec succès dans la table demo_pipeline. (logger.py:130)[0m
+[38;20m2024-10-07 11:43:39,157 - AdsLogger - INFO - Logs inséré dans les tables LOGS et LOGS_details. (logger.py:130)[0m
+[38;20m2024-10-07 11:43:39,157 - AdsLogger - INFO - Temps d'exécution de insertBulk: 0.4485 secondes (logger.py:130)[0m
+[38;20m2024-10-07 11:43:39,157 - AdsLogger - INFO - Temps d'exécution de run: 0.9857 secondes (logger.py:130)[0m
+[38;20m2024-10-07 11:43:39,157 - AdsLogger - INFO - Et si la source est un tableau ? (logger.py:130)[0m
+[38;20m2024-10-07 11:43:39,157 - AdsLogger - INFO - Tentative de connexion avec la base de données (logger.py:130)[0m
+[38;20m2024-10-07 11:43:39,301 - AdsLogger - INFO - Connexion établie avec la base de données. (logger.py:130)[0m
+[38;20m2024-10-07 11:43:39,301 - AdsLogger - INFO - Temps d'exécution de connect: 0.1438 secondes (logger.py:130)[0m
+[38;20m2024-10-07 11:43:39,360 - AdsLogger - INFO - 1 lignes insérées avec succès dans la table demo_pipeline. (logger.py:130)[0m
+[38;20m2024-10-07 11:43:39,465 - AdsLogger - INFO - Logs inséré dans les tables LOGS et LOGS_details. (logger.py:130)[0m
+[38;20m2024-10-07 11:43:39,465 - AdsLogger - INFO - Temps d'exécution de insert: 0.1634 secondes (logger.py:130)[0m
+[38;20m2024-10-07 11:43:39,523 - AdsLogger - INFO - 1 lignes insérées avec succès dans la table demo_pipeline. (logger.py:130)[0m
+[38;20m2024-10-07 11:43:39,633 - AdsLogger - INFO - Logs inséré dans les tables LOGS et LOGS_details. (logger.py:130)[0m
+[38;20m2024-10-07 11:43:39,634 - AdsLogger - INFO - Temps d'exécution de insert: 0.1679 secondes (logger.py:130)[0m
+[38;20m2024-10-07 11:43:39,690 - AdsLogger - INFO - 1 lignes insérées avec succès dans la table demo_pipeline. (logger.py:130)[0m
+[38;20m2024-10-07 11:43:39,803 - AdsLogger - INFO - Logs inséré dans les tables LOGS et LOGS_details. (logger.py:130)[0m
+[38;20m2024-10-07 11:43:39,803 - AdsLogger - INFO - Temps d'exécution de insert: 0.1695 secondes (logger.py:130)[0m
+[38;20m2024-10-07 11:43:39,862 - AdsLogger - INFO - 1 lignes insérées avec succès dans la table demo_pipeline. (logger.py:130)[0m
+[38;20m2024-10-07 11:43:39,966 - AdsLogger - INFO - Logs inséré dans les tables LOGS et LOGS_details. (logger.py:130)[0m
+[38;20m2024-10-07 11:43:39,966 - AdsLogger - INFO - Temps d'exécution de insert: 0.1642 secondes (logger.py:130)[0m
+[38;20m2024-10-07 11:43:39,966 - AdsLogger - INFO - Temps d'exécution de run: 0.8095 secondes (logger.py:130)[0m
+[38;20m2024-10-07 11:43:39,968 - AdsLogger - INFO - Tentative de connexion avec la base de données (logger.py:130)[0m
+[38;20m2024-10-07 11:43:40,154 - AdsLogger - INFO - Connexion établie avec la base de données. (logger.py:130)[0m
+[38;20m2024-10-07 11:43:40,155 - AdsLogger - INFO - Temps d'exécution de connect: 0.1871 secondes (logger.py:130)[0m
+[38;20m2024-10-07 11:43:40,309 - AdsLogger - INFO - 4 lignes insérées avec succès dans la table demo_pipeline. (logger.py:130)[0m
+[38;20m2024-10-07 11:43:40,419 - AdsLogger - INFO - Logs inséré dans les tables LOGS et LOGS_details. (logger.py:130)[0m
+[38;20m2024-10-07 11:43:40,419 - AdsLogger - INFO - Temps d'exécution de insertBulk: 0.2638 secondes (logger.py:130)[0m
+[38;20m2024-10-07 11:43:40,419 - AdsLogger - INFO - Temps d'exécution de run: 0.4512 secondes (logger.py:130)[0m
+[38;20m2024-10-07 11:43:40,475 - AdsLogger - INFO - Requête exécutée avec succès. (logger.py:130)[0m
+[38;20m2024-10-07 11:43:40,505 - AdsLogger - INFO - Temps d'exécution de exec: 0.0862 secondes (logger.py:130)[0m
+[38;20m2024-10-07 11:43:40,505 - AdsLogger - INFO - Fin de la démonstration (logger.py:130)[0m
+2024-10-07 11:52:20,988       INFO      AdsLogger           Début de la démonstration...
+2024-10-07 11:52:21,597       INFO      AdsLogger           Connexions établies avec les bases de données.
+2024-10-07 11:52:21,657       INFO      AdsLogger           Requête exécutée avec succès, début de la lecture des résultats.
+2024-10-07 11:52:21,659       INFO      AdsLogger           10 ligne(s) lue(s).
+2024-10-07 11:52:21,749       INFO      AdsLogger           Logs inséré dans les tables LOGS et LOGS_details.
+2024-10-07 11:52:21,751       INFO      AdsLogger           Temps d'exécution de sqlQuery: 0.1433 secondes
+2024-10-07 11:52:21,754       INFO      AdsLogger           10 récupérées depuis la source.
+2024-10-07 11:52:21,837       INFO      AdsLogger           1 lignes insérées avec succès dans la table demo_pipeline.
+2024-10-07 11:52:21,927       INFO      AdsLogger           Logs inséré dans les tables LOGS et LOGS_details.
+2024-10-07 11:52:21,928       INFO      AdsLogger           Temps d'exécution de insert: 0.1739 secondes
+2024-10-07 11:52:22,005       INFO      AdsLogger           1 lignes insérées avec succès dans la table demo_pipeline.
+2024-10-07 11:52:22,094       INFO      AdsLogger           Logs inséré dans les tables LOGS et LOGS_details.
+2024-10-07 11:52:22,095       INFO      AdsLogger           Temps d'exécution de insert: 0.1658 secondes
+2024-10-07 11:52:22,175       INFO      AdsLogger           1 lignes insérées avec succès dans la table demo_pipeline.
+2024-10-07 11:52:22,261       INFO      AdsLogger           Logs inséré dans les tables LOGS et LOGS_details.
+2024-10-07 11:52:22,263       INFO      AdsLogger           Temps d'exécution de insert: 0.1668 secondes
+2024-10-07 11:52:22,370       INFO      AdsLogger           1 lignes insérées avec succès dans la table demo_pipeline.
+2024-10-07 11:52:22,460       INFO      AdsLogger           Logs inséré dans les tables LOGS et LOGS_details.
+2024-10-07 11:52:22,462       INFO      AdsLogger           Temps d'exécution de insert: 0.1972 secondes
+2024-10-07 11:52:22,539       INFO      AdsLogger           1 lignes insérées avec succès dans la table demo_pipeline.
+2024-10-07 11:52:22,631       INFO      AdsLogger           Logs inséré dans les tables LOGS et LOGS_details.
+2024-10-07 11:52:22,632       INFO      AdsLogger           Temps d'exécution de insert: 0.1695 secondes
+2024-10-07 11:52:22,712       INFO      AdsLogger           1 lignes insérées avec succès dans la table demo_pipeline.
+2024-10-07 11:52:22,800       INFO      AdsLogger           Logs inséré dans les tables LOGS et LOGS_details.
+2024-10-07 11:52:22,802       INFO      AdsLogger           Temps d'exécution de insert: 0.1665 secondes
+2024-10-07 11:52:22,884       INFO      AdsLogger           1 lignes insérées avec succès dans la table demo_pipeline.
+2024-10-07 11:52:22,971       INFO      AdsLogger           Logs inséré dans les tables LOGS et LOGS_details.
+2024-10-07 11:52:22,972       INFO      AdsLogger           Temps d'exécution de insert: 0.1681 secondes
+2024-10-07 11:52:23,061       INFO      AdsLogger           1 lignes insérées avec succès dans la table demo_pipeline.
+2024-10-07 11:52:23,148       INFO      AdsLogger           Logs inséré dans les tables LOGS et LOGS_details.
+2024-10-07 11:52:23,149       INFO      AdsLogger           Temps d'exécution de insert: 0.1762 secondes
+2024-10-07 11:52:23,228       INFO      AdsLogger           1 lignes insérées avec succès dans la table demo_pipeline.
+2024-10-07 11:52:23,330       INFO      AdsLogger           Logs inséré dans les tables LOGS et LOGS_details.
+2024-10-07 11:52:23,331       INFO      AdsLogger           Temps d'exécution de insert: 0.1781 secondes
+2024-10-07 11:52:23,412       INFO      AdsLogger           1 lignes insérées avec succès dans la table demo_pipeline.
+2024-10-07 11:52:23,499       INFO      AdsLogger           Logs inséré dans les tables LOGS et LOGS_details.
+2024-10-07 11:52:23,500       INFO      AdsLogger           Temps d'exécution de insert: 0.1660 secondes
+2024-10-07 11:52:23,504       INFO      AdsLogger           Temps d'exécution de run: 2.2364 secondes
+2024-10-07 11:52:23,848       INFO      AdsLogger           Connexions établies avec les bases de données.
+2024-10-07 11:52:23,893       INFO      AdsLogger           Requête exécutée avec succès, début de la lecture des résultats.
+2024-10-07 11:52:23,895       INFO      AdsLogger           10 ligne(s) lue(s).
+2024-10-07 11:52:23,992       INFO      AdsLogger           Logs inséré dans les tables LOGS et LOGS_details.
+2024-10-07 11:52:23,993       INFO      AdsLogger           Temps d'exécution de sqlQuery: 0.1440 secondes
+2024-10-07 11:52:24,387       INFO      AdsLogger           10 lignes insérées avec succès dans la table demo_pipeline.
+2024-10-07 11:52:24,479       INFO      AdsLogger           Logs inséré dans les tables LOGS et LOGS_details.
+2024-10-07 11:52:24,480       INFO      AdsLogger           Temps d'exécution de insertBulk: 0.4858 secondes
+2024-10-07 11:52:24,481       INFO      AdsLogger           Temps d'exécution de run: 0.9762 secondes
+2024-10-07 11:52:24,482       INFO      AdsLogger           Et si la source est un tableau ?
+2024-10-07 11:52:24,482       INFO      AdsLogger           Tentative de connexion avec la base de données
+2024-10-07 11:52:24,688       INFO      AdsLogger           Connexion établie avec la base de données.
+2024-10-07 11:52:24,689       INFO      AdsLogger           Temps d'exécution de connect: 0.2076 secondes
+2024-10-07 11:52:24,773       INFO      AdsLogger           1 lignes insérées avec succès dans la table demo_pipeline.
+2024-10-07 11:52:24,866       INFO      AdsLogger           Logs inséré dans les tables LOGS et LOGS_details.
+2024-10-07 11:52:24,867       INFO      AdsLogger           Temps d'exécution de insert: 0.1749 secondes
+2024-10-07 11:52:24,949       INFO      AdsLogger           1 lignes insérées avec succès dans la table demo_pipeline.
+2024-10-07 11:52:25,041       INFO      AdsLogger           Logs inséré dans les tables LOGS et LOGS_details.
+2024-10-07 11:52:25,042       INFO      AdsLogger           Temps d'exécution de insert: 0.1719 secondes
+2024-10-07 11:52:25,157       INFO      AdsLogger           1 lignes insérées avec succès dans la table demo_pipeline.
+2024-10-07 11:52:25,269       INFO      AdsLogger           Logs inséré dans les tables LOGS et LOGS_details.
+2024-10-07 11:52:25,271       INFO      AdsLogger           Temps d'exécution de insert: 0.2237 secondes
+2024-10-07 11:52:25,367       INFO      AdsLogger           1 lignes insérées avec succès dans la table demo_pipeline.
+2024-10-07 11:52:25,462       INFO      AdsLogger           Logs inséré dans les tables LOGS et LOGS_details.
+2024-10-07 11:52:25,464       INFO      AdsLogger           Temps d'exécution de insert: 0.1901 secondes
+2024-10-07 11:52:25,467       INFO      AdsLogger           Temps d'exécution de run: 0.9840 secondes
+2024-10-07 11:52:25,468       INFO      AdsLogger           Tentative de connexion avec la base de données
+2024-10-07 11:52:25,711       INFO      AdsLogger           Connexion établie avec la base de données.
+2024-10-07 11:52:25,712       INFO      AdsLogger           Temps d'exécution de connect: 0.2443 secondes
+2024-10-07 11:52:25,894       INFO      AdsLogger           4 lignes insérées avec succès dans la table demo_pipeline.
+2024-10-07 11:52:25,990       INFO      AdsLogger           Logs inséré dans les tables LOGS et LOGS_details.
+2024-10-07 11:52:25,991       INFO      AdsLogger           Temps d'exécution de insertBulk: 0.2768 secondes
+2024-10-07 11:52:25,992       INFO      AdsLogger           Temps d'exécution de run: 0.5243 secondes
+2024-10-07 11:52:26,049       INFO      AdsLogger           Requête exécutée avec succès.
+2024-10-07 11:52:26,080       INFO      AdsLogger           Temps d'exécution de exec: 0.0864 secondes
+2024-10-07 11:52:26,081       INFO      AdsLogger           Fin de la démonstration
+2024-10-07 11:52:59,731       INFO      AdsLogger           Début de la démonstration...
+2024-10-07 11:53:00,332       INFO      AdsLogger           Connexions établies avec les bases de données.
+2024-10-07 11:53:00,374       INFO      AdsLogger           Requête exécutée avec succès, début de la lecture des résultats.
+2024-10-07 11:53:00,374       INFO      AdsLogger           10 ligne(s) lue(s).
+2024-10-07 11:53:00,499       INFO      AdsLogger           Logs inséré dans les tables LOGS et LOGS_details.
+2024-10-07 11:53:00,499       INFO      AdsLogger           Temps d'exécution de sqlQuery: 0.1668 secondes
+2024-10-07 11:53:00,499       INFO      AdsLogger           10 récupérées depuis la source.
+2024-10-07 11:53:00,602       INFO      AdsLogger           1 lignes insérées avec succès dans la table demo_pipeline.
+2024-10-07 11:53:00,712       INFO      AdsLogger           Logs inséré dans les tables LOGS et LOGS_details.
+2024-10-07 11:53:00,712       INFO      AdsLogger           Temps d'exécution de insert: 0.2132 secondes
+2024-10-07 11:53:00,798       INFO      AdsLogger           1 lignes insérées avec succès dans la table demo_pipeline.
+2024-10-07 11:53:00,916       INFO      AdsLogger           Logs inséré dans les tables LOGS et LOGS_details.
+2024-10-07 11:53:00,916       INFO      AdsLogger           Temps d'exécution de insert: 0.2035 secondes
+2024-10-07 11:53:01,004       INFO      AdsLogger           1 lignes insérées avec succès dans la table demo_pipeline.
+2024-10-07 11:53:01,118       INFO      AdsLogger           Logs inséré dans les tables LOGS et LOGS_details.
+2024-10-07 11:53:01,118       INFO      AdsLogger           Temps d'exécution de insert: 0.2010 secondes
+2024-10-07 11:53:01,201       INFO      AdsLogger           1 lignes insérées avec succès dans la table demo_pipeline.
+2024-10-07 11:53:01,313       INFO      AdsLogger           Logs inséré dans les tables LOGS et LOGS_details.
+2024-10-07 11:53:01,314       INFO      AdsLogger           Temps d'exécution de insert: 0.1958 secondes
+2024-10-07 11:53:01,397       INFO      AdsLogger           1 lignes insérées avec succès dans la table demo_pipeline.
+2024-10-07 11:53:01,507       INFO      AdsLogger           Logs inséré dans les tables LOGS et LOGS_details.
+2024-10-07 11:53:01,507       INFO      AdsLogger           Temps d'exécution de insert: 0.1932 secondes
+2024-10-07 11:53:01,591       INFO      AdsLogger           1 lignes insérées avec succès dans la table demo_pipeline.
+2024-10-07 11:53:01,704       INFO      AdsLogger           Logs inséré dans les tables LOGS et LOGS_details.
+2024-10-07 11:53:01,705       INFO      AdsLogger           Temps d'exécution de insert: 0.1974 secondes
+2024-10-07 11:53:01,794       INFO      AdsLogger           1 lignes insérées avec succès dans la table demo_pipeline.
+2024-10-07 11:53:01,915       INFO      AdsLogger           Logs inséré dans les tables LOGS et LOGS_details.
+2024-10-07 11:53:01,915       INFO      AdsLogger           Temps d'exécution de insert: 0.2106 secondes
+2024-10-07 11:53:01,999       INFO      AdsLogger           1 lignes insérées avec succès dans la table demo_pipeline.
+2024-10-07 11:53:02,110       INFO      AdsLogger           Logs inséré dans les tables LOGS et LOGS_details.
+2024-10-07 11:53:02,110       INFO      AdsLogger           Temps d'exécution de insert: 0.1946 secondes
+2024-10-07 11:53:02,193       INFO      AdsLogger           1 lignes insérées avec succès dans la table demo_pipeline.
+2024-10-07 11:53:02,307       INFO      AdsLogger           Logs inséré dans les tables LOGS et LOGS_details.
+2024-10-07 11:53:02,307       INFO      AdsLogger           Temps d'exécution de insert: 0.1967 secondes
+2024-10-07 11:53:02,391       INFO      AdsLogger           1 lignes insérées avec succès dans la table demo_pipeline.
+2024-10-07 11:53:02,502       INFO      AdsLogger           Logs inséré dans les tables LOGS et LOGS_details.
+2024-10-07 11:53:02,502       INFO      AdsLogger           Temps d'exécution de insert: 0.1953 secondes
+2024-10-07 11:53:02,502       INFO      AdsLogger           Temps d'exécution de run: 2.5284 secondes
+2024-10-07 11:53:02,827       INFO      AdsLogger           Connexions établies avec les bases de données.
+2024-10-07 11:53:02,871       INFO      AdsLogger           Requête exécutée avec succès, début de la lecture des résultats.
+2024-10-07 11:53:02,872       INFO      AdsLogger           10 ligne(s) lue(s).
+2024-10-07 11:53:02,983       INFO      AdsLogger           Logs inséré dans les tables LOGS et LOGS_details.
+2024-10-07 11:53:02,983       INFO      AdsLogger           Temps d'exécution de sqlQuery: 0.1564 secondes
+2024-10-07 11:53:03,214       INFO      AdsLogger           10 lignes insérées avec succès dans la table demo_pipeline.
+2024-10-07 11:53:03,328       INFO      AdsLogger           Logs inséré dans les tables LOGS et LOGS_details.
+2024-10-07 11:53:03,328       INFO      AdsLogger           Temps d'exécution de insertBulk: 0.3454 secondes
+2024-10-07 11:53:03,328       INFO      AdsLogger           Temps d'exécution de run: 0.8265 secondes
+2024-10-07 11:53:03,328       INFO      AdsLogger           Et si la source est un tableau ?
+2024-10-07 11:53:03,328       INFO      AdsLogger           Tentative de connexion avec la base de données
+2024-10-07 11:53:03,490       INFO      AdsLogger           Connexion établie avec la base de données.
+2024-10-07 11:53:03,490       INFO      AdsLogger           Temps d'exécution de connect: 0.1621 secondes
+2024-10-07 11:53:03,559       INFO      AdsLogger           1 lignes insérées avec succès dans la table demo_pipeline.
+2024-10-07 11:53:03,688       INFO      AdsLogger           Logs inséré dans les tables LOGS et LOGS_details.
+2024-10-07 11:53:03,688       INFO      AdsLogger           Temps d'exécution de insert: 0.1970 secondes
+2024-10-07 11:53:03,752       INFO      AdsLogger           1 lignes insérées avec succès dans la table demo_pipeline.
+2024-10-07 11:53:03,864       INFO      AdsLogger           Logs inséré dans les tables LOGS et LOGS_details.
+2024-10-07 11:53:03,864       INFO      AdsLogger           Temps d'exécution de insert: 0.1763 secondes
+2024-10-07 11:53:03,929       INFO      AdsLogger           1 lignes insérées avec succès dans la table demo_pipeline.
+2024-10-07 11:53:04,044       INFO      AdsLogger           Logs inséré dans les tables LOGS et LOGS_details.
+2024-10-07 11:53:04,044       INFO      AdsLogger           Temps d'exécution de insert: 0.1803 secondes
+2024-10-07 11:53:04,111       INFO      AdsLogger           1 lignes insérées avec succès dans la table demo_pipeline.
+2024-10-07 11:53:04,227       INFO      AdsLogger           Logs inséré dans les tables LOGS et LOGS_details.
+2024-10-07 11:53:04,227       INFO      AdsLogger           Temps d'exécution de insert: 0.1823 secondes
+2024-10-07 11:53:04,228       INFO      AdsLogger           Temps d'exécution de run: 0.8986 secondes
+2024-10-07 11:53:04,228       INFO      AdsLogger           Tentative de connexion avec la base de données
+2024-10-07 11:53:04,437       INFO      AdsLogger           Connexion établie avec la base de données.
+2024-10-07 11:53:04,437       INFO      AdsLogger           Temps d'exécution de connect: 0.2094 secondes
+2024-10-07 11:53:04,603       INFO      AdsLogger           4 lignes insérées avec succès dans la table demo_pipeline.
+2024-10-07 11:53:04,732       INFO      AdsLogger           Logs inséré dans les tables LOGS et LOGS_details.
+2024-10-07 11:53:04,732       INFO      AdsLogger           Temps d'exécution de insertBulk: 0.2950 secondes
+2024-10-07 11:53:04,732       INFO      AdsLogger           Temps d'exécution de run: 0.5047 secondes
+2024-10-07 11:53:04,789       INFO      AdsLogger           Requête exécutée avec succès.
+2024-10-07 11:53:04,818       INFO      AdsLogger           Temps d'exécution de exec: 0.0851 secondes
+2024-10-07 11:53:04,818       INFO      AdsLogger           Fin de la démonstration
+2024-10-07 12:01:52,700       INFO      AdsLogger           Début de la démonstration...
+2024-10-07 12:02:26,603       INFO      AdsLogger           Début de la démonstration...
+2024-10-07 12:02:31,606       INFO      AdsLogger           Fichier crée par un autre processus
+2024-10-07 12:02:31,607       INFO      AdsLogger           Fichier trouvé.
+2024-10-07 12:02:31,607       INFO      AdsLogger           Fin de la démonstration
+2024-10-07 12:05:45,256       INFO      AdsLogger           Début de la démonstration...
+2024-10-07 12:05:50,258       INFO      AdsLogger           Fichier crée par un autre processus
+2024-10-07 12:05:50,259       INFO      AdsLogger           Fichier trouvé.
+2024-10-07 12:05:50,260       INFO      AdsLogger           Fin de la démonstration
+2024-10-07 12:05:54,824       INFO      AdsLogger           Début de la démonstration...
+2024-10-07 12:05:55,825       INFO      AdsLogger           Waiting for file... 1
+2024-10-07 12:05:56,825       INFO      AdsLogger           Waiting for file... 2
+2024-10-07 12:05:57,826       INFO      AdsLogger           Waiting for file... 3
+2024-10-07 12:05:58,827       INFO      AdsLogger           Waiting for file... 4
+2024-10-07 12:05:59,827       INFO      AdsLogger           Waiting for file... 5
+2024-10-07 12:06:00,828       INFO      AdsLogger           Waiting for file... 6
+2024-10-07 12:06:01,829       INFO      AdsLogger           Waiting for file... 7
+2024-10-07 12:06:02,830       INFO      AdsLogger           Waiting for file... 8
+2024-10-07 12:06:03,830       INFO      AdsLogger           Waiting for file... 9
+2024-10-07 12:06:04,831       INFO      AdsLogger           Waiting for file... 10
+2024-10-07 12:06:04,831       ERROR     AdsLogger           Aucun fichier trouvé (nombre de tentatives dépassé.
+2024-10-07 12:06:09,833       INFO      AdsLogger           Fichier crée par un autre processus
+2024-10-07 12:06:09,834       INFO      AdsLogger           Fin de la démonstration
+2024-10-07 12:07:03,948       INFO      AdsLogger           Début de la démonstration...
+2024-10-07 12:07:04,950       INFO      AdsLogger           Waiting for file... 1
+2024-10-07 12:07:05,951       INFO      AdsLogger           Waiting for file... 2
+2024-10-07 12:07:06,952       INFO      AdsLogger           Waiting for file... 3
+2024-10-07 12:07:07,953       INFO      AdsLogger           Waiting for file... 4
+2024-10-07 12:07:08,954       INFO      AdsLogger           Waiting for file... 5
+2024-10-07 12:07:09,954       INFO      AdsLogger           Waiting for file... 6
+2024-10-07 12:07:10,954       INFO      AdsLogger           Waiting for file... 7
+2024-10-07 12:07:11,955       INFO      AdsLogger           Waiting for file... 8
+2024-10-07 12:07:12,956       INFO      AdsLogger           Waiting for file... 9
+2024-10-07 12:07:13,957       INFO      AdsLogger           Waiting for file... 10
+2024-10-07 12:07:13,957       ERROR     AdsLogger           Aucun fichier trouvé (nombre de tentatives dépassé).
+2024-10-07 12:07:18,960       INFO      AdsLogger           Fichier crée par un autre processus
+2024-10-07 12:07:18,960       INFO      AdsLogger           Fin de la démonstration
+2024-10-07 12:09:24,353       INFO      AdsLogger           Début de la démonstration...
+2024-10-07 12:09:24,355       INFO      AdsLogger           Fin de la démonstration
+2024-10-07 12:09:25,356       INFO      AdsLogger           Waiting for file... 1
+2024-10-07 12:09:26,356       INFO      AdsLogger           Waiting for file... 2
+2024-10-07 12:09:27,357       INFO      AdsLogger           Waiting for file... 3
+2024-10-07 12:09:28,358       INFO      AdsLogger           Waiting for file... 4
+2024-10-07 12:09:29,357       INFO      AdsLogger           Fichier crée par un autre processus
+2024-10-07 12:09:29,359       INFO      AdsLogger           Waiting for file... 5
+2024-10-07 12:09:29,359       INFO      AdsLogger           Fichier trouvé.
+2024-10-07 12:09:42,452       INFO      AdsLogger           Début de la démonstration...
+2024-10-07 12:09:43,454       INFO      AdsLogger           Waiting for file... 1
+2024-10-07 12:09:44,455       INFO      AdsLogger           Waiting for file... 2
+2024-10-07 12:09:45,455       INFO      AdsLogger           Waiting for file... 3
+2024-10-07 12:09:46,456       INFO      AdsLogger           Waiting for file... 4
+2024-10-07 12:09:47,455       INFO      AdsLogger           Fichier crée par un autre processus
+2024-10-07 12:09:47,457       INFO      AdsLogger           Waiting for file... 5
+2024-10-07 12:09:47,457       INFO      AdsLogger           Fichier trouvé.
+2024-10-07 12:09:48,454       INFO      AdsLogger           Fin de la démonstration
+2024-10-07 12:48:15,070 - AdsLogger - INFO - Début de la démonstration...
+2024-10-07 12:48:15,683 - AdsLogger - INFO - Connexions établies avec les bases de données.
+2024-10-07 12:48:15,728 - AdsLogger - INFO - Requête exécutée avec succès, début de la lecture des résultats.
+2024-10-07 12:48:15,728 - AdsLogger - INFO - 10 ligne(s) lue(s).
+2024-10-07 12:48:15,835 - AdsLogger - INFO - Logs inséré dans les tables LOGS et LOGS_details.
+2024-10-07 12:48:15,837 - AdsLogger - INFO - Temps d'exécution de sqlQuery: 0.1520 secondes
+2024-10-07 12:48:15,837 - AdsLogger - INFO - 10 récupérées depuis la source.
+2024-10-07 12:48:15,901 - AdsLogger - INFO - 1 lignes insérées avec succès dans la table demo_pipeline.
+2024-10-07 12:48:16,007 - AdsLogger - INFO - Logs inséré dans les tables LOGS et LOGS_details.
+2024-10-07 12:48:16,007 - AdsLogger - INFO - Temps d'exécution de insert: 0.1710 secondes
+2024-10-07 12:48:16,065 - AdsLogger - INFO - 1 lignes insérées avec succès dans la table demo_pipeline.
+2024-10-07 12:48:16,171 - AdsLogger - INFO - Logs inséré dans les tables LOGS et LOGS_details.
+2024-10-07 12:48:16,171 - AdsLogger - INFO - Temps d'exécution de insert: 0.1642 secondes
+2024-10-07 12:48:16,233 - AdsLogger - INFO - 1 lignes insérées avec succès dans la table demo_pipeline.
+2024-10-07 12:48:16,338 - AdsLogger - INFO - Logs inséré dans les tables LOGS et LOGS_details.
+2024-10-07 12:48:16,338 - AdsLogger - INFO - Temps d'exécution de insert: 0.1665 secondes
+2024-10-07 12:48:16,403 - AdsLogger - INFO - 1 lignes insérées avec succès dans la table demo_pipeline.
+2024-10-07 12:48:16,505 - AdsLogger - INFO - Logs inséré dans les tables LOGS et LOGS_details.
+2024-10-07 12:48:16,507 - AdsLogger - INFO - Temps d'exécution de insert: 0.1681 secondes
+2024-10-07 12:48:16,569 - AdsLogger - INFO - 1 lignes insérées avec succès dans la table demo_pipeline.
+2024-10-07 12:48:16,681 - AdsLogger - INFO - Logs inséré dans les tables LOGS et LOGS_details.
+2024-10-07 12:48:16,682 - AdsLogger - INFO - Temps d'exécution de insert: 0.1752 secondes
+2024-10-07 12:48:16,740 - AdsLogger - INFO - 1 lignes insérées avec succès dans la table demo_pipeline.
+2024-10-07 12:48:16,841 - AdsLogger - INFO - Logs inséré dans les tables LOGS et LOGS_details.
+2024-10-07 12:48:16,841 - AdsLogger - INFO - Temps d'exécution de insert: 0.1594 secondes
+2024-10-07 12:48:16,902 - AdsLogger - INFO - 1 lignes insérées avec succès dans la table demo_pipeline.
+2024-10-07 12:48:17,010 - AdsLogger - INFO - Logs inséré dans les tables LOGS et LOGS_details.
+2024-10-07 12:48:17,010 - AdsLogger - INFO - Temps d'exécution de insert: 0.1686 secondes
+2024-10-07 12:48:17,068 - AdsLogger - INFO - 1 lignes insérées avec succès dans la table demo_pipeline.
+2024-10-07 12:48:17,196 - AdsLogger - INFO - Logs inséré dans les tables LOGS et LOGS_details.
+2024-10-07 12:48:17,196 - AdsLogger - INFO - Temps d'exécution de insert: 0.1859 secondes
+2024-10-07 12:48:17,273 - AdsLogger - INFO - 1 lignes insérées avec succès dans la table demo_pipeline.
+2024-10-07 12:48:17,391 - AdsLogger - INFO - Logs inséré dans les tables LOGS et LOGS_details.
+2024-10-07 12:48:17,391 - AdsLogger - INFO - Temps d'exécution de insert: 0.1955 secondes
+2024-10-07 12:48:17,451 - AdsLogger - INFO - 1 lignes insérées avec succès dans la table demo_pipeline.
+2024-10-07 12:48:17,553 - AdsLogger - INFO - Logs inséré dans les tables LOGS et LOGS_details.
+2024-10-07 12:48:17,553 - AdsLogger - INFO - Temps d'exécution de insert: 0.1613 secondes
+2024-10-07 12:48:17,553 - AdsLogger - INFO - Temps d'exécution de run: 2.2204 secondes
+2024-10-07 12:48:17,945 - AdsLogger - INFO - Connexions établies avec les bases de données.
+2024-10-07 12:48:18,009 - AdsLogger - INFO - Requête exécutée avec succès, début de la lecture des résultats.
+2024-10-07 12:48:18,009 - AdsLogger - INFO - 10 ligne(s) lue(s).
+2024-10-07 12:48:18,112 - AdsLogger - INFO - Logs inséré dans les tables LOGS et LOGS_details.
+2024-10-07 12:48:18,112 - AdsLogger - INFO - Temps d'exécution de sqlQuery: 0.1666 secondes
+2024-10-07 12:48:18,459 - AdsLogger - INFO - 10 lignes insérées avec succès dans la table demo_pipeline.
+2024-10-07 12:48:18,566 - AdsLogger - INFO - Logs inséré dans les tables LOGS et LOGS_details.
+2024-10-07 12:48:18,566 - AdsLogger - INFO - Temps d'exécution de insertBulk: 0.4535 secondes
+2024-10-07 12:48:18,566 - AdsLogger - INFO - Temps d'exécution de run: 1.0131 secondes
+2024-10-07 12:48:18,566 - AdsLogger - INFO - Et si la source est un tableau ?
+2024-10-07 12:48:18,566 - AdsLogger - INFO - Tentative de connexion avec la base de données
+2024-10-07 12:48:18,794 - AdsLogger - INFO - Connexion établie avec la base de données.
+2024-10-07 12:48:18,795 - AdsLogger - INFO - Temps d'exécution de connect: 0.2280 secondes
+2024-10-07 12:48:18,878 - AdsLogger - INFO - 1 lignes insérées avec succès dans la table demo_pipeline.
+2024-10-07 12:48:18,987 - AdsLogger - INFO - Logs inséré dans les tables LOGS et LOGS_details.
+2024-10-07 12:48:18,987 - AdsLogger - INFO - Temps d'exécution de insert: 0.1922 secondes
+2024-10-07 12:48:19,075 - AdsLogger - INFO - 1 lignes insérées avec succès dans la table demo_pipeline.
+2024-10-07 12:48:19,177 - AdsLogger - INFO - Logs inséré dans les tables LOGS et LOGS_details.
+2024-10-07 12:48:19,178 - AdsLogger - INFO - Temps d'exécution de insert: 0.1905 secondes
+2024-10-07 12:48:19,264 - AdsLogger - INFO - 1 lignes insérées avec succès dans la table demo_pipeline.
+2024-10-07 12:48:19,370 - AdsLogger - INFO - Logs inséré dans les tables LOGS et LOGS_details.
+2024-10-07 12:48:19,370 - AdsLogger - INFO - Temps d'exécution de insert: 0.1922 secondes
+2024-10-07 12:48:19,457 - AdsLogger - INFO - 1 lignes insérées avec succès dans la table demo_pipeline.
+2024-10-07 12:48:19,577 - AdsLogger - INFO - Logs inséré dans les tables LOGS et LOGS_details.
+2024-10-07 12:48:19,577 - AdsLogger - INFO - Temps d'exécution de insert: 0.2073 secondes
+2024-10-07 12:48:19,577 - AdsLogger - INFO - Temps d'exécution de run: 1.0106 secondes
+2024-10-07 12:48:19,577 - AdsLogger - INFO - Tentative de connexion avec la base de données
+2024-10-07 12:48:19,786 - AdsLogger - INFO - Connexion établie avec la base de données.
+2024-10-07 12:48:19,787 - AdsLogger - INFO - Temps d'exécution de connect: 0.2095 secondes
+2024-10-07 12:48:19,953 - AdsLogger - INFO - 4 lignes insérées avec succès dans la table demo_pipeline.
+2024-10-07 12:48:20,057 - AdsLogger - INFO - Logs inséré dans les tables LOGS et LOGS_details.
+2024-10-07 12:48:20,057 - AdsLogger - INFO - Temps d'exécution de insertBulk: 0.2694 secondes
+2024-10-07 12:48:20,057 - AdsLogger - INFO - Temps d'exécution de run: 0.4790 secondes
+2024-10-07 12:48:20,109 - AdsLogger - INFO - Requête exécutée avec succès.
+2024-10-07 12:48:20,141 - AdsLogger - INFO - Temps d'exécution de exec: 0.0843 secondes
+2024-10-07 12:48:20,141 - AdsLogger - INFO - Fin de la démonstration
+2024-10-07 12:48:44,606 - AdsLogger - INFO - Début de la démonstration...
+2024-10-07 12:48:45,293 - AdsLogger - INFO - Connexions établies avec les bases de données.
+2024-10-07 12:48:45,351 - AdsLogger - INFO - Requête exécutée avec succès, début de la lecture des résultats.
+2024-10-07 12:48:45,351 - AdsLogger - INFO - 10 ligne(s) lue(s).
+2024-10-07 12:48:45,455 - AdsLogger - INFO - Logs inséré dans les tables LOGS et LOGS_details.
+2024-10-07 12:48:45,455 - AdsLogger - INFO - Temps d'exécution de sqlQuery: 0.1620 secondes
+2024-10-07 12:48:45,455 - AdsLogger - INFO - 10 récupérées depuis la source.
+2024-10-07 12:48:45,539 - AdsLogger - INFO - 1 lignes insérées avec succès dans la table demo_pipeline.
+2024-10-07 12:48:45,643 - AdsLogger - INFO - Logs inséré dans les tables LOGS et LOGS_details.
+2024-10-07 12:48:45,643 - AdsLogger - INFO - Temps d'exécution de insert: 0.1874 secondes
+2024-10-07 12:48:45,724 - AdsLogger - INFO - 1 lignes insérées avec succès dans la table demo_pipeline.
+2024-10-07 12:48:45,829 - AdsLogger - INFO - Logs inséré dans les tables LOGS et LOGS_details.
+2024-10-07 12:48:45,830 - AdsLogger - INFO - Temps d'exécution de insert: 0.1860 secondes
+2024-10-07 12:48:45,920 - AdsLogger - INFO - 1 lignes insérées avec succès dans la table demo_pipeline.
+2024-10-07 12:48:46,019 - AdsLogger - INFO - Logs inséré dans les tables LOGS et LOGS_details.
+2024-10-07 12:48:46,020 - AdsLogger - INFO - Temps d'exécution de insert: 0.1907 secondes
+2024-10-07 12:48:46,098 - AdsLogger - INFO - 1 lignes insérées avec succès dans la table demo_pipeline.
+2024-10-07 12:48:46,199 - AdsLogger - INFO - Logs inséré dans les tables LOGS et LOGS_details.
+2024-10-07 12:48:46,199 - AdsLogger - INFO - Temps d'exécution de insert: 0.1789 secondes
+2024-10-07 12:48:46,273 - AdsLogger - INFO - 1 lignes insérées avec succès dans la table demo_pipeline.
+2024-10-07 12:48:46,374 - AdsLogger - INFO - Logs inséré dans les tables LOGS et LOGS_details.
+2024-10-07 12:48:46,374 - AdsLogger - INFO - Temps d'exécution de insert: 0.1757 secondes
+2024-10-07 12:48:46,457 - AdsLogger - INFO - 1 lignes insérées avec succès dans la table demo_pipeline.
+2024-10-07 12:48:46,559 - AdsLogger - INFO - Logs inséré dans les tables LOGS et LOGS_details.
+2024-10-07 12:48:46,559 - AdsLogger - INFO - Temps d'exécution de insert: 0.1839 secondes
+2024-10-07 12:48:46,657 - AdsLogger - INFO - 1 lignes insérées avec succès dans la table demo_pipeline.
+2024-10-07 12:48:46,764 - AdsLogger - INFO - Logs inséré dans les tables LOGS et LOGS_details.
+2024-10-07 12:48:46,764 - AdsLogger - INFO - Temps d'exécution de insert: 0.2058 secondes
+2024-10-07 12:48:46,838 - AdsLogger - INFO - 1 lignes insérées avec succès dans la table demo_pipeline.
+2024-10-07 12:48:46,943 - AdsLogger - INFO - Logs inséré dans les tables LOGS et LOGS_details.
+2024-10-07 12:48:46,943 - AdsLogger - INFO - Temps d'exécution de insert: 0.1788 secondes
+2024-10-07 12:48:47,027 - AdsLogger - INFO - 1 lignes insérées avec succès dans la table demo_pipeline.
+2024-10-07 12:48:47,129 - AdsLogger - INFO - Logs inséré dans les tables LOGS et LOGS_details.
+2024-10-07 12:48:47,129 - AdsLogger - INFO - Temps d'exécution de insert: 0.1852 secondes
+2024-10-07 12:48:47,203 - AdsLogger - INFO - 1 lignes insérées avec succès dans la table demo_pipeline.
+2024-10-07 12:48:47,306 - AdsLogger - INFO - Logs inséré dans les tables LOGS et LOGS_details.
+2024-10-07 12:48:47,306 - AdsLogger - INFO - Temps d'exécution de insert: 0.1775 secondes
+2024-10-07 12:48:47,306 - AdsLogger - INFO - Temps d'exécution de run: 2.4167 secondes
+2024-10-07 12:48:47,682 - AdsLogger - INFO - Connexions établies avec les bases de données.
+2024-10-07 12:48:47,747 - AdsLogger - INFO - Requête exécutée avec succès, début de la lecture des résultats.
+2024-10-07 12:48:47,747 - AdsLogger - INFO - 10 ligne(s) lue(s).
+2024-10-07 12:48:47,851 - AdsLogger - INFO - Logs inséré dans les tables LOGS et LOGS_details.
+2024-10-07 12:48:47,851 - AdsLogger - INFO - Temps d'exécution de sqlQuery: 0.1683 secondes
+2024-10-07 12:48:48,169 - AdsLogger - INFO - 10 lignes insérées avec succès dans la table demo_pipeline.
+2024-10-07 12:48:48,273 - AdsLogger - INFO - Logs inséré dans les tables LOGS et LOGS_details.
+2024-10-07 12:48:48,273 - AdsLogger - INFO - Temps d'exécution de insertBulk: 0.4220 secondes
+2024-10-07 12:48:48,273 - AdsLogger - INFO - Temps d'exécution de run: 0.9668 secondes
+2024-10-07 12:48:48,273 - AdsLogger - INFO - Et si la source est un tableau ?
+2024-10-07 12:48:48,273 - AdsLogger - INFO - Tentative de connexion avec la base de données
+2024-10-07 12:48:48,458 - AdsLogger - INFO - Connexion établie avec la base de données.
+2024-10-07 12:48:48,459 - AdsLogger - INFO - Temps d'exécution de connect: 0.1852 secondes
+2024-10-07 12:48:48,525 - AdsLogger - INFO - 1 lignes insérées avec succès dans la table demo_pipeline.
+2024-10-07 12:48:48,634 - AdsLogger - INFO - Logs inséré dans les tables LOGS et LOGS_details.
+2024-10-07 12:48:48,634 - AdsLogger - INFO - Temps d'exécution de insert: 0.1753 secondes
+2024-10-07 12:48:48,700 - AdsLogger - INFO - 1 lignes insérées avec succès dans la table demo_pipeline.
+2024-10-07 12:48:48,802 - AdsLogger - INFO - Logs inséré dans les tables LOGS et LOGS_details.
+2024-10-07 12:48:48,802 - AdsLogger - INFO - Temps d'exécution de insert: 0.1673 secondes
+2024-10-07 12:48:48,882 - AdsLogger - INFO - 1 lignes insérées avec succès dans la table demo_pipeline.
+2024-10-07 12:48:48,985 - AdsLogger - INFO - Logs inséré dans les tables LOGS et LOGS_details.
+2024-10-07 12:48:48,985 - AdsLogger - INFO - Temps d'exécution de insert: 0.1833 secondes
+2024-10-07 12:48:49,070 - AdsLogger - INFO - 1 lignes insérées avec succès dans la table demo_pipeline.
+2024-10-07 12:48:49,172 - AdsLogger - INFO - Logs inséré dans les tables LOGS et LOGS_details.
+2024-10-07 12:48:49,172 - AdsLogger - INFO - Temps d'exécution de insert: 0.1867 secondes
+2024-10-07 12:48:49,172 - AdsLogger - INFO - Temps d'exécution de run: 0.8984 secondes
+2024-10-07 12:48:49,173 - AdsLogger - INFO - Tentative de connexion avec la base de données
+2024-10-07 12:48:49,352 - AdsLogger - INFO - Connexion établie avec la base de données.
+2024-10-07 12:48:49,353 - AdsLogger - INFO - Temps d'exécution de connect: 0.1797 secondes
+2024-10-07 12:48:49,487 - AdsLogger - INFO - 4 lignes insérées avec succès dans la table demo_pipeline.
+2024-10-07 12:48:49,590 - AdsLogger - INFO - Logs inséré dans les tables LOGS et LOGS_details.
+2024-10-07 12:48:49,591 - AdsLogger - INFO - Temps d'exécution de insertBulk: 0.2384 secondes
+2024-10-07 12:48:49,591 - AdsLogger - INFO - Temps d'exécution de run: 0.4183 secondes
+2024-10-07 12:48:49,636 - AdsLogger - INFO - Requête exécutée avec succès.
+2024-10-07 12:48:49,659 - AdsLogger - INFO - Temps d'exécution de exec: 0.0681 secondes
+2024-10-07 12:48:49,660 - AdsLogger - INFO - Fin de la démonstration
+2024-10-07 12:50:21,793 - AdsLogger - INFO - Début de la démonstration...
+2024-10-07 12:50:22,532 - AdsLogger - INFO - Connexions établies avec les bases de données.
+2024-10-07 12:50:22,586 - AdsLogger - INFO - Requête exécutée avec succès, début de la lecture des résultats.
+2024-10-07 12:50:22,586 - AdsLogger - INFO - 10 ligne(s) lue(s).
+2024-10-07 12:50:22,684 - AdsLogger - INFO - Logs inséré dans les tables LOGS et LOGS_details.
+2024-10-07 12:50:22,684 - AdsLogger - INFO - Temps d'exécution de sqlQuery: 0.1519 secondes
+2024-10-07 12:50:22,684 - AdsLogger - INFO - 10 récupérées depuis la source.
+2024-10-07 12:50:22,777 - AdsLogger - INFO - 1 lignes insérées avec succès dans la table demo_pipeline.
+2024-10-07 12:50:22,871 - AdsLogger - INFO - Logs inséré dans les tables LOGS et LOGS_details.
+2024-10-07 12:50:22,872 - AdsLogger - INFO - Temps d'exécution de insert: 0.1872 secondes
+2024-10-07 12:50:22,949 - AdsLogger - INFO - 1 lignes insérées avec succès dans la table demo_pipeline.
+2024-10-07 12:50:23,044 - AdsLogger - INFO - Logs inséré dans les tables LOGS et LOGS_details.
+2024-10-07 12:50:23,044 - AdsLogger - INFO - Temps d'exécution de insert: 0.1723 secondes
+2024-10-07 12:50:23,127 - AdsLogger - INFO - 1 lignes insérées avec succès dans la table demo_pipeline.
+2024-10-07 12:50:23,213 - AdsLogger - INFO - Logs inséré dans les tables LOGS et LOGS_details.
+2024-10-07 12:50:23,213 - AdsLogger - INFO - Temps d'exécution de insert: 0.1687 secondes
+2024-10-07 12:50:23,294 - AdsLogger - INFO - 1 lignes insérées avec succès dans la table demo_pipeline.
+2024-10-07 12:50:23,383 - AdsLogger - INFO - Logs inséré dans les tables LOGS et LOGS_details.
+2024-10-07 12:50:23,383 - AdsLogger - INFO - Temps d'exécution de insert: 0.1697 secondes
+2024-10-07 12:50:23,464 - AdsLogger - INFO - 1 lignes insérées avec succès dans la table demo_pipeline.
+2024-10-07 12:50:23,550 - AdsLogger - INFO - Logs inséré dans les tables LOGS et LOGS_details.
+2024-10-07 12:50:23,551 - AdsLogger - INFO - Temps d'exécution de insert: 0.1679 secondes
+2024-10-07 12:50:23,627 - AdsLogger - INFO - 1 lignes insérées avec succès dans la table demo_pipeline.
+2024-10-07 12:50:23,729 - AdsLogger - INFO - Logs inséré dans les tables LOGS et LOGS_details.
+2024-10-07 12:50:23,729 - AdsLogger - INFO - Temps d'exécution de insert: 0.1787 secondes
+2024-10-07 12:50:23,810 - AdsLogger - INFO - 1 lignes insérées avec succès dans la table demo_pipeline.
+2024-10-07 12:50:23,905 - AdsLogger - INFO - Logs inséré dans les tables LOGS et LOGS_details.
+2024-10-07 12:50:23,905 - AdsLogger - INFO - Temps d'exécution de insert: 0.1755 secondes
+2024-10-07 12:50:23,982 - AdsLogger - INFO - 1 lignes insérées avec succès dans la table demo_pipeline.
+2024-10-07 12:50:24,069 - AdsLogger - INFO - Logs inséré dans les tables LOGS et LOGS_details.
+2024-10-07 12:50:24,070 - AdsLogger - INFO - Temps d'exécution de insert: 0.1639 secondes
+2024-10-07 12:50:24,146 - AdsLogger - INFO - 1 lignes insérées avec succès dans la table demo_pipeline.
+2024-10-07 12:50:24,241 - AdsLogger - INFO - Logs inséré dans les tables LOGS et LOGS_details.
+2024-10-07 12:50:24,241 - AdsLogger - INFO - Temps d'exécution de insert: 0.1716 secondes
+2024-10-07 12:50:24,315 - AdsLogger - INFO - 1 lignes insérées avec succès dans la table demo_pipeline.
+2024-10-07 12:50:24,409 - AdsLogger - INFO - Logs inséré dans les tables LOGS et LOGS_details.
+2024-10-07 12:50:24,409 - AdsLogger - INFO - Temps d'exécution de insert: 0.1677 secondes
+2024-10-07 12:50:24,409 - AdsLogger - INFO - Temps d'exécution de run: 2.2973 secondes
+2024-10-07 12:50:24,801 - AdsLogger - INFO - Connexions établies avec les bases de données.
+2024-10-07 12:50:24,863 - AdsLogger - INFO - Requête exécutée avec succès, début de la lecture des résultats.
+2024-10-07 12:50:24,863 - AdsLogger - INFO - 10 ligne(s) lue(s).
+2024-10-07 12:50:24,950 - AdsLogger - INFO - Logs inséré dans les tables LOGS et LOGS_details.
+2024-10-07 12:50:24,950 - AdsLogger - INFO - Temps d'exécution de sqlQuery: 0.1484 secondes
+2024-10-07 12:50:25,270 - AdsLogger - INFO - 10 lignes insérées avec succès dans la table demo_pipeline.
+2024-10-07 12:50:25,361 - AdsLogger - INFO - Logs inséré dans les tables LOGS et LOGS_details.
+2024-10-07 12:50:25,361 - AdsLogger - INFO - Temps d'exécution de insertBulk: 0.4110 secondes
+2024-10-07 12:50:25,361 - AdsLogger - INFO - Temps d'exécution de run: 0.9524 secondes
+2024-10-07 12:50:25,361 - AdsLogger - INFO - Et si la source est un tableau ?
+2024-10-07 12:50:25,361 - AdsLogger - INFO - Tentative de connexion avec la base de données
+2024-10-07 12:50:25,575 - AdsLogger - INFO - Connexion établie avec la base de données.
+2024-10-07 12:50:25,576 - AdsLogger - INFO - Temps d'exécution de connect: 0.2136 secondes
+2024-10-07 12:50:25,661 - AdsLogger - INFO - 1 lignes insérées avec succès dans la table demo_pipeline.
+2024-10-07 12:50:25,758 - AdsLogger - INFO - Logs inséré dans les tables LOGS et LOGS_details.
+2024-10-07 12:50:25,759 - AdsLogger - INFO - Temps d'exécution de insert: 0.1833 secondes
+2024-10-07 12:50:25,845 - AdsLogger - INFO - 1 lignes insérées avec succès dans la table demo_pipeline.
+2024-10-07 12:50:25,933 - AdsLogger - INFO - Logs inséré dans les tables LOGS et LOGS_details.
+2024-10-07 12:50:25,933 - AdsLogger - INFO - Temps d'exécution de insert: 0.1748 secondes
+2024-10-07 12:50:26,019 - AdsLogger - INFO - 1 lignes insérées avec succès dans la table demo_pipeline.
+2024-10-07 12:50:26,110 - AdsLogger - INFO - Logs inséré dans les tables LOGS et LOGS_details.
+2024-10-07 12:50:26,110 - AdsLogger - INFO - Temps d'exécution de insert: 0.1757 secondes
+2024-10-07 12:50:26,202 - AdsLogger - INFO - 1 lignes insérées avec succès dans la table demo_pipeline.
+2024-10-07 12:50:26,291 - AdsLogger - INFO - Logs inséré dans les tables LOGS et LOGS_details.
+2024-10-07 12:50:26,291 - AdsLogger - INFO - Temps d'exécution de insert: 0.1810 secondes
+2024-10-07 12:50:26,291 - AdsLogger - INFO - Temps d'exécution de run: 0.9291 secondes
+2024-10-07 12:50:26,291 - AdsLogger - INFO - Tentative de connexion avec la base de données
+2024-10-07 12:50:26,457 - AdsLogger - INFO - Connexion établie avec la base de données.
+2024-10-07 12:50:26,457 - AdsLogger - INFO - Temps d'exécution de connect: 0.1657 secondes
+2024-10-07 12:50:26,598 - AdsLogger - INFO - 4 lignes insérées avec succès dans la table demo_pipeline.
+2024-10-07 12:50:26,689 - AdsLogger - INFO - Logs inséré dans les tables LOGS et LOGS_details.
+2024-10-07 12:50:26,689 - AdsLogger - INFO - Temps d'exécution de insertBulk: 0.2317 secondes
+2024-10-07 12:50:26,689 - AdsLogger - INFO - Temps d'exécution de run: 0.3976 secondes
+2024-10-07 12:50:26,734 - AdsLogger - INFO - Requête exécutée avec succès.
+2024-10-07 12:50:26,758 - AdsLogger - INFO - Temps d'exécution de exec: 0.0682 secondes
+2024-10-07 12:50:26,758 - AdsLogger - INFO - Fin de la démonstration
+2024-10-07 12:51:47,207 - AdsLogger - INFO - Début de la démonstration...
+2024-10-07 12:52:39,263 - AdsLogger - INFO - Début de la démonstration...
+2024-10-07 12:55:33,588 - AdsLogger - INFO - Début de la démonstration...
+2024-10-07 13:55:51,710 - AdsLogger - INFO - Début de la démonstration...
+2024-10-07 13:55:51,711 - AdsLogger - ERROR - ERREUR
+2024-10-07 13:55:51,711 - AdsLogger - WARNING - WARNING
+2024-10-07 13:57:56,604 - AdsLogger - INFO - Début de la démonstration...
+2024-10-07 13:57:56,605 - AdsLogger - ERROR - ERREUR
+2024-10-07 13:57:56,605 - AdsLogger - WARNING - WARNING
+2024-10-07 13:58:06,350 - AdsLogger - INFO - Début de la démonstration...
+2024-10-07 13:58:06,350 - AdsLogger - ERROR - ERREUR
+2024-10-07 13:58:06,350 - AdsLogger - WARNING - WARNING
+2024-10-07 13:58:06,351 - AdsLogger - DEBUG - DEBUG
+2024-10-07 14:00:11,205 - AdsLogger - INFO - Début de la démonstration...
+2024-10-07 14:00:11,206 - AdsLogger - ERROR - ERREUR
+2024-10-07 14:00:11,206 - AdsLogger - WARNING - WARNING
+2024-10-07 14:00:11,206 - AdsLogger - DEBUG - DEBUG
+2024-10-07 14:00:29,301 - AdsLogger - INFO - Début de la démonstration...
+2024-10-07 14:00:29,301 - AdsLogger - ERROR - ERREUR
+2024-10-07 14:00:29,301 - AdsLogger - WARNING - WARNING
+2024-10-07 14:00:29,301 - AdsLogger - DEBUG - DEBUG
