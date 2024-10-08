@@ -1,0 +1,2 @@
+[console_scripts]
+gitmuse = gitmuse.__main__:main
