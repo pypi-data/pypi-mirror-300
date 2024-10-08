@@ -1,0 +1,2 @@
+[console_scripts]
+learnbyhear = learnByHear.maker:main
