@@ -1,0 +1,3 @@
+[console_scripts]
+syvio=syvio.main:main
+
