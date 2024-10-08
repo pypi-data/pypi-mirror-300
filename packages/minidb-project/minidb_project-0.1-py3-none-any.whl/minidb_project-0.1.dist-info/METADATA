@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: minidb-project
+Version: 0.1
+Summary: Uma biblioteca de banco de dados simples que funciona a partir do script
+Home-page: https://grupomuller.org.br
+Author: Arthur Saert
+Author-email: contato@grupomuller.org.br
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+# MiniDB
+ <h2>Sobre</h2>
+ <p>O mini_db Ã© uma biblioteca simples e leve para gerenciamento de dados in-memory (na memÃ³ria) em pequenas aplicaÃ§Ãµes Python. Ele permite criar, navegar, inserir e selecionar dados em tabelas de maneira rÃ¡pida e fÃ¡cil, sem a necessidade de um banco de dados completo como SQLite ou MySQL. Ideal para protÃ³tipos, pequenos projetos e testes onde o armazenamento de dados temporÃ¡rio Ã© suficiente.
+
+Principais Funcionalidades:
+
+    CriaÃ§Ã£o e gerenciamento de tabelas em memÃ³ria.
+    InserÃ§Ã£o de registros em tabelas dinÃ¢micas.
+    NavegaÃ§Ã£o entre diferentes tabelas.
+    SeleÃ§Ã£o e visualizaÃ§Ã£o de dados armazenados.
+
+Casos de Uso:
+
+    AplicaÃ§Ãµes que precisam de um sistema simples de armazenamento temporÃ¡rio.
+    Testes de funcionalidades de CRUD sem a complexidade de um banco de dados completo.
+    Desenvolvimento rÃ¡pido de protÃ³tipos de software.</p>
