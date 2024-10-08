@@ -1,0 +1,2 @@
+[console_scripts]
+xagg2 = xagg2.cli:main
