@@ -1,0 +1,33 @@
+Metadata-Version: 2.1
+Name: infralint
+Version: 0.1.6
+Summary: Linting, security scanning, and reporting on infrastructure code
+License: MIT
+Author: Darren Rabbitt
+Requires-Python: >=3.10,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: Jinja2 (>=3.1.4,<4.0.0)
+Requires-Dist: PyYAML (>=6.0.2,<7.0.0)
+Requires-Dist: aiofiles (>=24.1.0,<25.0.0)
+Requires-Dist: checkov (>=3.2.246,<4.0.0)
+Requires-Dist: click (>=8.1.7,<9.0.0)
+Requires-Dist: dash (>=2.18.0,<3.0.0)
+Requires-Dist: dash-bootstrap-components (>=1.6.0,<2.0.0)
+Requires-Dist: ijson (>=3.3.0,<4.0.0)
+Requires-Dist: pandas (>=2.2.2,<3.0.0)
+Description-Content-Type: text/markdown
+
+# Infralint
+
+Infralint is a tool for linting, security scanning, and reporting on infrastructure code.
+
+## Usage
+
+You can run the tool by executing:
+
+```bash
+infralint <path>
