@@ -1,0 +1,98 @@
+#!/usr/bin/env python3
+# -*- coding: utf8 -*-
+
+from subprocess import Popen, PIPE, STDOUT
+from multiprocessing import Process
+import sys, os
+import atexit
+import os
+import readline
+from select import select
+from time import sleep
+
+### interactive session with history with readline
+histfile = os.path.join(os.path.expanduser("~"), ".wish_history")
+try:
+    readline.read_history_file(histfile)
+    # default history len is -1 (infinite), which may grow unruly
+    readline.set_history_length(-1)
+except FileNotFoundError:
+    pass
+
+### saving history at the end of the session
+atexit.register(readline.write_history_file, histfile)
+
+### opening wish
+wish = Popen(['wish'], 
+        stdin=PIPE,
+        stdout=PIPE,
+        stderr=PIPE,
+        bufsize=-1,
+        )
+
+os.set_blocking(wish.stdout.fileno(), False)
+os.set_blocking(wish.stderr.fileno(), False)
+os.set_blocking(wish.stdin.fileno(), False)
+
+def puts(s):
+    out = f"""set code [ catch {{ {s} }} p ]
+if {{$code}} {{ error $p }}
+"""
+    select([], [wish.stdin], [])
+    wish.stdin.write(out.encode())
+    wish.stdin.flush()
+    wish.stdin.write(( "flush stdout\n").encode())
+    sleep(.1)
+
+def gets():
+    while True:
+        wish.stdout.flush()
+        tin = wish.stdout.read()
+        if tin:
+            print("\ntcl output> " + tin.decode())
+        sleep(.1)
+
+def save(fn="temp"):
+    with open(fn,"wt") as f:
+        f.write(session)
+
+session=s=""
+def load(fn="temp"):
+    global session
+    with open(fn, "rt") as f:
+        while l:= f.readline():
+            session+=l + "\n"
+            puts(l)
+
+
+# async io in tcl requires a background process to read the input
+t =Process(target=gets, arwish=())
+t.start()
+
+while True:
+    s = input("# ")
+    if s in { "bye", "quit", "exit" }:
+        t.terminate()
+        wish.stdin.write("destroy .".encode())
+        break
+    elif s == "#l":
+        print(session)
+    elif s == "#?":
+        print("""
+#l print current recorded session
+#? print current help
+#! calls python code like
+  #!save(name="temp") which saves the current session in current dir in "temp" file
+bye exit quit quit the current session
+""" )
+        continue
+    elif s.startswith("#!"):
+        print(eval(s[2:]))
+        continue
+    else:
+        puts(s)
+        if err:=wish.stderr.readline():
+            sys.stderr.write(err.decode())
+        else:
+            if s and not s.startswith("#"):
+                session += s + "\n"
