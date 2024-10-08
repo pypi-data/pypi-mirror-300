@@ -1,0 +1,12 @@
+LICENSE
+LICENSE.md
+README.md
+pyproject.toml
+missing_text/__init__.py
+missing_text/hello_missing.py
+missing_text.egg-info/PKG-INFO
+missing_text.egg-info/SOURCES.txt
+missing_text.egg-info/dependency_links.txt
+missing_text.egg-info/entry_points.txt
+missing_text.egg-info/requires.txt
+missing_text.egg-info/top_level.txt
