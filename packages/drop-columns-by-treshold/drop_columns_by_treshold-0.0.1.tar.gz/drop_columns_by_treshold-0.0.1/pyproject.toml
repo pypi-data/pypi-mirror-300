@@ -1,0 +1,23 @@
+[project]
+name = "drop_columns_by_treshold"
+version = "0.0.1"
+authors = [
+  { name="elmerganbaa", email="elmerganbaa@gmail.com" },
+]
+description = "drop_columns_by_treshold"
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+
+[project.urls]
+Homepage = "https://github.com/ganbaaelmer/drop_columns_by_treshold"
+Issues = "https://github.com/ganbaaelmer/drop_columns_by_treshold"
+
+[build-system]
+requires = ['setuptools>=42']
+build-backend = 'setuptools.build_meta'

@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+src/drop_columns_by_treshold/__init__.py
+src/drop_columns_by_treshold/drop_columns_by_treshold.py
+src/drop_columns_by_treshold.egg-info/PKG-INFO
+src/drop_columns_by_treshold.egg-info/SOURCES.txt
+src/drop_columns_by_treshold.egg-info/dependency_links.txt
+src/drop_columns_by_treshold.egg-info/top_level.txt
