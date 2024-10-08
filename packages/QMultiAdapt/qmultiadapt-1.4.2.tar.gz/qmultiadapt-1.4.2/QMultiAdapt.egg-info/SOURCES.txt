@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+QMultiAdapt/__init__.py
+QMultiAdapt/ansatz.py
+QMultiAdapt/effh.py
+QMultiAdapt/solver.py
+QMultiAdapt.egg-info/PKG-INFO
+QMultiAdapt.egg-info/SOURCES.txt
+QMultiAdapt.egg-info/dependency_links.txt
+QMultiAdapt.egg-info/requires.txt
+QMultiAdapt.egg-info/top_level.txt
