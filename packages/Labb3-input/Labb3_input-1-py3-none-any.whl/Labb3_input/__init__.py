@@ -1,0 +1,1 @@
+from type_input import *
