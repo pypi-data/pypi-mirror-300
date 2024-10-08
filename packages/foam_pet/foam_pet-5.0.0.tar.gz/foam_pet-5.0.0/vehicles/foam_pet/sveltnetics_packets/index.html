@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<!-- <link rel="icon" href="/favicon.png" /> -->
+		
+		<link rel="icon" href="/pictures/favicon.png" />
+		
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		
+		<link rel="modulepreload" href="/_app/immutable/entry/start.CI5Vfx7M.js">
+		<link rel="modulepreload" href="/_app/immutable/chunks/entry.Mm7a7J_a.js">
+		<link rel="modulepreload" href="/_app/immutable/chunks/scheduler.D0sJelgN.js">
+		<link rel="modulepreload" href="/_app/immutable/entry/app.Da4Q0U6p.js">
+		<link rel="modulepreload" href="/_app/immutable/chunks/index.BozD8wXK.js">
+		
+		<script>
+			const arrival_theme = "Atolls"
+		
+			window.onload = function () {
+				let theme = localStorage.getItem ('body-theme');
+				console.log ({ theme })
+				
+				if (typeof theme === 'string' && theme.length >= 1) {
+					document.body.setAttribute ('data-theme', theme)
+				}
+				else {
+					//
+					//
+					//	data-theme="Atolls"
+					//
+					//
+					document.body.setAttribute ('data-theme', arrival_theme)
+				}
+				
+				document.body.style = "block"
+			};
+		</script>
+	</head>
+	<body 
+		data-sveltekit-preload-data="hover" 
+		class="bg-surface-50-900-token"
+	>
+		<div style="display: contents">
+			<script>
+				{
+					__sveltekit_f6n87m = {
+						base: ""
+					};
+
+					const element = document.currentScript.parentElement;
+
+					Promise.all([
+						import("/_app/immutable/entry/start.CI5Vfx7M.js"),
+						import("/_app/immutable/entry/app.Da4Q0U6p.js")
+					]).then(([kit, app]) => {
+						kit.start(app, element);
+					});
+				}
+			</script>
+		</div>
+	</body>
+</html>
