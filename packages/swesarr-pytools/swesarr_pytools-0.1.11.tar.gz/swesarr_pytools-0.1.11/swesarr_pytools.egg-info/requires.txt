@@ -1,0 +1,14 @@
+numpy
+pytest
+pandas
+requests
+rioxarray
+xarray
+geopy
+beautifulsoup4
+
+[all]
+swesarr_pytools[extra]
+
+[extra]
+pandas
