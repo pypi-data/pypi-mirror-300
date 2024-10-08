@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: OntoAligner
+Version: 0.1.0
+Summary: A short description of your library
+Home-page: https://github.com/HamedBabaei/OntoAligner
+Author: Hamed Babaei Giglou
+Author-email: hamedbabaeigiglou@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: pathlib
+Requires-Dist: argparse
+Requires-Dist: owlready2
+Requires-Dist: rdflib
+Requires-Dist: tqdm
+Requires-Dist: ontospy
+Requires-Dist: numpy
+Requires-Dist: torch
+Requires-Dist: contextlib
+Requires-Dist: transformers
+Requires-Dist: datasets
+Requires-Dist: rapidfuzz
+Requires-Dist: openai
+Requires-Dist: rank-bm25
+Requires-Dist: scikit-learn
+Requires-Dist: sentence-transformers
+Requires-Dist: pre-commit
+
+# OntoAligner
