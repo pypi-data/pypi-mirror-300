@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: graphs_jjarek
+Version: 0.1.0
+Summary: A package implementing Dijkstra's shortest path algorithm
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+
+# graphs_jjarek
+3250 Assignment 04
+
+Install package using pip:
+
+pip install git+https://github.com/thepenguinhead/graphs_jjarek.git

@@ -1,0 +1,14 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "graphs_jjarek"
+version = "0.1.0"
+description = "A package implementing Dijkstra's shortest path algorithm"
+readme = "README.md"
+requires-python = ">=3.7"
+dependencies = []
+
+[tool.setuptools.packages.find]
+where = ["src"]
