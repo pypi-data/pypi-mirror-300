@@ -1,0 +1,48 @@
+{
+    "haraka": {
+        "received_header": "Frappe Mail Agent",
+        "nodes": 4,
+        "host": "${HARAKA_HOST}",
+        "port": "${HARAKA_PORT}",
+        "username": "${HARAKA_USERNAME}",
+        "password": "${HARAKA_PASSWORD}",
+        "relay_acl_allow": "::1/128\n127.0.0.1/32",
+        "spamassassin_host": "127.0.0.1",
+        "spamassassin_port": 783,
+        "plugins": {
+            "inbound": [
+                "tls",
+                "headers",
+                "mailauth",
+                "inbound_hooks"
+            ],
+            "outbound": [
+                "tls",
+                "haraka-plugin-auth-enc-file",
+                "headers",
+                "outbound_hooks"
+            ]
+        }
+    },
+    "rabbitmq": {
+        "host": "${RABBITMQ_HOST}",
+        "port": "${RABBITMQ_PORT}",
+        "virtual_host": "${RABBITMQ_VIRTUAL_HOST}",
+        "username": "${RABBITMQ_USERNAME}",
+        "password": "${RABBITMQ_PASSWORD}"
+    },
+    "queues": {
+        "mail::outgoing_mails": {
+            "max_priority": 3,
+            "durable": true
+        }
+    },
+    "consumers": {
+        "mail::outgoing_mails": {
+            "workers": 4,
+            "auto_ack": false,
+            "prefetch_count": 100,
+            "callback": "sendmail"
+        }
+    }
+}
