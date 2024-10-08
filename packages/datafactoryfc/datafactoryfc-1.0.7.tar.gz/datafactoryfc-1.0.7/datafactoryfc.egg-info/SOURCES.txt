@@ -1,0 +1,12 @@
+MANIFEST.in
+README.md
+setup.py
+datafactoryfc/__init__.py
+datafactoryfc/exceptions.py
+datafactoryfc/functions.py
+datafactoryfc.egg-info/PKG-INFO
+datafactoryfc.egg-info/SOURCES.txt
+datafactoryfc.egg-info/dependency_links.txt
+datafactoryfc.egg-info/requires.txt
+datafactoryfc.egg-info/top_level.txt
+datafactoryfc/assets/xTGrid.json
