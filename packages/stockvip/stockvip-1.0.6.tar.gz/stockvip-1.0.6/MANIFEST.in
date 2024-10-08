@@ -1,0 +1,8 @@
+exclude stockvip/config/config.py
+exclude stockvip/config/ensure_logged_in.py
+exclude stockvip/process_client/login.py
+exclude stockvip/process_stock/ohlcv.py
+exclude test.ipynb
+exclude test.py
+global-exclude __pycache__/*
+global-exclude *.pyc
