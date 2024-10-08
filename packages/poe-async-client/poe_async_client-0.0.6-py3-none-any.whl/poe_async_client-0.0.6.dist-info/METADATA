@@ -1,0 +1,52 @@
+Metadata-Version: 2.1
+Name: poe-async-client
+Version: 0.0.6
+Summary: Async client to run simultaneous requests against the Path of Exile API without triggering rate limiting
+Author-email: Liberatorist <Liberatorist@gmail.com>
+Project-URL: Homepage, https://github.com/Liberatorist/PoEClient
+Project-URL: Issues, https://github.com/Liberatorist/PoEClient/issues
+Keywords: Path of Exile,PoE,API,Client,GGG
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Requires-Python: >=3.11
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: aiohttp
+
+# PoEClient
+
+Async client to run simultaneous requests against the Path of Exile API without triggering rate limiting
+
+# Installation
+
+```
+pip install poe-async-client
+```
+
+# Example usage
+
+```python
+import asyncio
+from poe_async_client.poe_client import PoEClient
+
+async def fetch_stash_changes_simultaneously():
+    client = PoEClient(
+        max_requests_per_second=5,
+        user_agent="OAuth myapp/1.0.0 (Contact: Liberatorist@gmail.com)"
+    )
+    async with client:
+        token_response = await client.get_client_credentials(
+            client_id="myapp",
+            client_secret="super secret",
+            scope="service:psapi"
+        )
+        token = token_response["access_token"]
+
+        simultaneous_requests = [
+            client.get_public_stashes(token=token)
+            for _ in range(10)
+        ]
+
+        responses = await asyncio.gather(*simultaneous_requests)
+
+```
