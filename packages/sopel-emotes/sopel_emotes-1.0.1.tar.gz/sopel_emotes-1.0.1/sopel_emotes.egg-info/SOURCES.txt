@@ -1,0 +1,13 @@
+COPYING
+MANIFEST.in
+NEWS
+README.md
+pyproject.toml
+sopel_emotes/__init__.py
+sopel_emotes/plugin.py
+sopel_emotes.egg-info/PKG-INFO
+sopel_emotes.egg-info/SOURCES.txt
+sopel_emotes.egg-info/dependency_links.txt
+sopel_emotes.egg-info/entry_points.txt
+sopel_emotes.egg-info/requires.txt
+sopel_emotes.egg-info/top_level.txt

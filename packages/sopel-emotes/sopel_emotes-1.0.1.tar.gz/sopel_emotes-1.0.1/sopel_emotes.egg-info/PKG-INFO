@@ -1,0 +1,73 @@
+Metadata-Version: 2.1
+Name: sopel-emotes
+Version: 1.0.1
+Summary: Searches for emotes, denoted by `:emote_name:` from multiple sources (FFZ/BTTV/7TV) and links the associated image urls.
+Author-email: Scott Adie <sopel-emotes@adie.io>
+License: EFL-2.0
+Project-URL: Homepage, https://github.com/sc0tt/sopel-emotes
+Project-URL: Bug Tracker, https://github.com/sc0tt/sopel-emotes/issues
+Keywords: sopel,plugin,bot,irc,twitch,emotes,7TV,BTTV,FFZ,FrankerFaceZ
+Platform: Linux x86, x86-64
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: System Administrators
+Classifier: License :: Eiffel Forum License (EFL)
+Classifier: License :: OSI Approved :: Eiffel Forum License
+Classifier: Topic :: Communications :: Chat :: Internet Relay Chat
+Requires-Python: <4,>=3.8
+Description-Content-Type: text/markdown
+License-File: COPYING
+Requires-Dist: sopel>=8.0
+Requires-Dist: requests
+
+# sopel-emotes
+
+This module searches for emotes in messages from multiple sources (7TV, BetterTTV, FrankerFaceZ). It searches for emotes in the format `:emote_name:` and looks them up from the available emote sources based on a configurable priority list. The emote size is also configurable.
+    
+Features:
+- Configurable emote sources and search priority (7TV, BTTV, FFZ) via Sopel config.
+- Configurable emote size (small, medium, large) via Sopel config.
+- Handles multiple emotes in a single message with rate limiting delays.
+
+Future Tasks:
+- Caching
+
+
+## Installing
+
+Releases are hosted on PyPI, so after installing Sopel, all you need is `pip`:
+
+```shell
+$ pip install sopel-emotes
+```
+
+## Configuring
+
+The easiest way to configure `sopel-emotes` is via Sopel's
+configuration wizard—simply run `sopel-plugins configure emotes`
+and enter the values for which it prompts you.
+
+### Manual configuration
+
+```ini
+[emotes]
+sources = bttv, ffz # Available options: [7tv, ffz, bttv]. Order determines priority.
+size = large # small, medium, or large
+```
+## Changelog
+### 1.0.1
+
+Updated default source order.
+
+### 1.0.0
+
+First release of `sopel-emotes`.
+
+Supported sources:
+- BTTV
+- FFZ
+- 7TV
+
+Supported sizes:
+- small
+- medium
+- large
