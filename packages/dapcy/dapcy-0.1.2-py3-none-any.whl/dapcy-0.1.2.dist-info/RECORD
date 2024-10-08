@@ -1,0 +1,10 @@
+dapcy/__init__.py,sha256=fn_ZB7HD0NXhNS5W_FZ2qIb1Zz-AJ_uXLxwoHaX4Kvo,95
+dapcy/dapc.py,sha256=ab7aB1euL_9AUOlrwzxDk5iSBLxlpUNCwk5M1QVDTNQ,15537
+dapcy/geno2csr.py,sha256=vlznXaOb0BlTe7QvM4Kb5R1garCROV2wx0ipkXVAhfQ,1753
+dapcy/kmean_group.py,sha256=zl-06McQ-SbzX7gRKDPQlofeQUmaradlDJ-pfhq6IFE,5829
+dapcy/pca_plot.py,sha256=CrYWHbEO5YivQ6MqP7lXwJ8JZGYvsSfxvpzqGwbZaVM,2722
+dapcy-0.1.2.dist-info/LICENSE,sha256=Y7dVo1P65mCgXVg8khgIjHpjtqLWCFH0ElFKxYruLdY,1078
+dapcy-0.1.2.dist-info/METADATA,sha256=_ac0cPe5MhhMagZuBnyw4hhKcZaeo7K5P4dgyS-TRbQ,762
+dapcy-0.1.2.dist-info/WHEEL,sha256=GV9aMThwP_4oNCtvEC2ec3qUYutgWeAzklro_0m4WJQ,91
+dapcy-0.1.2.dist-info/top_level.txt,sha256=5WJHMP9TQv-pCJC-8SFPHfZCL7HkSLy2ItWjzR_9VsY,6
+dapcy-0.1.2.dist-info/RECORD,,
