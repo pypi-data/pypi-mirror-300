@@ -1,0 +1,14 @@
+LICENSE
+README.md
+pyproject.toml
+src/poe-async-client/__init__.py
+src/poe-async-client/client.py
+src/poe-async-client/poe_client.py
+src/poe-async-client/schema/__init__.py
+src/poe-async-client/schema/client_schema.py
+src/poe-async-client/schema/schema.py
+src/poe_async_client.egg-info/PKG-INFO
+src/poe_async_client.egg-info/SOURCES.txt
+src/poe_async_client.egg-info/dependency_links.txt
+src/poe_async_client.egg-info/requires.txt
+src/poe_async_client.egg-info/top_level.txt

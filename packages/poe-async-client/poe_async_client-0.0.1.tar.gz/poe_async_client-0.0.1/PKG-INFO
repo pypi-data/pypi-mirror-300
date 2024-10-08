@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: poe-async-client
+Version: 0.0.1
+Summary: Async client to run simultaneous requests against the Path of Exile API without triggering rate limiting
+Author-email: Liberatorist <Liberatorist@gmail.com>
+Project-URL: Homepage, https://github.com/Liberatorist/PoEClient
+Project-URL: Issues, https://github.com/Liberatorist/PoEClient/issues
+Keywords: Path of Exile,PoE,API,Client,GGG
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Requires-Python: >=3.12
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: aiohttp
+
+# PoEClient
+Async client to run simultaneous requests against the Path of Exile API without triggering rate limiting
