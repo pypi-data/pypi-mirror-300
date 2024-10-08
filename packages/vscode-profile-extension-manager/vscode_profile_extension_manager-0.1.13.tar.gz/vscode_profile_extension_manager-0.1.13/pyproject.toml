@@ -1,0 +1,53 @@
+# Copyright (c) 2024 JP Hutchins
+# SPDX-License-Identifier: Apache-2.0
+
+[build-system]
+requires = ["setuptools>=70.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "vscode_profile_extension_manager"
+dynamic = ["version"]
+description = "Effortlessly manage your vscode extenstions in each profile"
+authors = [
+    {name = "Mike Crowe", email = "drmikecrowe@gmail.com"},
+]
+readme = "README.md"
+license = {file = "LICENSE"}
+requires-python = ">=3.11,<3.14"
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "Topic :: Software Development :: Build Tools",
+]
+dependencies = [
+    "rich>=13.8.1",
+    "textual>=0.81.0",
+    "click>=8.1.7",
+    "requests>=2.32.3",
+    "prodict>=0.8.18",
+    "inquirer>=3.4.0",
+    "pyinstaller>=6.10.0",
+    "appdirs>=1.4.4",
+]
+
+[tool.setuptools.dynamic]
+version = {attr = "vpem.__version__"}
+
+[project.optional-dependencies]
+dev = [
+    "build>=1.2.1,<2",
+    "pyinstaller>=6.4.0,<7",
+    "pyinstaller-versionfile>=2.1.1,<3",
+]
+
+[project.scripts]
+vpem = "vpem.main:app"
+
+[project.urls]
+Homepage = "https://github.com/drmikecrowe/vscode-profile-extension-manager"
+Repository = "https://github.com/drmikecrowe/vscode-profile-extension-manager.git"
+
+[tool.setuptools]
+packages = ["vpem", "vpem.vscode"]
+include-package-data = true
