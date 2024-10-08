@@ -1,0 +1,27 @@
+[tool.poetry]
+name = "tasks-runner"
+version = "0.1.4"
+description = "A simple concurrent tasks runner with progress bar"
+license = "MIT"
+authors = ["Sebastian Guerra <spguerraespinoza@gmail.com>"]
+readme = "README.md"
+repository = "https://github.com/sebastianguerra/tasks-runner"
+keywords = ["tasks", "jobs", "concurrent", "progress", "bar", "runner"]
+
+[tool.poetry.dependencies]
+python = "^3.12"
+loguru = "^0.7.2"
+tqdm = "^4.66.5"
+
+
+[tool.poetry.group.test.dependencies]
+pytest = "^8.3.3"
+
+
+[tool.poetry.group.dev.dependencies]
+mypy = "^1.11.2"
+types-tqdm = "^4.66.0.20240417"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
