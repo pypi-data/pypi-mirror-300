@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: easyprojectstructure
+Version: 0.1
+Summary: A script to output the directory structure of a Python project.
+Home-page: https://github.com/seregatipich/easyprojectstructure
+Author: Sergei Poluektov
+Author-email: seregatipich@outlook.com
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+License-File: LICENSE
