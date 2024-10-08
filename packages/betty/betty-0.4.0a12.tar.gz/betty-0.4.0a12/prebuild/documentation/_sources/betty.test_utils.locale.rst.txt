@@ -1,0 +1,7 @@
+betty.test\_utils.locale module
+===============================
+
+.. automodule:: betty.test_utils.locale
+   :members:
+   :undoc-members:
+   :show-inheritance:

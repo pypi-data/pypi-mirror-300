@@ -1,0 +1,10 @@
+betty.project.extension.demo package
+====================================
+
+Module contents
+---------------
+
+.. automodule:: betty.project.extension.demo
+   :members:
+   :undoc-members:
+   :show-inheritance:
