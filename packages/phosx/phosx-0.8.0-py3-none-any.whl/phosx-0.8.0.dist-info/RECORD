@@ -1,0 +1,15 @@
+phosx/__init__.py,sha256=iPlYCcIzuzW7T2HKDkmYlMkRI51dBLfNRxPPiWrfw9U,22
+phosx/assets/logo.png,sha256=XrU8dCRA0rd6g3clhzBhyE1qKzJ7c4UXODCwXvNYKKQ,311166
+phosx/assets/workflow.png,sha256=rV4QxOI5BTblimK60DBb4Xcb0rlKbW_Zz0z348ehvCA,517168
+phosx/cli.py,sha256=Ak1FkoWLDZ0t2-YMJGvWITeLESFtcXCrCN4b48wfrYM,4894
+phosx/data/S_T_PSSM_score_quantiles.h5,sha256=tghjJgZBYca-hYOqgOtcksRbGZCn1LYiGL4-cCxSGxI,24361569
+phosx/data/S_T_PSSMs.h5,sha256=EJgGvLoVGcviPSqakMGfjgoJCXChbv2taALLX4vEx-4,685248
+phosx/data/Y_PSSM_score_quantiles.h5,sha256=smbE5DF0NQ2dj389NU6ysv4T3ieuxDKkeudCfV9vF4Y,7552889
+phosx/data/Y_PSSMs.h5,sha256=lJncS9aOYLT2n_0zWKOXBbpVEWkOJ6xDZ76UkkcCDqY,210176
+phosx/make_seqrnk.py,sha256=4iNy86gTEg_b8wm5dev8jkHipQ6gDpxAq0neeCI_IWY,2599
+phosx/pssm_enrichments.py,sha256=z5ILODId1CB-C8GHMl_jcAyr60ddr6UlyLPyFUncZ04,15947
+phosx-0.8.0.dist-info/LICENSE,sha256=TTqPFnrb08dUC6PPOvmOijswNDv9oQylCEdU1KKBWrU,11348
+phosx-0.8.0.dist-info/METADATA,sha256=1eB_4Ol_6Cy1IsVKjekFL6R5nwl6JJwRbqTl9L-1t0Q,3370
+phosx-0.8.0.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+phosx-0.8.0.dist-info/entry_points.txt,sha256=QExEx0FL6xpyjj8cbyWuq1gujdc0rGFL0iU6TDTpGFQ,75
+phosx-0.8.0.dist-info/RECORD,,
