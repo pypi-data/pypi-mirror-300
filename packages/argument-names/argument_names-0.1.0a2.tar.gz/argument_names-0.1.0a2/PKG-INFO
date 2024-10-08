@@ -1,0 +1,101 @@
+Metadata-Version: 2.1
+Name: argument-names
+Version: 0.1.0a2
+Summary: This decorator dynamically maps argument names from a function's call to a specified function.
+Keywords: decorator,argument names,Python,type checking
+Author-Email: Santiago Papiernik <spapiernik12@gmail.com>
+License: MIT License
+         
+         Copyright (c) 2024 Santiago Papiernik
+         
+         Permission is hereby granted, free of charge, to any person obtaining a copy
+         of this software and associated documentation files (the "Software"), to deal
+         in the Software without restriction, including without limitation the rights
+         to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+         copies of the Software, and to permit persons to whom the Software is
+         furnished to do so, subject to the following conditions:
+         
+         The above copyright notice and this permission notice shall be included in all
+         copies or substantial portions of the Software.
+         
+         THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+         IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+         FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+         AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+         LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+         OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+         SOFTWARE.
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Classifier: Typing :: Typed
+Project-URL: Repository, https://github.com/Cxx-mlr/identifiers
+Requires-Python: >=3.8
+Requires-Dist: packaging>=24.1
+Requires-Dist: typing-extensions>=4.12.2
+Description-Content-Type: text/markdown
+
+# Argument Names
+
+A Python library that provides a decorator to automatically retrieve and process the argument names of a function when it's called. This can be useful for tasks like debugging, logging, or other custom operations.
+
+## Installation
+
+Install argument-names via pip:
+
+```python
+pip install argument-names
+```
+
+
+## Use Case Example
+This example demonstrates how to utilize the argument_names decorator to log the names of the arguments passed to a function:
+```py
+from argument_names import argument_names
+
+@argument_names(function=lambda *args: print("Received arguments:", *args))
+def process_data(_1, _2, _3):
+    pass
+
+# Example invocation
+name = "Alice"
+age = 30
+occupation = "Engineer"
+
+# Calling the process_data function with the specified arguments
+process_data(name, age, occupation)   # Received arguments: name age occupation
+
+process_data(occupation, age, age)   # Received arguments: occupation age age
+```
+
+```py
+from argument_names import argument_names
+
+@argument_names(function=lambda *args: print("".join(args)))
+def foo(*args):
+    pass
+
+h = None
+e = 1
+l = 9
+o = 3
+w = True
+r = 3.14
+d = 600
+_ = 0.03
+
+foo(h, e, l, l, o, _, w, o, r, l, d) # hello_world
+```
+
+## Limitations
+
+- The library requires you to provide named variables as arguments when calling the decorated function. Direct values, literals, or function calls will not work as expected.
+
+  For example, calling `process_data("Alice", 30, "Engineer")` would not work properly because the arguments are passed as values, not named variables. You must use named arguments like in the example `process_data(name, age, occupation)`.
