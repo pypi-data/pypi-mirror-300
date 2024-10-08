@@ -1,0 +1,4 @@
+[console_scripts]
+python-statsdir=statsdir.__main__:main
+statsdir=statsdir.__main__:main
+
