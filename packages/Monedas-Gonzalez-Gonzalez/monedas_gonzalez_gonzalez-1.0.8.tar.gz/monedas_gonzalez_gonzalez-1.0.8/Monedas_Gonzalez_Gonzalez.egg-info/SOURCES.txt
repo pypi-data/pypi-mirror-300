@@ -1,0 +1,15 @@
+README.md
+setup.py
+Monedas_Gonzalez_Gonzalez.egg-info/PKG-INFO
+Monedas_Gonzalez_Gonzalez.egg-info/SOURCES.txt
+Monedas_Gonzalez_Gonzalez.egg-info/dependency_links.txt
+Monedas_Gonzalez_Gonzalez.egg-info/entry_points.txt
+Monedas_Gonzalez_Gonzalez.egg-info/requires.txt
+Monedas_Gonzalez_Gonzalez.egg-info/top_level.txt
+src/__init__.py
+src/analizador.py
+src/bandas_bollinger.py
+src/main.py
+src/mostrador_datos.py
+src/obtencion_datos.py
+tests/test_bandas_bollinger.py
