@@ -1,0 +1,100 @@
+# Cognite 3D Reveal Streamlit
+
+This is a Streamlit library used to display 3D models within a Streamlit app. It works especially well inside Streamlit in Fusion, but can also be used in standalone Streamlit apps.
+
+## How to Install
+
+Install the package by running:
+
+```bash
+pip install streamlit-cognite-reveal
+```
+
+## How to Use
+
+Here's an example app using the library:
+
+```python
+import streamlit as st
+from reveal import reveal
+from reveal.config import RevealConfig, ClippingPlane, StyledNodeCollection, NodeAppearance, DefaultNodeAppearance
+from cognite.client import CogniteClient
+
+st.subheader("Cognite Reveal Streamlit example")
+
+client = CogniteClient()
+
+if 'selected_asset_ids' not in st.session_state:
+    st.session_state['selected_asset_ids'] = [4434005487573186]
+
+# Adding UI to update min/max values for sliders
+st.sidebar.subheader('Slicing ')
+
+bounding_box_min = st.session_state.get('bounding_box_min', [0,0,0])
+bounding_box_max = st.session_state.get('bounding_box_max', [10, 10, 10])
+
+x_toggle = st.sidebar.checkbox('Enable X Slice', value=False)
+if x_toggle:
+    x_value = st.sidebar.slider('Slice X', step = (bounding_box_max[0]-bounding_box_min[0])/100, min_value=bounding_box_min[0], max_value=bounding_box_max[0], value=bounding_box_min[0])
+y_toggle = st.sidebar.checkbox('Enable Y Slice', value=False)
+if y_toggle:
+    y_value = st.sidebar.slider('Slice Y', step = (bounding_box_max[1]-bounding_box_min[1])/100, min_value=bounding_box_min[1], max_value=bounding_box_max[1], value=bounding_box_min[1])
+
+z_toggle = st.sidebar.checkbox('Enable Z Slice', value=False)
+if z_toggle:
+    z_value = st.sidebar.slider('Slice Z', step = (bounding_box_max[2]-bounding_box_min[2])/100, min_value=bounding_box_min[2], max_value=bounding_box_max[2], value=bounding_box_min[2])
+
+# Adding UI to configure StyledNodeCollection
+st.sidebar.subheader('Node styling')
+render_ghosted = st.sidebar.checkbox('Render Ghosted', value=True)
+st.sidebar.write('Configure node styling based on node metadata')
+item_type = st.sidebar.text_input('Item Type', value="Cylinder")
+color = st.sidebar.color_picker('Color', value='#FF0000')
+
+clipping_planes = []
+if x_toggle:
+    clipping_planes.append(ClippingPlane(
+        normal=[1, 0, 0],
+        distance=x_value
+    ))
+if y_toggle:
+    clipping_planes.append(ClippingPlane(
+        normal=[0, 1, 0],
+        distance=y_value
+    ))
+
+if z_toggle:
+    clipping_planes.append(ClippingPlane(
+        normal=[0, 0, 1],
+        distance=z_value
+    ))
+
+default_node_appearance = DefaultNodeAppearance.Ghosted if render_ghosted else DefaultNodeAppearance.Default
+config = RevealConfig(clipping_planes=clipping_planes,
+    default_node_appearance=default_node_appearance,
+    styled_node_collections=[
+        StyledNodeCollection(
+            filter_criteria={"Item": {"Type": item_type}},
+            node_appearance=NodeAppearance(
+                color=color,
+                render_ghosted=False
+            )
+        )
+    ],
+    height=500
+)
+
+state = reveal(
+    client=client, scene_external_id="26110700-176d-4b0a-b339-812d5b87d838", scene_space="scene",
+    config=config, key='reveal_1'
+)
+st.header("Reveal state:")
+st.json(state)
+
+if "lastClickedAsset" in state:
+    st.session_state['selected_asset_ids'].append(state["lastClickedAsset"])
+if "boundingBoxMin" in state:
+    st.session_state['bounding_box_min'] = state["boundingBoxMin"]
+if "boundingBoxMax" in state:
+    st.session_state['bounding_box_max'] = state["boundingBoxMax"]
+```
