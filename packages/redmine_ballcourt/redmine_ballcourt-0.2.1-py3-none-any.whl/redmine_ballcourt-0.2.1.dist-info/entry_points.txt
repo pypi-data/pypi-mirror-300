@@ -1,0 +1,2 @@
+[console_scripts]
+redmine-ballcourt = redmine_ballcourt:main
