@@ -1,0 +1,12 @@
+poe_client/__init__.py,sha256=egCCs3YzWY6QR8H5sGYn9EExb91HnG3rwr1GuxB_Pzw,41
+poe_client/client/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+poe_client/client/client.py,sha256=i66hNlfuNkOlmragT4xNvb4vMq6E0aHPiCsR7KcwPMg,6883
+poe_client/client/poe_client.py,sha256=HBo9QAQv4voWYYUQrLPg4Lqt7tIEHKOpDEd4dsaoukE,10016
+poe_client/schema/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+poe_client/schema/client_schema.py,sha256=DLM5coDlSwusSeWCQZpcLcz_xN_26BsRuaCb9W9liOU,3022
+poe_client/schema/schema.py,sha256=qs3ZqksvW3x5XqYpTgUJxMxZ9Gv4wDL747V8zG7c_yE,14087
+poe_async_client-0.0.5.dist-info/LICENSE,sha256=NfY2upq6fog_uHkb4aAj7nnPYFxE9Hph1IsdhFLrW1M,1069
+poe_async_client-0.0.5.dist-info/METADATA,sha256=8Ygdu3MzMPJJ70eap-wH35xLR41fumtVQtvJPDCONtE,1512
+poe_async_client-0.0.5.dist-info/WHEEL,sha256=GV9aMThwP_4oNCtvEC2ec3qUYutgWeAzklro_0m4WJQ,91
+poe_async_client-0.0.5.dist-info/top_level.txt,sha256=EV4HzfRsOmSY2Ujj3PHmAOYWhRTA0IVrkMYjm0Wjm0w,11
+poe_async_client-0.0.5.dist-info/RECORD,,
