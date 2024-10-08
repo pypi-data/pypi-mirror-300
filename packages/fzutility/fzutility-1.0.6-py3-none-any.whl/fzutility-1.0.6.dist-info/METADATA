@@ -1,0 +1,103 @@
+Metadata-Version: 2.1
+Name: fzutility
+Version: 1.0.6
+Summary: fzutility is a package that provides various utilities for python programming.
+Home-page: 
+Author: dnchoi
+Author-email: luke.dn.choi@funzin.co.kr
+License: MIT
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: black
+Requires-Dist: flake8
+Requires-Dist: colorlog
+Requires-Dist: paho-mqtt ==1.5.1
+
+# Funzin VC solution team Utils packages
+
+## How to use
+
+### Logger
+To use the logger package, follow these steps:
+
+1. Import the logger module:
+    ```python
+    from fzutility import logger
+    ```
+
+2. Create a Logger object in class:
+    ```python
+    @logger.logger_decorator(level="DEBUG", save_path="logs")
+    class template:
+        def __init__(self):
+            self.logger.debug("This is a debug message")
+            self.logger.info("This is an info message")
+            self.logger.warning("This is a warning message")
+            self.logger.error("This is an error message")
+            self.logger.critical("This is a critical message")
+        ...
+
+    if __name__=="__main__":
+        t = template()
+    ```
+
+    ```python
+    @logger.logger_decorator(level="DEBUG", save_path="logs")
+    def template(logger, src):
+        self.logger.debug("This is a debug message")
+        self.logger.info("This is an info message")
+        self.logger.warning("This is a warning message")
+        self.logger.error("This is an error message")
+        self.logger.critical("This is a critical message")
+    ```
+
+### MQTT
+This module provides a MQTT client implementation. follow these steps:
+
+1. Import the mqtt client module:
+    ```python
+    from fzutility.mqttclient import MqttClient
+    ```
+
+2. Create a MqttClient object in class:
+    ```python
+    config = {
+        "mqtt": {
+            "broker_id": "your_broker_id"
+            "broker_passwd": "your_broker_pw"
+            "broker_ip": "your_broker_ip"
+            "broker_port": 1883
+            "qos": 0
+            "pub_topic": "your_publish_topic_name"
+            "sub_topic": "your_subscribe_topic_name"
+        }
+    }
+    self.pub_mqtt = MqttClient(
+            broker_id=opt["mqtt"]["broker_id"],
+            broker_pw=opt["mqtt"]["broker_passwd"],
+            host=opt["mqtt"]["broker_ip"],
+            port=opt["mqtt"]["broker_port"],
+            sub_topic=None,
+            qos=opt["mqtt"]["qos"],
+        )
+    self.sub_mqtt = MqttClient(
+        broker_id=opt["mqtt"]["broker_id"],
+        broker_pw=opt["mqtt"]["broker_passwd"],
+        host=opt["mqtt"]["broker_ip"],
+        port=opt["mqtt"]["broker_port"],
+        sub_topic=opt["mqtt"]["sub_topic"],
+        qos=opt["mqtt"]["qos"],
+    )
+    ```
+3. Publish message
+    ```python
+    self.pub_mqtt.pub_message(topic=self.pub_topic, msg=msg)
+    ```
+
+4. Subscribe message
+    ```python
+    import threading
+
+    subscriber_th = threading.Thread(target=self.sub_mqtt.sub_message, daemon=True)
+    subscriber_th.start()
+    ```
