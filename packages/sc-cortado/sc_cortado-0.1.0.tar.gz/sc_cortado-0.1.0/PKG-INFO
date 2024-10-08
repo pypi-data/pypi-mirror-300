@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: sc_cortado
+Version: 0.1.0
+Summary: CORTADO: hill Climbing Optimization foR cell-Type specific mArker gene DiscOvery
+Home-page: https://github.com/lodimk2/cortado
+Author: Musaddiq Lodi
+Author-email: lodimk2@vcu.edu
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: numpy
+Requires-Dist: matplotlib
+Requires-Dist: scipy
+Requires-Dist: pandas
+Requires-Dist: scikit-learn
+
+# CORTADO: hill Climbing Optimization foR cell-Type specific mArker gene DiscOvery
+
