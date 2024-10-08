@@ -1,0 +1,169 @@
+Metadata-Version: 2.3
+Name: ninjar
+Version: 1.0.3
+Summary: A small ninjar build script generator framework.
+Project-URL: Repository, https://github.com/XiangYyang/ninjar.git
+Author-email: XiangYang <hinata.hoshino@foxmail.com>
+License: The Clear BSD License
+        
+        Copyright (c) 2024, XiangYang <hinata.hoshino@foxmail.com>
+        All rights reserved.
+        
+        Redistribution and use in source and binary forms, with or without modification, are permitted (subject to the limitations in the disclaimer below) provided that the following conditions are met:
+        
+             * Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.
+        
+             * Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.
+        
+             * Neither the name of [Owner Organization] nor the names of its contributors may be used to endorse or promote products derived from this software without specific prior written permission.
+        
+        NO EXPRESS OR IMPLIED LICENSES TO ANY PARTY'S PATENT RIGHTS ARE GRANTED BY THIS LICENSE. THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+License-File: LICENSE
+Keywords: ninjar generator
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Typing :: Typed
+Requires-Python: >=3.11
+Requires-Dist: colorama>=0.4.5
+Description-Content-Type: text/markdown
+
+Ninjar
+======
+
+A small ninjar build script generator framework.
+
+```python
+import ninjar
+from typing import List, Dict
+
+
+class SimpleStage(ninjar.ninja.Stage):
+    def __init__(self, ninja: ninjar.NinjaGenerator, name: str) -> None:
+        super().__init__(ninja, name)
+
+        self._add_option('example')
+        self._add_option('command')
+
+    def inherit(self) -> "SimpleStage":
+        """
+        inherit this object
+        """
+        new_obj = SimpleStage(self.ninja, self.name)
+        new_obj.cmd = self.cmd .copy()
+        return new_obj
+
+    def input_type(self) -> List[str]:
+        """
+        input: `any`
+        """
+        return [':any']
+
+    def generate_rule(self) -> None:
+        """
+        Generate the ninja rule statement
+        """
+        cmd_str = self._get_command()
+        self.ninja.add_rule(self.name, cmd_str, 'CC: $in', '$in.d')
+
+    def generate_build(self, input: List[str]) -> str:
+        """
+        Generate the ninja build statement and return the output file
+        """
+        # dot't forget need check the len(input) in your project
+        inp_file = input[0]
+        out_file = f'build/{inp_file}.out'
+
+        self.ninja.add_build(self.name, out_file, input)
+
+        return out_file
+
+
+@ninjar.action(default=True)
+def ninja(opts: Dict[str, str], args: Dict[str, str]):
+    """
+    Generate the build.ninja file
+    """
+    # At least one action, called ninja is required.
+    # The `action` is a function,
+    # `py build.py -t action_name` will execute the action `action_name`
+
+    # This action is the default one
+    # `py build.py` will execute this action
+
+    with ninjar.NinjaGenerator() as ninja:
+        # let's create a stage
+        stage_1 = SimpleStage(ninja, 'simple')
+
+        # the unit stage will return the input
+        stage_unit = ninjar.UnitStage(ninja, 'unit')
+
+        # input files, now it's `*.py`
+        inp_file = ninjar.select('./*.py')
+
+        # and then, apply the `stage_1` to `inp_file`
+        # assume the `*.py` -> [['build.py']]
+        # see the `generate_build` method in the `SimpleStage`
+        # so the result, the `mid_file`, = [['build.py.out']]
+        #
+        # inp_file([['build.py']]) -- stage_1 --> build.py.out
+        #
+        mid_file = inp_file.apply(stage_1)
+
+        # `apply` method can apply more than one stage for the same inputs
+        twice_files = mid_file.apply(stage_1, stage_unit)
+
+        # the result is [['build.py.out.out'], ['build.py.out']]
+        #
+        # mid_file([['build.py.out']]) +- stage_1    --> build.py.out.out
+        #                              +- stage_unit --> build.py.out
+        #
+        # the unit stage return the first input file and do nothing.
+        # let's fold the output
+        fold_file = twice_files.fold()
+
+        # now the result is [['build.py.out', 'build.py.out']]
+        result = fold_file.collect_files()
+
+        # we can use `colorful_print` to print a colorful output
+        ninjar.colorful_print(ninjar.Color.Cyan, f'result = `{result}`')
+
+        # let's generate `build.ninja`
+        # build.py -- stage_1 --> build.py.out +- stage_1 --> build.py.out.out
+        #                                      +- unit    --> build.py.out
+        #
+        ninja.add_defaults(result)
+
+
+@ninjar.action()
+def not_default(opts: Dict[str, str], args: Dict[str, str]):
+    """
+    This is not a default action, run it `py build.py -t not_default`
+    """
+    print('hello, action `not_default`')
+
+
+@ninjar.action(['ninja'])
+def deps_other(opts: Dict[str, str], args: Dict[str, str]):
+    """
+    An action dependent on `ninja`, run it `py build.py -t deps_other`
+    """
+    print('hello, action `deps_other`')
+
+
+if __name__ == '__main__':
+    # try the following commands
+
+    # run the default actions
+    # py build.py
+
+    # run specific actions
+    # py build.py -t not_default
+    # py build.py -t deps_other
+
+    # run the build script
+    ninjar.BuildScript(__import__(__name__)).run()
+
+```
