@@ -1,0 +1,4 @@
+[console_scripts]
+cortex_finetune_model = cortex.cmdline.finetune_cortex_model:main
+cortex_generate_designs = cortex.cmdline.generate_designs:main
+cortex_train_model = cortex.cmdline.train_cortex_model:main

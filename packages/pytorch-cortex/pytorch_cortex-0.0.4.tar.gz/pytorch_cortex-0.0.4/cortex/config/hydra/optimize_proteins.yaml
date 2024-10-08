@@ -1,0 +1,20 @@
+defaults:
+  - general_settings: default
+  - logging: default
+  - optim: lambo
+  - guidance_objective: property_dag
+  - _self_
+
+# dataframe with initial sequences
+seed_path: s3://prescient-data-dev/sequences/accepted_seeds.csv
+
+# which pretrained model checkpoint to use
+ckpt_dir: s3://prescient-data-dev/oracles/round_12/cortex
+ckpt_name: r10_dev_copper-sweep-1
+ckpt_file: ${ckpt_dir}/${ckpt_name}.pt
+ckpt_cfg: ${ckpt_dir}/${ckpt_name}.yaml
+
+num_designs: 96  # number of designs
+num_steps: 4  # number of diffusion steps
+allow_length_change: false  # allow length change (requires aligned sequences)
+is_mutable: null  # optional field to constrain edits to specific positions

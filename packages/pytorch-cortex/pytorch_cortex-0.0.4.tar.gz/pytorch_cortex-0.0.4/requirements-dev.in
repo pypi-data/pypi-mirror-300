@@ -1,0 +1,7 @@
+pytest
+pip-tools
+pytest-cov
+pre-commit
+sphinx
+sphinx-rtd-theme
+sphinx-autoapi
