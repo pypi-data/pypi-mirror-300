@@ -1,0 +1,19 @@
+def
+return
+if
+else
+elif
+while
+break
+continue
+try
+except
+finally
+from 
+import 
+class
+ is True
+ is False
+ is None
+print
+self.
