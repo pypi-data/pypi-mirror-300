@@ -1,0 +1,11 @@
+pccloner/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pccloner/pcdata.py,sha256=Ygvvwv2Sm0yfCkuP5dCz1hFb4-j1DI-ZdgC2N7XMcxE,11554
+pccloner/pctask_pr.py,sha256=cg4cncJakVbZJq6wHLb6dobXokObGy-AYWKx-jYjDf8,13790
+pccloner/pctask_press.py,sha256=SMatNOyfjr9MLWphO8nqPs4l0XIXkyCEdrU9F24shYw,22065
+pccloner/ubuntu.py,sha256=-hVt-2_3p-_52xX17zFwFtH02kML61GgMLwJb8MyOEU,2020
+pccloner/win11.py,sha256=3JIjRFlls23izkiLd4eOpcRz5PbEYoeYojg366ZnLIM,4009
+pccloner-0.1.3.dist-info/LICENSE,sha256=_iJJqmNIIiWIgYnmAyMb0fVf57YCqoP-8cS1xd2qwtA,1068
+pccloner-0.1.3.dist-info/METADATA,sha256=rkqaZ3Ut-sYlscLPdylV6kcVbb5tN21ypOmJjZDttjQ,5137
+pccloner-0.1.3.dist-info/WHEEL,sha256=GV9aMThwP_4oNCtvEC2ec3qUYutgWeAzklro_0m4WJQ,91
+pccloner-0.1.3.dist-info/top_level.txt,sha256=oTbLQtH6tzX-b62qZmTVqXmeVdEuKacO2NaDfTnKyrk,9
+pccloner-0.1.3.dist-info/RECORD,,
