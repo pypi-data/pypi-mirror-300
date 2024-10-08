@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: hst_tools
+Version: 0.0.8
+Summary: That's all for work
+Author-email: Dmytro <chernousan@gmail.com>
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# hst-tools
+
+How to upload:
+
+1. python -m build
+
+2. twine upload dist/*
