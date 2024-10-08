@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+base64c/base64c.c
+base64c.egg-info/PKG-INFO
+base64c.egg-info/SOURCES.txt
+base64c.egg-info/dependency_links.txt
+base64c.egg-info/requires.txt
+base64c.egg-info/top_level.txt
+src/base64c/__init__.py
