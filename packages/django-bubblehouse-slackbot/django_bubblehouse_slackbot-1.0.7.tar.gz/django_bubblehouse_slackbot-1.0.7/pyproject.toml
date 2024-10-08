@@ -1,0 +1,24 @@
+[project]
+name = "django-bubblehouse-slackbot"
+version = "1.0.7"
+description = "Create a Slack bot inside a Django application"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "commonmark-slack>=1.0.0",
+    "croniter>=3.0.3",
+    "django>=5.1.1",
+    "python-crontab>=3.2.0",
+    "requests>=2.32.3",
+    "slack-bolt>=1.20.1",
+    "slackblocks>=1.0.11",
+    "uwsgi>=2.0.27",
+    "watchdog>=5.0.3",
+]
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+packages = ["django_slackbot"]
