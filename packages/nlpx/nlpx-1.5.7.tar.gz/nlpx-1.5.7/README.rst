@@ -1,0 +1,44 @@
+Usage Sample
+''''''''''''
+
+.. code:: python
+
+        from nlpx.text_token import Tokenizer
+        from nlpx.model.classifier import TextCNNClassifier
+        from nlpx.model.wrapper import ClassModelWrapper
+        from nlpx.dataset import TokenDataset, PaddingTokenCollator
+
+        if __name__ == '__main__':
+            classes = ['class1', 'class2', 'class3'...]
+            texts = [[str],]
+            labels = [0, 0, 1, 2, 1...]
+            tokenizer = from_texts(texts, min_freq=5)
+            sent = 'I love you'
+            tokens = tokenizer.encode(sent, max_length=6)
+            # [101, 66, 88, 99, 102, 0]
+            sent = tokenizer.decode(sent)
+            # ['<BOS>', 'I', 'love', 'you', '<EOS>', '<PAD>']
+
+            tokens = tokenizer.batch_encode(texts, padding=False)
+            X_train, X_test, y_train, y_test = train_test_split(tokens, labels, test_size=0.2)
+            train_set = TokenDataset(X_train, y_train)
+            test_set = TokenDataset(X_test, y_test)
+
+            model = TextCNNClassifier(embed_dim=128, vocab_size=tokenizer.vocab_size, num_classes=len(classes))
+            model_wrapper = ClassModelWrapper(model, classes=classes)
+            model_wrapper.train(train_set, test_set, show_progress=True, collate_fn=PaddingTokenCollator(tokenizer.pad))
+
+            result = model_wrapper.evaluate(test_set, collate_fn=PaddingTokenCollator(tokenizer.pad))
+            #  0.953125
+
+            result = model_wrapper.predict(torch.tensor(test_tokens, dtype=torch.long))
+            #  [0, 1]
+
+            result = model_wrapper.predict_proba(torch.tensor(test_tokens, dtype=torch.long))
+            #  ([0, 1], array([0.99439645, 0.99190724], dtype=float32))
+
+            result = model_wrapper.predict_classes(torch.tensor(test_tokens, dtype=torch.long))
+            #  ['class1', 'class2']
+
+            result = model_wrapper.predict_classes_proba(torch.tensor(test_tokens, dtype=torch.long))
+            #  (['class1', 'class2'], array([0.99439645, 0.99190724], dtype=float32))
