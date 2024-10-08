@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: simple-util
+Version: 0.1.2
+Summary: 封装了一些日常用的函数
+Home-page: https://github.com/yourusername/my-package
+Author: Johnliu
+Author-email: 1242108463@qq.com
+License: MIT
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Description-Content-Type: text/markdown
+
+from simple_util import util
+
+
+
+<!-- 
+python setup.py sdist bdist_wheel
+twine upload dist/*
+ -->
+
