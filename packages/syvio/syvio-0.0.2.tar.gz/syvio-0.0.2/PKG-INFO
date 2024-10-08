@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: syvio
+Version: 0.0.2
+Summary: 
+Author: Wenyu Zhao
+Author-email: wenyuzhaox@gmail.com
+Requires-Python: >=3.10,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: asyncio (>=3.4.3,<4.0.0)
+Requires-Dist: numpy (>=2.1.2,<3.0.0)
+Requires-Dist: python-dotenv (>=1.0.1,<2.0.0)
+Requires-Dist: rich (>=13.9.2,<14.0.0)
+Requires-Dist: shortuuid (>=1.0.13,<2.0.0)
+Requires-Dist: typer (>=0.12.5,<0.13.0)
+Description-Content-Type: text/markdown
+
+# syvio
+
+#  Record scheduler events
+
+1. `poetry install`
+2. `syvio sched --duration 5000`
+3. Use perfetto for visualization.
+
+
+
