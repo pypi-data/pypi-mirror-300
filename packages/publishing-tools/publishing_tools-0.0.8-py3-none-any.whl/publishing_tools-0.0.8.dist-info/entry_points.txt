@@ -1,0 +1,4 @@
+[console_scripts]
+publish = publish.cli.publish:cli
+sign = publish.cli.sign:cli
+verify = publish.cli.verify:cli
