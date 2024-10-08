@@ -1,0 +1,7 @@
+dl_a2t-0.0.0.2.dist-info/METADATA,sha256=GCmVCzQKT9OAv76067Jb25jWg5g8yTi9fsPGryTwyZA,1556
+dl_a2t-0.0.0.2.dist-info/WHEEL,sha256=Vza3XR51HW1KmFP0iIMUVYIvz0uQuKJpIXKYOBGQyFQ,90
+dl_a2t-0.0.0.2.dist-info/entry_points.txt,sha256=FF3jRBxW8lU2euoTWBCCEz7-6ZV2V7uHQC91_6vGsjQ,58
+dl_a2t/cli.py,sha256=MtZPyYWSh6V54qOp6jRNaIeEW9Wcgdry5643fxyR4OQ,1136
+dl_a2t/impl/download.py,sha256=XycCgtvDUN39z70EN20w66qyxmK3tjdufac3QmtKn_Y,212
+dl_a2t/impl/transcript.py,sha256=ThxG168VnGnrfCtTQNO1JpSqeJeMrDwOYYs-wKG1lh8,315
+dl_a2t-0.0.0.2.dist-info/RECORD,,
