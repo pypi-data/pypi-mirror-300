@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+srujan_demoPdf/__init__.py
+srujan_demoPdf/pdf2image.py
+srujan_demoPdf/pdf2text.py
+srujan_demoPdf.egg-info/PKG-INFO
+srujan_demoPdf.egg-info/SOURCES.txt
+srujan_demoPdf.egg-info/dependency_links.txt
+srujan_demoPdf.egg-info/top_level.txt
