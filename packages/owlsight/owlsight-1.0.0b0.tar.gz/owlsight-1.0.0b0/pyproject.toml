@@ -1,0 +1,67 @@
+[build-system]
+requires = ["setuptools", "setuptools_scm"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "owlsight"
+dynamic = ["version"]
+description = "Owlsight is a commandline tool which combines opensource AI models with python functionality to create a powerful AI assistant."
+authors = [{ name = "Vincent Ouwendijk" }]
+license = { text = "MIT" }
+readme = "README.md"
+dependencies = [
+    "transformers",
+    "numpy",
+    "torch",
+    "bitsandbytes",
+    "accelerate",
+    "sentencepiece",
+    "prompt_toolkit",
+    "keyboard",
+    "jedi",
+]
+
+[project.optional-dependencies]
+dev = [
+    "ruff",
+    "black",
+    "pytest",
+]
+
+gguf = [
+    "gguf",
+    "llama-cpp-python",
+]
+
+onnx = [
+    "onnxruntime-genai",
+    "onnxruntime-genai-cuda",
+]
+
+[tool.pytest.ini_options]
+minversion = "6.0"
+addopts = "-ra -q"
+testpaths = [
+    "tests",
+]
+pythonpath = [
+    ".",
+]
+
+[project.scripts]
+owlsight = "main:main"
+
+[tool.setuptools]
+package-dir = { "" = "src" }
+include-package-data = true
+py-modules = ["main"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.black]
+line-length = 88
+
+[tool.setuptools_scm]
+version_scheme = "guess-next-dev"
+local_scheme = "node-and-date"
