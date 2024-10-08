@@ -1,0 +1,34 @@
+from rest_framework import mixins
+from rest_framework.viewsets import GenericViewSet
+from rest_framework.permissions import IsAuthenticated
+from {{app_name}}.serializers.{{model_name_snake_case}}_serializers import {% if 'c' in actions %}{{model_name}}CreateSerializer, {% endif %}{% if 'u' in actions %}{{model_name}}UpdateSerializer, {% endif %}{% if 'r' in actions %}{{model_name}}Serializer{% endif %}
+from {{model_module}} import {{model_name}}
+
+class {{model_name}}ViewSet({% if 'r' in actions %}
+    mixins.RetrieveModelMixin,{% endif %}{% if 'r' in actions %}
+    mixins.ListModelMixin,{% endif %}{% if 'c' in actions %}
+    mixins.CreateModelMixin,{% endif %}{% if 'u' in actions %}
+    mixins.UpdateModelMixin,{% endif %}{% if 'd' in actions %}
+    mixins.DestroyModelMixin,{% endif %}
+    GenericViewSet
+):
+
+    serializer_class = {% if 'r' in actions %}{{model_name}}Serializer{% elif 'c' in actions %}{{model_name}}CreateSerializer{% else  %}{{model_name}}UpdateSerializer{% endif %}
+    permission_classes = (IsAuthenticated, )
+
+    def get_queryset(self):
+        {% if user_fields %}queryset = {{model_name}}.objects.filter({{user_fields[0]}}=self.request.user){% else %}queryset = {{model_name}}.objects.all(){% endif %}
+
+        return queryset
+
+    def get_serializer_class(self):
+        {% if 'c' in actions %}
+        if self.action == 'create':
+            return {{model_name}}CreateSerializer
+        {% endif %}
+        {% if 'u' in actions %}
+        if self.action == 'partial_update' or self.action == 'update' :
+            return {{model_name}}UpdateSerializer
+        {% endif %}
+
+        return super().get_serializer_class()
