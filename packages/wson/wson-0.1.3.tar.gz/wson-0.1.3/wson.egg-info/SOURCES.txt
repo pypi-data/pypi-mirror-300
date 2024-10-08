@@ -1,0 +1,8 @@
+README.md
+setup.py
+wson/__init__.py
+wson/wson.py
+wson.egg-info/PKG-INFO
+wson.egg-info/SOURCES.txt
+wson.egg-info/dependency_links.txt
+wson.egg-info/top_level.txt
