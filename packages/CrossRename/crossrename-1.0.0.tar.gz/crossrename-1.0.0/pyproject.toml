@@ -1,0 +1,32 @@
+[project]
+name = "CrossRename"
+version = "1.0.0"
+authors = [
+  { name="Emmanuel C. Jemeni", email="jemenichinonso11@gmail.com" }
+]
+description = "Harmonize file names for Linux and Windows."
+readme = "PYPI_README.rst"
+requires-python = ">=3.9"
+license = {file = "LICENSE"}
+keywords = ["files", "rename", "linux", "windows", "transferring", "filename"]
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Environment :: Console",
+    "Natural Language :: English",
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+]
+
+[project.scripts]
+crossrename = "CrossRename.main:main"
+
+[project.urls]
+"Homepage" = "https://github.com/Jemeni11/CrossRename"
+"Bug Tracker" = "https://github.com/Jemeni11/CrossRename/issues"
+"Changelog" = "https://github.com/Jemeni11/CrossRename/blob/master/CHANGELOG.md"
+
+[build-system]
+# These are the assumed default build requirements from pip:
+# https://pip.pypa.io/en/stable/reference/pip/#pep-517-and-518-support
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
