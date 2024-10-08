@@ -1,0 +1,5 @@
+testrepository
+coverage
+testtools
+stestr
+requests-mock

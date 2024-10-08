@@ -1,0 +1,33 @@
+Metadata-Version: 2.1
+Name: taynacclient
+Version: 1.4.0
+Summary: Vulnerability management for Opentack - Client
+Home-page: https://github.com/NeCTAR-RC/python-taynacclient
+Author: ARDC Nectar Cloud Services
+Author-email: coreservices@ardc.edu.au
+License: Apache-2.0
+Keywords: taynac
+Classifier: Environment :: OpenStack
+Classifier: Intended Audience :: Information Technology
+Classifier: Intended Audience :: System Administrators
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: oslo.utils
+Requires-Dist: requests
+Requires-Dist: keystoneauth1
+Requires-Dist: osc-lib
+Requires-Dist: nectarclient-lib<2.0.0,>=1.2.0
+Requires-Dist: pbr
+
+# taynac Client
+
+Client for Nectar Messaging System taynac
+https://github.com/NeCTAR-RC/taynac/
+
+## Common openstack CLI Commands
+
