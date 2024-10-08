@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: paulius-l-biudzetas
+Version: 0.1.1
+Summary: 
+Author: PowFox
+Author-email: lapienis.paulius@yahoo.com
+Requires-Python: >=3.12,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: ernestas-biudzetas (>=0.1.0,<0.2.0)
+Requires-Dist: ignas-t-biudzetas (>=0.1.0,<0.2.0)
+Requires-Dist: naujas-projektas (>=0.1.0,<0.2.0)
+Requires-Dist: pandas (>=2.2.3,<3.0.0)
+Description-Content-Type: text/markdown
+
+
