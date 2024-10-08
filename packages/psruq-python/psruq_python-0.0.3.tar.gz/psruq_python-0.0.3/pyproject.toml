@@ -1,0 +1,40 @@
+[project]
+name = "psruq-python"
+version = "0.0.3"
+description = "Code for uncertainty quantification with proper scoring rules."
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "bitsandbytes==0.42.0",
+    "matplotlib>=3.2.2",
+    "opencv-python>=4.10.0.84",
+    "pandas>=2.2.2",
+    "safetensors>=0.4.5",
+    "scikit-learn>=1.5.2",
+    "scipy>=1.14.1",
+    "seaborn>=0.13.2",
+    "torch-uncertainty",
+    "torch>=2.4.1",
+    "torchvision>=0.19.1",
+    "tqdm>=4.66.5",
+]
+
+[project.optional-dependencies]
+laplace = [
+    "laplace-torch>=0.2.1",
+]
+notebook = [
+    "ipykernel>=6.29.5",
+    "jupyter>=1.1.1",
+    "jupyterlab>=4.2.5",
+]
+
+[tool.hatch.build.targets.wheel]
+packages = ["psruq"]
+
+[tool.uv.sources]
+torch-uncertainty = { git = "https://github.com/nkotelevskii/torch-uncertainty.git" }
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
