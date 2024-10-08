@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+LibreStopping/LibreStopping.py
+LibreStopping/__init__.py
+LibreStopping.egg-info/PKG-INFO
+LibreStopping.egg-info/SOURCES.txt
+LibreStopping.egg-info/dependency_links.txt
+LibreStopping.egg-info/top_level.txt
