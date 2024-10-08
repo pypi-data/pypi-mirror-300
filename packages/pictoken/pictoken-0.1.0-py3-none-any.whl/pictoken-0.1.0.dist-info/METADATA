@@ -1,0 +1,104 @@
+Metadata-Version: 2.3
+Name: pictoken
+Version: 0.1.0
+Summary: Calculate image tokens for (Azure) OpenAI models. Offers multiple utilities to resize images to reduce token usage.
+Project-URL: Homepage, https://github.com/iMicknl/pictoken
+Project-URL: Repository, https://github.com/iMicknl/pictoken
+Author-email: Mick Vleeshouwer <mick@imick.nl>
+License: MIT License
+        
+        Copyright (c) 2024 Mick Vleeshouwer
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy
+        of this software and associated documentation files (the "Software"), to deal
+        in the Software without restriction, including without limitation the rights
+        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+        copies of the Software, and to permit persons to whom the Software is
+        furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in all
+        copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+        SOFTWARE.
+License-File: LICENSE
+Keywords: Azure,GPT4o,Image,LLM,OpenAI,VLLM
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python
+Requires-Python: >=3.9
+Requires-Dist: backports-strenum>=1.3.1; python_version < '3.11'
+Requires-Dist: pillow>=10.4.0
+Description-Content-Type: text/markdown
+
+# pictoken
+Calculate image tokens for Azure OpenAI models. This utility helps resize images to minimize token usage. Unlike [openai/tiktoken](https://github.com/openai/tiktoken), it isn't a tokenizer but calculates image tokens for specific requests. It supports OpenAI models such as gpt-4o-mini and gpt-4o.
+
+Based on [calculation costs for vision capabilities](https://platform.openai.com/docs/guides/vision/calculating-costs) for OpenAI models. In the future models from other providers might be supported as well.
+
+## Installation
+
+Requires Python 3.9 or later.
+
+```
+pip install pictoken
+```
+
+## Usage
+
+### Calculate image tokens
+
+You can provide images in two main ways: by passing a link to the image or by passing the base64 encoded image directly in the request.
+
+Please note that passing the model is required, as the image token calculation is model-specific. [The dollar price per image is the same for GPT-4o and GPT-4o mini. To maintain this, GPT-4o mini uses more tokens per image.](https://x.com/romainhuet/status/1814054938986885550?t=AMFK4svMvCluYqAXUqRDMQ&s=19). These additional tokens are only used for billing purposes and do not affect the context limit of the model.
+
+#### By image
+```python
+import pictoken
+
+image_tokens_from_url = pictoken.calculate_image_tokens_by_image(image="http://", model="gpt-4o-mini")
+image_tokens_from_base64 = pictoken.calculate_image_tokens_by_image(image="data:image/png;base64,...", model="gpt-4o-mini")
+```
+
+#### By image dimensions
+
+```python
+import pictoken
+
+image_tokens = pictoken.calculate_image_tokens_by_image_dimensions(
+    width=2048, height=2048, model=pictoken.Model.GPT_4O, detail=pictoken.ImageDetail.HIGH
+)
+
+print(image_tokens)
+# Response(total_tokens=765, base_tokens=85, tile_tokens=680, total_tiles=4, width_tiles=2, height_tiles=2, resized=ResizedImage(width=768, height=768))
+```
+
+### Resize images
+
+For low res mode, OpenAI expects a 512px x 512px image. For high res mode, the short side of the image should be less than 768px and the long side should be less than 2,000px. The latency of the model can also be improved by downsizing your images ahead of time to be less than the maximum size they are expected them to be.
+
+```python
+#TODO
+```
+
+### Add visual metadata to image
+
+The model doesn't process original file names or metadata, and images are resized before analysis, affecting their original dimensions. This utility adds a small text overlay to the image. This can be useful for models to reference to the specific image in a request with multiple images.
+
+```python
+#TODO
+```
+
+## Development
+
+Contributions are welcome. This packages uses [uv](https://docs.astral.sh/uv/getting-started/installation/) for dependency management and packaging. If you use Visual Studio Code with Docker or GitHub CodeSpaces, you can leverage the included devcontainer. This will install all required dependencies and tools and has the right Python version available. Easy!
+
+To manually set up the development environment, make sure you have uv installed and run `uv sync` to install all dependencies.
+
+## License
+
+MIT
