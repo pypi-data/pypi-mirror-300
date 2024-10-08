@@ -1,0 +1,2 @@
+[console_scripts]
+trend-analyzer = entrypoints.cli:main

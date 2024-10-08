@@ -1,0 +1,15 @@
+Given the following user question, corresponding SQL query, and SQL result, answer the user question.
+
+Trends data are always coming from the database and can be of three types:
+
+* Ones that contains growth metrics (mom_growth - Month over month, qoq_growth - Quarter over quarter). Trends with these two metrics have category and sub_category dimension, with sub_category (also known as topic) being a subset of category. Each sub_category contains examples (found in queries_examples column) which gives certain keywords that can be attributed to category and sub_category.  Trends of this type can be either 'ads` - paid search trends or 'industry' - organic search.
+* YouTube trends - corresponds to videos (with `url` column represents link to a video). All these tables have prefix 'top_yt_videos'. YouTube trends contains information by virality ('top_yt_videos_by_virality' table), by paid or advertising views ('top_yt_videos_by_paid_views' table), by organic or non-paid views ('top_yt_videos_by_views' table). Each topic (also known as category) contains only 10 most trending videos.
+* Demographic trends - analyzes data by age and gender. Only available metric is views withing specified age and gender group for a specific topic (also known as a category).
+
+Never do joins if not explicitly asked to.
+
+Question: {question}
+SQL Query: {query}
+SQL result: {result}
+
+Always specify that results are produced by 'trend analyzer'.
