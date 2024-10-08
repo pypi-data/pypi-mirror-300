@@ -1,0 +1,17 @@
+mbpy/__about__.py,sha256=6hpIIhe61g65stGE9G-1NWM0PYzh3gObKV9-tCHFL2k,65
+mbpy/__init__.py,sha256=bbgCBc9avFrUwhsdkhrTpjwpqgizB0mEzMjzzoFRQ7o,884
+mbpy/__version__.py,sha256=VF-x4GA8D-Y_oNFVgXVFj8adb3MPFdpSc9IuyepjyDs,464
+mbpy/cli.py,sha256=fxNitF_24HNw2yp-dJOD7jc7jjUdzOR0X9SkxKeet1g,13579
+mbpy/commands.py,sha256=rFt8zJfAa-tn5ghmLxoLB_c9-AHHlJhC61mD9y3Mh3U,11734
+mbpy/create.py,sha256=BCKf2JjQME2StGjFgAUSnIjz98X2dq-lWFs9WSyKs6Q,16554
+mbpy/mpip.py,sha256=I0J_jdBwEvUpao8R1ZlMQcH9VhVMVkHhoXF6eGcM5Xs,19936
+mbpy/profile.py,sha256=HBescvZ0-GQVoua58OQHJVkb_A1LniKZPpyV6kREMzE,449
+mbpy/publish.py,sha256=rBtD6WBzVQVnln4IYWnv1xGK8Mwnz-bXnRsEIhl3HeU,5789
+mbpy/requirements.txt,sha256=V1J6toxSniKb1W393csICGDnDoGXh399P_Nfgm9wmRM,144
+mbpy/static.py,sha256=5e3f6DSzrMsD2nstAQIJtRF3e_dfd9rjeuXDOG9qPAM,1277
+mbpy/version.py,sha256=dkLS62Xp4qlgYXDOVYMwNh9xqdQppzlLmSllgff9ZGM,455
+mbpy-2.0.1.dist-info/METADATA,sha256=t0evAkbv9-JbDa5oS1880XnybGgx8s3cIReH2BTFK0I,3152
+mbpy-2.0.1.dist-info/WHEEL,sha256=1yFddiXMmvYK7QYTqtRNtX66WJ0Mz8PYEiEUoOUUxRY,87
+mbpy-2.0.1.dist-info/entry_points.txt,sha256=jrExxRxfAdujnQGjziaAjyVbEDoTRFrrIIKnA9NUPHc,105
+mbpy-2.0.1.dist-info/licenses/LICENSE,sha256=ufv7fH68SJM3IBc79lq9_jbu9jq8YtkuzYWO9P3AuU8,1062
+mbpy-2.0.1.dist-info/RECORD,,
