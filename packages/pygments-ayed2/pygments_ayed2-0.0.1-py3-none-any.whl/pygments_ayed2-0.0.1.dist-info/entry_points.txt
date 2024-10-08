@@ -1,0 +1,5 @@
+[pygments.lexers]
+ayed2lexer = pygments_ayed2.lexer:Ayed2Lexer
+
+[pygments.styles]
+ayed2style = pygments_ayed2.style:Ayed2Style
