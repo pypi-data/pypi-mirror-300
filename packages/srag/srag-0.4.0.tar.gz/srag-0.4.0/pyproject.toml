@@ -1,0 +1,25 @@
+[tool.poetry]
+name = "srag"
+version = "0.4.0"
+description = ""
+authors = ["HSPK <whxway@whu.edu.cn>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+arrow = "^1.3.0"
+pydantic = ">2"
+elasticsearch = "^8.15.1"
+puyuan-modelhub = "^2.0.0"
+qdrant-client = "^1.11.3"
+loguru = "^0.7.2"
+pyparse-client = "^0.1.0"
+
+
+[tool.poetry.group.test.dependencies]
+ipykernel = "^6.29.5"
+pytest = "^8.3.3"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
