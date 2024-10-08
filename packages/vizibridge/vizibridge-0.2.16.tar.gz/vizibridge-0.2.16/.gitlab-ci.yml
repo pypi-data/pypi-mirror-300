@@ -1,0 +1,51 @@
+stages:          # List of stages for jobs, and their order of execution
+  - build
+  - release
+
+build-job:
+  stage: build
+  tags:
+    - ci.inria.fr
+    - medium
+  rules:
+    - if: $CI_COMMIT_TAG   
+  image: docker:stable
+  script:
+  - echo "docker for PYTHON_VERSION=$PYTHON_VERSION"
+  - docker build --build-arg="PYTHON_VERSION=$PYTHON_VERSION" -t "$CI_REGISTRY_IMAGE/vizibridge_cont$PYTHON_VERSION" .
+  - docker login -u gitlab-ci-token -p "$CI_JOB_TOKEN" "$CI_REGISTRY"
+  - docker push "$CI_REGISTRY_IMAGE/vizibridge_cont$PYTHON_VERSION"
+  parallel:
+    matrix:
+      - PYTHON_VERSION: ["3.9", "3.10", "3.11", "3.12"]
+
+upload_pypi_bin:
+  stage: release
+  tags:
+    - ci.inria.fr
+    - medium
+  rules:
+    - if: $CI_COMMIT_TAG   
+  image: $CI_REGISTRY_IMAGE/vizibridge_cont$PYTHON_VERSION
+  script:
+    - head -n 3 Cargo.toml
+    - maturin list-python
+    - export MATURIN_PYPI_TOKEN=$PYPI_TOKEN
+    - maturin publish --no-sdist
+  parallel:
+    matrix:
+      - PYTHON_VERSION: ["3.10", "3.11", "3.12"]
+
+
+upload_pypi:
+  stage: release
+  tags:
+    - ci.inria.fr
+    - medium
+  rules:
+    - if: $CI_COMMIT_TAG   
+  image: $CI_REGISTRY_IMAGE/vizibridge_cont3.9
+  script:
+    - maturin list-python
+    - export MATURIN_PYPI_TOKEN=$PYPI_TOKEN
+    - maturin publish  --no-sdist
