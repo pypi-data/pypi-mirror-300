@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: checkers-cli
+Version: 0.0.2rc3
+Summary: An extensible linter for dbt
+Author-email: Tom Waterman <tjwaterman99@gmail.com>
+Description-Content-Type: text/markdown
+Requires-Dist: pydantic<3.0
+Requires-Dist: click<9.0
+Requires-Dist: rich<14.0
+
+# checkers
+
+An extensible linter for dbt
