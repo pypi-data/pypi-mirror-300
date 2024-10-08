@@ -1,0 +1,2 @@
+Version: 1.8.2
+Arguments: ['C:\\Users\\amalm\\AppData\\Roaming\\Python\\Python312\\Scripts\\delvewheel', 'repair', 'dist\\xsigma_mkl-1.0.0.dev0-cp312-cp312-win_amd64.whl', '--add-path', 'C:\\dev\\build_ninja_wheel_mkl_tbb_avx2_tbbm\\bin']
