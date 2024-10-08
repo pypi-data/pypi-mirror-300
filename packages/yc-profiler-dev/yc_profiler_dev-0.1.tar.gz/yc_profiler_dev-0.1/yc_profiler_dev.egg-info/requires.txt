@@ -1,0 +1,4 @@
+pyyaml
+requests
+memory_profiler
+psutil
