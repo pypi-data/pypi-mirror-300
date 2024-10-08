@@ -1,0 +1,12 @@
+sentier_data_tools/__init__.py,sha256=RfdKl_9GUIyf4r5LOgcu4qa2v6M43bO7Cv-z--CZFrw,526
+sentier_data_tools/datapackage.py,sha256=rs7o6vk-HBpqVWSuqnnayvd9N0lKubaZ3AxPofPl9Ow,2388
+sentier_data_tools/datapackage_validation.py,sha256=vZD70f87rl9S5cSJKxg9lKoOTvhrZZOzcEHRsV5FpYc,490
+sentier_data_tools/iri.py,sha256=LPR4OWPzMrMBfeOE42O0UHrkPv7PG8kk21Lk-F5sAxY,2412
+sentier_data_tools/licenses.py,sha256=BoxniQfIaFDk_Ga5JjhHEUCypFwghBd14qzSdOxwoqE,123318
+sentier_data_tools/local_data_store.py,sha256=xUMt4StAuIuhEIoFMAeAV4DmuaWN1Jj5nee6eBOeXdI,2312
+sentier_data_tools/logs.py,sha256=Isq5f2D-PXX60A870-0ryyDA8OvW3nvNeFOLob6b5Yo,1449
+sentier_data_tools-0.1.dist-info/LICENSE,sha256=EnOLdxnr0l1bUdL0iLihUAbAlBBCHpdvCMOtZXn8eN4,1067
+sentier_data_tools-0.1.dist-info/METADATA,sha256=Cq5Vv73uJ6eyqYuKpweJ2RGn7ZT4siC_SxNVEY4Sddw,4383
+sentier_data_tools-0.1.dist-info/WHEEL,sha256=GV9aMThwP_4oNCtvEC2ec3qUYutgWeAzklro_0m4WJQ,91
+sentier_data_tools-0.1.dist-info/top_level.txt,sha256=1Mi3BXW5EhNrRWEmTs-8zu3WV7gbt3g0ubJDvPBiNPo,19
+sentier_data_tools-0.1.dist-info/RECORD,,
