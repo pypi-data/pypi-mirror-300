@@ -1,0 +1,16 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+sock_python/__init__.py
+sock_python/__main__.py
+sock_python/_impl.py
+sock_python.egg-info/PKG-INFO
+sock_python.egg-info/SOURCES.txt
+sock_python.egg-info/dependency_links.txt
+sock_python.egg-info/top_level.txt
+test/test_address.py
+test/test_args.py
+test/test_client_server.py
+test/test_packets.py
+test/test_protocol.py
