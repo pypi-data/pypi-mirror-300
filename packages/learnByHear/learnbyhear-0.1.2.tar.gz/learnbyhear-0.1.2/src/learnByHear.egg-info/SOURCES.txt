@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+src/learnByHear/__init__.py
+src/learnByHear/maker.py
+src/learnByHear/utils.py
+src/learnByHear.egg-info/PKG-INFO
+src/learnByHear.egg-info/SOURCES.txt
+src/learnByHear.egg-info/dependency_links.txt
+src/learnByHear.egg-info/entry_points.txt
+src/learnByHear.egg-info/top_level.txt
