@@ -1,0 +1,81 @@
+name: CI
+
+on:
+  push:
+  pull_request:
+    branches: ["main"]
+
+concurrency:
+  # Cancel older, in-progress jobs from the same PR, same workflow.
+  # use run_id if the job is triggered by a push to ensure
+  # push-triggered jobs to not get canceled.
+  group: ${{ github.workflow }}-${{ github.head_ref || github.run_id }}
+  cancel-in-progress: true
+
+jobs:
+  prettier:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        # TODO: Figure out why this isn't working.
+        # with:
+        #   ref: ${{ github.head_ref }}
+
+      - name: Prettify code
+        uses: creyD/prettier_action@v4.3
+        with:
+          prettier_options: --check **/*.{js,md,tsx,ts}
+
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+      - uses: ApeWorX/github-action@v3
+        with:
+          python-version: "3.11"
+      - run: ape compile --force --size
+      # Upload ape build files for testing
+      - uses: actions/upload-artifact@v4
+        with:
+          name: ape-build-folder
+          path: .build/
+          overwrite: true  # Always write it
+          if-no-files-found: error  # Do not proceed unless build is cached
+          include-hidden-files: true  # Because it's a "hidden" folder
+
+  py-test:
+    needs: build
+
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+      - uses: foundry-rs/foundry-toolchain@v1
+      - uses: ApeWorX/github-action@v3
+        with:
+          python-version: "3.11"
+      # Ape-built artifacts used for testing
+      - uses: actions/download-artifact@v4
+        with:
+          name: ape-build-folder
+          path: .build/
+      - run: pip install .
+      - run: ape test -s
+
+  js-test:
+    needs: build
+
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v3
+      # Ape-built artifacts used for testing
+      - uses: actions/download-artifact@v4
+        with:
+          name: ape-build-folder
+          path: .build/
+      - run: npm install .
+      - run: npm run build --workspaces --if-present

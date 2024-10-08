@@ -1,0 +1,29 @@
+{
+  "name": "@apeworx/apepay",
+  "version": "0.1.2",
+  "author": "ApeWorX LTD.",
+  "license": "Apache-2.0",
+  "type": "module",
+  "types": "./dist/index.d.ts",
+  "homepage": "https://github.com/ApeWorX/ApePay",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ApeWorX/ApePay.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ApeWorX/ApePay/issues"
+  },
+  "scripts": {
+    "build": "cp -R ../../.build . && tsc && vite build && cp -R .build dist",
+    "clean": "rm -rf dist"
+  },
+  "dependencies": {
+    "viem": "^1.18"
+  },
+  "files": [
+    "dist/",
+    "README.md"
+  ],
+  "main": "./dist/apepay.umd.cjs",
+  "module": "./dist/apepay.js"
+}

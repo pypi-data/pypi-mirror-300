@@ -1,0 +1,304 @@
+/* GLOBAL */
+
+body {
+  background-color: #f0e8d9;
+}
+h1,
+h2 {
+  text-align: center;
+}
+
+h3 {
+  margin: 10px;
+}
+
+ul {
+  padding: 0px;
+}
+
+li {
+  vertical-align: middle;
+}
+
+a,
+a:link,
+a:visited {
+  color: inherit;
+  cursor: pointer;
+}
+
+a:hover {
+  transition: all 0.3s ease;
+  color: #6200ea;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 12px;
+}
+
+.header-app {
+  justify-content: flex-end;
+}
+
+.cancel-stream-button,
+.create-stream-sm-button,
+.update-stream-button,
+.button-validate-select-token,
+.button-validate-transaction,
+.button-create-stream {
+  background-color: #6200ea !important;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin: 5px;
+  border-radius: 4px;
+  font-weight: bold;
+  transition:
+    background-color 0.3s,
+    box-shadow 0.3s;
+  cursor: pointer;
+}
+
+.header-button button {
+  background-color: grey;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin: 5px;
+  border-radius: 4px;
+  font-weight: bold;
+  transition:
+    background-color 0.3s,
+    box-shadow 0.3s;
+  cursor: pointer;
+}
+
+.button:active {
+  background-color: #6200ea;
+}
+
+button:hover {
+  transition: all 0.3s ease;
+  background-color: #421f74;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+li {
+  text-align: left;
+  width: 30%;
+}
+
+/* HOMEPAGE */
+
+.list-stream-managers {
+  text-align: center;
+}
+
+.list-stream-managers ul {
+  list-style-type: disc;
+  display: inline-block;
+  text-align: left;
+  padding-left: 20px;
+}
+
+/* STREAM MANAGER PAGE */
+
+.stream-manager-title {
+  margin-top: 10px;
+  font-size: 20px;
+  text-align: center;
+}
+.create-stream-sm-text {
+  text-align: center;
+}
+
+.create-stream-sm-button {
+  margin-top: 20px;
+}
+
+/* LIST STREAMS */
+.list-streams {
+  width: 30em;
+  margin: 0px auto;
+  line-height: 2em;
+  text-align: center;
+}
+
+.list-creator {
+  font-weight: bold;
+  align-items: center;
+  line-height: 30px;
+}
+
+.list-creator-streams {
+  text-align: center;
+  width: 100%;
+  list-style-type: none;
+  border: 2px solid black;
+  margin-top: 15px;
+  border-radius: 5px;
+}
+
+.list-creator-streams span {
+  display: block;
+  width: 100%;
+}
+
+.list-creator-streams:hover {
+  transform: scale(1.02);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* STREAM PAGE */
+
+.stream-status-box,
+.stream-data-box,
+.cancel-stream-box,
+.update-stream-box {
+  margin-top: 10px;
+  border: 1px solid black;
+  padding: 10px;
+  width: 50%;
+  text-align: center;
+}
+
+.loading-stream-text {
+  text-align: center;
+  font-style: italic;
+}
+
+.stream-components {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.rc-slider {
+  width: 50% !important;
+}
+.rc-slider-step {
+  background: lightgray !important;
+}
+
+/* CREATE STREAM: STEP 1 */
+
+.create-stream-component {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid black;
+  text-align: center;
+  width: 50%;
+  padding: 20px;
+  margin: 0px auto;
+  margin-top: 20px;
+  line-height: 30px;
+}
+
+.cart {
+  border: 1px solid black;
+  text-align: center;
+  margin: 1em;
+  padding: 1em;
+}
+
+.select-token-dropdown {
+  width: 200px;
+  height: 50px;
+  margin-bottom: 30px;
+}
+
+.button-validate-select-token {
+  position: relative;
+  margin-top: 10px;
+  width: 100px;
+}
+
+/* CREATE STREAM: STEP 2 */
+.slider-select-time {
+  margin-bottom: 3em;
+}
+
+/* CREATE STREAM: STEP 3 */
+.payment-flow {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+}
+
+.tx-status-display {
+  max-width: 100%;
+  line-height: 1;
+  overflow: hidden;
+}
+
+/* STREAM STATUS */
+
+.stream-status-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.stream-status-bar-container {
+  width: 100%;
+  border: 1px solid #111;
+  border-radius: 4px;
+  position: relative;
+  height: 24px;
+}
+
+.stream-status-bar-progress {
+  height: 100%;
+  background-color: #111;
+}
+
+.stream-status-pie {
+  width: 50%;
+}
+
+.stream-status-bar-label {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  width: 100%;
+  text-align: center;
+}
+
+.dropdown-select {
+  margin-bottom: 10px;
+  border: 1px solid #6200ea;
+  padding: 10px 30px 10px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* CANCEL STREAM */
+
+.stream-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.label-close-modal {
+  text-align: center;
+}
+
+.cancel-stream-error {
+  width: 50%;
+  overflow: auto;
+}
+
+.cancel-stream-button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
