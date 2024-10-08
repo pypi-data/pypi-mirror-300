@@ -1,0 +1,10 @@
+README.md
+__init__.py
+setup.py
+xhashtagAI.py
+xhashtagAI.egg-info/PKG-INFO
+xhashtagAI.egg-info/SOURCES.txt
+xhashtagAI.egg-info/dependency_links.txt
+xhashtagAI.egg-info/entry_points.txt
+xhashtagAI.egg-info/requires.txt
+xhashtagAI.egg-info/top_level.txt
