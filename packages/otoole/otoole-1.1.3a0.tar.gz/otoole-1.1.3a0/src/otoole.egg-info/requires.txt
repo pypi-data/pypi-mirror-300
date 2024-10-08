@@ -1,0 +1,17 @@
+xlrd
+pyyaml
+pydot
+pandas>=2.1.4
+Amply>=0.1.6
+networkx
+flatten_dict
+openpyxl
+pydantic>=2
+
+[:python_version < "3.8"]
+importlib-metadata
+
+[testing]
+setuptools
+pytest
+pytest-cov
