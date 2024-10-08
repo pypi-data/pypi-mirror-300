@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+src/__init__.py
+src/data_worker.py
+src/paths.py
+tests/test_data_worker.py
+wiki_synonyms.egg-info/PKG-INFO
+wiki_synonyms.egg-info/SOURCES.txt
+wiki_synonyms.egg-info/dependency_links.txt
+wiki_synonyms.egg-info/requires.txt
+wiki_synonyms.egg-info/top_level.txt
