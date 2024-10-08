@@ -1,0 +1,18 @@
+[project]
+name = "tempo-py"
+version = "0.0.1"
+authors = [
+  { name="Mark Vereș", email="mark@markveres.ro" },
+]
+description = " A python library for working with the National Institute of Statistics Tempo Online Database."
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+[project.urls]
+Homepage = "https://github.com/mark-veres/tempo.py"
+Issues = "https://github.com/mark-veres/tempo.py/issues"
