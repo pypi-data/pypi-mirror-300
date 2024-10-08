@@ -1,0 +1,5 @@
+setup.py
+dataspace_client.egg-info/PKG-INFO
+dataspace_client.egg-info/SOURCES.txt
+dataspace_client.egg-info/dependency_links.txt
+dataspace_client.egg-info/top_level.txt
