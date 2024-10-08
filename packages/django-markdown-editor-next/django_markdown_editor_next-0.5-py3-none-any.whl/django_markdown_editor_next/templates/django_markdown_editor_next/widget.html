@@ -1,0 +1,10 @@
+{% load static %}
+<div class="django-markdown-editor">
+    <textarea name="{{ widget.name }}"{% include "django/forms/widgets/attrs.html" %}>
+{% if widget.value %}{{ widget.value }}{% endif %}</textarea>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            initializeMarkdownEditor('{{ widget.attrs.id }}', {{ widget.custom_toolbar|default:"null"|safe }});
+        });
+    </script>
+</div>
