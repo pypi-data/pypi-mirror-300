@@ -1,0 +1,11 @@
+MANIFEST.in
+README.org
+setup.py
+compyte/__init__.py
+compyte/compyte.py
+compyte/jinja.py
+compyter.egg-info/PKG-INFO
+compyter.egg-info/SOURCES.txt
+compyter.egg-info/dependency_links.txt
+compyter.egg-info/requires.txt
+compyter.egg-info/top_level.txt
