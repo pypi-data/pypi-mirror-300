@@ -1,0 +1,11 @@
+hanpinyin/__init__.py,sha256=FNI3vjJyWdRGwavUuSlNTHg1ln1gIxQLDElTmeJMIZo,80
+hanpinyin/bert-base-chinese_s2t_dict.txt,sha256=OUgigixD9TrcJYqvf-ym6L2CqE_30C7kpq3PcLVy9Ec,13999
+hanpinyin/bopomofo_to_pinyin_wo_tune_dict.json,sha256=D-kOJr52UwI3crOtLQiVKWG78pX7ObpoXHFy09l2n1I,7739
+hanpinyin/char_bopomofo_dict.json,sha256=-96NOSRTYSyBS7ZyjG1fUqH504E1pgLvmPgh-iLX8AU,1851164
+hanpinyin/g2pw.py,sha256=_Ao4SDkEXEi5UKShNvggQA2yBjGjGoU4gk_4G3xn1U0,4130
+hanpinyin/torch_infer_api.py,sha256=QZM0jlWrrE1zImZGhL9q1CmVtK7t34QGFkShc7sMLew,10997
+hanpinyin-0.1.0.dist-info/LICENSE,sha256=zGR-hWFEXMfR-3pYsjoiR17SNDl8dfyihik56Z7poro,1066
+hanpinyin-0.1.0.dist-info/METADATA,sha256=YQQCUBowDZjQaF57_HVNdAS0L-IOzpP9syajpYmUOJ8,3234
+hanpinyin-0.1.0.dist-info/WHEEL,sha256=DZajD4pwLWue70CAfc7YaxT1wLUciNBvN_TTcvXpltE,110
+hanpinyin-0.1.0.dist-info/top_level.txt,sha256=Q99neIVZa-6a9GQCYJTMqEyL42t4mY1H6a3XSmCF6us,10
+hanpinyin-0.1.0.dist-info/RECORD,,
