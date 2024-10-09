@@ -1,0 +1,15 @@
+LICENSE
+README.md
+setup.py
+gestor_ventas/__init__.py
+gestor_ventas/descuentos.py
+gestor_ventas/exceptions.py
+gestor_ventas/gestor_ventas.py
+gestor_ventas/impuestos.py
+gestor_ventas/precios.py
+gestor_ventas.egg-info/PKG-INFO
+gestor_ventas.egg-info/SOURCES.txt
+gestor_ventas.egg-info/dependency_links.txt
+gestor_ventas.egg-info/top_level.txt
+tests/__init__.py
+tests/test_gestor_ventas.py
