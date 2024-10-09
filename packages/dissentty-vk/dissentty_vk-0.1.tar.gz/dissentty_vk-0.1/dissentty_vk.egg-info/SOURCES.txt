@@ -1,0 +1,10 @@
+setup.py
+dissentty_vk/__init__.py
+dissentty_vk/api.py
+dissentty_vk/bot.py
+dissentty_vk.egg-info/PKG-INFO
+dissentty_vk.egg-info/SOURCES.txt
+dissentty_vk.egg-info/dependency_links.txt
+dissentty_vk.egg-info/entry_points.txt
+dissentty_vk.egg-info/requires.txt
+dissentty_vk.egg-info/top_level.txt
