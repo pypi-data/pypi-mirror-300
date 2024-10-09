@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: tag-mne
+Version: 0.0.3
+Summary: python library for working on mne tag
+Home-page: https://github.com/simonkojima/tag-mne
+Author: Simon Kojima
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy
+Requires-Dist: mne >=1.8
+
+# tag-mne
+python library for handling tag of mne Epochs object
