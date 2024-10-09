@@ -1,0 +1,7 @@
+LICENSE
+README.md
+setup.py
+growtopia_api.egg-info/PKG-INFO
+growtopia_api.egg-info/SOURCES.txt
+growtopia_api.egg-info/dependency_links.txt
+growtopia_api.egg-info/top_level.txt
