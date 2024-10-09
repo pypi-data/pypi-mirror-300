@@ -1,0 +1,10 @@
+common.o,sha256=QUeHwDhFwpTX-341jzonh9f7vc7G2UNDH_o_soPwFmE,7386264
+custom_ops.cu.o,sha256=IFiBB1OH1KJpNjmiXL3ER40fWVvnk8aUEYezl5rz2fY,875896
+extensions.cu.o,sha256=D_3gLu6vCKyped1PUn71MQI7UbpqZCUj6fo9v86dZXA,664888
+version.txt,sha256=K1u-V5yzZ1nxPFfOY9HoNyV4cZE7yc4AnDoa1i4ObWU,2233
+transformer_engine/transformer_engine_paddle.py,sha256=1t48SAwfoohCia0gW8ta9aBhnlumEjvsQSuVcSUu0CI,58172
+transformer_engine/transformer_engine_paddle_pd_.so,sha256=nEXRe7kpNdY7fIa6wC5Er9Zx13BXnt5JDNIy_AMcYG8,4345312
+transformer_engine_paddle-1.11.0.dist-info/METADATA,sha256=WyoBlYOXmgW1Mt_BazKR4PdC4AKbMh_HApTUKmd6-Io,172
+transformer_engine_paddle-1.11.0.dist-info/WHEEL,sha256=1KGCYChb8MGEHN1kAM2V87Cd4ks97eAvJbgYQFfvjkY,111
+transformer_engine_paddle-1.11.0.dist-info/top_level.txt,sha256=so2-GR6HR2heuMTgUaoMst_t9-zcqrPIj4_w3YYMvMQ,30
+transformer_engine_paddle-1.11.0.dist-info/RECORD,,
