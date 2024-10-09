@@ -1,0 +1,5 @@
+include catocli/*/README.md
+include catocli/parsers/*/README.md
+include vendor/*
+prune venv/
+prune test/
