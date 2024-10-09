@@ -1,0 +1,17 @@
+src/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+src/run.py,sha256=mEpyFwNA1eMz6QRP0_Xj2zx3pDwhF_7kYvJtHsTqvOE,3357
+src/library/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+src/library/database.py,sha256=5Y4ciIjbGmyi4seHbIY6zQVhFADXJLoYvUld9wiuzuM,1858
+src/library/notification.py,sha256=jnBSQbRe_t2TQ8uv5JNyoMmmACK87hv8ryTs-_mWy7k,1618
+src/pipes/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+src/pipes/bonanza/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+src/pipes/bonanza/etl_sap_business_partner_customer_contact.py,sha256=oFLVv7_Xr1u2KPFkfQ_m_DUThIChc0uUIBWD4OIa2YM,2026
+src/pipes/bonanza/etl_sap_business_partner_supplier_contact.py,sha256=lWP9TLAhqTBxH4fYGECufZP2a2G0q1g_inq7LYn28zo,2026
+src/pipes/bonanza/sap_api.py,sha256=3uemG8sklDeCQDXUbmTp0P0C6d61sievf0ARBevXlvA,6335
+src/pipes/bonanza/model/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+src/pipes/bonanza/model/business_partner_contact.py,sha256=RXwSmoBCDIXopL604iovctFs3L1UxYgR3qsLMkqOmW0,3552
+src/pipes/bonanza/model/sap_model.py,sha256=EzMoo3oSK06FBbgGxcyflW_JgTuT6nesVG9Hw-v6LE4,370
+projjetta_pipeline_nexus-1.0.1.dist-info/METADATA,sha256=TLv9fBA-v-tKrhXWZ0Yf8UenWAbbldk0vG7qELrBBW0,1900
+projjetta_pipeline_nexus-1.0.1.dist-info/WHEEL,sha256=GV9aMThwP_4oNCtvEC2ec3qUYutgWeAzklro_0m4WJQ,91
+projjetta_pipeline_nexus-1.0.1.dist-info/top_level.txt,sha256=74rtVfumQlgAPzR5_2CgYN24MB0XARCg0t-gzk6gTrM,4
+projjetta_pipeline_nexus-1.0.1.dist-info/RECORD,,
