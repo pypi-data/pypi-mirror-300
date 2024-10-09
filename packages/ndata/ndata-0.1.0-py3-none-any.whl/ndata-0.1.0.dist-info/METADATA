@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: ndata
+Version: 0.1.0
+Summary: Automated Data Preprocessing Library
+Author: Le Andre Nash
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: scikit-learn
+Requires-Dist: scipy
+
