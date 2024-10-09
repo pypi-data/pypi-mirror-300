@@ -1,0 +1,16 @@
+astropy
+pytorch-ignite
+toml
+torch
+torchvision
+
+[dev]
+asv==0.6.4
+jupyter
+matplotlib
+pre-commit
+pytest
+pytest-cov
+ruff
+
+[examples]
