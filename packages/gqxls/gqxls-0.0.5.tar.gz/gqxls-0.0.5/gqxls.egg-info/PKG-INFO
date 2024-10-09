@@ -1,0 +1,35 @@
+Metadata-Version: 2.1
+Name: gqxls
+Version: 0.0.5
+Summary: Consolidation package for daily use
+Author: S Liao
+Author-email: 
+Keywords: python,gqxls
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: pillow
+Requires-Dist: pymupdf
+
+
+# gqxls
+
+*<u>A package for daily ues.</u>*
+
+## A. Functions
+
+### 1. Convert PDF to image
+
+### 2. Get the specified directory suffix file absolute directory
+
+### 3. Generate specified random string
+
+## B. Long term plan
+The package requires the following free softwares to work as expected:
+- pillow
+- secrets
+- pymupdf
+- typing
+
+
+
