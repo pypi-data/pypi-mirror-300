@@ -1,0 +1,9 @@
+astropy
+basemap
+matplotlib
+numpy
+portion
+pymap3d
+pyvista
+scipy
+tqdm
