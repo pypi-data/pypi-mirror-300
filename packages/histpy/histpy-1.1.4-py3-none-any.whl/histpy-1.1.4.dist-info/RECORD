@@ -1,0 +1,10 @@
+histpy/__init__.py,sha256=TB3rs35Fs-2Pl8PRRHdOjvC28xjJbL33raWLgPRuoHk,156
+histpy/__version__.py,sha256=7XTjDCGah_RhsCcldCuhWCl2GiKdkJwiadk017g1RJw,23
+histpy/axes.py,sha256=hOUTbb5xRyqtJcK7io6KtnTbbHeBC1q0DMv1CRsHvQs,14389
+histpy/axis.py,sha256=ChOYFL0vVWbDwn-LdrSxrrg02jcRn8lQqw-IUwPi_Bw,14647
+histpy/healpix_axis.py,sha256=vJmvHZZrApSWtMWlMzmX5WXVTznwmE8InRlfRkNBXvk,6477
+histpy/histogram.py,sha256=gwRv3NnGRIoMgc1XHlGsGADX9WGDMGefCOozZqahGlI,76219
+histpy-1.1.4.dist-info/METADATA,sha256=vfsitKj3xjdrbJPhvRGnUmnmS0gpe6iTwJJNXEBtOlk,979
+histpy-1.1.4.dist-info/WHEEL,sha256=GV9aMThwP_4oNCtvEC2ec3qUYutgWeAzklro_0m4WJQ,91
+histpy-1.1.4.dist-info/top_level.txt,sha256=R5obB4R9EC2tzfhnerBPKgv5mQgnl7PKFSmqhFYYkGo,7
+histpy-1.1.4.dist-info/RECORD,,
