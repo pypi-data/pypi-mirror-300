@@ -1,0 +1,36 @@
+
+<html>
+    <head>
+        <script src="/static/chart.min.js"></script>
+        <script src="/static/chartjs-plugin-datalabels.js"></script>
+    </head>
+
+    <body>
+
+        <div class="chart-container" style="position: relative">
+            <canvas id="myChart"></canvas>
+        </div>
+
+        <pre id="chartcode">
+
+        </pre>
+
+        <script>
+            async function initializeChart() {
+                const response = await fetch("/chart");
+                const data = await response.json();
+                Chart.register(ChartDataLabels);
+                data.options.plugins.datalabels.labels.name.formatter = function(value, context) { 
+                    return context.chart.data.labels[context.dataIndex];
+                };
+                debugger;
+                
+                const ctx = document.getElementById('myChart').getContext('2d');
+                const myChart = new Chart(ctx, data);
+                document.getElementById('chartcode').innerText = JSON.stringify(data, null, 2);
+            }
+
+            document.addEventListener('DOMContentLoaded', initializeChart);
+        </script>
+    </body>
+</html>
