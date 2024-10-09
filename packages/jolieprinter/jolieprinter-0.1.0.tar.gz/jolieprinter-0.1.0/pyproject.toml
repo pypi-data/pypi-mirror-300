@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "jolieprinter"
+version = "0.1.0"
+description = ""
+authors = ["Benedith Mulongo <benedith@sunet.se>"]
+readme = "README.md"
+packages = [
+    { include = "jolieprinter" },
+]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+numpy = "^2.1.2"
+
+
+[tool.poetry.group.test.dependencies]
+pytest = "^8.3.3"
+
+[build-system]
+requires = ["poetry-core", "numpy"]
+build-backend = "poetry.core.masonry.api"
