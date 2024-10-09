@@ -1,0 +1,11 @@
+PyEvalis/DecisionTree.py,sha256=7-wv5wJc8tRqrrBZnO79q4oCn8mbFi1S9O4HKqYmTdU,3655
+PyEvalis/KNN.py,sha256=N12cNwFXSqIU1wg5uWdQYXmpuUniY2u46vvCDY0b2BY,742
+PyEvalis/RandomForest.py,sha256=Vyf6o73p84cS7od7tHKhVqwt6wtXH34RB6XOucg0csk,1423
+PyEvalis/__init__.py,sha256=JRAI-s8EgkEtb38cltJY_6UY4X2IQzArF46DBi3uW6E,122
+PyEvalis/__main__.py,sha256=FJxPT4ROKPnotzMKnWxtyzefJiu-RuZ7JlruXgT7-w0,421
+PyEvalis/pyevalis.py,sha256=MY4w-bS-wbNag_VypCvwbJUyYlPLsbAG8dmPJLBv4fQ,2704
+PyEvalis-0.0.2.dist-info/METADATA,sha256=FTbO3-lVNmVVHh9_wy8mTHBLqIuK_XlUyZoWK1n37uA,1418
+PyEvalis-0.0.2.dist-info/WHEEL,sha256=GV9aMThwP_4oNCtvEC2ec3qUYutgWeAzklro_0m4WJQ,91
+PyEvalis-0.0.2.dist-info/entry_points.txt,sha256=izX_tvN9r7NtVssuVubVRZOJyuhTpIPLu6zj1uJHRQ8,52
+PyEvalis-0.0.2.dist-info/top_level.txt,sha256=bHr8zJTouBvYCU6dCM90tqFj9fse6dMj9BhF_6HKS18,9
+PyEvalis-0.0.2.dist-info/RECORD,,
