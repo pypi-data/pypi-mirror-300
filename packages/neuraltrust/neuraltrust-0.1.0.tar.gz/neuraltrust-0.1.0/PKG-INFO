@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: neuraltrust
+Version: 0.1.0
+Summary: A Python library for NeuralTrust API
+License: Commercial
+Author: NeuralTrust
+Author-email: support@neuraltrust.ai
+Requires-Python: >=3.10,<4.0
+Classifier: License :: Other/Proprietary License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Description-Content-Type: text/markdown
+
+# NeuralTrust
+
+NeuralTrust is a Python library for neural network operations, providing a robust set of tools for knowledge base management, test set creation, and evaluation set handling.
+
+## Installation
+
+You can install NeuralTrust using pip:
+

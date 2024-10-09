@@ -1,0 +1,133 @@
+import typing
+import os
+from concurrent.futures import ThreadPoolExecutor
+from .api_client import (
+    NeuralTrustApi,
+    TraceResponse,
+    TraceTask,
+    User,
+    Metadata
+)
+from .trace import Trace
+from .api_client.knowledge_base.client import KnowledgeBaseClient
+from .api_client.evaluation_set.client import EvaluationSetClient
+from .api_client.testset.client import TestsetClient
+
+OMIT = typing.cast(typing.Any, ...)
+
+DEFAULT_BASE_URL = "https://api.neuraltrust.ai"
+
+class NeuralTrust:
+    base_client: NeuralTrustApi
+    executor: ThreadPoolExecutor
+
+    def __init__(
+        self,
+        api_key: typing.Union[str, None] = None,
+        base_url: typing.Union[str, None] = None,
+        sdk_version: typing.Union[str, None] = 'v1',
+        timeout: typing.Union[float, None] = None,
+        max_workers: typing.Union[int, None] = 5,
+    ) -> None:
+        
+        if not api_key:
+            api_key = os.environ.get("NEURALTRUST_API_KEY")
+        
+        if not base_url:
+            base_url = os.environ.get("NEURALTRUST_BASE_URL") or DEFAULT_BASE_URL
+        
+        self.trace_executor = ThreadPoolExecutor(max_workers=max_workers)
+        self.base_client = NeuralTrustApi(
+            api_key=api_key, base_url=f"{base_url}/{sdk_version}", timeout=timeout
+        )
+        # set base URL
+        if base_url:
+            self.base_client._client_wrapper._base_url = f"{base_url}/{sdk_version}"
+    @property
+    def api_key(self) -> typing.Union[str, None]:
+        """Property getter for api_key."""
+        return self.base_client._client_wrapper.api_key
+
+    @api_key.setter
+    def api_key(self, value: typing.Union[str, None]) -> None:
+        """Property setter for api_key."""
+        self.api_key = value
+        if value is not None:
+            self.base_client._client_wrapper.api_key = value
+
+    @property
+    def base_url(self) -> typing.Union[str, None]:
+        """Property getter for base_url."""
+        return self.base_client._client_wrapper._base_url
+
+    @base_url.setter
+    def base_url(self, value: typing.Union[str, None]) -> None:
+        """Property setter for base_url."""
+        if value is not None:
+            self.base_client._client_wrapper._base_url = value
+
+    def trace(self, conversation_id: str = None, session_id: str = None, channel_id: str = None, user: User = None, metadata: Metadata = None, custom: dict = None):
+        return Trace(client=self, conversation_id=conversation_id, session_id=session_id, channel_id=channel_id, user=user, metadata=metadata, custom=custom)
+    
+    def _trace(
+        self,
+        *,
+        type: typing.Optional[str] = OMIT,
+        task: typing.Optional[TraceTask] = OMIT,
+        input: typing.Optional[str] = OMIT,
+        output: typing.Optional[str] = OMIT,
+        user: typing.Optional[User] = OMIT,
+        metadata: typing.Optional[Metadata] = OMIT,
+        session_id: typing.Optional[str] = OMIT,
+        channel_id: typing.Optional[str] = OMIT,
+        conversation_id: typing.Optional[str] = OMIT,
+        interaction_id: typing.Optional[str] = OMIT,
+        start_timestamp: typing.Optional[int] = OMIT,
+        end_timestamp: typing.Optional[int] = OMIT,
+        custom: typing.Optional[str] = OMIT
+    ) -> TraceResponse:
+        return self.trace_executor.submit(
+            self.base_client.trace,
+            type=type,
+            task=task,
+            input=input,
+            output=output,
+            user=user,
+            metadata=metadata,
+            session_id=session_id,
+            channel_id=channel_id,
+            conversation_id=conversation_id,
+            interaction_id=interaction_id,
+            start_timestamp=start_timestamp,
+            end_timestamp=end_timestamp,
+            custom=custom
+        )
+
+
+    def create_evaluation_set(self, name: str = None, description: str = None, scheduler: str = None):
+        return EvaluationSetClient(client_wrapper=self.base_client._client_wrapper).create_evaluation_set(name=name, description=description, scheduler=scheduler)
+    
+    def get_evaluation_set(self, id: str):
+        return EvaluationSetClient(client_wrapper=self.base_client._client_wrapper).get_evaluation_set(id=id)
+    
+    def delete_evaluation_set(self, id: str):
+        return EvaluationSetClient(client_wrapper=self.base_client._client_wrapper).delete_evaluation_set(id=id)
+    
+    def create_knowledge_base(self, type: str = None, credentials: dict = None, seed_topics: list = None):
+        return KnowledgeBaseClient(client_wrapper=self.base_client._client_wrapper).create_knowledge_base(type=type, credentials=credentials, seed_topics=seed_topics)
+    
+    def get_knowledge_base(self, id: str):
+        return KnowledgeBaseClient(client_wrapper=self.base_client._client_wrapper).get_knowledge_base(id=id)
+    
+    def delete_knowledge_base(self, id: str):
+        return KnowledgeBaseClient(client_wrapper=self.base_client._client_wrapper).delete_knowledge_base(id=id)
+    
+    def create_testset(self, name: str = None, type: str = None, evaluation_set_id: str = None, knowledge_base_id: str = None, num_questions: int = None):
+        return TestsetClient(client_wrapper=self.base_client._client_wrapper).create_testset(name=name, type=type, evaluation_set_id=evaluation_set_id, knowledge_base_id=knowledge_base_id, num_questions=num_questions)
+    
+    def get_testset(self, id: str):
+        return TestsetClient(client_wrapper=self.base_client._client_wrapper).get_testset(id=id)
+    
+    def delete_testset(self, id: str):
+        return TestsetClient(client_wrapper=self.base_client._client_wrapper).delete_testset(id=id)
+
