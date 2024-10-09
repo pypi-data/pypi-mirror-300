@@ -1,0 +1,15 @@
+pybet/__init__.py,sha256=V-6JNw695vAN2WNjewLrJkyLAXRhWfnfhIam9lmLPGc,84
+pybet/bets/__init__.py,sha256=VkF7gbfTs1WWjkbQpvTwuWAC4kLjMYeyu1699JsR8sw,421
+pybet/bets/accumulator.py,sha256=jbHJSvcvqjAi4MDK54NhRaDiaTya7SVICV8Zi_5RTDs,1396
+pybet/bets/bet.py,sha256=bSRo7umo-o5y3ETwTK-iHGXc4AUKbbigYSPQLwXYJvg,4735
+pybet/bets/double.py,sha256=aCFQ6o2QnP_VVE-ZQXkT3peV6PdOKH7BpD1LI_60Ckk,108
+pybet/bets/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pybet/bets/treble.py,sha256=aNOvCQ5OQADWtpLrfmJQldZrohX1P27aLua1mmX4e2A,108
+pybet/market.py,sha256=c8oGqWK_KE8FZ0vWNy2x7qeXu4QX6rlV3dmCLy5jcoI,10391
+pybet/odds.py,sha256=kOcPXIHFsvc_kiDtQ72eOtoutfq0FIWofzoZRNHSiSA,11661
+pybet/staking/__init__.py,sha256=d2BCQCiyj7McYjg9n-X63dhZPYYJEB0_dkLloTXIcYc,49
+pybet/staking/kelly.py,sha256=_ee4QJPa4hOqo9vol5aecOPfcIrP7US6_It_KoDtXkE,1494
+pybet-0.8.2.dist-info/LICENSE,sha256=IwGE9guuL-ryRPEKi6wFPI_zOhg7zDZbTYuHbSt_SAk,35823
+pybet-0.8.2.dist-info/METADATA,sha256=GcU34dt6-7LNufKDhtTB5XnjO7hvoHLd36gSKlpGD4M,1338
+pybet-0.8.2.dist-info/WHEEL,sha256=d2fvjOD7sXsVzChCqf0Ty0JbHKBaLYwDbGQDwQTnJ50,88
+pybet-0.8.2.dist-info/RECORD,,
