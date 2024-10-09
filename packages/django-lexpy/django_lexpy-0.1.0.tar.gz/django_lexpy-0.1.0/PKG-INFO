@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: django-lexpy
+Version: 0.1.0
+Summary: Organize your texts and languages in a simple way.
+License: MIT
+Author: audreyteles
+Author-email: audreytelesdossantos@gmail.com
+Requires-Python: >=3.8
+Classifier: Framework :: Django
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: django (>=4.2,<5.2)
+Requires-Dist: rich (>=13.9.2)
+Requires-Dist: typer (>=0.12.5)
