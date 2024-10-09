@@ -1,0 +1,59 @@
+import json
+import logging
+import time
+import os
+from logging import _nameToLevel
+
+APP_NAME = "robbie.cli"
+LOG_LEVEL = os.getenv("ROBBIE_LOG_LEVEL", "ERROR").upper()
+JSON_LOGS=False
+JSON_LOGS_PRETTY=False
+JSON_LOGS_INCLUDE_SRC_LINE=False
+
+log_level = _nameToLevel.get(LOG_LEVEL, 20)
+
+class _UTCFormatter(logging.Formatter):
+    """Class that overrides the default local time provider to GMT in log formatter."""
+    converter = time.gmtime
+
+
+    def format(self, record):
+        if not JSON_LOGS:
+            return super(_UTCFormatter, self).format(record)
+
+        log_record = {
+            "asctime": time.strftime("%Y-%m-%d %H:%M:%S:%MS", self.converter(record.created)),
+            "name": record.name,
+            "level": record.levelname,
+            "message": record.getMessage(),
+        }
+
+        if JSON_LOGS_INCLUDE_SRC_LINE:
+            relative_path = os.path.relpath(record.pathname)
+            # Append the line number to the relative path
+            relative_path_with_lineno = f"{relative_path}:{record.lineno}"
+            log_record["pathname"] = relative_path_with_lineno
+
+        if JSON_LOGS_PRETTY:
+            return json.dumps(log_record, indent=4)
+        return json.dumps(log_record)
+
+logger = logging.getLogger(APP_NAME)
+
+logger.setLevel(log_level)
+handler = logging.StreamHandler()
+formatter = _UTCFormatter("%(asctime)s %(name)s %(levelname)-8s %(message)s")
+handler.setFormatter(formatter)
+logger.addHandler(handler)
+
+# TODO: Not sure if we really need this.
+# don't stream logs with the root logger handler
+logger.propagate = 0
+
+if __name__ == "__main__":
+    """Testing"""
+    logger.debug("Debug message")
+    logger.info("Info message")
+    logger.warning("Warning message")
+    logger.error("Error message")
+    logger.critical("Critical message")
