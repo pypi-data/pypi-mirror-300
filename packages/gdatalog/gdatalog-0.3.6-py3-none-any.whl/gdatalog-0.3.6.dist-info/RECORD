@@ -1,0 +1,11 @@
+gdatalog/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+gdatalog/__main__.py,sha256=GHpUxCbXbBcIzJNIQUN56uxG8zkQhjlv-4ZMxTUirvQ,99
+gdatalog/cli.py,sha256=2oVvfCPyFiLafiyfLYxSgZBI_C4De4Kns1-Hl1I3Mn8,6120
+gdatalog/delta_terms.py,sha256=XdlUOUTyiCh3Bn6ZG9ISQtUH6SLNDoDjFkemMVui4K4,8976
+gdatalog/program.py,sha256=h7TUV8AqBJHY2_47sn71sG03s0NWM-ZyMx4jHCDs60o,7345
+gdatalog/server.py,sha256=QwHIaXp4OXXlYwh7cdIoqLap0dpuzrpyWAbhYqT4KnE,1653
+gdatalog/utils.py,sha256=vCPRMMWqq0OaQioXcG3kJjnNhJ83bQM_EpvunOB6q3Y,1662
+gdatalog-0.3.6.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+gdatalog-0.3.6.dist-info/METADATA,sha256=tu_RaN3mTK8cbHZFZsgY7unhOqP5QY4IuJPMlzlH714,708
+gdatalog-0.3.6.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+gdatalog-0.3.6.dist-info/RECORD,,
