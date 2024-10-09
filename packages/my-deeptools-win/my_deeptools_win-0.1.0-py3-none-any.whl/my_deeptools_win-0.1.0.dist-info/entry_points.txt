@@ -1,0 +1,3 @@
+[console_scripts]
+deeptools_win=my_deeptools_win._cli:main
+
