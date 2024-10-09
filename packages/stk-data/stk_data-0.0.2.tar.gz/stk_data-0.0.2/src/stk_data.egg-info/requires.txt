@@ -1,0 +1,11 @@
+numpy>=1.20.0
+toml>=0.8.2
+pandas
+lxml
+svgwrite
+svgutils
+pillow
+cairosvg
+matplotlib
+h5py
+argparse
