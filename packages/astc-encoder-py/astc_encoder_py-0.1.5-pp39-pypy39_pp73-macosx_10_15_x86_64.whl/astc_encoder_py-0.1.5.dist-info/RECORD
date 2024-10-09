@@ -1,0 +1,14 @@
+astc_encoder_py-0.1.5.dist-info/RECORD,,
+astc_encoder_py-0.1.5.dist-info/LICENSE,sha256=hxsBoG6tUMQl_gNofmfgSxdD5ZRmQ4sTAd5-GvsRcx4,1069
+astc_encoder_py-0.1.5.dist-info/WHEEL,sha256=qQhmOVkgO4axb9nURjXfn2_aqlJGcKlyoVRCRuQF0So,117
+astc_encoder_py-0.1.5.dist-info/top_level.txt,sha256=R4vI4dAALAfMnXFMMrW7PZc-_2RDaOTxFIFcwYBdiEU,13
+astc_encoder_py-0.1.5.dist-info/METADATA,sha256=DiIuEUp8lvs5uHGC7kDiBSt4E1kYv4TKFzgI65Fs2_c,4401
+astc_encoder/_encoder_none.pypy39-pp73-darwin.so,sha256=DveoIrfOuVtmKgpRuCS7j0IPGJSag9B8x5ajEVTPVcg,282392
+astc_encoder/__init__.py,sha256=QxfMLjEnVHOOVhmthlZ7tKu8FoncnsMMs29y_JZ8ikg,260
+astc_encoder/_encoder_avx2.pypy39-pp73-darwin.so,sha256=xWz_rIhjyrQJLhWCWkWGPcgiQ_EPHBPwGclK5YN6DBE,261360
+astc_encoder/encoder.py,sha256=YW4KgLUraL8bN_wPSMURJZpXtQrsjifwTpqivwvUkMg,858
+astc_encoder/encoder.pyi,sha256=z1-NY71A16kdwkOlP690y2jWeNwHyyH_e50Cy4cdMKw,9027
+astc_encoder/_encoder_sse2.pypy39-pp73-darwin.so,sha256=Ahdjq9NtByQDG253V3C79AU1BF19OYFRRPIREEE9bsk,257416
+astc_encoder/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+astc_encoder/enum.py,sha256=uZ1tJBME-jacwchl7yVjZUxjCaDZuKhpCvvjW2354rI,2338
+astc_encoder/_encoder_sse41.pypy39-pp73-darwin.so,sha256=qrA4XIOVxPrCaoJsSn9Lo6w9Y9tGPtGoRfXK1_C12Rw,245248
