@@ -1,0 +1,114 @@
+Metadata-Version: 2.1
+Name: django-sage-invoice
+Version: 0.1.0
+Summary: A project for invoice generation and NFC integration.
+Home-page: https://github.com/sageteamorg/django-sage-invoice
+License: MIT
+Keywords: django,invoice,sageteam,django-packages
+Author: Radin Ghahremani
+Author-email: radin@sageteam.org
+Requires-Python: >=3.9,<4.0
+Classifier: Development Status :: 3 - Alpha
+Classifier: Framework :: Django
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: bandit[toml] (>=1.7.9,<2.0.0)
+Requires-Dist: django (>=4.2,<5.0) ; python_version >= "3.8" and python_version < "3.10"
+Requires-Dist: django (>=4.2,<5.3) ; python_version >= "3.10"
+Requires-Dist: django-import-export (>=4.1.1,<5.0.0)
+Requires-Dist: django-jsonform (>=2.22.0,<3.0.0)
+Requires-Dist: django-sage-tools (>=0.2.2,<0.3.0)
+Requires-Dist: jinja2 (>=3.1.4,<4.0.0)
+Requires-Dist: pillow (>=10.4.0,<11.0.0)
+Project-URL: Documentation, https://django-sage-invoice.readthedocs.io/en/latest/
+Project-URL: Issues, https://github.com/sageteamorg/django-sage-invoice/issues
+Project-URL: Repository, https://github.com/sageteamorg/django-sage-invoice
+Project-URL: Source Code, https://github.com/sageteamorg/django-sage-invoice
+Description-Content-Type: text/markdown
+
+# Django Sage Invoice
+
+Django Sage Invoice is a Django application for managing invoices. It provides a robust admin interface to create, view, and manage invoices and their related components like categories, items, and totals.
+
+## Features
+
+- Create and manage invoices with detailed customer information.
+- Customize invoices with logos, backgrounds, signatures, and stamps.
+- Add custom columns to each invoice for additional information.
+- Generate invoice totals automatically, including tax and discount calculations.
+- Export invoices as HTML files bundled in a ZIP archive.
+- Choose from predefined templates or define your own.
+
+## Installation
+
+### Using `pip` with `virtualenv`
+
+1. **Create a Virtual Environment**:
+
+    ```bash
+    python -m venv .venv
+    ```
+
+2. **Activate the Virtual Environment**:
+
+   - On Windows:
+
+     ```bash
+     .venv\Scripts\activate
+     ```
+
+   - On macOS/Linux:
+
+     ```bash
+     source .venv/bin/activate
+     ```
+
+3. **Install `django-sage-invoice`**:
+
+    ```bash
+    pip install django-sage-invoice
+    ```
+
+### Using `poetry`
+
+1. **Initialize Poetry** (if not already initialized):
+
+    ```bash
+    poetry init
+    ```
+
+2. **Install `django-sage-invoice`**:
+
+    ```bash
+    poetry add django-sage-invoice
+    ```
+
+3. **Apply Migrations**:
+
+    After installation, make sure to run the following commands to create the necessary database tables:
+
+    ```bash
+    python manage.py makemigrations
+    python manage.py migrate
+    ```
+
+## Configuration
+
+### Django Settings
+
+Add `django-sage-invoice` to your `INSTALLED_APPS` in the Django settings and configure the `SAGE_MODEL_PREFIX` and `SAGE_MODEL_TEMPLATE`:
+
+```python
+INSTALLED_APPS = [
+    # other packages
+    "sage_tools",
+    "sage_invoice",
+]
+SAGE_MODEL_PREFIX = "invoice"
+SAGE_MODEL_TEMPLATE = "sage_invoice"
+```
+
