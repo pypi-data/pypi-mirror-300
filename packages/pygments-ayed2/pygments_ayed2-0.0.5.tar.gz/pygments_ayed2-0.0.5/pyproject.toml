@@ -1,0 +1,23 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "pygments_ayed2"
+version = "0.0.5"
+authors = [
+    {name = "Javier Mansilla", email = "javimansilla@gmail.com"}
+]
+description = "Pygments support for AyED2 Language"
+readme = "README.md"
+requires-python = ">=3.8"
+license = {file = "LICENSE"}
+[tool.hatch.build.targets.sdist]
+exclude = [
+  "*.tkn",
+  "img",
+]
+[project.entry-points."pygments.lexers"]
+ayed2lexer = "pygments_ayed2.lexer:Ayed2Lexer"
+[project.entry-points."pygments.styles"]
+ayed2style = "pygments_ayed2.style:Ayed2Style"
