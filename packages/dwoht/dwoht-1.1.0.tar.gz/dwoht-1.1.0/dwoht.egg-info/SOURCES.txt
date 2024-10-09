@@ -1,0 +1,13 @@
+LICENSE
+README.md
+pyproject.toml
+dwoht/__init__.py
+dwoht/funcs.py
+dwoht/log.py
+dwoht/read_data.py
+dwoht/reformat_data.py
+dwoht.egg-info/PKG-INFO
+dwoht.egg-info/SOURCES.txt
+dwoht.egg-info/dependency_links.txt
+dwoht.egg-info/requires.txt
+dwoht.egg-info/top_level.txt

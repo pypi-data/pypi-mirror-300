@@ -1,0 +1,41 @@
+Metadata-Version: 2.1
+Name: dwoht
+Version: 1.1.0
+Summary: a personal used codebase for some common data processing tasks.
+Author-email: ryleesnow <author@example.com>
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8.13
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: setuptools>=68
+Requires-Dist: pathos>=0.3.0
+Requires-Dist: pandas>=1.3.4
+Requires-Dist: numpy>=1.22.3
+Requires-Dist: pyarrow>=14.0.1
+Requires-Dist: tqdm>=4.64.0
+
+## * Main Functions
+##
+
+#### add_sys_path
+- environment related
+
+#### read_big_data, read_small_data, save_data, yaml_to_object
+- data loading and saving
+
+#### col_to_float, col_to_str
+- data reformatting
+
+#### get_sunday, get_time_dif
+- deal with time
+
+#### list_diff, list_intersection, list_sym_diff, list_union, set_diff, set_intersection, set_sym_diff, set_union
+- the intersection, difference, union of two lists / sets
+
+#### dataframe_mp
+- multi-processing
+
+#### calculate_r2_value, lambda_groupby, count_words_in_list
+- specials
