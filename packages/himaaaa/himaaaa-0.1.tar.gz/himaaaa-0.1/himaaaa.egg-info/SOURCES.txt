@@ -1,0 +1,13 @@
+README.md
+setup.py
+himaaaa/__init__.py
+himaaaa/film.py
+himaaaa/game.py
+himaaaa/komik.py
+himaaaa/lagu.py
+himaaaa/novel.py
+himaaaa/series.py
+himaaaa.egg-info/PKG-INFO
+himaaaa.egg-info/SOURCES.txt
+himaaaa.egg-info/dependency_links.txt
+himaaaa.egg-info/top_level.txt
