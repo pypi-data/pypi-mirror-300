@@ -1,0 +1,7 @@
+README.md
+setup.py
+ts_wechat_airtest.egg-info/PKG-INFO
+ts_wechat_airtest.egg-info/SOURCES.txt
+ts_wechat_airtest.egg-info/dependency_links.txt
+ts_wechat_airtest.egg-info/requires.txt
+ts_wechat_airtest.egg-info/top_level.txt

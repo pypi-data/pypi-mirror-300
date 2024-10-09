@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: ts-wechat-airtest
+Version: 0.1.0
+Summary: 基于airtest的公共包
+Home-page: https://github.com/yourusername/your-repo
+Author: LiQiang
+Author-email: liqiang944@jd.com
+License: UNKNOWN
+Description: 基于airtest的公共包
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
