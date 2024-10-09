@@ -1,0 +1,10 @@
+README.md
+setup.py
+snapsort/__init__.py
+snapsort/main.py
+snapsort.egg-info/PKG-INFO
+snapsort.egg-info/SOURCES.txt
+snapsort.egg-info/dependency_links.txt
+snapsort.egg-info/entry_points.txt
+snapsort.egg-info/requires.txt
+snapsort.egg-info/top_level.txt
