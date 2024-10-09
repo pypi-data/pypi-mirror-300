@@ -1,0 +1,4 @@
+pandas
+biopython
+gffutils
+PyVCF3
