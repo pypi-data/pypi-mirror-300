@@ -1,0 +1,10 @@
+# src/pytestifypro/config/schema_config.yaml
+user_schema:
+  type: "object"
+  properties:
+    name:
+      type: "string"
+    age:
+      type: "integer"
+  required:
+    - "name"
