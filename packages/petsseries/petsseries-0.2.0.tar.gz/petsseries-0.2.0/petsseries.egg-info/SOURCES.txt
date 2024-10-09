@@ -1,0 +1,9 @@
+README.md
+pyproject.toml
+setup.cfg
+setup.py
+petsseries.egg-info/PKG-INFO
+petsseries.egg-info/SOURCES.txt
+petsseries.egg-info/dependency_links.txt
+petsseries.egg-info/requires.txt
+petsseries.egg-info/top_level.txt

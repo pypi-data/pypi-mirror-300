@@ -1,0 +1,5 @@
+aiohttp
+aiofiles
+certifi
+PyJWT
+tinytuya
