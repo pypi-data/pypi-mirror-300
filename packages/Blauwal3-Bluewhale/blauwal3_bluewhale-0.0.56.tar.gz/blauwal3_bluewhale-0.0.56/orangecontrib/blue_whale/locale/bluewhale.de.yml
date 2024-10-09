@@ -1,0 +1,138 @@
+de:
+  package_label: "Blauwal"
+  package_desc: "Blauwal-Tools."
+
+  common:
+    data: "Daten"
+
+  login:
+    name: "Blauwal-Login"
+    user: "Bitte E-Mail oder Handynummer eingeben:"
+    user_err: "Benutzername oder Passwort existiert nicht!"
+    passwd: "Bitte Passwort eingeben:"
+    sign_in: "Anmelden"
+    sign_in_tip: "Login-Tipps"
+    server_err: "Der Server kann nicht verbunden werden!"
+    ok: "OK"
+    cancel: "Abbrechen"
+    blue_whale: "Blauwal-Website"
+    resource_square: "Blauwal-Ressourcenplatz"
+    login: "Konto Registrierung"
+    user_tip: "Login mit WeChat oder anderen passwortlosen Methoden."
+
+  canvasmain:
+    sign: "Anmelden"
+    sign_in: "Anmelden"
+    sign_out: "Abmelden"
+    service: "Konto"
+    login: "Blauwal-Login"
+    service_settings: "Service-Einstellungen"
+    service_settings_tip: "Service-Adresse einstellen"
+    ok: "OK"
+    login_information: "Login-Informationen"
+    success: "Konto-Login erfolgreich!"
+
+  service_window:
+    name: "Netzwerk einrichten"
+    check_btn: "Verwendung proprietärer Dienste"
+    check_btn_tip: "Service-Adresse einstellen"
+    input_address: "Bitte Service-Adresse eingeben:"
+    save: "Speichern"
+    cancel: "Abbrechen"
+    login_set: "Login-Einstellungen"
+    tip: "Tipp"
+    default_address: "Die Standard-Service-Adresse von Blauwal wird verwendet!"
+    ok: "OK"
+    change_address: "Änderung zur Standard-Service-Adresse erfolgreich!"
+    change_success: "Service-Adresse erfolgreich eingestellt!"
+    error_address: "Die eingegebene Service-Adresse ist falsch!"
+    reenter: "Erneut eingeben"
+
+  owcasedata:
+    name: "Datensätze"
+    desc: "Fall-Datensatz anzeigen und relevante Daten herunterladen."
+    warn: "Warnung"
+    warn_cont: "Konto ist nicht eingeloggt. Bitte erneut einloggen."
+    number_miss_value: "({:.1f}% fehlende Werte)"
+    no_missing_value: "(keine fehlenden Werte)"
+    none: "(Keine)"
+    label_sheet: "Blatt"
+    desc_text:
+      output_doc: "Attributwert-Datensatz aus der ausgewählten Tabelle gelesen."
+      number_instance: "<p>{} Instanz(en)"
+      feature: "<br/>{} Merkmal(e) {}"
+      regression_numerical_class: "<br/>Regression; numerische Klasse {}"
+      classification_categorical_class: "<br/>Klassifikation; kategoriale Klasse mit {} Werten {}"
+      data_no_target_variable: "<br/>Daten haben keine Zielvariable."
+      meta_attribute: "<br/>{} Meta-Attribut(e)"
+      entry: "<p>Erster Eintrag: {}<br/> Letzter Eintrag: {}</p>"
+      target_variable: "<br/>Multi-Target; {} Zielvariablen {}"
+    msg:
+      file_too_big: "Die Datei ist zu groß, um automatisch geladen zu werden. Drücken Sie Neu laden, um zu laden."
+      load_warning: "Lese-Warnung:\n{}"
+      performance_warning: "Kategoriale Variablen mit >100 Werten können die Leistung verringern."
+      renamed_vars: "Einige Variablen wurden umbenannt, um Duplikate zu vermeiden.\n{}"
+      file_not_found: "Datei nicht gefunden."
+      missing_reader: "Leser fehlt."
+      sheet_error: "Fehler beim Auflisten der verfügbaren Blätter."
+      unknown: "Lese-Fehler:\n{}"
+      warn: "Warnung"
+      warn_text: "Datei existiert nicht, bitte erneut herunterladen"
+      reload: "Bitte klicken Sie auf diese Schaltfläche, um die Oberfläche zu aktualisieren"
+    btn:
+      all_info: "Alles herunterladen"
+      more: "Mehr"
+      apply: "Anwenden"
+      reset: "Zurücksetzen"
+    title:
+      datasets: "Datensätze"
+      table: "Tabelle"
+      info: "Info"
+      columns: "Spalten (Doppelklick zum Bearbeiten)"
+    tip:
+      no_load: "Keine Daten geladen."
+      no_data: "Keine Daten."
+    report:
+      unknown: "unbekannt"
+      file: "Datei"
+      file_name: "Dateiname"
+      no_file: "Keine Datei."
+      format: "Format"
+      data: "Daten"
+
+  datasets:
+    name: "Ressourcen"
+    desc: "Ressourcen von der Blauwal-Plattform herunterladen"
+    see_also: "<small><b>Siehe auch</b>\n"
+    reference: "<small><b>Referenzen</b>\n"
+    all_info: "Alle "
+    DATA: "DATEN"
+    CASE: "FALL"
+    msg:
+      not_fetch_data: "Konnte die Datensatzliste nicht abrufen, nur lokal zwischengespeicherte Datensätze werden angezeigt"
+      cannot_fetch_data: "Konnte die Datensatzliste nicht abrufen"
+      reload: "Bitte klicken Sie auf diese Schaltfläche, um die Oberfläche zu aktualisieren"
+      select_holder: "Team:"
+    label:
+      name: "Name"
+      type: "Typ"
+      stars: "Sterne"
+      size: "Größe"
+      create_date: "Erstellungsdatum"
+      update: "Aktualisieren"
+    title:
+      desc: "{} Beschreibung"
+    tip:
+      search_for: "Suche nach {} ..."
+      tree_view: "Drücken Sie Return oder doppelklicken Sie, um zu senden"
+    btn:
+      down: "Herunterladen"
+    status:
+      initialize: "Initialisierung"
+      fetch: "Abrufen..."
+      update: "Aktualisieren"
+
+  remote:
+    warn: "Warnung"
+    warn_text: "Konto ist nicht eingeloggt. Bitte erneut einloggen."
+    warn_err: "Bitte erneut einloggen"

@@ -1,0 +1,9 @@
+requests
+PyQt5
+AnyQt
+numpy>=1.26.4
+setuptools
+Blauwal3-Canvas-Core
+Blauwal3-Widget-Base
+Blauwal3
+python-i18n
