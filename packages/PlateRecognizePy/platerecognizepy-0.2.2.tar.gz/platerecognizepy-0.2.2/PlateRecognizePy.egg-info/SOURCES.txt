@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+PlateRecognizePy.egg-info/PKG-INFO
+PlateRecognizePy.egg-info/SOURCES.txt
+PlateRecognizePy.egg-info/dependency_links.txt
+PlateRecognizePy.egg-info/requires.txt
+PlateRecognizePy.egg-info/top_level.txt
+plate_recognize_py/__init__.py
+plate_recognize_py/utils.py
