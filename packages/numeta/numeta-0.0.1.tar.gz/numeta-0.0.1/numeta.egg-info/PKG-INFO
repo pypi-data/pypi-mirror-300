@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: numeta
+Version: 0.0.1
+Summary: Numeta is a simple Just-In-Time (JIT) compiler for Python, focused on metaprogramming.
+Author-email: Andrea Bianchi <andrea_bianchi@outlook.com>
+License: MIT
+Requires-Python: >=3.6
+License-File: LICENSE
+Requires-Dist: numpy
