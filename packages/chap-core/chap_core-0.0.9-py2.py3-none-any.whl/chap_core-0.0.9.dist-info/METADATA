@@ -1,0 +1,54 @@
+Metadata-Version: 2.1
+Name: chap_core
+Version: 0.0.9
+Summary: Main repository for joint programming project on climate health
+Home-page: https://github.com/dhis2/chap-core
+Author: Sandvelab
+Author-email: knutdrand@gmail.com
+License: MIT license
+Keywords: chap_core
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Requires-Python: >=3.9
+License-File: LICENSE
+Requires-Dist: virtualenv
+Requires-Dist: numpy <2.0
+Requires-Dist: bionumpy
+Requires-Dist: pandas
+Requires-Dist: plotly
+Requires-Dist: scikit-learn
+Requires-Dist: matplotlib
+Requires-Dist: diskcache
+Requires-Dist: geopy
+Requires-Dist: pooch
+Requires-Dist: python-dateutil
+Requires-Dist: meteostat
+Requires-Dist: cyclopts
+Requires-Dist: requests
+Requires-Dist: fastapi
+Requires-Dist: pydantic >=2.0
+Requires-Dist: pyyaml
+Requires-Dist: geopandas
+Requires-Dist: libpysal
+Requires-Dist: docker
+Requires-Dist: scipy
+Requires-Dist: gitpython
+Requires-Dist: earthengine-api
+Requires-Dist: python-dotenv
+Requires-Dist: rq
+Requires-Dist: python-multipart
+Requires-Dist: uvicorn
+Requires-Dist: pydantic-geojson
+Requires-Dist: annotated-types
+Requires-Dist: pycountry
+Requires-Dist: unidecode
+Requires-Dist: httpx
+Requires-Dist: mlflow
+Requires-Dist: gluonts
+Requires-Dist: xarray
+
+Chap Core
