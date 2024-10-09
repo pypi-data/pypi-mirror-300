@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=42", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "qr_code_reader"
+version = "0.1.0"
+description = "A simple QR Code Reader utility"
+authors = [
+    { name = "MAROIANE NASRELLAH", email = "mne@yaposarl.ma" }
+]
+readme = "README.md"
+license = { text = "MIT License" }
+requires-python = ">=3.6"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+dependencies = []
+
+[tool.setuptools]
+packages = ["qr_code_reader"]
+include-package-data = true
+
