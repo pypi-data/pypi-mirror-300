@@ -1,0 +1,5 @@
+celery==5.4.0
+redis!=4.5.5,<6.0.0,>=4.5.2
+SQLAlchemy<2.1,>=1.4.48
+mysqlclient>=1.4.0
+cos-python-sdk-v5==1.9.31
