@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: nuclia-models
+Version: 0.1.1
+Requires-Python: >=3.9
+Requires-Dist: pydantic>=2.9.2
+Description-Content-Type: text/markdown
+
+# nuclia-models
+
+## TODO
