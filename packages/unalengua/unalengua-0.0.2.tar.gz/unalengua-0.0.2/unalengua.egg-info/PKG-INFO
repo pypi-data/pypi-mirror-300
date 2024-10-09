@@ -1,0 +1,43 @@
+Metadata-Version: 2.1
+Name: unalengua
+Version: 0.0.2
+Summary: A simple library for Unalengua API.
+Home-page: https://github.com/Jelouh/unalengua
+Author: Francisco Griman
+Author-email: grihardware@gmail.com
+License: MIT
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.12
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: requests>=2.32.3
+Requires-Dist: ua-generator==1.0.5
+
+# Unalengua API
+
+unalengua is a free and unlimited python library that implemented Unalengua API. 
+
+## Installation
+
+```bash
+pip install unalengua
+```
+
+## Usage
+
+```python
+from unalengua import Unalengua
+
+unalengua = Unalengua(lang='Spanish')
+print(unalengua.translate('Hola mundo!'))
+```
+
+For get all languages supported by Unalengua API, you can use the following code:
+
+```python
+
+from unalengua import show_languages
+
+print(show_languages())
+```
