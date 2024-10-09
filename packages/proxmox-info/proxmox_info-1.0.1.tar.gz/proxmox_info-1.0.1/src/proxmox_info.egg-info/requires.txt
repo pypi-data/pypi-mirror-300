@@ -1,0 +1,8 @@
+tabulate
+proxmoxer
+humanize
+dynaconf
+click
+requests
+pandas
+rich
