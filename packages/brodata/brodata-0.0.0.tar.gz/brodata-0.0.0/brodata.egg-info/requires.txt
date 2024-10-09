@@ -1,0 +1,7 @@
+pandas
+geopandas
+owslib
+requests
+lxml
+pyproj
+tqdm

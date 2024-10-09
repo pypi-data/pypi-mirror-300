@@ -1,0 +1,13 @@
+LICENSE
+README.md
+pyproject.toml
+brodata/__init__.py
+brodata.egg-info/PKG-INFO
+brodata.egg-info/SOURCES.txt
+brodata.egg-info/dependency_links.txt
+brodata.egg-info/requires.txt
+brodata.egg-info/top_level.txt
+tests/test_bro.py
+tests/test_dino.py
+tests/test_util.py
+tests/test_webservices.py
