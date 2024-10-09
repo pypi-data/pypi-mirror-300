@@ -1,0 +1,8 @@
+financebuddy_parsers/__init__.py,sha256=55w8kcRd-1oUZQgotYe3xEhFpHHhx9awZ62wL-h0Qew,244
+financebuddy_parsers/configs/parser_argenta-be_xlsx_config.json,sha256=8xT1TFyg04L0LDNs8Ms-kp3En-AlvacHw1IRkUcyj_E,329
+financebuddy_parsers/configs/parser_bnp-be_csv_config.json,sha256=Z3vDeXpFyio4UUyOiweK4dtjAq5IzxEAnkCDVBnnCRU,385
+financebuddy_parsers/configs/parser_ing-be_csv_config.json,sha256=dqj241_FNTVKXK0UdyJux6YFt3RqYT6eNzNrRhp4_VI,384
+financebuddy_parsers-0.3.0.dist-info/METADATA,sha256=GRCHxwsPFQYx5L14rIMZIJfHAWVDIozMjOO3l0xlNgQ,1608
+financebuddy_parsers-0.3.0.dist-info/WHEEL,sha256=1yFddiXMmvYK7QYTqtRNtX66WJ0Mz8PYEiEUoOUUxRY,87
+financebuddy_parsers-0.3.0.dist-info/licenses/LICENSE.md,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+financebuddy_parsers-0.3.0.dist-info/RECORD,,
