@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+src/urlprettify/__init__.py
+src/urlprettify/__main__.py
+src/urlprettify/urlprettify.py
+src/urlprettify.egg-info/PKG-INFO
+src/urlprettify.egg-info/SOURCES.txt
+src/urlprettify.egg-info/dependency_links.txt
+src/urlprettify.egg-info/top_level.txt
+tests/test_prettify.py
