@@ -1,0 +1,32 @@
+syntax = "proto3";
+
+package messagevoll;
+
+option go_package = "./pb/messagevoll";
+
+service MessageService {
+  rpc SendButton(MessageRequest) returns (MessageResponse);
+  rpc SendList(MessageRequest) returns (MessageResponse);
+  rpc SendText(MessageRequest) returns (MessageResponse);
+}
+
+message MessageRequest {
+  string hook_id = 1;
+  string enterprise_id = 2;
+  string unique_customer_id = 3;
+  string message_title = 4;
+  string message_text = 5;
+  string message_caption = 6;
+  string button_title = 7;
+  repeated QuickOption options = 8;
+}
+
+message MessageResponse {
+  bool status = 1;
+  string message = 2;
+}
+
+message QuickOption {
+  string title = 1;
+  string description = 2;
+}
