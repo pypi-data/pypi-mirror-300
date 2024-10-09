@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "pydentity-core-tortoise"
+version = "0.1.1"
+description = "Database adapter for TortoiseORM."
+authors = ["udachin077 <pypi.udachin@yandex.ru>"]
+license = "MIT"
+homepage = "https://github.com/udachin077/pydentity-core-tortoise"
+repository = "https://github.com/udachin077/pydentity-core-tortoise.git"
+exclude = ["tests", "example"]
+packages = [{ include = "pydentity_db", from = "." }]
+
+[tool.poetry.dependencies]
+python = "^3.12"
+tortoise-orm = "^0.21.6"
+
+[tool.poetry.dev-dependencies]
+pytest = "*"
+pytest-asyncio = "*"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
