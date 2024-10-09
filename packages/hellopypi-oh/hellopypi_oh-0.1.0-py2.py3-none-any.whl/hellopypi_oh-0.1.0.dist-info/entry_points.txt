@@ -1,0 +1,2 @@
+[console_scripts]
+hellopypi_oh = hellopypi_oh:main
