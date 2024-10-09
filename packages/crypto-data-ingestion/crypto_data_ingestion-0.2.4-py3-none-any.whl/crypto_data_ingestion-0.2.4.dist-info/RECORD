@@ -1,0 +1,9 @@
+crypto_data_ingestion/__init__.py,sha256=LI9gbovrG3UpD8lIKdPgPYA5BqxJyFTIumFDuPCPXSo,91
+crypto_data_ingestion/api.py,sha256=t5sXkXk6DGG8DmTFse69E7dEbMMtxJZgroze8tfT4Go,2642
+crypto_data_ingestion/data_operations.py,sha256=TQyYQ0WKjE8yl3vKSnUzrJ3cbyR9E-mXqb0uqZKaMCk,5634
+crypto_data_ingestion/storage.py,sha256=JF1m4b_MF7ggfaWIpQ8aqfS3Vgrs4MG8db4Xuk9mTgE,4579
+crypto_data_ingestion/test.py,sha256=-rCzXy2RZXHgaw0wb8lIZPyr0sQzWdQJHMR4IkBl-Xs,840
+crypto_data_ingestion/utils.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+crypto_data_ingestion-0.2.4.dist-info/METADATA,sha256=1jC5xcAR5_BvyS0xJ82w0avCnvDNhsNll8a57nZdZcA,1089
+crypto_data_ingestion-0.2.4.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+crypto_data_ingestion-0.2.4.dist-info/RECORD,,
