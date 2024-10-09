@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: bio-wrangler
+Version: 0.1
+Summary: A package for loading, transforming, and filtering bioinformatics datasets
+Author: Abdul-Rehman ikram
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Requires-Dist: pandas
+Requires-Dist: biopython
+Requires-Dist: gffutils
+Requires-Dist: PyVCF3
+

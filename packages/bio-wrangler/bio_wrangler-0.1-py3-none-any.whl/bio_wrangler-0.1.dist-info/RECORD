@@ -1,0 +1,10 @@
+bio_wrangler/__init__.py,sha256=xkR_lts0eKoy-ONcbP3em2z_No_cy7462ZWV_T0XRTE,162
+bio_wrangler/bio_wrangler.py,sha256=Wy0vmUu2QGvq1DDvWoQ8beq9aF23zcfv0yD2u5s_aoU,7904
+bio_wrangler/utils.py,sha256=Wf8Iw_n6XHNLtOsIOs6LVNhb7PCK-iJRPCYFfQDg1r8,1894
+bio_wrangler/tests/__init__.py,sha256=xkR_lts0eKoy-ONcbP3em2z_No_cy7462ZWV_T0XRTE,162
+bio_wrangler/tests/test_biowrangler.py,sha256=vCb_rJsrGj7IZsQjMfAabDCl6QAZqSlcJ9SjXA0pgnA,4517
+bio_wrangler/tests/test_utils.py,sha256=_K2E7TUdMVktd-MY04a_r8Jp3t3cLfuNTWJFWZvp-BY,1439
+bio_wrangler-0.1.dist-info/METADATA,sha256=LyKTFfSQEBjkI3Kg1_rPjqrlTdwSNNLpS7XTJ9G_Oss,442
+bio_wrangler-0.1.dist-info/WHEEL,sha256=GV9aMThwP_4oNCtvEC2ec3qUYutgWeAzklro_0m4WJQ,91
+bio_wrangler-0.1.dist-info/top_level.txt,sha256=DOAd7pOi7JLfzZRRdqkcvrm_dHRNRG55JV84g3aPlLo,13
+bio_wrangler-0.1.dist-info/RECORD,,
