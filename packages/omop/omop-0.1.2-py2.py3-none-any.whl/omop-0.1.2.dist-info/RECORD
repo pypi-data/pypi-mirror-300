@@ -1,0 +1,8 @@
+omop/__init__.py,sha256=cxq-RAV7GsfYsQEX02v6CttqFLMmjpDjswPAYoGrKz0,1948
+omop/models.py,sha256=haoO2OfH0E9em_ho5UzXCXc80PuIMKsRS25pkxfPRPI,62849
+omop/migrations/0001_initial.py,sha256=HYxf_X4oOaLVLCLBtQhrakZuur4SpKtFGW4TqtbmvhA,98495
+omop/migrations/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+omop-0.1.2.dist-info/LICENSE,sha256=UOZ1F5fFDe3XXvG4oNnkL1-Ecun7zpHzRxjp-XsMeAo,11324
+omop-0.1.2.dist-info/WHEEL,sha256=Sgu64hAMa6g5FdzHxXv9Xdse9yxpGGMeagVtPMWpJQY,99
+omop-0.1.2.dist-info/METADATA,sha256=LDhAOoCf24TE4wrQqzkTvJZhDzIR8X7EehJpOW__ddo,940
+omop-0.1.2.dist-info/RECORD,,
