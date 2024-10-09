@@ -1,0 +1,52 @@
+Metadata-Version: 2.1
+Name: musecraft
+Version: 24.9.8
+Summary: Front-end for symbolic music AI models
+Home-page: https://github.com/asigalov61/MuseCraft
+Author: Alex Lev
+Author-email: Alex Lev <alexlev61@proton.me>
+Maintainer-email: Alex Lev <alexlev61@proton.me>
+License: Apache Software License 2.0
+Project-URL: Homepage, https://github.com/asigalov61/MuseCraft
+Project-URL: Documentation, https://github.com/asigalov61/MuseCraft/docs
+Project-URL: Repository, https://github.com/asigalov61/MuseCraft
+Project-URL: Issues, https://github.com/asigalov61/MuseCraft/issues
+Project-URL: Discussions, https://github.com/asigalov61/MuseCraft/discussions
+Keywords: MIDI,musecraft,music ai
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: tqdm
+Requires-Dist: pillow
+Requires-Dist: numpy
+
+# MuseCraft
+## Front-end for symbolic music AI models
+
+![MuseCraft-Logo](https://github.com/user-attachments/assets/7f4533af-5318-421b-ac96-effc8475461b)
+
+***
+
+## Project links:
+
+* ### [musetree](https://github.com/stevenwaterman/musetree)
+* ### [musicautobot_vueapp](https://github.com/bearpelican/musicautobot_vueapp)
+* ### [midi-model](https://github.com/SkyTNT/midi-model)
+* ### [SpessaSynth](https://github.com/spessasus/SpessaSynth)
+* ### [webaudiofont](https://github.com/surikov/webaudiofont)
+
+***
+
+### Project Los Angeles
+### Tegridy Code 2024
