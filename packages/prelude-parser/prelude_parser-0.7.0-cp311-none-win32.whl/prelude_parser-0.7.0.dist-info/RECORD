@@ -1,0 +1,12 @@
+prelude_parser-0.7.0.dist-info/METADATA,sha256=e1153Au2PIqWB4wXvgj0PHZh3cbQlo6M_V2j7X0weho,4364
+prelude_parser-0.7.0.dist-info/WHEEL,sha256=Va5ImIkXvhKcffo-7SNH_9kd5U3l6ngzcEl07Fi-uJE,91
+prelude_parser-0.7.0.dist-info/licenses/LICENSE,sha256=nPoa6xHUnYfbIECNiUa6tbFxR6anYAG_v_D7Zc3f4FI,1101
+prelude_parser/pandas.py,sha256=Qt6YaXG_Ru8_akx4wqyz1KkhxyXqQ3BqdwRGVUPZQn4,1320
+prelude_parser/parser.py,sha256=aIDPE9jUtjr22-iy-E9bZcm84535WSgbfljbXApxDAs,2122
+prelude_parser/polars.py,sha256=3h0WtFhtY31cKOM5csx7IP8nAfcFt7XScwb56U41mGM,1088
+prelude_parser/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+prelude_parser/types.py,sha256=Gd47nkP_Jg8Itek1L81XZfQgTUrfW9lHvzsMi0OJuc8,178
+prelude_parser/_prelude_parser.pyi,sha256=B0spEP6o6H8t3y7rlqpSzsOvMRTUpomL9-BWjs1o504,1052
+prelude_parser/__init__.py,sha256=gJNHB4eEps6ZB8lBblrllzHYFrmClt6yMJSRWqfli-w,565
+prelude_parser/_prelude_parser.cp311-win32.pyd,sha256=Mw-qiSWUs6v9H9v0N8Agwp8uugayWF8m7RJ2h090Buc,807424
+prelude_parser-0.7.0.dist-info/RECORD,,
