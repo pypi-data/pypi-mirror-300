@@ -1,0 +1,11 @@
+beautifulsoup4
+matplotlib
+pandas
+pdr
+pyproj
+rasterio
+urllib3
+
+[dev]
+pytest
+pre-commit
