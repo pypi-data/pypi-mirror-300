@@ -1,0 +1,15 @@
+bexhoma/__init__.py,sha256=erYApYACvNBAc0j6ikr0VEbzk5u7X17qEw16xflgl8Q,104
+bexhoma/clusters.py,sha256=joeeEhWP6x7asSnTB8ABd50aSdEuVygeYMLwqaHq8ME,91926
+bexhoma/configurations.py,sha256=qgPH_M_0-yw0z1LkNaoNIcl95gumbSWnX5PdCbSpE-s,196529
+bexhoma/evaluators.py,sha256=fr51QWbliy31tYJTsYOM34ZABqbmX_9RPeLz_Z1Ocfk,59929
+bexhoma/experiments.py,sha256=MIAIPPGeaQwZ-QJdDQgCEPV12Id-4_kYAMG1Aaoo1Wg,165074
+bexhoma/scripts/__init__.py,sha256=4r8qYS8SQIq9gSl4GDn-tU6MFC9St-iYtGEkkWh9SCI,82
+bexhoma/scripts/experimentsmanager.py,sha256=bpKSWH86qOXB9mYIzdviZ4ZE4RMMPsuXY_EuD2EiyBI,23104
+bexhoma/scripts/tpcds.py,sha256=vac73L_FoGrbD6n61z0c3cFbGT-WSgXF3FNYgL83EpI,9664
+bexhoma/scripts/tpch.py,sha256=i0Ff2NOvl90iBqlCHs_hUz_lKU6speat3LV9mtweMhs,9911
+bexhoma-0.7.2.dist-info/LICENSE,sha256=hIahDEOTzuHCU5J2nd07LWwkLW7Hko4UFO__ffsvB-8,34523
+bexhoma-0.7.2.dist-info/METADATA,sha256=lJ6XzpCZl35sU_xv_9HBYU8pmpAk_IszCR_ou4giO24,11957
+bexhoma-0.7.2.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+bexhoma-0.7.2.dist-info/entry_points.txt,sha256=SvSJ26PN5wPpceRTpnkS1smXeJ6DCYLN6Zjd4VgJvBY,159
+bexhoma-0.7.2.dist-info/top_level.txt,sha256=odIPl9FuvslTVPTjdyqpQY-FqsAMHx1d9xozArrm3qA,8
+bexhoma-0.7.2.dist-info/RECORD,,
