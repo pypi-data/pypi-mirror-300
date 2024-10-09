@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: taiga-contrib-google-sso
+Version: 1.0.3
+Summary: The Taiga plugin for google authentication
+Home-page: https://github.com/ahmed-faraz46/taiga-contrib-google-sso
+Author: Ahmed Faraz
+Author-email: ahmed.faraz0046@gmail.com
+License: AGPL
+Keywords: taiga,google,auth,plugin
+Platform: UNKNOWN
+Classifier: Programming Language :: Python
+Classifier: Development Status :: 4 - Beta
+Classifier: Framework :: Django
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: GNU Affero General Public License v3
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Topic :: Internet :: WWW/HTTP
+License-File: LICENSE
+
+UNKNOWN
+
