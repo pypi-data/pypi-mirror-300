@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "nbcheckmate"
+authors = [
+  { name = "Paul Chupot", email = "paul.chupot@gmail.com" },
+  { name = "Aloys Bernard", email = "aloys.bernard@gmail.com" },
+]
+description = "Small package to test code inside a jupyter notebook"
+readme = "README.md"
+requires-python = ">=3.10"
+keywords = ["jupyter", "notebook", "testing", "pytest"]
+version = "0.1.4"
+dynamic = ["dependencies"]
+
+
+[tool.setuptools.dynamic]
+dependencies = { file = ["requirements.txt"] }
+
+
+[tool.setuptools.packages.find]
+where = ["src"]
+include = ["nbcheckmate*"]
+namespaces = false
