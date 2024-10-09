@@ -1,0 +1,90 @@
+image: cosmo-gitlab.phys.ethz.ch:5005/cosmo/vcosmo-ci:python-cosmo-ci
+
+stages:
+    - check_style
+    - test_code
+    - test_and_create_docs
+    - publish_docs
+
+style:
+    before_script:
+        - python3 -m venv venv
+        - source venv/bin/activate
+        - python3 -m pip install -U pip setuptools ruff
+    script:
+        - source venv/bin/activate
+        - make style-check
+    allow_failure: false
+    stage: check_style
+
+
+tests:
+    stage: test_code
+    parallel:
+        matrix:
+            - PYTHON_VERSION: ['3.9', '3.10', '3.11', '3.12']
+    before_script:
+        - echo "machine cosmo-gitlab.phys.ethz.ch" > ~/.netrc
+        - echo "login gitlab-ci-token" >> ~/.netrc
+        - echo "password ${CI_JOB_TOKEN}" >> ~/.netrc
+    script:
+        - python${PYTHON_VERSION} -m venv venv
+        - source venv/bin/activate
+        - pip install -U "pip<24" setuptools build
+        - python -m build -s
+        - ARCHIVE=$(ls dist/*)
+        - pip install ${ARCHIVE}[dev]
+        - pytest tests
+
+
+coverage:
+    image: python:3.10
+    stage: test_code
+    before_script:
+        - echo "machine cosmo-gitlab.phys.ethz.ch" > ~/.netrc
+        - echo "login gitlab-ci-token" >> ~/.netrc
+        - echo "password ${CI_JOB_TOKEN}" >> ~/.netrc
+        - python3 -m venv venv
+        - source venv/bin/activate
+        - python3 -m pip install -U 'pip<24' setuptools
+        - python3 -m pip install -e .[dev]
+    script:
+        - source venv/bin/activate
+        - pytest --cov=src/ --color=yes
+        - coverage xml
+    coverage: '/(?i)total.*? (100(?:\.0+)?\%|[1-9]?\d(?:\.\d+)?\%)$/'
+    artifacts:
+        paths:
+            - coverage.xml
+
+
+docs:
+    before_script:
+        - echo "machine cosmo-gitlab.phys.ethz.ch" > ~/.netrc
+        - echo "login gitlab-ci-token" >> ~/.netrc
+        - echo "password ${CI_JOB_TOKEN}" >> ~/.netrc
+        - python3 -m venv venv
+        - source venv/bin/activate
+        - python3 -m pip install -U pip setuptools
+        - python3 -m pip install -e .[docs]
+    script:
+        - source venv/bin/activate
+        - cd docs
+        - sphinx-build -b html . _build/html
+    stage: test_and_create_docs
+    artifacts:
+           paths:
+             - docs/_build
+
+
+publish_docs:
+    script:
+        - publish_docs docs/_build/html galsbi
+        - create_index_html
+    stage: publish_docs
+    dependencies:
+          - docs
+    when: manual
+    only:
+        - master
+        - main
