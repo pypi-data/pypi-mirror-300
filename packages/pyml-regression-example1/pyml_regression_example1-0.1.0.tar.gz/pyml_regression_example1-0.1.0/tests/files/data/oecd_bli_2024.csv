@@ -1,0 +1,3 @@
+STRUCTURE,STRUCTURE_ID,STRUCTURE_NAME,ACTION,LOCATION,Country,INDICATOR,Indicator,MEASURE,Measure,INEQUALITY,Inequality,OBS_VALUE,Observation Value,OBS_STATUS,Observation Status,UNIT_MEASURE,Unit of Measures,UNIT_MULT,Multiplier,BASE_PER,Base reference period
+DATAFLOW,OECD:DF_BLI(1.0),Better Life Index,I,AUT,Austria,JE_LMIS,Labour market insecurity,L,Value,TOT,,2.3,,A,,PC,Percentage,0,Units,,
+DATAFLOW,OECD:DF_BLI(1.0),Better Life Index,I,TUR,Türkiye,ES_STCS,Student skills,L,Value,MN,,458,,A,,AVSCORE,Average score,0,Units,,

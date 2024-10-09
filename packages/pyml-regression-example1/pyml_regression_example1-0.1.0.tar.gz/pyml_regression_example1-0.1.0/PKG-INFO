@@ -1,0 +1,43 @@
+Metadata-Version: 2.3
+Name: pyml-regression-example1
+Version: 0.1.0
+Summary: Python Machine Learning Regression Example: Life Expectancy
+Requires-Python: >=3.11
+Requires-Dist: click>=8.1.7
+Requires-Dist: colorama>=0.4.6
+Requires-Dist: matplotlib>=3.9.2
+Requires-Dist: numpy>=2.1.1
+Requires-Dist: pandas>=2.2.3
+Requires-Dist: platformdirs>=4.3.6
+Requires-Dist: plotly>=5.24.1
+Requires-Dist: pyqt6>=6.7.1
+Requires-Dist: scikit-learn>=1.5.2
+Requires-Dist: sphinx-autodoc-typehints>=2.0.0
+Requires-Dist: sphinx-click-rst-to-ansi-formatter>=0.1.4
+Description-Content-Type: text/markdown
+
+# pyml-regression-example1
+
+Example from Chapter 1 of the book [Hands-on Machine Learning with Scikit-Learn, Keras and TensorFlow](https://github.com/ageron/handson-ml3). This example illustrates regression techniques.
+
+## Installation from Git source
+```
+$ python -m venv .venv
+$ source .venv/bin/activate
+$ pip install .
+```
+or if you plan to change the source code, install for development like this:
+```
+$ uv venv
+$ uv sync   # Install dependencies
+$ source .venv/bin/activate
+$ source shell_completion/bash.sh   # optionally enable shell completions
+```
+Then, test the installed script:
+```
+$ life-expectancy --help
+# Test a sub command, e.g. download-data
+$ life-expectancy download-data
+```
+
+For more information, see [the documentation](https://hakonhagland.github.io/pyml-regression-example1/).
