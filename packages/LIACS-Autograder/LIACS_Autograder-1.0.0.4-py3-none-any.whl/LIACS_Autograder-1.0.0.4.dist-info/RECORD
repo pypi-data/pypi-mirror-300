@@ -1,0 +1,16 @@
+autograde_module/__init__.py,sha256=ckR2qv68wqNz-mA-Htjs-24i0XeSqr9KN0PyJ2u3BPc,363
+autograde_module/autograder.py,sha256=r7LaBF8hywvoOXZe3fCLOmW0NZwNJ1KmtjAYYUJ2og8,13663
+autograde_module/multiproccessing_extended.py,sha256=WePANaQl2Xrzx096nhJqN8aiD-eq2Vs5wP41QK9vsQE,5256
+autograde_module/subprocess_controller.py,sha256=i4eeBFB1N5cCvfJcVDqq_Vi0ASIt5yp5kkE3Au5yemg,2280
+autograde_module/unittest_extensions.py,sha256=t616DMBhm5GNHEUBgdQbO13cR-jlY1bf14N8x-jBZgY,1542
+autograde_module/unittest_formatter.py,sha256=CVjOu5eyufwzhrsff3327-TYxHlSvXIzTdz7pAuvDm8,3373
+autograde_module/utils.py,sha256=F7EoU_oeEkfdVmwHtZgcGUWugu6r4dRmx8b1WEZXXLw,1773
+autograde_module/custommagics/__init__.py,sha256=NFxSyF_3sM7W79sgfVkqBnud2fmH1nW9nx9Kf0qK0Ak,68
+autograde_module/custommagics/custommagics.py,sha256=1unlceXyAcfKJoVxC4zX24MhMEQ96N-Aext0Jc59v3M,7085
+autograde_module/relative_import/__init__.py,sha256=XEsKjcqcKApybIzhmWgp3zvXDP3eMAIyqDEm95lJNkw,97
+autograde_module/relative_import/relative_import.py,sha256=RzJqfk1fdLdmZayLFIfiideoU6obp4zrFbNr9oklyus,796
+LIACS_Autograder-1.0.0.4.dist-info/LICENSE,sha256=E0mkthSEkrRPYp5k7tZ2YS4jT-moOeTzsnfBSCyISfE,20849
+LIACS_Autograder-1.0.0.4.dist-info/METADATA,sha256=5PcPf2fbEL1B0xakgT7uUra5ym5T7IqlVntOQS-IQUo,1356
+LIACS_Autograder-1.0.0.4.dist-info/WHEEL,sha256=GV9aMThwP_4oNCtvEC2ec3qUYutgWeAzklro_0m4WJQ,91
+LIACS_Autograder-1.0.0.4.dist-info/top_level.txt,sha256=35hDZEk1vzXR6A6k_tV7JTXjQfLFWzNxJMJ7VWzxg6g,17
+LIACS_Autograder-1.0.0.4.dist-info/RECORD,,
