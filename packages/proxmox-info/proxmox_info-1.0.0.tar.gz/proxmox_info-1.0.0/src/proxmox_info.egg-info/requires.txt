@@ -1,0 +1,6 @@
+tabulate
+proxmoxer
+humanize
+dynaconf
+click
+requests
