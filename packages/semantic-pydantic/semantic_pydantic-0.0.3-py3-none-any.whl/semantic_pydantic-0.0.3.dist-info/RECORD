@@ -1,0 +1,9 @@
+semantic_pydantic/__init__.py,sha256=LKhdpROpb1jhJDVroVIZ5h60ba74RmvQ93l6aGtog9Y,346
+semantic_pydantic/api.py,sha256=my9njBKxQs-ZVaknT0yHt0Z5n4RYe98SUF56xgPUALM,3861
+semantic_pydantic/py.typed,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+semantic_pydantic/version.py,sha256=veslwKh_Fey3BL-ZRKbp9pKSf3RHEFOQi17te6TEUOc,993
+semantic_pydantic-0.0.3.dist-info/LICENSE,sha256=QcgJZKGxlW5BwBNnCBL8VZLVtRvXs81Ch9lJRQSIpJg,1076
+semantic_pydantic-0.0.3.dist-info/METADATA,sha256=ipIq9bXnwWWW33i0Ps-nTYIYJtExj9txVahWx_LTr_U,15199
+semantic_pydantic-0.0.3.dist-info/WHEEL,sha256=GV9aMThwP_4oNCtvEC2ec3qUYutgWeAzklro_0m4WJQ,91
+semantic_pydantic-0.0.3.dist-info/top_level.txt,sha256=u2tbqk9roc7hwHoCYImU2mHLQScPd02rxIxgLLfgEC8,18
+semantic_pydantic-0.0.3.dist-info/RECORD,,
