@@ -1,0 +1,3 @@
+[console_scripts]
+missing = missing_text.cli:main
+run-app = missing_text.main:run
