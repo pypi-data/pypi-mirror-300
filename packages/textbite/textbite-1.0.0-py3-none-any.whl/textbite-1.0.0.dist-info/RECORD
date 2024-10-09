@@ -1,0 +1,17 @@
+textbite/bite.py,sha256=hXiZskL-BrrKe1GepahAggygLABmGk_8698t7MxKXpg,747
+textbite/geometry.py,sha256=5QeXsIb5Gx99nmukNA_7z6G74y5qkB414FHgiJCC41Q,7705
+textbite/infer.py,sha256=lJkZZ6on5w4Se3cNsh9Owr7JojzY-CeGdsoi3tgEJz4,6379
+textbite/models/feature_extraction.py,sha256=8xQwfLXjJoS74EiLtb4jtwlwSL2fy7rjH4ivvXvBqoM,5517
+textbite/models/improve_pagexml.py,sha256=NCYKhMUjgu913um52gXaRSiPlsGsdU6bSzAZL0oH3F4,6920
+textbite/models/utils.py,sha256=dBphDKGkrDgRoCmH-vE1XoPRgMmQNBURBiwLTnnVw7M,2905
+textbite/models/joiner/graph.py,sha256=KebGvykMUUSMu1OOZohNDlc5aYLqCM60acTPLGdbmGg,5358
+textbite/models/joiner/infer.py,sha256=Lps5CpqUAkjhaxLiOHTS_V2s4NayyqZnMSx0BZK8Tm8,2732
+textbite/models/joiner/model.py,sha256=80w7_81XxDMLpZdmFEtpO7V7ZnzfSuH6CxZHC-4K_sY,2968
+textbite/models/yolo/infer.py,sha256=TFY9Cl4qvvKR4iVo1qekYJTy9fzx7OBgBDv2x1hpChk,5097
+textbite/visualization/visualize_bites.py,sha256=NiAJn_yyJQAEaDcspn2KNweiuvKCV45Q_Trb82CLesg,4134
+textbite-1.0.0.dist-info/LICENSE,sha256=EnB47n6N6nfs5IVUEngi5KStQ-RrwEAMRNy119UGvfY,1491
+textbite-1.0.0.dist-info/METADATA,sha256=P_Nb-7WYrW90TBvXQbYp2g6zy2RZWv9V2GAd4YpqeB4,3157
+textbite-1.0.0.dist-info/WHEEL,sha256=GV9aMThwP_4oNCtvEC2ec3qUYutgWeAzklro_0m4WJQ,91
+textbite-1.0.0.dist-info/entry_points.txt,sha256=EMnxwYBTnr13jMTR4eYteyF7m8MfVu9IXRSnotVckKE,49
+textbite-1.0.0.dist-info/top_level.txt,sha256=tJyDyjkqoaza_J9qjqtTW2roZr1SKURz0rZhXLlZUMM,9
+textbite-1.0.0.dist-info/RECORD,,
