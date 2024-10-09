@@ -1,0 +1,171 @@
+Metadata-Version: 2.1
+Name: django-dynamic-filenames
+Version: 1.4.0
+Summary: Write advanced filename patterns using the Format String Syntax.
+Keywords: django,django-storages,file,filenames,django-pictures
+Author-email: Johannes Maron <johannes@maron.family>
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Programming Language :: Python
+Classifier: Environment :: Web Environment
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Topic :: Software Development
+Classifier: Programming Language :: JavaScript
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Framework :: Django
+Classifier: Framework :: Django :: 4.2
+Classifier: Framework :: Django :: 5.0
+Classifier: Framework :: Django :: 5.1
+Requires-Dist: django>=4.2.0
+Requires-Dist: bandit==1.7.7 ; extra == "lint"
+Requires-Dist: black==23.12.1 ; extra == "lint"
+Requires-Dist: flake8==7.0.0 ; extra == "lint"
+Requires-Dist: isort==5.13.2 ; extra == "lint"
+Requires-Dist: pydocstyle[toml]==6.3.0 ; extra == "lint"
+Requires-Dist: pytest ; extra == "test"
+Requires-Dist: pytest-cov ; extra == "test"
+Requires-Dist: pytest-django ; extra == "test"
+Project-URL: Changelog, https://github.com/codingjoe/django-dynamic-filenames/releases
+Project-URL: Documentation, https://github.com/codingjoe/django-dynamic-filenames#django-dynamic-filenames
+Project-URL: Issue-Tracker, https://github.com/codingjoe/django-dynamic-filenames/issues
+Project-URL: Project-URL, https://github.com/codingjoe/django-dynamic-filenames
+Project-URL: Source, https://github.com/codingjoe/django-dynamic-filenames
+Provides-Extra: lint
+Provides-Extra: test
+
+# Django Dynamic Filenames
+
+Write advanced filename patterns using the [Format String
+Syntax](https://docs.python.org/3/library/string.html#format-string-syntax).
+
+## Getting Started
+
+### Installation
+
+``` bash
+pip install django-dynamic-filenames
+```
+
+### Samples
+
+Basic example:
+
+``` python
+from django.db import models
+from dynamic_filenames import FilePattern
+
+upload_to_pattern = FilePattern(
+    filename_pattern='{app_label:.25}/{model_name:.30}/{uuid:base32}{ext}'
+)
+
+class FileModel(models.Model):
+    my_file = models.FileField(upload_to=upload_to_pattern)
+```
+
+Auto slug example:
+
+## Features
+
+### Field names
+
+`ext`
+
+:   File extension including the dot.
+
+`name`
+
+:   Filename excluding the folders.
+
+`model_name`
+
+:   Name of the Django model.
+
+`app_label`
+
+:   App label of the Django model.
+
+`instance`
+
+:   Instance of the model before it has been saved. You may not have a
+    primary key at this point.
+
+`uuid`
+
+:   UUID version 4 that supports multiple type specifiers. The UUID will
+    be the same should you use it twice in the same string, but
+    different on each invocation of the `upload_to` callable.
+
+    The type specifiers allow you to format the UUID in different ways,
+    e.g. `{uuid:x}` will give you a with a hexadecimal UUID.
+
+    The supported type specifiers are:
+
+    `s`
+
+    :   String representation of a UUID including dashes.
+
+    `i`
+
+    :   Integer representation of a UUID. Like to `UUID.int`.
+
+    `x`
+
+    :   Hexadecimal (Base16) representation of a UUID. Like to
+        `UUID.hex`.
+
+    `X`
+
+    :   Upper case hexadecimal representation of a UUID. Like to
+        `UUID.hex`.
+
+    `base32`
+
+    :   Base32 representation of a UUID without padding.
+
+    `base64`
+
+    :   Base64 representation of a UUID without padding.
+
+        :::: warning
+        ::: title
+        Warning
+        :::
+
+        Not all file systems support Base64 file names.
+        ::::
+
+    All type specifiers also support precisions to cut the string, e.g.
+    `{{uuid:.2base32}}` would only return the first 2 characters of a
+    Base32 encoded UUID.
+
+### Type specifiers
+
+You can also use a special slug type specifier, that slugifies strings.
+
+Example:
+
+``` python
+from django.db import models
+from dynamic_filenames import FilePattern
+
+upload_to_pattern = FilePattern(
+    filename_pattern='{app_label:.25}/{model_name:.30}/{instance.title:.40slug}{ext}'
+)
+
+class FileModel(models.Model):
+    title = models.CharField(max_length=100)
+    my_file = models.FileField(upload_to=upload_to_pattern)
+```
+
+Slug type specifiers also support precisions to cut the string. In the
+example above the slug of the instance title will be cut at 40
+characters.
+
