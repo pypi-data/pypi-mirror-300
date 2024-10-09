@@ -1,0 +1,35 @@
+Metadata-Version: 2.1
+Name: pygamelibrary
+Version: 1.0
+Summary: my python game library
+Home-page: https://github.com/yourusername/your_package
+Author: Eun ho Kim
+Author-email: miss6815@naver.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.1
+Description-Content-Type: text/markdown
+
+# Pygamelib
+- It is python game library.
+- It is not pygame.
+## Console
+### Print2D
+- Print 2D List.
+- bool(x) is True: print t else: print f
+## GUI
+### Messagebox
+- str message box! (normal, password)
+- it's korean.
+### Sprite
+- sprite
+- it can move.
+- it can set x.
+- it can set y.
+- it can get x, y. (tuple)
+## Sound
+### Sound
+- sound
+- it's pygame sound.
+- but it have loopplay function (name : loopplay)

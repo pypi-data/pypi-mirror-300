@@ -1,0 +1,6 @@
+README.md
+setup.py
+pygamelibrary.egg-info/PKG-INFO
+pygamelibrary.egg-info/SOURCES.txt
+pygamelibrary.egg-info/dependency_links.txt
+pygamelibrary.egg-info/top_level.txt
