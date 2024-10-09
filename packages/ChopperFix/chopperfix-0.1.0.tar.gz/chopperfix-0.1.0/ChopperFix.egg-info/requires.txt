@@ -1,0 +1,13 @@
+sqlalchemy
+playwright
+beautifulsoup4
+langchain
+openai
+langchain_community
+selenium
+Pillow
+requests
+pydantic
+loguru
+numpy
+scikit-learn
