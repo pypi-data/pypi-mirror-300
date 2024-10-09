@@ -1,0 +1,9 @@
+README.md
+setup.py
+src/dictview/__init__.py
+src/dictview/seeker.py
+src/dictview/viewer.py
+src/dictview.egg-info/PKG-INFO
+src/dictview.egg-info/SOURCES.txt
+src/dictview.egg-info/dependency_links.txt
+src/dictview.egg-info/top_level.txt
