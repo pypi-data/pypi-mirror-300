@@ -1,0 +1,13 @@
+setup.py
+odoo/addons/helpdesk_email_reply_to_team/CHANGELOG.md
+odoo/addons/helpdesk_email_reply_to_team/README.rst
+odoo/addons/helpdesk_email_reply_to_team/__init__.py
+odoo/addons/helpdesk_email_reply_to_team/__manifest__.py
+odoo/addons/helpdesk_email_reply_to_team/models/__init__.py
+odoo/addons/helpdesk_email_reply_to_team/models/helpdesk_ticket.py
+odoo12_addon_helpdesk_email_reply_to_team.egg-info/PKG-INFO
+odoo12_addon_helpdesk_email_reply_to_team.egg-info/SOURCES.txt
+odoo12_addon_helpdesk_email_reply_to_team.egg-info/dependency_links.txt
+odoo12_addon_helpdesk_email_reply_to_team.egg-info/not-zip-safe
+odoo12_addon_helpdesk_email_reply_to_team.egg-info/requires.txt
+odoo12_addon_helpdesk_email_reply_to_team.egg-info/top_level.txt
