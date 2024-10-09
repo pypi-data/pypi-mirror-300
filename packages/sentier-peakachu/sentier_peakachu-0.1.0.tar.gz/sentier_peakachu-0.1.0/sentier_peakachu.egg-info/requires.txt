@@ -1,0 +1,17 @@
+python-dotenv
+entsoe-py
+
+[dev]
+build
+pre-commit
+pylint
+pytest
+pytest-cov
+pytest-randomly
+setuptools
+
+[testing]
+sentier_peakachu
+pytest
+pytest-cov
+python-coveralls
