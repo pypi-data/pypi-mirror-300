@@ -1,0 +1,16 @@
+CHANGELOG.txt
+LICENSE.txt
+MANIFEST.in
+README.txt
+setup.py
+tes1/__init__.py
+tes1/bruto_tara_netto.py
+tes1/bunga.py
+tes1/gaji.py
+tes1/pajak.py
+tes1/rabat_diskon.py
+tes1/untung_rugi.py
+tes1.egg-info/PKG-INFO
+tes1.egg-info/SOURCES.txt
+tes1.egg-info/dependency_links.txt
+tes1.egg-info/top_level.txt
