@@ -1,0 +1,103 @@
+Metadata-Version: 2.1
+Name: hacking-shield
+Version: 0.2.1
+Summary: Client for detecting harmful SQL queries using a third-party API
+Home-page: https://github.com/kondwani0099/hacking-shield
+Author: Kondwani Nyirenda
+Author-email: kondwaninyirenda99@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: requests >=2.0.0
+
+
+
+```markdown
+# Hacking Shield
+
+**Hacking Shield** is a Python client for detecting harmful SQL queries using a third-party API. It helps developers ensure the security of their applications by identifying potentially malicious SQL statements before they can be executed.
+
+## Table of Contents
+
+- [Features](#features)
+- [Installation](#installation)
+- [Usage](#usage)
+- [API Reference](#api-reference)
+- [Contributing](#contributing)
+- [License](#license)
+
+## Features
+
+- Detect harmful SQL queries using a third-party API.
+- Simple and easy-to-use client interface.
+- Supports authorization with API keys for secure access.
+- Easy installation with pip.
+
+## Installation
+
+You can install the package using pip:
+
+```bash
+pip install hacking_shield
+```
+
+## Usage
+
+Here's a quick example of how to use the **Hacking Shield** client:
+
+```python
+from hacking_shield import SQLDetectionClient
+
+# Initialize the client with your API key
+client = SQLDetectionClient(api_key="your_api_key")
+
+# Define a SQL query
+sql_query = "SELECT * FROM users WHERE id = 1 OR 1=1;"
+
+# Detect harmful SQL
+result = client.detect_harmful_sql(sql_query)
+
+if result:
+    print("Detection Result:", result)
+```
+
+Replace `"your_api_key"` with your actual API key.
+
+## API Reference
+
+### SQLDetectionClient
+
+- **`__init__(api_key: str)`**: Initializes the client with the provided API key.
+
+- **`detect_harmful_sql(sql_query: str) -> dict`**: Sends the SQL query to the API for detection. Returns a dictionary with the result.
+
+## Contributing
+
+Contributions are welcome! If you have suggestions for improvements or find bugs, please open an issue or submit a pull request.
+
+### Steps to Contribute
+
+1. Fork the repository.
+2. Create your feature branch (`git checkout -b feature/new-feature`).
+3. Commit your changes (`git commit -m 'Add new feature'`).
+4. Push to the branch (`git push origin feature/new-feature`).
+5. Open a pull request.
+
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+```
+
+### Customization Suggestions:
+- **Add More Features**: If there are additional features or functionalities, feel free to expand the "Features" section.
+- **Include Example Outputs**: If you have specific expected outputs from the API, you can include those in the "Usage" section.
+- **Contributors Section**: If there are collaborators, consider adding a "Contributors" section to give them credit.
+
+### Notes:
+- Ensure the formatting is correct when you copy it into your `README.md` file, especially for code blocks.
+- You can add images, badges, or links to related projects as needed to enhance the README.
+
+If you have specific details you’d like to include or any other adjustments, let me know!
