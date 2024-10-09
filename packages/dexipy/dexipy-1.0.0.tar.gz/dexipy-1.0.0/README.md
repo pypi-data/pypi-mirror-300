@@ -1,0 +1,46 @@
+# DEXiPy
+
+DEXiPy is a software package for using DEXi models in Python.
+
+DEXi models are hierarchical qualitative multi-criteria decision models developed according to the
+method DEX ([Decision EXpert]( https://en.wikipedia.org/wiki/Decision_EXpert)),
+using the program [DEXi](https://kt.ijs.si/MarkoBohanec/dexi.html) or
+[DEXiWin](https://dex.ijs.si/dexisuite/dexiwin.html).
+See [DEX Software](https://dex.ijs.si/) for more details.
+
+A typical workflow with DEXiPy consists of:
+1. Reading a `.dxi` file, previously created using the DEXi/DEXiWin software,
+2. creating one or more lists containing input values of decision alternatives,
+3. evaluating those alternatives,
+4. analyzing alternatives,
+5. drawing charts.
+
+DEXiPy is restricted to using models produced externally by the DEXi/DEXiWin software and does not
+provide functionality for creating and/or editing DEXi models directly in Python.
+
+## Installation
+
+DEXiPy can be installed from the local `.whl` file:
+
+```console
+pip install dist/dexipy-<version>-py3-none-any.whl
+```
+
+Currently, DEXiPy is still under development.
+When it is fully developed, it will be installable from the [PyPI](https://pypi.org/)
+repository:
+
+```console
+pip install dexipy
+```
+
+## Documentation
+
+[DEXiPy](https://dex.ijs.si/documentation/DEXiPy/) on [dex.ijs.si](https://dex.ijs.si/)
+
+## Usage
+
+See [Examples](https://dex.ijs.si/documentation/DEXiPy/examples.html)
+
+## License
+[MIT](https://choosealicense.com/licenses/mit/)
