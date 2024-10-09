@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: xplainit
+Version: 0.1
+Summary: A library to generate natural language explanations of ML model predictions
+Home-page: https://github.com
+Author: Leandre Nash
+Author-email: leandrework@gmail.com
+Requires-Dist: numpy
+Requires-Dist: scikit-learn
+Requires-Dist: matplotlib
+
