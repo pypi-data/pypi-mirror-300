@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: almax_graphics
+Version: 2.0.0
+Summary: Library with my most used Classes and Methods
+Author: AlMax98
+Author-email: alihaider.maqsood@gmail.com
+Description-Content-Type: text/markdown
+Requires-Dist: Babel ==2.15.0
+Requires-Dist: iniconfig ==2.0.0
+Requires-Dist: packaging ==24.1
+Requires-Dist: pluggy ==1.5.0
+Requires-Dist: pytest ==8.2.2
+Requires-Dist: setuptools ==70.2.0
+Requires-Dist: tkcalendar ==1.6.1
+
+Repository con classi per la gestione di tool grafici per applicativi Python.
+Librerie implementate: TKinter.
