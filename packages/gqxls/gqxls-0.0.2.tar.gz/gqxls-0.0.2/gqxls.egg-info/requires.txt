@@ -1,0 +1,5 @@
+pillow
+secrets
+pymupdf
+typing
+openssl
