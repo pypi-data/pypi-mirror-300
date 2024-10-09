@@ -1,0 +1,12 @@
+ecom_data_helpers/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ecom_data_helpers/common_utils.py,sha256=5Xr0oImAkL0xhQmlE1HHpDuyFQ1KIDbdPK8gjm0RzB0,485
+ecom_data_helpers/document_extraction.py,sha256=L8G9YjZ8T-56WpACLO0MTw1bqkfM--bNZrr95FkiQ08,3080
+ecom_data_helpers/energy_account_extraction.py,sha256=NWYy0HyvO9nBhciU-dTSchpFEwOCGBIcAwKia2mnLv4,3232
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_ecom_data_helpers_document_extraction.py,sha256=Od81RyScXAwYR8A7PmqG5yffFyDvQk_yUG45WYlRLAU,2660
+tests/test_ecom_data_helpers_energy_account_extraction.py,sha256=Y9GLK94WjtQUQWxnoX-dsvknyJ62A3Rwi_yzZKLYmAs,2755
+ecom_data_helpers_lib-0.0.19.dist-info/LICENSE,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ecom_data_helpers_lib-0.0.19.dist-info/METADATA,sha256=oSJ8AFLrgPlloWAuyOl9fedkBjbt3kGyBRzS4_UEOys,661
+ecom_data_helpers_lib-0.0.19.dist-info/WHEEL,sha256=GV9aMThwP_4oNCtvEC2ec3qUYutgWeAzklro_0m4WJQ,91
+ecom_data_helpers_lib-0.0.19.dist-info/top_level.txt,sha256=pA5epOsfvOgDHJDuwlB8IaJthhBHeMCXphqRXxqdYH0,24
+ecom_data_helpers_lib-0.0.19.dist-info/RECORD,,
