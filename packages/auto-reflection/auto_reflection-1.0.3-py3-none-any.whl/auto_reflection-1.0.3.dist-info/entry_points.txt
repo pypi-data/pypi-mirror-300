@@ -1,0 +1,4 @@
+[console_scripts]
+section = auto_reflection.section:main
+titles = auto_reflection.titles:main
+topics = auto_reflection.topics:main
