@@ -1,0 +1,12 @@
+astc_encoder/__init__.py,sha256=m9FlCVjFnkoeUesmGRva6YZss9VL3dWRxykCMERqKsg,1180
+astc_encoder/__init__.pyi,sha256=Ixcz2WidlPbvJGRGNOjWu2Y8qihRNNJcOXDCVRkRnAo,8662
+astc_encoder/_encoder_none.iobj,sha256=_ydghQS9SJLfKesyADToz6uafmW4TWpJIsjUyCvOpuw,1150889
+astc_encoder/_encoder_none.ipdb,sha256=GB-Wlc5s_OYhP6_duEpGaulBWfHC0ifjH30HZAjaWjg,628800
+astc_encoder/_encoder_none.pyd,sha256=vmJ-Xt-Qr7BtRUxRO6nEE461iXhjMKyY3Yd6i6Y8-kQ,261120
+astc_encoder/enum.py,sha256=AQw4V3S3k4ZW_BxWkm64IaTWkWZoLc6mGJ4V_jDxGkE,2310
+astc_encoder/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+astc_encoder_py-0.1.4.dist-info/LICENSE,sha256=v6SAiMoh8Y7hDnZq4KeKKbxWk572unZtda0h1Z9WNYc,1090
+astc_encoder_py-0.1.4.dist-info/METADATA,sha256=CRat2MMEFWbY-vPPJNUBfsFPOQNCnLaoj4N-RWpeMjo,4515
+astc_encoder_py-0.1.4.dist-info/WHEEL,sha256=0gG2dsQKvt2gI6DFhDvF0uaFTGq8u3uWxI-mKQFzTEg,96
+astc_encoder_py-0.1.4.dist-info/top_level.txt,sha256=R4vI4dAALAfMnXFMMrW7PZc-_2RDaOTxFIFcwYBdiEU,13
+astc_encoder_py-0.1.4.dist-info/RECORD,,
