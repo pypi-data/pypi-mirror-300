@@ -1,0 +1,13 @@
+MANIFEST.in
+setup.py
+EsyMod/__init__.py
+EsyMod/blocks.py
+EsyMod/example.py
+EsyMod/gans.py
+EsyMod/kans.py
+EsyMod/manipulators.py
+EsyMod/pggan.py
+EsyMod.egg-info/PKG-INFO
+EsyMod.egg-info/SOURCES.txt
+EsyMod.egg-info/dependency_links.txt
+EsyMod.egg-info/top_level.txt
