@@ -1,0 +1,19 @@
+[project]
+    authors         = [{ name = "Lucas Parzianello", email = "lucaspar@users.noreply.github.com" }]
+    dependencies    = ["loguru>=0.7.2"]
+    description     = "Just a demo of the uv package manager for Python."
+    name            = "uv-demo"
+    readme          = "README.md"
+    requires-python = ">=3.13"
+    version         = "0.2.1"
+
+    [project.scripts]
+        uv-demo     = "uv_demo:say_hello"
+        uv-demo-bye = "uv_demo:say_goodbye"
+
+[build-system]
+    build-backend = "hatchling.build"
+    requires      = ["hatchling"]
+
+[tool.uv]
+    dev-dependencies = ["pytest>=8.3.3", "ruff>=0.6.9"]
