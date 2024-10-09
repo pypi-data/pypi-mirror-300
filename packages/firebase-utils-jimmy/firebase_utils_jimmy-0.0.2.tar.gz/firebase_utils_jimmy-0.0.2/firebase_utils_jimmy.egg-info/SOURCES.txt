@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+firebase_utils_jimmy/__init__.py
+firebase_utils_jimmy/firestore_client.py
+firebase_utils_jimmy.egg-info/PKG-INFO
+firebase_utils_jimmy.egg-info/SOURCES.txt
+firebase_utils_jimmy.egg-info/dependency_links.txt
+firebase_utils_jimmy.egg-info/requires.txt
+firebase_utils_jimmy.egg-info/top_level.txt
+tests/test_firebase_utils.py
