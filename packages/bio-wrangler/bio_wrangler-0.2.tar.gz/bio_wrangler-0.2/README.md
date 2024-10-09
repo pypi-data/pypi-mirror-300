@@ -1,0 +1,117 @@
+
+# Bio-Wrangler
+
+**Bio-Wrangler** is a bioinformatics data wrangling package for handling FASTA, FASTQ, VCF, and GFF files. It helps load, filter, merge, and summarize biological datasets in an easy and efficient manner.
+
+## Features
+
+- Load **FASTA**, **FASTQ**, **VCF**, and **GFF** files into pandas DataFrames.
+- Filter data by quality, chromosome, position, and specific attributes.
+- Merge and summarize datasets.
+- Save data to **CSV** or **Excel** formats.
+
+## Installation
+
+You can install **Bio-Wrangler** directly from PyPI:
+
+
+pip install bio-wrangler
+
+
+## Usage
+
+Here’s how to use **Bio-Wrangler** to load, filter, and manipulate your bioinformatics datasets.
+
+### Loading Data
+
+You can load data from FASTA, FASTQ, VCF, and GFF formats into pandas DataFrames for easy manipulation.
+
+#### Example: Loading FASTA, FASTQ, VCF, and GFF Files
+
+
+from bio_wrangler.bio_wrangler import BioWrangler
+
+# Initialize the BioWrangler class
+wrangler = BioWrangler()
+
+# Load data from different formats
+fasta_data = wrangler.load_fasta('path/to/sample.fasta')
+fastq_data = wrangler.load_fastq('path/to/sample.fastq')
+vcf_data = wrangler.load_vcf('path/to/sample.vcf')
+gff_data = wrangler.load_gff('path/to/sample.gff')
+
+# Display the first few rows of the datasets
+print(fasta_data.head())
+print(fastq_data.head())
+print(vcf_data.head())
+print(gff_data.head())
+
+
+### Filtering Data
+
+You can filter the data by quality, chromosome, position, or specific attributes.
+
+#### Example: Filtering FASTQ by Quality
+
+
+filtered_fastq = wrangler.filter_fastq_by_quality(fastq_data, 30.0)
+print(filtered_fastq.head())  # Display FASTQ sequences with avg quality >= 30
+
+
+#### Example: Filtering VCF by Chromosome and Position Range
+
+
+filtered_vcf_by_chr = wrangler.filter_by_chromosome(vcf_data, 'chr1')
+filtered_vcf_by_pos = wrangler.filter_by_position_range(vcf_data, 100000, 500000)
+
+print(filtered_vcf_by_chr.head())
+print(filtered_vcf_by_pos.head())
+
+
+#### Example: Filtering GFF by Attribute
+
+
+filtered_gff = wrangler.filter_by_attribute(gff_data, 'ID', 'gene1')
+print(filtered_gff.head())  # Filter by gene ID
+
+
+### Summarizing Data
+
+Generate a summary of the dataset, including total rows, average quality, and positional statistics.
+
+#### Example: Summarizing FASTQ and VCF Data
+
+
+fastq_summary = wrangler.summarize_fastq(fastq_data)
+vcf_summary = wrangler.summarize_data(vcf_data)
+
+print(fastq_summary)
+print(vcf_summary)
+
+
+### Merging Datasets
+
+Merge multiple datasets (e.g., two VCF datasets) into one for combined analysis.
+
+#### Example: Merging VCF Datasets
+
+
+merged_vcf = wrangler.merge_datasets(vcf_data, filtered_vcf_by_chr)
+print(merged_vcf.head())  # Combined dataset
+
+
+### Saving Data
+
+You can save your processed data to a file in either CSV or Excel format.
+
+#### Example: Saving Filtered VCF Data to a CSV File
+
+
+wrangler.save_data(filtered_vcf_by_chr, 'filtered_vcf_output.csv', 'csv')
+
+
+## License
+
+This project is licensed under the MIT License.
+
+---
