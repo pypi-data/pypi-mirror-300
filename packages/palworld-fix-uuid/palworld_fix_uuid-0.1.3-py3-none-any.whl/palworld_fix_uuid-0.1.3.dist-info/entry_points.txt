@@ -1,0 +1,3 @@
+[console_scripts]
+palworld-fix-uuid=palworld_fix_uuid.main:app
+
