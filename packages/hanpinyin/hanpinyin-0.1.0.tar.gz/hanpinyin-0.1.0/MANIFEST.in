@@ -1,0 +1,3 @@
+include src/hanpinyin/bopomofo_to_pinyin_wo_tune_dict.json
+include src/hanpinyin/char_bopomofo_dict.json
+include src/hanpinyin/bert-base-chinese_s2t_dict.txt
