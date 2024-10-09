@@ -1,0 +1,9 @@
+tests/__init__.py,sha256=Ra-Lg1c6hu25ns9O5Ro0TtFd_PZs6YZKAE0ak-qZk1g,500
+tests/test_frame.py,sha256=bOySFSDmtp9YYRtsW1B_m6dZvestVKMXQN_W2jp89XA,428
+tests/test_io.py,sha256=0TCvewGBtoYUvAbRr0aTZhCX_a19Foe2Y_kg1QUbqP0,345
+tests/test_ops.py,sha256=nq9cwGtAkDrcMuXKu1AkQaqQA_z1cAyyz1VnaftL1us,311
+gajaraj-1.0.dist-info/LICENSE,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+gajaraj-1.0.dist-info/METADATA,sha256=zdrdsN-4RKxUSm7zv3VbDUQ8mklgwOHH69srxB5HoOg,502
+gajaraj-1.0.dist-info/WHEEL,sha256=GV9aMThwP_4oNCtvEC2ec3qUYutgWeAzklro_0m4WJQ,91
+gajaraj-1.0.dist-info/top_level.txt,sha256=EdW7283x-lr_cbuivW8Ij7ANAP-ZJ9sLtILQseEPxXg,6
+gajaraj-1.0.dist-info/RECORD,,
