@@ -1,0 +1,2 @@
+[napari.manifest]
+napari-grid-cropping = napari_grid_cropping:napari.yaml

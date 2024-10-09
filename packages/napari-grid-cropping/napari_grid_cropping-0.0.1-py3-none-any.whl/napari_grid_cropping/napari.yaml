@@ -1,0 +1,21 @@
+name: napari-grid-cropping
+display_name: Grid cropping napari plugin
+# use 'hidden' to remove plugin from napari hub search results
+visibility: public
+# see https://napari.org/stable/plugins/manifest.html for valid categories
+categories: ["Annotation", "Segmentation", "Acquisition"]
+contributions:
+  commands:
+    - id: napari-grid-cropping.make_grid_widget
+      python_name: napari_grid_cropping:grid_widget
+      title: Make Grid cropping widget
+    - id: napari-grid-cropping.make_label_widget
+      python_name: napari_grid_cropping:label_widget
+      title: Make Label annotation widget
+  widgets:
+    - command: napari-grid-cropping.make_grid_widget
+      display_name: Grid cropping
+      autogenerate: true
+    - command: napari-grid-cropping.make_label_widget
+      display_name: Create label annotations
+      autogenerate: true

@@ -1,0 +1,13 @@
+napari_grid_cropping/__init__.py,sha256=Bk0Ml0blq4hquRnQh8jgP22FtVZ9iVc1zAPC1u8MkMU,229
+napari_grid_cropping/_annotating.py,sha256=lpGh_8kZ4aJ-zb7bWWshveZnmKGRWrBpt3Uke3Lf0SI,2225
+napari_grid_cropping/_cropping.py,sha256=p6OpHKpyNiTvyMl-KYRzKCaIcLTPFoegUphVDGrOwHA,3604
+napari_grid_cropping/_version.py,sha256=pMnmqZnpVmaqR5nqHztNWzbbtb1oy5bPN_v7uhOH8K8,411
+napari_grid_cropping/napari.yaml,sha256=C6SXGyaOpxgQJU3CsFlOpiCkCI6oyWH5TkSMgvpTNLI,841
+napari_grid_cropping/_tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+napari_grid_cropping/_tests/test_widget.py,sha256=pzAwyYPHr8Sq3rnZD_d6JCj7icDHbK1ZbmAth6p0dIE,476
+napari_grid_cropping-0.0.1.dist-info/LICENSE,sha256=Y1OrPZLAgV5JrC6KWbe1WrEz2xAFzZR7UpuQUqiz9Ac,1500
+napari_grid_cropping-0.0.1.dist-info/METADATA,sha256=8ZN8sfttQTq1pqDR7CEwNioqr1D1473aamVWi2YAS6g,6112
+napari_grid_cropping-0.0.1.dist-info/WHEEL,sha256=GV9aMThwP_4oNCtvEC2ec3qUYutgWeAzklro_0m4WJQ,91
+napari_grid_cropping-0.0.1.dist-info/entry_points.txt,sha256=VjARX3iPBdApIGdTZ_MUmYKw8h5gMXwNr_uwfY1T0jY,74
+napari_grid_cropping-0.0.1.dist-info/top_level.txt,sha256=Tye-99Ht-HmKjqaYkTl41n6k6ad--lbJWiThY8kEBe4,21
+napari_grid_cropping-0.0.1.dist-info/RECORD,,
