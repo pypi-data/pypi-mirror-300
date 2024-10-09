@@ -1,0 +1,45 @@
+// Copyright 2023, ANSYS Inc. Unauthorized use, distribution or duplication is prohibited.
+syntax = "proto3";
+package ansys.api.discovery.v0.solution;
+
+import "google/protobuf/empty.proto";
+
+option csharp_namespace = "Ansys.Api.Discovery.V0.Solution";
+
+service Solution
+{
+  rpc GetSolverFidelity(SimulationStageRequest) returns (SolverFidelityResponse);
+  rpc SetSolverFidelity(SolverFidelityRequest) returns (google.protobuf.Empty);
+  rpc Solve(SolveExecutionRequest) returns (SolveExecutionResponse);
+}
+
+message SolverFidelityRequest{
+  SimulationStageRequest simulation_stage = 1;
+  double value = 2;
+}
+
+//TODO Replace string with Enum
+message SimulationStageRequest{
+  string simulation = 1;
+  string stage = 2;
+}
+
+message SolverFidelityResponse{
+  double value = 1;
+}
+
+message SolveExecutionRequest{
+  string simulation_id = 1;
+  Stage stage = 2;
+  bool execute_remotely =3;
+}
+
+message SolveExecutionResponse{
+  bool success = 1;
+  string message = 2;
+}
+
+enum Stage {
+  EXPLORE = 0;
+  REFINE = 1;
+}
