@@ -1,0 +1,17 @@
+sksound/__init__.py,sha256=oqc-ovNVkZJyMFkJXy5_a3KNDvoRi8MtFM46xCKWRQQ,656
+sksound/__init__.py~,sha256=AtsGm3OwPCJuSdMUpfmdM-hXfdEwKXzfVXxflSgdU60,656
+sksound/misc.py,sha256=Cld6TSyaPF9sLZR95xckED2umDcaxR5ouL7sK3BbdBE,6515
+sksound/sounds.py,sha256=KQb5e6ToZTGV2KibfPolJ2dtTTUccK13J8_pMqjzW3g,18704
+tests/__init__.py,sha256=0Awvs281Y_XAPI38lmW4rDOd6VWuupyORAKXWwwSceg,78
+tests/a1.wav,sha256=PR_7BgVXpac5TjwV2tXxTQp60aKcr49ex4yojunhKK8,54186
+tests/float_sound.wav,sha256=pdy1JiZYHNPLwdGV3Lo72zijGdLWkvLg5bAOJHXV1ZU,1843258
+tests/peas.wav,sha256=Xo_ZK8RG1_-B7Id6bqbpSnQ5iyXeD9bx6o77R3cc5Cs,266422
+tests/test_sound.py,sha256=u48x3UAgLOcDmKq971B_wm_UzxFizfiZsL3HDz0jTMM,2554
+tests/tiger.wav,sha256=VyJrquFVXfJj3F79owiApBT6LJr55G_YY38hUyP9uls,921686
+tests/tmp.wav,sha256=YHwtLzCNaSS9juIYGjwHBQSVssrbgYL9eJRyiYwFtb8,22094
+tests/YouAreNotIt.mp3,sha256=tO8X6TOMuHjTXTkP2M8QEkx4MDSIdvaN7DS7ukh9QSA,125805
+tests/YouAreNotIt.wav,sha256=J3yZqCveJ3AaRJjdf1efWuY88h3zkWZ-8m60sVo7pKQ,1387086
+scikit_sound-0.3.0.dist-info/LICENSE.txt,sha256=KfvMlzHVXEgOmA1fPVvuZsN2nUXgv5ixUlLSf-4-grQ,1483
+scikit_sound-0.3.0.dist-info/METADATA,sha256=kuwpcYZBgGgcX7-NUTwzAS4iQR6uCzgxFSkQVbtGslc,2084
+scikit_sound-0.3.0.dist-info/WHEEL,sha256=7Z8_27uaHI_UZAc4Uox4PpBhQ9Y5_modZXWMxtUi4NU,88
+scikit_sound-0.3.0.dist-info/RECORD,,
