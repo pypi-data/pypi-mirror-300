@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: nitroflare_uploader
+Version: 1.1.0
+Summary: A Python package to upload files to Nitroflare
+Home-page: https://git.goocat.gay
+Author: Zack3D
+Author-email: zack3d@goocat.gay
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Dist: requests>=2.20.0
+Requires-Dist: tqdm>=4.0.0
+Requires-Dist: requests-toolbelt>=0.9.1
+
