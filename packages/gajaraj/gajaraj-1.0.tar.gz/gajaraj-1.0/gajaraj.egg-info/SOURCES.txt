@@ -1,0 +1,12 @@
+LICENSE
+README.md
+setup.py
+gajaraj.egg-info/PKG-INFO
+gajaraj.egg-info/SOURCES.txt
+gajaraj.egg-info/dependency_links.txt
+gajaraj.egg-info/requires.txt
+gajaraj.egg-info/top_level.txt
+tests/__init__.py
+tests/test_frame.py
+tests/test_io.py
+tests/test_ops.py
