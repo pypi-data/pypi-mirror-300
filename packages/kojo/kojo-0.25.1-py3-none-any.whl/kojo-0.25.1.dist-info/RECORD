@@ -1,0 +1,10 @@
+kojo/__init__.py,sha256=2JRYu3SIBSa7WAF53GnOIvTImkR96oL6ZFqnz0MiBzQ,588
+kojo/extra.py,sha256=w_hjbZNfYvhGNFAFyrUBqISP0L-ScXj74hfGPnTWxD0,1115
+kojo/item.py,sha256=mpoCeY1EJqyIx0_YaaiZ21jDrzBO-Zlo58ekcJ6sYYE,4828
+kojo/process.py,sha256=-DCOQQxdjakwcu9qx_-1U2MRrgMiFig0xVlStAwOnR4,2368
+kojo/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+kojo-0.25.1.dist-info/LICENSE.txt,sha256=ixuiBLtpoK3iv89l7ylKkg9rs2GzF9ukPH7ynZYzK5s,35148
+kojo-0.25.1.dist-info/METADATA,sha256=TQx071Ad2td7FrqXdNy_JlJqh5-KZWOmHI1bRtk6HXM,4494
+kojo-0.25.1.dist-info/WHEEL,sha256=GV9aMThwP_4oNCtvEC2ec3qUYutgWeAzklro_0m4WJQ,91
+kojo-0.25.1.dist-info/top_level.txt,sha256=8Xx89Bhf5RayJWYAWTFzBt9E-dn0DaLXOi6KL4SZoNs,5
+kojo-0.25.1.dist-info/RECORD,,
