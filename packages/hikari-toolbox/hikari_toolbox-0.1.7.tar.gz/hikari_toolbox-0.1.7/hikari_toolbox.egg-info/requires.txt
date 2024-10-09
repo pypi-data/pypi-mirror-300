@@ -1,0 +1,8 @@
+hikari>=2.0.0
+
+[:sys_platform=="win32"]
+colorama
+
+[docs]
+furo==2024.04.27
+sphinx==7.4.7
