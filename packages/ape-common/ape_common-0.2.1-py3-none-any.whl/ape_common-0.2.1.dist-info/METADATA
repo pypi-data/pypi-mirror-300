@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: ape-common
+Version: 0.2.1
+Summary: Common utilities for Ape: your AI prompt engineer
+Author-email: weavel <founders@weavel.ai>
+License: MIT
+Project-URL: Homepage, https://github.com/weavel-ai/Ape/tree/main/libs/common
+Project-URL: Bug Tracker, https://github.com/weavel-ai/Ape/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+Requires-Dist: pydantic<3.0.0,>=2.9.2
+Requires-Dist: pandas<3.0.0,>=2.2.3
+Requires-Dist: litellm<2.0.0,>=1.48.0
+Requires-Dist: promptfile<1.0.0,>=0.7.0
+Requires-Dist: structlog<24.0.0,>=23.1.0
+Requires-Dist: rich<14.0.0,>=13.0.1
+Requires-Dist: pysbd<1.0.0,>=0.3.4
+Provides-Extra: dev
+Requires-Dist: pytest; extra == "dev"
+Requires-Dist: black; extra == "dev"
+
