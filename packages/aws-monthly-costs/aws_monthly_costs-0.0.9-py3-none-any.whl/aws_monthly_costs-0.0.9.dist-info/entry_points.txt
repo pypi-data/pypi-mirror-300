@@ -1,0 +1,2 @@
+[console_scripts]
+amc = amc.__main__:main
