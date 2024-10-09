@@ -1,0 +1,7 @@
+README.md
+setup.py
+ceramicsdk.egg-info/PKG-INFO
+ceramicsdk.egg-info/SOURCES.txt
+ceramicsdk.egg-info/dependency_links.txt
+ceramicsdk.egg-info/requires.txt
+ceramicsdk.egg-info/top_level.txt
