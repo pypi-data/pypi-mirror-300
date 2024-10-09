@@ -1,0 +1,15 @@
+gqxls/__init__.py,sha256=3upmrnINXr5ZPXDy-VhtsqsuwNx2ixKQGW6Vj_STp4o,534
+gqxls/convert/__init__.py,sha256=Nw3VRkNAXfWDN-xvedlpA521RjNP5Cvpthy03YPwY28,66
+gqxls/convert/_convert_main.py,sha256=YZm9Ev1TNbvyVdl0X5BAp-2MAy1MB7oTnG87Bcbz-uk,538
+gqxls/convert/_pdf.py,sha256=RcnXB_qF_Sou77ufqWCCHmQwtCgc0nbKZdD02fO8QAo,3845
+gqxls/information/__init__.py,sha256=I8B_eQ5UGSKKvpv5Ado47xW3CZcC_ylY3bbZJOamBkY,55
+gqxls/information/_gain.py,sha256=TOj0BwYz-1RBvwjO-ByJtQY6opLOJtD3VG-d5lND4og,485
+gqxls/network/__init__.py,sha256=qP3lIcpsXqbYWkeJQUFfuW2S8qK5TemXETp_fEz6nzs,65
+gqxls/network/_download.py,sha256=_Vn5uLqE0919ogWeHiGnXYuu1Xc3juTZVgsm_ksUYb4,3553
+gqxls/path/__init__.py,sha256=RhwIdaOc_2RWFrPWosPtYS4jPcycHLy2-sSo1KurTqc,56
+gqxls/path/_paths.py,sha256=INIiIq5aTro-DEc-sjyFi7MdSRi0CXVBGALrFfW7Zvs,1677
+gqxls-0.0.9.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+gqxls-0.0.9.dist-info/METADATA,sha256=tVo_PtPMmuGelNSdDNy4fGSOtPZeBTQ-oL0AJVG7lbY,1281
+gqxls-0.0.9.dist-info/WHEEL,sha256=GV9aMThwP_4oNCtvEC2ec3qUYutgWeAzklro_0m4WJQ,91
+gqxls-0.0.9.dist-info/top_level.txt,sha256=bLdFTPh63dbWCUuWK_az4xTY8JwO6Wf7iPSp5UGqPhM,6
+gqxls-0.0.9.dist-info/RECORD,,
