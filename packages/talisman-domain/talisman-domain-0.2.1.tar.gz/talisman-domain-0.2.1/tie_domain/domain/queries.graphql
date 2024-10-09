@@ -1,0 +1,140 @@
+query paginationConceptTypeIE($limit: Int! = 0, $offset: Int!) {
+    pagination: paginationConceptTypeInternal(
+        limit: $limit
+        offset: $offset
+        filterSettings: {}
+    ) {
+        total
+        list: listConceptType {
+            id
+            name
+        }
+    }
+}
+
+query paginationDocumentTypeIE($limit: Int! = 0, $offset: Int!) {
+    pagination: paginationDocumentTypeInternal(
+        limit: $limit
+        offset: $offset
+        filterSettings: {}
+    ) {
+        total
+        list: listDocumentType {
+            id
+            name
+        }
+    }
+}
+
+query paginationValueTypeIE($limit: Int! = 0, $offset: Int!) {
+    pagination: paginationConceptPropertyValueTypeInternal(
+        limit: $limit
+        offset: $offset
+        filterSettings: {}
+    ) {
+        total
+        list: listConceptPropertyValueType {
+            id
+            name
+            valueType
+            valueRestriction
+        }
+    }
+}
+
+query paginationCompositeValueTypeIE($limit: Int! = 0, $offset: Int!) {
+    pagination: paginationCompositePropertyValueTemplateInternal(
+        limit: $limit
+        offset: $offset
+        filterSettings: {}
+    ) {
+        total
+        list: listCompositePropertyValueTemplate {
+            id
+            name
+            componentValueTypes {
+                id
+                name
+                isRequired
+                valueType {
+                    id
+                }
+            }
+        }
+    }
+}
+
+
+query paginationRelationTypeIE($limit: Int! = 0, $offset: Int!) {
+    pagination: paginationConceptLinkTypeInternal(
+        limit: $limit
+        offset: $offset
+        filterSettings: {}
+    ) {
+        total
+        list: listConceptLinkType {
+            id
+            name
+            source: conceptFromType {
+                id
+            }
+            target: conceptToType {
+                id
+            }
+            isDirected
+        }
+    }
+}
+
+
+query paginationConceptPropertyTypeIE($limit: Int! = 0, $offset: Int!) {
+    pagination: paginationConceptPropertyTypeInternal(
+        limit: $limit
+        offset: $offset
+        filterSettings: {}
+    ) {
+        total
+        list: listConceptPropertyType {
+            id
+            name
+            isIdentifying
+            source: parentConceptType {
+                id
+            }
+            target: valueType {
+                ... on ConceptPropertyValueType {
+                    id
+                }
+                ... on CompositePropertyValueTemplate {
+                    id
+                }
+            }
+        }
+    }
+}
+
+
+query paginationRelationPropertyTypeIE($limit: Int! = 0, $offset: Int!) {
+    pagination: paginationConceptLinkPropertyTypeInternal(
+        limit: $limit
+        offset: $offset
+        filterSettings: {}
+    ) {
+        total
+        list: listConceptPropertyType {
+            id
+            name
+            source: parentConceptLinkType{
+                id
+            }
+            target: valueType {
+                ... on ConceptPropertyValueType {
+                    id
+                }
+                ... on CompositePropertyValueTemplate {
+                    id
+                }
+            }
+        }
+    }
+}
