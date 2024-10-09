@@ -1,0 +1,31 @@
+
+
+from langchain_core.prompts import ChatPromptTemplate
+from langchain_core.runnables import Runnable, RunnableConfig
+from langgraph.graph import END
+from numpy import less
+from pydantic import BaseModel, Field
+
+from mtmai.agents.ctx import mtmai_context
+from mtmai.agents.nodes.article_writer_node import ToArticleWriterAssistant
+from mtmai.core.logging import get_logger
+from mtmai.models.graph_config import HomeChatState
+import mtmai.chainlit as cl
+
+
+logger = get_logger()
+
+class SubAssistantNode():
+    def __init__(self, name:str, entry_struct:BaseModel,tools:list, prompt_tpl:str):
+        self.name = name
+        self.entry_struct = entry_struct
+        self.tools = tools
+
+    def get_entry_struct(self):
+        return self.entry_struct
+
+    def __call__(self, state: HomeChatState) :
+        logger.info(f"SubAssistantNode {self.name} called")
+        return {
+            "messages": [],
+        }
