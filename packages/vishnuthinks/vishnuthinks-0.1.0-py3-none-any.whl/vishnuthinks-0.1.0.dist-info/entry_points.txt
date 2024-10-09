@@ -1,0 +1,2 @@
+[console_scripts]
+vishnuthinks-quiz = vishnuthinks:run_quiz
