@@ -1,0 +1,7 @@
+README.md
+pyproject.toml
+quick_colorlog.egg-info/PKG-INFO
+quick_colorlog.egg-info/SOURCES.txt
+quick_colorlog.egg-info/dependency_links.txt
+quick_colorlog.egg-info/requires.txt
+quick_colorlog.egg-info/top_level.txt
