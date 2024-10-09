@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: ankerautotrainsdk
+Version: 0.9
+Summary: Python Package Boilerplate
+Home-page: 
+Author: taco
+Author-email: taco.wang@anker-in.com
+License: MIT License
+Description-Content-Type: text/markdown
+Requires-Dist: requests
+Requires-Dist: pydantic
+
+# 回流服务SDK
+
+## 怎么使用
+
+1. 初始化SDK
+
+```PYTHON
+from ankerautotrainsdk import AnkerAutoTrainSDK
+
+# 这里url可以不传，默认是https://dataloop.anker-in.com
+client = AnkerAutoTrainSDK(url="https://dataloop.anker-in.com") 
+```
+2. 上传图片
+```python
+client.upload_image("test.jpeg", "test")
+```
+3. 下载图片
+```python
+client.download_image("hvcrqyykgmaql", "data-sync-storage", "test/test.jpeg", "test-download.jpg")
+```
