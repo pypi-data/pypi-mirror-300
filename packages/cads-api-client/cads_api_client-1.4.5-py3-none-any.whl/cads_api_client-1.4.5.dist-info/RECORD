@@ -1,0 +1,14 @@
+cads_api_client/__init__.py,sha256=bSBFLAr9ietLT40CzBPyZugVvwMNFxrIFj158imcMw8,1210
+cads_api_client/api_client.py,sha256=MWbRy0VwHW5HtEzrE5-QNKgW1Y1aucj_gdTAB_aHazU,13372
+cads_api_client/catalogue.py,sha256=2vmLWCwNAlumY6-n3KiQCtHhgM9zSKwC1EG0HhUVK0o,4299
+cads_api_client/config.py,sha256=EyBNhamXBHUng5xRfEcpZknbsHKJmHwSxngn8x6c9dk,802
+cads_api_client/legacy_api_client.py,sha256=7kT6GYOCOCERYxff9zFrM9gXoPHIxqSqvxqBshKETlM,8679
+cads_api_client/processing.py,sha256=YcAEaVgiM_FjQiWY4Cb7Pz40mBateIQT65TDxThhTSA,21500
+cads_api_client/profile.py,sha256=UgpIktS-g1UH4_0tT2OrGRWa-ZVkVgm59jP5Eubzne4,1908
+cads_api_client/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+cads_api_client/version.py,sha256=yBZuyAwf56tsJgde7AdPeFq7jZPYg4KtuXxvyc5oduU,72
+cads_api_client-1.4.5.dist-info/LICENSE,sha256=e2Qp4JUZeHZZSYCADyp1B3siZB5aQE5MRCYRx7vqlNI,11346
+cads_api_client-1.4.5.dist-info/METADATA,sha256=kTDEMd8T_tXlox2K9Tu0B6GKoxUaghxzgksvulPseaI,16838
+cads_api_client-1.4.5.dist-info/WHEEL,sha256=GV9aMThwP_4oNCtvEC2ec3qUYutgWeAzklro_0m4WJQ,91
+cads_api_client-1.4.5.dist-info/top_level.txt,sha256=qMFyAerFdRsV1VE5zpXclnAH9vVk4tZSYnCENQKuyTw,16
+cads_api_client-1.4.5.dist-info/RECORD,,
