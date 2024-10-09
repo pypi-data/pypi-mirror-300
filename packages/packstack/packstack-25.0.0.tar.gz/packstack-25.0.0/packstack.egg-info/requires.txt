@@ -1,0 +1,7 @@
+PyYAML>=3.10
+cryptography>=2.1
+distro
+docutils>=0.11
+netaddr>=0.7.6
+netifaces
+pbr>=1.6
