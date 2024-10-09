@@ -1,0 +1,9 @@
+MANIFEST.in
+setup.py
+src/all-mpnet-base-v2-pypi-part_005/__init__.py
+src/all-mpnet-base-v2-pypi-part_005/input/all-mpnet-base-v2.zip.005
+src/all_mpnet_base_v2_pypi_part_005.egg-info/PKG-INFO
+src/all_mpnet_base_v2_pypi_part_005.egg-info/SOURCES.txt
+src/all_mpnet_base_v2_pypi_part_005.egg-info/dependency_links.txt
+src/all_mpnet_base_v2_pypi_part_005.egg-info/requires.txt
+src/all_mpnet_base_v2_pypi_part_005.egg-info/top_level.txt
