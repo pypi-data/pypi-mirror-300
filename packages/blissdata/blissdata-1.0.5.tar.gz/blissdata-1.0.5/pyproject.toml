@@ -1,0 +1,58 @@
+[project]
+name = "blissdata"
+dynamic = ["version"]
+description = "Bliss data streaming client"
+readme = "README.md"
+license = {file = "LICENSE.md"}
+maintainers = [{name = "BCU (ESRF)"}]
+classifiers = [
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: GNU Lesser General Public License v3 (LGPLv3)",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+]
+requires-python = ">=3.8,<3.10"
+dependencies = [
+    "beartype",
+    "h5py>=2.9,<3.10", # https://gitlab.esrf.fr/bliss/bliss/-/issues/3959
+    "msgpack",
+    "numpy>=1.13,<2",
+    "redis>=4.6.0,<5",
+    "redis-om<0.3",
+    "silx>=1.1.0",
+]
+
+[project.urls]
+Repository = "https://gitlab.esrf.fr/bliss/blissdata/"
+Documentation = "https://bliss.gitlab-pages.esrf.fr/blissdata/"
+Changes = "https://gitlab.esrf.fr/bliss/blissdata/-/blob/master/CHANGELOG.md"
+
+[project.optional-dependencies]
+tango = ["pytango>=9.3.1"]
+test = [
+    "gevent>=20.9.0",
+    "pytest>=7",
+    "pytest-mock",
+    "pytest-redis",
+    "pytest-timeout",
+]
+dev = [
+    "blissdata[test]",
+    "black==22.3",
+    "flake8>=4",
+]
+beacon = ["ruamel.yaml"]
+
+[project.scripts]
+memory_tracker = "blissdata.redis_engine.memory_tracker:cli"
+
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.dynamic]
+version = {attr = "blissdata.__version__"}
+
+[tool.pytest.ini_options]
+addopts = "-v"
+testpaths = ["src/blissdata/tests"]
