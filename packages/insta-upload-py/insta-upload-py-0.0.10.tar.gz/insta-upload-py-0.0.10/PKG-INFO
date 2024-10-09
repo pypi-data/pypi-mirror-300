@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: insta-upload-py
+Version: 0.0.10
+Summary: A Python package to automate video uploads to Instagram at set intervals using web requests.
+Author: djalti
+Author-email: abdeldjalilselamnia@gmail.com
+Keywords: python,instagram,upload,requests,reels,pages,bot,automation
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Description-Content-Type: text/markdown
+Requires-Dist: moviepy
+Requires-Dist: opencv-python
+Requires-Dist: pillow
+Requires-Dist: requests
+Requires-Dist: urllib
+
+instaAutoUpload is a Python package that allows users to automate the process of uploading videos to Instagram at specified intervals. The package uses direct web requests to interact with Instagram's API, enabling users to upload videos seamlessly. instaAutoUpload can be customized to handle different scheduling options, video formats, and captions, making it easy to tailor the upload process to your needs. Whether you're managing a personal account or a business profile, this package simplifies the process of keeping your feed updated automatically, saving time and effort.

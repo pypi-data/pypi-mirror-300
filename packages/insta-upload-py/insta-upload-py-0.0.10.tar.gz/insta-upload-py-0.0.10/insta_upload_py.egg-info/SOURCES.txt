@@ -1,0 +1,9 @@
+README.md
+setup.py
+instaUploadPy/__init__.py
+instaUploadPy/instaUpload.py
+insta_upload_py.egg-info/PKG-INFO
+insta_upload_py.egg-info/SOURCES.txt
+insta_upload_py.egg-info/dependency_links.txt
+insta_upload_py.egg-info/requires.txt
+insta_upload_py.egg-info/top_level.txt
