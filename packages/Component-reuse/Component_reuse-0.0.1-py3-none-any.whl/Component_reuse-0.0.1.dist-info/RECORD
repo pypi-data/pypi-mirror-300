@@ -1,0 +1,8 @@
+component_reuse/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+component_reuse/logger.py,sha256=bj-dELMNDNjkvfr0cgDw9BfWWfajmHzDTdtpkxQqsYg,552
+component_reuse/main.py,sha256=sTgXX1zyxMv-kKSFAZhCWRh0ce61vjcQqOkk5LoXG_Y,53
+component_reuse/test.py,sha256=YjQ-xHn-0n2dVwBKXvhbDBVbAAPDpLdjMeAdCtGrZeE,2722
+Component_reuse-0.0.1.dist-info/METADATA,sha256=7oM4k2_ZhVspv4zOgZbiW0mKYv6vOi19oLSQ2WGqo7A,1229
+Component_reuse-0.0.1.dist-info/WHEEL,sha256=eOLhNAGa2EW3wWl_TU484h7q1UNgy0JXjjoqKoxAAQc,92
+Component_reuse-0.0.1.dist-info/top_level.txt,sha256=Pwn_LGr4U8yul2YXnHewSqpLziHHPCRvsi3z5-1tm_Q,16
+Component_reuse-0.0.1.dist-info/RECORD,,
