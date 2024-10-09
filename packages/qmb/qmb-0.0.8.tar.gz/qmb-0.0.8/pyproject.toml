@@ -1,0 +1,54 @@
+[build-system]
+requires = ["setuptools>=69.5", "setuptools_scm>=8.1", "pybind11>=2.13"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "qmb"
+dynamic = ["version"]
+dependencies = ["numpy", "scipy", "torch", "tyro", "openfermion"]
+requires-python = ">=3.12"
+authors = [{ name = "Hao Zhang", email = "hzhangxyz@outlook.com" }]
+description = "Quantum Manybody Problem"
+readme = "README.md"
+license = {text = "GPLv3"}
+keywords = ["quantum", "manybody", "quantum-chemistry", "quantum-simulation", "molecular-simulation", "algorithms", "simulation", "wave-function", "ground-state", "ansatz", "torch", "pytorch"]
+classifiers = [
+  "Development Status :: 4 - Beta",
+  "Environment :: Console",
+  "License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)",
+  "Programming Language :: C++",
+  "Programming Language :: Python :: 3",
+  "Topic :: Scientific/Engineering :: Mathematics",
+  "Topic :: Scientific/Engineering :: Physics",
+  "Topic :: Scientific/Engineering :: Chemistry",
+  "Topic :: Software Development :: Libraries :: Python Modules",
+]
+
+[project.urls]
+Homepage = "https://github.com/USTC-KnowledgeComputingLab/qmb"
+Documentation = "https://github.com/USTC-KnowledgeComputingLab/qmb"
+Repository = "https://github.com/USTC-KnowledgeComputingLab/qmb.git"
+Issues = "https://github.com/USTC-KnowledgeComputingLab/qmb/issues"
+
+[project.scripts]
+qmb = "qmb.__main__:main"
+
+[tool.setuptools.packages.find]
+include = ["qmb"]
+
+[tool.setuptools_scm]
+version_file = "qmb/_version.py"
+version_scheme = "no-guess-dev"
+
+[tool.yapf]
+based_on_style = "google"
+column_limit = 200
+
+[tool.cibuildwheel.linux]
+archs = ["x86_64", "i686", "aarch64", "ppc64le", "s390x"]
+
+[tool.cibuildwheel.macos]
+archs = ["x86_64", "arm64", "universal2"]
+
+[tool.cibuildwheel.windows]
+archs = ["AMD64", "x86", "ARM64"]
