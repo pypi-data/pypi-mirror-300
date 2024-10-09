@@ -1,0 +1,7 @@
+lucit_ubdcc_mgmt-0.0.64.dist-info/METADATA,sha256=pd72JXGdsvMEtT3unMdQNe2TXuMiV1sT4PCyYU_yHUM,7790
+lucit_ubdcc_mgmt-0.0.64.dist-info/RECORD,,
+lucit_ubdcc_mgmt-0.0.64.dist-info/top_level.txt,sha256=-IZo4Idk3hGuMdG9Ekp8fEPI4K6dzO598Ka2HF-jLu8,17
+lucit_ubdcc_mgmt-0.0.64.dist-info/WHEEL,sha256=_JZ_W_t5ib06d3eJziLFhfZkx9PRgL23NfsfQlg0OMg,112
+lucit_ubdcc_mgmt/Mgmt.cpython-312-x86_64-linux-musl.so,sha256=Ewt7XihIRtL9Oo_3Gu1V-M2J9TygGimdgvdLGOVgi9Q,661904
+lucit_ubdcc_mgmt/RestEndpoints.cpython-312-x86_64-linux-musl.so,sha256=h8FVW0fDP-mJukmLiodIirXfdoArRr8lpJtWjLr-iNM,1899496
+lucit_ubdcc_mgmt/__init__.cpython-312-x86_64-linux-musl.so,sha256=XCdXD_dHaa_n73tqoI4N_sm5gAGvOq57fiCC2cdxCpo,84472
