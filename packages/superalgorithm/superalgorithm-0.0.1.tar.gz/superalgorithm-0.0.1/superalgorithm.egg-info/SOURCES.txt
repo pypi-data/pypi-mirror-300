@@ -1,0 +1,8 @@
+LICENSE
+README.md
+pyproject.toml
+superalgorithm.egg-info/PKG-INFO
+superalgorithm.egg-info/SOURCES.txt
+superalgorithm.egg-info/dependency_links.txt
+superalgorithm.egg-info/requires.txt
+superalgorithm.egg-info/top_level.txt
