@@ -1,0 +1,15 @@
+moviepy>=1.0.3
+openai>=1.46.0
+pydub>=0.25.1
+nltk>=3.9.1
+progress>=1.6
+
+[dev]
+black
+flake8-pyproject
+flake8
+pytest
+pytest-mock
+pytest-cov
+build
+twine
