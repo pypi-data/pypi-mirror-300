@@ -1,0 +1,145 @@
+{
+    "Queue": "<placeholder>",
+    "UserMetadata": {},
+    "Role": "<placeholder>",
+    "Settings": {
+        "TimecodeConfig": {
+            "Source": "ZEROBASED"
+        },
+        "OutputGroups": [
+            {
+                "CustomName": "hlsout",
+                "Name": "Apple HLS",
+                "Outputs": [
+                    {
+                        "ContainerSettings": {
+                            "Container": "M3U8",
+                            "M3u8Settings": {}
+                        },
+                        "VideoDescription": {
+                            "Width": 640,
+                            "Height": 360,
+                            "CodecSettings": {
+                                "Codec": "H_264",
+                                "H264Settings": {
+                                    "MaxBitrate": 365000,
+                                    "RateControlMode": "QVBR",
+                                    "SceneChangeDetect": "TRANSITION_DETECTION"
+                                }
+                            }
+                        },
+                        "AudioDescriptions": [
+                            {
+                                "CodecSettings": {
+                                    "Codec": "AAC",
+                                    "AacSettings": {
+                                        "Bitrate": 96000,
+                                        "CodingMode": "CODING_MODE_2_0",
+                                        "SampleRate": 48000
+                                    }
+                                }
+                            }
+                        ],
+                        "OutputSettings": {
+                            "HlsSettings": {}
+                        },
+                        "NameModifier": "360p"
+                    },
+                    {
+                        "ContainerSettings": {
+                            "Container": "M3U8",
+                            "M3u8Settings": {}
+                        },
+                        "VideoDescription": {
+                            "Width": 1280,
+                            "Height": 720,
+                            "CodecSettings": {
+                                "Codec": "H_264",
+                                "H264Settings": {
+                                    "MaxBitrate": 3000000,
+                                    "RateControlMode": "QVBR",
+                                    "SceneChangeDetect": "TRANSITION_DETECTION"
+                                }
+                            }
+                        },
+                        "AudioDescriptions": [
+                            {
+                                "CodecSettings": {
+                                    "Codec": "AAC",
+                                    "AacSettings": {
+                                        "Bitrate": 96000,
+                                        "CodingMode": "CODING_MODE_2_0",
+                                        "SampleRate": 48000
+                                    }
+                                }
+                            }
+                        ],
+                        "OutputSettings": {
+                            "HlsSettings": {}
+                        },
+                        "NameModifier": "720p"
+                    },
+                    {
+                        "ContainerSettings": {
+                            "Container": "M3U8",
+                            "M3u8Settings": {}
+                        },
+                        "VideoDescription": {
+                            "Width": 1920,
+                            "Height": 1080,
+                            "CodecSettings": {
+                                "Codec": "H_264",
+                                "H264Settings": {
+                                    "MaxBitrate": 7800000,
+                                    "RateControlMode": "QVBR",
+                                    "SceneChangeDetect": "TRANSITION_DETECTION"
+                                }
+                            }
+                        },
+                        "AudioDescriptions": [
+                            {
+                                "CodecSettings": {
+                                    "Codec": "AAC",
+                                    "AacSettings": {
+                                        "Bitrate": 96000,
+                                        "CodingMode": "CODING_MODE_2_0",
+                                        "SampleRate": 48000
+                                    }
+                                }
+                            }
+                        ],
+                        "OutputSettings": {
+                            "HlsSettings": {}
+                        },
+                        "NameModifier": "1080p"
+                    }
+                ],
+                "OutputGroupSettings": {
+                    "Type": "HLS_GROUP_SETTINGS",
+                    "HlsGroupSettings": {
+                        "SegmentLength": 10,
+                        "Destination": "<placeholder>",
+                        "MinSegmentLength": 0
+                    }
+                }
+            }
+        ],
+        "Inputs": [
+            {
+                "AudioSelectors": {
+                    "Audio Selector 1": {
+                        "DefaultSelection": "DEFAULT"
+                    }
+                },
+                "VideoSelector": {},
+                "TimecodeSource": "ZEROBASED",
+                "FileInput": "<placeholder>"
+            }
+        ]
+    },
+    "AccelerationSettings": {
+        "Mode": "DISABLED"
+    },
+    "StatusUpdateInterval": "SECONDS_60",
+    "Priority": 0
+}

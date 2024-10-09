@@ -1,0 +1,38 @@
+{
+  "tests/aws/services/apigatewayv2/test_apigatewayv2_aws_stepfunctions.py::TestHttpApiAwsProxySubtypeStepFunctions::test_step_functions_integration_start_execution": {
+    "recorded-date": "14-09-2024, 15:11:57",
+    "recorded-content": {
+      "sfn-integration": {
+        "ConnectionType": "INTERNET",
+        "CredentialsArn": "arn:<partition>:iam::111111111111:role/<resource:1>",
+        "IntegrationId": "<integration-id:1>",
+        "IntegrationSubtype": "StepFunctions-StartExecution",
+        "IntegrationType": "AWS_PROXY",
+        "PayloadFormatVersion": "1.0",
+        "RequestParameters": {
+          "Input": "$request.body",
+          "StateMachineArn": "arn:<partition>:states:<region>:111111111111:stateMachine:<resource:2>"
+        },
+        "TimeoutInMillis": 30000,
+        "ResponseMetadata": {
+          "HTTPHeaders": {},
+          "HTTPStatusCode": 201
+        }
+      },
+      "invoke-response": {
+        "content": {
+          "executionArn": "arn:<partition>:states:<region>:111111111111:execution:<resource:2>:<resource:3>",
+          "startDate": "<start-date>"
+        },
+        "headers": {
+          "Connection": "keep-alive",
+          "Content-Length": "141",
+          "Content-Type": "application/x-amz-json-1.0",
+          "Date": "<date>",
+          "apigw-requestid": "<apigw-requestid:1>",
+          "x-amzn-RequestId": "<x-amzn--request-id:1>"
+        }
+      }
+    }
+  }
+}

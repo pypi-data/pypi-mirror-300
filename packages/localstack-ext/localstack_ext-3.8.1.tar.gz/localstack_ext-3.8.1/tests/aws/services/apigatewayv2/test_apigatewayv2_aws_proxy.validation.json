@@ -1,0 +1,29 @@
+{
+  "tests/aws/services/apigatewayv2/test_apigatewayv2_aws_proxy.py::TestHttpApiAwsProxyIntegration::test_aws_proxy_lambda_runtime_exception": {
+    "last_validated_date": "2024-09-12T10:48:19+00:00"
+  },
+  "tests/aws/services/apigatewayv2/test_apigatewayv2_aws_proxy.py::TestHttpApiAwsProxyIntegration::test_aws_proxy_response_payload_format_validation_v1": {
+    "last_validated_date": "2024-09-12T10:48:30+00:00"
+  },
+  "tests/aws/services/apigatewayv2/test_apigatewayv2_aws_proxy.py::TestHttpApiAwsProxyIntegration::test_aws_proxy_response_payload_format_validation_v2": {
+    "last_validated_date": "2024-09-12T11:49:58+00:00"
+  },
+  "tests/aws/services/apigatewayv2/test_apigatewayv2_aws_proxy.py::TestHttpApiAwsProxyIntegration::test_aws_proxy_return_gzip_response": {
+    "last_validated_date": "2024-09-12T10:48:48+00:00"
+  },
+  "tests/aws/services/apigatewayv2/test_apigatewayv2_aws_proxy.py::TestHttpApiAwsProxyIntegration::test_lambda_handling_binary_data": {
+    "last_validated_date": "2024-09-12T10:48:54+00:00"
+  },
+  "tests/aws/services/apigatewayv2/test_apigatewayv2_aws_proxy.py::TestHttpApiAwsProxyIntegration::test_lambda_handling_form_urlencoded_data": {
+    "last_validated_date": "2024-09-12T10:49:01+00:00"
+  },
+  "tests/aws/services/apigatewayv2/test_apigatewayv2_aws_proxy.py::TestHttpApiAwsProxyIntegration::test_lambda_input_base_64_detection": {
+    "last_validated_date": "2024-09-12T14:08:55+00:00"
+  },
+  "tests/aws/services/apigatewayv2/test_apigatewayv2_aws_proxy.py::TestHttpApiAwsProxyIntegration::test_lambda_payload_format[1.0]": {
+    "last_validated_date": "2024-09-12T10:48:02+00:00"
+  },
+  "tests/aws/services/apigatewayv2/test_apigatewayv2_aws_proxy.py::TestHttpApiAwsProxyIntegration::test_lambda_payload_format[2.0]": {
+    "last_validated_date": "2024-09-12T10:48:11+00:00"
+  }
+}

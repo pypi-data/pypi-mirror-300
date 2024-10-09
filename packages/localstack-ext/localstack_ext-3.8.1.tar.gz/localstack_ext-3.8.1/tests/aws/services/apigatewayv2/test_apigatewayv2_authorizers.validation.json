@@ -1,0 +1,32 @@
+{
+  "tests/aws/services/apigatewayv2/test_apigatewayv2_authorizers.py::TestHttpApiJwtAuthorizer::test_jwt_authorizer_failure": {
+    "last_validated_date": "2024-09-21T18:23:57+00:00"
+  },
+  "tests/aws/services/apigatewayv2/test_apigatewayv2_authorizers.py::TestHttpApiJwtAuthorizer::test_jwt_authorizer_lambda_target[1.0]": {
+    "last_validated_date": "2024-09-21T17:50:17+00:00"
+  },
+  "tests/aws/services/apigatewayv2/test_apigatewayv2_authorizers.py::TestHttpApiJwtAuthorizer::test_jwt_authorizer_lambda_target[2.0]": {
+    "last_validated_date": "2024-09-21T17:50:57+00:00"
+  },
+  "tests/aws/services/apigatewayv2/test_apigatewayv2_authorizers.py::TestHttpApiLambdaAuthorizer::test_request_authorizer_http[payload_format_version0]": {
+    "last_validated_date": "2024-10-02T23:29:58+00:00"
+  },
+  "tests/aws/services/apigatewayv2/test_apigatewayv2_authorizers.py::TestHttpApiLambdaAuthorizer::test_request_authorizer_http[payload_format_version1]": {
+    "last_validated_date": "2024-10-02T23:30:07+00:00"
+  },
+  "tests/aws/services/apigatewayv2/test_apigatewayv2_authorizers.py::TestHttpApiLambdaAuthorizer::test_request_authorizer_http[payload_format_version2]": {
+    "last_validated_date": "2024-10-02T23:30:15+00:00"
+  },
+  "tests/aws/services/apigatewayv2/test_apigatewayv2_authorizers.py::TestHttpApiLambdaAuthorizer::test_request_authorizer_lambda_context[payload_format_version0]": {
+    "last_validated_date": "2024-10-02T23:34:51+00:00"
+  },
+  "tests/aws/services/apigatewayv2/test_apigatewayv2_authorizers.py::TestHttpApiLambdaAuthorizer::test_request_authorizer_lambda_context[payload_format_version1]": {
+    "last_validated_date": "2024-10-02T23:35:02+00:00"
+  },
+  "tests/aws/services/apigatewayv2/test_apigatewayv2_authorizers.py::TestHttpApiLambdaAuthorizer::test_request_authorizer_lambda_context[payload_format_version2]": {
+    "last_validated_date": "2024-10-02T23:35:13+00:00"
+  },
+  "tests/aws/services/apigatewayv2/test_apigatewayv2_authorizers.py::TestIAMAuthorization::test_iam_authorizer_success": {
+    "last_validated_date": "2024-09-17T04:18:28+00:00"
+  }
+}

@@ -1,0 +1,56 @@
+{
+  "tests/aws/services/apigatewayv2/test_apigatewayv2_private.py::TestApigatewayV2PrivateIntegration::test_apigatewayv2_servicediscovery_validation": {
+    "recorded-date": "12-09-2024, 15:19:51",
+    "recorded-content": {
+      "no-conn-with-service-discovery": {
+        "Error": {
+          "Code": "BadRequestException",
+          "Message": "Invalid HTTP endpoint specified for URI"
+        },
+        "Message": "Invalid HTTP endpoint specified for URI",
+        "ResponseMetadata": {
+          "HTTPHeaders": {},
+          "HTTPStatusCode": 400
+        }
+      },
+      "no-conn-id-with-service-discovery": {
+        "Error": {
+          "Code": "BadRequestException",
+          "Message": "ConnectionId must be set to vpcLinkId for ConnectionType VPC_LINK"
+        },
+        "Message": "ConnectionId must be set to vpcLinkId for ConnectionType VPC_LINK",
+        "ResponseMetadata": {
+          "HTTPHeaders": {},
+          "HTTPStatusCode": 400
+        }
+      },
+      "no-conn-id-with-bad-service-discovery": {
+        "Error": {
+          "Code": "BadRequestException",
+          "Message": "Unable to retrieve service name and namespaceName from Cloud Map arn arn:<partition>:servicediscovery:<region>:111111111111:service/srv-id"
+        },
+        "Message": "Unable to retrieve service name and namespaceName from Cloud Map arn arn:<partition>:servicediscovery:<region>:111111111111:service/srv-id",
+        "ResponseMetadata": {
+          "HTTPHeaders": {},
+          "HTTPStatusCode": 400
+        }
+      }
+    }
+  },
+  "tests/aws/services/apigatewayv2/test_apigatewayv2_private.py::TestApigatewayV2PrivateIntegration::test_apigatewayv2_elb_validation": {
+    "recorded-date": "12-09-2024, 15:50:09",
+    "recorded-content": {
+      "no-conn-id-with-bad-elb-arn": {
+        "Error": {
+          "Code": "BadRequestException",
+          "Message": "Unable to retrieve listener port and load balancer DNS name from ELB listener arn arn:<partition>:elasticloadbalancing:<region>:111111111111:listener/app/my-load-balancer/50dc6c495c0c9188/0467ef3c8400ae65. Please check that ELB listener exists in account 111111111111"
+        },
+        "Message": "Unable to retrieve listener port and load balancer DNS name from ELB listener arn arn:<partition>:elasticloadbalancing:<region>:111111111111:listener/app/my-load-balancer/50dc6c495c0c9188/0467ef3c8400ae65. Please check that ELB listener exists in account 111111111111",
+        "ResponseMetadata": {
+          "HTTPHeaders": {},
+          "HTTPStatusCode": 400
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "tests/aws/services/apigatewayv2/test_apigatewayv2_custom_domain.py::TestApigatewayV2CustomDomainCrud::test_api_mappings_crud": {
+    "last_validated_date": "2024-09-25T17:14:45+00:00"
+  },
+  "tests/aws/services/apigatewayv2/test_apigatewayv2_custom_domain.py::TestApigatewayV2CustomDomain::test_custom_domains": {
+    "last_validated_date": "2024-09-24T19:23:11+00:00"
+  },
+  "tests/aws/services/apigatewayv2/test_apigatewayv2_custom_domain.py::TestApigatewayV2CustomDomainCrud::test_custom_domains_crud": {
+    "last_validated_date": "2024-09-24T11:25:53+00:00"
+  }
+}
