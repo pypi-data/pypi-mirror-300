@@ -1,0 +1,14 @@
+moneysnake/__init__.py,sha256=CWQz1ndkHaMRJT7Zxk-nu6S2IshVudlMgQ-b6eiFbzY,327
+moneysnake/__init__.pyi,sha256=RdiYtnVL_WkeEjDGJppqvnv3wVRbZ-vc6kBe9JKFakk,378
+moneysnake/client.py,sha256=R6SN7bw0QzPf4dS_fW1Im3IENG4osrGJB2BB7e4PH4E,924
+moneysnake/client.pyi,sha256=MqIcmyIe-EpNl76HSokmt8piw2fYq2WQ2st5v50ogn4,333
+moneysnake/contact.py,sha256=d3_zCbty4wwu9nRyJBldOYKMAMil8jxh7iHUJCIH59U,1830
+moneysnake/contact.pyi,sha256=C5DOrvolVz6L5jp9oZ7KIn4LwuA2zGmKE029s9Aku8k,1296
+moneysnake/custom_field_model.py,sha256=BfLMB-q50Ky0nJqhJXznVRP-j8tzsloIjWDZ9XOpftg,743
+moneysnake/custom_field_model.pyi,sha256=ljph25mpT7CerywLsO1XcFcQtXwNyUEsu5fqtJ91PxQ,350
+moneysnake/model.py,sha256=wymCfkJlqJFHy2LWfJJQjyrodS8OeO2MxjGuYo6Lgk4,2042
+moneysnake/model.pyi,sha256=WuxRyafrSc0esptDAH7IihsHOdUQY5CsV37XYZoDGTo,579
+moneysnake-0.0.5.dist-info/LICENSE,sha256=h5SFbhIQvPQ-pEtU6CHKUViBH8PHAjdbFkSlCqv6tSE,1067
+moneysnake-0.0.5.dist-info/METADATA,sha256=W98cJC6qq35mu5tLw16yPZXiiNZjbcqbC44-dmheejU,488
+moneysnake-0.0.5.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+moneysnake-0.0.5.dist-info/RECORD,,
