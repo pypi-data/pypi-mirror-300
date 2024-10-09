@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: cfmtoolbox-rick-roll
+Version: 0.1.0
+Summary: 
+Author: Anna Chen
+Author-email: chenxanna@gmail.com
+Requires-Python: >=3.12,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: cfmtoolbox (>=0.3.0,<0.4.0)
+Description-Content-Type: text/markdown
+
+# CFM Toolbox Rick Roll Plugin
+
+Have fun o3o
+
