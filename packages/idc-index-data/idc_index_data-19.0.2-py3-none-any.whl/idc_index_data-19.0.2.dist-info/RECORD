@@ -1,0 +1,10 @@
+idc_index_data/__init__.py,sha256=IMO6kmHaHzUGxXs80CZVDnq2wA8sYuOcdHkOgQhytJk,1217
+idc_index_data/_version.py,sha256=5RM2uC4vJOJuoKqMQmE060_HNDX9bY8dwcYyfo5FLGs,19
+idc_index_data/_version.pyi,sha256=JoQmvXG9CCUSxJ6igFplGpf6cLKLJdTV_lH9oRADu9U,49
+idc_index_data/idc_index.parquet,sha256=o60sqn3nde5N8QfmTXFK20Ez_6a-1ZY6J4aN2xAn_zE,57186911
+idc_index_data/prior_versions_index.parquet,sha256=mgW2bT5U8GVC3e8e8vK8z6QEIeNDQra9xXu3VfyGoWc,3632808
+idc_index_data/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+idc_index_data-19.0.2.dist-info/METADATA,sha256=jtVnTFTrPnvpFj4EbZDl0QWMSwtR_8fXsIUWvEA0HMQ,5431
+idc_index_data-19.0.2.dist-info/WHEEL,sha256=nR7mVn713DDXti_ZHhocNlZR627jN3Rd8QK_XUlSoLo,96
+idc_index_data-19.0.2.dist-info/licenses/LICENSE,sha256=J0F7wI7LET8rVMeUoKGoIf1mwhSoMe0br_bpdONSe8s,1054
+idc_index_data-19.0.2.dist-info/RECORD,,
