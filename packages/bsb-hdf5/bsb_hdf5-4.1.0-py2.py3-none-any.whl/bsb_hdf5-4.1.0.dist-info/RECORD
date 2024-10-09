@@ -1,0 +1,12 @@
+bsb_hdf5/__init__.py,sha256=MC9qD_4cpzEyI1_JQeXhf75wdwL8sdIC-GEXC5uopmg,6390
+bsb_hdf5/chunks.py,sha256=4VdxIa81mxXXHxNWelsJFaZ08qOnG58XRjAH3VOOpnE,12137
+bsb_hdf5/connectivity_set.py,sha256=2vFK99kBAHSfG5FJET2GyFAr986CK93lPFfoLqILKdA,21155
+bsb_hdf5/file_store.py,sha256=w12fFqINKM1r03hIrl5qk3hYnJzl67-sqTtsQVDxaXU,4727
+bsb_hdf5/morphology_repository.py,sha256=8jdXZfqbsS5ba9SJSLTCMG7mVvFDQCIig532B2voWxo,7429
+bsb_hdf5/placement_set.py,sha256=k2OQRxDjQYCsNxZg3AWGY-jbWGjtTLblfy6PPgdVuE8,16998
+bsb_hdf5/resource.py,sha256=80ZnSgKF8dzsAE_pxSiLITZmrqTba70vkGv9nIh4LbY,4992
+bsb_hdf5-4.1.0.dist-info/entry_points.txt,sha256=WFP7iACNhJV_t6NvWIY-jDHIKVGA-iQWb5B1zgPV4yI,37
+bsb_hdf5-4.1.0.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+bsb_hdf5-4.1.0.dist-info/WHEEL,sha256=Sgu64hAMa6g5FdzHxXv9Xdse9yxpGGMeagVtPMWpJQY,99
+bsb_hdf5-4.1.0.dist-info/METADATA,sha256=TsWgh_ufzzMiRFcBXCMvfRj8GbQMhIiaTPHHNaiYuPQ,1790
+bsb_hdf5-4.1.0.dist-info/RECORD,,
