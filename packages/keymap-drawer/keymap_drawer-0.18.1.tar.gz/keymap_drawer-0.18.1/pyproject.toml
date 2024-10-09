@@ -1,0 +1,75 @@
+[tool.poetry]
+name = "keymap-drawer"
+version = "0.18.1"
+description = "A module and CLI tool to help parse and draw keyboard layouts."
+authors = ["Cem Aksoylar <caksoylar@gmail.com>"]
+readme = ["README.md", "KEYMAP_SPEC.md", "CONFIGURATION.md"]
+packages = [{include = "keymap_drawer"}]
+include = [
+  "keymap_drawer/py.typed",
+  "resources/zmk_keyboard_layouts.yaml",
+  "resources/qmk_keyboard_mappings.yaml",
+  "resources/qmk_layouts/*.json"
+]
+license = "MIT"
+homepage = "https://github.com/caksoylar/keymap-drawer"
+repository = "https://github.com/caksoylar/keymap-drawer"
+
+[tool.poetry.urls]
+"Bug Tracker" = "https://github.com/caksoylar/keymap-drawer/issues"
+"Release Notes" = "https://github.com/caksoylar/keymap-drawer/releases"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+pydantic = "^2.0.0"
+pcpp = "^1.30"
+pyparsing = "^3.0.9"
+pyyaml = "^6.0"
+platformdirs = "^4.0.0"
+pydantic-settings = "^2.2.1"
+
+[tool.poetry.group.dev]
+optional = true
+
+[tool.poetry.group.dev.dependencies]
+mypy = "^1.9.0"
+pylint = "^3.1.0"
+black = "^24.3.0"
+pylint-pydantic = "^0.3.2"
+types-pyyaml = "^6.0.12"
+deptry = "^0.14.2"
+hjson = "^3.1.0"
+
+[tool.poetry.group.lsp]
+optional = true
+
+[tool.poetry.group.lsp.dependencies]
+python-lsp-server = "^1.10.1"
+
+[tool.poetry.scripts]
+keymap = 'keymap_drawer.__main__:main'
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.pylint.master]
+extension-pkg-whitelist = "pydantic"
+load-plugins = "pylint_pydantic"
+
+[tool.pylint.basic]
+good-names = "x,y,w,h,r,f,k,v,p,m,c"
+max-line-length = 120
+
+[tool.pylint."messages control"]
+disable = ["too-few-public-methods", "line-too-long"]
+
+[tool.mypy]
+plugins = "pydantic.mypy"
+
+[tool.black]
+line-length = 120
+
+[tool.isort]
+src_paths = ["keymap_drawer"]
+line_length = 120
