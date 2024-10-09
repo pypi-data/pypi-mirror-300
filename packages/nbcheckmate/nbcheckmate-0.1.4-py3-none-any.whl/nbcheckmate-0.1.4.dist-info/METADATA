@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: nbcheckmate
+Version: 0.1.4
+Summary: Small package to test code inside a jupyter notebook
+Author-email: Paul Chupot <paul.chupot@gmail.com>, Aloys Bernard <aloys.bernard@gmail.com>
+Keywords: jupyter,notebook,testing,pytest
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+Requires-Dist: dill >=0.3.9
+
+# Nbcheckmate
+
+Nb checkmate is your fellow library that allow you to test functions and variables inside of a notebook. 
+
+## Installation
+
+To install this package, you can use pip:
+
+```
+pip install nbcheckmate
+```
+
+## Usage
+
+To use this package, you can import it in your Python code:
+
+```python
+import my_python_package
+
+```
+
+TODO : Add more documentation
