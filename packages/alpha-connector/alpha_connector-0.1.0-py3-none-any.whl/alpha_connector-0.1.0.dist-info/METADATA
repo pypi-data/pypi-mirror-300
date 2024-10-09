@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: alpha-connector
+Version: 0.1.0
+Summary: A package to interact with Alpha Platfrom from Harshit Bhatia
+Home-page: https://github.com/bhatiaharshit07/alpha-connector
+Author: Harshit Bhatia
+Author-email: bhatiaharshit07@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENCE
+
+# Alpha Connector
+
+A simple Python package that prints "hello" using the `AlphaConnector` class.
+
+## Installation
+
