@@ -1,0 +1,4 @@
+numpy==2.1.1
+watchdog>=5.0.3
+psutil>=6.0.0
+click>=8.1.7
