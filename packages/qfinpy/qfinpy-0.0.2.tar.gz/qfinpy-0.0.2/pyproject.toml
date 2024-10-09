@@ -1,0 +1,31 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "qfinpy"
+version = "0.0.2"
+dependencies = [
+  "numpy",
+  "matplotlib",
+  "scipy",
+  "numba",
+]
+requires-python = ">=3.8"
+authors = [
+  {name = "Bhawik Jani", email = "bhawikjani1@gmail.com"},
+]
+
+description = "A powerful, easy-to-use library for Quantitative Finance"
+readme = "README.md"
+license = {file = "LICENSE"}
+keywords = ["Quantitative Finance", "Finance", "Option Pricing", "Options Pricing", "Portfolio Optimization", "Time Series Analysis", "Algorithmic Trading", "Quant"]
+classifiers = [
+  "License :: OSI Approved :: MIT License",
+  "Programming Language :: Python :: 3",
+  "Operating System :: OS Independent",
+]
+
+[project.urls]
+Homepage = "https://github.com/bhawik-jani/qfinpy"
+
