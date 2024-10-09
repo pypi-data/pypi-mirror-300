@@ -1,0 +1,9 @@
+LICENSE
+README.md
+setup.py
+unalengua/__init__.py
+unalengua.egg-info/PKG-INFO
+unalengua.egg-info/SOURCES.txt
+unalengua.egg-info/dependency_links.txt
+unalengua.egg-info/requires.txt
+unalengua.egg-info/top_level.txt
