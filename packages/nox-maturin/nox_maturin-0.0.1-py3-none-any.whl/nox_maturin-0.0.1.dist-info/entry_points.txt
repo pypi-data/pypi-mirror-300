@@ -1,0 +1,3 @@
+[console_scripts]
+nox-maturin=nox_maturin.__main__:main
+
