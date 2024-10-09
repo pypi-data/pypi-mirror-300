@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: abstract-python
+Version: 0.1.3
+Summary: A wrapper for all AbstractAPI APIs
+Home-page: https://github.com/Omotunde2005/abstractpython.git
+License: MIT
+Author: Edun Rilwan
+Author-email: edunrilwan@gmail.com
+Requires-Python: >=3.8
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: pytest (>=7.4.0)
+Requires-Dist: requests (>=2.32.2)
+Project-URL: Repository, https://github.com/Omotunde2005/abstractpython.git
+Description-Content-Type: text/markdown
+
+# About
+
+An unofficial python wrapper for [AbstractAPI](https://www.abstractapi.com/). Python developers can now use AbstractAPI without having to remember all endpoints. It also does type validation before requests are sent to the API server.
+
+
+## Disclaimer
+
+This is not an official library by the team @AbstractAPI. This should not be considered as a direct replacement of AbstractAPI API suites. Rather, it is a bunch of helper classes that python developers can use to communicate easier with any of the APIs. 
