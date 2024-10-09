@@ -1,0 +1,53 @@
+Metadata-Version: 2.3
+Name: babyyoda
+Version: 0.0.1
+Project-URL: Documentation, https://github.com/APN-Pucky/babyyoda#readme
+Project-URL: Issues, https://github.com/APN-Pucky/babyyoda//issues
+Project-URL: Source, https://github.com/APN-Pucky/babyyoda/
+Author-email: Alexander Puck Neuwirth <alexander@neuwirth-informatik.de>
+License-Expression: MIT
+License-File: LICENSE.txt
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+
+# babyyoda
+
+[![PyPI - Version](https://img.shields.io/pypi/v/babyyoda.svg)](https://pypi.org/project/babyyoda)
+[![PyPI - Python Version](https://img.shields.io/pypi/pyversions/babyyoda.svg)](https://pypi.org/project/babyyoda)
+
+-----
+
+## Differences to yoda
+
+`babyyoda` has the advanteges
+
+- works with just Python 3 and can be installed with pip.
+- makes it easy to manipulate the bin contents.
+- tries to adhere to the UHI standard.
+- is easy to plot in a Jupyter notebook.
+
+and the disadvantages to `yoda` that it
+
+- is slower.
+- is not as feature complete.
+- is not as well tested.
+
+
+## Installation
+
+```console
+pip install babyyoda
+```
+
+## License
+
+`babyyoda` is distributed under the terms of the [MIT](https://spdx.org/licenses/MIT.html) license.
