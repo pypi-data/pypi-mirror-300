@@ -1,0 +1,7 @@
+aioconsole>=0.1.15
+aiohttp>=3.9.5
+aioxmpp>=0.13.2
+pytz
+
+[docs]
+sphinxcontrib_trio==1.1.0
