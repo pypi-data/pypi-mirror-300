@@ -1,0 +1,10 @@
+s2spy/__init__.py,sha256=YBH8rrwcjqkC3xr7_-o-M7o2OFasykRYcSMTIqwkZy4,428
+s2spy/preprocess.py,sha256=LtUXdteQkFw1eEzjI4iMlLC5f81ZwYpp5e4dSVFfzBE,11067
+s2spy/rgdr/__init__.py,sha256=Os-3-U2w7P_IYW5yviSafZm-bqFAfA7bKX_4MXi8HI4,109
+s2spy/rgdr/label_alignment.py,sha256=5IvvsEwSXl1_FbLQTNTV-FDygWW-CoP59cCrgcmvqTk,14940
+s2spy/rgdr/rgdr.py,sha256=EoJ66-Bdlzy20U-rJ_FYxFgerKciDSqakYqr08Lm_N4,24315
+s2spy/rgdr/utils.py,sha256=Zm_5W5O54ECAj6rUvoNQ4W1YA7jrhIKffwDZvPnsKvM,3740
+s2spy-0.4.1.dist-info/METADATA,sha256=Hx_dae5OAMrv1MFXAKZ3VV726cW-fEDwSJCYW4RMDls,10721
+s2spy-0.4.1.dist-info/WHEEL,sha256=1yFddiXMmvYK7QYTqtRNtX66WJ0Mz8PYEiEUoOUUxRY,87
+s2spy-0.4.1.dist-info/licenses/LICENSE,sha256=OPzV6bHGPCXFylyiCR3GYAK-EP8seLDbcbgO87DYM1o,11359
+s2spy-0.4.1.dist-info/RECORD,,
