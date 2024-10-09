@@ -1,0 +1,9 @@
+README.md
+setup.py
+nitroflare_uploader/__init__.py
+nitroflare_uploader/uploader.py
+nitroflare_uploader.egg-info/PKG-INFO
+nitroflare_uploader.egg-info/SOURCES.txt
+nitroflare_uploader.egg-info/dependency_links.txt
+nitroflare_uploader.egg-info/requires.txt
+nitroflare_uploader.egg-info/top_level.txt
