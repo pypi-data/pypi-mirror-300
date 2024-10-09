@@ -1,0 +1,123 @@
+Metadata-Version: 2.1
+Name: discord-package
+Version: 0.0.5
+Summary: A packager to create Discord bots easily
+Home-page: https://github.com/MrWiki15/discord-package
+Author: Polaris Web3
+Author-email: universe@polarisweb3.org
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: discord.py
+Requires-Dist: watchdog
+Requires-Dist: asyncio
+Requires-Dist: datetime
+Requires-Dist: requests
+Requires-Dist: rich
+
+# Discord Package - Discord Bots Packager
+
+## Description
+
+**Discord Package** is a command line tool for creating and managing Discord bots in Python `(currently in BETA)`. It also includes a simple web monitor to view bot logs in real time, allowing for better visualization and debugging.
+
+## Features
+
+- **Discord bot project generation**: Quickly creates a new bot project with the necessary file and folder structure.
+- **Refresh**: The packer is constantly watching for changes in the working directory and will restart the bot if any changes are detected.
+- **Real-time log monitoring**: A built-in web server that displays the bot logs in real time in a web interface.
+- **Advanced filters**: Filter logs by server name, server ID, user name and date for easy debugging.
+
+## Requirements
+
+- Python 3.6 or higher.
+- Additional dependencies: `discord.py`, `watchdog`, `asyncio`, `datetime`, `requests`, `rich`.
+
+## Installation
+
+### 1. Install discord-package
+
+```bash
+pip install discord-package
+```
+
+### 2. Install dependencies
+
+```bash
+pip install -r requirements.txt
+```
+
+## Usage
+
+### Create a New Bot Project
+
+To create a new Discord bot project, use the following command:
+
+```bash
+dcp create <nombre_del_proyecto>
+```
+
+Replace `<project_name>` with the name you want for your new project. This command will create a project structure with all necessary files and folders.
+
+## Project Structure
+
+The `create` command will generate a project structure similar to the following:
+
+```markdown
+project_name/
+â”‚
+â”œâ”€â”€ assets/
+â”‚ â”œâ”€â”€ imagen/
+â”‚ â”‚ â””â”€â”€ mi_imagen.png
+â”‚ â””â”€â”€ **init**.py
+â”œâ”€â”€ buttons/
+â”‚ â”œâ”€â”€ **init**.py
+â”‚ â””â”€â”€ buttons_help.py
+â”œâ”€â”€ commands/
+â”‚ â”œâ”€â”€ **init**.py
+â”‚ â””â”€â”€ ping.py
+â”œâ”€â”€ config/
+â”‚ â”œâ”€â”€ **init**.py
+â”‚ â””â”€â”€ bot_config.py
+â”œâ”€â”€ functions/
+â”‚ â”œâ”€â”€ **init**.py
+â”‚ â””â”€â”€ print_logs.py
+â”œâ”€â”€ logs/
+â”‚ â”œâ”€â”€ **init**.py
+â”‚ â””â”€â”€ logs.txt
+â”œâ”€â”€ monitor/
+â”‚ â”œâ”€â”€ **init**.py
+â”‚ â”œâ”€â”€ index.html
+â”‚ â”œâ”€â”€ style.css
+â”‚ â”œâ”€â”€ script.js
+â”‚ â””â”€â”€ monitor.py
+â”œâ”€â”€ utils/
+â”‚ â”œâ”€â”€ **init**.py
+â”‚ â””â”€â”€ error_message.py
+â”œâ”€â”€ bot.py
+â”œâ”€â”€ dev.py
+â”œâ”€â”€ requirements.txt
+â””â”€â”€ .gitignore
+```
+
+## Running the Bot in development mode
+
+```bash
+python dev.py
+```
+
+## Running the Bot in production mode
+
+```bash
+python bot.py
+```
+
+# Disclaimer
+
+Discord Package is not an official Discord product. It is a tool created by Polaris Web3 to help developers create and manage Discord bots easily.
+
+For more information: [Documentation](https://docs.polarisweb3.org)
+
+![Polaris](https://cusoft.tech/wp-content/uploads/2024/05/P001.svg)

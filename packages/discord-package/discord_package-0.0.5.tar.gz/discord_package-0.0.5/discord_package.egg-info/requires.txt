@@ -1,0 +1,6 @@
+discord.py
+watchdog
+asyncio
+datetime
+requests
+rich
