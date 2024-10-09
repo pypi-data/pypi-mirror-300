@@ -1,0 +1,15 @@
+pydacharts/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pydacharts/chart_utils.py,sha256=iGY_E_KOIqA97lwNDFdRcdvZBcPXJe9gthFjB9DrFpk,3127
+pydacharts/chartjs_types.py,sha256=nM_Os5UH9yIEfDzOtgnTLaLZWFSEqqmepS9rgxgfs3o,1445
+pydacharts/charts.py,sha256=QwuU7atl6AWpvXOsMTMYHwGXP3v2INot9CkNC6QfNo4,213
+pydacharts/color.py,sha256=jyDlMuWRwOdtookNMcK8APN647yKXtRs5GI66hKUWwE,643
+pydacharts/elements.py,sha256=rY59fgwX-Bn_xti3IRcNhDceEQczwRxxauR0b-E-MnI,4653
+pydacharts/models.py,sha256=p66wJ1LTZbgV_gdETZISkw34YypH27lBbLZg3q6zqLU,24170
+pydacharts/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pydacharts/plugins/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pydacharts/plugins/datalabels.py,sha256=0wY8VJLDa-e1BVdotBXElvKkfPdxHHZjqOQyyzS8bu8,3523
+pydacharts/plugins/doughnutlabel.py,sha256=HhJ_iZXo1onpa5pe6Y-_FN702-pfTyQ3K5FrG_RKKwg,220
+pydacharts/plugins/sankey.py,sha256=qSOGiFJDf3d1BYS3M7kbjGGv6pJhXadDdBxMc3Coqhw,724
+pydacharts-0.2.0.dist-info/METADATA,sha256=LZNWSB79q_F0BBKs-fXG8o3bK3UGxK0I3HJKoxBdYFY,5777
+pydacharts-0.2.0.dist-info/WHEEL,sha256=1yFddiXMmvYK7QYTqtRNtX66WJ0Mz8PYEiEUoOUUxRY,87
+pydacharts-0.2.0.dist-info/RECORD,,
