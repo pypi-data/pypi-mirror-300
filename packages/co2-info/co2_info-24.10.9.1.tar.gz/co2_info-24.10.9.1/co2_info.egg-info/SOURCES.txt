@@ -1,0 +1,11 @@
+README.md
+setup.py
+co2_info/__init__.py
+co2_info/__main__.py
+co2_info/co2_info.py
+co2_info/mqtt.py
+co2_info.egg-info/PKG-INFO
+co2_info.egg-info/SOURCES.txt
+co2_info.egg-info/dependency_links.txt
+co2_info.egg-info/requires.txt
+co2_info.egg-info/top_level.txt
