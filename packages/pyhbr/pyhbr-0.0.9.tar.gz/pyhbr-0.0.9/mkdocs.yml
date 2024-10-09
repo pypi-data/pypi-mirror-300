@@ -1,0 +1,47 @@
+site_name: PyHBR Docs
+
+plugins:
+- search
+- bibtex:
+    bib_file: ../risk_management_file/ref.bib
+    csl_file: https://raw.githubusercontent.com/citation-style-language/styles/master/vancouver.csl
+    cite_style: pandoc
+    
+- mkdocstrings:
+    handlers:
+      python:
+        paths: [src]
+
+markdown_extensions:
+- footnotes
+- pymdownx.highlight:
+    anchor_linenums: true
+    line_spans: __span
+    pygments_lang_class: true
+- pymdownx.inlinehilite
+- pymdownx.details
+- pymdownx.snippets
+- pymdownx.superfences
+- admonition
+- pymdownx.arithmatex:
+    generic: true
+
+extra_javascript:
+  - javascripts/mathjax.js
+  - https://polyfill.io/v3/polyfill.min.js?features=es6
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+
+nav:
+  - 'index.md'
+  - 'design.md'
+  - 'arc_hbr.md'
+  - 'modelling.md'
+  - 'verification.md'
+  - 'reference.md'
+
+watch:
+- src
+- ../risk_management_file/ref.bib
+
+theme:
+  name: "material"
