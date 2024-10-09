@@ -1,0 +1,9 @@
+bumper/__init__.py,sha256=PnX7W5c7hBRZoSlgaqTown3_PxkIogxYy9w3_Hrx9Es,91
+bumper/bump.py,sha256=9sz1F7xigdSDR4zjGdyC8sClLmX2eSPhuCTupr5RRg8,2370
+bumper/cli.py,sha256=5Fdwtq1Xtp1RQiYCZ0dh8zJuWVy_4xFPwmb1vBAInQ0,1905
+bumper/config.py,sha256=eSJtm-CQuU21eBLDRVJy9-Pr5n8dqWguvMPUtI-mnyQ,3261
+sco1_bumper-1.0.0.dist-info/METADATA,sha256=FAnYplVa_hWkUi1MX4CoEL3RsOnVCO92tms53mw4d7U,5671
+sco1_bumper-1.0.0.dist-info/WHEEL,sha256=1yFddiXMmvYK7QYTqtRNtX66WJ0Mz8PYEiEUoOUUxRY,87
+sco1_bumper-1.0.0.dist-info/entry_points.txt,sha256=Nk0OC89Vjc_ayAxewhS6I2-bERVHkQAMum31aaIu2SA,49
+sco1_bumper-1.0.0.dist-info/licenses/LICENSE,sha256=KPpHPEL3-DJGCJcKiY2YKhQlcfdhTaMhgR8c40u7wPE,1073
+sco1_bumper-1.0.0.dist-info/RECORD,,
