@@ -1,0 +1,16 @@
+__pycache__/
+*.egg-info/
+.cache/
+.eggs/
+.hypothesis/
+.pytest_cache/
+.mypy_cache/
+.tox/
+build/
+cache/
+dist/
+debug-data/
+json-data/
+source-data/
+.env
+.venv
