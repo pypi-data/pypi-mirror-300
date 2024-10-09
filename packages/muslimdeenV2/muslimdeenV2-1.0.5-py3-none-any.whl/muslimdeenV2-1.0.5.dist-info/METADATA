@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: muslimdeenV2
+Version: 1.0.5
+Summary: MuslimDeen: Package pour gérer les sourates, noms d'Allah, ablutions et salat
+Home-page: https://gitlab.com/misternobody01/muslimdeen#
+Author: personne monsieur
+Author-email: monsieurnobody01@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: beautifulsoup4==4.12.3
+Requires-Dist: certifi==2024.8.30
+Requires-Dist: charset-normalizer==3.3.2
+Requires-Dist: idna==3.10
+Requires-Dist: numpy==2.1.1
+Requires-Dist: pandas==2.2.3
+Requires-Dist: python-dateutil==2.9.0.post0
+Requires-Dist: pytz==2024.2
+Requires-Dist: requests==2.32.3
+Requires-Dist: six==1.16.0
+Requires-Dist: soupsieve==2.6
+Requires-Dist: tzdata==2024.2
+Requires-Dist: urllib3==2.2.3
+
+# MuslimDeenV2
+
+MuslimDeenV2 est un package Python dédié à la gestion des métadonnées des sourates du Coran, des noms d'Allah, des cinq piliers de l'Islam, des prières, des ablutions et du calcul de la zakat. 
+Il vise à fournir une API pour récupérer ces informations de manière structurée.
