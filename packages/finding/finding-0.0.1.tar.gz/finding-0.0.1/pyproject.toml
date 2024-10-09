@@ -1,0 +1,15 @@
+[tool.poetry]
+name = "finding"
+version = "0.0.1"
+description = ""
+authors = ["CHUA-X <chua-x@outlook.com>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "3.6"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
