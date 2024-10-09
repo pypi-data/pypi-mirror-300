@@ -1,0 +1,12 @@
+README.md
+pyproject.toml
+setup.py
+Component_reuse.egg-info/PKG-INFO
+Component_reuse.egg-info/SOURCES.txt
+Component_reuse.egg-info/dependency_links.txt
+Component_reuse.egg-info/requires.txt
+Component_reuse.egg-info/top_level.txt
+component_reuse/__init__.py
+component_reuse/logger.py
+component_reuse/main.py
+component_reuse/test.py

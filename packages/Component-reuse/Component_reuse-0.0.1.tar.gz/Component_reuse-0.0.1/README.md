@@ -1,0 +1,25 @@
+# Component Reuse Package
+
+`Component_Reuse_package` is a simple Python package that provides an adapter for connecting to RabbitMQ and sending messages using the `pika` library. This package is designed for easy integration into your Python projects.
+
+## Features
+
+- **Connect to RabbitMQ**: Easily connect to a RabbitMQ server using credentials.
+- **Queue Declaration**: Declare a queue on connection.
+- **Send Messages**: Send messages to a specified queue.
+- **Close Connection**: Safely close the connection to RabbitMQ.
+
+## Installation
+
+You can install the package using `pip`:
+
+```bash
+pip install component_reuse
+
+## How to set up instructions:
+
+Clone the repo : git clone git@bitbucket.org:liferaftinc/liferaft-python-lib.git
+
+Install the package: component_reuse
+
+If you are making any changes , build the package : https://liferaftinc.atlassian.net/wiki/spaces/LIF/pages/2426339341/TID+How+do+we+pipify+components#Build-the-package and publish it with a new version
