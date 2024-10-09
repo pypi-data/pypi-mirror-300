@@ -1,0 +1,12 @@
+LICENSE
+MANIFEST.in
+setup.py
+versiontools_support.py
+taiga_contrib_google_sso/__init__.py
+taiga_contrib_google_sso/apps.py
+taiga_contrib_google_sso/connector.py
+taiga_contrib_google_sso/services.py
+taiga_contrib_google_sso.egg-info/PKG-INFO
+taiga_contrib_google_sso.egg-info/SOURCES.txt
+taiga_contrib_google_sso.egg-info/dependency_links.txt
+taiga_contrib_google_sso.egg-info/top_level.txt
