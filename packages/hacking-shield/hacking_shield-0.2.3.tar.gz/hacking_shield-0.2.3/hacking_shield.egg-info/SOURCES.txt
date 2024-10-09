@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+hacking_shield/__init__.py
+hacking_shield/client.py
+hacking_shield.egg-info/PKG-INFO
+hacking_shield.egg-info/SOURCES.txt
+hacking_shield.egg-info/dependency_links.txt
+hacking_shield.egg-info/requires.txt
+hacking_shield.egg-info/top_level.txt
