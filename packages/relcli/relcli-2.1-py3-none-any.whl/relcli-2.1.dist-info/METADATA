@@ -1,0 +1,92 @@
+Metadata-Version: 2.1
+Name: relcli
+Version: 2.1
+Summary: A custom CLI tool for Relatient users to manage the AWS ECS clusters and connecting to PostgreSQL databases
+Home-page: https://github.com/isiddharthrao
+Author: Siddharth Rao
+Author-email: isiddharthrao@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.12
+Description-Content-Type: text/markdown
+Requires-Dist: boto3
+Requires-Dist: click
+Requires-Dist: pyperclip
+Requires-Dist: rich
+Requires-Dist: prompt-toolkit
+Requires-Dist: setuptools>=40.8.0
+
+
+# Dash CLI
+
+This repository contains a code of CLI which can be used by any user to interact with Dash Services to get the tags of respective ECS service and allows to generate a token.
+
+
+
+
+## Prerequites Tech Stack
+
+**Client:** Python 3.12
+
+**Server:** Python 3.12
+
+
+## Compile
+
+To compile and build the wheel file use the following commands.
+
+Create the Virtual Environment
+```bash
+python3 -m venv .venv
+```
+Install the PIP libraries
+```bash
+  pip3 install -r requirements.txt
+  pip3 install setuptools twine build
+```
+Build the wheel file
+```
+python3 setup.py sdist bdist_wheel
+```
+
+
+## Upload to PyPi 
+
+Upload Dash CLI to Pypi Python Repository
+
+Steps - 
+
+    1. Create account in https://pypi.org
+    2. Create authentication token and use it to upload
+
+
+```bash
+  twine upload dist/*
+```
+    
+## Installation on local machines
+Install Python 3.12
+
+Install the CLI using following command - 
+```
+pip3 install relcli
+```
+
+OR
+
+```
+pip install relcli
+```
+
+## Usage/Examples
+
+
+```python
+dash dev
+```
+
+```python
+dash prod
+```
+dev or prod are your AWS profiles that you can configure with whatsoever name you want.
