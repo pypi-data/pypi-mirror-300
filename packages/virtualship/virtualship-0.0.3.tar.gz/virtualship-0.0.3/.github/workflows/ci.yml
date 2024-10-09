@@ -1,0 +1,61 @@
+name: CI
+
+on:
+  workflow_dispatch:
+  pull_request:
+  push:
+    branches:
+      - main
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+defaults:
+  run:
+    shell: bash -el {0}
+
+env:
+  # Many color libraries just need this to be set to any value, but at least
+  # one distinguishes color depth, where "3" -> "256-bit color".
+  FORCE_COLOR: 3
+
+jobs:
+  # pylint:
+  #   name: Format
+  #   runs-on: ubuntu-latest
+  #   steps:
+  #     - name: Run PyLint
+  #       run: pipx run nox -s pylint -- --output-format=github
+
+  tests:
+    name: tests (${{ matrix.runs-on }} | Python ${{ matrix.python-version }})
+    runs-on: ${{ matrix.runs-on }}
+    strategy:
+      fail-fast: false
+      matrix:
+        python-version: ["3.10", "3.12"]
+        runs-on: [ubuntu-latest, windows-latest, macos-14]
+
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: mamba-org/setup-micromamba@v1
+        with:
+          environment-name: ship
+          environment-file: environment.yml
+          create-args: >-
+            python=${{matrix.python-version}}
+
+      - run: pip install . --no-deps --no-build-isolation
+
+      - name: Test package
+        run: >-
+          python -m pytest -ra --cov --cov-report=xml --cov-report=term
+          --durations=20
+
+      - name: Upload coverage report
+        uses: codecov/codecov-action@v4.5.0
+        with:
+          token: ${{ secrets.CODECOV_TOKEN }}
