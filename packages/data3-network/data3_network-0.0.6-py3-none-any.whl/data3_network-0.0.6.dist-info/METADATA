@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: data3_network
+Version: 0.0.6
+Summary: Data3 Network Library for Data Access
+Author: Data3 Network
+Author-email: data3network@gmail.com
+Requires-Dist: pymongo==4.6.3
+
