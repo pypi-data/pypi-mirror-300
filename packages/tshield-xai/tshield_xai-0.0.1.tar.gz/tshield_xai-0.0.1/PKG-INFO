@@ -1,0 +1,67 @@
+Metadata-Version: 2.1
+Name: tshield-xai
+Version: 0.0.1
+Summary: T-SHIELD Regularization for Artificial Intelligence
+Author: Iván Sevillano Garcia
+Author-email: Ivan Sevillano-Garcia <isevillano@ugr.es>
+Project-URL: Homepage, https://github.com/isega24/SHIELD
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: torch
+Requires-Dist: scikit-learn
+Requires-Dist: scikit-image
+Requires-Dist: matplotlib
+Requires-Dist: numpy
+Requires-Dist: scipy
+Requires-Dist: pandas
+Requires-Dist: torchvision
+Requires-Dist: efficientnet_pytorch
+Requires-Dist: tqdm
+Requires-Dist: opencv-python
+Requires-Dist: IPython
+Requires-Dist: seaborn
+Requires-Dist: plotly
+Requires-Dist: ipywidgets
+Requires-Dist: sphinx
+Requires-Dist: sphinx_rtd_theme
+Requires-Dist: sphinxcontrib.bibtex
+Requires-Dist: nbsphinx
+Requires-Dist: wget
+Requires-Dist: pandoc
+Requires-Dist: revel-xai
+Requires-Dist: torchsummary
+Requires-Dist: tensorboard
+Requires-Dist: twine
+
+# T-SHIELD regularization
+
+T-SHIELD (Transformation-Selective Hidden Input Evaluation for Learning Dynamics) is a regularization
+technique that aims to enhance model interpretability while improves model performance. Specifically, T-SHIELD adds a regularization term to the objective function that penalizes if it relies too heavily on
+a small subset of input features.
+
+You can find the documentation of the package [here](https://tshield-xai.readthedocs.io/en/latest/).
+
+If you use this code or find it useful, please cite our paper:
+
+```
+
+@article{sevillano2024shield,
+  title={SHIELD: A regularization technique for eXplainable Artificial Intelligence},
+  author={Sevillano-Garc{\'\i}a, Iv{\'a}n and Luengo, Juli{\'a}n and Herrera, Francisco},
+  journal={arXiv preprint arXiv:2404.02611},
+  year={2024}
+}
+
+```
+
+## Installation
+
+You can install this package by simply use pip:
+
+```bash
+pip install tshield-xai
+```
