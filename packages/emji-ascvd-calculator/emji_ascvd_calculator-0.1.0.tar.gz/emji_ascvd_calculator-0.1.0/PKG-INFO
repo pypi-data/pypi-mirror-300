@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: emji_ascvd_calculator
+Version: 0.1.0
+Summary: ASCVD risk calculator based on user input parameters
+Home-page: https://github.com/emji555/ascvd_calculator
+Author: Eslam Mohamed Jaber Elmasry
+Author-email: emji555@gmail.com
+License: UNKNOWN
+Description: # ASCVD Calculator
+        
+        This package provides an extended ASCVD risk calculation formula for predicting cardiovascular disease (CVD) risk.
+        
+        ## Installation
+        
+        ```bash
+        pip install emji_ascvd_calculator
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
