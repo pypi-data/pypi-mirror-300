@@ -1,0 +1,8 @@
+fedland/loaders.py,sha256=ufIL7NpB4zvFnEtFCMxeLqj1DdpA9LSKJlpCJcyxX8Y,1056
+fedland/metrics/__init__.py,sha256=qfDX8GZhsVf2gaGxHyd3EwuWcpzdbDM5L8B7gCtOEUE,2944
+fedland/metrics/frobenius.py,sha256=oOGTC4kV39N-JMt3UM0pKqShT4fl92Wekn-moPv61wM,4309
+fedland/metrics/pac_bayes.py,sha256=Kcwo-57gopboGc1gQ7e6H_tbwyBWCJkdc_lzlIWzy0M,3306
+fedland/networks.py,sha256=fHE4pc8J1dQAj6Z7mCGRKUbBZOIJJiYMnhWnA_DB080,679
+fedland-0.1.1.dist-info/METADATA,sha256=f4M2Hr0f07OcO4zQ3yP0WIoV1oMAa7BZaRh_mQ8d8ro,2451
+fedland-0.1.1.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+fedland-0.1.1.dist-info/RECORD,,
