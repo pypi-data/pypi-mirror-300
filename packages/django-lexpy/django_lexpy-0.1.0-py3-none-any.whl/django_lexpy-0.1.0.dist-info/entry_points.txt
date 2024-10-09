@@ -1,0 +1,3 @@
+[console_scripts]
+lexpy=django_lexpy.commands.lexpy:app
+

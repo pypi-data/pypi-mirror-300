@@ -1,0 +1,14 @@
+django_lexpy/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+django_lexpy/apps.py,sha256=AtOrfW7HTI9UV1JMYPly_q2Ayz7EbYVtNLMA2pgtRRE,264
+django_lexpy/commands/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+django_lexpy/commands/lexpy.py,sha256=2mhMX4jJMOWNsJ5I8wMcJl9TdfYvrFsf6nu3tM-LXs8,1240
+django_lexpy/commands/sample_files/init_sample,sha256=IljPYnAh_zSqiHqBblB4hxXURlcl1j1Kve2kWn_1bfA,72
+django_lexpy/commands/sample_files/messages_sample,sha256=CJPW1CCsA1KvBFN0HzIBuPMaHS4IzNhuK9emTzg6MyU,62
+django_lexpy/templatetags/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+django_lexpy/templatetags/lexpy.py,sha256=pWbal78gBthWRFitOQUxmiVsYxdLNYp2QzmKwNQQ-jU,736
+django_lexpy/tests.py,sha256=mrbGGRNg5jwbTJtWWa7zSKdDyeB4vmgZCRc2nk6VY-g,60
+django_lexpy-0.1.0.dist-info/LICENSE,sha256=f5JU1Im4bQBT52xTMEXLWUpiY9fHvawsGkKNOnwFlr0,1069
+django_lexpy-0.1.0.dist-info/METADATA,sha256=DDdoJuEgGibqknGa2l2eBbNPVd_50tfKMyFBwgzWYjU,699
+django_lexpy-0.1.0.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+django_lexpy-0.1.0.dist-info/entry_points.txt,sha256=nzU5wXZ2XkCv5yffRyk9ZbuV5nJhWETZ7IX5tpXD_5c,57
+django_lexpy-0.1.0.dist-info/RECORD,,
