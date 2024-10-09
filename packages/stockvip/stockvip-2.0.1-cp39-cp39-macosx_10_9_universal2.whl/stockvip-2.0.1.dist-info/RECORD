@@ -1,0 +1,15 @@
+stockvip/__init__.py,sha256=Dt-LluwJ2h2dwWz4g48Xu1qVmIclco9TSAzNliNR2ps,111
+stockvip/client.py,sha256=-u6w7qOxjorY2M-e79Cf4ByF4XCFswl2c9sF8uVVEC4,1225
+stockvip/stock.py,sha256=bOWNxSSqiRQw1yXIdLvpJ36gsJiiyzvakKDeqs-87xg,17165
+stockvip/config/config.cpython-39-darwin.so,sha256=DdNNobMIauAP3WJDFlNIxyBUe2AjqrhJP5cal6i0a9Y,88208
+stockvip/config/ensure_logged_in.cpython-39-darwin.so,sha256=A5b3mLof1wbDqHSmct5WMM4FzgsR-n47lNZO_l6Pt6E,147752
+stockvip/process_client/login.cpython-39-darwin.so,sha256=qVHvzR0L2_NpSE9rjQ2Xoiz-YE6RJ2CFnLaw66A5Qco,182720
+stockvip/process_stock/foreign.cpython-39-darwin.so,sha256=TWybvDWnbMJEB1-XlO6w5ye9HaV0yoMg3A3nB36sMF4,182992
+stockvip/process_stock/ohlcv.cpython-39-darwin.so,sha256=w-1kjbdpsgFmdPGjlJDUZrF7frBCsprUox4VXRU9kpQ,165488
+stockvip/process_stock/propTrading.cpython-39-darwin.so,sha256=eOh2Xpa5m8Vg3sjY6cUTP1d50Xse7ypSUlgEqg1sayo,166312
+stockvip/process_stock/supplyAndDemand.cpython-39-darwin.so,sha256=nc587ARkEovkTgZsJUwaSHnWL3g_fpbw1z6VDFrmxRs,182968
+stockvip-2.0.1.dist-info/LICENSE.txt,sha256=-W-s3KFHjxSYF7g1sA_TSHs2e2Jar4W5GUL03_5LtzA,1068
+stockvip-2.0.1.dist-info/METADATA,sha256=7uQBwQuqspXTH2uf97zCgjXDHu_QhU97jTKPbGHyxNQ,3523
+stockvip-2.0.1.dist-info/WHEEL,sha256=UlAYE9MX3bpLspwUrwA_Bk4EdfKlHrjGrLRU16v06yE,113
+stockvip-2.0.1.dist-info/top_level.txt,sha256=i2ols6uiwBXRU20-liakcQeHTL4jb2D-D00wnsE1L3c,9
+stockvip-2.0.1.dist-info/RECORD,,
