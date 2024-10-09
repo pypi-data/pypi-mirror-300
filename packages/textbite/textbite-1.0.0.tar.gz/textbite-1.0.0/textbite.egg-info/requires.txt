@@ -1,0 +1,6 @@
+numpy
+shapely
+pero-ocr
+ultralytics
+transformers
+torch_geometric
