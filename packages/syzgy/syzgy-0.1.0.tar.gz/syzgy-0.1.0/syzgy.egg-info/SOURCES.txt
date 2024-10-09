@@ -1,0 +1,12 @@
+README.md
+setup.py
+syzgy/__init__.py
+syzgy/client.py
+syzgy/exceptions.py
+syzgy/models.py
+syzgy.egg-info/PKG-INFO
+syzgy.egg-info/SOURCES.txt
+syzgy.egg-info/dependency_links.txt
+syzgy.egg-info/requires.txt
+syzgy.egg-info/top_level.txt
+tests/test_client.py
