@@ -1,0 +1,13 @@
+# src/pytestifypro/config/priority_map.yaml
+upi_payment_status:
+  ".status": "P1"
+  ".transactionId": "P1"
+  ".amount": "P2"
+  ".currency": "P3"
+  ".message": "P2"
+  ".upiId": "P2"
+
+# Add other endpoint priority maps as needed
+other_endpoint:
+  ".some_field": "P1"
+  ".another_field": "P2"
