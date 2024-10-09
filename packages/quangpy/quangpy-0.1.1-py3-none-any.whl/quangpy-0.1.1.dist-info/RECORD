@@ -1,0 +1,9 @@
+quangpy/__init__.py,sha256=OZMS9uV4Wng70TbMko7KFklXgKetmbfmOQEtiRdLwAY,250
+quangpy/joint_scale.py,sha256=FuDfJLwiKHRdp5QKpJvEqOfptHv6dtLRLEb8Jho7x7I,4234
+quangpy/utils.py,sha256=tTwjvJQ-3LaUIxv4npBq2pKrjEzNSJ4yzeORwHcTmfo,1550
+quangpy/var_decomp.py,sha256=2FJcm8DsVymwD2hnuUXNEc3ix-3HKrl7_zLVovAN_Yg,7664
+quangpy/wls.py,sha256=Y6y5uUN90igEM0lxYnW7qrO--1GFOA-dxreB5lbHJ4I,1952
+quangpy-0.1.1.dist-info/METADATA,sha256=b-ik2hr3BqyciGpolV1kkqAl-H0F7i_Xik3YVwyT8zE,1922
+quangpy-0.1.1.dist-info/WHEEL,sha256=1yFddiXMmvYK7QYTqtRNtX66WJ0Mz8PYEiEUoOUUxRY,87
+quangpy-0.1.1.dist-info/licenses/LICENSE,sha256=r56GY2-tRT8mKVeMLfr523Bydrv65sinyris070It-4,1063
+quangpy-0.1.1.dist-info/RECORD,,
