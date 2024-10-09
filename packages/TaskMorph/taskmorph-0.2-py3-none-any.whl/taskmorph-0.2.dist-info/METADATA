@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: TaskMorph
+Version: 0.2
+Summary: Methods that will help you in coding RPAs
+Author: Fernando Fontes
+Author-email: nandofontes30@gmail.com
+Requires-Python: >=3.8,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: opencv-python (>=4.10.0.82,<5.0.0.0)
+Requires-Dist: pillow (>=10.4.0,<11.0.0)
+Requires-Dist: pyautogui (>=0.9.53,<0.10.0)
+Requires-Dist: selenium (>=4.23.1,<5.0.0)
+Requires-Dist: undetected-chromedriver (>=3.5.5,<4.0.0)
+Requires-Dist: webdriver-manager (>=3.8.6,<4.0.0)
