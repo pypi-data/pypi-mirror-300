@@ -1,0 +1,11 @@
+napam/__init__.py,sha256=FHDojBLJri5bCvuxaGb5QLC1YJQ7GANlJhFn8xWQXrE,96
+napam/_widget.py,sha256=6n2p8chQ9eJbDI9BzM-2P-ikm_uV8wZufBwKj6XaiwQ,21030
+napam/napari.yaml,sha256=828c8KwVHfdPS-JKhx_1fBF7GAfuLzXW5r0r6LOe7wE,479
+napam/_tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+napam/_tests/test_widget.py,sha256=FUV4zrOdBr_f4NUBHQb_o4pnZgFrHq057iA7mdubT68,1728
+napam-0.1.3.dist-info/LICENSE,sha256=YDaYheio3uXZC3GXibWnpPDBh-1AvUESmLcII9YHP3U,1514
+napam-0.1.3.dist-info/METADATA,sha256=o_mcZ97eqbnb0CnufIYxbUueQTcoG1Ka2MmEsOY6o2M,3939
+napam-0.1.3.dist-info/WHEEL,sha256=GV9aMThwP_4oNCtvEC2ec3qUYutgWeAzklro_0m4WJQ,91
+napam-0.1.3.dist-info/entry_points.txt,sha256=LqrXIgkX48Ks08Mth9-HcWOOhldJQDu2W8HiKxN71R0,44
+napam-0.1.3.dist-info/top_level.txt,sha256=tk5h-C7W-1O2nHCWR6GZ12I_iPgcG9TVYY5trihwK6M,6
+napam-0.1.3.dist-info/RECORD,,
