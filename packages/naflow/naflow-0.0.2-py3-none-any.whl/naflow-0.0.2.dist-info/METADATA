@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: naflow
+Version: 0.0.2
+Summary: Neurophysiological Data Workflow
+Home-page: https://github.com/simonkojima/naflow
+Author: Simon Kojima
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy
+Requires-Dist: scipy
+Requires-Dist: scikit-learn
+Requires-Dist: mne >=1.8
+Requires-Dist: tag-mne >=0.0.3
+
+# naflow
+Neurophysiological Data Workflow
