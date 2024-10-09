@@ -1,0 +1,8 @@
+pyrogram
+click
+
+[speedup]
+tgcrypto
+
+[tgcrypto]
+tgcrypto
