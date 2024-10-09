@@ -1,0 +1,35 @@
+[tool.poetry]
+name = "pytestifypro"
+version = "0.1.1"
+description = "Python testing framework that enhances pytest by offering utility functions and streamlined configurations. It simplifies writing, executing, and managing tests, making it easier to achieve robust and reliable testing outcomes."
+authors = ["Javed Ansari <qabyjavedansari@gmail.com>"]
+readme = "README.md"
+license = "MIT"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+pytest = "^8.3.2"
+requests = "^2.32.3"
+pytest-mock = "^3.14.0"
+jsonschema = "^4.23.0"
+pyyaml = "^6.0.2"
+allure-pytest = "^2.13.5"
+
+#jaraco.functools = "^4.0.2"  #Poetry is having issues with this hence commenting for now until finds a fix
+allure-python-commons = "^2.13.5"
+
+
+[tool.poetry.dev-dependencies]
+pytest-cov = "^5.0.0"
+pylint = "^3.2.6"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.3.3"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+lint = "pylint:run"
+
