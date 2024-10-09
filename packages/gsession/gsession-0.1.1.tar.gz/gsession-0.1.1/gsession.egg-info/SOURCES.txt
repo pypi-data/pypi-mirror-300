@@ -1,0 +1,13 @@
+setup.py
+42setup/__init__.py
+42setup/gnome_favorite_apps_setup.py
+42setup/launch_chrome_and_vscode.py
+42setup/main.py
+42setup/parsec_setup.py
+42setup/session_setup.py
+42setup/ssh_key_maknager.py
+gsession.egg-info/PKG-INFO
+gsession.egg-info/SOURCES.txt
+gsession.egg-info/dependency_links.txt
+gsession.egg-info/entry_points.txt
+gsession.egg-info/top_level.txt
