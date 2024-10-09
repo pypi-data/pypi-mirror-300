@@ -1,0 +1,13 @@
+astc_encoder_py-0.1.4.dist-info/RECORD,,
+astc_encoder_py-0.1.4.dist-info/LICENSE,sha256=hxsBoG6tUMQl_gNofmfgSxdD5ZRmQ4sTAd5-GvsRcx4,1069
+astc_encoder_py-0.1.4.dist-info/WHEEL,sha256=A1OwQjXztvvPcV6BHQ6a1tnsWugo2BMCx65wNx88XE0,119
+astc_encoder_py-0.1.4.dist-info/top_level.txt,sha256=R4vI4dAALAfMnXFMMrW7PZc-_2RDaOTxFIFcwYBdiEU,13
+astc_encoder_py-0.1.4.dist-info/METADATA,sha256=X_8M3Ryxiz9rGKQ1b-UqYQnz6KHzLZWqebJmsCcxVso,4386
+astc_encoder/_encoder_none.pypy310-pp73-darwin.so,sha256=lOAPBGHzXyUiNV5T0qORXFdbWMWhNsFDJjkQxZoOtWs,282008
+astc_encoder/__init__.pyi,sha256=Vlc043vHnpF-QbnB3QknDO3MbhajjZcLAxd6e5KdDBs,8422
+astc_encoder/__init__.py,sha256=TUNzQ67zXS_0mUkqfhntiPy4s6MaldkgCEqO5iWcJdg,1133
+astc_encoder/_encoder_avx2.pypy310-pp73-darwin.so,sha256=xbd7j1rnG0o3at8708gTLDgKBs_ZDGfh3XheGa1rry8,260960
+astc_encoder/_encoder_sse2.pypy310-pp73-darwin.so,sha256=Va_DwxwM_hIr6TuYuz3Ev7btzKRItRNF4Tu23fykoAk,257032
+astc_encoder/_encoder_sse41.pypy310-pp73-darwin.so,sha256=BwrFW2u_2XHRRVElPwD3lpBupQgEFVRRlNKUAy6mYjc,244864
+astc_encoder/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+astc_encoder/enum.py,sha256=KHhs0U-LUVawsS5l-qPRX3DBkzaxsa9uA2OBxyey5fI,2203
