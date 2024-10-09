@@ -1,0 +1,54 @@
+name: Pytest
+
+on:
+    push:
+      branches:
+        - main
+    pull_request:
+      branches:
+        - main
+
+jobs:
+
+    flake8:
+        runs-on: ubuntu-latest
+        steps:
+        - name: checkout
+          uses: actions/checkout@v3
+        - name: Set up Python 3.8
+          uses: actions/setup-python@v4
+          with:
+            python-version: 3.8
+        - name: Run image
+          uses: abatilo/actions-poetry@v2.0.0
+          with:
+            poetry-version: 1.8.3
+  
+        - name: Run poetry install
+          run: |
+            poetry install
+
+        - name: Run flake8
+          if: always()
+          run: |
+            poetry run flake8
+    
+        - name: Run black
+          if: always()
+          run: |
+            poetry run black --check .
+  
+        - name: Run isort
+          if: always()
+          run: |
+            poetry run isort --check **/*.py
+
+        - name: Run mypy
+          if: always()
+          run: |
+            poetry run mypy django_lit_urls
+        
+        - name: Run pytest
+          if: always()
+          run: |
+            poetry run pytest
