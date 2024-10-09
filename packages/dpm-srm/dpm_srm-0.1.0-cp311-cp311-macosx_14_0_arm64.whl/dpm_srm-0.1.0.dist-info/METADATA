@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: dpm_srm
+Version: 0.1.0
+Summary: Statistical Region Merging Segmentation
+Author-Email: Digital Porous Media <bcchang@utexas.edu>
+License: MIT
+Requires-Python: >=3.8
+Requires-Dist: numpy
