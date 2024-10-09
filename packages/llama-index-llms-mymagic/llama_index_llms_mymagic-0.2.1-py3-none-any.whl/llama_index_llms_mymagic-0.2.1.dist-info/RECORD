@@ -1,0 +1,5 @@
+llama_index/llms/mymagic/__init__.py,sha256=TZBF3Ff-PT-Tl8IGY9Miv1z3z6PH3_ZQsAFKazicKsw,78
+llama_index/llms/mymagic/base.py,sha256=AF-Fub_jOgE8g6Hjih0T5reT87KiYVXUDcfCP4Qp0As,9562
+llama_index_llms_mymagic-0.2.1.dist-info/METADATA,sha256=2NzPM-5MYLmOGjo98LnX9blzoq62esaxZ36EOCXEs_c,2758
+llama_index_llms_mymagic-0.2.1.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+llama_index_llms_mymagic-0.2.1.dist-info/RECORD,,
