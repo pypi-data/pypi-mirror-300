@@ -1,0 +1,3 @@
+The histpy library provides a Histogram class which is, in essence, an array with axes attached defining the value of bin boundaries. It can handle an arbitrary number of dimensions, be accessed in a similar way as a numpy array, be projected, sliced, multiplied, fitted, plotted, etc. The histograms can be weighted and they will propagate errors during all operations. The under and overflow contents are tracked. Sparse histograms are also supported. The histpy's Histogram class is loosely based on a ROOT histogram but using a more pythonic interface.
+
+Full documentation: https://histpy.readthedocs.io

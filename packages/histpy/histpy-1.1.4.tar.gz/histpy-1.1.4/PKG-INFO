@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: histpy
+Version: 1.1.4
+Home-page: https://gitlab.com/burstcube/histpy
+Author: Israel Martinez
+Author-email: imc@umd.edu
+Description-Content-Type: text/markdown
+Requires-Dist: scipy
+Requires-Dist: matplotlib!=3.4.0,!=3.4.0rc1,!=3.4.0rc2,!=3.4.0rc3,!=3.4.1
+Requires-Dist: h5py
+Requires-Dist: sparse
+Requires-Dist: astropy
+Requires-Dist: mhealpy
+
+The histpy library provides a Histogram class which is, in essence, an array with axes attached defining the value of bin boundaries. It can handle an arbitrary number of dimensions, be accessed in a similar way as a numpy array, be projected, sliced, multiplied, fitted, plotted, etc. The histograms can be weighted and they will propagate errors during all operations. The under and overflow contents are tracked. Sparse histograms are also supported. The histpy's Histogram class is loosely based on a ROOT histogram but using a more pythonic interface.
+
+Full documentation: https://histpy.readthedocs.io

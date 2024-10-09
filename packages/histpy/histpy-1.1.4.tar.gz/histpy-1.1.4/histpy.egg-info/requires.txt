@@ -1,0 +1,6 @@
+scipy
+matplotlib!=3.4.0,!=3.4.0rc1,!=3.4.0rc2,!=3.4.0rc3,!=3.4.1
+h5py
+sparse
+astropy
+mhealpy
