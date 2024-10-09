@@ -1,0 +1,155 @@
+Metadata-Version: 2.1
+Name: torch-fem
+Version: 0.1.15
+Summary: Simple finite element assemblers with torch.
+Author-email: Nils Meyer <nils.meyer@uni-a.de>
+License: Copyright 2024 Nils Meyer
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the “Software”), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+Project-URL: source, https://github.com/meyer-nils/torch-fem
+Keywords: finite elements,automatic differentiation
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: ipywidgets
+Requires-Dist: ipykernel
+Requires-Dist: matplotlib
+Requires-Dist: memory-profiler
+Requires-Dist: meshio
+Requires-Dist: meshzoo
+Requires-Dist: pyvista
+Requires-Dist: scipy
+Requires-Dist: tqdm
+Requires-Dist: torch
+Requires-Dist: trame
+Requires-Dist: trame-vuetify
+Requires-Dist: trame-vtk
+
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+![PyPI - Python Version](https://img.shields.io/pypi/pyversions/torch-fem)
+[![PyPI - Version](https://img.shields.io/pypi/v/torch-fem)](https://pypi.org/project/torch-fem/)
+[![Black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/meyer-nils/torch-fem/HEAD)
+
+
+
+# torch-fem: differentiable linear elastic finite elements
+
+Simple finite element assemblers for linear elasticity with PyTorch. The advantage of using PyTorch is the ability to efficiently compute sensitivities and use them in structural optimization. 
+
+## Basic examples
+The subdirectory `examples->basic` contains a couple of Jupyter Notebooks demonstrating the use of torch-fem for trusses, planar problems, shells and solids. 
+
+<img src="doc/cantilever_tria2.png" width="400"></br>
+**Simple cantilever beam:** There are examples with linear and quadratic triangles and quads.
+
+## Optimization examples
+The subdirectory `examples->optimization` demonstrates the use of torch-fem for optimization of structures (e.g. topology optimization, composite orientation optimization).
+
+<img src="doc/topopt_mbb.png" width="400"></br>
+**Simple topology optimization of a MBB beam:** You can switch between analytical sensitivities and autograd sensitivities.
+
+<img src="doc/topopt_3d.png" width="400"></br>
+**Simple topology optimization of a 3D beam:** The model is exported to Paraview for visualization.
+
+<img src="doc/fillet_shape_optimization.png" width="400"></br>
+**Simple shape optimization of a fillet:** The shape is morphed with shape basis vectors and MMA + autograd is used to minimize the maximum stress.
+
+<img src="doc/plate_hole_shape_optimization.png" width="400"></br>
+**Simple fiber orientation optimization of a plate with a hole:** Compliance is minimized by optimizing the fiber orientation of an anisotropic material using automatic differentiation w.r.t. element-wise fiber angles.
+
+## Installation
+Your may install torch-fem via pip with
+```
+pip install torch-fem
+```
+
+## Minimal code
+This is a minimal example of how to use torch-fem to solve a simple cantilever problem. 
+
+```python
+from torchfem import Planar
+from torchfem.materials import IsotropicPlaneStress
+
+# Define a (minimal) mesh 
+nodes = torch.tensor([[0.0, 0.0], [1.0, 0.0], [2.0, 0.0], [0.0, 1.0], [1.0, 1.0], [2.0, 1.0]])
+elements = torch.tensor([[0, 1, 4, 3], [1, 2, 5, 4]])
+
+# Apply a load at the tip
+tip = (nodes[:, 0] == 2.0) & (nodes[:, 1] == 1.0)
+forces = torch.zeros_like(nodes)
+forces[tip, 1] = -1.0
+
+# Constrained displacement at left end
+left = nodes[:, 0] == 0.0
+displacements = torch.zeros_like(nodes)
+constraints = torch.zeros_like(nodes, dtype=bool)
+constraints[left, :] = True
+
+# Thickness
+thickness = torch.ones(len(elements))
+
+# Material model (plane stress)
+material = IsotropicPlaneStress(E=1000.0, nu=0.3)
+
+# Create model
+cantilever = Planar(nodes, elements, forces, displacements, constraints, thickness, material.C())
+```
+This creates a minimal planar FEM model:
+
+![minimal](doc/minimal_example.png)
+
+```python
+# Solve
+u, f = cantilever.solve()
+
+# Plot
+cantilever.plot(u, node_property=torch.norm(u, dim=1), node_markers=True)
+```
+This solves the model and plots the result:
+
+![minimal](doc/minimal_example_solved.png)
+
+## Benchmarks 
+The following benchmarks were performed on a cube subjected to a one dimensional extension. The cube is discretized with N x N x N linear hexahedral elements, has a side length of 1.0 and is made of a material with Young's modulus of 1000.0 and Poisson's ratio of 0.3. The cube is fixed at one end and a displacement of 0.1 is applied at the other end. The benchmark measures the forward time to assemble the stiffness matrix and the time to solve the linear system. In addition, it measures the backward time to compute the sensitivities of the sum of displacements with respect to forces.
+
+#### Apple M1 Pro (10 cores, 16 GB RAM)
+Python 3.10 with Apple Accelerate
+
+|  N  |    DOFs | FWD Time |  FWD Memory | BWD Time |  BWD Memory |
+| --- | ------- | -------- | ----------- | -------- | ----------- |
+|  10 |    3000 |    0.75s |    23.59 MB |    0.59s |     0.09 MB |
+|  20 |   24000 |    3.37s |   439.23 MB |    2.82s |   227.05 MB |
+|  30 |   81000 |    3.09s |   728.31 MB |    1.47s |     0.06 MB |
+|  40 |  192000 |    7.84s |   807.41 MB |    3.99s |   217.56 MB |
+|  50 |  375000 |   16.29s |  1211.27 MB |    9.50s |   433.30 MB |
+|  60 |  648000 |   30.78s |  2638.23 MB |   19.17s |  1484.67 MB |
+|  70 | 1029000 |   55.14s |  3546.22 MB |   34.41s |  1997.77 MB |
+|  80 | 1536000 |   87.83s |  5066.81 MB |   56.23s |  3594.27 MB |
+|  90 | 2187000 |  131.09s |  7795.83 MB |  107.40s |  5020.55 MB |
+
+
+#### AMD Ryzen Threadripper PRO 5995WX (64 Cores, 512 GB RAM)
+Python 3.12 with openBLAS
+
+|  N  |    DOFs | FWD Time |   FWD Memory | BWD Time |   BWD Memory |
+| --- | ------- | -------- | ------------ | -------- | ------------ |
+|  10 |    3000 |    1.42s |     17.27 MB |    1.87s |      0.00 MB |
+|  20 |   24000 |    1.30s |    160.49 MB |    0.98s |     62.64 MB |
+|  30 |   81000 |    2.76s |    480.52 MB |    2.16s |    305.76 MB |
+|  40 |  192000 |    6.68s |   1732.11 MB |    5.15s |    762.89 MB |
+|  50 |  375000 |   12.51s |   3030.36 MB |   11.29s |   1044.85 MB |
+|  60 |  648000 |   22.94s |   5813.95 MB |   25.54s |   3481.15 MB |
+|  70 | 1029000 |   38.81s |   7874.30 MB |   45.06s |   4704.93 MB |
+|  80 | 1536000 |   63.07s |  14278.46 MB |   63.70s |   8505.52 MB |
+|  90 | 2187000 |   93.47s |  16803.27 MB |  142.94s |  10995.63 MB |
+
