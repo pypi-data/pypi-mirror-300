@@ -1,0 +1,8 @@
+pyodbc
+python-dotenv
+
+[lint]
+pylint
+
+[test]
+coverage
