@@ -1,0 +1,97 @@
+Metadata-Version: 2.1
+Name: Compyter
+Version: 0.0.1
+Summary: A component parser for html
+Home-page: https://github.com/spynets/compyte
+Author: Alfred Roos
+Author-email: alfred@stensatter.se
+License: MIT
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/plain
+
+#+title: Readme
+
+Compyte is a component library for python which lets you have components in html. It takes in a html with the *Compyte* syntax and returns the html with component results. It has a integrated python run envirionment with the syntax.
+
+load stuff (using python exec to load python to the python envirionment)
+#+begin_src django
+{$ import os $}
+{$ name='Compyte'+' toilet' $}
+#+end_src
+
+executing (using eval and replaces with result)
+#+begin_src django
+{% name %}
+{% 10 +10 %}
+#+end_src
+
+** Components
+Components are added with as html with the compontent='[path-to-component-file]'.
+The attributes in the html tag will get added to a props dict and passed to the component file. where it can be accesed
+
+#+begin_src django
+{% props['propname'] %}
+#+end_src
+
+Check out the example down bellow
+
+*** Example
+
+This is a example of the *Compyte* html
+
+- index.html
+#+begin_src html
+<!doctype html>
+<html class="no-js" lang="">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="x-ua-compatible" content="ie=edge">
+		<title>Untitled</title>
+		<meta name="description" content="">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.12/dist/full.min.css" rel="stylesheet" type="text/css" />
+		<script src="https://cdn.tailwindcss.com"></script>
+
+		<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+		<!-- Place favicon.ico in the root directory -->
+	</head>
+	<body>
+		{$ import os $}
+		<h1>{% os.getcwd() %}</h1>
+		<card component="./tests/card.html" >
+			{$ string = 'what is ' + str(10-2) $}
+			<h1 class="text-4xl font-bold" >test</h1>
+			<btn title="click" onclick="alert('{% string %}')" component="./tests/button.html"></btn>
+		</card>
+	</body>
+</html>
+
+#+end_src
+
+-card.html
+#+begin_src html
+<div class="bg-base-200 rounded-lg p-12" >
+  {% props['children'] %}
+</div>
+#+end_src
+
+-button.html
+#+begin_src html
+<button onclick="{% props['onclick'] %}" class="btn btn-primary" >
+	{% props['title'] %}
+</button>
+#+end_src
+
+
+-main.py
+#+begin_src python
+from compyte import *
+
+output = open('tests/output.html','w')
+output.write(parse(open("tests/index.html","r").read()))
+
+#+end_src
