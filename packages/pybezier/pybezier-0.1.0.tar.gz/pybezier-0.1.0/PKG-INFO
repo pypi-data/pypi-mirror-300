@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: pybezier
+Version: 0.1.0
+Summary: A simple Python package to manipulate Bézier curves
+Home-page: https://github.com/TobiaMarcucci/pybezier
+Author: Tobia Marcucci
+Author-email: tobiam@mit.edu
+License: MIT
+License-File: LICENSE
+Requires-Dist: numpy
