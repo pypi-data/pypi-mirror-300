@@ -1,0 +1,46 @@
+Metadata-Version: 2.3
+Name: django_lit_urls
+Version: 0.1.5a0
+Summary: Django URLS delivered as string literal functions in Javascript
+Author-email: Josh Brooks <josh@catalpa.io>, Roberto Maurizzi <roberto.maurizzi@gmail.com>
+License: GPL-3.0-or-later
+License-File: LICENSE
+Requires-Python: >=3.10
+Requires-Dist: django>3.2
+Requires-Dist: pydantic<3,>=1.9
+Description-Content-Type: text/markdown
+
+
+# django-lit-urls
+
+Django URLS delivered as string literal functions in Javascript
+
+## Install
+
+If you don't have `poetry` yet perhaps do a `pipx install poetry`
+
+From source: `poetry install` from this directory
+From pypi: `pip install django-lit-urls`
+
+## Tests and Linting
+
+The following tests should not raise anything:
+
+```bash
+poetry run black --check .
+poetry run flake8 .
+poetry run isort .
+poetry run python -m mypy django_lit_urls/
+```
+
+## Publish
+
+
+If you have not done so yet make an api token.
+Fetch an api token from pypi at https://pypi.org/manage/account/token/
+It'll be something like pypi-AgEIcHlwaS5vcmc****
+`poetry config pypi-token.pypi your-api-token`
+
+Build and publish:
+
+`poetry build && poetry publish`
