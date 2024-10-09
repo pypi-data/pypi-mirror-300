@@ -1,0 +1,3 @@
+[console_scripts]
+configconverter=configconverter.cli:main
+
