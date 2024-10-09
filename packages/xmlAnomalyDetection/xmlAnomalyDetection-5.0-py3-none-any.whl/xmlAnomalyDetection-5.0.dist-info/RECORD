@@ -1,0 +1,11 @@
+xmlAnomalyDetection/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+xmlAnomalyDetection/app.py,sha256=49-dnln4xpbrl_t3lQHzOP5X1ysEJBCkyKIL0pzl9qE,7314
+xmlAnomalyDetection/cli.py,sha256=Q3_RJNg8qkpaz3OARsuzSaNOAwVxbfQ0w1D2RMCDcJk,125
+xmlAnomalyDetection/parsers/__init__.py,sha256=UCAmJVs95Jk1lGItPK7ACKE_LYTVvzKew0QC8v6QEJg,2502
+xmlAnomalyDetection/parsers/all_parsers.py,sha256=wH7uIpWzT7FsQqCBw6GtCoqAiy1sUY_IZHypiukcyOo,5804
+xmlAnomalyDetection/parsers/parsers_updated.py,sha256=RZT-assbV78GRaXVYAtqQBjayVlnBisU9cvoleY-2EY,3604
+xmlAnomalyDetection-5.0.dist-info/METADATA,sha256=_OoMqwbvWZHuizVrSLFfvLQTWlRwpLhvRL8DHZ4Wg6k,1275
+xmlAnomalyDetection-5.0.dist-info/WHEEL,sha256=cVxcB9AmuTcXqmwrtPhNK88dr7IR_b6qagTj0UvIEbY,91
+xmlAnomalyDetection-5.0.dist-info/entry_points.txt,sha256=o-7KgEPfF596nFjVvCBeNGboh83CrpjM2A4pI14ztUo,71
+xmlAnomalyDetection-5.0.dist-info/top_level.txt,sha256=rwiAlHlJ_ReCuN5qM0JT-dRHKtOsAieAx7zgjX1JhSo,20
+xmlAnomalyDetection-5.0.dist-info/RECORD,,
