@@ -1,0 +1,24 @@
+Metadata-Version: 2.3
+Name: q3as
+Version: 0.1.3
+Summary: Add your description here
+Project-URL: Homepage, https://q3as.aqora.io
+Project-URL: Documentation, https://aqora-io.github.io/q3as-py
+Project-URL: Repository, https://github.com/aqora-io/q3as-py
+Project-URL: Changelog, https://github.com/aqora-io/q3as-py/blob/main/CHANGELOG.md
+License-File: NOTICE
+Requires-Python: >=3.8
+Requires-Dist: httpx>=0.27.0
+Requires-Dist: pydantic>=2.9.1
+Requires-Dist: qiskit>=1.0.0
+Description-Content-Type: text/markdown
+
+# Q3AS SDK
+
+A Python SDK to interact with [Q3AS](https://q3as.aqora.io). To install
+
+```bash
+pip install q3as
+```
+
+Checkout the docs for more information at [aqora-io.github.io/q3as-py](https://aqora-io.github.io/q3as-py)
