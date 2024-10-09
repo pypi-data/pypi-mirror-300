@@ -1,0 +1,52 @@
+[project]
+name = "compassdock"
+version = "0.1.4"
+description = "A comprehensive accurate assessment approach for deep learning based molecular docking"
+readme = "README.md"
+requires-python = ">=3.11,<3.12"
+license = { file = "LICENSE" }
+
+authors = [
+  { name = "Ahmet Sarigun", email = "Ahmet.Sariguen@mdc-berlin.de" }
+]
+
+maintainers = [
+  { name = "Ahmet Sarigun", email = "Ahmet.Sariguen@mdc-berlin.de" }
+]
+
+classifiers = [
+  "Development Status :: 3 - Alpha",
+  "Topic :: Scientific/Engineering :: Bio-Informatics",
+  "Programming Language :: Python :: 3.11",
+]
+
+dependencies = [
+  "torch==2.3.0",
+  "torchvision==0.18.0",
+  "torchaudio==2.3.0",
+  "PyYAML",
+  "scipy",
+  "networkx[default]",
+  "biopython",
+  "rdkit-pypi",
+  "e3nn",
+  "spyrmsd",
+  "pandas==2.0.0",
+  "biopandas",
+  "prody==2.4.1",
+  "torch_geometric==2.5.3",
+  "rdkit==2023.9.6",
+  "py3dmol==2.1.0",
+  "prolif==2.0.3",
+  "pybel==0.15.5",
+  "seaborn",
+  "omegaconf",
+  "ml_collections",
+  "dm-tree",
+  "modelcif==1.0",
+  "einops==0.8.0"
+]
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["compassdock*"]
