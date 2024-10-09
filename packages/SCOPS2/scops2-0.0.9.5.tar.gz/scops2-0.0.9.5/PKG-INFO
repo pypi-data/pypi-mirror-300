@@ -1,0 +1,35 @@
+Metadata-Version: 2.3
+Name: SCOPS2
+Version: 0.0.9.5
+Summary: A small example package
+Project-URL: Homepage, https://github.com/pypa/sampleproject
+Project-URL: Issues, https://github.com/pypa/sampleproject/issues
+Author-email: Example Author <author@example.com>
+License-File: LICENSE
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.12
+Requires-Dist: blinker==1.8.2
+Requires-Dist: certifi==2024.6.2
+Requires-Dist: charset-normalizer==3.3.2
+Requires-Dist: click==8.1.7
+Requires-Dist: colorama==0.4.6
+Requires-Dist: flask-cors==4.0.1
+Requires-Dist: flask==3.0.3
+Requires-Dist: idna==3.7
+Requires-Dist: itsdangerous==2.2.0
+Requires-Dist: jinja2==3.1.4
+Requires-Dist: markupsafe==2.1.5
+Requires-Dist: psutil==6.0.0
+Requires-Dist: requests==2.32.3
+Requires-Dist: scapy==2.5.0
+Requires-Dist: upnpy==1.1.8
+Requires-Dist: urllib3==2.2.2
+Requires-Dist: validators==0.28.3
+Requires-Dist: websockets==12.0
+Requires-Dist: werkzeug==3.0.3
+Description-Content-Type: text/markdown
+
+
+# SCOPS2 Project
