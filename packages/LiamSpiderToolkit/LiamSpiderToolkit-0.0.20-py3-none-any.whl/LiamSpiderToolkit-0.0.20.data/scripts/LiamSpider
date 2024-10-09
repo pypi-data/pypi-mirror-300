@@ -1,0 +1,9 @@
+#!python
+"""
+Linux launcher
+
+This is copied directly into the python bin directory and makes the
+'muddery' program available on $PATH.
+"""
+import LiamSpiderToolkit.Liam_random as liam
+liam.randint()
