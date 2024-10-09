@@ -1,0 +1,155 @@
+Metadata-Version: 2.1
+Name: async-somecomfort
+Version: 1.0.0
+Summary: Python client for interacting with Honeywell Total Connect Comfort (TCC) API
+Home-page: https://github.com/yourusername/async-somecomfort
+Author: Your Name
+Author-email: your.email@example.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: aiohttp >=3.7.4
+
+
+# SomeComfort API Client
+
+This module provides a Python client for interacting with Honeywell's Total Connect Comfort (TCC) API. It allows you to log in to the Honeywell TCC portal, retrieve and update thermostat data, and manage thermostat settings.
+
+Based on the work kk7ds: https://github.com/kk7ds/somecomfort
+
+## Table of Contents
+- [Features](#features)
+- [Installation](#installation)
+- [Usage](#usage)
+  - [Session Management](#session-management)
+  - [Fetching Locations](#fetching-locations)
+  - [Fetching Thermostat Data](#fetching-thermostat-data)
+  - [Setting Thermostat Settings](#setting-thermostat-settings)
+- [Exception Handling](#exception-handling)
+- [Contributing](#contributing)
+- [License](#license)
+
+## Features
+- Log in to the Honeywell TCC portal and manage session cookies
+- Retrieve thermostat data and associated devices
+- Update thermostat settings (system mode, temperature setpoints, etc.)
+- Handle session timeouts and automatic re-login
+- Handle API rate limits
+
+## Installation
+
+You can install the module by cloning the repository and installing the necessary dependencies.
+
+```bash
+git clone https://github.com/your-repo/somecomfort-client
+cd somecomfort-client
+pip install -r requirements.txt
+Usage
+Session Management
+The Session class manages login, cookies, and communication with the Honeywell TCC API. You can use it as a context manager to ensure that resources are properly managed.
+python
+from somecomfort import Session
+
+async with Session('your_username', 'your_password') as session:
+    # Now you are logged in, and can make API requests
+    locations = await session.get_locations()
+    print(locations)
+Fetching Locations
+You can fetch the list of locations (and associated thermostats) for the current account using the get_locations() method.
+python
+locations = await session.get_locations()
+print(f"Fetched {len(locations)} locations.")
+Fetching Thermostat Data
+To retrieve data for a specific thermostat, use the get_thermostat_data() method by passing the thermostat ID.
+python
+thermostat_id = '123456'
+thermostat_data = await session.get_thermostat_data(thermostat_id)
+print(thermostat_data)
+Setting Thermostat Settings
+You can update the thermostat's settings (such as system mode, heat or cool setpoints) using the set_thermostat_settings() method.
+python
+settings = {
+    'SystemSwitch': 1,  # 1 = Heat, 2 = Cool, 3 = Off, etc.
+    'HeatSetpoint': 70,
+    'CoolSetpoint': 75
+}
+await session.set_thermostat_settings('123456', settings)
+Exception Handling
+This module defines several custom exceptions to handle specific error conditions:
+â€¢	AuthError: Raised for authentication failures.
+â€¢	APIError: Raised when there are issues communicating with the API.
+â€¢	SessionTimedOut: Raised when the session has expired and needs to be refreshed.
+â€¢	APIRateLimited: Raised when the API rate limit is exceeded.
+Example:
+python
+try:
+    locations = await session.get_locations()
+except AuthError:
+    print("Login failed! Check your credentials.")
+except APIError as e:
+    print(f"API error: {str(e)}")
+Contributing
+Contributions are welcome! If you'd like to contribute, please fork the repository, create a feature branch, and submit a pull request.
+1.	Fork the repo
+2.	Create a feature branch (git checkout -b feature/your-feature)
+3.	Commit your changes (git commit -am 'Add new feature')
+4.	Push to the branch (git push origin feature/your-feature)
+5.	Create a pull request
+Please ensure that your code passes all linting and tests before submitting a PR.
+License
+This project is licensed under the MIT License. See the LICENSE file for more details.
+
+API Documentation
+This section provides an overview of the key classes and methods in this module. Detailed docstrings are available within the code for each class and method.
+Session Class
+The Session class is responsible for managing the connection to the Honeywell TCC API, logging in, handling cookies, and fetching/updating thermostat data.
+Methods
+â€¢	__aenter__() and __aexit__(): These asynchronous methods enable context management, ensuring the session is properly opened and closed.
+â€¢	login(): Logs in to the Honeywell TCC portal.
+â€¢	keepalive(): Ensures the session remains active by refreshing it.
+â€¢	get_locations(): Fetches a list of locations associated with the user account.
+â€¢	get_thermostat_data(thermostat_id): Fetches data for a specific thermostat.
+â€¢	set_thermostat_settings(thermostat_id, settings): Updates the settings of a thermostat.
+â€¢	close(): Closes the session and releases resources.
+Example Usage:
+python
+async with Session('username', 'password') as session:
+    locations = await session.get_locations()
+    print(locations)
+Device Class
+The Device class represents individual thermostat devices within a location. It allows you to retrieve device status and update configurations.
+Methods
+â€¢	refresh(): Refreshes the device data.
+â€¢	set_fan_mode(): Sets the fan mode (auto, on, circulate).
+â€¢	set_system_mode(): Sets the system mode (heat, cool, off).
+â€¢	set_setpoint_cool(temp): Sets the cool setpoint temperature.
+â€¢	set_setpoint_heat(temp): Sets the heat setpoint temperature.
+Example:
+python
+device = await session.get_device('123456')
+await device.set_setpoint_cool(75)
+await device.set_system_mode('cool')
+
+Exception Handling in Detail
+This module contains custom exceptions that are used throughout the codebase. Each of these exceptions inherits from SomeComfortError, the base exception class.
+Exceptions
+â€¢	SomeComfortError: The base exception class for all exceptions in this module.
+â€¢	AuthError: Raised when authentication fails (e.g., incorrect username/password).
+â€¢	APIError: Raised when the API returns an unexpected response or an error status.
+â€¢	SessionTimedOut: Raised when the session has timed out and must be renewed.
+â€¢	APIRateLimited: Raised when the API rate limit has been exceeded.
+
+License
+MIT License. See LICENSE for more information.
+
+
+### How to Use:
+- **README.md**: This entire file content can be saved as `README.md` and placed in the root directory of your project repository.
+- **Additional Files**:
+  - **LICENSE**: Ensure you have a `LICENSE` file that corresponds to the MIT License if you're using that.
+  - **Detailed Documentation**: You can further elaborate on each class and method in a separate API documentation if needed (e.g., using Sphinx for Python docs).
+
+Let me know if you need further adjustments or more sections added!

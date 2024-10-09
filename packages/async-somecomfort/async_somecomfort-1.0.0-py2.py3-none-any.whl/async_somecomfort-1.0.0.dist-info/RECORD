@@ -1,0 +1,12 @@
+asyncsomecomfort/__init__.py,sha256=fuor21M4AJbI9aI6HzHGg2MqYVFysW1Xag4IErmDIEM,340
+asyncsomecomfort/client.py,sha256=c2VuGG9D1B31S_2InqDOzu3sWxpvHdsQ8CncQyP2GJo,4379
+asyncsomecomfort/device.py,sha256=rI_-JAWTr8wbqCat8nisp7JqrXfkc87Jsjyjv1Ko8E8,21364
+asyncsomecomfort/event_emitter.py,sha256=83iE5HTCAXrQGLQLm9PW2nNcFZc1qXqPaksPo3Tic6k,3174
+asyncsomecomfort/exceptions.py,sha256=n9BH1EgBoAnvOGtywbn_klPUIfep-cr-H_8B_Kvs45s,2832
+asyncsomecomfort/location.py,sha256=ojZJGskmyg6QZc6umAa6o_jxchX8IKEtxbUd6O7EK6Q,4727
+asyncsomecomfort/session.py,sha256=EDQJl7_oi9yRDtVRfRRVfRR6Q4X1sjQGwTll0anZYe8,14472
+async_somecomfort-1.0.0.dist-info/LICENSE,sha256=aFLFZg6LEJFpTlNQ8su3__jw4GfV-xWBmC1cePkKZVw,35802
+async_somecomfort-1.0.0.dist-info/METADATA,sha256=klISDGcNFqq7862FTIVqJebM_07MFPGfTVZ-PZSKoSE,7213
+async_somecomfort-1.0.0.dist-info/WHEEL,sha256=AHX6tWk3qWuce7vKLrj7lnulVHEdWoltgauo8bgCXgU,109
+async_somecomfort-1.0.0.dist-info/top_level.txt,sha256=rEJvj7B7TSvhnooskw4eO3-yWdK1zZipU-6vMSyUk1Y,17
+async_somecomfort-1.0.0.dist-info/RECORD,,
