@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: yc-profiler-dev
+Version: 0.5
+Summary: yCrash Python Agent
+Home-page: https://ycrash.io
+Author: yCrash Team
+Author-email: mahesh@tier1app.com
+Requires-Dist: pyyaml
+Requires-Dist: requests
+Requires-Dist: memory_profiler
+Requires-Dist: psutil
