@@ -1,0 +1,61 @@
+[project]
+name = "blissdata"
+version = "1.1.3"
+description = "Bliss data streaming client"
+readme = "README.md"
+license = {file = "LICENSE.md"}
+maintainers = [{name = "BCU (ESRF)"}]
+classifiers = [
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: GNU Lesser General Public License v3 (LGPLv3)",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+]
+requires-python = ">=3.8"
+dependencies = [
+    "beartype",
+    "fabio>=0.12",
+    "h5py>=2.9,<3.12", # temporary fix for https://gitlab.esrf.fr/bliss/bliss/-/issues/4512
+    "msgpack",
+    "numpy>=1.13",
+    "pydantic>=2.3.0", # (not a direct dep) redis-om 0.3.2 doesn't support lower versions
+    "redis>=4.6.0",
+    "redis-om>=0.3.1",
+    "silx>=1.1.0",
+]
+
+[project.urls]
+Repository = "https://gitlab.esrf.fr/bliss/blissdata/"
+Documentation = "https://bliss.gitlab-pages.esrf.fr/blissdata/"
+Changes = "https://gitlab.esrf.fr/bliss/blissdata/-/blob/master/CHANGELOG.md"
+
+[project.optional-dependencies]
+tango = ["pytango>=9.3.1"]
+lima2 = [
+    "blissdata[tango]",
+    "lima2-client"
+]
+test = [
+    "gevent>=20.9.0",
+    "pytest>=7",
+    "pytest-mock",
+    "pytest-redis>=3.1",
+    "pytest-timeout",
+]
+dev = [
+    "blissdata[test]",
+    "black==22.3",
+    "flake8>=4",
+]
+beacon = ["ruamel.yaml"]
+
+[project.scripts]
+memory_tracker = "blissdata.redis_engine.memory_tracker:cli"
+
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[tool.pytest.ini_options]
+addopts = "-v"
+testpaths = ["src/blissdata/tests"]
