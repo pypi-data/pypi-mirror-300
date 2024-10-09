@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: aiochris-oag
+Version: 0.1.0b1
+Summary: ChRIS Research Integration System: Ultron BackEnd (CUBE) API
+Home-page: 
+Author: Fetal-Neonatal Neuroimaging Developmental Science Center
+Author-email: dev@babymri.org
+License: MIT
+Keywords: OpenAPI,OpenAPI-Generator,ChRIS Research Integration System: Ultron BackEnd (CUBE) API
+Description-Content-Type: text/markdown
+Requires-Dist: urllib3 <3.0.0,>=1.25.3
+Requires-Dist: python-dateutil >=2.8.2
+Requires-Dist: aiohttp >=3.8.4
+Requires-Dist: aiohttp-retry >=2.8.3
+Requires-Dist: pydantic >=2
+Requires-Dist: typing-extensions >=4.7.1
+
+    The ChRIS Ultron BackEnd (CUBE) is the core backend API of ChRIS. It manages ChRIS users, plugins, pipelines, and the provenance of data analyses as ChRIS feeds.
+    
