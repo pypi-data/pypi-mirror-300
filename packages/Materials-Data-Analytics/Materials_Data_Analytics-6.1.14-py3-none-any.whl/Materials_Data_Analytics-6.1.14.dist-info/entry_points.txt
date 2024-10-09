@@ -1,0 +1,2 @@
+[console_scripts]
+launch_dash_app = Materials_Data_Analytics.dash.app:run
