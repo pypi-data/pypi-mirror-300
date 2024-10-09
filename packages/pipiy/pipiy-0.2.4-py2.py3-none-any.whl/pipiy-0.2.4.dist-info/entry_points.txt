@@ -1,0 +1,3 @@
+[console_scripts]
+pipiy=pipiy.pipiy:main
+
