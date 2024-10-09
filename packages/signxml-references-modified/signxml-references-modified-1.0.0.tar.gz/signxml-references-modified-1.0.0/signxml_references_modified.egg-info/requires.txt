@@ -1,0 +1,11 @@
+certifi>=2023.11.17
+cryptography>=43
+lxml<6,>=5.2.1
+
+[tests]
+build
+coverage
+lxml-stubs
+mypy
+ruff
+wheel
