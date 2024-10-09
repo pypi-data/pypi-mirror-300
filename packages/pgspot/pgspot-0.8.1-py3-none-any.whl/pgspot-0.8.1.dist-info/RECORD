@@ -1,0 +1,15 @@
+pgspot/__init__.py,sha256=Ocl79hbbH8_jdr5dGC90VR1cAvZc05Rc0tkZttUnMjo,22
+pgspot/__main__.py,sha256=U8LsJqj8h27rWNBaQQR8oPWPECCzxw7jqKIzrHNf2xQ,60
+pgspot/cli.py,sha256=Wo58eIbkcT_QwHlPkHIWqIvyvL8ajy3Ko4_2fEb5gmY,3769
+pgspot/codes.py,sha256=5BNUaeUqsvxc1qESCEaRqg_if3d4o8bnPvsBFgAagPU,18301
+pgspot/formatters.py,sha256=iDgxfX31Z8Xk85JzQQhi0NgcQxs3yQtgoAOOAzU4cf0,1775
+pgspot/path.py,sha256=u5sRygyFnuf3fK0yIL-XtEyp5OvhnlTNei6UvKC8kkI,3545
+pgspot/plpgsql.py,sha256=WbwXQndsIYkio-rgYutKyDLaHZJ-iw9ubSwOwvIwDgs,1844
+pgspot/state.py,sha256=QJoNvzs-APZS4G_ZHGJOB54ywUoQfH79H1_knsvPX9w,4064
+pgspot/visitors.py,sha256=I8Kr7vttyyFBeaWCrfCSsmeEymAtlI4auc1nZDM62qw,18749
+pgspot-0.8.1.dist-info/LICENSE,sha256=NCLx-fziL1p_vrvHCVEsbekVaACGGuZfY585ggQh_f0,949
+pgspot-0.8.1.dist-info/METADATA,sha256=XT_VFRAnC6kgn_7ZAb7JUT1rpGal0PVNLBjWFK9U2fs,4560
+pgspot-0.8.1.dist-info/WHEEL,sha256=GV9aMThwP_4oNCtvEC2ec3qUYutgWeAzklro_0m4WJQ,91
+pgspot-0.8.1.dist-info/entry_points.txt,sha256=Jue1Ez5ksFtQsVQa8K1Jlzi_8DXXFBQJZrmdWv6TFfw,42
+pgspot-0.8.1.dist-info/top_level.txt,sha256=bkLE9OHGEWMmSJaKo1RC10IZsRHFrWlmp8LQYDTS91g,7
+pgspot-0.8.1.dist-info/RECORD,,
