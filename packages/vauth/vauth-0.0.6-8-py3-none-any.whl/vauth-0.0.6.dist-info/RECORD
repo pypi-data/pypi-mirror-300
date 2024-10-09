@@ -1,0 +1,12 @@
+vauth/__init__.py,sha256=vILIwfoZy4Nu8sRpw_e1tXCB0lG82wCgEcDOZ6Ic8sc,119
+vauth/__main__.py,sha256=2zLsitbMCuzD2VQ5v0d6Q0mKNRPdZmvu8tIwJgntumc,6699
+vauth/commands.py,sha256=JN79vS-WPDtESlj7zKJy2-mCsyQSk9rpwdwD9pOWRPI,10644
+vauth/database.py,sha256=Aey2stMUL-YrJufkjR6qisOrk0Jix2ZpQ1KkazCOppQ,8238
+vauth/encryption.py,sha256=PPiXnJYa8AyVTJfdwVUCVesuON9sLgbSzSC6wOHxp9M,3030
+vauth/handlers.py,sha256=W2OsOQK1I4DSLQSdBPR3Uhpri9YBTsD29xFr5hPkBuI,1601
+vauth-0.0.6.data/scripts/vauth,sha256=TxqPHWcMGyHHIhtgbvJ0qVuTx4Y80G7c9vUEoukfmtE,79
+vauth-0.0.6.dist-info/METADATA,sha256=UdWSYiZqMaNvRRwWPqp1O5NPQrifxEkXe_t-zD9BQSI,6091
+vauth-0.0.6.dist-info/WHEEL,sha256=cVxcB9AmuTcXqmwrtPhNK88dr7IR_b6qagTj0UvIEbY,91
+vauth-0.0.6.dist-info/entry_points.txt,sha256=xqs0_cnExGVzaYehoUNkaZl3nkW9N0-iofRt_3nuLII,46
+vauth-0.0.6.dist-info/top_level.txt,sha256=xJ4CQ6BK2gz93Ebt8KXykgg_pLKdljxNoWUpnPvRiWM,6
+vauth-0.0.6.dist-info/RECORD,,
