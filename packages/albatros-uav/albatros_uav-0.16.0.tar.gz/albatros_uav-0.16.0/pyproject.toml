@@ -1,0 +1,61 @@
+[tool.poetry]
+name = "albatros-uav"
+version = "0.16.0"
+description = "The tool for managing unmanned aerial vehicles missions."
+authors = ["Jędrzej Stasik <jedrzej.stasik@gmail.com>"]
+license = "LGPL-3.0-only"
+readme = "README.md"
+packages = [{include = "albatros"}]
+repository = "https://gitlab.com/albatros-uav/albatros"
+documentation = "https://albatros-uav.gitlab.io/albatros/"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+pymavlink = "^2.4.41"
+pydantic = "^2.9.2"
+pyserial = "^3.5"
+
+[tool.poetry.group.dev.dependencies]
+mypy = "^1.11.2"
+ruff = "^0.5.5"
+poethepoet = "^0.27.0"
+pre-commit = "^3.8.0"
+pytest = "^8.3.3"
+mkdocs = "^1.6.1"
+mkdocs-material = "^9.5.34"
+mkdocstrings-python = "^1.11.1"
+
+[tool.poe.env]
+MAIN_PACKAGE = "albatros"
+TEST_PACKAGE = "tests"
+EXAMPLES_PACKAGE = "examples"
+
+[tool.poe.tasks]
+mypy = "mypy ${MAIN_PACKAGE} ${TEST_PACKAGE} ${EXAMPLES_PACKAGE} --check"
+lint = "ruff check ${MAIN_PACKAGE} ${TEST_PACKAGE} ${EXAMPLES_PACKAGE}"
+format = "ruff format ${MAIN_PACKAGE} ${TEST_PACKAGE} ${EXAMPLES_PACKAGE}"
+format_check = "ruff format ${MAIN_PACKAGE} ${TEST_PACKAGE} ${EXAMPLES_PACKAGE} --check"
+test = "pytest -s -v"
+
+
+[tool.mypy]
+warn_return_any = true
+warn_unused_configs = true
+disallow_untyped_calls = false
+pretty = true
+strict = true
+plugins = ["pydantic.mypy"]
+disable_error_code = "import-untyped"
+
+[tool.ruff]
+line-length = 119
+
+[tool.ruff.lint]
+extend-select = ["I", "S", "RUF"]
+
+[tool.ruff.lint.per-file-ignores]
+"tests/*" = ["S101", "S105", "S106", "S603", "S607"]
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
