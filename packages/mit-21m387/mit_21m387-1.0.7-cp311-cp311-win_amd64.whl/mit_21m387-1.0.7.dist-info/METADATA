@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: mit-21m387
+Version: 1.0.7
+Summary: "Python package for MIT's 21M.387"
+Author: Eran Egozy
+Requires-Python: ~=3.11.1
+Description-Content-Type: text/markdown; charset=UTF-8
+License-File: LICENSE.md
+
+# 21M.387 Fundamentals of Music Processing
+
+This python package is for the MIT course 21M.387 Fundamentals of Music Processing. It is used in
+conjunction with other class material that is distributed during the course of the semester. See [course overview](https://musictech.mit.edu/fmp) for more information.
+
+Contact: egozy at mit dot edu
