@@ -1,0 +1,98 @@
+Metadata-Version: 2.1
+Name: clibot
+Version: 0.1.4
+Summary: An innovative command-line tool driven by powerful large language models, designed to accelerate task completion and maximize your productivity.
+Home-page: https://github.com/linuztx/clibot
+Author: linuztx
+Author-email: linuztx@gmail.com
+Classifier: Operating System :: OS Independent
+Classifier: Intended Audience :: Information Technology
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Intended Audience :: System Administrators
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: openai ==1.34.0
+Requires-Dist: requests ==2.32.3
+Requires-Dist: colorama ==0.4.6
+
+# Clibot
+
+Clibot is an innovative command-line productivity tool powered by advanced language models. It helps you accomplish tasks faster and more efficiently by interacting with AI models directly from the command line. Clibot supports various command line interfaces including CMD, PowerShell, Zsh, and more.
+
+https://github.com/user-attachments/assets/320cd140-4949-46e5-88ba-ba4f9e2e0f96
+
+## Features
+
+- **Multi-Provider Support**: Compatible with multiple AI providers including Groq, OpenAI, Mistral, and Ollama.
+- **Conversation History**: Keeps track of your conversations for easy review.
+- **Setup and Configuration**: Streamlined setup process to configure your AI providers.
+- **Asynchronous Processing**: Utilizes asynchronous operations for improved performance.
+- **Error Handling**: Robust error handling and retry mechanisms for a smooth user experience.
+- **Customizable Settings**: Adjust AI model parameters like temperature and max tokens.
+
+## Installation
+
+To install Clibot, run the following command:
+
+```bash
+pip install clibot
+```
+
+> [!TIP]
+> You can use locally hosted open source models which are available for free. To use local models, you will need to run your own LLM backend server such as [Ollama](https://github.com/ollama/ollama).
+>
+> **❗️Note: Localhosted models require high-end hardware for optimal performance and may not work as expected on lower-end systems.**
+
+### Setup
+
+After installation, run the following command to set up Clibot:
+
+```bash
+clibot
+```
+
+### Usage
+
+Use Clibot by executing the `clibot` command followed by your query or command. Here are some examples:
+
+- General Queries:
+
+```bash
+clibot "How is my system?"
+```
+
+- Summarizing multiple files:
+
+```bash
+clibot "Summarize" < file1.txt < file2.txt
+```
+
+- Creating and saving files:
+
+```bash
+clibot 'Write a simple README file' > README.md
+```
+
+- Reviewing CPU information:
+
+```bash
+lscpu | clibot 'Review my CPU'
+```
+
+Feel free to explore the various capabilities of Clibot and make the most out of this powerful command-line productivity tool!
+
+### Donations
+
+If you find this project useful, consider supporting my work by making a donation. Every contribution helps me continue developing and maintaining this project.
+
+[![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/linuztx)

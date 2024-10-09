@@ -1,0 +1,16 @@
+clibot/__init__.py,sha256=U7Xi7QNxGkj3VfO8AVATD0p5a8IVk1CtlHXQAesZgdo,28
+clibot/__main__.py,sha256=VlwlDPUFQme_ppKS7d1cN-_ww3xpMR2WGOPVqVUcMZo,29
+clibot/__version__.py,sha256=R5TtpJu7Qu6sOarfDpp-5Oyy8Pi2Ir3VewCvsCQiAgo,21
+clibot/animation.py,sha256=kzxF6z1p2D9OYcO4-4YO_k-b8t572ecdv4jE9icP0pc,1257
+clibot/chat.py,sha256=HLxFCBatIKJ5p7Q-tUu_rT2o0VurrnwsfcosiszD_Qg,3465
+clibot/cli.py,sha256=wvQXAB16JYEx3jXmVIYNDJCMugOA2rJNvPBp5RN-BzA,14838
+clibot/colors.py,sha256=8fIDbSuWQLGReBiGiQQL4O4Aq7tN6MBj4sw244wIJWY,305
+clibot/config.py,sha256=j7yPPtgifA4wDa4-wdFPimKhAYr3DI-fOVPXm1TV5fo,1108
+clibot/streaming.py,sha256=acPUVStG28savgTXvzmSg7_wF2uVjLUEMzTuz0XguUY,261
+clibot/system.py,sha256=2qFtK_FZL2YFEsNboTkRIlW9ZOwky5FThnQU9IavxgM,4026
+clibot-0.1.4.dist-info/LICENSE,sha256=JEHWa8OQy0hBqWYTgtQeScGnU-HJxGqr2xx_0pNSRbU,1137
+clibot-0.1.4.dist-info/METADATA,sha256=q5Lk4oBXgzTmySQ7n7TR5IMfz7vFKU_ioTBx3f6zauo,3460
+clibot-0.1.4.dist-info/WHEEL,sha256=GV9aMThwP_4oNCtvEC2ec3qUYutgWeAzklro_0m4WJQ,91
+clibot-0.1.4.dist-info/entry_points.txt,sha256=n32lTWQaQyMq9-T6RPq20UyntAyrQvbKXYZkTvehe0w,43
+clibot-0.1.4.dist-info/top_level.txt,sha256=tjeBpWt4-erEMGp6xCye31m-t-lEta_mt7QR2ueeGKU,7
+clibot-0.1.4.dist-info/RECORD,,
