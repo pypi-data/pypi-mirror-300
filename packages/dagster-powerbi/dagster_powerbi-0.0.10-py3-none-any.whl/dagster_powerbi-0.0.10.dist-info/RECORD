@@ -1,0 +1,9 @@
+dagster_powerbi/__init__.py,sha256=xKDp3MNlr0-aubuv1Y1ykKz7O1uYkkOs3288msQC7BQ,488
+dagster_powerbi/py.typed,sha256=mDShSrm8qg9qjacQc2F-rI8ATllqP6EdgHuEYxuCXZ0,7
+dagster_powerbi/resource.py,sha256=f8go05DTkdUd_rkkTpmHtr9uZveRj-FGOON2uV8c5vA,13502
+dagster_powerbi/translator.py,sha256=E8_JBNoqZne7J_VGhlqk9Ae5bL3qJG1aenkDueHsAfc,8064
+dagster_powerbi-0.0.10.dist-info/LICENSE,sha256=lY5yc1KHX4HoXjlWnIPGcCAsnNney2rb8M8ccT6NzRQ,11347
+dagster_powerbi-0.0.10.dist-info/METADATA,sha256=TivUyMM3DKpDALJwHz8k7hjPKeZ9KUlzMcziKmhwIL0,745
+dagster_powerbi-0.0.10.dist-info/WHEEL,sha256=GV9aMThwP_4oNCtvEC2ec3qUYutgWeAzklro_0m4WJQ,91
+dagster_powerbi-0.0.10.dist-info/top_level.txt,sha256=QtCJ3-cw3fchgUk37xwM38RXj_hiLFsp9ZiFCA2pZCs,16
+dagster_powerbi-0.0.10.dist-info/RECORD,,
