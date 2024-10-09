@@ -1,0 +1,2 @@
+[console_scripts]
+sqlite_dissect = sqlite_dissect.entrypoint:cli
