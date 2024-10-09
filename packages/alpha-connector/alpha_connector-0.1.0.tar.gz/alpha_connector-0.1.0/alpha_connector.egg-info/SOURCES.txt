@@ -1,0 +1,10 @@
+LICENCE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.py
+alpha_connector/__init__.py
+alpha_connector.egg-info/PKG-INFO
+alpha_connector.egg-info/SOURCES.txt
+alpha_connector.egg-info/dependency_links.txt
+alpha_connector.egg-info/top_level.txt
