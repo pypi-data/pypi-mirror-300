@@ -1,0 +1,13 @@
+Usage: fc-nmap [OPTIONS] COMMAND [ARGS]...
+
+  Farcaster Network Mapper
+
+Options:
+  --version   Show the version and exit.
+  -h, --help  Show this message and exit.
+
+Commands:
+  dumpdb    Create a tab separated dump of the database
+  initdb    Initialize the database
+  scan      fc-nmap scan will scann the network starting from [HUB] and...
+  updatedb
