@@ -1,0 +1,30 @@
+## Breaking Changes
+BREAKING CHANGE: retire efs work (3b545d7)
+## New Features
+Implement logic to stop a set of SRS runs on epx_client (#42) * feat: implement logic to stop SRS runs  * fix: update test failed (d7e3e5c)
+feat: add time_out param into job.execute func for exp-client (#35) * feat: add time_out param into job.execute func  * fix: remove pseudorandom in test func (5055759)
+feat: job_name added to Job and Run classes chore: re-add job_name to run.py (1f0b3ec)
+feat: retrieve a list of the keys for jobs not deleted in exp_client (#33) * feat: retrieve a list of the keys for jobs not deleted in exp_client  * fix: update epx docs  * fix: comments  * fix: lint (2f81efe)
+feat: retrieve job outputs in s3 (#45) * feat: retrieve job outputs in s3  * fix: refactor code  * fix: related code with changes on API side  * fix: use jobId instead of jobName to save results cache  * fix: typo  * fix: bug (6e1dc56)
+feat: update submit multiple runs in single api (#36) * feat: update submit multiple runs in single api  * refactor: revert class Run refactor submit multiple runs  * refactor: revert class Run refactor submit multiple runs  * refactor: revert class Run refactor submit multiple runs  * refactor: update timeout submit multiple runs single api  * fix: remove duplicate conflict  * refactor: update job status for multiple runs  ---------  Co-authored-by: khanhnd <khanhnd@nexlesoft.com> (0bc093a)
+feat: use api for run and job status (#37) (9d3f4d1)
+## Patched Changes
+Implement logic to stop a set of SRS runs on epx_client (#42) * feat: implement logic to stop SRS runs  * fix: update test failed (d7e3e5c)
+ci: add tests and linting to action (#25) Co-authored-by: Samuel Williams <samuel.williams@epistemix.com> (480808d)
+ci: fix permission issue for publishing to pypi (#39) (f87f088)
+ci: fix reformatted version line in __init__.py (02480a1)
+ci: publish to pypi on release (#38) (2b67718)
+docs(README): updates to README and removed now-unused scripts (cd2a4ae)
+docs: add local build process documentation (#24) (e19016d)
+docs: updated link (0097b17)
+fix: client delete should delete both results metadata (#34) * fix: should delete bot results and metadata  * fix: remove key metadata cache when delete job  ---------  Co-authored-by: khanhnd <khanhnd@nexlesoft.com> (1373348)
+fix: delete job with not started status throwing error (#47) (ebed475)
+fix: job_name declared twice (#22) (8fee027)
+fix: job_name declared twice (a8be8ba)
+fix: remove quotes of network agent (#41) * fix: remove quotes of network agent  * fix: remove quotes of agent network  ---------  Co-authored-by: khanhnd <khanhnd@nexlesoft.com> (41360d2)
+refactor: Job.status should use above endpoint instead of calling runs repeatedly (#44) * refactor: job.status should use above endpoint instead of calling runs repeatedly  * fix: remove validate invalid job key in exp client (0d250a7)
+refactor: unpack model_params in ModelConfigSweep (#32) * refactor: unpack model_params in ModelConfigSweep  * fix: lint and format  * fix: add unit test for unpack_model_params func  * fix: comments and add some examples  * fix: update docstring of modelconfigsweep (3830d5c)
+refactor: update user agent to header epx client (#31) * refactor: update user agent to header epx client  * refactor: fix lint update user agent to header epx client  * refactor: fix test update user agent to header epx client  * refactor: fix test update user agent to header epx client  ---------  Co-authored-by: khanhnd <khanhnd@nexlesoft.com> (c959368)
+
+---
+**Full Changelog**: https://github.com/Epistemix-Inc/epx-client/compare/0.3.0...3b545d71c67f3bd0bd8ca8c337dd398181b66622
