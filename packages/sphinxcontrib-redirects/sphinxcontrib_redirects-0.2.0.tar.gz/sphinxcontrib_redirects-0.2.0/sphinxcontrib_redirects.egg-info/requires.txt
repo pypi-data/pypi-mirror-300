@@ -1,0 +1,7 @@
+sphinx>=7.0.0
+
+[sphinx]
+sphinx
+
+[test]
+pytest

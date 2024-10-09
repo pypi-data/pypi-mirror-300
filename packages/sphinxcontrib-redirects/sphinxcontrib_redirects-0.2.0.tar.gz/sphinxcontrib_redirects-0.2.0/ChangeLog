@@ -1,0 +1,24 @@
+CHANGES
+=======
+
+0.2.0
+-----
+
+* Remove use of deprecated util
+* Fix linter issues
+* Drop support for Python < 3.9
+* Explicitly note parallel reads are safe
+* README: Fix typo
+
+0.1.0
+-----
+
+* flake8: Disable W503
+* CI: Drop docs job
+* Add support for DirectoryHTMLBuilder
+* README: Add reference to sphinxext-rediraffe
+* Add CI
+* Modernization
+* Add initial tests
+* Add initial version of the plugin
+* Initial commit

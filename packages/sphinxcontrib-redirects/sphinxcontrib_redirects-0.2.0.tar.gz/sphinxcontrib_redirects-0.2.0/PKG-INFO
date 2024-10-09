@@ -1,0 +1,81 @@
+Metadata-Version: 2.1
+Name: sphinxcontrib-redirects
+Version: 0.2.0
+Summary: Sphinx extension to generate JavaScript-driven redirects for moved pages
+Home-page: https://github.com/sphinx-contrib/sphinxcontrib-redirects
+Author: Stephen Finucane
+Author-email: stephen@that.guru
+Project-URL: Bug Tracker, https://github.com/sphinx-contrib/redirects/issues
+Project-URL: Source Code, https://github.com/sphinx-contrib/redirects
+Keywords: sphinx
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Information Technology
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Topic :: Documentation
+Classifier: Topic :: Utilities
+Requires-Python: >=3.9
+Description-Content-Type: text/x-rst; charset=UTF-8
+License-File: LICENSE
+Requires-Dist: sphinx>=7.0.0
+Provides-Extra: sphinx
+Requires-Dist: sphinx; extra == "sphinx"
+Provides-Extra: test
+Requires-Dist: pytest; extra == "test"
+
+=======================
+sphinxcontrib-redirects
+=======================
+
+This contrib extension, `sphinxcontrib.redirects`, provides a Sphinx extension
+for generating JavaScript-driven redirects for moved pages. It currently only
+supports the `html` builder (``sphinx.builders.html.SingleFileHTMLBuilder``).
+
+.. note::
+
+    The `sphinxext-rediraffe <https://pypi.org/project/sphinxext-rediraffe/>`__
+    extension appears to provide many more features than this package and
+    should probably be preferred for new projects.
+
+Usage
+-----
+
+To enable the extension, you should add it to your ``conf.py`` file::
+
+    extensions = [
+        'sphinxcontrib.redirects',
+        ...
+    ]
+
+The extension relies on a *redirect file*. This defaults to ``redirects``
+within the source directory but it can be overridden. To override this value,
+add the following to your ``conf.py`` file::
+
+    redirects_file = '<path to redirects file>'
+
+The *redirect file* is a simple space-separated file of ``old_path`` -
+``new_path`` pairs. These paths are relative to the source directory and should
+include their extension. For example, if you renamed the file ``test.rst`` to
+``testing.rst`` then you could write::
+
+    test.rst testing.rst
+
+This works for files moved between directories too. If you moved a ``test.rst``
+to ``testing/index.rst`` instead, then you could write::
+
+    test.rst testing/index.rst
+
+For examples, refer to the samples used in the `tests
+<tests/roots>`__.
+
+Contributing
+------------
+
+For information on contributing, refer to the `contributing guide
+<CONTRIBUTING.rst>`__.
+
