@@ -1,0 +1,33 @@
+Metadata-Version: 2.1
+Name: growtopia-api
+Version: 0.0.0
+Summary: 🌲 Unofficial Growtopia API providing powerful tools to access item data, sprites, and other resources.
+Author-email: Harvan Nurluthfi <harvan.nurluthfi@gmail.com>
+License: MIT License
+Project-URL: Repository, https://github.com/H-pun/growtopia-api
+Keywords: Growtopia
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: requests
+Requires-Dist: beautifulsoup4
+Requires-Dist: pytz
+Requires-Dist: tqdm
+
+# growtopia-tools
+This code can retrieve various Growtopia data, including item sprites, descriptions, server status, and more!
+
+Credits and links
+- Python items.dat parser from [gt-itemsdat-json](https://github.com/houzeyhoo/gt-itemsdat-json) by @houzeyhoo
+- Base wiki scrapper from [growtopia-info](https://github.com/Gabrielbjb/growtopia-info) by @Gabrielbjb 
+- Upcoming items [Dataminer](https://github.com/Bolwl/Dataminer) by @Bolwl
+
+## Contributing
+Contributions are welcome! If you have suggestions, bug reports, or would like to contribute code, please open an issue or submit a pull request.
+
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.
