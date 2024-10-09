@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: DJPay
+Version: 1.0.0
+Summary: A reusable Django app for handling various type of payment methods
+Home-page: https://github.com/kavehkm/DJPay
+Author: Kaveh Mehrbanian
+Author-email: mehrbaniankaveh@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Framework :: Django
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+
+UNKNOWN
+
