@@ -1,0 +1,30 @@
+[tool.poetry]
+name = "tensor-regression"
+version = "0.0.8"
+description = "A small wrapper around pytest_regressions for Tensors"
+authors = ["Fabrice Normandin <normandf@mila.quebec>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+torch = "^2.0.0"
+pytest-regressions = "^2.5.0"
+numpy = "^1.26.4"
+
+[tool.poetry.group.dev.dependencies]
+pre-commit = "^3.7.1"
+pytest-cov = "^5.0.0"
+
+[tool.poetry-dynamic-versioning]
+enable = false
+
+[tool.poetry.plugins."pytest11"]
+tensor_regression = "tensor_regression"
+
+[tool.pytest.ini_options]
+addopts = "--doctest-modules"
+
+[build-system]
+requires = ["poetry-core>=1.0.0", "poetry-dynamic-versioning>=1.0.0,<2.0.0"]
+build-backend = "poetry_dynamic_versioning.backend"
