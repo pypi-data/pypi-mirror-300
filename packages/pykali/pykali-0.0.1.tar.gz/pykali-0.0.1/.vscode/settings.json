@@ -1,0 +1,16 @@
+{
+    "cSpell.enableFiletypes": [
+        "julia",
+        "makefile",
+        "markdown-math",
+        "mermaid",
+        "powershell",
+        "quarto",
+        "r",
+        "sql",
+        "tex",
+        "toml",
+        "tsv",
+        "typst"
+    ]
+}

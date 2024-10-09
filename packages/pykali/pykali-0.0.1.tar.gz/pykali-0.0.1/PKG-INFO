@@ -1,0 +1,22 @@
+Metadata-Version: 2.3
+Name: pykali
+Version: 0.0.1
+Summary: A small example package
+Project-URL: Homepage, https://github.com/natapol/pykali
+Project-URL: Issues, https://github.com/natapol/pykali/issues
+Author-email: Natapol Pornputtapong <natapol.p@pharm.chula.ac.th>
+License-File: LICENSE
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Scientific/Engineering :: Bio-Informatics
+Requires-Python: >=3.8
+Requires-Dist: biopython>=1.84
+Requires-Dist: numpy
+Requires-Dist: pandas>=2.2
+Requires-Dist: scipy>=1.13.0
+Requires-Dist: tqdm
+Description-Content-Type: text/markdown
+
+# pykali
