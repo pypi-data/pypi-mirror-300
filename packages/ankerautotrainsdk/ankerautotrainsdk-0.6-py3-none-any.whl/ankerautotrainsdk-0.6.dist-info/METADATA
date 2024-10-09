@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: ankerautotrainsdk
+Version: 0.6
+Summary: Python Package Boilerplate
+Home-page: 
+Author: taco
+Author-email: taco.wang@anker-in.com
+License: MIT License
+Requires-Dist: requests
+
+# 回流服务
