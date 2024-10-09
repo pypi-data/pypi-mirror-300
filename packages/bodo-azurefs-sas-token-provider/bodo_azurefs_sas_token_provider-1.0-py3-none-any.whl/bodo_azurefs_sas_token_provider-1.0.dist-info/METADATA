@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: bodo-azurefs-sas-token-provider
+Version: 1.0
+Summary: Bodo's customer SAS token provider
+Home-page: https://bodo.ai
+Author: Bodo.ai
+Keywords: data analytics cluster
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Topic :: Software Development :: Compilers
+Classifier: Topic :: System :: Distributed Computing
+Requires-Python: >=3.10,<3.13
+
+Bodo's customer SAS token provider
