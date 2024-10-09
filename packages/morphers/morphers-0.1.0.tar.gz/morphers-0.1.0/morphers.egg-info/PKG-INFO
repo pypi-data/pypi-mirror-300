@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: morphers
+Version: 0.1.0
+Summary: Add your description here
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+Requires-Dist: numpy>=1.26
+Requires-Dist: polars>=0.20
+Requires-Dist: torch>=2.0
+
+Classes to handle data transformations for tabular-ish deep learning models.

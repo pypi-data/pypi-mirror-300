@@ -1,0 +1,11 @@
+[project]
+name = "morphers"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "numpy>=1.26",
+    "polars>=0.20",
+    "torch>=2.0",
+]
