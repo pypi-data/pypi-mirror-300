@@ -1,0 +1,9 @@
+loggerk/__init__.py,sha256=GrzRLmMo-G7eTbIKHlvm3L0AX0fKiXdY2VvwKsr7Iw8,5982
+loggerk/config/__init__.py,sha256=OrlU0XW8PHJC5GSdCZW6c2c7oSoIwVlrZok3TCNP59c,2648
+loggerk/formatters/__init__.py,sha256=46dCxBCZY6xFcu1-IRsCJ44GWNO3iiurccRN1Z6UtUQ,500
+loggerk/handlers/__init__.py,sha256=s2CW5Z5NZS6UYhVbNDfqAQbokfUwSffaSNgbTdoqLno,7437
+loggerk-0.0.6.dist-info/LICENSE,sha256=ogEPNDSH0_dhiv_lT3ifVIdgIzHAqNA_SemnxUfPBJk,7048
+loggerk-0.0.6.dist-info/METADATA,sha256=2lMXt4scoX2qvMKRqZQ0MF-J1UNiPC-Gx-y-reIWWjw,4131
+loggerk-0.0.6.dist-info/WHEEL,sha256=GV9aMThwP_4oNCtvEC2ec3qUYutgWeAzklro_0m4WJQ,91
+loggerk-0.0.6.dist-info/top_level.txt,sha256=lbN_GY3AevZcYL8UQo6GtUs6ZYtMWikdGCwGCavz2ec,8
+loggerk-0.0.6.dist-info/RECORD,,
