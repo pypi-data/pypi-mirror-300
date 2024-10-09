@@ -1,0 +1,11 @@
+README.md
+setup.py
+PyEvalis/__init__.py
+PyEvalis/__main__.py
+PyEvalis/pyevalis.py
+PyEvalis.egg-info/PKG-INFO
+PyEvalis.egg-info/SOURCES.txt
+PyEvalis.egg-info/dependency_links.txt
+PyEvalis.egg-info/entry_points.txt
+PyEvalis.egg-info/requires.txt
+PyEvalis.egg-info/top_level.txt
