@@ -1,0 +1,5 @@
+llama_index/llms/perplexity/__init__.py,sha256=NJJHz_Nt4mAh6ADq5SZOhvl01gygZlVC8jXvm1IXRGU,82
+llama_index/llms/perplexity/base.py,sha256=381Vj2b-o0PKNbvUuvkm71dEAAhdPJmLLBG--zxB_6c,17021
+llama_index_llms_perplexity-0.2.1.dist-info/METADATA,sha256=iUXG4xPNNuohAQhF_R40rZo34HuN42ENLROVABwkJH0,2371
+llama_index_llms_perplexity-0.2.1.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+llama_index_llms_perplexity-0.2.1.dist-info/RECORD,,
