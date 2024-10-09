@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: omop
+Version: 0.1.2
+Summary: OMOP Common Data Model.
+Author-email: Lamin Labs <open-source@lamin.ai>
+Description-Content-Type: text/markdown
+Requires-Dist: lamindb
+Requires-Dist: pre-commit ; extra == "dev"
+Requires-Dist: nox ; extra == "dev"
+Requires-Dist: pytest>=6.0 ; extra == "dev"
+Requires-Dist: pytest-cov ; extra == "dev"
+Requires-Dist: nbproject_test ; extra == "dev"
+Project-URL: Home, https://github.com/laminlabs/omop
+Provides-Extra: dev
+
+# OMOP: OMOP Common Data Model
+
+OMOP (Observational Medical Outcomes Partnership) is a common data model (CDM) that standardizes the structure and content of disparate healthcare data for large-scale observational research.
+This schema models the OMOP data model accurately allowing for validation of OMOP modeled data.
+
+More about OMOP can be found at the [OHDSI website](https://ohdsi.org) and on the [OMOP GitHub](https://github.com/OHDSI/CommonDataModel).
+
