@@ -1,0 +1,15 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+src/semantic_pydantic/__init__.py
+src/semantic_pydantic/api.py
+src/semantic_pydantic/py.typed
+src/semantic_pydantic/version.py
+src/semantic_pydantic.egg-info/PKG-INFO
+src/semantic_pydantic.egg-info/SOURCES.txt
+src/semantic_pydantic.egg-info/dependency_links.txt
+src/semantic_pydantic.egg-info/requires.txt
+src/semantic_pydantic.egg-info/top_level.txt
+tests/__init__.py
+tests/test_api.py

@@ -1,0 +1,17 @@
+bioregistry
+requests
+pydantic>=2.0
+
+[docs]
+sphinx>=8
+sphinx-rtd-theme>=3.0
+sphinx_automodapi
+autodoc_pydantic
+
+[fastapi]
+fastapi
+httpx
+
+[tests]
+pytest
+coverage
