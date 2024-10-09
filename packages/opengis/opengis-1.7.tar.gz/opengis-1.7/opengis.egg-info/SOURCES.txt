@@ -1,0 +1,8 @@
+setup.py
+opengis/Landsat8.py
+opengis/__init__.py
+opengis.egg-info/PKG-INFO
+opengis.egg-info/SOURCES.txt
+opengis.egg-info/dependency_links.txt
+opengis.egg-info/requires.txt
+opengis.egg-info/top_level.txt
