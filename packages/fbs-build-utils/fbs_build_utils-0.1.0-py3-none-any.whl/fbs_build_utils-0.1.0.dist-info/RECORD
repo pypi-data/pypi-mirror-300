@@ -1,0 +1,10 @@
+fbs_build_utils/__init__.py,sha256=NweNHpa8wVuNGMcswygAjOhxaEu9WZYwf5wEBHgyG0c,43
+fbs_build_utils/cli.py,sha256=gORPITpIn7S0ASbOV74NGrl_EWE0L5Hj2LFgz0fPuPg,1694
+fbs_build_utils/generate_icons.py,sha256=Ev0PtaKxCj3xRghqodXvNqhLUhMT2wMY1sXaL8Nfsvk,1670
+fbs_build_utils/main.py,sha256=ys7bIZpYj-HM4FCfGx_QHfuTnmmDuSRyguuvD9HG_yg,1152
+fbs_build_utils/os_cmd.py,sha256=o69kQFDEv64PyY3ZsZrSc-yP8Ko9Fn1x9UPmC2dWrYU,548
+fbs_build_utils/rename_installer.py,sha256=fDUe3u-A9KCaENy9zv4rjL-YnZKNQYi62qDz3H9MmsM,997
+fbs_build_utils-0.1.0.dist-info/entry_points.txt,sha256=eXmkImBy0I1Ime5XZnPXa5uXc-4eki3FsoKCDYPYx38,55
+fbs_build_utils-0.1.0.dist-info/METADATA,sha256=PY1lFsX3NdgJZkAunwb_fJkG2S4o2VHpGM1mMYAt3nc,526
+fbs_build_utils-0.1.0.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+fbs_build_utils-0.1.0.dist-info/RECORD,,
