@@ -1,0 +1,16 @@
+LICENSE
+MANIFEST.in
+README.md
+settings.ini
+setup.py
+kendrick/__init__.py
+kendrick/_modidx.py
+kendrick/core.py
+kendrick/explore.py
+kendrick.egg-info/PKG-INFO
+kendrick.egg-info/SOURCES.txt
+kendrick.egg-info/dependency_links.txt
+kendrick.egg-info/entry_points.txt
+kendrick.egg-info/not-zip-safe
+kendrick.egg-info/requires.txt
+kendrick.egg-info/top_level.txt

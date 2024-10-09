@@ -1,0 +1,17 @@
+pyopenms
+datashader
+dask
+dask-expr
+scipy
+pandas
+jupyter
+molmass
+mendeleev
+numpy
+matplotlib
+ipyleaflet
+plotly
+pyRawTools
+polars
+
+[dev]
