@@ -1,0 +1,43 @@
+private_data:
+  log_input: false
+  log_output: false
+setting_type: default
+set_all:
+  file: 90
+  console: 20
+data_types:
+  file: 90
+  console: 20
+prepper:
+  file: 90
+  console: 20
+cascade:
+  file: 90
+  console: 20
+sanitiser:
+  file: 90
+  console: 20
+validators:
+  file: 90
+  console: 20
+llm_handler:
+  file: 90
+  console: 20
+cache:
+  file: 90
+  console: 20
+workflows:
+  file: 90
+  console: 20
+strings:
+  file: 90
+  console: 20
+time:
+  file: 90
+  console: 20
+file_importers:
+  file: 90
+  console: 20
+unhandled_errors:
+  file: 90
+  console: 20
