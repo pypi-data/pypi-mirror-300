@@ -1,0 +1,16 @@
+pipekit_sdk/__init__.py,sha256=d9N1tBjIpjM5ewtk1eyjGQCLane1PyJ7XrA0xHH_42A,81
+pipekit_sdk/_helpers.py,sha256=k0VPBr9dW0kb4dJzTvyAo2D99GQJw12D-X8t1SNAD6w,707
+pipekit_sdk/models/__init__.py,sha256=KU9EmLUttEVQawTGrlEsSFd2aTIWe7yGDZZvyJkKV9A,187
+pipekit_sdk/models/_config.py,sha256=f6Ix89kCmGL2JO82Kfq1WefDxF83I6UMUl9IVnVfrQs,476
+pipekit_sdk/models/big.py,sha256=szmrtzM-O45xdc7YKFesKk2HlBkM--bTUgQKVLZbnzo,201
+pipekit_sdk/models/inf.py,sha256=W95wBzyHv9YWnloxVikv_LaC51a6GdHZNUw6r6gYEXQ,199
+pipekit_sdk/models/intstr.py,sha256=iE2zOGNmmPLi--qa8cxOPBWfEYDMn_jUVi-D98Qq-tM,367
+pipekit_sdk/models/model.py,sha256=4JYKYNe0CLjbnDczMc1iZyqwP1xOjf6H3nusdhVpdS0,4824
+pipekit_sdk/models/resource.py,sha256=yDvp4gGg5D2CLeSfH_hykfyJiQVsZXYdlm1upIVstxE,478
+pipekit_sdk/models/v1.py,sha256=KnbPAsWYRyS39ltQO-aCVE9QVhoQbZQlKQf_A07y7WA,160080
+pipekit_sdk/models/v1alpha1.py,sha256=OZ5OdHlD4qo5Byh-hwxVcVcSwJCkKdu_b7nsgcTuCH8,71759
+pipekit_sdk/service.py,sha256=KRuwhwV4-XD1iVi6_QIvKrWNO_xqMyH6nzFsAujX27M,15516
+pipekit_sdk-2.0.0.dist-info/LICENSE,sha256=tqo5hZQaKlkjdgb3Utaj2XDP2t65g9cQ8766oj8MvQg,1521
+pipekit_sdk-2.0.0.dist-info/METADATA,sha256=8N7lZilbd5G9xD1CaCNvQuaDHOSL_dSxFBXE05rPfVs,2949
+pipekit_sdk-2.0.0.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+pipekit_sdk-2.0.0.dist-info/RECORD,,
