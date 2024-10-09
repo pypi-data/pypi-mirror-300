@@ -1,0 +1,14 @@
+README.md
+pyproject.toml
+symtorch/__init__.py
+symtorch/operations.py
+symtorch/symbolic_module.py
+symtorch/utils.py
+symtorch.egg-info/PKG-INFO
+symtorch.egg-info/SOURCES.txt
+symtorch.egg-info/dependency_links.txt
+symtorch.egg-info/requires.txt
+symtorch.egg-info/top_level.txt
+tests/test_operations.py
+tests/test_save_and_load.py
+tests/test_symtorchify.py

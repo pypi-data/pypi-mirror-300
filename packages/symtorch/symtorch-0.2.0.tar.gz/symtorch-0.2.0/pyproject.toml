@@ -1,0 +1,95 @@
+[build-system]
+requires = ["setuptools>=61.0.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "symtorch"
+version = "0.2.0"
+description = "Symbolic Expressions in PyTorch"
+readme = "README.md"
+authors = [{ name = "John Gardner", email = "gardner.john97@gmail.com" }]
+license = { file = "LICENSE" }
+classifiers = [
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+]
+keywords = []
+dependencies = ["torch", "sympy", "numpy"]
+requires-python = ">=3.8"
+
+[project.optional-dependencies]
+dev = ["bumpver", "ruff"]
+publish = ["build", "twine"]
+test = ["pytest", "pytest-cov"]
+docs = [
+    "sphinx",
+    "furo",
+    "nbsphinx",
+    "sphinxext-opengraph",
+    "sphinx-copybutton",
+    "sphinx_autodoc_typehints",
+    "sphinx-design",
+    "sphinx-codeautolink",
+]
+
+[project.urls]
+Homepage = "https://github.com/jla-gardner/symtorch"
+
+[tool.bumpver]
+current_version = "0.2.0"
+version_pattern = "MAJOR.MINOR.PATCH"
+commit_message = "Bump version {old_version} -> {new_version}"
+commit = true
+tag = true
+push = false
+
+[tool.bumpver.file_patterns]
+"pyproject.toml" = ['current_version = "{version}"', 'version = "{version}"']
+"symtorch/__init__.py" = ["{version}"]
+"docs/source/conf.py" = ["release = \"{version}\""]
+
+[tool.ruff]
+include = ["src", "tests"]
+extend-include = ["*.ipynb"]
+line-length = 80
+indent-width = 4
+target-version = "py38"
+
+[tool.ruff.lint]
+select = ["E", "F", "UP", "B", "SIM", "I"]
+ignore = ["SIM300", "E402", "E703"]
+fixable = ["ALL"]
+unfixable = []
+dummy-variable-rgx = "^(_+|(_+[a-zA-Z0-9_]*[a-zA-Z0-9]+?))$"
+
+[tool.ruff.format]
+quote-style = "double"
+indent-style = "space"
+skip-magic-trailing-comma = false
+line-ending = "auto"
+
+[tool.ruff.lint.pydocstyle]
+convention = "numpy"
+
+[tool.coverage.run]
+branch = true
+omit = ["tests/*"]
+
+[tool.coverage.report]
+exclude_also = [
+    "def __repr__",
+    "if self\\.debug",
+    "raise AssertionError",
+    "raise NotImplementedError",
+    "if 0:",
+    "if __name__ == .__main__.:",
+    "@(abc\\.)?abstractmethod",
+]
+ignore_errors = true
+
+[tool.coverage.html]
+directory = "coverage_html_report"
+
+[tool.coverage.paths]
+source = ["symtorch"]
