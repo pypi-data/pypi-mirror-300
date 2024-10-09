@@ -1,0 +1,13 @@
+LICENSE
+README.md
+pyproject.toml
+aioblackbird24180/__init__.py
+aioblackbird24180/blackbird.py
+aioblackbird24180/http.py
+aioblackbird24180/util.py
+aioblackbird24180.egg-info/PKG-INFO
+aioblackbird24180.egg-info/SOURCES.txt
+aioblackbird24180.egg-info/dependency_links.txt
+aioblackbird24180.egg-info/not-zip-safe
+aioblackbird24180.egg-info/requires.txt
+aioblackbird24180.egg-info/top_level.txt
