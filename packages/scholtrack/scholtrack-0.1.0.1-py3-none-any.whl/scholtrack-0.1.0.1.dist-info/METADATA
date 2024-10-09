@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: scholtrack
+Version: 0.1.0.1
+Summary: Effortlessly gather, trace, and manage citations for academic papers
+Home-page: https://github.com/sergeyprokudin/scholtrack
+Author: Sergey Prokudin
+Author-email: sergey.prokudin@gmail.com
+License-File: LICENSE
+Requires-Dist: requests
+Requires-Dist: tqdm
+

@@ -1,0 +1,12 @@
+scholtrack/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+scholtrack/api.py,sha256=wGzd2AU1-c27VazLF3zv9L_g18_9DkhMDiXISuqIC-8,4999
+scholtrack/cli.py,sha256=sPYCN8fwu8-_vC0MC5XieuiftkqyvETC6A8QHksfFg8,10012
+scholtrack/exporter.py,sha256=iNUZGSUmmhXLAalbJwL9aBWZGqOHSNitIhNEV8VoUkU,7152
+scholtrack/collections/4dgs.txt,sha256=g4ecJQ_40W0JV-IvXaGoBkETgs5RSAph32_FL3bJP6c,319
+scholtrack/collections/nvs.txt,sha256=09ExMHVhIjveLuDpwFMaaC11TNY_QDL6x_1oUYpDk9A,426
+scholtrack-0.1.0.1.dist-info/LICENSE,sha256=5v34fayssNt6I_w4Jm7rh83IWPW_GDNuOhu0E82PjzQ,11349
+scholtrack-0.1.0.1.dist-info/METADATA,sha256=ysnQ4n7LzXrTwp6l4IK7lwcccKNCZaM0uwNT_8BFinw,321
+scholtrack-0.1.0.1.dist-info/WHEEL,sha256=GV9aMThwP_4oNCtvEC2ec3qUYutgWeAzklro_0m4WJQ,91
+scholtrack-0.1.0.1.dist-info/entry_points.txt,sha256=qVhAninHnA3QsBUHI3wvDuf98f8UwxpkZzMKnpckE_c,51
+scholtrack-0.1.0.1.dist-info/top_level.txt,sha256=VtWf-anI2tld1IeHBr1nFx4t8boPy8CE79YwKpxKNpk,11
+scholtrack-0.1.0.1.dist-info/RECORD,,
