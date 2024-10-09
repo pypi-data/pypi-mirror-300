@@ -1,0 +1,15 @@
+extract_text.py,sha256=K0zBt6Zk-Cl6MGGM4ITcJCa8bD_dd6TsTuxPNAZMS6o,2104
+models/dt.joblib,sha256=baNXsLRCbxm6UlgeCTvEayL43IpY8I-o0adx7JV6eIM,14097
+models/dt.onnx,sha256=FEl2BQUSTTKEIru0imALD18bPZ9LP6WCoNTZuhE6NgE,7747
+pdftext/extraction.py,sha256=ZF2axGNZBXLMSjdmxyMhAJZaRE1HPPP7exH3-9RdNLE,4049
+pdftext/inference.py,sha256=zxFll2jzcSL6PxnMRX6R_39LUepS-dur2IcN-WOKkjw,7213
+pdftext/model.py,sha256=HRtfviQdC9coKP1fckDBGe7Yl8xpavESpv53HgBxuGg,170
+pdftext/pdf/chars.py,sha256=sUkNBaakx9zApzwcwjPI9BN4U7xFloemh6Oic6PYTds,4333
+pdftext/pdf/utils.py,sha256=QKiqwPbyo6foHZqH3JcU0Ogeb8J5GKBuzGWwBsK04nc,4180
+pdftext/postprocessing.py,sha256=SNBd5SVyO-V6TN1hGK60-uP1g-Kpn0WLNAg8txiOikI,3222
+pdftext/settings.py,sha256=wb9p-R3kwV3Pi9JEl3klGfyZVEhbDZR9IApk1bgHA4w,567
+pdftext-0.3.13.dist-info/LICENSE,sha256=qB3SaMkm7SKYDYSzA_A4RtDrTXhR56DTWh-Xj9e4D3s,11269
+pdftext-0.3.13.dist-info/METADATA,sha256=FPy45p7Dh5w99Uy0NQjy2XPBnWXD6npGROO1fNR1mgE,8257
+pdftext-0.3.13.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+pdftext-0.3.13.dist-info/entry_points.txt,sha256=UEaqzYcf9s9UapyWDNEvRN2MPlc0EqwgcZIAeTkkA8g,45
+pdftext-0.3.13.dist-info/RECORD,,
