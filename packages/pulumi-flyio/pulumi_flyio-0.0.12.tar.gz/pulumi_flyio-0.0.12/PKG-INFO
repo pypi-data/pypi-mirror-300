@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: pulumi_flyio
+Version: 0.0.12
+Summary: A native Pulumi provider for Fly.io.
+License: Apache-2.0
+Project-URL: Repository, https://github.com/lukeshay/pulumi-flyio
+Keywords: pulumi flyio category/cloud kind/native
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Requires-Dist: parver>=0.2.1
+Requires-Dist: pulumi
+Requires-Dist: semver>=2.8.1
+
+# Fly.io Pulumi Provider
+
+A native Pulumi provider for Fly.io.
