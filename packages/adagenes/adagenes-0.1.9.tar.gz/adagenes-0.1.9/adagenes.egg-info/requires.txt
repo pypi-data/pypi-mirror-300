@@ -1,0 +1,16 @@
+requests
+liftover
+plotly
+openpyxl
+matplotlib
+scikit-learn
+blosum
+pandas
+python-magic
+dash
+dash-bootstrap-components
+upsetplot
+dash-bio
+openpyxl
+numpy
+dash-ag-grid
