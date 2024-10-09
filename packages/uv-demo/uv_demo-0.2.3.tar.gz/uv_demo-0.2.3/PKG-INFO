@@ -1,0 +1,84 @@
+Metadata-Version: 2.3
+Name: uv-demo
+Version: 0.2.3
+Summary: Just a demo of the uv package manager for Python.
+Project-URL: Issues, https://github.com/lucaspar/uv-demo/issues
+Project-URL: Releases, https://github.com/lucaspar/uv-demo/releases
+Project-URL: Repository, https://github.com/lucaspar/uv-demo
+Author-email: Lucas Parzianello <lucaspar@users.noreply.github.com>
+License: MIT License
+        
+        Copyright (c) 2024 lucaspar
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy
+        of this software and associated documentation files (the "Software"), to deal
+        in the Software without restriction, including without limitation the rights
+        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+        copies of the Software, and to permit persons to whom the Software is
+        furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in all
+        copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+        SOFTWARE.
+License-File: LICENSE
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: Unix
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Topic :: Terminals
+Classifier: Typing :: Typed
+Requires-Python: >=3.12
+Requires-Dist: loguru>=0.7.2
+Description-Content-Type: text/markdown
+
+# `uv-demo` PyPI package
+
+![PyPI - Version](https://img.shields.io/pypi/v/uv-demo)
+![PyPI - Python Version](https://img.shields.io/pypi/pyversions/uv-demo)
+![Pepy Total Downloads](https://img.shields.io/pepy/dt/uv-demo)
+[![Action | Upload Python Package](https://github.com/lucaspar/uv-demo/actions/workflows/python-publish.yaml/badge.svg)](https://github.com/lucaspar/uv-demo/actions/workflows/python-publish.yaml)
+
+A demo for the `uv` package manager. Very useless.
+
+## Setup and Execution
+
+```bash
+uv run uv-demo
+```
+
+This will install all dependencies (`uv sync`) and run the entrypoint script.
+
+## Integration with GitHub Actions
+
+See the [Upload Python Package workflow file](.github/workflows/python-publish.yaml) for this package.
+
+### Running actions locally
+
+You can use `act` to run GitHub Actions locally. Use cases:
+
+1. While writing a workflow, to test the workflow locally before pushing to the repository.
+2. Run the publishing workflow without setting secrets on GitHub.
+3. Before opening a pull request, to check the workflow will pass.
+
+It can be installed as a GitHub CLI extension:
+
+```bash
+gh extension install https://github.com/nektos/gh-act
+cp config/secrets.env.example config/secrets.env
+# edit config/secrets.env with the required secrets
+gh act --secret-file config/secrets.env
+# select medium-sized image in first run.
+```
+
++ [`act` installation](https://nektosact.com/installation/index.html)
++ [`act` usage](https://nektosact.com/usage/index.html)

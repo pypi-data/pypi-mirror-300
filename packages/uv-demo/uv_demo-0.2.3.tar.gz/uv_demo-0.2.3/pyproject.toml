@@ -1,0 +1,44 @@
+[project]
+    authors         = [{ name = "Lucas Parzianello", email = "lucaspar@users.noreply.github.com" }]
+    description     = "Just a demo of the uv package manager for Python."
+    license         = { file = "LICENSE" }
+    name            = "uv-demo"
+    readme          = "README.md"
+    requires-python = ">=3.12"
+    version         = "0.2.3"
+
+    # https://pypi.org/classifiers/
+    classifiers = [
+        "Development Status :: 1 - Planning",
+        "Intended Audience :: Developers",
+        "License :: OSI Approved :: MIT License",
+        "Operating System :: Unix",
+        "Programming Language :: Python :: 3.12",
+        "Programming Language :: Python :: 3.13",
+        "Programming Language :: Python :: Implementation :: CPython",
+        "Topic :: Terminals",
+        "Typing :: Typed",
+    ]
+
+    # https://packaging.python.org/en/latest/specifications/dependency-specifiers/
+    dependencies = ["loguru>=0.7.2"]
+
+    [project.scripts]
+        uv-demo     = "uv_demo:say_hello"
+        uv-demo-bye = "uv_demo:say_goodbye"
+
+    [project.urls]
+        Issues     = "https://github.com/lucaspar/uv-demo/issues"
+        Releases   = "https://github.com/lucaspar/uv-demo/releases"
+        Repository = "https://github.com/lucaspar/uv-demo"
+
+[build-system]
+    build-backend = "hatchling.build"
+    requires      = ["hatchling"]
+
+[tool.hatch.build.targets.sdist]
+    # https://hatch.pypa.io/latest/config/build/
+    exclude = [".github", "*.env*", "*secret*", "config/"]
+
+[tool.uv]
+    dev-dependencies = ["pytest>=8.3.3", "ruff>=0.6.9"]
