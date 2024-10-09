@@ -1,0 +1,13 @@
+pysource_codegen/__about__.py,sha256=3Um3PqUcLx1qz4-NthXANNbGOH_bQIGPmJ6ao265Hq8,135
+pysource_codegen/__init__.py,sha256=PQqBPvapSQ-mmpNQULYAhqZHnSDJUgrUoEt9RTmiono,79
+pysource_codegen/__main__.py,sha256=gBLGNuBkh9pUzbH4-fribKsJKXLhFoFrMzedpNP5hPA,733
+pysource_codegen/_codegen.py,sha256=JjV0tGf5wzH5EvYAL5rae3Xo0Xlr8tbCbw5D0_4oPMo,55911
+pysource_codegen/_limits.py,sha256=0Z5l8w3J_8Uw_4aJnUqVnR9DTyuzLqlAwr-NLlaHjA8,654
+pysource_codegen/_utils.py,sha256=4CIDYYLWFwBqfdlCpgvFBWT908PWF17Y9Gi7mGkvWYc,349
+pysource_codegen/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pysource_codegen/static_type_info.py,sha256=7yRhEIKr7f6UspxTH171adiyDr6ulVMUdfMPJy_NFR4,14002
+pysource_codegen/types.py,sha256=I4fK2HH8V3cqCphyxKJicvUdWYOYAyMupnMDuE2mJ6o,555
+pysource_codegen-0.6.0.dist-info/METADATA,sha256=cvpVAEpF4YL8gJF_7zBCz1hvdhw-bDA1j6sFbppP5QQ,4257
+pysource_codegen-0.6.0.dist-info/WHEEL,sha256=1yFddiXMmvYK7QYTqtRNtX66WJ0Mz8PYEiEUoOUUxRY,87
+pysource_codegen-0.6.0.dist-info/licenses/LICENSE,sha256=FH_kQdPe-T2SWbWWROFSjc-oxH55SlHK7_PGGVg76dM,1082
+pysource_codegen-0.6.0.dist-info/RECORD,,
