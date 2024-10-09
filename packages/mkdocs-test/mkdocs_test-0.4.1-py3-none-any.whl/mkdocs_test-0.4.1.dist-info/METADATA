@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: mkdocs-test
+Version: 0.4.1
+Summary: file: README.md
+Author: Laurent Franceschetti
+License: LICENSE
+License-File: LICENSE
+Requires-Dist: beautifulsoup4
+Requires-Dist: markdown
+Requires-Dist: pandas
+Provides-Extra: test
+Requires-Dist: pytest >=7.0 ; extra == 'test'
+Requires-Dist: mkdocs-macros ; extra == 'test'
+Requires-Dist: toml-cli ; extra == 'test'
+
