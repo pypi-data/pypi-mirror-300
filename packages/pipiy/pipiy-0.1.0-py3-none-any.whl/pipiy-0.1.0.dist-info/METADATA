@@ -1,0 +1,34 @@
+Metadata-Version: 2.1
+Name: pipiy
+Version: 0.1.0
+Summary: 
+Home-page: https://github.com/lunastev/pipiy
+Author: LunaStev
+Author-email: youngjae681@gmail.com
+Requires-Python: >=3.12,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: wson
+Project-URL: Repository, https://github.com/lunastev/pipiy
+Description-Content-Type: text/markdown
+
+# Pipiy
+
+`pipiy` is a tool for managing pip packages using WSON formatted requirements files, similar to Gradle or Maven.
+
+## Installation
+
+Clone the repository and install it:
+
+```bash
+pip install .
+```
+
+```wson
+{
+    module = [
+        numpy = "1.24.0",
+        discord.py = "2.2.2"
+    ]
+}
+```
