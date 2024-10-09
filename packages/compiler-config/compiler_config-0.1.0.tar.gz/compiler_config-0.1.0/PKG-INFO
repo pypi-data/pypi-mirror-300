@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: compiler-config
+Version: 0.1.0
+Summary: 
+Author: jamie
+Author-email: jfriel@oxfordquantumcircuits.com
+Requires-Python: >=3.8.1,<3.13
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Description-Content-Type: text/markdown
+
+# compiler-config
+
+OQC's task level compiler configuration. The compiler-config package is an internal dependency of [QAT](https://github.com/oqc-community/qat) 
+(OQC's compiler and runtime) and will soon be adopted as a dependency of our QCaaS (Quantum Computing as a Service) client. *End users should not need to interact with this package except via QAT or QCAAS client.*
+
+#### Licence
+
+This code in this repository is licensed under the BSD 3-Clause Licence.
+Please see [LICENSE](LICENSE) for more information.
