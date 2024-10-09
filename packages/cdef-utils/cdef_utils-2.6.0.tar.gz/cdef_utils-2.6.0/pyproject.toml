@@ -1,0 +1,33 @@
+[project]
+name = "cdef-utils"
+version = "2.6.0"
+description = "Utility for converting CSV to Parquet files"
+authors = [
+    { name = "Tobias Kragholm", email = "50784887+tkragholm@users.noreply.github.com" },
+]
+dependencies = [
+    "polars[all]>=1.9.0",
+    "rich>=13.9.2",
+    "pyarrow>=17.0.0",
+    "charset-normalizer>=3.3.2",
+]
+readme = "README.md"
+requires-python = ">= 3.8"
+license = "MIT"
+
+[project.scripts]
+"cdef-utils" = "cdef_utils.convert:run_convert"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.rye]
+managed = true
+dev-dependencies = []
+
+[tool.hatch.metadata]
+allow-direct-references = true
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/cdef_utils"]
