@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: tornetx
+Version: 2.1.0
+Summary: TorNet - Automate IP address changes using Tor (Adapted by Macxzew)
+Home-page: https://github.com/Macxzew/tornet
+Author: ByteBreach
+Author-email: mrfidal@proton.me
+Maintainer: Macxzew
+Maintainer-email: macxzew@proton.me
+License: MIT
+Project-URL: Original Repo, https://github.com/ByteBreach/tornet
+Project-URL: Adapted Repo, https://github.com/Macxzew/tornet
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Dist: colorama
+Requires-Dist: requests
+Requires-Dist: stem
+
+UNKNOWN
+
+
