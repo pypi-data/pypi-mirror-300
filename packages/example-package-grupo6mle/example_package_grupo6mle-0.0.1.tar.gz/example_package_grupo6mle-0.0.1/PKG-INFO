@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: example_package_grupo6mle
+Version: 0.0.1
+Summary: A small example package for mle
+Author-email: Roberto Rios <rio20979@uvg.edu.gt>, Elisa Samayoa <rio20979@uvg.edu.gt>, Javier Aguilar <rio20979@uvg.edu.gt>, Julio Avila <rio20979@uvg.edu.gt>
+Project-URL: Homepage, https://github.com/robertriosm/mlops7
+Project-URL: Issues, https://github.com/robertriosm/mlops7/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Example Package MLE grupo 4
+
+This is a simple example package. 
