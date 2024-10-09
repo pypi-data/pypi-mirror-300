@@ -1,0 +1,11 @@
+accelerate
+torch
+torchaudio
+pillow
+transformers==4.45.1
+edge-tts
+nest_asyncio
+asyncio
+wavio
+requests
+sounddevice
