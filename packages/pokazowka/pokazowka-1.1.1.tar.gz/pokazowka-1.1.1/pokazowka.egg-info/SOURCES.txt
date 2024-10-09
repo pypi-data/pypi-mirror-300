@@ -1,0 +1,7 @@
+setup.py
+pokazowka.egg-info/PKG-INFO
+pokazowka.egg-info/SOURCES.txt
+pokazowka.egg-info/dependency_links.txt
+pokazowka.egg-info/top_level.txt
+test_package/__init__.py
+test_package/dzialania.py
