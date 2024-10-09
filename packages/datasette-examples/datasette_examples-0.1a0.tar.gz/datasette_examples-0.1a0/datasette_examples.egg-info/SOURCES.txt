@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+datasette_examples/__init__.py
+datasette_examples.egg-info/PKG-INFO
+datasette_examples.egg-info/SOURCES.txt
+datasette_examples.egg-info/dependency_links.txt
+datasette_examples.egg-info/entry_points.txt
+datasette_examples.egg-info/requires.txt
+datasette_examples.egg-info/top_level.txt
+tests/test_examples.py

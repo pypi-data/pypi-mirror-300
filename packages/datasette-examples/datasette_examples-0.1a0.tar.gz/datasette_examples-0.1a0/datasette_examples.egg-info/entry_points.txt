@@ -1,0 +1,2 @@
+[datasette]
+examples = datasette_examples
