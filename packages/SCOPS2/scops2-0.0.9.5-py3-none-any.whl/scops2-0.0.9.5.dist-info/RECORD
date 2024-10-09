@@ -1,0 +1,15 @@
+README.md,sha256=I_uyaChaZVa9a8RHbKMJDJfhppXtiHW18oxY8vV8bCI,20
+__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+client.cpython-312-x86_64-linux-gnu.so,sha256=FEKDI4R5w4Hc0bxGYOST-8xYvY3lISUtlVqansiSpSw,634976
+da_client.cpython-312-x86_64-linux-gnu.so,sha256=5qI_2gvGtd1IU8F3E5VTPAh4AKWyVDLXYVzplxLS1vE,617648
+gui.py,sha256=-OSEjnQZZKW_L-8aB_dp7ObVDcY-UKmFdSTMkPle-Vc,28
+input_validation.cpython-312-x86_64-linux-gnu.so,sha256=V3zping6-eCqvSPjby4ywHK3MgJn092Q4vgJtfXPSX4,392032
+requirements.txt,sha256=3bv4D5LXyi7e74QlFMWeYGh7wgA9ltAm6KJEVWwZj74,650
+scct.py,sha256=pcso2BCy-Oi0-VavvI34Dv-3-8o0u51ZqINW5zf2XJo,3276
+server.cpython-312-x86_64-linux-gnu.so,sha256=ZXsyTMMja4B3Fwf8EQIeKV8AE32Y15KgO7pbTYgZZjg,564896
+start.cpython-312-x86_64-linux-gnu.so,sha256=wIFwbWkYT9Gn5TKcPbWg_tx3RfCkWLDvEgdhgzYQb88,850976
+scops2-0.0.9.5.dist-info/METADATA,sha256=qpkP5kh-A7PKSpl1OXWRAFISHMPyMt2xyvN_gG4MW3M,1103
+scops2-0.0.9.5.dist-info/WHEEL,sha256=1yFddiXMmvYK7QYTqtRNtX66WJ0Mz8PYEiEUoOUUxRY,87
+scops2-0.0.9.5.dist-info/entry_points.txt,sha256=hXIp7ewGFaCUTkRfyCekyEE__MdmpDiIqz2DjCvCfK0,36
+scops2-0.0.9.5.dist-info/licenses/LICENSE,sha256=BVHpiYFviv9-KpXt7eVcgYPL73e-R0LOiz04F3Ja1k8,1091
+scops2-0.0.9.5.dist-info/RECORD,,

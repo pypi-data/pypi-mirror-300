@@ -1,0 +1,2 @@
+[console_scripts]
+SCOPS2 = gui:main
