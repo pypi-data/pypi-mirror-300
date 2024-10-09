@@ -1,0 +1,18 @@
+[project]
+name = "cdef-utils"
+version = "2.5.0"
+description = "Utility for converting CSV to Parquet files"
+authors = ["Tobias Kragholm <tkragholm@gmail.com>"]
+channels = ["conda-forge"]
+platforms = ["linux-64", "osx-64", "osx-arm64", "win-64"]
+
+[dependencies]
+python = ">=3.9"
+polars = "*"
+rich = "*"
+pyarrow = "*"
+
+[tasks]
+format = "ruff format"
+build = { cmd = "hatch build", depends_on = ["format"] }
+publish = { cmd = "twine upload dist/*", depends_on = ["build"] }
