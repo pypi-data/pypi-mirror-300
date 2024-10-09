@@ -1,0 +1,14 @@
+gpgi/__init__.py,sha256=IvEbgJQGZrg73-lLRr4tMeAz2tZYEW3OLG1yYUI0i_g,381
+gpgi/_boundaries.py,sha256=oZQrGjbAQNYeFqOhlocXmqTdYm8ol3cKhidtYfamUSI,6754
+gpgi/_data_types.py,sha256=kyNbaqXktzKrwWjTXJcZvPG5DBjJjGJoMhsvYsSKRyo,35725
+gpgi/_lib.cp311-win_amd64.pyd,sha256=gRQJG0vC3x1m_0UwWWeB6x4sEyjIW_LAs-HnBbjOP9c,465408
+gpgi/_lib.py,sha256=Zo3KqRcNOayWCE2-QRyMj-extsS42ChFeuRnWUdNKhw,10708
+gpgi/_lib.pyi,sha256=bWSqqSPJXHdJDX7T0DjmQ7EQ6iGoIw3cBQI8PwdensY,3533
+gpgi/_load.py,sha256=zpzycunBrHedjixRwv1t9jyDXpjkV_CxUo_OCfHIkO4,2465
+gpgi/_typing.py,sha256=IjoDJNyIn8GrbAzzrM4ZdPpVCxTZ91Jjakei5VPh85g,1314
+gpgi/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+gpgi/typing.py,sha256=Q_hgVTucyIgH6RQbH01EzTN8vfUlmIU9Kr_7QxZMzyQ,1273
+gpgi-2.0.0.dist-info/METADATA,sha256=i8llhMuvtJNgL6wWIuYqTzIX6pro1ba3MbAqXY0di8c,16606
+gpgi-2.0.0.dist-info/WHEEL,sha256=qW4RD1rfHm8ZRUjJbXUnZHDNPCXHt6Rq0mgR8lv_JEg,101
+gpgi-2.0.0.dist-info/top_level.txt,sha256=NkHFSfdww4GthI1O5kk2Fx9JSAvwNdlmqABt-C83pEk,5
+gpgi-2.0.0.dist-info/RECORD,,
