@@ -1,0 +1,414 @@
+"""
+This module defines the core application class for the Haru web framework.
+It provides functionality to handle routing, middleware management, and request/response processing.
+"""
+
+import asyncio
+import traceback
+from typing import Callable, Dict, Any, Optional, Awaitable
+
+from .router import Router
+from .ctx import request_context
+from .request import Request
+from .response import Response
+from .exceptions import (
+    HTTPException,
+    NotFound,
+    MethodNotAllowed,
+)
+from .blueprint import Blueprint
+from .middleware import Middleware
+
+__all__ = ['Haru']
+
+
+class Haru:
+    """
+    The main application class of the Haru web framework. This class is responsible for
+    managing routes, handling HTTP requests, and middleware processing. It supports both
+    ASGI and WSGI interfaces, allowing flexible deployment options.
+
+    :param import_name: The name of the module or package that this application instance is associated with.
+    :type import_name: str
+    :param asgi: Flag to enable ASGI mode. If True, the application runs in ASGI mode.
+    :type asgi: bool
+    """
+
+    def __init__(self, import_name: str, asgi: bool = False):
+        """
+        Initialize the Haru application.
+
+        :param import_name: The name of the module or package for the application.
+        :type import_name: str
+        :param asgi: Flag to enable ASGI mode.
+        :type asgi: bool
+        """
+        self.import_name: str = import_name
+        self.router: Router = Router()
+        self.blueprints: list[Blueprint] = []
+        self.middleware: list[Middleware] = []
+        self.asgi: bool = asgi
+
+    def route(self, path: str, methods: Optional[list[str]] = None) -> Callable:
+        """
+        Define a new route in the application.
+
+        :param path: The URL path to bind the route.
+        :type path: str
+        :param methods: A list of HTTP methods allowed for this route (GET, POST, etc.).
+        :type methods: List[str], optional
+        :return: A decorator to wrap the route handler function.
+        :rtype: Callable
+        """
+        def decorator(func: Callable) -> Callable:
+            self.router.add_route(path, func, methods)
+            return func
+        return decorator
+
+    def register_blueprint(self, blueprint: Blueprint) -> None:
+        """
+        Register a blueprint with the application.
+
+        :param blueprint: The blueprint to be registered.
+        :type blueprint: Blueprint
+        """
+        blueprint.register(self)
+        self.blueprints.append(blueprint)
+
+    def add_middleware(self, middleware: Middleware) -> None:
+        """
+        Add application-level middleware.
+
+        :param middleware: The middleware to be added.
+        :type middleware: Middleware
+        """
+        self.middleware.append(middleware)
+
+    def remove_middleware(self, middleware: Middleware) -> None:
+        """
+        Remove application-level middleware.
+
+        :param middleware: The middleware to be removed.
+        :type middleware: Middleware
+        """
+        if middleware in self.middleware:
+            self.middleware.remove(middleware)
+
+    def get_middleware(self, middleware_class: type) -> Optional[Middleware]:
+        """
+        Retrieve a middleware instance by its class.
+
+        :param middleware_class: The class of the middleware to retrieve.
+        :type middleware_class: Type[Middleware]
+        :return: The middleware instance, or None if not found.
+        :rtype: Optional[Middleware]
+        """
+        for mw in self.middleware:
+            if isinstance(mw, middleware_class):
+                return mw
+        return None
+
+    def run(self, host: str = '127.0.0.1', port: int = 8000) -> None:
+        """
+        Start the HTTP server and run the application.
+
+        :param host: The host address to bind the server to (default is 127.0.0.1).
+        :type host: str
+        :param port: The port number to bind the server to (default is 8000).
+        :type port: int
+        """
+        if self.asgi:
+            raise RuntimeError("ASGI mode is enabled. Use an ASGI server to run the app.")
+        from wsgiref.simple_server import make_server
+        print(f"Serving on http://{host}:{port}")
+        with make_server(host, port, self.wsgi_app) as httpd:
+            try:
+                httpd.serve_forever()
+            except KeyboardInterrupt:
+                print("Server is shutting down.")
+                httpd.server_close()
+
+    def wsgi_app(self, environ: Dict[str, Any], start_response: Callable) -> list:
+        """
+        WSGI application callable.
+
+        This method handles WSGI requests and sends responses synchronously.
+
+        :param environ: The WSGI environment dictionary.
+        :type environ: Dict[str, Any]
+        :param start_response: The WSGI start_response callable.
+        :type start_response: Callable
+        :return: The response body as a list of bytes.
+        :rtype: list
+        """
+        try:
+            # Read the request body
+            content_length = int(environ.get('CONTENT_LENGTH', 0) or 0)
+            body = environ['wsgi.input'].read(content_length) if content_length > 0 else b''
+
+            method = environ['REQUEST_METHOD']
+            path = environ['PATH_INFO']
+            headers = {key[5:].replace('_', '-').lower(): value for key, value in environ.items() if key.startswith('HTTP_')}
+            client_address = environ.get('REMOTE_ADDR', '')
+            request = Request(method=method, path=path, headers=headers, body=body, client_address=client_address)
+            token = request_context.set(request)
+
+            # Process the request and match the route
+            route, params, allowed_methods = self.router.match(request.path, request.method)
+            if route is None:
+                if method == 'OPTIONS':
+                    allowed_methods = set(allowed_methods)
+                    if allowed_methods:
+                        status = '200 OK'
+                        response_headers = [('Allow', ', '.join(sorted(allowed_methods)))]
+                        start_response(status, response_headers)
+                        return [b'']
+                    else:
+                        raise NotFound("Not Found")
+                elif allowed_methods:
+                    raise MethodNotAllowed(allowed_methods)
+                else:
+                    raise NotFound("Not Found")
+
+            # Call the route handler
+            response = self._call_route_handler_sync(route.handler, request, **params)
+
+            # Middleware processing
+            middlewares = self.middleware.copy()
+            if route.blueprint:
+                middlewares.extend(route.blueprint.middleware)
+
+            for mw in middlewares:
+                mw.before_request(request)
+
+            for mw in reversed(middlewares):
+                result = mw.after_request(request, response)
+                if result is not None:
+                    response = result
+
+            for mw in middlewares:
+                mw.before_response(request, response)
+
+            # Send response
+            status = f"{response.status_code} {self._http_status_message(response.status_code)}"
+            response_headers = list(response.headers.items())
+            start_response(status, response_headers)
+            content = response.get_content()
+            return [content]
+
+        except HTTPException as e:
+            status = f"{e.status_code} {self._http_status_message(e.status_code)}"
+            response_headers = [('Content-Type', 'text/plain; charset=utf-8')]
+            start_response(status, response_headers)
+            return [e.description.encode('utf-8')]
+
+        except Exception:
+            traceback.print_exc()
+            status = '500 Internal Server Error'
+            response_headers = [('Content-Type', 'text/plain; charset=utf-8')]
+            start_response(status, response_headers)
+            return [b'Internal Server Error']
+
+        finally:
+            request_context.reset(token)
+
+    async def _asgi_app(self, scope: Dict[str, Any], receive: Callable[[], Awaitable[Dict[str, Any]]], send: Callable[[Dict[str, Any]], Awaitable[None]]):
+        """
+        ASGI entry point for handling requests.
+
+        This method handles ASGI requests and sends responses asynchronously.
+
+        :param scope: The ASGI scope containing request information.
+        :type scope: Dict[str, Any]
+        :param receive: The receive callable to fetch request body and messages.
+        :type receive: Callable
+        :param send: The send callable to send the response messages.
+        :type send: Callable
+        """
+        if scope['type'] != 'http':
+            return  # Only handle HTTP requests
+
+        try:
+            # Read the request body
+            body = b""
+            more_body = True
+            while more_body:
+                message = await receive()
+                body += message.get('body', b'')
+                more_body = message.get('more_body', False)
+
+            method = scope.get('method', 'GET')
+            path = scope.get('path', '/')
+            headers = {k.decode('latin1'): v.decode('latin1') for k, v in scope.get('headers', [])}
+            client = scope.get('client')
+            client_address = client[0] if client else ''
+            request = Request(method=method, path=path, headers=headers, body=body, client_address=client_address)
+            token = request_context.set(request)
+
+            # Process the request and match the route
+            route, params, allowed_methods = self.router.match(request.path, request.method)
+            if route is None:
+                if method == 'OPTIONS':
+                    allowed_methods = set(allowed_methods)
+                    if allowed_methods:
+                        await send({
+                            'type': 'http.response.start',
+                            'status': 200,
+                            'headers': [(b'allow', ', '.join(sorted(allowed_methods)).encode('latin1'))],
+                        })
+                        await send({
+                            'type': 'http.response.body',
+                            'body': b'',
+                        })
+                        return
+                    else:
+                        raise NotFound("Not Found")
+                elif allowed_methods:
+                    raise MethodNotAllowed(allowed_methods)
+                else:
+                    raise NotFound("Not Found")
+
+            # Call the route handler
+            response = await self._call_route_handler(route.handler, request, **params)
+
+            # Middleware processing
+            middlewares = self.middleware.copy()
+            if route.blueprint:
+                middlewares.extend(route.blueprint.middleware)
+
+            for mw in middlewares:
+                await self._maybe_async(mw.before_request, request)
+
+            for mw in reversed(middlewares):
+                result = await self._maybe_async(mw.after_request, request, response)
+                if result is not None:
+                    response = result
+
+            for mw in middlewares:
+                await self._maybe_async(mw.before_response, request, response)
+
+            # Send response
+            await send({
+                'type': 'http.response.start',
+                'status': response.status_code,
+                'headers': [(k.encode('latin1'), v.encode('latin1')) for k, v in response.headers.items()],
+            })
+            await send({
+                'type': 'http.response.body',
+                'body': response.get_content(),
+            })
+
+        except HTTPException as e:
+            await send({
+                'type': 'http.response.start',
+                'status': e.status_code,
+                'headers': [(b'content-type', b'text/plain; charset=utf-8')],
+            })
+            await send({
+                'type': 'http.response.body',
+                'body': e.description.encode('utf-8'),
+            })
+
+        except Exception:
+            traceback.print_exc()
+            await send({
+                'type': 'http.response.start',
+                'status': 500,
+                'headers': [(b'content-type', b'text/plain; charset=utf-8')],
+            })
+            await send({
+                'type': 'http.response.body',
+                'body': b'Internal Server Error',
+            })
+
+        finally:
+            request_context.reset(token)
+
+    def asgi_app(self) -> Callable:
+        """
+        Returns the ASGI application callable.
+
+        This function should be used to run the application with ASGI servers like Uvicorn.
+
+        :return: The ASGI application callable.
+        :rtype: Callable
+        """
+        if not self.asgi:
+            raise RuntimeError("ASGI mode is not enabled. Pass 'asgi=True' when creating the app.")
+        return self._asgi_app
+
+    async def _call_route_handler(self, handler: Callable, request: Request, **params) -> Response:
+        """
+        Calls the route handler with the given parameters.
+
+        Supports both asynchronous and synchronous handlers.
+
+        :param handler: The route handler function.
+        :type handler: Callable
+        :param request: The request object.
+        :type request: Request
+        :param params: URL parameters.
+        :return: The response object.
+        :rtype: Response
+        """
+        if asyncio.iscoroutinefunction(handler):
+            result = await handler(request, **params)
+        else:
+            result = handler(request, **params)
+        if not isinstance(result, Response):
+            result = Response(result)
+        return result
+
+    def _call_route_handler_sync(self, handler: Callable, request: Request, **params) -> Response:
+        """
+        Calls the route handler synchronously.
+
+        Supports both synchronous and asynchronous handlers by running async handlers in an event loop.
+
+        :param handler: The route handler function.
+        :type handler: Callable
+        :param request: The request object.
+        :type request: Request
+        :param params: URL parameters.
+        :return: The response object.
+        :rtype: Response
+        """
+        if asyncio.iscoroutinefunction(handler):
+            loop = asyncio.new_event_loop()
+            asyncio.set_event_loop(loop)
+            try:
+                result = loop.run_until_complete(handler(request, **params))
+            finally:
+                loop.close()
+        else:
+            result = handler(request, **params)
+        if not isinstance(result, Response):
+            result = Response(result)
+        return result
+
+    async def _maybe_async(self, func: Callable, *args, **kwargs):
+        """
+        Helper method to call functions that may be asynchronous.
+
+        :param func: The function to call.
+        :type func: Callable
+        :param args: Positional arguments.
+        :param kwargs: Keyword arguments.
+        :return: The result of the function call.
+        """
+        if asyncio.iscoroutinefunction(func):
+            return await func(*args, **kwargs)
+        else:
+            return func(*args, **kwargs)
+
+    def _http_status_message(self, status_code: int) -> str:
+        """
+        Returns the standard HTTP status message for a given status code.
+
+        :param status_code: The HTTP status code.
+        :type status_code: int
+        :return: The standard HTTP status message.
+        :rtype: str
+        """
+        from http.server import BaseHTTPRequestHandler
+        return BaseHTTPRequestHandler.responses.get(status_code, ('Unknown',))[0]
