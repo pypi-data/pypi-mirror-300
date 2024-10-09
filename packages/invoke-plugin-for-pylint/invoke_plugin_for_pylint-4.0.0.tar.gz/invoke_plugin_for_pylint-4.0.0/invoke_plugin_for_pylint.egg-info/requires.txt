@@ -1,0 +1,17 @@
+invoke~=2.0
+pylint~=3.0
+
+[check]
+pre-commit==4.0.0
+pylint==3.3.1
+black==24.10.0
+isort==5.13.2
+mypy==1.11.2
+types-invoke==2.0.0.10
+
+[test]
+pytest==8.3.3
+pytest-mock==3.14.0
+coverage[toml]==7.6.1
+diff-cover==9.2.0
+pytest-cov==5.0.0
