@@ -1,0 +1,26 @@
+[tool.poetry]
+name = "queue_tee_pie"
+version = "0.1.0"
+description = "A lightweight background task library in Python."
+authors = ["karim06-byte <dev8@airgroup.az>", "k4rimdev <karimmirzaguliyev@gmail.com>"]
+license = "Apache"
+readme = "README.md"
+homepage = "https://github.com/k4rimDev/QueueTeePie"
+repository = "https://github.com/k4rimDev/QueueTeePie"
+keywords = ["task", "queue", "background", "tasks", "async"]
+
+
+[tool.poetry.dependencies]
+python = "^3.10"
+
+
+[tool.poetry.group.dev.dependencies]
+pre-commit = "^4.0.0"
+black = "^24.8.0"
+flake8 = "^7.1.1"
+mypy = "^1.11.2"
+flake8-bugbear = "^24.8.19"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
