@@ -1,0 +1,18 @@
+Metadata-Version: 2.3
+Name: fetter
+Version: 0.10.0
+Classifier: Programming Language :: Rust
+License-File: LICENSE
+Summary: System-wide Python package discovery and allow listing.
+Keywords: package,allow-listing
+Author: Christopher Ariza
+Maintainer: Christopher Ariza
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown; charset=UTF-8; variant=GFM
+Project-URL: Homepage, https://github.com/fetter-io/fetter-py
+Project-URL: Repository, https://github.com/fetter-io/fetter-py.git
+Project-URL: Issues, https://github.com/fetter-io/fetter-py/issues
+
+# fetter-py
+System-wide Python package discovery and allow listing.
+
