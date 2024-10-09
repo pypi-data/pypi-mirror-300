@@ -1,0 +1,12 @@
+gsession/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+gsession/gnome_favorite_apps_setup.py,sha256=i6WAs4pkLkPbu4xkkDrjn3TJ-18dfZHm1wW74njKbOM,773
+gsession/launch_chrome_and_vscode.py,sha256=7IAown7rsTE0ZK83SU-sszuSFu0TL4CIro_moqSYcK8,1317
+gsession/main.py,sha256=2hxAfLreJUbsi_fB0_l_5C4BVVIT50k5T85bnCu4f_w,1893
+gsession/parsec_setup.py,sha256=sHa2g15lp2TC2ohO2w4T7EzFa6qR6oVNt3D94wa0Fw0,6476
+gsession/session_setup.py,sha256=-oGR4Vklh1y6bk1DtLCJosMDysKAmy0xmspmynvuPpE,1418
+gsession/ssh_key_maknager.py,sha256=qrKobA2iOu1Sm4U_jj6gs5ZtBguzOULbIp---3fth6k,1432
+gsession-0.1.4.dist-info/METADATA,sha256=9Tg-BUy1nHGbHZYuIib1tCsi9yOXPf8rk-8pUrm3o54,125
+gsession-0.1.4.dist-info/WHEEL,sha256=GV9aMThwP_4oNCtvEC2ec3qUYutgWeAzklro_0m4WJQ,91
+gsession-0.1.4.dist-info/entry_points.txt,sha256=hcwyb7Qm5kNZPC-7sTln2N3d1k7MuIBtNr7lIPi7A_0,48
+gsession-0.1.4.dist-info/top_level.txt,sha256=R9BPp1dN0HLEj8-OpBXmBkslQI2eKrfvpE0TW2SPzkQ,9
+gsession-0.1.4.dist-info/RECORD,,
