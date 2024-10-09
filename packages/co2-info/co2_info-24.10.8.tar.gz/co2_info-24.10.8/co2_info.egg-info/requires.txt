@@ -1,0 +1,6 @@
+argparse
+paho.mqtt>=2
+uuid
+pandas
+matplotlib
+urllib3
