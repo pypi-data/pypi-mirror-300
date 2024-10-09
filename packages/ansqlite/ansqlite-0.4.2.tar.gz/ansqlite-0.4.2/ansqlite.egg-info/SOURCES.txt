@@ -1,0 +1,13 @@
+LICENSE
+README.md
+pyproject.toml
+ansqlite/__init__.py
+ansqlite/database.py
+ansqlite/exceptions.py
+ansqlite/schema.py
+ansqlite/utils.py
+ansqlite.egg-info/PKG-INFO
+ansqlite.egg-info/SOURCES.txt
+ansqlite.egg-info/dependency_links.txt
+ansqlite.egg-info/requires.txt
+ansqlite.egg-info/top_level.txt
