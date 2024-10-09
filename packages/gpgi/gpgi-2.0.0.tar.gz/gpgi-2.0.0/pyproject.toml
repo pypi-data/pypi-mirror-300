@@ -1,0 +1,143 @@
+[build-system]
+requires = [
+    "setuptools>=61.2",
+    "Cython>=3.0",
+    "numpy>=2.0.0",
+]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "gpgi"
+version = "2.0.0"
+description = "A Generic Particle+Grid Interface"
+authors = [
+    { name = "C.M.T. Robert" },
+]
+classifiers = [
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: GNU General Public License v3 (GPLv3)",
+    "Programming Language :: Cython",
+    "Programming Language :: Python :: 3",
+]
+requires-python = ">=3.11"
+dependencies = [
+    # keep in sync with NPY_TARGET_VERSION (setup.py)
+    "numpy>=1.25, <3",
+]
+
+[project.readme]
+file = "README.md"
+content-type = "text/markdown"
+
+[project.license]
+text = "GPL-3.0"
+
+[project.urls]
+Homepage = "https://github.com/neutrinoceros/gpgi"
+Changelog = "https://github.com/neutrinoceros/gpgi/blob/main/CHANGELOG.md"
+
+[tool.setuptools]
+license-files = [
+    "LICENSE",
+]
+include-package-data = false
+
+[tool.setuptools.packages.find]
+where = ["src"]
+namespaces = false
+
+[tool.coverage.run]
+source = [
+    "src/gpgi",
+    "tests",
+]
+omit = [
+    "src/gpgi/_backports.py",
+    "src/gpgi/_typing.py",
+]
+
+[tool.coverage.report]
+show_missing = true
+skip_covered = true
+exclude_lines = [
+    # a more strict default pragma
+    "\\# pragma: no cover\\b",
+
+    # allow defensive code
+    "^\\s*raise NotImplementedError\\b",
+
+    # typing-related code
+    "^if TYPE_CHECKING:",
+    ": \\.\\.\\.(\\s*#.*)?$",
+    "^ +\\.\\.\\.$",
+    "-> ['\"]?NoReturn['\"]?:",
+]
+
+[tool.ruff.lint]
+ignore = ["E501", "D101"]
+select = [
+    "E",
+    "F",
+    "W",
+    "D",   # pydocstyle
+    "C4",  # flake8-comprehensions
+    "B",   # flake8-bugbear
+    "TCH", # flake8-type-checking
+    "YTT", # flake8-2020
+    "I",   # isort
+    "UP",  # pyupgrade
+    "NPY", # numpy specific rules
+]
+
+[tool.ruff.lint.isort]
+combine-as-imports = true
+known-first-party = ["gpgi"]
+
+[tool.ruff.lint.pydocstyle]
+convention = "numpy"
+
+[tool.ruff.lint.per-file-ignores]
+"tests/**" = ["D"]
+"setup.py" = ["D"]
+"_backports.py" = ["D"]
+
+[tool.mypy]
+python_version = "3.11"
+show_error_codes = true
+pretty = true
+warn_return_any = true
+warn_unused_configs = true
+warn_unreachable = true
+disallow_untyped_defs = true
+disallow_incomplete_defs = true
+exclude = [
+  "gpgi/lib",
+  "gpgi/_backports"
+]
+follow_imports = "silent"
+
+[tool.pytest.ini_options]
+filterwarnings = [
+  "error",
+  'ignore:Matplotlib is currently using agg, which is a non-GUI backend:UserWarning',
+]
+
+[tool.cibuildwheel]
+build = "cp311-* cp312-* cp313-*"
+build-frontend = "build[uv]"
+build-verbosity = 1
+before-test = "uv pip install -r requirements/tests.txt --no-build"
+test-command = [
+    "pytest --color=yes -ra {project}/tests",
+    "pytest --color=yes --count 500 {project}/tests/test_concurrent.py",
+]
+test-skip = "*-musllinux*"
+
+[tool.cibuildwheel.linux]
+archs = "x86_64"
+
+[tool.cibuildwheel.macos]
+archs = "auto64"
+
+[tool.cibuildwheel.windows]
+archs = "AMD64"
