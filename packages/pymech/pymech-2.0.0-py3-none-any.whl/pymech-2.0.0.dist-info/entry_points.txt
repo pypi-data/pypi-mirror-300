@@ -1,0 +1,7 @@
+[console_scripts]
+
+[gui_scripts]
+
+[xarray.backends]
+pymech = pymech.dataset:PymechXarrayBackend
+
