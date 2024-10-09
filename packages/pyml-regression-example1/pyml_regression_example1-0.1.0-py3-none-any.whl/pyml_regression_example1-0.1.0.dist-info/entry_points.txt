@@ -1,0 +1,2 @@
+[console_scripts]
+life-expectancy = life_expectancy.main:main

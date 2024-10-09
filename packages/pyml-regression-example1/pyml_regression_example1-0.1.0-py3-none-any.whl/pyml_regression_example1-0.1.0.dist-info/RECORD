@@ -1,0 +1,12 @@
+life_expectancy/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+life_expectancy/click_helpers.py,sha256=Z1ElQ76Ne6zIuGHkJOba_3iQHfCS8kfYtBDpKrxFXSU,631
+life_expectancy/config.py,sha256=PGaivMhIL5QGpoqiLq_VYaJl2_PIR2OWE27dXtFwKmM,4549
+life_expectancy/constants.py,sha256=az1ViWmgs4dYZvEf8KCgC3oItta2p-XjQTe63PgOXTs,509
+life_expectancy/exceptions.py,sha256=vCinLsFLBZOzJhNqgrC7kFDE79Eoq6u7I7YBW9DFQhA,177
+life_expectancy/helpers.py,sha256=1K_l8KzY4Hg9n2cjc2qKkbZBM6sBg2ocsAy9PITx_5Q,3160
+life_expectancy/main.py,sha256=5HV3GGgajvdHViJ2rYR3QBx6xy4PCWqsgxhGBz-XSRA,9751
+life_expectancy/data/default_config.ini,sha256=giLa9QgV1H_EKi3Lt6K5H-CCX3zoceFW3Var9HV9Ahk,62
+pyml_regression_example1-0.1.0.dist-info/METADATA,sha256=PplB0-ocI3R1aWnnL1iDBwXLMUeQpu29Gt02WP9YJAs,1387
+pyml_regression_example1-0.1.0.dist-info/WHEEL,sha256=1yFddiXMmvYK7QYTqtRNtX66WJ0Mz8PYEiEUoOUUxRY,87
+pyml_regression_example1-0.1.0.dist-info/entry_points.txt,sha256=0pwbs5stCs7yrzwb1-cDBbYieWC3DZjddxLd6YGpJUY,62
+pyml_regression_example1-0.1.0.dist-info/RECORD,,
