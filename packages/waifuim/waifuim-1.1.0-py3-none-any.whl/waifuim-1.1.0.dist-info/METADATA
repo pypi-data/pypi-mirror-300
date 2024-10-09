@@ -1,0 +1,71 @@
+Metadata-Version: 2.1
+Name: waifuim
+Version: 1.1.0
+Summary: A Python wrapper for the Waifu.im API
+Author: Avimetry Development
+Author-email: avizum <juliusrt@outlook.com>
+License: MIT License
+Project-URL: homepage, https://github.com/avimetry/waifuim
+Project-URL: documentation, https://readthedocs.io
+Project-URL: repository, https://github.com/avimetry/waifuim
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Natural Language :: English
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.11
+Description-Content-Type: text/x-rst
+License-File: LICENSE
+Requires-Dist: aiohttp
+Requires-Dist: typing-extensions
+Provides-Extra: docs
+Requires-Dist: sphinx ==6.1.1 ; extra == 'docs'
+Requires-Dist: sphinxcontrib-trio ==1.1.2 ; extra == 'docs'
+Requires-Dist: sphinx-copybutton ==0.5.1 ; extra == 'docs'
+Requires-Dist: sphinx-inline-tabs ==2022.1.2b11 ; extra == 'docs'
+Requires-Dist: furo ==2022.12.7 ; extra == 'docs'
+Requires-Dist: setuptools ==65.6.3 ; extra == 'docs'
+
+waifuim
+=============
+
+
+.. image:: https://discord.com/api/guilds/751490725555994716/embed.png
+   :target: https://discord.gg/muTVFgDvKf
+   :alt: Support Server Invite
+
+A Python wrapper for the Waifu.im API.
+
+https://waifu.im/ is an API that provides a variety user-uploaded anime images.
+
+
+Features
+--------
+- Async Support (sync support coming soon)
+- Fully typed
+- Easy to use
+- Documentation
+
+Installing
+----------
+
+To install, just run the following command:
+
+.. code-block:: shell
+
+    # MacOS/Linux
+    python3 -m pip install -U waifuim
+
+    # Windows
+    py -3 -m pip install -U wafiuim
+
+
+Requirements
+~~~~~~~~~~~~
+- Python ≥3.11
+
+- ``aiohttp``
+
+
+Documentation
+-------------
+Documention can be found `here. <https://waifuim.readthedocs.io/en/latest/>`_
