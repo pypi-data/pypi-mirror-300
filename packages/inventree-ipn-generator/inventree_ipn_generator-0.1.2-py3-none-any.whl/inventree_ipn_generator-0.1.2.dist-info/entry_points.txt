@@ -1,0 +1,2 @@
+[inventree_plugins]
+IPNGenerator = ipn_generator.generator:AutoGenIPNPlugin
