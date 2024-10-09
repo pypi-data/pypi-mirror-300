@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: databricks-sql-connector
+Version: 4.0.0b0
+Summary: Databricks SQL Connector for Python
+License: Apache-2.0
+Author: Databricks
+Author-email: databricks-sql-connector-maintainers@databricks.com
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Provides-Extra: databricks-sqlalchemy
+Requires-Dist: databricks_sql_connector_core[all] (>=4.0.0)
+Requires-Dist: databricks_sqlalchemy (>=4.0.0) ; extra == "databricks-sqlalchemy"
+Project-URL: Bug Tracker, https://github.com/databricks/databricks-sql-python/issues
+Project-URL: Homepage, https://github.com/databricks/databricks-sql-python
