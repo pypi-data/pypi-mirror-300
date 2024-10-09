@@ -1,0 +1,33 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "cupyd"
+version = '0.1.0'
+authors = [
+    { name = "Francisco Javier Alonso Rubio", email = "fjalorub@gmail.com" },
+]
+description = "Python-only framework to easily build ETLs."
+readme = "README.md"
+requires-python = ">=3.9"
+keywords = ["python", "cupyd", "data", "etl", "parallelism", "multiprocessing", "framework"]
+license = { text = "MIT" }
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dependencies = []
+
+[tool.setuptools.packages.find]
+include = ["cupyd*"]
+exclude = ["tests*"]
+
+[project.optional-dependencies]
+api = []
+full = []
+
+[tool.black]
+line-length = 100
+target-version = ["py39", "py310", "py311", "py312"]
