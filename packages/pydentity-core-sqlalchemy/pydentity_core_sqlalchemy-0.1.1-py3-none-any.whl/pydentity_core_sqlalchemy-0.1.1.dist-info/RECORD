@@ -1,0 +1,13 @@
+pydentity_db/__init__.py,sha256=O3JlpReYbZtia5zBfwD_UlO6ZqWqArwX9e5kzAt4kJM,780
+pydentity_db/base/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pydentity_db/base/abstract.py,sha256=3xPm535lTkS7D6Wpg5CVTyOslSPr67P7omHBD-8q9JY,7868
+pydentity_db/base/model.py,sha256=htxdLstsDc-kai5IUAwh5vSm7X8XvCbfcTsfb9fwcn8,172
+pydentity_db/fields.py,sha256=3-_BxB-TimEGp1r1wMMovifW0QNZRgAnx_Lx9EawrMM,793
+pydentity_db/models.py,sha256=E0gqSjFDXoEK__cZwqzXsBphZB0_ThKeX2dB29mI76E,3834
+pydentity_db/stores/__init__.py,sha256=AP-JXs6RGJuBKWviJj76hQPNDFNiK0P8sRf01rtRjbE,108
+pydentity_db/stores/role_store.py,sha256=thF_INLiSNxTBzhEDCZE-NC-gaZQjbhOveyBmFotvQg,5466
+pydentity_db/stores/user_store.py,sha256=A0cTS89Kt7TswnIfgGykmRpsZMNow0GVcZKeSQivNOc,24098
+pydentity_core_sqlalchemy-0.1.1.dist-info/LICENSE,sha256=queT1zdtOBRwPVCHYsXCk7Fpn37T2yGntngx9LZr38o,1086
+pydentity_core_sqlalchemy-0.1.1.dist-info/METADATA,sha256=qyUXdL3RYucXfX5Hnf6GXGGrlBJeXBLD0_zh0fwRCdw,557
+pydentity_core_sqlalchemy-0.1.1.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+pydentity_core_sqlalchemy-0.1.1.dist-info/RECORD,,
