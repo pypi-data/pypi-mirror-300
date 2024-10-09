@@ -1,0 +1,2 @@
+[console_scripts]
+bili_to_tele = bili_to_tele.core.bot:StarBot.run
