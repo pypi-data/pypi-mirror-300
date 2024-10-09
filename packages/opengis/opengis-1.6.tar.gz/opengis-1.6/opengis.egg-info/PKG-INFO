@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: opengis
+Version: 1.6
+Summary: gis tools
+Author: zijie wang
+Author-email: 773598627@qq.com
+Requires-Dist: numpy
+Requires-Dist: osgeo
