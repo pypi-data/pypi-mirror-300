@@ -1,0 +1,43 @@
+Metadata-Version: 2.1
+Name: pipiy
+Version: 0.1.3
+Summary: pipiy module manager
+Home-page: https://github.com/lunastev/pipiy
+Author: LunaStev
+Author-email: lunastev@gmail.com
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: wson
+Project-URL: Repository, https://github.com/lunastev/pipiy
+Description-Content-Type: text/markdown
+
+# Pipiy
+
+`pipiy` is a tool for managing pip packages using WSON formatted requirements files, similar to Gradle or Maven.
+
+## Installation
+
+Clone the repository and install it:
+
+```bash
+pip install .
+```
+
+```wson
+{
+    module = [
+        numpy = "1.24.0",
+        discord.py = "2.2.2"
+    ]
+}
+```
