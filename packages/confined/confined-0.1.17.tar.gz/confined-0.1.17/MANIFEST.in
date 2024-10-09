@@ -1,0 +1,4 @@
+include confined/*py
+include README*
+include LICENSE
+include requirements.txt
