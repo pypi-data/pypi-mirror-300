@@ -1,0 +1,24 @@
+[INFO] 2024-09-30 12:18:42 load cache from cache/cache.js
+[DEBUG] 2024-09-30 12:18:42 test data: {'note': 'test', 'url': 'test', 'type': 'http.get', 'data': {'url': 'tmpurl'}, 'save': {'result.code': 'result.code'}, 'result': {'code': 1.99}, 'verify': ['result.code, [>, 1]']}
+[DEBUG] 2024-09-30 12:18:42 test data: {'note': 'test1', 'url': 'test', 'type': 'http.get', 'data': {'url': 'tmpurl', 'val': 1}, 'save': {'test.url': 'data.url'}, 'result': {'code': 1.99}, 'verify': ['result.code, [>, 1]']}
+[INFO] 2024-09-30 12:19:00 load cache from cache/cache.js
+[INFO] 2024-09-30 12:19:00 load cache from cache/save.js
+[DEBUG] 2024-09-30 12:19:00 test data: {'note': 'test', 'url': 'test', 'type': 'http.get', 'data': {'url': 'tmpurl'}, 'save': {'result.code': 'result.code'}, 'result': {'code': 1.99}, 'verify': ['result.code, [>, 1]']}
+[DEBUG] 2024-09-30 12:19:00 test data: {'note': 'test1', 'url': 'test', 'type': 'http.get', 'data': {'url': 'tmpurl', 'val': 1}, 'save': {'test.url': 'data.url'}, 'result': {'code': 1.99}, 'verify': ['result.code, [>, 1]']}
+[INFO] 2024-09-30 20:22:25 load cache from cache/cache.js
+[INFO] 2024-09-30 20:22:25 load cache from cache/save.js
+[DEBUG] 2024-09-30 20:22:25 test data: {'note': 'test', 'url': 'test', 'type': 'http.get', 'data': {'url': 'tmpurl'}, 'save': {'result.code': 'result.code'}, 'result': {'code': 1.99}, 'verify': ['result.code, [>, 1]']}
+[DEBUG] 2024-09-30 20:22:25 test data: {'note': 'test1', 'url': 'test', 'type': 'http.get', 'data': {'url': 'tmpurl', 'val': 1}, 'save': {'test.url': 'data.url'}, 'result': {'code': 1.99}, 'verify': ['result.code, [>, 1]']}
+[ERROR] 2024-09-30 20:22:25 error in request 'https://www.baidu.com/' with method get: HTTPSConnectionPool(host='www.baidu.com', port=443): Max retries exceeded with url: / (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x000002247FE3AF10>: Failed to establish a new connection: [Errno 11001] getaddrinfo failed'))
+[INFO] 2024-09-30 20:22:38 load cache from cache/cache.js
+[INFO] 2024-09-30 20:22:38 load cache from cache/save.js
+[DEBUG] 2024-09-30 20:22:38 test data: {'note': 'test', 'url': 'test', 'type': 'http.get', 'data': {'url': 'tmpurl'}, 'save': {'result.code': 'result.code'}, 'result': {'code': 1.99}, 'verify': ['result.code, [>, 1]']}
+[DEBUG] 2024-09-30 20:22:38 test data: {'note': 'test1', 'url': 'test', 'type': 'http.get', 'data': {'url': 'tmpurl', 'val': 1}, 'save': {'test.url': 'data.url'}, 'result': {'code': 1.99}, 'verify': ['result.code, [>, 1]']}
+[INFO] 2024-09-30 20:26:22 load cache from cache/cache.js
+[INFO] 2024-09-30 20:26:22 load cache from cache/save.js
+[DEBUG] 2024-09-30 20:26:23 test data: {'note': 'test', 'url': 'test', 'type': 'http.get', 'data': {'url': 'tmpurl'}, 'save': {'result.code': 'result.code'}, 'result': {'code': 1.99}, 'verify': ['result.code, [>, 1]']}
+[DEBUG] 2024-09-30 20:26:23 test data: {'note': 'test1', 'url': 'test', 'type': 'http.get', 'data': {'url': 'tmpurl', 'val': 1}, 'save': {'test.url': 'data.url'}, 'result': {'code': 1.99}, 'verify': ['result.code, [>, 1]']}
+[INFO] 2024-09-30 20:40:14 load cache from cache/cache.js
+[INFO] 2024-09-30 20:40:14 load cache from cache/save.js
+[DEBUG] 2024-09-30 20:40:14 test data: {'note': 'test', 'url': 'test', 'type': 'http.get', 'data': {'url': 'tmpurl'}, 'save': {'result.code': 'result.code'}, 'result': {'code': 1.99}, 'verify': ['result.code, [>, 1]']}
+[DEBUG] 2024-09-30 20:40:14 test data: {'note': 'test1', 'url': 'test', 'type': 'http.get', 'data': {'url': 'tmpurl', 'val': 1}, 'save': {'test.url': 'data.url'}, 'result': {'code': 1.99}, 'verify': ['result.code, [>, 1]']}

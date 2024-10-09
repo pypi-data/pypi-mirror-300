@@ -1,0 +1,126 @@
+[INFO] 2024-10-08 22:31:52 load cache from cache/cache.js
+[INFO] 2024-10-08 22:31:52 load cache from cache/save.js
+[DEBUG] 2024-10-08 22:31:52 test data: {'note': 'test', 'url': 'test', 'type': 'http.get', 'data': {'url': 'tmpurl'}, 'save': {'result.code': 'result.code'}, 'result': {'code': 1.99}, 'verify': ['result.code, [>, 1]']}
+[DEBUG] 2024-10-08 22:31:52 test data: {'note': 'test1', 'url': 'test', 'type': 'http.get', 'data': {'url': 'tmpurl', 'val': 1}, 'save': {'test.url': 'data.url'}, 'result': {'code': 1.99}, 'verify': ['result.code, [>, 1]']}
+[INFO] 2024-10-08 22:32:43 load cache from cache/cache.js
+[INFO] 2024-10-08 22:32:43 load cache from cache/save.js
+[DEBUG] 2024-10-08 22:32:43 test data: {'note': 'test', 'url': 'test', 'type': 'http.get', 'data': {'url': 'tmpurl'}, 'save': {'result.code': 'result.code'}, 'result': {'code': 1.99}, 'verify': ['result.code, [>, 1]']}
+[DEBUG] 2024-10-08 22:32:43 test data: {'note': 'test1', 'url': 'test', 'type': 'http.get', 'data': {'url': 'tmpurl', 'val': 1}, 'save': {'test.url': 'data.url'}, 'result': {'code': 1.99}, 'verify': ['result.code, [>, 1]']}
+[INFO] 2024-10-08 22:40:27 load cache from cache/cache.js
+[INFO] 2024-10-08 22:40:27 load cache from cache/save.js
+[DEBUG] 2024-10-08 22:40:27 test data: {'note': 'test', 'url': 'test', 'type': 'http.get', 'data': {'url': 'tmpurl'}, 'save': {'result.code': 'result.code'}, 'result': {'code': 1.99}, 'verify': ['result.code, [>, 1]']}
+[DEBUG] 2024-10-08 22:40:27 test data: {'note': 'test1', 'url': 'test', 'type': 'http.get', 'data': {'url': 'tmpurl', 'val': 1}, 'save': {'test.url': 'data.url'}, 'result': {'code': 1.99}, 'verify': ['result.code, [>, 1]']}
+[INFO] 2024-10-08 22:41:03 load cache from cache/cache.js
+[INFO] 2024-10-08 22:41:03 load cache from cache/save.js
+[DEBUG] 2024-10-08 22:41:03 test data: {'note': 'test', 'url': 'test', 'type': 'http.get', 'data': {'url': 'tmpurl'}, 'save': {'result.code': 'result.code'}, 'result': {'code': 1.99}, 'verify': ['result.code, [>, 1]']}
+[DEBUG] 2024-10-08 22:41:03 test data: {'note': 'test1', 'url': 'test', 'type': 'http.get', 'data': {'url': 'tmpurl', 'val': 1}, 'save': {'test.url': 'data.url'}, 'result': {'code': 1.99}, 'verify': ['result.code, [>, 1]']}
+[INFO] 2024-10-08 22:41:45 load cache from cache/cache.js
+[INFO] 2024-10-08 22:41:45 load cache from cache/save.js
+[INFO] 2024-10-08 22:46:53 load cache from cache/cache.js
+[INFO] 2024-10-08 22:46:53 load cache from cache/save.js
+[DEBUG] 2024-10-08 22:46:53 test data: {'note': 'test', 'url': 'test', 'type': 'http.get', 'data': {'url': 'tmpurl'}, 'save': {'result.code': 'result.code'}, 'result': {'code': 1.99}, 'verify': ['result.code, [>, 1]']}
+[DEBUG] 2024-10-08 22:46:53 test data: {'note': 'test1', 'url': 'test', 'type': 'http.get', 'data': {'url': 'tmpurl', 'val': 1}, 'save': {'test.url': 'data.url'}, 'result': {'code': 1.99}, 'verify': ['result.code, [>, 1]']}
+[INFO] 2024-10-08 22:51:36 load cache from cache/cache.js
+[INFO] 2024-10-08 22:51:36 load cache from cache/save.js
+[DEBUG] 2024-10-08 22:51:36 test data: {'note': 'test', 'url': 'test', 'type': 'http.get', 'data': {'url': 'tmpurl'}, 'save': {'result.code': 'result.code'}, 'result': {'code': 1.99}, 'verify': ['result.code, [>, 1]']}
+[DEBUG] 2024-10-08 22:51:36 test data: {'note': 'test1', 'url': 'test', 'type': 'http.get', 'data': {'url': 'tmpurl', 'val': 1}, 'save': {'test.url': 'data.url'}, 'result': {'code': 1.99}, 'verify': ['result.code, [>, 1]']}
+[INFO] 2024-10-08 22:51:57 load cache from cache/cache.js
+[INFO] 2024-10-08 22:51:57 load cache from cache/save.js
+[DEBUG] 2024-10-08 22:51:57 test data: {'note': 'test', 'url': 'test', 'type': 'http.get', 'data': {'url': 'tmpurl'}, 'save': {'result.code': 'result.code'}, 'result': {'code': 1.99}, 'verify': ['result.code, [>, 1]']}
+[DEBUG] 2024-10-08 22:51:57 test data: {'note': 'test1', 'url': 'test', 'type': 'http.get', 'data': {'url': 'tmpurl', 'val': 1}, 'save': {'test.url': 'data.url'}, 'result': {'code': 1.99}, 'verify': ['result.code, [>, 1]']}
+[INFO] 2024-10-08 22:52:32 load cache from cache/cache.js
+[INFO] 2024-10-08 22:52:32 load cache from cache/save.js
+[DEBUG] 2024-10-08 22:52:32 test data: {'note': 'test', 'url': 'test', 'type': 'http.get', 'data': {'url': 'tmpurl'}, 'save': {'result.code': 'result.code'}, 'result': {'code': 1.99}, 'verify': ['result.code, [>, 1]']}
+[DEBUG] 2024-10-08 22:52:32 test data: {'note': 'test1', 'url': 'test', 'type': 'http.get', 'data': {'url': 'tmpurl', 'val': 1}, 'save': {'test.url': 'data.url'}, 'result': {'code': 1.99}, 'verify': ['result.code, [>, 1]']}
+[INFO] 2024-10-08 22:52:42 load cache from cache/cache.js
+[INFO] 2024-10-08 22:52:42 load cache from cache/save.js
+[DEBUG] 2024-10-08 22:52:42 test data: {'note': 'test', 'url': 'test', 'type': 'http.get', 'data': {'url': 'tmpurl'}, 'save': {'result.code': 'result.code'}, 'result': {'code': 1.99}, 'verify': ['result.code, [>, 1]']}
+[DEBUG] 2024-10-08 22:52:42 test data: {'note': 'test1', 'url': 'test', 'type': 'http.get', 'data': {'url': 'tmpurl', 'val': 1}, 'save': {'test.url': 'data.url'}, 'result': {'code': 1.99}, 'verify': ['result.code, [>, 1]']}
+[INFO] 2024-10-08 22:52:58 load cache from cache/cache.js
+[INFO] 2024-10-08 22:52:58 load cache from cache/save.js
+[DEBUG] 2024-10-08 22:52:58 test data: {'note': 'test', 'url': 'test', 'type': 'http.get', 'data': {'url': 'tmpurl'}, 'save': {'result.code': 'result.code'}, 'result': {'code': 1.99}, 'verify': ['result.code, [>, 1]']}
+[DEBUG] 2024-10-08 22:52:58 test data: {'note': 'test1', 'url': 'test', 'type': 'http.get', 'data': {'url': 'tmpurl', 'val': 1}, 'save': {'test.url': 'data.url'}, 'result': {'code': 1.99}, 'verify': ['result.code, [>, 1]']}
+[INFO] 2024-10-08 22:55:35 load cache from cache/cache.js
+[INFO] 2024-10-08 22:55:35 load cache from cache/save.js
+[DEBUG] 2024-10-08 22:55:35 test data: {'note': 'test', 'url': 'test', 'type': 'http.get', 'data': {'url': 'tmpurl'}, 'save': {'result.code': 'result.code'}, 'result': {'code': 1.99}, 'verify': ['result.code, [>, 1]']}
+[DEBUG] 2024-10-08 22:55:35 test data: {'note': 'test1', 'url': 'test', 'type': 'http.get', 'data': {'url': 'tmpurl', 'val': 1}, 'save': {'test.url': 'data.url'}, 'result': {'code': 1.99}, 'verify': ['result.code, [>, 1]']}
+[INFO] 2024-10-08 22:57:52 load cache from cache/cache.js
+[INFO] 2024-10-08 22:57:52 load cache from cache/save.js
+[DEBUG] 2024-10-08 22:57:52 test data: {'note': 'test', 'url': 'test', 'type': 'http.get', 'data': {'url': 'tmpurl'}, 'save': {'result.code': 'result.code'}, 'result': {'code': 1.99}, 'verify': ['result.code, [>, 1]']}
+[DEBUG] 2024-10-08 22:57:52 test data: {'note': 'test1', 'url': 'test', 'type': 'http.get', 'data': {'url': 'tmpurl', 'val': 1}, 'save': {'test.url': 'data.url'}, 'result': {'code': 1.99}, 'verify': ['result.code, [>, 1]']}
+[INFO] 2024-10-08 22:59:12 load cache from cache/cache.js
+[INFO] 2024-10-08 22:59:12 load cache from cache/save.js
+[DEBUG] 2024-10-08 22:59:12 test data: {'note': 'test', 'url': 'test', 'type': 'http.get', 'data': {'url': 'tmpurl'}, 'save': {'result.code': 'result.code'}, 'result': {'code': 1.99}, 'verify': ['result.code, [>, 1]']}
+[DEBUG] 2024-10-08 22:59:12 test data: {'note': 'test1', 'url': 'test', 'type': 'http.get', 'data': {'url': 'tmpurl', 'val': 1}, 'save': {'test.url': 'data.url'}, 'result': {'code': 1.99}, 'verify': ['result.code, [>, 1]']}
+[INFO] 2024-10-08 22:59:25 load cache from cache/cache.js
+[INFO] 2024-10-08 22:59:25 load cache from cache/save.js
+[DEBUG] 2024-10-08 22:59:25 test data: {'note': 'test', 'url': 'test', 'type': 'http.get', 'data': {'url': 'tmpurl'}, 'save': {'result.code': 'result.code'}, 'result': {'code': 1.99}, 'verify': ['result.code, [>, 1]']}
+[DEBUG] 2024-10-08 22:59:25 test data: {'note': 'test1', 'url': 'test', 'type': 'http.get', 'data': {'url': 'tmpurl', 'val': 1}, 'save': {'test.url': 'data.url'}, 'result': {'code': 1.99}, 'verify': ['result.code, [>, 1]']}
+[INFO] 2024-10-08 23:00:02 load cache from cache/cache.js
+[INFO] 2024-10-08 23:00:02 load cache from cache/save.js
+[DEBUG] 2024-10-08 23:00:02 test data: {'note': 'test', 'url': 'test', 'type': 'http.get', 'data': {'url': 'tmpurl'}, 'save': {'result.code': 'result.code'}, 'result': {'code': 1.99}, 'verify': ['result.code, [>, 1]']}
+[DEBUG] 2024-10-08 23:00:02 test data: {'note': 'test1', 'url': 'test', 'type': 'http.get', 'data': {'url': 'tmpurl', 'val': 1}, 'save': {'test.url': 'data.url'}, 'result': {'code': 1.99}, 'verify': ['result.code, [>, 1]']}
+[INFO] 2024-10-08 23:01:21 load cache from cache/cache.js
+[INFO] 2024-10-08 23:01:21 load cache from cache/save.js
+[DEBUG] 2024-10-08 23:01:21 test data: {'note': 'test', 'url': 'test', 'type': 'http.get', 'data': {'url': 'tmpurl'}, 'save': {'result.code': 'result.code'}, 'result': {'code': 1.99}, 'verify': ['result.code, [>, 1]']}
+[DEBUG] 2024-10-08 23:01:21 test data: {'note': 'test1', 'url': 'test', 'type': 'http.get', 'data': {'url': 'tmpurl', 'val': 1}, 'save': {'test.url': 'data.url'}, 'result': {'code': 1.99}, 'verify': ['result.code, [>, 1]']}
+[INFO] 2024-10-08 23:01:33 load cache from cache/cache.js
+[INFO] 2024-10-08 23:01:33 load cache from cache/save.js
+[DEBUG] 2024-10-08 23:01:33 test data: {'note': 'test', 'url': 'test', 'type': 'http.get', 'data': {'url': 'tmpurl'}, 'save': {'result.code': 'result.code'}, 'result': {'code': 1.99}, 'verify': ['result.code, [>, 1]']}
+[DEBUG] 2024-10-08 23:01:33 test data: {'note': 'test1', 'url': 'test', 'type': 'http.get', 'data': {'url': 'tmpurl', 'val': 1}, 'save': {'test.url': 'data.url'}, 'result': {'code': 1.99}, 'verify': ['result.code, [>, 1]']}
+[DEBUG] 2024-10-08 23:01:33 test data: {'note': 'test', 'url': 'test', 'type': 'http.get', 'data': {'url': 'tmpurl'}, 'save': {'result.code': 'result.code'}, 'result': {'code': 1.99}, 'verify': ['result.code, [>, 1]']}
+[DEBUG] 2024-10-08 23:01:33 test data: {'note': 'test1', 'url': 'test', 'type': 'http.get', 'data': {'url': 'tmpurl', 'val': 1}, 'save': {'test.url': 'data.url'}, 'result': {'code': 1.99}, 'verify': ['result.code, [>, 1]']}
+[INFO] 2024-10-08 23:02:10 load cache from cache/cache.js
+[INFO] 2024-10-08 23:02:10 load cache from cache/save.js
+[DEBUG] 2024-10-08 23:02:10 test data: {'note': 'test', 'url': 'test', 'type': 'http.get', 'data': {'url': 'tmpurl'}, 'save': {'result.code': 'result.code'}, 'result': {'code': 1.99}, 'verify': ['result.code, [>, 1]']}
+[DEBUG] 2024-10-08 23:02:10 test data: {'note': 'test1', 'url': 'test', 'type': 'http.get', 'data': {'url': 'tmpurl', 'val': 1}, 'save': {'test.url': 'data.url'}, 'result': {'code': 1.99}, 'verify': ['result.code, [>, 1]']}
+[DEBUG] 2024-10-08 23:02:10 test data: {'note': 'test', 'url': 'test', 'type': 'http.get', 'data': {'url': 'tmpurl'}, 'save': {'result.code': 'result.code'}, 'result': {'code': 1.99}, 'verify': ['result.code, [>, 1]']}
+[DEBUG] 2024-10-08 23:02:10 test data: {'note': 'test1', 'url': 'test', 'type': 'http.get', 'data': {'url': 'tmpurl', 'val': 1}, 'save': {'test.url': 'data.url'}, 'result': {'code': 1.99}, 'verify': ['result.code, [>, 1]']}
+[INFO] 2024-10-08 23:02:23 load cache from cache/cache.js
+[INFO] 2024-10-08 23:02:23 load cache from cache/save.js
+[DEBUG] 2024-10-08 23:02:23 test data: {'note': 'test', 'url': 'test', 'type': 'http.get', 'data': {'url': 'tmpurl'}, 'save': {'result.code': 'result.code'}, 'result': {'code': 1.99}, 'verify': ['result.code, [>, 1]']}
+[DEBUG] 2024-10-08 23:02:23 test data: {'note': 'test1', 'url': 'test', 'type': 'http.get', 'data': {'url': 'tmpurl', 'val': 1}, 'save': {'test.url': 'data.url'}, 'result': {'code': 1.99}, 'verify': ['result.code, [>, 1]']}
+[DEBUG] 2024-10-08 23:02:23 test data: {'note': 'test', 'url': 'test', 'type': 'http.get', 'data': {'url': 'tmpurl'}, 'save': {'result.code': 'result.code'}, 'result': {'code': 1.99}, 'verify': ['result.code, [>, 1]']}
+[DEBUG] 2024-10-08 23:02:23 test data: {'note': 'test1', 'url': 'test', 'type': 'http.get', 'data': {'url': 'tmpurl', 'val': 1}, 'save': {'test.url': 'data.url'}, 'result': {'code': 1.99}, 'verify': ['result.code, [>, 1]']}
+[INFO] 2024-10-08 23:04:41 load cache from cache/cache.js
+[INFO] 2024-10-08 23:04:41 load cache from cache/save.js
+[DEBUG] 2024-10-08 23:04:41 test data: {'note': 'test', 'url': 'test', 'type': 'http.get', 'data': {'url': 'tmpurl'}, 'save': {'result.code': 'result.code'}, 'result': {'code': 1.99}, 'verify': ['result.code, [>, 1]']}
+[DEBUG] 2024-10-08 23:04:41 test data: {'note': 'test1', 'url': 'test', 'type': 'http.get', 'data': {'url': 'tmpurl', 'val': 1}, 'save': {'test.url': 'data.url'}, 'result': {'code': 1.99}, 'verify': ['result.code, [>, 1]']}
+[DEBUG] 2024-10-08 23:04:41 request response: <html>
+<head>
+	<script>
+		location.replace(location.href.replace("https://","http://"));
+	</script>
+</head>
+<body>
+	<noscript><meta http-equiv="refresh" content="0;url=http://www.baidu.com/"></noscript>
+</body>
+</html>
+[DEBUG] 2024-10-08 23:04:42 test data: {'note': 'test', 'url': 'test', 'type': 'http.get', 'data': {'url': 'tmpurl'}, 'save': {'result.code': 'result.code'}, 'result': {'code': 1.99}, 'verify': ['result.code, [>, 1]']}
+[DEBUG] 2024-10-08 23:04:42 test data: {'note': 'test1', 'url': 'test', 'type': 'http.get', 'data': {'url': 'tmpurl', 'val': 1}, 'save': {'test.url': 'data.url'}, 'result': {'code': 1.99}, 'verify': ['result.code, [>, 1]']}
+[DEBUG] 2024-10-08 23:04:42 request response: <html>
+<head>
+	<script>
+		location.replace(location.href.replace("https://","http://"));
+	</script>
+</head>
+<body>
+	<noscript><meta http-equiv="refresh" content="0;url=http://www.baidu.com/"></noscript>
+</body>
+</html>
+[INFO] 2024-10-08 23:06:37 load cache from cache/cache.js
+[INFO] 2024-10-08 23:06:37 load cache from cache/save.js
+[DEBUG] 2024-10-08 23:06:37 test data: {'note': 'test', 'url': 'test', 'type': 'http.get', 'data': {'url': 'tmpurl'}, 'save': {'result.code': 'result.code'}, 'result': {'code': 1.99}, 'verify': ['result.code, [>, 1]']}
+[DEBUG] 2024-10-08 23:06:37 test data: {'note': 'test1', 'url': 'test', 'type': 'http.get', 'data': {'url': 'tmpurl', 'val': 1}, 'save': {'test.url': 'data.url'}, 'result': {'code': 1.99}, 'verify': ['result.code, [>, 1]']}
+[DEBUG] 2024-10-08 23:06:38 test data: {'note': 'test', 'url': 'test', 'type': 'http.get', 'data': {'url': 'tmpurl'}, 'save': {'result.code': 'result.code'}, 'result': {'code': 1.99}, 'verify': ['result.code, [>, 1]']}
+[DEBUG] 2024-10-08 23:06:38 test data: {'note': 'test1', 'url': 'test', 'type': 'http.get', 'data': {'url': 'tmpurl', 'val': 1}, 'save': {'test.url': 'data.url'}, 'result': {'code': 1.99}, 'verify': ['result.code, [>, 1]']}
+[INFO] 2024-10-08 23:07:37 load cache from cache/cache.js
+[INFO] 2024-10-08 23:07:37 load cache from cache/save.js
+[DEBUG] 2024-10-08 23:07:37 test data: {'note': 'test', 'url': 'test', 'type': 'http.get', 'data': {'url': 'tmpurl'}, 'save': {'result.code': 'result.code'}, 'result': {'code': 1.99}, 'verify': ['result.code, [>, 1]']}
+[DEBUG] 2024-10-08 23:07:37 test data: {'note': 'test1', 'url': 'test', 'type': 'http.get', 'data': {'url': 'tmpurl', 'val': 1}, 'save': {'test.url': 'data.url'}, 'result': {'code': 1.99}, 'verify': ['result.code, [>, 1]']}
+[INFO] 2024-10-08 23:38:45 load cache from cache/cache.js
+[INFO] 2024-10-08 23:38:45 load cache from cache/save.js
+[DEBUG] 2024-10-08 23:38:45 test data: {'note': 'test', 'url': 'test', 'type': 'http.get', 'data': {'url': 'tmpurl'}, 'save': {'result.code': 'result.code'}, 'result': {'code': 1.99}, 'verify': ['result.code, [>, 1]']}
+[DEBUG] 2024-10-08 23:38:45 test data: {'note': 'test1', 'url': 'test', 'type': 'http.get', 'data': {'url': 'tmpurl', 'val': 1}, 'save': {'test.url': 'data.url'}, 'result': {'code': 1.99}, 'verify': ['result.code, [>, 1]']}
+[DEBUG] 2024-10-08 23:38:46 test data: {'note': 'test', 'url': 'test', 'type': 'http.get', 'data': {'url': 'tmpurl'}, 'save': {'result.code': 'result.code'}, 'result': {'code': 1.99}, 'verify': ['result.code, [>, 1]']}
+[DEBUG] 2024-10-08 23:38:46 test data: {'note': 'test1', 'url': 'test', 'type': 'http.get', 'data': {'url': 'tmpurl', 'val': 1}, 'save': {'test.url': 'data.url'}, 'result': {'code': 1.99}, 'verify': ['result.code, [>, 1]']}
