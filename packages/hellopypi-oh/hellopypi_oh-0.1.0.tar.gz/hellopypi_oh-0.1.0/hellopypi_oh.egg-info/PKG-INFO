@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: hellopypi_oh
+Version: 0.1.0
+Summary: print Hello Pypi in terminal.
+Home-page: https://github.com/Taot-chen/hellopypi_oh
+Author: oehuosi
+Author-email: oehuosi@foxmail.com
+License: MIT
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Python: >=3.6.0
+Description-Content-Type: text/markdown
+
+
+这是一个简单的测试 pypi 发包的项目，包安装完成之后，通过`hellopypi`命令，可以在命令行中打印出`Hello Pypi!`即表示安装成功。
+
+### 1 安装
+```bash
+pip install hellopypi
+```
+
+### 2 使用
+```bash
+hellopypi
+```

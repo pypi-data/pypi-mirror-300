@@ -1,0 +1,8 @@
+README.md
+hellopypi_oh.py
+setup.py
+hellopypi_oh.egg-info/PKG-INFO
+hellopypi_oh.egg-info/SOURCES.txt
+hellopypi_oh.egg-info/dependency_links.txt
+hellopypi_oh.egg-info/entry_points.txt
+hellopypi_oh.egg-info/top_level.txt
