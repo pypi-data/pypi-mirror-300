@@ -1,0 +1,80 @@
+Metadata-Version: 2.1
+Name: bwfilters
+Version: 0.1.0
+Summary: Simple whitelist/blacklist filtering functions
+Author-email: Jacob Sánchez <jacobszpz@protonmail.com>
+Project-URL: Repository, https://github.com/sanjacob/bwfilters
+Project-URL: Bug Tracker, https://github.com/sanjacob/bwfilters/issues
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: License :: OSI Approved :: GNU Lesser General Public License v2 (LGPLv2)
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Software Development :: Libraries
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+License-File: LICENSE
+License-File: AUTHORS.md
+Requires-Dist: typing_extensions
+Provides-Extra: test
+Requires-Dist: pytest; extra == "test"
+Requires-Dist: pytest-mock; extra == "test"
+Requires-Dist: exceptiongroup; extra == "test"
+Requires-Dist: mypy; extra == "test"
+Provides-Extra: docs
+Requires-Dist: sphinx; extra == "docs"
+Requires-Dist: sphinx-rtd-theme; extra == "docs"
+
+# bwfilters
+
+Simple whitelist/blacklist filter structures.
+
+
+```python
+from bwfilters import BWFilter
+
+data = ['good', 'nice', 'bad']
+
+my_filter = BWFilter()
+my_filter.whitelist = ['good', 'nice']
+
+my_filter.filter(lambda x: x, data)
+>>> ['good', 'nice']
+```
+
+
+## Installation
+
+```bash
+pip install bwfilters
+```
+
+
+
+## License
+
+[![License: GPL  v2.1][license-shield]][gnu]
+
+This software is distributed under the [General Public License v2][license],
+more information available at the [Free Software Foundation][gnu].
+
+
+<!-- LICENSE -->
+
+[license]: LICENSE "General Public License v2"
+[gnu]: https://www.gnu.org/licenses/old-licenses/gpl-2.0.html "Free Software Foundation"
+[license-shield]: https://img.shields.io/github/license/sanjacob/bwfilters
+
+
+<!-- SHIELD LINKS -->
+
+[pypi]: https://pypi.org/project/bwfilters
+
+
+<!-- SHIELDS -->
+
+[pypi-shield]: https://img.shields.io/pypi/v/bwfilters
+[build-shield]: https://img.shields.io/github/actions/workflow/status/sanjacob/bwfilters/build.yml?branch=master
+[docs-shield]: https://img.shields.io/readthedocs/bwfilters
