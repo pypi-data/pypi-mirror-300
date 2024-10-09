@@ -1,0 +1,37 @@
+name: CI
+
+concurrency:
+  group: ${{ github.head_ref || github.run_id }}
+  cancel-in-progress: true
+
+on:
+  # Run CI against all pushes (direct commits, also merged PRs), Pull Requests
+  workflow_dispatch:
+  push:
+  pull_request:
+  # Runs CI on every day (at 06:00 UTC)
+  schedule:
+    - cron: '0 6 * * *'
+
+jobs:
+  ansible-lint:
+    uses: ansible/ansible-content-actions/.github/workflows/ansible_lint.yaml@main
+  sanity:
+    uses: ansible/ansible-content-actions/.github/workflows/sanity.yaml@main
+  unit-galaxy:
+    uses: ansible/ansible-content-actions/.github/workflows/unit.yaml@main
+  all_green:
+    if: ${{ always() }}
+    needs:
+      - sanity
+      - unit-galaxy
+      - ansible-lint
+    runs-on: ubuntu-latest
+    steps:
+      - run: >-
+          python -c "assert 'failure' not in
+          set([
+          '${{ needs.sanity.result }}',
+          '${{ needs.unit-galaxy.result }}'
+          '${{ needs.ansible-lint.result }}'
+          ])"
