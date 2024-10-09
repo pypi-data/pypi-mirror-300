@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools>=61.0.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "4th-ir-ai-models"
+version = "0.5.1"
+description = "Access a collection of sophisticated AI models."
+readme = "README.md"
+authors = [{ name = "4th-IR", email = "info@4th-ir.com" }]
+license = { file = "LICENSE" }
+classifiers = [
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+]
+keywords = ["ai", "api", "automation", "ai tool", "intelligence"]
+dependencies = ["requests >= 2.31.0"]
+requires-python = ">=3.7"
+
+[project.optional-dependencies]
+dev = ["black", "bumpver", "isort", "pip-tools", "pytest"]
+
+[project.urls]
+Homepage = "https://www.4th-ir.com/"
+
+# [project.scripts]
+# realpython = "reader.__main__:main"

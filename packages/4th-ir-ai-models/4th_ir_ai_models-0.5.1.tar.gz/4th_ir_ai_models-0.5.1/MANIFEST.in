@@ -1,0 +1,8 @@
+graft src
+graft tests
+graft docs
+
+include tox.ini
+include pyproject.toml
+
+global-exclude *~ *.py[cod] *.so
