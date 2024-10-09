@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: xIndices
+Version: 1.1
+Summary: A xarray based module for computing SST trends and SST variability modes and other atmospheric variability modes
+Author: Jivesh Dixit
+Author-email: jiveshdixit@cas.iitd.ac.in
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Communications :: Email
+Requires-Python: >=3.8
+Requires-Dist: xarray
+Requires-Dist: numpy<2.0,>=1.26
+Requires-Dist: eofs
+Requires-Dist: dask
+Requires-Dist: xesmf
+Requires-Dist: matplotlib
+Requires-Dist: cartopy
+Requires-Dist: xeofs
