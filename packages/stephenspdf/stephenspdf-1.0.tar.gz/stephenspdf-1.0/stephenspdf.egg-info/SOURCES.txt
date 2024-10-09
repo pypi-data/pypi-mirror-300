@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+stephenspdf/__init__.py
+stephenspdf/pdf2image.py
+stephenspdf/pdf2text.py
+stephenspdf.egg-info/PKG-INFO
+stephenspdf.egg-info/SOURCES.txt
+stephenspdf.egg-info/dependency_links.txt
+stephenspdf.egg-info/top_level.txt
