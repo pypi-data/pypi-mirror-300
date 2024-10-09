@@ -1,0 +1,17 @@
+CureQ/__init__.py,sha256=1JJvxVm4ib5XVMNro-PGkdgBT1d9zMZigDriVMIMKcw,292
+CureQ/bandpass.py,sha256=YrNkRs-4TpKp7gEPxAf0GSAyf4IkuIorRkNH8vft9j4,431
+CureQ/burst_detection.py,sha256=OAf6piiES_MRSRpbhLTWfaCaLR9EFlAMKOcejJJ4Jv0,17283
+CureQ/cureq_icon.ico,sha256=INXORsAdvH9QShgrqvupNp6IQ6-D9pmy336Vqz46BZI,145121
+CureQ/features.py,sha256=njd0pQbouHsl1aQpJOZQIFL8aseEwe3eDBShWEhXoXw,26282
+CureQ/mea.py,sha256=tneIC0FWc3L0t9-aa6DVQu-sFx90hVYXamoTB9DTfBo,16364
+CureQ/mea_analysis_tool.py,sha256=cKUM1pPCi035KaONFWGs4hRk7tL86qqq5Hiri8KK86w,101360
+CureQ/network_burst_detection.py,sha256=WbIOtL73pBVaaEY-amBFVchtekmjI_rsh2ta7ZiP4h4,13090
+CureQ/open_file.py,sha256=uFJQ-iYf-Le_wf28erhtw7x5ggdyUZQKoCaPB-D_J7w,2291
+CureQ/plotting.py,sha256=6_xfFc4acz3hB1eS2Y4vpLtSxMoIBcIs8LDzvZmTp8Y,5700
+CureQ/spike_validation.py,sha256=gxNVXl0hMGneJ8aOClV6Mp43DHPBYy7HXhAtkGWxNBw,10533
+CureQ/threshold.py,sha256=5p3wRPs0Zyp3pc7DV4R5LThPd6BYN7E7_PXZs8HsGwY,1919
+CureQ-1.0.7.dist-info/LICENSE,sha256=IwGE9guuL-ryRPEKi6wFPI_zOhg7zDZbTYuHbSt_SAk,35823
+CureQ-1.0.7.dist-info/METADATA,sha256=Z65-1brDBjK_8ZYHnBRZSfov-n4c429o6xGbkq3LTkA,4086
+CureQ-1.0.7.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+CureQ-1.0.7.dist-info/top_level.txt,sha256=cQ-lITPEbSsPVVXdK12uI8FJRPFTAU_Ru3C-TWyIfMc,6
+CureQ-1.0.7.dist-info/RECORD,,
