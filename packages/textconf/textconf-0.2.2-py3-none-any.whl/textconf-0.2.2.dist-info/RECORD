@@ -1,0 +1,11 @@
+textconf/__init__.py,sha256=a6FrgnlLvxLQatsHVogeoBsDU2AsW6NfXMsCOFQrkwA,385
+textconf/config.py,sha256=N7X1YPMIW5E00DLOTHluZlIwwkLYc2oP2F5dOBEQ4So,2761
+textconf/enum.py,sha256=VC_InHWdwG5xj2f5tXOlkwVb8x-l_FNc1a99AIsQYFM,1237
+textconf/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+textconf/render.py,sha256=O5T4nojE5U-GMTe1656ViYoaIQ-2Aprlh_g--RMS5N8,2732
+textconf/template.py,sha256=FKwv9tvRovZkgAqxyujpQvO30R7ooCQOUv0ZPLobnVc,3689
+textconf/testing.py,sha256=eo-RVTecfbTUg-JCPjMWXfCEzxwWXR2a1IIcZ6ixRg0,6830
+textconf-0.2.2.dist-info/METADATA,sha256=yihBgxvwNaK3E176cGystIMnuH8HZCduiz73jOhEiR4,1982
+textconf-0.2.2.dist-info/WHEEL,sha256=1yFddiXMmvYK7QYTqtRNtX66WJ0Mz8PYEiEUoOUUxRY,87
+textconf-0.2.2.dist-info/licenses/LICENSE,sha256=IGdDrBPqz1O0v_UwCW-NJlbX9Hy9b3uJ11t28y2srmY,1062
+textconf-0.2.2.dist-info/RECORD,,
