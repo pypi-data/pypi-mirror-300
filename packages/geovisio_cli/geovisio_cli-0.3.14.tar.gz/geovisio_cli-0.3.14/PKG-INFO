@@ -1,0 +1,56 @@
+Metadata-Version: 2.1
+Name: geovisio_cli
+Version: 0.3.14
+Summary: Geovio client cli tool
+Author-email: Antoine Desbordes <antoine.desbordes@gmail.com>
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Classifier: License :: OSI Approved :: MIT License
+Requires-Dist: requests ~= 2.28
+Requires-Dist: typer ~= 0.12
+Requires-Dist: rich ~= 13.4
+Requires-Dist: tomli ~= 2.0.1
+Requires-Dist: tomli-w ~= 1.0.0
+Requires-Dist: qrcode ~= 7.4
+Requires-Dist: geopic-tag-reader ~= 1.1.0
+Requires-Dist: packaging ~= 23.1
+Requires-Dist: haversine ~= 2.8
+Requires-Dist: flit ~= 3.8.0 ; extra == "build"
+Requires-Dist: pyinstaller ~= 6.3.0 ; extra == "build-binary"
+Requires-Dist: black ~= 22.8.0 ; extra == "dev"
+Requires-Dist: mypy ~= 1.0.0 ; extra == "dev"
+Requires-Dist: types-requests ~= 2.28.0 ; extra == "dev"
+Requires-Dist: pytest ~= 8.0.2 ; extra == "dev"
+Requires-Dist: testcontainers-compose ~= 0.0.1rc1 ; extra == "dev"
+Requires-Dist: pytest-datafiles ~= 2.0.1 ; extra == "dev"
+Requires-Dist: requests_mock ~= 1.10.0 ; extra == "dev"
+Requires-Dist: pre-commit ~= 3.3.3 ; extra == "dev"
+Requires-Dist: pyyaml <= 5.3.1 ; extra == "dev"
+Project-URL: Home, https://gitlab.com/geovisio/cli
+Provides-Extra: build
+Provides-Extra: build-binary
+Provides-Extra: dev
+
+# ![Panoramax](https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Panoramax.svg/40px-Panoramax.svg.png) Panoramax
+
+__Panoramax__ is a digital resource for sharing and using 📍📷 field photos. Anyone can take photographs of places visible from the public streets and contribute them to the Panoramax database. This data is then freely accessible and reusable by all. More information available at [gitlab.com/panoramax](https://gitlab.com/panoramax) and [panoramax.fr](https://panoramax.fr/).
+
+
+# ⌨️ Panoramax command-line tool
+
+This repository contains only the __command-line interface (CLI)__ of Panoramax.
+
+## Features
+
+This tool allows you to:
+
+- Upload a sequence of pictures to a Panoramax server
+
+## Documentation
+
+All our documentation is available under [docs folder](https://gitlab.com/panoramax/clients/cli/-/tree/main/docs).
+
+## ⚖️ License
+
+Copyright (c) Panoramax team 2022-2024, [released under MIT license](https://gitlab.com/panoramax/clients/cli/-/blob/main/LICENSE).
+

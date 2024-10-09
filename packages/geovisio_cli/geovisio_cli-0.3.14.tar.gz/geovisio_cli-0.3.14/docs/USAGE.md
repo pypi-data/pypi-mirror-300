@@ -1,0 +1,70 @@
+# Usage
+
+## :material-upload: Upload pictures
+
+The picture upload command is available under the `upload` subcommand:
+
+```bash
+geovisio upload --help
+```
+
+If you want to upload pictures from a `my_sequence` directory to a Panoramax instance (running locally in this example), launch this command:
+
+```bash
+geovisio upload --api-url https://my.panoramax.server/ ./my_sequence
+```
+
+You can also add a `--wait` flag to wait while the server processes all the pictures.
+
+!!! note
+	You can launch again the same command to recover a partial sequence import, for example if only some pictures failed to upload.
+
+### :key: Authentication
+
+If your Panoramax instance requires a login for the upload, the `upload` command will ask for a login on the instance by visiting a given url with a browser.
+
+You can also login before hand with the command:
+
+```bash
+geovisio login --api-url https://my.panoramax.server/
+```
+
+Both will store the credentials in a configuration file, located either in a [XDG](https://specifications.freedesktop.org/basedir-spec/basedir-spec-latest.html) defined directory or in a user specific .config, in a subdirectory `geovisio/config.toml`.
+
+If you do not want to use this, you can also provide an API token with the `--token` parameter.
+
+## :material-microsoft-excel: External metadata
+
+By default, picture metadata are read from EXIF tags of the image file. If they are not set, you can also use a CSV file. This file should be placed in the same directory as pictures, and can be named as you like, as long as it ends with `.csv`. You can name it `_geovisio.csv` for example.
+
+The CSV file should contain all following columns:
+
+Header | Type  | Mandatory ? | Description
+-------|-------|-------------|-----------
+file   | str   | Yes         | File name of the picture
+lon    | float | No          | WGS84 longitude (for example 55.56 for Réunion Island)
+lat    | float | No          | WGS84 latitude (for example -21.14 for Réunion Island)
+capture_time|str| No         | Capture time of the picture, in [RFC 3339](https://www.rfc-editor.org/rfc/rfc3339) (like `1985-04-12T23:20:50.52Z`). If no timezone is given, considered as local time (and thus the date + position would be used to localize it).
+Exif.* | str   | No          | Any EXIF tag, with column name following [Exiv2](https://exiv2.org/metadata.html) scheme (example Exif.Image.Artist). You can create as many columns as necessary.
+Xmp.*  | str   | No          | Any XMP tag, with column name following [Exiv2](https://exiv2.org/metadata.html) scheme (example Xmp.digiKam.TagsList). You can create as many columns as necessary.
+
+All metadatas defined in the CSV are optional. If a metadata is not defined in CSV for a given image, GeoVisio CLI will try to read it from picture EXIF metadata.
+
+!!! note
+	A Panoramax server [will always need some metadata to be present](https://panoramax.gitlab.io/gitlab-profile/pictures-metadata/) (the GPS coordinates and the capture time), no matter where they are read from.
+
+## :octicons-info-16: Collection status
+
+Prints the status of a collection.
+
+```bash
+geovisio collection-status --id <some collection id> --api-url https://my.panoramax.server
+```
+
+You can alternatively give the location of the sequence (its full url) like:
+
+```bash
+geovisio collection-status --location https://my.panoramax.server/api/collections/dae288b2-9e8d-4896-af39-d35ce6bc9d4e
+```
+
+You can also add a `--wait` flag to wait for the server to process all the pictures.
