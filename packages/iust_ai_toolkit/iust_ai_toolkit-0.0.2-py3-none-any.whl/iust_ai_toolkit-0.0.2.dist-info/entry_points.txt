@@ -1,0 +1,4 @@
+[console_scripts]
+bump_version=scripts.version:bump_version
+iust-ai=iust_ai_toolkit.cli:main
+
