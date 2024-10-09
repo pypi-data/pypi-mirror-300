@@ -1,0 +1,4 @@
+Metadata-Version: 2.1
+Name: bib_vk_bots
+Version: 0.1
+Requires-Dist: vk-api

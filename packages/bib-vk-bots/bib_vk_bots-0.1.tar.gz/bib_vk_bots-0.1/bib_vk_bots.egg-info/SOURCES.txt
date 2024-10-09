@@ -1,0 +1,10 @@
+setup.py
+bib_vk_bots.egg-info/PKG-INFO
+bib_vk_bots.egg-info/SOURCES.txt
+bib_vk_bots.egg-info/dependency_links.txt
+bib_vk_bots.egg-info/entry_points.txt
+bib_vk_bots.egg-info/requires.txt
+bib_vk_bots.egg-info/top_level.txt
+dissentty_vk/__init__.py
+dissentty_vk/api.py
+dissentty_vk/bot.py
