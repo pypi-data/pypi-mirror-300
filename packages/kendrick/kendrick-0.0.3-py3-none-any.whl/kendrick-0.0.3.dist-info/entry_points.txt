@@ -1,0 +1,2 @@
+[nbdev]
+kendrick = kendrick._modidx:d

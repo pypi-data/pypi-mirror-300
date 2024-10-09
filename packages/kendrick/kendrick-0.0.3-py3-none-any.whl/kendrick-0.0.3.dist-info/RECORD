@@ -1,0 +1,10 @@
+kendrick/__init__.py,sha256=ICpC6JFwvfGgYDLw1LhoBjWmscj2ygXub__UAcZt30w,46
+kendrick/_modidx.py,sha256=M0g16q4aWjp1mqk-lxWpcC6EYlQVNlq1qPXwSXkuENg,1081
+kendrick/core.py,sha256=l3WsvGAJHy3tByngj1XrIQQQOBX7lgNCiJyWhvrmi1s,154
+kendrick/explore.py,sha256=BU_HGChxf43lNIjDRsT7kMtTEfMtn53n3HYQd7BsolQ,4122
+kendrick-0.0.3.dist-info/LICENSE,sha256=S8xHnn0z68frFr6dwAwCtOEr98bj1hCmsO881_whPpI,1072
+kendrick-0.0.3.dist-info/METADATA,sha256=cTSO9mXuo0FntMwpajheil3Di_gjxF9iD-1qNPHWGH0,2089
+kendrick-0.0.3.dist-info/WHEEL,sha256=yQN5g4mg4AybRjkgi-9yy4iQEFibGQmlz78Pik5Or-A,92
+kendrick-0.0.3.dist-info/entry_points.txt,sha256=-iT4htwN810FBQ4PKIQlRNBwynmApvWHP8kbwOSMuRc,38
+kendrick-0.0.3.dist-info/top_level.txt,sha256=bqz0N2Hi-7ti_Iv7XIvsS6Jul-PYUxL6kp_NWNoN5as,9
+kendrick-0.0.3.dist-info/RECORD,,
