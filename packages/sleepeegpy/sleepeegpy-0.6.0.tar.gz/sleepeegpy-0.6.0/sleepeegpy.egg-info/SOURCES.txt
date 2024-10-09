@@ -1,0 +1,13 @@
+LICENSE
+README.md
+pyproject.toml
+docs/conf.py
+sleepeegpy/base.py
+sleepeegpy/dashboard.py
+sleepeegpy/pipeline.py
+sleepeegpy/utils.py
+sleepeegpy.egg-info/PKG-INFO
+sleepeegpy.egg-info/SOURCES.txt
+sleepeegpy.egg-info/dependency_links.txt
+sleepeegpy.egg-info/requires.txt
+sleepeegpy.egg-info/top_level.txt

@@ -1,0 +1,46 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+exclude = ["notebooks"]  # empty by default
+
+[project]
+name = "sleepeegpy"
+version = "0.6.0"
+authors = [
+    {name = "Gennadiy Belonosov", email = "gennadiyb@mail.tau.ac.il"},
+    {name = "Rotem Falach", email = 'rotemfalach@mail.tau.ac.il'}
+]
+description = "Sleep EEG preprocessing, analysis and visualization"
+readme = "README.md"
+requires-python = ">=3.10, <3.12"
+license = {text = "MIT"}
+keywords = ['sleep', 'eeg']
+dependencies = [
+    "attrs",
+    "mne~=1.6.0",
+    "mne-qt-browser",
+    "pyqt5",
+    "yasa~=0.6.3",
+    "fooof~=1.1.0",
+    "lspopt",
+    "ipympl",
+    "numpy~=1.25.2",
+    "pandas",
+    "matplotlib~=3.8.0",
+    "scipy",
+    "natsort",
+    "more-itertools",
+    "h5io",
+    "loguru",
+    "pooch",
+    "tqdm",
+    "pyprep~=0.4.3",
+    "ipywidgets",
+    "ipython"
+]
+
+[project.urls]
+Homepage = "https://github.com/NirLab-TAU/sleepeegpy"
+Documentation = "https://nirlab-tau.github.io/sleepeegpy/"
