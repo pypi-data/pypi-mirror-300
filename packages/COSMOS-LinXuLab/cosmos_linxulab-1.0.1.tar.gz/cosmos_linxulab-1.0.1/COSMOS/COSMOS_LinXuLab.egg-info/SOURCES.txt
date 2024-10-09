@@ -1,0 +1,7 @@
+LICENSE
+README.md
+setup.py
+COSMOS/COSMOS_LinXuLab.egg-info/PKG-INFO
+COSMOS/COSMOS_LinXuLab.egg-info/SOURCES.txt
+COSMOS/COSMOS_LinXuLab.egg-info/dependency_links.txt
+COSMOS/COSMOS_LinXuLab.egg-info/top_level.txt
