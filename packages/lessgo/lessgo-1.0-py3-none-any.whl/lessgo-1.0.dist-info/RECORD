@@ -1,0 +1,9 @@
+lessgo/__init__.py,sha256=BhDHVH1veiCdDFBS_jpoh9eJ0mu_manCnBHzNjj1lDw,90
+lessgo/add.py,sha256=QiUErz1LEKCXAAA77_lovHDlPvHdhfOoRAhCtA1TLKA,31
+lessgo/subtract.py,sha256=8N9OP2Ha_-tTud2b3-rB1lP6FF83g7rIkeq_5buj7pQ,36
+lessgo/utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+lessgo/utils/formatter.py,sha256=b4ksGreunMku6kSC4POrTb2aPFBdsKuZz-O3BJsXbrA,60
+lessgo-1.0.dist-info/METADATA,sha256=C04GqSqAmn8dBJwfimYwEShpFxG9D2_nT5FtSA8w04g,98
+lessgo-1.0.dist-info/WHEEL,sha256=R0nc6qTxuoLk7ShA2_Y-UWkN8ZdfDBG2B6Eqpz2WXbs,91
+lessgo-1.0.dist-info/top_level.txt,sha256=8IYq5-RyDTf-fl3c4yxcL76Doo9lmXATa90zqlbtEHk,7
+lessgo-1.0.dist-info/RECORD,,
