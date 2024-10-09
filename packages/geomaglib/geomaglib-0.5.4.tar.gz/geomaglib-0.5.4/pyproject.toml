@@ -1,0 +1,22 @@
+[project]
+name = "geomaglib"
+version = "0.5.4"
+description = "The core library for building geomag model."
+authors = [{ name = "Li-Yin Young", email = "liyin.young@noaa.gov" }]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+    "numpy>=1.20"
+    ]
+
+readme = "Readme.md"
+
+
+
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
