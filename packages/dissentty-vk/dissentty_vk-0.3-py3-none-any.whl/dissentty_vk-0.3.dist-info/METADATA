@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: dissentty-vk
+Version: 0.3
+Summary: Удобная библиотека для создания VK ботов
+Author: dissentty
+Requires-Dist: vk-api
+

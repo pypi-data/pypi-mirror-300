@@ -1,0 +1,2 @@
+[console_scripts]
+dissentty_vk = dissentty_vk.bot:main
