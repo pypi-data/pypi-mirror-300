@@ -1,0 +1,10 @@
+[build-system]
+requires = ["maturin==1.5.1"]
+build-backend = "maturin"
+
+[project]
+authors = [{ name = "Philomath Ingeniare", email = "philoniare@gmail.com" }]
+license = "Apache-2.0"
+readme = "README.md"
+name = "subxtpy"
+version = "0.2.0"

@@ -1,0 +1,6 @@
+*.lock
+/target
+.DS_Store
+**/__pycache__
+.idea/
+/venv/

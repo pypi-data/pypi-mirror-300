@@ -1,0 +1,30 @@
+[package]
+name = "subxtpy"
+version = "0.2.0"
+edition = "2018"
+
+[lib]
+crate-type = ["cdylib", "rlib"]
+
+[dependencies]
+pyo3 = { version = "0.20.0", features = ["extension-module"] }
+pyo3-asyncio = { version = "0.20.0", features = ["async-std", "tokio-runtime"] }
+scale-encode = "0.6.0"
+subxt = "0.37.0"
+subxt-codegen = "0.37.0"
+subxt-signer = "0.37.0"
+tokio = "1.37.0"
+quote = "1.0.36"
+syn = "1.0.109"
+hex = "0.4.3"
+scale-value = "0.16.0"
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+hex-literal = "0.4.1"
+base58 = "0.2.0"
+blake2 = "0.10.6"
+futures = "0.3.30"
+
+
+[dev-dependencies]
+maturin = "1.5.1"
