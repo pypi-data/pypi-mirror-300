@@ -1,0 +1,23 @@
+[project]
+name = "PyTraceToIX"
+version = "1.1.0"
+authors = [
+  { name="Alexandre Bento Freire", email="devtoix@a-bentofreire.com" },
+]
+description = "An expression tracer for debugging lambdas, list comprehensions, method chaining, and expressions"
+readme = "README.md"
+requires-python = ">=3.9"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+keywords = ["debugging", "tracer", "debug", "log", "logger", "expression", "lambda", "list comprehensions"]
+
+[project.urls]
+Homepage = "https://www.devtoix.com/en/projects/pytracetoix"
+Documentation = "https://www.devtoix.com/docs/pytracetoix/en/"
+Repository = "https://github.com/a-bentofreire/pytracetoix"
+Issues = "https://github.com/a-bentofreire/pytracetoix/issues"
+Changelog = "https://github.com/a-bentofreire/pytracetoix/blob/HEAD/CHANGELOG.md"
+Twitter = "https://x.com/devtoix"

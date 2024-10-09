@@ -1,0 +1,10 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+src/PyTraceToIX.egg-info/PKG-INFO
+src/PyTraceToIX.egg-info/SOURCES.txt
+src/PyTraceToIX.egg-info/dependency_links.txt
+src/PyTraceToIX.egg-info/top_level.txt
+src/pytracetoix/__init__.py
+src/pytracetoix/pytracetoix.py

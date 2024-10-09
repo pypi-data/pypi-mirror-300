@@ -1,0 +1,5 @@
+exclude tests/*.py
+include README.md
+include LICENSE
+include src/pytracetoix/pytracetoix.py
+include src/pytracetoix/__init__.py
