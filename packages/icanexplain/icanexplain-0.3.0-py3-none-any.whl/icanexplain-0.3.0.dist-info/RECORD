@@ -1,0 +1,12 @@
+icanexplain/__init__.py,sha256=d9FUo207XVcqubSyYMvxlaFFmBppggLkkrfapyWu0Kg,14540
+icanexplain/datasets/iowa_whiskey_sales.csv.zip,sha256=O0khAHffAWOjJ1Vedf0B8n3A7FzHIs2l5iisHpQvMIE,536155
+icanexplain/datasets/product_footprints.csv.gz,sha256=U3QOZcnQ5mpfSebL0vBIYUeVc0r5S2rWlijalVEso0c,1595257
+icanexplain/datasets/us_general_election_popular_vote.csv.zip,sha256=Jrb-YaIlmauOxKFId8k8c6EvV2461CzPtI1ouPA24yo,247939
+icanexplain/datasets/world_demography.csv,sha256=MGhMOeSQnM1y2tFU4dH9Eoni8VIz-r6WmbVtSnlqVpc,30608
+icanexplain/datasets.py,sha256=8TL_KpV7IdG9kgye4t-ZXq4TyoXztKT9yz9eMW-iL2U,974
+icanexplain/test_mean.py,sha256=HTKdax8GL4sHDE5LlRG8aagN1s_uxonGcmb8z_-nrvk,12544
+icanexplain/test_sum.py,sha256=jDNxvr4N_6CO6Sb2fHO-h_OexwxK4-e7-dOuen3cRT4,9016
+icanexplain-0.3.0.dist-info/LICENSE,sha256=UOZ1F5fFDe3XXvG4oNnkL1-Ecun7zpHzRxjp-XsMeAo,11324
+icanexplain-0.3.0.dist-info/METADATA,sha256=irHlv0_cu7Zp0foL8nmaOXtGAlGhG5QJceEtwBLo6_8,5911
+icanexplain-0.3.0.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+icanexplain-0.3.0.dist-info/RECORD,,
