@@ -1,0 +1,2 @@
+gamuLogger>=2.0.6
+lxml>=4.6.3
