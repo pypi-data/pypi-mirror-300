@@ -1,0 +1,16 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+scholtrack/__init__.py
+scholtrack/api.py
+scholtrack/cli.py
+scholtrack/exporter.py
+scholtrack.egg-info/PKG-INFO
+scholtrack.egg-info/SOURCES.txt
+scholtrack.egg-info/dependency_links.txt
+scholtrack.egg-info/entry_points.txt
+scholtrack.egg-info/requires.txt
+scholtrack.egg-info/top_level.txt
+scholtrack/collections/4dgs.txt
+scholtrack/collections/nvs.txt
