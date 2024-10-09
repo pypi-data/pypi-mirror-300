@@ -1,0 +1,6 @@
+setup.py
+cmdb_worker_pckg.egg-info/PKG-INFO
+cmdb_worker_pckg.egg-info/SOURCES.txt
+cmdb_worker_pckg.egg-info/dependency_links.txt
+cmdb_worker_pckg.egg-info/not-zip-safe
+cmdb_worker_pckg.egg-info/top_level.txt
