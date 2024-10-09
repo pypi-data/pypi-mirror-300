@@ -1,0 +1,3 @@
+[cfmtoolbox.plugins]
+hello-world=cfmtoolbox_rick_roll
+
