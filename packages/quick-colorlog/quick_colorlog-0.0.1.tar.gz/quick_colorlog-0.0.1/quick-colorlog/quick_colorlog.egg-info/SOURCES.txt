@@ -1,0 +1,6 @@
+pyproject.toml
+quick-colorlog/quick_colorlog.egg-info/PKG-INFO
+quick-colorlog/quick_colorlog.egg-info/SOURCES.txt
+quick-colorlog/quick_colorlog.egg-info/dependency_links.txt
+quick-colorlog/quick_colorlog.egg-info/requires.txt
+quick-colorlog/quick_colorlog.egg-info/top_level.txt
