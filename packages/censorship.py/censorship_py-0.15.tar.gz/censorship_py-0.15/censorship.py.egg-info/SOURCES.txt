@@ -1,0 +1,10 @@
+README.md
+setup.py
+censorship/__init__.py
+censorship/censure.py
+censorship/tools.py
+censorship.py.egg-info/PKG-INFO
+censorship.py.egg-info/SOURCES.txt
+censorship.py.egg-info/dependency_links.txt
+censorship.py.egg-info/requires.txt
+censorship.py.egg-info/top_level.txt
