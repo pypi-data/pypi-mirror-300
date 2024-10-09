@@ -1,0 +1,14 @@
+scm_config_clone/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+scm_config_clone/commands/__init__.py,sha256=AiELjaMWx_quANhoVK7g-MjnRS9GTJ4UZF0-lxVs9E8,336
+scm_config_clone/commands/clone_address_groups.py,sha256=KHTpvtbbaVZUWBW64wqPYp7cb4yOT78y4BsYz8xHTO8,2610
+scm_config_clone/commands/clone_address_objects.py,sha256=mg-p8bTvTtpx80-2dDHG6u0L_fCTtqwvhw-2AXD4YsM,2635
+scm_config_clone/commands/create_secrets_file.py,sha256=XEBr5Ssr34BOxlWY4gQNb8_7_MkZ6S_v45eXSuugeuE,2501
+scm_config_clone/config/settings.py,sha256=-zTyO4L4Pc5Sizr7hDiV5T7aP6bSejUndYFKdwb-uHg,1588
+scm_config_clone/main.py,sha256=0HkvEFy7xFfxX4uIaJ0VHzRD13bTnCuTwGotlZ3tdsY,904
+scm_config_clone/utilities/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+scm_config_clone/utilities/helpers.py,sha256=UBB0EUt-szFF8KRUFC_Hjb3lNQthQ6g_Y1F6NDiJLkA,5368
+scm_config_clone-0.1.0.dist-info/LICENSE,sha256=S8TA_4Vyl8KLHKp5ixf36yN5T_qCwYINMHLe8VsckkE,11348
+scm_config_clone-0.1.0.dist-info/METADATA,sha256=TLVuJ80GA566lgkf2bDe-0UcrsphhVmNOmCZzWLTfAE,5764
+scm_config_clone-0.1.0.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+scm_config_clone-0.1.0.dist-info/entry_points.txt,sha256=W4q4Z8LSMI-vLjmqIlEIqD4LGODp6DGLu5rBvqL7FEs,55
+scm_config_clone-0.1.0.dist-info/RECORD,,
