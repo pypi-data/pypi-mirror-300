@@ -1,0 +1,12 @@
+astc_encoder/enum.py,sha256=uZ1tJBME-jacwchl7yVjZUxjCaDZuKhpCvvjW2354rI,2338
+astc_encoder/_encoder_neon.pypy310-pp73-aarch64-linux-gnu.so,sha256=-s_yTXe3FvebTNzXMZbtnqzW9y_hitDFHXgkotKPt80,434360
+astc_encoder/encoder.py,sha256=YW4KgLUraL8bN_wPSMURJZpXtQrsjifwTpqivwvUkMg,858
+astc_encoder/encoder.pyi,sha256=z1-NY71A16kdwkOlP690y2jWeNwHyyH_e50Cy4cdMKw,9027
+astc_encoder/__init__.py,sha256=QxfMLjEnVHOOVhmthlZ7tKu8FoncnsMMs29y_JZ8ikg,260
+astc_encoder/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+astc_encoder/_encoder_none.pypy310-pp73-aarch64-linux-gnu.so,sha256=J-51x1E2t9VPC2frU7nGMCnJQnA1ItVTJnrvqiLczW4,434464
+astc_encoder_py-0.1.5.dist-info/LICENSE,sha256=hxsBoG6tUMQl_gNofmfgSxdD5ZRmQ4sTAd5-GvsRcx4,1069
+astc_encoder_py-0.1.5.dist-info/METADATA,sha256=DiIuEUp8lvs5uHGC7kDiBSt4E1kYv4TKFzgI65Fs2_c,4401
+astc_encoder_py-0.1.5.dist-info/RECORD,,
+astc_encoder_py-0.1.5.dist-info/WHEEL,sha256=2-3Xk2BiD45r-vtMDGcHRfm_egkMobYosDryJ83MpE8,168
+astc_encoder_py-0.1.5.dist-info/top_level.txt,sha256=R4vI4dAALAfMnXFMMrW7PZc-_2RDaOTxFIFcwYBdiEU,13
