@@ -1,0 +1,73 @@
+Metadata-Version: 2.1
+Name: gqxls
+Version: 0.0.8
+Summary: Consolidation package for daily use
+Author: S Liao
+Author-email: shunliaopetroleum@163.com
+License: GNU General Public License v3.0
+Project-URL: Source, https://github.com/891011well/gqxls
+Project-URL: Bug Tracker, https://github.com/891011well/gqxls/issues
+Keywords: python,gqxls
+Platform: any
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Programming Language :: Python :: 3.11
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: pillow
+Requires-Dist: pymupdf
+
+
+# gqxls
+
+
+
+*<u>A package for daily ues.</u>*
+
+
+
+## A. Functions
+
+
+
+### 1. Convert PDF to image
+
+
+
+### 2. Get the specified directory suffix file absolute directory
+
+
+
+### 3. Generate specified random string
+
+
+
+## B. Long term plan
+
+The package requires the following free softwares to work as expected:
+
+- pillow
+
+- pymupdf
+
+
+
+## Changelog
+
+
+
+*0.0.7*
+
+- Modify some functions.
+
+
+
+*0.0.6*
+
+- Modify some functions.
+
+
+
+*0.0.5*
+
+- Fix PIP failed to install.
