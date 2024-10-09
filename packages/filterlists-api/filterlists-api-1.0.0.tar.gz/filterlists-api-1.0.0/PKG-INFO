@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: filterlists-api
+Version: 1.0.0
+Summary: FilterLists Directory API
+Home-page: UNKNOWN
+Author: FilterLists
+Author-email: team@openapitools.org
+License: MIT License
+Keywords: OpenAPI,OpenAPI-Generator,FilterLists Directory API
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+
+    An ASP.NET Core API serving the core FilterList information.
+    
+
