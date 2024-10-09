@@ -1,0 +1,131 @@
+{
+  "tests/aws/services/apigatewayv2/test_apigatewayv2_aws_kinesis.py::TestHttpApiAwsProxySubtypeKinesis::test_apigw_v2_http_kinesis_put_record": {
+    "recorded-date": "14-09-2024, 14:27:52",
+    "recorded-content": {
+      "create-kinesis-integration": {
+        "ConnectionType": "INTERNET",
+        "CredentialsArn": "arn:<partition>:iam::111111111111:role/<resource:1>",
+        "IntegrationId": "<integration-id:1>",
+        "IntegrationSubtype": "Kinesis-PutRecord",
+        "IntegrationType": "AWS_PROXY",
+        "PayloadFormatVersion": "1.0",
+        "RequestParameters": {
+          "Data": "$request.body.payload",
+          "PartitionKey": "$request.body.kinesisKey",
+          "StreamName": "<stream-name:1>"
+        },
+        "TimeoutInMillis": 30000,
+        "ResponseMetadata": {
+          "HTTPHeaders": {},
+          "HTTPStatusCode": 201
+        }
+      },
+      "create-kinesis-route": {
+        "ApiKeyRequired": false,
+        "AuthorizationType": "NONE",
+        "RouteId": "<route-id:1>",
+        "RouteKey": "POST /",
+        "Target": "integrations/<integration-id:1>",
+        "ResponseMetadata": {
+          "HTTPHeaders": {},
+          "HTTPStatusCode": 201
+        }
+      },
+      "kinesis-integration-no-content-type": {
+        "content": {
+          "SequenceNumber": "<sequence-number:1>",
+          "ShardId": "<shard-id:1>"
+        },
+        "headers": {
+          "Connection": "keep-alive",
+          "Content-Length": "110",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "<date>",
+          "apigw-requestid": "<apigw-requestid:1>",
+          "x-amz-id-2": "<x-amz-id-2:1>",
+          "x-amzn-RequestId": "<x-amzn--request-id:1>"
+        }
+      },
+      "kinesis-integration-json": {
+        "content": {
+          "SequenceNumber": "<sequence-number:2>",
+          "ShardId": "<shard-id:1>"
+        },
+        "headers": {
+          "Connection": "keep-alive",
+          "Content-Length": "110",
+          "Content-Type": "application/x-amz-json-1.1",
+          "Date": "<date>",
+          "apigw-requestid": "<apigw-requestid:2>",
+          "x-amz-id-2": "<x-amz-id-2:2>",
+          "x-amzn-RequestId": "<x-amzn--request-id:2>"
+        }
+      }
+    }
+  },
+  "tests/aws/services/apigatewayv2/test_apigatewayv2_aws_kinesis.py::TestHttpApiAwsProxySubtypeKinesis::test_apigw_v2_http_kinesis_put_record_no_stream": {
+    "recorded-date": "14-09-2024, 16:17:34",
+    "recorded-content": {
+      "kinesis-integration-missing-required": {
+        "content": {
+          "message": "Bad Request"
+        },
+        "headers": {
+          "Connection": "keep-alive",
+          "Content-Length": "25",
+          "Content-Type": "application/json",
+          "Date": "<date>",
+          "apigw-requestid": "<apigw-requestid:1>"
+        }
+      },
+      "kinesis-integration-missing-optional": {
+        "content": {
+          "message": "Bad Request"
+        },
+        "headers": {
+          "Connection": "keep-alive",
+          "Content-Length": "25",
+          "Content-Type": "application/json",
+          "Date": "<date>",
+          "apigw-requestid": "<apigw-requestid:2>"
+        }
+      },
+      "kinesis-integration-empty-required": {
+        "content": {
+          "message": "Bad Request"
+        },
+        "headers": {
+          "Connection": "keep-alive",
+          "Content-Length": "25",
+          "Content-Type": "application/json",
+          "Date": "<date>",
+          "apigw-requestid": "<apigw-requestid:3>"
+        }
+      },
+      "kinesis-integration-empty-optional": {
+        "content": {
+          "message": "Bad Request"
+        },
+        "headers": {
+          "Connection": "keep-alive",
+          "Content-Length": "25",
+          "Content-Type": "application/json",
+          "Date": "<date>",
+          "apigw-requestid": "<apigw-requestid:4>"
+        }
+      },
+      "kinesis-integration-bad-stream-name": {
+        "content": {
+          "message": "Internal Server Error"
+        },
+        "headers": {
+          "Connection": "keep-alive",
+          "Content-Length": "35",
+          "Content-Type": "application/json",
+          "Date": "<date>",
+          "apigw-requestid": "<apigw-requestid:5>"
+        }
+      }
+    }
+  }
+}

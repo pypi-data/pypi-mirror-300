@@ -1,0 +1,870 @@
+{
+  "tests/aws/services/apigatewayv2/test_apigatewayv2_http_cors.py::TestApigatewayV2CorsCrud::test_apigwv2_cors_crud_lifecycle": {
+    "recorded-date": "27-08-2024, 13:25:19",
+    "recorded-content": {
+      "create-api": {
+        "ApiEndpoint": "<api-endpoint:1>",
+        "ApiId": "<api-id:1>",
+        "ApiKeySelectionExpression": "$request.header.x-api-key",
+        "CorsConfiguration": {
+          "AllowCredentials": true,
+          "AllowHeaders": [
+            "testheader"
+          ],
+          "AllowMethods": [
+            "POST",
+            "GET"
+          ],
+          "AllowOrigins": [
+            "http://localhost:3000"
+          ],
+          "ExposeHeaders": [
+            "exposedheader"
+          ],
+          "MaxAge": 10
+        },
+        "CreatedDate": "datetime",
+        "DisableExecuteApiEndpoint": false,
+        "Name": "<name:1>",
+        "ProtocolType": "HTTP",
+        "RouteSelectionExpression": "$request.method $request.path",
+        "ResponseMetadata": {
+          "HTTPHeaders": {},
+          "HTTPStatusCode": 201
+        }
+      },
+      "get-api": {
+        "ApiEndpoint": "<api-endpoint:1>",
+        "ApiId": "<api-id:1>",
+        "ApiKeySelectionExpression": "$request.header.x-api-key",
+        "CorsConfiguration": {
+          "AllowCredentials": true,
+          "AllowHeaders": [
+            "testheader"
+          ],
+          "AllowMethods": [
+            "POST",
+            "GET"
+          ],
+          "AllowOrigins": [
+            "http://localhost:3000"
+          ],
+          "ExposeHeaders": [
+            "exposedheader"
+          ],
+          "MaxAge": 10
+        },
+        "CreatedDate": "datetime",
+        "DisableExecuteApiEndpoint": false,
+        "Name": "<name:1>",
+        "ProtocolType": "HTTP",
+        "RouteSelectionExpression": "$request.method $request.path",
+        "Tags": {},
+        "ResponseMetadata": {
+          "HTTPHeaders": {},
+          "HTTPStatusCode": 200
+        }
+      },
+      "update-api": {
+        "ApiEndpoint": "<api-endpoint:1>",
+        "ApiId": "<api-id:1>",
+        "ApiKeySelectionExpression": "$request.header.x-api-key",
+        "CorsConfiguration": {
+          "AllowCredentials": true,
+          "AllowHeaders": [
+            "testheader"
+          ],
+          "AllowMethods": [
+            "PATCH"
+          ],
+          "AllowOrigins": [
+            "http://localhost:3000"
+          ],
+          "ExposeHeaders": [
+            "exposedheader"
+          ],
+          "MaxAge": 10
+        },
+        "CreatedDate": "datetime",
+        "DisableExecuteApiEndpoint": false,
+        "Name": "<name:1>",
+        "ProtocolType": "HTTP",
+        "RouteSelectionExpression": "$request.method $request.path",
+        "Tags": {},
+        "ResponseMetadata": {
+          "HTTPHeaders": {},
+          "HTTPStatusCode": 201
+        }
+      },
+      "get-api-after-update": {
+        "ApiEndpoint": "<api-endpoint:1>",
+        "ApiId": "<api-id:1>",
+        "ApiKeySelectionExpression": "$request.header.x-api-key",
+        "CorsConfiguration": {
+          "AllowCredentials": true,
+          "AllowHeaders": [
+            "testheader"
+          ],
+          "AllowMethods": [
+            "PATCH"
+          ],
+          "AllowOrigins": [
+            "http://localhost:3000"
+          ],
+          "ExposeHeaders": [
+            "exposedheader"
+          ],
+          "MaxAge": 10
+        },
+        "CreatedDate": "datetime",
+        "DisableExecuteApiEndpoint": false,
+        "Name": "<name:1>",
+        "ProtocolType": "HTTP",
+        "RouteSelectionExpression": "$request.method $request.path",
+        "Tags": {},
+        "ResponseMetadata": {
+          "HTTPHeaders": {},
+          "HTTPStatusCode": 200
+        }
+      },
+      "delete-cors": {
+        "ResponseMetadata": {
+          "HTTPHeaders": {},
+          "HTTPStatusCode": 204
+        }
+      },
+      "get-api-after-delete": {
+        "ApiEndpoint": "<api-endpoint:1>",
+        "ApiId": "<api-id:1>",
+        "ApiKeySelectionExpression": "$request.header.x-api-key",
+        "CreatedDate": "datetime",
+        "DisableExecuteApiEndpoint": false,
+        "Name": "<name:1>",
+        "ProtocolType": "HTTP",
+        "RouteSelectionExpression": "$request.method $request.path",
+        "Tags": {},
+        "ResponseMetadata": {
+          "HTTPHeaders": {},
+          "HTTPStatusCode": 200
+        }
+      },
+      "create-api-default-cors": {
+        "ApiEndpoint": "<api-endpoint:2>",
+        "ApiId": "<api-id:2>",
+        "ApiKeySelectionExpression": "$request.header.x-api-key",
+        "CorsConfiguration": {
+          "AllowOrigins": [
+            "http://localhost:3000"
+          ]
+        },
+        "CreatedDate": "datetime",
+        "DisableExecuteApiEndpoint": false,
+        "Name": "<name:2>",
+        "ProtocolType": "HTTP",
+        "RouteSelectionExpression": "$request.method $request.path",
+        "ResponseMetadata": {
+          "HTTPHeaders": {},
+          "HTTPStatusCode": 201
+        }
+      }
+    }
+  },
+  "tests/aws/services/apigatewayv2/test_apigatewayv2_http_cors.py::TestApigatewayV2CorsCrud::test_apigwv2_cors_crud_validation": {
+    "recorded-date": "02-09-2024, 09:22:35",
+    "recorded-content": {
+      "no-partial-wildcard": {
+        "Error": {
+          "Code": "BadRequestException",
+          "Message": "allow-origin https://*.domain.com can not have wildcards"
+        },
+        "Message": "allow-origin https://*.domain.com can not have wildcards",
+        "ResponseMetadata": {
+          "HTTPHeaders": {},
+          "HTTPStatusCode": 400
+        }
+      },
+      "no-partial-origin": {
+        "Error": {
+          "Code": "BadRequestException",
+          "Message": "Invalid format for origin https:/"
+        },
+        "Message": "Invalid format for origin https:/",
+        "ResponseMetadata": {
+          "HTTPHeaders": {},
+          "HTTPStatusCode": 400
+        }
+      },
+      "no-credentials-with-wildcard": {
+        "Error": {
+          "Code": "BadRequestException",
+          "Message": "allow-credentials is not supported if 'allow-origin' is *"
+        },
+        "Message": "allow-credentials is not supported if 'allow-origin' is *",
+        "ResponseMetadata": {
+          "HTTPHeaders": {},
+          "HTTPStatusCode": 400
+        }
+      },
+      "bad-allowed-methods": {
+        "Error": {
+          "Code": "BadRequestException",
+          "Message": "Method BAD is not supported"
+        },
+        "Message": "Method BAD is not supported",
+        "ResponseMetadata": {
+          "HTTPHeaders": {},
+          "HTTPStatusCode": 400
+        }
+      },
+      "create-api-with-wildcard": {
+        "ApiEndpoint": "<api-endpoint:1>",
+        "ApiId": "<api-id:1>",
+        "ApiKeySelectionExpression": "$request.header.x-api-key",
+        "CorsConfiguration": {
+          "AllowOrigins": [
+            "*"
+          ]
+        },
+        "CreatedDate": "datetime",
+        "DisableExecuteApiEndpoint": false,
+        "Name": "<name:1>",
+        "ProtocolType": "HTTP",
+        "RouteSelectionExpression": "$request.method $request.path",
+        "ResponseMetadata": {
+          "HTTPHeaders": {},
+          "HTTPStatusCode": 201
+        }
+      },
+      "update-credentials-with-wilcard": {
+        "Error": {
+          "Code": "BadRequestException",
+          "Message": "allow-credentials is not supported if 'allow-origin' is *"
+        },
+        "Message": "allow-credentials is not supported if 'allow-origin' is *",
+        "ResponseMetadata": {
+          "HTTPHeaders": {},
+          "HTTPStatusCode": 400
+        }
+      },
+      "update-bad-method": {
+        "Error": {
+          "Code": "BadRequestException",
+          "Message": "Method BAD is not supported"
+        },
+        "Message": "Method BAD is not supported",
+        "ResponseMetadata": {
+          "HTTPHeaders": {},
+          "HTTPStatusCode": 400
+        }
+      }
+    }
+  },
+  "tests/aws/services/apigatewayv2/test_apigatewayv2_http_cors.py::TestApigatewayV2Cors::test_no_cors_config_with_no_cors_integration": {
+    "recorded-date": "29-08-2024, 12:10:58",
+    "recorded-content": {
+      "create-api": {
+        "ApiEndpoint": "<api-endpoint:1>",
+        "ApiId": "<api-id:1>",
+        "ApiKeySelectionExpression": "$request.header.x-api-key",
+        "CreatedDate": "datetime",
+        "DisableExecuteApiEndpoint": false,
+        "Name": "<name:1>",
+        "ProtocolType": "HTTP",
+        "RouteSelectionExpression": "$request.method $request.path",
+        "ResponseMetadata": {
+          "HTTPHeaders": {},
+          "HTTPStatusCode": 201
+        }
+      },
+      "get-req-no-cors": {
+        "content": {},
+        "headers": {
+          "apigw-requestid": "<apigw-requestid:1>"
+        },
+        "statusCode": 200
+      },
+      "get-req-cors": {
+        "content": {},
+        "headers": {
+          "apigw-requestid": "<apigw-requestid:2>"
+        },
+        "statusCode": 200
+      },
+      "options-req-no-cors-on-get": {
+        "content": {
+          "message": "Not Found"
+        },
+        "headers": {
+          "apigw-requestid": "<apigw-requestid:3>"
+        },
+        "statusCode": 404
+      },
+      "options-req-cors-on-get": {
+        "content": {
+          "message": "Not Found"
+        },
+        "headers": {
+          "apigw-requestid": "<apigw-requestid:4>"
+        },
+        "statusCode": 404
+      },
+      "options-req-no-cors": {
+        "content": "DELETE,GET,HEAD,PATCH,POST,PUT",
+        "headers": {
+          "apigw-requestid": "<apigw-requestid:5>"
+        },
+        "statusCode": 200
+      },
+      "options-req-cors": {
+        "content": "DELETE,GET,HEAD,PATCH,POST,PUT",
+        "headers": {
+          "apigw-requestid": "<apigw-requestid:6>"
+        },
+        "statusCode": 200
+      }
+    }
+  },
+  "tests/aws/services/apigatewayv2/test_apigatewayv2_http_cors.py::TestApigatewayV2Cors::test_no_cors_config_with_cors_integration": {
+    "recorded-date": "29-08-2024, 12:11:06",
+    "recorded-content": {
+      "create-api": {
+        "ApiEndpoint": "<api-endpoint:1>",
+        "ApiId": "<api-id:1>",
+        "ApiKeySelectionExpression": "$request.header.x-api-key",
+        "CreatedDate": "datetime",
+        "DisableExecuteApiEndpoint": false,
+        "Name": "<name:1>",
+        "ProtocolType": "HTTP",
+        "RouteSelectionExpression": "$request.method $request.path",
+        "ResponseMetadata": {
+          "HTTPHeaders": {},
+          "HTTPStatusCode": 201
+        }
+      },
+      "get-req-no-cors": {
+        "content": {
+          "Access-Control-Allow-Credentials": "true",
+          "Access-Control-Allow-Origin": "https://localhost:3000",
+          "Access-Control-Expose-Headers": "X-My-Custom-Header, X-Another-Custom-Header"
+        },
+        "headers": {
+          "access-control-allow-credentials": "true",
+          "access-control-allow-origin": "https://localhost:3000",
+          "access-control-expose-headers": "X-My-Custom-Header, X-Another-Custom-Header",
+          "apigw-requestid": "<apigw-requestid:1>"
+        },
+        "statusCode": 200
+      },
+      "get-req-cors": {
+        "content": {
+          "Access-Control-Allow-Credentials": "true",
+          "Access-Control-Allow-Origin": "https://localhost:3000",
+          "Access-Control-Expose-Headers": "X-My-Custom-Header, X-Another-Custom-Header"
+        },
+        "headers": {
+          "access-control-allow-credentials": "true",
+          "access-control-allow-origin": "https://localhost:3000",
+          "access-control-expose-headers": "X-My-Custom-Header, X-Another-Custom-Header",
+          "apigw-requestid": "<apigw-requestid:2>"
+        },
+        "statusCode": 200
+      },
+      "options-req-no-cors-on-get": {
+        "content": {
+          "message": "Not Found"
+        },
+        "headers": {
+          "apigw-requestid": "<apigw-requestid:3>"
+        },
+        "statusCode": 404
+      },
+      "options-req-cors-on-get": {
+        "content": {
+          "message": "Not Found"
+        },
+        "headers": {
+          "apigw-requestid": "<apigw-requestid:4>"
+        },
+        "statusCode": 404
+      },
+      "options-req-no-cors": {
+        "content": "",
+        "headers": {
+          "access-control-allow-credentials": "true",
+          "access-control-allow-methods": "GET, POST, PUT, DELETE, PATCH, OPTIONS",
+          "access-control-allow-origin": "*",
+          "access-control-max-age": "3600",
+          "apigw-requestid": "<apigw-requestid:5>"
+        },
+        "statusCode": 200
+      },
+      "options-req-cors": {
+        "content": "",
+        "headers": {
+          "access-control-allow-credentials": "true",
+          "access-control-allow-methods": "GET, POST, PUT, DELETE, PATCH, OPTIONS",
+          "access-control-allow-origin": "http://localhost:3000",
+          "access-control-max-age": "3600",
+          "apigw-requestid": "<apigw-requestid:6>"
+        },
+        "statusCode": 200
+      }
+    }
+  },
+  "tests/aws/services/apigatewayv2/test_apigatewayv2_http_cors.py::TestApigatewayV2Cors::test_cors_config_with_no_cors_integration": {
+    "recorded-date": "29-08-2024, 12:11:15",
+    "recorded-content": {
+      "create-api": {
+        "ApiEndpoint": "<api-endpoint:1>",
+        "ApiId": "<api-id:1>",
+        "ApiKeySelectionExpression": "$request.header.x-api-key",
+        "CorsConfiguration": {
+          "AllowCredentials": true,
+          "AllowHeaders": [
+            "testheader"
+          ],
+          "AllowMethods": [
+            "POST",
+            "GET"
+          ],
+          "AllowOrigins": [
+            "http://localhost:4000"
+          ],
+          "ExposeHeaders": [
+            "exposedheader"
+          ],
+          "MaxAge": 10
+        },
+        "CreatedDate": "datetime",
+        "DisableExecuteApiEndpoint": false,
+        "Name": "<name:1>",
+        "ProtocolType": "HTTP",
+        "RouteSelectionExpression": "$request.method $request.path",
+        "ResponseMetadata": {
+          "HTTPHeaders": {},
+          "HTTPStatusCode": 201
+        }
+      },
+      "get-req-no-cors": {
+        "content": {},
+        "headers": {
+          "apigw-requestid": "<apigw-requestid:1>"
+        },
+        "statusCode": 200
+      },
+      "get-req-cors-ok": {
+        "content": {},
+        "headers": {
+          "access-control-allow-credentials": "true",
+          "access-control-allow-origin": "http://localhost:4000",
+          "access-control-expose-headers": "exposedheader",
+          "apigw-requestid": "<apigw-requestid:2>"
+        },
+        "statusCode": 200
+      },
+      "get-req-cors-not-ok": {
+        "content": {},
+        "headers": {
+          "apigw-requestid": "<apigw-requestid:3>"
+        },
+        "statusCode": 200
+      },
+      "options-req-no-cors-on-get-no-origin": {
+        "content": "",
+        "headers": {
+          "apigw-requestid": "<apigw-requestid:4>"
+        },
+        "statusCode": 204
+      },
+      "options-req-cors-on-get-origin-no-methods": {
+        "content": "",
+        "headers": {
+          "apigw-requestid": "<apigw-requestid:5>"
+        },
+        "statusCode": 204
+      },
+      "options-req-cors-on-get-origin-methods": {
+        "content": "",
+        "headers": {
+          "access-control-allow-credentials": "true",
+          "access-control-allow-headers": "testheader",
+          "access-control-allow-methods": "GET,POST",
+          "access-control-allow-origin": "http://localhost:4000",
+          "access-control-max-age": "10",
+          "apigw-requestid": "<apigw-requestid:6>"
+        },
+        "statusCode": 204
+      },
+      "options-req-no-cors": {
+        "content": "DELETE,GET,HEAD,PATCH,POST,PUT",
+        "headers": {
+          "apigw-requestid": "<apigw-requestid:7>"
+        },
+        "statusCode": 200
+      },
+      "options-req-cors-not-ok": {
+        "content": "DELETE,GET,HEAD,PATCH,POST,PUT",
+        "headers": {
+          "apigw-requestid": "<apigw-requestid:8>"
+        },
+        "statusCode": 200
+      },
+      "options-req-cors-ok": {
+        "content": "DELETE,GET,HEAD,PATCH,POST,PUT",
+        "headers": {
+          "access-control-allow-credentials": "true",
+          "access-control-allow-headers": "testheader",
+          "access-control-allow-methods": "GET,POST",
+          "access-control-allow-origin": "http://localhost:4000",
+          "access-control-max-age": "10",
+          "apigw-requestid": "<apigw-requestid:9>"
+        },
+        "statusCode": 200
+      }
+    }
+  },
+  "tests/aws/services/apigatewayv2/test_apigatewayv2_http_cors.py::TestApigatewayV2Cors::test_cors_config_with_cors_integration": {
+    "recorded-date": "29-08-2024, 12:11:24",
+    "recorded-content": {
+      "create-api": {
+        "ApiEndpoint": "<api-endpoint:1>",
+        "ApiId": "<api-id:1>",
+        "ApiKeySelectionExpression": "$request.header.x-api-key",
+        "CorsConfiguration": {
+          "AllowCredentials": true,
+          "AllowHeaders": [
+            "testheader"
+          ],
+          "AllowMethods": [
+            "POST",
+            "GET"
+          ],
+          "AllowOrigins": [
+            "http://localhost:4000"
+          ],
+          "ExposeHeaders": [
+            "exposedheader"
+          ],
+          "MaxAge": 10
+        },
+        "CreatedDate": "datetime",
+        "DisableExecuteApiEndpoint": false,
+        "Name": "<name:1>",
+        "ProtocolType": "HTTP",
+        "RouteSelectionExpression": "$request.method $request.path",
+        "ResponseMetadata": {
+          "HTTPHeaders": {},
+          "HTTPStatusCode": 201
+        }
+      },
+      "get-req-no-cors": {
+        "content": {
+          "Access-Control-Allow-Credentials": "true",
+          "Access-Control-Allow-Origin": "https://localhost:3000",
+          "Access-Control-Expose-Headers": "X-My-Custom-Header, X-Another-Custom-Header"
+        },
+        "headers": {
+          "apigw-requestid": "<apigw-requestid:1>"
+        },
+        "statusCode": 200
+      },
+      "get-req-cors-ok": {
+        "content": {
+          "Access-Control-Allow-Credentials": "true",
+          "Access-Control-Allow-Origin": "https://localhost:3000",
+          "Access-Control-Expose-Headers": "X-My-Custom-Header, X-Another-Custom-Header"
+        },
+        "headers": {
+          "access-control-allow-credentials": "true",
+          "access-control-allow-origin": "http://localhost:4000",
+          "access-control-expose-headers": "exposedheader",
+          "apigw-requestid": "<apigw-requestid:2>"
+        },
+        "statusCode": 200
+      },
+      "get-req-cors-not-ok": {
+        "content": {
+          "Access-Control-Allow-Credentials": "true",
+          "Access-Control-Allow-Origin": "https://localhost:3000",
+          "Access-Control-Expose-Headers": "X-My-Custom-Header, X-Another-Custom-Header"
+        },
+        "headers": {
+          "apigw-requestid": "<apigw-requestid:3>"
+        },
+        "statusCode": 200
+      },
+      "options-req-no-cors-on-get-no-origin": {
+        "content": "",
+        "headers": {
+          "apigw-requestid": "<apigw-requestid:4>"
+        },
+        "statusCode": 204
+      },
+      "options-req-cors-on-get-origin-no-methods": {
+        "content": "",
+        "headers": {
+          "apigw-requestid": "<apigw-requestid:5>"
+        },
+        "statusCode": 204
+      },
+      "options-req-cors-on-get-origin-methods": {
+        "content": "",
+        "headers": {
+          "access-control-allow-credentials": "true",
+          "access-control-allow-headers": "testheader",
+          "access-control-allow-methods": "GET,POST",
+          "access-control-allow-origin": "http://localhost:4000",
+          "access-control-max-age": "10",
+          "apigw-requestid": "<apigw-requestid:6>"
+        },
+        "statusCode": 204
+      },
+      "options-req-no-cors": {
+        "content": "",
+        "headers": {
+          "apigw-requestid": "<apigw-requestid:7>"
+        },
+        "statusCode": 200
+      },
+      "options-req-cors-not-ok": {
+        "content": "",
+        "headers": {
+          "apigw-requestid": "<apigw-requestid:8>"
+        },
+        "statusCode": 200
+      },
+      "options-req-cors-ok": {
+        "content": "",
+        "headers": {
+          "access-control-allow-credentials": "true",
+          "access-control-allow-headers": "testheader",
+          "access-control-allow-methods": "GET,POST",
+          "access-control-allow-origin": "http://localhost:4000",
+          "access-control-max-age": "10",
+          "apigw-requestid": "<apigw-requestid:9>"
+        },
+        "statusCode": 200
+      }
+    }
+  },
+  "tests/aws/services/apigatewayv2/test_apigatewayv2_http_cors.py::TestApigatewayV2Cors::test_cors_updated_on_non_updated_deployment": {
+    "recorded-date": "29-08-2024, 12:20:29",
+    "recorded-content": {
+      "get-deployments": {
+        "Items": [],
+        "ResponseMetadata": {
+          "HTTPHeaders": {},
+          "HTTPStatusCode": 200
+        }
+      },
+      "options-req-cors-ok-not-configured": {
+        "content": "DELETE,GET,HEAD,PATCH,POST,PUT",
+        "headers": {
+          "apigw-requestid": "<apigw-requestid:1>"
+        },
+        "statusCode": 200
+      },
+      "update-cors": {
+        "ApiEndpoint": "<api-endpoint:1>",
+        "ApiId": "<api-id:1>",
+        "ApiKeySelectionExpression": "$request.header.x-api-key",
+        "CorsConfiguration": {
+          "AllowHeaders": [
+            "testheader",
+            "x-test-header",
+            "another-header"
+          ],
+          "AllowMethods": [
+            "POST",
+            "GET",
+            "PATCH"
+          ],
+          "AllowOrigins": [
+            "http://localhost:4000"
+          ]
+        },
+        "CreatedDate": "datetime",
+        "DisableExecuteApiEndpoint": false,
+        "Name": "<name:1>",
+        "ProtocolType": "HTTP",
+        "RouteSelectionExpression": "$request.method $request.path",
+        "Tags": {},
+        "ResponseMetadata": {
+          "HTTPHeaders": {},
+          "HTTPStatusCode": 201
+        }
+      },
+      "options-req-cors-ok-configured": {
+        "content": "DELETE,GET,HEAD,PATCH,POST,PUT",
+        "headers": {
+          "apigw-requestid": "<apigw-requestid:2>"
+        },
+        "statusCode": 200
+      },
+      "options-req-cors-ok-deployed": {
+        "content": "DELETE,GET,HEAD,PATCH,POST,PUT",
+        "headers": {
+          "access-control-allow-headers": "another-header,testheader,x-test-header",
+          "access-control-allow-methods": "GET,PATCH,POST",
+          "access-control-allow-origin": "http://localhost:4000",
+          "apigw-requestid": "<apigw-requestid:3>"
+        },
+        "statusCode": 200
+      },
+      "options-req-cors-ok-deleted": {
+        "content": "DELETE,GET,HEAD,PATCH,POST,PUT",
+        "headers": {
+          "access-control-allow-headers": "another-header,testheader,x-test-header",
+          "access-control-allow-methods": "GET,PATCH,POST",
+          "access-control-allow-origin": "http://localhost:4000",
+          "apigw-requestid": "<apigw-requestid:4>"
+        },
+        "statusCode": 200
+      },
+      "options-req-cors-ok-now-deleted": {
+        "content": "DELETE,GET,HEAD,PATCH,POST,PUT",
+        "headers": {
+          "apigw-requestid": "<apigw-requestid:5>"
+        },
+        "statusCode": 200
+      }
+    }
+  },
+  "tests/aws/services/apigatewayv2/test_apigatewayv2_http_cors.py::TestApigatewayV2Cors::test_partial_cors_config_never_matches": {
+    "recorded-date": "29-08-2024, 12:12:18",
+    "recorded-content": {
+      "options-req-cors-ok": {
+        "content": "DELETE,GET,HEAD,PATCH,POST,PUT",
+        "headers": {
+          "apigw-requestid": "<apigw-requestid:1>"
+        },
+        "statusCode": 200
+      },
+      "options-req-cors-with-methods": {
+        "content": "DELETE,GET,HEAD,PATCH,POST,PUT",
+        "headers": {
+          "access-control-allow-headers": "",
+          "access-control-allow-methods": "*",
+          "access-control-allow-origin": "http://localhost:4000",
+          "apigw-requestid": "<apigw-requestid:2>"
+        },
+        "statusCode": 200
+      },
+      "options-req-cors-with-methods-miss-header": {
+        "content": "DELETE,GET,HEAD,PATCH,POST,PUT",
+        "headers": {
+          "apigw-requestid": "<apigw-requestid:3>"
+        },
+        "statusCode": 200
+      },
+      "options-req-cors-with-methods-and-headers": {
+        "content": "DELETE,GET,HEAD,PATCH,POST,PUT",
+        "headers": {
+          "access-control-allow-headers": "*",
+          "access-control-allow-methods": "*",
+          "access-control-allow-origin": "http://localhost:4000",
+          "apigw-requestid": "<apigw-requestid:4>"
+        },
+        "statusCode": 200
+      },
+      "options-req-cors-with-methods-with-header": {
+        "content": "DELETE,GET,HEAD,PATCH,POST,PUT",
+        "headers": {
+          "access-control-allow-headers": "*",
+          "access-control-allow-methods": "*",
+          "access-control-allow-origin": "http://localhost:4000",
+          "apigw-requestid": "<apigw-requestid:5>"
+        },
+        "statusCode": 200
+      }
+    }
+  },
+  "tests/aws/services/apigatewayv2/test_apigatewayv2_http_cors.py::TestApigatewayV2Cors::test_wildcard_origin": {
+    "recorded-date": "02-09-2024, 09:35:21",
+    "recorded-content": {
+      "options-req-cors-ok-http": {
+        "content": "DELETE,GET,HEAD,PATCH,POST,PUT",
+        "headers": {
+          "access-control-allow-headers": "",
+          "access-control-allow-methods": "*",
+          "access-control-allow-origin": "http://localhost:4000",
+          "apigw-requestid": "<apigw-requestid:1>",
+          "vary": "origin"
+        },
+        "statusCode": 200
+      },
+      "options-req-cors-fail-https": {
+        "content": "DELETE,GET,HEAD,PATCH,POST,PUT",
+        "headers": {
+          "apigw-requestid": "<apigw-requestid:2>"
+        },
+        "statusCode": 200
+      },
+      "options-req-cors-ok-https": {
+        "content": "DELETE,GET,HEAD,PATCH,POST,PUT",
+        "headers": {
+          "access-control-allow-headers": "",
+          "access-control-allow-methods": "*",
+          "access-control-allow-origin": "https://localhost:4000",
+          "apigw-requestid": "<apigw-requestid:3>",
+          "vary": "origin"
+        },
+        "statusCode": 200
+      },
+      "options-req-cors-fail-http": {
+        "content": "DELETE,GET,HEAD,PATCH,POST,PUT",
+        "headers": {
+          "apigw-requestid": "<apigw-requestid:4>"
+        },
+        "statusCode": 200
+      },
+      "options-req-cors-ok-wilcard": {
+        "content": "DELETE,GET,HEAD,PATCH,POST,PUT",
+        "headers": {
+          "access-control-allow-headers": "",
+          "access-control-allow-methods": "*",
+          "access-control-allow-origin": "*",
+          "apigw-requestid": "<apigw-requestid:5>"
+        },
+        "statusCode": 200
+      }
+    }
+  },
+  "tests/aws/services/apigatewayv2/test_apigatewayv2_http_cors.py::TestApigatewayV2Cors::test_origin_casing": {
+    "recorded-date": "02-09-2024, 09:29:59",
+    "recorded-content": {
+      "create-api-cors-casing": {
+        "ApiEndpoint": "<api-endpoint:1>",
+        "ApiId": "<api-id:1>",
+        "ApiKeySelectionExpression": "$request.header.x-api-key",
+        "CorsConfiguration": {
+          "AllowMethods": [
+            "*"
+          ],
+          "AllowOrigins": [
+            "http://myorigin.com"
+          ]
+        },
+        "CreatedDate": "datetime",
+        "DisableExecuteApiEndpoint": false,
+        "Name": "<name:1>",
+        "ProtocolType": "HTTP",
+        "RouteSelectionExpression": "$request.method $request.path",
+        "ResponseMetadata": {
+          "HTTPHeaders": {},
+          "HTTPStatusCode": 201
+        }
+      },
+      "options-req-cors-ok-http": {
+        "content": "DELETE,GET,HEAD,PATCH,POST,PUT",
+        "headers": {
+          "access-control-allow-headers": "",
+          "access-control-allow-methods": "*",
+          "access-control-allow-origin": "http://myorigin.com",
+          "apigw-requestid": "<apigw-requestid:1>"
+        },
+        "statusCode": 200
+      }
+    }
+  }
+}

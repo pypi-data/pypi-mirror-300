@@ -1,0 +1,94 @@
+{
+  "tests/aws/services/cloudformation/resources/test_apigatewayv2.py::TestApiGwV2Apis::test_domain_name_attributes": {
+    "recorded-date": "12-03-2023, 22:56:33",
+    "recorded-content": {
+      "stack-outputs": {
+        "RegionalDomainName": "<regional-domain-name:1>",
+        "RegionalHostedZoneId": "<hosted-zone-id:1>"
+      },
+      "domain-name": {
+        "ApiMappingSelectionExpression": "$request.basepath",
+        "DomainName": "<domain-name>",
+        "DomainNameConfigurations": [
+          {
+            "ApiGatewayDomainName": "<regional-domain-name:1>",
+            "CertificateArn": "arn:<partition>:acm:<region>:111111111111:certificate/<resource:1>",
+            "DomainNameStatus": "AVAILABLE",
+            "EndpointType": "REGIONAL",
+            "HostedZoneId": "<hosted-zone-id:1>",
+            "SecurityPolicy": "TLS_1_2"
+          }
+        ],
+        "Tags": {
+          "aws:cloudformation:logical-id": "ApiDomainName",
+          "aws:cloudformation:stack-id": "arn:<partition>:cloudformation:<region>:111111111111:stack/<stack-name>/<resource:2>",
+          "aws:cloudformation:stack-name": "<stack-name>"
+        },
+        "ResponseMetadata": {
+          "HTTPHeaders": {},
+          "HTTPStatusCode": 200
+        }
+      }
+    }
+  },
+  "tests/aws/services/cloudformation/resources/test_apigatewayv2.py::TestApiGwV2Apis::test_sam_with_lambda_integration_events": {
+    "recorded-date": "25-09-2024, 17:59:04",
+    "recorded-content": {
+      "get-api": {
+        "ApiEndpoint": "<api-endpoint:1>",
+        "ApiId": "<api-id:1>",
+        "ApiKeySelectionExpression": "$request.header.x-api-key",
+        "CreatedDate": "datetime",
+        "DisableExecuteApiEndpoint": false,
+        "Name": "<name:1>",
+        "ProtocolType": "HTTP",
+        "RouteSelectionExpression": "$request.method $request.path",
+        "Tags": {
+          "aws:cloudformation:logical-id": "HttpApi",
+          "aws:cloudformation:stack-id": "arn:<partition>:cloudformation:<region>:111111111111:stack/<name:1>/<resource:1>",
+          "aws:cloudformation:stack-name": "<name:1>",
+          "httpapi:createdBy": "SAM"
+        },
+        "Version": "1.0",
+        "ResponseMetadata": {
+          "HTTPHeaders": {},
+          "HTTPStatusCode": 200
+        }
+      },
+      "get-integrations": {
+        "Items": [
+          {
+            "ConnectionType": "INTERNET",
+            "IntegrationId": "<integration-id:1>",
+            "IntegrationMethod": "POST",
+            "IntegrationType": "AWS_PROXY",
+            "IntegrationUri": "arn:<partition>:apigateway:<region>:lambda:path/2015-03-31/functions/arn:<partition>:lambda:<region>:111111111111:function:<name:1>-ExampleApi/invocations",
+            "PayloadFormatVersion": "2.0",
+            "TimeoutInMillis": 15000
+          }
+        ],
+        "ResponseMetadata": {
+          "HTTPHeaders": {},
+          "HTTPStatusCode": 200
+        }
+      },
+      "get-routes": {
+        "Items": [
+          {
+            "ApiKeyRequired": false,
+            "AuthorizationScopes": [],
+            "AuthorizationType": "NONE",
+            "RequestParameters": {},
+            "RouteId": "<route-id:1>",
+            "RouteKey": "ANY /",
+            "Target": "integrations/<integration-id:1>"
+          }
+        ],
+        "ResponseMetadata": {
+          "HTTPHeaders": {},
+          "HTTPStatusCode": 200
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "tests/aws/services/pinpoint/test_pinpoint.py::TestPinpoint::test_pinpoint_app_operations": {
+    "last_validated_date": "2024-09-09T10:57:47+00:00"
+  },
+  "tests/aws/services/pinpoint/test_pinpoint.py::TestPinpoint::test_pinpoint_app_operations_on_non_existent_app": {
+    "last_validated_date": "2024-09-09T10:59:59+00:00"
+  },
+  "tests/aws/services/pinpoint/test_pinpoint.py::TestPinpointSMSChannel::test_pinpoint_sms_channel_lifecycle": {
+    "last_validated_date": "2024-09-09T11:45:10+00:00"
+  },
+  "tests/aws/services/pinpoint/test_pinpoint.py::TestPinpointSMSChannel::test_pinpoint_sms_channel_multiple_delete": {
+    "last_validated_date": "2024-09-09T11:45:17+00:00"
+  },
+  "tests/aws/services/pinpoint/test_pinpoint.py::TestPinpointSMSChannel::test_pinpoint_sms_channel_non_existent_app": {
+    "last_validated_date": "2024-09-09T11:45:16+00:00"
+  },
+  "tests/aws/services/pinpoint/test_pinpoint.py::TestPinpointSMSChannel::test_pinpoint_sms_channel_versions": {
+    "last_validated_date": "2024-09-09T11:45:21+00:00"
+  },
+  "tests/aws/services/pinpoint/test_pinpoint.py::TestPinpointSMSChannel::test_pinpoint_update_sms_channel_validation": {
+    "last_validated_date": "2024-09-09T11:45:14+00:00"
+  }
+}

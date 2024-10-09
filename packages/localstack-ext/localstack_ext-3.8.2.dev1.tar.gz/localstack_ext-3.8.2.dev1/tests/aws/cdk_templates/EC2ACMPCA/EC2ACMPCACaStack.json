@@ -1,0 +1,52 @@
+{
+  "Resources": {
+    "RootCA": {
+      "Type": "AWS::ACMPCA::CertificateAuthority",
+      "Properties": {
+        "KeyAlgorithm": "RSA_2048",
+        "SigningAlgorithm": "SHA256WITHRSA",
+        "Subject": {
+          "Country": "US",
+          "Organization": "ExampleOrg",
+          "State": "CA"
+        },
+        "Type": "ROOT",
+        "UsageMode": "SHORT_LIVED_CERTIFICATE"
+      }
+    },
+    "RootCAParameterB76AD32D": {
+      "Type": "AWS::SSM::Parameter",
+      "Properties": {
+        "Name": "/sample/scires/ca-arn",
+        "Type": "String",
+        "Value": {
+          "Fn::GetAtt": [
+            "RootCA",
+            "Arn"
+          ]
+        }
+      }
+    }
+  },
+  "Outputs": {
+    "RootCaArn": {
+      "Value": {
+        "Fn::GetAtt": [
+          "RootCA",
+          "Arn"
+        ]
+      }
+    },
+    "ExportsOutputFnGetAttRootCAArn33E257DE": {
+      "Value": {
+        "Fn::GetAtt": [
+          "RootCA",
+          "Arn"
+        ]
+      },
+      "Export": {
+        "Name": "EC2ACMPCACaStack:ExportsOutputFnGetAttRootCAArn33E257DE"
+      }
+    }
+  }
+}

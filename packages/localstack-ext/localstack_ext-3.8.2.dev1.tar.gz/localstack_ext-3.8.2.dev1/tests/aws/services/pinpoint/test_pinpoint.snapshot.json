@@ -1,0 +1,517 @@
+{
+  "tests/aws/services/pinpoint/test_pinpoint.py::TestPinpoint::test_pinpoint_app_operations": {
+    "recorded-date": "09-09-2024, 10:57:47",
+    "recorded-content": {
+      "create_app_response": {
+        "ApplicationResponse": {
+          "Arn": "arn:<partition>:mobiletargeting:<region>:111111111111:apps/<id:1>",
+          "CreationDate": "<timestamp:2022-07-13T13:48:01.000Z>",
+          "Id": "<id:1>",
+          "Name": "<name:1>",
+          "tags": {
+            "Stack": "Test"
+          }
+        },
+        "ResponseMetadata": {
+          "HTTPHeaders": {},
+          "HTTPStatusCode": 201
+        }
+      },
+      "get_app_response": {
+        "ApplicationResponse": {
+          "Arn": "arn:<partition>:mobiletargeting:<region>:111111111111:apps/<id:1>",
+          "CreationDate": "<timestamp:2022-07-13T13:48:01.000Z>",
+          "Id": "<id:1>",
+          "Name": "<name:1>",
+          "tags": {
+            "Stack": "Test"
+          }
+        },
+        "ResponseMetadata": {
+          "HTTPHeaders": {},
+          "HTTPStatusCode": 200
+        }
+      },
+      "delete_app_response": {
+        "ApplicationResponse": {
+          "Arn": "arn:<partition>:mobiletargeting:<region>:111111111111:apps/<id:1>",
+          "CreationDate": "<timestamp:2022-07-13T13:48:01.000Z>",
+          "Id": "<id:1>",
+          "Name": "<name:1>",
+          "tags": {
+            "Stack": "Test"
+          }
+        },
+        "ResponseMetadata": {
+          "HTTPHeaders": {},
+          "HTTPStatusCode": 200
+        }
+      }
+    }
+  },
+  "tests/aws/services/pinpoint/test_pinpoint.py::TestPinpoint::test_pinpoint_app_operations_on_non_existent_app": {
+    "recorded-date": "09-09-2024, 10:59:59",
+    "recorded-content": {
+      "get-non-existent-app": {
+        "Error": {
+          "Code": "NotFoundException",
+          "Message": "Application not found"
+        },
+        "Message": "Application not found",
+        "RequestID": "<request-i-d:1>",
+        "ResponseMetadata": {
+          "HTTPHeaders": {},
+          "HTTPStatusCode": 404
+        }
+      },
+      "delete-non-existent-app": {
+        "Error": {
+          "Code": "NotFoundException",
+          "Message": "Application not found"
+        },
+        "Message": "Application not found",
+        "RequestID": "<request-i-d:2>",
+        "ResponseMetadata": {
+          "HTTPHeaders": {},
+          "HTTPStatusCode": 404
+        }
+      }
+    }
+  },
+  "tests/aws/services/pinpoint/test_pinpoint.py::TestPinpointSMSChannel::test_pinpoint_sms_channel_lifecycle": {
+    "recorded-date": "09-09-2024, 11:45:10",
+    "recorded-content": {
+      "create-app": {
+        "ApplicationResponse": {
+          "Arn": "arn:<partition>:mobiletargeting:<region>:111111111111:apps/<application-id:1>",
+          "CreationDate": "<timestamp:2022-07-13T13:48:01.000Z>",
+          "Id": "<application-id:1>",
+          "Name": "<name:1>",
+          "tags": {}
+        },
+        "ResponseMetadata": {
+          "HTTPHeaders": {},
+          "HTTPStatusCode": 201
+        }
+      },
+      "get-sms-channel-before-update": {
+        "Error": {
+          "Code": "NotFoundException",
+          "Message": "SMS channel not found. Please enable the SMS channel for this application <application-id:1>."
+        },
+        "Message": "SMS channel not found. Please enable the SMS channel for this application <application-id:1>.",
+        "ResponseMetadata": {
+          "HTTPHeaders": {},
+          "HTTPStatusCode": 404
+        }
+      },
+      "update-sms-channel": {
+        "SMSChannelResponse": {
+          "ApplicationId": "<application-id:1>",
+          "CreationDate": "<timestamp:2022-07-13T13:48:01.000Z>",
+          "Enabled": true,
+          "Id": "sms",
+          "IsArchived": false,
+          "LastModifiedDate": "<timestamp:2022-07-13T13:48:01.000Z>",
+          "Platform": "SMS",
+          "PromotionalMessagesPerSecond": 20,
+          "TransactionalMessagesPerSecond": 20,
+          "Version": 1
+        },
+        "ResponseMetadata": {
+          "HTTPHeaders": {},
+          "HTTPStatusCode": 200
+        }
+      },
+      "get-sms-channel-after-update": {
+        "SMSChannelResponse": {
+          "ApplicationId": "<application-id:1>",
+          "CreationDate": "<timestamp:2022-07-13T13:48:01.000Z>",
+          "Enabled": true,
+          "Id": "sms",
+          "IsArchived": false,
+          "LastModifiedDate": "<timestamp:2022-07-13T13:48:01.000Z>",
+          "Platform": "SMS",
+          "PromotionalMessagesPerSecond": 20,
+          "TransactionalMessagesPerSecond": 20,
+          "Version": 1
+        },
+        "ResponseMetadata": {
+          "HTTPHeaders": {},
+          "HTTPStatusCode": 200
+        }
+      },
+      "delete-sms-channel": {
+        "SMSChannelResponse": {
+          "ApplicationId": "<application-id:1>",
+          "CreationDate": "<timestamp:2022-07-13T13:48:01.000Z>",
+          "Enabled": true,
+          "Id": "sms",
+          "IsArchived": true,
+          "LastModifiedDate": "<timestamp:2022-07-13T13:48:01.000Z>",
+          "Platform": "SMS",
+          "Version": 1
+        },
+        "ResponseMetadata": {
+          "HTTPHeaders": {},
+          "HTTPStatusCode": 200
+        }
+      },
+      "get-sms-channel-after-delete": {
+        "Error": {
+          "Code": "NotFoundException",
+          "Message": "SMS channel not found. Please enable the SMS channel for this application <application-id:1>."
+        },
+        "Message": "SMS channel not found. Please enable the SMS channel for this application <application-id:1>.",
+        "ResponseMetadata": {
+          "HTTPHeaders": {},
+          "HTTPStatusCode": 404
+        }
+      },
+      "update-sms-channel-2": {
+        "SMSChannelResponse": {
+          "ApplicationId": "<application-id:1>",
+          "CreationDate": "<timestamp:2022-07-13T13:48:01.000Z>",
+          "Enabled": false,
+          "Id": "sms",
+          "IsArchived": false,
+          "LastModifiedDate": "<timestamp:2022-07-13T13:48:01.000Z>",
+          "Platform": "SMS",
+          "PromotionalMessagesPerSecond": 20,
+          "SenderId": "test-id",
+          "ShortCode": "77766",
+          "TransactionalMessagesPerSecond": 20,
+          "Version": 1
+        },
+        "ResponseMetadata": {
+          "HTTPHeaders": {},
+          "HTTPStatusCode": 200
+        }
+      },
+      "get-sms-channel-after-update-2": {
+        "SMSChannelResponse": {
+          "ApplicationId": "<application-id:1>",
+          "CreationDate": "<timestamp:2022-07-13T13:48:01.000Z>",
+          "Enabled": false,
+          "Id": "sms",
+          "IsArchived": false,
+          "LastModifiedDate": "<timestamp:2022-07-13T13:48:01.000Z>",
+          "Platform": "SMS",
+          "PromotionalMessagesPerSecond": 20,
+          "SenderId": "test-id",
+          "ShortCode": "77766",
+          "TransactionalMessagesPerSecond": 20,
+          "Version": 1
+        },
+        "ResponseMetadata": {
+          "HTTPHeaders": {},
+          "HTTPStatusCode": 200
+        }
+      }
+    }
+  },
+  "tests/aws/services/pinpoint/test_pinpoint.py::TestPinpointSMSChannel::test_pinpoint_update_sms_channel_validation": {
+    "recorded-date": "09-09-2024, 11:45:14",
+    "recorded-content": {
+      "create-app": {
+        "ApplicationResponse": {
+          "Arn": "arn:<partition>:mobiletargeting:<region>:111111111111:apps/<application-id:1>",
+          "CreationDate": "<timestamp:2022-07-13T13:48:01.000Z>",
+          "Id": "<application-id:1>",
+          "Name": "<name:1>",
+          "tags": {}
+        },
+        "ResponseMetadata": {
+          "HTTPHeaders": {},
+          "HTTPStatusCode": 201
+        }
+      },
+      "update-sms-channel-no-enabled-first": {
+        "SMSChannelResponse": {
+          "ApplicationId": "<application-id:1>",
+          "CreationDate": "<timestamp:2022-07-13T13:48:01.000Z>",
+          "Enabled": true,
+          "Id": "sms",
+          "IsArchived": false,
+          "LastModifiedDate": "<timestamp:2022-07-13T13:48:01.000Z>",
+          "Platform": "SMS",
+          "PromotionalMessagesPerSecond": 20,
+          "ShortCode": "test124",
+          "TransactionalMessagesPerSecond": 20,
+          "Version": 1
+        },
+        "ResponseMetadata": {
+          "HTTPHeaders": {},
+          "HTTPStatusCode": 200
+        }
+      },
+      "update-sms-channel-error-enabled-str": {
+        "SMSChannelResponse": {
+          "ApplicationId": "<application-id:1>",
+          "CreationDate": "<timestamp:2022-07-13T13:48:01.000Z>",
+          "Enabled": true,
+          "Id": "sms",
+          "IsArchived": false,
+          "LastModifiedDate": "<timestamp:2022-07-13T13:48:01.000Z>",
+          "Platform": "SMS",
+          "PromotionalMessagesPerSecond": 20,
+          "TransactionalMessagesPerSecond": 20,
+          "Version": 2
+        },
+        "ResponseMetadata": {
+          "HTTPHeaders": {},
+          "HTTPStatusCode": 200
+        }
+      },
+      "update-sms-channel-error-enabled-no-bool": {
+        "Error": {
+          "Code": "BadRequestException",
+          "Message": "Cannot deserialize value of type `Boolean` from String \"random-value\": only \"true\" or \"false\" recognized\nLine 1, column 12"
+        },
+        "Message": "Cannot deserialize value of type `Boolean` from String \"random-value\": only \"true\" or \"false\" recognized\nLine 1, column 12",
+        "ResponseMetadata": {
+          "HTTPHeaders": {},
+          "HTTPStatusCode": 400
+        }
+      },
+      "update-sms-channel-no-request": {
+        "SMSChannelResponse": {
+          "ApplicationId": "<application-id:1>",
+          "CreationDate": "<timestamp:2022-07-13T13:48:01.000Z>",
+          "Enabled": true,
+          "Id": "sms",
+          "IsArchived": false,
+          "LastModifiedDate": "<timestamp:2022-07-13T13:48:01.000Z>",
+          "Platform": "SMS",
+          "PromotionalMessagesPerSecond": 20,
+          "TransactionalMessagesPerSecond": 20,
+          "Version": 3
+        },
+        "ResponseMetadata": {
+          "HTTPHeaders": {},
+          "HTTPStatusCode": 200
+        }
+      },
+      "update-sms-channel-bad-shortcode": {
+        "SMSChannelResponse": {
+          "ApplicationId": "<application-id:1>",
+          "CreationDate": "<timestamp:2022-07-13T13:48:01.000Z>",
+          "Enabled": false,
+          "Id": "sms",
+          "IsArchived": false,
+          "LastModifiedDate": "<timestamp:2022-07-13T13:48:01.000Z>",
+          "Platform": "SMS",
+          "PromotionalMessagesPerSecond": 20,
+          "ShortCode": "abcdrefdzndzdazid",
+          "TransactionalMessagesPerSecond": 20,
+          "Version": 4
+        },
+        "ResponseMetadata": {
+          "HTTPHeaders": {},
+          "HTTPStatusCode": 200
+        }
+      },
+      "update-sms-channel-error-sender-id": {
+        "SMSChannelResponse": {
+          "ApplicationId": "<application-id:1>",
+          "CreationDate": "<timestamp:2022-07-13T13:48:01.000Z>",
+          "Enabled": true,
+          "Id": "sms",
+          "IsArchived": false,
+          "LastModifiedDate": "<timestamp:2022-07-13T13:48:01.000Z>",
+          "Platform": "SMS",
+          "PromotionalMessagesPerSecond": 20,
+          "SenderId": "--abdcd/",
+          "TransactionalMessagesPerSecond": 20,
+          "Version": 5
+        },
+        "ResponseMetadata": {
+          "HTTPHeaders": {},
+          "HTTPStatusCode": 200
+        }
+      }
+    }
+  },
+  "tests/aws/services/pinpoint/test_pinpoint.py::TestPinpointSMSChannel::test_pinpoint_sms_channel_non_existent_app": {
+    "recorded-date": "09-09-2024, 11:45:16",
+    "recorded-content": {
+      "update-sms-channel-bad-app-id": {
+        "Error": {
+          "Code": "NotFoundException",
+          "Message": "Resource not found"
+        },
+        "Message": "Resource not found",
+        "ResponseMetadata": {
+          "HTTPHeaders": {},
+          "HTTPStatusCode": 404
+        }
+      },
+      "get-sms-channel-bad-app-id": {
+        "Error": {
+          "Code": "NotFoundException",
+          "Message": "Resource not found"
+        },
+        "Message": "Resource not found",
+        "ResponseMetadata": {
+          "HTTPHeaders": {},
+          "HTTPStatusCode": 404
+        }
+      },
+      "delete-sms-channel-bad-app-id": {
+        "Error": {
+          "Code": "NotFoundException",
+          "Message": "Resource not found"
+        },
+        "Message": "Resource not found",
+        "ResponseMetadata": {
+          "HTTPHeaders": {},
+          "HTTPStatusCode": 404
+        }
+      }
+    }
+  },
+  "tests/aws/services/pinpoint/test_pinpoint.py::TestPinpointSMSChannel::test_pinpoint_sms_channel_multiple_delete": {
+    "recorded-date": "09-09-2024, 11:45:17",
+    "recorded-content": {
+      "delete-sms-channel": {
+        "SMSChannelResponse": {
+          "ApplicationId": "<application-id:1>",
+          "Enabled": false,
+          "Id": "sms",
+          "IsArchived": true,
+          "Platform": "SMS",
+          "Version": 0
+        },
+        "ResponseMetadata": {
+          "HTTPHeaders": {},
+          "HTTPStatusCode": 200
+        }
+      },
+      "delete-sms-channel-2": {
+        "SMSChannelResponse": {
+          "ApplicationId": "<application-id:1>",
+          "Enabled": false,
+          "Id": "sms",
+          "IsArchived": true,
+          "Platform": "SMS",
+          "Version": 0
+        },
+        "ResponseMetadata": {
+          "HTTPHeaders": {},
+          "HTTPStatusCode": 200
+        }
+      }
+    }
+  },
+  "tests/aws/services/pinpoint/test_pinpoint.py::TestPinpointSMSChannel::test_pinpoint_sms_channel_versions": {
+    "recorded-date": "09-09-2024, 11:45:21",
+    "recorded-content": {
+      "create-app": {
+        "ApplicationResponse": {
+          "Arn": "arn:<partition>:mobiletargeting:<region>:111111111111:apps/<application-id:1>",
+          "CreationDate": "<timestamp:2022-07-13T13:48:01.000Z>",
+          "Id": "<application-id:1>",
+          "Name": "<name:1>",
+          "tags": {}
+        },
+        "ResponseMetadata": {
+          "HTTPHeaders": {},
+          "HTTPStatusCode": 201
+        }
+      },
+      "update-sms-channel": {
+        "SMSChannelResponse": {
+          "ApplicationId": "<application-id:1>",
+          "CreationDate": "<timestamp:2022-07-13T13:48:01.000Z>",
+          "Enabled": true,
+          "Id": "sms",
+          "IsArchived": false,
+          "LastModifiedDate": "<timestamp:2022-07-13T13:48:01.000Z>",
+          "Platform": "SMS",
+          "PromotionalMessagesPerSecond": 20,
+          "TransactionalMessagesPerSecond": 20,
+          "Version": 1
+        },
+        "ResponseMetadata": {
+          "HTTPHeaders": {},
+          "HTTPStatusCode": 200
+        }
+      },
+      "update-sms-channel-2": {
+        "SMSChannelResponse": {
+          "ApplicationId": "<application-id:1>",
+          "CreationDate": "<timestamp:2022-07-13T13:48:01.000Z>",
+          "Enabled": true,
+          "Id": "sms",
+          "IsArchived": false,
+          "LastModifiedDate": "<timestamp:2022-07-13T13:48:01.000Z>",
+          "Platform": "SMS",
+          "PromotionalMessagesPerSecond": 20,
+          "SenderId": "test-id",
+          "TransactionalMessagesPerSecond": 20,
+          "Version": 2
+        },
+        "ResponseMetadata": {
+          "HTTPHeaders": {},
+          "HTTPStatusCode": 200
+        }
+      },
+      "update-sms-channel-3": {
+        "SMSChannelResponse": {
+          "ApplicationId": "<application-id:1>",
+          "CreationDate": "<timestamp:2022-07-13T13:48:01.000Z>",
+          "Enabled": true,
+          "Id": "sms",
+          "IsArchived": false,
+          "LastModifiedDate": "<timestamp:2022-07-13T13:48:01.000Z>",
+          "Platform": "SMS",
+          "PromotionalMessagesPerSecond": 20,
+          "SenderId": "test-id",
+          "ShortCode": "666777",
+          "TransactionalMessagesPerSecond": 20,
+          "Version": 3
+        },
+        "ResponseMetadata": {
+          "HTTPHeaders": {},
+          "HTTPStatusCode": 200
+        }
+      },
+      "delete-sms-channel": {
+        "SMSChannelResponse": {
+          "ApplicationId": "<application-id:1>",
+          "CreationDate": "<timestamp:2022-07-13T13:48:01.000Z>",
+          "Enabled": true,
+          "Id": "sms",
+          "IsArchived": true,
+          "LastModifiedDate": "<timestamp:2022-07-13T13:48:01.000Z>",
+          "Platform": "SMS",
+          "SenderId": "test-id",
+          "ShortCode": "666777",
+          "Version": 3
+        },
+        "ResponseMetadata": {
+          "HTTPHeaders": {},
+          "HTTPStatusCode": 200
+        }
+      },
+      "recreate-sms-channel": {
+        "SMSChannelResponse": {
+          "ApplicationId": "<application-id:1>",
+          "CreationDate": "<timestamp:2022-07-13T13:48:01.000Z>",
+          "Enabled": true,
+          "Id": "sms",
+          "IsArchived": false,
+          "LastModifiedDate": "<timestamp:2022-07-13T13:48:01.000Z>",
+          "Platform": "SMS",
+          "PromotionalMessagesPerSecond": 20,
+          "TransactionalMessagesPerSecond": 20,
+          "Version": 1
+        },
+        "ResponseMetadata": {
+          "HTTPHeaders": {},
+          "HTTPStatusCode": 200
+        }
+      }
+    }
+  }
+}

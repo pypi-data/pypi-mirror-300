@@ -1,0 +1,961 @@
+{
+  "Resources": {
+    "Vpc8378EB38": {
+      "Type": "AWS::EC2::VPC",
+      "Properties": {
+        "CidrBlock": "10.0.0.0/16",
+        "EnableDnsHostnames": true,
+        "EnableDnsSupport": true,
+        "InstanceTenancy": "default",
+        "Tags": [
+          {
+            "Key": "Name",
+            "Value": "EC2ACMPCAServerStack/Vpc"
+          }
+        ]
+      }
+    },
+    "VpcpublicSubnet1Subnet2BB74ED7": {
+      "Type": "AWS::EC2::Subnet",
+      "Properties": {
+        "AvailabilityZone": {
+          "Fn::Select": [
+            0,
+            {
+              "Fn::GetAZs": ""
+            }
+          ]
+        },
+        "CidrBlock": "10.0.0.0/24",
+        "MapPublicIpOnLaunch": true,
+        "Tags": [
+          {
+            "Key": "aws-cdk:subnet-name",
+            "Value": "public"
+          },
+          {
+            "Key": "aws-cdk:subnet-type",
+            "Value": "Public"
+          },
+          {
+            "Key": "Name",
+            "Value": "EC2ACMPCAServerStack/Vpc/publicSubnet1"
+          }
+        ],
+        "VpcId": {
+          "Ref": "Vpc8378EB38"
+        }
+      }
+    },
+    "VpcpublicSubnet1RouteTable15C15F8E": {
+      "Type": "AWS::EC2::RouteTable",
+      "Properties": {
+        "Tags": [
+          {
+            "Key": "Name",
+            "Value": "EC2ACMPCAServerStack/Vpc/publicSubnet1"
+          }
+        ],
+        "VpcId": {
+          "Ref": "Vpc8378EB38"
+        }
+      }
+    },
+    "VpcpublicSubnet1RouteTableAssociation4E83B6E4": {
+      "Type": "AWS::EC2::SubnetRouteTableAssociation",
+      "Properties": {
+        "RouteTableId": {
+          "Ref": "VpcpublicSubnet1RouteTable15C15F8E"
+        },
+        "SubnetId": {
+          "Ref": "VpcpublicSubnet1Subnet2BB74ED7"
+        }
+      }
+    },
+    "VpcpublicSubnet1DefaultRouteB88F9E93": {
+      "Type": "AWS::EC2::Route",
+      "Properties": {
+        "DestinationCidrBlock": "0.0.0.0/0",
+        "GatewayId": {
+          "Ref": "VpcIGWD7BA715C"
+        },
+        "RouteTableId": {
+          "Ref": "VpcpublicSubnet1RouteTable15C15F8E"
+        }
+      },
+      "DependsOn": [
+        "VpcVPCGWBF912B6E"
+      ]
+    },
+    "VpcpublicSubnet1EIP411541E6": {
+      "Type": "AWS::EC2::EIP",
+      "Properties": {
+        "Domain": "vpc",
+        "Tags": [
+          {
+            "Key": "Name",
+            "Value": "EC2ACMPCAServerStack/Vpc/publicSubnet1"
+          }
+        ]
+      }
+    },
+    "VpcpublicSubnet1NATGatewayA036E8A6": {
+      "Type": "AWS::EC2::NatGateway",
+      "Properties": {
+        "AllocationId": {
+          "Fn::GetAtt": [
+            "VpcpublicSubnet1EIP411541E6",
+            "AllocationId"
+          ]
+        },
+        "SubnetId": {
+          "Ref": "VpcpublicSubnet1Subnet2BB74ED7"
+        },
+        "Tags": [
+          {
+            "Key": "Name",
+            "Value": "EC2ACMPCAServerStack/Vpc/publicSubnet1"
+          }
+        ]
+      },
+      "DependsOn": [
+        "VpcpublicSubnet1DefaultRouteB88F9E93",
+        "VpcpublicSubnet1RouteTableAssociation4E83B6E4"
+      ]
+    },
+    "VpcpublicSubnet2SubnetE34B022A": {
+      "Type": "AWS::EC2::Subnet",
+      "Properties": {
+        "AvailabilityZone": {
+          "Fn::Select": [
+            1,
+            {
+              "Fn::GetAZs": ""
+            }
+          ]
+        },
+        "CidrBlock": "10.0.1.0/24",
+        "MapPublicIpOnLaunch": true,
+        "Tags": [
+          {
+            "Key": "aws-cdk:subnet-name",
+            "Value": "public"
+          },
+          {
+            "Key": "aws-cdk:subnet-type",
+            "Value": "Public"
+          },
+          {
+            "Key": "Name",
+            "Value": "EC2ACMPCAServerStack/Vpc/publicSubnet2"
+          }
+        ],
+        "VpcId": {
+          "Ref": "Vpc8378EB38"
+        }
+      }
+    },
+    "VpcpublicSubnet2RouteTableC5A6DF77": {
+      "Type": "AWS::EC2::RouteTable",
+      "Properties": {
+        "Tags": [
+          {
+            "Key": "Name",
+            "Value": "EC2ACMPCAServerStack/Vpc/publicSubnet2"
+          }
+        ],
+        "VpcId": {
+          "Ref": "Vpc8378EB38"
+        }
+      }
+    },
+    "VpcpublicSubnet2RouteTableAssociationCCE257FF": {
+      "Type": "AWS::EC2::SubnetRouteTableAssociation",
+      "Properties": {
+        "RouteTableId": {
+          "Ref": "VpcpublicSubnet2RouteTableC5A6DF77"
+        },
+        "SubnetId": {
+          "Ref": "VpcpublicSubnet2SubnetE34B022A"
+        }
+      }
+    },
+    "VpcpublicSubnet2DefaultRoute732F0BEB": {
+      "Type": "AWS::EC2::Route",
+      "Properties": {
+        "DestinationCidrBlock": "0.0.0.0/0",
+        "GatewayId": {
+          "Ref": "VpcIGWD7BA715C"
+        },
+        "RouteTableId": {
+          "Ref": "VpcpublicSubnet2RouteTableC5A6DF77"
+        }
+      },
+      "DependsOn": [
+        "VpcVPCGWBF912B6E"
+      ]
+    },
+    "VpcpublicSubnet2EIP811E07A7": {
+      "Type": "AWS::EC2::EIP",
+      "Properties": {
+        "Domain": "vpc",
+        "Tags": [
+          {
+            "Key": "Name",
+            "Value": "EC2ACMPCAServerStack/Vpc/publicSubnet2"
+          }
+        ]
+      }
+    },
+    "VpcpublicSubnet2NATGateway4A29FD4F": {
+      "Type": "AWS::EC2::NatGateway",
+      "Properties": {
+        "AllocationId": {
+          "Fn::GetAtt": [
+            "VpcpublicSubnet2EIP811E07A7",
+            "AllocationId"
+          ]
+        },
+        "SubnetId": {
+          "Ref": "VpcpublicSubnet2SubnetE34B022A"
+        },
+        "Tags": [
+          {
+            "Key": "Name",
+            "Value": "EC2ACMPCAServerStack/Vpc/publicSubnet2"
+          }
+        ]
+      },
+      "DependsOn": [
+        "VpcpublicSubnet2DefaultRoute732F0BEB",
+        "VpcpublicSubnet2RouteTableAssociationCCE257FF"
+      ]
+    },
+    "VpcprivateSubnet1SubnetCEAD3716": {
+      "Type": "AWS::EC2::Subnet",
+      "Properties": {
+        "AvailabilityZone": {
+          "Fn::Select": [
+            0,
+            {
+              "Fn::GetAZs": ""
+            }
+          ]
+        },
+        "CidrBlock": "10.0.2.0/24",
+        "MapPublicIpOnLaunch": false,
+        "Tags": [
+          {
+            "Key": "aws-cdk:subnet-name",
+            "Value": "private"
+          },
+          {
+            "Key": "aws-cdk:subnet-type",
+            "Value": "Private"
+          },
+          {
+            "Key": "Name",
+            "Value": "EC2ACMPCAServerStack/Vpc/privateSubnet1"
+          }
+        ],
+        "VpcId": {
+          "Ref": "Vpc8378EB38"
+        }
+      }
+    },
+    "VpcprivateSubnet1RouteTable1979EACB": {
+      "Type": "AWS::EC2::RouteTable",
+      "Properties": {
+        "Tags": [
+          {
+            "Key": "Name",
+            "Value": "EC2ACMPCAServerStack/Vpc/privateSubnet1"
+          }
+        ],
+        "VpcId": {
+          "Ref": "Vpc8378EB38"
+        }
+      }
+    },
+    "VpcprivateSubnet1RouteTableAssociationEEBD93CE": {
+      "Type": "AWS::EC2::SubnetRouteTableAssociation",
+      "Properties": {
+        "RouteTableId": {
+          "Ref": "VpcprivateSubnet1RouteTable1979EACB"
+        },
+        "SubnetId": {
+          "Ref": "VpcprivateSubnet1SubnetCEAD3716"
+        }
+      }
+    },
+    "VpcprivateSubnet1DefaultRouteB506891A": {
+      "Type": "AWS::EC2::Route",
+      "Properties": {
+        "DestinationCidrBlock": "0.0.0.0/0",
+        "NatGatewayId": {
+          "Ref": "VpcpublicSubnet1NATGatewayA036E8A6"
+        },
+        "RouteTableId": {
+          "Ref": "VpcprivateSubnet1RouteTable1979EACB"
+        }
+      }
+    },
+    "VpcprivateSubnet2Subnet2DE7549C": {
+      "Type": "AWS::EC2::Subnet",
+      "Properties": {
+        "AvailabilityZone": {
+          "Fn::Select": [
+            1,
+            {
+              "Fn::GetAZs": ""
+            }
+          ]
+        },
+        "CidrBlock": "10.0.3.0/24",
+        "MapPublicIpOnLaunch": false,
+        "Tags": [
+          {
+            "Key": "aws-cdk:subnet-name",
+            "Value": "private"
+          },
+          {
+            "Key": "aws-cdk:subnet-type",
+            "Value": "Private"
+          },
+          {
+            "Key": "Name",
+            "Value": "EC2ACMPCAServerStack/Vpc/privateSubnet2"
+          }
+        ],
+        "VpcId": {
+          "Ref": "Vpc8378EB38"
+        }
+      }
+    },
+    "VpcprivateSubnet2RouteTable4D0FFC8C": {
+      "Type": "AWS::EC2::RouteTable",
+      "Properties": {
+        "Tags": [
+          {
+            "Key": "Name",
+            "Value": "EC2ACMPCAServerStack/Vpc/privateSubnet2"
+          }
+        ],
+        "VpcId": {
+          "Ref": "Vpc8378EB38"
+        }
+      }
+    },
+    "VpcprivateSubnet2RouteTableAssociationB691E645": {
+      "Type": "AWS::EC2::SubnetRouteTableAssociation",
+      "Properties": {
+        "RouteTableId": {
+          "Ref": "VpcprivateSubnet2RouteTable4D0FFC8C"
+        },
+        "SubnetId": {
+          "Ref": "VpcprivateSubnet2Subnet2DE7549C"
+        }
+      }
+    },
+    "VpcprivateSubnet2DefaultRouteBAC3C1C3": {
+      "Type": "AWS::EC2::Route",
+      "Properties": {
+        "DestinationCidrBlock": "0.0.0.0/0",
+        "NatGatewayId": {
+          "Ref": "VpcpublicSubnet2NATGateway4A29FD4F"
+        },
+        "RouteTableId": {
+          "Ref": "VpcprivateSubnet2RouteTable4D0FFC8C"
+        }
+      }
+    },
+    "VpcIGWD7BA715C": {
+      "Type": "AWS::EC2::InternetGateway",
+      "Properties": {
+        "Tags": [
+          {
+            "Key": "Name",
+            "Value": "EC2ACMPCAServerStack/Vpc"
+          }
+        ]
+      }
+    },
+    "VpcVPCGWBF912B6E": {
+      "Type": "AWS::EC2::VPCGatewayAttachment",
+      "Properties": {
+        "InternetGatewayId": {
+          "Ref": "VpcIGWD7BA715C"
+        },
+        "VpcId": {
+          "Ref": "Vpc8378EB38"
+        }
+      }
+    },
+    "PrivateHostedZone6354E1BB": {
+      "Type": "AWS::Route53::HostedZone",
+      "Properties": {
+        "Name": "localstack.test.internal.",
+        "VPCs": [
+          {
+            "VPCId": {
+              "Ref": "Vpc8378EB38"
+            },
+            "VPCRegion": {
+              "Ref": "AWS::Region"
+            }
+          }
+        ]
+      }
+    },
+    "ProxySecurityGroup6DC814C1": {
+      "Type": "AWS::EC2::SecurityGroup",
+      "Properties": {
+        "GroupDescription": "security group for proxy instance",
+        "SecurityGroupEgress": [
+          {
+            "CidrIp": "0.0.0.0/0",
+            "Description": "Allow all outbound traffic by default",
+            "IpProtocol": "-1"
+          }
+        ],
+        "SecurityGroupIngress": [
+          {
+            "CidrIp": "0.0.0.0/0",
+            "Description": "allow ssh",
+            "FromPort": 22,
+            "IpProtocol": "tcp",
+            "ToPort": 22
+          },
+          {
+            "CidrIp": "0.0.0.0/0",
+            "Description": "allow https",
+            "FromPort": 8443,
+            "IpProtocol": "tcp",
+            "ToPort": 8443
+          }
+        ],
+        "VpcId": {
+          "Ref": "Vpc8378EB38"
+        }
+      }
+    },
+    "ServerSecurityGroup11086851": {
+      "Type": "AWS::EC2::SecurityGroup",
+      "Properties": {
+        "GroupDescription": "security group for server instance",
+        "SecurityGroupEgress": [
+          {
+            "CidrIp": "0.0.0.0/0",
+            "Description": "Allow all outbound traffic by default",
+            "IpProtocol": "-1"
+          }
+        ],
+        "VpcId": {
+          "Ref": "Vpc8378EB38"
+        }
+      }
+    },
+    "ServerSecurityGroupfromEC2ACMPCAServerStackProxySecurityGroup0597A0328443EC103729": {
+      "Type": "AWS::EC2::SecurityGroupIngress",
+      "Properties": {
+        "Description": "allow https access",
+        "FromPort": 8443,
+        "GroupId": {
+          "Fn::GetAtt": [
+            "ServerSecurityGroup11086851",
+            "GroupId"
+          ]
+        },
+        "IpProtocol": "tcp",
+        "SourceSecurityGroupId": {
+          "Fn::GetAtt": [
+            "ProxySecurityGroup6DC814C1",
+            "GroupId"
+          ]
+        },
+        "ToPort": 8443
+      }
+    },
+    "ServerSecurityGroupfromEC2ACMPCAServerStackProxySecurityGroup0597A032ICMPType86E08AB2B": {
+      "Type": "AWS::EC2::SecurityGroupIngress",
+      "Properties": {
+        "Description": "allow pinging from public instance",
+        "FromPort": 8,
+        "GroupId": {
+          "Fn::GetAtt": [
+            "ServerSecurityGroup11086851",
+            "GroupId"
+          ]
+        },
+        "IpProtocol": "icmp",
+        "SourceSecurityGroupId": {
+          "Fn::GetAtt": [
+            "ProxySecurityGroup6DC814C1",
+            "GroupId"
+          ]
+        },
+        "ToPort": -1
+      }
+    },
+    "ServerSecurityGroupfromEC2ACMPCAServerStackProxySecurityGroup0597A03222E7ECCAA4": {
+      "Type": "AWS::EC2::SecurityGroupIngress",
+      "Properties": {
+        "Description": "allow ssh access",
+        "FromPort": 22,
+        "GroupId": {
+          "Fn::GetAtt": [
+            "ServerSecurityGroup11086851",
+            "GroupId"
+          ]
+        },
+        "IpProtocol": "tcp",
+        "SourceSecurityGroupId": {
+          "Fn::GetAtt": [
+            "ProxySecurityGroup6DC814C1",
+            "GroupId"
+          ]
+        },
+        "ToPort": 22
+      }
+    },
+    "CustomParameter10710AE3": {
+      "Type": "AWS::SSM::Parameter",
+      "Properties": {
+        "Description": "Test parameter to access from the EC2 instance",
+        "Name": "/sample/scires/ec2-test-param",
+        "Type": "String",
+        "Value": "param123"
+      }
+    },
+    "ProxyInstanceInstanceRole34E9810D": {
+      "Type": "AWS::IAM::Role",
+      "Properties": {
+        "AssumeRolePolicyDocument": {
+          "Statement": [
+            {
+              "Action": "sts:AssumeRole",
+              "Effect": "Allow",
+              "Principal": {
+                "Service": "ec2.amazonaws.com"
+              }
+            }
+          ],
+          "Version": "2012-10-17"
+        },
+        "ManagedPolicyArns": [
+          {
+            "Fn::Join": [
+              "",
+              [
+                "arn:",
+                {
+                  "Ref": "AWS::Partition"
+                },
+                ":iam::aws:policy/AmazonEC2ReadOnlyAccess"
+              ]
+            ]
+          },
+          {
+            "Fn::Join": [
+              "",
+              [
+                "arn:",
+                {
+                  "Ref": "AWS::Partition"
+                },
+                ":iam::aws:policy/AWSCertificateManagerPrivateCAFullAccess"
+              ]
+            ]
+          },
+          {
+            "Fn::Join": [
+              "",
+              [
+                "arn:",
+                {
+                  "Ref": "AWS::Partition"
+                },
+                ":iam::aws:policy/AWSPrivateCAUser"
+              ]
+            ]
+          },
+          {
+            "Fn::Join": [
+              "",
+              [
+                "arn:",
+                {
+                  "Ref": "AWS::Partition"
+                },
+                ":iam::aws:policy/AmazonSSMReadOnlyAccess"
+              ]
+            ]
+          }
+        ],
+        "Tags": [
+          {
+            "Key": "Name",
+            "Value": "EC2ACMPCAServerStack/ProxyInstance"
+          }
+        ]
+      }
+    },
+    "ProxyInstanceInstanceRoleDefaultPolicyF601FDF4": {
+      "Type": "AWS::IAM::Policy",
+      "Properties": {
+        "PolicyDocument": {
+          "Statement": [
+            {
+              "Action": [
+                "ssm:DescribeParameters",
+                "ssm:GetParameters",
+                "ssm:GetParameter",
+                "ssm:GetParameterHistory"
+              ],
+              "Effect": "Allow",
+              "Resource": {
+                "Fn::Join": [
+                  "",
+                  [
+                    "arn:",
+                    {
+                      "Ref": "AWS::Partition"
+                    },
+                    ":ssm:",
+                    {
+                      "Ref": "AWS::Region"
+                    },
+                    ":",
+                    {
+                      "Ref": "AWS::AccountId"
+                    },
+                    ":parameter",
+                    {
+                      "Ref": "CustomParameter10710AE3"
+                    }
+                  ]
+                ]
+              }
+            }
+          ],
+          "Version": "2012-10-17"
+        },
+        "PolicyName": "ProxyInstanceInstanceRoleDefaultPolicyF601FDF4",
+        "Roles": [
+          {
+            "Ref": "ProxyInstanceInstanceRole34E9810D"
+          }
+        ]
+      }
+    },
+    "ProxyInstanceInstanceProfile9099FFE2": {
+      "Type": "AWS::IAM::InstanceProfile",
+      "Properties": {
+        "Roles": [
+          {
+            "Ref": "ProxyInstanceInstanceRole34E9810D"
+          }
+        ]
+      }
+    },
+    "ProxyInstance08F2B173cd8a960c6c7989b5": {
+      "Type": "AWS::EC2::Instance",
+      "Properties": {
+        "AvailabilityZone": {
+          "Fn::Select": [
+            0,
+            {
+              "Fn::GetAZs": ""
+            }
+          ]
+        },
+        "IamInstanceProfile": {
+          "Ref": "ProxyInstanceInstanceProfile9099FFE2"
+        },
+        "ImageId": {
+          "Fn::FindInMap": [
+            "ProxyInstanceAmiMap9E8BA322",
+            {
+              "Ref": "AWS::Region"
+            },
+            "ami"
+          ]
+        },
+        "InstanceType": "t3a.micro",
+        "KeyName": "ACMPCAEC2KeyPair",
+        "SecurityGroupIds": [
+          {
+            "Fn::GetAtt": [
+              "ProxySecurityGroup6DC814C1",
+              "GroupId"
+            ]
+          }
+        ],
+        "SubnetId": {
+          "Ref": "VpcpublicSubnet1Subnet2BB74ED7"
+        },
+        "Tags": [
+          {
+            "Key": "Name",
+            "Value": "EC2ACMPCAServerStack/ProxyInstance"
+          }
+        ],
+        "UserData": {
+          "Fn::Base64": "#!/bin/bash\n#!/bin/bash\n\n# FOR LOCALSTACK ONLY\nexport AWS_ENDPOINT_URL=http://localhost.localstack.cloud:4566\nexport AWS_REGION=us-east-1\nexport AWS_ACCESS_KEY_ID=test\nexport AWS_SECRET_ACCESS_KEY=test\n\nyum update -y\nyum install -y python3 python3-pip python3-boto3 openssl awscli\npip install requests\n\nmkdir -p /home/ec2-user\n\necho \"from http.server import SimpleHTTPRequestHandler, HTTPServer\nimport ssl\nimport requests\n\n\nclass Handler(SimpleHTTPRequestHandler):\n    def do_GET(self):\n        # call the server instance and return the response\n        response = requests.get(f'https://server.localstack.test.internal:8443{self.path}')\n        self.send_response(response.status_code)\n        self.send_header('Content-type',response.headers['Content-Type'])\n        self.end_headers()\n        self.wfile.write(response.content)\n\n\nif __name__ == '__main__':\n    server_address = ('', 8080)\n    httpd = HTTPServer(server_address, Handler)\n    print('Running server on port 8080...')\n    httpd.serve_forever()\n\" > /home/ec2-user/server.py\n\ncd /home/ec2-user\n\nCA_ARN=$(aws --region us-east-1 ssm get-parameter --name '/sample/scires/ca-arn' --query 'Parameter.Value' --output text)\n\naws --region us-east-1 acm-pca get-certificate-authority-certificate --certificate-authority-arn $CA_ARN --output text > ca_root.crt\ncp ca_root.crt /etc/pki/ca-trust/source/anchors/\nupdate-ca-trust\n\npython3 server.py &\n"
+        }
+      },
+      "DependsOn": [
+        "ProxyInstanceInstanceRoleDefaultPolicyF601FDF4",
+        "ProxyInstanceInstanceRole34E9810D"
+      ]
+    },
+    "ServerInstanceInstanceRole1FCED121": {
+      "Type": "AWS::IAM::Role",
+      "Properties": {
+        "AssumeRolePolicyDocument": {
+          "Statement": [
+            {
+              "Action": "sts:AssumeRole",
+              "Effect": "Allow",
+              "Principal": {
+                "Service": "ec2.amazonaws.com"
+              }
+            }
+          ],
+          "Version": "2012-10-17"
+        },
+        "ManagedPolicyArns": [
+          {
+            "Fn::Join": [
+              "",
+              [
+                "arn:",
+                {
+                  "Ref": "AWS::Partition"
+                },
+                ":iam::aws:policy/AWSPrivateCAUser"
+              ]
+            ]
+          },
+          {
+            "Fn::Join": [
+              "",
+              [
+                "arn:",
+                {
+                  "Ref": "AWS::Partition"
+                },
+                ":iam::aws:policy/AmazonEC2ReadOnlyAccess"
+              ]
+            ]
+          },
+          {
+            "Fn::Join": [
+              "",
+              [
+                "arn:",
+                {
+                  "Ref": "AWS::Partition"
+                },
+                ":iam::aws:policy/AWSCertificateManagerPrivateCAFullAccess"
+              ]
+            ]
+          },
+          {
+            "Fn::Join": [
+              "",
+              [
+                "arn:",
+                {
+                  "Ref": "AWS::Partition"
+                },
+                ":iam::aws:policy/AmazonSSMReadOnlyAccess"
+              ]
+            ]
+          },
+          {
+            "Fn::Join": [
+              "",
+              [
+                "arn:",
+                {
+                  "Ref": "AWS::Partition"
+                },
+                ":iam::aws:policy/AmazonS3ReadOnlyAccess"
+              ]
+            ]
+          }
+        ],
+        "Tags": [
+          {
+            "Key": "Name",
+            "Value": "EC2ACMPCAServerStack/ServerInstance"
+          }
+        ]
+      }
+    },
+    "ServerInstanceInstanceProfile33C2228C": {
+      "Type": "AWS::IAM::InstanceProfile",
+      "Properties": {
+        "Roles": [
+          {
+            "Ref": "ServerInstanceInstanceRole1FCED121"
+          }
+        ]
+      }
+    },
+    "ServerInstance66AD925Af0d9cf94c317d351": {
+      "Type": "AWS::EC2::Instance",
+      "Properties": {
+        "AvailabilityZone": {
+          "Fn::Select": [
+            0,
+            {
+              "Fn::GetAZs": ""
+            }
+          ]
+        },
+        "IamInstanceProfile": {
+          "Ref": "ServerInstanceInstanceProfile33C2228C"
+        },
+        "ImageId": {
+          "Fn::FindInMap": [
+            "ServerInstanceAmiMap5DB1AE21",
+            {
+              "Ref": "AWS::Region"
+            },
+            "ami"
+          ]
+        },
+        "InstanceType": "t3a.micro",
+        "KeyName": "ACMPCAEC2KeyPair",
+        "SecurityGroupIds": [
+          {
+            "Fn::GetAtt": [
+              "ProxySecurityGroup6DC814C1",
+              "GroupId"
+            ]
+          }
+        ],
+        "SubnetId": {
+          "Ref": "VpcpublicSubnet1Subnet2BB74ED7"
+        },
+        "Tags": [
+          {
+            "Key": "Name",
+            "Value": "EC2ACMPCAServerStack/ServerInstance"
+          }
+        ],
+        "UserData": {
+          "Fn::Base64": "#!/bin/bash\n#!/bin/bash\n\n# FOR LOCALSTACK ONLY\nexport AWS_ENDPOINT_URL=http://localhost.localstack.cloud:4566\nexport AWS_REGION=us-east-1\nexport AWS_ACCESS_KEY_ID=test\nexport AWS_SECRET_ACCESS_KEY=test\n\nyum update -y\nyum install -y python3 python3-boto3 openssl awscli\n\nmkdir -p /home/ec2-user\n\necho \"from http.server import SimpleHTTPRequestHandler, HTTPServer\nimport ssl\nimport boto3\nimport json\n\nssm_client = boto3.client('ssm', region_name='us-east-1')\ns3_client = boto3.client('s3', region_name='us-east-1')\nbucket_name = ssm_client.get_parameter(Name='/sample/scires/cloudtrail-log-bucket')['Parameter']['Value']\n\n\nclass Handler(SimpleHTTPRequestHandler):\n    def do_GET(self):\n        response_content = {}\n        if self.path.startswith('/logs'):\n            objs = s3_client.get_paginator('list_objects_v2').paginate(Bucket=bucket_name).build_full_result()\n            response_list = []\n            for obj in objs['Contents']:\n                response_list.append(obj['Key'])\n            response_content['items'] = response_list\n        else:\n            response_content['message'] = 'Hello from the server instance!'\n\n        self.send_response(200)\n        self.send_header('Content-type','application/json')\n        self.end_headers()\n        self.wfile.write(json.dumps(response_content).encode('utf-8'))\n\n\nif __name__ == '__main__':\n\n    with open('/home/ec2-user/localstack_test_internal.crt') as fd:\n        parts = fd.read().split('\\t')\n        for i, part  in enumerate(parts):\n            with open(f'/home/ec2-user/localstack_test_internal.{i}.crt', 'w+') as f:\n                f.write(part)\n\n    context = ssl.SSLContext(ssl.PROTOCOL_TLS_SERVER)\n    context.load_cert_chain(\n        certfile='/home/ec2-user/localstack_test_internal.0.crt',\n        keyfile='/home/ec2-user/localstack_test_internal.pem'\n    )\n    server_address = ('', 8443)\n    httpd = HTTPServer(server_address, Handler)\n    httpd.socket = context.wrap_socket(httpd.socket, server_side=True)\n    print('Running server on port 8443...')\n    httpd.serve_forever()\n\" > /home/ec2-user/server.py\n\ncd /home/ec2-user\n\nCA_ARN=$(aws --region us-east-1 ssm get-parameter --name '/sample/scires/ca-arn' --query 'Parameter.Value' --output text)\n\n# Generate a private key and CSR\nopenssl genrsa -out localstack_test_internal.pem 2048\nopenssl req -new -key localstack_test_internal.pem -out localstack_test_internal.csr -subj \"/CN=server.localstack.test.internal\"\n\naws --region us-east-1 acm-pca issue-certificate \\\n    --certificate-authority-arn \"${CA_ARN}\" \\\n    --csr fileb://localstack_test_internal.csr \\\n    --signing-algorithm SHA256WITHRSA \\\n    --validity Value=7,Type=DAYS \\\n    --template-arn arn:aws:acm-pca:::template/EndEntityCertificate/V1 \\\n    --output text > certificate_arn.txt\n\n# get new cert\naws --region us-east-1 acm-pca get-certificate \\\n    --certificate-authority-arn \"${CA_ARN}\" \\\n    --certificate-arn $(cat certificate_arn.txt) \\\n    --output text > localstack_test_internal.crt\n\ncd /home/ec2-user\n\npython3 server.py &\n"
+        }
+      },
+      "DependsOn": [
+        "ServerInstanceInstanceRole1FCED121"
+      ]
+    },
+    "record10230D7D": {
+      "Type": "AWS::Route53::RecordSet",
+      "Properties": {
+        "HostedZoneId": {
+          "Ref": "PrivateHostedZone6354E1BB"
+        },
+        "Name": "server.localstack.test.internal.",
+        "ResourceRecords": [
+          {
+            "Fn::GetAtt": [
+              "ServerInstance66AD925Af0d9cf94c317d351",
+              "PublicIp"
+            ]
+          }
+        ],
+        "TTL": "1800",
+        "Type": "A"
+      }
+    },
+    "ProxyIpParamF82A89FC": {
+      "Type": "AWS::SSM::Parameter",
+      "Properties": {
+        "Description": "IP of the proxy",
+        "Name": "/sample/scires/ec2-proxy-ip",
+        "Type": "String",
+        "Value": {
+          "Fn::GetAtt": [
+            "ProxyInstance08F2B173cd8a960c6c7989b5",
+            "PrivateIp"
+          ]
+        }
+      }
+    },
+    "ServerIpParam6393F565": {
+      "Type": "AWS::SSM::Parameter",
+      "Properties": {
+        "Description": "IP of the server",
+        "Name": "/sample/scires/ec2-server-ip",
+        "Type": "String",
+        "Value": {
+          "Fn::GetAtt": [
+            "ServerInstance66AD925Af0d9cf94c317d351",
+            "PublicIp"
+          ]
+        }
+      }
+    }
+  },
+  "Mappings": {
+    "ProxyInstanceAmiMap9E8BA322": {
+      "us-east-1": {
+        "ami": "ami-024f768332f0"
+      }
+    },
+    "ServerInstanceAmiMap5DB1AE21": {
+      "us-east-1": {
+        "ami": "ami-024f768332f0"
+      }
+    }
+  },
+  "Outputs": {
+    "PublicDnsName": {
+      "Value": {
+        "Fn::GetAtt": [
+          "ProxyInstance08F2B173cd8a960c6c7989b5",
+          "PublicDnsName"
+        ]
+      }
+    },
+    "ProxyIp": {
+      "Value": {
+        "Fn::GetAtt": [
+          "ProxyInstance08F2B173cd8a960c6c7989b5",
+          "PrivateIp"
+        ]
+      }
+    },
+    "ProxyPublicIp": {
+      "Value": {
+        "Fn::GetAtt": [
+          "ProxyInstance08F2B173cd8a960c6c7989b5",
+          "PublicIp"
+        ]
+      }
+    },
+    "ProxyInstanceId": {
+      "Value": {
+        "Ref": "ProxyInstance08F2B173cd8a960c6c7989b5"
+      }
+    },
+    "ServerIp": {
+      "Value": {
+        "Fn::GetAtt": [
+          "ServerInstance66AD925Af0d9cf94c317d351",
+          "PrivateIp"
+        ]
+      }
+    },
+    "ServerInstanceId": {
+      "Value": {
+        "Ref": "ServerInstance66AD925Af0d9cf94c317d351"
+      }
+    }
+  }
+}

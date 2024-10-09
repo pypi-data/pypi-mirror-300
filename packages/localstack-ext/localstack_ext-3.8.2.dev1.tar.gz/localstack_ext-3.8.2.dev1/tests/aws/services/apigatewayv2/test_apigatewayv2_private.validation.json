@@ -1,0 +1,8 @@
+{
+  "tests/aws/services/apigatewayv2/test_apigatewayv2_private.py::TestApigatewayV2PrivateIntegration::test_apigatewayv2_elb_validation": {
+    "last_validated_date": "2024-09-12T15:50:09+00:00"
+  },
+  "tests/aws/services/apigatewayv2/test_apigatewayv2_private.py::TestApigatewayV2PrivateIntegration::test_apigatewayv2_servicediscovery_validation": {
+    "last_validated_date": "2024-09-12T15:19:51+00:00"
+  }
+}

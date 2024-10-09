@@ -1,0 +1,11 @@
+{
+  "tests/aws/scenario/ec2_acm_pca/test_ec2_acm_pca.py::TestEC2ACMPCA::test_cloudtrail_logs": {
+    "last_validated_date": "2024-09-06T17:51:53+00:00"
+  },
+  "tests/aws/scenario/ec2_acm_pca/test_ec2_acm_pca.py::TestEC2ACMPCA::test_curl_from_client": {
+    "last_validated_date": "2024-09-30T19:48:04+00:00"
+  },
+  "tests/aws/scenario/ec2_acm_pca/test_ec2_acm_pca.py::TestEC2ACMPCA::test_ec2_acm_pca": {
+    "last_validated_date": "2024-09-02T11:46:31+00:00"
+  }
+}
