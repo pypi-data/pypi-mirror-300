@@ -1,0 +1,14 @@
+LICENSE
+README.md
+setup.py
+pygridsio/__init__.py
+pygridsio/gocad.py
+pygridsio/grid.py
+pygridsio/grid_to_xarray.py
+pygridsio/pygridsio.py
+pygridsio/voxet.py
+pygridsio.egg-info/PKG-INFO
+pygridsio.egg-info/SOURCES.txt
+pygridsio.egg-info/dependency_links.txt
+pygridsio.egg-info/requires.txt
+pygridsio.egg-info/top_level.txt
