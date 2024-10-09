@@ -1,0 +1,10 @@
+README.md
+setup.py
+llama_deck.egg-info/PKG-INFO
+llama_deck.egg-info/SOURCES.txt
+llama_deck.egg-info/dependency_links.txt
+llama_deck.egg-info/entry_points.txt
+llama_deck.egg-info/top_level.txt
+llamadeck/__init__.py
+llamadeck/config.py
+llamadeck/main.py
