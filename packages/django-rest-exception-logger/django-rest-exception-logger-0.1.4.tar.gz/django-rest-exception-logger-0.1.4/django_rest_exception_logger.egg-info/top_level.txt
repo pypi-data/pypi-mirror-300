@@ -1,0 +1,2 @@
+django_rest_exception_logger
+tests
