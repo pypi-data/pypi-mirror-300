@@ -1,0 +1,43 @@
+Metadata-Version: 2.1
+Name: tms-kit
+Version: 0.2.0
+Summary: Toy models of superposition experiments
+Author-Email: Daniel Tan <dtch1997@users.noreply.github.com>
+License: MIT
+Requires-Python: >=3.11
+Requires-Dist: torch>=2.4.1
+Requires-Dist: numpy>=2.1.1
+Requires-Dist: jaxtyping>=0.2.34
+Requires-Dist: tqdm>=4.66.5
+Requires-Dist: einops>=0.8.0
+Requires-Dist: simple-parsing>=0.1.6
+Requires-Dist: plotly>=5.24.1
+Requires-Dist: pandas>=2.2.3
+Requires-Dist: matplotlib>=3.9.2
+Requires-Dist: rich>=13.8.1
+Requires-Dist: ipykernel>=6.29.5
+Requires-Dist: nbformat>=5.10.4
+Requires-Dist: pytest>=8.3.3
+Requires-Dist: pyright>=1.1.381
+Requires-Dist: ruff>=0.6.7
+Requires-Dist: kaleido!=0.2.1.post1
+Requires-Dist: torchmetrics>=1.4.2
+Description-Content-Type: text/markdown
+
+# TMS
+
+![tests](https://github.com/dtch1997/tms/actions/workflows/tests.yaml/badge.svg)
+
+![5_2_superposition](experiments/bottleneck_tms/5_2_superposition.png)
+
+Codebase for quickly implementing experiments with toy models of superposition. 
+
+## Quickstart
+
+To set up the environment, see [setup docs](docs/setup.md) for detailed instructions. 
+
+To reproduce figures from Anthropic's [Toy Models of Superposition](https://transformer-circuits.pub/2022/toy_model/index.html), see [sample script](experiments/bottleneck_tms/run.py) 
+
+## Acknowledgements
+
+This codebase is heavily adapted from the [ARENA 3.0 codebase](https://github.com/callummcdougall/ARENA_3.0/tree/main), designed and maintained by Callum McDougall. Many thanks to Callum and the ARENA team!
