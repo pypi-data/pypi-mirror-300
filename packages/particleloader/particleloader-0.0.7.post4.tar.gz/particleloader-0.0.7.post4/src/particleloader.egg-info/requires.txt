@@ -1,0 +1,4 @@
+pandas
+tqdm
+matplotlib>=3.5.0
+numpy
