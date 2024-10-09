@@ -1,0 +1,60 @@
+[project]
+name = "listdiff"
+version = "1.0.3"
+description = "Diff 2 python lists using a given key"
+maintainers = [
+	{ name = "Rehan Khwaja", email = "rehan@khwaja.name" }
+]
+readme = "README.md"
+classifiers = [
+	"License :: OSI Approved :: MIT License",
+	"Development Status :: 5 - Production/Stable",
+	"Intended Audience :: Developers",
+	"Programming Language :: Python :: 3.8",
+	"Programming Language :: Python :: 3.9",
+	"Programming Language :: Python :: 3.10",
+	"Programming Language :: Python :: 3.11",
+	"Programming Language :: Python :: 3.12",
+	"Programming Language :: Python :: 3.13",
+]
+requires-python = ">=3.8"
+dependencies = []
+
+[project.urls]
+Homepage = "https://github.com/rkhwaja/pylistdiff"
+
+[tool.poe.tasks]
+lint = "ruff check src tests"
+
+[tool.poe.tasks.test]
+shell = """
+pytest --cov=src/listdiff || exit 1
+coverage xml
+"""
+
+[tool.ruff]
+line-length = 200
+lint.ignore = ["ANN001", "ANN202", "ANN401", "D100", "D203", "D205", "D206", "D211", "D212", "D400", "D401", "D403", "D415", "N802", "I", "N803", "N806", "PT013", "S101", "TCH003", "W191"]
+lint.select = ["ALL"]
+
+[tool.ruff.lint.extend-per-file-ignores]
+"tests/*" = ["ANN201", "D103", "INP001", "PT006"]
+
+[tool.ruff.lint.flake8-quotes]
+inline-quotes = "single"
+multiline-quotes = "single"
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.uv]
+dev-dependencies = [
+    "pytest>=7.1",
+    "pytest-cov>=2.9.0",
+    "poethepoet>=0.16.4",
+    "ruff>=0.3.1",
+]
