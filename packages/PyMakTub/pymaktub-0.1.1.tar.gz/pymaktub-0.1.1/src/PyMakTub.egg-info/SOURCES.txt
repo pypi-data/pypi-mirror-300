@@ -1,0 +1,15 @@
+LICENSE
+README.md
+setup.py
+src/PyMakTub.egg-info/PKG-INFO
+src/PyMakTub.egg-info/SOURCES.txt
+src/PyMakTub.egg-info/dependency_links.txt
+src/PyMakTub.egg-info/requires.txt
+src/PyMakTub.egg-info/top_level.txt
+src/PyMaktube/MakTub.py
+src/PyMaktube/MakTubSeqs.py
+src/PyMaktube/Maktub.dll
+src/PyMaktube/Maktub.so
+src/PyMaktube/Probabilitys.py
+src/PyMaktube/__init__.py
+src/PyMaktube/ctypes.py
