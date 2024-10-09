@@ -1,0 +1,4 @@
+#!python
+
+import LiamSpiderToolkit
+print('Hello World')
