@@ -1,0 +1,58 @@
+Metadata-Version: 2.1
+Name: pygridsio
+Version: 0.1.2
+Summary: This is a utility package to read in .zmap and .asc grids to numpy or xarrays
+Home-page: https://ci.tno.nl/gitlab/AGS/pygridsio.git
+Author: Hen Brett
+Author-email: hen.brett@tno.nl
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: pykrige
+Requires-Dist: xarray
+
+# pygridsio
+
+
+
+## Introduction
+
+This is a python submodule containing IO functionality for reading and writing .asc and .zmap grids, frequently used within the property modelling and temperature modelling pre- and post- processing codes.
+
+## Usage
+
+`from pygridsio.pygridsio import read_grid`
+
+`grid = read_grid(filename)`
+
+
+
+## Installation
+
+### Anaconda virtual environment
+#### Create/update anaconda environment
+The file `environment.yml` can be used to create a working python environment with the needed packages.
+For this open an `Anaconda Prompt` and:
+
+`conda env create -f environment.yml`
+
+Or to update the existing anaconda environment (with an updated version of the`environment.yml`file :
+
+`conda env update -n pygridsio -f environment.yml`
+
+#### Export (updated) anaconda environment
+The `environment.yml` file needs to be updated when new packages are added:
+
+`conda env export --from-history -n pygridsio > environment.yml`
+
+#### Use anaconda environment in PyCharm
+To connect the anaconda environment to Pycharm you can go to `File` , `Settings`, `Project`, `Python Interpreter`, `add interpreter`, `add local interpreter`, `conda environment` and then select the environment you created using the above steps.
+
+## Verify Installation
+You can verify the installation of the different python packages by running the tests stored in `tests`. 
+In pycharm: Right click on the folder marked `tests` and click on `Run python tests in test`
