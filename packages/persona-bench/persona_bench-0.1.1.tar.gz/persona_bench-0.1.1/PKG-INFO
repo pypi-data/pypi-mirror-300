@@ -1,0 +1,484 @@
+Metadata-Version: 2.1
+Name: persona-bench
+Version: 0.1.1
+Summary: Pluristic alignment evaluation benchmark for LLMs
+Home-page: https://www.synthlabs.ai
+License: Apache-2.0
+Author: SynthLabs.ai
+Author-email: team@synthlabs.ai
+Requires-Python: >=3.10,<4.0
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: datasets (>=2.20.0,<3.0.0)
+Requires-Dist: inspect-ai (>=0.3.18,<0.4.0)
+Requires-Dist: instructor (>=1.3.4,<2.0.0)
+Requires-Dist: openai (>=1.36.0,<2.0.0)
+Requires-Dist: pandas (>=2.2.2,<3.0.0)
+Requires-Dist: pydantic (>=2.8.2,<3.0.0)
+Requires-Dist: seaborn (>=0.13.2,<0.14.0)
+Requires-Dist: tenacity (>=8.5.0,<9.0.0)
+Project-URL: Repository, https://github.com/SynthLabsAI/PERSONA-bench
+Description-Content-Type: text/markdown
+
+<div align="center">
+
+
+<p align="center"><h1 align="center">PERSONA Bench</h1>
+
+<b>Reproducible Testbed for Evaluating and Improving Language Model Alignment with Diverse User Values</b>
+
+<a href="https://www.synthlabs.ai/research/persona"><b>SynthLabs.ai/research/persona</b></a><br /><br />
+<a href="https://www.synthlabs.ai"><img src="https://www.synthlabs.ai/img/persona.jpeg" alt="PERSONA" style="max-width: 100%;"></a><br /></p>
+
+
+<p align="center">
+<a href="https://github.com/SynthLabsAI/PERSONA-bench"><img src="https://img.shields.io/badge/GitHub-PERSONA--Bench-purple?logo=github" alt="GitHub Repository" style="max-width: 100%;"></a>
+<a href="https://pypi.org/project/persona-bench/"><img src="https://badge.fury.io/py/persona-bench.svg" alt="PyPI version"/></a>
+  <br/>
+  <a href="https://www.synthlabs.ai/personalization"><img src="https://img.shields.io/badge/docs-online-brightgreen" alt="Documentation" style="max-width: 100%;"></a>
+  <a href="https://github.com/SynthLabsAI/PERSONA-bench/blob/main/CONTRIBUTING.md"><img src="https://img.shields.io/badge/Contributor-Guide-blue?logo=Github&color=purple" alt="Contributor Guide"/></a>
+  <a href="https://opensource.org/licenses/Apache-2.0"><img src="https://img.shields.io/badge/License-Apache-blue.svg" alt="License" style="max-width: 100%;"></a>
+  <br/>
+  <a href="https://arxiv.org/abs/2407.17387"><img src="https://img.shields.io/badge/arXiv-2407.17387-b31b1b.svg" alt="arXiv"/></a>
+  <a href="https://www.synthlabs.ai/"><img src="https://img.shields.io/badge/AI-AI?labelColor=6466F1&color=D43B83&label=SynthLabs" alt="SynthLabs"/></a>
+  <a href="https://ai.stanford.edu/"><img src="https://img.shields.io/badge/Stanford-AI%20Lab-D43B83?logo=stanford&logoColor=white" alt="Stanford AI Lab" style="max-width: 100%;"></a>
+<a href="https://discord.gg/46uN42SE6x"><img src="https://img.shields.io/badge/Discord-Chat-blue?logo=discord&color=4338ca&labelColor=black" alt="Discord" style="max-width: 100%;"></a>
+  <a href="https://twitter.com/synth_labs"><img src="https://img.shields.io/twitter/follow/synth_labs?style=social" alt="Twitter Follow" style="max-width: 100%;"></a>
+</p>
+
+[//]: # (  <a href="https://codecov.io/gh/SynthLabsAI/PERSONA-Bench"><img src="https://codecov.io/gh/SynthLabsAI/PERSONA-Bench/graph/badge.svg" alt="Coverage"/></a>)
+[//]: # (<a href="https://github.com/SynthLabsAI/PERSONA-bench/actions/workflows/tests.yml"><img src="https://img.shields.io/github/actions/workflow/status/SynthLabsAI/PERSONA-bench/tests.yml?logo=githubactions&logoColor=white&label=Tests" alt="Tests" style="max-width: 100%;"></a>)
+
+<p align="center">
+  <a href="https://arxiv.org/abs/2407.17387">📄 Paper</a> |
+  <a href="https://www.synthlabs.ai/research/persona">🗃️ Research Visualizations</a> |
+  <a href="https://huggingface.co/collections/SynthLabsAI/persona-66bdb06f0dc132aeeaa236a4">🤗 Hugging Face</a> |
+</p>
+
+<p align="center">
+  <a href="https://www.synthlabs.ai/">🌐 SynthLabs Research</a> |
+  <a href="https://jobs.synthlabs.ai/">👥 Join the Team</a> |
+<a href="https://www.synthlabs.ai/contact">🤝 Let's Collaborate</a>
+</p>
+
+[//]: # ([![Tests]&#40;https://img.shields.io/github/actions/workflow/status/SynthLabs/PERSONA-bench/ci.yml?logo=github&label=Tests&#41;]&#40;https://github.com/SynthLabs/PERSONA-bench/actions&#41;)
+
+</div>
+
+PERSONA Bench is an extension of the PERSONA framework introduced in [Castricato et al. 2024](https://www.synthlabs.ai/research/persona). It provides a reproducible testbed for evaluating and improving the alignment of language models with diverse user values.
+## Introduction
+
+PERSONA established a strong correlation between human judges and language models in persona-based personalization tasks. Building on this foundation, we've developed a suite of robust evaluations to test a model's ability to perform personalization-related tasks. This repository provides practitioners with tools to assess and improve the pluralistic alignment of their language models.
+
+Our evaluation suite uses [inspect-ai](https://inspect.ai-safety-institute.org.uk/) to perform various assessments on persona-based tasks, offering insights into model performance across different demographic intersections, feature importance, and personalization capabilities.
+
+## Key Features
+
+- 🎭 **Main Evaluation**: Assess personalized response generation
+- 🧩 **Leave One Out Analysis**: Measure attribute impact on performance
+- 🌐 **Intersectionality**: Evaluate model performance across different demographic intersections
+- 🎯 **Pass@K**: Determine attempts needed for successful personalization
+- 🔍 **Comparison**: Grounded personalization evaluation (API-exclusive)
+
+## Quick Start
+
+1. Install Poetry if you haven't already:
+   ```bash
+   curl -sSL https://install.python-poetry.org | python3 -
+   ```
+
+2. Install the package:
+   ```bash
+   poetry add persona-bench
+   ```
+
+3. Use in your Python script:
+   ```python
+   from dotenv import load_dotenv
+   from persona_bench import evaluate_model
+
+   # optional, you can also pass the environment variables directly to evaluate_model
+   load_dotenv()
+
+   eval = evaluate_model("gpt-3.5-turbo", evaluation_type="main")
+   print(eval.results.model_dump())
+   ```
+
+## PERSONA API
+
+PERSONA Bench now offers an API for easy integration and evaluation of your models. The API provides access to all evaluation types available in PERSONA Bench, including a novel evaluation type called "comparison" for grounded personalization evaluation.
+
+### Quick Start with API
+
+1. Install the package:
+   ```bash
+   pip install persona-bench
+   ```
+
+2. Set up your API key:
+   - Sign up at [https://www.synthlabs.ai/research/persona](https://www.synthlabs.ai/research/persona) to get your API key and claim your free trial credits.
+   - Set the API key as an environment variable:
+     ```bash
+     export SYNTH_API_KEY=your_api_key_here
+     ```
+
+3. Use in your Python script:
+   ```python
+   from persona_bench.api import PERSONAClient
+   from persona_bench.api.prompt_constructor import ChainOfThoughtPromptConstructor
+
+   # Create a PERSONAClient object
+   client = PERSONAClient(
+       model_str="your_model_name",
+       evaluation_type="comparison", # Run a grounded evaluation, API exclusive!
+       N=50,
+       prompt_constructor=ChainOfThoughtPromptConstructor(),
+       # If not set as an environment variable, pass the API key here:
+       # api_key="your_api_key_here"
+   )
+
+   # Iterate through questions and log answers
+   for idx, q in enumerate(client):
+       answer = your_model_function(q["system"], q["user"])
+       client.log_answer(idx, answer)
+
+   # Evaluate the results
+   results = client.evaluate(drop_answer_none=True)
+   print(results)
+   ```
+
+### Key Features
+
+- 🎭 **Multiple Evaluation Types**: Support for grounded, main, LOO, intersectionality, and pass@k evaluations
+- 🔧 **Customizable Prompt Construction**: Use default or custom prompt constructors
+- 📊 **Easy Data Handling**: Iterate through questions and log answers seamlessly
+- 📈 **Evaluation**: Evaluate model performance with a single method call
+
+### Detailed Usage
+
+#### Initialization
+
+Create a `PERSONAClient` object with the following parameters:
+
+- `model_str`: The identifier for this evaluation task
+- `evaluation_type`: Type of evaluation ("main", "loo", "intersectionality", "pass_at_k", "comparison")
+- `N`: Number of samples for evaluation
+- `prompt_constructor`: Custom prompt constructor (optional)
+- `intersection`: List of intersection attributes (required for intersectionality evaluation)
+- `loo_attributes`: Leave-one-out attributes (required for LOO evaluation)
+- `seed`: Random seed for reproducibility (optional)
+- `url`: API endpoint URL (optional, default is "https://synth-api-development.eastus.azurecontainer.io/api/v1/personas/v1/")
+- `api_key`: Your SYNTH API key (optional if set as an environment variable)
+
+#### Iterating Through Questions
+
+Use the client as an iterable to access questions:
+
+```python
+for idx, question in enumerate(client):
+    system_prompt = question["system"]
+    user_prompt = question["user"]
+    answer = your_model_function(system_prompt, user_prompt)
+    client.log_answer(idx, answer)
+```
+
+#### Evaluation
+
+Evaluate the logged answers:
+
+```python
+results = client.evaluate(drop_answer_none=True, save_scores=False)
+```
+
+### Advanced Usage
+
+#### Custom Prompt Constructors
+
+Create a custom prompt constructor by inheriting from `BasePromptConstructor`:
+
+```python
+from persona_bench.api.prompt_constructor import BasePromptConstructor
+
+class MyCustomPromptConstructor(BasePromptConstructor):
+    def construct_prompt(self, persona, question):
+        # Implement your custom prompt construction logic
+        pass
+
+client = PERSONAClient(
+    # ... other parameters ...
+    prompt_constructor=MyCustomPromptConstructor(),
+)
+```
+
+#### Accessing Raw Data
+
+Access the underlying data using indexing:
+
+```python
+question = client[0]  # Get the first question
+
+answers = [generate_answer(q) for q in client]
+client.set_answers(answers)
+```
+
+### Evaluation Types
+
+#### Comparison Evaluation (API-exclusive)
+
+The comparison evaluation is our most advanced and grounded assessment, exclusively available through the PERSONA API. It provides a robust measure of a model's personalization capabilities using known gold truth answers.
+
+<details>
+<summary>Click to expand details</summary>
+
+- Uses carefully curated persona pairs with known distinctions
+- Presents models with questions that have objectively different answers for each persona
+- Evaluates the model's ability to generate persona-appropriate responses
+- Compares model outputs against gold truth answers for precise accuracy measurement
+- Offers the most reliable and interpretable results among all evaluation types
+
+Example usage:
+
+```python
+from persona_bench.api import PERSONAClient
+client = PERSONAClient(model_str="your_identifier_name", evaluation_type="comparison", N=50)
+```
+
+</details>
+
+## Development Setup
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/SynthLabsAI/PERSONA-bench.git
+   cd PERSONA-bench
+   ```
+
+2. Install dependencies:
+   ```bash
+   poetry install
+   ```
+
+3. Install pre-commit hooks:
+   ```bash
+   poetry run pre-commit install
+   ```
+
+4. Set up HuggingFace authentication:
+   ```bash
+   huggingface-cli login
+   ```
+
+5. Set up environment variables:
+   ```bash
+   cp .env.example .env
+   vim .env
+   ```
+
+## Detailed Evaluations
+
+### Main Evaluation
+
+The main evaluation script assesses a model's ability to generate personalized responses based on given personas from our custom filtered PRISM dataset.
+
+<details>
+<summary>Click to expand details</summary>
+
+1. Load PRISM dataset
+2. Generate utterances using target model with random personas
+3. Evaluate using GPT-4 as a critic model via a debate approach
+4. Analyze personalization effectiveness
+
+</details>
+
+### Leave One Out Analysis
+
+This evaluation measures the impact of individual attributes on personalization performance.
+
+<details>
+<summary>Click to expand details</summary>
+
+- Uses sub-personas separated by LOO attributes
+- Tests on multiple personas and PRISM questions
+- Analyzes feature importance
+
+Available attributes include age, sex, race, education, employment status, and many more. See the [leave one out example json](https://github.com/SynthLabsAI/PERSONA-bench/blob/develop/configs/example_loo_attributes.json) for formatting.
+
+The available attributes are
+
+```json
+[
+  "age",
+  "sex",
+  "race",
+  "ancestry",
+  "household language",
+  "education",
+  "employment status",
+  "class of worker",
+  "industry category",
+  "occupation category",
+  "detailed job description",
+  "income",
+  "marital status",
+  "household type",
+  "family presence and age",
+  "place of birth",
+  "citizenship",
+  "veteran status",
+  "disability",
+  "health insurance",
+  "big five scores",
+  "defining quirks",
+  "mannerisms",
+  "personal time",
+  "lifestyle",
+  "ideology",
+  "political views",
+  "religion",
+  "cognitive difficulty",
+  "ability to speak english",
+  "vision difficulty",
+  "fertility",
+  "hearing difficulty"
+]
+
+```
+
+Example usage is:
+
+```python
+
+from dotenv import load_dotenv
+from persona_bench import evaluate_model
+
+# optional, you can also pass the environment variables directly to evaluate_model
+# make sure that your .env file specifies where the loo_json is!
+load_dotenv()
+
+eval = evaluate_model("gpt-3.5-turbo", evaluation_type="loo")
+print(eval.results.model_dump())
+```
+
+</details>
+
+### Intersectionality
+
+Evaluate model performance across different demographic intersections.
+
+<details>
+<summary>Click to expand details</summary>
+
+- Define intersections using JSON configuration
+- Measure personalization across disjoint populations
+- Analyze model performance for specific demographic combinations
+
+See the [intersectionality example json](https://github.com/SynthLabsAI/PERSONA-bench/blob/develop/configs/example_intersections.json).
+
+This configuration defines two intersections:
+
+Males aged 18-34
+Females aged 18-34
+
+You can use any of the attributes available in the LOO evaluation to create intersections. For attributes with non-enumerable values (e.g., textual background information), you may need to modify the intersection script to use language model embeddings for computing subpopulations.
+
+</details>
+
+### Pass@K
+
+Determines how many attempts are required to successfully personalize for a given persona.
+
+<details>
+<summary>Click to expand details</summary>
+
+- Reruns main evaluation K times
+- Counts attempts needed for successful personalization
+- Provides insights into model consistency and reliability
+
+WARNING! Pass@K is very credit intensive and may require multiple hours to complete a large run.
+
+</details>
+
+## Running with InspectAI
+
+Configure your `.env` file before running the scripts. You can set the generate mode to one of the following:
+- `baseline`: Generate an answer directly, not given the persona
+- `output_only`: Generate answer given the persona, without chain of thought
+- `chain_of_thought`: Generate chain of thought before answering, given the persona
+- `demographic_summary`: Generate a summary of the persona before answering
+
+```bash
+# Activate the poetry environment
+poetry shell
+
+# Main Evaluation
+inspect eval src/persona_bench/main_evaluation.py --model {model}
+
+# Leave One Out Analysis
+inspect eval src/persona_bench/main_loo.py --model {model}
+
+# Intersectionality Evaluation
+inspect eval src/persona_bench/main_intersectionality.py --model {model}
+
+# Pass@K Evaluation
+inspect eval src/persona_bench/main_pass_at_k.py --model {model}
+```
+
+Using Inspect AI allows you to utilize their visualization tooling, which is found in their documentation [here](https://inspect.ai-safety-institute.org.uk/log-viewer.html).
+
+## Visualization
+
+We provide scripts for visualizing evaluation results:
+
+- `visualization_loo.py`: Leave One Out analysis
+- `visualization_intersection.py`: Intersectionality evaluation
+- `visualization_pass_at_k.py`: Pass@K evaluation
+
+These scripts use the most recent log file by default. Use the `--log` parameter to specify a different log file.
+
+## Dependencies
+
+Key dependencies include:
+- inspect-ai
+- datasets
+- pandas
+- openai
+- instructor
+- seaborn
+
+For development:
+- tiktoken
+- transformers
+
+See `pyproject.toml` for a complete list of dependencies.
+
+## Citation
+
+If you use PERSONA in your research, please cite our paper:
+
+```bibtex
+@misc{castricato2024personareproducibletestbedpluralistic,
+      title={PERSONA: A Reproducible Testbed for Pluralistic Alignment},
+      author={Louis Castricato and Nathan Lile and Rafael Rafailov and Jan-Philipp Fränken and Chelsea Finn},
+      year={2024},
+      eprint={2407.17387},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL},
+      url={https://arxiv.org/abs/2407.17387},
+}
+```
+
+## Community & Support
+
+Join our [Discord community](https://discord.gg/46uN42SE6x) for discussions, support, and updates or reach out to us at [https://www.synthlabs.ai/contact](https://www.synthlabs.ai/contact).
+
+## Acknowledgements
+
+This research is supported by SynthLabs. We thank our collaborators and the open-source community for their valuable contributions.
+
+---
+
+Copyright © 2024, [SynthLabs](https://www.SynthLabs.ai). Released under the Apache License.
+
