@@ -1,0 +1,13 @@
+setup.py
+gsession/__init__.py
+gsession/gnome_favorite_apps_setup.py
+gsession/launch_chrome_and_vscode.py
+gsession/main.py
+gsession/parsec_setup.py
+gsession/session_setup.py
+gsession/ssh_key_maknager.py
+gsession.egg-info/PKG-INFO
+gsession.egg-info/SOURCES.txt
+gsession.egg-info/dependency_links.txt
+gsession.egg-info/entry_points.txt
+gsession.egg-info/top_level.txt
