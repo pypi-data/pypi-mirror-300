@@ -1,0 +1,152 @@
+# Rapidgator API Client
+
+This Python package provides a comprehensive client for interacting with the Rapidgator API. It allows you to manage files, folders, and perform various operations on your Rapidgator account programmatically.
+
+## Installation
+
+You can install the package using pip:
+
+```
+pip install rapidgator-api-client
+```
+
+## Usage
+
+Here are some examples of how to use the Rapidgator API Client:
+
+### Initializing the Client
+
+```python
+from rapidgator_api import RapidgatorClient
+
+# Initialize with login credentials
+client = RapidgatorClient(login='your_email@example.com', password='your_password')
+
+# Or initialize with an existing token
+client = RapidgatorClient(token='your_access_token')
+```
+
+### User Information
+
+```python
+user_info = client.get_user_info()
+print(f"Email: {user_info.email}")
+print(f"Premium: {user_info.is_premium}")
+print(f"Storage left: {user_info.storage.left} bytes")
+```
+
+### Folder Operations
+
+```python
+# Create a folder
+new_folder = client.create_folder(name='My New Folder')
+print(f"Created folder: {new_folder.name} (ID: {new_folder.folder_id})")
+
+# Get folder content
+content = client.get_folder_content(folder_id=new_folder.folder_id)
+print(f"Subfolders: {len(content['folder'].folders)}")
+print(f"Files: {len(content['files'])}")
+
+# Rename a folder
+renamed_folder = client.rename_folder(folder_id=new_folder.folder_id, name='Renamed Folder')
+print(f"Renamed to: {renamed_folder.name}")
+
+# Delete a folder
+result = client.delete_folder(folder_ids=new_folder.folder_id)
+print(f"Deletion result: {result}")
+```
+
+### File Operations
+
+```python
+# Upload a file
+uploaded_file = client.upload_file('/path/to/local/file.txt')
+print(f"Uploaded file: {uploaded_file.name} (ID: {uploaded_file.file_id})")
+
+# Get file info
+file_info = client.get_file_info(file_id=uploaded_file.file_id)
+print(f"File size: {file_info.size} bytes")
+
+# Rename a file
+renamed_file = client.rename_file(file_id=uploaded_file.file_id, new_name='renamed_file.txt')
+print(f"Renamed to: {renamed_file.name}")
+
+# Move a file
+result = client.move_file(file_ids=uploaded_file.file_id, dest_folder_id='destination_folder_id')
+print(f"Move result: {result}")
+
+# Download a file
+client.download_file(file_id=uploaded_file.file_id, local_path='/path/to/save/file.txt')
+
+# Delete a file
+result = client.delete_file(file_ids=uploaded_file.file_id)
+print(f"Deletion result: {result}")
+```
+
+### Trash Can Operations
+
+```python
+# Get trash can content
+trash_content = client.get_trashcan_content()
+print(f"Files in trash: {len(trash_content['files'])}")
+
+# Restore files from trash
+result = client.restore_trashcan_files(file_ids=['file_id1', 'file_id2'])
+print(f"Restoration result: {result}")
+
+# Empty trash can
+result = client.empty_trashcan()
+print(f"Trash can emptied: {result}")
+```
+
+### Remote Upload
+
+```python
+# Create a remote upload job
+jobs = client.create_remote_upload_job(urls='http://example.com/file.zip')
+print(f"Created job ID: {jobs[0].job_id}")
+
+# Get remote upload job info
+job_info = client.get_remote_upload_info(job_ids=jobs[0].job_id)
+print(f"Job status: {job_info[0].state_label}")
+
+# Delete a remote upload job
+result = client.delete_remote_upload_job(job_ids=jobs[0].job_id)
+print(f"Job deletion result: {result}")
+```
+
+### Upload a Local Folder
+
+```python
+uploaded_folder = client.upload_folder('/path/to/local/folder')
+print(f"Uploaded folder: {uploaded_folder.name} (ID: {uploaded_folder.folder_id})")
+```
+
+## Error Handling
+
+The client raises custom exceptions for different error scenarios. You can catch these exceptions to handle errors gracefully:
+
+```python
+from rapidgator_api import RapidgatorAPIError, RapidgatorAuthenticationError
+
+try:
+    client.upload_file('/path/to/nonexistent/file.txt')
+except RapidgatorAPIError as e:
+    print(f"An API error occurred: {str(e)}")
+except RapidgatorAuthenticationError as e:
+    print(f"Authentication failed: {str(e)}")
+```
+
+## Notes
+
+- This client implements automatic retries (up to 3 times) for failed requests.
+- Upload and download operations display progress bars using the `tqdm` library.
+- Always ensure you have the necessary permissions and comply with Rapidgator's terms of service when using this client.
+
+## License
+
+[MIT License](LICENSE)
+
+## Contributing
+
+Contributions are welcome! Please feel free to submit a Pull Request.
