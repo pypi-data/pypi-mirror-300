@@ -1,0 +1,52 @@
+name: main CI
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  build:
+    runs-on: ${{ matrix.os }}-latest
+    defaults:
+      run:
+        shell: bash -l {0}
+
+    strategy:
+      max-parallel: 5
+      matrix:
+        os: ['ubuntu', 'macos', 'windows']
+        python-version: ['3.8', '3.10', '3.12']
+
+    steps:
+      - name: Check out repo
+        uses: actions/checkout@v4
+
+      - name: Set up Conda
+        uses: conda-incubator/setup-miniconda@v3
+        with:
+          auto-update-conda: true
+          python-version: ${{ matrix.python-version }}
+          environment-file: environment.yml
+
+      - name: Install CI packages
+        run: conda install -c conda-forge pycodestyle coverage
+
+      - name: Install program
+        run: pip install -e .
+
+      - name: Check style
+        run: pycodestyle .
+
+      - name: Run unit tests
+        run: |
+          export NUMBA_DISABLE_JIT=1
+          coverage run -m unittest && coverage lcov
+
+      - name: Coveralls
+        if: ${{ matrix.os == 'ubuntu' && matrix.python-version == '3.12' }}
+        uses: coverallsapp/github-action@v2
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          path-to-lcov: coverage.lcov
