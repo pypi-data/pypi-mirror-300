@@ -1,0 +1,15 @@
+[tool.poetry]
+name = "general-functions"
+version = "1.1.0"
+description = ""
+authors = ["Your Name <you@example.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = ">=3.6"
+model = {path = "dist/model-1.1.0-py3-none-any.whl"}
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: cracfunctions
+Version: 1.2.0
+Summary: A description of your package
+Author: Nicolò Cugno
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
