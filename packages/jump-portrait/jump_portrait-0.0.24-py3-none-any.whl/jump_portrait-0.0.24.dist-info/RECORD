@@ -1,0 +1,11 @@
+jump_portrait/__init__.py,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+jump_portrait/fetch.py,sha256=6SDD6eCNpZm4SY2HtygkD3-8LA9PCGC2ZqtGwlFBu1I,9944
+jump_portrait/s3.py,sha256=XOqoqMhLzfecRN9GftXK0V3hjSLbETqQzDMUt1JmYF8,6903
+jump_portrait/save.py,sha256=i8xbp0p2Jz2-V2HTvgkP63m0HSlzstBVU2B36lclfdc,1976
+jump_portrait/test_get_location_info.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+jump_portrait/utils.py,sha256=M7UKAkg2fw7ZC5CILErb6JlusIKdEKauD0GYGTzqO2o,2565
+jump_portrait/workflow.py,sha256=0V1PtkZv85rya3jKRliQ0k_NAxJUr32pNGjrKbtVAxQ,1235
+jump_portrait-0.0.24.dist-info/LICENSE.txt,sha256=LF_pnwYdvRHVi3Z2xBjQ0PWdhwisXbCta2i3EqhAEGk,1079
+jump_portrait-0.0.24.dist-info/METADATA,sha256=zuSI6LRAmKniFAVrOpwOaP0ePBHzEt2PZnzgrJZDkzk,7288
+jump_portrait-0.0.24.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+jump_portrait-0.0.24.dist-info/RECORD,,
