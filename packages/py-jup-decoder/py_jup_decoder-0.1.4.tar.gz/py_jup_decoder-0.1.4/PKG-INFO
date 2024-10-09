@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: py-jup-decoder
+Version: 0.1.4
+Summary: Copied from https://github.com/jup-ag/instruction-parser
+Home-page: https://github.com/vladiolus3/jupiterDecoder
+Requires-Python: >=3.9
+Requires-Dist: solana>=0.34.3
+Requires-Dist: solders>=0.21.0
+Requires-Dist: anchorpy>=0.20.1
+Requires-Dist: aiohttp>=3.10.9
+Requires-Dist: base58>=2.1.1

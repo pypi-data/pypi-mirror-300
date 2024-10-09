@@ -1,0 +1,5 @@
+solana>=0.34.3
+solders>=0.21.0
+anchorpy>=0.20.1
+aiohttp>=3.10.9
+base58>=2.1.1
