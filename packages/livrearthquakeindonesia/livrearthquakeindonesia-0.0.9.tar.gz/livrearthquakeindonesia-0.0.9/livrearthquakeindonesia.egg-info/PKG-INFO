@@ -1,0 +1,39 @@
+Metadata-Version: 2.1
+Name: livrearthquakeindonesia
+Version: 0.0.9
+Summary: This package will get the latest earthquake form BMKG (Agency from Indonesia)
+Home-page: https://github.com/gugunmfauzi/earthquake-detection-indonesia
+Author: Gugun Muhammad Fauzi
+Author-email: gugunmfauzi16@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Operating System :: OS Independent
+Classifier: Development Status :: 4 - Beta
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy
+Requires-Dist: pandas
+
+# earthquake-detection-indonesia
+This package will get the latest earthquake form BMKG (Agency from Indonesia)
+[LICENSE](LICENSE)
+
+## How Its Works?
+This package will scrape from [BMKG](https://bmkg.go.id) to get latest earthquake happened in Indonesia
+
+This package will use BeautifulSoup4 and Request, to produce output in the form of JSON that is raedy to be used in web or mobile application
+
+## How To Use
+
+```
+import gempaterkini
+
+if __name__ == "__main__":
+    print("Aplikasi Utama")
+    result = gempaterkini.ekstraksi_data()
+    gempaterkini.tampilkan_data(result)
+```
+
+## Author
+Gugun M Fauzi

@@ -1,0 +1,10 @@
+LICENSE
+README.md
+setup.py
+deteksigempa/__init__.py
+livrearthquakeindonesia.egg-info/PKG-INFO
+livrearthquakeindonesia.egg-info/SOURCES.txt
+livrearthquakeindonesia.egg-info/dependency_links.txt
+livrearthquakeindonesia.egg-info/entry_points.txt
+livrearthquakeindonesia.egg-info/requires.txt
+livrearthquakeindonesia.egg-info/top_level.txt
