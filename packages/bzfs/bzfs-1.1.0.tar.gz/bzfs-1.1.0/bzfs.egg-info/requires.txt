@@ -1,0 +1,7 @@
+
+[dev]
+black
+coverage
+mypy
+argparse-manpage
+genbadge[coverage]
