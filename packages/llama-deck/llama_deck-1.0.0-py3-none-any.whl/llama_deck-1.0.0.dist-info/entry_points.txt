@@ -1,0 +1,3 @@
+[console_scripts]
+llama-deck = llamadeck.main:main
+
