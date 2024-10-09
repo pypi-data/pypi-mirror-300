@@ -1,0 +1,90 @@
+                                                                                
+ found -p command line switch                                                   
+
+ Info: This processes definition file does not contain standard names and units for NetCDF files.
+
+ 
+ Using process definition file : c:\bin\dimrset_x64_signed_314\x64\bin\..\share\delft3d\proc_def
+ Version number                :       7.00
+ Serial                        : 2024062801
+ 
+
+
+ Model :            Water quality calculation               
+                                                            
+
+
+ Run   :                                                    
+                    T0: 2020.01.01 00:00:00  (scu=       1s)
+
+
+# scanning input for old process definitions
+ found only_active constant                                                     
+ only activated processes are switched on                                       
+ 
+total number of substances with fractions :  0
+ WARNING: circular input output relation detected in process library
+# Determining which processes can be switched on                                                    
+                                                                                                    
+                                                                                                    
+# Determining the processes to model the substances.                                                
+                                                                                                    
+-fluxes for [Basin               ]                                                                  
+ no fluxes found                                                                                    
+-dispersion for [Basin               ]                                                              
+ no dispersions found                                                                               
+-velocity for [Basin               ]                                                                
+ no velocity found                                                                                  
+                                                                                                    
+-fluxes for [Cl                  ]                                                                  
+ no fluxes found                                                                                    
+-dispersion for [Cl                  ]                                                              
+ no dispersions found                                                                               
+-velocity for [Cl                  ]                                                                
+ no velocity found                                                                                  
+                                                                                                    
+-fluxes for [Continuity          ]                                                                  
+ no fluxes found                                                                                    
+-dispersion for [Continuity          ]                                                              
+ no dispersions found                                                                               
+-velocity for [Continuity          ]                                                                
+ no velocity found                                                                                  
+                                                                                                    
+-fluxes for [FlowBoundary        ]                                                                  
+ no fluxes found                                                                                    
+-dispersion for [FlowBoundary        ]                                                              
+ no dispersions found                                                                               
+-velocity for [FlowBoundary        ]                                                                
+ no velocity found                                                                                  
+                                                                                                    
+-fluxes for [LevelBoundary       ]                                                                  
+ no fluxes found                                                                                    
+-dispersion for [LevelBoundary       ]                                                              
+ no dispersions found                                                                               
+-velocity for [LevelBoundary       ]                                                                
+ no velocity found                                                                                  
+                                                                                                    
+-fluxes for [Terminal            ]                                                                  
+ no fluxes found                                                                                    
+-dispersion for [Terminal            ]                                                              
+ no dispersions found                                                                               
+-velocity for [Terminal            ]                                                                
+ no velocity found                                                                                  
+                                                                                                    
+-fluxes for [Tracer              ]                                                                  
+ no fluxes found                                                                                    
+-dispersion for [Tracer              ]                                                              
+ no dispersions found                                                                               
+-velocity for [Tracer              ]                                                                
+ no velocity found                                                                                  
+                                                                                                    
+# locating processes for requested output                                                           
+                                                                                                    
+# determining the input for the processes (in reversed order)                                       
+                                                                                                    
+# determining the use of the delwaq input                                       
+                                                                                
+                                                                                
+# locating requested output from active processes                                                   
+                                                                                                    
+                                                                                                    
