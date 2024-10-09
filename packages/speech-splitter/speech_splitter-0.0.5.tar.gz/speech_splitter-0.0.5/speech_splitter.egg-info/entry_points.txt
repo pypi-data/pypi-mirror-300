@@ -1,0 +1,2 @@
+[console_scripts]
+speech-split = speech_splitter.splitter:main
