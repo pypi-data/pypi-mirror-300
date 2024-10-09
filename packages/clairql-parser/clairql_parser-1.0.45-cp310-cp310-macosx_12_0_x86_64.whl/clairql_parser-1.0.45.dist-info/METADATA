@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: clairql_parser
+Version: 1.0.45
+Summary: ClairQL parser for internal ClairView use
+Home-page: https://github.com/ClairView/clairview/tree/master/clairql_parser
+Author: ClairView Inc.
+Author-email: hey@clairview.com
+Maintainer: ClairView Inc.
+Maintainer-email: hey@clairview.com
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: MacOS
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+
+# ClairQL Parser
+
+Blazing fast ClairQL parsing. This package can only work in the context of the ClairView Django app, as it imports from `clairview.clairql`.
