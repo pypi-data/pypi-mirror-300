@@ -1,0 +1,8 @@
+LICENSE
+README.md
+setup.py
+whispertrades.egg-info/PKG-INFO
+whispertrades.egg-info/SOURCES.txt
+whispertrades.egg-info/dependency_links.txt
+whispertrades.egg-info/requires.txt
+whispertrades.egg-info/top_level.txt

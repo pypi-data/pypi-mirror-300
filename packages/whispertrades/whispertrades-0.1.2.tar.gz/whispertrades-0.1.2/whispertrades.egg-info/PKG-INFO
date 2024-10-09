@@ -1,0 +1,34 @@
+Metadata-Version: 2.1
+Name: whispertrades
+Version: 0.1.2
+Summary: A Python package for Whispertrades API
+Home-page: https://github.com/aliencaocao/whispertrades
+Author: Billy Cao
+Author-email: aliencaocao@gmail.com
+Maintainer: Billy Cao
+Maintainer-email: aliencaocao@gmail.com
+License: Apache 2.0
+Project-URL: Documentation, https://whispertrades.readthedocs.io/
+Project-URL: Issues, https://github.com/aliencaocao/whispertrades/issues
+Project-URL: Releases, https://github.com/aliencaocao/whispertrades/releases
+Project-URL: Source Code, https://github.com/aliencaocao/whispertrades
+Keywords: whispertrades api python
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Financial and Insurance Industry
+Classifier: Topic :: Office/Business :: Financial :: Investment
+Classifier: Topic :: Software Development :: Libraries :: Application Frameworks
+Requires-Python: >=3.8
+License-File: LICENSE
+Requires-Dist: requests
+Requires-Dist: pydantic>=2.0
+Requires-Dist: orjson
+Requires-Dist: requests-ratelimiter
+
+A python package for Whispertrades API. Built on pydantic and requests. Requires Python 3.8+.
