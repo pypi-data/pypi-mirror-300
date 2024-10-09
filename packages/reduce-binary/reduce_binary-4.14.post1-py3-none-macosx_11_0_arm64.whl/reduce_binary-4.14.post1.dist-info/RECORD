@@ -1,0 +1,8 @@
+reduce_binary/__init__.py,sha256=mlSCN7l-GZf-Bv5VfZXx8NEcIrl5J8CETkVzSv4kVLI,117
+reduce_binary/executable.py,sha256=H7slRdAYbeniYWaAy1Y0LWQH4tjX7AdBotoHuzzIRPc,1012
+reduce_binary/reduce_wwPDB_het_dict.txt,sha256=DaXsh6kJuw6430gMQs50vvkucQ_5OXZPlgpisNmzirk,66390773
+reduce_binary/bin/reduce,sha256=QyF9ojf-p5BDdlLuZrlGl1ccJzSEtapRhROqJeopbmU,2511384
+reduce_binary-4.14.post1.dist-info/METADATA,sha256=6KKZJBTh_zlCjEUQDG3txzqxP9wTeiD0LEC63Qp1Jq0,796
+reduce_binary-4.14.post1.dist-info/WHEEL,sha256=Xz05J0Qn3vsNxfTQmZRmQTZk9Hax-h7W0ZfteNIqTww,105
+reduce_binary-4.14.post1.dist-info/top_level.txt,sha256=QTaYVu7iGuCz1qFVS21mpMEmOSzbpuScTrXR2oix0IE,14
+reduce_binary-4.14.post1.dist-info/RECORD,,

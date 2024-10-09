@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: reduce-binary
+Version: 4.14.post1
+Summary: Install reduce with pip
+Author: Kiyoon Kim
+Project-URL: Homepage, https://github.com/deargen/py-reduce-binary
+Keywords: biology
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Classifier: License :: OSI Approved :: Apache Software License
+Requires-Python: <4,>=3.8
+Description-Content-Type: text/markdown
+
