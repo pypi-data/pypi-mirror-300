@@ -1,0 +1,8 @@
+beautifulsoup4
+markdown
+pandas
+
+[test]
+pytest>=7.0
+mkdocs-macros
+toml-cli
