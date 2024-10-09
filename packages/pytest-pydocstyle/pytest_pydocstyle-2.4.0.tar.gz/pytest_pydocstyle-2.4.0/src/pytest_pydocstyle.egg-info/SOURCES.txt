@@ -1,0 +1,16 @@
+LICENSE
+MANIFEST.in
+Makefile
+README
+README.md
+VERSION
+setup.cfg
+setup.py
+src/pytest_pydocstyle.py
+src/pytest_pydocstyle.egg-info/PKG-INFO
+src/pytest_pydocstyle.egg-info/SOURCES.txt
+src/pytest_pydocstyle.egg-info/dependency_links.txt
+src/pytest_pydocstyle.egg-info/entry_points.txt
+src/pytest_pydocstyle.egg-info/requires.txt
+src/pytest_pydocstyle.egg-info/top_level.txt
+tests/test_pytest_pydocstyle.py
