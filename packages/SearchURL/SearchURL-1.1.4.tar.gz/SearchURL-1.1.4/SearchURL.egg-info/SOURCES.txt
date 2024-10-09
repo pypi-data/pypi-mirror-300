@@ -1,0 +1,11 @@
+LICENCE
+README.md
+setup.py
+SearchURL/__init__.py
+SearchURL/main.py
+SearchURL/vdb.py
+SearchURL.egg-info/PKG-INFO
+SearchURL.egg-info/SOURCES.txt
+SearchURL.egg-info/dependency_links.txt
+SearchURL.egg-info/requires.txt
+SearchURL.egg-info/top_level.txt
