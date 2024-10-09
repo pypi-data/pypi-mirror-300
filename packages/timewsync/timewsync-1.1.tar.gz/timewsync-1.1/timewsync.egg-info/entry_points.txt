@@ -1,0 +1,2 @@
+[console_scripts]
+timewsync = timewsync:main

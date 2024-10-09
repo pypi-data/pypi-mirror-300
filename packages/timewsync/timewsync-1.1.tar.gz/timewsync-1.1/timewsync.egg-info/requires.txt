@@ -1,0 +1,7 @@
+colorama
+jwcrypto
+pyjwt
+requests
+
+[:python_version == "2.6"]
+importlib
