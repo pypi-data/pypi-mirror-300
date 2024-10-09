@@ -1,0 +1,9 @@
+torch<2.5.0,>=2.3.0
+datasets
+evaluate
+accelerate
+transformers<4.46.0,>=4.44.0
+sentencepiece
+huggingface_hub
+scikit-learn
+tiktoken
