@@ -1,0 +1,14 @@
+ClairQLLexer.cpp
+ClairQLParser.cpp
+ClairQLParserBaseVisitor.cpp
+ClairQLParserVisitor.cpp
+README.md
+error.cpp
+parser.cpp
+pyproject.toml
+setup.py
+string.cpp
+clairql_parser.egg-info/PKG-INFO
+clairql_parser.egg-info/SOURCES.txt
+clairql_parser.egg-info/dependency_links.txt
+clairql_parser.egg-info/top_level.txt
