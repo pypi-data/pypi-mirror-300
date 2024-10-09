@@ -1,0 +1,2 @@
+[console_scripts]
+fastmindapi-server = fastmindapi.cli:run_server
