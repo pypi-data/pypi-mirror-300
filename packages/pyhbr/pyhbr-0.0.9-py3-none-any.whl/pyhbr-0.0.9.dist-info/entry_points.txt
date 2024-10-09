@@ -1,0 +1,10 @@
+[console_scripts]
+fetch-data = pyhbr.tools.fetch_data:main
+generate-report = pyhbr.tools.generate_report:main
+get-csv = pyhbr.tools.get_csv:main
+make-results = pyhbr.tools.make_results:main
+plot-describe = pyhbr.tools.plot_describe:main
+run-model = pyhbr.tools.run_model:main
+
+[gui_scripts]
+codes-editor = pyhbr.clinical_codes.codes_editor.codes_editor:run_app
