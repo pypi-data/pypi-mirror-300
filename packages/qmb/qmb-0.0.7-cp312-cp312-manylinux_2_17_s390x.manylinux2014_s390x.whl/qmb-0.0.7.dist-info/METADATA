@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: qmb
+Version: 0.0.7
+Summary: Quantum Manybody Problem
+Author-email: Hao Zhang <hzhangxyz@outlook.com>
+License: GPLv3
+Project-URL: Homepage, https://github.com/USTC-KnowledgeComputingLab/qmb
+Project-URL: Documentation, https://github.com/USTC-KnowledgeComputingLab/qmb
+Project-URL: Repository, https://github.com/USTC-KnowledgeComputingLab/qmb.git
+Project-URL: Issues, https://github.com/USTC-KnowledgeComputingLab/qmb/issues
+Keywords: quantum,manybody,quantum-chemistry,quantum-simulation,molecular-simulation,algorithms,simulation,wave-function,ground-state,ansatz,torch,pytorch
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Console
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Programming Language :: C++
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Scientific/Engineering :: Mathematics
+Classifier: Topic :: Scientific/Engineering :: Physics
+Classifier: Topic :: Scientific/Engineering :: Chemistry
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: >=3.12
+Description-Content-Type: text/markdown
+License-File: LICENSE.md
+Requires-Dist: numpy
+Requires-Dist: scipy
+Requires-Dist: torch
+Requires-Dist: tyro
+Requires-Dist: openfermion
+
+# Quantum-Many-Body
