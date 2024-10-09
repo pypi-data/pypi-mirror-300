@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "pipiy"
+version = "0.2.0"
+description = "pipiy module manager"
+authors = ["LunaStev <lunastev@gurmstudios.com>"]
+readme = "README.md"
+packages = [{include = "pipiy", from = "src"}]
+repository = "https://github.com/lunastev/pipiy"
+
+[tool.poetry.dependencies]
+python = "*"
+wson = "*"
+
+[tool.poetry.scripts]
+pipiy = "pipiy.pipiy:main"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
