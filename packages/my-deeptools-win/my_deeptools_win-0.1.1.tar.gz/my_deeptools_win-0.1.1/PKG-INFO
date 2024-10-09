@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: my-deeptools-win
+Version: 0.1.1
+Summary: 
+Author: xpf10
+Author-email: 2018303010006@whu.edu.cn
+Requires-Python: >=3.10,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: bamnostic (>=1.1.10,<2.0.0)
+Requires-Dist: fire (>=0.6.0,<0.7.0)
+Requires-Dist: matplotlib (>=3.9.2,<4.0.0)
+Requires-Dist: rich (>=13.9.2,<14.0.0)
+Description-Content-Type: text/markdown
+
+
