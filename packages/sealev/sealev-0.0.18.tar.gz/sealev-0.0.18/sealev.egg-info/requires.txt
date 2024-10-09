@@ -1,0 +1,4 @@
+pycountry
+pycurl
+requests
+reverse-geocoder
