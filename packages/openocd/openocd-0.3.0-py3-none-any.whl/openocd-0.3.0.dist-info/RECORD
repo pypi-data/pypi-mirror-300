@@ -1,0 +1,8 @@
+openocd/__init__.py,sha256=1hZ0kfBxUBPKFxoEzKFk_YPRgJNKHmsPrVsJtsjk7is,866
+openocd/openocd.py,sha256=6aBbVbhuxJwI28KTwyKqOfvoaoxz1CAcWK9YHVWizHA,12030
+openocd/tclformatter.py,sha256=w4FUDZlb3dKvrJi7jCAQZawJPJ5BytnW7qwVpm7Rpoo,1219
+openocd-0.3.0.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+openocd-0.3.0.dist-info/METADATA,sha256=pCrh_P8vLMPazuBkUFJMnR3iPpwU8S96oJ7FnuT3r-o,1683
+openocd-0.3.0.dist-info/WHEEL,sha256=eOLhNAGa2EW3wWl_TU484h7q1UNgy0JXjjoqKoxAAQc,92
+openocd-0.3.0.dist-info/top_level.txt,sha256=PYHN56J9K8TFZHMiqKIBmaJdFj0ZCOLBJ3nhDryouAQ,8
+openocd-0.3.0.dist-info/RECORD,,
