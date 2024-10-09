@@ -1,0 +1,85 @@
+[tool.poetry]
+name = "aqute"
+# We have dynamic versioning based on tags in Github
+version = "0.9.2"
+description = "Async QUeue Task Engine"
+authors = ["Mikhail Dengin <denginm@gmail.com>"]
+readme = "README.md"
+license = "MIT"
+repository = "https://github.com/insomnes/aqute"
+
+keywords = ["asyncio", "producer-consumer", "ratelimiting"]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+
+
+[tool.poetry.group.test]
+optional = true 
+
+[tool.poetry.group.test.dependencies]
+pytest = "^8.3.2"
+pytest-asyncio = "^0.23.8"
+
+[tool.poetry.group.lint]
+optional = true 
+
+[tool.poetry.group.lint.dependencies]
+ruff = "^0.5.6"
+mypy = "^1.11.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.mypy]
+show_error_codes = true
+exclude = [
+    "tests",
+    "tmp",
+]
+
+[tool.ruff]
+line-length = 88
+indent-width = 4
+
+target-version = "py39"
+extend-exclude = [".git", "data"]
+force-exclude = true
+
+[tool.ruff.lint]
+extend-select = [
+    "ARG",
+    "B",
+    "E",
+    "F",
+    "I",
+    "N",
+    "W",
+    "ASYNC",
+    "C4",
+    "C90",
+    "ERA",
+    "NPY",
+    "PERF",
+    "PL",
+    "PTH",
+    "RET",
+    "RUF",
+    "SIM",
+    "T20",
+    "UP",
+]
+ignore = [
+    "PLR0913",
+]
+
+[tool.ruff.lint.per-file-ignores]
+"aqute/ratelimiter.py" = [
+    "ARG002",
+]
+"tests/**.py" = [
+    "C4",
+    "PLR",
+    "PERF",
+]
