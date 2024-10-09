@@ -1,0 +1,6 @@
+README.md
+setup.py
+alx_s3.egg-info/PKG-INFO
+alx_s3.egg-info/SOURCES.txt
+alx_s3.egg-info/dependency_links.txt
+alx_s3.egg-info/top_level.txt
