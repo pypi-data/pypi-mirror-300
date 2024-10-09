@@ -1,0 +1,4 @@
+[console_scripts]
+latexcor=latexcor.cli2:main
+latexcordev=latexcor.cli:main
+
