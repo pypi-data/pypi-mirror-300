@@ -1,0 +1,15 @@
+dmtoolkit/__init__.py,sha256=8S56Dzx6mwG65yKNAYNfLGkyvS8XrUW3xMrLAg1TKI0,23
+dmtoolkit/dmtools.py,sha256=iIoSYb1P7c-MybBQzrA91OaoHjaPcX4NPE5hvW3XWj0,938
+dmtoolkit/apis/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+dmtoolkit/apis/dndbeyondapi.py,sha256=B66N0La-Z0r4PuWk7FqebmsuaWrn1B9J7vUG2Vpo700,8472
+dmtoolkit/apis/open5e/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+dmtoolkit/apis/open5e/open5eapi.py,sha256=XQwdx5Zvk-E9RDEIWaqiP7Zgmqo6DKbD-krWgAtWJRc,1535
+dmtoolkit/apis/open5e/open5efeature.py,sha256=MVi2l1QSk1kIYc07_eAHb4i0fGD_9PNzZk6i_Kf5rSo,165
+dmtoolkit/apis/open5e/open5eitem.py,sha256=9xbCoaQOgHZXRTGPPJBiOw2Xlm-4XQDJZKu6qeT5QAg,134
+dmtoolkit/apis/open5e/open5emonster.py,sha256=3KSwSIyR7JCopTzjI38cZiBVC3-KlV7SVqUpko_00d8,111
+dmtoolkit/apis/open5e/open5erules.py,sha256=c2o4ukHQECRbBHqe7J_u7NNlv1yMtwWyegLSgpGA0CE,155
+dmtoolkit-0.0.37.dist-info/LICENSE,sha256=-PHHSuDRkodHo3PEdMkDtoIdmLAOomMq6lsLaOetU8g,1076
+dmtoolkit-0.0.37.dist-info/METADATA,sha256=zZxrffpvd9fkFHuLWPCk7w7570AGmnF0uVESvz23kx8,2908
+dmtoolkit-0.0.37.dist-info/WHEEL,sha256=GV9aMThwP_4oNCtvEC2ec3qUYutgWeAzklro_0m4WJQ,91
+dmtoolkit-0.0.37.dist-info/top_level.txt,sha256=NNWdLUX99Yai3X0sYaMgh8ZXCo0O7WqTnFpTeI7ZJyk,10
+dmtoolkit-0.0.37.dist-info/RECORD,,
