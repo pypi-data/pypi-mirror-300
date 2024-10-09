@@ -1,0 +1,15 @@
+stockvip/__init__.py,sha256=FWteWY2vzQyGnHsgaG72fj2mcBCWJp3Y3edRFeqE77Q,115
+stockvip/client.py,sha256=K8jxPeHRZuuUusppwXPpuN2jkMEYTIBdl8oUSNK_H3s,1251
+stockvip/stock.py,sha256=qgB45J5CahFzp5syoOYTSatjNpS4OZ_DYqWfrRAf03c,17488
+stockvip/config/config.cp310-win_amd64.pyd,sha256=aWnFD7ClSnQW8PaJr9ugewHr95LBcm3jsgVxuxLUbyc,20480
+stockvip/config/ensure_logged_in.cp310-win_amd64.pyd,sha256=-xSccmFhs2iBJhZafF8btJklNGBQZoIXboXRJTBQC0s,40960
+stockvip/process_client/login.cp310-win_amd64.pyd,sha256=kua-YONPXrDZZjMD1i9tKp-3yzF7jSzHak37qhPc1zc,53248
+stockvip/process_stock/foreign.cp310-win_amd64.pyd,sha256=gTBMIIwrHz-mQrgmpIgKo-RGTLMfzP_qLMLINBOJ6HI,51200
+stockvip/process_stock/ohlcv.cp310-win_amd64.pyd,sha256=TM6p2QsWVDpySRo3cY-MRkKi40sLy5duONnhWGl-ndE,49664
+stockvip/process_stock/propTrading.cp310-win_amd64.pyd,sha256=eNuowIj5MwjULSnKW6VShe0EoBIKKIUl47Y0nR9-DDM,50176
+stockvip/process_stock/supplyAndDemand.cp310-win_amd64.pyd,sha256=MlT3NKGiBPcFfxu2BRyuoXYVOUjLbpIu7-QbdentD-s,51200
+stockvip-2.0.5.dist-info/LICENSE.txt,sha256=enhtyeWHebHAzCnyGM8gvRotOPxHBNHF4ZqQ69CjEfk,1089
+stockvip-2.0.5.dist-info/METADATA,sha256=XMU2DWaSmv-yTb1W56RXc7O80XJSp2irKKocTCJ4ub0,3540
+stockvip-2.0.5.dist-info/WHEEL,sha256=NqhLytidpiVMxVzCvxIrEoueiikLHpRZRJaZbBFhXVU,102
+stockvip-2.0.5.dist-info/top_level.txt,sha256=i2ols6uiwBXRU20-liakcQeHTL4jb2D-D00wnsE1L3c,9
+stockvip-2.0.5.dist-info/RECORD,,
