@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: my_pyspark_package
+Version: 0.1.0
+Summary: A package to count nulls and -1s in PySpark DataFrames.
+Home-page: https://github.com/yourusername/my_pyspark_package
+Author: Your Name
+Author-email: prodipesh12@gmail.com

@@ -1,0 +1,1 @@
+This is a package for calculating nulls and -1 count in each column of a dataframe.
