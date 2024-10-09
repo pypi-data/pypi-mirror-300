@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: constant-contact-api-client
+Version: 1.1.0
+Summary: Constant Contact API v3
+Home-page: 
+Author: Constant Contact Public API
+Author-email: webservices@constantcontact.com
+License: Private
+Keywords: OpenAPI,OpenAPI-Generator,Constant Contact API v3
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+    Swagger build version 3.0.2475
+    
