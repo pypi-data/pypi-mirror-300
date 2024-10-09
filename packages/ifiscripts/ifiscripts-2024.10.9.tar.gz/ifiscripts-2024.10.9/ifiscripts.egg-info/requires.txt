@@ -1,0 +1,7 @@
+lxml
+bagit
+dicttoxml
+future
+clairmeta
+psutil
+unidecode
