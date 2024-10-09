@@ -1,0 +1,51 @@
+[project]
+name = "cdef-converter"
+version = "0.2.0"
+description = "Add your description here"
+authors = [
+    { name = "Tobias Kragholm", email = "50784887+tkragholm@users.noreply.github.com" },
+]
+dependencies = [
+    "polars[all]>=1.9.0",
+    "rich>=13.9.2",
+    "charset-normalizer[unicode-backport]>=3.3.2",
+    "pyarrow>=17.0.0",
+    "tqdm>=4.66.5",
+    "typer>=0.12.5",
+]
+readme = "README.md"
+requires-python = ">= 3.12"
+license = { text = "MIT" }
+
+[project.scripts]
+"cdef-converter" = "cdef_converter:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.rye]
+managed = true
+dev-dependencies = [
+    "pytest>=8.3.3",
+    "mypy>=1.11.2",
+    "pyarrow-stubs>=17.7",
+]
+
+[tool.rye.scripts]
+test = "pytest tests/"
+static = "mypy src/"
+
+[tool.hatch.metadata]
+allow-direct-references = true
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/cdef_converter"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py312"
+fix = true
+
+[tool.ruff.lint]
+select = ["E", "B", "F", "UP", "I001", "T203"]
