@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: hanifx
+Version: 0.3
+Summary: A package for creating custom logos using the Pillow library
+Home-page: https://hanif-storess.weebly.com
+Author: Hanif
+Author-email: sajim4653@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Requires-Dist: Pillow
+
+This package provides functionality to create custom logos using the Pillow library. 
+You can specify the text, dimensions, background color, and text color for your logo. 
+The resulting logo is saved as a PNG file with the specified text in the center. 
+This is useful for generating custom logos for projects, personal branding, or any other creative purposes.
