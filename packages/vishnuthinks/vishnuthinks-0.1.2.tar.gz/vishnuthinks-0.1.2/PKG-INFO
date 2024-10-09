@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: vishnuthinks
+Version: 0.1.2
+Summary: A Python Quiz module for learning Python with random questions.
+Author: Vishnu
+Author-email: vishnurajalbandi18@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+License-File: LICENSE
+
+# VishnuThinks Quiz
+
+This is a simple Python quiz module that tests your knowledge of Python concepts.
+
+## Installation
+
+To install the module via pip:
+
+pip install vishnuthinks
+
+from vishnuthinks import run_quiz()
