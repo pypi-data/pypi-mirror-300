@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: distancia
+Version: 0.0.58
+Summary: distance metrics
+Home-page: https://pypi.org/project/distancia/
+Author: Yves Mercadier
+Author-email: Yves Mercadier <info@realpython.com>
+License: LICENSE.txt
+        
+Project-URL: Homepage, https://pypi.org/project/distancia/
+Keywords: distance,metrics,space,data-science,deep-learning,machine-learning,neural-network,statistics,python,cython,jupyter-notebook,data-analyse,vector,matrix,graph,markov chain,image,sound
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.0
+Description-Content-Type: text/markdown
+Provides-Extra: dev
+License-File: LICENSE.txt
