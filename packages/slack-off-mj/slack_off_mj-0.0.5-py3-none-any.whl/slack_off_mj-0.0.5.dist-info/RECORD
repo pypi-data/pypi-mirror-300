@@ -1,0 +1,14 @@
+slackoff/__init__.py,sha256=XlS8IBFMxEFu-zRxmRo-aEf1oRQrtQj9SkCO1Eo5yrg,217
+slackoff/toj/__init__.py,sha256=cvcbR7DnSvTPoX2SGTs_tBbXXPMAT6chGkyIa8fDGq4,32
+slackoff/toj/reconciliation.py,sha256=W-f2dELgmdV-VOMFwSRMVqJbIdjO4gyKcBZBi3DkUUI,3053
+slackoff/toj/reconciliation_exper_processor.py,sha256=qUFYs-C4FeSQkcmiBUA2N9w77ni_MEdZbgLJcmVeuCE,2417
+slackoff/toj/reconciliation_packing.py,sha256=PaEW4e0SJFuNEU0aBbZvAIK7T_jEv7EM4KAd-zp0u00,4196
+slackoff/toj/reconciliation_rule.py,sha256=_fXEv67yNtMxCfLWk_HN1XwSFHUoTb-k_mrVm39Qz2c,8163
+slackoff/toj/reconciliation_source.py,sha256=lzhks_rXDjGTXma1l0OIi5fAeg53cKGfkPJ4uB7nXgU,2759
+slackoff/toj/reconciliation_to_excel.py,sha256=qIK_kveks4NNoHFcW-pxdntJfXcI-Ir_h6Bb5I1QayM,5034
+slackoff/toj/reconcilization_merge.py,sha256=jpQFuAvl7wwDQ33UalMD68z2XjCkmkARRp6CLjXRlrw,7355
+slack_off_mj-0.0.5.dist-info/LICENSE,sha256=RBhg5hIyHCQyj9Hd6pdx4QVzRdIfplLdnbuNB0fm2H4,1093
+slack_off_mj-0.0.5.dist-info/METADATA,sha256=U55nE8sKchR3Ow0QwJ5j0qSWW2ab4yKd6jl08_TIj1E,2005
+slack_off_mj-0.0.5.dist-info/WHEEL,sha256=GV9aMThwP_4oNCtvEC2ec3qUYutgWeAzklro_0m4WJQ,91
+slack_off_mj-0.0.5.dist-info/top_level.txt,sha256=1EQh2RnDjiphPH7AF66DaO43hpGe_t3QJJADqeUxKDo,9
+slack_off_mj-0.0.5.dist-info/RECORD,,
