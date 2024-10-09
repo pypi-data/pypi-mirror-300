@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: pygrgl
+Version: 1.1
+Summary: Genotype Representation Graph Library
+Home-page: https://aprilweilab.github.io/
+Author: Drew DeHaas, April Wei
+Author-email: 
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: MacOS
+Classifier: Operating System :: POSIX :: Linux
+License-File: LICENSE
+
