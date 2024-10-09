@@ -1,0 +1,10 @@
+LICENSE.txt
+README.rst
+setup.py
+dgtest/__init__.py
+dgtest/main.py
+dgtest.egg-info/PKG-INFO
+dgtest.egg-info/SOURCES.txt
+dgtest.egg-info/dependency_links.txt
+dgtest.egg-info/entry_points.txt
+dgtest.egg-info/top_level.txt
