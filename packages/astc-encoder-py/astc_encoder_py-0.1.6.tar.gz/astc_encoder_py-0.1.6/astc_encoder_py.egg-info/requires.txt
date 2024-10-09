@@ -1,0 +1,6 @@
+archspec>=0.2
+
+[tests]
+pytest>=8.3.3
+pillow>=10.4.0
+imagehash>=4.3.1
