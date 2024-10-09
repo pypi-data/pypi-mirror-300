@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: keystone-api-client
+Version: 0.4.0
+Summary: Python client for the Keystone API
+Author: djperrefort
+Author-email: djperrefort@gmail.com
+Requires-Python: >=3.9,<4.0
+Classifier: Intended Audience :: Developers
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Typing :: Typed
+Requires-Dist: pyjwt (>=2.8.0,<3.0.0)
+Requires-Dist: requests (>=2.32.3,<3.0.0)
+Description-Content-Type: text/markdown
+
+# Keystone Python Client
+
+Official Python client for ineracting with the Keystone API.
+
+## Resources
+
+- [Keystone-API](https://github.com/better-hpc/keystone-api): Backend REST API for managing HPC allocations and resources.
+- [Keystone-Web](https://github.com/better-hpc/keystone-web): Website frontend for HPC administration and self-service.
+- [Keystone-Python-Client](https://github.com/better-hpc/keystone-python-client): A light-weight Python client for Keystone API.
+- [Keystone-Docs](https://github.com/better-hpc/keystone-docs): Documentation for the Keystone project and its components.
+
