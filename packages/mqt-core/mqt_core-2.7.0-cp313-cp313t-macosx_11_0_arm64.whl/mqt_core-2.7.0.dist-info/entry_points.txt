@@ -1,0 +1,3 @@
+[console_scripts]
+mqt-core-dd-compare = mqt.core.dd.evaluation:main
+
