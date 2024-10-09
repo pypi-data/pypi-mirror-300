@@ -1,0 +1,12 @@
+ictasks==0.1.0
+icplot==0.0.12
+numpy
+
+[test]
+pytest
+pytest-cov
+pytest-sugar
+black
+flake8
+pylint
+mypy
