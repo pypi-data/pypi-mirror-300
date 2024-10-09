@@ -1,0 +1,8 @@
+LICENSE
+README.md
+pyproject.toml
+FAIRshake.egg-info/PKG-INFO
+FAIRshake.egg-info/SOURCES.txt
+FAIRshake.egg-info/dependency_links.txt
+FAIRshake.egg-info/requires.txt
+FAIRshake.egg-info/top_level.txt

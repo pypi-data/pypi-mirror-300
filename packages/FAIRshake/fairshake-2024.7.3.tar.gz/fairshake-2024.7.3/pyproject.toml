@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=61.0", "torch"]
+build-backend = "setuptools.build_meta"
+
+
+[project]
+name = "FAIRshake"
+dependencies = [
+    'numpy'
+]
+readme = "README.md"
+license = {file = "LICENSE"}
+authors = [{ name = "Ben Pierce", email = "pierce@case.edu" }]
+version = "2024.07.03"
+
+[project.optional-dependencies]
+test = ["pytest"]
+
+
+[tool.setuptools.packages.find]
+include = ["FAIRshake*"]
+
+[tool.setuptools_scm]
