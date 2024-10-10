@@ -1,0 +1,7 @@
+robotframework-pabot
+robotframework-seleniumlibrary
+pycryptodome
+pymongo
+pytz
+requests
+ratelimit

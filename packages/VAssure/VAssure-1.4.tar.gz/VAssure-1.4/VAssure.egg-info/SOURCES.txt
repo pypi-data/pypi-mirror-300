@@ -1,0 +1,8 @@
+MANIFEST.in
+README.md
+setup.py
+VAssure.egg-info/PKG-INFO
+VAssure.egg-info/SOURCES.txt
+VAssure.egg-info/dependency_links.txt
+VAssure.egg-info/requires.txt
+VAssure.egg-info/top_level.txt
