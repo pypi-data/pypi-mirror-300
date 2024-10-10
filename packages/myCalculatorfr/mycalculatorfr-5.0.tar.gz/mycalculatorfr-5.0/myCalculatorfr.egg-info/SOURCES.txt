@@ -1,0 +1,10 @@
+setup.py
+myCalculatorfr/__init__.py
+myCalculatorfr/add.py
+myCalculatorfr/subtract.py
+myCalculatorfr.egg-info/PKG-INFO
+myCalculatorfr.egg-info/SOURCES.txt
+myCalculatorfr.egg-info/dependency_links.txt
+myCalculatorfr.egg-info/top_level.txt
+myCalculatorfr/utils/__init__.py
+myCalculatorfr/utils/formatter.py
