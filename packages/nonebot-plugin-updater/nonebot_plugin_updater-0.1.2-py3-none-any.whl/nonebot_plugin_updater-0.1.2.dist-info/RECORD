@@ -1,0 +1,13 @@
+nonebot_plugin_updater/__init__.py,sha256=Ov865reGaB_TQL6-dyqT7zuGPNeo5F-1vrPm3mux3kc,1906
+nonebot_plugin_updater/commands.py,sha256=bLPgsr6tFnCTW87HapDSa0grqVG1aS_OJb8y4mcVhdQ,4255
+nonebot_plugin_updater/config.py,sha256=dX5RN7XUKgpyyz3p80A8L-aeyLjfxhT0wOAQmTjPyE8,368
+nonebot_plugin_updater/templates/check_plugin_update.jinja2,sha256=YfS9RphfdXU4TGaq8CuA_r86vFJwbEWiMCyZdW57k6Q,1392
+nonebot_plugin_updater/templates/plugin_info.jinja2,sha256=Tf30ukxnNEHYaITc0qJV5B8zXSqX0Q3NKmCe6ctDE0Q,1048
+nonebot_plugin_updater/utils/addition_for_htmlrender.py,sha256=D4E6AlEM5EM2w2DrQCKommk81Owo-NkOfhgRdnpgvmc,2451
+nonebot_plugin_updater/utils/common.py,sha256=p7t2EogXfyKYyS8sZhPSdZD_drftHX-vntVjm23ZrI4,1827
+nonebot_plugin_updater/utils/models.py,sha256=PqM8Z7qHPyThwEsWFuGI6BCdyJsH6U-L_BvQoYjCkXE,270
+nonebot_plugin_updater/utils/updater.py,sha256=C9Cgs21IgSMyR08_fA_ZqJt1wiqw0ICDX44tUV-_c6M,3820
+nonebot_plugin_updater-0.1.2.dist-info/LICENSE,sha256=_WV32YNJPAabyxw5O5dfPZy1I9xqS_edd_UOAea2GbY,1067
+nonebot_plugin_updater-0.1.2.dist-info/METADATA,sha256=PbR8rgaPpNpABmi_zgMDOfBjuQpL_-nK5eWYC10441o,5020
+nonebot_plugin_updater-0.1.2.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+nonebot_plugin_updater-0.1.2.dist-info/RECORD,,
