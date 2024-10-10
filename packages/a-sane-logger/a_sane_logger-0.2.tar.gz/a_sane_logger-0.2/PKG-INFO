@@ -1,0 +1,45 @@
+Metadata-Version: 2.1
+Name: a_sane_logger
+Version: 0.2
+Summary: A simple logging configuration module
+Author: Alex Popescu
+Author-email: pop.alx@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+# Sane Logger
+
+This module provides a simple logging configuration with a named logger for Python applications.
+
+The settings are `%(asctime)s [%(threadName)-12.12s] [%(levelname)-5.5s]  %(message)s`.
+
+## Installation
+
+You can install the package using pip:
+
+```bash
+pip install a_sane_logger
+```
+
+# Usage
+
+Simply import the module in your code and use the logger:
+
+```python
+import a_sane_logger as sn
+
+logger = sn.sane_logger
+
+logger.info("This is an info message.")
+logger.error("This is an error message.")
+```
+
+The logs should look like:
+
+```
+2024-10-09 18:57:24,520 [MainThread  ] [INFO ]  This is an info message.
+2024-10-09 18:57:26,204 [MainThread  ] [ERROR]  This is an error message.
+```
