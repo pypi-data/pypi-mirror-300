@@ -1,0 +1,41 @@
+[tool.poetry]
+name = "forestiler"
+version = "0.2.2"
+description = "Create Image Tiles From Large Input Rasters According to a Classified Mask Vector File"
+license = "GPL-2.0-only"
+authors = ["Florian Katerndahl <florian@katerndahl.com>"]
+readme = "README.md"
+repository = "https://github.com/Florian-Katerndahl/ForesTiler"
+keywords = ["remote sensing", "image processing", "data preparation"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Environment :: Console",
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: GNU General Public License v2 (GPLv2)",
+    "Natural Language :: English",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Topic :: Scientific/Engineering :: GIS",
+    "Topic :: Scientific/Engineering :: Image Processing"
+]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+rasterio = "^1.3.10"
+shapely = "^2.0.4"
+numpy = "^1.26.4"
+tqdm = "^4.66.4"
+geopandas = "^0.14.4"
+pillow = "^10.3.0"
+torch = "^2.4.0"
+psutil = "^6.0.0"
+
+[tool.poetry.scripts]
+forestile = "forestiler.forestile:main"
+
+[tool.poetry.urls]
+"Bug Tracker" = "https://github.com/Florian-Katerndahl/ForesTiler/issues"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
