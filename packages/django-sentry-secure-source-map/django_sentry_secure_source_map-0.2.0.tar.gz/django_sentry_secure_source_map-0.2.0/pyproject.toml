@@ -1,0 +1,62 @@
+[build-system]
+requires = ["flit_core >=3.2,<4"]
+build-backend = "flit_core.buildapi"
+
+[project]
+version = "0.2.0"
+name = "django-sentry-secure-source-map"
+description = "A middleware to ensure only Sentry can access source maps"
+authors = [{name = "Torchbox", email = "tech@torchbox.com"}]
+readme = "README.md"
+license = {file = "LICENSE"}
+classifiers = [
+    "Environment :: Web Environment",
+    "Framework :: Django",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python",
+    "Topic :: Internet :: WWW/HTTP",
+    "Topic :: Software Development",
+]
+requires-python = ">=3.9"
+dependencies = [
+    "Django>=4.2",
+]
+
+[project.optional-dependencies]
+test = [
+    "pytest-cov",
+    "pytest-django",
+    "pytest",
+]
+lint = [
+    "ruff==0.6.9",
+]
+
+[project.urls]
+Home = "https://torchbox.com"
+
+[tool.flit.module]
+name = "sentry_secure_source_map"
+
+[tool.flit.sdist]
+exclude = [
+    "tests",
+]
+
+[tool.pytest.ini_options]
+DJANGO_SETTINGS_MODULE = "tests.settings"
+python_files = [
+    "tests.py"
+]
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "W", "N", "B", "A", "C4", "T20", "DJ"]
+ignore = ["E501"]

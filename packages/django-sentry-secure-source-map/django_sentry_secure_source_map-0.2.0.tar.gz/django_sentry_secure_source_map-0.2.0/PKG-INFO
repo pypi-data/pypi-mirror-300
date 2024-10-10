@@ -1,0 +1,62 @@
+Metadata-Version: 2.1
+Name: django-sentry-secure-source-map
+Version: 0.2.0
+Summary: A middleware to ensure only Sentry can access source maps
+Author-email: Torchbox <tech@torchbox.com>
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+Classifier: Environment :: Web Environment
+Classifier: Framework :: Django
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python
+Classifier: Topic :: Internet :: WWW/HTTP
+Classifier: Topic :: Software Development
+Requires-Dist: Django>=4.2
+Requires-Dist: ruff==0.6.9 ; extra == "lint"
+Requires-Dist: pytest-cov ; extra == "test"
+Requires-Dist: pytest-django ; extra == "test"
+Requires-Dist: pytest ; extra == "test"
+Project-URL: Home, https://torchbox.com
+Provides-Extra: lint
+Provides-Extra: test
+
+# django-sentry-secure-source-map
+
+
+![CI](https://github.com/torchbox/django-sentry-secure-source-map/workflows/CI/badge.svg)
+![PyPI](https://img.shields.io/pypi/v/django-sentry-secure-source-map.svg)
+![PyPI - Python Version](https://img.shields.io/pypi/pyversions/django-sentry-secure-source-map.svg)
+
+
+A middleware to ensure only Sentry can access source maps.
+
+When enabled, only requests from Sentry will be able to access source maps (any URL starting with `STATIC_URL` and ending `.map`).
+
+For more information, see [Secure Access to Source Maps](https://docs.sentry.io/platforms/javascript/sourcemaps/uploading/hosting-publicly/#secure-access-to-source-maps)
+
+## Installation
+
+```
+pip install django-sentry-secure-source-map
+```
+
+Then add `sentry_secure_source_map.SentrySecureSourceMapMiddleware` to your `MIDDLEWARE` in `settings.py`. Ideally, it should be placed as high as possible, before tools like [`whitenoise`](https://pypi.org/project/whitenoise/).
+
+Next, you need to configure the token. Retrieve your project's "Security Token" from the settings page, and set it as `SENTRY_SECURITY_TOKEN`.
+
+```python
+SENTRY_SECURITY_TOKEN = "abcde12345"
+```
+
+If the token isn't set, the middleware does nothing.
+
+"Enable JavaScript source fetching" **must** be enabled in Sentry.
+
