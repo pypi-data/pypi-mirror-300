@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: g722_1_mod
+Version: 0.0.10
+Summary: A modified G722.1 encoder
+Home-page: https://github.com/adafruit/g722_1_mod
+Requires-Python: >=3.7
+License-File: LICENSE
+Provides-Extra: test
+Requires-Dist: pytest ; extra == 'test'
+
+This modified format is used by certain embedded designs.
