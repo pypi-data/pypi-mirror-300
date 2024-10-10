@@ -1,0 +1,7 @@
+setup.py
+IliauniNoBase/__init__.py
+IliauniNoBase/component.py
+Nikoloz_Iliauni_Okruashvili.egg-info/PKG-INFO
+Nikoloz_Iliauni_Okruashvili.egg-info/SOURCES.txt
+Nikoloz_Iliauni_Okruashvili.egg-info/dependency_links.txt
+Nikoloz_Iliauni_Okruashvili.egg-info/top_level.txt
