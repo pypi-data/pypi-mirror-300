@@ -1,0 +1,13 @@
+flake8_in_file_ignores/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+flake8_in_file_ignores/flake8_plugin.py,sha256=mFudyvI4EbAHerolgONa97o8jRvVpCsn2_IuI2IROjU,2733
+flake8_in_file_ignores/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+flake8_in_file_ignores/tests/unit/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+flake8_in_file_ignores/tests/unit/non_utf8_module.py,sha256=-9cV8oAzrvLWTkpTnG21qFXf-Rv88WWd2uCMuxPWH5g,140
+flake8_in_file_ignores/tests/unit/test_flake8_plugin.py,sha256=_akRPzahpo2hYJfGsi8iiisGIH26AFpOILleNettCJY,738
+flake8_in_file_ignores/tests/unit/utils.py,sha256=lCl2YK80oIJWJLPZ8tNq9c9SCcbhw-a_fTGycT5VFtI,145
+flake8_in_file_ignores-0.3.0.dist-info/LICENSE,sha256=XazvNMh9jkhPCI4B25znt4EndTGVxJPX6wC8-zh1SxA,1083
+flake8_in_file_ignores-0.3.0.dist-info/METADATA,sha256=zAUDafT8KfBIAu0kwYw562BiH8gwiRBBGtJonP_i1P4,2251
+flake8_in_file_ignores-0.3.0.dist-info/WHEEL,sha256=fS9sRbCBHs7VFcwJLnLXN1MZRR0_TVTxvXKzOnaSFs8,110
+flake8_in_file_ignores-0.3.0.dist-info/entry_points.txt,sha256=FE8CEXhtZNnnONvZ6E54VNP2OZqFw2wRnf57bDMcLJY,77
+flake8_in_file_ignores-0.3.0.dist-info/top_level.txt,sha256=sA1z_49iH7SENZrF4hlbxTm6DbUBY-YUDvBPXPHGFLE,23
+flake8_in_file_ignores-0.3.0.dist-info/RECORD,,
