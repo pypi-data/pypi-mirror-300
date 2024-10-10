@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: talon_one
+Version: 6.1.1
+Summary: Talon.One Python SDK
+Home-page: https://github.com/talon-one/talon_one.py/
+Author: Talon.One GmbH
+Author-email: devs@talon.one
+License: MIT
+Keywords: OpenAPI,OpenAPI-Generator,Talon.One API
+License-File: LICENSE
+Requires-Dist: urllib3 >=1.15
+Requires-Dist: six >=1.10
+Requires-Dist: certifi
+Requires-Dist: python-dateutil
+
+    Use the Talon.One API to integrate with your application and to manage applications and campaigns:  - Use the operations in the [Integration API section](#integration-api) are used to integrate with our platform - Use the operation in the [Management API section](#management-api) to manage applications and campaigns.  ## Determining the base URL of the endpoints  The API is available at the same hostname as your Campaign Manager deployment. For example, if you access the Campaign Manager at &#x60;https://yourbaseurl.talon.one/&#x60;, the URL for the [updateCustomerSessionV2](https://docs.talon.one/integration-api#operation/updateCustomerSessionV2) endpoint is &#x60;https://yourbaseurl.talon.one/v2/customer_sessions/{Id}&#x60;   # noqa: E501
+    
