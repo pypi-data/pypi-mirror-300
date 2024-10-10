@@ -1,0 +1,3 @@
+[console_scripts]
+fhir-validator=fhir_validator.validator:main
+
