@@ -1,0 +1,8 @@
+LICENSE
+README.md
+rawgl.py
+setup.py
+rawgl.egg-info/PKG-INFO
+rawgl.egg-info/SOURCES.txt
+rawgl.egg-info/dependency_links.txt
+rawgl.egg-info/top_level.txt
