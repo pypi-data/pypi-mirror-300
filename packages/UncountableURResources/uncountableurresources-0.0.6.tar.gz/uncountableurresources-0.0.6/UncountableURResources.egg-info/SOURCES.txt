@@ -1,0 +1,13 @@
+__init__.py
+py.typed
+pyproject.toml
+./__init__.py
+./py.typed
+.github/workflows/publish.yml
+UncountableURResources.egg-info/PKG-INFO
+UncountableURResources.egg-info/SOURCES.txt
+UncountableURResources.egg-info/dependency_links.txt
+UncountableURResources.egg-info/requires.txt
+UncountableURResources.egg-info/top_level.txt
+utils/__init__.py
+utils/_transpose.py
