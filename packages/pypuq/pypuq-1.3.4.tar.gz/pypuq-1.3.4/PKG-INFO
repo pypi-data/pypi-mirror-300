@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: pypuq
+Version: 1.3.4
+Summary: Physical Units and Quantities for Python
+Author: Ondrej Pego Jaura
+License-File: LICENSE
+
+C++ implementation of physical units and quantities and their conversions.

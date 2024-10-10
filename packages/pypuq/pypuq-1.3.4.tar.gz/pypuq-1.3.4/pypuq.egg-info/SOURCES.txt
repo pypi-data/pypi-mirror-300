@@ -1,0 +1,13 @@
+CMakeLists.txt
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+settings.env
+setup.py
+pypuq.egg-info/PKG-INFO
+pypuq.egg-info/SOURCES.txt
+pypuq.egg-info/dependency_links.txt
+pypuq.egg-info/not-zip-safe
+pypuq.egg-info/top_level.txt
+src/pypuq.cpp
