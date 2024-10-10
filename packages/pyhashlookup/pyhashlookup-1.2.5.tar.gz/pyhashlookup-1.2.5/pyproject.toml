@@ -1,0 +1,57 @@
+[tool.poetry]
+name = "pyhashlookup"
+version = "1.2.5"
+description = "Python CLI and module for CIRCL hash lookup"
+authors = ["Raphaël Vinot <raphael.vinot@circl.lu>"]
+license = "BSD-3-Clause"
+repository = "https://github.com/hashlookup/PyHashlookup"
+documentation = "https://pyhashlookup.readthedocs.io/en/latest/"
+
+readme = "README.md"
+
+classifiers = [
+    'License :: OSI Approved :: BSD License',
+    'Development Status :: 5 - Production/Stable',
+    'Environment :: Console',
+    'Operating System :: POSIX :: Linux',
+    'Intended Audience :: Science/Research',
+    'Intended Audience :: Telecommunications Industry',
+    'Intended Audience :: Information Technology',
+    'Programming Language :: Python :: 3',
+    'Programming Language :: Python :: 3.8',
+    'Programming Language :: Python :: 3.9',
+    'Programming Language :: Python :: 3.10',
+    'Programming Language :: Python :: 3.11',
+    'Programming Language :: Python :: 3.12',
+    'Programming Language :: Python :: 3.13',
+    'Topic :: Security',
+    'Topic :: Internet',
+]
+
+[tool.poetry.scripts]
+hashlookup = 'pyhashlookup:main'
+
+[tool.poetry.dependencies]
+python = "^3.8"
+dnspython = [
+    {version = "<2.7", python = "<3.9"},
+    {version = "^2.7", python = ">=3.9"}
+]
+requests = "^2.32.3"
+Sphinx = [
+    {version = "<7.2", python = "<3.9", optional = true},
+    {version = "<8", python = "<3.10", optional = true},
+    {version = "^8", python = ">=3.10", optional = true}
+]
+
+[tool.poetry.dev-dependencies]
+mypy = "^1.11.2"
+types-requests = "^2.32.0.20240914"
+pytest-cov = "^5.0.0"
+
+[tool.poetry.extras]
+docs = ["Sphinx"]
+
+[build-system]
+requires = ["poetry_core"]
+build-backend = "poetry.core.masonry.api"
