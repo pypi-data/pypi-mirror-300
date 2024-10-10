@@ -1,0 +1,48 @@
+[project]
+name = "py-pcbu"
+version = "0.4.1"
+description = "A package to interact with the PC Bio Unlock credentials module."
+authors = [
+    { name = "LM. Garret", email = "lm@codingarret.dev" }
+]
+dependencies = [
+    "py-machineid>=0.6.0",
+    "dataclass-wizard>=0.23.0",
+    "cryptography>=43.0.1",
+]
+readme = "README.md"
+requires-python = ">= 3.8"
+
+[project.urls]
+Homepage = "https://github.com/lmgarret/py-pcbu"
+Repository = "https://github.com/lmgarret/py-pcbu.git"
+Issues = "https://github.com/lmgarret/py-pcbu/issues"
+Changelog = "https://github.com/lmgarret/py-pcbu/blob/master/CHANGELOG.md"
+
+[project.optional-dependencies]
+cli = [
+    "qrcode>=7.4.2",
+    "typer>=0.12.5",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.metadata]
+allow-direct-references = true
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/pcbu"]
+
+[tool.hatch.build.targets.sdist]
+include = [
+  "src",
+  "pyproject.toml",
+  "CHANGELOG.md",
+  "README.md",
+  "LICENSE",
+]
+exclude = [
+  ".vscode",
+]
