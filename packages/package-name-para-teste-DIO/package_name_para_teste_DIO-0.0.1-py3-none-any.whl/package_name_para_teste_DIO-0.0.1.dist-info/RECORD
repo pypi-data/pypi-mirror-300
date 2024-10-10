@@ -1,0 +1,7 @@
+package_name/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+package_name/file1_name.py,sha256=ZONujX4t2tA-Kl5C6HRh5C_xR2iZ67pJN3_SxW7XmMo,52
+package_name/file2_name.py,sha256=0j-WY0bllzl3XBreQ53wZIfyccchDVaSvxltrRvCOaU,52
+package_name_para_teste_DIO-0.0.1.dist-info/METADATA,sha256=LdtKzLHcFvYR9GLnYo8A42D7p3ONvT_EmM8XC6Qs7w0,681
+package_name_para_teste_DIO-0.0.1.dist-info/WHEEL,sha256=GV9aMThwP_4oNCtvEC2ec3qUYutgWeAzklro_0m4WJQ,91
+package_name_para_teste_DIO-0.0.1.dist-info/top_level.txt,sha256=dgB8touNYCul6yLybWD6ZCv0BmvOQyDK2A9FlmKDzMs,13
+package_name_para_teste_DIO-0.0.1.dist-info/RECORD,,
