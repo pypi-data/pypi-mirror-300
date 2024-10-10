@@ -1,0 +1,12 @@
+dessert/__init__.py,sha256=eZmXiqUIsiQw-OFWUkGTqsuqroLrXJpgLIURNvVEUs8,467
+dessert/__version__.py,sha256=IE37SmjARdXz5uduMPiaUNtzDHqcfDJ8nflV6VvKYKk,261
+dessert/conf.py,sha256=dzum8a5bbRa67Drx6dmYT8un10hBrMWGIB7dKq-v5fk,345
+dessert/pathlib.py,sha256=62kUfeLORJu_LnWvRevMHH7QrE8feuUqJovo4U5Cd7Y,1624
+dessert/rewrite.py,sha256=piE9ew9d4Qqr7ZU8qgqVsi7SFwL4RwHMI71nsyiXkLQ,39706
+dessert/saferepr.py,sha256=hoOPeOX3JicxHTJgvLzqCiMAQcOV1aWhUdtv-tL-rP0,2113
+dessert/util.py,sha256=nZqUQGXrjY87ruDN4KrNpmbd9cWfyQoVaDtrmQNnwtc,15118
+dessert/warning_types.py,sha256=9AmyRvtBVMJre5fXwstcm_fE3LxukRCx033R16wfPWU,142
+dessert-1.5.0.dist-info/METADATA,sha256=clGBQo3wLtHpjYwggcKoji9eXyBP4rCSuJ0FQv5o820,2063
+dessert-1.5.0.dist-info/WHEEL,sha256=1yFddiXMmvYK7QYTqtRNtX66WJ0Mz8PYEiEUoOUUxRY,87
+dessert-1.5.0.dist-info/licenses/LICENSE,sha256=KvaAw570k_uCgwNW0dPfGstaBgM8ui3sehniHKp3qGY,1061
+dessert-1.5.0.dist-info/RECORD,,
