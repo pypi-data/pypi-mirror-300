@@ -1,0 +1,5 @@
+include salesforce/testrunner/example/templates/*
+include salesforce/testrunner/local_settings.py.sample
+include CHANGELOG.rst
+exclude salesforce/testrunner/local_settings.py
+exclude salesforce/testrunner/example/migrations/*
