@@ -1,0 +1,20 @@
+[project]
+name = "fantastic_otter"
+version = "1.0.0.dev"
+dependencies = [
+    "loguru >= 0.7.2"
+]
+requires-python = ">=3.11"
+readme = "README.md"
+
+dynamic = ["entry-points"]
+
+[tool.mypy]
+follow_imports = "silent"
+
+[build-system]
+requires = ["setuptools"]
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["fantastic_otter*"]

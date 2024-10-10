@@ -1,0 +1,9 @@
+README.md
+pyproject.toml
+fantastic_otter/__init__.py
+fantastic_otter/speak.py
+fantastic_otter.egg-info/PKG-INFO
+fantastic_otter.egg-info/SOURCES.txt
+fantastic_otter.egg-info/dependency_links.txt
+fantastic_otter.egg-info/requires.txt
+fantastic_otter.egg-info/top_level.txt

@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: fantastic_otter
+Version: 1.0.0.dev0
+Requires-Python: >=3.11
+Description-Content-Type: text/markdown
+Requires-Dist: loguru>=0.7.2
+
+# Is this the long description?
