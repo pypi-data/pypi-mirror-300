@@ -1,0 +1,66 @@
+Metadata-Version: 2.3
+Name: pysource-minimize
+Version: 0.7.0
+Summary: minimize python source code
+Project-URL: Documentation, https://github.com/15r10nk/pysource-minimize#readme
+Project-URL: Issues, https://github.com/15r10nk/pysource-minimize/issues
+Project-URL: Source, https://github.com/15r10nk/pysource-minimize
+Author-email: Frank Hoffmann <15r10nk@polarbit.de>
+License-Expression: MIT
+License-File: LICENSE
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Python: >=3.8
+Requires-Dist: astunparse>=1.6.3
+Requires-Dist: click>=8.1.7
+Requires-Dist: rich>=12.6.0
+Description-Content-Type: text/markdown
+
+<!-- -8<- [start:Header] -->
+
+
+![ci](https://github.com/15r10nk/pysource-minimize/actions/workflows/ci.yml/badge.svg?branch=main)
+[![Docs](https://img.shields.io/badge/docs-mkdocs-green)](https://15r10nk.github.io/pysource-minimize/)
+[![pypi version](https://img.shields.io/pypi/v/pysource-minimize.svg)](https://pypi.org/project/pysource-minimize/)
+![Python Versions](https://img.shields.io/pypi/pyversions/pysource-minimize)
+![PyPI - Downloads](https://img.shields.io/pypi/dw/pysource-minimize)
+[![GitHub Sponsors](https://img.shields.io/github/sponsors/15r10nk)](https://github.com/sponsors/15r10nk)
+
+<!-- -8<- [end:Header] -->
+
+## Installation
+
+
+You can install "pysource-minimize" via [pip](https://pypi.org/project/pip/):
+
+``` bash
+pip install pysource-minimize
+```
+
+
+## Key Features
+
+- **list** of features ...
+
+
+## Usage
+
+usage ...
+
+<!-- -8<- [start:Feedback] -->
+## Issues
+
+If you encounter any problems, please [report an issue](https://github.com/15r10nk/pysource-minimize/issues) along with a detailed description.
+<!-- -8<- [end:Feedback] -->
+
+## License
+
+Distributed under the terms of the [MIT](http://opensource.org/licenses/MIT) license, "pysource-minimize" is free and open source software.
