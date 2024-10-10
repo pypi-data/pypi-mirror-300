@@ -1,0 +1,14 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+GradientTransformation/__init__.py
+GradientTransformation/lbfgs.py
+GradientTransformation.egg-info/PKG-INFO
+GradientTransformation.egg-info/SOURCES.txt
+GradientTransformation.egg-info/dependency_links.txt
+GradientTransformation.egg-info/requires.txt
+GradientTransformation.egg-info/top_level.txt
+examples/quadratic.py
+examples/rosenbrock.py
+tests/test_functions.py
