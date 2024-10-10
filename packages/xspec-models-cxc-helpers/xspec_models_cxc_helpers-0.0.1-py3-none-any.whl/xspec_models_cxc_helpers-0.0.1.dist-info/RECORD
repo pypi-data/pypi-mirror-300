@@ -1,0 +1,10 @@
+xspec_models_cxc/utils/__init__.py,sha256=4oEvpXvUfjnB5Bl6LBBVV87XWDg2FwhULg4iLtJHJJA,20615
+xspec_models_cxc/utils/data/xspec.h,sha256=3iTn8AlWhtFxNsw3Z2Ts13cCOyL9EfUeOuQdt8heffE,438
+xspec_models_cxc/utils/data/xsudmget.cxx,sha256=rh-uKe_G_kRFtRG5ZDyC3OA6aFsShX05IMm8ih5Ax_8,25035
+xspec_models_cxc/utils/data/xsudmget64.cxx,sha256=qAxdptuN-DV_MonwsCNUWkI8hOJI37eU4dpLCJV0dUM,25697
+xspec_models_cxc/utils/tests/test_utils.py,sha256=iMJ8ZUwWhHNmRGWc-bjcGsfM6XZR0SO4mo8SBomSI3c,6566
+xspec_models_cxc_helpers-0.0.1.dist-info/LICENSE,sha256=EqxQR_KvBSLwZ5ixWJ_8RZm8KckflU14dOAyBjTnd8A,35122
+xspec_models_cxc_helpers-0.0.1.dist-info/METADATA,sha256=6kaf0DaNJgf47vRr5JXIoHKb2QKoATnNSGXRFaEwGWU,41980
+xspec_models_cxc_helpers-0.0.1.dist-info/WHEEL,sha256=GV9aMThwP_4oNCtvEC2ec3qUYutgWeAzklro_0m4WJQ,91
+xspec_models_cxc_helpers-0.0.1.dist-info/top_level.txt,sha256=bpExCYkggy8wZ09IgiCUz18YXCgATE-Q58ziu5xS3mM,17
+xspec_models_cxc_helpers-0.0.1.dist-info/RECORD,,
