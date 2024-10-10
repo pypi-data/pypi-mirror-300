@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: qr-code-reader
+Version: 1.1.1
+Summary: A simple QR code reader
+Home-page: https://github.com/mnedev-cell/qr_code_reader
+Author: DEVMNE
+Author-email: mne@yaposarl.ma
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+License-File: LICENSE
+
