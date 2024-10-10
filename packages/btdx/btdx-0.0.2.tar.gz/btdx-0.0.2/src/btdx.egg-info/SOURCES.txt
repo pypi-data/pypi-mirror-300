@@ -1,0 +1,11 @@
+.gitignore
+LICENSE
+README.md
+pyproject.toml
+src/btdx/DX.py
+src/btdx/__init__.py
+src/btdx.egg-info/PKG-INFO
+src/btdx.egg-info/SOURCES.txt
+src/btdx.egg-info/dependency_links.txt
+src/btdx.egg-info/requires.txt
+src/btdx.egg-info/top_level.txt
