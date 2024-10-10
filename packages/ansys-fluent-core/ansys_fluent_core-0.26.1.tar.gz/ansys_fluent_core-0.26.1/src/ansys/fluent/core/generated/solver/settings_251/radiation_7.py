@@ -1,0 +1,80 @@
+#
+# This is an auto-generated file.  DO NOT EDIT!
+#
+
+from ansys.fluent.core.solver.flobject import *
+
+from ansys.fluent.core.solver.flobject import (
+    _ChildNamedObjectAccessorMixin,
+    CreatableNamedObjectMixin,
+    _NonCreatableNamedObjectMixin,
+    AllowedValuesMixin,
+    _InputFile,
+    _OutputFile,
+    _InOutFile,
+)
+
+from .bc_type_3 import bc_type as bc_type_cls
+from .boundary_source import boundary_source as boundary_source_cls
+from .polar_distribution_function import polar_distribution_function as polar_distribution_function_cls
+from .polar_distribution_function_settings import polar_distribution_function_settings as polar_distribution_function_settings_cls
+from .beam_width import beam_width as beam_width_cls
+from .solar_direction import solar_direction as solar_direction_cls
+from .solar_irradiation import solar_irradiation as solar_irradiation_cls
+from .direct_irradiation_settings import direct_irradiation_settings as direct_irradiation_settings_cls
+from .diffuse_irradiation_settings import diffuse_irradiation_settings as diffuse_irradiation_settings_cls
+from .internal_emissivity import internal_emissivity as internal_emissivity_cls
+from .internal_emissivity_band import internal_emissivity_band as internal_emissivity_band_cls
+from .radiating_s2s_surface import radiating_s2s_surface as radiating_s2s_surface_cls
+from .critical_zone import critical_zone as critical_zone_cls
+from .faces_per_surface_cluster import faces_per_surface_cluster as faces_per_surface_cluster_cls
+from .solar_fluxes import solar_fluxes as solar_fluxes_cls
+from .transmissivity import transmissivity as transmissivity_cls
+from .absorptivity import absorptivity as absorptivity_cls
+
+class radiation(Group):
+    """
+    Radiation settings for this boundary-condition.
+    """
+
+    fluent_name = "radiation"
+
+    child_names = \
+        ['bc_type', 'boundary_source', 'polar_distribution_function',
+         'polar_distribution_function_settings', 'beam_width',
+         'solar_direction', 'solar_irradiation',
+         'direct_irradiation_settings', 'diffuse_irradiation_settings',
+         'internal_emissivity', 'internal_emissivity_band',
+         'radiating_s2s_surface', 'critical_zone',
+         'faces_per_surface_cluster', 'solar_fluxes', 'transmissivity',
+         'absorptivity']
+
+    _child_classes = dict(
+        bc_type=bc_type_cls,
+        boundary_source=boundary_source_cls,
+        polar_distribution_function=polar_distribution_function_cls,
+        polar_distribution_function_settings=polar_distribution_function_settings_cls,
+        beam_width=beam_width_cls,
+        solar_direction=solar_direction_cls,
+        solar_irradiation=solar_irradiation_cls,
+        direct_irradiation_settings=direct_irradiation_settings_cls,
+        diffuse_irradiation_settings=diffuse_irradiation_settings_cls,
+        internal_emissivity=internal_emissivity_cls,
+        internal_emissivity_band=internal_emissivity_band_cls,
+        radiating_s2s_surface=radiating_s2s_surface_cls,
+        critical_zone=critical_zone_cls,
+        faces_per_surface_cluster=faces_per_surface_cluster_cls,
+        solar_fluxes=solar_fluxes_cls,
+        transmissivity=transmissivity_cls,
+        absorptivity=absorptivity_cls,
+    )
+
+    _child_aliases = dict(
+        band_in_emiss="internal_emissivity_band",
+        fpsc="faces_per_surface_cluster",
+        in_emiss="internal_emissivity",
+        mc_bsource_p="boundary_source",
+        mc_poldfun_p="polar_distribution_function",
+        radiation_bc="bc_type",
+    )
+
