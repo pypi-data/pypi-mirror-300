@@ -1,0 +1,20 @@
+embedding_project/emb_pr/
+*/__pycache__/
+*/test/
+*/.idea/
+**/__pycache__/
+**/.idea/
+**/test/
+*/env_proccess/
+*/Databases/sources/
+*/env_pp/
+*/env_pr4/
+*/env/
+projects1/
+projects3/
+projects4/
+projects4 — копия/
+**/*.gguf
+proccessing_service_v_rest/
+proccessing_service_v1/
+*/dataset/
