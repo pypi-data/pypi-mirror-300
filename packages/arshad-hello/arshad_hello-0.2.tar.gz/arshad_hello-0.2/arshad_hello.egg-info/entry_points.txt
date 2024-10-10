@@ -1,0 +1,2 @@
+[console_scripts]
+arshad = arshad_hello:hello
