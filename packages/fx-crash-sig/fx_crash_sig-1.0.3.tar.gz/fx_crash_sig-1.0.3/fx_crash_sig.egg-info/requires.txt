@@ -1,0 +1,13 @@
+requests
+siggen
+importlib_metadata
+
+[dev]
+build
+check-manifest
+pytest
+ruff
+tox
+tox-gh-actions
+twine
+wheel
