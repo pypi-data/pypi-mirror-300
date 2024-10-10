@@ -1,0 +1,9 @@
+sqlsymphony_orm/__init__.py,sha256=Xq31SlqKTyUBetKQFy8GQ5uF9VHyzB5isyQmp94bDvQ,871
+sqlsymphony_orm/database/connection.py,sha256=j749wgkIZZy1T3ayf_HMjRvwSCn0uXub_GnVy_afah8,3194
+sqlsymphony_orm/database/manager.py,sha256=5IM6S-kkGQS7HgkcqVAgT6VGWRtQ6fFHXB7cEOGZefk,4510
+sqlsymphony_orm/datatypes/fields.py,sha256=GLZ0PENisZtuNGqN6Wu2VF-qWb5dsx0Su5GiqUfgOz4,13697
+sqlsymphony_orm/models/orm_models.py,sha256=ki8AeFTWJDUjdSjtgvPpwH7pdgK4JAdZ_sCK9ofOMB8,5743
+sqlsymphony_orm/queries.py,sha256=dlEkroTJDN1e5Dy7HnprDNH56VZ3ik-_ljiIzlEUuaM,6231
+sqlsymphony_orm-0.1.4.dist-info/METADATA,sha256=8tvIRSWfo-okbd81qow86raExNE8V5voT1soE6pGd0g,7497
+sqlsymphony_orm-0.1.4.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+sqlsymphony_orm-0.1.4.dist-info/RECORD,,
