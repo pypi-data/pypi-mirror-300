@@ -1,0 +1,99 @@
+local sha1 = require "sha1.init"
+
+-- A list of consensus IDs, efficient for random selection.
+local consensus_ids_list = {
+  {% for consensus_id in consensus_ids %}
+  "{{ consensus_id }}",
+  {% endfor %}
+}
+-- A set of consensus IDs, efficient for membership testing.
+local consensus_ids_set = {
+  {% for consensus_id in consensus_ids %}
+  ["{{ consensus_id }}"] = true,
+  {% endfor %}
+}
+-- A representation of the route map, efficient for lookup.
+local consensus_id_by_keyrange_start = {
+  {% for route_map_entry in route_map %}
+  [{{ route_map_entry.shard_keyrange_start }}] = "{{ route_map_entry.consensus_id }}",
+  {% endfor %}
+}
+-- The "first byte"s (shard boundaries) from the route map, from high to low.
+local shard_keyrange_starts_high_to_low = {
+  {% for route_map_entry in route_map|reverse %}
+  {{ route_map_entry.shard_keyrange_start }},
+  {% endfor %}
+}
+
+function envoy_on_request(request_handle)
+  local consensus_id = request_handle:headers():get("x-reboot-consensus-id")
+  if consensus_id ~= nil then
+    -- Caller has already chosen a consensus.
+    if consensus_ids_set[consensus_id] == nil then
+      -- Since this may be a transient error (this router may not have
+      -- heard about a new consensus) we'd like gRPC callers to get the
+      -- clearly-retryable "UNAVAILABLE" error code. That leaves us with
+      -- primarily the 50x status codes:
+      --   https://github.com/grpc/grpc/blob/master/doc/http-grpc-status-mapping.md
+      -- From this list we use 502 "Bad Gateway" to indicate that this is
+      -- not an error at the server but at the router.
+      request_handle:respond(
+          {[":status"] = "502"}, "Unknown consensus '" .. consensus_id .. "'"
+      )
+    end
+    -- Caller picked a legal consensus, so our header matching route
+    -- logic will handle the rest.
+    return
+  end
+
+  local state_ref = request_handle:headers():get("x-reboot-state-ref")
+  if state_ref == nil then
+    -- This request doesn't care which consensus it goes to. Pick a random one.
+    local consensus_id = consensus_ids_list[math.random(#consensus_ids_list)]
+    request_handle:headers():add("x-reboot-consensus-id", consensus_id)
+    request_handle:logDebug(
+        "No state reference; picked random consensus '" .. consensus_id .. "'"
+    )
+    return
+  end
+
+  -- Pick a consensus based on the state ID. We do this as follows:
+  -- 1. Take a SHA1 hash of the state ID (which includes a service tag).
+  --    TODO: only hash the _top-level_ state ID, once colocation is a thing.
+  -- 2. Walk through the shard map, and find the shard whose key range
+  --    contains the resulting hash.
+  --    TODO: in the current implementation, key ranges are defined by a
+  --          single byte, so we only need to look at the hash's first
+  --          byte. As we build colocation and splitting and thereby have
+  --          finer-grained key ranges, we will need to look deeper.
+  local hashed_state_ref = sha1.binary(state_ref)
+  local hashed_state_ref_first_byte = string.byte(hashed_state_ref, 1)
+  -- TODO: do binary search instead of this linear lookup.
+  for i = 1, #shard_keyrange_starts_high_to_low do
+    local shard_keyrange_start = shard_keyrange_starts_high_to_low[i]
+    if shard_keyrange_start <= hashed_state_ref_first_byte then
+      -- This is the shard that will hold our state.
+      local consensus_id = consensus_id_by_keyrange_start[shard_keyrange_start]
+      request_handle:headers():add("x-reboot-consensus-id", consensus_id)
+      request_handle:logDebug(
+          "Picked consensus '" .. consensus_id .. "' for state '" .. state_ref .. "'"
+      )
+      return
+    end
+  end
+
+  -- This code should be unreachable; the last shard in the
+  -- `shard_keyrange_start` list should have a value of `0` and thereby
+  -- there can't be traffic that doesn't have a shard to go to. If we
+  -- print the following we in fact have a bug.
+  request_handle:logErr(
+      "Failed to pick consensus for state '" .. state_ref .. "'"
+  )
+  -- If we let the request continue we'd get a "no_route" error, which is
+  -- a 404 that gRPC interprets as "not implemented". We'd like to send a
+  -- 'internal error' instead; to gRPC that would be error code 400, but
+  -- to any other (HTTP) client error 500 (to gRPC: "unknown") is more
+  -- accurate. See:
+  --   https://github.com/grpc/grpc/blob/master/doc/http-grpc-status-mapping.md
+  request_handle:respond({[":status"] = "500"}, "Router internal error")
+end
