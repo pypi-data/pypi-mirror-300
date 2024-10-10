@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: etherflow-acitoolkit
+Version: 0.4.7
+Summary: A basic toolkit for accessing the Cisco APIC.
+Author: Etherflow
+Author-email: alan@etherflow.io
+Requires-Python: >=3.9,<3.13
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: deepdiff (>=5.5.0,<7.0)
+Requires-Dist: flask (>=3.0.3,<4.0.0)
+Requires-Dist: flask-admin (>=1.6.1,<2.0.0)
+Requires-Dist: flask-bootstrap (>=3.3.7.1,<4.0.0.0)
+Requires-Dist: flask-cors (>=5.0.0,<6.0.0)
+Requires-Dist: flask-httpauth (>=4.8.0,<5.0.0)
+Requires-Dist: flask-sqlalchemy (>=3.1.1,<4.0.0)
+Requires-Dist: flask-wtf (>=1.2.1,<2.0.0)
+Requires-Dist: gitpython (>=3.1.43,<4.0.0)
+Requires-Dist: graphviz (>=0.20.3,<0.21.0)
+Requires-Dist: ipaddress (>=1.0.23,<2.0.0)
+Requires-Dist: jsonschema (>=4.23.0,<5.0.0)
+Requires-Dist: py-radix (>=0.10.0,<0.11.0)
+Requires-Dist: pymysql (>=1.1.1,<2.0.0)
+Requires-Dist: requests (>=2.32.3,<3.0.0)
+Requires-Dist: tabulate (>=0.9.0,<0.10.0)
+Requires-Dist: websocket-client (>=1.8.0,<2.0.0)
