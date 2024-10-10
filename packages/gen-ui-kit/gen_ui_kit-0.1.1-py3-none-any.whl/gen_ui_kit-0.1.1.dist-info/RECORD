@@ -1,0 +1,10 @@
+gen_ui_kit/GenUIKit.py,sha256=HssfqLtiG96_5BBdCrc5Ix2Qvp4REcjk5PEO3g_gKaU,32838
+gen_ui_kit/GenUIKitPrompts.py,sha256=hAuWVARFqKrQOpxUMRRbAyRi85mfoTPGgh5PCiQYL3E,7361
+gen_ui_kit/GenUIKitTools.py,sha256=qs-R4wDeBku76nMOhJB4leYd020FE0KxvyHEad5SHIk,4044
+gen_ui_kit/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+gen_ui_kit/utils.py,sha256=SYyvSjb70OO6Y4PZv4Knfpsu2_mDsoPauckYC1tQffE,493
+gen_ui_kit-0.1.1.dist-info/LICENSE,sha256=fg9DgFqWjxvDKfJswWC1HrTVCXAo4SetU0fJjMCZoPg,1077
+gen_ui_kit-0.1.1.dist-info/METADATA,sha256=_ca6UyYncq8LjEKDwJOPttJNWWlqgQrSSaKsEGphhgs,4118
+gen_ui_kit-0.1.1.dist-info/WHEEL,sha256=eOLhNAGa2EW3wWl_TU484h7q1UNgy0JXjjoqKoxAAQc,92
+gen_ui_kit-0.1.1.dist-info/top_level.txt,sha256=wV8eIPiazAPw4SiF4kHaHBEG0G-NTChhym_Od1rw89w,11
+gen_ui_kit-0.1.1.dist-info/RECORD,,
