@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: gsgp_slim
+Version: 0.1.7
+Summary: Semantic Learning algorithm based on Inflate and deflate Mutation (SLIM GSGP)
+Home-page: https://github.com/DALabNOVA/slim
+Author: Davide Farinati, Diogo Rasteiro, Gloria Pietropolli, Karina Brotto Rebulli, Leonardo Vanneschi, Liah Rosenfeld, Sara Silva
+Author-email: dfarinati@novaims.unl.pt, drasteiro@novaims.unl.pt, gloria.pietropolli@phd.units.it, karina.brottorebuli@unito.it, lvanneschi@novaims.unl.pt, lrosenfeld@novaims.unl.pt, sgsilva@fc.ul.pt
+Classifier: Development Status :: 7 - Inactive
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: torch
+Requires-Dist: scipy
+Requires-Dist: scikit-learn
+Requires-Dist: joblib
+
+
+## Deprecated Package
+
+This package has been deprecated. Please use `slim_gsgp` instead.
