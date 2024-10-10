@@ -1,0 +1,23 @@
+Metadata-Version: 2.3
+Name: di_service_ksu
+Version: 0.0.4
+Summary: Solve Lightweight Dependency injection
+Project-URL: Homepage, https://github.com/Alitrix/di_service_ksu
+Project-URL: Issues, https://github.com/Alitrix/di_service_ksu/issues
+Author-email: Pozin Andrey <alien-kms@mail.ru>
+License-File: LICENSE
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Topic :: Software Development
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+
+# Lightweight Dependency Injection Service
+
+Code of Conduct.
+Dependency Injection Service is an open source, lightweight dependency injection library that allows you to inject required dependencies by automatically populating class constructors.
+
+This library will be regularly modified and built further, this is the Alpha version.
