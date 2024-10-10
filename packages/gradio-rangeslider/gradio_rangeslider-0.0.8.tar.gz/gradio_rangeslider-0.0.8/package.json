@@ -1,0 +1,5 @@
+{
+  "dependencies": {
+    "@gradio/markdown": "^0.10.0"
+  }
+}
