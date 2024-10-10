@@ -1,0 +1,42 @@
+Metadata-Version: 2.1
+Name: image-processing-thayse
+Version: 0.0.2
+Summary: histrogram matching, structural similarity, resize image
+Home-page: https://github.com/thaysetakamori/image-processing-package
+Author: Thayse
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Requires-Dist: matplotlib
+Requires-Dist: numpy
+Requires-Dist: scikit-image>=0.16.1
+
+# Image Processing
+
+## Description
+The package image_processing_thayse is used to:
+
+Processing:
+- Histrogram matching
+- Structural similarity
+- Resize image
+
+Utils:
+- Read image
+- Save image
+- Plot image
+- Plot result
+- Plot histrogram
+
+## Installation
+
+Use the package manager [pip](https://pip.pypa.io/en/stable/) to install image_processing_thayse:
+
+```bash
+pip install image_processing_thayse
+```
+
+## Author
+Thayse
+
+## License
+[MIT](https://choosealicense.com/licenses/mit/)
