@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.py
+qr_code_reader/QrCodeReader.py
+qr_code_reader/__init__.py
+qr_code_reader.egg-info/PKG-INFO
+qr_code_reader.egg-info/SOURCES.txt
+qr_code_reader.egg-info/dependency_links.txt
+qr_code_reader.egg-info/top_level.txt
+tests/test_qr_code_reader.py
+tests/test_qr_reader.py
