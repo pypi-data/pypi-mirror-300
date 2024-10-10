@@ -1,0 +1,7 @@
+setup.py
+HeroesCoC.egg-info/PKG-INFO
+HeroesCoC.egg-info/SOURCES.txt
+HeroesCoC.egg-info/dependency_links.txt
+HeroesCoC.egg-info/top_level.txt
+paquetes/__init__.py
+paquetes/heroes.py

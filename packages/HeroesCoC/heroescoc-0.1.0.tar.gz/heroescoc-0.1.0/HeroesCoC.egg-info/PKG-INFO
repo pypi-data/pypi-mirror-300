@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: HeroesCoC
+Version: 0.1.0
+Summary: Muestra los niveles actuales de los héroes
+Home-page: https://www.clashofstats.com/players/sade-8RC0PLRJQ/army#tabs
+Author: Luis Lopez
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+# Heroes y sus Niveles
+Consultar el estado de tus heroes
+
+## Heroes Disponibles
+
+- Reina Arquera
+- Rey Barbaro
+- Gran Centinela
+- Luchadora Real
+
+## Instalacion
+
+Instala el paquete usando 'pip3'
+
+'''python3
+pip3 intall HeroesCoC
+'''
+
+## Se añadira mas.....
