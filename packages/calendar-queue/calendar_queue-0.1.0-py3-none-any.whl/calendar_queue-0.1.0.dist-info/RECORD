@@ -1,0 +1,9 @@
+calendar_queue-0.1.0.dist-info/METADATA,sha256=B08KEs7v0fW_j9Kd6NI6bEfe0n_9qQ7UM2hzYMKwOzc,3892
+calendar_queue-0.1.0.dist-info/WHEEL,sha256=Vza3XR51HW1KmFP0iIMUVYIvz0uQuKJpIXKYOBGQyFQ,90
+calendar_queue-0.1.0.dist-info/entry_points.txt,sha256=6OYgBcLyFCUgeqLgnvMyOJxPCWzgy7se4rLPKtNonMs,34
+calendar_queue-0.1.0.dist-info/licenses/LICENSE,sha256=ORhnN3eU0Je0Si7ZX2EkR7wxT9Gqv1oqAIJkEZaQzas,1069
+calendar_queue/__init__.py,sha256=Z1JW-hDXnvG_RGBUdLq1PHFNfYKnFLZVIajTJZsFhfs,237
+calendar_queue/calendar.py,sha256=HwIe8XL9oDXTbf5KVRJ_FgbZueiSpkMZoLIGWwl_nZk,7272
+calendar_queue/calendar_queue.py,sha256=q_x5Pd9f7JNqY897iFkCegZT7YS-DjO64LDK_Gcy8zM,8404
+calendar_queue/exceptions.py,sha256=UWI9wzTaT-K1Joa93au2D1fHJSr9jWI2EH8bXTT4ed8,200
+calendar_queue-0.1.0.dist-info/RECORD,,
