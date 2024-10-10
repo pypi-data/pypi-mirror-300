@@ -1,0 +1,11 @@
+moodle/__init__.py,sha256=6MN1aRqogdN1Y8jjYd4KINaPe8uD413Uy-0LOnF0kwk,239
+moodle/api.py,sha256=ocFySx5B2zkDkkSIjWX16Khih3WHpuw4SYBR1N8ZfnY,4848
+moodle/exceptions.py,sha256=aTqcIdVocvt1T2mgYror58FseBE0Oq3mBSapecz3fy0,1791
+moodle/moodle.py,sha256=9CFBu-xGW96mFGddVxQuWKzC2hlGxuPaClLg8Bb_l9E,5888
+moodle/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+moods-0.1.7.dist-info/AUTHORS.md,sha256=w8Oa5XVPmYUuhSZYRpMrvh-e5oBlVaHpolkAcBikcTc,89
+moods-0.1.7.dist-info/LICENSE,sha256=gXf5dRMhNSbfLPYYTY_5hsZ1r7UU1OaKQEAQUhuIBkM,18092
+moods-0.1.7.dist-info/METADATA,sha256=3rv2O2jXo2k5alM5dr2ekR9U4sOJO5yPx2TvcHNZMLg,2604
+moods-0.1.7.dist-info/WHEEL,sha256=GV9aMThwP_4oNCtvEC2ec3qUYutgWeAzklro_0m4WJQ,91
+moods-0.1.7.dist-info/top_level.txt,sha256=INdbDGImqvXBIIZ9hrttCW2UlCBn4gT81GWCS5Dc-IU,7
+moods-0.1.7.dist-info/RECORD,,
