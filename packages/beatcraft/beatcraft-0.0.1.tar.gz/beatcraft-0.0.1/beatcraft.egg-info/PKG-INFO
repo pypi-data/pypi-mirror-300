@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: beatcraft
+Version: 0.0.1
+Summary: while you are focus on the game logic, BeatCraft help you to make an authentic music for your game
+Home-page: 
+Author: Arul and friends
+Author-email: arif.akbarul@amikom.ac.id
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Requires-Dist: click
+Requires-Dist: MIDIUtil
+Requires-Dist: pyo
+Requires-Dist: pygame
+Requires-Dist: numpy==1.26.4
+Requires-Dist: sounddevice
+Requires-Dist: mido
+Requires-Dist: python-rtmidi
+Requires-Dist: pretty_midi
+Requires-Dist: torch==2.1.0
+Requires-Dist: torchaudio==2.1.0
+Requires-Dist: torchtext==0.16.0
+Requires-Dist: torchvision==0.16.0
+Requires-Dist: transformers==4.45.1
+Requires-Dist: xformers==0.0.22.post7
+Requires-Dist: audiocraft==1.3.0
+Requires-Dist: midi2audio
+Requires-Dist: librosa
