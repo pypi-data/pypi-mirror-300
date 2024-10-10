@@ -1,0 +1,5 @@
+stellar-sdk>=8.0.0
+safe-pysha3>=1.0.4
+
+[:python_version < "3.7"]
+dataclasses
