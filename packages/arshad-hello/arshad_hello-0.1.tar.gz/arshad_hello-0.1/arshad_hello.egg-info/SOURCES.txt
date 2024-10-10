@@ -1,0 +1,8 @@
+README.md
+setup.py
+arshad_hello/__init__.py
+arshad_hello/main.py
+arshad_hello.egg-info/PKG-INFO
+arshad_hello.egg-info/SOURCES.txt
+arshad_hello.egg-info/dependency_links.txt
+arshad_hello.egg-info/top_level.txt
