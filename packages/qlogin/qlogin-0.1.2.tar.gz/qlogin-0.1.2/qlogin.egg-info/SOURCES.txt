@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+qlogin/__init__.py
+qlogin/qlogin.py
+qlogin.egg-info/PKG-INFO
+qlogin.egg-info/SOURCES.txt
+qlogin.egg-info/dependency_links.txt
+qlogin.egg-info/requires.txt
+qlogin.egg-info/top_level.txt
