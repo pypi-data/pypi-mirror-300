@@ -1,0 +1,34 @@
+Metadata-Version: 2.1
+Name: sanyam_algosdk_2315
+Version: 0.1.3
+Summary: A package for sending and receiving data via bus and filtering responses.(Fixed import error in filter_response function and global_storage receive.)
+Author-email: Sanyam Karnavat <sanyam.karnavat5@gmail.com>
+Project-URL: Homepage, https://github.com/yourusername/sanyam_algosdk_2315
+Project-URL: Issues, https://github.com/yourusername/sanyam_algosdk_2315/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: azure-core ==1.31.0
+Requires-Dist: azure-servicebus ==7.12.3
+Requires-Dist: certifi ==2024.8.30
+Requires-Dist: cffi ==1.17.1
+Requires-Dist: charset-normalizer ==3.3.2
+Requires-Dist: idna ==3.10
+Requires-Dist: isodate ==0.6.1
+Requires-Dist: msgpack ==1.1.0
+Requires-Dist: py-algorand-sdk ==2.6.1
+Requires-Dist: pycparser ==2.22
+Requires-Dist: pycryptodomex ==3.20.0
+Requires-Dist: PyNaCl ==1.5.0
+Requires-Dist: requests ==2.32.3
+Requires-Dist: six ==1.16.0
+Requires-Dist: typing-extensions ==4.12.2
+Requires-Dist: urllib3 ==2.2.3
+
+# sanyam_algosdk_2315
+
+# Library to process blockchain response.
+
