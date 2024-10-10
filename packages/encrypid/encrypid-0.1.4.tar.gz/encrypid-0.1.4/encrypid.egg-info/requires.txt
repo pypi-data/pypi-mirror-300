@@ -1,0 +1,12 @@
+cryptography
+PyQt5
+click
+pyyaml
+python-dotenv
+colorama
+pycparser
+PyQt5-Qt5
+PyQt5_sip
+python-dotenv
+PyYAML
+maskpass

@@ -1,0 +1,3 @@
+[console_scripts]
+encrypid = encrypid.encrypid_cli:cli
+encrypid-gui = encrypid.encrypid_ui:main

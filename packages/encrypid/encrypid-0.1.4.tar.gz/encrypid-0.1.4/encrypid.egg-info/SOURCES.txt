@@ -1,0 +1,17 @@
+LICENCE
+MANIFEST.in
+README.md
+pyproject.toml
+setup.py
+encrypid/__init__.py
+encrypid/encrypid.py
+encrypid/encrypid_cli.py
+encrypid/encrypid_ui.py
+encrypid.egg-info/PKG-INFO
+encrypid.egg-info/SOURCES.txt
+encrypid.egg-info/dependency_links.txt
+encrypid.egg-info/entry_points.txt
+encrypid.egg-info/requires.txt
+encrypid.egg-info/top_level.txt
+tests/__init__.py
+tests/test_encrypid.py
