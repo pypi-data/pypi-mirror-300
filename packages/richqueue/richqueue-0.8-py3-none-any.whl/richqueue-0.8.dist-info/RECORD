@@ -1,0 +1,12 @@
+richqueue/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+richqueue/console.py,sha256=UpMqeJ0C8i0pkue1AHnnyyX0bFJ9zZeJ7HBR6yhuA8A,54
+richqueue/layout.py,sha256=qD3RRNvKYQSCDZpWLRvP6eGDxIu96b5hBn1Vx-V50WM,602
+richqueue/main.py,sha256=jiXg2CwH6xmJhLNbK47hUBSFW2lPC3deXAEs7KjlEWE,1917
+richqueue/slurm.py,sha256=q_gmqY1zfL24u3ElsPeXH5aKN1P7kC2GU8UWcusbcJ4,10551
+richqueue/table.py,sha256=pJ29lSUchiFHxfpLwz7b6FpSMcOsahUTSNZzBZ1Fees,8567
+richqueue/tools.py,sha256=64sd7IOd8uYSVAqMP-UOBZLiyh22LGMP-RAr-OrIA8o,965
+richqueue-0.8.dist-info/METADATA,sha256=PM_H42U-9BnkH3NUNpMgyG9BYwPxUfNJkI8Y8jhOs8o,1171
+richqueue-0.8.dist-info/WHEEL,sha256=1yFddiXMmvYK7QYTqtRNtX66WJ0Mz8PYEiEUoOUUxRY,87
+richqueue-0.8.dist-info/entry_points.txt,sha256=fX_0CcRpB-mzIv_IcOz6T3pguGak5BaQTo6icB2w0vY,43
+richqueue-0.8.dist-info/licenses/LICENSE,sha256=IeuPfRcqKv1nyCnVVwJaO9Uratg-K2dnkuOROLgQ4qw,1068
+richqueue-0.8.dist-info/RECORD,,
