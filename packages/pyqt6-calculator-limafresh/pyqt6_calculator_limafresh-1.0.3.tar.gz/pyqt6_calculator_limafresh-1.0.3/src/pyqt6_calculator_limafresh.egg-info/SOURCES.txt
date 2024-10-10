@@ -1,0 +1,15 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+src/pyqt6_calculator_limafresh/__init__.py
+src/pyqt6_calculator_limafresh/main.py
+src/pyqt6_calculator_limafresh/ui.py
+src/pyqt6_calculator_limafresh.egg-info/PKG-INFO
+src/pyqt6_calculator_limafresh.egg-info/SOURCES.txt
+src/pyqt6_calculator_limafresh.egg-info/dependency_links.txt
+src/pyqt6_calculator_limafresh.egg-info/entry_points.txt
+src/pyqt6_calculator_limafresh.egg-info/requires.txt
+src/pyqt6_calculator_limafresh.egg-info/top_level.txt
+src/pyqt6_calculator_limafresh/locales/ui_ru.qm
+src/pyqt6_calculator_limafresh/locales/ui_uk.qm
