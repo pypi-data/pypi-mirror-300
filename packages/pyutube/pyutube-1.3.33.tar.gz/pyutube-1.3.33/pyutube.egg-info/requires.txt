@@ -1,0 +1,10 @@
+pytubefix
+inquirer
+yaspin
+typer
+requests
+rich
+inquirer
+termcolor
+moviepy
+playsound
