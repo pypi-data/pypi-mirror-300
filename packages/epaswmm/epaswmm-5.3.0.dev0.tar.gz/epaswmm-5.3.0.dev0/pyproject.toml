@@ -1,0 +1,67 @@
+# 
+# This file is part of the swmm python package.
+#
+# Author: Caleb Buahin
+# Created: 2021-06-01
+# License: CC0-1.0
+#
+
+[build-system]
+requires = [
+    "setuptools>=42",
+    "wheel",
+    "cmake>=3.18",
+    "scikit-build>=0.17.3",
+    "cython",
+]
+
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "epaswmm"
+description = "A Python package for SWMM5"
+readme = "README.md"
+license = { file = "LICENSE" }
+requires-python = ">=3.1"
+dynamic = ["version"]
+
+authors = [
+    {name = "Caleb Buahin", email = "caleb.buahin@gmail.com"}
+]
+
+maintainers = [
+    {name = "Caleb Buahin", email = "caleb.buahin@gmail.com"}
+]
+
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "Intended Audience :: Science/Research",
+    "License :: CC0 1.0 Universal (CC0 1.0) Public Domain Dedication",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.1",
+    "Programming Language :: Python :: 3.2",
+    "Programming Language :: Python :: 3.3",
+    "Programming Language :: Python :: 3.4",
+    "Programming Language :: Python :: 3.5",
+    "Programming Language :: Python :: 3.5",
+    "Programming Language :: Python :: 3.7",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Topic :: Scientific/Engineering",
+    "Topic :: Scientific/Engineering :: Hydrology",
+    "Topic :: Scientific/Engineering :: Mathematics",
+    "Topic :: Scientific/Engineering :: Physics",
+    "Topic :: Software Development :: Libraries",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+]
+
+
+[project.urls]
+Homepage = "https://github.com/DigitalWaterAnalytics/Stormwater-Management-Model"
+Documentation = "https://github.com/DigitalWaterAnalytics/Stormwater-Management-Model"
+"Source Code" = "https://github.com/DigitalWaterAnalytics/Stormwater-Management-Model"
+"Bug Tracker" = "https://github.com/DigitalWaterAnalytics/Stormwater-Management-Model/issues"
+Repository =  "https://github.com/DigitalWaterAnalytics/Stormwater-Management-Model"
+Changelog = "https://github.com/DigitalWaterAnalytics/Stormwater-Management-Model/blob/master/CHANGELOG.md"

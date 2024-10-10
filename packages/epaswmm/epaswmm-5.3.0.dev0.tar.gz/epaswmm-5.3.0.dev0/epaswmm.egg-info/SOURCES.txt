@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.py
+epaswmm/__init__.py
+epaswmm.egg-info/PKG-INFO
+epaswmm.egg-info/SOURCES.txt
+epaswmm.egg-info/dependency_links.txt
+epaswmm.egg-info/top_level.txt
+tests/test_swmm_output.py
