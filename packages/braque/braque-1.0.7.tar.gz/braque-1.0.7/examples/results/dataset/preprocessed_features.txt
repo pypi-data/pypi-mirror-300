@@ -1,0 +1,8 @@
+list of features which completed the lognormal shrinkage preprocessing step
+FeatureA Done, with  3 within-feature populations.
+FeatureB Done, with  2 within-feature populations.
+FeatureD Done, with  3 within-feature populations.
+FeatureE Done, with  2 within-feature populations.
+FeatureF Done, with  2 within-feature populations.
+FeatureG Done, with  3 within-feature populations.
+FeatureI Done, with  2 within-feature populations.
