@@ -1,0 +1,41 @@
+Metadata-Version: 2.1
+Name: xnat-cli-tool
+Version: 1.0.13
+Summary: XNAT CLI Tool
+Home-page: https://github.com/amrshadid/xnat_cli_tool
+Author: Amr Shadid
+Author-email: amr.shadid@nyu.edu
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+Requires-Dist: altgraph (==0.17.4)
+Requires-Dist: certifi (==2022.12.7)
+Requires-Dist: charset-normalizer (==3.1.0)
+Requires-Dist: click (==8.1.7)
+Requires-Dist: future (==0.18.3)
+Requires-Dist: idna (==3.4)
+Requires-Dist: importlib-metadata (==7.1.0)
+Requires-Dist: isodate (==0.6.1)
+Requires-Dist: lxml (==4.9.2)
+Requires-Dist: macholib (==1.16.3)
+Requires-Dist: packaging (==24.0)
+Requires-Dist: pathlib (==1.0.1)
+Requires-Dist: progressbar2 (==4.2.0)
+Requires-Dist: pydicom (==2.4.3)
+Requires-Dist: python-dateutil (==2.8.2)
+Requires-Dist: python-utils (==3.8.1)
+Requires-Dist: pyxnat (==1.5)
+Requires-Dist: requests (==2.28.2)
+Requires-Dist: six (==1.16.0)
+Requires-Dist: tqdm (==4.65.0)
+Requires-Dist: typing-extensions (==4.8.0)
+Requires-Dist: urllib3 (==1.26.15)
+Requires-Dist: xnat (==0.5.1)
+Requires-Dist: zipp (==3.19.2)
+
+XNAT CLI V1.0.0
+
