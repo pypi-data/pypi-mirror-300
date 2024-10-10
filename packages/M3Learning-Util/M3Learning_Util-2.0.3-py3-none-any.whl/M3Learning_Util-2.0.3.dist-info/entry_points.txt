@@ -1,0 +1,3 @@
+[console_scripts]
+convert_to_slides = m3util.notebooks.slides:main
+generate-init-py = m3util.util.generate_init:main
