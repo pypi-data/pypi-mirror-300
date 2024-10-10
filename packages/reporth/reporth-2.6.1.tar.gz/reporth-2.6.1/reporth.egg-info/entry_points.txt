@@ -1,0 +1,4 @@
+
+        [console_scripts]
+        reporth=rc_entry:main
+    
