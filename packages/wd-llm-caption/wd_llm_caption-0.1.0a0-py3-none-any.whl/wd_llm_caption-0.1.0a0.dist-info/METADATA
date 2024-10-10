@@ -1,0 +1,34 @@
+Metadata-Version: 2.1
+Name: wd-llm-caption
+Version: 0.1.0a0
+Summary: A Python base cli tool for caption images with WD series, Joy-caption-pre-alpha,meta Llama 3.2 Vision Instruct and Qwen2 VL Instruct models.
+Home-page: https://github.com/fireicewolf/wd-llm-caption-cli
+Author: DukeG
+Author-email: fireicewolf@gmail.com
+License: Apache
+Keywords: image-caption
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Requires-Python: >=3.10.0
+License-File: LICENSE
+Requires-Dist: opencv-python-headless ==4.10.0.84
+Requires-Dist: pillow ==10.4.0
+Requires-Dist: requests ==2.32.3
+Requires-Dist: tqdm ==4.66.5
+Requires-Dist: accelerate >=0.34.2
+Requires-Dist: bitsandbytes >=0.42.0
+Requires-Dist: peft ==0.13.0
+Requires-Dist: sentencepiece ==0.2.0
+Requires-Dist: transformers ==4.45.2
+Requires-Dist: torch >=2.1.0
+Requires-Dist: onnx ==1.17.0
+Requires-Dist: onnxruntime ==1.19.2
+Requires-Dist: huggingface-hub >=0.25.1
+Requires-Dist: modelscope >=1.18.1
+Requires-Dist: gradio >=4.44.0
+
