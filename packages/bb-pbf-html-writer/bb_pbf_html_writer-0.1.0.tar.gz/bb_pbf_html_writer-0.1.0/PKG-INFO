@@ -1,0 +1,6 @@
+Metadata-Version: 2.1
+Name: bb_pbf_html_writer
+Version: 0.1.0
+Summary: Writes BB Mega PBF HTML file and adds links to the HTML file.
+Author: John Nastala
+Author-email: your.email@example.com
