@@ -1,0 +1,7 @@
+anndata_tensorstore/__init__.py,sha256=k66dIGrDV4ipEUACDj-8a_9byeA6gjrbqeI5wH8gGZk,156
+anndata_tensorstore/_ext.py,sha256=z9Lcu49wcWSEpRF1obMloATP1zjO6RLC62LTni0_N3M,11896
+anndata_tensorstore/_version.py,sha256=xYsT-BKfOfSZD2gyAFEniV8Oe8gmZToMYyDCEn_VvS8,17
+anndata_tensorstore-1.0.3.dist-info/METADATA,sha256=03tWpXLaq6xL2QwFIVH0gW047BFYhJeBrOm9m7Ouedg,427
+anndata_tensorstore-1.0.3.dist-info/WHEEL,sha256=GJ7t_kWBFywbagK5eo9IoUwLW6oyOeTKmQ-9iHFVNxQ,92
+anndata_tensorstore-1.0.3.dist-info/top_level.txt,sha256=aPHtMM1775LmIFwih73ne5Ch3U2hDTWSXWUq23ywpNk,20
+anndata_tensorstore-1.0.3.dist-info/RECORD,,
