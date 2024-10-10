@@ -1,0 +1,2 @@
+[console_scripts]
+doti = doti.doti:main
