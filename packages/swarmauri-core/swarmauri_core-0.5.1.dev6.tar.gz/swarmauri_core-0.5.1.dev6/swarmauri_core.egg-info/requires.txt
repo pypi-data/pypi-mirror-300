@@ -1,0 +1,4 @@
+numpy
+requests
+pydantic
+pandas>2.2
