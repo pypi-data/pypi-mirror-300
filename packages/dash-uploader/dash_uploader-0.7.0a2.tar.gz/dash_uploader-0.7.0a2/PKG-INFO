@@ -1,0 +1,73 @@
+Metadata-Version: 2.1
+Name: dash_uploader
+Version: 0.7.0a2
+Summary: Upload component for Dash
+Home-page: https://github.com/fohrloop/dash-uploader
+Author: Niko Föhr <fohrloop@gmail.com>
+Author-email: fohrloop@gmail.com
+License: MIT
+Classifier: Framework :: Dash
+Description-Content-Type: text/markdown
+License-File: LICENSE.txt
+Requires-Dist: dash>=1.1.0
+Requires-Dist: packaging>=21.0
+Provides-Extra: dev
+Requires-Dist: pyyaml~=6.0; extra == "dev"
+Requires-Dist: black; extra == "dev"
+Requires-Dist: pytest; extra == "dev"
+Requires-Dist: selenium~=4.1.0; extra == "dev"
+Requires-Dist: dash[testing]>=1.1.0; extra == "dev"
+Requires-Dist: chromedriver-binary; extra == "dev"
+Requires-Dist: Werkzeug~=2.0.3; extra == "dev"
+
+
+![GitHub tag (latest by date)](https://img.shields.io/github/v/tag/fohrloop/dash-uploader)&nbsp;![PyPI](https://img.shields.io/pypi/v/dash-uploader)&nbsp;![PyPI - Downloads](https://img.shields.io/pypi/dm/dash-uploader)&nbsp;![GitHub](https://img.shields.io/github/license/fohrloop/dash-uploader)
+
+![upload large files with dash-uploader](https://github.com/fohrloop/dash-uploader/blob/0.2.0/docs/upload-demo.gif?raw=true)
+
+# 📤 dash-uploader
+The upload package for [Dash](https://dash.plotly.com/) applications using large data files. 
+
+### 🏠 Homepage & Documentation
+[https://github.com/fohrloop/dash-uploader](https://github.com/fohrloop/dash-uploader)
+
+
+## Short summary
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 💾 Data file size has no limits. (Except the hard disk size)<bR>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ☎ Call easily a callback after uploading is finished.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 📦 Upload files using [flow.js](https://github.com/flowjs/flow.js/) 
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ✅ Works with Dash 1.1.0.+ & Python 3.6+. (Possibly with other versions, too)<br>
+
+
+
+## Installing
+```
+pip install dash-uploader
+```
+
+## Usage
+
+
+### Simple example
+
+```python
+import dash
+import dash_html_components as html
+import dash_uploader as du
+
+app = dash.Dash(__name__)
+
+# 1) configure the upload folder
+du.configure_upload(app, r"C:\tmp\Uploads")
+
+# 2) Use the Upload component
+app.layout = html.Div([
+    du.Upload(),
+])
+
+if __name__ == '__main__':
+    app.run_server(debug=True)
+
+```
+
