@@ -1,0 +1,12 @@
+numpy
+scipy
+swiftsimio
+mendeleev
+roman
+swiftsimio
+pyread_eagle
+matplotlib
+hydrangea
+bs4
+yaml
+h5py
