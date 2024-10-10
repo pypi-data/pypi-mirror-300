@@ -1,0 +1,12 @@
+bioplumber/.DS_Store,sha256=cfeHTV1vACQG_VB4h7Tf6Hz0IFHl5ObbcHJEKTS8jDU,6148
+bioplumber/__init__.py,sha256=c4iObJDE-mQwpwlqPsz-87b4Ry5CdN4VqiXA3MrBxYQ,105
+bioplumber/alignment.py,sha256=g8K8x0E6byrdp74DvqqwRleIQ1bzPIXg_So0ywhjgeA,22910
+bioplumber/assemble.py,sha256=6pwhNX4PT4xp7OTLwVkKkacfd4R0hcccybvWusYcCuY,3380
+bioplumber/bin.py,sha256=zO52cjkeRGpfiH6uafp0DoL2qxqHiR4EtE5n0k_-CA4,2766
+bioplumber/configs.py,sha256=qBoRZRrEPIVk_UXV_h6z0jzFbIJ6Z9o2hfpqhQJLz5s,882
+bioplumber/files.py,sha256=S-OApz72qrYFVirOb8EkiZgJFyJgi5zNMhBBTm_ad4g,5469
+bioplumber/qc.py,sha256=wPR16xKmh4gFLkyIwyuqHjtZ0y07QCwpNmpYmLWgLx0,4545
+bioplumber/slurm.py,sha256=-VrUFuFjsGT8h8fradJLnD9LdNJx4l57i0gyuDjm5EQ,91
+bioplumber-0.31.dist-info/WHEEL,sha256=y3eDiaFVSNTPbgzfNn0nYn5tEn1cX6WrdetDlQM4xWw,83
+bioplumber-0.31.dist-info/METADATA,sha256=S_VbIDlSuhWdR8I7ksARtwuAZlNpy0M74LzojW18VR0,403
+bioplumber-0.31.dist-info/RECORD,,
