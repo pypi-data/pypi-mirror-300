@@ -1,0 +1,46 @@
+AWSTemplateFormatVersion: "2010-09-09"
+Transform: AWS::Serverless-2016-10-31
+Description: Example API Deployment to LocalStack
+
+Globals:
+  Function:
+    Runtime: python3.12
+
+Resources:
+  ExampleApi:
+    Type: AWS::Serverless::Function
+    Properties:
+      FunctionName: !Sub "${AWS::StackName}-ExampleApi"
+      Handler: index.handler
+      InlineCode: |
+        def handler(event, context):
+            return {'body': 'Hello World!', 'statusCode': 200}
+      Timeout: 30
+      MemorySize: 128
+      Events:
+        ExampleApiAPI:
+          Type: HttpApi
+          Properties:
+            ApiId: !Ref HttpApi
+            TimeoutInMillis: 15000
+            PayloadFormatVersion: "2.0"
+            Path: /
+            Method: ANY
+            RouteSettings:
+              ThrottlingBurstLimit: 600
+
+  HttpApi:
+    Type: AWS::Serverless::HttpApi
+    Properties:
+      DefaultRouteSettings:
+        ThrottlingBurstLimit: 200
+      StageName: test
+
+Outputs:
+  HttpApiUrl:
+    Description: URL of your API endpoint
+    Value:
+      Fn::Sub: "https://${HttpApi}.execute-api.${AWS::Region}.${AWS::URLSuffix}/"
+
+  HttpApiId:
+    Value: !Ref HttpApi

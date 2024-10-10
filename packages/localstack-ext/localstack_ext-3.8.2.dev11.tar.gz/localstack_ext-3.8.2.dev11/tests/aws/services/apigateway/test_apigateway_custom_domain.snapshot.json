@@ -1,0 +1,226 @@
+{
+  "tests/aws/services/apigateway/test_apigateway_custom_domain.py::TestApigatewayCustomDomain::test_delete_domain_name_deletes_mapping": {
+    "recorded-date": "24-09-2024, 10:28:42",
+    "recorded-content": {
+      "api-mapping": {
+        "ApiId": "<apiId:1>",
+        "ApiMappingId": "<apiMappingId:1>",
+        "ApiMappingKey": "v1/orders",
+        "Stage": "test",
+        "ResponseMetadata": {
+          "HTTPHeaders": {},
+          "HTTPStatusCode": 200
+        }
+      },
+      "get-mapping-error": {
+        "Error": {
+          "Code": "NotFoundException",
+          "Message": "Invalid domain name identifier specified"
+        },
+        "Message": "Invalid domain name identifier specified",
+        "ResponseMetadata": {
+          "HTTPHeaders": {},
+          "HTTPStatusCode": 404
+        }
+      }
+    }
+  },
+  "tests/aws/services/apigateway/test_apigateway_custom_domain.py::TestApigatewayCustomDomain::test_update_base_path_mappings_apigw_v1": {
+    "recorded-date": "24-09-2024, 17:46:00",
+    "recorded-content": {
+      "nested-base-path": {
+        "Error": {
+          "Code": "BadRequestException",
+          "Message": "API Gateway V1 doesn't support the slash character (/) in base path mappings. To create a multi-level base path mapping, use API Gateway V2."
+        },
+        "message": "API Gateway V1 doesn't support the slash character (/) in base path mappings. To create a multi-level base path mapping, use API Gateway V2.",
+        "ResponseMetadata": {
+          "HTTPHeaders": {},
+          "HTTPStatusCode": 400
+        }
+      },
+      "create-base-path-mapping-api-1": {
+        "basePath": "ordersv1",
+        "restApiId": "<rest-api-id:1>",
+        "stage": "test",
+        "ResponseMetadata": {
+          "HTTPHeaders": {},
+          "HTTPStatusCode": 201
+        }
+      },
+      "create-base-path-mapping-api-2-identical": {
+        "Error": {
+          "Code": "ConflictException",
+          "Message": "Base path already exists for this domain name"
+        },
+        "message": "Base path already exists for this domain name",
+        "ResponseMetadata": {
+          "HTTPHeaders": {},
+          "HTTPStatusCode": 409
+        }
+      },
+      "create-base-path-mapping-api-3": {
+        "basePath": "ordersv3",
+        "restApiId": "<rest-api-id:1>",
+        "stage": "test",
+        "ResponseMetadata": {
+          "HTTPHeaders": {},
+          "HTTPStatusCode": 201
+        }
+      },
+      "get-mappings-before-update": {
+        "items": [
+          {
+            "basePath": "ordersv1",
+            "restApiId": "<rest-api-id:1>",
+            "stage": "test"
+          },
+          {
+            "basePath": "ordersv3",
+            "restApiId": "<rest-api-id:1>",
+            "stage": "test"
+          }
+        ],
+        "ResponseMetadata": {
+          "HTTPHeaders": {},
+          "HTTPStatusCode": 200
+        }
+      },
+      "get-mappings-in-v2": {
+        "Items": [
+          {
+            "ApiId": "<rest-api-id:1>",
+            "ApiMappingId": "<api-mapping-id:1>",
+            "ApiMappingKey": "ordersv1",
+            "Stage": "test"
+          },
+          {
+            "ApiId": "<rest-api-id:1>",
+            "ApiMappingId": "<api-mapping-id:2>",
+            "ApiMappingKey": "ordersv3",
+            "Stage": "test"
+          }
+        ],
+        "ResponseMetadata": {
+          "HTTPHeaders": {},
+          "HTTPStatusCode": 200
+        }
+      },
+      "update-api-id": {
+        "basePath": "ordersv1",
+        "restApiId": "<rest-api-id:2>",
+        "stage": "test",
+        "ResponseMetadata": {
+          "HTTPHeaders": {},
+          "HTTPStatusCode": 200
+        }
+      },
+      "update-stage": {
+        "basePath": "ordersv1",
+        "restApiId": "<rest-api-id:2>",
+        "stage": "dev",
+        "ResponseMetadata": {
+          "HTTPHeaders": {},
+          "HTTPStatusCode": 200
+        }
+      },
+      "update-base-path": {
+        "basePath": "ordersv2",
+        "restApiId": "<rest-api-id:2>",
+        "stage": "dev",
+        "ResponseMetadata": {
+          "HTTPHeaders": {},
+          "HTTPStatusCode": 200
+        }
+      },
+      "overwrite-exists-base-path-mapping": {
+        "basePath": "ordersv3",
+        "restApiId": "<rest-api-id:2>",
+        "stage": "dev",
+        "ResponseMetadata": {
+          "HTTPHeaders": {},
+          "HTTPStatusCode": 200
+        }
+      },
+      "get-mappings": {
+        "items": [
+          {
+            "basePath": "ordersv3",
+            "restApiId": "<rest-api-id:2>",
+            "stage": "dev"
+          }
+        ],
+        "ResponseMetadata": {
+          "HTTPHeaders": {},
+          "HTTPStatusCode": 200
+        }
+      },
+      "wrong-base-path": {
+        "Error": {
+          "Code": "NotFoundException",
+          "Message": "Invalid base path mapping identifier specified"
+        },
+        "message": "Invalid base path mapping identifier specified",
+        "ResponseMetadata": {
+          "HTTPHeaders": {},
+          "HTTPStatusCode": 404
+        }
+      },
+      "wrong-operation": {
+        "Error": {
+          "Code": "BadRequestException",
+          "Message": "Invalid patch path  '/basePath' specified for op 'add'. Please choose supported operations"
+        },
+        "message": "Invalid patch path  '/basePath' specified for op 'add'. Please choose supported operations",
+        "ResponseMetadata": {
+          "HTTPHeaders": {},
+          "HTTPStatusCode": 400
+        }
+      },
+      "wrong-operation-remove": {
+        "Error": {
+          "Code": "BadRequestException",
+          "Message": "Invalid patch path  '/basePath' specified for op 'remove'. Please choose supported operations"
+        },
+        "message": "Invalid patch path  '/basePath' specified for op 'remove'. Please choose supported operations",
+        "ResponseMetadata": {
+          "HTTPHeaders": {},
+          "HTTPStatusCode": 400
+        }
+      },
+      "non-existent-api-replace": {
+        "Error": {
+          "Code": "BadRequestException",
+          "Message": "Invalid REST API identifier specified"
+        },
+        "message": "Invalid REST API identifier specified",
+        "ResponseMetadata": {
+          "HTTPHeaders": {},
+          "HTTPStatusCode": 400
+        }
+      },
+      "non-existent-stage-replace": {
+        "Error": {
+          "Code": "BadRequestException",
+          "Message": "Invalid stage identifier specified"
+        },
+        "message": "Invalid stage identifier specified",
+        "ResponseMetadata": {
+          "HTTPHeaders": {},
+          "HTTPStatusCode": 400
+        }
+      },
+      "bad-path": {
+        "Error": {
+          "Code": "BadRequestException",
+          "Message": "Invalid patch path  '/restapiid' specified for op 'replace'. Must be one of: [/basePath, /restapiId, /stage]"
+        },
+        "message": "Invalid patch path  '/restapiid' specified for op 'replace'. Must be one of: [/basePath, /restapiId, /stage]",
+        "ResponseMetadata": {
+          "HTTPHeaders": {},
+          "HTTPStatusCode": 400
+        }
+      }
+    }
+  }
+}

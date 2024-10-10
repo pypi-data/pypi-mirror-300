@@ -1,0 +1,1465 @@
+{
+  "tests/aws/services/apigatewayv2/test_apigatewayv2_authorizers.py::TestIAMAuthorization::test_iam_authorizer_success": {
+    "recorded-date": "17-09-2024, 04:18:28",
+    "recorded-content": {
+      "unauthorized-request": {
+        "body": {
+          "message": "Forbidden"
+        },
+        "status_code": 403
+      },
+      "authorized-request": {
+        "body": {
+          "args": {},
+          "data": "",
+          "files": {},
+          "form": {},
+          "headers": {
+            "Accept-Encoding": "identity",
+            "Content-Length": "0",
+            "Context-Accesskey": "<context--accesskey:1>",
+            "Context-Accountid": "111111111111",
+            "Context-Caller": "<context--caller:1>",
+            "Context-User": "<context--caller:1>",
+            "Context-Userarn": "<context--userarn:1>",
+            "Forwarded": "<forwarded>",
+            "Host": "<host:1>",
+            "Request-Authorization": "<request--authorization:1>",
+            "User-Agent": "user-agent",
+            "X-Amz-Date": "<x--amz--date:1>",
+            "X-Amz-Security-Token": "<x--amz--security--token:1>",
+            "X-Amzn-Trace-Id": "<trace-id:1>"
+          },
+          "json": null,
+          "method": "GET",
+          "origin": "<origin>",
+          "url": "http://<host:1>/anything"
+        },
+        "status_code": 200
+      }
+    }
+  },
+  "tests/aws/services/apigatewayv2/test_apigatewayv2_authorizers.py::TestHttpApiLambdaAuthorizer::test_request_authorizer_http[payload_format_version0]": {
+    "recorded-date": "02-10-2024, 23:29:59",
+    "recorded-content": {
+      "missing-querystring": {
+        "body": {
+          "message": "Unauthorized"
+        },
+        "status_code": 401
+      },
+      "missing-header": {
+        "body": {
+          "message": "Unauthorized"
+        },
+        "status_code": 401
+      },
+      "authorizer-deny": {
+        "body": {
+          "message": "Forbidden"
+        },
+        "status_code": 403
+      },
+      "successful-authorizer": {
+        "body": {
+          "event": {
+            "authorizationToken": "allow,any,stage_value",
+            "headers": {
+              "Content-Length": "0",
+              "Host": "<domain-name:1>",
+              "User-Agent": "python-user",
+              "X-Amzn-Trace-Id": "<x--amzn--trace--id:1>",
+              "X-Forwarded-For": "<source-ip:1>",
+              "X-Forwarded-Port": "<x--forwarded--port:1>",
+              "X-Forwarded-Proto": "<x-forwarded-proto>",
+              "X-User": "allow",
+              "accept": "*/*",
+              "accept-encoding": "gzip, deflate"
+            },
+            "httpMethod": "GET",
+            "identitySource": "allow,any,stage_value",
+            "methodArn": "arn:<partition>:execute-api:<region>:111111111111:<api-id:1>/$default/GET/",
+            "path": "/",
+            "pathParameters": {},
+            "queryStringParameters": {
+              "qs": "any"
+            },
+            "requestContext": {
+              "accountId": "111111111111",
+              "apiId": "<api-id:1>",
+              "domainName": "<domain-name:1>",
+              "domainPrefix": "<api-id:1>",
+              "extendedRequestId": "<extended-request-id:1>",
+              "httpMethod": "GET",
+              "identity": {
+                "accessKey": null,
+                "accountId": null,
+                "caller": null,
+                "cognitoAmr": null,
+                "cognitoAuthenticationProvider": null,
+                "cognitoAuthenticationType": null,
+                "cognitoIdentityId": null,
+                "cognitoIdentityPoolId": null,
+                "principalOrgId": null,
+                "sourceIp": "<source-ip:1>",
+                "user": null,
+                "userAgent": "python-user",
+                "userArn": null
+              },
+              "path": "/",
+              "protocol": "HTTP/1.1",
+              "requestId": "<extended-request-id:1>",
+              "requestTime": "<request-time>",
+              "requestTimeEpoch": "<request-time-epoch>",
+              "resourceId": "ANY /",
+              "resourcePath": "/",
+              "stage": "$default"
+            },
+            "resource": "/",
+            "stageVariables": {
+              "stage": "stage_value"
+            },
+            "type": "REQUEST",
+            "version": "1.0"
+          }
+        },
+        "principalId": null,
+        "status_code": 200
+      }
+    }
+  },
+  "tests/aws/services/apigatewayv2/test_apigatewayv2_authorizers.py::TestHttpApiLambdaAuthorizer::test_request_authorizer_http[payload_format_version1]": {
+    "recorded-date": "02-10-2024, 23:30:07",
+    "recorded-content": {
+      "missing-querystring": {
+        "body": {
+          "message": "Unauthorized"
+        },
+        "status_code": 401
+      },
+      "missing-header": {
+        "body": {
+          "message": "Unauthorized"
+        },
+        "status_code": 401
+      },
+      "authorizer-deny": {
+        "body": {
+          "message": "Forbidden"
+        },
+        "status_code": 403
+      },
+      "successful-authorizer": {
+        "body": {
+          "event": {
+            "headers": {
+              "accept": "*/*",
+              "accept-encoding": "gzip, deflate",
+              "content-length": "0",
+              "host": "<domain-name:1>",
+              "user-agent": "python-user",
+              "x-amzn-trace-id": "<x-amzn-trace-id:1>",
+              "x-forwarded-for": "<source-ip:1>",
+              "x-forwarded-port": "<x-forwarded-port:1>",
+              "x-forwarded-proto": "<x-forwarded-proto>",
+              "x-user": "allow"
+            },
+            "identitySource": [
+              "allow",
+              "any",
+              "stage_value"
+            ],
+            "queryStringParameters": {
+              "qs": "any"
+            },
+            "rawPath": "/",
+            "rawQueryString": "qs=any",
+            "requestContext": {
+              "accountId": "111111111111",
+              "apiId": "<api-id:1>",
+              "domainName": "<domain-name:1>",
+              "domainPrefix": "<api-id:1>",
+              "http": {
+                "method": "GET",
+                "path": "/",
+                "protocol": "HTTP/1.1",
+                "sourceIp": "<source-ip:1>",
+                "userAgent": "python-user"
+              },
+              "requestId": "<request-id:1>",
+              "routeKey": "ANY /",
+              "stage": "$default",
+              "time": "<time>",
+              "timeEpoch": "<request-time-epoch>"
+            },
+            "routeArn": "arn:<partition>:execute-api:<region>:111111111111:<api-id:1>/$default/GET/",
+            "routeKey": "ANY /",
+            "stageVariables": {
+              "stage": "stage_value"
+            },
+            "type": "REQUEST",
+            "version": "2.0"
+          }
+        },
+        "principalId": null,
+        "status_code": 200
+      }
+    }
+  },
+  "tests/aws/services/apigatewayv2/test_apigatewayv2_authorizers.py::TestHttpApiLambdaAuthorizer::test_request_authorizer_http[payload_format_version2]": {
+    "recorded-date": "02-10-2024, 23:30:16",
+    "recorded-content": {
+      "missing-querystring": {
+        "body": {
+          "message": "Unauthorized"
+        },
+        "status_code": 401
+      },
+      "missing-header": {
+        "body": {
+          "message": "Unauthorized"
+        },
+        "status_code": 401
+      },
+      "authorizer-deny": {
+        "body": {
+          "message": "Forbidden"
+        },
+        "status_code": 403
+      },
+      "successful-authorizer": {
+        "body": {
+          "event": {
+            "headers": {
+              "accept": "*/*",
+              "accept-encoding": "gzip, deflate",
+              "content-length": "0",
+              "host": "<domain-name:1>",
+              "user-agent": "python-user",
+              "x-amzn-trace-id": "<x-amzn-trace-id:1>",
+              "x-forwarded-for": "<source-ip:1>",
+              "x-forwarded-port": "<x-forwarded-port:1>",
+              "x-forwarded-proto": "<x-forwarded-proto>",
+              "x-user": "allow"
+            },
+            "identitySource": [
+              "allow",
+              "any",
+              "stage_value"
+            ],
+            "queryStringParameters": {
+              "qs": "any"
+            },
+            "rawPath": "/",
+            "rawQueryString": "qs=any",
+            "requestContext": {
+              "accountId": "111111111111",
+              "apiId": "<api-id:1>",
+              "domainName": "<domain-name:1>",
+              "domainPrefix": "<api-id:1>",
+              "http": {
+                "method": "GET",
+                "path": "/",
+                "protocol": "HTTP/1.1",
+                "sourceIp": "<source-ip:1>",
+                "userAgent": "python-user"
+              },
+              "requestId": "<request-id:1>",
+              "routeKey": "ANY /",
+              "stage": "$default",
+              "time": "<time>",
+              "timeEpoch": "<request-time-epoch>"
+            },
+            "routeArn": "arn:<partition>:execute-api:<region>:111111111111:<api-id:1>/$default/GET/",
+            "routeKey": "ANY /",
+            "stageVariables": {
+              "stage": "stage_value"
+            },
+            "type": "REQUEST",
+            "version": "2.0"
+          }
+        },
+        "principalId": null,
+        "status_code": 200
+      }
+    }
+  },
+  "tests/aws/services/apigatewayv2/test_apigatewayv2_authorizers.py::TestHttpApiLambdaAuthorizer::test_request_authorizer_lambda_context[payload_format_version0]": {
+    "recorded-date": "02-10-2024, 23:34:51",
+    "recorded-content": {
+      "lambda_request_authorizer": {
+        "authorizer": {
+          "claims": null,
+          "event": {
+            "version": "1.0",
+            "type": "REQUEST",
+            "methodArn": "arn:<partition>:execute-api:<region>:111111111111:<api-id:1>/$default/GET/test",
+            "identitySource": "allow",
+            "authorizationToken": "allow",
+            "resource": "/test",
+            "path": "/test",
+            "httpMethod": "GET",
+            "headers": {
+              "Content-Length": "0",
+              "Host": "<domain-name:1>",
+              "User-Agent": "urllib3-test",
+              "X-Amzn-Trace-Id": "<x--amzn--trace--id:1>",
+              "X-Forwarded-For": "<source-ip:1>",
+              "X-Forwarded-Port": "<x--forwarded--port:1>",
+              "X-Forwarded-Proto": "<x-forwarded-proto>",
+              "X-User": "allow",
+              "accept-encoding": "identity"
+            },
+            "queryStringParameters": {},
+            "requestContext": {
+              "accountId": "111111111111",
+              "apiId": "<api-id:1>",
+              "domainName": "<domain-name:1>",
+              "domainPrefix": "<api-id:1>",
+              "extendedRequestId": "<extended-request-id:1>",
+              "httpMethod": "GET",
+              "identity": {
+                "accessKey": null,
+                "accountId": null,
+                "caller": null,
+                "cognitoAmr": null,
+                "cognitoAuthenticationProvider": null,
+                "cognitoAuthenticationType": null,
+                "cognitoIdentityId": null,
+                "cognitoIdentityPoolId": null,
+                "principalOrgId": null,
+                "sourceIp": "<source-ip:1>",
+                "user": null,
+                "userAgent": "urllib3-test",
+                "userArn": null
+              },
+              "path": "/test",
+              "protocol": "HTTP/1.1",
+              "requestId": "<extended-request-id:1>",
+              "requestTime": "<request-time>",
+              "requestTimeEpoch": "<request-time-epoch>",
+              "resourceId": "GET /test",
+              "resourcePath": "/test",
+              "stage": "$default"
+            },
+            "pathParameters": {},
+            "stageVariables": {}
+          },
+          "scopes": null
+        },
+        "identity": {
+          "accessKey": null,
+          "accountId": null,
+          "caller": null,
+          "cognitoAmr": null,
+          "cognitoAuthenticationProvider": null,
+          "cognitoAuthenticationType": null,
+          "cognitoIdentityId": null,
+          "cognitoIdentityPoolId": null,
+          "principalOrgId": null,
+          "sourceIp": "<source-ip:1>",
+          "user": null,
+          "userAgent": "urllib3-test",
+          "userArn": null
+        }
+      },
+      "lambda_request_authorizer_double_slash": {
+        "authorizer": {
+          "claims": null,
+          "event": {
+            "version": "1.0",
+            "type": "REQUEST",
+            "methodArn": "arn:<partition>:execute-api:<region>:111111111111:<api-id:1>/$default/GET/test",
+            "identitySource": "allow",
+            "authorizationToken": "allow",
+            "resource": "/test",
+            "path": "/test",
+            "httpMethod": "GET",
+            "headers": {
+              "Content-Length": "0",
+              "Host": "<domain-name:1>",
+              "User-Agent": "urllib3-test",
+              "X-Amzn-Trace-Id": "<x--amzn--trace--id:2>",
+              "X-Forwarded-For": "<source-ip:1>",
+              "X-Forwarded-Port": "<x--forwarded--port:1>",
+              "X-Forwarded-Proto": "<x-forwarded-proto>",
+              "X-User": "allow",
+              "accept-encoding": "identity"
+            },
+            "queryStringParameters": {},
+            "requestContext": {
+              "accountId": "111111111111",
+              "apiId": "<api-id:1>",
+              "domainName": "<domain-name:1>",
+              "domainPrefix": "<api-id:1>",
+              "extendedRequestId": "<extended-request-id:2>",
+              "httpMethod": "GET",
+              "identity": {
+                "accessKey": null,
+                "accountId": null,
+                "caller": null,
+                "cognitoAmr": null,
+                "cognitoAuthenticationProvider": null,
+                "cognitoAuthenticationType": null,
+                "cognitoIdentityId": null,
+                "cognitoIdentityPoolId": null,
+                "principalOrgId": null,
+                "sourceIp": "<source-ip:1>",
+                "user": null,
+                "userAgent": "urllib3-test",
+                "userArn": null
+              },
+              "path": "/test",
+              "protocol": "HTTP/1.1",
+              "requestId": "<extended-request-id:2>",
+              "requestTime": "<request-time>",
+              "requestTimeEpoch": "<request-time-epoch>",
+              "resourceId": "GET /test",
+              "resourcePath": "/test",
+              "stage": "$default"
+            },
+            "pathParameters": {},
+            "stageVariables": {}
+          },
+          "scopes": null
+        },
+        "identity": {
+          "accessKey": null,
+          "accountId": null,
+          "caller": null,
+          "cognitoAmr": null,
+          "cognitoAuthenticationProvider": null,
+          "cognitoAuthenticationType": null,
+          "cognitoIdentityId": null,
+          "cognitoIdentityPoolId": null,
+          "principalOrgId": null,
+          "sourceIp": "<source-ip:1>",
+          "user": null,
+          "userAgent": "urllib3-test",
+          "userArn": null
+        }
+      }
+    }
+  },
+  "tests/aws/services/apigatewayv2/test_apigatewayv2_authorizers.py::TestHttpApiLambdaAuthorizer::test_request_authorizer_lambda_context[payload_format_version1]": {
+    "recorded-date": "02-10-2024, 23:35:02",
+    "recorded-content": {
+      "lambda_request_authorizer": {
+        "authorizer": {
+          "lambda": {
+            "event": {
+              "version": "2.0",
+              "type": "REQUEST",
+              "routeArn": "arn:<partition>:execute-api:<region>:111111111111:<api-id:1>/$default/GET/test",
+              "identitySource": [
+                "allow"
+              ],
+              "routeKey": "GET /test",
+              "rawPath": "/test",
+              "rawQueryString": "",
+              "headers": {
+                "accept-encoding": "identity",
+                "content-length": "0",
+                "host": "<domain-name:1>",
+                "user-agent": "urllib3-test",
+                "x-amzn-trace-id": "<x-amzn-trace-id:1>",
+                "x-forwarded-for": "<source-ip:1>",
+                "x-forwarded-port": "<x-forwarded-port:1>",
+                "x-forwarded-proto": "<x-forwarded-proto>",
+                "x-user": "allow"
+              },
+              "requestContext": {
+                "accountId": "111111111111",
+                "apiId": "<api-id:1>",
+                "domainName": "<domain-name:1>",
+                "domainPrefix": "<api-id:1>",
+                "http": {
+                  "method": "GET",
+                  "path": "/test",
+                  "protocol": "HTTP/1.1",
+                  "sourceIp": "<source-ip:1>",
+                  "userAgent": "urllib3-test"
+                },
+                "requestId": "<request-id:1>",
+                "routeKey": "GET /test",
+                "stage": "$default",
+                "time": "<time>",
+                "timeEpoch": "<request-time-epoch>"
+              }
+            }
+          }
+        },
+        "identity": null
+      },
+      "lambda_request_authorizer_double_slash": {
+        "authorizer": {
+          "lambda": {
+            "event": {
+              "version": "2.0",
+              "type": "REQUEST",
+              "routeArn": "arn:<partition>:execute-api:<region>:111111111111:<api-id:1>/$default/GET/test",
+              "identitySource": [
+                "allow"
+              ],
+              "routeKey": "GET /test",
+              "rawPath": "/test",
+              "rawQueryString": "",
+              "headers": {
+                "accept-encoding": "identity",
+                "content-length": "0",
+                "host": "<domain-name:1>",
+                "user-agent": "urllib3-test",
+                "x-amzn-trace-id": "<x-amzn-trace-id:2>",
+                "x-forwarded-for": "<source-ip:1>",
+                "x-forwarded-port": "<x-forwarded-port:1>",
+                "x-forwarded-proto": "<x-forwarded-proto>",
+                "x-user": "allow"
+              },
+              "requestContext": {
+                "accountId": "111111111111",
+                "apiId": "<api-id:1>",
+                "domainName": "<domain-name:1>",
+                "domainPrefix": "<api-id:1>",
+                "http": {
+                  "method": "GET",
+                  "path": "/test",
+                  "protocol": "HTTP/1.1",
+                  "sourceIp": "<source-ip:1>",
+                  "userAgent": "urllib3-test"
+                },
+                "requestId": "<request-id:2>",
+                "routeKey": "GET /test",
+                "stage": "$default",
+                "time": "<time>",
+                "timeEpoch": "<request-time-epoch>"
+              }
+            }
+          }
+        },
+        "identity": null
+      }
+    }
+  },
+  "tests/aws/services/apigatewayv2/test_apigatewayv2_authorizers.py::TestHttpApiLambdaAuthorizer::test_request_authorizer_lambda_context[payload_format_version2]": {
+    "recorded-date": "02-10-2024, 23:35:13",
+    "recorded-content": {
+      "lambda_request_authorizer": {
+        "authorizer": {
+          "lambda": {
+            "event": {
+              "version": "2.0",
+              "type": "REQUEST",
+              "routeArn": "arn:<partition>:execute-api:<region>:111111111111:<api-id:1>/$default/GET/test",
+              "identitySource": [
+                "allow"
+              ],
+              "routeKey": "GET /test",
+              "rawPath": "/test",
+              "rawQueryString": "",
+              "headers": {
+                "accept-encoding": "identity",
+                "content-length": "0",
+                "host": "<domain-name:1>",
+                "user-agent": "urllib3-test",
+                "x-amzn-trace-id": "<x-amzn-trace-id:1>",
+                "x-forwarded-for": "<source-ip:1>",
+                "x-forwarded-port": "<x-forwarded-port:1>",
+                "x-forwarded-proto": "<x-forwarded-proto>",
+                "x-user": "allow"
+              },
+              "requestContext": {
+                "accountId": "111111111111",
+                "apiId": "<api-id:1>",
+                "domainName": "<domain-name:1>",
+                "domainPrefix": "<api-id:1>",
+                "http": {
+                  "method": "GET",
+                  "path": "/test",
+                  "protocol": "HTTP/1.1",
+                  "sourceIp": "<source-ip:1>",
+                  "userAgent": "urllib3-test"
+                },
+                "requestId": "<request-id:1>",
+                "routeKey": "GET /test",
+                "stage": "$default",
+                "time": "<time>",
+                "timeEpoch": "<request-time-epoch>"
+              }
+            }
+          }
+        },
+        "identity": null
+      },
+      "lambda_request_authorizer_double_slash": {
+        "authorizer": {
+          "lambda": {
+            "event": {
+              "version": "2.0",
+              "type": "REQUEST",
+              "routeArn": "arn:<partition>:execute-api:<region>:111111111111:<api-id:1>/$default/GET/test",
+              "identitySource": [
+                "allow"
+              ],
+              "routeKey": "GET /test",
+              "rawPath": "/test",
+              "rawQueryString": "",
+              "headers": {
+                "accept-encoding": "identity",
+                "content-length": "0",
+                "host": "<domain-name:1>",
+                "user-agent": "urllib3-test",
+                "x-amzn-trace-id": "<x-amzn-trace-id:2>",
+                "x-forwarded-for": "<source-ip:1>",
+                "x-forwarded-port": "<x-forwarded-port:1>",
+                "x-forwarded-proto": "<x-forwarded-proto>",
+                "x-user": "allow"
+              },
+              "requestContext": {
+                "accountId": "111111111111",
+                "apiId": "<api-id:1>",
+                "domainName": "<domain-name:1>",
+                "domainPrefix": "<api-id:1>",
+                "http": {
+                  "method": "GET",
+                  "path": "/test",
+                  "protocol": "HTTP/1.1",
+                  "sourceIp": "<source-ip:1>",
+                  "userAgent": "urllib3-test"
+                },
+                "requestId": "<request-id:2>",
+                "routeKey": "GET /test",
+                "stage": "$default",
+                "time": "<time>",
+                "timeEpoch": "<request-time-epoch>"
+              }
+            }
+          }
+        },
+        "identity": null
+      }
+    }
+  },
+  "tests/aws/services/apigatewayv2/test_apigatewayv2_authorizers.py::TestHttpApiJwtAuthorizer::test_jwt_authorizer_lambda_target[1.0]": {
+    "recorded-date": "21-09-2024, 17:50:17",
+    "recorded-content": {
+      "audience": "<audience:1>",
+      "issuer-url": "<issuer-url:1>",
+      "create-authorizer": {
+        "AuthorizerId": "<authorizer-id:1>",
+        "AuthorizerType": "JWT",
+        "IdentitySource": [
+          "$request.header.Authorization"
+        ],
+        "JwtConfiguration": {
+          "Audience": [
+            "<audience:1>"
+          ],
+          "Issuer": "<issuer-url:1>"
+        },
+        "Name": "jwt-authorizer",
+        "ResponseMetadata": {
+          "HTTPHeaders": {},
+          "HTTPStatusCode": 201
+        }
+      },
+      "no-header-token": {
+        "content": {
+          "message": "Unauthorized"
+        },
+        "statusCode": 401
+      },
+      "access_token-scope1-Bearer": {
+        "content": {
+          "authorizer": {
+            "claims": {
+              "auth_time": "<auth_time:1>",
+              "client_id": "<audience:1>",
+              "event_id": "<uuid:1>",
+              "exp": "<exp:1>",
+              "iat": "<auth_time:1>",
+              "iss": "<issuer-url:1>",
+              "jti": "<jti:1>",
+              "scope": "openid email http://example.com/scope1",
+              "sub": "<sub:1>",
+              "token_use": "access",
+              "username": "user@domain.com",
+              "version": "2"
+            },
+            "scopes": [
+              "openid",
+              "email",
+              "http://example.com/scope1"
+            ]
+          },
+          "identity": {
+            "accessKey": null,
+            "accountId": null,
+            "caller": null,
+            "cognitoAmr": null,
+            "cognitoAuthenticationProvider": null,
+            "cognitoAuthenticationType": null,
+            "cognitoIdentityId": null,
+            "cognitoIdentityPoolId": null,
+            "principalOrgId": null,
+            "sourceIp": "<source-ip:1>",
+            "user": null,
+            "userAgent": "test-jwt",
+            "userArn": null
+          }
+        },
+        "statusCode": 200
+      },
+      "id_token-no-scope-Bearer": {
+        "content": {
+          "authorizer": {
+            "claims": {
+              "at_hash": "<at_hash:1>",
+              "aud": "<audience:1>",
+              "auth_time": "<auth_time:1>",
+              "cognito:username": "user@domain.com",
+              "event_id": "<uuid:1>",
+              "exp": "<exp:1>",
+              "iat": "<auth_time:1>",
+              "iss": "<issuer-url:1>",
+              "jti": "<jti:2>",
+              "sub": "<sub:1>",
+              "token_use": "id"
+            },
+            "scopes": null
+          },
+          "identity": {
+            "accessKey": null,
+            "accountId": null,
+            "caller": null,
+            "cognitoAmr": null,
+            "cognitoAuthenticationProvider": null,
+            "cognitoAuthenticationType": null,
+            "cognitoIdentityId": null,
+            "cognitoIdentityPoolId": null,
+            "principalOrgId": null,
+            "sourceIp": "<source-ip:1>",
+            "user": null,
+            "userAgent": "test-jwt",
+            "userArn": null
+          }
+        },
+        "statusCode": 200
+      },
+      "id_token-no-scope": {
+        "content": {
+          "authorizer": {
+            "claims": {
+              "at_hash": "<at_hash:1>",
+              "aud": "<audience:1>",
+              "auth_time": "<auth_time:1>",
+              "cognito:username": "user@domain.com",
+              "event_id": "<uuid:1>",
+              "exp": "<exp:1>",
+              "iat": "<auth_time:1>",
+              "iss": "<issuer-url:1>",
+              "jti": "<jti:2>",
+              "sub": "<sub:1>",
+              "token_use": "id"
+            },
+            "scopes": null
+          },
+          "identity": {
+            "accessKey": null,
+            "accountId": null,
+            "caller": null,
+            "cognitoAmr": null,
+            "cognitoAuthenticationProvider": null,
+            "cognitoAuthenticationType": null,
+            "cognitoIdentityId": null,
+            "cognitoIdentityPoolId": null,
+            "principalOrgId": null,
+            "sourceIp": "<source-ip:1>",
+            "user": null,
+            "userAgent": "test-jwt",
+            "userArn": null
+          }
+        },
+        "statusCode": 200
+      },
+      "id_token-multi-scope": {
+        "content": {
+          "message": "Forbidden"
+        },
+        "statusCode": 403
+      },
+      "id_token-invalid-scope": {
+        "content": {
+          "message": "Forbidden"
+        },
+        "statusCode": 403
+      },
+      "id_token-scope1-scope": {
+        "content": {
+          "message": "Forbidden"
+        },
+        "statusCode": 403
+      },
+      "id_token-email-scope": {
+        "content": {
+          "message": "Forbidden"
+        },
+        "statusCode": 403
+      },
+      "access_token-no-scope": {
+        "content": {
+          "authorizer": {
+            "claims": {
+              "auth_time": "<auth_time:1>",
+              "client_id": "<audience:1>",
+              "event_id": "<uuid:1>",
+              "exp": "<exp:1>",
+              "iat": "<auth_time:1>",
+              "iss": "<issuer-url:1>",
+              "jti": "<jti:1>",
+              "scope": "openid email http://example.com/scope1",
+              "sub": "<sub:1>",
+              "token_use": "access",
+              "username": "user@domain.com",
+              "version": "2"
+            },
+            "scopes": null
+          },
+          "identity": {
+            "accessKey": null,
+            "accountId": null,
+            "caller": null,
+            "cognitoAmr": null,
+            "cognitoAuthenticationProvider": null,
+            "cognitoAuthenticationType": null,
+            "cognitoIdentityId": null,
+            "cognitoIdentityPoolId": null,
+            "principalOrgId": null,
+            "sourceIp": "<source-ip:1>",
+            "user": null,
+            "userAgent": "test-jwt",
+            "userArn": null
+          }
+        },
+        "statusCode": 200
+      },
+      "access_token-multi-scope": {
+        "content": {
+          "authorizer": {
+            "claims": {
+              "auth_time": "<auth_time:1>",
+              "client_id": "<audience:1>",
+              "event_id": "<uuid:1>",
+              "exp": "<exp:1>",
+              "iat": "<auth_time:1>",
+              "iss": "<issuer-url:1>",
+              "jti": "<jti:1>",
+              "scope": "openid email http://example.com/scope1",
+              "sub": "<sub:1>",
+              "token_use": "access",
+              "username": "user@domain.com",
+              "version": "2"
+            },
+            "scopes": [
+              "openid",
+              "email",
+              "http://example.com/scope1"
+            ]
+          },
+          "identity": {
+            "accessKey": null,
+            "accountId": null,
+            "caller": null,
+            "cognitoAmr": null,
+            "cognitoAuthenticationProvider": null,
+            "cognitoAuthenticationType": null,
+            "cognitoIdentityId": null,
+            "cognitoIdentityPoolId": null,
+            "principalOrgId": null,
+            "sourceIp": "<source-ip:1>",
+            "user": null,
+            "userAgent": "test-jwt",
+            "userArn": null
+          }
+        },
+        "statusCode": 200
+      },
+      "access_token-invalid-scope": {
+        "content": {
+          "message": "Forbidden"
+        },
+        "statusCode": 403
+      },
+      "access_token-scope1-scope": {
+        "content": {
+          "authorizer": {
+            "claims": {
+              "auth_time": "<auth_time:1>",
+              "client_id": "<audience:1>",
+              "event_id": "<uuid:1>",
+              "exp": "<exp:1>",
+              "iat": "<auth_time:1>",
+              "iss": "<issuer-url:1>",
+              "jti": "<jti:1>",
+              "scope": "openid email http://example.com/scope1",
+              "sub": "<sub:1>",
+              "token_use": "access",
+              "username": "user@domain.com",
+              "version": "2"
+            },
+            "scopes": [
+              "openid",
+              "email",
+              "http://example.com/scope1"
+            ]
+          },
+          "identity": {
+            "accessKey": null,
+            "accountId": null,
+            "caller": null,
+            "cognitoAmr": null,
+            "cognitoAuthenticationProvider": null,
+            "cognitoAuthenticationType": null,
+            "cognitoIdentityId": null,
+            "cognitoIdentityPoolId": null,
+            "principalOrgId": null,
+            "sourceIp": "<source-ip:1>",
+            "user": null,
+            "userAgent": "test-jwt",
+            "userArn": null
+          }
+        },
+        "statusCode": 200
+      },
+      "access_token-email-scope": {
+        "content": {
+          "authorizer": {
+            "claims": {
+              "auth_time": "<auth_time:1>",
+              "client_id": "<audience:1>",
+              "event_id": "<uuid:1>",
+              "exp": "<exp:1>",
+              "iat": "<auth_time:1>",
+              "iss": "<issuer-url:1>",
+              "jti": "<jti:1>",
+              "scope": "openid email http://example.com/scope1",
+              "sub": "<sub:1>",
+              "token_use": "access",
+              "username": "user@domain.com",
+              "version": "2"
+            },
+            "scopes": [
+              "openid",
+              "email",
+              "http://example.com/scope1"
+            ]
+          },
+          "identity": {
+            "accessKey": null,
+            "accountId": null,
+            "caller": null,
+            "cognitoAmr": null,
+            "cognitoAuthenticationProvider": null,
+            "cognitoAuthenticationType": null,
+            "cognitoIdentityId": null,
+            "cognitoIdentityPoolId": null,
+            "principalOrgId": null,
+            "sourceIp": "<source-ip:1>",
+            "user": null,
+            "userAgent": "test-jwt",
+            "userArn": null
+          }
+        },
+        "statusCode": 200
+      },
+      "access_token_openid-no-scope": {
+        "content": {
+          "authorizer": {
+            "claims": {
+              "auth_time": "<auth_time:2>",
+              "client_id": "<audience:1>",
+              "event_id": "<uuid:2>",
+              "exp": "<exp:2>",
+              "iat": "<auth_time:2>",
+              "iss": "<issuer-url:1>",
+              "jti": "<jti:3>",
+              "scope": "openid http://example.com/scope1",
+              "sub": "<sub:1>",
+              "token_use": "access",
+              "username": "user@domain.com",
+              "version": "2"
+            },
+            "scopes": null
+          },
+          "identity": {
+            "accessKey": null,
+            "accountId": null,
+            "caller": null,
+            "cognitoAmr": null,
+            "cognitoAuthenticationProvider": null,
+            "cognitoAuthenticationType": null,
+            "cognitoIdentityId": null,
+            "cognitoIdentityPoolId": null,
+            "principalOrgId": null,
+            "sourceIp": "<source-ip:1>",
+            "user": null,
+            "userAgent": "test-jwt",
+            "userArn": null
+          }
+        },
+        "statusCode": 200
+      },
+      "access_token_openid-multi-scope": {
+        "content": {
+          "authorizer": {
+            "claims": {
+              "auth_time": "<auth_time:2>",
+              "client_id": "<audience:1>",
+              "event_id": "<uuid:2>",
+              "exp": "<exp:2>",
+              "iat": "<auth_time:2>",
+              "iss": "<issuer-url:1>",
+              "jti": "<jti:3>",
+              "scope": "openid http://example.com/scope1",
+              "sub": "<sub:1>",
+              "token_use": "access",
+              "username": "user@domain.com",
+              "version": "2"
+            },
+            "scopes": [
+              "openid",
+              "http://example.com/scope1"
+            ]
+          },
+          "identity": {
+            "accessKey": null,
+            "accountId": null,
+            "caller": null,
+            "cognitoAmr": null,
+            "cognitoAuthenticationProvider": null,
+            "cognitoAuthenticationType": null,
+            "cognitoIdentityId": null,
+            "cognitoIdentityPoolId": null,
+            "principalOrgId": null,
+            "sourceIp": "<source-ip:1>",
+            "user": null,
+            "userAgent": "test-jwt",
+            "userArn": null
+          }
+        },
+        "statusCode": 200
+      },
+      "access_token_openid-invalid-scope": {
+        "content": {
+          "message": "Forbidden"
+        },
+        "statusCode": 403
+      },
+      "access_token_openid-scope1-scope": {
+        "content": {
+          "authorizer": {
+            "claims": {
+              "auth_time": "<auth_time:2>",
+              "client_id": "<audience:1>",
+              "event_id": "<uuid:2>",
+              "exp": "<exp:2>",
+              "iat": "<auth_time:2>",
+              "iss": "<issuer-url:1>",
+              "jti": "<jti:3>",
+              "scope": "openid http://example.com/scope1",
+              "sub": "<sub:1>",
+              "token_use": "access",
+              "username": "user@domain.com",
+              "version": "2"
+            },
+            "scopes": [
+              "openid",
+              "http://example.com/scope1"
+            ]
+          },
+          "identity": {
+            "accessKey": null,
+            "accountId": null,
+            "caller": null,
+            "cognitoAmr": null,
+            "cognitoAuthenticationProvider": null,
+            "cognitoAuthenticationType": null,
+            "cognitoIdentityId": null,
+            "cognitoIdentityPoolId": null,
+            "principalOrgId": null,
+            "sourceIp": "<source-ip:1>",
+            "user": null,
+            "userAgent": "test-jwt",
+            "userArn": null
+          }
+        },
+        "statusCode": 200
+      },
+      "access_token_openid-email-scope": {
+        "content": {
+          "message": "Forbidden"
+        },
+        "statusCode": 403
+      }
+    }
+  },
+  "tests/aws/services/apigatewayv2/test_apigatewayv2_authorizers.py::TestHttpApiJwtAuthorizer::test_jwt_authorizer_lambda_target[2.0]": {
+    "recorded-date": "21-09-2024, 17:50:57",
+    "recorded-content": {
+      "audience": "<audience:1>",
+      "issuer-url": "<issuer-url:1>",
+      "create-authorizer": {
+        "AuthorizerId": "<authorizer-id:1>",
+        "AuthorizerType": "JWT",
+        "IdentitySource": [
+          "$request.header.Authorization"
+        ],
+        "JwtConfiguration": {
+          "Audience": [
+            "<audience:1>"
+          ],
+          "Issuer": "<issuer-url:1>"
+        },
+        "Name": "jwt-authorizer",
+        "ResponseMetadata": {
+          "HTTPHeaders": {},
+          "HTTPStatusCode": 201
+        }
+      },
+      "no-header-token": {
+        "content": {
+          "message": "Unauthorized"
+        },
+        "statusCode": 401
+      },
+      "access_token-scope1-Bearer": {
+        "content": {
+          "authorizer": {
+            "jwt": {
+              "claims": {
+                "auth_time": "<auth_time:1>",
+                "client_id": "<audience:1>",
+                "event_id": "<uuid:1>",
+                "exp": "<exp:1>",
+                "iat": "<iat:1>",
+                "iss": "<issuer-url:1>",
+                "jti": "<jti:1>",
+                "scope": "openid email http://example.com/scope1",
+                "sub": "<sub:1>",
+                "token_use": "access",
+                "username": "user@domain.com",
+                "version": "2"
+              },
+              "scopes": [
+                "openid",
+                "email",
+                "http://example.com/scope1"
+              ]
+            }
+          },
+          "identity": null
+        },
+        "statusCode": 200
+      },
+      "id_token-no-scope-Bearer": {
+        "content": {
+          "authorizer": {
+            "jwt": {
+              "claims": {
+                "at_hash": "<at_hash:1>",
+                "aud": "<audience:1>",
+                "auth_time": "<auth_time:1>",
+                "cognito:username": "user@domain.com",
+                "event_id": "<uuid:1>",
+                "exp": "<exp:1>",
+                "iat": "<iat:1>",
+                "iss": "<issuer-url:1>",
+                "jti": "<jti:2>",
+                "sub": "<sub:1>",
+                "token_use": "id"
+              },
+              "scopes": null
+            }
+          },
+          "identity": null
+        },
+        "statusCode": 200
+      },
+      "id_token-no-scope": {
+        "content": {
+          "authorizer": {
+            "jwt": {
+              "claims": {
+                "at_hash": "<at_hash:1>",
+                "aud": "<audience:1>",
+                "auth_time": "<auth_time:1>",
+                "cognito:username": "user@domain.com",
+                "event_id": "<uuid:1>",
+                "exp": "<exp:1>",
+                "iat": "<iat:1>",
+                "iss": "<issuer-url:1>",
+                "jti": "<jti:2>",
+                "sub": "<sub:1>",
+                "token_use": "id"
+              },
+              "scopes": null
+            }
+          },
+          "identity": null
+        },
+        "statusCode": 200
+      },
+      "id_token-multi-scope": {
+        "content": {
+          "message": "Forbidden"
+        },
+        "statusCode": 403
+      },
+      "id_token-invalid-scope": {
+        "content": {
+          "message": "Forbidden"
+        },
+        "statusCode": 403
+      },
+      "id_token-scope1-scope": {
+        "content": {
+          "message": "Forbidden"
+        },
+        "statusCode": 403
+      },
+      "id_token-email-scope": {
+        "content": {
+          "message": "Forbidden"
+        },
+        "statusCode": 403
+      },
+      "access_token-no-scope": {
+        "content": {
+          "authorizer": {
+            "jwt": {
+              "claims": {
+                "auth_time": "<auth_time:1>",
+                "client_id": "<audience:1>",
+                "event_id": "<uuid:1>",
+                "exp": "<exp:1>",
+                "iat": "<iat:1>",
+                "iss": "<issuer-url:1>",
+                "jti": "<jti:1>",
+                "scope": "openid email http://example.com/scope1",
+                "sub": "<sub:1>",
+                "token_use": "access",
+                "username": "user@domain.com",
+                "version": "2"
+              },
+              "scopes": null
+            }
+          },
+          "identity": null
+        },
+        "statusCode": 200
+      },
+      "access_token-multi-scope": {
+        "content": {
+          "authorizer": {
+            "jwt": {
+              "claims": {
+                "auth_time": "<auth_time:1>",
+                "client_id": "<audience:1>",
+                "event_id": "<uuid:1>",
+                "exp": "<exp:1>",
+                "iat": "<iat:1>",
+                "iss": "<issuer-url:1>",
+                "jti": "<jti:1>",
+                "scope": "openid email http://example.com/scope1",
+                "sub": "<sub:1>",
+                "token_use": "access",
+                "username": "user@domain.com",
+                "version": "2"
+              },
+              "scopes": [
+                "openid",
+                "email",
+                "http://example.com/scope1"
+              ]
+            }
+          },
+          "identity": null
+        },
+        "statusCode": 200
+      },
+      "access_token-invalid-scope": {
+        "content": {
+          "message": "Forbidden"
+        },
+        "statusCode": 403
+      },
+      "access_token-scope1-scope": {
+        "content": {
+          "authorizer": {
+            "jwt": {
+              "claims": {
+                "auth_time": "<auth_time:1>",
+                "client_id": "<audience:1>",
+                "event_id": "<uuid:1>",
+                "exp": "<exp:1>",
+                "iat": "<iat:1>",
+                "iss": "<issuer-url:1>",
+                "jti": "<jti:1>",
+                "scope": "openid email http://example.com/scope1",
+                "sub": "<sub:1>",
+                "token_use": "access",
+                "username": "user@domain.com",
+                "version": "2"
+              },
+              "scopes": [
+                "openid",
+                "email",
+                "http://example.com/scope1"
+              ]
+            }
+          },
+          "identity": null
+        },
+        "statusCode": 200
+      },
+      "access_token-email-scope": {
+        "content": {
+          "authorizer": {
+            "jwt": {
+              "claims": {
+                "auth_time": "<auth_time:1>",
+                "client_id": "<audience:1>",
+                "event_id": "<uuid:1>",
+                "exp": "<exp:1>",
+                "iat": "<iat:1>",
+                "iss": "<issuer-url:1>",
+                "jti": "<jti:1>",
+                "scope": "openid email http://example.com/scope1",
+                "sub": "<sub:1>",
+                "token_use": "access",
+                "username": "user@domain.com",
+                "version": "2"
+              },
+              "scopes": [
+                "openid",
+                "email",
+                "http://example.com/scope1"
+              ]
+            }
+          },
+          "identity": null
+        },
+        "statusCode": 200
+      },
+      "access_token_openid-no-scope": {
+        "content": {
+          "authorizer": {
+            "jwt": {
+              "claims": {
+                "auth_time": "<auth_time:2>",
+                "client_id": "<audience:1>",
+                "event_id": "<uuid:2>",
+                "exp": "<exp:2>",
+                "iat": "<auth_time:2>",
+                "iss": "<issuer-url:1>",
+                "jti": "<jti:3>",
+                "scope": "openid http://example.com/scope1",
+                "sub": "<sub:1>",
+                "token_use": "access",
+                "username": "user@domain.com",
+                "version": "2"
+              },
+              "scopes": null
+            }
+          },
+          "identity": null
+        },
+        "statusCode": 200
+      },
+      "access_token_openid-multi-scope": {
+        "content": {
+          "authorizer": {
+            "jwt": {
+              "claims": {
+                "auth_time": "<auth_time:2>",
+                "client_id": "<audience:1>",
+                "event_id": "<uuid:2>",
+                "exp": "<exp:2>",
+                "iat": "<auth_time:2>",
+                "iss": "<issuer-url:1>",
+                "jti": "<jti:3>",
+                "scope": "openid http://example.com/scope1",
+                "sub": "<sub:1>",
+                "token_use": "access",
+                "username": "user@domain.com",
+                "version": "2"
+              },
+              "scopes": [
+                "openid",
+                "http://example.com/scope1"
+              ]
+            }
+          },
+          "identity": null
+        },
+        "statusCode": 200
+      },
+      "access_token_openid-invalid-scope": {
+        "content": {
+          "message": "Forbidden"
+        },
+        "statusCode": 403
+      },
+      "access_token_openid-scope1-scope": {
+        "content": {
+          "authorizer": {
+            "jwt": {
+              "claims": {
+                "auth_time": "<auth_time:2>",
+                "client_id": "<audience:1>",
+                "event_id": "<uuid:2>",
+                "exp": "<exp:2>",
+                "iat": "<auth_time:2>",
+                "iss": "<issuer-url:1>",
+                "jti": "<jti:3>",
+                "scope": "openid http://example.com/scope1",
+                "sub": "<sub:1>",
+                "token_use": "access",
+                "username": "user@domain.com",
+                "version": "2"
+              },
+              "scopes": [
+                "openid",
+                "http://example.com/scope1"
+              ]
+            }
+          },
+          "identity": null
+        },
+        "statusCode": 200
+      },
+      "access_token_openid-email-scope": {
+        "content": {
+          "message": "Forbidden"
+        },
+        "statusCode": 403
+      }
+    }
+  },
+  "tests/aws/services/apigatewayv2/test_apigatewayv2_authorizers.py::TestHttpApiJwtAuthorizer::test_jwt_authorizer_failure": {
+    "recorded-date": "21-09-2024, 18:23:57",
+    "recorded-content": {
+      "wrong-issuer": {
+        "content": {
+          "message": "Unauthorized"
+        },
+        "statusCode": 401
+      },
+      "wrong-audience": {
+        "content": {
+          "message": "Unauthorized"
+        },
+        "statusCode": 401
+      }
+    }
+  }
+}

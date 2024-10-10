@@ -1,0 +1,8 @@
+{
+  "tests/aws/services/apigatewayv2/test_apigatewayv2_aws_kinesis.py::TestHttpApiAwsProxySubtypeKinesis::test_apigw_v2_http_kinesis_put_record": {
+    "last_validated_date": "2024-09-14T14:27:52+00:00"
+  },
+  "tests/aws/services/apigatewayv2/test_apigatewayv2_aws_kinesis.py::TestHttpApiAwsProxySubtypeKinesis::test_apigw_v2_http_kinesis_put_record_no_stream": {
+    "last_validated_date": "2024-09-14T16:17:34+00:00"
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "tests/aws/services/apigateway/test_http_apis.py::TestHttpApis::test_lambda_events_with_authorizer[1.0]": {
+    "recorded-date": "26-09-2024, 15:42:51",
+    "recorded-content": {
+      "auth-request-ctx": {
+        "claims": null,
+        "ctx.foo": "bar",
+        "scopes": null
+      }
+    }
+  },
+  "tests/aws/services/apigateway/test_http_apis.py::TestHttpApis::test_lambda_events_with_authorizer[2.0]": {
+    "recorded-date": "26-09-2024, 15:43:14",
+    "recorded-content": {
+      "auth-request-ctx": {
+        "lambda": {
+          "ctx.foo": "bar"
+        }
+      }
+    }
+  },
+  "tests/aws/services/apigateway/test_http_apis.py::TestHttpApis::test_import_and_invoke_http_api": {
+    "recorded-date": "10-07-2023, 17:23:11",
+    "recorded-content": {
+      "http-proxy-request-header-parameters": {
+        "Accept": "*/*",
+        "Accept-Encoding": "gzip, deflate",
+        "Content-Length": "0",
+        "Content-Type": "application/x-www-form-urlencoded",
+        "Forwarded": "forwarded",
+        "Header1": "<request-id:1>",
+        "Header2": "test",
+        "Host": "<host:1>",
+        "User-Agent": "<user-agent>",
+        "X-Amzn-Trace-Id": "<trace-id:1>"
+      }
+    }
+  }
+}

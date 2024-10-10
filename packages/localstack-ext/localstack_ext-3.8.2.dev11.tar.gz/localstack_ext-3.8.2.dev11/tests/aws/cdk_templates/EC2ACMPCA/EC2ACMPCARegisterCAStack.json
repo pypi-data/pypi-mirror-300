@@ -1,0 +1,121 @@
+{
+  "Resources": {
+    "RegisterCAFunctionServiceRole6DEDC442": {
+      "Type": "AWS::IAM::Role",
+      "Properties": {
+        "AssumeRolePolicyDocument": {
+          "Statement": [
+            {
+              "Action": "sts:AssumeRole",
+              "Effect": "Allow",
+              "Principal": {
+                "Service": "lambda.amazonaws.com"
+              }
+            }
+          ],
+          "Version": "2012-10-17"
+        },
+        "ManagedPolicyArns": [
+          {
+            "Fn::Join": [
+              "",
+              [
+                "arn:",
+                {
+                  "Ref": "AWS::Partition"
+                },
+                ":iam::aws:policy/service-role/AWSLambdaBasicExecutionRole"
+              ]
+            ]
+          }
+        ]
+      }
+    },
+    "RegisterCAFunctionServiceRoleDefaultPolicy87C41392": {
+      "Type": "AWS::IAM::Policy",
+      "Properties": {
+        "PolicyDocument": {
+          "Statement": [
+            {
+              "Action": "events:*",
+              "Effect": "Allow",
+              "Resource": "*"
+            },
+            {
+              "Action": "lambda:*",
+              "Effect": "Allow",
+              "Resource": "*"
+            },
+            {
+              "Action": "acm-pca:*",
+              "Effect": "Allow",
+              "Resource": "*"
+            }
+          ],
+          "Version": "2012-10-17"
+        },
+        "PolicyName": "RegisterCAFunctionServiceRoleDefaultPolicy87C41392",
+        "Roles": [
+          {
+            "Ref": "RegisterCAFunctionServiceRole6DEDC442"
+          }
+        ]
+      }
+    },
+    "RegisterCAFunction1D069A61": {
+      "Type": "AWS::Lambda::Function",
+      "Properties": {
+        "Code": {
+          "S3Bucket": {
+            "Fn::Join": [
+              "-",
+              [
+                "localstack-testing",
+                {
+                  "Ref": "AWS::AccountId"
+                },
+                {
+                  "Ref": "AWS::Region"
+                }
+              ]
+            ]
+          },
+          "S3Key": "register_ca.zip"
+        },
+        "Environment": {
+          "Variables": {
+            "IS_LOCAL": "true"
+          }
+        },
+        "Handler": "index.handler",
+        "Role": {
+          "Fn::GetAtt": [
+            "RegisterCAFunctionServiceRole6DEDC442",
+            "Arn"
+          ]
+        },
+        "Runtime": "python3.11"
+      },
+      "DependsOn": [
+        "RegisterCAFunctionServiceRoleDefaultPolicy87C41392",
+        "RegisterCAFunctionServiceRole6DEDC442"
+      ]
+    },
+    "RegisterCACustomResource": {
+      "Type": "AWS::CloudFormation::CustomResource",
+      "Properties": {
+        "ServiceToken": {
+          "Fn::GetAtt": [
+            "RegisterCAFunction1D069A61",
+            "Arn"
+          ]
+        },
+        "CAArn": {
+          "Fn::ImportValue": "EC2ACMPCACaStack:ExportsOutputFnGetAttRootCAArn33E257DE"
+        }
+      },
+      "UpdateReplacePolicy": "Delete",
+      "DeletionPolicy": "Delete"
+    }
+  }
+}

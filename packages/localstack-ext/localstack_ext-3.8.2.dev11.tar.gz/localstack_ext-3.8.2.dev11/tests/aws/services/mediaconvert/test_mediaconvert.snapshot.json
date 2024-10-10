@@ -1,0 +1,1045 @@
+{
+  "tests/aws/services/mediaconvert/test_mediaconvert.py::TestJobsCrud::test_create_job": {
+    "recorded-date": "16-08-2024, 21:37:31",
+    "recorded-content": {
+      "create-job": {
+        "AccelerationSettings": {
+          "Mode": "DISABLED"
+        },
+        "AccelerationStatus": "NOT_APPLICABLE",
+        "Arn": "arn:<partition>:mediaconvert:<region>:111111111111:jobs/<id:1>",
+        "BillingTagsSource": "JOB",
+        "ClientRequestToken": "58591932-9110-496c-a8c4-777c22727f06",
+        "CreatedAt": "<datetime>",
+        "Id": "<id:1>",
+        "Messages": {
+          "Info": [],
+          "Warning": []
+        },
+        "Priority": 0,
+        "Queue": "arn:<partition>:mediaconvert:<region>:111111111111:queues/<queue-name>",
+        "Role": "arn:<partition>:iam::111111111111:role/service-role/MediaConvert_Default_Role",
+        "Settings": {
+          "FollowSource": 1,
+          "Inputs": [
+            {
+              "AudioSelectors": {
+                "Audio Selector 1": {
+                  "DefaultSelection": "DEFAULT"
+                }
+              },
+              "FileInput": "s3://mediaconvert-source-81a0155c/input.mp4",
+              "TimecodeSource": "ZEROBASED",
+              "VideoSelector": {}
+            }
+          ],
+          "OutputGroups": [
+            {
+              "CustomName": "output",
+              "Name": "File Group",
+              "OutputGroupSettings": {
+                "FileGroupSettings": {
+                  "Destination": "s3://mediaconvert-dest-f1dfb290/output.mp4"
+                },
+                "Type": "FILE_GROUP_SETTINGS"
+              },
+              "Outputs": [
+                {
+                  "AudioDescriptions": [
+                    {
+                      "AudioSourceName": "Audio Selector 1",
+                      "CodecSettings": {
+                        "AacSettings": {
+                          "Bitrate": 96000,
+                          "CodingMode": "CODING_MODE_2_0",
+                          "SampleRate": 48000
+                        },
+                        "Codec": "AAC"
+                      }
+                    }
+                  ],
+                  "ContainerSettings": {
+                    "Container": "MP4",
+                    "Mp4Settings": {}
+                  },
+                  "VideoDescription": {
+                    "CodecSettings": {
+                      "Codec": "H_264",
+                      "H264Settings": {
+                        "MaxBitrate": 5000000,
+                        "RateControlMode": "QVBR",
+                        "SceneChangeDetect": "TRANSITION_DETECTION"
+                      }
+                    }
+                  }
+                }
+              ]
+            }
+          ],
+          "TimecodeConfig": {
+            "Source": "ZEROBASED"
+          }
+        },
+        "Status": "SUBMITTED",
+        "StatusUpdateInterval": "SECONDS_60",
+        "Timing": {
+          "SubmitTime": "<datetime>"
+        }
+      }
+    }
+  },
+  "tests/aws/services/mediaconvert/test_mediaconvert.py::TestQueuesCrud::test_create_queue": {
+    "recorded-date": "16-08-2024, 21:37:31",
+    "recorded-content": {
+      "create-queue": {
+        "Arn": "arn:<partition>:mediaconvert:<region>:111111111111:queues/<queue-name>",
+        "CreatedAt": "<datetime>",
+        "Description": "Test queue",
+        "LastUpdated": "<datetime>",
+        "Name": "<queue-name>",
+        "PricingPlan": "ON_DEMAND",
+        "ProgressingJobsCount": 0,
+        "Status": "ACTIVE",
+        "SubmittedJobsCount": 0,
+        "Type": "CUSTOM"
+      }
+    }
+  },
+  "tests/aws/services/mediaconvert/test_mediaconvert.py::TestQueuesCrud::test_delete_default_queue": {
+    "recorded-date": "19-08-2024, 21:34:08",
+    "recorded-content": {
+      "delete-default-queue": {
+        "Error": {
+          "Code": "ForbiddenException",
+          "Message": "You are not allowed to delete system queues."
+        },
+        "Message": "You are not allowed to delete system queues.",
+        "ResponseMetadata": {
+          "HTTPHeaders": {},
+          "HTTPStatusCode": 403
+        }
+      }
+    }
+  },
+  "tests/aws/services/mediaconvert/test_mediaconvert.py::TestQueuesCrud::test_create_duplicate_queue": {
+    "recorded-date": "31-07-2024, 14:36:10",
+    "recorded-content": {}
+  },
+  "tests/aws/services/mediaconvert/test_mediaconvert.py::TestJobsCrud::test_list_jobs": {
+    "recorded-date": "16-08-2024, 21:37:38",
+    "recorded-content": {
+      "list-jobs": [
+        {
+          "AccelerationSettings": {
+            "Mode": "DISABLED"
+          },
+          "AccelerationStatus": "NOT_APPLICABLE",
+          "Arn": "arn:<partition>:mediaconvert:<region>:111111111111:jobs/<id:1>",
+          "BillingTagsSource": "JOB",
+          "ClientRequestToken": "a285580b-165d-4d3f-bb61-00f6c6932f89",
+          "CreatedAt": "<datetime>",
+          "Id": "<id:1>",
+          "Messages": {
+            "Info": [],
+            "Warning": []
+          },
+          "Priority": 0,
+          "Queue": "arn:<partition>:mediaconvert:<region>:111111111111:queues/<queue-name>",
+          "Role": "arn:<partition>:iam::111111111111:role/service-role/MediaConvert_Default_Role",
+          "Settings": {
+            "FollowSource": 1,
+            "Inputs": [
+              {
+                "AudioSelectors": {
+                  "Audio Selector 1": {
+                    "DefaultSelection": "DEFAULT"
+                  }
+                },
+                "FileInput": "s3://mediaconvert-source-81a0155c/input.mp4",
+                "TimecodeSource": "ZEROBASED",
+                "VideoSelector": {}
+              }
+            ],
+            "OutputGroups": [
+              {
+                "CustomName": "output",
+                "Name": "File Group",
+                "OutputGroupSettings": {
+                  "FileGroupSettings": {
+                    "Destination": "s3://mediaconvert-dest-f1dfb290/output.mp4"
+                  },
+                  "Type": "FILE_GROUP_SETTINGS"
+                },
+                "Outputs": [
+                  {
+                    "AudioDescriptions": [
+                      {
+                        "AudioSourceName": "Audio Selector 1",
+                        "CodecSettings": {
+                          "AacSettings": {
+                            "Bitrate": 96000,
+                            "CodingMode": "CODING_MODE_2_0",
+                            "SampleRate": 48000
+                          },
+                          "Codec": "AAC"
+                        }
+                      }
+                    ],
+                    "ContainerSettings": {
+                      "Container": "MP4",
+                      "Mp4Settings": {}
+                    },
+                    "VideoDescription": {
+                      "CodecSettings": {
+                        "Codec": "H_264",
+                        "H264Settings": {
+                          "MaxBitrate": 5000000,
+                          "RateControlMode": "QVBR",
+                          "SceneChangeDetect": "TRANSITION_DETECTION"
+                        }
+                      }
+                    }
+                  }
+                ]
+              }
+            ],
+            "TimecodeConfig": {
+              "Source": "ZEROBASED"
+            }
+          },
+          "Status": "SUBMITTED",
+          "StatusUpdateInterval": "SECONDS_60",
+          "Timing": {
+            "SubmitTime": "<datetime>"
+          },
+          "UserMetadata": {}
+        }
+      ]
+    }
+  },
+  "tests/aws/services/mediaconvert/test_mediaconvert.py::TestTranscode::test_run_transcode_events": {
+    "recorded-date": "06-09-2024, 15:50:23",
+    "recorded-content": {
+      "create-job": {
+        "AccelerationSettings": {
+          "Mode": "DISABLED"
+        },
+        "AccelerationStatus": "NOT_APPLICABLE",
+        "Arn": "<arn:1>",
+        "BillingTagsSource": "JOB",
+        "ClientRequestToken": "679332b1-9b9c-4b14-9d27-c4f3b7de4110",
+        "CreatedAt": "<datetime>",
+        "Id": "<id:1>",
+        "Messages": {
+          "Info": [],
+          "Warning": []
+        },
+        "Priority": 0,
+        "Queue": "arn:<partition>:mediaconvert:<region>:111111111111:queues/<queue-name>",
+        "Role": "<role:1>",
+        "Settings": {
+          "Inputs": [
+            {
+              "AudioSelectors": {
+                "Audio Selector 1": {
+                  "DefaultSelection": "DEFAULT"
+                }
+              },
+              "FileInput": "s3://<source-bucket>/input.mp4",
+              "TimecodeSource": "ZEROBASED",
+              "VideoSelector": {}
+            }
+          ],
+          "OutputGroups": [
+            {
+              "CustomName": "hlsout",
+              "Name": "Apple HLS",
+              "OutputGroupSettings": {
+                "HlsGroupSettings": {
+                  "Destination": "s3://<dest-bucket>/out/",
+                  "MinSegmentLength": 0,
+                  "SegmentLength": 10
+                },
+                "Type": "HLS_GROUP_SETTINGS"
+              },
+              "Outputs": [
+                {
+                  "AudioDescriptions": [
+                    {
+                      "CodecSettings": {
+                        "AacSettings": {
+                          "Bitrate": 96000,
+                          "CodingMode": "CODING_MODE_2_0",
+                          "SampleRate": 48000
+                        },
+                        "Codec": "AAC"
+                      }
+                    }
+                  ],
+                  "ContainerSettings": {
+                    "Container": "M3U8",
+                    "M3u8Settings": {}
+                  },
+                  "NameModifier": "360p",
+                  "OutputSettings": {
+                    "HlsSettings": {}
+                  },
+                  "VideoDescription": {
+                    "CodecSettings": {
+                      "Codec": "H_264",
+                      "H264Settings": {
+                        "MaxBitrate": 365000,
+                        "RateControlMode": "QVBR",
+                        "SceneChangeDetect": "TRANSITION_DETECTION"
+                      }
+                    },
+                    "Height": 360,
+                    "Width": 640
+                  }
+                },
+                {
+                  "AudioDescriptions": [
+                    {
+                      "CodecSettings": {
+                        "AacSettings": {
+                          "Bitrate": 96000,
+                          "CodingMode": "CODING_MODE_2_0",
+                          "SampleRate": 48000
+                        },
+                        "Codec": "AAC"
+                      }
+                    }
+                  ],
+                  "ContainerSettings": {
+                    "Container": "M3U8",
+                    "M3u8Settings": {}
+                  },
+                  "NameModifier": "720p",
+                  "OutputSettings": {
+                    "HlsSettings": {}
+                  },
+                  "VideoDescription": {
+                    "CodecSettings": {
+                      "Codec": "H_264",
+                      "H264Settings": {
+                        "MaxBitrate": 3000000,
+                        "RateControlMode": "QVBR",
+                        "SceneChangeDetect": "TRANSITION_DETECTION"
+                      }
+                    },
+                    "Height": 720,
+                    "Width": 1280
+                  }
+                },
+                {
+                  "AudioDescriptions": [
+                    {
+                      "CodecSettings": {
+                        "AacSettings": {
+                          "Bitrate": 96000,
+                          "CodingMode": "CODING_MODE_2_0",
+                          "SampleRate": 48000
+                        },
+                        "Codec": "AAC"
+                      }
+                    }
+                  ],
+                  "ContainerSettings": {
+                    "Container": "M3U8",
+                    "M3u8Settings": {}
+                  },
+                  "NameModifier": "1080p",
+                  "OutputSettings": {
+                    "HlsSettings": {}
+                  },
+                  "VideoDescription": {
+                    "CodecSettings": {
+                      "Codec": "H_264",
+                      "H264Settings": {
+                        "MaxBitrate": 7800000,
+                        "RateControlMode": "QVBR",
+                        "SceneChangeDetect": "TRANSITION_DETECTION"
+                      }
+                    },
+                    "Height": 1080,
+                    "Width": 1920
+                  }
+                }
+              ]
+            }
+          ],
+          "TimecodeConfig": {
+            "Source": "ZEROBASED"
+          }
+        },
+        "Status": "SUBMITTED",
+        "StatusUpdateInterval": "SECONDS_60",
+        "Timing": {
+          "SubmitTime": "<datetime>"
+        },
+        "UserMetadata": {}
+      },
+      "complete-message": {
+        "Body": {
+          "version": "0",
+          "id": "<uuid:1>",
+          "detail-type": "MediaConvert Job State Change",
+          "source": "aws.mediaconvert",
+          "account": "111111111111",
+          "time": "<timestamp:2022-07-13T13:48:01Z>",
+          "region": "<region>",
+          "resources": [
+            "<arn:1>"
+          ],
+          "detail": {
+            "timestamp": 1725637786820,
+            "accountId": "111111111111",
+            "queue": "arn:<partition>:mediaconvert:<region>:111111111111:queues/<queue-name>",
+            "jobId": "<id:1>",
+            "status": "COMPLETE",
+            "userMetadata": {},
+            "outputGroupDetails": [
+              {
+                "outputDetails": [
+                  {
+                    "outputFilePaths": [
+                      "s3://<dest-bucket>/out/input360p.m3u8"
+                    ],
+                    "durationInMs": 10000,
+                    "videoDetails": {
+                      "widthInPx": 640,
+                      "heightInPx": 360,
+                      "averageBitrate": "average-bitrate",
+                      "qvbrAvgQuality": 6.0,
+                      "qvbrMinQuality": 6.0,
+                      "qvbrMaxQuality": 6.0,
+                      "qvbrMinQualityLocation": 0,
+                      "qvbrMaxQualityLocation": 0
+                    }
+                  },
+                  {
+                    "outputFilePaths": [
+                      "s3://<dest-bucket>/out/input720p.m3u8"
+                    ],
+                    "durationInMs": 10000,
+                    "videoDetails": {
+                      "widthInPx": 1280,
+                      "heightInPx": 720,
+                      "averageBitrate": "average-bitrate",
+                      "qvbrAvgQuality": 8.49,
+                      "qvbrMinQuality": 8.0,
+                      "qvbrMaxQuality": 9.0,
+                      "qvbrMinQualityLocation": 6933,
+                      "qvbrMaxQualityLocation": 3333
+                    }
+                  },
+                  {
+                    "outputFilePaths": [
+                      "s3://<dest-bucket>/out/input1080p.m3u8"
+                    ],
+                    "durationInMs": 10000,
+                    "videoDetails": {
+                      "widthInPx": 1920,
+                      "heightInPx": 1080,
+                      "averageBitrate": "average-bitrate",
+                      "qvbrAvgQuality": 9.5,
+                      "qvbrMinQuality": 9.5,
+                      "qvbrMaxQuality": 10.0,
+                      "qvbrMinQualityLocation": 0,
+                      "qvbrMaxQualityLocation": 1933
+                    }
+                  }
+                ],
+                "playlistFilePaths": [
+                  "s3://<dest-bucket>/out/input.m3u8"
+                ],
+                "type": "HLS_GROUP"
+              }
+            ],
+            "paddingInserted": 0,
+            "blackVideoDetected": 0,
+            "warnings": [
+              {
+                "code": 230001,
+                "count": 1
+              },
+              {
+                "code": 230005,
+                "count": 1
+              }
+            ]
+          }
+        },
+        "MD5OfBody": "<m-d5-of-body:1>",
+        "MessageId": "<uuid:2>",
+        "ReceiptHandle": "<receipt-handle:1>"
+      },
+      "completed-job": {
+        "AccelerationSettings": {
+          "Mode": "DISABLED"
+        },
+        "AccelerationStatus": "NOT_APPLICABLE",
+        "Arn": "<arn:1>",
+        "BillingTagsSource": "JOB",
+        "ClientRequestToken": "679332b1-9b9c-4b14-9d27-c4f3b7de4110",
+        "CreatedAt": "<datetime>",
+        "Id": "<id:1>",
+        "Messages": {
+          "Info": [],
+          "Warning": []
+        },
+        "OutputGroupDetails": [
+          {
+            "OutputDetails": [
+              {
+                "DurationInMs": 10000,
+                "VideoDetails": {
+                  "HeightInPx": 360,
+                  "WidthInPx": 640
+                }
+              },
+              {
+                "DurationInMs": 10000,
+                "VideoDetails": {
+                  "HeightInPx": 720,
+                  "WidthInPx": 1280
+                }
+              },
+              {
+                "DurationInMs": 10000,
+                "VideoDetails": {
+                  "HeightInPx": 1080,
+                  "WidthInPx": 1920
+                }
+              }
+            ]
+          }
+        ],
+        "Priority": 0,
+        "Queue": "arn:<partition>:mediaconvert:<region>:111111111111:queues/<queue-name>",
+        "Role": "<role:1>",
+        "Settings": {
+          "Inputs": [
+            {
+              "AudioSelectors": {
+                "Audio Selector 1": {
+                  "DefaultSelection": "DEFAULT"
+                }
+              },
+              "FileInput": "s3://<source-bucket>/input.mp4",
+              "TimecodeSource": "ZEROBASED",
+              "VideoSelector": {}
+            }
+          ],
+          "OutputGroups": [
+            {
+              "CustomName": "hlsout",
+              "Name": "Apple HLS",
+              "OutputGroupSettings": {
+                "HlsGroupSettings": {
+                  "Destination": "s3://<dest-bucket>/out/",
+                  "MinSegmentLength": 0,
+                  "SegmentLength": 10
+                },
+                "Type": "HLS_GROUP_SETTINGS"
+              },
+              "Outputs": [
+                {
+                  "AudioDescriptions": [
+                    {
+                      "CodecSettings": {
+                        "AacSettings": {
+                          "Bitrate": 96000,
+                          "CodingMode": "CODING_MODE_2_0",
+                          "SampleRate": 48000
+                        },
+                        "Codec": "AAC"
+                      }
+                    }
+                  ],
+                  "ContainerSettings": {
+                    "Container": "M3U8",
+                    "M3u8Settings": {}
+                  },
+                  "NameModifier": "360p",
+                  "OutputSettings": {
+                    "HlsSettings": {}
+                  },
+                  "VideoDescription": {
+                    "CodecSettings": {
+                      "Codec": "H_264",
+                      "H264Settings": {
+                        "MaxBitrate": 365000,
+                        "RateControlMode": "QVBR",
+                        "SceneChangeDetect": "TRANSITION_DETECTION"
+                      }
+                    },
+                    "Height": 360,
+                    "Width": 640
+                  }
+                },
+                {
+                  "AudioDescriptions": [
+                    {
+                      "CodecSettings": {
+                        "AacSettings": {
+                          "Bitrate": 96000,
+                          "CodingMode": "CODING_MODE_2_0",
+                          "SampleRate": 48000
+                        },
+                        "Codec": "AAC"
+                      }
+                    }
+                  ],
+                  "ContainerSettings": {
+                    "Container": "M3U8",
+                    "M3u8Settings": {}
+                  },
+                  "NameModifier": "720p",
+                  "OutputSettings": {
+                    "HlsSettings": {}
+                  },
+                  "VideoDescription": {
+                    "CodecSettings": {
+                      "Codec": "H_264",
+                      "H264Settings": {
+                        "MaxBitrate": 3000000,
+                        "RateControlMode": "QVBR",
+                        "SceneChangeDetect": "TRANSITION_DETECTION"
+                      }
+                    },
+                    "Height": 720,
+                    "Width": 1280
+                  }
+                },
+                {
+                  "AudioDescriptions": [
+                    {
+                      "CodecSettings": {
+                        "AacSettings": {
+                          "Bitrate": 96000,
+                          "CodingMode": "CODING_MODE_2_0",
+                          "SampleRate": 48000
+                        },
+                        "Codec": "AAC"
+                      }
+                    }
+                  ],
+                  "ContainerSettings": {
+                    "Container": "M3U8",
+                    "M3u8Settings": {}
+                  },
+                  "NameModifier": "1080p",
+                  "OutputSettings": {
+                    "HlsSettings": {}
+                  },
+                  "VideoDescription": {
+                    "CodecSettings": {
+                      "Codec": "H_264",
+                      "H264Settings": {
+                        "MaxBitrate": 7800000,
+                        "RateControlMode": "QVBR",
+                        "SceneChangeDetect": "TRANSITION_DETECTION"
+                      }
+                    },
+                    "Height": 1080,
+                    "Width": 1920
+                  }
+                }
+              ]
+            }
+          ],
+          "TimecodeConfig": {
+            "Source": "ZEROBASED"
+          }
+        },
+        "Status": "COMPLETE",
+        "StatusUpdateInterval": "SECONDS_60",
+        "Timing": {
+          "FinishTime": "<datetime>",
+          "StartTime": "<datetime>",
+          "SubmitTime": "<datetime>"
+        },
+        "UserMetadata": {},
+        "Warnings": [
+          {
+            "Code": 230001,
+            "Count": 1
+          },
+          {
+            "Code": 230005,
+            "Count": 1
+          }
+        ]
+      }
+    }
+  },
+  "tests/aws/services/mediaconvert/test_mediaconvert.py::TestTranscode::test_run_transcode_polling": {
+    "recorded-date": "05-09-2024, 13:12:17",
+    "recorded-content": {
+      "create-job": {
+        "AccelerationSettings": {
+          "Mode": "DISABLED"
+        },
+        "AccelerationStatus": "NOT_APPLICABLE",
+        "Arn": "<arn:1>",
+        "BillingTagsSource": "JOB",
+        "ClientRequestToken": "8495e30a-958e-4ced-91ad-c265190fdf04",
+        "CreatedAt": "<datetime>",
+        "Id": "<id:1>",
+        "Messages": {
+          "Info": [],
+          "Warning": []
+        },
+        "Priority": 0,
+        "Queue": "arn:<partition>:mediaconvert:<region>:111111111111:queues/<queue-name>",
+        "Role": "<role:1>",
+        "Settings": {
+          "Inputs": [
+            {
+              "AudioSelectors": {
+                "Audio Selector 1": {
+                  "DefaultSelection": "DEFAULT"
+                }
+              },
+              "FileInput": "s3://<source-bucket>/input.mp4",
+              "TimecodeSource": "ZEROBASED",
+              "VideoSelector": {}
+            }
+          ],
+          "OutputGroups": [
+            {
+              "CustomName": "hlsout",
+              "Name": "Apple HLS",
+              "OutputGroupSettings": {
+                "HlsGroupSettings": {
+                  "Destination": "s3://<dest-bucket>/out/",
+                  "MinSegmentLength": 0,
+                  "SegmentLength": 10
+                },
+                "Type": "HLS_GROUP_SETTINGS"
+              },
+              "Outputs": [
+                {
+                  "AudioDescriptions": [
+                    {
+                      "CodecSettings": {
+                        "AacSettings": {
+                          "Bitrate": 96000,
+                          "CodingMode": "CODING_MODE_2_0",
+                          "SampleRate": 48000
+                        },
+                        "Codec": "AAC"
+                      }
+                    }
+                  ],
+                  "ContainerSettings": {
+                    "Container": "M3U8",
+                    "M3u8Settings": {}
+                  },
+                  "NameModifier": "360p",
+                  "OutputSettings": {
+                    "HlsSettings": {}
+                  },
+                  "VideoDescription": {
+                    "CodecSettings": {
+                      "Codec": "H_264",
+                      "H264Settings": {
+                        "MaxBitrate": 365000,
+                        "RateControlMode": "QVBR",
+                        "SceneChangeDetect": "TRANSITION_DETECTION"
+                      }
+                    },
+                    "Height": 360,
+                    "Width": 640
+                  }
+                },
+                {
+                  "AudioDescriptions": [
+                    {
+                      "CodecSettings": {
+                        "AacSettings": {
+                          "Bitrate": 96000,
+                          "CodingMode": "CODING_MODE_2_0",
+                          "SampleRate": 48000
+                        },
+                        "Codec": "AAC"
+                      }
+                    }
+                  ],
+                  "ContainerSettings": {
+                    "Container": "M3U8",
+                    "M3u8Settings": {}
+                  },
+                  "NameModifier": "720p",
+                  "OutputSettings": {
+                    "HlsSettings": {}
+                  },
+                  "VideoDescription": {
+                    "CodecSettings": {
+                      "Codec": "H_264",
+                      "H264Settings": {
+                        "MaxBitrate": 3000000,
+                        "RateControlMode": "QVBR",
+                        "SceneChangeDetect": "TRANSITION_DETECTION"
+                      }
+                    },
+                    "Height": 720,
+                    "Width": 1280
+                  }
+                },
+                {
+                  "AudioDescriptions": [
+                    {
+                      "CodecSettings": {
+                        "AacSettings": {
+                          "Bitrate": 96000,
+                          "CodingMode": "CODING_MODE_2_0",
+                          "SampleRate": 48000
+                        },
+                        "Codec": "AAC"
+                      }
+                    }
+                  ],
+                  "ContainerSettings": {
+                    "Container": "M3U8",
+                    "M3u8Settings": {}
+                  },
+                  "NameModifier": "1080p",
+                  "OutputSettings": {
+                    "HlsSettings": {}
+                  },
+                  "VideoDescription": {
+                    "CodecSettings": {
+                      "Codec": "H_264",
+                      "H264Settings": {
+                        "MaxBitrate": 7800000,
+                        "RateControlMode": "QVBR",
+                        "SceneChangeDetect": "TRANSITION_DETECTION"
+                      }
+                    },
+                    "Height": 1080,
+                    "Width": 1920
+                  }
+                }
+              ]
+            }
+          ],
+          "TimecodeConfig": {
+            "Source": "ZEROBASED"
+          }
+        },
+        "Status": "SUBMITTED",
+        "StatusUpdateInterval": "SECONDS_60",
+        "Timing": {
+          "SubmitTime": "<datetime>"
+        },
+        "UserMetadata": {}
+      },
+      "completed-job": {
+        "Job": {
+          "AccelerationSettings": {
+            "Mode": "DISABLED"
+          },
+          "AccelerationStatus": "NOT_APPLICABLE",
+          "Arn": "<arn:1>",
+          "BillingTagsSource": "JOB",
+          "ClientRequestToken": "8495e30a-958e-4ced-91ad-c265190fdf04",
+          "CreatedAt": "<datetime>",
+          "Id": "<id:1>",
+          "Messages": {
+            "Info": [],
+            "Warning": []
+          },
+          "OutputGroupDetails": [
+            {
+              "OutputDetails": [
+                {
+                  "DurationInMs": 10000,
+                  "VideoDetails": {
+                    "HeightInPx": 360,
+                    "WidthInPx": 640
+                  }
+                },
+                {
+                  "DurationInMs": 10000,
+                  "VideoDetails": {
+                    "HeightInPx": 720,
+                    "WidthInPx": 1280
+                  }
+                },
+                {
+                  "DurationInMs": 10000,
+                  "VideoDetails": {
+                    "HeightInPx": 1080,
+                    "WidthInPx": 1920
+                  }
+                }
+              ]
+            }
+          ],
+          "Priority": 0,
+          "Queue": "arn:<partition>:mediaconvert:<region>:111111111111:queues/<queue-name>",
+          "Role": "<role:1>",
+          "Settings": {
+            "Inputs": [
+              {
+                "AudioSelectors": {
+                  "Audio Selector 1": {
+                    "DefaultSelection": "DEFAULT"
+                  }
+                },
+                "FileInput": "s3://<source-bucket>/input.mp4",
+                "TimecodeSource": "ZEROBASED",
+                "VideoSelector": {}
+              }
+            ],
+            "OutputGroups": [
+              {
+                "CustomName": "hlsout",
+                "Name": "Apple HLS",
+                "OutputGroupSettings": {
+                  "HlsGroupSettings": {
+                    "Destination": "s3://<dest-bucket>/out/",
+                    "MinSegmentLength": 0,
+                    "SegmentLength": 10
+                  },
+                  "Type": "HLS_GROUP_SETTINGS"
+                },
+                "Outputs": [
+                  {
+                    "AudioDescriptions": [
+                      {
+                        "CodecSettings": {
+                          "AacSettings": {
+                            "Bitrate": 96000,
+                            "CodingMode": "CODING_MODE_2_0",
+                            "SampleRate": 48000
+                          },
+                          "Codec": "AAC"
+                        }
+                      }
+                    ],
+                    "ContainerSettings": {
+                      "Container": "M3U8",
+                      "M3u8Settings": {}
+                    },
+                    "NameModifier": "360p",
+                    "OutputSettings": {
+                      "HlsSettings": {}
+                    },
+                    "VideoDescription": {
+                      "CodecSettings": {
+                        "Codec": "H_264",
+                        "H264Settings": {
+                          "MaxBitrate": 365000,
+                          "RateControlMode": "QVBR",
+                          "SceneChangeDetect": "TRANSITION_DETECTION"
+                        }
+                      },
+                      "Height": 360,
+                      "Width": 640
+                    }
+                  },
+                  {
+                    "AudioDescriptions": [
+                      {
+                        "CodecSettings": {
+                          "AacSettings": {
+                            "Bitrate": 96000,
+                            "CodingMode": "CODING_MODE_2_0",
+                            "SampleRate": 48000
+                          },
+                          "Codec": "AAC"
+                        }
+                      }
+                    ],
+                    "ContainerSettings": {
+                      "Container": "M3U8",
+                      "M3u8Settings": {}
+                    },
+                    "NameModifier": "720p",
+                    "OutputSettings": {
+                      "HlsSettings": {}
+                    },
+                    "VideoDescription": {
+                      "CodecSettings": {
+                        "Codec": "H_264",
+                        "H264Settings": {
+                          "MaxBitrate": 3000000,
+                          "RateControlMode": "QVBR",
+                          "SceneChangeDetect": "TRANSITION_DETECTION"
+                        }
+                      },
+                      "Height": 720,
+                      "Width": 1280
+                    }
+                  },
+                  {
+                    "AudioDescriptions": [
+                      {
+                        "CodecSettings": {
+                          "AacSettings": {
+                            "Bitrate": 96000,
+                            "CodingMode": "CODING_MODE_2_0",
+                            "SampleRate": 48000
+                          },
+                          "Codec": "AAC"
+                        }
+                      }
+                    ],
+                    "ContainerSettings": {
+                      "Container": "M3U8",
+                      "M3u8Settings": {}
+                    },
+                    "NameModifier": "1080p",
+                    "OutputSettings": {
+                      "HlsSettings": {}
+                    },
+                    "VideoDescription": {
+                      "CodecSettings": {
+                        "Codec": "H_264",
+                        "H264Settings": {
+                          "MaxBitrate": 7800000,
+                          "RateControlMode": "QVBR",
+                          "SceneChangeDetect": "TRANSITION_DETECTION"
+                        }
+                      },
+                      "Height": 1080,
+                      "Width": 1920
+                    }
+                  }
+                ]
+              }
+            ],
+            "TimecodeConfig": {
+              "Source": "ZEROBASED"
+            }
+          },
+          "Status": "COMPLETE",
+          "StatusUpdateInterval": "SECONDS_60",
+          "Timing": {
+            "FinishTime": "<datetime>",
+            "StartTime": "<datetime>",
+            "SubmitTime": "<datetime>"
+          },
+          "UserMetadata": {},
+          "Warnings": [
+            {
+              "Code": 230001,
+              "Count": 1
+            },
+            {
+              "Code": 230005,
+              "Count": 1
+            }
+          ]
+        },
+        "ResponseMetadata": {
+          "HTTPHeaders": {},
+          "HTTPStatusCode": 200
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,5 @@
+{
+  "tests/aws/services/cloudformation/resources/test_elasticloadbalancingv2.py::test_elbv2_loadbalancer_resource": {
+    "last_validated_date": "2024-09-20T19:25:58+00:00"
+  }
+}

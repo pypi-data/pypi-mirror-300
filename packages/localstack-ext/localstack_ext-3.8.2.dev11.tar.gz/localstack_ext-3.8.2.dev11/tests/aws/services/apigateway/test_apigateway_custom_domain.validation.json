@@ -1,0 +1,8 @@
+{
+  "tests/aws/services/apigateway/test_apigateway_custom_domain.py::TestApigatewayCustomDomain::test_delete_domain_name_deletes_mapping": {
+    "last_validated_date": "2024-09-24T10:28:42+00:00"
+  },
+  "tests/aws/services/apigateway/test_apigateway_custom_domain.py::TestApigatewayCustomDomain::test_update_base_path_mappings_apigw_v1": {
+    "last_validated_date": "2024-09-24T17:46:00+00:00"
+  }
+}

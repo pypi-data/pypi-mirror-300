@@ -1,0 +1,643 @@
+{
+  "tests/aws/services/apigatewayv2/test_apigatewayv2_custom_domain.py::TestApigatewayV2CustomDomain::test_custom_domains": {
+    "recorded-date": "24-09-2024, 19:23:11",
+    "recorded-content": {
+      "create-domain-name": {
+        "ApiMappingSelectionExpression": "$request.basepath",
+        "DomainName": "<domain-name:1>",
+        "DomainNameConfigurations": [
+          {
+            "ApiGatewayDomainName": "<api-gateway-domain-name:1>",
+            "CertificateArn": "arn:<partition>:acm:<region>:111111111111:certificate/<resource:1>",
+            "DomainNameStatus": "AVAILABLE",
+            "EndpointType": "REGIONAL",
+            "HostedZoneId": "<hosted-zone-id:1>",
+            "SecurityPolicy": "TLS_1_2"
+          }
+        ],
+        "ResponseMetadata": {
+          "HTTPHeaders": {},
+          "HTTPStatusCode": 201
+        }
+      },
+      "create-mapping-with-key": {
+        "ApiId": "<api-id:1>",
+        "ApiMappingId": "<api-mapping-id:1>",
+        "ApiMappingKey": "base-path-default-stage",
+        "Stage": "$default",
+        "ResponseMetadata": {
+          "HTTPHeaders": {},
+          "HTTPStatusCode": 200
+        }
+      },
+      "create-mapping-without-key": {
+        "ApiId": "<api-id:1>",
+        "ApiMappingId": "<api-mapping-id:2>",
+        "ApiMappingKey": "",
+        "Stage": "$default",
+        "ResponseMetadata": {
+          "HTTPHeaders": {},
+          "HTTPStatusCode": 200
+        }
+      },
+      "create-mapping-with-key-dev": {
+        "ApiId": "<api-id:1>",
+        "ApiMappingId": "<api-mapping-id:3>",
+        "ApiMappingKey": "base-path-dev-stage",
+        "Stage": "dev",
+        "ResponseMetadata": {
+          "HTTPHeaders": {},
+          "HTTPStatusCode": 200
+        }
+      },
+      "invocation-v1-base-path-default": {
+        "body": null,
+        "headers": {
+          "Content-Length": "0",
+          "Host": "<domain-name:1>",
+          "User-Agent": "requests/test",
+          "X-Amzn-Trace-Id": "<X-Amzn-Trace-Id>",
+          "X-Forwarded-For": "<X-Forwarded-For>",
+          "X-Forwarded-Port": "<X-Forwarded-Port>",
+          "X-Forwarded-Proto": "<X-Forwarded-Proto>",
+          "accept": "*/*",
+          "accept-encoding": "gzip, deflate"
+        },
+        "httpMethod": "POST",
+        "isBase64Encoded": false,
+        "multiValueHeaders": {
+          "Content-Length": [
+            "0"
+          ],
+          "Host": [
+            "<domain-name:1>"
+          ],
+          "User-Agent": [
+            "requests/test"
+          ],
+          "X-Amzn-Trace-Id": "<X-Amzn-Trace-Id>",
+          "X-Forwarded-For": "<X-Forwarded-For>",
+          "X-Forwarded-Port": "<X-Forwarded-Port>",
+          "X-Forwarded-Proto": "<X-Forwarded-Proto>",
+          "accept": [
+            "*/*"
+          ],
+          "accept-encoding": [
+            "gzip, deflate"
+          ]
+        },
+        "multiValueQueryStringParameters": null,
+        "path": "/base-path-default-stage/example/v1",
+        "pathParameters": null,
+        "queryStringParameters": null,
+        "requestContext": {
+          "accountId": "111111111111",
+          "apiId": "<api-id:1>",
+          "domainName": "<domain-name:1>",
+          "domainPrefix": "<domain-prefix:1>",
+          "extendedRequestId": "<extended-request-id:1>",
+          "httpMethod": "POST",
+          "identity": {
+            "accessKey": null,
+            "accountId": null,
+            "caller": null,
+            "cognitoAmr": null,
+            "cognitoAuthenticationProvider": null,
+            "cognitoAuthenticationType": null,
+            "cognitoIdentityId": null,
+            "cognitoIdentityPoolId": null,
+            "principalOrgId": null,
+            "sourceIp": "<source-ip:1>",
+            "user": null,
+            "userAgent": "requests/test",
+            "userArn": null
+          },
+          "path": "/example/v1",
+          "protocol": "HTTP/1.1",
+          "requestId": "<extended-request-id:1>",
+          "requestTime": "<time>",
+          "requestTimeEpoch": "<time-epoch>",
+          "resourceId": "POST /example/v1",
+          "resourcePath": "/example/v1",
+          "stage": "$default"
+        },
+        "resource": "/example/v1",
+        "stageVariables": null,
+        "version": "1.0"
+      },
+      "invocation-v2-base-path-default": {
+        "headers": {
+          "accept": "*/*",
+          "accept-encoding": "gzip, deflate",
+          "content-length": "0",
+          "host": "<domain-name:1>",
+          "user-agent": "requests/test",
+          "x-amzn-trace-id": "<x-amzn-trace-id>",
+          "x-forwarded-for": "<x-forwarded-for>",
+          "x-forwarded-port": "<x-forwarded-port>",
+          "x-forwarded-proto": "<x-forwarded-proto>"
+        },
+        "isBase64Encoded": false,
+        "rawPath": "/example/v2",
+        "rawQueryString": "",
+        "requestContext": {
+          "accountId": "111111111111",
+          "apiId": "<api-id:1>",
+          "domainName": "<domain-name:1>",
+          "domainPrefix": "<domain-prefix:1>",
+          "http": {
+            "method": "POST",
+            "path": "/example/v2",
+            "protocol": "HTTP/1.1",
+            "sourceIp": "<source-ip:1>",
+            "userAgent": "requests/test"
+          },
+          "requestId": "<request-id:1>",
+          "routeKey": "POST /example/v2",
+          "stage": "$default",
+          "time": "<time>",
+          "timeEpoch": "<time-epoch>"
+        },
+        "routeKey": "POST /example/v2",
+        "version": "2.0"
+      },
+      "invocation-v1-base-path-dev": {
+        "body": null,
+        "headers": {
+          "Content-Length": "0",
+          "Host": "<domain-name:1>",
+          "User-Agent": "requests/test",
+          "X-Amzn-Trace-Id": "<X-Amzn-Trace-Id>",
+          "X-Forwarded-For": "<X-Forwarded-For>",
+          "X-Forwarded-Port": "<X-Forwarded-Port>",
+          "X-Forwarded-Proto": "<X-Forwarded-Proto>",
+          "accept": "*/*",
+          "accept-encoding": "gzip, deflate"
+        },
+        "httpMethod": "POST",
+        "isBase64Encoded": false,
+        "multiValueHeaders": {
+          "Content-Length": [
+            "0"
+          ],
+          "Host": [
+            "<domain-name:1>"
+          ],
+          "User-Agent": [
+            "requests/test"
+          ],
+          "X-Amzn-Trace-Id": "<X-Amzn-Trace-Id>",
+          "X-Forwarded-For": "<X-Forwarded-For>",
+          "X-Forwarded-Port": "<X-Forwarded-Port>",
+          "X-Forwarded-Proto": "<X-Forwarded-Proto>",
+          "accept": [
+            "*/*"
+          ],
+          "accept-encoding": [
+            "gzip, deflate"
+          ]
+        },
+        "multiValueQueryStringParameters": null,
+        "path": "/base-path-dev-stage/example/v1",
+        "pathParameters": null,
+        "queryStringParameters": null,
+        "requestContext": {
+          "accountId": "111111111111",
+          "apiId": "<api-id:1>",
+          "domainName": "<domain-name:1>",
+          "domainPrefix": "<domain-prefix:1>",
+          "extendedRequestId": "<extended-request-id:2>",
+          "httpMethod": "POST",
+          "identity": {
+            "accessKey": null,
+            "accountId": null,
+            "caller": null,
+            "cognitoAmr": null,
+            "cognitoAuthenticationProvider": null,
+            "cognitoAuthenticationType": null,
+            "cognitoIdentityId": null,
+            "cognitoIdentityPoolId": null,
+            "principalOrgId": null,
+            "sourceIp": "<source-ip:1>",
+            "user": null,
+            "userAgent": "requests/test",
+            "userArn": null
+          },
+          "path": "/dev/example/v1",
+          "protocol": "HTTP/1.1",
+          "requestId": "<extended-request-id:2>",
+          "requestTime": "<time>",
+          "requestTimeEpoch": "<time-epoch>",
+          "resourceId": "POST /example/v1",
+          "resourcePath": "/example/v1",
+          "stage": "dev"
+        },
+        "resource": "/example/v1",
+        "stageVariables": null,
+        "version": "1.0"
+      },
+      "invocation-v2-base-path-dev": {
+        "headers": {
+          "accept": "*/*",
+          "accept-encoding": "gzip, deflate",
+          "content-length": "0",
+          "host": "<domain-name:1>",
+          "user-agent": "requests/test",
+          "x-amzn-trace-id": "<x-amzn-trace-id>",
+          "x-forwarded-for": "<x-forwarded-for>",
+          "x-forwarded-port": "<x-forwarded-port>",
+          "x-forwarded-proto": "<x-forwarded-proto>"
+        },
+        "isBase64Encoded": false,
+        "rawPath": "/dev/example/v2",
+        "rawQueryString": "",
+        "requestContext": {
+          "accountId": "111111111111",
+          "apiId": "<api-id:1>",
+          "domainName": "<domain-name:1>",
+          "domainPrefix": "<domain-prefix:1>",
+          "http": {
+            "method": "POST",
+            "path": "/dev/example/v2",
+            "protocol": "HTTP/1.1",
+            "sourceIp": "<source-ip:1>",
+            "userAgent": "requests/test"
+          },
+          "requestId": "<request-id:2>",
+          "routeKey": "POST /example/v2",
+          "stage": "dev",
+          "time": "<time>",
+          "timeEpoch": "<time-epoch>"
+        },
+        "routeKey": "POST /example/v2",
+        "version": "2.0"
+      },
+      "invocation-response-bad-mapping-key": {
+        "message": "Not Found"
+      },
+      "delete-mapping": {
+        "ResponseMetadata": {
+          "HTTPHeaders": {},
+          "HTTPStatusCode": 204
+        }
+      }
+    }
+  },
+  "tests/aws/services/apigatewayv2/test_apigatewayv2_custom_domain.py::TestApigatewayV2CustomDomainCrud::test_custom_domains_crud": {
+    "recorded-date": "24-09-2024, 11:25:53",
+    "recorded-content": {
+      "create-domain-name-v2": {
+        "ApiMappingSelectionExpression": "$request.basepath",
+        "DomainName": "<domain-name:2>",
+        "DomainNameConfigurations": [
+          {
+            "ApiGatewayDomainName": "<api-gateway-domain-name:1>",
+            "CertificateArn": "arn:<partition>:acm:<region>:111111111111:certificate/<resource:1>",
+            "DomainNameStatus": "AVAILABLE",
+            "EndpointType": "REGIONAL",
+            "HostedZoneId": "<hosted-zone-id:1>",
+            "SecurityPolicy": "TLS_1_2"
+          }
+        ],
+        "ResponseMetadata": {
+          "HTTPHeaders": {},
+          "HTTPStatusCode": 201
+        }
+      },
+      "create-domain-name-v1": {
+        "certificateArn": "arn:<partition>:acm:<region>:111111111111:certificate/<resource:1>",
+        "certificateUploadDate": "datetime",
+        "distributionDomainName": "<api-gateway-domain-name:2>",
+        "distributionHostedZoneId": "<hosted-zone-id:2>",
+        "domainName": "<domain-name:1>",
+        "domainNameStatus": "AVAILABLE",
+        "endpointConfiguration": {
+          "types": [
+            "EDGE"
+          ]
+        },
+        "securityPolicy": "TLS_1_2",
+        "ResponseMetadata": {
+          "HTTPHeaders": {},
+          "HTTPStatusCode": 201
+        }
+      },
+      "get-domain-name-from-v2-in-v2": {
+        "ApiMappingSelectionExpression": "$request.basepath",
+        "DomainName": "<domain-name:2>",
+        "DomainNameConfigurations": [
+          {
+            "ApiGatewayDomainName": "<api-gateway-domain-name:1>",
+            "CertificateArn": "arn:<partition>:acm:<region>:111111111111:certificate/<resource:1>",
+            "DomainNameStatus": "AVAILABLE",
+            "EndpointType": "REGIONAL",
+            "HostedZoneId": "<hosted-zone-id:1>",
+            "SecurityPolicy": "TLS_1_2"
+          }
+        ],
+        "Tags": {},
+        "ResponseMetadata": {
+          "HTTPHeaders": {},
+          "HTTPStatusCode": 200
+        }
+      },
+      "get-domain-name-from-v2-in-v1": {
+        "certificateUploadDate": "datetime",
+        "domainName": "<domain-name:2>",
+        "domainNameStatus": "AVAILABLE",
+        "endpointConfiguration": {
+          "types": [
+            "REGIONAL"
+          ]
+        },
+        "regionalCertificateArn": "arn:<partition>:acm:<region>:111111111111:certificate/<resource:1>",
+        "regionalDomainName": "<api-gateway-domain-name:1>",
+        "regionalHostedZoneId": "<hosted-zone-id:1>",
+        "securityPolicy": "TLS_1_2",
+        "tags": {},
+        "ResponseMetadata": {
+          "HTTPHeaders": {},
+          "HTTPStatusCode": 200
+        }
+      },
+      "get-domain-name-from-v1-in-v2": {
+        "ApiMappingSelectionExpression": "$request.basepath",
+        "DomainName": "<domain-name:1>",
+        "DomainNameConfigurations": [
+          {
+            "ApiGatewayDomainName": "<api-gateway-domain-name:2>",
+            "CertificateArn": "arn:<partition>:acm:<region>:111111111111:certificate/<resource:1>",
+            "CertificateUploadDate": "datetime",
+            "DomainNameStatus": "AVAILABLE",
+            "EndpointType": "EDGE",
+            "HostedZoneId": "<hosted-zone-id:2>",
+            "SecurityPolicy": "TLS_1_2"
+          }
+        ],
+        "Tags": {},
+        "ResponseMetadata": {
+          "HTTPHeaders": {},
+          "HTTPStatusCode": 200
+        }
+      },
+      "get-domain-name-from-v1-in-v1": {
+        "certificateArn": "arn:<partition>:acm:<region>:111111111111:certificate/<resource:1>",
+        "certificateUploadDate": "datetime",
+        "distributionDomainName": "<api-gateway-domain-name:2>",
+        "distributionHostedZoneId": "<hosted-zone-id:2>",
+        "domainName": "<domain-name:1>",
+        "domainNameStatus": "AVAILABLE",
+        "endpointConfiguration": {
+          "types": [
+            "EDGE"
+          ]
+        },
+        "securityPolicy": "TLS_1_2",
+        "tags": {},
+        "ResponseMetadata": {
+          "HTTPHeaders": {},
+          "HTTPStatusCode": 200
+        }
+      },
+      "list-domains-v2": {
+        "Items": [
+          {
+            "ApiMappingSelectionExpression": "$request.basepath",
+            "DomainName": "<domain-name:2>",
+            "DomainNameConfigurations": [
+              {
+                "ApiGatewayDomainName": "<api-gateway-domain-name:1>",
+                "CertificateArn": "arn:<partition>:acm:<region>:111111111111:certificate/<resource:1>",
+                "DomainNameStatus": "AVAILABLE",
+                "EndpointType": "REGIONAL",
+                "HostedZoneId": "<hosted-zone-id:1>",
+                "SecurityPolicy": "TLS_1_2"
+              }
+            ]
+          },
+          {
+            "ApiMappingSelectionExpression": "$request.basepath",
+            "DomainName": "<domain-name:1>",
+            "DomainNameConfigurations": [
+              {
+                "ApiGatewayDomainName": "<api-gateway-domain-name:2>",
+                "CertificateArn": "arn:<partition>:acm:<region>:111111111111:certificate/<resource:1>",
+                "CertificateUploadDate": "datetime",
+                "DomainNameStatus": "AVAILABLE",
+                "EndpointType": "EDGE",
+                "HostedZoneId": "<hosted-zone-id:2>",
+                "SecurityPolicy": "TLS_1_2"
+              }
+            ]
+          }
+        ],
+        "ResponseMetadata": {
+          "HTTPHeaders": {},
+          "HTTPStatusCode": 200
+        }
+      },
+      "list-domains-v1": {
+        "items": [
+          {
+            "certificateUploadDate": "datetime",
+            "domainName": "<domain-name:2>",
+            "domainNameStatus": "AVAILABLE",
+            "endpointConfiguration": {
+              "types": [
+                "REGIONAL"
+              ]
+            },
+            "regionalCertificateArn": "arn:<partition>:acm:<region>:111111111111:certificate/<resource:1>",
+            "regionalDomainName": "<api-gateway-domain-name:1>",
+            "regionalHostedZoneId": "<hosted-zone-id:1>",
+            "securityPolicy": "TLS_1_2"
+          },
+          {
+            "certificateArn": "arn:<partition>:acm:<region>:111111111111:certificate/<resource:1>",
+            "certificateUploadDate": "datetime",
+            "distributionDomainName": "<api-gateway-domain-name:2>",
+            "distributionHostedZoneId": "<hosted-zone-id:2>",
+            "domainName": "<domain-name:1>",
+            "domainNameStatus": "AVAILABLE",
+            "endpointConfiguration": {
+              "types": [
+                "EDGE"
+              ]
+            },
+            "securityPolicy": "TLS_1_2"
+          }
+        ],
+        "ResponseMetadata": {
+          "HTTPHeaders": {},
+          "HTTPStatusCode": 200
+        }
+      }
+    }
+  },
+  "tests/aws/services/apigatewayv2/test_apigatewayv2_custom_domain.py::TestApigatewayV2CustomDomainCrud::test_api_mappings_crud": {
+    "recorded-date": "25-09-2024, 17:14:45",
+    "recorded-content": {
+      "create-mapping-with-bad-api": {
+        "Error": {
+          "Code": "BadRequestException",
+          "Message": "Invalid API identifier specified: bad-api"
+        },
+        "Message": "Invalid API identifier specified: bad-api",
+        "ResponseMetadata": {
+          "HTTPHeaders": {},
+          "HTTPStatusCode": 400
+        }
+      },
+      "create-mapping-with-none-stage": {
+        "Error": {
+          "Code": "BadRequestException",
+          "Message": "Invalid stage identifier specified"
+        },
+        "Message": "Invalid stage identifier specified",
+        "ResponseMetadata": {
+          "HTTPHeaders": {},
+          "HTTPStatusCode": 400
+        }
+      },
+      "create-mapping-with-bad-domain": {
+        "Error": {
+          "Code": "NotFoundException",
+          "Message": "Invalid domain name identifier specified"
+        },
+        "Message": "Invalid domain name identifier specified",
+        "ResponseMetadata": {
+          "HTTPHeaders": {},
+          "HTTPStatusCode": 404
+        }
+      },
+      "create-mapping-with-none-key": {
+        "ApiId": "<api-id:1>",
+        "ApiMappingId": "<api-mapping-id:1>",
+        "ApiMappingKey": "",
+        "Stage": "$default",
+        "ResponseMetadata": {
+          "HTTPHeaders": {},
+          "HTTPStatusCode": 200
+        }
+      },
+      "create-mapping": {
+        "ApiId": "<api-id:1>",
+        "ApiMappingId": "<api-mapping-id:2>",
+        "ApiMappingKey": "base-path",
+        "Stage": "$default",
+        "ResponseMetadata": {
+          "HTTPHeaders": {},
+          "HTTPStatusCode": 200
+        }
+      },
+      "get-mapping": {
+        "ApiId": "<api-id:1>",
+        "ApiMappingId": "<api-mapping-id:2>",
+        "ApiMappingKey": "base-path",
+        "Stage": "$default",
+        "ResponseMetadata": {
+          "HTTPHeaders": {},
+          "HTTPStatusCode": 200
+        }
+      },
+      "get-mappings": {
+        "Items": [
+          {
+            "ApiId": "<api-id:1>",
+            "ApiMappingId": "<api-mapping-id:1>",
+            "ApiMappingKey": "",
+            "Stage": "$default"
+          },
+          {
+            "ApiId": "<api-id:1>",
+            "ApiMappingId": "<api-mapping-id:2>",
+            "ApiMappingKey": "base-path",
+            "Stage": "$default"
+          }
+        ],
+        "ResponseMetadata": {
+          "HTTPHeaders": {},
+          "HTTPStatusCode": 200
+        }
+      },
+      "get-mappings-v1": {
+        "items": [
+          {
+            "basePath": "(none)",
+            "restApiId": "<api-id:1>",
+            "stage": "$default"
+          },
+          {
+            "basePath": "base-path",
+            "restApiId": "<api-id:1>",
+            "stage": "$default"
+          }
+        ],
+        "ResponseMetadata": {
+          "HTTPHeaders": {},
+          "HTTPStatusCode": 200
+        }
+      },
+      "get-mapping-bad-mapping-id": {
+        "Error": {
+          "Code": "NotFoundException",
+          "Message": "Unable to find ApiMapping with ID bad-mapping-id"
+        },
+        "Message": "Unable to find ApiMapping with ID bad-mapping-id",
+        "ResponseMetadata": {
+          "HTTPHeaders": {},
+          "HTTPStatusCode": 404
+        }
+      },
+      "get-mapping-bad-domain-name": {
+        "Error": {
+          "Code": "NotFoundException",
+          "Message": "Invalid domain name identifier specified"
+        },
+        "Message": "Invalid domain name identifier specified",
+        "ResponseMetadata": {
+          "HTTPHeaders": {},
+          "HTTPStatusCode": 404
+        }
+      },
+      "update-mapping-bad-mapping-id": {
+        "Error": {
+          "Code": "NotFoundException",
+          "Message": "Unable to find ApiMapping with ID bad-mapping-id"
+        },
+        "Message": "Unable to find ApiMapping with ID bad-mapping-id",
+        "ResponseMetadata": {
+          "HTTPHeaders": {},
+          "HTTPStatusCode": 404
+        }
+      },
+      "update-mapping-bad-domain-name": {
+        "Error": {
+          "Code": "NotFoundException",
+          "Message": "Invalid domain name identifier specified"
+        },
+        "Message": "Invalid domain name identifier specified",
+        "ResponseMetadata": {
+          "HTTPHeaders": {},
+          "HTTPStatusCode": 404
+        }
+      },
+      "update-mapping": {
+        "ApiId": "<api-id:1>",
+        "ApiMappingId": "<api-mapping-id:2>",
+        "ApiMappingKey": "base-path-updated",
+        "Stage": "$default",
+        "ResponseMetadata": {
+          "HTTPHeaders": {},
+          "HTTPStatusCode": 200
+        }
+      },
+      "delete-mapping": {
+        "ResponseMetadata": {
+          "HTTPHeaders": {},
+          "HTTPStatusCode": 204
+        }
+      }
+    }
+  }
+}

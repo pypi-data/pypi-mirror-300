@@ -1,0 +1,5 @@
+{
+  "tests/aws/services/sesv2/test_sesv2.py::TestSesv2::test_send_email": {
+    "last_validated_date": "2024-09-24T08:03:03+00:00"
+  }
+}

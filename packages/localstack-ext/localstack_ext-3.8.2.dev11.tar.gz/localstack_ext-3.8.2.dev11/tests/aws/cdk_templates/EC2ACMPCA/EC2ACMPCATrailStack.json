@@ -1,0 +1,103 @@
+{
+  "Resources": {
+    "TrailBucketA831CE63": {
+      "Type": "AWS::S3::Bucket",
+      "UpdateReplacePolicy": "Delete",
+      "DeletionPolicy": "Delete"
+    },
+    "TrailBucketPolicyFEBC3C5C": {
+      "Type": "AWS::S3::BucketPolicy",
+      "Properties": {
+        "Bucket": {
+          "Ref": "TrailBucketA831CE63"
+        },
+        "PolicyDocument": {
+          "Statement": [
+            {
+              "Action": "s3:GetBucketAcl",
+              "Effect": "Allow",
+              "Principal": {
+                "Service": "cloudtrail.amazonaws.com"
+              },
+              "Resource": {
+                "Fn::GetAtt": [
+                  "TrailBucketA831CE63",
+                  "Arn"
+                ]
+              }
+            },
+            {
+              "Action": "s3:PutObject",
+              "Condition": {
+                "StringEquals": {
+                  "s3:x-amz-acl": "bucket-owner-full-control"
+                }
+              },
+              "Effect": "Allow",
+              "Principal": {
+                "Service": "cloudtrail.amazonaws.com"
+              },
+              "Resource": {
+                "Fn::Join": [
+                  "",
+                  [
+                    {
+                      "Fn::GetAtt": [
+                        "TrailBucketA831CE63",
+                        "Arn"
+                      ]
+                    },
+                    "/AWSLogs/",
+                    {
+                      "Ref": "AWS::AccountId"
+                    },
+                    "/*"
+                  ]
+                ]
+              }
+            }
+          ],
+          "Version": "2012-10-17"
+        }
+      }
+    },
+    "Trail022F0CF2": {
+      "Type": "AWS::CloudTrail::Trail",
+      "Properties": {
+        "EnableLogFileValidation": true,
+        "EventSelectors": [
+          {
+            "IncludeManagementEvents": true,
+            "ReadWriteType": "All"
+          }
+        ],
+        "IncludeGlobalServiceEvents": true,
+        "IsLogging": true,
+        "IsMultiRegionTrail": false,
+        "S3BucketName": {
+          "Ref": "TrailBucketA831CE63"
+        }
+      },
+      "DependsOn": [
+        "TrailBucketPolicyFEBC3C5C"
+      ]
+    },
+    "LogBucketParameter9BE0A512": {
+      "Type": "AWS::SSM::Parameter",
+      "Properties": {
+        "Name": "/sample/scires/cloudtrail-log-bucket",
+        "Type": "String",
+        "Value": {
+          "Ref": "TrailBucketA831CE63"
+        }
+      }
+    }
+  },
+  "Outputs": {
+    "TrailBucketName": {
+      "Value": {
+        "Ref": "TrailBucketA831CE63"
+      }
+    }
+  }
+}
