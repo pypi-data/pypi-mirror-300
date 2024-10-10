@@ -1,0 +1,18 @@
+Metadata-Version: 2.3
+Name: di_service_ksu
+Version: 0.0.3
+Summary: Solve Lightweight Dependency injection
+Project-URL: Homepage, https://github.com/Alitrix/di_service_ksu
+Project-URL: Issues, https://github.com/Alitrix/di_service_ksu/issues
+Author-email: Pozin Andrey <alien-kms@mail.ru>
+License-File: LICENSE
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3.10
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+
+# Testing package in python
+
+This is a test try create package in python. 
