@@ -1,0 +1,13 @@
+LICENSE
+README.md
+setup.py
+gen_ui_kit/GenUIKit.py
+gen_ui_kit/GenUIKitPrompts.py
+gen_ui_kit/GenUIKitTools.py
+gen_ui_kit/__init__.py
+gen_ui_kit/utils.py
+gen_ui_kit.egg-info/PKG-INFO
+gen_ui_kit.egg-info/SOURCES.txt
+gen_ui_kit.egg-info/dependency_links.txt
+gen_ui_kit.egg-info/requires.txt
+gen_ui_kit.egg-info/top_level.txt
