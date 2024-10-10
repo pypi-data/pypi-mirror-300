@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "hostasphere_profiler"
+version = "v1.0-rc1"
+description = "Hostasphere Profiler API"
+requires-python = ">=3.6"
+authors = [
+    {name = "William Jolivet", email = "william.jolivet@epitech.eu"}
+]
+readme = "README.md"
+keywords = ["profiler", "API", "gRPC", "system", "monitoring"]
+dependencies = [
+    "requests",
+    "psutil",
+    "grpcio",
+    "grpcio-tools",
+    "OpenHosta==1.1.1"
+]
+
+[project.urls]
+Homepage = "https://github.com/hand-e-fr/hostasphere"
+
+[tool.setuptools.packages.find]
+where = ["profiler"]
