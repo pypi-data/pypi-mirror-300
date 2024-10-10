@@ -1,0 +1,12 @@
+gps_anomaly/__init__.py,sha256=IKJ2acRB58WfqCxxPRZzP3DeHYoxy39CbXPuEECWEN4,41
+gps_anomaly/detect_functions.py,sha256=Fjt2AQXTtTRFGG6XEqZB__DcbUwtkOjTf0M9deIOZeE,3217
+gps_anomaly/detector.py,sha256=dFTM6JphYgZikN1ltCf2b8BohBz6r_fAmOKisz4G0pw,331
+gps_anomaly/one_sequence.py,sha256=zEZ1q33vRAAFiKe8Xswf3QiKI8nT24JLk3GLIzpNzos,5676
+gps_anomaly/version.py,sha256=ynTmt_3yL4INJ08oS26hcCcDv0wCJD3jMXGmtOBTerQ,50
+gps_anomaly/config/distance.py,sha256=ram01iwpARRo36qYgtlGp7vJ9edt-AU7nWpoz3Cdgq0,1535
+gps_anomaly/config/heading.py,sha256=AEBUUgs_i4qOT8aFk0ztp0qKj_FRRYAFw4JuENJuFQU,792
+gps_anomaly/config/info_anomalies.py,sha256=efqmpsGEhFlH1jNFQkyll7uMHEOpMukx_q7sztTWtSo,643
+gps_anomaly_detector-0.2.1.dist-info/METADATA,sha256=uh70sYnGcuo6AycMBCcKaQSzbaUOFsrdXzhtA4ehnAE,2028
+gps_anomaly_detector-0.2.1.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+gps_anomaly_detector-0.2.1.dist-info/top_level.txt,sha256=EMBnRDDVrX6IVLtZAyr45pPN1SYBtOpGT2EbUH33HFU,12
+gps_anomaly_detector-0.2.1.dist-info/RECORD,,
