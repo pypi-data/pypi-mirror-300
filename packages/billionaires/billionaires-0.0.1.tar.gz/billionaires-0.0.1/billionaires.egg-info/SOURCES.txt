@@ -1,0 +1,7 @@
+LICENSE
+README.md
+pyproject.toml
+billionaires.egg-info/PKG-INFO
+billionaires.egg-info/SOURCES.txt
+billionaires.egg-info/dependency_links.txt
+billionaires.egg-info/top_level.txt
