@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: relay-controller
+Version: 1.1.1
+Summary: A relay controller module for Python.
+Home-page: https://github.com/mnedev-cell/relay_controller
+Author: DEVMNE
+Author-email: mne@yaposarl.ma
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: pyhid-usb-relay
+
+# Relay Controller
+
+A relay controller module for Python.
+
+## Installation
+
+```bash
+pip install relay-controller
+```
+## Usage
+```bash
+from relay_controller.controller import RController
+
+relay_controller = RController("/dev/ttyUSB0", 1)  # Example usage
+relay_controller.activate_relay(duration=5)  # Activate for 5 seconds
+```
+
