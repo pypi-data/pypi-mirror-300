@@ -1,0 +1,19 @@
+Metadata-Version: 2.3
+Name: stringflow
+Version: 0.0.1
+Summary: like langchain but not awful
+Project-URL: Homepage, https://github.com/lostmygithubaccount/stringflow
+Project-URL: Bug Tracker, https://github.com/lostmygithubaccount/stringflow
+Author-email: Cody <cody@dkdc.dev>
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.12
+Requires-Dist: httpx
+Requires-Dist: pydantic
+Requires-Dist: python-dotenv
+Description-Content-Type: text/markdown
+
+# stringflow
+
+like langchain but not awful
