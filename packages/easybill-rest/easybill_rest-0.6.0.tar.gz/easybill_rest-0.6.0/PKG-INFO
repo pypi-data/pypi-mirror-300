@@ -1,0 +1,47 @@
+Metadata-Version: 2.1
+Name: easybill-rest
+Version: 0.6.0
+Summary: easybill_rest is a library to work with the easybill REST API (https://www.easybill.de/api/)
+License: MIT
+Author: Jan Nöhles
+Author-email: jan.noehles@easybill.de
+Requires-Python: >=3.11,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: httpx (>=0.27.2,<0.28.0)
+Description-Content-Type: text/markdown
+
+# easybill_rest (py-ebrest)
+[![Generic badge](https://img.shields.io/badge/Version-0.5.0-important.svg)]()
+[![Generic badge](https://img.shields.io/badge/coverage-97%25-success.svg)]()
+![PyPI - Python Version](https://img.shields.io/pypi/pyversions/easybill_rest.svg)
+[![Generic badge](https://img.shields.io/badge/License-MIT-blue.svg)]()
+[![Build Status](https://travis-ci.com/BolZer/py-ebrest.svg?branch=master)](https://travis-ci.com/BolZer/py-ebrest)
+
+`easybill_rest` is a library to work with the easybill REST API (https://www.easybill.de/api/) written in Python.
+
+All Resources are available.
+
+The library supports only the `Bearer` Authentication and calls the API only
+through `HTTPS`.
+
+```bash
+pip install easybill_rest
+```
+
+
+## Usage
+
+```Python
+from easybill_rest import Client
+
+
+client = Client("API-KEY")
+result = client.documents().get_document("2")
+
+# Returns the document model. Therefore, a field "title" is included in the dict.
+print(result['title'])
+
+```
