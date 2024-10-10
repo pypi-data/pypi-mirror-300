@@ -1,0 +1,8 @@
+tortoise-api-model
+aiogram
+
+[dev]
+pytest
+build
+twine
+setuptools_scm
