@@ -1,0 +1,40 @@
+from setuptools import setup, find_packages
+
+setup(
+    name='gsgp_slim',
+    version='0.1.9',
+    packages=find_packages(),
+    include_package_data=True,
+    install_requires=[
+        'numpy',
+        'pandas',
+        'torch',
+        'scipy',
+        'scikit-learn',
+        'joblib'
+    ],
+    entry_points={
+        'console_scripts': [
+            # If you have any command-line scripts
+            # 'command-name = mylibrary.module:function',
+        ],
+    },
+    author= 'Davide Farinati, Diogo Rasteiro, Gloria Pietropolli, Karina Brotto Rebulli, Leonardo Vanneschi, Liah Rosenfeld, Sara Silva',
+    author_email='dfarinati@novaims.unl.pt, drasteiro@novaims.unl.pt, gloria.pietropolli@phd.units.it, karina.brottorebuli@unito.it, lvanneschi@novaims.unl.pt, lrosenfeld@novaims.unl.pt, sgsilva@fc.ul.pt',
+    description='Semantic Learning algorithm based on Inflate and deflate Mutation (SLIM GSGP)',
+    long_description="""
+## Deprecated Package
+
+This package has been deprecated. Please use [`slim_gsgp`](https://pypi.org/project/slim-gsgp/) instead.
+""",
+    long_description_content_type='text/markdown',
+    url='https://github.com/DALabNOVA/slim',
+    classifiers=['Development Status :: 7 - Inactive',
+        'Programming Language :: Python :: 3',
+        'License :: OSI Approved :: MIT License',
+        'Operating System :: OS Independent',
+    ],
+    python_requires='>=3.9',
+
+
+)
