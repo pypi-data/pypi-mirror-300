@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: spanish_name_genderizer
+Version: 0.1.0
+Summary: A library to genderize Spanish names
+Home-page: https://github.com/baksben/spanish_name_genderizer
+Author: Bakwenye Benjamin
+Author-email: benjamin.bakwenye@bse.eu
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+License-File: License
+Requires-Dist: numpy>=1.26.4
+
+# Spanish Name Genderizer
+
+A Python library to determine the gender of Spanish names based on frequency data.
+
+## Installation

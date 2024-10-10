@@ -1,0 +1,11 @@
+License
+README.md
+setup.py
+spanish_name_genderizer/__init__.py
+spanish_name_genderizer/genderizer.py
+spanish_name_genderizer.egg-info/PKG-INFO
+spanish_name_genderizer.egg-info/SOURCES.txt
+spanish_name_genderizer.egg-info/dependency_links.txt
+spanish_name_genderizer.egg-info/requires.txt
+spanish_name_genderizer.egg-info/top_level.txt
+spanish_name_genderizer/data/spanish_names.csv
