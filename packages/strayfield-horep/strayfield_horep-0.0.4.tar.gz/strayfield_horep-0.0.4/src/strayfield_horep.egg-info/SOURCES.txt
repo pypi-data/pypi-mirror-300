@@ -1,0 +1,9 @@
+LICENSE
+README.md
+pyproject.toml
+src/strayfield_horep/__init__.py
+src/strayfield_horep/strayfield.py
+src/strayfield_horep.egg-info/PKG-INFO
+src/strayfield_horep.egg-info/SOURCES.txt
+src/strayfield_horep.egg-info/dependency_links.txt
+src/strayfield_horep.egg-info/top_level.txt

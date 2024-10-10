@@ -1,0 +1,12 @@
+[project]
+name = "strayfield_horep"
+version = "0.0.4"
+authors = [{name="Hywel Normington", email="hywel.normington@strath.ac.uk"}]
+description = "A strayfield package for micromagnetics"
+readme = "README.md"
+classifiers = [
+  "License :: OSI Approved :: MIT License",
+]
+
+[project.urls]
+Homepage = "https://github.com/Horep/strayfield"
