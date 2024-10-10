@@ -1,0 +1,11 @@
+sqlsymphony_orm/__init__.py,sha256=wdFdE6lCycdpsWlmZh46yB58Gtk_Nc0C2gUh4VIuk5M,871
+sqlsymphony_orm/database/connection.py,sha256=j749wgkIZZy1T3ayf_HMjRvwSCn0uXub_GnVy_afah8,3194
+sqlsymphony_orm/database/manager.py,sha256=CHOfg0Oifh-rGauznRxFRyeMyPzmTLbxx9BeiL1Zpyc,4730
+sqlsymphony_orm/datatypes/fields.py,sha256=oJ-UNjEFMQfCpgQ6-pOM0S-kEFYHM5gobQ7_ErKdtnk,13758
+sqlsymphony_orm/models/orm_models.py,sha256=y-wc9HCJVjb8IOsv2pYljOAI0N6F3Qmru0eMlwwlqNA,5934
+sqlsymphony_orm/patterns.py,sha256=5ZWXfp2qPa6aLhYYKRaOBTri1dSjsx7AnOCDTyQclyk,382
+sqlsymphony_orm/performance/cache.py,sha256=S9oKGzEVf8hR6WIeuW64hisJ82cDfQxOA_P1W8J5bYU,5512
+sqlsymphony_orm/queries.py,sha256=UhtMD3mJ5jEif3zySnd1nZJLJM6bVkhX6BDcJpoiE_U,6946
+sqlsymphony_orm-0.1.6.dist-info/METADATA,sha256=Aoltp4w5FkdOX0EZKxgfVoxAc0zd5MH7ciODaGb1Gao,8395
+sqlsymphony_orm-0.1.6.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+sqlsymphony_orm-0.1.6.dist-info/RECORD,,
