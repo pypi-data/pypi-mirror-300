@@ -1,0 +1,24 @@
+urllib3<3,>=1.26.2
+certifi
+
+[:python_version < "3.8"]
+importlib-metadata
+
+[develop]
+pytest
+pytest-cov
+pytest-mock
+pytest-asyncio
+pytest-httpserver
+trustme
+requests
+aiohttp
+httpx
+httpcore<1.0.6
+respx
+opentelemetry-api
+opentelemetry-sdk
+orjson
+sphinx>2
+furo
+sphinx-autodoc-typehints
