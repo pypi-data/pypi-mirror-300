@@ -1,0 +1,29 @@
+#
+# This is an auto-generated file.  DO NOT EDIT!
+#
+
+
+from ansys.fluent.core.solver.flobject import *
+
+from ansys.fluent.core.solver.flobject import (
+    _ChildNamedObjectAccessorMixin,
+    CreatableNamedObjectMixin,
+    _NonCreatableNamedObjectMixin,
+    AllowedValuesMixin,
+    _InputFile,
+    _OutputFile,
+    _InOutFile,
+)
+
+from typing import Union, List, Tuple
+
+from .sweeps import sweeps as sweeps_cls
+from .max_fine_relaxations import max_fine_relaxations as max_fine_relaxations_cls
+from .max_coarse_relaxations import max_coarse_relaxations as max_coarse_relaxations_cls
+
+class flexible_cycle_parameters(Group):
+    fluent_name = ...
+    child_names = ...
+    sweeps: sweeps_cls = ...
+    max_fine_relaxations: max_fine_relaxations_cls = ...
+    max_coarse_relaxations: max_coarse_relaxations_cls = ...

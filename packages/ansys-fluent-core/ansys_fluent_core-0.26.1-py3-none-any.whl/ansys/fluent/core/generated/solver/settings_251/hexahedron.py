@@ -1,0 +1,36 @@
+#
+# This is an auto-generated file.  DO NOT EDIT!
+#
+
+from ansys.fluent.core.solver.flobject import *
+
+from ansys.fluent.core.solver.flobject import (
+    _ChildNamedObjectAccessorMixin,
+    CreatableNamedObjectMixin,
+    _NonCreatableNamedObjectMixin,
+    AllowedValuesMixin,
+    _InputFile,
+    _OutputFile,
+    _InOutFile,
+)
+
+from .min_point import min_point as min_point_cls
+from .max_point import max_point as max_point_cls
+from .inside import inside as inside_cls
+
+class hexahedron(Group):
+    """
+    'hexahedron' child.
+    """
+
+    fluent_name = "hexahedron"
+
+    child_names = \
+        ['min_point', 'max_point', 'inside']
+
+    _child_classes = dict(
+        min_point=min_point_cls,
+        max_point=max_point_cls,
+        inside=inside_cls,
+    )
+

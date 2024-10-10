@@ -1,0 +1,33 @@
+#
+# This is an auto-generated file.  DO NOT EDIT!
+#
+
+
+from ansys.fluent.core.solver.flobject import *
+
+from ansys.fluent.core.solver.flobject import (
+    _ChildNamedObjectAccessorMixin,
+    CreatableNamedObjectMixin,
+    _NonCreatableNamedObjectMixin,
+    AllowedValuesMixin,
+    _InputFile,
+    _OutputFile,
+    _InOutFile,
+)
+
+from typing import Union, List, Tuple
+
+from .bc_type_2 import bc_type as bc_type_cls
+from .reinject_using_injection import reinject_using_injection as reinject_using_injection_cls
+from .bc_user_function import bc_user_function as bc_user_function_cls
+from .dem_collision_partner import dem_collision_partner as dem_collision_partner_cls
+from .mixing_plane_thread import mixing_plane_thread as mixing_plane_thread_cls
+
+class discrete_phase(Group):
+    fluent_name = ...
+    child_names = ...
+    bc_type: bc_type_cls = ...
+    reinject_using_injection: reinject_using_injection_cls = ...
+    bc_user_function: bc_user_function_cls = ...
+    dem_collision_partner: dem_collision_partner_cls = ...
+    mixing_plane_thread: mixing_plane_thread_cls = ...

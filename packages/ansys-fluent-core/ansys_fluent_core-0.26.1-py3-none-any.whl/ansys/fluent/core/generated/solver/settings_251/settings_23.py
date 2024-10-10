@@ -1,0 +1,42 @@
+#
+# This is an auto-generated file.  DO NOT EDIT!
+#
+
+from ansys.fluent.core.solver.flobject import *
+
+from ansys.fluent.core.solver.flobject import (
+    _ChildNamedObjectAccessorMixin,
+    CreatableNamedObjectMixin,
+    _NonCreatableNamedObjectMixin,
+    AllowedValuesMixin,
+    _InputFile,
+    _OutputFile,
+    _InOutFile,
+)
+
+from .radiator import radiator as radiator_cls
+from .discrete_phase_2 import discrete_phase as discrete_phase_cls
+from .geometry_2 import geometry as geometry_cls
+from .phase_51 import phase as phase_cls
+
+class settings(Group):
+    """
+    Select domain name to define settings on.
+    """
+
+    fluent_name = "settings"
+
+    child_names = \
+        ['radiator', 'discrete_phase', 'geometry', 'phase']
+
+    _child_classes = dict(
+        radiator=radiator_cls,
+        discrete_phase=discrete_phase_cls,
+        geometry=geometry_cls,
+        phase=phase_cls,
+    )
+
+    _child_aliases = dict(
+        dpm="discrete_phase",
+    )
+

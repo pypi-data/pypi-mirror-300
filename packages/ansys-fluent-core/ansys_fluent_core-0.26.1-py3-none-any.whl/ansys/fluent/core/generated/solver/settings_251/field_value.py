@@ -1,0 +1,40 @@
+#
+# This is an auto-generated file.  DO NOT EDIT!
+#
+
+from ansys.fluent.core.solver.flobject import *
+
+from ansys.fluent.core.solver.flobject import (
+    _ChildNamedObjectAccessorMixin,
+    CreatableNamedObjectMixin,
+    _NonCreatableNamedObjectMixin,
+    AllowedValuesMixin,
+    _InputFile,
+    _OutputFile,
+    _InOutFile,
+)
+
+from .field import field as field_cls
+from .option_34 import option as option_cls
+from .scaling import scaling as scaling_cls
+from .derivative import derivative as derivative_cls
+from .size_ratio import size_ratio as size_ratio_cls
+
+class field_value(Group):
+    """
+    'field_value' child.
+    """
+
+    fluent_name = "field-value"
+
+    child_names = \
+        ['field', 'option', 'scaling', 'derivative', 'size_ratio']
+
+    _child_classes = dict(
+        field=field_cls,
+        option=option_cls,
+        scaling=scaling_cls,
+        derivative=derivative_cls,
+        size_ratio=size_ratio_cls,
+    )
+
