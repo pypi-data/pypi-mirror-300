@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "deepbio-toolkit"
+version = "0.1.7"
+authors = [
+  { name="David W. Ludwig II", email="davidludwigii@gmail.com" }
+]
+description = "A collection of various deep-learning and data handling tools for running and building deep-learning models for computational biology."
+
+readme = "README.md"
+license = { file="LICENSE" }
+requires-python = ">=3.8"
+dependencies = [
+  "bitarray",
+  "dnadb",
+  "lightning[pytorch-extra] >= 2.4.0"
+]
+
+[project.scripts]
+dbtk = "dbtk.cli:main"
+
+[project.urls]
+"Homepage" = "https://github.com/DLii-Research/deepbio-toolkit"
+"Bug Tracker" = "https://github.com/DLii-Research/deepbio-toolkit/issues"
+
+[tool.ruff]
+line-length = 100
