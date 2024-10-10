@@ -1,0 +1,9 @@
+rmqaio/__init__.py,sha256=2k9lek8OLqfIN0ZU1TkbV_6mlVhE220QClN5WFYJaa0,115
+rmqaio/locales/rmqaio.pot,sha256=uzeN7OwY_M8yUsaJXr1QzLGA52VrUPq5s8kMQsROTG0,2036
+rmqaio/locales/ru/LC_MESSAGES/rmqaio.mo,sha256=p9PawfXj_bLA6gFAJ8Zw11dZijdzvaZNlyHPfaaHgxI,2190
+rmqaio/locales/ru/LC_MESSAGES/rmqaio.po,sha256=Qr9CzAn351fhgCdAyCxd8VB6speu_MlmgGm5puyykGk,3279
+rmqaio/rmqaio.py,sha256=UM_QWVp4yoC65gxqIXWsKxg8qXF8-vLqKkGE25Wsi5Y,34723
+rmqaio-0.6.0.dist-info/LICENSE,sha256=a5BLFUHdlJZcYn1Abk-FWU1pknyko5BA2_bCeqF83ZY,1069
+rmqaio-0.6.0.dist-info/METADATA,sha256=O9L3A69YyJqCqfkHWqWJ22e1JyU_DJstYrV_2yd_8Z4,851
+rmqaio-0.6.0.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+rmqaio-0.6.0.dist-info/RECORD,,
