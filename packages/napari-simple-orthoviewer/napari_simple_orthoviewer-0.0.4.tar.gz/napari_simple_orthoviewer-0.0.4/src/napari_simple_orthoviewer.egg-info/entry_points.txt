@@ -1,0 +1,2 @@
+[napari.manifest]
+napari-simple-orthoviewer = napari_simple_orthoviewer:napari.yaml
