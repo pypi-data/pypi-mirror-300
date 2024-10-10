@@ -1,0 +1,8 @@
+bodge/__init__.py,sha256=AG7_b-Scnc5zPCU1KiqWxMnCFzidoeQ3f9-_D866rGg,833
+bodge/common.py,sha256=5NSEJmIevNW042vBGF1oO4koj5V1q6zSifBYap9zgSI,1446
+bodge/hamiltonian.py,sha256=lwd0Dm-UwKwjm050lmI67nAStuSc8qbtcY0B7_FkAXs,22875
+bodge/lattice.py,sha256=W7qyv51cnuyGKy0nf9pTCCgzktCSaM9hALoKUsyOalY,7759
+bodge-1.2.1.dist-info/LICENSE.md,sha256=lFYNVmDjJg-_yAbgvQBIdKXWZ0PklLvZIJxB_ojN3Ik,1076
+bodge-1.2.1.dist-info/WHEEL,sha256=EZbGkh7Ie4PoZfRQ8I0ZuP9VklN_TvcZ6DSE5Uar4z4,81
+bodge-1.2.1.dist-info/METADATA,sha256=eNh5VcAMy-LpEcrZ2Ht5NqzNl3o4zyMitYKqsSivhK8,8769
+bodge-1.2.1.dist-info/RECORD,,
