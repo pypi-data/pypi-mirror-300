@@ -1,0 +1,37 @@
+name: All actions related to documentation
+
+on:
+  push:
+    paths:
+      - README.md
+      - examples/notebooks/*/**.ipynb
+
+jobs:
+  create-RTD:
+    name: Update the ReadTheDocs documentation if README or notebooks have been modified
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.head_ref }}
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: "3.10"
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements-dev.txt
+      - name: Copy README and adjust mermaid for RTD
+        run: |
+          cp README.md docs/README.md
+          sed -i 's/`mermaid/`\{mermaid\}/g' docs/README.md
+      - name: copy notebooks
+        run: |
+          cp -r examples/notebooks docs/
+      - uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "Updating docs"
+          file_pattern: 'docs/*'
