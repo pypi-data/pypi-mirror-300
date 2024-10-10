@@ -1,0 +1,54 @@
+Metadata-Version: 2.1
+Name: netclop
+Version: 1.2.0
+Summary: Network clustering operations for geophysical fluid transport
+Author: KarstenEconomou
+Author-email: economoukarsten@gmail.com
+Requires-Python: >=3.12,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.12
+Requires-Dist: click (>=8.1.7,<9.0.0)
+Requires-Dist: geopandas (>=0.14.2,<0.15.0)
+Requires-Dist: h3 (==4.0.0b2)
+Requires-Dist: infomap (>=2.7.1,<3.0.0)
+Requires-Dist: kaleido (==0.2.1)
+Requires-Dist: networkx (>=3.2.1,<4.0.0)
+Requires-Dist: numpy (>=1.26.3,<2.0.0)
+Requires-Dist: pandas (>=2.1.4,<3.0.0)
+Requires-Dist: plotly (>=5.18.0,<6.0.0)
+Requires-Dist: pyyaml (>=6.0.1,<7.0.0)
+Requires-Dist: seaborn (>=0.13.2,<0.14.0)
+Requires-Dist: upsetplot (>=0.9.0,<0.10.0)
+Description-Content-Type: text/markdown
+
+[![PyPI version](https://badge.fury.io/py/netclop.svg)](https://badge.fury.io/py/netclop)
+# netclop
+**NETwork CLustering OPerations for geophysical fluid transport.**
+
+`netclop` is a command-line interface for constructing network models of geophysical fluid transport and performing associated clustering operations (e.g., community detection and significance clustering).
+
+![Robust cores of sea scallop connectivity community structure in the Northwest Atlantic](https://github.com/KarstenEconomou/netclop/raw/main/img/img.png)
+
+## Features
+* Binning of Lagrangian particle simulations using [H3](https://github.com/uber/h3)
+* Network construction of fluid transport
+* Community detection using [Infomap](https://github.com/mapequation/infomap)
+* Network resampling and significance clustering
+* Node centrality calculation
+* Spatially-embedded network visualization
+
+## About
+`netclop` was created to facilitate network-theoretic analysis of marine connectivity in support of larval ecology.
+Developed at the Department of Engineering Mathematics and Internetworking, Dalhousie University by Karsten N. Economou.
+
+## Usage
+Particle trajectories should be decomposed into initial and final positions in `.csv` form and specified with `--input-data lpt`
+```
+initial_latitude,initial_longitude,final_latitude,final_longitude
+```
+
+Networks are given in the form of a weighted edgelist `.csv` with `--input-data net`
+```
+source_node,target_node,weight
+```
+
