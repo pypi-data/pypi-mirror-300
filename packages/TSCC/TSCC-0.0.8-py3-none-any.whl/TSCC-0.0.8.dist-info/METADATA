@@ -1,0 +1,95 @@
+Metadata-Version: 2.1
+Name: TSCC
+Version: 0.0.8
+Summary: Time Series Check and Correct
+Author: University Duisburg-Essen, Institute of Hydraulic Engineering and Water Resources Management
+License: GNU General Public License v3 (GPLv3)
+Project-URL: Documentation, https://ks000000.github.io/TSCC/
+Project-URL: Repository, https://github.com/ks000000/TSCC/tree/main/TSCC
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Requires-Dist: denseweight>=0.1.2
+Requires-Dist: haversine>=2.7.0
+Requires-Dist: imbalanced-learn>=0.12.3
+Requires-Dist: joblib==1.2.0
+Requires-Dist: matplotlib<3.9.0,>=3.0.0
+Requires-Dist: numpy>=1.23.4
+Requires-Dist: pandas>=1.5.1
+Requires-Dist: plotly>=5.11.0
+Requires-Dist: pykalman>=0.9.5
+Requires-Dist: pyproj>=3.4.0
+Requires-Dist: python-dateutil>=2.8.2
+Requires-Dist: pytz>=2022.5
+Requires-Dist: resreg>=0.2
+Requires-Dist: requests>=2.28.1
+Requires-Dist: ruptures>=1.1.9
+Requires-Dist: scikit-learn>=1.2.2
+Requires-Dist: scipy>=1.9.3
+Requires-Dist: seaborn>=0.13.0
+Requires-Dist: Shapely>=1.8.5.post1
+Requires-Dist: smogn>=0.1.2
+Requires-Dist: statsmodels>=0.13.4
+Requires-Dist: tensorflow<3.0.0,>=2.10.0
+Requires-Dist: tqdm>=4.66.5
+
+Welcome to TSCC (Time Series Check and Correct), the package for data quality management. You can determine and improve the accuracy of your data quality for (right-skewed) timeseries. 
+
+## Installation
+
+To install the package, you can use pip:
+
+```bash
+pip install TSCC
+```
+
+## Features
+
+![My Image](https://raw.githubusercontent.com/ks000000/TSCC/main/docs/_images/Overview.jpg)
+
+<!-- 
+## Contributing
+
+Contributions are welcome! If you would like to contribute, please fork the repository and create a pull request.
+
+### Steps to Contribute:
+
+1. Fork the repository
+2. Create a new branch (`git checkout -b feature/new-feature`)
+3. Make your changes and commit them (`git commit -m 'Add a new feature'`)
+4. Push to your branch (`git push origin feature/new-feature`)
+5. Create a pull request
+-->
+
+## License
+
+This project is licensed under the GNU General Public License v3 (GPLv3). See the [LICENSE](https://www.gnu.org/licenses/gpl-3.0.en.html) file for details.
+
+
+## Acknowledgements
+This package was developed with funding from the KIWaSuS research project (https://kiwasus.de/), supported by
+the Federal Ministry of Education and Research Germany, grant nr. 13N15559.
+
+## Citation
+Please cite the following when using ``TSCC`` in your academic publication.
+
+    @software{TSCC,
+      author = {Karen Schulz, Jan Erik Kunze, Dominik Martin, Thorsten Mietzel, Andre Niemann},
+      title = {TSCC: Time Series Check and Correct},
+      year = {2024},
+      version = {0.1.0},
+      organization = {Institute of Hydraulic Engineering and Water Resources Management, University Duisburg-Essen},
+      url = {https://pypi.org/project/TSCC/},
+      note = {Licensed under the GNU General Public License v3 (GPLv3) License. See https://www.gnu.org/licenses/gpl-3.0.en.html for details.}}
+
+
+## Author
+
+University Duisburg-Essen
+
+Faculty of Civil Engineering
+
+Institute of Hydraulic Engineering and Water Resources Management
+
+Contact: Karen Schulz  
