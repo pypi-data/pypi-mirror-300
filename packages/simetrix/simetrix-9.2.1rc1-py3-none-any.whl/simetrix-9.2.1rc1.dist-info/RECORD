@@ -1,0 +1,11 @@
+simetrix/__about__.py,sha256=OX_gmBQZ0QT1VipKwolssASzHoutcjSPq6e1SxmsytM,207
+simetrix/__init__.py,sha256=R7uJprObV9sKoV_njwQhQnBxsSUjvr1lIgbupF22FyE,181
+simetrix/__init__.pyi,sha256=N0wAXhOXqgAoM6_LpjDTK9aWFiWUyJYqtDruzk_YzBA,18999
+simetrix/dvm.py,sha256=R7uJprObV9sKoV_njwQhQnBxsSUjvr1lIgbupF22FyE,181
+simetrix/dvm.pyi,sha256=7vosBjhzACF0PASh6D8xNP3ANJ8O9P1NlSa5fvF6Duc,7383
+simetrix/script.py,sha256=R7uJprObV9sKoV_njwQhQnBxsSUjvr1lIgbupF22FyE,181
+simetrix/script.pyi,sha256=4qXEQs0nICFH-c1Q5zaAeVTO3C3B5b8fbSFQARhBytw,1239
+simetrix-9.2.1rc1.dist-info/METADATA,sha256=gz_GFMNdJoXTKeQvSwIvLb47qJBKB9cm3FzthZNovVU,1372
+simetrix-9.2.1rc1.dist-info/WHEEL,sha256=1yFddiXMmvYK7QYTqtRNtX66WJ0Mz8PYEiEUoOUUxRY,87
+simetrix-9.2.1rc1.dist-info/licenses/LICENSE.txt,sha256=81C08kP5XNSfJQAqsLKlhKqTXXCyPsOGHucBtY0sSNE,96
+simetrix-9.2.1rc1.dist-info/RECORD,,
