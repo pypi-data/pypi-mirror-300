@@ -1,0 +1,7 @@
+LICENSE
+README.md
+pyproject.toml
+example_pkg_thebillionairesapipoo.egg-info/PKG-INFO
+example_pkg_thebillionairesapipoo.egg-info/SOURCES.txt
+example_pkg_thebillionairesapipoo.egg-info/dependency_links.txt
+example_pkg_thebillionairesapipoo.egg-info/top_level.txt
