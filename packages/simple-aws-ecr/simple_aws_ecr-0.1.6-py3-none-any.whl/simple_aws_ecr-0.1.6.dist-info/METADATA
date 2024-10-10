@@ -1,0 +1,122 @@
+Metadata-Version: 2.1
+Name: simple_aws_ecr
+Version: 0.1.6
+Summary: Simplifies management of Amazon Elastic Container Registry (ECR) resources.
+Home-page: https://github.com/MacHu-GWU/simple_aws_ecr-project
+Download-URL: https://pypi.python.org/pypi/simple_aws_ecr/0.1.6#downloads
+Author: Sanhe Hu
+Author-email: husanhe@gmail.com
+Maintainer: Sanhe Hu
+Maintainer-email: husanhe@email.com
+License: MIT
+Platform: Windows
+Platform: MacOS
+Platform: Unix
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: MacOS
+Classifier: Operating System :: Unix
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3 :: Only
+Requires-Python: >=3.8
+License-File: LICENSE.txt
+License-File: AUTHORS.rst
+Provides-Extra: docs
+Requires-Dist: Sphinx ==5.3.0 ; extra == 'docs'
+Requires-Dist: sphinx-jinja ==2.0.2 ; extra == 'docs'
+Requires-Dist: sphinx-copybutton ==0.5.1 ; extra == 'docs'
+Requires-Dist: sphinx-design ==0.5.0 ; extra == 'docs'
+Requires-Dist: furo ==2023.03.27 ; extra == 'docs'
+Requires-Dist: nbsphinx ==0.8.12 ; extra == 'docs'
+Requires-Dist: rstobj ==1.2.1 ; extra == 'docs'
+Requires-Dist: pygments ==2.15.1 ; extra == 'docs'
+Requires-Dist: ipython ==8.10.0 ; extra == 'docs'
+Requires-Dist: docfly ==2.0.3 ; extra == 'docs'
+Provides-Extra: tests
+Requires-Dist: pytest ; extra == 'tests'
+Requires-Dist: pytest-cov ; extra == 'tests'
+Requires-Dist: moto <6.0.0,>=5.0.0 ; extra == 'tests'
+Requires-Dist: boto-session-manager <2.0.0,>=1.7.2 ; extra == 'tests'
+
+
+.. image:: https://readthedocs.org/projects/simple-aws-ecr/badge/?version=latest
+    :target: https://simple-aws-ecr.readthedocs.io/en/latest/
+    :alt: Documentation Status
+
+.. image:: https://github.com/MacHu-GWU/simple_aws_ecr-project/actions/workflows/main.yml/badge.svg
+    :target: https://github.com/MacHu-GWU/simple_aws_ecr-project/actions?query=workflow:CI
+
+.. image:: https://codecov.io/gh/MacHu-GWU/simple_aws_ecr-project/branch/main/graph/badge.svg
+    :target: https://codecov.io/gh/MacHu-GWU/simple_aws_ecr-project
+
+.. image:: https://img.shields.io/pypi/v/simple-aws-ecr.svg
+    :target: https://pypi.python.org/pypi/simple-aws-ecr
+
+.. image:: https://img.shields.io/pypi/l/simple-aws-ecr.svg
+    :target: https://pypi.python.org/pypi/simple-aws-ecr
+
+.. image:: https://img.shields.io/pypi/pyversions/simple-aws-ecr.svg
+    :target: https://pypi.python.org/pypi/simple-aws-ecr
+
+.. image:: https://img.shields.io/badge/Release_History!--None.svg?style=social
+    :target: https://github.com/MacHu-GWU/simple_aws_ecr-project/blob/main/release-history.rst
+
+.. image:: https://img.shields.io/badge/STAR_Me_on_GitHub!--None.svg?style=social
+    :target: https://github.com/MacHu-GWU/simple_aws_ecr-project
+
+------
+
+.. image:: https://img.shields.io/badge/Link-Document-blue.svg
+    :target: https://simple-aws-ecr.readthedocs.io/en/latest/
+
+.. image:: https://img.shields.io/badge/Link-API-blue.svg
+    :target: https://simple-aws-ecr.readthedocs.io/en/latest/py-modindex.html
+
+.. image:: https://img.shields.io/badge/Link-Install-blue.svg
+    :target: `install`_
+
+.. image:: https://img.shields.io/badge/Link-GitHub-blue.svg
+    :target: https://github.com/MacHu-GWU/simple_aws_ecr-project
+
+.. image:: https://img.shields.io/badge/Link-Submit_Issue-blue.svg
+    :target: https://github.com/MacHu-GWU/simple_aws_ecr-project/issues
+
+.. image:: https://img.shields.io/badge/Link-Request_Feature-blue.svg
+    :target: https://github.com/MacHu-GWU/simple_aws_ecr-project/issues
+
+.. image:: https://img.shields.io/badge/Link-Download-blue.svg
+    :target: https://pypi.org/pypi/simple-aws-ecr#files
+
+
+Welcome to ``simple_aws_ecr`` Documentation
+==============================================================================
+.. image:: https://simple-aws-ecr.readthedocs.io/en/latest/_static/simple_aws_ecr-logo.png
+    :target: https://simple-aws-ecr.readthedocs.io/en/latest/
+
+The aws_ecr project is a comprehensive Python library designed to streamline interactions with Amazon Elastic Container Registry (ECR). It provides a high-level, object-oriented interface for managing ECR repositories, images, and replication rules across multiple AWS accounts. The library offers utility functions for common ECR operations, such as creating repositories, configuring cross-account access, setting up replication, and deploying Lambda functions using ECR images. With support for Docker image building and pushing, cross-account permissions, and efficient error handling, aws_ecr enables developers to easily integrate ECR management into their AWS-based applications and CI/CD pipelines.
+
+
+.. _install:
+
+Install
+------------------------------------------------------------------------------
+
+``simple_aws_ecr`` is released on PyPI, so all you need is to:
+
+.. code-block:: console
+
+    $ pip install simple-aws-ecr
+
+To upgrade to latest version:
+
+.. code-block:: console
+
+    $ pip install --upgrade simple-aws-ecr
