@@ -1,0 +1,9 @@
+README.md
+setup.py
+coinverter/__init__.py
+coinverter/coinverter.py
+coinverter.egg-info/PKG-INFO
+coinverter.egg-info/SOURCES.txt
+coinverter.egg-info/dependency_links.txt
+coinverter.egg-info/requires.txt
+coinverter.egg-info/top_level.txt
