@@ -1,0 +1,9 @@
+bens_plotstyle/__init__.py,sha256=MsSFjiLMLJZ7QhUPpVBWKiyDnCzryquRyr329NoCACI,2
+bens_plotstyle/bens_plotstyle.py,sha256=bOWX9LJch4MDOfpe92BpeZqmdQ070zWqX73Bziqd4-Q,1389
+bens_plotstyle/mplstyle_templates/pretty_plotting_default.mplstyle,sha256=SHHWMODeAOF0OJHdb7UuQqTBZh9vykcjRjxw5d82xkc,509
+bens_plotstyle/mplstyle_templates/pretty_plotting_paper.mplstyle,sha256=xGX67IeoSYt5GD_l6Vhm-KPIzzgN2yGv4tWZaFai200,511
+bens_plotstyle-1.1.dist-info/LICENSE,sha256=DNSO9X1te1Y7VMQ7rXAF0FuxvHhA_g96NGBo5Q29iCE,1497
+bens_plotstyle-1.1.dist-info/METADATA,sha256=mypoHiYD4jjV4U5x2ORhRSV-RnzYgGUb_Idd4HIuusE,79
+bens_plotstyle-1.1.dist-info/WHEEL,sha256=GV9aMThwP_4oNCtvEC2ec3qUYutgWeAzklro_0m4WJQ,91
+bens_plotstyle-1.1.dist-info/top_level.txt,sha256=fYCEcdbjfzuugQ43idnI-elMnYO7Utks85vt0CAp3MI,15
+bens_plotstyle-1.1.dist-info/RECORD,,
