@@ -1,0 +1,11 @@
+gda_importer/__init__.py,sha256=Wuh3V3jvyzwe2dpewIi7PQIbAWBvJJ7XLDaqCVHR4s8,173
+gda_importer/__main__.py,sha256=XlJerKEfds02bJo2Fp8Rj_2iLLtANAgtKaTftCooCPY,353
+gda_importer/ppinfo.py,sha256=wvHrUSbkRDjYvNDcYk1hm-gSkr8hHOHP3BxPWlnB-_8,3474
+gda_importer/pull_private_deps.py,sha256=mryIYknmzkY-Zrjp-CCept7_rLyZH2gVFQ7IGaQTwqg,10172
+gda_importer-1.1.0.dist-info/AUTHORS.md,sha256=iSHtwZNQv4cug-eD-JH8ibknHCirlYw6l6G0BrbxlMA,356
+gda_importer-1.1.0.dist-info/LICENSE,sha256=RRbaeIkH4RDWz3q1Hb7s8KuVHna6e3XOlxvHumKR1p8,34477
+gda_importer-1.1.0.dist-info/METADATA,sha256=Wi2K823vkLdgIC_0t6OPZTC_bwcE7KvD-VJR8cnDzYw,8849
+gda_importer-1.1.0.dist-info/WHEEL,sha256=GV9aMThwP_4oNCtvEC2ec3qUYutgWeAzklro_0m4WJQ,91
+gda_importer-1.1.0.dist-info/entry_points.txt,sha256=hJhh49p6MiLQwfuQ01G-vCNqozuErtOJBYlhZ3JJ_qc,108
+gda_importer-1.1.0.dist-info/top_level.txt,sha256=MgX0b3x-CiA_w0cTgtmWUY3ngtogy3dHefqHv8O6o9U,13
+gda_importer-1.1.0.dist-info/RECORD,,
