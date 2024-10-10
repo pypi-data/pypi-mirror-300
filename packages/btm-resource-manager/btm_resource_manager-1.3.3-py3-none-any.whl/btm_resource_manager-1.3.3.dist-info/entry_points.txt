@@ -1,0 +1,8 @@
+[console_scripts]
+citemp = ci_temp:main
+ocderase = ocderase:main
+ocdflash = ocdflash:main
+ocdopen = ocdopen:main
+ocdreset = ocdreset:main
+resource_manager = resource_manager_cli:main
+watch_changes = watch_changes_cli:main
