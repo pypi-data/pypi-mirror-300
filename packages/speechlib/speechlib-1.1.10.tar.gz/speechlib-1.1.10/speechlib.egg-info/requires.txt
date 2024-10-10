@@ -1,0 +1,10 @@
+transformers<5.0.0,>=4.36.2
+torch<3.0.0,>=2.1.2
+torchaudio<3.0.0,>=2.1.2
+pydub<1.0.0,>=0.25.1
+pyannote.audio<4.0.0,>=3.1.1
+speechbrain<1.0.0,>=0.5.16
+accelerate<1.0.0,>=0.26.1
+faster-whisper<1.0.0,>=0.10.1
+openai-whisper<20240927,>=20231117
+assemblyai
