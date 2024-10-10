@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: rxxxt
+Version: 0.1.0
+Author: leopf
+License-File: LICENSE
+Requires-Dist: pydantic
+Provides-Extra: dev
+Requires-Dist: ruff; extra == "dev"
+Requires-Dist: uvicorn; extra == "dev"
