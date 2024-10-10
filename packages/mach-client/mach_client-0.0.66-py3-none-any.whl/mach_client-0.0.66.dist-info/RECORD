@@ -1,0 +1,10 @@
+mach_client/__init__.py,sha256=yrjcT0lYRhXFG_9Rand8yvw8FwLR1QzImqqC4RR5_1k,852
+mach_client/client.py,sha256=PVRjFQdhyQhr9s6h6NKEP0MUdOBcWx8ar81AdbN0d9M,8733
+mach_client/config.py,sha256=3nkqlXxVbzOJ30Z6OxwClYhwmE_bT4aPxbRS-qnuqno,2294
+mach_client/constants.py,sha256=3kbzC8EfanPwniXp6pe9heNQciIANoGxGEI7hpxjNpI,2215
+mach_client/data_types.py,sha256=DeQKAhfBm5NTSdrKvOX28kpgwhfpZUpCY0P31DBXjQs,2053
+mach_client/log.py,sha256=971v35r5fAxxuZDxhjZXVQjvdhuzKDJKvhHzVrlc6z8,1274
+mach_client/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mach_client-0.0.66.dist-info/METADATA,sha256=9CEYYMs0LU2c9VSsvGjyJbnS8FG8fuG82Xv2CWlNXJs,1045
+mach_client-0.0.66.dist-info/WHEEL,sha256=1yFddiXMmvYK7QYTqtRNtX66WJ0Mz8PYEiEUoOUUxRY,87
+mach_client-0.0.66.dist-info/RECORD,,
