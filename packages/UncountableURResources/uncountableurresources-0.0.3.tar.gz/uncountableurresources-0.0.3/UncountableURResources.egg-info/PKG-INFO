@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: UncountableURResources
+Version: 0.0.3
+Summary: Uncountable UR Resources
+Project-URL: Homepage, https://github.com/uncountableinc/uncountable-ur-resources
+Project-URL: Repository, https://github.com/uncountableinc/uncountable-ur-resources.git
+Project-URL: Issues, https://github.com/uncountableinc/uncountable-ur-resources/issues
+Keywords: uncountable,ur_resources
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Software Development
+Classifier: Topic :: Utilities
+Classifier: Typing :: Typed
+Requires-Python: >=3.12
+Description-Content-Type: text/markdown
+Requires-Dist: aiotus==0.*
+Provides-Extra: test
+Requires-Dist: mypy==1.*; extra == "test"
+Requires-Dist: ruff==0.*; extra == "test"
+Requires-Dist: pytest==8.*; extra == "test"
+Requires-Dist: coverage[toml]==7.*; extra == "test"
+Requires-Dist: pytest-cov==5.*; extra == "test"
+Requires-Dist: pytest-xdist==3.*; extra == "test"
