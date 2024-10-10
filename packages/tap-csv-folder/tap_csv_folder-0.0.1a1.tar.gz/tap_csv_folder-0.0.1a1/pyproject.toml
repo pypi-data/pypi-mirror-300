@@ -1,0 +1,69 @@
+[build-system]
+requires = ["poetry-core", "poetry-dynamic-versioning"]
+build-backend = "poetry_dynamic_versioning.backend"
+
+[tool.poetry]
+name = "tap-csv-folder"
+version = "0.0.1a1"
+description = "Singer tap for CSVFolder, built with the Meltano Singer SDK."
+readme = "README.md"
+authors = ["Edgar Ramírez-Mondragón <edgar@arch.dev>"]
+keywords = [
+    "ELT",
+    "CSVFolder",
+]
+classifiers = [
+    "Intended Audience :: Developers",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+]
+license = "Apache-2.0"
+
+[tool.poetry.dependencies]
+python = ">=3.9"
+
+# Dev extras
+pytest = { version = ">=8", optional = true }
+
+[tool.poetry.dependencies.singer-sdk]
+version = "~=0.41.0"
+extras = ["s3", "ssh"]
+
+[tool.poetry.extras]
+testing = ["pytest"]
+
+[tool.poetry.scripts]
+# CLI declaration
+tap-csv-folder = 'tap_csv_folder.tap:TapCSVFolder.cli'
+
+[tool.pytest.ini_options]
+addopts = '--durations=10'
+
+[tool.mypy]
+python_version = "3.13"
+warn_unused_configs = true
+
+[tool.ruff]
+target-version = "py39"
+
+[tool.ruff.lint]
+ignore = [
+    "ANN101",  # missing-type-self
+    "ANN102",  # missing-type-cls
+    "COM812",  # missing-trailing-comma
+    "ISC001",  # single-line-implicit-string-concatenation
+]
+select = ["ALL"]
+
+[tool.ruff.lint.flake8-annotations]
+allow-star-arg-any = true
+
+[tool.ruff.lint.pydocstyle]
+convention = "google"
+
+[tool.poetry-dynamic-versioning]
+enable = false
