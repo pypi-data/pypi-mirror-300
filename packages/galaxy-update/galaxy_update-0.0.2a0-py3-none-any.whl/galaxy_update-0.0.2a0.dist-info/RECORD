@@ -1,0 +1,8 @@
+galaxy_update/__init__.py,sha256=P4ZN1jO32SKMqPOnMj80SRpi_8tZGGGa__Q3pzKmSAY,48
+galaxy_update/__main__.py,sha256=H9HzDtgbsIt2jmUzfEYZoaFKZNt6QHsnJWJG05gLiAo,158
+galaxy_update/cli.py,sha256=gH5Eg8jAfWGLXmHiukFB1gawI39incz1xbwYa1KZ0pc,1423
+galaxy_update-0.0.2a0.dist-info/LICENSE,sha256=Leb4ymSGTwvl1WTdWzR-0GgEkLR2wjYjLeKh4JiH9A0,1065
+galaxy_update-0.0.2a0.dist-info/METADATA,sha256=W1rCowIoEimQV2yT3KLCCpjkGRY0zwINsZxLfRyu4W0,2076
+galaxy_update-0.0.2a0.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+galaxy_update-0.0.2a0.dist-info/entry_points.txt,sha256=w6_BhnhZayDrxKYft_9Sbl3Tilks-lXNCSJJar2bi5s,60
+galaxy_update-0.0.2a0.dist-info/RECORD,,
