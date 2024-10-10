@@ -1,0 +1,4 @@
+[console_scripts]
+pypass = pypass.main:main
+pypass-gui = pypass.app.gui.desktop.pypass_gui:main
+pypass-web = pypass.app.gui.web.pypass_web:main
