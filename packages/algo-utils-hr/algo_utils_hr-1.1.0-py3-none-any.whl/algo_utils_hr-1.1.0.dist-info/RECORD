@@ -1,0 +1,14 @@
+algo_utils_hr/__init__.py,sha256=nJng4eUNP5fQ57rZNOI9EOp7pgS28okkG0wJE8Wj_ME,403
+algo_utils_hr/algo_typing.py,sha256=Nu0cAryhzKh11VZpdURpMGO8Arvc9uEmRTtSMceWdPk,468
+algo_utils_hr/data_analysis.py,sha256=DX0cNllBdjep6Ejr-rVHTdeczUVw32Gs1K4eUfrGb0k,14995
+algo_utils_hr/file_operations.py,sha256=eDuL3l6wm2_U5y5py6iwhbWuTWdgISDjapjOFAiR18M,8957
+algo_utils_hr/image_processing.py,sha256=yVCmNj9od_QKRlYqY_AMC-3aYs99Z-2B8YBgAlDssQU,6872
+algo_utils_hr/matching_graphs.py,sha256=GZ4DO0vSYSMmHK3uJgxiLXBzjh8dnSBVv70GjpJfALE,16871
+algo_utils_hr/measurements.py,sha256=3JYTR7xQ2yzHrHIqpR_K0ES0ZXtA910D8y8ClNpUYn4,18714
+algo_utils_hr/segmentation_features.py,sha256=UfBYfPlaxxLR41B0_CKqJfMC2Koqxtw7MR-291uPmQ8,22631
+algo_utils_hr/segmentation_processing.py,sha256=o-VzaIS49oLApiZwMtThtuW2FGtmMScD9A5seqDF26o,9257
+algo_utils_hr-1.1.0.dist-info/LICENSE,sha256=THNZgtq7HEVjctVQkVtfRTo_qXVbZmID-RsUwY-_3bE,1071
+algo_utils_hr-1.1.0.dist-info/METADATA,sha256=1w5AvIYSDBtFeTjVQZMOZw58fhyUlPsiOBpR0ONJYoI,2986
+algo_utils_hr-1.1.0.dist-info/WHEEL,sha256=GV9aMThwP_4oNCtvEC2ec3qUYutgWeAzklro_0m4WJQ,91
+algo_utils_hr-1.1.0.dist-info/top_level.txt,sha256=CFysxjm1kwMamKoudsXiDRyFqVN3Yb4eEyKy-x6WQjw,14
+algo_utils_hr-1.1.0.dist-info/RECORD,,
