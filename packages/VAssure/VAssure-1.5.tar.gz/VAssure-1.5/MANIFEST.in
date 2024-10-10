@@ -1,0 +1,7 @@
+include VAssure/VAssureCommonResources/*.robot
+include VAssure/VAssureHubConfiguration/*.robot
+include VAssure/VAssureVaultUtilities/*.robot
+include VAssure/VAssureCustomKeywords/*.py
+include VAssure/VAssureCustomLibrary/*.py
+include VAssure/VAssureAPIPreRequisites/*.py
+include VAssure/WonderPharmaResources/*.robot
