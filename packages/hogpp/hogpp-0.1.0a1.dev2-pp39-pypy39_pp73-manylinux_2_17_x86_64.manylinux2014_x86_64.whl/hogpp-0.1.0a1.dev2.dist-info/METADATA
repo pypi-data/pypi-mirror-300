@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: hogpp
+Version: 0.1.0a1.dev2
+Summary: Fast computation of rectangular histogram of oriented gradients (R-HOG) features using integral histogram
+Author-Email: Sergiu Deitsch <sergiu.deitsch@gmail.com>
+License: Apache License (2.0)
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Topic :: Scientific/Engineering :: Information Analysis
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Project-URL: Repository, https://github.com/sergiud/hogpp.git
+Project-URL: Bug tracker, https://github.com/sergiud/hogpp/issues
+Requires-Python: >=3.9
+Requires-Dist: numpy
