@@ -1,0 +1,13 @@
+requests<3,>=2.0.0
+SQLAlchemy
+dataclass_factory
+cloudpickle
+click
+jinja2
+python-dotenv
+pyaml_env
+boto3
+pytz
+
+[test]
+pytest<7,>=6.2.5
