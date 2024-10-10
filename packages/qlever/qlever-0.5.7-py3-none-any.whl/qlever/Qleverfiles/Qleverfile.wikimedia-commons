@@ -1,0 +1,37 @@
+# Qleverfile for Wikimedia Commons, TODO: add to https://github.com/ad-freiburg/qlever-control
+#
+# qlever get-data  # takes ~3 hours to download .bz2 file of size ~40 GB
+# qlever index     # takes ~2 hours and ~40 GB RAM (on an AMD Ryzen 9 5900X)
+# qlever start     # starts the server (takes around 15 seconds)
+
+[data]
+NAME              = wikimedia-commons
+MAIN_RDF_FILE     = latest-mediainfo.ttl.gz
+DATA_URL_BASE     = https://dumps.wikimedia.org/other/wikibase/commonswiki
+GET_TTL_CMD       = wget -nc ${DATA_URL_BASE}/${MAIN_RDF_FILE}
+GET_PROPS_CMD     = curl -s https://qlever.cs.uni-freiburg.de/api/wikidata -H "Accept: text/turtle" -H "Content-type: application/sparql-query" --data "PREFIX wikibase: <http://wikiba.se/ontology#> CONSTRUCT { ?s ?p ?o } WHERE { VALUES ?p { wikibase:claim wikibase:directClaim wikibase:novalue wikibase:propertyType wikibase:qualifier wikibase:qualifierValue wikibase:reference wikibase:referenceValue wikibase:statementProperty wikibase:statementValue } ?s ?p ?o }" > properties.nt
+GET_LABELS_CMD    = curl -s https://qlever.cs.uni-freiburg.de/api/wikidata -H "Accept: text/turtle" -H "Content-type: application/sparql-query" --data "PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> CONSTRUCT { ?subject rdfs:label ?label } WHERE { ?subject @en@rdfs:label ?label }" > labels.nt
+GET_DATA_CMD      = ${GET_TTL_CMD} && ${GET_PROPS_CMD} && ${GET_LABELS_CMD}
+INDEX_DESCRIPTION = Wikimedia Commons from ${DATA_URL_BASE}, version 09.11.2023 + Wikidata triples for rdfs:label and wikibase:claim etc.
+
+[index]
+INPUT_FILES     = ${data:MAIN_RDF_FILE} labels.nt properties.nt
+CAT_INPUT_FILES = zcat -f ${INPUT_FILES}
+WITH_TEXT_INDEX = from_literals
+STXXL_MEMORY_GB = 5
+SETTINGS_JSON   = { "languages-internal": [], "prefixes-external": [""], "locale": { "language": "en", "country": "US", "ignore-punctuation": true }, "ascii-prefixes-only": true, "num-triples-per-batch": 5000000 }
+
+[server]
+PORT                           = 7033
+ACCESS_TOKEN                   = ${data:NAME}_2511328747
+MEMORY_FOR_QUERIES_GB          = 20
+CACHE_MAX_SIZE_GB              = 10
+CACHE_MAX_SIZE_GB_SINGLE_ENTRY = 5
+
+[runtime]
+SYSTEM = native
+IMAGE  = docker.io/adfreiburg/qlever:latest
+
+[ui]
+PORT   = 7000
+CONFIG = wikimedia-commons
