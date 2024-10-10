@@ -1,0 +1,1 @@
+recursive-include src/pyqt6_calculator_limafresh/locales *.qm
