@@ -1,0 +1,12 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+src/bens_plotstyle/__init__.py
+src/bens_plotstyle/bens_plotstyle.py
+src/bens_plotstyle.egg-info/PKG-INFO
+src/bens_plotstyle.egg-info/SOURCES.txt
+src/bens_plotstyle.egg-info/dependency_links.txt
+src/bens_plotstyle.egg-info/top_level.txt
+src/bens_plotstyle/mplstyle_templates/pretty_plotting_default.mplstyle
+src/bens_plotstyle/mplstyle_templates/pretty_plotting_paper.mplstyle
