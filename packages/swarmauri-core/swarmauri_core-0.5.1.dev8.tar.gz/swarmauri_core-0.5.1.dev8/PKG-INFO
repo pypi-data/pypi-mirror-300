@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: swarmauri-core
+Version: 0.5.1.dev8
+Summary: This repository includes core interfaces, standard ABCs and concrete references, third party plugins, and experimental modules for the swarmaURI framework.
+Home-page: http://github.com/swarmauri/swarmauri-sdk
+Author: Jacob Stewart
+Author-email: corporate@swarmauri.com
+License: Apache Software License
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+Requires-Dist: numpy==1.26.4
+Requires-Dist: requests
+Requires-Dist: pydantic
+Requires-Dist: pandas>2.2
+
+
+# Swarmauri Core
+
+## Core 
+- **Core Interfaces**: Define the fundamental communication and data-sharing protocols between components in a Swarmauri-based system.
+
+
+Visit us at: https://swarmauri.com
+Follow us at: https://github.com/swarmauri 
+
+
+
