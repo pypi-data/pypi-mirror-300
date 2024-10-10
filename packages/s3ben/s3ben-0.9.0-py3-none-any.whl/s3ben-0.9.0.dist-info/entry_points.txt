@@ -1,0 +1,3 @@
+[console_scripts]
+s3ben=s3ben.cli:main
+
