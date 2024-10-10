@@ -1,0 +1,15 @@
+opencv-python-headless==4.10.0.84
+pillow==10.4.0
+requests==2.32.3
+tqdm==4.66.5
+accelerate>=0.34.2
+bitsandbytes>=0.42.0
+peft==0.13.0
+sentencepiece==0.2.0
+transformers==4.45.2
+torch>=2.1.0
+onnx==1.17.0
+onnxruntime==1.19.2
+huggingface_hub>=0.25.1
+modelscope>=1.18.1
+gradio>=4.44.0
