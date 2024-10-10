@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: COCO_to_YOLO
+Version: 1.0.0
+Summary: Simple command line tool to convert COCO datasets to ultralytics YOLO format.
+Author-email: Mathias Zinnen <mathias.zinnen@gmail.com>
+Project-URL: Homepage, https://github.com/mathiaszinnen/coco_to_yolo
+Project-URL: Issues, https://github.com/mathiaszinnen/coco_to_yolo/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: tqdm
+Requires-Dist: pyyaml
+
+# coco-to-yolo
+Simple command line tool to convert COCO object detection datasets to YOLO format.
+
+
+
