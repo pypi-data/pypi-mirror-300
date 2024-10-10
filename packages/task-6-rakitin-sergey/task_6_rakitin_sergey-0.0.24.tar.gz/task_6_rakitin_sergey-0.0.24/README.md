@@ -1,0 +1,74 @@
+# F1 Racing Report Package
+
+This Python package generates and prints a report for Formula 1 racing, based on logs of start and end times of racers. The package also provides a command-line interface (CLI) to interact with the report generation and allows flexible configuration options.
+
+## Features
+
+- **Report Generation**: Generate a sorted list of F1 racers by lap times.
+- **CLI Interface**: Process files from a specified folder and print reports or errors.
+- **Error Handling**: Provides detailed error messages for problematic records (e.g., invalid times).
+- **Custom Report Options**: Includes optional sorting and underline settings.
+
+## Installation
+
+You can install the package using PIP (assuming it's published to PyPI):
+
+```bash
+    pip install task_6_rakitin_sergey
+```
+# Usage
+
+Open directory with f1_report.py and run CMD.
+
+## Below are some examples of how to use the CLI.
+
+Basic Report Generation (with ascending order by default):
+
+```bash
+    python f1_report.py
+```
+
+Generate Report with Sorting order descending:
+
+```bash
+  python f1_report.py --order desc
+```
+
+Print Report with Custom Underline After a Specific Line (for example 3):
+
+```bash
+    python f1_report.py --underline_after 3
+```
+
+Show Only Errors:
+
+```bash
+    python f1_report.py --errors_only
+```
+
+Show Report for a Specific Driver:
+
+```bash
+    python f1_report.py --driver "Sebastian Vettel"
+```
+
+Use own path to .log\.txt files:
+
+```bash
+    python f1_report.py -- <folder_path>
+```
+
+List of commands:
+
+```bash
+    python f1_report.py --help
+```
+
+## Link to package page 
+
+```Bash
+    https://pypi.org/project/task-6-rakitin-sergey/
+```
+
+
+
