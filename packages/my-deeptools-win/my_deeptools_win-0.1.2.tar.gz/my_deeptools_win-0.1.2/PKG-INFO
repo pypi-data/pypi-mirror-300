@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: my-deeptools-win
+Version: 0.1.2
+Summary: deeptools on windows
+Author: xpf10
+Author-email: 2018303010006@whu.edu.cn
+Requires-Python: >=3.10,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Requires-Dist: bamnostic (>=1.1.10,<2.0.0)
+Requires-Dist: fire (>=0.6.0,<0.7.0)
+Requires-Dist: matplotlib (>=3.9.2,<4.0.0)
+Requires-Dist: rich (>=13.9.2,<14.0.0)
+Description-Content-Type: text/markdown
+
+## *deeptools in wondows*
+
+based on bamnostic and pybigtools
+-->
+## :writing_hand: xpf
+
+[![pipy](https://img.shields.io/badge/PIPY-0.1.1-green)](https://pypi.org/project/my-deeptools-win/)
+[![github](https://img.shields.io/badge/GITHUB-0.1.1-green)](https://github.com/yang)
+[![windows](https://img.shields.io/badge/WINDOWS-11-blue)](https://www.microsoft.com/zh-cn/windows/windows-11)
+[![bamnostic](https://img.shields.io/badge/BAMNOSTIC-1.0.0-blue)](https://pypi.org/project/bamnostic/)

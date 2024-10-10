@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "my-deeptools-win"
+version = "0.1.2"
+description = "deeptools on windows"
+authors = ["xpf10 <2018303010006@whu.edu.cn>"]
+readme = "README.md"
+packages = [{include = "my_deeptools_win"}]
+
+[tool.poetry.scripts]
+deeptools_win = "my_deeptools_win._cli:main"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+bamnostic = "^1.1.10"
+fire = "^0.6.0"
+matplotlib = "^3.9.2"
+rich = "^13.9.2"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

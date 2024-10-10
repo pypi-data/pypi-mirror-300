@@ -1,0 +1,15 @@
+[tool.poetry]
+name = "my-deeptools-win"
+version = "0.1.0"
+description = ""
+authors = ["xpf10 <2018303010006@whu.edu.cn>"]
+readme = "README.md"
+packages = [{include = "my_deeptools_win"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
