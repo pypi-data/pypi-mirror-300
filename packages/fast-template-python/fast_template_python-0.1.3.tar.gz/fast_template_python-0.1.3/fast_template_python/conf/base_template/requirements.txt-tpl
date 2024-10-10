@@ -1,0 +1,12 @@
+pydantic[email]
+psycopg-binary
+alembic
+sqlalchemy
+fastapi
+pydantic
+redis
+arq
+asyncpg
+PyJWT
+itsdangerous
+fastapi_mail
