@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: port-history-plugin
+Version: 1.0.4
+Summary: Check the relevance of inventory on switches
+Home-page: 
+Author: Nikolay Gimozdinov
+Author-email: 
+License: MIT
+Keywords: netbox,netbox-plugin,plugin
