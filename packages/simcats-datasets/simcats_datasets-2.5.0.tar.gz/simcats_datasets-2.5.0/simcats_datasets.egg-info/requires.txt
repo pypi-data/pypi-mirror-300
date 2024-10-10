@@ -1,0 +1,14 @@
+bezier
+bm3d
+h5py
+hdf5storage
+numpy
+opencv-python
+pandas
+parallelbar
+parse
+scikit-image
+simcats>=1.2.0
+torch
+tqdm
+xarray
