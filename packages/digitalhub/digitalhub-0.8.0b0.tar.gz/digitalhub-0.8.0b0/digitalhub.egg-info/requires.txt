@@ -1,0 +1,16 @@
+digitalhub-core<0.9,>=0.8.0b
+
+[all]
+digitalhub-data<0.9,>=0.8.0b
+digitalhub-ml<0.9,>=0.8.0b
+
+[data]
+digitalhub-data<0.9,>=0.8.0b
+
+[full]
+digitalhub-core[full]<0.9,>=0.8.0b
+digitalhub-data[pandas]<0.9,>=0.8.0b
+digitalhub-ml[mlflow]<0.9,>=0.8.0b
+
+[ml]
+digitalhub-ml<0.9,>=0.8.0b
