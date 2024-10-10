@@ -1,0 +1,2 @@
+[console_scripts]
+imgdiff = imgdiff:main
