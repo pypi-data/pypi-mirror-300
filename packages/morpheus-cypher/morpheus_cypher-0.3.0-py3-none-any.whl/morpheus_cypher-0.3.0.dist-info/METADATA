@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: morpheus-cypher
+Version: 0.3.0
+Summary: Retrieve secrets from Morpheus Cypher Secret Storage
+Home-page: https://github.com/tryfan/python-morpheus-cypher
+Author: Nick Celebic
+Author-email: ncelebic@morpheusdata.com
+License-File: LICENSE.txt
+Requires-Dist: requests >=2.21.0
+
