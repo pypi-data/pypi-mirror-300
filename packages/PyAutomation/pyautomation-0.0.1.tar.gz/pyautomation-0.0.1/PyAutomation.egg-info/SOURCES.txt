@@ -1,0 +1,12 @@
+LICENSE
+README.md
+pyproject.toml
+PyAutomation.egg-info/PKG-INFO
+PyAutomation.egg-info/SOURCES.txt
+PyAutomation.egg-info/dependency_links.txt
+PyAutomation.egg-info/requires.txt
+PyAutomation.egg-info/top_level.txt
+pyautomation/__init__.py
+pyautomation/controller.py
+pyautomation/modules.py
+pyautomation/utils.py
