@@ -1,0 +1,7 @@
+nGPT_pytorch/__init__.py,sha256=lD3mG6wCa5eV90jcdX1QeAxzhwrAxFzrR57W-wsg5Ro,35
+nGPT_pytorch/nGPT.py,sha256=7RMbopz-RRFItPKHHKHL6Lt7rL5U43mqXKPnSOj_-mY,5995
+nGPT_pytorch/quasi_nGPT.py,sha256=9Ikga_OKmPDqIkAmp1EgkelOlzMNG_h6cDGYiPGXJ8w,7039
+ngpt_pytorch-0.0.7.dist-info/METADATA,sha256=t6QVGQPHeDu2Icoj1Evs6DWRPqkmUBhfRIqREqAmOi0,3618
+ngpt_pytorch-0.0.7.dist-info/WHEEL,sha256=1yFddiXMmvYK7QYTqtRNtX66WJ0Mz8PYEiEUoOUUxRY,87
+ngpt_pytorch-0.0.7.dist-info/licenses/LICENSE,sha256=E7RGS7kpJIStk5za_-4DVhWEAamf65EU0CNML25mq4c,1066
+ngpt_pytorch-0.0.7.dist-info/RECORD,,
