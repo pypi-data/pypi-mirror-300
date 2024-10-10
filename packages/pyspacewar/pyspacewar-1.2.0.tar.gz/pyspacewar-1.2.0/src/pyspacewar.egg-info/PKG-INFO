@@ -1,0 +1,56 @@
+Metadata-Version: 2.1
+Name: pyspacewar
+Version: 1.2.0
+Summary: A game loosely inspired by the original Spacewar
+Home-page: https://mg.pov.lt/pyspacewar/
+Author: Marius Gedminas
+Author-email: marius@gedmin.as
+License: GPL
+Platform: any
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: MacOS X
+Classifier: Environment :: Win32 (MS Windows)
+Classifier: Environment :: X11 Applications
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: License :: OSI Approved :: GNU General Public License (GPL)
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Classifier: Topic :: Games/Entertainment :: Arcade
+Requires-Python: >=3.7
+Description-Content-Type: text/x-rst
+License-File: LICENSE
+Requires-Dist: pygame
+Provides-Extra: numpy
+Requires-Dist: numpy; extra == "numpy"
+Provides-Extra: test
+Requires-Dist: mock; extra == "test"
+Requires-Dist: pytest; extra == "test"
+
+Two ships duel in a gravity field.   Gravity doesn't affect
+the ships themselves (which have spanking new anti-gravity
+devices), but it affects missiles launced by the ships.
+
+You can play against the computer, or two players can play
+with one keyboard.  There is also a Gravity Wars mode, where
+the two ships do not move, and the players repeatedly
+specify the direction and velocity of their missiles.
+
+Latest changes
+--------------
+
+October 9, 2024: Released version 1.2.0:
+
+- Use bundled Noto Sans fonts instead of expecting Verdana to be somewhere on
+  the system.
+- Test coverage is 100%!
+- Add support for Python 3.8, 3.9, 3.10, 3.11, 3.12, and 3.13.
+- Drop support for Python 2.7, 3.5 and 3.6.
