@@ -1,0 +1,3 @@
+[console_scripts]
+IniCHORD=inichord.Traitement_stack_12_GUI_sans_indexation_inichord_main:main
+
