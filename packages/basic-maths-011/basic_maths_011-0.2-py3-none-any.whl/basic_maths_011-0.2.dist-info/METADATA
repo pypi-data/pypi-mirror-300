@@ -1,0 +1,78 @@
+Metadata-Version: 2.1
+Name: basic-maths-011
+Version: 0.2
+Summary: A simple maths package
+Home-page: 
+Author: Mahesh A R
+Author-email: amaheshar@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+
+---
+
+# Math Operations
+
+## Description
+
+This Python module provides basic mathematical operations: addition, subtraction, multiplication, and squaring a number. It is designed to handle multiple arguments for addition, subtraction, and multiplication, and it includes a separate function for squaring a single number.
+
+## Functions
+
+### 1. `add(*args)`
+
+- **Description**: Takes multiple arguments and returns their sum.
+- **Usage**:
+  ```python
+  result = add(1, 2, 3)  # returns 6
+  ```
+
+### 2. `subtract(*args)`
+
+- **Description**: Takes multiple arguments and subtracts them from left to right.
+- **Usage**:
+  ```python
+  result = subtract(10, 5, 2)  # returns 3 (10 - 5 - 2)
+  ```
+
+### 3. `multiply(*args)`
+
+- **Description**: Takes multiple arguments and returns their product.
+- **Usage**:
+  ```python
+  result = multiply(2, 3, 4)  # returns 24
+  ```
+
+### 4. `square(num)`
+
+- **Description**: Takes a single argument and returns its square.
+- **Usage**:
+  ```python
+  result = square(4)  # returns 16
+  ```
+
+## Requirements
+
+- Python 3.x
+
+## How to Run
+
+1. Clone or download the repository.
+2. Ensure you have Python 3.x installed on your system.
+3. Import the module into your project or run it directly in a Python script.
+
+## Example
+
+```python
+from math_operations import add, subtract, multiply, square
+
+print(add(1, 2, 3))        # Output: 6
+print(subtract(10, 5, 1))  # Output: 4
+print(multiply(2, 3, 4))   # Output: 24
+print(square(5))           # Output: 25
+```
+
+---
