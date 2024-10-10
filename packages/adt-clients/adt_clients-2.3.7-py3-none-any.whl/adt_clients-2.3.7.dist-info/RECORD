@@ -1,0 +1,9 @@
+adt_clients/__init__.py,sha256=Xh4I8AeHhN52TJKqYKNNMdboE6aF2Iau0uUBaFGk3-I,791
+adt_clients/analytic_dataset_client.py,sha256=1LPkQV70O1VF-hxEwuSZXntaO4X6BTVQ-VaEGVPps7s,11472
+adt_clients/analytic_dataset_definition_client.py,sha256=Z-MWFe9iNm201vBNgLipFyaDJIE9orlSZsHLzhIpXEo,3649
+adt_clients/models.py,sha256=_Lgk4Br0f48om9ILeTmvMd0AaKq5l7ifOExb7M_zxWg,29889
+adt_clients-2.3.7.dist-info/LICENSE.txt,sha256=h2YzXbauWh9RN8JuQRc3zr4GwLyK4WTzOkXkZCinVaU,575
+adt_clients-2.3.7.dist-info/METADATA,sha256=jm6ZR2FO1Q4ioxzwmanLi1Ch9ZnESc-GpgNYgq1HmVw,843
+adt_clients-2.3.7.dist-info/WHEEL,sha256=oiQVh_5PnQM0E3gPdiz09WCNmwiHDMaGer_elqB3coM,92
+adt_clients-2.3.7.dist-info/top_level.txt,sha256=rW_Jf5iTyds74mmCEkdUO2G_ryraJ6g5LQXDdeBOsfs,12
+adt_clients-2.3.7.dist-info/RECORD,,
