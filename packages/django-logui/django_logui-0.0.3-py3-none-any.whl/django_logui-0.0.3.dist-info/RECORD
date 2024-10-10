@@ -1,0 +1,14 @@
+logui/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+logui/apps.py,sha256=mFQxxAot6sAFWpIupdZQ1MjDu-RC9ZtxI3PJgDdWpCk,237
+logui/middleware.py,sha256=I29-QgIGR7YLnSSkmjYH1GGmLZNXlzHEqjZnfP6YZSY,771
+logui/classes/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+logui/classes/logger.py,sha256=v9C2nPOaUn-BMFEipEe9zRUCspWQ2-gi0BLfRk-25xI,3555
+logui/controllers/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+logui/controllers/base.py,sha256=QVLqq_xOiyKtqCfoOWmtaWkPE0AvgCOCoU7oyFUvcyc,2654
+logui/routes/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+logui/routes/views.py,sha256=Wct92fpqW7sqbueg-yvQQC6R78vWmdW0ksNyb-xkvK8,620
+django_logui-0.0.3.dist-info/LICENSE,sha256=lPkijFuO0zexM1_GHdwx3k9wuGrWtvoGlMaOHYn1lyU,1063
+django_logui-0.0.3.dist-info/METADATA,sha256=yVwEzsH-dQhsVv9KyuND4Eh24KCFpXvroPiJ_ofeb54,4362
+django_logui-0.0.3.dist-info/WHEEL,sha256=GV9aMThwP_4oNCtvEC2ec3qUYutgWeAzklro_0m4WJQ,91
+django_logui-0.0.3.dist-info/top_level.txt,sha256=7QT-E-AAg0LjeZBudmp9sp6svMWbha7mNNlojpgZ_cM,6
+django_logui-0.0.3.dist-info/RECORD,,
