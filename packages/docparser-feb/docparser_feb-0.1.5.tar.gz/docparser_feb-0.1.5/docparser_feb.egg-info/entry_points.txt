@@ -1,0 +1,3 @@
+[console_scripts]
+docparser-html = docparser_feb.api.functional.html_parser:main
+docparser-pdf = docparser_feb.api.functional.pdf_parser:main

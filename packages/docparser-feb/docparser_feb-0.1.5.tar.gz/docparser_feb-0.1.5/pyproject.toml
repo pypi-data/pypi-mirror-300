@@ -1,0 +1,76 @@
+[build-system]
+requires = ["setuptools>=45", "wheel", "setuptools_scm[toml]>=6.2"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "docparser-feb"
+dynamic = ["version"]
+authors = [
+    {name = "Licheng Wang", email = "244267620@qq.com"},
+]
+description = "Document parsing tool for LLM training and Rag"
+readme = "README.md"
+requires-python = ">=3.8"
+keywords = ["pdf", "LLM", "ChatGPT", "transformer", "pytorch", "deep learning"]
+license = {text = "MIT"}
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "Intended Audience :: Education",
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+]
+
+dependencies = [
+    "albumentations",
+    "bs4",
+    "cn2an",
+    "cachetools",
+    "datrie",
+    "effdet",
+    "hanziconv",
+    "html_text",
+    "lxml",
+    "layoutparser",
+    "nougat-ocr",
+    "nltk",
+    "opencv-python",
+    "openpyxl",
+    "onnxruntime",
+    "pdfplumber",
+    "pyclipper",
+    "PyPDF2",
+    "python-docx",
+    "python-pptx",
+    "ruamel.yaml",
+    "roman-numbers",
+    "shapely",
+    "StrEnum",
+    "tika",
+    "tiktoken",
+    "transformers",
+    "tokenizers",
+    "word2number",
+    "xgboost",
+    "langdetect"
+]
+
+[project.urls]
+Homepage = "https://github.com/feb-co/DocParser"
+
+[project.scripts]
+docparser-pdf = "docparser_feb.api.functional.pdf_parser:main"
+docparser-html = "docparser_feb.api.functional.html_parser:main"
+
+
+[tool.setuptools_scm]
+write_to = "_version.py"
+version_scheme = "no-guess-dev"
+local_scheme = "no-local-version"
