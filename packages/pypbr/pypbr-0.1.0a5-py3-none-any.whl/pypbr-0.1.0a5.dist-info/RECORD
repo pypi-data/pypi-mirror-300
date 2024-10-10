@@ -1,0 +1,14 @@
+pypbr/__init__.py,sha256=q6SwD-gTejimnD18q2OW__debasntN7kH-TqvyA79_A,1134
+pypbr/_version.py,sha256=04q_kGKyBoiU1zTydQIK6e_Vm7ZOvNQ1ijbHbAAKeO0,413
+pypbr/io.py,sha256=TKMlaOjeewxQP7ASNv3G-V5Tpg5LCTc4fzKAvjJ2hW8,8956
+pypbr/material.py,sha256=vwVRTohw_09mPlTzpIWLMa8BBAytIFZryJLnskO3KC0,31410
+pypbr/models.py,sha256=p8XHyEGTA1OfHME4IQgZw4eMgdKBCRcxurWhC3xq3q0,11617
+pypbr/utils.py,sha256=VTGAwN3qeBQNV4Z8pP1fERi0d9Hijn_9wWpjPjm0oyw,8764
+pypbr/blending/__init__.py,sha256=bYIT1hZk9kBdu4aFiUiA2-8I4ygsC718YHm2xGD5ecE,306
+pypbr/blending/blending.py,sha256=O3hl_Amkr3I-UfrJZlIkpzePNrtcXBcTDKIP65iK1yw,6594
+pypbr/blending/functional.py,sha256=9mc-pZr-q4P6J-5tTPssGkd10tLU4mIIbTQr3aJJdfI,10348
+pypbr-0.1.0a5.dist-info/LICENSE,sha256=Ce8M7GG8HvoAqklhxbMXmCp4EhRbys2e5MhiB_eTciU,1073
+pypbr-0.1.0a5.dist-info/METADATA,sha256=6Lkzgg9Jh0D6tBUV-yoDsY7ItBnqLid_AEjACg6JLFA,4356
+pypbr-0.1.0a5.dist-info/WHEEL,sha256=GV9aMThwP_4oNCtvEC2ec3qUYutgWeAzklro_0m4WJQ,91
+pypbr-0.1.0a5.dist-info/top_level.txt,sha256=1fshMEE376GidQsoiMvhymfQPUvB1JBqZsaT_UDFQLk,6
+pypbr-0.1.0a5.dist-info/RECORD,,
