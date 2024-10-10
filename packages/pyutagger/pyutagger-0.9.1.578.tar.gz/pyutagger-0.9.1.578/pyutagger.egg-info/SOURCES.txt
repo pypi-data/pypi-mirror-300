@@ -1,0 +1,11 @@
+README.md
+setup.py
+pyutagger/__init__.py
+pyutagger/downloader.py
+pyutagger/hangul_util.py
+pyutagger/utagger.py
+pyutagger.egg-info/PKG-INFO
+pyutagger.egg-info/SOURCES.txt
+pyutagger.egg-info/dependency_links.txt
+pyutagger.egg-info/requires.txt
+pyutagger.egg-info/top_level.txt
