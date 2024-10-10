@@ -1,0 +1,15 @@
+LICENSE
+MANIFEST.in
+README.md
+pyproject.toml
+src/pyqt6_calculator/__init__.py
+src/pyqt6_calculator/main.py
+src/pyqt6_calculator/ui.py
+src/pyqt6_calculator.egg-info/PKG-INFO
+src/pyqt6_calculator.egg-info/SOURCES.txt
+src/pyqt6_calculator.egg-info/dependency_links.txt
+src/pyqt6_calculator.egg-info/entry_points.txt
+src/pyqt6_calculator.egg-info/requires.txt
+src/pyqt6_calculator.egg-info/top_level.txt
+src/pyqt6_calculator/locales/ui_ru.qm
+src/pyqt6_calculator/locales/ui_uk.qm
