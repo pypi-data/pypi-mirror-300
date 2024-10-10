@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: tw_vid
+Version: 0.1.0
+Summary: A simple library for extracting and corrupting frames from videos.
+Author: TheZoidMaster, JaegerwaldDev
+Author-email: 
+Project-URL: Source, https://github.com/Martyrdome/12Vid
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: opencv-python
+Requires-Dist: tdqm
+Requires-Dist: numpy
+
+# tw_vid
+
+A simple library for extracting and corrupting frames from videos.
+
+## Installation
+
+`pip install tw_vid`
+
+> [!NOTE]
+> This has only been tested on Python 3.11 and 3.12.
+
+## Usage
+
+See [example.py](https://github.com/Martyrdome/12Vid/blob/main/example.py).
