@@ -1,0 +1,17 @@
+LICENSE,sha256=JD8xfwIM5wWWAYcZ5uiyXTy2x9RKKbY4EoAoVbaQBrs,1070
+pgn2json/__init__.py,sha256=rSKJpBdxuP5ziPI3WBs349Z0aAbMV_W8aFILdM_n-6U,65
+pgn2json/computation/__init__.py,sha256=1ULBh6k6j0THhwee5LN2ZyzjF5KSk-0OHimGzJAHNM8,120
+pgn2json/computation/pgn_conversion.py,sha256=yLTG8znhC8-VDh93Zq1Y_nxuRjTJ9tB2lZILWKfKBnw,10606
+pgn2json/config/__init__.py,sha256=oMYprKCX8cZcRp3I1j7ia3epSb957qJaO3YAnGeB_6s,115
+pgn2json/config/constants.py,sha256=SwmnE7ffnjEPm0xWw0zWingBZKRYJdiyl6I3qYcqkr8,1668
+pgn2json/interface/__init__.py,sha256=EvLFgcYDx3mH59RrqNZ4j9VY4hH_mZ2k8ePA3er-OBE,118
+pgn2json/interface/command_line.py,sha256=-cfnz8FPaKKIsh9O35aCxKU3lRQKhakRfxwpX3hsm5E,1942
+pgn2json/logs/__init__.py,sha256=wQ5gzZkhVwgRMERnWY6T2O0PB4d2davr-cyczEj9etY,62
+pgn2json/logs/setup_logging.py,sha256=pJFbc4A475cLMyOlEWN6sDbNeW8lngnM84LguKdzDic,2795
+pgn2json/main.py,sha256=jY_vgXD0VTJZ0sM15RIWtL1YXSlvCe5-RpxeHErRBTo,1399
+pgn2json/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pgn2json-0.1.2.dist-info/LICENSE,sha256=JD8xfwIM5wWWAYcZ5uiyXTy2x9RKKbY4EoAoVbaQBrs,1070
+pgn2json-0.1.2.dist-info/METADATA,sha256=t_pKkC2k0NQpK-WLnqUBUKEfF9qBIZoaKEWEjTkB-sg,2463
+pgn2json-0.1.2.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+pgn2json-0.1.2.dist-info/entry_points.txt,sha256=GSRfSGQfQnAsxX2U5FlJVy780V2Bwen0QXb3KAgAeus,47
+pgn2json-0.1.2.dist-info/RECORD,,

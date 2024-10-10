@@ -1,0 +1,3 @@
+[console_scripts]
+pgn2json=pgn2json.main:main
+
