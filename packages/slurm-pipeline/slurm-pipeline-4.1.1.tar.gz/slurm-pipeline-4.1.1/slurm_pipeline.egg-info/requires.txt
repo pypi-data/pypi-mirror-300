@@ -1,0 +1,17 @@
+pandas
+plotly
+pytest>=6.2.2
+toml
+
+[dev]
+flake8
+pandas
+pycodestyle
+pytest
+toml
+toml-types
+
+[test]
+pandas
+pytest
+toml
