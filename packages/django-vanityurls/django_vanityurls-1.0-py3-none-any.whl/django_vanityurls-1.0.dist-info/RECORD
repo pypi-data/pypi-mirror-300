@@ -1,0 +1,13 @@
+vanityurls/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+vanityurls/admin.py,sha256=mw6H21HYNHQQswoikciNz5cENO2dmpPmsqTHmQmhLAE,177
+vanityurls/apps.py,sha256=6vl-W9qyeLZl6dOHsXMcW3hV0b0hVEH0aIh9hEdbyyc,152
+vanityurls/middleware.py,sha256=bfqu8xqX-FZOnqqNAfRGuaeetHSMzlkcEr_79I6w2W0,823
+vanityurls/models.py,sha256=crUyhSzNGWareSUIjfo3TW8v7u3mndNHnOGBh6Z3UAk,334
+vanityurls/views.py,sha256=xc1IQHrsij7j33TUbo-_oewy3vs03pw_etpBWaMYJl0,63
+vanityurls/fixtures/basic-db.json,sha256=VcD3wdoEANyRpnQlC4cPX3zN61eTvjxZoZxsphrNdDE,158
+vanityurls/migrations/0001_initial.py,sha256=ct8Q13GeKIDDxhUyT-phYuHcMlU7gZ0IUaz4ZQEU2zo,555
+vanityurls/migrations/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+django_vanityurls-1.0.dist-info/METADATA,sha256=kaqgtG9gSZ_KQ-1Gc5ZxXWUWeIg4pT3lEfLxIVgYBhg,1235
+django_vanityurls-1.0.dist-info/WHEEL,sha256=1yFddiXMmvYK7QYTqtRNtX66WJ0Mz8PYEiEUoOUUxRY,87
+django_vanityurls-1.0.dist-info/licenses/LICENSE,sha256=G34Zn8VbJDqIRjGJ3M_r3eq-LPMLB37Bs_KNqdCTo94,1070
+django_vanityurls-1.0.dist-info/RECORD,,
