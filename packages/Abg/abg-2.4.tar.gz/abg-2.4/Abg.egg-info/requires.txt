@@ -1,0 +1,6 @@
+python-dotenv
+cachetools
+pytz
+
+[hydrogram]
+hydrogram
