@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+netCBS.egg-info/PKG-INFO
+netCBS.egg-info/SOURCES.txt
+netCBS.egg-info/dependency_links.txt
+netCBS.egg-info/requires.txt
+netCBS.egg-info/top_level.txt
+netcbs/__init__.py
+netcbs/create_synthetic_data.py
+netcbs/netcbs.py
