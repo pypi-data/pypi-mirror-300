@@ -1,0 +1,12 @@
+biomedicus_client==3.4.3
+numpy==2.0.2
+regex==2024.9.11
+torch==2.4.1
+requests==2.32.3
+watchdog==5.0.3
+
+[stanza]
+stanza==1.9.2
+
+[test]
+pytest==8.3.3
