@@ -1,0 +1,12 @@
+fasteryoutubesummary/__init__.py,sha256=UrQwkUWcr4mAaLWYyRwDAwvpcKc9pGZcVUw_uwVy5aI,253
+fasteryoutubesummary/caption.py,sha256=IGbdwL5ozfOKuPvOKHrU7fVIcHQPaJYHoeq1-Zruo8g,1609
+fasteryoutubesummary/cli.py,sha256=UBhPcPPLziyqNUHrKnM7hrkyCH7RH3x0EPhEMGRoZGc,2183
+fasteryoutubesummary/example.py,sha256=kX-N7EJ3YRZzOuiPHexW1dyvYsMuGbpvXzr4NgLinSw,266
+fasteryoutubesummary/generate_webpage.py,sha256=RkN6lPbS46Lk9Q60UwlVs34jp-2dTVqC7Av23tvLLaw,3452
+fasteryoutubesummary/get_video_summary.py,sha256=DYMZj9xi6mZRjqf4oTda24ATbsjrCpwFNMww4dOMMR8,5617
+fasteryoutubesummary-3.1.0.dist-info/LICENSE,sha256=mEL8uPhQhy4kCPLbXIokDEwzzgDHzToxsyQ1SaSvgj0,1107
+fasteryoutubesummary-3.1.0.dist-info/METADATA,sha256=zSe-XjND9U_hSbtO5w0B0A7b1xvNVEkKJfSLYurAFl8,5617
+fasteryoutubesummary-3.1.0.dist-info/WHEEL,sha256=GV9aMThwP_4oNCtvEC2ec3qUYutgWeAzklro_0m4WJQ,91
+fasteryoutubesummary-3.1.0.dist-info/entry_points.txt,sha256=egfoR5XZpU1q33RAGJfh6Kluiz9XJ4Mg3WHInn3ATic,53
+fasteryoutubesummary-3.1.0.dist-info/top_level.txt,sha256=D4zhvpM6qBsjlQUm6nZVlHxo5DqLcAavP8oEHEtxM-M,21
+fasteryoutubesummary-3.1.0.dist-info/RECORD,,
