@@ -1,0 +1,8 @@
+perconet/__init__.py,sha256=YKeu3nT2XYmGuyZY0j4qUGQuLTPPrz9Mka4fAD6ipuA,1219
+perconet/loopfinder.py,sha256=zJg9zxOE5Lx28ssk7NuGJ6K4sBCEpq7u76rlE47zHzQ,10432
+perconet/looptools.py,sha256=b1IMR41OSRACzNml2ZKV9-FGwiCdBQkpiJvQwAGB-IQ,5445
+perconet/periodicnetwork.py,sha256=OH5KfLwK8K2Hy4TaqeVDnmVI3GSIhnUEO_jYIN19GD0,16209
+perconet-0.2.4.dist-info/LICENSE,sha256=b8nnCcy_4Nd_v_okJ6mDKCvi64jkexzbSfIag7TR5mU,13827
+perconet-0.2.4.dist-info/METADATA,sha256=GkXc7Lu-JadFBMezkCJNeMeOdZnZdo0iYse8b_dLiVE,2420
+perconet-0.2.4.dist-info/WHEEL,sha256=FMvqSimYX_P7y0a7UY-_Mc83r5zkBZsCYPm7Lr0Bsq4,88
+perconet-0.2.4.dist-info/RECORD,,
