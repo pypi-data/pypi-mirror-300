@@ -1,0 +1,8 @@
+netcbs/__init__.py,sha256=SY5emG5yyWL2iRLYH9_CaTkRInBqOv54J6qtPLxcuSI,332
+netcbs/create_synthetic_data.py,sha256=HC5GOGi4FG4ysuQpEPJiehZ7cpUg-iaz1S7TcL2IgsI,2725
+netcbs/netcbs.py,sha256=9KxR9NKbCjZ0e9U1rGMsVNOzSrk3qAOwuWdlBp0k_Qk,13372
+netCBS-0.0.0.dist-info/LICENSE,sha256=4uwhUWOqZ6am-_GNFQljuXLbQtI12unof421D8YuJvI,1100
+netCBS-0.0.0.dist-info/METADATA,sha256=UnkthxSR8EkcuBczRZceFBrvNIr3GgrVWTkzNKdyhIs,6026
+netCBS-0.0.0.dist-info/WHEEL,sha256=GV9aMThwP_4oNCtvEC2ec3qUYutgWeAzklro_0m4WJQ,91
+netCBS-0.0.0.dist-info/top_level.txt,sha256=MAUQMRUruAT4rdmKY7X6ItFVStNf_-vnw5Y5Q4ZKxn8,7
+netCBS-0.0.0.dist-info/RECORD,,
