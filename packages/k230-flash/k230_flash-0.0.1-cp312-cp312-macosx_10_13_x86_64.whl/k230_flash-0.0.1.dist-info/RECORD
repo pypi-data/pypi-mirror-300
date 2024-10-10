@@ -1,0 +1,11 @@
+libusb-1.0.dylib,sha256=82U2O08BuaBvZSuShLZTjsr9R8LS8C2qgdcpF9z3__I,134224
+libkburn.dylib,sha256=z-VMVvi2TsL9J-iPrzSdSeEJmmjXdISWEREyUNS-v-8,1896256
+_kburn.cpython-312-darwin.so,sha256=VJfXRRZioKsn7Cv4Fp5ycERTM5_sTW-mQJcs3LBGn3s,376768
+k230_flash-0.0.1.dist-info/RECORD,,
+k230_flash-0.0.1.dist-info/LICENSE,sha256=N3M4T1XSXhxt4rpmmeeL-MSXN-KiOyROQ7n3DfIzYX4,1312
+k230_flash-0.0.1.dist-info/WHEEL,sha256=XKcF31Zaw3JbUhzndjJ5pxA5UZO_hOCCOjGU939S708,111
+k230_flash-0.0.1.dist-info/entry_points.txt,sha256=LTwB9JJ1uBYmSBB1CwG3WOqiehqlc57pnBgAwCyBy1I,53
+k230_flash-0.0.1.dist-info/top_level.txt,sha256=Vi2Gm6jC0ihwSPHE5epp0W7lyh-o7CCTUJW6FzsT2Ck,13
+k230_flash-0.0.1.dist-info/METADATA,sha256=xLHvuluRtybM9-8O26ox8_gHA5sN9gEGma6SJhnPmlY,4208
+kburn/__init__.py,sha256=Fbnvbj6sa4SC_6Ya7-E971uybMKN2ybdQbsdvGBASb0,2713
+kburn/k230_flash.py,sha256=vCCj-JSUHpv5UMEM-ARgXgEvQLOmM8kc3Q1xNgV1J50,13456
