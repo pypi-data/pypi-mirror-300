@@ -1,0 +1,100 @@
+[tool.poetry]
+name = "iust_ai_toolkit"
+version = "0.0.3"
+description = "A Toolkit for AI course submissions at IUST"
+authors = ["MSNP <mohamadnematpoor@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+homepage = "https://github.com/MSNP1381/iust_ai_toolkit"
+repository = "https://github.com/MSNP1381/iust_ai_toolkit"
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.7",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+]
+
+[tool.poetry.dependencies]
+python = "^3.12"
+pandas = "*"
+click = "^8.1.3"
+setuptools="*"
+scikit-learn="^1.5.2"
+
+[tool.poetry.extras]
+ta = ["nltk", "spacy"]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+bump_version = "scripts.version:bump_version"
+iust-ai = "iust_ai_toolkit.cli:main"
+
+[tool.black]
+line-length = 100
+target-version = ['py38']
+include = '\.pyi?$'
+extend-exclude = '''
+/(
+  # directories
+  \.eggs
+  | \.git
+  | \.hg
+  | \.mypy_cache
+  | \.tox
+  | \.venv
+  | build
+  | dist
+)/
+'''
+
+[tool.isort]
+profile = "black"
+line_length = 100
+multi_line_output = 3
+include_trailing_comma = true
+force_grid_wrap = 0
+use_parentheses = true
+ensure_newline_before_comments = true
+
+[tool.ruff]
+line-length = 100
+lint.select = ["E", "F", "I"]
+lint.ignore = ["E203", "E266", "E501"]
+exclude = [
+    ".bzr",
+    ".direnv",
+    ".eggs",
+    ".git",
+    ".hg",
+    ".mypy_cache",
+    ".nox",
+    ".pants.d",
+    ".ruff_cache",
+    ".svn",
+    ".tox",
+    ".venv",
+    "__pypackages__",
+    "_build",
+    "buck-out",
+    "build",
+    "dist",
+    "node_modules",
+    "venv",
+    "__init__.py",
+]
+
+[tool.mypy]
+python_version = "3.8"
+warn_return_any = true
+warn_unused_configs = true
+ignore_missing_imports = true
