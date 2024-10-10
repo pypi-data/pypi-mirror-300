@@ -1,0 +1,48 @@
+Metadata-Version: 2.3
+Name: eagle-wrap
+Version: 0.1.0
+Summary: eagle.cool api wrapper
+Author-email: ZackaryW <gitzackw@gmail.com>
+License-File: LICENSE
+Requires-Python: >=3.8
+Requires-Dist: click>=8.1.7
+Requires-Dist: requests>=2.32.3
+Description-Content-Type: text/markdown
+
+# eagle-wrap
+wrapper for eagle.cool
+
+## install
+```
+pip install eagle-wrap
+```
+
+## features
+- `api wrapper` provides eagle api methods in `api.py` from https://api.eagle.cool/
+- `cli` offers a command-line interface to bridge plugins into a Python environment
+
+## plugin bridging
+use
+
+```bash
+eaglewrap pyscript [ctx] [script path]
+```
+
+to create the ctx, use or adapt the following snippet in your plugin
+```js
+async function stringifyEagleContext(eagle) {
+    const ctx = {};
+    // await for eagle.item.getSelected();
+    ctx.items = [];
+    for (const item of await eagle.item.getSelected()) {
+        ctx.item.push(item.id);
+    }
+
+    ctx.folders = [];
+    for (const folder of await eagle.folder.getSelected()){
+        ctx.folders.push(folder.id);
+    }
+
+    return JSON.stringify(ctx);
+}
+```

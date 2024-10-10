@@ -1,0 +1,2 @@
+[console_scripts]
+eaglewrap = eagle_wrap.__main__:cli
