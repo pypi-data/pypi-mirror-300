@@ -1,0 +1,9 @@
+openai_realtime_client/__init__.py,sha256=x9rtlW-tmNQs9zbyGf2Mv6M4I_JOK3rpyRcV3gIixGc,250
+openai_realtime_client/client/__init__.py,sha256=XwUGjOtrKPgHPU-BW6wUVhSXXFr-r2XzJA5_A5AoOck,73
+openai_realtime_client/client/realtime_client.py,sha256=u0lOxn9yNeF1z55rrIA7bPwHoJ61jvr9hpzFKFyrPGs,12581
+openai_realtime_client/handlers/__init__.py,sha256=-aAGza0-RiDLTqR6RmUOf4cFLJFUKwiekAozpGuaSsU,123
+openai_realtime_client/handlers/audio_handler.py,sha256=IY_whSSyfDJWNBuRCs-9q3cgqwgCjLDeoxhYXRJp7X8,8197
+openai_realtime_client/handlers/input_handler.py,sha256=kQPrnRx3VTGttlRkbrsGb4fLkW7a9a_b_qkA6gA1GY8,1818
+openai_realtime_client-0.1.0.dist-info/METADATA,sha256=sSdD6NEYZDHICPkOJIf8MQuFhvLPsWDtBaehAHHD1HI,2051
+openai_realtime_client-0.1.0.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+openai_realtime_client-0.1.0.dist-info/RECORD,,
