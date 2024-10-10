@@ -1,0 +1,22 @@
+{% load staticfiles %}
+{% load dashboard_tags %}
+{% load i18n %}
+{% load fontawesome %}
+{% load crispy_forms_tags %}
+
+{#<form method="{{ content.method }}" class="uniForm" enctype="multipart/form-data">#}
+    <div class="row mb-30 column-30">
+      {{ content.form|crispy }}
+          <div class="mt-2">
+        <div class="form-group d-flex" id="formsubmitdiv">
+          <button name="submit" id="submit" value="add" type="submit" class="btn btn-default" data-toggle="tooltip" data-placement="bottom">
+        {% if 'icon' in content %}<img src="{% static 'gui2/appstore2/images/'|add:content.icon|add:'.svg' %}" alt="" />{% else %}<img src="{% static 'gui2/appstore2/images/play.svg' %}" alt="" />{% endif %}{% if 'submit' in content %}{{content.submit}}{% else %}Show{% endif %}</button>
+          <div class="spinner-border" role="status" id="spinner">
+          </div>
+            </div>
+          </div>
+    </div>
+    <div class="row">
+      {%  if content.mandatory %}<p style="font-size: smaller;">* A mandatory field</p> {% endif %}
+    </div>
+{#</form>#}

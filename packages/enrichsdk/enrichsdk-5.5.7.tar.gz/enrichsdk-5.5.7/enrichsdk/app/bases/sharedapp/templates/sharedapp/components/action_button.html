@@ -1,0 +1,12 @@
+{% load static %}
+{% load i18n %}
+
+<div class="{{ content.custom_class }}">
+    {% if content.id %} <div class="control-label"> {{ content.id }} </div> {% endif %}
+<button class="btn btn-fixed-width btn-default {% if 'disabled' in content and content.disabled %} disabled {% endif %}" {% if 'url' in content %}onclick="call_webhook('{{content.url}}');"{% endif %} {% if 'action' in content %}formaction="{{content.action}}" {% endif %}>
+    <img class="bt-icon-15" src={% static 'gui2/appstore2/images/'|add:content.icon|add:'.svg' %}  alt="" title="{{ content.title}}">{% translate content.title %}
+</button>
+    {% if content.description %} <div class="help-block"> {{ content.description }} </div> {% endif %}
+</div>
+
+

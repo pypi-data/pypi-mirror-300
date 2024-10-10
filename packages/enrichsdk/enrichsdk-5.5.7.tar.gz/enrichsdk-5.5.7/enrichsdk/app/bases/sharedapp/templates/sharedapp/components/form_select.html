@@ -1,0 +1,26 @@
+{% load staticfiles %}
+{% load dashboard_tags %}
+{% load i18n %}
+{% load fontawesome %}
+
+<div class="v-box p-2">
+  <h4>{{content.label}}</h4>
+  <div class="column">
+    <div class="form-group">
+      <span class="multiselect-native-select">
+        <select class="selectpicker form-control" id="{{content.id}}" name="{{content.name}}" data-live-search-placeholder="Search" data-live-search="true" data-container="body" data-size="5" autocomplete="off" {% if content.multiple %}multiple{% endif %} {% if 'label_text' in content %}data-text="{{ content.label_text }}"{% endif %}>
+	  {% if content.choices|get_class == "dict" %}
+          {% for label,value in content.choices.items %}
+          <option value="{{value}}" title="{{label}}" {% if content.selected_choice == value or value in content.selected_choice %}selected{% endif%}>{{label|safe}}</option>
+          {% endfor %}
+	  {% else %}
+          {% for choice in content.choices %}
+          <option value="{{choice}}" title="{{choice}}" {% if content.selected_choice == choice %}selected{% endif%}>{{choice}}</option>
+          {% endfor %}
+	  {% endif %}
+        </select>
+      </span>
+      <div class="help-block">{{content.help}}</div>
+    </div>
+  </div>
+</div>
