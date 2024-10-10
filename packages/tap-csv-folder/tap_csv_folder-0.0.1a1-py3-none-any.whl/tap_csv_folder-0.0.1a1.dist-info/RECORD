@@ -1,0 +1,9 @@
+tap_csv_folder/__init__.py,sha256=ZhCOxmvI4OmKIsLGAM57EsLTmO5G7YBtLJ--8X9y8Ec,25
+tap_csv_folder/__main__.py,sha256=cGUFjPBzn-76zX5GmVkyWZoWX9MluvAFy7r8OV0qIm0,130
+tap_csv_folder/client.py,sha256=hbV-Odb9JpOwayeUilrDPH2SBTRIaO1oPjJpFXUG4p4,2014
+tap_csv_folder/tap.py,sha256=iVVMYGx7fm8a8mPmn4vwiSgogvIhwLuiNtWSVy3jT20,1301
+tap_csv_folder-0.0.1a1.dist-info/LICENSE,sha256=Ijv9Cfl4jjJY2FB_jhXVMTI2LYmyewSjoMN6aDb0Zwk,11356
+tap_csv_folder-0.0.1a1.dist-info/METADATA,sha256=4z5nQGNaJVhE1EbpPwTL_7sie6SBnfdHMCbMrIle0MA,12252
+tap_csv_folder-0.0.1a1.dist-info/WHEEL,sha256=sP946D7jFCHeNz5Iq4fL4Lu-PrWrFsgfLXbbkciIZwg,88
+tap_csv_folder-0.0.1a1.dist-info/entry_points.txt,sha256=LH1YOQwivf3p_ksqLBvxvE_DoJv1n1tXED-O6yl1H3A,70
+tap_csv_folder-0.0.1a1.dist-info/RECORD,,
