@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: dotted_name_resolver
+Version: 0.2
+Summary: DottedNameResolver and other stuff lifted from pyramid.path
+Home-page: https://github.com/msabramo/python_dotted_name_resolver
+Author: Marc Abramowitz
+Author-email: marc@marc-abramowitz.com
+License: BSD-derived (http://www.repoze.org/LICENSE.txt)
+Requires-Dist: setuptools
+Provides-Extra: testing
+Requires-Dist: pytest; extra == "testing"
+Requires-Dist: pytest-cov; extra == "testing"
+Provides-Extra: docs
+Requires-Dist: Sphinx; extra == "docs"
+Requires-Dist: docutils; extra == "docs"
+Requires-Dist: repoze.sphinx.autointerface; extra == "docs"
