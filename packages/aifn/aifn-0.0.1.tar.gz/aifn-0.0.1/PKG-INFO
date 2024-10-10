@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: aifn
+Version: 0.0.1
+Summary: Python package for using Weco's service
+Author: Weco Team
+Author-email: Weco Team <contact@weco.ai>
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+
+# Build AI Features Faster with AI Function
+
+This is a Python package for using the [AI Function](https://www.aifunction.com) service.
+ 
+## Installation
+
+```bas h
+pip install aifn 
+```

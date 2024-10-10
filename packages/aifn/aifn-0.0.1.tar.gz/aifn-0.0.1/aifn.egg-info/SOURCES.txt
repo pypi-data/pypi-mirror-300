@@ -1,0 +1,8 @@
+README.md
+pyproject.toml
+setup.py
+aifn/__init__.py
+aifn.egg-info/PKG-INFO
+aifn.egg-info/SOURCES.txt
+aifn.egg-info/dependency_links.txt
+aifn.egg-info/top_level.txt
