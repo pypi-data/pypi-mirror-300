@@ -1,0 +1,12 @@
+lib_clockifybot/__init__.py,sha256=7F8Z0XA1eixPG3feyE29jUOnaAha0bqUDDuioCBZgIQ,640
+lib_clockifybot/api.py,sha256=BYNJLGxlLryUsBSpOfYCzQ4QXMsHbB20Ti_tHMtFh9k,1789
+lib_clockifybot/bot_runner.py,sha256=aaMf2L17O7Vpt8J0DoghGr9F1s-eG34m-NlnmrmG6z4,1846
+lib_clockifybot/config.py,sha256=iM7QcgFdRDUyD0Bqhki9SaQ4cgYQqHYNvUt2kSr_Xyc,2535
+lib_clockifybot/database.py,sha256=0j3TJGCBZknq8K96wmzgifYcebPdbc5e7beeJaqv2yw,987
+lib_clockifybot/duration_to_time.py,sha256=9QUE4pJeQPdLJtVijIuodN0cDKHvrHW9FPJyHtwCOEc,596
+lib_clockifybot/log.py,sha256=DxVwQXYDQT-k1nxySef3zKcXm9UfAWk3-h_hgg5QTnM,1149
+lib_clockifybot/wraps.py,sha256=6gNf4f5g2OZ8iz1r8_40Du7N3K9ERnrb52jlRwyu3Zo,1565
+lib_clockifybot-0.2.dist-info/METADATA,sha256=Pz8Y6zag30Jq-deUh-IEK3He5w9sRJyN9UT-PiZCn4Q,1945
+lib_clockifybot-0.2.dist-info/WHEEL,sha256=GV9aMThwP_4oNCtvEC2ec3qUYutgWeAzklro_0m4WJQ,91
+lib_clockifybot-0.2.dist-info/top_level.txt,sha256=1dWUYeopZRMcBtq11qWN5BLNnaa_yFzlZ4DiLjkFYW0,16
+lib_clockifybot-0.2.dist-info/RECORD,,
