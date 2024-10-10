@@ -1,0 +1,51 @@
+Bootstrap: docker
+From: python:3.10-slim
+
+%post
+
+    VERSION="2.1.6"
+
+    #apt update && apt install -yq --no-install-recommends default-jre ncbi-blast+ \
+    apt update && apt install -yq --no-install-recommends ncbi-blast+ \
+        make  g++ wget git libz-dev
+
+    # install python package
+    pip install --upgrade pip
+
+    wget https://github.com/genomicepidemiology/plasmidfinder/archive/refs/tags/v${VERSION}.tar.gz
+
+    tar xvfz v${VERSION}.tar.gz
+    cd /plasmidfinder-${VERSION}
+    cp plasmidfinder.py /bin
+
+    pip install tabulate biopython==1.73 cgecore
+
+
+    # Install kma
+    git clone --branch 1.0.1 --depth 1 https://bitbucket.org/genomicepidemiology/kma.git; \
+    cd kma && make; \
+    mv kma* /bin/
+
+    #rm -rf /plasmidfinder-${VERSION}
+
+
+    # install plasmidFinder database
+    git clone https://bitbucket.org/genomicepidemiology/plasmidfinder_db.git
+    cd plasmidfinder_db
+    PLASMID_DB=$(pwd)
+
+    # Install PlasmidFinder database with executable kma_index program
+    python3 INSTALL.py kma_index
+
+
+    rm -rf /var/cache/apt/* /var/lib/apt/lists/*;
+
+    apt purge -yq git wget make libz-dev && apt autoremove -yq
+
+%environment
+   export LC_ALL=C.UTF-8
+
+%runscript
+    /bin/plasmidfinder.py "$@"
+
+

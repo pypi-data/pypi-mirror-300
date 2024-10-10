@@ -1,0 +1,26 @@
+Bootstrap: docker
+From: python:3.11-slim
+
+%post
+
+    apt-get update && \
+        apt-get install -y wget xz-utils && \
+        rm -rf /var/lib/apt/lists/*
+
+    wget https://github.com/twolinin/longphase/releases/download/v1.7.3/longphase_linux-x64.tar.xz && \
+        tar -xJf longphase_linux-x64.tar.xz
+    mv /longphase_linux-x64 /usr/local/bin/longphase
+
+    apt-get autoremove -y wget xz-utils && apt-get clean -y
+
+
+%environment
+
+
+%runscript
+    exec longphase "$@"
+
+
+
+
+
