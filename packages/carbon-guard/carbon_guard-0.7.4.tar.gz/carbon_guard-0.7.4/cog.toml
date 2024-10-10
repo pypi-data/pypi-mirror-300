@@ -1,0 +1,27 @@
+from_latest_tag = false
+ignore_merge_commits = true
+tag_prefix = "v"
+branch_whitelist = [
+  "main",
+  "release/**"
+]
+pre_bump_hooks = [
+    "uvx --from=toml-cli toml set --toml-path=pyproject.toml project.version {{version}}",
+    "uv lock --no-upgrade",
+]
+post_bump_hooks = [
+    "git push origin v{{version}}",
+    "git push",
+]
+
+[commit_types]
+
+[changelog]
+path = "CHANGELOG.md"
+template = "remote"
+remote = "github.com"
+repository = "carbon-guard"
+owner = "armakuni"
+authors = []
+
+[bump_profiles]

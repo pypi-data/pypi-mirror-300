@@ -1,0 +1,112 @@
+name: Pipeline
+
+on:
+  push: ~
+  pull_request: ~
+  workflow_dispatch:
+
+jobs:
+  validate-pipeline:
+    uses: armakuni/github-actions/.github/workflows/lint-pipeline.yml@v0.19.4
+
+  validate-action:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: ./
+        with:
+          max_carbon_intensity: 10000
+
+  validate-python:
+    defaults:
+      run:
+        shell: bash
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v4
+    - uses: specdown/setup-specdown-action@v0.2.30
+    - name: Install the latest version of uv
+      uses: astral-sh/setup-uv@v3
+      with:
+        version: "latest"
+        enable-cache: true
+    - run: make lint
+    - run: make test
+    - run: |
+        echo "$CO2_SIGNAL_API_KEY" > .co2_api_key
+        make integration
+      env:
+        CO2_SIGNAL_API_KEY: ${{secrets.CO2_SIGNAL_API_KEY}}
+      if: github.ref == 'refs/heads/main'
+    - name: Spot vunerable dependencies
+      uses: aquasecurity/trivy-action@master
+      with:
+        scan-type: 'fs'
+        exit-code: '1'
+        scan-ref: .
+
+  all-tests-succeeded:
+    needs: [ validate-pipeline, validate-action, validate-python ]
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "All tests succeeded"
+  release:
+    runs-on: ubuntu-latest
+    if: github.ref == 'refs/heads/main'
+    needs: [ all-tests-succeeded ]
+    name: Release
+    permissions:
+      contents: write
+    outputs:
+      version: ${{ steps.release.outputs.version }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Install the latest version of uv
+        uses: astral-sh/setup-uv@v3
+        with:
+          version: "latest"
+          enable-cache: true
+      - name: Cocogitto release
+        id: release
+        continue-on-error: true
+        uses: oknozor/cocogitto-action@v3.8
+        with:
+          release: true
+      - name: Generate Changelog
+        if: steps.release.outputs.version != ''
+        run: cog changelog --at ${{ steps.release.outputs.version }} -t full_hash > GITHUB_CHANGELOG.md
+
+      - name: Upload github release
+        if: steps.release.outputs.version != ''
+        uses: softprops/action-gh-release@v2
+        with:
+          body_path: GITHUB_CHANGELOG.md
+          tag_name: ${{ steps.release.outputs.version }}
+
+  pypi-publish:
+    needs: [ release ]
+    name: Upload release to PyPI
+    runs-on: ubuntu-latest
+    environment:
+      url: https://pypi.org/project/carbon-guard/
+      name: pypi
+    permissions:
+      id-token: write
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ needs.release.outputs.version }}
+      - name: Install the latest version of uv
+        uses: astral-sh/setup-uv@v3
+        with:
+          version: "latest"
+          enable-cache: true
+      - name: Install dependencies
+        shell: bash
+        run: uv build
+      - name: Publish package distributions to PyPI
+        uses: pypa/gh-action-pypi-publish@release/v1
+        with:
+          skip-existing: true
