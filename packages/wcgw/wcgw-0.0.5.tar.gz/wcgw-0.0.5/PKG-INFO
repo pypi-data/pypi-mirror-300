@@ -1,0 +1,55 @@
+Metadata-Version: 2.3
+Name: wcgw
+Version: 0.0.5
+Summary: What could go wrong giving full shell access to chatgpt?
+Project-URL: Homepage, https://github.com/rusiaaman/wcgw
+Author-email: Aman Rusia <gapypi@arcfu.com>
+Requires-Python: >=3.7
+Requires-Dist: fastapi>=0.115.0
+Requires-Dist: mypy>=1.11.2
+Requires-Dist: openai>=1.46.0
+Requires-Dist: petname>=2.6
+Requires-Dist: pexpect>=4.9.0
+Requires-Dist: pyte>=0.8.2
+Requires-Dist: python-dotenv>=1.0.1
+Requires-Dist: rich>=13.8.1
+Requires-Dist: shell>=1.0.1
+Requires-Dist: tiktoken==0.7.0
+Requires-Dist: toml>=0.10.2
+Requires-Dist: typer>=0.12.5
+Requires-Dist: types-pexpect>=4.9.0.20240806
+Requires-Dist: uvicorn>=0.31.0
+Requires-Dist: websockets>=13.1
+Description-Content-Type: text/markdown
+
+# Giving full shell access to Chatgpt web (What could go wrong?)
+Steps: 
+1. First run the client in any directory of choice
+2. Use this custom gpt `https://chatgpt.com/g/g-Us0AAXkRh-wcgw-giving-shell-access` to let it interact with your shell.
+
+## Client
+
+### Option 1: using pip
+```sh
+$ pip install wcgw
+$ wcgw
+```
+
+### Option 2: using uv
+```sh
+$ curl -LsSf https://astral.sh/uv/install.sh | sh
+$ uv tool run wcgw
+```
+
+This will print a UUID that you need to share with the gpt.
+
+
+## Chat
+https://chatgpt.com/g/g-Us0AAXkRh-wcgw-giving-shell-access
+
+Add user id the client generated to the first message along with the instructions.
+
+# How does it work?
+Your commands are relayed through a server I've hosted at https://wcgw.arcfu.com. The code for that is at `src/relay/serve.py`. 
+
+The user id that you share with chatgpt is added in the request it sents to the relay server which holds a websocket with the terminal client.
