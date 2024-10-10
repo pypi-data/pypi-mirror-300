@@ -1,0 +1,42 @@
+# Justfile
+
+# load environment variables
+set dotenv-load
+
+# aliases
+alias fmt:=format
+
+# list justfile recipes
+default:
+    just --list
+
+# build
+build:
+    just clean
+    @python -m build
+
+# format
+format:
+    @ruff format . || True
+
+# install
+install:
+    @uv pip install -e '.'
+
+# uninstall
+uninstall:
+    @uv pip uninstall stringflow -y
+
+# publish-test
+release-test:
+    just build
+    @twine upload --repository testpypi dist/* -u __token__ -p ${PYPI_TEST_TOKEN}
+
+# publish
+release:
+    just build
+    @twine upload dist/* -u __token__ -p ${PYPI_TOKEN}
+
+# clean
+clean:
+    @rm -r dist || True
