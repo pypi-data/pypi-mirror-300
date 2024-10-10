@@ -1,0 +1,9 @@
+Metadata-Version: 2.3
+Name: molina
+Version: 0.0.1
+Summary: Rust/Python Synthetic Integration for an agentic-LLM approach to build a research agents for local knowledge representation
+Keywords: machine-learning,framework,nlp,llm,rag
+Author: IteraLabs.ai <contact@iteralabs.ai>
+Author-email: IteraLabs.ai <contact@iteralabs.ai>
+License: Apache-2.0
+Project-URL: Source Code, https://github.com/iteralabs/molina
