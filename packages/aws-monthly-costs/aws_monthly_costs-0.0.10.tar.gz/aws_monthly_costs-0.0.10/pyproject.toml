@@ -1,0 +1,43 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.dynamic]
+version = {attr = "amc.version.__version__"}
+readme = {file = ["README.md"], content-type = "text/markdown"}
+
+[project]
+name = "aws-monthly-costs"
+description = "Retrieves AWS Monthly Costs"
+requires-python = ">=3.12"
+authors = [
+  {email = "12127434+whoDoneItAgain@users.noreply.github.com"},
+  {name = "whoDoneItAgain"},
+]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "Natural Language :: English",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.12",
+]
+
+dynamic = [
+    "version",
+    "readme"
+]
+
+dependencies = [
+    "boto3",
+    "pyyaml"
+]
+
+[project.scripts]
+amc = "amc.__main__:main"
+
+[project.urls]
+Homepage = "https://github.com/whodoneitagain/aws-monthly-costs"
