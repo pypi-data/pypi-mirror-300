@@ -1,0 +1,74 @@
+Metadata-Version: 2.3
+Name: argiletum-devtools
+Version: 1.0.0
+Summary: Argiletum development tools
+Project-URL: Homepage, https://argiletum.io
+Project-URL: Repository, https://github.com/argiletum/argiletum-devtools
+Project-URL: Issues, https://github.com/argiletum/argiletum-devtools/issues
+Project-URL: Changelog, https://github.com/argiletum/argiletum-devtools/releases
+Author-email: Michael Makukha <m.makukha@gmail.com>
+License-File: LICENSE
+Keywords: argiletum,argiletum-plugin,devtools,python,python3
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Topic :: Software Development
+Classifier: Typing :: Typed
+Requires-Python: >=3.12
+Requires-Dist: bump-my-version>=0.27.0
+Requires-Dist: genbadge[coverage,tests]>=1.1.1
+Requires-Dist: keyring>=25.4.1
+Requires-Dist: mypy>=1.11.2
+Requires-Dist: pyright>=1.1.384
+Requires-Dist: pytest-cov>=5.0.0
+Requires-Dist: pytest>=8.3.3
+Requires-Dist: ruff>=0.6.9
+Requires-Dist: tox>=4.21.2
+Description-Content-Type: text/markdown
+
+# Argiletum development tools
+
+![GitHub License](https://img.shields.io/github/license/argiletum/argiletum-devtools)
+[![pypi](https://img.shields.io/pypi/v/argiletum-devtools.svg#1.0.0)](https://pypi.python.org/pypi/argiletum-devtools)
+[![versions](https://img.shields.io/pypi/pyversions/argiletum-devtools.svg)](https://pypi.org/project/argiletum-devtools)
+
+This is a collection of development tools used by [Argiletum](https://argiletum.io) and its plugins:
+
+* [Bump My Version](https://callowayproject.github.io/bump-my-version/)
+* [genbadge](https://smarie.github.io/python-genbadge/)
+* [mypy](https://mypy.readthedocs.io/)
+* [Pyright](https://microsoft.github.io/pyright/)
+* [pytest](https://docs.pytest.org/)
+* [pytest-cov](https://pytest-cov.readthedocs.io/)
+* [Ruff](https://docs.astral.sh/ruff/)
+* [tox](https://tox.wiki/)
+
+
+## Usage
+
+```shell
+$ uv add --dev argiletum-devtools
+```
+
+## Development
+
+Install [Task](https://taskfile.dev) and [uv](https://docs.astral.sh/uv/).
+
+```shell
+$ uv sync
+$ task --list
+```
+
+Typical operations:
+
+```shell
+$ task lint
+$ task format
+$ task bump -- patch
+$ task build
+```

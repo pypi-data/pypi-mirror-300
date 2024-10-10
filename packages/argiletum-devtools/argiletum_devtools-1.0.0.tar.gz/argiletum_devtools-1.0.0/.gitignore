@@ -1,0 +1,8 @@
+/dist/
+/.idea/
+/.local/
+__pycache__/
+/.python-version
+/.task/
+/.venv/
+/work/
