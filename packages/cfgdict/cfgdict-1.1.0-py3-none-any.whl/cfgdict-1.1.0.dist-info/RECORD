@@ -1,0 +1,14 @@
+cfgdict/__init__.py,sha256=V7ml9vm6roZb6UdoHcppbvF_QecXvSf-REVoRHu9_OA,414
+cfgdict/config.py,sha256=2mxyGVNwGHsZIDgP_ooR6Muj3elGAKcRRwjdDu0-G_M,18984
+cfgdict/config2.py,sha256=Qt4p666sHUFQmbMsM2HflDXl9bKmxGIJGRSBup6UU4M,16880
+cfgdict/exception.py,sha256=l-uZ1lS4LwL1IO3Ipq-yBmSDHumejDK-xRqCgUZCsTw,132
+cfgdict/field.py,sha256=1EDRhAm_ASd8FxRWelpgMAKvyziosc8_wGrGVDBMpUw,2303
+cfgdict/logger.py,sha256=XY2kywkzpD4v4WjwK1Kt8lEl_U9w-GuH-_AT4r8vKnU,69
+cfgdict/schema.py,sha256=Zw1Of9BsVCXv3nh2HmMc_QLnWRZpNWBvmzZn1b7drCI,6046
+cfgdict/utils.py,sha256=ekGE03qsRKE1cKwZT2wFaKy4W0qfpMBfAFU-C4F6CcA,6512
+cfgdict/version.py,sha256=cGpc24Pv0RbhvOb_NfwZAhzvpw97V_jKt1_v_r90nXs,221
+cfgdict-1.1.0.dist-info/LICENSE,sha256=PTGkKmatc_wLjZ5RllAiq7aELH6XXra33q1g6h3f2jA,1065
+cfgdict-1.1.0.dist-info/METADATA,sha256=9Xxc1MESlW9TSajnk-vftMTq1g_yrvRD0xxmXoz-h8c,7429
+cfgdict-1.1.0.dist-info/WHEEL,sha256=GV9aMThwP_4oNCtvEC2ec3qUYutgWeAzklro_0m4WJQ,91
+cfgdict-1.1.0.dist-info/top_level.txt,sha256=SDwH6a41v_gbsGJlqQX97xEUaxV7E0yw2Qh5E9mK2lg,8
+cfgdict-1.1.0.dist-info/RECORD,,
