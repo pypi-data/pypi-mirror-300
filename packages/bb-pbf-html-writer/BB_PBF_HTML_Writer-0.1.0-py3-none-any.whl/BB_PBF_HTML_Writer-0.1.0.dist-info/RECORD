@@ -1,0 +1,9 @@
+bb_pbf_html_writer/__init__.py,sha256=EDFTO-lfx6Cg0Hnj0zBQ2C3tgS7xwBPUPxOugj8Dle4,631
+bb_pbf_html_writer/add_links_to_html.py,sha256=vTADir-XNC8PNgnxEMoRPBfEvrJS5TN0vFoRSECJGNw,2771
+bb_pbf_html_writer/create_html.py,sha256=SCUpw5jTpCxumvX7Zap98L15Z-ZKrUVqBU-G8g8FqEw,2754
+bb_pbf_html_writer/data/bb_pbf_report_data.py,sha256=zZ9WmGWSbSodomBOPxey0EyD693_UyWf1uRi4nb2XYI,100071
+bb_pbf_html_writer/data/test_data.py,sha256=j-NGSnhiQn_-tMqFXxe5w-8U8TGYw-hOBbueevfIqmo,96531
+BB_PBF_HTML_Writer-0.1.0.dist-info/METADATA,sha256=2sGMVvg1tLxa38Yu0WfvY-sagvIT9HQl_OtfeW8iy4o,199
+BB_PBF_HTML_Writer-0.1.0.dist-info/WHEEL,sha256=eOLhNAGa2EW3wWl_TU484h7q1UNgy0JXjjoqKoxAAQc,92
+BB_PBF_HTML_Writer-0.1.0.dist-info/top_level.txt,sha256=SXObgxiULP3ha55_CsOaCBZ4aqEHb6VjOTSRd8ti0iA,19
+BB_PBF_HTML_Writer-0.1.0.dist-info/RECORD,,
