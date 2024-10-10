@@ -1,0 +1,14 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+keycripty/__error__.py
+keycripty/__init__.py
+keycripty/caracters.py
+keycripty/hash_dados.py
+keycripty/hash_file.py
+keycripty/keycripty.py
+keycripty.egg-info/PKG-INFO
+keycripty.egg-info/SOURCES.txt
+keycripty.egg-info/dependency_links.txt
+keycripty.egg-info/top_level.txt
