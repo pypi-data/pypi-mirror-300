@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: gela
+Version: 0.1
+Summary: A Python module that provides a Base class for value management.
+Home-page: 
+Author: Your Name
+Author-email: davitidatunashvili98@gmail.com
+License: MIT
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+# Your Module Name
+
+A simple Python module that provides a `Base` class for managing a value, with methods to get, set, and add to the value.
+
+## Features
+
+- Get the current value
+- Set a new value
+- Add an increment to the current value
+
+## Installation
+
+You can install the package via pip once it's published on PyPI:
+
+```bash
+pip install your-module-name
