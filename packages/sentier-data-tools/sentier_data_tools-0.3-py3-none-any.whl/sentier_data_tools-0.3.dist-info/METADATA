@@ -1,0 +1,119 @@
+Metadata-Version: 2.1
+Name: sentier_data_tools
+Version: 0.3
+Summary: Basic tools to test and interact with Sentier.dev vocabulary and data systems
+Author-email: Chris Mutel <cmutel@gmail.com>
+Maintainer-email: Chris Mutel <cmutel@gmail.com>
+Project-URL: source, https://github.com/sentier-dev/sentier_data_tools
+Project-URL: homepage, https://github.com/sentier-dev/sentier_data_tools
+Project-URL: tracker, https://github.com/sentier-dev/sentier_data_tools/issues
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Scientific/Engineering
+Requires-Python: >=3.11
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: openpyxl
+Requires-Dist: pandas
+Requires-Dist: peewee
+Requires-Dist: peewee-enum-field
+Requires-Dist: platformdirs
+Requires-Dist: pyarrow
+Requires-Dist: pydantic
+Requires-Dist: rdflib
+Requires-Dist: rfc3987
+Requires-Dist: SPARQLWrapper
+Requires-Dist: structlog
+Provides-Extra: dev
+Requires-Dist: build ; extra == 'dev'
+Requires-Dist: pre-commit ; extra == 'dev'
+Requires-Dist: pylint ; extra == 'dev'
+Requires-Dist: pytest ; extra == 'dev'
+Requires-Dist: pytest-cov ; extra == 'dev'
+Requires-Dist: pytest-randomly ; extra == 'dev'
+Requires-Dist: setuptools ; extra == 'dev'
+Provides-Extra: testing
+Requires-Dist: sentier-data-tools ; extra == 'testing'
+Requires-Dist: pytest ; extra == 'testing'
+Requires-Dist: pytest-cov ; extra == 'testing'
+Requires-Dist: python-coveralls ; extra == 'testing'
+
+# sentier_data_tools
+
+[![PyPI](https://img.shields.io/pypi/v/sentier_data_tools.svg)][pypi status]
+[![Status](https://img.shields.io/pypi/status/sentier_data_tools.svg)][pypi status]
+[![Python Version](https://img.shields.io/pypi/pyversions/sentier_data_tools)][pypi status]
+[![License](https://img.shields.io/pypi/l/sentier_data_tools)][license]
+
+[![Read the documentation at https://sentier_data_tools.readthedocs.io/](https://img.shields.io/readthedocs/sentier_data_tools/latest.svg?label=Read%20the%20Docs)][read the docs]
+[![Tests](https://github.com/sentier-dev/sentier_data_tools/actions/workflows/python-test.yml/badge.svg)][tests]
+[![Codecov](https://codecov.io/gh/sentier-dev/sentier_data_tools/branch/main/graph/badge.svg)][codecov]
+
+[![pre-commit](https://img.shields.io/badge/pre--commit-enabled-brightgreen?logo=pre-commit&logoColor=white)][pre-commit]
+[![Black](https://img.shields.io/badge/code%20style-black-000000.svg)][black]
+
+[pypi status]: https://pypi.org/project/sentier_data_tools/
+[read the docs]: https://sentier_data_tools.readthedocs.io/
+[tests]: https://github.com/sentier-dev/sentier_data_tools/actions?workflow=Tests
+[codecov]: https://app.codecov.io/gh/sentier-dev/sentier_data_tools
+[pre-commit]: https://github.com/pre-commit/pre-commit
+[black]: https://github.com/psf/black
+
+## Installation
+
+You can install _sentier_data_tools_ via [pip] from [PyPI]:
+
+```console
+$ pip install sentier_data_tools
+```
+
+## Contributing
+
+Contributions are very welcome.
+To learn more, see the [Contributor Guide][Contributor Guide].
+
+## License
+
+Distributed under the terms of the [MIT license][License],
+_sentier_data_tools_ is free and open source software.
+
+## Issues
+
+If you encounter any problems,
+please [file an issue][Issue Tracker] along with a detailed description.
+
+
+<!-- github-only -->
+
+[command-line reference]: https://sentier_data_tools.readthedocs.io/en/latest/usage.html
+[License]: https://github.com/sentier-dev/sentier_data_tools/blob/main/LICENSE
+[Contributor Guide]: https://github.com/sentier-dev/sentier_data_tools/blob/main/CONTRIBUTING.md
+[Issue Tracker]: https://github.com/sentier-dev/sentier_data_tools/issues
+
+
+## Building the Documentation
+
+You can build the documentation locally by installing the documentation Conda environment:
+
+```bash
+conda env create -f docs/environment.yml
+```
+
+activating the environment
+
+```bash
+conda activate sphinx_sentier_data_tools
+```
+
+and [running the build command](https://www.sphinx-doc.org/en/master/man/sphinx-build.html#sphinx-build):
+
+```bash
+sphinx-build docs _build/html --builder=html --jobs=auto --write-all; open _build/html/index.html
+```
