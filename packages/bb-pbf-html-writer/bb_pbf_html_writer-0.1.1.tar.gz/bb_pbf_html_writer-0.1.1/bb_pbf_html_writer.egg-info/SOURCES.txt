@@ -1,0 +1,9 @@
+setup.py
+bb_pbf_html_writer/__init__.py
+bb_pbf_html_writer/add_links_to_html.py
+bb_pbf_html_writer/create_html.py
+bb_pbf_html_writer.egg-info/PKG-INFO
+bb_pbf_html_writer.egg-info/SOURCES.txt
+bb_pbf_html_writer.egg-info/dependency_links.txt
+bb_pbf_html_writer.egg-info/requires.txt
+bb_pbf_html_writer.egg-info/top_level.txt
