@@ -1,0 +1,9 @@
+GradientTransformation/__init__.py,sha256=FOcARfAaf-WI_jZu89dL2juyZQwIv-d9HkIv_xBEEZ8,47
+GradientTransformation/lbfgs.py,sha256=dU7DNIRjCgF_KEzpgqlplPubPGap_Zn3n9aZ-qdEWxE,9142
+examples/quadratic.py,sha256=FQNmVKlYZ-L4rS-6nIXM5CXUUMoloOx5PTrVjmsliEA,1676
+examples/rosenbrock.py,sha256=Lq93SdDZ3yR5I8g8OJGETiIbcbEGrzO8WdbyEN1AjQE,1662
+GradientTransformation-1.0.0.dist-info/LICENSE,sha256=BaqLUyTtUfJA_zyWeNaunn-X7bki7VdvTf-OcFl2o_o,1074
+GradientTransformation-1.0.0.dist-info/METADATA,sha256=ueSGMm5-6vXizKHgSeuYrHaPAkO3246b0J65uKlwgCQ,3374
+GradientTransformation-1.0.0.dist-info/WHEEL,sha256=GV9aMThwP_4oNCtvEC2ec3qUYutgWeAzklro_0m4WJQ,91
+GradientTransformation-1.0.0.dist-info/top_level.txt,sha256=VpfDX3irrqFswWq4WdELavXByqCW6gkO2Fo5aKXgXKA,32
+GradientTransformation-1.0.0.dist-info/RECORD,,
