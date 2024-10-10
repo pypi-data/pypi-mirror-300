@@ -1,0 +1,3 @@
+[console_scripts]
+velociraptor-compute-box-size-correction = velociraptor.velociraptor_compute_box_size_correction:velociraptor_compute_box_size_correction
+velociraptor-plot = velociraptor.velociraptor_plot:velociraptor_plot
