@@ -1,0 +1,5 @@
+requests~=2.32
+qiskit~=1.2
+pydantic~=2.9
+pytket~=1.33.0
+pydantic-settings~=2.5
