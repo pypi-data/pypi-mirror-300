@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: tcolr
+Version: 0.1.0
+Summary: A simple terminal colorizer
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+Requires-Dist: rich>13.8.0
+Requires-Dist: pyyaml>5.4.1
+
+# tcolr - table colouriser
+
+This is a simple program that handles colorising tabular content using a set of rules, similar to how grc or similar
+out of band colorisers work.
+
