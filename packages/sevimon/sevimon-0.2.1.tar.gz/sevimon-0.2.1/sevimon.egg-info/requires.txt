@@ -1,0 +1,6 @@
+hsemotion-onnx
+opencv-python
+configparser
+platformdirs
+matplotlib
+numpy

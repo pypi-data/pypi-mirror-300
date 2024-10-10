@@ -1,0 +1,4 @@
+[console_scripts]
+sevicfg = sevimon.sevicfg:main
+sevimon = sevimon.sevimon:main
+sevistat = sevimon.sevistat:main
