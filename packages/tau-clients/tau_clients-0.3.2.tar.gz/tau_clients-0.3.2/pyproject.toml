@@ -1,0 +1,37 @@
+[build-system]
+requires = [
+    "setuptools>=42",
+    "wheel",
+]
+build-backend = "setuptools.build_meta"
+
+[tool.tox]
+legacy_tox_ini = """
+[tox]
+envlist = py39, py310, py311, py312
+isolated_build = True
+
+[testenv]
+commands=pytest
+extras=misp
+deps=
+    ddt
+    pytest
+"""
+
+[tool.black]
+line-length = 98
+include = "\\.pyi?$"
+exclude = """
+/(
+    \\.git
+  | \\.hg
+  | \\.mypy_cache
+  | \\.tox
+  | \\.venv
+  | _build
+  | buck-out
+  | build
+  | dist
+)/
+"""
