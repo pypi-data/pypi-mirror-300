@@ -1,0 +1,71 @@
+Metadata-Version: 2.1
+Name: mustrd
+Version: 0.2.4
+Summary: A Spec By Example framework for RDF and SPARQL, Inspired by Cucumber.
+Home-page: https://github.com/Semantic-partners/mustrd
+License: MIT
+Author: John Placek
+Author-email: john.placek@semanticpartners.com
+Requires-Python: >=3.11,<4.0
+Classifier: Framework :: Pytest
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Topic :: Software Development :: Quality Assurance
+Classifier: Topic :: Software Development :: Testing
+Classifier: Topic :: Utilities
+Requires-Dist: Jinja2 (==3.1.3)
+Requires-Dist: beautifulsoup4 (>=4.11.1,<5.0.0)
+Requires-Dist: colorama (==0.4.6)
+Requires-Dist: colorlog (>=6.7.0,<7.0.0)
+Requires-Dist: coverage (==7.4.3)
+Requires-Dist: flake8 (==7.0.0)
+Requires-Dist: multimethods-py (>=0.5.3,<0.6.0)
+Requires-Dist: numpy (>=1.26.0,<1.27.0)
+Requires-Dist: openpyxl (>=3.1.2,<4.0.0)
+Requires-Dist: pandas (>=1.5.2,<2.0.0)
+Requires-Dist: pyanzo (>=3.3.10,<4.0.0)
+Requires-Dist: pyshacl (>=0.23.0,<0.24.0)
+Requires-Dist: pytest (>=7.2.0,<8.0.0)
+Requires-Dist: rdflib (>=6.3.2,<7.0.0)
+Requires-Dist: requests (>=2.28.2,<3.0.0)
+Requires-Dist: tabulate (>=0.9.0,<0.10.0)
+Requires-Dist: toml (>=0.10.2,<0.11.0)
+Requires-Dist: tomli (>=2.0.1,<3.0.0)
+Requires-Dist: urllib3 (==1.26.19)
+Project-URL: Repository, https://github.com/Semantic-partners/mustrd
+Description-Content-Type: text/markdown
+
+# Developer helper
+
+## Try it out
+
+Ensure you have python3 installed, before you begin.
+To install the necessary dependencies, run the following command from the project root.
+
+`pip3 install  -r requirements.txt`
+
+Run the following command to execute the accompanying tests specifications.
+
+`python3 src/run.py -v -p "test/test-specs" -g "test/data" -w "test/data" -t "test/data"`
+
+You will see some warnings. Do not worry, some tests specifications are invalid and intentionally skipped.
+
+For a brief explanation of the meaning of these options use the help option.
+
+`python3 src/run.py --help`
+
+## Run the tests
+
+Run `pytest` from the project root.
+
+## Additional Notes for Developers
+Mustrd remains very much under development. It is anticipated that additional functionality and triplestore support will be added over time. The project uses [Poetry](https://python-poetry.org/docs/) to manage dependencies so it will be necessary to have this installed to contribute towards the project. The link contains instructions on how to install and use this.
+As the project is actually built from the requirements.txt file at the project root, it is necessary to export dependencies from poetry to this file before committing and pushing changes to the repository, using the following command.
+
+`poetry export -f requirements.txt --without-hashes > requirements.txt`
+
+
