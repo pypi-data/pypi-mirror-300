@@ -1,0 +1,9 @@
+README.md
+setup.py
+FreddyApi/__init__.py
+FreddyApi/module.py
+FreddyApi.egg-info/PKG-INFO
+FreddyApi.egg-info/SOURCES.txt
+FreddyApi.egg-info/dependency_links.txt
+FreddyApi.egg-info/top_level.txt
+tests/test_module.py
