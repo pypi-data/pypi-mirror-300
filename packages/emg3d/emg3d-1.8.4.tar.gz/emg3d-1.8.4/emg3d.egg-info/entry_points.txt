@@ -1,0 +1,2 @@
+[console_scripts]
+emg3d = emg3d.cli.main:main

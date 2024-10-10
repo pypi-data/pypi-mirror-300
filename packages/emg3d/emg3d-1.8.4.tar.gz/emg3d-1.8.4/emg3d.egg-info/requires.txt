@@ -1,0 +1,11 @@
+scipy>=1.10
+numba
+empymod>=2.3.2
+
+[full]
+tqdm
+h5py
+xarray
+discretize
+matplotlib
+ipympl
